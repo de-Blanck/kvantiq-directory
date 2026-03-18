@@ -187,7 +187,7 @@ kvantiq-directory/
 | URL Pattern | Source | Example | SEO Target |
 |---|---|---|---|
 | `/companies/` | All companies | Index page | "quantum computing companies europe" |
-| `/companies/[country]/` | Filtered | `/companies/finland/` | "quantum companies finland" |
+| `/companies/country/[country]/` | Filtered | `/companies/country/finland/` | "quantum companies finland" |
 | `/companies/[slug]/` | Single entry | `/companies/iqm/` | "IQM quantum computers" |
 | `/benchmarks/` | All benchmarks | Index page | "quantum computing benchmarks" |
 | `/benchmarks/[slug]/` | Single entry | `/benchmarks/vqe-hydrogen/` | "VQE hydrogen benchmark" |
