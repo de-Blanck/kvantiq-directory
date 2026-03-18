@@ -54,7 +54,7 @@ A passive income online directory for the European quantum computing ecosystem. 
 | Layer | Tool | Cost |
 |---|---|---|
 | Framework | Astro (static site generator) | Free |
-| Data | JSON files in `data/` directory | Free |
+| Data | JSON files in `src/content/` (Astro Content Collections) | Free |
 | Styling | Tailwind CSS | Free |
 | Search | Pagefind (client-side, built at build time) | Free |
 | Hosting | Vercel free tier | $0 |
@@ -77,10 +77,10 @@ A passive income online directory for the European quantum computing ecosystem. 
 
 ### Data Model
 
-All directory data lives in structured JSON files in the repo:
+All directory data lives in Astro Content Collections (`src/content/`) as JSON files with Zod schema validation:
 
 ```
-data/
+src/content/
   companies/
     iqm.json
     pasqal.json
@@ -103,6 +103,8 @@ data/
     funding-programs/
 ```
 
+Content Collections provide automatic schema validation at build time and TypeScript types for all data.
+
 #### Company Schema
 ```json
 {
@@ -120,11 +122,12 @@ data/
 }
 ```
 
-**Why JSON files instead of a database:**
+**Why JSON files in Content Collections instead of a database:**
 - $0 cost (no database to host)
 - Git history = full audit trail
 - Easy for Claude to generate and update
-- Astro Content Collections validate the schema at build time
+- Astro Content Collections validate schemas with Zod at build time — broken data = build error, not broken page
+- Automatic TypeScript types for all data
 - Editable in any text editor or via GitHub's web UI
 
 ---
@@ -165,7 +168,6 @@ kvantiq-directory/
       config.ts                 # Astro Content Collections schema
     styles/
       global.css                # Tailwind CSS
-  data/                         # JSON listings
   public/
     logos/                      # Company logos (SVG preferred)
     og-images/                  # Social sharing images
@@ -208,11 +210,6 @@ kvantiq-directory/
 - Clean URLs, no query parameters
 - Automatic sitemap generation via @astrojs/sitemap
 - Structured data (JSON-LD) on every listing page
-
-### Markdown Page Variants
-Every listing page also available as `.md` for LLM consumption:
-- `/companies/iqm.md` serves the same content as `/companies/iqm/` in raw Markdown
-- Linked from `llms.txt` for AI tools that follow the spec
 
 ---
 
@@ -444,7 +441,7 @@ GitHub Action runs monthly to check for dead links. Flag stale entries for revie
 - Mobile responsive
 - llms.txt + llms-full.txt
 - robots.txt with AI crawler permissions
-- Markdown page variants
+- Clean semantic HTML for AI crawler extraction
 - FAQPage schema on auto-generated FAQs
 - Semantic HTML5 structure
 - Question-format H2 headings
@@ -476,4 +473,47 @@ GitHub Action runs monthly to check for dead links. Flag stale entries for revie
 | Newsletter | Buttondown | Privacy-respecting, free up to 100 subscribers |
 | Analytics | Plausible CE or Vercel Analytics | No cookies, no visitor profiling |
 | Ads (future) | EthicalAds or Carbon Ads | No tracking, contextual only |
-| Data storage | JSON files in git | $0, version-controlled, AI-editable |
+| Data storage | JSON files in Astro Content Collections | $0, version-controlled, schema-validated, AI-editable |
+
+---
+
+## 10. Launch Checklist
+
+Exact steps from "repo exists" to "site is live and discoverable":
+
+### Build Phase
+- [ ] Initialize Astro project with Tailwind CSS
+- [ ] Set up Content Collections with Zod schemas for all data types
+- [ ] Build BaseLayout with semantic HTML5, meta tags, JSON-LD
+- [ ] Build ListingCard, TagList, SearchBar, NewsletterSignup components
+- [ ] Build all page templates (companies, benchmarks, use-cases, challenges, resources)
+- [ ] Build static pages (homepage, about, submit, newsletter)
+- [ ] Add Pagefind search integration
+- [ ] Add robots.txt and llms.txt to public/
+- [ ] Configure @astrojs/sitemap
+- [ ] Test build locally, verify all pages render
+
+### Content Phase
+- [ ] Generate 80-100 company listings with Claude (batch review)
+- [ ] Generate 30-40 benchmark entries
+- [ ] Generate 20-30 use case entries
+- [ ] Generate 10-15 challenge entries
+- [ ] Generate 40-50 resource entries
+- [ ] Review all entries for accuracy — no fabricated data
+- [ ] Generate llms-full.txt from all listing content
+- [ ] Commit all data
+
+### Deploy Phase
+- [ ] Create GitHub repository
+- [ ] Push to GitHub
+- [ ] Connect Vercel to GitHub repo
+- [ ] Connect domain (kvantiq.com or subdomain)
+- [ ] Verify site is live and all pages load
+
+### Discoverability Phase
+- [ ] Submit sitemap to Google Search Console
+- [ ] Submit sitemap to Bing Webmaster Tools (critical — feeds ChatGPT and Perplexity)
+- [ ] Post launch announcement to r/QuantumComputing
+- [ ] Submit to Hacker News
+- [ ] Email DQC, Quantum Flagship, EuroHPC news sites for backlinks
+- [ ] Request listing on Wikipedia's quantum computing resources section
