@@ -1,0 +1,25 @@
+{
+  "name": "Quantum Telecom Network Optimization",
+  "slug": "telecom-network-optimization",
+  "industry": "Telecommunications",
+  "category": "optimization",
+  "tags": ["telecom", "5G", "6G", "network-optimization", "QUBO", "resource-allocation"],
+  "description": "Quantum optimization algorithms are being applied to telecommunications network planning problems including cell identifier assignment, spectrum allocation, and base station placement. TIM Telecom Italia has demonstrated QUBO-based optimization of Physical Cell Identifier planning for 4.5G and 5G networks on D-Wave quantum hardware.",
+  "problem": "Mobile network optimization involves solving large-scale combinatorial problems — assigning physical cell identifiers, allocating spectrum, scheduling user traffic, and placing edge computing resources — across networks with millions of devices. Classical solvers struggle with the scale and real-time requirements of 5G/6G network management.",
+  "approach": "Network planning problems are formulated as QUBO models and solved using quantum annealing or QAOA on gate-based processors. Quantum reinforcement learning is also explored for dynamic resource allocation. Hybrid quantum-classical frameworks enable near-term deployment by partitioning problems between quantum and classical processors.",
+  "results": "TIM Telecom Italia optimized Physical Cell Identifier planning for 4.5G and 5G radio cells using QUBO on D-Wave hardware. Research surveys identify power allocation, channel assignment, routing, edge computing offloading, and content caching as promising quantum-enhanced optimization targets for future wireless networks.",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2509.07773",
+      "title": "Quantum Computing for Large-scale Network Optimization: Opportunities and Challenges",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2512.02468",
+      "title": "Quantum Optimization in Wireless Communication Systems: Principles and Applications",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}
