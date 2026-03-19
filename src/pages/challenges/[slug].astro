@@ -26,8 +26,8 @@ const eventLd = {
   <article>
     <h1 class="text-3xl font-bold">{challenge.name}</h1>
     <div class="summary mt-4" role="doc-abstract">
-      <p class="text-gray-700">{challenge.description}<sup><a href="#ref-1" class="text-indigo-500 ml-0.5">[1]</a></sup></p>
-      <ul class="mt-3 space-y-1 text-sm text-gray-600">
+      <p class="text-text-secondary">{challenge.description}<sup><a href="#ref-1" class="text-info ml-0.5">[1]</a></sup></p>
+      <ul class="mt-3 space-y-1 text-sm text-text-secondary">
         <li>Organizer: {challenge.organizer}</li>
         <li>Status: <span class="capitalize">{challenge.status}</span></li>
         {challenge.dateStart && <li>Start: <time datetime={challenge.dateStart}>{challenge.dateStart}</time></li>}
@@ -40,18 +40,18 @@ const eventLd = {
 
     <section class="mt-8">
       <h2 class="text-xl font-semibold">Visit {challenge.name}</h2>
-      <p class="mt-2"><a href={challenge.website} target="_blank" rel="noopener noreferrer" class="text-indigo-700 hover:underline">{challenge.website}</a></p>
+      <p class="mt-2"><a href={challenge.website} target="_blank" rel="noopener noreferrer" class="text-info hover:underline">{challenge.website}</a></p>
     </section>
 
-    <section class="faq mt-8 rounded-lg border border-gray-200 p-6">
+    <section class="faq mt-8 rounded-lg border border-border p-6">
       <h2 class="text-lg font-semibold">Frequently Asked Questions</h2>
       <details class="mt-3">
-        <summary class="cursor-pointer font-medium text-gray-700">What is {challenge.name}?</summary>
-        <p class="mt-2 text-sm text-gray-600">{challenge.description}</p>
+        <summary class="cursor-pointer font-medium text-text-secondary">What is {challenge.name}?</summary>
+        <p class="mt-2 text-sm text-text-secondary">{challenge.description}</p>
       </details>
       <details class="mt-3">
-        <summary class="cursor-pointer font-medium text-gray-700">Who organizes {challenge.name}?</summary>
-        <p class="mt-2 text-sm text-gray-600">{challenge.name} is organized by {challenge.organizer}.</p>
+        <summary class="cursor-pointer font-medium text-text-secondary">Who organizes {challenge.name}?</summary>
+        <p class="mt-2 text-sm text-text-secondary">{challenge.name} is organized by {challenge.organizer}.</p>
       </details>
     </section>
 

@@ -1,0 +1,20 @@
+{
+  "name": "Quantum Machine Learning Classification",
+  "slug": "quantum-machine-learning-classification",
+  "industry": "Technology",
+  "category": "machine-learning",
+  "tags": ["QML", "classification", "kernel-methods", "VQC", "variational-quantum"],
+  "description": "Leveraging quantum kernel methods and variational quantum classifiers to enhance machine learning tasks, potentially offering computational advantages for specific classification problems.",
+  "problem": "Classical machine learning models face challenges with high-dimensional feature spaces and complex decision boundaries. Training deep neural networks requires significant computational resources, and some kernel computations are classically intractable.",
+  "approach": "Quantum kernel methods map data to high-dimensional Hilbert spaces where quantum computers naturally operate. Variational Quantum Circuits (VQC) act as parameterized quantum models trained via hybrid quantum-classical optimization loops.",
+  "results": "Proof-of-concept demonstrations show quantum kernels can achieve competitive accuracy on specialized datasets. Recent work has identified specific problem structures where quantum models may offer advantages over classical approaches.",
+  "companies": ["Xanadu", "Zapata Computing", "IBM Quantum"],
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2101.11020",
+      "title": "Power of data in quantum machine learning",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

@@ -33,7 +33,7 @@ const itemListLd = {
   <article>
     <h1 class="text-3xl font-bold">Quantum Computing Companies</h1>
     <div class="summary" role="doc-abstract">
-      <p class="mt-2 text-gray-600">
+      <p class="mt-2 text-text-secondary">
         A curated directory of {allCompanies.length} quantum computing companies in Europe,
         covering hardware, software, cloud, and consulting across the Nordics and DACH regions.
       </p>
@@ -42,7 +42,7 @@ const itemListLd = {
     <!-- Country filter links -->
     <nav class="mt-6 flex flex-wrap gap-2">
       {countries.map(country => (
-        <a href={`/companies/country/${country.toLowerCase()}/`} class="rounded-full border border-gray-300 px-3 py-1 text-sm text-gray-600 hover:bg-gray-100">
+        <a href={`/companies/country/${country.toLowerCase()}/`} class="rounded-full border border-border px-3 py-1 text-sm text-text-secondary hover:bg-surface-alt">
           {country}
         </a>
       ))}
@@ -52,7 +52,7 @@ const itemListLd = {
     <div class="mt-8 overflow-x-auto">
       <table class="min-w-full text-sm">
         <thead>
-          <tr class="border-b text-left text-gray-500">
+          <tr class="border-b text-left text-text-muted">
             <th class="pb-2 pr-4 font-medium">Company</th>
             <th class="pb-2 pr-4 font-medium">Country</th>
             <th class="pb-2 pr-4 font-medium">Type</th>
@@ -61,11 +61,11 @@ const itemListLd = {
         </thead>
         <tbody>
           {sorted.map(c => (
-            <tr class="border-b border-gray-100">
-              <td class="py-2 pr-4"><a href={`/companies/${c.data.slug}/`} class="text-indigo-700 hover:underline">{c.data.name}</a></td>
-              <td class="py-2 pr-4 text-gray-600">{c.data.country}</td>
-              <td class="py-2 pr-4 text-gray-600 capitalize">{c.data.type}</td>
-              <td class="py-2 pr-4 text-gray-600">{c.data.founded || '—'}</td>
+            <tr class="border-b border-border-subtle">
+              <td class="py-2 pr-4"><a href={`/companies/${c.data.slug}/`} class="text-info hover:underline">{c.data.name}</a></td>
+              <td class="py-2 pr-4 text-text-secondary">{c.data.country}</td>
+              <td class="py-2 pr-4 text-text-secondary capitalize">{c.data.type}</td>
+              <td class="py-2 pr-4 text-text-secondary">{c.data.founded || '—'}</td>
             </tr>
           ))}
         </tbody>

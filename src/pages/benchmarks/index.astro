@@ -27,7 +27,7 @@ const itemListLd = {
   <article>
     <h1 class="text-3xl font-bold">Quantum Computing Benchmarks</h1>
     <div class="summary" role="doc-abstract">
-      <p class="mt-2 text-gray-600">
+      <p class="mt-2 text-text-secondary">
         {allBenchmarks.length} reproducible quantum computing benchmarks for hybrid quantum-classical algorithms.
       </p>
     </div>
@@ -35,7 +35,7 @@ const itemListLd = {
     <div class="mt-8 overflow-x-auto">
       <table class="min-w-full text-sm">
         <thead>
-          <tr class="border-b text-left text-gray-500">
+          <tr class="border-b text-left text-text-muted">
             <th class="pb-2 pr-4 font-medium">Benchmark</th>
             <th class="pb-2 pr-4 font-medium">Algorithm</th>
             <th class="pb-2 pr-4 font-medium">Category</th>
@@ -44,11 +44,11 @@ const itemListLd = {
         </thead>
         <tbody>
           {sorted.map(b => (
-            <tr class="border-b border-gray-100">
-              <td class="py-2 pr-4"><a href={`/benchmarks/${b.data.slug}/`} class="text-indigo-700 hover:underline">{b.data.name}</a></td>
-              <td class="py-2 pr-4 text-gray-600">{b.data.algorithm}</td>
-              <td class="py-2 pr-4 text-gray-600 capitalize">{b.data.category}</td>
-              <td class="py-2 pr-4 text-gray-600">{b.data.qubits || '—'}</td>
+            <tr class="border-b border-border-subtle">
+              <td class="py-2 pr-4"><a href={`/benchmarks/${b.data.slug}/`} class="text-info hover:underline">{b.data.name}</a></td>
+              <td class="py-2 pr-4 text-text-secondary">{b.data.algorithm}</td>
+              <td class="py-2 pr-4 text-text-secondary capitalize">{b.data.category}</td>
+              <td class="py-2 pr-4 text-text-secondary">{b.data.qubits || '—'}</td>
             </tr>
           ))}
         </tbody>

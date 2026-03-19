@@ -23,12 +23,12 @@ const itemListLd = {
   <article>
     <h1 class="text-3xl font-bold">Quantum Computing Challenges</h1>
     <div class="summary" role="doc-abstract">
-      <p class="mt-2 text-gray-600">{allChallenges.length} quantum computing hackathons, competitions, and open challenges.</p>
+      <p class="mt-2 text-text-secondary">{allChallenges.length} quantum computing hackathons, competitions, and open challenges.</p>
     </div>
 
     <div class="mt-8 overflow-x-auto">
       <table class="min-w-full text-sm">
-        <thead><tr class="border-b text-left text-gray-500">
+        <thead><tr class="border-b text-left text-text-muted">
           <th class="pb-2 pr-4 font-medium">Challenge</th>
           <th class="pb-2 pr-4 font-medium">Organizer</th>
           <th class="pb-2 pr-4 font-medium">Status</th>
@@ -36,11 +36,11 @@ const itemListLd = {
         </tr></thead>
         <tbody>
           {sorted.map(ch => (
-            <tr class="border-b border-gray-100">
-              <td class="py-2 pr-4"><a href={`/challenges/${ch.data.slug}/`} class="text-indigo-700 hover:underline">{ch.data.name}</a></td>
-              <td class="py-2 pr-4 text-gray-600">{ch.data.organizer}</td>
-              <td class="py-2 pr-4 text-gray-600 capitalize">{ch.data.status}</td>
-              <td class="py-2 pr-4 text-gray-600">{ch.data.dateStart || '—'}</td>
+            <tr class="border-b border-border-subtle">
+              <td class="py-2 pr-4"><a href={`/challenges/${ch.data.slug}/`} class="text-info hover:underline">{ch.data.name}</a></td>
+              <td class="py-2 pr-4 text-text-secondary">{ch.data.organizer}</td>
+              <td class="py-2 pr-4 text-text-secondary capitalize">{ch.data.status}</td>
+              <td class="py-2 pr-4 text-text-secondary">{ch.data.dateStart || '—'}</td>
             </tr>
           ))}
         </tbody>

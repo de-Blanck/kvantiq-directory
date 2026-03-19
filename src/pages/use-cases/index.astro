@@ -24,22 +24,22 @@ const itemListLd = {
   <article>
     <h1 class="text-3xl font-bold">Quantum Computing Use Cases</h1>
     <div class="summary" role="doc-abstract">
-      <p class="mt-2 text-gray-600">{allUseCases.length} real-world use cases for hybrid quantum-classical computing.</p>
+      <p class="mt-2 text-text-secondary">{allUseCases.length} real-world use cases for hybrid quantum-classical computing.</p>
     </div>
 
     <div class="mt-8 overflow-x-auto">
       <table class="min-w-full text-sm">
-        <thead><tr class="border-b text-left text-gray-500">
+        <thead><tr class="border-b text-left text-text-muted">
           <th class="pb-2 pr-4 font-medium">Use Case</th>
           <th class="pb-2 pr-4 font-medium">Industry</th>
           <th class="pb-2 pr-4 font-medium">Category</th>
         </tr></thead>
         <tbody>
           {sorted.map(u => (
-            <tr class="border-b border-gray-100">
-              <td class="py-2 pr-4"><a href={`/use-cases/${u.data.slug}/`} class="text-indigo-700 hover:underline">{u.data.name}</a></td>
-              <td class="py-2 pr-4 text-gray-600">{u.data.industry}</td>
-              <td class="py-2 pr-4 text-gray-600 capitalize">{u.data.category}</td>
+            <tr class="border-b border-border-subtle">
+              <td class="py-2 pr-4"><a href={`/use-cases/${u.data.slug}/`} class="text-info hover:underline">{u.data.name}</a></td>
+              <td class="py-2 pr-4 text-text-secondary">{u.data.industry}</td>
+              <td class="py-2 pr-4 text-text-secondary capitalize">{u.data.category}</td>
             </tr>
           ))}
         </tbody>

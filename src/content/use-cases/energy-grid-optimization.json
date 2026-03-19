@@ -1,0 +1,20 @@
+{
+  "name": "Smart Grid Energy Optimization",
+  "slug": "energy-grid-optimization",
+  "industry": "Energy",
+  "category": "energy",
+  "tags": ["smart-grid", "energy-distribution", "optimization", "renewable-energy", "load-balancing"],
+  "description": "Using quantum optimization to manage complex energy distribution networks, balance renewable energy sources, and optimize grid stability in real-time.",
+  "problem": "Modern power grids must balance fluctuating renewable energy sources, unpredictable demand, storage systems, and distributed generation. The combinatorial optimization problem grows exponentially with grid complexity, making real-time optimization classically challenging.",
+  "approach": "Quantum annealing and QAOA formulate grid optimization as quadratic unconstrained binary optimization (QUBO) problems. These algorithms find near-optimal power flow solutions, unit commitment schedules, and demand response strategies faster than classical methods.",
+  "results": "Early trials demonstrate feasibility for medium-scale grid optimization problems. EDF and Pasqal have partnered to explore quantum optimization for European grid management scenarios.",
+  "companies": ["Pasqal", "EDF", "D-Wave"],
+  "sources": [
+    {
+      "type": "url",
+      "url": "https://www.pasqal.com/articles/quantum-computing-for-energy",
+      "title": "Quantum Computing for Energy Optimization",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

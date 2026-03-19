@@ -63,8 +63,8 @@ const faqLd = {
     <h1 class="text-3xl font-bold">{company.name}</h1>
 
     <div class="summary mt-4" role="doc-abstract">
-      <p class="text-gray-700">{company.description}<sup><a href="#ref-1" class="text-indigo-500 ml-0.5">[1]</a></sup></p>
-      <ul class="mt-3 space-y-1 text-sm text-gray-600">
+      <p class="text-text-secondary">{company.description}<sup><a href="#ref-1" class="text-info ml-0.5">[1]</a></sup></p>
+      <ul class="mt-3 space-y-1 text-sm text-text-secondary">
         {company.founded && <li>Founded: <time datetime={String(company.founded)}>{company.founded}</time></li>}
         <li>Country: {company.country}</li>
         <li>Type: <span class="capitalize">{company.type}</span></li>
@@ -80,37 +80,37 @@ const faqLd = {
 
     <section class="mt-8">
       <h2 class="text-xl font-semibold">What does {company.name} do?</h2>
-      <p class="mt-2 text-gray-700">{company.description}</p>
+      <p class="mt-2 text-text-secondary">{company.description}</p>
     </section>
 
     <section class="mt-6">
       <h2 class="text-xl font-semibold">Where is {company.name} based?</h2>
-      <p class="mt-2 text-gray-700">{company.name} is headquartered in {company.headquarters || company.country}, in the {company.region === 'nordics' ? 'Nordic' : company.region === 'dach' ? 'DACH' : 'European'} quantum computing ecosystem.</p>
+      <p class="mt-2 text-text-secondary">{company.name} is headquartered in {company.headquarters || company.country}, in the {company.region === 'nordics' ? 'Nordic' : company.region === 'dach' ? 'DACH' : 'European'} quantum computing ecosystem.</p>
     </section>
 
     <section class="mt-6">
       <h2 class="text-xl font-semibold">Visit {company.name}</h2>
       <p class="mt-2">
-        <a href={company.website} target="_blank" rel="noopener noreferrer" class="text-indigo-700 hover:underline">
+        <a href={company.website} target="_blank" rel="noopener noreferrer" class="text-info hover:underline">
           {company.website}
         </a>
       </p>
     </section>
 
-    <section class="faq mt-8 rounded-lg border border-gray-200 p-6">
+    <section class="faq mt-8 rounded-lg border border-border p-6">
       <h2 class="text-lg font-semibold">Frequently Asked Questions</h2>
       <details class="mt-3">
-        <summary class="cursor-pointer font-medium text-gray-700">What does {company.name} do?</summary>
-        <p class="mt-2 text-sm text-gray-600">{company.description}</p>
+        <summary class="cursor-pointer font-medium text-text-secondary">What does {company.name} do?</summary>
+        <p class="mt-2 text-sm text-text-secondary">{company.description}</p>
       </details>
       <details class="mt-3">
-        <summary class="cursor-pointer font-medium text-gray-700">Where is {company.name} based?</summary>
-        <p class="mt-2 text-sm text-gray-600">{company.name} is based in {company.headquarters || company.country}.</p>
+        <summary class="cursor-pointer font-medium text-text-secondary">Where is {company.name} based?</summary>
+        <p class="mt-2 text-sm text-text-secondary">{company.name} is based in {company.headquarters || company.country}.</p>
       </details>
       {company.founded && (
         <details class="mt-3">
-          <summary class="cursor-pointer font-medium text-gray-700">When was {company.name} founded?</summary>
-          <p class="mt-2 text-sm text-gray-600">{company.name} was founded in {company.founded}.</p>
+          <summary class="cursor-pointer font-medium text-text-secondary">When was {company.name} founded?</summary>
+          <p class="mt-2 text-sm text-text-secondary">{company.name} was founded in {company.founded}.</p>
         </details>
       )}
     </section>

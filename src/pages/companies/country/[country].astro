@@ -25,13 +25,13 @@ const sorted = companies.sort((a: any, b: any) => a.data.name.localeCompare(b.da
   <article>
     <h1 class="text-3xl font-bold">Quantum Companies in {countryName}</h1>
     <div class="summary" role="doc-abstract">
-      <p class="mt-2 text-gray-600">
+      <p class="mt-2 text-text-secondary">
         {companies.length} quantum computing {companies.length === 1 ? 'company' : 'companies'} based in {countryName}.
       </p>
     </div>
 
     <div class="mt-2">
-      <a href="/companies/" class="text-sm text-indigo-700 hover:underline">&larr; All companies</a>
+      <a href="/companies/" class="text-sm text-info hover:underline">&larr; All companies</a>
     </div>
 
     <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
