@@ -4,6 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import ListingCard from '../components/ListingCard.astro';
 import NewsletterSignup from '../components/NewsletterSignup.astro';
 import JsonLd from '../components/JsonLd.astro';
+import SearchBar from '../components/SearchBar.astro';
 
 const allCompanies = await getCollection('companies');
 const featured = allCompanies.filter(c => c.data.featured).sort((a, b) => a.data.name.localeCompare(b.data.name));
@@ -40,7 +41,9 @@ const websiteLd = {
     <p class="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
       The European quantum computing ecosystem — companies, benchmarks, use cases, challenges, and resources across Nordics and DACH.
     </p>
-    <div class="mx-auto mt-6 max-w-md" id="search"></div>
+    <div class="mx-auto mt-6 max-w-md">
+      <SearchBar />
+    </div>
   </section>
 
   <!-- Featured companies -->
