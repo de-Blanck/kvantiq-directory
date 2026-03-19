@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ListingCard from '../../components/ListingCard.astro';
+
+const allChallenges = await getCollection('challenges');
+const sorted = allChallenges.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const itemListLd = {
+  "@context": "https://schema.org", "@type": "ItemList",
+  "name": "Quantum Computing Challenges & Competitions",
+  "numberOfItems": allChallenges.length,
+  "itemListElement": sorted.map((ch, i) => ({
+    "@type": "ListItem", "position": i + 1, "name": ch.data.name, "url": `/challenges/${ch.data.slug}/`,
+  })),
+};
+---
+<BaseLayout
+  title="Quantum Computing Challenges"
+  description={`Browse ${allChallenges.length} quantum computing hackathons, competitions, and challenges.`}
+  jsonLd={itemListLd}
+>
+  <article>
+    <h1 class="text-3xl font-bold">Quantum Computing Challenges</h1>
+    <div class="summary" role="doc-abstract">
+      <p class="mt-2 text-gray-600">{allChallenges.length} quantum computing hackathons, competitions, and open challenges.</p>
+    </div>
+
+    <div class="mt-8 overflow-x-auto">
+      <table class="min-w-full text-sm">
+        <thead><tr class="border-b text-left text-gray-500">
+          <th class="pb-2 pr-4 font-medium">Challenge</th>
+          <th class="pb-2 pr-4 font-medium">Organizer</th>
+          <th class="pb-2 pr-4 font-medium">Status</th>
+          <th class="pb-2 pr-4 font-medium">Date</th>
+        </tr></thead>
+        <tbody>
+          {sorted.map(ch => (
+            <tr class="border-b border-gray-100">
+              <td class="py-2 pr-4"><a href={`/challenges/${ch.data.slug}/`} class="text-indigo-700 hover:underline">{ch.data.name}</a></td>
+              <td class="py-2 pr-4 text-gray-600">{ch.data.organizer}</td>
+              <td class="py-2 pr-4 text-gray-600 capitalize">{ch.data.status}</td>
+              <td class="py-2 pr-4 text-gray-600">{ch.data.dateStart || '—'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {sorted.map(ch => (
+        <ListingCard title={ch.data.name} href={`/challenges/${ch.data.slug}/`} description={ch.data.description} tags={ch.data.tags} meta={`${ch.data.organizer} · ${ch.data.status}`} />
+      ))}
+    </div>
+  </article>
+</BaseLayout>

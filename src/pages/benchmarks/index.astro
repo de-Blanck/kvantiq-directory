@@ -1,0 +1,70 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ListingCard from '../../components/ListingCard.astro';
+
+const allBenchmarks = await getCollection('benchmarks');
+const sorted = allBenchmarks.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const itemListLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Quantum Computing Benchmarks",
+  "numberOfItems": allBenchmarks.length,
+  "itemListElement": sorted.map((b, i) => ({
+    "@type": "ListItem",
+    "position": i + 1,
+    "name": b.data.name,
+    "url": `/benchmarks/${b.data.slug}/`,
+  })),
+};
+---
+<BaseLayout
+  title="Quantum Computing Benchmarks"
+  description={`Browse ${allBenchmarks.length} reproducible quantum computing benchmarks across optimization, chemistry, machine learning, and more.`}
+  jsonLd={itemListLd}
+>
+  <article>
+    <h1 class="text-3xl font-bold">Quantum Computing Benchmarks</h1>
+    <div class="summary" role="doc-abstract">
+      <p class="mt-2 text-gray-600">
+        {allBenchmarks.length} reproducible quantum computing benchmarks for hybrid quantum-classical algorithms.
+      </p>
+    </div>
+
+    <div class="mt-8 overflow-x-auto">
+      <table class="min-w-full text-sm">
+        <thead>
+          <tr class="border-b text-left text-gray-500">
+            <th class="pb-2 pr-4 font-medium">Benchmark</th>
+            <th class="pb-2 pr-4 font-medium">Algorithm</th>
+            <th class="pb-2 pr-4 font-medium">Category</th>
+            <th class="pb-2 pr-4 font-medium">Qubits</th>
+          </tr>
+        </thead>
+        <tbody>
+          {sorted.map(b => (
+            <tr class="border-b border-gray-100">
+              <td class="py-2 pr-4"><a href={`/benchmarks/${b.data.slug}/`} class="text-indigo-700 hover:underline">{b.data.name}</a></td>
+              <td class="py-2 pr-4 text-gray-600">{b.data.algorithm}</td>
+              <td class="py-2 pr-4 text-gray-600 capitalize">{b.data.category}</td>
+              <td class="py-2 pr-4 text-gray-600">{b.data.qubits || '—'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {sorted.map(b => (
+        <ListingCard
+          title={b.data.name}
+          href={`/benchmarks/${b.data.slug}/`}
+          description={b.data.description}
+          tags={b.data.tags}
+          meta={`${b.data.algorithm} · ${b.data.category}`}
+        />
+      ))}
+    </div>
+  </article>
+</BaseLayout>
