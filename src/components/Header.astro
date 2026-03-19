@@ -1,0 +1,30 @@
+---
+const navItems = [
+  { href: '/companies/', label: 'Companies' },
+  { href: '/benchmarks/', label: 'Benchmarks' },
+  { href: '/use-cases/', label: 'Use Cases' },
+  { href: '/challenges/', label: 'Challenges' },
+  { href: '/resources/', label: 'Resources' },
+];
+const currentPath = Astro.url.pathname;
+---
+<header class="border-b border-gray-200 bg-white" data-pagefind-ignore>
+  <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
+    <a href="/" class="text-xl font-bold text-indigo-700">Kvantiq Directory</a>
+    <ul class="hidden gap-6 md:flex">
+      {navItems.map(({ href, label }) => (
+        <li>
+          <a
+            href={href}
+            class={`text-sm font-medium ${currentPath.startsWith(href) ? 'text-indigo-700' : 'text-gray-600 hover:text-gray-900'}`}
+          >
+            {label}
+          </a>
+        </li>
+      ))}
+    </ul>
+    <a href="/submit/" class="rounded-md bg-indigo-700 px-3 py-1.5 text-sm font-medium text-white hover:bg-indigo-800">
+      Submit Listing
+    </a>
+  </nav>
+</header>
