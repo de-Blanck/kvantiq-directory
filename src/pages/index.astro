@@ -1,7 +1,82 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ListingCard from '../components/ListingCard.astro';
+import NewsletterSignup from '../components/NewsletterSignup.astro';
+import JsonLd from '../components/JsonLd.astro';
+
+const allCompanies = await getCollection('companies');
+const featured = allCompanies.filter(c => c.data.featured).sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const categories = [
+  { href: '/companies/', label: 'Companies', description: 'Quantum computing companies across Europe' },
+  { href: '/benchmarks/', label: 'Benchmarks', description: 'Reproducible quantum computing benchmarks' },
+  { href: '/use-cases/', label: 'Use Cases', description: 'Real-world hybrid quantum-classical applications' },
+  { href: '/challenges/', label: 'Challenges', description: 'Hackathons, competitions, and open challenges' },
+  { href: '/resources/', label: 'Resources', description: 'Frameworks, courses, funding, and tools' },
+];
+
+const websiteLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Kvantiq Directory",
+  "url": "https://kvantiq.com",
+  "description": "The European directory for quantum computing — companies, benchmarks, use cases, and resources.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://kvantiq.com/?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+};
 ---
-<BaseLayout title="European Quantum Computing Directory" description="The curated directory of quantum computing companies, benchmarks, use cases, and resources across Europe.">
-  <h1 class="text-3xl font-bold">Kvantiq Directory</h1>
-  <p class="mt-2 text-gray-600">The European quantum computing ecosystem — coming soon.</p>
+<BaseLayout
+  title="European Quantum Computing Directory"
+  description="The curated directory of quantum computing companies, benchmarks, use cases, and resources across Europe. Focused on Nordics and DACH."
+  jsonLd={websiteLd}
+>
+  <!-- Hero -->
+  <section class="py-12 text-center">
+    <h1 class="text-4xl font-bold tracking-tight sm:text-5xl">Kvantiq Directory</h1>
+    <p class="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
+      The European quantum computing ecosystem — companies, benchmarks, use cases, challenges, and resources across Nordics and DACH.
+    </p>
+    <div class="mx-auto mt-6 max-w-md" id="search"></div>
+  </section>
+
+  <!-- Featured companies -->
+  {featured.length > 0 && (
+    <section class="mt-8">
+      <h2 class="text-2xl font-bold">Featured Companies</h2>
+      <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {featured.map(c => (
+          <ListingCard
+            title={c.data.name}
+            href={`/companies/${c.data.slug}/`}
+            description={c.data.description}
+            tags={c.data.tags}
+            meta={`${c.data.country} · ${c.data.type}`}
+            featured={true}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- Category cards -->
+  <section class="mt-12">
+    <h2 class="text-2xl font-bold">Browse the Directory</h2>
+    <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {categories.map(cat => (
+        <a href={cat.href} class="block rounded-lg border border-gray-200 p-5 transition hover:shadow-md">
+          <h3 class="font-semibold text-indigo-700">{cat.label}</h3>
+          <p class="mt-1 text-sm text-gray-600">{cat.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="mt-12">
+    <NewsletterSignup />
+  </section>
 </BaseLayout>
