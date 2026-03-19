@@ -1,0 +1,34 @@
+# Kvantiq Directory
+
+> The European directory for quantum computing — companies, benchmarks,
+> use cases, and resources across Nordics and DACH.
+
+Kvantiq Directory is a curated, structured database of the European
+quantum computing ecosystem. All data is open and machine-readable.
+
+## Companies
+
+- [Quantum Companies Index](/companies/): Browse all listed quantum companies
+- [Companies by Country](/companies/country/finland/): Filter by country
+
+## Benchmarks
+
+- [Quantum Benchmarks](/benchmarks/): Reproducible quantum computing benchmarks
+
+## Use Cases
+
+- [Hybrid Quantum-Classical Use Cases](/use-cases/): Real-world applications
+
+## Challenges
+
+- [Quantum Challenges](/challenges/): Competitions and hackathons
+
+## Resources
+
+- [Frameworks, Courses, Funding](/resources/): European quantum resources
+
+## Optional
+
+- [About Kvantiq](/about/): About the directory
+- [Submit a Listing](/submit/): Suggest a new entry
+- [Full Content for LLMs](/llms-full.txt): All directory content in one file
