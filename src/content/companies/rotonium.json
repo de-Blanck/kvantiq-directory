@@ -1,0 +1,28 @@
+{
+  "name": "Rotonium",
+  "slug": "rotonium",
+  "country": "Italy",
+  "region": "southern-europe",
+  "type": "hardware",
+  "tags": ["photonics", "room-temperature", "qudit", "silicon-photonics", "space"],
+  "founded": 2022,
+  "description": "Rotonium is an Italian deep-tech startup developing room-temperature photonic quantum computers using single-photon qudit technology. Based in Padua and backed by CDP Venture Capital, the company builds silicon photonics components that enable compact quantum systems operable on Earth, in the air, and in space without cryogenic cooling.",
+  "website": "https://www.rotonium.com",
+  "featured": false,
+  "headquarters": "Padua, Italy",
+  "funding": "EUR 1M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.rotonium.com",
+      "title": "Rotonium Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2024/08/02/deep-tech-startup-rotonium-raises-e1-million-in-seed-funding-to-take-quantum-computers-into-space/",
+      "title": "Deep-tech Startup Rotonium Raises EUR 1 Million in Seed Funding to Take Quantum Computers Into Space - The Quantum Insider",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

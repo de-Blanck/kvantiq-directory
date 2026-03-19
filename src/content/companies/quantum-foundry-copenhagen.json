@@ -1,0 +1,27 @@
+{
+  "name": "Quantum Foundry Copenhagen",
+  "slug": "quantum-foundry-copenhagen",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "hardware",
+  "tags": ["quantum-chips", "fabrication", "superconducting", "semiconducting", "photonics"],
+  "description": "Quantum Foundry Copenhagen develops ultra-high-vacuum manufacturing tools and processes for next-generation quantum processor units (QPUs). Owned by the Novo Nordisk Foundation and part of the Novo Nordisk Foundation Quantum Computing Programme (NQCP) at the Niels Bohr Institute, the foundry produces wafer-based integrated circuits with superconducting, semiconducting, and photonic components at extreme atomic and isotopic purity.",
+  "website": "https://qfcph.com",
+  "featured": false,
+  "headquarters": "Copenhagen, Denmark",
+  "employees": "10+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://qfcph.com",
+      "title": "Quantum Foundry Copenhagen Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://nqcp.ku.dk/about-nqcp/",
+      "title": "The Programme — Novo Nordisk Foundation Quantum Computing Programme, University of Copenhagen",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

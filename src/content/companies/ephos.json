@@ -1,0 +1,28 @@
+{
+  "name": "Ephos",
+  "slug": "ephos",
+  "country": "Italy",
+  "region": "southern-europe",
+  "type": "hardware",
+  "tags": ["photonics", "quantum-chips", "glass-photonic", "eu-chips-act"],
+  "founded": 2022,
+  "description": "Ephos designs and manufactures glass-based quantum photonic chips at its facility in Milan, the first of its kind worldwide. Founded by researchers from Stanford, Harvard, and Politecnico di Milano, the company has secured EUR 41.5M under the EU Chips Act to build a second manufacturing facility for glass photonic chip production in Italy.",
+  "website": "https://ephos.io",
+  "featured": false,
+  "headquarters": "Milan, Italy",
+  "funding": "EUR 50M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://ephos.io",
+      "title": "Ephos Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.eu-startups.com/2024/09/milan-based-ephos-raises-e7-6-million-to-deliver-glass-based-quantum-photonic-chips/",
+      "title": "Milan-based Ephos raises EUR 7.6 million to deliver glass-based quantum photonic chips - EU-Startups",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

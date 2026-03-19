@@ -1,0 +1,35 @@
+{
+  "name": "Riverlane",
+  "slug": "riverlane",
+  "country": "United Kingdom",
+  "region": "uk",
+  "type": "software",
+  "tags": ["quantum-error-correction", "decoder", "middleware", "hardware-agnostic"],
+  "founded": 2016,
+  "description": "Riverlane is a Cambridge-based quantum computing company focused on quantum error correction (QEC) technology. The company develops hardware-agnostic QEC decoders, including its Local Clustering Decoder, that enable quantum computers to perform reliable computations at scale. Riverlane has raised over $125 million in total funding, including Europe's first Series C round in quantum computing.",
+  "website": "https://www.riverlane.com",
+  "featured": false,
+  "headquarters": "Cambridge, United Kingdom",
+  "employees": "170+",
+  "funding": "USD 125M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.riverlane.com",
+      "title": "Riverlane Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://www.riverlane.com/press-release/riverlane-raises-75-million-to-meet-surging-global-demand-for-quantum-error-correction-technology",
+      "title": "Riverlane raises $75 million to meet surging global demand for quantum error correction technology",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.riverlane.com/press-release/riverlane-publishes-qec-technology-roadmap",
+      "title": "Riverlane publishes QEC Technology Roadmap that can accelerate quantum computing's path to utility-scale by 3-5 years",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

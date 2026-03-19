@@ -1,0 +1,27 @@
+{
+  "name": "Aqarios",
+  "slug": "aqarios",
+  "country": "Germany",
+  "region": "dach",
+  "type": "software",
+  "tags": ["quantum-software", "optimization", "quantum-platform", "machine-learning"],
+  "founded": 2021,
+  "description": "Aqarios provides a cloud-based quantum computing platform called Luna for solving real-world optimization, simulation, and machine learning problems. Spun off from the QAR-Lab at LMU Munich, the company partners with IBM Quantum hardware and works with industrial clients including SAP, BASF, E.ON, and MTU Aero Engines.",
+  "website": "https://aqarios.com",
+  "featured": false,
+  "headquarters": "Munich, Germany",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://aqarios.com",
+      "title": "Aqarios Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://aqarios.com/aqarios-luna-quantum-platform-launch/",
+      "title": "Aqarios launches Luna, a quantum computing platform designed to simplify complex problem-solving for businesses",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

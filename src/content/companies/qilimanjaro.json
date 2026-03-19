@@ -1,0 +1,28 @@
+{
+  "name": "Qilimanjaro",
+  "slug": "qilimanjaro",
+  "country": "Spain",
+  "region": "southern-europe",
+  "type": "hardware",
+  "tags": ["analog-quantum-computing", "superconducting", "quantum-annealing", "full-stack", "eurohpc"],
+  "founded": 2019,
+  "description": "Qilimanjaro Quantum Tech builds full-stack analog quantum computers based on superconducting fluxonium qubits. A spin-off of IFAE, BSC, and the University of Barcelona, the company won the Quantum Spain tender to build the first Spanish quantum computer and operates the first multimodal quantum data center in Europe at the Barcelona Supercomputing Center.",
+  "website": "https://qilimanjaro.tech",
+  "featured": false,
+  "headquarters": "Barcelona, Spain",
+  "funding": "EUR 12M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://qilimanjaro.tech",
+      "title": "Qilimanjaro Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://insidehpc.com/2025/02/eurohpc-ju-acquires-e8-5m-qilimanjaro-quantum-annealer-to-be-at-barcelona-supercomputing-center/",
+      "title": "EuroHPC JU Acquires EUR 8.5M Qilimanjaro Quantum Annealer to be at Barcelona Supercomputing Center",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

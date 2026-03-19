@@ -1,0 +1,28 @@
+{
+  "name": "AdamantQ",
+  "slug": "adamantq",
+  "country": "Sweden",
+  "region": "nordics",
+  "type": "hardware",
+  "tags": ["quantum-sensing", "diamond", "atomic-clock", "timing", "navigation"],
+  "founded": 2022,
+  "description": "AdamantQ is a Swedish quantum technology company based in Lund that develops chip-scale quantum sensing and timing devices using crystal defects within synthetically grown diamonds. Its primary product, the Quantum Diamond Atomic Clock (QDi.AC), provides a compact frequency reference with exceptional timing holdover for applications in GPS receivers, inertial navigation systems, and network infrastructure.",
+  "website": "https://www.adamantq.com",
+  "featured": false,
+  "headquarters": "Lund, Sweden",
+  "funding": "SEK 9.2M",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.adamantq.com",
+      "title": "AdamantQ Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://navigareventures.com/news-stories/adamant-quanta-closes-sek-92-million-financing-round-deliver-breakthrough-diamond",
+      "title": "Adamant Quanta closes SEK 9.2 million financing round to deliver breakthrough diamond-based atomic clocks - Navigare Ventures",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

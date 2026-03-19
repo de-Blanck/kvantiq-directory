@@ -1,0 +1,35 @@
+{
+  "name": "Quantinuum",
+  "slug": "quantinuum",
+  "country": "United Kingdom",
+  "region": "uk",
+  "type": "hybrid",
+  "tags": ["trapped-ion", "full-stack", "quantum-volume", "cybersecurity", "TKET"],
+  "founded": 2021,
+  "description": "Quantinuum is the world's largest integrated quantum computing company, formed in 2021 from the merger of Honeywell Quantum Solutions and Cambridge Quantum. Registered in the UK with European headquarters in Cambridge, the company builds trapped-ion quantum computers (H-Series) that hold the record for highest quantum volume. Quantinuum also develops quantum software including the open-source TKET compiler and quantum cybersecurity products.",
+  "website": "https://www.quantinuum.com",
+  "featured": false,
+  "headquarters": "Cambridge, United Kingdom",
+  "employees": "600+",
+  "funding": "USD 1.2B+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.quantinuum.com",
+      "title": "Quantinuum Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://www.quantinuum.com/press-releases/honeywell-announces-600-million-capital-raise-for-quantinuum-at-10b-pre-money-equity-valuation-to-advance-quantum-computing-at-scale",
+      "title": "Honeywell Announces $600 Million Capital Raise For Quantinuum at $10B Pre-Money Equity Valuation",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://en.wikipedia.org/wiki/Quantinuum",
+      "title": "Quantinuum - Wikipedia",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

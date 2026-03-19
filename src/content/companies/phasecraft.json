@@ -1,0 +1,35 @@
+{
+  "name": "Phasecraft",
+  "slug": "phasecraft",
+  "country": "United Kingdom",
+  "region": "uk",
+  "type": "software",
+  "tags": ["quantum-algorithms", "materials-science", "optimization", "hardware-agnostic"],
+  "founded": 2018,
+  "description": "Phasecraft is a UK quantum algorithms company co-founded by leading researchers from the University of Bristol and UCL, developing hardware-agnostic quantum algorithms for practical applications in materials discovery, chemistry, and energy optimization. The company works with industry partners including Johnson Matthey, Oxford PV, and BT to translate quantum computing's theoretical promise into near-term commercial advantage.",
+  "website": "https://www.phasecraft.io",
+  "featured": false,
+  "headquarters": "Bristol, United Kingdom",
+  "employees": "50+",
+  "funding": "USD 40M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.phasecraft.io",
+      "title": "Phasecraft Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.bristol.ac.uk/news/2025/september/phasecraft.html",
+      "title": "Phasecraft funding - University of Bristol News",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.uktech.news/deep-tech/phasecraft-quantum-computing-20230816",
+      "title": "Phasecraft raises GBP 13m for practical quantum problem-solving - UKTech News",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

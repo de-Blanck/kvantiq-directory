@@ -1,0 +1,29 @@
+{
+  "name": "QuiX Quantum",
+  "slug": "quix-quantum",
+  "country": "Netherlands",
+  "region": "western-europe",
+  "type": "hardware",
+  "tags": ["photonic", "quantum-photonics", "silicon-nitride", "universal-quantum-computer"],
+  "founded": 2019,
+  "description": "QuiX Quantum builds photonic quantum processors based on silicon nitride waveguide technology, requiring no cryogenic cooling. The company has deployed over 15 systems worldwide, including 8-qubit and 64-qubit photonic quantum computers to the German Aerospace Centre (DLR), and secured EUR 15M in Series A funding to deliver a universal photonic quantum computer.",
+  "website": "https://www.quixquantum.com",
+  "featured": false,
+  "headquarters": "Enschede, Netherlands",
+  "employees": "50+",
+  "funding": "EUR 15M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.quixquantum.com",
+      "title": "QuiX Quantum Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://siliconcanals.com/quix-quantum-secures-15m/",
+      "title": "Enschede-based QuiX Quantum secures EUR 15M to launch first universal photonic quantum computer",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

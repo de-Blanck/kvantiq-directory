@@ -1,0 +1,27 @@
+{
+  "name": "QBee",
+  "slug": "qbee",
+  "country": "Belgium",
+  "region": "western-europe",
+  "type": "software",
+  "tags": ["quantum-algorithms", "quantum-genomics", "quantum-finance", "quantum-simulation"],
+  "founded": 2020,
+  "description": "QBee develops quantum computing software for scientific domains including computational chemistry, genomics, and earth observation. Founded by quantum computer architecture professor Koen Bertels, the company translates classical algorithms into quantum-optimized formulations and has won international competitions for quantum climate-change solutions.",
+  "website": "https://qbee.eu",
+  "featured": false,
+  "headquarters": "Brasschaat, Belgium",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://qbee.eu",
+      "title": "QBee Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2021/07/23/belgian-startup-bridging-quantum-computing-humanity/",
+      "title": "Belgian Startup Bridging Quantum Computing & Humanity - The Quantum Insider",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

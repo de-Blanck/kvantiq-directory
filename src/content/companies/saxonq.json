@@ -1,0 +1,28 @@
+{
+  "name": "SaxonQ",
+  "slug": "saxonq",
+  "country": "Germany",
+  "region": "dach",
+  "type": "hardware",
+  "tags": ["diamond-qubits", "nv-center", "room-temperature", "mobile-quantum-computer"],
+  "founded": 2021,
+  "description": "SaxonQ develops mobile quantum computers based on nitrogen-vacancy centers in diamond that operate at room temperature without cryogenic cooling. Spun off from the Felix Bloch Institute at Universität Leipzig, the company produces commercially available quantum systems connected to the DLR Quantum Computing Initiative's QCI Connect platform.",
+  "website": "https://www.saxonq.com",
+  "featured": false,
+  "headquarters": "Leipzig, Germany",
+  "employees": "20+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.saxonq.com",
+      "title": "SaxonQ Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://qci.dlr.de/en/partner/saxonq/",
+      "title": "SaxonQ — DLR Quantum Computing Initiative",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Kvantify",
+  "slug": "kvantify",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "software",
+  "tags": ["quantum-algorithms", "life-sciences", "drug-discovery", "HPC", "TechBio"],
+  "founded": 2022,
+  "description": "Kvantify is a Danish quantum computing and TechBio company developing quantum algorithms and high-performance computing solutions for the life sciences sector. The company builds software tools for molecular simulation and drug discovery, and its flagship product Qrunch provides an accessible platform for chemical and biological innovation. Kvantify collaborates with Atom Computing and Danish universities on quantum drug discovery research.",
+  "website": "https://www.kvantify.com",
+  "featured": false,
+  "headquarters": "Copenhagen, Denmark",
+  "employees": "60+",
+  "funding": "EUR 10M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.kvantify.com",
+      "title": "Kvantify Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.eu-startups.com/2024/07/copenhagen-based-kvantify-secures-e10-million-to-unlock-quantum-computing-for-the-life-science-sector/",
+      "title": "Copenhagen-based Kvantify secures €10 million to unlock quantum computing for the life science sector - EU-Startups",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://www.prnewswire.com/news-releases/kvantify-qrunch--unlocking-quantum-computing-for-chemical-and-biological-innovation-302618310.html",
+      "title": "Kvantify Qrunch — Unlocking Quantum Computing for Chemical and Biological Innovation",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

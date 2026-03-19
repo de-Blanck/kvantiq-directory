@@ -1,0 +1,28 @@
+{
+  "name": "Pixel Photonics",
+  "slug": "pixel-photonics",
+  "country": "Germany",
+  "region": "dach",
+  "type": "hardware",
+  "tags": ["single-photon-detectors", "snspd", "nanophotonics", "quantum-communication"],
+  "founded": 2020,
+  "description": "Pixel Photonics develops waveguide-integrated superconducting nanowire single-photon detectors (SNSPDs) that combine high detection efficiency with scalability. Spun off from the University of Münster, the company's detectors serve quantum computing, quantum communication, and LiDAR applications, and are backed by BMBF, EIC, and ESA funding.",
+  "website": "https://www.pixelphotonics.com",
+  "featured": false,
+  "headquarters": "Münster, Germany",
+  "employees": "39",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.pixelphotonics.com",
+      "title": "Pixel Photonics Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.optica.org/about/newsroom/corporate_member_news/2025/pixel_photonics_receives_eu1_million_sprind_funding_for_multi-mode_single_photon_detection/",
+      "title": "Pixel Photonics receives EUR 1 million SPRIND funding for multi-mode single photon detection — Optica",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}
