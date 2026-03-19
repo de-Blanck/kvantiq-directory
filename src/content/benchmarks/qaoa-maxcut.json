@@ -1,0 +1,12 @@
+{
+  "name": "QAOA MaxCut Optimization",
+  "slug": "qaoa-maxcut",
+  "algorithm": "Quantum Approximate Optimization Algorithm (QAOA)",
+  "category": "optimization",
+  "tags": ["QAOA", "optimization", "MaxCut", "hybrid", "combinatorial"],
+  "description": "Benchmark of the Quantum Approximate Optimization Algorithm for solving the MaxCut problem on random graphs. Tests the quality of approximate solutions as a function of circuit depth (p-levels) and graph size. A standard benchmark for hybrid quantum-classical optimization.",
+  "framework": "PennyLane, Cirq",
+  "qubits": 12,
+  "reproducible": true,
+  "datePublished": "2023-11-20"
+}

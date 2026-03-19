@@ -1,0 +1,15 @@
+{
+  "name": "IQM Quantum Computers",
+  "slug": "iqm",
+  "country": "Finland",
+  "region": "nordics",
+  "type": "hardware",
+  "tags": ["superconducting", "hybrid", "EuroHPC", "full-stack"],
+  "founded": 2018,
+  "description": "IQM Quantum Computers is a European leader in building superconducting quantum computers. Based in Finland, IQM provides on-premises quantum computers and partners with EuroHPC to integrate quantum accelerators into European supercomputing centers. IQM focuses on application-specific co-design for industrial quantum advantage.",
+  "website": "https://www.meetiqm.com",
+  "featured": true,
+  "headquarters": "Espoo, Finland",
+  "employees": "250+",
+  "funding": "EUR 200M+"
+}

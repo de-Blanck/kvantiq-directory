@@ -1,0 +1,15 @@
+{
+  "name": "Pasqal",
+  "slug": "pasqal",
+  "country": "France",
+  "region": "western-europe",
+  "type": "hardware",
+  "tags": ["neutral-atom", "hybrid", "EuroHPC", "quantum-simulation"],
+  "founded": 2019,
+  "description": "Pasqal builds neutral-atom quantum processors for solving real-world optimization and simulation problems. Founded by pioneers of cold atom physics including Alain Aspect (Nobel laureate), Pasqal delivers quantum computing solutions to enterprise clients in energy, automotive, and finance.",
+  "website": "https://www.pasqal.com",
+  "featured": true,
+  "headquarters": "Massy, France",
+  "employees": "200+",
+  "funding": "EUR 100M+"
+}

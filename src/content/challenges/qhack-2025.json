@@ -1,0 +1,13 @@
+{
+  "name": "QHack 2025",
+  "slug": "qhack-2025",
+  "organizer": "Xanadu",
+  "tags": ["hackathon", "PennyLane", "open-source", "annual"],
+  "description": "QHack is the world's largest quantum computing hackathon, organized by Xanadu. Teams compete in coding challenges, build quantum projects, and attend workshops with industry leaders.",
+  "website": "https://qhack.ai",
+  "dateStart": "2025-02-01",
+  "dateEnd": "2025-02-28",
+  "status": "completed",
+  "prizes": "Cash prizes, hardware access, internship opportunities",
+  "location": "Online"
+}
