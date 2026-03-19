@@ -1,0 +1,27 @@
+{
+  "name": "Algorithmic Qubits (Error-Corrected Logical Qubits)",
+  "slug": "algorithmic-qubits",
+  "algorithm": "Surface code quantum error correction",
+  "category": "other",
+  "tags": ["error-correction", "Google", "logical-qubit", "surface-code", "Willow"],
+  "description": "Google Quantum AI's metric for measuring progress toward fault-tolerant quantum computing, based on the error suppression factor Lambda achieved by surface code logical qubits. On the Willow processor, a distance-7 surface code using 101 qubits achieved a logical error rate of 0.143% per cycle, with errors suppressed by a factor of 2.14 for each increase in code distance by 2, operating below the surface code threshold.",
+  "hardware": "Google Willow (superconducting)",
+  "framework": "Cirq, Stim",
+  "qubits": 101,
+  "reproducible": true,
+  "datePublished": "2024-08-26",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2408.13687",
+      "title": "Quantum error correction below the surface code threshold",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "doi",
+      "url": "https://www.nature.com/articles/s41586-024-08449-y",
+      "title": "Quantum error correction below the surface code threshold (Nature)",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

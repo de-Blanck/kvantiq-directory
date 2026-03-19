@@ -1,0 +1,27 @@
+{
+  "name": "N2 Dissociation Curve Benchmark",
+  "slug": "n2-dissociation",
+  "algorithm": "VQE with UCCSD / Contextual Subspace VQE",
+  "category": "chemistry",
+  "tags": ["VQE", "UCCSD", "nitrogen", "dissociation", "chemistry", "strong-correlation"],
+  "description": "Benchmark of quantum chemistry methods for computing the potential energy curve of molecular nitrogen (N2) dissociation. The N2 triple bond makes this a challenging test of strongly correlated electron methods. Contextual Subspace VQE has been demonstrated on superconducting quantum hardware for the entire N2 potential energy curve, while cyclic VQE variants achieve chemical accuracy even where standard UCCSD errors increase significantly.",
+  "hardware": "IBM Quantum, simulators",
+  "framework": "Qiskit Nature, PennyLane, TenCirChem",
+  "qubits": 12,
+  "reproducible": true,
+  "datePublished": "2024-10-22",
+  "sources": [
+    {
+      "type": "doi",
+      "url": "https://www.nature.com/articles/s41534-024-00952-4",
+      "title": "Contextual subspace variational quantum eigensolver calculation of the dissociation curve of molecular nitrogen on a superconducting quantum computer",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2401.07491",
+      "title": "Automatic Algorithm Switching for Accurate Quantum Chemical Calculations",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "QUBO Benchmark Suite",
+  "slug": "qubo-benchmark",
+  "algorithm": "Quantum Annealing / QAOA / Simulated Bifurcation",
+  "category": "optimization",
+  "tags": ["QUBO", "quantum-annealing", "combinatorial-optimization", "D-Wave", "benchmark-suite"],
+  "description": "Benchmark suite for Quadratic Unconstrained Binary Optimization (QUBO), the standard formulation for mapping combinatorial problems onto quantum hardware. Compares quantum solvers (D-Wave Hybrid Solver, gate-based QAOA) against quantum-inspired solvers (Toshiba SBM, Fujitsu Digital Annealer) and classical heuristics on established instance libraries including MQLib, random NAE 3-SAT, and Sherrington-Kirkpatrick models.",
+  "hardware": "D-Wave, Fujitsu Digital Annealer, Toshiba SBM",
+  "framework": "D-Wave Ocean, Qiskit",
+  "reproducible": true,
+  "datePublished": "2021-04-28",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2104.14096",
+      "title": "Benchmark of quantum-inspired heuristic solvers for quadratic unconstrained binary optimization",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2602.07357",
+      "title": "Encoding Matters: Benchmarking Binary and D-ary Representations for Quantum Combinatorial Optimization",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

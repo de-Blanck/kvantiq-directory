@@ -1,0 +1,26 @@
+{
+  "name": "CLOPS (Circuit Layer Operations Per Second)",
+  "slug": "clops",
+  "algorithm": "Parameterized model circuits (Quantum Volume-type)",
+  "category": "other",
+  "tags": ["metric", "IBM", "speed", "hardware-performance", "throughput"],
+  "description": "CLOPS is a hardware-agnostic speed metric developed by IBM that measures how fast a quantum processor can execute parameterized circuit layers. It captures the full hardware-software stack including gate execution speed, classical compilation time, control instruction generation, and data transfer rates. IBM updated the metric in 2023 to CLOPSh, replacing Quantum Volume with layer fidelity for a more comprehensive assessment.",
+  "hardware": "IBM Quantum (applicable to any platform)",
+  "framework": "IBM Qiskit",
+  "reproducible": true,
+  "datePublished": "2021-11-01",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2110.14108",
+      "title": "Quality, Speed, and Scale: three key attributes to measure the performance of near-term quantum computers",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.ibm.com/quantum/blog/circuit-layer-operations-per-second",
+      "title": "Driving quantum performance: CLOPS benchmark",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

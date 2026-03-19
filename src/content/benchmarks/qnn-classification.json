@@ -1,0 +1,26 @@
+{
+  "name": "Quantum Neural Network Classification Benchmark",
+  "slug": "qnn-classification",
+  "algorithm": "Quantum Convolutional Neural Network (QCNN)",
+  "category": "machine-learning",
+  "tags": ["QNN", "QCNN", "classification", "MNIST", "machine-learning", "hybrid"],
+  "description": "Benchmark comparing quantum neural network architectures for image classification tasks on standard datasets including MNIST and Fashion-MNIST. Fully parameterized QCNNs achieve excellent classification accuracy despite a small number of free parameters. Comparative studies evaluate noise robustness across different QCNN model structures, data encoding methods, and optimizers under realistic quantum noise channels.",
+  "framework": "Qiskit Machine Learning, PennyLane, TensorFlow Quantum",
+  "qubits": 10,
+  "reproducible": true,
+  "datePublished": "2021-08-02",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2108.00661",
+      "title": "Quantum convolutional neural network for classical data classification",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2501.14412",
+      "title": "Quantum Neural Networks: A Comparative Analysis and Noise Robustness Evaluation",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Mirror Circuits Benchmark",
+  "slug": "mirror-circuits",
+  "algorithm": "Randomized mirror circuits (Clifford-based)",
+  "category": "other",
+  "tags": ["benchmarking", "mirror-circuits", "gate-fidelity", "scalable", "crosstalk"],
+  "description": "Scalable randomized benchmarking method using mirror circuits that estimates the average infidelity of many-qubit logic layers. Unlike standard randomized benchmarking, which becomes infeasible beyond roughly five qubits, mirror circuits scale to hundreds of qubits. The technique can reveal and quantify crosstalk errors, demonstrated with simulations of up to 225 qubits and experiments on up to 16 physical qubits.",
+  "hardware": "Various (cloud quantum platforms)",
+  "framework": "pyGSTi, Cirq",
+  "qubits": 225,
+  "reproducible": true,
+  "datePublished": "2021-12-18",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2112.09853",
+      "title": "Scalable randomized benchmarking of quantum computers using mirror circuits",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2312.14107",
+      "title": "Scalable Full-Stack Benchmarks for Quantum Computers",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Cross-Entropy Benchmarking (XEB)",
+  "slug": "xeb-cross-entropy",
+  "algorithm": "Linear cross-entropy on random quantum circuits",
+  "category": "other",
+  "tags": ["XEB", "Google", "quantum-supremacy", "Sycamore", "random-circuits"],
+  "description": "Cross-entropy benchmarking (XEB) is a statistical method for evaluating quantum processor performance by measuring how well experimental output distributions of random circuits correlate with ideal distributions. Google used linear XEB to demonstrate quantum computational advantage on the 53-qubit Sycamore processor in 2019. The XEB fidelity decays exponentially with circuit depth, providing a measure of cumulative gate quality.",
+  "hardware": "Google Sycamore (superconducting)",
+  "framework": "Cirq",
+  "qubits": 53,
+  "reproducible": true,
+  "datePublished": "2019-10-23",
+  "sources": [
+    {
+      "type": "url",
+      "url": "https://quantumai.google/cirq/noise/qcvv/xeb_theory",
+      "title": "Cross-Entropy Benchmarking Theory - Google Cirq Documentation",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/1910.12085",
+      "title": "On the Classical Hardness of Spoofing Linear Cross-Entropy Benchmarking",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

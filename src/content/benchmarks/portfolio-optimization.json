@@ -1,0 +1,25 @@
+{
+  "name": "Quantum Portfolio Optimization Benchmark",
+  "slug": "portfolio-optimization",
+  "algorithm": "QAOA / VQE / Quantum Annealing",
+  "category": "optimization",
+  "tags": ["finance", "portfolio", "QAOA", "VQE", "quantum-annealing", "Markowitz"],
+  "description": "Finance-specific benchmark evaluating quantum optimization algorithms for Markowitz mean-variance portfolio selection. Compares QAOA, VQE, and quantum annealing against classical solvers (MIP, meta-heuristics) on asset selection and allocation problems. Recent studies highlight that while quantum methods minimize cost functions effectively, resulting portfolios may violate practical financial constraints.",
+  "framework": "Qiskit Finance, PennyLane, D-Wave Ocean",
+  "reproducible": true,
+  "datePublished": "2025-09-24",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2509.17876",
+      "title": "Quantum Portfolio Optimization: An Extensive Benchmark",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2407.19857",
+      "title": "PO-QA: A Framework for Portfolio Optimization using Quantum Algorithms",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

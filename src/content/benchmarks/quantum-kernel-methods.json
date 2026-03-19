@@ -1,0 +1,26 @@
+{
+  "name": "Quantum Kernel Methods Classification Benchmark",
+  "slug": "quantum-kernel-methods",
+  "algorithm": "Quantum Support Vector Machine (QSVM) with quantum kernels",
+  "category": "machine-learning",
+  "tags": ["quantum-kernel", "QSVM", "classification", "feature-map", "machine-learning"],
+  "description": "Benchmark evaluating quantum kernel estimation (QKE) and quantum kernel training (QKT) for classification tasks using quantum support vector machines. A large-scale study examined fidelity-based and projected quantum kernels across 64 datasets and five dataset families. While quantum kernels outperform classical methods on specifically constructed ad-hoc datasets, results on standard classical benchmarks are mixed.",
+  "framework": "Qiskit Machine Learning, PennyLane",
+  "qubits": 10,
+  "reproducible": true,
+  "datePublished": "2024-08-19",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2408.10274",
+      "title": "Benchmarking quantum machine learning kernel training for classification tasks",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2409.04406",
+      "title": "Quantum Kernel Methods under Scrutiny: A Benchmarking Study",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}
