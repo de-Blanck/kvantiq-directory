@@ -1,0 +1,29 @@
+{
+  "name": "Terra Quantum",
+  "slug": "terra-quantum",
+  "country": "Switzerland",
+  "region": "dach",
+  "type": "hybrid",
+  "tags": ["hybrid-quantum", "quantum-algorithms", "quantum-as-a-service"],
+  "founded": 2019,
+  "description": "Terra Quantum is a Swiss quantum technology company developing a hybrid quantum-classical computing platform for enterprise applications. The company combines quantum algorithms with classical computing infrastructure to deliver practical quantum solutions for optimization, machine learning, and cryptography challenges.",
+  "website": "https://www.terraquantum.swiss",
+  "featured": false,
+  "headquarters": "Rorschach, Switzerland",
+  "employees": "100+",
+  "funding": "$85.9M",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.terraquantum.swiss",
+      "title": "Terra Quantum Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.crunchbase.com/organization/terra-quantum",
+      "title": "Terra Quantum - Crunchbase",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Berlin Quantum Hackathon 2026",
+  "slug": "berlin-quantum-hackathon",
+  "organizer": "Kipu Quantum",
+  "tags": ["hackathon", "QML", "optimization", "Berlin"],
+  "description": "The Berlin Quantum Hackathon 2026 was a 6-week hybrid event organized by Kipu Quantum featuring specialized tracks in quantum machine learning and optimization. Participants worked on real-world quantum computing challenges with mentorship from industry experts. The event combined online collaboration with in-person workshops in Berlin.",
+  "website": "https://berlinquantumhackathon.com/",
+  "status": "completed",
+  "location": "Hybrid Berlin",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://berlinquantumhackathon.com/",
+      "title": "Berlin Quantum Hackathon Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

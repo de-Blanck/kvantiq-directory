@@ -1,0 +1,26 @@
+{
+  "name": "iQuHACK 2026",
+  "slug": "iquhack-2026",
+  "organizer": "MIT iQuISE",
+  "tags": ["hackathon", "MIT", "students", "annual"],
+  "description": "iQuHACK (interdisciplinary Quantum HACKathon) is MIT's annual quantum computing hackathon organized by the interdisciplinary Quantum Information Science and Engineering (iQuISE) program. The 7th edition brought together over 400 students in person at MIT plus online participants. Teams work on quantum computing challenges using various platforms and frameworks.",
+  "website": "https://iquhack.mit.edu/",
+  "dateStart": "2026-01-30",
+  "dateEnd": "2026-02-01",
+  "status": "completed",
+  "location": "Hybrid (MIT + online)",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://iquhack.mit.edu/",
+      "title": "iQuHACK Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thetech.com/2026/02/06/iquhack-2026-recap",
+      "title": "iQuHACK 2026 Brings Quantum Computing to MIT - The Tech",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "kiutra",
+  "slug": "kiutra",
+  "country": "Germany",
+  "region": "dach",
+  "type": "hardware",
+  "tags": ["cryogenic-cooling", "quantum-infrastructure", "magnetic-refrigeration"],
+  "founded": 2018,
+  "description": "kiutra is a German deep-tech company developing cryogen-free cooling systems for quantum technologies using magnetic refrigeration. The company provides compact and efficient cooling solutions for quantum computers, quantum sensors, and other cryogenic applications, eliminating the need for liquid helium.",
+  "website": "https://www.kiutra.com",
+  "featured": false,
+  "headquarters": "Munich, Germany",
+  "employees": "50+",
+  "funding": "EUR 30M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.kiutra.com",
+      "title": "kiutra Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2023/05/30/kiutra-raises-e13-million-for-cryogen-free-cooling-systems/",
+      "title": "kiutra Raises €13 Million for Cryogen-Free Cooling Systems - The Quantum Insider",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

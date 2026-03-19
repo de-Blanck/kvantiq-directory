@@ -1,0 +1,29 @@
+{
+  "name": "Xiphera Ltd",
+  "slug": "xiphera",
+  "country": "Finland",
+  "region": "nordics",
+  "type": "software",
+  "tags": ["post-quantum-cryptography", "security", "IP-cores", "FPGA"],
+  "founded": 2017,
+  "description": "Xiphera develops post-quantum cryptography IP cores and hardware security solutions. The company provides FPGA and ASIC implementations of quantum-resistant cryptographic algorithms to protect systems against future quantum computing threats. Xiphera's solutions enable organizations to prepare for the post-quantum era by implementing standardized quantum-safe encryption in their hardware infrastructure.",
+  "website": "https://xiphera.com",
+  "featured": false,
+  "headquarters": "Espoo, Finland",
+  "employees": "11-50",
+  "funding": "N/A",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://xiphera.com",
+      "title": "Xiphera Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.crunchbase.com/organization/xiphera",
+      "title": "Xiphera - Crunchbase Company Profile",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

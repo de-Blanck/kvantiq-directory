@@ -1,0 +1,20 @@
+{
+  "name": "Cirq",
+  "slug": "cirq",
+  "type": "framework",
+  "tags": ["quantum-computing", "open-source", "python", "Google", "NISQ"],
+  "description": "Cirq is an open-source Python framework for writing, manipulating, and optimizing quantum circuits. Developed by Google, it is designed for Noisy Intermediate-Scale Quantum (NISQ) devices and provides tools for research and development on quantum hardware.",
+  "website": "https://quantumai.google/cirq",
+  "openSource": true,
+  "free": true,
+  "language": "Python",
+  "provider": "Google",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://quantumai.google/cirq",
+      "title": "Cirq Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

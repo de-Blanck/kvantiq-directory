@@ -16,6 +16,12 @@
       "url": "https://qhack.ai",
       "title": "QHack Official Website",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://github.com/XanaduAI/QHack",
+      "title": "QHack GitHub Repository",
+      "dateAccessed": "2026-03-19"
     }
   ]
 }

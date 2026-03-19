@@ -1,0 +1,21 @@
+{
+  "name": "Sparrow Quantum",
+  "slug": "sparrow-quantum",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "hardware",
+  "tags": ["single-photon", "quantum-networking", "photonics"],
+  "founded": 2016,
+  "description": "Sparrow Quantum develops single-photon sources for quantum networking and quantum computing applications. Their technology provides deterministic single-photon emission, enabling scalable quantum communication networks and photonic quantum information processing.",
+  "website": "https://www.sparrowquantum.com",
+  "featured": false,
+  "headquarters": "Copenhagen, Denmark",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.sparrowquantum.com",
+      "title": "Sparrow Quantum Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

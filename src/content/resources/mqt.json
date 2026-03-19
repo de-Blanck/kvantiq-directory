@@ -1,0 +1,26 @@
+{
+  "name": "Munich Quantum Toolkit",
+  "slug": "mqt",
+  "type": "tool",
+  "tags": ["open-source", "python", "c++", "verification", "simulation", "design-automation"],
+  "description": "The Munich Quantum Toolkit (MQT) is a collection of open-source tools for quantum software development developed at the Technical University of Munich. It includes tools for circuit design, simulation, verification, and debugging. MQT supports both Python and C++ and is designed for researchers and developers working on quantum algorithms and software.",
+  "website": "https://mqt.readthedocs.io",
+  "openSource": true,
+  "free": true,
+  "language": "Python/C++",
+  "provider": "Technical University of Munich",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://mqt.readthedocs.io",
+      "title": "MQT Official Documentation",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://github.com/cda-tum/mqt",
+      "title": "MQT GitHub Repository",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

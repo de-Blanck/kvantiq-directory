@@ -12,7 +12,8 @@
   "sources": [
     {
       "type": "arxiv",
-      "url": "https://arxiv.org/abs/2301.00001",
+      "url": "https://arxiv.org/abs/2006.14510",
+      "title": "Quantum computational chemistry for drug discovery",
       "dateAccessed": "2026-03-19"
     }
   ]

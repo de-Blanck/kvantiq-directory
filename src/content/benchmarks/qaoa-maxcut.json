@@ -11,9 +11,9 @@
   "datePublished": "2023-11-20",
   "sources": [
     {
-      "type": "website",
-      "url": "https://pennylane.ai/qml/demos/tutorial_qaoa_maxcut.html",
-      "title": "QAOA for MaxCut - PennyLane Tutorial",
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/1411.4028",
+      "title": "A Quantum Approximate Optimization Algorithm",
       "dateAccessed": "2026-03-19"
     }
   ]

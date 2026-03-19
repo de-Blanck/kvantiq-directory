@@ -10,9 +10,9 @@
   "results": "Demonstrations on small portfolios (10-50 assets) show competitive results with classical methods. Quantum advantage for real-world portfolio sizes is expected as hardware scales.",
   "sources": [
     {
-      "type": "website",
-      "url": "https://www.ibm.com/quantum/use-cases/portfolio-optimization",
-      "title": "Quantum Portfolio Optimization - IBM Quantum",
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/1911.05296",
+      "title": "Quantum computational finance: quantum algorithm for portfolio optimization",
       "dateAccessed": "2026-03-19"
     }
   ]

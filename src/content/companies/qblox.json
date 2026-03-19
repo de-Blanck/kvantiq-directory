@@ -1,0 +1,21 @@
+{
+  "name": "Qblox",
+  "slug": "qblox",
+  "country": "Netherlands",
+  "region": "western-europe",
+  "type": "hardware",
+  "tags": ["control-electronics", "qutech-spinoff", "quantum-control"],
+  "founded": 2019,
+  "description": "Qblox develops scalable qubit control electronics for quantum computers. A spin-off from QuTech, the company provides modular control systems that enable precise manipulation and readout of qubits for quantum computing research and development.",
+  "website": "https://www.qblox.com",
+  "featured": false,
+  "headquarters": "Delft, Netherlands",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.qblox.com",
+      "title": "Qblox Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

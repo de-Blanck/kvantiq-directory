@@ -1,0 +1,23 @@
+{
+  "name": "Q.ANT",
+  "slug": "q-ant",
+  "country": "Germany",
+  "region": "dach",
+  "type": "hardware",
+  "tags": ["photonic-quantum", "quantum-sensing", "quantum-computing"],
+  "founded": 2018,
+  "description": "Q.ANT is a German quantum technology company developing photonic quantum solutions for computing and sensing applications. Spun out from high-tech manufacturer Trumpf, Q.ANT builds quantum sensors and photonic quantum processors using integrated photonics technology for industrial and scientific applications.",
+  "website": "https://www.q-ant.com",
+  "featured": false,
+  "headquarters": "Stuttgart, Germany",
+  "employees": "100+",
+  "funding": "EUR 20M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.q-ant.com",
+      "title": "Q.ANT Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

@@ -12,9 +12,9 @@
   "datePublished": "2024-01-15",
   "sources": [
     {
-      "type": "website",
-      "url": "https://qiskit.org/textbook/ch-applications/vqe-molecules.html",
-      "title": "VQE for Molecular Simulations - Qiskit Textbook",
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/1304.3061",
+      "title": "The theory of variational hybrid quantum-classical algorithms",
       "dateAccessed": "2026-03-19"
     }
   ]

@@ -15,6 +15,12 @@
       "url": "https://qiskit.org",
       "title": "Qiskit Official Website",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://github.com/Qiskit/qiskit",
+      "title": "Qiskit GitHub Repository",
+      "dateAccessed": "2026-03-19"
     }
   ]
 }

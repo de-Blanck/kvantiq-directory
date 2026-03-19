@@ -17,6 +17,12 @@
       "url": "https://www.planqc.eu",
       "title": "planqc Official Website",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://www.dlr.de/en/latest/news/2024/01/planqc-and-dlr-to-build-europes-first-digital-quantum-computer",
+      "title": "planqc and DLR to build Europe's first digital quantum computer using neutral atoms",
+      "dateAccessed": "2026-03-19"
     }
   ]
 }

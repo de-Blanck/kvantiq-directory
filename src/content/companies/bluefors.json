@@ -1,0 +1,29 @@
+{
+  "name": "Bluefors Oy",
+  "slug": "bluefors",
+  "country": "Finland",
+  "region": "nordics",
+  "type": "hardware",
+  "tags": ["cryogenics", "dilution-refrigeration", "quantum-infrastructure"],
+  "founded": 2008,
+  "description": "Bluefors is a world-leading manufacturer of ultra-low temperature measurement systems and cryogenic dilution refrigerators. The company provides critical cryogenic infrastructure for quantum computing systems, enabling quantum processors to operate at the near-absolute-zero temperatures required for quantum coherence. Bluefors systems are used by quantum computing companies and research institutions globally.",
+  "website": "https://bluefors.com",
+  "featured": true,
+  "headquarters": "Helsinki, Finland",
+  "employees": "700+",
+  "funding": "N/A",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://bluefors.com",
+      "title": "Bluefors Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://en.wikipedia.org/wiki/Bluefors",
+      "title": "Bluefors - Wikipedia",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

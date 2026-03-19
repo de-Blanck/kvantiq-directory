@@ -1,0 +1,20 @@
+{
+  "name": "MQT Bench",
+  "slug": "mqt-bench",
+  "algorithm": "70+ quantum algorithms across multiple domains",
+  "category": "other",
+  "tags": ["benchmark-suite", "scalable", "compiler", "standardization"],
+  "description": "MQT Bench is a comprehensive quantum computing benchmark suite containing over 70 algorithm implementations across various application domains. Developed by the Technical University of Munich, it provides quantum circuits at different abstraction levels (2 to 130 qubits) and in multiple formats. MQT Bench is designed for evaluating quantum compilers, simulators, and hardware platforms.",
+  "framework": "Qiskit",
+  "qubits": 130,
+  "reproducible": true,
+  "datePublished": "2023-07-20",
+  "sources": [
+    {
+      "type": "url",
+      "url": "https://quantum-journal.org/papers/q-2023-07-20-1062/",
+      "title": "MQT Bench: Benchmarking Software and Design Automation Tools for Quantum Computing",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

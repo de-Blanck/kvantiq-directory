@@ -1,0 +1,23 @@
+{
+  "name": "eleQtron",
+  "slug": "eleqtron",
+  "country": "Germany",
+  "region": "dach",
+  "type": "hardware",
+  "tags": ["trapped-ion", "quantum-computing", "microwave-technology"],
+  "founded": 2020,
+  "description": "eleQtron is a German quantum computing company developing trapped-ion quantum computers using microwave technology. Spun out from the University of Siegen, eleQtron focuses on building scalable quantum processors with innovative ion-trap designs for improved performance and manufacturability.",
+  "website": "https://www.eleqtron.com",
+  "featured": false,
+  "headquarters": "Siegen, Germany",
+  "employees": "20+",
+  "funding": "EUR 5M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.eleqtron.com",
+      "title": "eleQtron Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

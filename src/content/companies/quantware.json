@@ -1,0 +1,21 @@
+{
+  "name": "QuantWare",
+  "slug": "quantware",
+  "country": "Netherlands",
+  "region": "western-europe",
+  "type": "hardware",
+  "tags": ["superconducting", "quantum-processors", "quantum-chips"],
+  "founded": 2020,
+  "description": "QuantWare manufactures superconducting quantum processors for the global quantum computing industry. As a dedicated quantum chip supplier, they provide off-the-shelf and custom quantum processing units to research institutions and companies building quantum computers.",
+  "website": "https://www.quantware.com",
+  "featured": false,
+  "headquarters": "Delft, Netherlands",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.quantware.com",
+      "title": "QuantWare Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

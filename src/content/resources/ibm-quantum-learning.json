@@ -1,0 +1,20 @@
+{
+  "name": "IBM Quantum Learning",
+  "slug": "ibm-quantum-learning",
+  "type": "course",
+  "tags": ["education", "python", "Qiskit", "IBM", "interactive"],
+  "description": "IBM Quantum Learning is a comprehensive educational platform offering courses, tutorials, and hands-on labs for quantum computing. The platform covers fundamental concepts, Qiskit programming, and quantum algorithms with interactive exercises. Learners can access real IBM quantum hardware to run experiments.",
+  "website": "https://learning.quantum.ibm.com",
+  "openSource": false,
+  "free": true,
+  "language": "Python",
+  "provider": "IBM",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://learning.quantum.ibm.com",
+      "title": "IBM Quantum Learning Platform",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

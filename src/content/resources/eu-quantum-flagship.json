@@ -1,0 +1,20 @@
+{
+  "name": "EU Quantum Flagship",
+  "slug": "eu-quantum-flagship",
+  "type": "funding",
+  "tags": ["funding", "research", "Europe", "public-funding", "infrastructure"],
+  "description": "The Quantum Flagship is a large-scale research initiative by the European Commission with a budget of €1 billion over 10 years. It supports cutting-edge quantum technology research and development across Europe, including quantum computing, communication, sensing, and simulation. The flagship aims to consolidate and expand European scientific leadership in quantum technologies.",
+  "website": "https://qt.eu",
+  "openSource": false,
+  "free": true,
+  "language": "",
+  "provider": "European Commission",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://qt.eu",
+      "title": "Quantum Flagship Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

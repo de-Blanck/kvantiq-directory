@@ -1,0 +1,29 @@
+{
+  "name": "Quantastica",
+  "slug": "quantastica",
+  "country": "Finland",
+  "region": "nordics",
+  "type": "software",
+  "tags": ["quantum-programming", "simulators", "development-tools", "open-source"],
+  "founded": 2019,
+  "description": "Quantastica provides quantum programming tools and simulators for developers and researchers. The company develops open-source and commercial quantum software development tools, including quantum circuit simulators and programming frameworks. Quantastica's solutions aim to make quantum computing more accessible to software developers through intuitive programming interfaces and educational resources.",
+  "website": "https://quantastica.com",
+  "featured": false,
+  "headquarters": "Helsinki, Finland",
+  "employees": "10+",
+  "funding": "N/A",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://quantastica.com",
+      "title": "Quantastica Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2022/04/15/quantastica-quantum-programming-tools/",
+      "title": "Quantastica: Quantum Programming Tools - The Quantum Insider",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

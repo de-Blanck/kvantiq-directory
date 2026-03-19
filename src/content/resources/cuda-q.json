@@ -1,0 +1,20 @@
+{
+  "name": "CUDA-Q",
+  "slug": "cuda-q",
+  "type": "framework",
+  "tags": ["quantum-computing", "open-source", "python", "c++", "GPU", "HPC"],
+  "description": "CUDA-Q (formerly CUDA Quantum) is NVIDIA's open-source platform for hybrid quantum-classical computing. It enables developers to integrate quantum processing units (QPUs) with GPUs and CPUs for high-performance quantum simulations and algorithm development. CUDA-Q supports both Python and C++.",
+  "website": "https://nvidia.com/en-us/solutions/quantum-computing/cuda-q/",
+  "openSource": true,
+  "free": true,
+  "language": "Python/C++",
+  "provider": "NVIDIA",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://nvidia.com/en-us/solutions/quantum-computing/cuda-q/",
+      "title": "CUDA-Q Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

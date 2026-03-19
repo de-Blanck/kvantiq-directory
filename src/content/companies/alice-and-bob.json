@@ -1,0 +1,22 @@
+{
+  "name": "Alice & Bob",
+  "slug": "alice-and-bob",
+  "country": "France",
+  "region": "western-europe",
+  "type": "hardware",
+  "tags": ["cat-qubit", "fault-tolerant", "superconducting"],
+  "founded": 2020,
+  "description": "Alice & Bob develops cat qubit quantum computers designed for fault-tolerant quantum computing. Their technology uses superconducting circuits with reduced error rates, aiming to build practical quantum computers that require fewer physical qubits for error correction.",
+  "website": "https://alice-bob.com",
+  "featured": false,
+  "headquarters": "Paris, France",
+  "funding": "EUR 30M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://alice-bob.com",
+      "title": "Alice & Bob Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}
