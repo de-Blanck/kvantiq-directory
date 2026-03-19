@@ -2,9 +2,25 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ListingCard from '../../components/ListingCard.astro';
+import DataTable from '../../components/DataTable.tsx';
 
 const allChallenges = await getCollection('challenges');
 const sorted = allChallenges.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const tableData = sorted.map(ch => ({
+  href: `/challenges/${ch.data.slug}/`,
+  name: ch.data.name,
+  organizer: ch.data.organizer,
+  status: ch.data.status,
+  date: ch.data.dateStart || '',
+}));
+
+const tableColumns = [
+  { key: 'name', label: 'Challenge', isLink: true, sortable: true },
+  { key: 'organizer', label: 'Organizer', sortable: true },
+  { key: 'status', label: 'Status', filterable: true, sortable: true },
+  { key: 'date', label: 'Date', sortable: true },
+];
 
 const itemListLd = {
   "@context": "https://schema.org", "@type": "ItemList",
@@ -26,26 +42,12 @@ const itemListLd = {
       <p class="mt-2 text-text-secondary">{allChallenges.length} quantum computing hackathons, competitions, and open challenges.</p>
     </div>
 
-    <div class="mt-8 overflow-x-auto">
-      <table class="min-w-full text-sm">
-        <thead><tr class="border-b text-left text-text-muted">
-          <th class="pb-2 pr-4 font-medium">Challenge</th>
-          <th class="pb-2 pr-4 font-medium">Organizer</th>
-          <th class="pb-2 pr-4 font-medium">Status</th>
-          <th class="pb-2 pr-4 font-medium">Date</th>
-        </tr></thead>
-        <tbody>
-          {sorted.map(ch => (
-            <tr class="border-b border-border-subtle">
-              <td class="py-2 pr-4"><a href={`/challenges/${ch.data.slug}/`} class="text-info hover:underline">{ch.data.name}</a></td>
-              <td class="py-2 pr-4 text-text-secondary">{ch.data.organizer}</td>
-              <td class="py-2 pr-4 text-text-secondary capitalize">{ch.data.status}</td>
-              <td class="py-2 pr-4 text-text-secondary">{ch.data.dateStart || '—'}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+    <DataTable
+      client:visible
+      data={tableData}
+      columns={tableColumns}
+      searchPlaceholder="Search challenges..."
+    />
 
     <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {sorted.map(ch => (

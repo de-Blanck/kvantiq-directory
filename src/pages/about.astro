@@ -1,55 +1,153 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
----
-<BaseLayout title="About" description="About the Kvantiq Directory — the open European quantum computing ecosystem directory.">
-  <article class="prose prose-gray mx-auto max-w-3xl">
-    <h1 class="text-3xl font-bold">About Kvantiq Directory</h1>
+import FlipCard from '../components/FlipCard.tsx';
 
-    <div class="summary mt-4" role="doc-abstract">
-      <p class="text-text-secondary">
-        Kvantiq Directory is a curated, open directory of the European quantum computing ecosystem.
-        We catalog companies, benchmarks, use cases, challenges, and resources — starting with
-        the Nordics and DACH regions.
+const allCompanies = await getCollection('companies');
+const allBenchmarks = await getCollection('benchmarks');
+const allUseCases = await getCollection('use-cases');
+const allChallenges = await getCollection('challenges');
+const allResources = await getCollection('resources');
+
+const total = allCompanies.length + allBenchmarks.length + allUseCases.length + allChallenges.length + allResources.length;
+
+const regions = allCompanies.reduce((acc: Record<string, number>, c) => {
+  acc[c.data.region] = (acc[c.data.region] || 0) + 1;
+  return acc;
+}, {} as Record<string, number>);
+
+const countriesCount = new Set(allCompanies.map(c => c.data.country)).size;
+---
+<BaseLayout title="About — Methodology &amp; Ethics" description="How the Kvantiq Directory works — data collection, source verification, ethics policy, and geographic scope.">
+  <div class="mx-auto max-w-3xl">
+
+    <!-- Lede -->
+    <h1 class="text-3xl font-bold tracking-tight text-text" style="letter-spacing: -0.3px;">About this directory</h1>
+    <p class="mt-4 text-base text-text-secondary leading-relaxed">
+      Kvantiq Directory is a curated, open directory of the European quantum computing ecosystem. It is maintained by <strong class="text-text">Kvantiq Studio ApS</strong>, a Danish quantum technology company. The directory is free to use and contains no third-party tracking.
+    </p>
+
+    <!-- Status line -->
+    <div class="mt-6 flex flex-wrap items-baseline gap-x-6 gap-y-2 border-y border-border py-4">
+      <p class="text-sm text-text-secondary">
+        <span class="font-mono font-semibold text-text">{total}</span> entries
       </p>
-      <p class="mt-2 text-text-secondary">
-        Kvantiq Directory is maintained by Kvantiq Studio ApS, a Danish quantum technology company.
+      <p class="text-sm text-text-secondary">
+        <span class="font-mono font-semibold text-text">{allCompanies.length}</span> companies
+        · <span class="font-mono font-semibold text-text">{allBenchmarks.length}</span> benchmarks
+        · <span class="font-mono font-semibold text-text">{allUseCases.length}</span> use cases
+        · <span class="font-mono font-semibold text-text">{allChallenges.length}</span> challenges
+        · <span class="font-mono font-semibold text-text">{allResources.length}</span> resources
+      </p>
+      <p class="text-sm text-text-secondary">
+        Updated <time datetime="2026-03-19" class="font-mono font-semibold text-text">2026-03-19</time>
       </p>
     </div>
 
-    <section class="mt-8">
-      <h2 class="text-xl font-semibold">Why this directory?</h2>
-      <p class="mt-2 text-text-secondary">
-        Europe has invested over EUR 10 billion in quantum computing through combined EU and national
-        funding programs. There are 150+ quantum computing companies across the continent, yet no
-        single directory focused on the European ecosystem exists. Kvantiq Directory fills that gap.
+    <!-- WHY — prominent, colored -->
+    <section class="mt-10 rounded-xl border border-info-border bg-info-surface p-6">
+      <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-info-text">Why this directory exists</h2>
+      <p class="mt-3 text-base text-info-text leading-relaxed">
+        Europe has invested <strong>over EUR 10 billion</strong> in quantum computing through combined EU and national funding programs. There are <strong>150+ quantum computing companies</strong> across the continent — spanning hardware manufacturers, software platforms, consulting firms, and research spinouts.
+      </p>
+      <p class="mt-3 text-base text-info-text leading-relaxed">
+        Yet no single, open directory focused on the European ecosystem exists. The closest alternative — The Quantum Insider — is US-based and paywalled. Kvantiq Directory fills that gap with a <strong>free, transparent, and ethically curated</strong> resource built for the European quantum community.
       </p>
     </section>
 
-    <section class="mt-6">
-      <h2 class="text-xl font-semibold">Our scope</h2>
-      <p class="mt-2 text-text-secondary">
-        We focus on hybrid quantum-classical and quantum-AI applications — the intersection where
-        quantum computing meets real-world industry problems. Our geographic focus starts with the
-        Nordics (Denmark, Finland, Sweden) and DACH (Germany, Austria, Switzerland) regions, expanding
-        to cover all of Europe.
+    <!-- Flip cards -->
+    <div class="mt-8 grid gap-4 sm:grid-cols-2">
+      <FlipCard
+        client:visible
+        frontLabel="Did you know?"
+        frontValue={`${countriesCount}`}
+        frontSub="European countries have active quantum computing companies"
+        backText={`The directory covers companies from ${countriesCount} countries — from Finland's superconducting qubit pioneers to Spain's quantum optimization startups. The largest clusters are in DACH (${regions['dach']}), Nordics (${regions['nordics']}), and Western Europe (${regions['western-europe']}).`}
+        color="info"
+      />
+      <FlipCard
+        client:visible
+        frontLabel="Quantum fact"
+        frontValue="2x"
+        frontSub="minimum verified sources per entry"
+        backText="Every entry in this directory requires at least two independently verified sources — company websites, peer-reviewed papers, EU project databases, or major tech press. No self-reported data. No unverified press releases. This is what sets Kvantiq apart from aggregator-style directories."
+        color="ok"
+      />
+    </div>
+
+    <!-- METHODOLOGY -->
+    <section class="mt-10">
+      <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted">Methodology</h2>
+
+      <div class="mt-4 space-y-6">
+        <div class="group grid grid-cols-[120px_1fr] gap-x-4 rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-surface">
+          <p class="text-xs font-semibold text-text pt-0.5 transition-colors duration-[120ms] group-hover:text-info">Collection</p>
+          <p class="text-sm text-text-secondary leading-relaxed">Every entry is independently researched by the Kvantiq Studio team from primary sources: official company websites, peer-reviewed publications, EU project databases (Quantum Flagship, EuroHPC, BMBF), and major tech press (Nature, Science, TechCrunch). No self-reported data or press releases taken at face value.</p>
+        </div>
+
+        <div class="group grid grid-cols-[120px_1fr] gap-x-4 rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-surface">
+          <p class="text-xs font-semibold text-text pt-0.5 transition-colors duration-[120ms] group-hover:text-info">Verification</p>
+          <p class="text-sm text-text-secondary leading-relaxed">All entries require a minimum of two independently verified sources. Citations follow numbered APS/IEEE style — the standard in physics and quantum computing. Where available, we link to DOI-resolved papers and arXiv preprints. Every source includes a <code class="rounded bg-surface-alt px-1 py-0.5 font-mono text-[11px]">dateAccessed</code> field.</p>
+        </div>
+
+        <div class="group grid grid-cols-[120px_1fr] gap-x-4 rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-surface">
+          <p class="text-xs font-semibold text-text pt-0.5 transition-colors duration-[120ms] group-hover:text-info">Inclusion</p>
+          <p class="text-sm text-text-secondary leading-relaxed">Companies must have an active website, verifiable operations, and a clear quantum computing focus. Early-stage startups without public visibility are excluded until they reach a verifiable threshold. Benchmarks must have published methodology and ideally reproducible code.</p>
+        </div>
+
+        <div class="group grid grid-cols-[120px_1fr] gap-x-4 rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-surface">
+          <p class="text-xs font-semibold text-text pt-0.5 transition-colors duration-[120ms] group-hover:text-info">Updates</p>
+          <p class="text-sm text-text-secondary leading-relaxed">The directory is updated periodically. Each cycle re-verifies existing entries and adds new ones. The build system validates all content against strict Zod schemas — malformed data cannot be published.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GEOGRAPHIC SCOPE -->
+    <section class="mt-10">
+      <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted">Geographic scope</h2>
+      <p class="mt-3 text-sm text-text-secondary leading-relaxed">
+        Nordics and DACH first, then broader Europe. Company coverage by region:
+      </p>
+      <div class="mt-3 flex flex-wrap gap-x-6 gap-y-1">
+        {Object.entries(regions).sort((a, b) => b[1] - a[1]).map(([region, count]) => (
+          <p class="text-sm text-text-secondary group cursor-default">
+            <span class="capitalize transition-colors duration-[120ms] group-hover:text-text">{region.replace(/-/g, ' ')}</span>
+            <span class="font-mono font-semibold text-text ml-1">{count}</span>
+          </p>
+        ))}
+      </div>
+    </section>
+
+    <!-- ETHICS -->
+    <section class="mt-10">
+      <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted">Ethics policy</h2>
+      <dl class="mt-4 space-y-4">
+        <div class="group rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-surface">
+          <dt class="text-sm font-semibold text-text transition-colors duration-[120ms] group-hover:text-info">European-first, open-source preferred</dt>
+          <dd class="mt-0.5 text-sm text-text-secondary">We prioritize European companies and open-source projects in our curation and affiliate linking.</dd>
+        </div>
+        <div class="group rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-surface">
+          <dt class="text-sm font-semibold text-text transition-colors duration-[120ms] group-hover:text-info">No visitor tracking</dt>
+          <dd class="mt-0.5 text-sm text-text-secondary">No Google Analytics. No Facebook pixels. No third-party tracking of any kind. Privacy-respecting analytics only.</dd>
+        </div>
+        <div class="group rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-surface">
+          <dt class="text-sm font-semibold text-text transition-colors duration-[120ms] group-hover:text-info">Ethical advertising only</dt>
+          <dd class="mt-0.5 text-sm text-text-secondary">No Google AdSense. Only contextual, privacy-respecting ad networks — EthicalAds or Carbon Ads.</dd>
+        </div>
+        <div class="group rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-surface">
+          <dt class="text-sm font-semibold text-text transition-colors duration-[120ms] group-hover:text-info">Transparent linking</dt>
+          <dd class="mt-0.5 text-sm text-text-secondary">Companies on the blocklist (surveillance-capitalism firms) are referenced via privacy-preserving search links, not direct referrals. Their open-source frameworks keep direct links.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- SUBMIT -->
+    <section class="mt-10 mb-8 border-t border-border pt-8">
+      <p class="text-sm text-text-secondary">
+        Know a company, benchmark, or resource that should be listed?
+        <a href="/submit/" class="font-medium text-info transition-colors duration-[120ms] hover:text-info/70">Submit a listing</a>.
       </p>
     </section>
 
-    <section class="mt-6">
-      <h2 class="text-xl font-semibold">Ethics policy</h2>
-      <ul class="mt-2 space-y-2 text-text-secondary">
-        <li><strong>European-first, open-source preferred.</strong> We prioritize European companies and open-source projects.</li>
-        <li><strong>No visitor data exploitation.</strong> No third-party tracking pixels, no Google Analytics, no Facebook pixels.</li>
-        <li><strong>Ethical advertising only.</strong> No Google AdSense — only privacy-respecting, contextual ad networks.</li>
-        <li><strong>Allowlist approach.</strong> Companies are listed based on alignment with open science, European tech sovereignty, and democratic values.</li>
-      </ul>
-    </section>
-
-    <section class="mt-6">
-      <h2 class="text-xl font-semibold">Submit a listing</h2>
-      <p class="mt-2 text-text-secondary">
-        Know a company, benchmark, or resource that should be listed? <a href="/submit/" class="text-info hover:underline">Submit a listing</a> and we'll review it.
-      </p>
-    </section>
-  </article>
+  </div>
 </BaseLayout>

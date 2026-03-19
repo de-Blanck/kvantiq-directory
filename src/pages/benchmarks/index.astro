@@ -2,9 +2,26 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ListingCard from '../../components/ListingCard.astro';
+import DataTable from '../../components/DataTable.tsx';
 
 const allBenchmarks = await getCollection('benchmarks');
 const sorted = allBenchmarks.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const tableData = sorted.map(b => ({
+  href: `/benchmarks/${b.data.slug}/`,
+  name: b.data.name,
+  algorithm: b.data.algorithm,
+  category: b.data.category,
+  qubits: b.data.qubits ? String(b.data.qubits) : '',
+  framework: b.data.framework || '',
+}));
+
+const tableColumns = [
+  { key: 'name', label: 'Benchmark', isLink: true, sortable: true },
+  { key: 'algorithm', label: 'Algorithm', sortable: true },
+  { key: 'category', label: 'Category', filterable: true, sortable: true },
+  { key: 'qubits', label: 'Qubits', sortable: true },
+];
 
 const itemListLd = {
   "@context": "https://schema.org",
@@ -32,28 +49,12 @@ const itemListLd = {
       </p>
     </div>
 
-    <div class="mt-8 overflow-x-auto">
-      <table class="min-w-full text-sm">
-        <thead>
-          <tr class="border-b text-left text-text-muted">
-            <th class="pb-2 pr-4 font-medium">Benchmark</th>
-            <th class="pb-2 pr-4 font-medium">Algorithm</th>
-            <th class="pb-2 pr-4 font-medium">Category</th>
-            <th class="pb-2 pr-4 font-medium">Qubits</th>
-          </tr>
-        </thead>
-        <tbody>
-          {sorted.map(b => (
-            <tr class="border-b border-border-subtle">
-              <td class="py-2 pr-4"><a href={`/benchmarks/${b.data.slug}/`} class="text-info hover:underline">{b.data.name}</a></td>
-              <td class="py-2 pr-4 text-text-secondary">{b.data.algorithm}</td>
-              <td class="py-2 pr-4 text-text-secondary capitalize">{b.data.category}</td>
-              <td class="py-2 pr-4 text-text-secondary">{b.data.qubits || '—'}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+    <DataTable
+      client:visible
+      data={tableData}
+      columns={tableColumns}
+      searchPlaceholder="Search benchmarks..."
+    />
 
     <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {sorted.map(b => (

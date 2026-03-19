@@ -5,13 +5,15 @@ const navItems = [
   { href: '/use-cases/', label: 'Use Cases' },
   { href: '/challenges/', label: 'Challenges' },
   { href: '/resources/', label: 'Resources' },
+  { href: '/about/', label: 'About' },
 ];
 const currentPath = Astro.url.pathname;
 ---
 <header class="border-b border-border bg-surface" data-pagefind-ignore>
   <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
     <a href="/" class="flex items-center gap-2">
-      <img src="/kvantiq-logo-black.png" alt="Kvantiq Studio" class="h-8" />
+      <span class="text-xs text-text-muted">by</span>
+      <img src="/kvantiq-logo-black.png" alt="Kvantiq Studio" class="h-10" />
     </a>
 
     <!-- Desktop Navigation -->
@@ -20,7 +22,7 @@ const currentPath = Astro.url.pathname;
         <li>
           <a
             href={href}
-            class={`text-sm font-medium ${currentPath.startsWith(href) ? 'text-info' : 'text-text-secondary hover:text-text'}`}
+            class={`text-sm font-medium transition-colors duration-[120ms] ${currentPath.startsWith(href) ? 'text-info border-b-2 border-info pb-0.5' : 'text-text-muted hover:text-info'}`}
           >
             {label}
           </a>
@@ -29,7 +31,7 @@ const currentPath = Astro.url.pathname;
     </ul>
 
     <!-- Desktop Submit Button -->
-    <a href="/submit/" class="hidden md:block rounded-md bg-info px-3 py-1.5 text-sm font-medium text-white hover:bg-info/90">
+    <a href="/submit/" class="hidden md:block rounded-md bg-info px-3 py-1.5 text-sm font-medium text-white transition-colors duration-[120ms] hover:bg-info/80">
       Submit Listing
     </a>
 
@@ -79,7 +81,7 @@ const currentPath = Astro.url.pathname;
           <li class="border-b border-border">
             <a
               href={href}
-              class={`block px-6 py-3 text-base font-medium ${currentPath.startsWith(href) ? 'text-info' : 'text-text-secondary hover:text-text hover:bg-surface-alt'}`}
+              class={`block px-6 py-3 text-base font-medium ${currentPath.startsWith(href) ? 'text-info bg-info-surface' : 'text-text-secondary hover:text-info hover:bg-surface-alt'}`}
             >
               {label}
             </a>
@@ -89,7 +91,7 @@ const currentPath = Astro.url.pathname;
 
       <!-- Mobile Submit Button -->
       <div class="mt-auto p-4">
-        <a href="/submit/" class="block text-center rounded-md bg-info px-4 py-3 text-base font-medium text-white hover:bg-info/90">
+        <a href="/submit/" class="block text-center rounded-md bg-info px-4 py-3 text-base font-medium text-white hover:bg-info/80">
           Submit Listing
         </a>
       </div>

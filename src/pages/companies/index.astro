@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ListingCard from '../../components/ListingCard.astro';
+import DataTable from '../../components/DataTable.tsx';
 
 const allCompanies = await getCollection('companies');
 const sorted = allCompanies.sort((a, b) => {
@@ -9,7 +10,22 @@ const sorted = allCompanies.sort((a, b) => {
   return a.data.name.localeCompare(b.data.name);
 });
 
-const countries = [...new Set(allCompanies.map(c => c.data.country))].sort();
+const tableData = sorted.map(c => ({
+  href: `/companies/${c.data.slug}/`,
+  name: c.data.name,
+  country: c.data.country,
+  type: c.data.type,
+  region: c.data.region,
+  founded: c.data.founded ? String(c.data.founded) : '',
+}));
+
+const tableColumns = [
+  { key: 'name', label: 'Company', isLink: true, sortable: true },
+  { key: 'country', label: 'Country', filterable: true, sortable: true },
+  { key: 'region', label: 'Region', filterable: true, sortable: true },
+  { key: 'type', label: 'Type', filterable: true, sortable: true },
+  { key: 'founded', label: 'Founded', sortable: true },
+];
 
 const itemListLd = {
   "@context": "https://schema.org",
@@ -39,38 +55,12 @@ const itemListLd = {
       </p>
     </div>
 
-    <!-- Country filter links -->
-    <nav class="mt-6 flex flex-wrap gap-2">
-      {countries.map(country => (
-        <a href={`/companies/country/${country.toLowerCase()}/`} class="rounded-full border border-border px-3 py-1 text-sm text-text-secondary hover:bg-surface-alt">
-          {country}
-        </a>
-      ))}
-    </nav>
-
-    <!-- Comparison table -->
-    <div class="mt-8 overflow-x-auto">
-      <table class="min-w-full text-sm">
-        <thead>
-          <tr class="border-b text-left text-text-muted">
-            <th class="pb-2 pr-4 font-medium">Company</th>
-            <th class="pb-2 pr-4 font-medium">Country</th>
-            <th class="pb-2 pr-4 font-medium">Type</th>
-            <th class="pb-2 pr-4 font-medium">Founded</th>
-          </tr>
-        </thead>
-        <tbody>
-          {sorted.map(c => (
-            <tr class="border-b border-border-subtle">
-              <td class="py-2 pr-4"><a href={`/companies/${c.data.slug}/`} class="text-info hover:underline">{c.data.name}</a></td>
-              <td class="py-2 pr-4 text-text-secondary">{c.data.country}</td>
-              <td class="py-2 pr-4 text-text-secondary capitalize">{c.data.type}</td>
-              <td class="py-2 pr-4 text-text-secondary">{c.data.founded || '—'}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+    <DataTable
+      client:visible
+      data={tableData}
+      columns={tableColumns}
+      searchPlaceholder="Search companies..."
+    />
 
     <!-- Card grid -->
     <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

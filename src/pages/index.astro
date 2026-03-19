@@ -1,7 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ListingCard from '../components/ListingCard.astro';
 import NewsletterSignup from '../components/NewsletterSignup.astro';
 import JsonLd from '../components/JsonLd.astro';
 import SearchBar from '../components/SearchBar.astro';
@@ -12,14 +11,6 @@ const allUseCases = await getCollection('use-cases');
 const allChallenges = await getCollection('challenges');
 const allResources = await getCollection('resources');
 const featured = allCompanies.filter(c => c.data.featured).sort((a, b) => a.data.name.localeCompare(b.data.name));
-
-const categories = [
-  { href: '/companies/', label: 'Companies', description: 'Quantum computing companies across Europe' },
-  { href: '/benchmarks/', label: 'Benchmarks', description: 'Reproducible quantum computing benchmarks' },
-  { href: '/use-cases/', label: 'Use Cases', description: 'Real-world hybrid quantum-classical applications' },
-  { href: '/challenges/', label: 'Challenges', description: 'Hackathons, competitions, and open challenges' },
-  { href: '/resources/', label: 'Resources', description: 'Frameworks, courses, funding, and tools' },
-];
 
 const websiteLd = {
   "@context": "https://schema.org",
@@ -39,16 +30,13 @@ const websiteLd = {
   description="The curated directory of quantum computing companies, benchmarks, use cases, and resources across Europe. Focused on Nordics and DACH."
   jsonLd={websiteLd}
 >
-  <!-- Hero - Marketing dark theme with full bleed -->
-  <div class="-mx-4 -mt-8 mb-12 bg-void px-4 py-16 text-center">
+  <!-- Hero -->
+  <div class="mb-8 py-12 text-center">
     <div class="mx-auto max-w-7xl">
-      <div class="mb-6 flex justify-center">
-        <img src="/kvantiq-logo-white.png" alt="Kvantiq Studio" class="h-12" />
-      </div>
-      <h1 class="text-4xl font-bold tracking-tight sm:text-5xl bg-gradient-to-r from-phosphor to-cyan bg-clip-text text-transparent">
-        Kvantiq Directory
+      <h1 class="text-4xl font-bold tracking-tight text-text sm:text-5xl" style="letter-spacing: -0.5px;">
+        European Quantum Computing Directory
       </h1>
-      <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-300">
+      <p class="mx-auto mt-4 max-w-2xl text-lg text-text-secondary">
         The European quantum computing ecosystem — companies, benchmarks, use cases, challenges, and resources across Nordics and DACH.
       </p>
       <div class="mx-auto mt-6 max-w-md">
@@ -57,64 +45,62 @@ const websiteLd = {
     </div>
   </div>
 
-  <!-- Stats bar -->
-  <section class="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
-    <div class="rounded-lg border border-border bg-surface p-4 text-center">
-      <p class="font-mono text-2xl font-semibold text-text">{allCompanies.length}</p>
-      <p class="mt-1 font-mono text-xs uppercase tracking-wide text-text-muted">Companies</p>
-    </div>
-    <div class="rounded-lg border border-border bg-surface p-4 text-center">
-      <p class="font-mono text-2xl font-semibold text-text">{allBenchmarks.length}</p>
-      <p class="mt-1 font-mono text-xs uppercase tracking-wide text-text-muted">Benchmarks</p>
-    </div>
-    <div class="rounded-lg border border-border bg-surface p-4 text-center">
-      <p class="font-mono text-2xl font-semibold text-text">{allUseCases.length}</p>
-      <p class="mt-1 font-mono text-xs uppercase tracking-wide text-text-muted">Use Cases</p>
-    </div>
-    <div class="rounded-lg border border-border bg-surface p-4 text-center">
-      <p class="font-mono text-2xl font-semibold text-text">{allChallenges.length}</p>
-      <p class="mt-1 font-mono text-xs uppercase tracking-wide text-text-muted">Challenges</p>
-    </div>
-    <div class="rounded-lg border border-border bg-surface p-4 text-center">
-      <p class="font-mono text-2xl font-semibold text-text">{allResources.length}</p>
-      <p class="mt-1 font-mono text-xs uppercase tracking-wide text-text-muted">Resources</p>
+  <!-- How to use this directory -->
+  <section class="mt-10 rounded-xl border border-border bg-surface p-6">
+    <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted">How to use this directory</h2>
+    <div class="mt-4 grid gap-6 sm:grid-cols-3">
+      <div class="flex gap-3">
+        <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-info-surface font-mono text-xs font-semibold text-info">1</span>
+        <div>
+          <p class="text-sm font-semibold text-text">Browse or search</p>
+          <p class="mt-0.5 text-xs text-text-secondary leading-relaxed">Use the navigation tabs to explore companies, benchmarks, use cases, challenges, or resources. Or type in the search bar above to find anything instantly.</p>
+        </div>
+      </div>
+      <div class="flex gap-3">
+        <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-info-surface font-mono text-xs font-semibold text-info">2</span>
+        <div>
+          <p class="text-sm font-semibold text-text">Filter and sort</p>
+          <p class="mt-0.5 text-xs text-text-secondary leading-relaxed">Each listing page has dropdown filters (country, type, category) and sortable columns. Click any column header to sort. Combine filters to narrow results.</p>
+        </div>
+      </div>
+      <div class="flex gap-3">
+        <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-info-surface font-mono text-xs font-semibold text-info">3</span>
+        <div>
+          <p class="text-sm font-semibold text-text">Dive into details</p>
+          <p class="mt-0.5 text-xs text-text-secondary leading-relaxed">Click any entry to see its full profile — description, metadata, verified sources, and FAQ. Every entry links back to its original sources so you can verify the data yourself.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Featured companies -->
   {featured.length > 0 && (
-    <section class="mt-8">
-      <h2 class="text-2xl font-bold">Featured Companies</h2>
-      <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <section class="mt-10">
+      <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted">Featured Companies</h2>
+      <div class="mt-3 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {featured.map(c => (
-          <ListingCard
-            title={c.data.name}
-            href={`/companies/${c.data.slug}/`}
-            description={c.data.description}
-            tags={c.data.tags}
-            meta={`${c.data.country} · ${c.data.type}`}
-            featured={true}
-          />
+          <a href={`/companies/${c.data.slug}/`} class="block rounded-xl border border-border bg-surface p-5 transition-all duration-[120ms] hover:border-info-border hover:shadow-[var(--shadow-elevated)]">
+            <div class="flex items-start justify-between">
+              <div>
+                <h3 class="font-semibold text-text">{c.data.name}</h3>
+                <p class="mt-0.5 font-mono text-[10px] text-text-muted">{c.data.country} · {c.data.type}</p>
+              </div>
+              <span class="rounded-md bg-ok-surface border border-ok-border px-2 py-0.5 font-mono text-[10px] font-medium text-ok-text">Featured</span>
+            </div>
+            <p class="mt-2 text-xs text-text-secondary leading-relaxed line-clamp-3">{c.data.description}</p>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              {c.data.tags.slice(0, 4).map((tag: string) => (
+                <span class="rounded-md border border-border bg-surface-alt px-1.5 py-0.5 font-mono text-[10px] text-text-muted">{tag}</span>
+              ))}
+            </div>
+          </a>
         ))}
       </div>
     </section>
   )}
 
-  <!-- Category cards -->
-  <section class="mt-12">
-    <h2 class="text-2xl font-bold">Browse the Directory</h2>
-    <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {categories.map(cat => (
-        <a href={cat.href} class="block rounded-lg border border-border p-5 transition hover:shadow-md">
-          <h3 class="font-semibold text-info">{cat.label}</h3>
-          <p class="mt-1 text-sm text-text-secondary">{cat.description}</p>
-        </a>
-      ))}
-    </div>
-  </section>
-
   <!-- Newsletter -->
-  <section class="mt-12">
+  <section class="mt-10">
     <NewsletterSignup />
   </section>
 </BaseLayout>
