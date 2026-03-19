@@ -8,5 +8,13 @@
   "framework": "PennyLane, Cirq",
   "qubits": 12,
   "reproducible": true,
-  "datePublished": "2023-11-20"
+  "datePublished": "2023-11-20",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://pennylane.ai/qml/demos/tutorial_qaoa_maxcut.html",
+      "title": "QAOA for MaxCut - PennyLane Tutorial",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
 }

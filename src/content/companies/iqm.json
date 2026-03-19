@@ -11,5 +11,13 @@
   "featured": true,
   "headquarters": "Espoo, Finland",
   "employees": "250+",
-  "funding": "EUR 200M+"
+  "funding": "EUR 200M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.meetiqm.com",
+      "title": "IQM Quantum Computers Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
 }

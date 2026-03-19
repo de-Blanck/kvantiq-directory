@@ -9,5 +9,13 @@
   "dateEnd": "2025-02-28",
   "status": "completed",
   "prizes": "Cash prizes, hardware access, internship opportunities",
-  "location": "Online"
+  "location": "Online",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://qhack.ai",
+      "title": "QHack Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
 }

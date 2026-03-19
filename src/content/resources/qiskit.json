@@ -8,5 +8,13 @@
   "openSource": true,
   "free": true,
   "language": "Python",
-  "provider": "IBM"
+  "provider": "IBM",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://qiskit.org",
+      "title": "Qiskit Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
 }

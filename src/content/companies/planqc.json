@@ -10,5 +10,13 @@
   "website": "https://www.planqc.eu",
   "featured": false,
   "headquarters": "Munich, Germany",
-  "funding": "EUR 50M+"
+  "funding": "EUR 50M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.planqc.eu",
+      "title": "planqc Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
 }

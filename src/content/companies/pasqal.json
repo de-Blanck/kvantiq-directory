@@ -11,5 +11,13 @@
   "featured": true,
   "headquarters": "Massy, France",
   "employees": "200+",
-  "funding": "EUR 100M+"
+  "funding": "EUR 100M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.pasqal.com",
+      "title": "Pasqal Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
 }

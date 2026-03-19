@@ -9,5 +9,13 @@
   "framework": "Qiskit, PennyLane",
   "qubits": 4,
   "reproducible": true,
-  "datePublished": "2024-01-15"
+  "datePublished": "2024-01-15",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://qiskit.org/textbook/ch-applications/vqe-molecules.html",
+      "title": "VQE for Molecular Simulations - Qiskit Textbook",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
 }

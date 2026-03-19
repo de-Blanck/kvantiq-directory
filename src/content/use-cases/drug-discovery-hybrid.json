@@ -9,5 +9,11 @@
   "approach": "Hybrid quantum-classical algorithms like VQE and quantum machine learning models are used to compute molecular properties. The quantum processor handles the quantum-mechanical simulation while classical computers manage optimization and data processing.",
   "results": "Early results show quantum-enhanced models can achieve chemical accuracy for small molecules. Scaling to pharmaceutically relevant molecules remains an active research challenge.",
   "companies": ["Pasqal", "IQM"],
-  "source": "https://arxiv.org/abs/2301.00001"
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2301.00001",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
 }

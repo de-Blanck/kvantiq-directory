@@ -2,6 +2,15 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
+const sourceSchema = z.object({
+  type: z.enum(['doi', 'arxiv', 'url', 'website', 'press-release']),
+  url: z.string().url(),
+  title: z.string().optional(),
+  authors: z.string().optional(),
+  datePublished: z.string().optional(),
+  dateAccessed: z.string().optional(),
+});
+
 const companies = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/companies' }),
   schema: z.object({
@@ -19,6 +28,7 @@ const companies = defineCollection({
     headquarters: z.string().optional(),
     employees: z.string().optional(),
     funding: z.string().optional(),
+    sources: z.array(sourceSchema).min(1),
   }),
 });
 
@@ -34,9 +44,9 @@ const benchmarks = defineCollection({
     hardware: z.string().optional(),
     framework: z.string().optional(),
     qubits: z.number().optional(),
-    source: z.string().url().optional(),
     reproducible: z.boolean().default(false),
     datePublished: z.string().optional(),
+    sources: z.array(sourceSchema).min(1),
   }),
 });
 
@@ -53,7 +63,7 @@ const useCases = defineCollection({
     approach: z.string(),
     results: z.string().optional(),
     companies: z.array(z.string()).optional(),
-    source: z.string().url().optional(),
+    sources: z.array(sourceSchema).min(1),
   }),
 });
 
@@ -71,6 +81,7 @@ const challenges = defineCollection({
     status: z.enum(['upcoming', 'active', 'completed']).default('completed'),
     prizes: z.string().optional(),
     location: z.string().optional(),
+    sources: z.array(sourceSchema).min(1),
   }),
 });
 
@@ -87,6 +98,7 @@ const resources = defineCollection({
     free: z.boolean().default(false),
     language: z.string().optional(),
     provider: z.string().optional(),
+    sources: z.array(sourceSchema).min(1),
   }),
 });
 
