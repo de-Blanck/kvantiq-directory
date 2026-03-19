@@ -1,0 +1,27 @@
+{
+  "name": "WACQT Quantum Hackathon 2026",
+  "slug": "wacqt-quantum-hackathon-2026",
+  "organizer": "WACQT (Wallenberg Centre for Quantum Technology) and IBM",
+  "tags": ["hackathon", "Nordic", "Qiskit", "students", "Sweden"],
+  "description": "The WACQT Quantum Hackathon at Chalmers University brought together approximately 40 participants to explore quantum technologies, collaborate in teams, and solve real-world problems using IBM's Qiskit quantum tools. Hosted by the Wallenberg Centre for Quantum Technology in Gothenburg, Sweden, the event included a mandatory preparation lecture on quantum computing with Qiskit before the two-day hackathon.",
+  "website": "https://www.chalmers.se/en/centres/wacqt/wacqt-quantum-technology-testbed/quantum-hackathon/",
+  "dateStart": "2026-01-24",
+  "dateEnd": "2026-01-25",
+  "status": "completed",
+  "prizes": "Not disclosed",
+  "location": "Gothenburg, Sweden",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.chalmers.se/en/centres/wacqt/wacqt-quantum-technology-testbed/quantum-hackathon/",
+      "title": "Quantum Hackathon: WACQT & IBM - Chalmers",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.chalmers.se/en/current/news/wacqt-quantum-hackathon-building-skills-for-the-future/",
+      "title": "Quantum Hackathon: Building Skills for the Future - Chalmers",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

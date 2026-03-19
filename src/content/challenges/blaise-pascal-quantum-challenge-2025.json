@@ -1,0 +1,27 @@
+{
+  "name": "Blaise Pascal Quantum Challenge 2025",
+  "slug": "blaise-pascal-quantum-challenge-2025",
+  "organizer": "Pasqal",
+  "tags": ["hackathon", "quantum-AI", "sustainability", "SDGs", "neutral-atoms"],
+  "description": "The Blaise Pascal Quantum Challenge 2025 invited global innovators to explore how quantum-powered AI can support the UN Sustainable Development Goals. Organized by Pasqal, the challenge attracted 137 submissions from teams worldwide, with the top 15 advancing to a two-week virtual hackathon. The winning team received EUR 15,000 from a total prize pool of EUR 30,000.",
+  "website": "https://www.pasqal.com/events/the-blaise-pascal-quantum-challenge-2025-highlights-winners/",
+  "dateStart": "2024-12-05",
+  "dateEnd": "2025-03-26",
+  "status": "completed",
+  "prizes": "EUR 30,000 total (first place EUR 15,000)",
+  "location": "Online",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.pasqal.com/events/the-blaise-pascal-quantum-challenge-2025-highlights-winners/",
+      "title": "The Blaise Pascal Quantum Challenge 2025 - Highlights & Winners - Pasqal",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.agorize.com/en/challenges/blaisepascalquantumchallenge2025",
+      "title": "The Blaise Pascal Quantum Challenge - Agorize",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

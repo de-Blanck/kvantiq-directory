@@ -1,0 +1,27 @@
+{
+  "name": "Classiq Coding Competition",
+  "slug": "classiq-coding-competition",
+  "organizer": "Classiq",
+  "tags": ["challenge", "circuit-optimization", "quantum-efficiency", "education"],
+  "description": "The Classiq Coding Competition was the first competition focused on quantum circuit efficiency, challenging participants to build the most optimized quantum circuits for real-world problems. The USD 25,000 competition featured four challenges including Hamiltonian exponentiation and Toffoli gate decomposition, attracting nearly 300 contestants from over 50 countries. Notable winners included youth participants under 18.",
+  "website": "https://www.classiq.io/insights/classiq-coding-competition-announcement",
+  "dateStart": "2022-05-11",
+  "dateEnd": "2022-07-15",
+  "status": "completed",
+  "prizes": "USD 25,000 total (USD 3,000 per challenge first place)",
+  "location": "Online",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.classiq.io/insights/classiq-coding-competition-announcement",
+      "title": "Classiq Announces the Classiq Coding Competition",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.classiq.io/insights/classiq-coding-competition-results",
+      "title": "Winners Announcement - Classiq Coding Competition, Spring 2022",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

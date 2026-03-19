@@ -1,0 +1,27 @@
+{
+  "name": "Global Quantum Game Jam 2025",
+  "slug": "quantum-game-jam-2025",
+  "organizer": "IGDA Finland and Aalto University",
+  "tags": ["game-jam", "creative", "quantum-physics", "Nordic", "annual"],
+  "description": "The 11th edition of the Global Quantum Game Jam brought together game developers, quantum physicists, and artists to create games exploring quantum physics concepts. Organized by IGDA Finland and Aalto University, the fully online event ran from October 5 to 7, 2025. Participants collaborated to develop games connected to quantum physics either through real quantum machinery or thematic inspiration.",
+  "website": "https://itch.io/jam/quantum-game-jam-2025",
+  "dateStart": "2025-10-05",
+  "dateEnd": "2025-10-07",
+  "status": "completed",
+  "prizes": "Recognition and community awards",
+  "location": "Online",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://itch.io/jam/quantum-game-jam-2025",
+      "title": "Global Quantum Game Jam 2025 - itch.io",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.igda.fi/new-events/2025/global-quantum-game-jam-2025",
+      "title": "Global Quantum Game Jam 2025 - IGDA Finland",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}
