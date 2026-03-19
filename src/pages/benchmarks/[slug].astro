@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TagList from '../../components/TagList.astro';
 import JsonLd from '../../components/JsonLd.astro';
+import Sources from '../../components/Sources.astro';
 
 export async function getStaticPaths() {
   const benchmarks = await getCollection('benchmarks');
@@ -20,7 +21,11 @@ const datasetLd = {
   "name": benchmark.name,
   "description": benchmark.description,
   ...(benchmark.datePublished && { "datePublished": benchmark.datePublished }),
-  ...(benchmark.source && { "url": benchmark.source }),
+  "citation": benchmark.sources.map(s => ({
+    "@type": s.type === 'doi' || s.type === 'arxiv' ? 'ScholarlyArticle' : 'WebPage',
+    "url": s.url,
+    ...(s.title && { "name": s.title }),
+  })),
 };
 
 const faqLd = {
@@ -38,7 +43,7 @@ const faqLd = {
   <article>
     <h1 class="text-3xl font-bold">{benchmark.name}</h1>
     <div class="summary mt-4" role="doc-abstract">
-      <p class="text-gray-700">{benchmark.description}</p>
+      <p class="text-gray-700">{benchmark.description}<sup><a href="#ref-1" class="text-indigo-500 ml-0.5">[1]</a></sup></p>
       <ul class="mt-3 space-y-1 text-sm text-gray-600">
         <li>Algorithm: {benchmark.algorithm}</li>
         <li>Category: <span class="capitalize">{benchmark.category}</span></li>
@@ -56,13 +61,6 @@ const faqLd = {
       <p class="mt-2 text-gray-700">{benchmark.name} uses the {benchmark.algorithm} algorithm, categorized under {benchmark.category}.</p>
     </section>
 
-    {benchmark.source && (
-      <section class="mt-6">
-        <h2 class="text-xl font-semibold">Where can I find this benchmark?</h2>
-        <p class="mt-2"><a href={benchmark.source} target="_blank" rel="noopener noreferrer" class="text-indigo-700 hover:underline">{benchmark.source}</a></p>
-      </section>
-    )}
-
     <section class="faq mt-8 rounded-lg border border-gray-200 p-6">
       <h2 class="text-lg font-semibold">Frequently Asked Questions</h2>
       <details class="mt-3">
@@ -74,5 +72,7 @@ const faqLd = {
         <p class="mt-2 text-sm text-gray-600">{benchmark.reproducible ? `Yes, this benchmark is reproducible.` : `Reproducibility has not been confirmed for this benchmark.`}</p>
       </details>
     </section>
+
+    <Sources sources={benchmark.sources} />
   </article>
 </BaseLayout>

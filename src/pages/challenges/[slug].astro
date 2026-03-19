@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TagList from '../../components/TagList.astro';
 import JsonLd from '../../components/JsonLd.astro';
+import Sources from '../../components/Sources.astro';
 
 export async function getStaticPaths() {
   const challenges = await getCollection('challenges');
@@ -25,7 +26,7 @@ const eventLd = {
   <article>
     <h1 class="text-3xl font-bold">{challenge.name}</h1>
     <div class="summary mt-4" role="doc-abstract">
-      <p class="text-gray-700">{challenge.description}</p>
+      <p class="text-gray-700">{challenge.description}<sup><a href="#ref-1" class="text-indigo-500 ml-0.5">[1]</a></sup></p>
       <ul class="mt-3 space-y-1 text-sm text-gray-600">
         <li>Organizer: {challenge.organizer}</li>
         <li>Status: <span class="capitalize">{challenge.status}</span></li>
@@ -53,5 +54,7 @@ const eventLd = {
         <p class="mt-2 text-sm text-gray-600">{challenge.name} is organized by {challenge.organizer}.</p>
       </details>
     </section>
+
+    <Sources sources={challenge.sources} />
   </article>
 </BaseLayout>

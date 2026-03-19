@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TagList from '../../components/TagList.astro';
 import JsonLd from '../../components/JsonLd.astro';
+import Sources from '../../components/Sources.astro';
 
 export async function getStaticPaths() {
   const companies = await getCollection('companies');
@@ -27,6 +28,11 @@ const orgLd = {
       "addressLocality": company.headquarters,
     }
   }),
+  "citation": company.sources.filter(s => s.type !== 'website').map(s => ({
+    "@type": s.type === 'doi' || s.type === 'arxiv' ? 'ScholarlyArticle' : 'WebPage',
+    "url": s.url,
+    ...(s.title && { "name": s.title }),
+  })),
 };
 
 const faqLd = {
@@ -57,7 +63,7 @@ const faqLd = {
     <h1 class="text-3xl font-bold">{company.name}</h1>
 
     <div class="summary mt-4" role="doc-abstract">
-      <p class="text-gray-700">{company.description}</p>
+      <p class="text-gray-700">{company.description}<sup><a href="#ref-1" class="text-indigo-500 ml-0.5">[1]</a></sup></p>
       <ul class="mt-3 space-y-1 text-sm text-gray-600">
         {company.founded && <li>Founded: <time datetime={String(company.founded)}>{company.founded}</time></li>}
         <li>Country: {company.country}</li>
@@ -108,5 +114,7 @@ const faqLd = {
         </details>
       )}
     </section>
+
+    <Sources sources={company.sources} />
   </article>
 </BaseLayout>

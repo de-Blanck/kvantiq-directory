@@ -1,6 +1,10 @@
 import { getCollection } from 'astro:content';
 import type { APIRoute } from 'astro';
 
+function formatSources(sources: { type: string; url: string; title?: string }[]): string {
+  return sources.map((s, i) => `  [${i + 1}] ${s.title ? `${s.title} — ` : ''}${s.url}`).join('\n');
+}
+
 export const GET: APIRoute = async () => {
   const companies = await getCollection('companies');
   const benchmarks = await getCollection('benchmarks');
@@ -19,7 +23,8 @@ export const GET: APIRoute = async () => {
     content += `- Type: ${c.data.type}\n`;
     content += `- Website: ${c.data.website}\n`;
     if (c.data.founded) content += `- Founded: ${c.data.founded}\n`;
-    content += `- Tags: ${c.data.tags.join(', ')}\n\n`;
+    content += `- Tags: ${c.data.tags.join(', ')}\n`;
+    content += `- Sources:\n${formatSources(c.data.sources)}\n\n`;
   }
 
   content += '## Benchmarks\n\n';
@@ -29,7 +34,8 @@ export const GET: APIRoute = async () => {
     content += `- Algorithm: ${b.data.algorithm}\n`;
     content += `- Category: ${b.data.category}\n`;
     if (b.data.qubits) content += `- Qubits: ${b.data.qubits}\n`;
-    content += `- Reproducible: ${b.data.reproducible ? 'Yes' : 'No'}\n\n`;
+    content += `- Reproducible: ${b.data.reproducible ? 'Yes' : 'No'}\n`;
+    content += `- Sources:\n${formatSources(b.data.sources)}\n\n`;
   }
 
   content += '## Use Cases\n\n';
@@ -38,7 +44,8 @@ export const GET: APIRoute = async () => {
     content += `${u.data.description}\n`;
     content += `- Industry: ${u.data.industry}\n`;
     content += `- Problem: ${u.data.problem}\n`;
-    content += `- Approach: ${u.data.approach}\n\n`;
+    content += `- Approach: ${u.data.approach}\n`;
+    content += `- Sources:\n${formatSources(u.data.sources)}\n\n`;
   }
 
   content += '## Challenges\n\n';
@@ -46,7 +53,8 @@ export const GET: APIRoute = async () => {
     content += `### ${ch.data.name}\n`;
     content += `${ch.data.description}\n`;
     content += `- Organizer: ${ch.data.organizer}\n`;
-    content += `- Website: ${ch.data.website}\n\n`;
+    content += `- Website: ${ch.data.website}\n`;
+    content += `- Sources:\n${formatSources(ch.data.sources)}\n\n`;
   }
 
   content += '## Resources\n\n';
@@ -55,7 +63,8 @@ export const GET: APIRoute = async () => {
     content += `${r.data.description}\n`;
     content += `- Type: ${r.data.type}\n`;
     content += `- Website: ${r.data.website}\n`;
-    content += `- Open Source: ${r.data.openSource ? 'Yes' : 'No'}\n\n`;
+    content += `- Open Source: ${r.data.openSource ? 'Yes' : 'No'}\n`;
+    content += `- Sources:\n${formatSources(r.data.sources)}\n\n`;
   }
 
   return new Response(content, {
