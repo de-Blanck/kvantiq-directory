@@ -1,0 +1,26 @@
+{
+  "name": "Denmark National Quantum Initiative",
+  "slug": "denmark-quantum-funding",
+  "type": "funding",
+  "tags": ["funding", "Denmark", "Nordics", "research", "public-funding", "national-strategy"],
+  "description": "The Danish government allocated DKK 1 billion (approximately €134 million) from 2023 to 2027 through the Finance Act to strengthen Denmark's position in quantum technologies. The funding supports quantum research infrastructure, talent development, and innovation across Danish universities and industry, coordinated in collaboration with the Danish Quantum Community ecosystem.",
+  "website": "https://dqc.dk/",
+  "openSource": false,
+  "free": true,
+  "language": "",
+  "provider": "Danish Government",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://dqc.dk/",
+      "title": "Danish Quantum Community — National Quantum Ecosystem Hub",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://dqc.dk/about/",
+      "title": "About the Danish Quantum Community",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

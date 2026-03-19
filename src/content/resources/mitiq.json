@@ -1,0 +1,26 @@
+{
+  "name": "Mitiq",
+  "slug": "mitiq",
+  "type": "framework",
+  "tags": ["error-mitigation", "open-source", "python", "noise-reduction", "hybrid"],
+  "description": "Mitiq is an open-source Python toolkit for quantum error mitigation on noisy intermediate-scale quantum computers, developed by Unitary Foundation. It implements techniques including zero-noise extrapolation, probabilistic error cancellation, and Clifford data regression, and integrates with Cirq, Qiskit, pyQuil, and Braket.",
+  "website": "https://mitiq.readthedocs.io",
+  "openSource": true,
+  "free": true,
+  "language": "Python",
+  "provider": "Unitary Foundation",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://mitiq.readthedocs.io",
+      "title": "Mitiq Documentation",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://github.com/unitaryfoundation/mitiq",
+      "title": "Mitiq GitHub Repository",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

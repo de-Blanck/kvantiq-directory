@@ -1,0 +1,26 @@
+{
+  "name": "ProjectQ",
+  "slug": "projectq",
+  "type": "framework",
+  "tags": ["compilation", "simulation", "open-source", "python", "european"],
+  "description": "ProjectQ is an open-source quantum computing framework developed at ETH Zurich. It features a modular compiler pipeline that can target classical simulators or real quantum hardware, and includes a high-performance C++ simulator capable of emulating up to about 30 qubits on a standard laptop.",
+  "website": "https://projectq.ch",
+  "openSource": true,
+  "free": true,
+  "language": "Python",
+  "provider": "ETH Zurich",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://projectq.ch",
+      "title": "ProjectQ Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://github.com/ProjectQ-Framework/ProjectQ",
+      "title": "ProjectQ GitHub Repository",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

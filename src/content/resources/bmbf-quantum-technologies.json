@@ -1,0 +1,26 @@
+{
+  "name": "German BMBF Quantum Technologies Programme",
+  "slug": "bmbf-quantum-technologies",
+  "type": "funding",
+  "tags": ["funding", "Germany", "DACH", "research", "public-funding", "hardware"],
+  "description": "The German Federal Ministry of Education and Research (BMBF) funds quantum technology development through a programme exceeding €2 billion, targeting quantum computing, communication, and sensing. The initiative includes the Quantum Systems research programme, funding for six hardware demonstrator platforms, and the Quantum Future talent pipeline for students and junior researchers.",
+  "website": "https://www.quantensysteme.info/information-in-english",
+  "openSource": false,
+  "free": true,
+  "language": "",
+  "provider": "German Federal Ministry of Education and Research (BMBF)",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.bmftr.bund.de/EN/Research/EmergingTechnologies/QuantumTechnologies/quantumtechnologies_node.html",
+      "title": "BMBF Quantum Technologies Overview",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2022/06/22/german-federal-ministry-of-education-and-research-announces-quantum-systems-program/",
+      "title": "German Federal Ministry of Education and Research Announces Quantum Systems Program",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

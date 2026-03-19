@@ -1,0 +1,26 @@
+{
+  "name": "Quantum Inspire",
+  "slug": "quantum-inspire",
+  "type": "tool",
+  "tags": ["education", "European", "cloud", "simulator", "hardware", "QuTech"],
+  "description": "Quantum Inspire is a European quantum computing platform operated by QuTech that provides free access to quantum hardware and simulators through a web interface and API. The platform supports circuit-based quantum programming in multiple languages including Qiskit, and is used as the hands-on component of TU Delft's quantum computing courses on edX. It serves as a key educational tool for the European quantum computing community.",
+  "website": "https://www.quantum-inspire.com",
+  "openSource": false,
+  "free": true,
+  "language": "Python",
+  "provider": "QuTech",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.quantum-inspire.com",
+      "title": "Quantum Inspire — QuTech",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.edx.org/learn/computer-science/delft-university-of-technology-quantum-hardware-and-its-applications-with-quantum-inspire",
+      "title": "Quantum Hardware and Its Applications with Quantum Inspire — edX",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

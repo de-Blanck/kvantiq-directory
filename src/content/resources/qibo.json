@@ -1,0 +1,26 @@
+{
+  "name": "Qibo",
+  "slug": "qibo",
+  "type": "framework",
+  "tags": ["full-stack", "open-source", "python", "hardware-control", "european"],
+  "description": "Qibo is an open-source full-stack framework for quantum simulation and quantum hardware control developed by a European consortium including CERN, INFN, and the Barcelona Supercomputing Center. It provides GPU-accelerated simulation backends and plug-and-play hardware drivers for superconducting and ion-trap devices.",
+  "website": "https://qibo.science",
+  "openSource": true,
+  "free": true,
+  "language": "Python",
+  "provider": "Qibo Collaboration (CERN, INFN, BSC, UB)",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://qibo.science",
+      "title": "Qibo Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://github.com/qiboteam/qibo",
+      "title": "Qibo GitHub Repository",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

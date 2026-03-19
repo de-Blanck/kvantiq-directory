@@ -1,0 +1,26 @@
+{
+  "name": "CERN QTI Online Lecture Series",
+  "slug": "cern-qti-lectures",
+  "type": "course",
+  "tags": ["education", "lectures", "European", "CERN", "research", "free"],
+  "description": "The CERN Quantum Technology Initiative runs a free online lecture series covering quantum theory, simulation, sensing, computing, algorithms, and quantum networks. Lectures are delivered by early-career and senior researchers and recorded for on-demand viewing on the CERN QTI website and the CERN Lectures YouTube channel. The series began in March 2023 and continues on a regular weekly schedule.",
+  "website": "https://quantum.cern/online-lecture-series",
+  "openSource": false,
+  "free": true,
+  "language": "English",
+  "provider": "CERN",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://quantum.cern/online-lecture-series",
+      "title": "Online Lecture Series — CERN QTI",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://home.cern/news/announcement/computing/cern-qti-launches-its-new-series-online-lectures-explore-quantum",
+      "title": "CERN QTI Launches Its New Series of Online Lectures — CERN",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

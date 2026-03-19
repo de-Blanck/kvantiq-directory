@@ -1,0 +1,26 @@
+{
+  "name": "European Quantum Industry Consortium (QuIC)",
+  "slug": "quic",
+  "type": "community",
+  "tags": ["community", "Europe", "industry", "consortium", "policy", "standards"],
+  "description": "QuIC is a pan-European not-for-profit association founded in 2021 to support the growth of the commercial quantum technology sector. With over 160 members including large enterprises, SMEs, investors, and startups, it operates working groups on use cases, strategic roadmaps, standards, intellectual property, and education across the European quantum ecosystem.",
+  "website": "https://www.euroquic.org/",
+  "openSource": false,
+  "free": false,
+  "language": "",
+  "provider": "QuIC",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.euroquic.org/",
+      "title": "European Quantum Industry Consortium Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumconsortium.org/quantum-consortia-qic-qed-c-q-star-and-quic-form-international-council-to-enable-and-grow-the-global-quantum-industry/",
+      "title": "Quantum Consortia QIC, QED-C, Q-STAR and QuIC Form International Council",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

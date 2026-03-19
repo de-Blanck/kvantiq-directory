@@ -1,0 +1,26 @@
+{
+  "name": "QuTiP",
+  "slug": "qutip",
+  "type": "framework",
+  "tags": ["open-quantum-systems", "simulation", "open-source", "python", "quantum-optics"],
+  "description": "QuTiP (Quantum Toolbox in Python) is an open-source library for simulating the dynamics of open quantum systems. It is widely used in quantum optics, quantum information, and optomechanics research, with support for GPU acceleration via JAX and CuPy backends in version 5.",
+  "website": "https://qutip.org",
+  "openSource": true,
+  "free": true,
+  "language": "Python",
+  "provider": "QuTiP Community",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://qutip.org",
+      "title": "QuTiP Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://github.com/qutip/qutip",
+      "title": "QuTiP GitHub Repository",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

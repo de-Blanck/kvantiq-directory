@@ -1,0 +1,26 @@
+{
+  "name": "Brilliant Quantum Computing",
+  "slug": "brilliant-quantum",
+  "type": "course",
+  "tags": ["education", "interactive", "visual", "beginner", "browser-based"],
+  "description": "Brilliant's Quantum Computing course teaches quantum algorithms through interactive puzzles and a drag-and-drop circuit simulator that runs in the browser. Developed in collaboration with researchers from Microsoft, Caltech's IQIM, and Google X, the course requires only basic linear algebra and no prior quantum physics knowledge. The course is part of Brilliant's subscription-based learning platform.",
+  "website": "https://brilliant.org/courses/quantum-computing/",
+  "openSource": false,
+  "free": false,
+  "language": "English",
+  "provider": "Brilliant",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://brilliant.org/courses/quantum-computing/",
+      "title": "Quantum Computing Course — Brilliant",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://azure.microsoft.com/en-us/blog/quantum/2019/05/23/microsoft-brilliant-team-up-to-offer-quantum-curriculum/",
+      "title": "Microsoft and Brilliant Team Up to Offer Quantum Curriculum — Microsoft Azure Blog",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}
