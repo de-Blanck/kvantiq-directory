@@ -28,7 +28,7 @@ const companies = defineCollection({
     headquarters: z.string().optional(),
     employees: z.string().optional(),
     funding: z.string().optional(),
-    sources: z.array(sourceSchema).min(1),
+    sources: z.array(sourceSchema).min(2),
   }),
 });
 
@@ -46,7 +46,7 @@ const benchmarks = defineCollection({
     qubits: z.number().optional(),
     reproducible: z.boolean().default(false),
     datePublished: z.string().optional(),
-    sources: z.array(sourceSchema).min(1),
+    sources: z.array(sourceSchema).min(2),
   }),
 });
 
@@ -63,7 +63,7 @@ const useCases = defineCollection({
     approach: z.string(),
     results: z.string().optional(),
     companies: z.array(z.string()).optional(),
-    sources: z.array(sourceSchema).min(1),
+    sources: z.array(sourceSchema).min(2),
   }),
 });
 
@@ -81,7 +81,7 @@ const challenges = defineCollection({
     status: z.enum(['upcoming', 'active', 'completed']).default('completed'),
     prizes: z.string().optional(),
     location: z.string().optional(),
-    sources: z.array(sourceSchema).min(1),
+    sources: z.array(sourceSchema).min(2),
   }),
 });
 
@@ -98,7 +98,7 @@ const resources = defineCollection({
     free: z.boolean().default(false),
     language: z.string().optional(),
     provider: z.string().optional(),
-    sources: z.array(sourceSchema).min(1),
+    sources: z.array(sourceSchema).min(2),
   }),
 });
 

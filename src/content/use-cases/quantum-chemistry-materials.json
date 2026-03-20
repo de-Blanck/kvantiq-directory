@@ -15,6 +15,12 @@
       "url": "https://arxiv.org/abs/2106.13832",
       "title": "Quantum simulation of molecules and materials with quantum computers",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hqs.de/resources/quantum-simulation-for-materials-science",
+      "title": "HQS Quantum Simulations: Quantum simulation for materials science",
+      "dateAccessed": "2026-03-20"
     }
   ]
 }

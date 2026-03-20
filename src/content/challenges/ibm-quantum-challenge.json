@@ -13,6 +13,12 @@
       "url": "https://www.ibm.com/quantum/events",
       "title": "IBM Quantum Events",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://github.com/qiskit-community/ibm-quantum-challenge-2024",
+      "title": "IBM Quantum Challenge GitHub Repository",
+      "dateAccessed": "2026-03-20"
     }
   ]
 }

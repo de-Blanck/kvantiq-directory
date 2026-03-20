@@ -15,6 +15,12 @@
       "url": "https://learning.quantum.ibm.com",
       "title": "IBM Quantum Learning Platform",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://github.com/Qiskit/textbook",
+      "title": "Qiskit Textbook GitHub Repository",
+      "dateAccessed": "2026-03-20"
     }
   ]
 }

@@ -15,6 +15,12 @@
       "url": "https://www.pasqal.com/articles/quantum-computing-for-energy",
       "title": "Quantum Computing for Energy Optimization",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2303.00445",
+      "title": "Quantum computing for energy systems optimization: challenges and opportunities",
+      "dateAccessed": "2026-03-20"
     }
   ]
 }
