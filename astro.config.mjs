@@ -8,7 +8,7 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://kvantiq.com',
+  site: 'https://directory.kvantiq.studio',
   output: 'static',
   vite: {
     plugins: [tailwindcss()]
