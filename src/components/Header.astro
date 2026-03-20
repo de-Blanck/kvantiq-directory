@@ -42,9 +42,9 @@ const currentPath = Astro.url.pathname;
       aria-label="Open menu"
       aria-expanded="false"
     >
-      <span class="block h-0.5 w-6 bg-gray-600"></span>
-      <span class="block h-0.5 w-6 bg-gray-600"></span>
-      <span class="block h-0.5 w-6 bg-gray-600"></span>
+      <span class="block h-0.5 w-6 bg-text-muted"></span>
+      <span class="block h-0.5 w-6 bg-text-muted"></span>
+      <span class="block h-0.5 w-6 bg-text-muted"></span>
     </button>
   </nav>
 
@@ -66,7 +66,7 @@ const currentPath = Astro.url.pathname;
       <div class="flex justify-end p-4 border-b border-border">
         <button
           id="mobile-menu-close"
-          class="p-2 text-text-secondary hover:text-text"
+          class="p-2 text-text-secondary hover:text-text-primary"
           aria-label="Close menu"
         >
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -81,7 +81,7 @@ const currentPath = Astro.url.pathname;
           <li class="border-b border-border">
             <a
               href={href}
-              class={`block px-6 py-3 text-base font-medium ${currentPath.startsWith(href) ? 'text-info bg-info-surface' : 'text-text-secondary hover:text-info hover:bg-surface-alt'}`}
+              class={`block px-6 py-3 text-base font-medium ${currentPath.startsWith(href) ? 'text-info bg-info/15' : 'text-text-secondary hover:text-info hover:bg-base'}`}
             >
               {label}
             </a>
