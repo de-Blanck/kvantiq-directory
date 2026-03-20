@@ -1,0 +1,20 @@
+{
+  "name": "Hybrid Quantum-Classical Drug Discovery",
+  "slug": "drug-discovery-hybrid",
+  "industry": "Pharmaceuticals",
+  "category": "chemistry",
+  "tags": ["drug-discovery", "molecular-simulation", "VQE", "hybrid"],
+  "description": "Using hybrid quantum-classical methods to accelerate drug discovery by simulating molecular interactions more accurately than classical methods alone.",
+  "problem": "Classical computers struggle to accurately simulate quantum mechanical properties of drug molecules, especially electron correlation effects in large molecular systems. This limits the accuracy of computational drug screening.",
+  "approach": "Hybrid quantum-classical algorithms like VQE and quantum machine learning models are used to compute molecular properties. The quantum processor handles the quantum-mechanical simulation while classical computers manage optimization and data processing.",
+  "results": "Early results show quantum-enhanced models can achieve chemical accuracy for small molecules. Scaling to pharmaceutically relevant molecules remains an active research challenge.",
+  "companies": ["Pasqal", "IQM"],
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2006.14510",
+      "title": "Quantum computational chemistry for drug discovery",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

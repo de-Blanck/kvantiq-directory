@@ -1,0 +1,22 @@
+{
+  "name": "Quandela",
+  "slug": "quandela",
+  "country": "France",
+  "region": "western-europe",
+  "type": "hardware",
+  "tags": ["photonic", "quantum-computing", "cloud-access"],
+  "founded": 2017,
+  "description": "Quandela develops photonic quantum computers based on single-photon sources and manipulation. The company offers both on-premise quantum processors and cloud access to their quantum computing platform, targeting applications in optimization, simulation, and machine learning.",
+  "website": "https://www.quandela.com",
+  "featured": true,
+  "headquarters": "Massy, France",
+  "funding": "EUR 50M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.quandela.com",
+      "title": "Quandela Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

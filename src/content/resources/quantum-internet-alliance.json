@@ -1,0 +1,26 @@
+{
+  "name": "Quantum Internet Alliance (QIA)",
+  "slug": "quantum-internet-alliance",
+  "type": "community",
+  "tags": ["community", "Europe", "quantum-internet", "research", "networking", "flagship"],
+  "description": "The Quantum Internet Alliance is a consortium of 40 European academic, industrial, and research organisations across nine countries, led by QuTech (TU Delft and TNO). Funded under the EU Quantum Flagship, QIA is building the first full-stack prototype quantum internet network connecting distant cities via entanglement-based quantum communication and quantum repeaters.",
+  "website": "https://quantuminternetalliance.org/",
+  "openSource": false,
+  "free": true,
+  "language": "",
+  "provider": "QuTech (TU Delft / TNO)",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://quantuminternetalliance.org/",
+      "title": "Quantum Internet Alliance Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://qt.eu/projects/communication/qia",
+      "title": "QIA — Quantum Flagship Project Page",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Randomized Benchmarking (Gate Fidelity)",
+  "slug": "randomized-benchmarking",
+  "algorithm": "Clifford randomized benchmarking protocol",
+  "category": "other",
+  "tags": ["gate-fidelity", "Clifford", "error-rate", "QCVV", "standardization"],
+  "description": "The standard protocol for estimating average gate error rates in quantum processors, developed by Magesan, Gambetta, and Emerson. Random sequences of Clifford gates followed by an inversion gate are applied, and the survival probability decays exponentially with sequence length at a rate determined by the average gate infidelity. Interleaved randomized benchmarking extends the protocol to characterize individual gate errors.",
+  "hardware": "All quantum platforms",
+  "framework": "Qiskit, Cirq, pyGSTi",
+  "reproducible": true,
+  "datePublished": "2012-04-27",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/1009.3639",
+      "title": "Robust randomized benchmarking of quantum processes",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/1203.4550",
+      "title": "Efficient measurement of quantum gate error by interleaved randomized benchmarking",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

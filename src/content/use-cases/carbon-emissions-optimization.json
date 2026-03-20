@@ -1,0 +1,25 @@
+{
+  "name": "Quantum Carbon Emissions Optimization",
+  "slug": "carbon-emissions-optimization",
+  "industry": "Climate & Sustainability",
+  "category": "simulation",
+  "tags": ["carbon-emissions", "sustainability", "optimization", "climate", "GHG"],
+  "description": "Quantum computing and quantum machine learning are being applied to optimize multi-infrastructure systems for reduced greenhouse gas emissions across energy, logistics, and industrial sectors. McKinsey estimates that identified quantum computing use cases could eliminate over 7 gigatons of CO2 equivalent annually by 2035.",
+  "problem": "Reducing carbon emissions across interconnected industrial, energy, and transportation systems requires solving coupled optimization problems with millions of variables and nonlinear constraints. Classical optimization cannot efficiently coordinate emissions reduction across complex supply chains, energy grids, and manufacturing processes simultaneously.",
+  "approach": "Quantum optimization algorithms tackle emissions reduction as multi-objective combinatorial problems — optimizing energy routing, logistics scheduling, and industrial process parameters jointly. Quantum machine learning models improve emissions prediction accuracy, while quantum simulation enables discovery of lower-carbon materials and chemical processes. The approach spans the full value chain from materials discovery to operational efficiency.",
+  "results": "A systematic literature review found strong connections between quantum computing applications and GHG emissions reduction, predominantly in energy and logistics domains. Research identifies quantum-enhanced optimization of supply chains, power grid management, and industrial scheduling as the most impactful near-term applications for climate mitigation.",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2407.16296",
+      "title": "Quantum Computing for Climate Resilience and Sustainability Challenges",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "doi",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1110866525000155",
+      "title": "Quantum computing in addressing greenhouse gas emissions: A systematic literature review",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

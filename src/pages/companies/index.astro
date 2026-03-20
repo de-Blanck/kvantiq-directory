@@ -1,0 +1,79 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import DataTable from '../../components/DataTable.tsx';
+
+const allCompanies = await getCollection('companies');
+const sorted = allCompanies.sort((a, b) => {
+  if (a.data.featured !== b.data.featured) return b.data.featured ? 1 : -1;
+  return a.data.name.localeCompare(b.data.name);
+});
+
+const tableData = sorted.map(c => ({
+  href: `/companies/${c.data.slug}/`,
+  name: c.data.name,
+  country: c.data.country,
+  type: c.data.type,
+  region: c.data.region,
+  founded: c.data.founded ? String(c.data.founded) : '',
+}));
+
+const tableColumns = [
+  { key: 'name', label: 'Company', isLink: true, sortable: true },
+  { key: 'country', label: 'Country', filterable: true, sortable: true },
+  { key: 'region', label: 'Region', filterable: true, sortable: true },
+  { key: 'type', label: 'Type', filterable: true, sortable: true },
+  { key: 'founded', label: 'Founded', sortable: true },
+];
+
+const itemListLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "European Quantum Computing Companies",
+  "description": "Directory of quantum computing companies in Europe",
+  "numberOfItems": allCompanies.length,
+  "itemListElement": sorted.map((c, i) => ({
+    "@type": "ListItem",
+    "position": i + 1,
+    "name": c.data.name,
+    "url": `/companies/${c.data.slug}/`,
+  })),
+};
+---
+<BaseLayout
+  title="Quantum Computing Companies in Europe"
+  description={`Browse ${allCompanies.length} quantum computing companies across Europe. Filter by country, technology type, and specialization.`}
+  jsonLd={itemListLd}
+>
+  <article>
+    <h1 class="text-3xl font-bold">Quantum Computing Companies</h1>
+    <div class="summary" role="doc-abstract">
+      <p class="mt-2 text-text-secondary">
+        A curated directory of {allCompanies.length} quantum computing companies in Europe,
+        covering hardware, software, cloud, and consulting across the Nordics and DACH regions.
+      </p>
+    </div>
+
+    <DataTable
+      client:visible
+      data={tableData}
+      columns={tableColumns}
+      searchPlaceholder="Search companies..."
+    />
+
+    <!-- Card grid -->
+    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {sorted.map(c => (
+        <ListingCard
+          title={c.data.name}
+          href={`/companies/${c.data.slug}/`}
+          description={c.data.description}
+          tags={c.data.tags}
+          meta={`${c.data.country} · ${c.data.type}`}
+          featured={c.data.featured}
+        />
+      ))}
+    </div>
+  </article>
+</BaseLayout>

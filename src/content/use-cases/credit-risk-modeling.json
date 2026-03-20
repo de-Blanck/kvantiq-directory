@@ -1,0 +1,25 @@
+{
+  "name": "Quantum Credit Risk Modeling",
+  "slug": "credit-risk-modeling",
+  "industry": "Finance",
+  "category": "finance",
+  "tags": ["credit-risk", "Monte-Carlo", "amplitude-estimation", "finance", "VaR"],
+  "description": "Applying quantum amplitude estimation to credit risk analysis, enabling faster computation of Value at Risk and economic capital requirements compared to classical Monte Carlo methods. Research demonstrates quadratic speedups for estimating loss distributions across large credit portfolios.",
+  "problem": "Credit risk modeling requires Monte Carlo simulations to estimate loss distributions, Value at Risk, and economic capital requirements across large portfolios of correlated assets. Classical Monte Carlo convergence is slow, scaling as O(1/sqrt(N)) with the number of samples, making real-time risk assessment computationally expensive.",
+  "approach": "Quantum amplitude estimation replaces classical Monte Carlo sampling to estimate expected values of loss distributions with a quadratic speedup. The credit portfolio is encoded into a quantum circuit that models default probabilities and loss correlations, and QAE extracts the economic capital requirement directly from the quantum state.",
+  "results": "IBM researchers demonstrated the algorithm on realistic loss distributions and estimated that a fault-tolerant quantum computer could achieve significant speedups over classical Monte Carlo for portfolios with thousands of assets. Separate work by Matsakos and Nield assembled end-to-end quantum circuits for equity, interest rate, and credit risk factors.",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/1907.03044",
+      "title": "Credit Risk Analysis using Quantum Computers",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2303.09682",
+      "title": "Quantum Monte Carlo simulations for financial risk analytics: scenario generation for equity, rate, and credit risk factors",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

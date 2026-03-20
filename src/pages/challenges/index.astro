@@ -1,0 +1,58 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import DataTable from '../../components/DataTable.tsx';
+
+const allChallenges = await getCollection('challenges');
+const sorted = allChallenges.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const tableData = sorted.map(ch => ({
+  href: `/challenges/${ch.data.slug}/`,
+  name: ch.data.name,
+  organizer: ch.data.organizer,
+  status: ch.data.status,
+  date: ch.data.dateStart || '',
+}));
+
+const tableColumns = [
+  { key: 'name', label: 'Challenge', isLink: true, sortable: true },
+  { key: 'organizer', label: 'Organizer', sortable: true },
+  { key: 'status', label: 'Status', filterable: true, sortable: true },
+  { key: 'date', label: 'Date', sortable: true },
+];
+
+const itemListLd = {
+  "@context": "https://schema.org", "@type": "ItemList",
+  "name": "Quantum Computing Challenges & Competitions",
+  "numberOfItems": allChallenges.length,
+  "itemListElement": sorted.map((ch, i) => ({
+    "@type": "ListItem", "position": i + 1, "name": ch.data.name, "url": `/challenges/${ch.data.slug}/`,
+  })),
+};
+---
+<BaseLayout
+  title="Quantum Computing Challenges"
+  description={`Browse ${allChallenges.length} quantum computing hackathons, competitions, and challenges.`}
+  jsonLd={itemListLd}
+>
+  <article>
+    <h1 class="text-3xl font-bold">Quantum Computing Challenges</h1>
+    <div class="summary" role="doc-abstract">
+      <p class="mt-2 text-text-secondary">{allChallenges.length} quantum computing hackathons, competitions, and open challenges.</p>
+    </div>
+
+    <DataTable
+      client:visible
+      data={tableData}
+      columns={tableColumns}
+      searchPlaceholder="Search challenges..."
+    />
+
+    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {sorted.map(ch => (
+        <ListingCard title={ch.data.name} href={`/challenges/${ch.data.slug}/`} description={ch.data.description} tags={ch.data.tags} meta={`${ch.data.organizer} · ${ch.data.status}`} />
+      ))}
+    </div>
+  </article>
+</BaseLayout>

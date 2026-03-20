@@ -1,0 +1,20 @@
+{
+  "name": "Quantum Vehicle Routing Optimization",
+  "slug": "vehicle-routing-optimization",
+  "industry": "Logistics",
+  "category": "logistics",
+  "tags": ["vehicle-routing", "logistics", "QAOA", "optimization", "last-mile-delivery"],
+  "description": "Applying quantum optimization algorithms to solve complex vehicle routing problems, enabling more efficient fleet management and delivery route planning.",
+  "problem": "The Vehicle Routing Problem (VRP) with time windows, capacity constraints, and multiple depots is NP-hard and becomes intractable for large fleets. Classical heuristics often miss optimal solutions, leading to increased costs and emissions.",
+  "approach": "Quantum Approximate Optimization Algorithm (QAOA) and quantum annealing encode routing constraints into quantum Hamiltonians. Hybrid quantum-classical approaches decompose large problems into quantum-solvable subproblems while maintaining global solution quality.",
+  "results": "Pilot projects with logistics companies have demonstrated 10-15% route efficiency improvements on problem instances with 20-50 vehicles. Scaling to real-world fleet sizes remains an active development area.",
+  "companies": ["Multiverse Computing", "D-Wave", "Volkswagen"],
+  "sources": [
+    {
+      "type": "url",
+      "url": "https://www.dwavesys.com/media/n4dj0yrt/14-1049a-a_volkswagen_traffic_flow_optimization.pdf",
+      "title": "Traffic Flow Optimization Using Quantum Annealing",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "QED-C Application-Oriented Benchmarks",
+  "slug": "qed-c-benchmarks",
+  "algorithm": "Multiple algorithms (BV, QFT, Hidden Shift, etc.)",
+  "category": "other",
+  "tags": ["benchmark-suite", "scalable", "standardization", "application-oriented"],
+  "description": "QED-C (Quantum Economic Development Consortium) Application-Oriented Benchmarks is a comprehensive suite of quantum algorithms designed to evaluate quantum computing platforms. The suite includes implementations across multiple problem domains and is designed to be scalable across varying qubit counts. These benchmarks focus on real-world applications rather than abstract metrics.",
+  "qubits": 0,
+  "reproducible": true,
+  "datePublished": "2021-06-15",
+  "sources": [
+    {
+      "type": "url",
+      "url": "https://github.com/SRI-International/QC-App-Oriented-Benchmarks",
+      "title": "QED-C Benchmarks GitHub Repository",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

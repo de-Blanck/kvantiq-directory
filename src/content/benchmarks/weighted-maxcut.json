@@ -1,0 +1,26 @@
+{
+  "name": "Weighted Max-Cut Benchmark",
+  "slug": "weighted-maxcut",
+  "algorithm": "QAOA / Quantum Walk Optimisation Algorithm (QWOA)",
+  "category": "optimization",
+  "tags": ["Max-Cut", "weighted-graphs", "QAOA", "combinatorial-optimization", "QWOA"],
+  "description": "Extended Max-Cut benchmark using weighted graph instances, which present a harder optimization landscape than the standard unweighted variant. Weighted instances introduce a proliferation of poor local optima and exacerbate barren-plateau issues. Recent work compares QAOA with non-variational quantum walk algorithms on weighted instances up to 31 nodes.",
+  "framework": "Qiskit, Cirq",
+  "qubits": 31,
+  "reproducible": true,
+  "datePublished": "2025-05-30",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2505.24191",
+      "title": "Benchmarking Quantum Heuristics: Non-Variational QWOA for Weighted Maxcut",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "doi",
+      "url": "https://dl.acm.org/doi/10.1145/3584706",
+      "title": "Parameter Transfer for Quantum Approximate Optimization of Weighted MaxCut",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

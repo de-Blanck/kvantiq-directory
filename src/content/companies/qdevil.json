@@ -1,0 +1,28 @@
+{
+  "name": "QDevil (Quantum Machines Denmark)",
+  "slug": "qdevil",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "hardware",
+  "tags": ["quantum-control", "auxiliary-electronics", "cryogenic", "superconducting"],
+  "founded": 2016,
+  "description": "QDevil is a Danish quantum technology company that develops and manufactures auxiliary electronics and specialized components critical for operating quantum processing units, from millikelvin to room temperature. Originally a spin-out from the Niels Bohr Institute at the University of Copenhagen, QDevil was acquired by Quantum Machines in 2022 and now operates as its Auxiliary Electronics Division from Copenhagen.",
+  "website": "https://www.quantum-machines.co",
+  "featured": false,
+  "headquarters": "Copenhagen, Denmark",
+  "employees": "20+",
+  "sources": [
+    {
+      "type": "press-release",
+      "url": "https://www.quantum-machines.co/press-release/quantum-machines-acquires-qdevil-to-provide-full-stack-orchestration-platform/",
+      "title": "Quantum Machines Acquires QDevil to Provide Full-Stack Orchestration Platform",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://techcrunch.com/2022/03/30/quantum-machines-acquires-qdevil-to-build-out-its-full-stack-quantum-orchestration-platform/",
+      "title": "Quantum Machines acquires QDevil to build out its full-stack quantum orchestration platform - TechCrunch",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

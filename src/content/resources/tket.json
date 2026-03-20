@@ -1,0 +1,20 @@
+{
+  "name": "TKET",
+  "slug": "tket",
+  "type": "framework",
+  "tags": ["quantum-computing", "open-source", "python", "compiler", "optimization"],
+  "description": "TKET (pytket) is an open-source quantum computing toolkit developed by Quantinuum focused on circuit compilation and optimization. It provides hardware-agnostic circuit optimization and supports multiple quantum platforms. TKET is designed to maximize performance across different quantum backends.",
+  "website": "https://docs.quantinuum.com/tket",
+  "openSource": true,
+  "free": true,
+  "language": "Python",
+  "provider": "Quantinuum",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://docs.quantinuum.com/tket",
+      "title": "TKET Official Documentation",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

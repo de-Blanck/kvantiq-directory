@@ -1,0 +1,50 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ListingCard from '../../../components/ListingCard.astro';
+
+export async function getStaticPaths() {
+  const companies = await getCollection('companies');
+  const countries = [...new Set(companies.map(c => c.data.country))];
+  return countries.map(country => ({
+    params: { country: country.toLowerCase() },
+    props: {
+      countryName: country,
+      companies: companies.filter(c => c.data.country === country),
+    },
+  }));
+}
+
+const { countryName, companies } = Astro.props;
+const sorted = companies.sort((a: any, b: any) => a.data.name.localeCompare(b.data.name));
+---
+<BaseLayout
+  title={`Quantum Computing Companies in ${countryName}`}
+  description={`Browse ${companies.length} quantum computing companies based in ${countryName}.`}
+>
+  <article>
+    <h1 class="text-3xl font-bold">Quantum Companies in {countryName}</h1>
+    <div class="summary" role="doc-abstract">
+      <p class="mt-2 text-text-secondary">
+        {companies.length} quantum computing {companies.length === 1 ? 'company' : 'companies'} based in {countryName}.
+      </p>
+    </div>
+
+    <div class="mt-2">
+      <a href="/companies/" class="text-sm text-info hover:underline">&larr; All companies</a>
+    </div>
+
+    <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {sorted.map((c: any) => (
+        <ListingCard
+          title={c.data.name}
+          href={`/companies/${c.data.slug}/`}
+          description={c.data.description}
+          tags={c.data.tags}
+          meta={c.data.type}
+          featured={c.data.featured}
+        />
+      ))}
+    </div>
+  </article>
+</BaseLayout>

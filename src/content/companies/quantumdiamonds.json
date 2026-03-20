@@ -1,0 +1,28 @@
+{
+  "name": "QuantumDiamonds",
+  "slug": "quantumdiamonds",
+  "country": "Germany",
+  "region": "dach",
+  "type": "hardware",
+  "tags": ["quantum-sensing", "nv-center", "semiconductor-inspection", "diamond-sensors"],
+  "founded": 2022,
+  "description": "QuantumDiamonds develops diamond-based quantum sensors using nitrogen-vacancy centers for non-destructive inspection of semiconductor chips. Spun out of the Technical University of Munich, the company's systems detect magnetic fields to localize defects at micrometer scale, with proof-of-concept work completed with nine of the world's ten largest chip manufacturers.",
+  "website": "https://www.quantumdiamonds.de",
+  "featured": false,
+  "headquarters": "Munich, Germany",
+  "funding": "EUR 152M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.quantumdiamonds.de",
+      "title": "QuantumDiamonds Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.eu-startups.com/2025/12/quantumdiamonds-plans-e152m-investment-in-quantum-chip-inspection-facility-in-munich/",
+      "title": "QuantumDiamonds plans EUR 152 million investment in quantum chip inspection facility in Munich — EU-Startups",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

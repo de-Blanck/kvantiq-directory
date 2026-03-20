@@ -1,0 +1,26 @@
+{
+  "name": "Perceval",
+  "slug": "perceval",
+  "type": "framework",
+  "tags": ["photonic", "linear-optics", "open-source", "python", "simulation"],
+  "description": "Perceval is an open-source Python framework for programming photonic quantum computers, developed by Quandela. It provides tools for composing circuits from linear optical components, defining single-photon sources, manipulating Fock states, and running simulations on classical backends or Quandela cloud QPUs.",
+  "website": "https://perceval.quandela.net",
+  "openSource": true,
+  "free": true,
+  "language": "Python",
+  "provider": "Quandela",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://perceval.quandela.net",
+      "title": "Perceval Framework Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://github.com/Quandela/Perceval",
+      "title": "Perceval GitHub Repository",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

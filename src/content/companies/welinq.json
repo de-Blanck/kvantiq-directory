@@ -1,0 +1,29 @@
+{
+  "name": "Welinq",
+  "slug": "welinq",
+  "country": "France",
+  "region": "western-europe",
+  "type": "hardware",
+  "tags": ["quantum-networking", "quantum-memory", "neutral-atom", "distributed-quantum-computing"],
+  "founded": 2022,
+  "description": "Welinq develops quantum networking hardware and software to interconnect quantum processors into scalable networks. A spin-out from Sorbonne University and CNRS, the company builds the highest-performance quantum memories based on clouds of laser-cooled atoms, enabling distributed quantum computing architectures for data centers.",
+  "website": "https://www.welinq.fr",
+  "featured": false,
+  "headquarters": "Paris, France",
+  "employees": "30+",
+  "funding": "EUR 10M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.welinq.fr",
+      "title": "Welinq Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://www.eu-startups.com/2023/01/paris-based-welinq-secures-e5-million-to-scale-up-quantum-computing-with-quantum-memories/",
+      "title": "Paris-based Welinq secures EUR 5 million to scale up quantum computing with quantum memories",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

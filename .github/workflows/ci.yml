@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [main, feature/directory-site]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - name: Check for duplicate slugs
+        run: |
+          for dir in companies resources use-cases benchmarks challenges; do
+            echo "=== $dir ==="
+            dupes=$(cat src/content/$dir/*.json | grep '"slug"' | sort | uniq -d)
+            if [ -n "$dupes" ]; then
+              echo "DUPLICATE SLUGS FOUND: $dupes"
+              exit 1
+            fi
+          done
+          echo "No duplicate slugs found."

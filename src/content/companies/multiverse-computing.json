@@ -1,0 +1,28 @@
+{
+  "name": "Multiverse Computing",
+  "slug": "multiverse-computing",
+  "country": "Spain",
+  "region": "southern-europe",
+  "type": "software",
+  "tags": ["quantum-ai", "optimization", "finance", "model-compression"],
+  "founded": 2019,
+  "description": "Multiverse Computing provides quantum AI software for enterprise applications, specializing in optimization and machine learning. Their flagship product Singularity enables model compression and quantum-inspired algorithms for finance, energy, and manufacturing sectors.",
+  "website": "https://multiversecomputing.com",
+  "featured": false,
+  "headquarters": "San Sebastián, Spain",
+  "funding": "EUR 25M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://multiversecomputing.com",
+      "title": "Multiverse Computing Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://en.wikipedia.org/wiki/Multiverse_Computing",
+      "title": "Multiverse Computing - Wikipedia",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

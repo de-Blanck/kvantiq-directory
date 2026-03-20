@@ -1,0 +1,27 @@
+{
+  "name": "Hubbard Model Quantum Simulation Benchmark",
+  "slug": "hubbard-model",
+  "algorithm": "Variational Quantum Eigensolver (VQE)",
+  "category": "simulation",
+  "tags": ["Hubbard-model", "condensed-matter", "VQE", "strongly-correlated", "simulation"],
+  "description": "Benchmark for quantum simulation of the Hubbard model, a fundamental model of strongly correlated electrons in condensed matter physics. The relative simplicity of the Hubbard Hamiltonian allows efficient implementation on quantum hardware. Classical benchmarks show that even the most accurate VQE ansatze exhibit plateauing ground-state energy errors for larger lattices, with stronger electronic correlations magnifying the issue.",
+  "hardware": "Various (IBM Quantum, simulators)",
+  "framework": "Qiskit, PennyLane",
+  "qubits": 16,
+  "reproducible": true,
+  "datePublished": "2024-08-01",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2408.00836",
+      "title": "Classical Benchmarks for Variational Quantum Eigensolver Simulations of the Hubbard Model",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "doi",
+      "url": "https://www.science.org/doi/10.1126/science.adg9774",
+      "title": "Variational benchmarks for quantum many-body problems",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

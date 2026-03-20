@@ -1,0 +1,28 @@
+{
+  "name": "Creotech Instruments",
+  "slug": "creotech-instruments",
+  "country": "Poland",
+  "region": "eastern-europe",
+  "type": "hardware",
+  "tags": ["quantum-electronics", "control-systems", "qkd", "eurohpc", "satellite"],
+  "founded": 2012,
+  "description": "Creotech Instruments is a publicly traded Polish provider of specialized electronics for quantum computers, satellite systems, and scientific instrumentation. Selected by EuroHPC JU to help build Poland's first quantum computer at the Poznan Supercomputing Center, the company is spinning off its quantum division into a dedicated entity to accelerate development of quantum control systems and QKD hardware.",
+  "website": "https://creotech.pl",
+  "featured": false,
+  "headquarters": "Piaseczno, Poland",
+  "funding": "PLN 74M+ (Series K, 2025)",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://creotech.pl",
+      "title": "Creotech Instruments Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://creotech.pl/news/eurohpc-ju-to-create-european-quantum-computing-network-with-support-from-creotech-instruments/",
+      "title": "EuroHPC JU to Create European Quantum Computing Network with Support from Creotech Instruments",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

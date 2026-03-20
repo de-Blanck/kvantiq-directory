@@ -1,0 +1,21 @@
+{
+  "name": "VQE Hydrogen Molecule Ground State",
+  "slug": "vqe-hydrogen",
+  "algorithm": "Variational Quantum Eigensolver (VQE)",
+  "category": "chemistry",
+  "tags": ["VQE", "chemistry", "ground-state", "hybrid"],
+  "description": "Benchmark of the Variational Quantum Eigensolver algorithm for computing the ground state energy of the hydrogen molecule (H2). This is a standard benchmark for hybrid quantum-classical chemistry simulations, testing the interplay between quantum circuit evaluation and classical optimization.",
+  "hardware": "Various (simulator and hardware)",
+  "framework": "Qiskit, PennyLane",
+  "qubits": 4,
+  "reproducible": true,
+  "datePublished": "2024-01-15",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/1304.3061",
+      "title": "The theory of variational hybrid quantum-classical algorithms",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

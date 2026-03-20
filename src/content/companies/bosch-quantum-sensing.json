@@ -1,0 +1,23 @@
+{
+  "name": "Bosch Quantum Sensing",
+  "slug": "bosch-quantum-sensing",
+  "country": "Germany",
+  "region": "dach",
+  "type": "hardware",
+  "tags": ["quantum-sensing", "diamond-nv-centers", "quantum-magnetometry"],
+  "founded": 2023,
+  "description": "Bosch Quantum Sensing is a German quantum sensing company developing quantum sensors using diamond nitrogen-vacancy (NV) centers. Established as a joint venture between Bosch and Element Six, the company focuses on quantum magnetometry and sensing solutions for automotive, industrial, and biomedical applications.",
+  "website": "https://www.bosch-quantumsensing.com",
+  "featured": false,
+  "headquarters": "Ludwigsburg, Germany",
+  "employees": "30",
+  "funding": "N/A",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.bosch-quantumsensing.com",
+      "title": "Bosch Quantum Sensing Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

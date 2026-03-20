@@ -1,0 +1,20 @@
+{
+  "name": "Quantum Supply Chain Optimization",
+  "slug": "supply-chain-optimization",
+  "industry": "Manufacturing",
+  "category": "optimization",
+  "tags": ["supply-chain", "logistics", "optimization", "inventory-management", "scheduling"],
+  "description": "Applying quantum computing to optimize complex multi-tier supply chains, including supplier selection, inventory management, production scheduling, and distribution network design.",
+  "problem": "Global supply chains involve thousands of interdependent decisions across suppliers, manufacturers, warehouses, and distribution centers. Classical optimization struggles with the combinatorial explosion of possible configurations, especially when incorporating uncertainty and real-time disruptions.",
+  "approach": "Hybrid quantum-classical algorithms decompose supply chain problems into QUBO formulations suitable for quantum annealing or QAOA. Quantum processors explore vast solution spaces while classical systems handle constraints, forecasting, and decision implementation.",
+  "results": "Case studies with automotive and aerospace manufacturers show potential for 5-10% cost reductions through better inventory positioning and supplier coordination. Real-time disruption response is an emerging application area.",
+  "companies": ["Multiverse Computing", "Accenture", "Fujitsu"],
+  "sources": [
+    {
+      "type": "url",
+      "url": "https://www.accenture.com/us-en/insights/technology/quantum-computing-supply-chain",
+      "title": "Quantum Computing in Supply Chain Management",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

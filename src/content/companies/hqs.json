@@ -1,0 +1,23 @@
+{
+  "name": "HQS Quantum Simulations",
+  "slug": "hqs",
+  "country": "Germany",
+  "region": "dach",
+  "type": "software",
+  "tags": ["quantum-simulation", "materials-science", "quantum-chemistry"],
+  "founded": 2017,
+  "description": "HQS Quantum Simulations is a German quantum software company developing quantum simulation software for materials science and chemistry applications. The company provides quantum algorithms and software tools to accelerate materials discovery and chemical simulations for industrial and research purposes.",
+  "website": "https://www.quantumsimulations.de",
+  "featured": false,
+  "headquarters": "Karlsruhe, Germany",
+  "employees": "20+",
+  "funding": "EUR 5M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.quantumsimulations.de",
+      "title": "HQS Quantum Simulations Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

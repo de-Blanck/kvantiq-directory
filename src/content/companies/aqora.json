@@ -1,0 +1,27 @@
+{
+  "name": "Aqora",
+  "slug": "aqora",
+  "country": "France",
+  "region": "western-europe",
+  "type": "other",
+  "tags": ["platform", "benchmarking", "datasets", "infrastructure"],
+  "founded": 2023,
+  "description": "Aqora operates a quantum computing platform focused on datasets and benchmarking. The platform enables researchers and developers to access standardized quantum datasets, run benchmarks, and compare quantum algorithm performance across different hardware.",
+  "website": "https://aqora.io",
+  "featured": false,
+  "headquarters": "Paris, France",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://aqora.io",
+      "title": "Aqora Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2023/11/14/aqora-quantum-computing-platform/",
+      "title": "Aqora Launches Quantum Computing Platform - The Quantum Insider",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

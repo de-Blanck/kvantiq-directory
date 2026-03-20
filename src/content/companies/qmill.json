@@ -1,0 +1,29 @@
+{
+  "name": "QMill Oy",
+  "slug": "qmill",
+  "country": "Finland",
+  "region": "nordics",
+  "type": "software",
+  "tags": ["quantum-optimization", "AI", "quantum-circuits", "compiler"],
+  "founded": 2024,
+  "description": "QMill develops AI-powered quantum circuit optimization software to improve the performance and efficiency of quantum algorithms. The company's technology uses machine learning to automatically optimize quantum circuits, reducing gate counts and improving execution fidelity on real quantum hardware. QMill's solutions aim to bridge the gap between theoretical quantum algorithms and practical implementation.",
+  "website": "https://qmill.com",
+  "featured": false,
+  "headquarters": "Espoo, Finland",
+  "employees": "10+",
+  "funding": "EUR 5M",
+  "sources": [
+    {
+      "type": "url",
+      "url": "https://www.eu-startups.com/2024/11/qmill-raises-e5-million-seed-funding/",
+      "title": "QMill raises €5 million seed funding - EU-Startups",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2024/11/19/qmill-raises-5m-seed-funding/",
+      "title": "QMill Raises $5M Seed Funding - The Quantum Insider",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

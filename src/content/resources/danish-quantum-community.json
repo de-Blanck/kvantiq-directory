@@ -1,0 +1,26 @@
+{
+  "name": "Danish Quantum Community",
+  "slug": "danish-quantum-community",
+  "type": "community",
+  "tags": ["community", "Denmark", "Nordics", "ecosystem", "partnerships", "research"],
+  "description": "The Danish Quantum Community (DQC) is a cross-sectoral organisation that unites quantum stakeholders in Denmark, spanning 70 partners from university research hubs, quantum startups, established companies, end-users, and investors. It organises events including an annual Scientific Quantum Conference and facilitates partnerships to strengthen Denmark's quantum research and technology development.",
+  "website": "https://dqc.dk/",
+  "openSource": false,
+  "free": true,
+  "language": "",
+  "provider": "Danish Quantum Community",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://dqc.dk/",
+      "title": "Danish Quantum Community Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://dqc.dk/about/",
+      "title": "About the Danish Quantum Community",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Grover Search Scaling Benchmark",
+  "slug": "grover-search-scaling",
+  "algorithm": "Grover's search algorithm",
+  "category": "cryptography",
+  "tags": ["Grover", "search", "scaling", "unstructured-search", "quadratic-speedup"],
+  "description": "Benchmark measuring the scaling behavior of Grover's quantum search algorithm on NISQ hardware. Better-than-classical success probabilities have been demonstrated up to five qubits on IBM superconducting platforms using robust dynamical decoupling. The GRADE benchmarking toolkit provides standardized evaluation of quantum hardware reliability using generalized Grover circuits with customizable search configurations.",
+  "hardware": "IBM Quantum (127-qubit processors)",
+  "framework": "Qiskit, GRADE toolkit",
+  "qubits": 6,
+  "reproducible": true,
+  "datePublished": "2022-11-04",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2211.04543",
+      "title": "Better-than-classical Grover search via quantum error detection and suppression",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2406.16018",
+      "title": "Comprehensive characterization of three-qubit Grover search algorithm on IBM's 127-qubit superconducting quantum computers",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

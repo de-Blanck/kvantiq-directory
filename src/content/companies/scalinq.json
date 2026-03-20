@@ -1,0 +1,34 @@
+{
+  "name": "SCALINQ",
+  "slug": "scalinq",
+  "country": "Sweden",
+  "region": "nordics",
+  "type": "hardware",
+  "tags": ["superconducting", "cryogenic", "quantum-hardware", "packaging", "spin-qubits"],
+  "founded": 2022,
+  "description": "SCALINQ is a Swedish quantum hardware company and spin-off from Chalmers University of Technology in Gothenburg. The company develops cost-efficient, energy-efficient, high-density cryogenic-grade hardware for superconducting and spin-qubit quantum processors. Its patent-pending LINQER product family provides complete packaging solutions and sample holders with 16 to 300 connectors for quantum computing systems.",
+  "website": "https://www.scalinq.com",
+  "featured": false,
+  "headquarters": "Gothenburg, Sweden",
+  "employees": "20+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.scalinq.com",
+      "title": "SCALINQ Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.techarenan.news/2023/01/31/scalinq-quantum-computing-sweden-chalmers-gothenburg-zaid-saeed-startup/",
+      "title": "How SCALINQ's here to revolutionize quantum computing - Techarenan",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://qsip.se/quantum-in-sweden-articles-scalinq/",
+      "title": "Quantum company wants to improve humanity - QSIP",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

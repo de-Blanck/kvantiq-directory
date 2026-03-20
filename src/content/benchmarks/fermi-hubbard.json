@@ -1,0 +1,26 @@
+{
+  "name": "Fermi-Hubbard VQE Optimizer Benchmark",
+  "slug": "fermi-hubbard",
+  "algorithm": "VQE with Hamiltonian Variational Ansatz",
+  "category": "simulation",
+  "tags": ["Fermi-Hubbard", "VQE", "optimizer-benchmark", "condensed-matter", "simulation"],
+  "description": "Comprehensive benchmark of 30 classical optimizers on 372 instances of VQE for the Fermi-Hubbard system using the Hamiltonian variational ansatz. Best-performing optimizers are gradient-descent variants (Momentum, ADAM with finite differences), SPSA, CMA-ES, and BayesMGD. The study demonstrates that finite-difference step size has a very significant impact on VQE convergence quality.",
+  "framework": "Qiskit, PennyLane",
+  "qubits": 12,
+  "reproducible": true,
+  "datePublished": "2024-11-20",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2411.13742",
+      "title": "Benchmarking a wide range of optimisers for solving the Fermi-Hubbard model using the variational quantum eigensolver",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "doi",
+      "url": "https://www.nature.com/articles/s41467-022-33335-4",
+      "title": "Observing ground-state properties of the Fermi-Hubbard model using a scalable algorithm on a quantum computer",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

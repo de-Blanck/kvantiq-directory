@@ -1,0 +1,29 @@
+{
+  "name": "Delft Circuits",
+  "slug": "delft-circuits",
+  "country": "Netherlands",
+  "region": "western-europe",
+  "type": "hardware",
+  "tags": ["cryogenic-cabling", "quantum-interconnects", "Cri/oFlex", "scalability"],
+  "founded": 2016,
+  "description": "Delft Circuits develops scalable cryogenic input/output solutions for quantum computers, addressing a key bottleneck in scaling beyond hundreds of qubits. The company's patented Cri/oFlex technology integrates superconducting materials with filters and attenuators in high-density flex cables, delivering eight times greater channel density than conventional coaxial wiring.",
+  "website": "https://delft-circuits.com",
+  "featured": false,
+  "headquarters": "Delft, Netherlands",
+  "employees": "40+",
+  "funding": "EUR 15M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://delft-circuits.com",
+      "title": "Delft Circuits Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://delft-circuits.com/delft-circuits-and-bluefors-join-forces-on-scalable-quantum-i-o-for-next-generation-quantum-computers/",
+      "title": "Delft Circuits and Bluefors Join Forces on Scalable Quantum I/O for Next-Generation Quantum Computers",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

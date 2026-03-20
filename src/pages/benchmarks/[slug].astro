@@ -1,0 +1,78 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TagList from '../../components/TagList.astro';
+import JsonLd from '../../components/JsonLd.astro';
+import Sources from '../../components/Sources.astro';
+
+export async function getStaticPaths() {
+  const benchmarks = await getCollection('benchmarks');
+  return benchmarks.map(b => ({
+    params: { slug: b.data.slug },
+    props: { benchmark: b.data },
+  }));
+}
+
+const { benchmark } = Astro.props;
+
+const datasetLd = {
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": benchmark.name,
+  "description": benchmark.description,
+  ...(benchmark.datePublished && { "datePublished": benchmark.datePublished }),
+  "citation": benchmark.sources.map(s => ({
+    "@type": s.type === 'doi' || s.type === 'arxiv' ? 'ScholarlyArticle' : 'WebPage',
+    "url": s.url,
+    ...(s.title && { "name": s.title }),
+  })),
+};
+
+const faqLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": `What is the ${benchmark.name} benchmark?`, "acceptedAnswer": { "@type": "Answer", "text": benchmark.description } },
+    { "@type": "Question", "name": `What algorithm does ${benchmark.name} use?`, "acceptedAnswer": { "@type": "Answer", "text": `${benchmark.name} uses the ${benchmark.algorithm} algorithm.` } },
+    { "@type": "Question", "name": `Is the ${benchmark.name} benchmark reproducible?`, "acceptedAnswer": { "@type": "Answer", "text": benchmark.reproducible ? `Yes, ${benchmark.name} is reproducible.` : `Reproducibility has not been confirmed.` } },
+  ],
+};
+---
+<BaseLayout title={benchmark.name} description={benchmark.description} jsonLd={datasetLd}>
+  <JsonLd data={faqLd} />
+  <article>
+    <h1 class="text-3xl font-bold">{benchmark.name}</h1>
+    <div class="summary mt-4" role="doc-abstract">
+      <p class="text-text-secondary">{benchmark.description}<sup><a href="#ref-1" class="text-info ml-0.5">[1]</a></sup></p>
+      <ul class="mt-3 space-y-1 text-sm text-text-secondary">
+        <li>Algorithm: {benchmark.algorithm}</li>
+        <li>Category: <span class="capitalize">{benchmark.category}</span></li>
+        {benchmark.qubits && <li>Qubits: {benchmark.qubits}</li>}
+        {benchmark.framework && <li>Framework: {benchmark.framework}</li>}
+        {benchmark.hardware && <li>Hardware: {benchmark.hardware}</li>}
+        <li>Reproducible: {benchmark.reproducible ? 'Yes' : 'Not confirmed'}</li>
+        {benchmark.datePublished && <li>Published: <time datetime={benchmark.datePublished}>{benchmark.datePublished}</time></li>}
+      </ul>
+    </div>
+    <div class="mt-4"><TagList tags={benchmark.tags} /></div>
+
+    <section class="mt-8">
+      <h2 class="text-xl font-semibold">What algorithm does {benchmark.name} use?</h2>
+      <p class="mt-2 text-text-secondary">{benchmark.name} uses the {benchmark.algorithm} algorithm, categorized under {benchmark.category}.</p>
+    </section>
+
+    <section class="faq mt-8 rounded-lg border border-border p-6">
+      <h2 class="text-lg font-semibold">Frequently Asked Questions</h2>
+      <details class="mt-3">
+        <summary class="cursor-pointer font-medium text-text-secondary">What is the {benchmark.name} benchmark?</summary>
+        <p class="mt-2 text-sm text-text-secondary">{benchmark.description}</p>
+      </details>
+      <details class="mt-3">
+        <summary class="cursor-pointer font-medium text-text-secondary">Is {benchmark.name} reproducible?</summary>
+        <p class="mt-2 text-sm text-text-secondary">{benchmark.reproducible ? `Yes, this benchmark is reproducible.` : `Reproducibility has not been confirmed for this benchmark.`}</p>
+      </details>
+    </section>
+
+    <Sources sources={benchmark.sources} />
+  </article>
+</BaseLayout>

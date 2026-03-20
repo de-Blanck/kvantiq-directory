@@ -1,0 +1,26 @@
+{
+  "name": "QKD BB84 Protocol Benchmark",
+  "slug": "qkd-throughput",
+  "algorithm": "BB84 quantum key distribution protocol",
+  "category": "cryptography",
+  "tags": ["QKD", "BB84", "key-distribution", "cryptography", "security"],
+  "description": "Benchmark evaluating quantum key distribution throughput and security using the BB84 protocol, the foundational QKD scheme proposed by Bennett and Brassard in 1984. The secure bound of the quantum bit error rate (QBER) for BB84 is approximately 11%, extendable to 12.6% with six-state variants. Benchmarks assess secret key rates, QBER tolerance, and distance limits under coherent attacks with decoy-state methods.",
+  "hardware": "Photonic QKD systems",
+  "framework": "SimulaQron, Qiskit (simulation)",
+  "reproducible": true,
+  "datePublished": "2023-12-08",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2312.05609",
+      "title": "Comprehensive Analysis of BB84, A Quantum Key Distribution Protocol",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2110.01973",
+      "title": "Asymptotically Optimal Quantum Key Distribution Protocols",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

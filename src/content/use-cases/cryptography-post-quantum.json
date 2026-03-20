@@ -1,0 +1,20 @@
+{
+  "name": "Post-Quantum Cryptography Migration",
+  "slug": "cryptography-post-quantum",
+  "industry": "Cybersecurity",
+  "category": "cryptography",
+  "tags": ["post-quantum-cryptography", "PQC", "quantum-threat", "NIST", "lattice-cryptography"],
+  "description": "Transitioning critical infrastructure and communication systems to quantum-resistant cryptographic algorithms to protect against future quantum computer attacks.",
+  "problem": "Large-scale quantum computers will break widely used public-key cryptography schemes like RSA and elliptic curve cryptography using Shor's algorithm. Current encrypted data can be harvested now and decrypted later once quantum computers are available.",
+  "approach": "Implementing NIST-standardized post-quantum cryptographic algorithms based on lattice problems, hash functions, and code-based cryptography. These mathematical problems remain hard even for quantum computers. Organizations are deploying hybrid classical-PQC solutions during the transition period.",
+  "results": "NIST finalized PQC standards in 2024 (CRYSTALS-Kyber, CRYSTALS-Dilithium, SPHINCS+). Major technology companies and governments are actively migrating systems. Financial institutions and defense sectors are prioritizing high-value data protection.",
+  "companies": ["Xiphera", "ID Quantique", "PQShield", "Thales"],
+  "sources": [
+    {
+      "type": "url",
+      "url": "https://csrc.nist.gov/projects/post-quantum-cryptography",
+      "title": "NIST Post-Quantum Cryptography Standardization",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

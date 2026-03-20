@@ -1,0 +1,26 @@
+{
+  "name": "PyZX",
+  "slug": "pyzx",
+  "type": "tool",
+  "tags": ["circuit-optimization", "zx-calculus", "open-source", "python", "compiler"],
+  "description": "PyZX is an open-source Python library for quantum circuit rewriting and optimization using the ZX-calculus, a graphical language for reasoning about quantum computations. It can read circuits in QASM, Quipper, and Quantomatic formats, apply automated simplification rules, and export optimized circuits.",
+  "website": "https://pyzx.readthedocs.io",
+  "openSource": true,
+  "free": true,
+  "language": "Python",
+  "provider": "ZX Calculus Community",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://pyzx.readthedocs.io",
+      "title": "PyZX Documentation",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://github.com/zxcalc/pyzx",
+      "title": "PyZX GitHub Repository",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

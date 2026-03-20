@@ -1,0 +1,28 @@
+{
+  "name": "Qruise",
+  "slug": "qruise",
+  "country": "Germany",
+  "region": "dach",
+  "type": "software",
+  "tags": ["quantum-control", "machine-learning", "optimal-control", "calibration"],
+  "founded": 2021,
+  "description": "Qruise develops machine learning software for controlling, calibrating, and benchmarking quantum devices. Spun out of Forschungszentrum Jülich and co-founded by Tommaso Calarco, the company creates AI-driven digital twins of quantum systems that help physicists and engineers accelerate hardware development across quantum computing and sensing platforms.",
+  "website": "https://www.qruise.com",
+  "featured": false,
+  "headquarters": "Saarbrücken, Germany",
+  "employees": "23",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.qruise.com",
+      "title": "Qruise Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://techcrunch.com/2023/09/21/qruise-wants-to-build-ai-to-automate-quantum-device-development/",
+      "title": "Qruise wants to build AI to automate quantum device development — TechCrunch",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

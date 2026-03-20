@@ -1,0 +1,26 @@
+{
+  "name": "Quantum Knapsack Problem Benchmark",
+  "slug": "knapsack-quantum",
+  "algorithm": "QAOA / Copula-QAOA / AAM-QAOA",
+  "category": "optimization",
+  "tags": ["knapsack", "constrained-optimization", "QAOA", "combinatorial", "NISQ"],
+  "description": "Benchmark of quantum optimization algorithms applied to the knapsack problem, a fundamental NP-hard constrained combinatorial optimization problem. Recent advances include copula-QAOA for hardware-efficient constraint handling and Amplitude Amplification-mixer QAOA (AAM-QAOA), which uses a quantum tree generator for feasible-solution state preparation. Benchmark sets test instances with up to 20 items.",
+  "framework": "Qiskit, PennyLane",
+  "qubits": 20,
+  "reproducible": true,
+  "datePublished": "2024-11-01",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2411.00518",
+      "title": "Quantum tree generator improves QAOA state-of-the-art for the knapsack problem",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2503.12121",
+      "title": "A Comparative Study of Quantum Optimization Techniques for Solving Combinatorial Optimization Benchmark Problems",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

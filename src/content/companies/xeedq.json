@@ -1,0 +1,28 @@
+{
+  "name": "XeedQ",
+  "slug": "xeedq",
+  "country": "Germany",
+  "region": "dach",
+  "type": "hardware",
+  "tags": ["diamond-qubits", "nv-center", "solid-state", "room-temperature"],
+  "founded": 2021,
+  "description": "XeedQ develops quantum processors based on spin qubits in diamond, producing compact, energy-efficient solid-state quantum computers. Awarded EUR 30 million by the DLR Quantum Computing Initiative, the company aims to deliver a 32-qubit fault-tolerant system by 2026 and 256+ qubit mobile processors by 2028.",
+  "website": "https://xeedq.com",
+  "featured": false,
+  "headquarters": "Ulm, Germany",
+  "funding": "EUR 30M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://xeedq.com",
+      "title": "XeedQ Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://xeedq.com/the-german-aerospace-center-dlr-awards-30-million-euros-to-xeedq-gmbh-for-building-a-unique-quantum-computer/",
+      "title": "DLR awards 30 million Euros to XeedQ",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

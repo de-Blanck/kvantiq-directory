@@ -1,0 +1,29 @@
+{
+  "name": "Quanscient Oy",
+  "slug": "quanscient",
+  "country": "Finland",
+  "region": "nordics",
+  "type": "software",
+  "tags": ["simulation", "multiphysics", "quantum-enhanced", "CAE"],
+  "founded": 2021,
+  "description": "Quanscient develops quantum-enhanced multiphysics simulation software for engineering and industrial applications. The company combines classical high-performance computing with quantum algorithms to accelerate complex simulations in areas such as electromagnetics, thermal analysis, and structural mechanics. Quanscient's platform aims to reduce simulation times and enable more accurate modeling for product development.",
+  "website": "https://quanscient.com",
+  "featured": false,
+  "headquarters": "Tampere, Finland",
+  "employees": "30+",
+  "funding": "EUR 5.2M",
+  "sources": [
+    {
+      "type": "url",
+      "url": "https://www.eu-startups.com/2023/09/quanscient-raises-e5-2-million-seed-funding/",
+      "title": "Quanscient raises €5.2 million seed funding - EU-Startups",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "website",
+      "url": "https://quanscient.com",
+      "title": "Quanscient Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

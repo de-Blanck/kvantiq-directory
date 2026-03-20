@@ -1,0 +1,29 @@
+{
+  "name": "Qubit Pharmaceuticals",
+  "slug": "qubit-pharmaceuticals",
+  "country": "France",
+  "region": "western-europe",
+  "type": "software",
+  "tags": ["drug-discovery", "molecular-simulation", "hybrid-quantum-classical", "HPC"],
+  "founded": 2020,
+  "description": "Qubit Pharmaceuticals accelerates drug discovery through molecular simulation powered by hybrid HPC and quantum computing. Spun out of research at Sorbonne University, CNRS, and CNAM, the company's Atlas platform models molecular interactions at quantum-level accuracy, and has demonstrated a practical path to quantum utility in drug discovery by 2028.",
+  "website": "https://www.qubit-pharmaceuticals.com",
+  "featured": false,
+  "headquarters": "Paris, France",
+  "employees": "60+",
+  "funding": "EUR 25M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.qubit-pharmaceuticals.com",
+      "title": "Qubit Pharmaceuticals Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://quantumcomputingreport.com/qubit-pharmaceuticals-announces-dual-breakthroughs-quantum-speedup-and-2028-utility-path-for-drug-discovery/",
+      "title": "Qubit Pharmaceuticals Announces Dual Breakthroughs: Quantum Speedup and 2028 Utility Path for Drug Discovery",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

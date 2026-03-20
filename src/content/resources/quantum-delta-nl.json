@@ -1,0 +1,26 @@
+{
+  "name": "Quantum Delta NL",
+  "slug": "quantum-delta-nl",
+  "type": "community",
+  "tags": ["community", "Netherlands", "ecosystem", "national-programme", "innovation", "startups"],
+  "description": "Quantum Delta NL is the Dutch national programme for quantum technology, backed by €615 million from the National Growth Fund. Organised across five regional hubs in Delft, Eindhoven, Leiden, Twente, and Amsterdam, it coordinates catalyst programmes in quantum computing, quantum networking, and quantum sensing while investing in research, ecosystem development, and human capital.",
+  "website": "https://quantumdelta.nl/",
+  "openSource": false,
+  "free": true,
+  "language": "",
+  "provider": "Quantum Delta NL Foundation",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://quantumdelta.nl/",
+      "title": "Quantum Delta NL Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumdelta.nl/news/quantum-delta-nl-awarded-273-million-by-the-national-growth-fund-for-the-third-phase",
+      "title": "Quantum Delta NL Awarded €273 Million by the National Growth Fund for the Third Phase",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

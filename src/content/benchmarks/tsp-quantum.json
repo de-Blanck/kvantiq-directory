@@ -1,0 +1,27 @@
+{
+  "name": "Travelling Salesman Problem Quantum Benchmark",
+  "slug": "tsp-quantum",
+  "algorithm": "QAOA / Variational Quantum Eigensolver (VQE)",
+  "category": "optimization",
+  "tags": ["TSP", "combinatorial-optimization", "QAOA", "VQE", "QUBO"],
+  "description": "Benchmark of quantum approaches to the Travelling Salesman Problem, a canonical NP-hard combinatorial optimization task. Instances are encoded as QUBO/Ising Hamiltonians and solved using QAOA or VQE on gate-based hardware, or via quantum annealing. Current NISQ-era implementations handle instances of up to roughly six cities, making TSP a demanding test of quantum optimizer quality.",
+  "hardware": "Various (IBM Quantum, D-Wave, simulators)",
+  "framework": "Qiskit, PennyLane, D-Wave Ocean",
+  "qubits": 30,
+  "reproducible": true,
+  "datePublished": "2023-07-14",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2307.07243",
+      "title": "Comparative study of variations in quantum approximate optimization algorithms for the Traveling Salesman Problem",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2502.17725",
+      "title": "Solving the Traveling Salesman Problem via Different Quantum Computing Architectures",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

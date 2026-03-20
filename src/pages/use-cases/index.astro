@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import DataTable from '../../components/DataTable.tsx';
+
+const allUseCases = await getCollection('use-cases');
+const sorted = allUseCases.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const tableData = sorted.map(u => ({
+  href: `/use-cases/${u.data.slug}/`,
+  name: u.data.name,
+  industry: u.data.industry,
+  category: u.data.category,
+}));
+
+const tableColumns = [
+  { key: 'name', label: 'Use Case', isLink: true, sortable: true },
+  { key: 'industry', label: 'Industry', filterable: true, sortable: true },
+  { key: 'category', label: 'Category', filterable: true, sortable: true },
+];
+
+const itemListLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Quantum Computing Use Cases",
+  "numberOfItems": allUseCases.length,
+  "itemListElement": sorted.map((u, i) => ({
+    "@type": "ListItem", "position": i + 1, "name": u.data.name, "url": `/use-cases/${u.data.slug}/`,
+  })),
+};
+---
+<BaseLayout
+  title="Quantum Computing Use Cases"
+  description={`Browse ${allUseCases.length} real-world hybrid quantum-classical use cases across industries.`}
+  jsonLd={itemListLd}
+>
+  <article>
+    <h1 class="text-3xl font-bold">Quantum Computing Use Cases</h1>
+    <div class="summary" role="doc-abstract">
+      <p class="mt-2 text-text-secondary">{allUseCases.length} real-world use cases for hybrid quantum-classical computing.</p>
+    </div>
+
+    <DataTable
+      client:visible
+      data={tableData}
+      columns={tableColumns}
+      searchPlaceholder="Search use cases..."
+    />
+
+    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {sorted.map(u => (
+        <ListingCard title={u.data.name} href={`/use-cases/${u.data.slug}/`} description={u.data.description} tags={u.data.tags} meta={`${u.data.industry} · ${u.data.category}`} />
+      ))}
+    </div>
+  </article>
+</BaseLayout>

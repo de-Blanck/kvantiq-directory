@@ -1,0 +1,139 @@
+---
+const navItems = [
+  { href: '/companies/', label: 'Companies' },
+  { href: '/benchmarks/', label: 'Benchmarks' },
+  { href: '/use-cases/', label: 'Use Cases' },
+  { href: '/challenges/', label: 'Challenges' },
+  { href: '/resources/', label: 'Resources' },
+  { href: '/about/', label: 'About' },
+];
+const currentPath = Astro.url.pathname;
+---
+<header class="border-b border-border bg-surface" data-pagefind-ignore>
+  <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
+    <a href="/" class="flex items-center gap-2">
+      <span class="text-xs text-text-muted">by</span>
+      <img src="/kvantiq-logo-black.png" alt="Kvantiq Studio" class="h-10" />
+    </a>
+
+    <!-- Desktop Navigation -->
+    <ul class="hidden gap-6 md:flex">
+      {navItems.map(({ href, label }) => (
+        <li>
+          <a
+            href={href}
+            class={`text-sm font-medium transition-colors duration-[120ms] ${currentPath.startsWith(href) ? 'text-info border-b-2 border-info pb-0.5' : 'text-text-muted hover:text-info'}`}
+          >
+            {label}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <!-- Desktop Submit Button -->
+    <a href="/submit/" class="hidden md:block rounded-md bg-info px-3 py-1.5 text-sm font-medium text-white transition-colors duration-[120ms] hover:bg-info/80">
+      Submit Listing
+    </a>
+
+    <!-- Mobile Hamburger Button -->
+    <button
+      id="mobile-menu-button"
+      class="md:hidden flex flex-col gap-1.5 p-2"
+      aria-label="Open menu"
+      aria-expanded="false"
+    >
+      <span class="block h-0.5 w-6 bg-gray-600"></span>
+      <span class="block h-0.5 w-6 bg-gray-600"></span>
+      <span class="block h-0.5 w-6 bg-gray-600"></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div
+    id="mobile-menu-overlay"
+    class="fixed inset-0 bg-black/50 z-40 hidden"
+    aria-hidden="true"
+  ></div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="fixed top-0 right-0 bottom-0 w-64 bg-surface shadow-xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out"
+    aria-label="Mobile navigation"
+  >
+    <div class="flex flex-col h-full">
+      <!-- Close Button -->
+      <div class="flex justify-end p-4 border-b border-border">
+        <button
+          id="mobile-menu-close"
+          class="p-2 text-text-secondary hover:text-text"
+          aria-label="Close menu"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Nav Links -->
+      <ul class="flex flex-col py-4">
+        {navItems.map(({ href, label }) => (
+          <li class="border-b border-border">
+            <a
+              href={href}
+              class={`block px-6 py-3 text-base font-medium ${currentPath.startsWith(href) ? 'text-info bg-info-surface' : 'text-text-secondary hover:text-info hover:bg-surface-alt'}`}
+            >
+              {label}
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <!-- Mobile Submit Button -->
+      <div class="mt-auto p-4">
+        <a href="/submit/" class="block text-center rounded-md bg-info px-4 py-3 text-base font-medium text-white hover:bg-info/80">
+          Submit Listing
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script is:inline>
+  (function() {
+    const menuButton = document.getElementById('mobile-menu-button');
+    const closeButton = document.getElementById('mobile-menu-close');
+    const menu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('mobile-menu-overlay');
+
+    function openMenu() {
+      menu.classList.remove('translate-x-full');
+      overlay.classList.remove('hidden');
+      menuButton.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      menu.classList.add('translate-x-full');
+      overlay.classList.add('hidden');
+      menuButton.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    // Open menu
+    menuButton.addEventListener('click', openMenu);
+
+    // Close menu
+    closeButton.addEventListener('click', closeMenu);
+
+    // Close when clicking overlay
+    overlay.addEventListener('click', closeMenu);
+
+    // Close on Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && !menu.classList.contains('translate-x-full')) {
+        closeMenu();
+      }
+    });
+  })();
+</script>

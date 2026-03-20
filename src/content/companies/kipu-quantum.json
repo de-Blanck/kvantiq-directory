@@ -1,0 +1,28 @@
+{
+  "name": "Kipu Quantum",
+  "slug": "kipu-quantum",
+  "country": "Germany",
+  "region": "dach",
+  "type": "software",
+  "tags": ["quantum-algorithms", "compressed-quantum-computing", "optimization", "quantum-software"],
+  "founded": 2021,
+  "description": "Kipu Quantum develops compressed quantum algorithms designed to reduce the resource requirements of quantum computations, aiming to accelerate the timeline to industrially useful quantum computers. Founded in Karlsruhe with offices in Berlin, the company works with hardware partners to co-design application- and hardware-specific quantum solutions for near-term quantum advantage.",
+  "website": "https://kipu-quantum.com",
+  "featured": false,
+  "headquarters": "Karlsruhe, Germany",
+  "funding": "EUR 13.5M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://kipu-quantum.com",
+      "title": "Kipu Quantum Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://kipu-quantum.com/10-5-million-eur-for-german-quantum-software-company-kipu-quantum/",
+      "title": "10.5 Million EUR for German Quantum Software Company Kipu Quantum",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

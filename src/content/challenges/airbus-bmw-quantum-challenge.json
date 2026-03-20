@@ -1,0 +1,27 @@
+{
+  "name": "Airbus-BMW Quantum Computing Challenge",
+  "slug": "airbus-bmw-quantum-challenge",
+  "organizer": "Airbus and BMW",
+  "tags": ["challenge", "industry", "optimization", "high-prize"],
+  "description": "The Airbus-BMW Quantum Computing Challenge was a year-long competition focused on solving real-world industrial optimization problems using quantum computing. Participants tackled challenges in aircraft design and automotive manufacturing. The competition offered EUR 150,000 in total prizes and attracted teams from around the world.",
+  "website": "https://qcc.thequantuminsider.com/",
+  "dateStart": "2023-12-01",
+  "dateEnd": "2024-12-15",
+  "status": "completed",
+  "prizes": "EUR 150K total prizes",
+  "location": "Online",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://qcc.thequantuminsider.com/",
+      "title": "Quantum Computing Challenge Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.airbus.com/en/newsroom/press-releases/2023-12-airbus-bmw-launch-quantum-computing-challenge",
+      "title": "Airbus and BMW Group launch Quantum Computing Challenge - Airbus Press Release",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

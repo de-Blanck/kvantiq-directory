@@ -1,0 +1,71 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import DataTable from '../../components/DataTable.tsx';
+
+const allBenchmarks = await getCollection('benchmarks');
+const sorted = allBenchmarks.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const tableData = sorted.map(b => ({
+  href: `/benchmarks/${b.data.slug}/`,
+  name: b.data.name,
+  algorithm: b.data.algorithm,
+  category: b.data.category,
+  qubits: b.data.qubits ? String(b.data.qubits) : '',
+  framework: b.data.framework || '',
+}));
+
+const tableColumns = [
+  { key: 'name', label: 'Benchmark', isLink: true, sortable: true },
+  { key: 'algorithm', label: 'Algorithm', sortable: true },
+  { key: 'category', label: 'Category', filterable: true, sortable: true },
+  { key: 'qubits', label: 'Qubits', sortable: true },
+];
+
+const itemListLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Quantum Computing Benchmarks",
+  "numberOfItems": allBenchmarks.length,
+  "itemListElement": sorted.map((b, i) => ({
+    "@type": "ListItem",
+    "position": i + 1,
+    "name": b.data.name,
+    "url": `/benchmarks/${b.data.slug}/`,
+  })),
+};
+---
+<BaseLayout
+  title="Quantum Computing Benchmarks"
+  description={`Browse ${allBenchmarks.length} reproducible quantum computing benchmarks across optimization, chemistry, machine learning, and more.`}
+  jsonLd={itemListLd}
+>
+  <article>
+    <h1 class="text-3xl font-bold">Quantum Computing Benchmarks</h1>
+    <div class="summary" role="doc-abstract">
+      <p class="mt-2 text-text-secondary">
+        {allBenchmarks.length} reproducible quantum computing benchmarks for hybrid quantum-classical algorithms.
+      </p>
+    </div>
+
+    <DataTable
+      client:visible
+      data={tableData}
+      columns={tableColumns}
+      searchPlaceholder="Search benchmarks..."
+    />
+
+    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {sorted.map(b => (
+        <ListingCard
+          title={b.data.name}
+          href={`/benchmarks/${b.data.slug}/`}
+          description={b.data.description}
+          tags={b.data.tags}
+          meta={`${b.data.algorithm} · ${b.data.category}`}
+        />
+      ))}
+    </div>
+  </article>
+</BaseLayout>

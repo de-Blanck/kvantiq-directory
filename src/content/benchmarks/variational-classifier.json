@@ -1,0 +1,26 @@
+{
+  "name": "Variational Quantum Classifier Benchmark",
+  "slug": "variational-classifier",
+  "algorithm": "Variational Quantum Classifier (VQC)",
+  "category": "machine-learning",
+  "tags": ["VQC", "classification", "variational", "machine-learning", "hybrid", "data-encoding"],
+  "description": "Benchmark of variational quantum classifiers that use parameterized quantum circuits for supervised learning. Circuit-centric quantum classifiers encode classical data into quantum states via feature maps, then apply trainable unitaries and measure a readout qubit for binary classification. Benchmarks evaluate different ansatz architectures, encoding strategies, and circuit depths on standard datasets including Iris, MNIST subsets, and domain-specific applications.",
+  "framework": "Qiskit Machine Learning, PennyLane",
+  "qubits": 8,
+  "reproducible": true,
+  "datePublished": "2018-04-02",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/1804.00633",
+      "title": "Circuit-centric quantum classifiers",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/1802.06002",
+      "title": "Classification with Quantum Neural Networks on Near Term Processors",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

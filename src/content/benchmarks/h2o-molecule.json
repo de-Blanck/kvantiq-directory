@@ -1,0 +1,27 @@
+{
+  "name": "H2O Water Molecule Simulation Benchmark",
+  "slug": "h2o-molecule",
+  "algorithm": "Variational Quantum Eigensolver (VQE)",
+  "category": "chemistry",
+  "tags": ["VQE", "water", "chemistry", "ground-state", "potential-energy-surface"],
+  "description": "Benchmark for quantum simulation of the water molecule (H2O), computing ground-state energies and potential energy surfaces using VQE. As a triatomic molecule with a non-trivial electronic structure, H2O serves as a step up in complexity from diatomic benchmarks like H2 and LiH. VQE implementations can approximate the ground-state energy with high chemical accuracy on both simulators and NISQ hardware.",
+  "hardware": "Various (IBM Quantum, simulators)",
+  "framework": "Qiskit Nature, PennyLane",
+  "qubits": 14,
+  "reproducible": true,
+  "datePublished": "2020-10-27",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2010.13578",
+      "title": "Benchmarking the Variational Quantum Eigensolver through Simulation of the Ground State Energy of Prebiotic Molecules",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2109.00401",
+      "title": "Investigating potential energy surfaces of noncollinear molecule using variational quantum circuit",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

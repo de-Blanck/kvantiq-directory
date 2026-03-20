@@ -1,0 +1,20 @@
+{
+  "name": "Strawberry Fields",
+  "slug": "strawberry-fields",
+  "type": "framework",
+  "tags": ["quantum-computing", "open-source", "python", "photonics", "continuous-variable"],
+  "description": "Strawberry Fields is an open-source Python library for designing, simulating, and optimizing continuous-variable quantum optical circuits. Developed by Xanadu, it focuses on photonic quantum computing and includes support for both Gaussian and non-Gaussian operations. Strawberry Fields integrates with PennyLane for quantum machine learning applications.",
+  "website": "https://strawberryfields.ai",
+  "openSource": true,
+  "free": true,
+  "language": "Python",
+  "provider": "Xanadu",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://strawberryfields.ai",
+      "title": "Strawberry Fields Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

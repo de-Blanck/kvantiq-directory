@@ -1,0 +1,25 @@
+{
+  "name": "Quantum Fraud Detection",
+  "slug": "fraud-detection",
+  "industry": "Finance",
+  "category": "finance",
+  "tags": ["fraud-detection", "quantum-ML", "classification", "finance", "VQC"],
+  "description": "Using quantum machine learning classifiers to detect fraudulent financial transactions. Variational quantum classifiers and quantum support vector machines have shown competitive or improved classification performance compared to classical methods on credit card fraud datasets.",
+  "problem": "Financial fraud detection requires classifying transactions in real time across massive datasets with highly imbalanced classes. Classical machine learning models struggle with feature space complexity and the exponential growth of fraudulent attack patterns, while false positive rates remain a persistent challenge.",
+  "approach": "Quantum feature maps encode transaction data into high-dimensional Hilbert spaces where fraudulent patterns may become more separable. Hybrid quantum-classical classifiers such as Variational Quantum Classifiers (VQC) and Quantum Support Vector Machines (QSVM) are trained on labeled transaction data, with quantum circuits handling feature transformation and classical optimizers tuning circuit parameters.",
+  "results": "A CERN study showed that hybrid quantum-classical fraud detection combining QSVM with classical algorithms improved fraud prevention decisions. A 2024 comparative study found the VQC achieved an F1-score of 0.88 on credit card fraud datasets, competitive with classical baselines including XGBoost and Random Forest.",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2412.19441",
+      "title": "Comparative Performance Analysis of Quantum Machine Learning Architectures for Credit Card Fraud Detection",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://ieeexplore.ieee.org/document/9915517/",
+      "title": "Mixed Quantum-Classical Method for Fraud Detection With Quantum Feature Selection",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

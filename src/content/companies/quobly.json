@@ -1,0 +1,22 @@
+{
+  "name": "Quobly",
+  "slug": "quobly",
+  "country": "France",
+  "region": "western-europe",
+  "type": "hardware",
+  "tags": ["silicon-spin", "spin-qubit", "quantum-processors"],
+  "founded": 2022,
+  "description": "Quobly develops silicon spin qubit quantum computers leveraging semiconductor manufacturing techniques. Based in Grenoble near CEA-Leti, the company focuses on building scalable quantum processors using established silicon fabrication processes.",
+  "website": "https://www.quobly.io",
+  "featured": false,
+  "headquarters": "Grenoble, France",
+  "funding": "EUR 19M",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.quobly.io",
+      "title": "Quobly Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Zurich Instruments",
+  "slug": "zurich-instruments",
+  "country": "Switzerland",
+  "region": "dach",
+  "type": "hardware",
+  "tags": ["quantum-control", "test-and-measurement", "control-electronics", "qubit-readout"],
+  "founded": 2008,
+  "description": "Zurich Instruments is a Swiss manufacturer of quantum computing control systems, lock-in amplifiers, and arbitrary waveform generators. Spun out of ETH Zurich and acquired by Rohde & Schwarz in 2021, the company provides the hardware layer between software and physical qubits, with its ZQCS platform designed for large-scale quantum computer operation.",
+  "website": "https://www.zhinst.com",
+  "featured": false,
+  "headquarters": "Zurich, Switzerland",
+  "employees": "100+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.zhinst.com/europe/en",
+      "title": "Zurich Instruments Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://www.rohde-schwarz.com/us/about/news-press/all-news/rohde-schwarz-strengthens-position-in-quantum-technology-market-by-acquiring-zurich-instruments-ag-press-release-detailpage_229356-1094656.html",
+      "title": "Rohde & Schwarz strengthens position in quantum technology market by acquiring Zurich Instruments AG",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/03/09/zurich-instruments-zqcs-quantum-control-system-logical-qubits/",
+      "title": "Zurich Instruments Launches the ZQCS Quantum Control System - The Quantum Insider",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

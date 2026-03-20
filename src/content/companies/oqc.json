@@ -1,0 +1,35 @@
+{
+  "name": "Oxford Quantum Circuits",
+  "slug": "oqc",
+  "country": "United Kingdom",
+  "region": "uk",
+  "type": "hardware",
+  "tags": ["superconducting", "coaxmon", "quantum-as-a-service", "error-correction", "full-stack"],
+  "founded": 2017,
+  "description": "Oxford Quantum Circuits (OQC) is a UK-based quantum computing company spun out of the University of Oxford, developing superconducting quantum processors based on its proprietary Coaxmon three-dimensional qubit architecture. OQC offers quantum-compute-as-a-service and has deployed systems in commercial data centres, with a published roadmap targeting 50,000 logical qubits by 2034.",
+  "website": "https://oqc.tech",
+  "featured": false,
+  "headquarters": "Reading, United Kingdom",
+  "employees": "140+",
+  "funding": "USD 150M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://oqc.tech",
+      "title": "OQC Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://tech.eu/2023/11/27/oxford-quantum-circuits-raises-100m-in-largest-uk-series-b-for-quantum-computing/",
+      "title": "Oxford Quantum Circuits raises $100M for quantum compute-as-a-service - Tech.eu",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/oqc-and-riverlane-launch-uks-first-quantum-error-corrected-testbed-integrated-with-hpc/",
+      "title": "OQC and Riverlane Launch UK's First Quantum Error Corrected Testbed Integrated with HPC",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

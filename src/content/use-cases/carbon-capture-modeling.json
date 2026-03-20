@@ -1,0 +1,26 @@
+{
+  "name": "Quantum Carbon Capture Molecular Modeling",
+  "slug": "carbon-capture-modeling",
+  "industry": "Energy & Environment",
+  "category": "energy",
+  "tags": ["carbon-capture", "MOF", "VQE", "molecular-simulation", "climate"],
+  "description": "Quantum computing is being used to model the molecular interactions between CO2 and Metal-Organic Frameworks (MOFs), a leading class of materials for scalable carbon capture. Quantinuum and TotalEnergies have demonstrated VQE-based simulations of CO2 adsorption on aluminum fumarate MOFs.",
+  "problem": "Designing efficient carbon capture materials requires accurate simulation of CO2 binding to porous frameworks at the quantum mechanical level. Classical electronic structure methods either lack the accuracy needed to predict adsorption energies reliably or are too computationally expensive for the large unit cells of MOF materials.",
+  "approach": "The MOF structure is decomposed into interacting molecular fragments, with the fragment containing the CO2 adsorption site treated using the Variational Quantum Eigensolver (VQE) on quantum hardware. Active space reduction strategies based on Wannier functions and natural orbital selection keep the quantum computation tractable while capturing the essential electron correlation effects.",
+  "results": "Quantinuum and TotalEnergies demonstrated VQE-based CO2 adsorption modeling on metal-organic frameworks, establishing a methodology for using quantum computers to study carbon capture materials. Follow-up work extended the approach to periodic MOF systems with quantum number-preserving ansatze.",
+  "companies": ["quantinuum"],
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2203.15546",
+      "title": "Modelling Carbon Capture on Metal-Organic Frameworks with Quantum Computing",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2311.12411",
+      "title": "Quantum Simulations for Carbon Capture on Metal-Organic Frameworks",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

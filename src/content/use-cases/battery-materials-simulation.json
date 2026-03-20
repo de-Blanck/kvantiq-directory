@@ -1,0 +1,25 @@
+{
+  "name": "Quantum Battery Materials Simulation",
+  "slug": "battery-materials-simulation",
+  "industry": "Energy",
+  "category": "energy",
+  "tags": ["battery", "lithium-ion", "materials-science", "simulation", "fault-tolerant"],
+  "description": "Quantum algorithms are being developed to simulate lithium-ion battery materials with higher accuracy than classical methods, targeting key properties such as cell voltage, ionic mobility, and thermal stability. These simulations could accelerate the discovery of next-generation battery chemistries for electric vehicles and grid storage.",
+  "problem": "Accurately simulating the electronic structure of battery electrode and electrolyte materials requires solving the many-body Schrodinger equation, which is exponentially hard for classical computers. Current density functional theory approximations introduce systematic errors that limit predictive accuracy for new battery chemistries.",
+  "approach": "First-quantization quantum algorithms with ionic pseudopotentials reduce the computational cost of simulating periodic battery materials on quantum hardware. The algorithms target properties directly relevant to battery performance — equilibrium cell voltages, ionic diffusion barriers, and phase stability — using fault-tolerant quantum circuits with Toffoli gate decompositions.",
+  "results": "Microsoft and PNNL researchers estimated qubit and gate counts for simulating lithium manganese oxide, lithium nickel-manganese oxide, and lithium manganese oxyfluoride. A separate end-to-end quantum algorithm demonstrated feasibility of calculating key lithium-ion battery properties on future fault-tolerant hardware.",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2302.07981",
+      "title": "Quantum simulation of battery materials using ionic pseudopotentials",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2204.11890",
+      "title": "Simulating key properties of lithium-ion batteries with a fault-tolerant quantum computer",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

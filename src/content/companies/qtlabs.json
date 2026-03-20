@@ -1,0 +1,28 @@
+{
+  "name": "Quantum Technology Laboratories",
+  "slug": "qtlabs",
+  "country": "Austria",
+  "region": "dach",
+  "type": "hardware",
+  "tags": ["quantum-communication", "satellite-qkd", "free-space-optics", "quantum-key-distribution"],
+  "founded": 2017,
+  "description": "Quantum Technology Laboratories (qtlabs) is a Vienna-based company specializing in free-space and satellite-based quantum communication systems. Building on over 20 years of pioneering research including world-record satellite quantum downlinks, qtlabs develops space-based quantum key distribution technology to enable global quantum-secure communication networks.",
+  "website": "https://www.qtlabs.at",
+  "featured": false,
+  "headquarters": "Vienna, Austria",
+  "employees": "30+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.qtlabs.at",
+      "title": "Quantum Technology Laboratories Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2021/05/29/austrian-startup-has-star-trek-like-designs-prototypes-in-quantum-space-communication/",
+      "title": "Austrian Startup Has Star Trek-Like Designs & Prototypes in Quantum Space Communication - The Quantum Insider",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

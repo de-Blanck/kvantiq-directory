@@ -1,0 +1,23 @@
+{
+  "name": "ParityQC",
+  "slug": "parityqc",
+  "country": "Austria",
+  "region": "dach",
+  "type": "software",
+  "tags": ["quantum-architecture", "quantum-compiler", "optimization"],
+  "founded": 2020,
+  "description": "ParityQC is an Austrian quantum software company developing quantum computing architecture optimization and compiler technology. The company provides ParityOS, a blueprint for quantum computers optimized for solving optimization problems, and works with hardware providers to improve quantum system performance.",
+  "website": "https://www.parityqc.com",
+  "featured": false,
+  "headquarters": "Innsbruck, Austria",
+  "employees": "30+",
+  "funding": "EUR 10M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.parityqc.com",
+      "title": "ParityQC Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

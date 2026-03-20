@@ -1,0 +1,25 @@
+{
+  "name": "Quantum Protein Folding Simulation",
+  "slug": "protein-folding-simulation",
+  "industry": "Pharmaceuticals",
+  "category": "chemistry",
+  "tags": ["protein-folding", "VQE", "pharmaceuticals", "simulation", "lattice-model"],
+  "description": "Quantum algorithms are being developed to simulate protein folding, a fundamental problem in structural biology and drug design. Recent experiments on trapped-ion quantum processors have tackled protein folding for up to 12 amino acids, representing the largest quantum hardware implementations reported to date.",
+  "problem": "Predicting how a protein's amino acid sequence folds into its three-dimensional structure is computationally intractable for classical computers due to the exponential number of possible conformations. Accurate folding predictions are critical for understanding disease mechanisms and designing targeted therapeutics.",
+  "approach": "Protein folding is mapped onto lattice models (tetrahedral or diamond lattices) and encoded as optimization problems solvable by variational quantum algorithms. VQE and digitized counterdiabatic quantum optimization (BF-DCQO) algorithms explore the energy landscape to find minimum-energy conformations on quantum hardware, with classical optimizers guiding the search.",
+  "results": "Researchers demonstrated folding of peptides up to 12 amino acids on IonQ trapped-ion processors using BF-DCQO, the largest quantum hardware protein folding experiment reported. Earlier IBM work simulated the 10-amino-acid Angiotensin peptide on 22 qubits using variational algorithms with evolutionary strategies.",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2506.07866",
+      "title": "Protein folding with an all-to-all trapped-ion quantum computer",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/1908.02163",
+      "title": "Resource-Efficient Quantum Algorithm for Protein Folding",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Nu Quantum",
+  "slug": "nu-quantum",
+  "country": "United Kingdom",
+  "region": "uk",
+  "type": "hardware",
+  "tags": ["photonic", "quantum-networking", "distributed-quantum", "trapped-ion-networking"],
+  "founded": 2018,
+  "description": "Nu Quantum is a Cambridge-based company developing photonic quantum networking technology to connect and scale quantum computers. The company's Qubit-Photon Interface and Entanglement Fabric technology enable modular, distributed quantum computing across multiple hardware platforms including trapped-ion and neutral-atom systems. Nu Quantum has raised over $70 million, including the largest Series A for quantum networking globally.",
+  "website": "https://www.nu-quantum.com",
+  "featured": false,
+  "headquarters": "Cambridge, United Kingdom",
+  "employees": "60+",
+  "funding": "USD 70M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.nu-quantum.com",
+      "title": "Nu Quantum Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://techfundingnews.com/nu-quantum-raises-60m-to-build-quantum-networking-infrastructure/",
+      "title": "Cambridge's Nu Quantum nets $60M to build distributed quantum computers - TechFundingNews",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/02/10/nu-quantum-opens-state-of-the-art-trapped-ion-qubit-networking-lab-in-cambridge-to-accelerate-distributed-quantum-computing/",
+      "title": "Nu Quantum Opens State-of-the-Art Trapped-Ion Qubit Networking Lab in Cambridge",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

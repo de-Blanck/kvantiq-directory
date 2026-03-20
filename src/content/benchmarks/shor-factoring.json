@@ -1,0 +1,27 @@
+{
+  "name": "Shor's Algorithm Factoring Benchmark",
+  "slug": "shor-factoring",
+  "algorithm": "Shor's factoring algorithm",
+  "category": "cryptography",
+  "tags": ["Shor", "factoring", "RSA", "cryptography", "fault-tolerant"],
+  "description": "Benchmark of Shor's quantum factoring algorithm on small semiprime instances. Current NISQ hardware can only factor very small numbers (N=15, N=21) with low success rates due to high error rates. GPU-based supercomputer simulations have assessed Shor's algorithm for larger numbers, finding average success probabilities above 50% due to high frequency of 'lucky' cases, with the largest simulated factorization reaching 549,755,813,701.",
+  "hardware": "IBM Quantum, photonic (experimental), GPU simulators",
+  "framework": "Qiskit, Cirq",
+  "qubits": 10,
+  "reproducible": true,
+  "datePublished": "2023-08-09",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2308.05047",
+      "title": "Large-Scale Simulation of Shor's Quantum Factoring Algorithm",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/1111.4147",
+      "title": "Experimental realisation of Shor's quantum factoring algorithm using qubit recycling",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

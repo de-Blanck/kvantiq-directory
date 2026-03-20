@@ -1,0 +1,29 @@
+{
+  "name": "SemiQon Technologies",
+  "slug": "semiqon",
+  "country": "Finland",
+  "region": "nordics",
+  "type": "hardware",
+  "tags": ["silicon-qubits", "semiconductor", "quantum-processors", "VTT-spinoff"],
+  "founded": 2023,
+  "description": "SemiQon Technologies is a VTT spin-off developing silicon-based quantum processors. The company leverages semiconductor manufacturing expertise to build scalable quantum computing hardware using silicon quantum dot technology. SemiQon aims to bring quantum computing closer to industrial production through compatibility with existing semiconductor fabrication processes.",
+  "website": "https://semiqon.com",
+  "featured": false,
+  "headquarters": "Espoo, Finland",
+  "employees": "20+",
+  "funding": "EUR 19.4M",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://semiqon.com",
+      "title": "SemiQon Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.vttresearch.com/en/ourservices/semiqon-building-silicon-quantum-computer",
+      "title": "SemiQon: Building silicon quantum computer - VTT Case Study",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

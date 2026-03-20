@@ -1,0 +1,29 @@
+{
+  "name": "QphoX",
+  "slug": "qphox",
+  "country": "Netherlands",
+  "region": "western-europe",
+  "type": "hardware",
+  "tags": ["quantum-transducer", "quantum-networking", "microwave-to-optical", "QuTech-spinoff"],
+  "founded": 2020,
+  "description": "QphoX develops quantum transducers that convert quantum information between microwave and optical frequencies, enabling quantum computers to network over standard telecom fiber. A spin-off from TU Delft's Quantum Nanoscience department, QphoX launched the first commercial quantum transducer in March 2026.",
+  "website": "https://qphox.eu",
+  "featured": false,
+  "headquarters": "Delft, Netherlands",
+  "employees": "35+",
+  "funding": "EUR 18M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://qphox.eu",
+      "title": "QphoX Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://qphox.eu/news/qphox-launches-breakthrough-product-allowing-distributed-quantum-computing-over-long-distance-optical-networks/",
+      "title": "QphoX Launches Breakthrough Product Allowing Distributed Quantum Computing Over Long-distance Optical Networks",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

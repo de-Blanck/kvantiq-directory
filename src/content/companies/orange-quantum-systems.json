@@ -1,0 +1,21 @@
+{
+  "name": "Orange Quantum Systems",
+  "slug": "orange-quantum-systems",
+  "country": "Netherlands",
+  "region": "western-europe",
+  "type": "hardware",
+  "tags": ["testing", "characterization", "quantum-infrastructure", "automation"],
+  "founded": 2019,
+  "description": "Orange Quantum Systems develops automated quantum device testing and characterization equipment. Their solutions enable rapid and reliable testing of quantum processors, helping quantum computing companies accelerate development cycles and improve device quality.",
+  "website": "https://www.orangeqs.com",
+  "featured": false,
+  "headquarters": "Delft, Netherlands",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.orangeqs.com",
+      "title": "Orange Quantum Systems Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

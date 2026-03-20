@@ -1,0 +1,20 @@
+{
+  "name": "Quantum Open Source Foundation",
+  "slug": "qosf",
+  "type": "community",
+  "tags": ["community", "open-source", "mentorship", "advocacy", "education"],
+  "description": "The Quantum Open Source Foundation (QOSF) is a community organization dedicated to supporting the development and growth of open-source quantum software. QOSF runs mentorship programs, organizes events, and maintains a curated list of quantum computing projects. It aims to lower barriers to entry and foster collaboration in the quantum computing ecosystem.",
+  "website": "https://qosf.org",
+  "openSource": false,
+  "free": true,
+  "language": "",
+  "provider": "QOSF",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://qosf.org",
+      "title": "QOSF Official Website",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

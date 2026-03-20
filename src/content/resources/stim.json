@@ -1,0 +1,26 @@
+{
+  "name": "Stim",
+  "slug": "stim",
+  "type": "tool",
+  "tags": ["error-correction", "stabilizer-simulation", "open-source", "python", "cpp"],
+  "description": "Stim is a high-performance stabilizer circuit simulator optimized for quantum error correction research, developed by Google Quantum AI. It uses 256-bit AVX vectorized instructions and can analyze a distance-100 surface code circuit with 20,000 qubits in under 15 seconds.",
+  "website": "https://github.com/quantumlib/Stim",
+  "openSource": true,
+  "free": true,
+  "language": "Python / C++",
+  "provider": "Google Quantum AI",
+  "sources": [
+    {
+      "type": "url",
+      "url": "https://github.com/quantumlib/Stim",
+      "title": "Stim GitHub Repository",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://pypi.org/project/stim/",
+      "title": "Stim on PyPI",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

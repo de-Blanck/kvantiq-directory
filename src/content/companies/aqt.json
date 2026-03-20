@@ -1,0 +1,29 @@
+{
+  "name": "Alpine Quantum Technologies",
+  "slug": "aqt",
+  "country": "Austria",
+  "region": "dach",
+  "type": "hardware",
+  "tags": ["trapped-ion", "quantum-computing", "ion-trap"],
+  "founded": 2018,
+  "description": "Alpine Quantum Technologies (AQT) is an Austrian quantum computing company developing trapped-ion quantum computers. Spun out from the University of Innsbruck, AQT builds scalable quantum computing systems using ion-trap technology for research and commercial applications.",
+  "website": "https://www.aqt.eu",
+  "featured": true,
+  "headquarters": "Innsbruck, Austria",
+  "employees": "50+",
+  "funding": "EUR 10M+",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.aqt.eu",
+      "title": "Alpine Quantum Technologies Official Website",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/companies/alpine-quantum-technologies/",
+      "title": "Alpine Quantum Technologies - The Quantum Insider",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

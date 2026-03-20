@@ -1,0 +1,27 @@
+{
+  "name": "Transverse-Field Ising Model Benchmark",
+  "slug": "transverse-field-ising",
+  "algorithm": "VQE / Hamiltonian Simulation / Exact Diagonalisation",
+  "category": "simulation",
+  "tags": ["Ising-model", "phase-transition", "VQE", "simulation", "condensed-matter"],
+  "description": "Benchmark for quantum simulation of the transverse-field Ising model (TFIM), a paradigmatic model for studying quantum phase transitions. Implementations range from VQE ground-state calculations on NISQ hardware (tested on IQM Garnet, IBM Quantum) to Hamiltonian simulation of dynamics on trapped-ion platforms. Studies cover 1D chains up to 25 qubits and 2D lattices up to 6x6 sites.",
+  "hardware": "IBM Quantum, IQM Garnet, Quantinuum, simulators",
+  "framework": "Qiskit, Cirq, PennyLane",
+  "qubits": 36,
+  "reproducible": true,
+  "datePublished": "2021-06-21",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2106.11298",
+      "title": "A near-term quantum simulation of the transverse field Ising model hints at Glassy Dynamics",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2601.17515",
+      "title": "Quantum Phase Transitions in the Transverse-Field Ising Model: A Comparative Study of Exact, Variational, and Hardware-Based Approaches",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

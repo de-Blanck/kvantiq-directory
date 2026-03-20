@@ -1,0 +1,26 @@
+{
+  "name": "TU Delft Quantum 101",
+  "slug": "tudelft-quantum-101",
+  "type": "course",
+  "tags": ["education", "edX", "university", "European", "quantum-internet", "hardware"],
+  "description": "Quantum 101: Quantum Computing & Quantum Internet is a Professional Certificate program offered by TU Delft on edX. The program covers quantum hardware fundamentals, quantum algorithms, quantum internet protocols, and hands-on exercises with Quantum Inspire. Developed by researchers at QuTech, the courses are free to audit with an optional paid certificate.",
+  "website": "https://www.edx.org/certificates/professional-certificate/delftx-quantum-computing-and-quantum-internet",
+  "openSource": false,
+  "free": true,
+  "language": "English",
+  "provider": "TU Delft / QuTech",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.edx.org/certificates/professional-certificate/delftx-quantum-computing-and-quantum-internet",
+      "title": "Quantum 101: Quantum Computing & Quantum Internet Professional Certificate — edX",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://online-learning.tudelft.nl/programs/quantum-computing-and-quantum-internet/",
+      "title": "Quantum Computing and Quantum Internet — TU Delft Learning for Life",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  /* Page */
+  --color-page-bg: #F8F7F4;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #FAFAF8;
+  --color-border: #E8E6E1;
+  --color-border-subtle: #F0EEE9;
+
+  /* Text */
+  --color-text: #1a1a1a;
+  --color-text-secondary: #5A5A5A;
+  --color-text-muted: #8A8A8A;
+  --color-text-faint: #888888;
+
+  /* Semantic */
+  --color-ok: #059669;
+  --color-info: #2563EB;
+  --color-warn: #D97706;
+  --color-error: #DC2626;
+
+  /* Semantic surfaces */
+  --color-ok-surface: #ECFDF5;
+  --color-ok-border: #A7F3D0;
+  --color-ok-text: #065F46;
+  --color-info-surface: #EFF6FF;
+  --color-info-border: #BFDBFE;
+  --color-info-text: #1E40AF;
+  --color-warn-surface: #FFFBEB;
+  --color-warn-border: #FDE68A;
+  --color-warn-text: #92400E;
+  --color-error-surface: #FEF2F2;
+  --color-error-border: #FECACA;
+  --color-error-text: #991B1B;
+
+  /* Marketing */
+  --color-void: #06090F;
+  --color-phosphor: #00FFB2;
+  --color-phosphor-hover: #00E6A0;
+  --color-cyan: #00D4FF;
+
+  /* Typography */
+  --font-family-sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-family-mono: 'IBM Plex Mono', monospace;
+
+  /* Shadows */
+  --shadow-subtle: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-elevated: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+body {
+  font-family: var(--font-family-sans);
+  background-color: var(--color-page-bg);
+  color: var(--color-text);
+}
+
+/* Table row hover */
+tbody tr {
+  transition: background-color 80ms ease-out;
+}
+tbody tr:hover {
+  background-color: var(--color-surface);
+}

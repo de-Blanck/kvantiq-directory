@@ -1,0 +1,26 @@
+{
+  "name": "France National Quantum Strategy",
+  "slug": "france-national-quantum-strategy",
+  "type": "funding",
+  "tags": ["funding", "France", "research", "public-funding", "infrastructure", "PROQCIMA"],
+  "description": "France's National Quantum Strategy, part of the France 2030 investment plan, allocates €1.8 billion to quantum technology development including €1 billion in public funding. The strategy covers quantum computing, simulators, sensors, post-quantum cryptography, and secure communication, and includes the PROQCIMA programme awarding up to €500 million to five companies building French-designed universal quantum computers by 2030.",
+  "website": "https://quantique.france2030.gouv.fr/",
+  "openSource": false,
+  "free": true,
+  "language": "",
+  "provider": "French Government (France 2030)",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://quantique.france2030.gouv.fr/",
+      "title": "France National Quantum Strategy Official Portal",
+      "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2024/03/07/france-2030-progress-update-three-years-after-the-launch-of-the-national-quantum-technologies-strategy-and-the-launch-of-the-proqcima-program/",
+      "title": "France 2030: Progress Update and Launch of the PROQCIMA Program",
+      "dateAccessed": "2026-03-19"
+    }
+  ]
+}
