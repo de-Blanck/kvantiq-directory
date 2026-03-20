@@ -2,12 +2,19 @@
   "name": "EIC Accelerator",
   "slug": "eic-accelerator",
   "type": "funding",
-  "tags": ["funding", "Europe", "startups", "SMEs", "quantum-technology", "grants", "equity"],
+  "tags": [
+    "funding",
+    "Europe",
+    "startups",
+    "SMEs",
+    "quantum-technology",
+    "grants",
+    "equity"
+  ],
   "description": "The European Innovation Council (EIC) Accelerator provides grants and equity investments to startups and SMEs developing breakthrough technologies, including quantum computing. It has funded companies such as SemiQon and eleQtron with investments ranging from €2.5 million to €17.5 million, and its 2026 work programme allocates over €1.4 billion for strategic technologies.",
   "website": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
   "openSource": false,
   "free": true,
-  "language": "",
   "provider": "European Innovation Council",
   "sources": [
     {
