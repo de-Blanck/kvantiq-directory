@@ -95,7 +95,7 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
         const val = String(getValue());
         if (col.isLink) {
           return (
-            <a href={row.original.href} className="text-[#2563EB] no-underline hover:underline transition-colors duration-75">
+            <a href={row.original.href} className="text-accent no-underline hover:underline transition-colors duration-75">
               {val}
             </a>
           );
@@ -147,7 +147,7 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
       <div className="flex flex-wrap items-center gap-3 mt-6 mb-4">
         {/* Search */}
         <div className="relative flex-1 min-w-[200px] max-w-sm">
-          <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#8A8A8A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
           <input
@@ -158,7 +158,7 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
               updateUrl(e.target.value, sorting, columnFilters);
             }}
             placeholder={searchPlaceholder}
-            className="w-full rounded-lg border border-[#E8E6E1] bg-white pl-9 pr-3 py-2 text-sm text-[#1a1a1a] placeholder-[#8A8A8A] outline-none transition-colors duration-75 focus:border-[#BFDBFE] focus:ring-1 focus:ring-[#BFDBFE]"
+            className="w-full rounded-lg border border-border bg-surface pl-9 pr-3 py-2 text-sm text-text-primary placeholder-text-muted outline-none transition-colors duration-75 focus:border-accent focus:ring-1 focus:ring-accent-glow"
           />
         </div>
 
@@ -176,7 +176,7 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
                 setColumnFilters(next);
                 updateUrl(globalFilter, sorting, next);
               }}
-              className="rounded-lg border border-[#E8E6E1] bg-white px-3 py-2 text-sm text-[#1a1a1a] outline-none transition-colors duration-75 focus:border-[#BFDBFE] focus:ring-1 focus:ring-[#BFDBFE]"
+              className="rounded-lg border border-border bg-surface px-3 py-2 text-sm text-text-primary outline-none transition-colors duration-75 focus:border-accent focus:ring-1 focus:ring-accent-glow"
             >
               <option value="">All {col.label.endsWith('y') ? col.label.slice(0, -1) + 'ies' : col.label.endsWith('s') ? col.label : col.label + 's'}</option>
               {filterOptions[col.key]?.map(opt => (
@@ -188,13 +188,13 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
 
         {/* Result count + clear */}
         <div className="flex items-center gap-3 ml-auto">
-          <span className="font-mono text-xs text-[#8A8A8A]">
+          <span className="font-mono text-xs text-text-muted">
             {filteredCount} {filteredCount === 1 ? 'result' : 'results'}
           </span>
           {hasActiveFilters && (
             <button
               onClick={clearAll}
-              className="rounded-md border border-[#E8E6E1] bg-white px-2.5 py-1 text-xs font-medium text-[#5A5A5A] transition-colors duration-75 hover:border-[#FECACA] hover:text-[#DC2626]"
+              className="rounded-md border border-border bg-surface px-2.5 py-1 text-xs font-medium text-text-secondary transition-colors duration-75 hover:border-error/30 hover:text-error"
             >
               Clear filters
             </button>
@@ -205,23 +205,23 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
       {/* Table */}
       <div className="overflow-x-auto">
         <table className="min-w-full text-sm">
-          <thead>
-            <tr className="border-b text-left text-[#8A8A8A]">
+          <thead className="sticky top-0 z-10 bg-void">
+            <tr className="border-b text-left text-text-muted">
               {table.getHeaderGroups()[0].headers.map(header => {
                 const canSort = header.column.getCanSort();
                 const sorted = header.column.getIsSorted();
                 return (
                   <th
                     key={header.id}
-                    className={`pb-2 pr-4 font-medium select-none ${canSort ? 'cursor-pointer hover:text-[#1a1a1a] transition-colors duration-75' : ''}`}
+                    className={`pb-2 pr-4 font-medium select-none ${canSort ? 'cursor-pointer hover:text-text-primary transition-colors duration-75' : ''}`}
                     onClick={canSort ? header.column.getToggleSortingHandler() : undefined}
                   >
                     <span className="inline-flex items-center gap-1">
                       {flexRender(header.column.columnDef.header, header.getContext())}
                       {canSort && (
                         <span className="text-[10px] inline-flex flex-col leading-none -space-y-0.5">
-                          <span className={sorted === 'asc' ? 'text-[#2563EB]' : 'text-[#E8E6E1]'}>▲</span>
-                          <span className={sorted === 'desc' ? 'text-[#2563EB]' : 'text-[#E8E6E1]'}>▼</span>
+                          <span className={sorted === 'asc' ? 'text-accent' : 'text-text-muted'}>▲</span>
+                          <span className={sorted === 'desc' ? 'text-accent' : 'text-text-muted'}>▼</span>
                         </span>
                       )}
                     </span>
@@ -234,11 +234,11 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
             {table.getRowModel().rows.map(row => (
               <tr
                 key={row.id}
-                className="border-b border-[#F0EEE9] cursor-pointer"
+                className="border-b border-border cursor-pointer hover:bg-elevated transition-colors duration-75"
                 onClick={() => { window.location.href = row.original.href; }}
               >
                 {row.getVisibleCells().map(cell => (
-                  <td key={cell.id} className="py-2.5 pr-4 text-[#5A5A5A]">
+                  <td key={cell.id} className="py-2.5 pr-4 text-text-secondary">
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </td>
                 ))}
@@ -246,9 +246,9 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
             ))}
             {filteredCount === 0 && (
               <tr>
-                <td colSpan={columns.length} className="py-8 text-center text-[#8A8A8A]">
+                <td colSpan={columns.length} className="py-8 text-center text-text-muted">
                   No results match your filters.
-                  <button onClick={clearAll} className="ml-2 text-[#2563EB] hover:underline">Clear all</button>
+                  <button onClick={clearAll} className="ml-2 text-accent hover:underline">Clear all</button>
                 </td>
               </tr>
             )}
