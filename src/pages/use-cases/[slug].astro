@@ -43,9 +43,12 @@ const articleLd = {
   })),
 };
 
+const categoryLabel = useCase.category.replace(/-/g, ' ').replace(/^\w/, (c: string) => c.toUpperCase());
 const stats = [
   { value: useCase.industry, label: 'Industry' },
-  { value: useCase.category.replace(/^\w/, (c: string) => c.toUpperCase()), label: 'Category' },
+  // Only show category if it's meaningfully different from industry
+  ...(categoryLabel.toLowerCase() !== useCase.industry.toLowerCase() ? [{ value: categoryLabel, label: 'Category' }] : []),
+  ...(useCase.results ? [{ value: 'Published', label: 'Results' }] : []),
 ];
 
 const meta = [useCase.industry, useCase.category.replace(/^\w/, (c: string) => c.toUpperCase())].filter(Boolean).join(' · ');

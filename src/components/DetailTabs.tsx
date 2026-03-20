@@ -18,22 +18,15 @@ interface RelatedItem {
   href: string;
 }
 
-interface SourceItem {
-  type: string;
-  url: string;
-  title?: string;
-  dateAccessed?: string;
-}
-
 interface DetailTabsProps {
   children: React.ReactNode;
   news: NewsItem[];
   related: RelatedItem[];
-  sources: SourceItem[];
+  sources: { type: string; url: string; title?: string; dateAccessed?: string }[];
   onCustomize: () => void;
 }
 
-type TabId = 'overview' | 'news' | 'related' | 'sources';
+type TabId = 'overview' | 'news' | 'related';
 
 const BADGE_COLORS: Record<string, string> = {
   benchmarks: 'bg-info/15 text-info',
@@ -48,18 +41,18 @@ function collectionLabel(collection: string): string {
   return collection.slice(0, -1).replace(/^\w/, c => c.toUpperCase());
 }
 
-export default function DetailTabs({ children, news, related, sources, onCustomize }: DetailTabsProps) {
+export default function DetailTabs({ children, news, related, onCustomize }: DetailTabsProps) {
   const [activeTab, setActiveTab] = useState<TabId>('overview');
 
+  // No Sources tab — sources are always visible at bottom (handled by DetailPage)
   const tabs: { id: TabId; label: string }[] = [
     { id: 'overview', label: 'Overview' },
     ...(news.length > 0 ? [{ id: 'news' as TabId, label: 'Latest News' }] : []),
     ...(related.length >= 2 ? [{ id: 'related' as TabId, label: 'Related' }] : []),
-    { id: 'sources', label: 'Sources' },
   ];
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       {/* Tab bar */}
       <div className="flex items-center overflow-x-auto rounded-xl border border-border bg-base p-1 mb-4">
         {tabs.map(tab => (
@@ -84,14 +77,14 @@ export default function DetailTabs({ children, news, related, sources, onCustomi
         </button>
       </div>
 
-      {/* Tab content */}
+      {/* Tab content — overflow hidden prevents layout shift */}
       <AnimatePresence mode="wait">
         <motion.div
           key={activeTab}
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -8 }}
-          transition={{ duration: 0.2 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.15 }}
         >
           {activeTab === 'overview' && children}
 
@@ -138,31 +131,6 @@ export default function DetailTabs({ children, news, related, sources, onCustomi
                     <div className="mt-0.5 text-[12px] text-text-secondary line-clamp-2">{item.description}</div>
                   </div>
                 </a>
-              ))}
-            </div>
-          )}
-
-          {activeTab === 'sources' && (
-            <div id="sources" className="grid gap-0 sm:grid-cols-2">
-              {sources.map((src, i) => (
-                <div key={i} className="flex items-start gap-3 border-b border-border py-4 px-1">
-                  <span className="mt-0.5 text-[14px]">
-                    {src.type === 'arxiv' ? '📄' : src.type === 'doi' ? '🔬' : '🌐'}
-                  </span>
-                  <div>
-                    <a
-                      href={src.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[13px] text-accent hover:underline"
-                    >
-                      {src.title || src.url}
-                    </a>
-                    <div className="mt-0.5 font-mono text-[12px] text-text-muted">
-                      {src.type}{src.dateAccessed ? ` · accessed ${src.dateAccessed}` : ''}
-                    </div>
-                  </div>
-                </div>
               ))}
             </div>
           )}
