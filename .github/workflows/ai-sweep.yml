@@ -1,0 +1,50 @@
+name: Weekly AI Content Sweep
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # Sunday midnight UTC
+  workflow_dispatch:
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Install Anthropic SDK
+        run: npm install @anthropic-ai/sdk
+
+      - name: Run AI sweep
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/ai-sweep.mjs
+
+      - name: Validate build
+        run: npm run build
+
+      - name: Create PR if changes exist
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'content: weekly AI content sweep'
+          title: 'content: weekly AI content sweep'
+          body: |
+            ## Weekly AI Content Sweep
+
+            Automated content freshness check. News items extracted from source URLs only — never fabricated from AI memory.
+
+            **Review checklist:**
+            - [ ] News items are factual (spot-check 3-5 entries)
+            - [ ] No fabricated funding rounds or partnerships
+            - [ ] All news URLs resolve to real pages
+            - [ ] Build passes (CI will verify)
+          branch: ai-sweep/weekly
+          labels: ai-sweep
+          delete-branch: true
