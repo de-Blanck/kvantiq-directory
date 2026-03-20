@@ -49,4 +49,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://kvantiq.com/sitemap.xml
+Sitemap: https://directory.kvantiq.studio/sitemap.xml
