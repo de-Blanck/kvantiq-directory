@@ -11,6 +11,14 @@ const sourceSchema = z.object({
   dateAccessed: z.string().optional(),
 });
 
+const newsSchema = z.object({
+  title: z.string(),
+  excerpt: z.string().optional(),
+  url: z.string().url(),
+  source: z.string(),
+  date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Date must be ISO 8601 format: YYYY-MM-DD'),
+});
+
 const companies = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/companies' }),
   schema: z.object({
@@ -29,6 +37,7 @@ const companies = defineCollection({
     employees: z.string().optional(),
     funding: z.string().optional(),
     sources: z.array(sourceSchema).min(2),
+    news: z.array(newsSchema).default([]),
   }),
 });
 
@@ -47,6 +56,7 @@ const benchmarks = defineCollection({
     reproducible: z.boolean().default(false),
     datePublished: z.string().optional(),
     sources: z.array(sourceSchema).min(2),
+    news: z.array(newsSchema).default([]),
   }),
 });
 
@@ -64,6 +74,7 @@ const useCases = defineCollection({
     results: z.string().optional(),
     companies: z.array(z.string()).optional(),
     sources: z.array(sourceSchema).min(2),
+    news: z.array(newsSchema).default([]),
   }),
 });
 
@@ -82,6 +93,7 @@ const challenges = defineCollection({
     prizes: z.string().optional(),
     location: z.string().optional(),
     sources: z.array(sourceSchema).min(2),
+    news: z.array(newsSchema).default([]),
   }),
 });
 
@@ -99,6 +111,7 @@ const resources = defineCollection({
     language: z.string().optional(),
     provider: z.string().optional(),
     sources: z.array(sourceSchema).min(2),
+    news: z.array(newsSchema).default([]),
   }),
 });
 
