@@ -1,8 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ListingCard from '../../components/ListingCard.astro';
-import DataTable from '../../components/DataTable.tsx';
+import ListingView from '../../components/ListingView.tsx';
 
 const allBenchmarks = await getCollection('benchmarks');
 const sorted = allBenchmarks.sort((a, b) => a.data.name.localeCompare(b.data.name));
@@ -22,6 +21,16 @@ const tableColumns = [
   { key: 'category', label: 'Category', filterable: true, sortable: true },
   { key: 'qubits', label: 'Qubits', sortable: true },
 ];
+
+const cardItems = sorted.map(b => ({
+  href: `/benchmarks/${b.data.slug}/`,
+  name: b.data.name,
+  description: b.data.description,
+  tags: b.data.tags,
+  meta: `${b.data.algorithm} \u00b7 ${b.data.category}`,
+  badge: b.data.reproducible ? 'Reproducible' : undefined,
+  badgeColor: 'text-accent bg-accent-glow',
+}));
 
 const itemListLd = {
   "@context": "https://schema.org",
@@ -49,23 +58,12 @@ const itemListLd = {
       </p>
     </div>
 
-    <DataTable
-      client:visible
-      data={tableData}
-      columns={tableColumns}
+    <ListingView
+      client:load
+      tableData={tableData}
+      tableColumns={tableColumns}
+      cardItems={cardItems}
       searchPlaceholder="Search benchmarks..."
     />
-
-    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {sorted.map(b => (
-        <ListingCard
-          title={b.data.name}
-          href={`/benchmarks/${b.data.slug}/`}
-          description={b.data.description}
-          tags={b.data.tags}
-          meta={`${b.data.algorithm} · ${b.data.category}`}
-        />
-      ))}
-    </div>
   </article>
 </BaseLayout>

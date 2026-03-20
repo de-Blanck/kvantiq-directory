@@ -1,8 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ListingCard from '../../components/ListingCard.astro';
-import DataTable from '../../components/DataTable.tsx';
+import ListingView from '../../components/ListingView.tsx';
 
 const allChallenges = await getCollection('challenges');
 const sorted = allChallenges.sort((a, b) => a.data.name.localeCompare(b.data.name));
@@ -21,6 +20,16 @@ const tableColumns = [
   { key: 'status', label: 'Status', filterable: true, sortable: true },
   { key: 'date', label: 'Date', sortable: true },
 ];
+
+const cardItems = sorted.map(ch => ({
+  href: `/challenges/${ch.data.slug}/`,
+  name: ch.data.name,
+  description: ch.data.description,
+  tags: ch.data.tags,
+  meta: `${ch.data.organizer} \u00b7 ${ch.data.status}`,
+  badge: ch.data.status === 'active' ? 'Active' : ch.data.status === 'upcoming' ? 'Upcoming' : undefined,
+  badgeColor: ch.data.status === 'active' ? 'text-accent bg-accent-glow' : 'text-warn bg-warn/15',
+}));
 
 const itemListLd = {
   "@context": "https://schema.org", "@type": "ItemList",
@@ -42,17 +51,12 @@ const itemListLd = {
       <p class="mt-2 text-text-secondary">{allChallenges.length} quantum computing hackathons, competitions, and open challenges.</p>
     </div>
 
-    <DataTable
-      client:visible
-      data={tableData}
-      columns={tableColumns}
+    <ListingView
+      client:load
+      tableData={tableData}
+      tableColumns={tableColumns}
+      cardItems={cardItems}
       searchPlaceholder="Search challenges..."
     />
-
-    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {sorted.map(ch => (
-        <ListingCard title={ch.data.name} href={`/challenges/${ch.data.slug}/`} description={ch.data.description} tags={ch.data.tags} meta={`${ch.data.organizer} · ${ch.data.status}`} />
-      ))}
-    </div>
   </article>
 </BaseLayout>
