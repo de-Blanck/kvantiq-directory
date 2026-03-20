@@ -1,9 +1,5 @@
 import { useState, useCallback } from 'react';
-import { Responsive, WidthProvider } from 'react-grid-layout';
-import 'react-grid-layout/css/styles.css';
-import 'react-resizable/css/styles.css';
-
-const ResponsiveGridLayout = WidthProvider(Responsive);
+import { ResponsiveGridLayout } from 'react-grid-layout';
 
 interface CardData {
   id: string;
