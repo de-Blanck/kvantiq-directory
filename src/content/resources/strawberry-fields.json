@@ -15,6 +15,12 @@
       "url": "https://strawberryfields.ai",
       "title": "Strawberry Fields Official Website",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://github.com/XanaduAI/strawberryfields",
+      "title": "Strawberry Fields GitHub Repository",
+      "dateAccessed": "2026-03-20"
     }
   ]
 }

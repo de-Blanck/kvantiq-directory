@@ -15,6 +15,12 @@
       "url": "https://quantum-journal.org/papers/q-2023-07-20-1062/",
       "title": "MQT Bench: Benchmarking Software and Design Automation Tools for Quantum Computing",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://github.com/cda-tum/MQTBench",
+      "title": "MQT Bench GitHub Repository",
+      "dateAccessed": "2026-03-20"
     }
   ]
 }

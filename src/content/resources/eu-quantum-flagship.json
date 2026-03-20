@@ -15,6 +15,12 @@
       "url": "https://qt.eu",
       "title": "Quantum Flagship Official Website",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://en.wikipedia.org/wiki/Quantum_Flagship",
+      "title": "Quantum Flagship Wikipedia Article",
+      "dateAccessed": "2026-03-20"
     }
   ]
 }

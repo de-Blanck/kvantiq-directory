@@ -14,6 +14,12 @@
       "url": "https://github.com/SRI-International/QC-App-Oriented-Benchmarks",
       "title": "QED-C Benchmarks GitHub Repository",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2110.03137",
+      "title": "Application-Oriented Performance Benchmarks for Quantum Computing",
+      "dateAccessed": "2026-03-20"
     }
   ]
 }

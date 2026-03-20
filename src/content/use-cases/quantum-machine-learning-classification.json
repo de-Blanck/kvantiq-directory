@@ -15,6 +15,12 @@
       "url": "https://arxiv.org/abs/2101.11020",
       "title": "Power of data in quantum machine learning",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2307.10060",
+      "title": "A review of quantum machine learning classification algorithms",
+      "dateAccessed": "2026-03-20"
     }
   ]
 }

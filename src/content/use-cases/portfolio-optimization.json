@@ -14,6 +14,12 @@
       "url": "https://arxiv.org/abs/1911.05296",
       "title": "Quantum computational finance: quantum algorithm for portfolio optimization",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2207.10555",
+      "title": "A survey of quantum computing for finance",
+      "dateAccessed": "2026-03-20"
     }
   ]
 }

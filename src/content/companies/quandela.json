@@ -17,6 +17,12 @@
       "url": "https://www.quandela.com",
       "title": "Quandela Official Website",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.crunchbase.com/organization/quandela",
+      "title": "Quandela Crunchbase Company Profile",
+      "dateAccessed": "2026-03-20"
     }
   ]
 }

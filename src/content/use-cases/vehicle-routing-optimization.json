@@ -15,6 +15,12 @@
       "url": "https://www.dwavesys.com/media/n4dj0yrt/14-1049a-a_volkswagen_traffic_flow_optimization.pdf",
       "title": "Traffic Flow Optimization Using Quantum Annealing",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2002.01351",
+      "title": "Quantum computing for vehicle routing problems",
+      "dateAccessed": "2026-03-20"
     }
   ]
 }

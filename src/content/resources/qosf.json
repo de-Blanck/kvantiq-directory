@@ -15,6 +15,12 @@
       "url": "https://qosf.org",
       "title": "QOSF Official Website",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://github.com/qosf",
+      "title": "QOSF GitHub Organization",
+      "dateAccessed": "2026-03-20"
     }
   ]
 }
