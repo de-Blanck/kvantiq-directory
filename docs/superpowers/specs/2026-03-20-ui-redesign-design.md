@@ -29,7 +29,9 @@ All UI must use the existing Quantum Phosphor design system. Source: Paper.desig
 | `--warning` | `#FFAA00` | Warning, company badge color |
 | `--error` | `#FF4C4C` | Error states |
 
-### Light Theme (TODO — design in Paper.design)
+### Light Theme (BLOCKED — design in Paper.design first)
+
+**PREREQUISITE:** The light theme palette MUST be designed in Paper.design BEFORE any implementation begins. Do NOT guess colors or invent a light palette — wait for the approved design.
 
 A light theme variant is required for users who prefer light mode. Constraints:
 - Must maintain the same layout and component structure as dark theme
@@ -37,6 +39,7 @@ A light theme variant is required for users who prefer light mode. Constraints:
 - Accent color stays `#00FFB2` (or an adjusted variant that works on light backgrounds)
 - Design the light palette in Paper.design before implementing
 - Fonts, spacing, and component shapes remain identical
+- **Implementation order:** Light theme is the LAST item implemented. All other work uses dark theme only.
 
 ### Typography
 
@@ -145,7 +148,7 @@ The Overview tab shows a **customizable dashboard grid** powered by `react-grid-
 - Toggle cards on/off
 - Set card size: half width or full width
 - Drag to reorder (drag handle: ⁞⁞ dots in card header)
-- Layout saved to `localStorage` (key: `kvantiq-layout-{collection}-{slug}`)
+- Layout saved to `localStorage` (key: `kvantiq-layout-{collection}-default` — shared across all items in a collection, NOT per-slug)
 - "Reset to default" button
 
 **Desktop:** 2-column grid, cards can span 1 or 2 columns
@@ -166,6 +169,14 @@ Grid of related items, each as a mini-card:
 - Type badge (color-coded): Benchmark (info/blue), Use Case (accent/green), Company (warning/amber), Challenge (error/red), Resource (muted)
 - Item name, 1-line description
 - Click navigates to that item's detail page
+
+**How related items are determined:** Tag-based matching. An item is "related" if it shares **2 or more tags** with the current entry, across ALL collections. No new schema fields needed — the matching is computed at build time from existing `tags` arrays.
+
+**Where the logic runs:** Tag matching runs in the `.astro` page at build time (inside `getStaticPaths` or the page frontmatter). The pre-computed related items list is passed as a prop to `DetailTabs.tsx` — the React component does NOT query the collection itself.
+
+- Maximum 6 related items shown (prioritize: same collection first, then other collections)
+- If fewer than 2 matches exist, the Related tab is hidden (same rule as Latest News)
+- The Related card on the Overview tab shows the top 3 matches only
 
 ### Tab: Sources
 
@@ -223,12 +234,24 @@ Detailed citation cards:
 
 ### DataTable Enhancements
 
-The existing DataTable component (`@tanstack/react-table`) needs:
-- Sort icons in column headers (▲ ascending, ▼ descending, ▲▼ unsorted)
-- Column-level filter dropdowns
-- Row hover: subtle `--elevated` background
-- Click row → navigate to detail page
-- Sticky header on scroll
+**IMPORTANT:** The existing `src/components/DataTable.tsx` already implements: sort icons (▲▼), column-level filter dropdowns, global search, URL state persistence, row-click navigation, result counts, and a "clear all" button. **Do NOT rebuild this component.** The work here is:
+
+1. **Token update only** — replace hardcoded light-theme colors with Quantum Phosphor CSS variables:
+   - `#E8E6E1` borders → `var(--border)`
+   - `#E8E6E1` inactive sort arrow text (lines 223-224) → `var(--text-muted)` (NOT `var(--border)` — this is text, not a border, and must remain visible on dark backgrounds)
+   - `#2563EB` links/active sort → `var(--accent)`
+   - `#F0EEE9` row borders → `var(--border)`
+   - `#8A8A8A` muted text → `var(--text-muted)`
+   - `#1a1a1a` text → `var(--text-primary)`
+   - `#5A5A5A` cell text → `var(--text-secondary)`
+   - `#FECACA` "Clear filters" hover border → `var(--error)` at 30% opacity
+   - `#DC2626` "Clear filters" hover text → `var(--error)`
+   - `#BFDBFE` focus ring/border on inputs and selects → `focus:border-[var(--accent)] focus:ring-1 focus:ring-[var(--accent-glow)]`
+   - White backgrounds (`bg-white`) → `var(--surface)` for inputs, `var(--base)` for containers
+2. **Add sticky header** — `position: sticky; top: 0; z-index: 10` on `<thead>`
+3. **Add row hover** — `hover:bg-[var(--elevated)]` on `<tr>`
+
+**`FilterToolbar.tsx` is NOT needed** — DataTable already contains its own filter bar. If a separate toolbar wrapper is desired later for view-toggle (table/card), it can wrap DataTable, not replace it.
 
 ### Card Grid Enhancements
 
@@ -253,7 +276,7 @@ const newsSchema = z.object({
   excerpt: z.string().optional(),
   url: z.string().url(),
   source: z.string(),
-  date: z.string(),
+  date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Date must be ISO 8601 format: YYYY-MM-DD'),
 });
 
 // Add to each collection schema:
@@ -262,7 +285,13 @@ news: z.array(newsSchema).default([]),
 
 ### Population
 
-News data is populated by the weekly AI sweep GitHub Action (see section 5). The `news` field is optional and defaults to empty — entries without news simply don't show the news card/tab.
+News data is populated by the weekly AI sweep GitHub Action (see section 5). The `news` field is optional and defaults to empty.
+
+### Empty News Handling
+
+- Entries with `news: []` (empty or default): the "Latest News" tab is **hidden** from the tab bar. The Overview tab's news card is also hidden.
+- Entries with 1+ news items: tab and card appear normally.
+- This means the tab bar is NOT fixed — it adjusts per entry based on available data. This is acceptable because users browse one entry at a time.
 
 ---
 
@@ -288,19 +317,39 @@ Automated weekly content freshness check using Claude API. Creates a PR with upd
 
 ### Sweep Script: `scripts/ai-sweep.mjs`
 
+**CRITICAL: Hallucination prevention.** The Claude API does not browse the web. If asked to "research" an entity from memory, it WILL fabricate plausible-sounding news (funding rounds that didn't happen, partnerships that don't exist). This is unacceptable for a directory that mandates factual, sourced content.
+
+**The sweep uses a fetch-first, extract-second approach:**
+
 For each entry:
-1. Read current JSON
-2. Send to Claude with instructions: "Research this entity for developments since {last_sweep_date}. Return updated news array and any field corrections."
-3. Merge response into JSON (never delete existing fields, only add/update)
-4. Write updated JSON
+1. Read current JSON (get name, website, source URLs)
+2. **Fetch real content** from the entry's source URLs and website:
+   - HTTP GET each source URL and the company website
+   - Extract text content (strip HTML tags)
+   - If ALL fetches fail (timeouts, 403s, etc.), **skip this entry entirely** — do not guess
+3. Send fetched content + current JSON to Claude with this instruction:
+   ```
+   You are given the current directory entry and freshly fetched content from its source URLs.
+   Extract ONLY news items that are explicitly stated in the provided content.
+   Do NOT invent, infer, or recall information from your training data.
+   If the fetched content contains no news, return an empty news array.
+   Each news item MUST include a direct URL to the source page where you found it.
+   Date format: YYYY-MM-DD. If exact date is unclear, use the first of the month.
+   ```
+4. Validate Claude's response: every `url` in the returned news must match one of the fetched source domains. Discard any item with an unrecognized URL.
+5. Merge validated news into JSON (never delete existing fields, only add/update)
+6. Write updated JSON
 
 ### Constraints
 
 - The sweep NEVER removes sources or existing data
+- The sweep NEVER fabricates news — it only extracts from fetched content
+- News items with URLs that don't match fetched sources are DISCARDED
 - News items older than 6 months are automatically pruned
 - Maximum 5 news items per entry
+- Entries where all fetches fail are skipped with a warning in the PR body
 - The sweep creates a single PR for all changes across all collections
-- PR body includes a summary table of what changed
+- PR body includes a summary table: entries updated, entries skipped, items added/pruned
 
 ---
 
@@ -368,7 +417,7 @@ Slide-in panel from right edge, 320px wide:
 | `src/components/DetailTabs.tsx` | NEW — tab bar + content switching |
 | `src/components/DashboardGrid.tsx` | NEW — react-grid-layout wrapper |
 | `src/components/CustomizePanel.tsx` | NEW — slide-in settings panel |
-| `src/components/FilterToolbar.tsx` | NEW — listing page filters/sort |
+| `src/components/DataTable.tsx` | Token update — replace hardcoded colors with CSS variables |
 | `src/styles/global.css` | Add Quantum Phosphor CSS variables |
 | `.github/workflows/ai-sweep.yml` | NEW — weekly sweep action |
 | `scripts/ai-sweep.mjs` | NEW — sweep script |
@@ -376,7 +425,8 @@ Slide-in panel from right edge, 320px wide:
 ### Dependencies to Add
 
 - `react-grid-layout` — customizable grid
-- `@anthropic-ai/sdk` — for AI sweep script (devDependency)
+  - **CSS import required:** `react-grid-layout/css/styles.css` and `react-resizable/css/styles.css` must be imported in the `DashboardGrid.tsx` component. With Tailwind CSS 4 via `@tailwindcss/vite`, these CSS files are handled as standard Vite CSS imports — import them at the top of the component file.
+- `@anthropic-ai/sdk` — for AI sweep script (devDependency only, not bundled in browser)
 
 ### Migration
 
@@ -392,7 +442,26 @@ Design the light theme palette in Paper.design BEFORE implementing. Implementati
 
 ---
 
-## 8. What's NOT Included
+## 8. Implementation Order
+
+Execute in this order. Each step must build and pass CI before moving to the next.
+
+1. **Quantum Phosphor token update** — `global.css` CSS variables + `BaseLayout.astro` theme class
+2. **News schema addition** — `content.config.ts` (all collections get `news` field)
+3. **DataTable token update** — replace hardcoded colors in `DataTable.tsx`
+4. **Detail page: Hero + Tabs** — `DetailHero.tsx`, `DetailTabs.tsx`, update all `[slug].astro` pages
+5. **Detail page: Dashboard Grid** — `DashboardGrid.tsx`, `CustomizePanel.tsx`, `react-grid-layout` integration
+6. **Listing page card grid** — richer cards with view toggle (table/card)
+7. **AI sweep script** — `scripts/ai-sweep.mjs` + `.github/workflows/ai-sweep.yml`
+8. **Light theme** — BLOCKED until Paper.design palette is finalized
+
+### Note on Resources
+
+Resources (`/resources/`) only have an index page — they link out to external sites and have no detail page. The detail page redesign (steps 4-5) does NOT apply to resources. The listing page update (steps 3, 6) does apply.
+
+---
+
+## 9. What's NOT Included
 
 - New content types or collections
 - Authentication or user accounts
