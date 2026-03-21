@@ -312,7 +312,7 @@ CREATE TABLE market_snapshots (
     {
       "name": "Danish Quantum Community",
       "url": "https://danishquantumcommunity.com",
-      "type": "organization",
+      "feed_type": "organization",
       "strategy": "web_fetch",
       "geographic_scope": ["DK"],
       "notes": "Check members page and news section"
@@ -320,7 +320,7 @@ CREATE TABLE market_snapshots (
     {
       "name": "Quantum Computing Report",
       "url": "https://quantumcomputingreport.com",
-      "type": "industry_tracker",
+      "feed_type": "industry_tracker",
       "strategy": "web_search",
       "geographic_scope": ["global"],
       "notes": "Search for 'new company' and 'funding' within last 14 days"
@@ -328,7 +328,7 @@ CREATE TABLE market_snapshots (
     {
       "name": "arXiv quant-ph",
       "url": "https://arxiv.org/list/quant-ph/recent",
-      "type": "academic",
+      "feed_type": "academic",
       "strategy": "web_search",
       "geographic_scope": ["global"],
       "notes": "Filter for European-affiliated institutions"
@@ -337,7 +337,7 @@ CREATE TABLE market_snapshots (
 }
 ```
 
-Source `type`: `organization | national_initiative | industry_tracker | academic | news | ecosystem_network | funding_database`
+Source `feed_type`: `organization | national_initiative | industry_tracker | academic | news | ecosystem_network | funding_database`
 
 Source `strategy`:
 - `web_fetch` — fetch the URL directly and extract structured data from the page
@@ -423,6 +423,14 @@ const AGENT_OPTIONS = {
 ## Agent Flow (Weekly)
 
 ```
+0. STARTUP PHASE
+   ├── SQLite integrity check (rebuild from JSON if corrupt)
+   ├── Process pending files from previous failed runs:
+   │   ├── data/pending-clickup-tasks.json → attempt ClickUp creation, delete on success
+   │   ├── data/pending-email.json → attempt Resend delivery, delete on success
+   │   └── data/discovery-queue.json → merge into this week's research
+   └── Check for open weekly PR (if exists, push to it instead of creating new)
+
 1. RESEARCH PHASE
    ├── Load curated sources from data/sources.json
    ├── Load QA/QC rules from scripts/prompts/system-prompt.md
