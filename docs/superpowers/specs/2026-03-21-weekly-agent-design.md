@@ -114,14 +114,18 @@ Before adding any new entry, Claude must verify ALL of the following:
 - Core business involves quantum computing, sensing, communication, or enabling technology
 - Not just "AI" or "deep tech" with quantum in the marketing copy
 
-### 3. Active (14-Day Rule)
-At least 1 primary signal verifiable within the last 14 days:
+### 3. Active (Quarterly Rule)
+At least 1 primary signal verifiable within the last 90 days:
 - Git commit on public repos
 - Blog post / news article / press release
 - Social media post (LinkedIn company page, X/Twitter)
-- Active job posting (posted or refreshed within 14 days)
+- Active job posting (posted or refreshed within 90 days)
 - Conference talk / event participation
 - Funding announcement / regulatory filing
+- Published paper / patent filing
+- Event sponsorship or exhibition
+
+The 90-day window accommodates research institutions that publish quarterly, stealth-mode startups, and companies with seasonal activity cycles.
 
 ### 4. Categorizable
 - Fits into an existing directory category (company, resource, benchmark, use case, challenge)
@@ -133,10 +137,10 @@ Every entry receives a confidence score on every weekly audit:
 
 | Score | Criteria | Action |
 |-------|----------|--------|
-| `HIGH` | 2+ primary signals within 14 days | No action needed |
-| `MEDIUM` | 1 primary signal within 14 days | Monitor closely |
-| `LOW` | No primary signal within 14 days | Flagged for review |
-| `DEAD` | Website down + no signals for 30+ days | Flagged for removal |
+| `HIGH` | 2+ primary signals within 90 days | No action needed |
+| `MEDIUM` | 1 primary signal within 90 days | Monitor closely |
+| `LOW` | No primary signal within 90 days | Flagged for review |
+| `DEAD` | Website down + no signals for 180+ days | Flagged for removal |
 
 ## Staleness Detection
 
@@ -372,6 +376,10 @@ The agent auto-handles vs. flags to ClickUp based on these rules:
 | Benchmark/use-case outdated | Auto-update if new data is clear, flag if ambiguous | Data accuracy needs confidence |
 | Entry description drift | Auto-update if factual change is clear | PR review catches errors |
 
+### Continuous Improvement
+
+The agent may include a `## Process Improvements` section in the weekly PR description suggesting changes to the auto-fix/flag balance, source list, or QA/QC rules — based on patterns it observes (e.g., "Source X yields 0 results for 4 consecutive weeks — consider removing" or "3 entries flagged for the same borderline reason — consider adding an auto-fix rule for this pattern"). These are suggestions only — never auto-applied.
+
 ## Failure Modes & Error Handling
 
 | Failure | Response |
@@ -382,7 +390,7 @@ The agent auto-handles vs. flags to ClickUp based on these rules:
 | **Resend API down** | Log email content to `data/pending-email.json`, commit to PR. Agent tries to send on next run |
 | **Previous weekly PR still open** | Do NOT create a new PR. Instead, push new commits to the existing `weekly/YYYY-MM-DD` branch and comment on the PR |
 | **SQLite corruption** | Agent detects via integrity check at start. If corrupt, rebuild from JSON content files (source of truth) and log the rebuild |
-| **50+ new companies in one run** | Cap PR at 20 new entries per run. Remaining discoveries are queued in `data/discovery-queue.json` for next week |
+| **10+ new companies in one run** | Cap PR at 10 new entries per run, prioritized by: (1) funding amount, (2) team credibility, (3) technology maturity, (4) ecosystem relevance. Each entry in PR includes a 1-sentence justification for why it was prioritized. Remaining discoveries queued in `data/discovery-queue.json` for next week |
 | **Branch already exists** | Append `-v2`, `-v3` suffix to branch name |
 
 ## Migration Plan (Existing 183 Entries)
@@ -485,8 +493,20 @@ const AGENT_OPTIONS = {
 ### Resend (Email)
 - **From:** notifications@kvantiq.studio (or similar, verified domain)
 - **To:** hi@kvantiq.studio
-- **Frequency:** Weekly, after PR is created
+- **Weekly digest:** every Sunday after PR is created
+- **Major event alerts:** immediate notification for events exceeding a significance threshold (see below)
 - **Free tier:** 3,000 emails/month, 100/day
+
+#### Major Event Threshold (Triggers Immediate Notification)
+
+The agent sends an immediate email + ClickUp task when it discovers:
+- Funding round ≥ €10M involving an EU/UK/Iceland company
+- Acquisition of any tracked company
+- Closure/shutdown of any tracked company
+- Breakthrough with mainstream press coverage (3+ major outlets)
+- New EU-level quantum policy or program announcement
+
+These are discovered during the weekly research phase. The agent does NOT poll between runs — "immediate" means within the same Sunday run, before the weekly digest.
 
 ### ClickUp
 - **API token** stored as GitHub Actions secret
@@ -504,6 +524,8 @@ const AGENT_OPTIONS = {
 kvantiq-directory/
 ├── scripts/
 │   ├── weekly-agent.ts              # Agent SDK entry point
+│   ├── migrate-to-db.ts             # One-time migration of existing entries
+│   ├── generate-transparency-data.ts # Pre-build: reads SQLite → JSON for Astro pages
 │   ├── tools/
 │   │   ├── clickup.ts               # ClickUp custom MCP tool
 │   │   └── resend.ts                # Resend email custom MCP tool
@@ -511,7 +533,18 @@ kvantiq-directory/
 │       └── system-prompt.md         # QA/QC rules, source list, scoring — loaded verbatim
 ├── data/
 │   ├── kvantiq.db                   # SQLite database (both layers)
-│   └── sources.json                 # Curated source list (editable without code changes)
+│   ├── sources.json                 # Curated source list (editable without code changes)
+│   └── generated/                   # Build-time generated JSON for transparency pages
+│       ├── audit-summary.json
+│       ├── confidence-distribution.json
+│       ├── entry-timeline.json
+│       ├── funding-timeline.json
+│       ├── events.json
+│       └── coverage-map.json
+├── src/pages/transparency/
+│   ├── index.astro                  # Methodology overview + "did you know?" boxes
+│   ├── audit.astro                  # QA/QC dashboard with charts
+│   └── intelligence.astro           # Industry intelligence dashboard
 ```
 
 ## Security
@@ -554,6 +587,55 @@ NEEDS YOUR ATTENTION
 
 PR: https://github.com/de-Blanck/kvantiq-directory/pull/XX
 ```
+
+## Transparency & Audit Page
+
+A dedicated section of the directory website (e.g., `directory.kvantiq.studio/transparency/`) that makes the entire QA/QC process visible to visitors. This is a differentiator — no other directory in the space shows its methodology this openly.
+
+### Pages
+
+**`/transparency/`** — Overview page explaining:
+- How entries are discovered, verified, and maintained
+- The quarterly activity rule and confidence scoring system
+- That an AI agent runs the process weekly, with human review on every PR
+- The curated source list (which sources are monitored and why)
+
+**`/transparency/audit/`** — Live audit dashboard, generated at build time from SQLite data:
+- Current confidence distribution (pie/bar chart: how many HIGH/MEDIUM/LOW/DEAD)
+- Entry count over time (line chart: directory growth)
+- Recent audit actions (last 4 weeks of additions, updates, flags, removals)
+- Source effectiveness (which sources contribute the most discoveries)
+- Coverage map (entries by country)
+
+**`/transparency/intelligence/`** — Industry intelligence dashboard:
+- Funding timeline (bar chart by quarter)
+- Event timeline (scrollable list of funding, acquisitions, milestones)
+- Ecosystem snapshot (total companies tracked, active count, countries)
+- Sector breakdown (pie chart)
+
+### Visual Design Principles
+
+- **Flip-on-hover info boxes** for methodology explanations: each metric or decision rule has a card that shows the number/status on front, and the "did you know?" explanation on hover/tap. Example: a card showing "183 entries" flips to reveal "Every entry is verified against 2+ independent sources and must show activity within 90 days to maintain its listing."
+- **Color-coded confidence badges** on each entry's detail page (visible to visitors): GREEN (HIGH), YELLOW (MEDIUM), RED (LOW). Clicking the badge opens a tooltip explaining what it means and when the entry was last verified.
+- **Audit trail link** on each entry's detail page: "Last verified: 2026-03-23 — View audit history" linking to a per-entry audit log showing all weekly checks and their results.
+- **Methodology callouts** throughout: short, plain-language explanations of why decisions were made. Not buried in a FAQ — integrated into the UI where the data appears.
+
+### Technical Implementation
+
+- Build-time static generation: a script reads `data/kvantiq.db` and generates JSON data files consumed by Astro pages
+- Charts rendered with a lightweight library (e.g., Chart.js or D3 lite) — no heavy dependencies
+- The transparency pages are part of the main Astro site, not a separate deployment
+- Data updates weekly when the agent's PR is merged and Vercel rebuilds
+
+### "Did You Know?" Content Examples
+
+These are the kinds of explanations that appear in flip-on-hover boxes:
+
+- **"Why 90 days?"** — "We verify every company shows public activity within 90 days. This accommodates research institutions that publish quarterly while ensuring the directory only lists organizations that are demonstrably active."
+- **"How do we find new companies?"** — "Our AI agent monitors 30+ curated sources weekly, including national quantum initiatives across all EU countries, industry trackers, and academic publications. Every discovery is verified by a human before it appears here."
+- **"What is a confidence score?"** — "Each entry earns a confidence score based on how many independent signals of activity we can verify. HIGH means 2+ signals in the last quarter. Think of it as a freshness indicator."
+- **"Why was this company removed?"** — "Companies are flagged when we can no longer verify their activity. If no signals appear for 180+ days and the website is unreachable, we remove the entry. Every removal is logged and reversible."
+- **"Is this AI-generated?"** — "The research and verification is performed by an AI agent. Every change is reviewed by a human before publication. The AI proposes, the human disposes. Full audit trail is public."
 
 ## Open Questions (Pre-Implementation)
 
