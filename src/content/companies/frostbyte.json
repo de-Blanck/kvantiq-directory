@@ -1,0 +1,35 @@
+{
+  "name": "FrostByte",
+  "slug": "frostbyte",
+  "country": "Netherlands",
+  "region": "western-europe",
+  "type": "hardware",
+  "tags": ["cryogenic", "cmos", "asic", "qubit control", "scalable quantum"],
+  "founded": 2025,
+  "description": "FrostByte develops cryogenic CMOS ASICs designed to control and read out quantum devices operating near absolute zero, addressing the wiring and control bottleneck that limits the scalability of large-scale quantum computers. The company was spun out of QuTech (TU Delft / TNO) in 2025.",
+  "website": "https://frostbyte.nl",
+  "featured": false,
+  "headquarters": "Delft, Netherlands",
+  "employees": "1-10",
+  "funding": "Not yet publicly disclosed",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://frostbyte.nl",
+      "title": "FrostByte official website",
+      "dateAccessed": "2026-03-21"
+    },
+    {
+      "type": "url",
+      "url": "https://qutech.nl/business-innovation/startups/",
+      "title": "QuTech spinout companies page",
+      "dateAccessed": "2026-03-21"
+    },
+    {
+      "type": "url",
+      "url": "https://www.defencefinancemonitor.com/p/frostbyte-advancing-european-quantum",
+      "title": "FrostByte: Advancing European quantum computing (Defence Finance Monitor, February 2026)",
+      "dateAccessed": "2026-03-21"
+    }
+  ]
+}

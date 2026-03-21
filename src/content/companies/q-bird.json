@@ -1,0 +1,35 @@
+{
+  "name": "Q*Bird",
+  "slug": "q-bird",
+  "country": "Netherlands",
+  "region": "western-europe",
+  "type": "hardware",
+  "tags": ["qkd", "quantum communication", "mdi-qkd", "quantum network", "qutech-spinout"],
+  "founded": 2023,
+  "description": "Q*Bird is a quantum communication company offering Measurement-Device-Independent Quantum Key Distribution (MDI-QKD) systems under the Falqon® product line. The company provides the highest level of QKD security by removing the detector side-channel attack surface. Q*Bird was spun out of QuTech (TU Delft / TNO) and received an EIC Accelerator grant and equity investment totalling €7.5M in 2025–2026.",
+  "website": "https://q-bird.com",
+  "featured": false,
+  "headquarters": "Delft, Netherlands",
+  "employees": "11-25",
+  "funding": "€7.5M EIC Accelerator (€2.5M grant + €5M equity, signed January 2026); €1M EFRO grant March 2025",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://q-bird.com",
+      "title": "Q*Bird official website",
+      "dateAccessed": "2026-03-21"
+    },
+    {
+      "type": "press-release",
+      "url": "https://thequantuminsider.com/2026/01/12/qbird-eic-funding-mdi-qkd-europe/",
+      "title": "Q*Bird secures EIC Accelerator funding for MDI-QKD in Europe (The Quantum Insider, January 2026)",
+      "dateAccessed": "2026-03-21"
+    },
+    {
+      "type": "url",
+      "url": "https://qutech.nl/business-innovation/startups/",
+      "title": "QuTech spinout companies page",
+      "dateAccessed": "2026-03-21"
+    }
+  ]
+}
