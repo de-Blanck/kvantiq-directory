@@ -35,8 +35,8 @@ const eventIcons: Record<string, string> = {
 
 const hasFundingData = Array.isArray(fundingTimeline) && fundingTimeline.length > 0;
 
-const fundingLabels = hasFundingData ? JSON.stringify(fundingTimeline.map((d: any) => d.period ?? d.label ?? '')) : '[]';
-const fundingValues = hasFundingData ? JSON.stringify(fundingTimeline.map((d: any) => d.amount ?? d.value ?? 0)) : '[]';
+const fundingLabels = hasFundingData ? JSON.stringify(fundingTimeline.map((d: any) => d.quarter ?? '')) : '[]';
+const fundingValues = hasFundingData ? JSON.stringify(fundingTimeline.map((d: any) => d.total_eur ?? 0)) : '[]';
 ---
 <BaseLayout
   title="Industry Intelligence — Kvantiq Directory"
@@ -65,7 +65,7 @@ const fundingValues = hasFundingData ? JSON.stringify(fundingTimeline.map((d: an
         <div class="rounded-xl border border-border bg-surface p-5">
           <p class="font-mono text-[10px] font-medium uppercase tracking-[0.5px] text-text-muted">Total Tracked</p>
           <p class="mt-2 text-3xl font-bold text-text font-mono">
-            {marketSnapshot.total_tracked ?? '—'}
+            {marketSnapshot.total_companies_tracked ?? '—'}
           </p>
           <p class="mt-1 text-xs text-text-secondary">companies &amp; entities</p>
         </div>
@@ -74,7 +74,7 @@ const fundingValues = hasFundingData ? JSON.stringify(fundingTimeline.map((d: an
         <div class="rounded-xl border border-border bg-surface p-5">
           <p class="font-mono text-[10px] font-medium uppercase tracking-[0.5px] text-text-muted">Active</p>
           <p class="mt-2 text-3xl font-bold text-text font-mono">
-            {marketSnapshot.active ?? '—'}
+            {marketSnapshot.total_active ?? '—'}
           </p>
           <p class="mt-1 text-xs text-text-secondary">currently operating</p>
         </div>
@@ -83,7 +83,7 @@ const fundingValues = hasFundingData ? JSON.stringify(fundingTimeline.map((d: an
         <div class="rounded-xl border border-border bg-surface p-5">
           <p class="font-mono text-[10px] font-medium uppercase tracking-[0.5px] text-text-muted">Countries</p>
           <p class="mt-2 text-3xl font-bold text-text font-mono">
-            {marketSnapshot.countries ?? '—'}
+            {marketSnapshot.countries_represented ?? '—'}
           </p>
           <p class="mt-1 text-xs text-text-secondary">European countries</p>
         </div>
@@ -92,7 +92,7 @@ const fundingValues = hasFundingData ? JSON.stringify(fundingTimeline.map((d: an
         <div class="rounded-xl border border-border bg-surface p-5">
           <p class="font-mono text-[10px] font-medium uppercase tracking-[0.5px] text-text-muted">Funding YTD</p>
           <p class="mt-2 text-3xl font-bold text-text font-mono">
-            {marketSnapshot.funding_ytd_eur_m != null ? `€${marketSnapshot.funding_ytd_eur_m}M` : '—'}
+            {marketSnapshot.total_funding_eur_ytd != null ? `€${(marketSnapshot.total_funding_eur_ytd / 1_000_000).toFixed(1)}M` : '—'}
           </p>
           <p class="mt-1 text-xs text-text-secondary">disclosed in EUR</p>
         </div>

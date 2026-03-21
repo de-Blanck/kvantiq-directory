@@ -17,6 +17,12 @@ export function initializeSchema(db: Database.Database): void {
       status              TEXT NOT NULL DEFAULT 'active',
       current_confidence  TEXT NOT NULL DEFAULT 'HIGH'
     );
+
+    CREATE UNIQUE INDEX IF NOT EXISTS idx_entries_collection_slug
+      ON entries(collection, slug);
+
+    CREATE INDEX IF NOT EXISTS idx_entries_collection ON entries(collection);
+    CREATE INDEX IF NOT EXISTS idx_entries_status ON entries(status);
   `);
 
   db.exec(`
@@ -31,6 +37,8 @@ export function initializeSchema(db: Database.Database): void {
       details         TEXT,
       pr_number       INTEGER
     );
+
+    CREATE INDEX IF NOT EXISTS idx_audits_entry_id ON audits(entry_id);
   `);
 
   db.exec(`
@@ -69,6 +77,9 @@ export function initializeSchema(db: Database.Database): void {
       sector             TEXT,
       date_first_tracked TEXT NOT NULL
     );
+
+    CREATE UNIQUE INDEX IF NOT EXISTS idx_companies_entry_id
+      ON companies(entry_id);
   `);
 
   db.exec(`
@@ -84,6 +95,8 @@ export function initializeSchema(db: Database.Database): void {
       confidence    TEXT NOT NULL DEFAULT 'verified',
       date_recorded TEXT NOT NULL
     );
+
+    CREATE INDEX IF NOT EXISTS idx_events_company_id ON events(company_id);
   `);
 
   db.exec(`

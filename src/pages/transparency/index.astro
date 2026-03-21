@@ -13,14 +13,12 @@ function loadJson(filename: string, fallback: unknown = {}) {
   }
 }
 
-const confidenceDistribution = loadJson('confidence-distribution.json', {}) as Record<string, number>;
-const coverageMap = loadJson('coverage-map.json', {}) as Record<string, unknown>;
+const confidenceDistribution = loadJson('confidence-distribution.json', []) as Array<{ label: string; value: number }>;
+const coverageMap = loadJson('coverage-map.json', []) as Array<{ country: string; count: number }>;
 
-const totalEntries = Object.values(coverageMap).reduce((sum: number, v) => {
-  if (typeof v === 'number') return sum + v;
-  if (v && typeof v === 'object' && 'count' in v && typeof (v as Record<string, unknown>).count === 'number') return sum + ((v as Record<string, unknown>).count as number);
-  return sum;
-}, 0) || 0;
+const totalEntries = Array.isArray(coverageMap)
+  ? coverageMap.reduce((sum, entry) => sum + (entry.count ?? 0), 0)
+  : 0;
 
 const didYouKnow = [
   {

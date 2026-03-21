@@ -1,5 +1,6 @@
 import { readFileSync, readdirSync, existsSync } from 'fs';
 import { resolve, basename } from 'path';
+import { execSync } from 'child_process';
 import { v4 as uuid } from 'uuid';
 import { getDb } from './db/index.js';
 
@@ -31,7 +32,10 @@ type Collection = 'companies' | 'benchmarks' | 'use-cases' | 'challenges' | 'res
 
 const TODAY = new Date().toISOString().slice(0, 10);
 
-const CONTENT_DIR = resolve(import.meta.dirname, '../src/content');
+// Try worktree first (canonical location), fall back to repo root
+const WORKTREE_CONTENT = resolve(import.meta.dirname, '../.worktrees/feature-directory-site/src/content');
+const ROOT_CONTENT = resolve(import.meta.dirname, '../src/content');
+const CONTENT_DIR = existsSync(WORKTREE_CONTENT) ? WORKTREE_CONTENT : ROOT_CONTENT;
 
 const COLLECTIONS: Collection[] = [
   'companies',
@@ -67,7 +71,27 @@ function getUrl(data: ContentEntry): string | null {
 
 function getFoundedDate(founded: number | string | undefined): string | null {
   if (founded === undefined || founded === null) return null;
-  return String(founded);
+  const year = String(founded);
+  // Normalize to ISO 8601 date format
+  return year.length === 4 ? `${year}-01-01` : year;
+}
+
+function getGitCreationDate(filePath: string): string {
+  try {
+    const result = execSync(
+      `git log --follow --format=%aI --diff-filter=A -- "${filePath.replace(/\\/g, '/')}"`,
+      { encoding: 'utf-8', cwd: CONTENT_DIR }
+    ).trim();
+    if (result) {
+      // Take the last line (oldest commit) and extract date portion
+      const lines = result.split('\n');
+      const oldest = lines[lines.length - 1];
+      return oldest.slice(0, 10);
+    }
+  } catch {
+    // git not available or file not tracked
+  }
+  return TODAY;
 }
 
 // ── Main ─────────────────────────────────────────────────────────────────────
@@ -75,7 +99,15 @@ function getFoundedDate(founded: number | string | undefined): string | null {
 function migrate(): void {
   const db = getDb();
 
-  // Prepared statements
+  console.log(`[migrate] Content directory: ${CONTENT_DIR}`);
+
+  // Check for existing entries to skip (idempotency via unique index)
+  const existingCount = (db.prepare('SELECT COUNT(*) AS c FROM entries').get() as { c: number }).c;
+  if (existingCount > 0) {
+    console.log(`[migrate] Database already has ${existingCount} entries. INSERT OR IGNORE will skip duplicates.`);
+  }
+
+  // Prepared statements — INSERT OR IGNORE relies on UNIQUE(collection, slug) index
   const insertEntry = db.prepare(`
     INSERT OR IGNORE INTO entries (
       id, name, collection, subcategory, slug, url, country,
@@ -85,6 +117,11 @@ function migrate(): void {
       @date_added, @date_last_verified, @status, @current_confidence
     )
   `);
+
+  // Look up entry by collection+slug to get the id for company/audit inserts
+  const findEntry = db.prepare(
+    'SELECT id FROM entries WHERE collection = @collection AND slug = @slug'
+  );
 
   const insertCompany = db.prepare(`
     INSERT OR IGNORE INTO companies (
@@ -142,25 +179,34 @@ function migrate(): void {
           continue;
         }
 
-        const entryId = uuid();
+        const slug = data.slug ?? basename(file, '.json');
         const subcategory = getSubcategory(collection, data);
         const url = getUrl(data);
         const country = data.country ?? null;
+        const dateAdded = getGitCreationDate(resolve(collectionDir, file));
 
-        // Insert into entries
-        insertEntry.run({
-          id: entryId,
+        // Insert into entries (skips if collection+slug already exists)
+        const newId = uuid();
+        const changes = insertEntry.run({
+          id: newId,
           name: data.name,
           collection,
           subcategory,
-          slug: data.slug ?? basename(file, '.json'),
+          slug,
           url,
           country,
-          date_added: TODAY,
+          date_added: dateAdded,
           date_last_verified: TODAY,
           status: 'active',
           current_confidence: 'MEDIUM',
         });
+
+        // If INSERT was ignored (duplicate), skip company/audit inserts too
+        if (changes.changes === 0) continue;
+
+        // Resolve the actual entry ID (could be new or existing)
+        const entryRow = findEntry.get({ collection, slug }) as { id: string } | undefined;
+        const entryId = entryRow?.id ?? newId;
 
         // For companies: also insert into companies table
         if (collection === 'companies') {
@@ -172,11 +218,11 @@ function migrate(): void {
             founded_date: getFoundedDate(data.founded as number | string | undefined),
             status: 'active',
             sector: data.type ?? null,
-            date_first_tracked: TODAY,
+            date_first_tracked: dateAdded,
           });
         }
 
-        // Insert audit row
+        // Insert initial audit row
         insertAudit.run({
           id: uuid(),
           entry_id: entryId,
