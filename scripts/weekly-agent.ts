@@ -107,6 +107,7 @@ console.log(`[weekly-agent] Model: claude-sonnet-4-6`);
 console.log(`[weekly-agent] Root: ${ROOT}`);
 
 try {
+  let turnCount = 0;
   for await (const message of query({
     prompt: AGENT_PROMPT,
     options: {
@@ -120,9 +121,28 @@ try {
       maxBudgetUsd: 10.0,
     },
   })) {
-    if (message && 'result' in message) {
-      console.log(`\n[weekly-agent] Agent completed.`);
-      console.log(`[weekly-agent] Result: ${message.result}`);
+    turnCount++;
+    // Log progress for each message
+    if (message && typeof message === 'object') {
+      if ('result' in message) {
+        console.log(`\n[weekly-agent] Agent completed after ${turnCount} turns.`);
+        const result = message.result as Record<string, unknown> | undefined;
+        if (result?.stop_reason) console.log(`[weekly-agent] Stop reason: ${result.stop_reason}`);
+        if (result?.usage) console.log(`[weekly-agent] Usage: ${JSON.stringify(result.usage)}`);
+      } else if ('type' in message && message.type === 'assistant') {
+        const content = (message as Record<string, unknown>).content;
+        if (Array.isArray(content)) {
+          for (const block of content) {
+            if (block?.type === 'text' && typeof block.text === 'string') {
+              // Log first 200 chars of assistant text
+              const preview = block.text.slice(0, 200);
+              console.log(`[weekly-agent] [turn ${turnCount}] ${preview}${block.text.length > 200 ? '...' : ''}`);
+            } else if (block?.type === 'tool_use') {
+              console.log(`[weekly-agent] [turn ${turnCount}] Tool: ${block.name}`);
+            }
+          }
+        }
+      }
     }
   }
 
