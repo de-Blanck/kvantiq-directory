@@ -1,0 +1,204 @@
+{
+  "sources": [
+    {
+      "name": "Danish Quantum Community (DQC)",
+      "url": "https://danishquantumcommunity.com",
+      "feed_type": "ecosystem_network",
+      "strategy": "web_fetch",
+      "geographic_scope": ["DK"],
+      "notes": "Check members page, partners, and news. Also check DQC country partner networks."
+    },
+    {
+      "name": "QuNorth",
+      "url": "https://www.qunorth.com",
+      "feed_type": "ecosystem_network",
+      "strategy": "web_fetch",
+      "geographic_scope": ["DK", "SE", "NO", "FI", "IS"],
+      "notes": "Nordic quantum network. Check members and events."
+    },
+    {
+      "name": "55 North",
+      "url": "https://www.55north.org",
+      "feed_type": "ecosystem_network",
+      "strategy": "web_fetch",
+      "geographic_scope": ["DK", "SE", "NO", "FI", "IS"],
+      "notes": "Nordic quantum initiative."
+    },
+    {
+      "name": "Wallenberg Centre for Quantum Technology (WACQT)",
+      "url": "https://www.chalmers.se/en/centres/wacqt/",
+      "feed_type": "national_initiative",
+      "strategy": "web_fetch",
+      "geographic_scope": ["SE"],
+      "notes": "Swedish quantum research center at Chalmers."
+    },
+    {
+      "name": "Munich Quantum Valley",
+      "url": "https://www.munichquantumvalley.de",
+      "feed_type": "national_initiative",
+      "strategy": "web_fetch",
+      "geographic_scope": ["DE"],
+      "notes": "German quantum computing initiative."
+    },
+    {
+      "name": "Fraunhofer IQS",
+      "url": "https://www.iqs.fraunhofer.de",
+      "feed_type": "national_initiative",
+      "strategy": "web_fetch",
+      "geographic_scope": ["DE"],
+      "notes": "Fraunhofer quantum sensing research."
+    },
+    {
+      "name": "QuTech",
+      "url": "https://qutech.nl",
+      "feed_type": "national_initiative",
+      "strategy": "web_fetch",
+      "geographic_scope": ["NL"],
+      "notes": "Dutch quantum research center (TU Delft + TNO)."
+    },
+    {
+      "name": "National Quantum Computing Centre (UK)",
+      "url": "https://www.nqcc.ac.uk",
+      "feed_type": "national_initiative",
+      "strategy": "web_fetch",
+      "geographic_scope": ["GB"],
+      "notes": "UK national quantum computing centre."
+    },
+    {
+      "name": "EU Quantum Flagship",
+      "url": "https://qt.eu",
+      "feed_type": "national_initiative",
+      "strategy": "web_fetch",
+      "geographic_scope": ["EU"],
+      "notes": "EU-wide quantum technology program. Check projects and news."
+    },
+    {
+      "name": "EuroQCI",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/european-quantum-communication-infrastructure-euroqci",
+      "feed_type": "national_initiative",
+      "strategy": "web_search",
+      "geographic_scope": ["EU"],
+      "notes": "European Quantum Communication Infrastructure."
+    },
+    {
+      "name": "Quantum Computing Report",
+      "url": "https://quantumcomputingreport.com",
+      "feed_type": "industry_tracker",
+      "strategy": "web_search",
+      "geographic_scope": ["global"],
+      "notes": "Search for new companies, funding, and acquisitions. Filter for EU/UK."
+    },
+    {
+      "name": "The Quantum Insider",
+      "url": "https://thequantuminsider.com",
+      "feed_type": "news",
+      "strategy": "web_search",
+      "geographic_scope": ["global"],
+      "notes": "Quantum industry news. Search for European companies and events."
+    },
+    {
+      "name": "arXiv quant-ph",
+      "url": "https://arxiv.org/list/quant-ph/recent",
+      "feed_type": "academic",
+      "strategy": "web_search",
+      "geographic_scope": ["global"],
+      "notes": "Filter for European-affiliated institutions and company-backed research."
+    },
+    {
+      "name": "GitHub Quantum",
+      "url": "https://github.com/topics/quantum-computing",
+      "feed_type": "industry_tracker",
+      "strategy": "web_search",
+      "geographic_scope": ["global"],
+      "notes": "Trending quantum repos. Check for new European tools and frameworks."
+    },
+    {
+      "name": "Crunchbase Quantum",
+      "url": "https://www.crunchbase.com",
+      "feed_type": "funding_database",
+      "strategy": "web_search",
+      "geographic_scope": ["global"],
+      "notes": "Search for recent quantum computing funding rounds in EU/UK."
+    },
+    {
+      "name": "Magne",
+      "url": "https://www.magne.io",
+      "feed_type": "ecosystem_network",
+      "strategy": "web_fetch",
+      "geographic_scope": ["DK", "SE", "NO", "FI"],
+      "notes": "Nordic quantum ecosystem organization."
+    },
+    {
+      "name": "QBusiness",
+      "url": "https://qbusiness.dk",
+      "feed_type": "ecosystem_network",
+      "strategy": "web_fetch",
+      "geographic_scope": ["DK"],
+      "notes": "Danish quantum business network."
+    },
+    {
+      "name": "SINTEF Quantum",
+      "url": "https://www.sintef.no",
+      "feed_type": "national_initiative",
+      "strategy": "web_search",
+      "geographic_scope": ["NO"],
+      "notes": "Norwegian applied research. Search for quantum computing projects."
+    },
+    {
+      "name": "VTT Quantum",
+      "url": "https://www.vttresearch.com",
+      "feed_type": "national_initiative",
+      "strategy": "web_search",
+      "geographic_scope": ["FI"],
+      "notes": "Finnish technical research centre. Check quantum computing and technology pages."
+    },
+    {
+      "name": "DLR Quantum Computing",
+      "url": "https://www.dlr.de",
+      "feed_type": "national_initiative",
+      "strategy": "web_search",
+      "geographic_scope": ["DE"],
+      "notes": "German Aerospace Center quantum computing initiative."
+    },
+    {
+      "name": "AIT Austrian Institute of Technology — Quantum",
+      "url": "https://www.ait.ac.at",
+      "feed_type": "national_initiative",
+      "strategy": "web_search",
+      "geographic_scope": ["AT"],
+      "notes": "Austrian quantum research and technology."
+    },
+    {
+      "name": "University of Innsbruck — Quantum",
+      "url": "https://www.uibk.ac.at/th-physik/quantum-optics/",
+      "feed_type": "national_initiative",
+      "strategy": "web_search",
+      "geographic_scope": ["AT"],
+      "notes": "Leading Austrian quantum computing research group."
+    },
+    {
+      "name": "ETH Zurich — Quantum Center",
+      "url": "https://qc.ethz.ch",
+      "feed_type": "national_initiative",
+      "strategy": "web_fetch",
+      "geographic_scope": ["CH"],
+      "notes": "Swiss quantum computing research center."
+    },
+    {
+      "name": "EPFL — Quantum Science and Engineering",
+      "url": "https://www.epfl.ch/research/domains/quantum/",
+      "feed_type": "national_initiative",
+      "strategy": "web_fetch",
+      "geographic_scope": ["CH"],
+      "notes": "Swiss quantum science and engineering hub."
+    },
+    {
+      "name": "European Innovation Council — Quantum",
+      "url": "https://eic.ec.europa.eu",
+      "feed_type": "national_initiative",
+      "strategy": "web_search",
+      "geographic_scope": ["EU"],
+      "notes": "EU quantum grants and funding programs."
+    }
+  ]
+}
