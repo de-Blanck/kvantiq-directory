@@ -1,6 +1,10 @@
 [
   {
+    "label": "HIGH",
+    "value": 83
+  },
+  {
     "label": "MEDIUM",
-    "value": 183
+    "value": 109
   }
 ]

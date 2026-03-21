@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "quarter": "2025-Q3",
+    "total_eur": 10000000,
+    "deal_count": 1
+  },
+  {
+    "quarter": "2026-Q1",
+    "total_eur": 156500000,
+    "deal_count": 11
+  }
+]
