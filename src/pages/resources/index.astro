@@ -1,10 +1,36 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import TagList from '../../components/TagList.astro';
+import ListingView from '../../components/ListingView.tsx';
 
 const allResources = await getCollection('resources');
 const sorted = allResources.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const tableData = sorted.map(r => ({
+  href: r.data.website,
+  name: r.data.name,
+  type: r.data.type,
+  provider: r.data.provider || '',
+  openSource: r.data.openSource ? 'Yes' : 'No',
+}));
+
+const tableColumns = [
+  { key: 'name', label: 'Resource', isLink: true, sortable: true },
+  { key: 'type', label: 'Type', filterable: true, sortable: true },
+  { key: 'provider', label: 'Provider', sortable: true },
+  { key: 'openSource', label: 'Open Source', filterable: true, sortable: true },
+];
+
+const cardItems = sorted.map(r => ({
+  href: r.data.website,
+  name: r.data.name,
+  description: r.data.description,
+  tags: r.data.tags,
+  meta: `${r.data.type}${r.data.provider ? ` \u00b7 ${r.data.provider}` : ''}`,
+  badge: r.data.openSource ? 'Open Source' : undefined,
+  badgeColor: 'text-accent bg-accent-glow',
+  external: true,
+}));
 
 const itemListLd = {
   "@context": "https://schema.org", "@type": "ItemList",
@@ -27,39 +53,12 @@ const itemListLd = {
       <p class="mt-2 text-text-secondary">{allResources.length} frameworks, courses, funding programs, and tools for quantum computing.</p>
     </div>
 
-    <div class="mt-8 overflow-x-auto">
-      <table class="min-w-full text-sm">
-        <thead><tr class="border-b text-left text-text-muted">
-          <th class="pb-2 pr-4 font-medium">Resource</th>
-          <th class="pb-2 pr-4 font-medium">Type</th>
-          <th class="pb-2 pr-4 font-medium">Provider</th>
-          <th class="pb-2 pr-4 font-medium">Open Source</th>
-        </tr></thead>
-        <tbody>
-          {sorted.map(r => (
-            <tr class="border-b border-border-subtle">
-              <td class="py-2 pr-4"><a href={r.data.website} target="_blank" rel="noopener noreferrer" class="text-info hover:underline">{r.data.name}</a></td>
-              <td class="py-2 pr-4 text-text-secondary capitalize">{r.data.type}</td>
-              <td class="py-2 pr-4 text-text-secondary">{r.data.provider || '—'}</td>
-              <td class="py-2 pr-4 text-text-secondary">{r.data.openSource ? 'Yes' : 'No'}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-
-    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {sorted.map(r => (
-        <a href={r.data.website} target="_blank" rel="noopener noreferrer" class="block rounded-lg border border-border p-5 transition hover:shadow-md">
-          <div class="flex items-start justify-between gap-2">
-            <h3 class="font-semibold text-text">{r.data.name}</h3>
-            {r.data.openSource && <span class="shrink-0 rounded-full bg-ok/10 px-2 py-0.5 text-xs font-medium text-ok">Open Source</span>}
-          </div>
-          <p class="mt-1 text-sm text-text-muted capitalize">{r.data.type}{r.data.provider ? ` · ${r.data.provider}` : ''}</p>
-          <p class="mt-2 text-sm text-text-secondary line-clamp-2">{r.data.description}</p>
-          <div class="mt-3"><TagList tags={r.data.tags} /></div>
-        </a>
-      ))}
-    </div>
+    <ListingView
+      client:load
+      tableData={tableData}
+      tableColumns={tableColumns}
+      cardItems={cardItems}
+      searchPlaceholder="Search resources..."
+    />
   </article>
 </BaseLayout>

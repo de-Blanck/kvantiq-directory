@@ -2,12 +2,18 @@
   "name": "EuroHPC Quantum Computing Infrastructure",
   "slug": "eurohpc-quantum-computing",
   "type": "funding",
-  "tags": ["funding", "Europe", "infrastructure", "HPC", "public-funding", "hardware"],
+  "tags": [
+    "funding",
+    "Europe",
+    "infrastructure",
+    "HPC",
+    "public-funding",
+    "hardware"
+  ],
   "description": "The EuroHPC Joint Undertaking procures and co-funds quantum computers integrated with European supercomputing centres, with its mandate recently expanded to cover quantum simulation, communication, and sensing. It has deployed six quantum systems across Europe, including installations in Poland, Finland, Germany, and the Czech Republic, with additional procurements underway in Italy and the Netherlands.",
   "website": "https://www.eurohpc-ju.europa.eu/quantum-technologies/quantum-computing_en",
   "openSource": false,
   "free": true,
-  "language": "",
   "provider": "EuroHPC Joint Undertaking",
   "sources": [
     {
