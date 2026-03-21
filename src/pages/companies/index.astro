@@ -1,8 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ListingCard from '../../components/ListingCard.astro';
-import DataTable from '../../components/DataTable.tsx';
+import ListingView from '../../components/ListingView.tsx';
 
 const allCompanies = await getCollection('companies');
 const sorted = allCompanies.sort((a, b) => {
@@ -26,6 +25,16 @@ const tableColumns = [
   { key: 'type', label: 'Type', filterable: true, sortable: true },
   { key: 'founded', label: 'Founded', sortable: true },
 ];
+
+const cardItems = sorted.map(c => ({
+  href: `/companies/${c.data.slug}/`,
+  name: c.data.name,
+  description: c.data.description,
+  tags: c.data.tags,
+  meta: `${c.data.country} \u00b7 ${c.data.type}`,
+  badge: c.data.featured ? 'Featured' : undefined,
+  badgeColor: 'text-accent bg-accent-glow',
+}));
 
 const itemListLd = {
   "@context": "https://schema.org",
@@ -55,25 +64,12 @@ const itemListLd = {
       </p>
     </div>
 
-    <DataTable
-      client:visible
-      data={tableData}
-      columns={tableColumns}
+    <ListingView
+      client:load
+      tableData={tableData}
+      tableColumns={tableColumns}
+      cardItems={cardItems}
       searchPlaceholder="Search companies..."
     />
-
-    <!-- Card grid -->
-    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {sorted.map(c => (
-        <ListingCard
-          title={c.data.name}
-          href={`/companies/${c.data.slug}/`}
-          description={c.data.description}
-          tags={c.data.tags}
-          meta={`${c.data.country} · ${c.data.type}`}
-          featured={c.data.featured}
-        />
-      ))}
-    </div>
   </article>
 </BaseLayout>

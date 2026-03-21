@@ -1,8 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ListingCard from '../../components/ListingCard.astro';
-import DataTable from '../../components/DataTable.tsx';
+import ListingView from '../../components/ListingView.tsx';
 
 const allUseCases = await getCollection('use-cases');
 const sorted = allUseCases.sort((a, b) => a.data.name.localeCompare(b.data.name));
@@ -19,6 +18,14 @@ const tableColumns = [
   { key: 'industry', label: 'Industry', filterable: true, sortable: true },
   { key: 'category', label: 'Category', filterable: true, sortable: true },
 ];
+
+const cardItems = sorted.map(u => ({
+  href: `/use-cases/${u.data.slug}/`,
+  name: u.data.name,
+  description: u.data.description,
+  tags: u.data.tags,
+  meta: `${u.data.industry} \u00b7 ${u.data.category}`,
+}));
 
 const itemListLd = {
   "@context": "https://schema.org",
@@ -41,17 +48,12 @@ const itemListLd = {
       <p class="mt-2 text-text-secondary">{allUseCases.length} real-world use cases for hybrid quantum-classical computing.</p>
     </div>
 
-    <DataTable
-      client:visible
-      data={tableData}
-      columns={tableColumns}
+    <ListingView
+      client:load
+      tableData={tableData}
+      tableColumns={tableColumns}
+      cardItems={cardItems}
       searchPlaceholder="Search use cases..."
     />
-
-    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {sorted.map(u => (
-        <ListingCard title={u.data.name} href={`/use-cases/${u.data.slug}/`} description={u.data.description} tags={u.data.tags} meta={`${u.data.industry} · ${u.data.category}`} />
-      ))}
-    </div>
   </article>
 </BaseLayout>

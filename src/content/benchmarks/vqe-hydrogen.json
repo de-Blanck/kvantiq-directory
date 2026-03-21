@@ -16,6 +16,12 @@
       "url": "https://arxiv.org/abs/1304.3061",
       "title": "The theory of variational hybrid quantum-classical algorithms",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://en.wikipedia.org/wiki/Variational_quantum_eigensolver",
+      "title": "Variational Quantum Eigensolver — Wikipedia",
+      "dateAccessed": "2026-03-20"
     }
   ]
 }

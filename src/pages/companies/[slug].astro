@@ -1,19 +1,34 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import TagList from '../../components/TagList.astro';
-import JsonLd from '../../components/JsonLd.astro';
-import Sources from '../../components/Sources.astro';
+import DetailPage from '../../components/DetailPage.tsx';
+import { findRelated, type RelatedItem } from '../../lib/related';
 
 export async function getStaticPaths() {
   const companies = await getCollection('companies');
+  const benchmarks = await getCollection('benchmarks');
+  const useCases = await getCollection('use-cases');
+  const challenges = await getCollection('challenges');
+  const resources = await getCollection('resources');
+
+  const allItems: RelatedItem[] = [
+    ...companies.map(c => ({ slug: c.data.slug, name: c.data.name, description: c.data.description, collection: 'companies', tags: c.data.tags, href: `/companies/${c.data.slug}/` })),
+    ...benchmarks.map(b => ({ slug: b.data.slug, name: b.data.name, description: b.data.description, collection: 'benchmarks', tags: b.data.tags, href: `/benchmarks/${b.data.slug}/` })),
+    ...useCases.map(u => ({ slug: u.data.slug, name: u.data.name, description: u.data.description, collection: 'use-cases', tags: u.data.tags, href: `/use-cases/${u.data.slug}/` })),
+    ...challenges.map(ch => ({ slug: ch.data.slug, name: ch.data.name, description: ch.data.description, collection: 'challenges', tags: ch.data.tags, href: `/challenges/${ch.data.slug}/` })),
+    ...resources.map(r => ({ slug: r.data.slug, name: r.data.name, description: r.data.description, collection: 'resources', tags: r.data.tags, href: `/resources/` })),
+  ];
+
   return companies.map(c => ({
     params: { slug: c.data.slug },
-    props: { company: c.data },
+    props: {
+      company: c.data,
+      related: findRelated(c.data.slug, c.data.tags, allItems),
+    },
   }));
 }
 
-const { company } = Astro.props;
+const { company, related } = Astro.props;
 
 const orgLd = {
   "@context": "https://schema.org",
@@ -23,98 +38,31 @@ const orgLd = {
   "description": company.description,
   ...(company.founded && { "foundingDate": String(company.founded) }),
   ...(company.headquarters && {
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": company.headquarters,
-    }
+    "address": { "@type": "PostalAddress", "addressLocality": company.headquarters }
   }),
-  "citation": company.sources.filter(s => s.type !== 'website').map(s => ({
-    "@type": s.type === 'doi' || s.type === 'arxiv' ? 'ScholarlyArticle' : 'WebPage',
-    "url": s.url,
-    ...(s.title && { "name": s.title }),
-  })),
 };
 
-const faqLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": `What does ${company.name} do?`,
-      "acceptedAnswer": { "@type": "Answer", "text": company.description },
-    },
-    {
-      "@type": "Question",
-      "name": `Where is ${company.name} based?`,
-      "acceptedAnswer": { "@type": "Answer", "text": `${company.name} is based in ${company.headquarters || company.country}.` },
-    },
-  ],
-};
+const stats = [
+  ...(company.employees ? [{ value: company.employees, label: 'Employees' }] : []),
+  ...(company.funding ? [{ value: company.funding, label: 'Funding' }] : []),
+  { value: company.region === 'nordics' ? 'Nordics' : company.region === 'dach' ? 'DACH' : company.region.replace(/-/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase()), label: 'Region' },
+];
+
+const meta = [company.country, company.type.replace(/^\w/, (c: string) => c.toUpperCase()), company.founded ? `Founded ${company.founded}` : '', company.headquarters].filter(Boolean).join(' · ');
 ---
-<BaseLayout
-  title={company.name}
-  description={company.description}
-  jsonLd={orgLd}
->
-  <JsonLd data={faqLd} />
-
-  <article>
-    <h1 class="text-3xl font-bold">{company.name}</h1>
-
-    <div class="summary mt-4" role="doc-abstract">
-      <p class="text-text-secondary">{company.description}<sup><a href="#ref-1" class="text-info ml-0.5">[1]</a></sup></p>
-      <ul class="mt-3 space-y-1 text-sm text-text-secondary">
-        {company.founded && <li>Founded: <time datetime={String(company.founded)}>{company.founded}</time></li>}
-        <li>Country: {company.country}</li>
-        <li>Type: <span class="capitalize">{company.type}</span></li>
-        {company.headquarters && <li>Headquarters: {company.headquarters}</li>}
-        {company.employees && <li>Employees: {company.employees}</li>}
-        {company.funding && <li>Funding: {company.funding}</li>}
-      </ul>
-    </div>
-
-    <div class="mt-4">
-      <TagList tags={company.tags} />
-    </div>
-
-    <section class="mt-8">
-      <h2 class="text-xl font-semibold">What does {company.name} do?</h2>
-      <p class="mt-2 text-text-secondary">{company.description}</p>
-    </section>
-
-    <section class="mt-6">
-      <h2 class="text-xl font-semibold">Where is {company.name} based?</h2>
-      <p class="mt-2 text-text-secondary">{company.name} is headquartered in {company.headquarters || company.country}, in the {company.region === 'nordics' ? 'Nordic' : company.region === 'dach' ? 'DACH' : 'European'} quantum computing ecosystem.</p>
-    </section>
-
-    <section class="mt-6">
-      <h2 class="text-xl font-semibold">Visit {company.name}</h2>
-      <p class="mt-2">
-        <a href={company.website} target="_blank" rel="noopener noreferrer" class="text-info hover:underline">
-          {company.website}
-        </a>
-      </p>
-    </section>
-
-    <section class="faq mt-8 rounded-lg border border-border p-6">
-      <h2 class="text-lg font-semibold">Frequently Asked Questions</h2>
-      <details class="mt-3">
-        <summary class="cursor-pointer font-medium text-text-secondary">What does {company.name} do?</summary>
-        <p class="mt-2 text-sm text-text-secondary">{company.description}</p>
-      </details>
-      <details class="mt-3">
-        <summary class="cursor-pointer font-medium text-text-secondary">Where is {company.name} based?</summary>
-        <p class="mt-2 text-sm text-text-secondary">{company.name} is based in {company.headquarters || company.country}.</p>
-      </details>
-      {company.founded && (
-        <details class="mt-3">
-          <summary class="cursor-pointer font-medium text-text-secondary">When was {company.name} founded?</summary>
-          <p class="mt-2 text-sm text-text-secondary">{company.name} was founded in {company.founded}.</p>
-        </details>
-      )}
-    </section>
-
-    <Sources sources={company.sources} />
-  </article>
+<BaseLayout title={company.name} description={company.description} jsonLd={orgLd}>
+  <DetailPage
+    client:load
+    type="Company"
+    name={company.name}
+    meta={meta}
+    description={company.description}
+    tags={company.tags}
+    stats={stats}
+    websiteUrl={company.website}
+    collection="companies"
+    news={company.news || []}
+    related={related}
+    sources={company.sources}
+  />
 </BaseLayout>

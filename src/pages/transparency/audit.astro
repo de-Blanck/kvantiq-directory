@@ -1,0 +1,315 @@
+---
+import { readFileSync, existsSync } from 'fs';
+import { resolve } from 'path';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+// --- Types ---
+interface ConfidenceEntry {
+  label: string;
+  value: number;
+}
+
+interface CoverageEntry {
+  country: string;
+  count: number;
+}
+
+interface AuditActionEntry {
+  action_taken: string;
+  count: number;
+}
+
+interface SourceEffectivenessEntry {
+  source_name: string;
+  total_found: number;
+  total_new: number;
+}
+
+interface TimelineEntry {
+  date: string;
+  collection: string;
+  count: number;
+}
+
+// --- Data loader ---
+function loadJson<T>(filename: string, fallback: T): T {
+  const filePath = resolve('data/generated', filename);
+  if (!existsSync(filePath)) return fallback;
+  try {
+    return JSON.parse(readFileSync(filePath, 'utf-8')) as T;
+  } catch {
+    return fallback;
+  }
+}
+
+const confidenceDist = loadJson<ConfidenceEntry[]>('confidence-distribution.json', []);
+const coverageMap    = loadJson<CoverageEntry[]>('coverage-map.json', []);
+const auditSummary   = loadJson<AuditActionEntry[]>('audit-summary.json', []);
+const sourceEff      = loadJson<SourceEffectivenessEntry[]>('source-effectiveness.json', []);
+const entryTimeline  = loadJson<TimelineEntry[]>('entry-timeline.json', []);
+
+// Aggregate timeline by date for the chart
+const timelineDates = [...new Set(entryTimeline.map((e) => e.date))].sort();
+const timelineCounts = timelineDates.map((d) =>
+  entryTimeline.filter((e) => e.date === d).reduce((sum, e) => sum + e.count, 0)
+);
+// Cumulative total
+const cumulativeCounts = timelineCounts.reduce<number[]>((acc, v) => {
+  acc.push((acc.length > 0 ? acc[acc.length - 1] : 0) + v);
+  return acc;
+}, []);
+const hasTimeline = timelineDates.length > 0;
+const timelineData = { labels: timelineDates, values: cumulativeCounts };
+
+// --- Derived values for chart ---
+const confidenceColors: Record<string, string> = {
+  HIGH:   '#22c55e',
+  MEDIUM: '#eab308',
+  LOW:    '#f97316',
+  DEAD:   '#ef4444',
+};
+
+const confidenceData = {
+  labels: confidenceDist.map((d) => d.label),
+  values: confidenceDist.map((d) => d.value),
+  colors: confidenceDist.map((d) => confidenceColors[d.label] ?? '#94a3b8'),
+};
+
+const maxCoverageCount = Math.max(...coverageMap.map((c) => c.count), 1);
+
+const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
+---
+
+<BaseLayout
+  title="Audit Dashboard"
+  description="Directory health metrics: confidence distribution, geographic coverage, audit actions, and source effectiveness for the Kvantiq quantum computing directory."
+>
+  <main data-pagefind-ignore class="mx-auto max-w-5xl">
+
+    <!-- Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold tracking-tight text-text" style="letter-spacing: -0.3px;">
+        Audit Dashboard
+      </h1>
+      <p class="mt-2 text-base text-text-secondary leading-relaxed">
+        Directory health metrics — confidence levels, geographic coverage, recent audit actions, and source effectiveness.
+      </p>
+    </div>
+
+    <!-- 2-column grid: Confidence Chart + Coverage -->
+    <div class="grid gap-6 sm:grid-cols-2 mb-8">
+
+      <!-- Confidence Distribution (Chart.js doughnut) -->
+      <div class="rounded-xl border border-border bg-surface p-5">
+        <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted mb-4">
+          Confidence Distribution
+        </h2>
+        {confidenceDist.length > 0 ? (
+          <div class="flex flex-col items-center gap-4">
+            <div class="relative w-48 h-48">
+              <canvas id="confidence-chart" width="192" height="192"></canvas>
+            </div>
+            <!-- Legend -->
+            <ul class="flex flex-wrap justify-center gap-x-4 gap-y-1.5">
+              {confidenceDist.map((d) => (
+                <li class="flex items-center gap-1.5 text-xs text-text-secondary">
+                  <span
+                    class="inline-block w-2.5 h-2.5 rounded-full shrink-0"
+                    style={`background-color: ${confidenceColors[d.label] ?? '#94a3b8'}`}
+                  ></span>
+                  <span class="capitalize">{d.label.toLowerCase()}</span>
+                  <span class="font-mono font-semibold text-text">{d.value}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : (
+          <p class="text-sm text-text-muted italic">No confidence data available.</p>
+        )}
+      </div>
+
+      <!-- Coverage by Country -->
+      <div class="rounded-xl border border-border bg-surface p-5">
+        <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted mb-4">
+          Coverage by Country
+        </h2>
+        {coverageMap.length > 0 ? (
+          <ul class="space-y-2">
+            {coverageMap.map((c) => (
+              <li class="group">
+                <div class="flex items-center justify-between mb-0.5">
+                  <span class="text-xs text-text-secondary group-hover:text-text transition-colors duration-[120ms]">
+                    {c.country}
+                  </span>
+                  <span class="font-mono text-xs font-semibold text-text">{c.count}</span>
+                </div>
+                <div class="h-1.5 w-full rounded-full bg-border overflow-hidden">
+                  <div
+                    class="h-full rounded-full bg-info transition-all duration-300"
+                    style={`width: ${Math.round((c.count / maxCoverageCount) * 100)}%`}
+                  ></div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="text-sm text-text-muted italic">No coverage data available.</p>
+        )}
+      </div>
+    </div>
+
+    <!-- Entry Count Over Time -->
+    {hasTimeline && (
+      <section class="mb-8">
+        <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted mb-4">
+          Directory Growth
+        </h2>
+        <div class="rounded-xl border border-border bg-surface p-6">
+          <canvas id="timeline-chart" height="200" aria-label="Directory entry count over time" role="img"></canvas>
+        </div>
+      </section>
+    )}
+
+    <!-- Recent Audit Actions -->
+    <section class="mb-8">
+      <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted mb-4">
+        Recent Audit Actions
+      </h2>
+      {auditSummary.length > 0 ? (
+        <div class="grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
+          {auditSummary.map((a) => (
+            <div class="rounded-lg border border-border bg-surface p-4 text-center">
+              <p class="font-mono text-2xl font-semibold text-text">{a.count}</p>
+              <p class="mt-1 text-xs font-medium capitalize text-text-secondary">
+                {a.action_taken.replace(/_/g, ' ')}
+              </p>
+            </div>
+          ))}
+          {totalAuditActions > 0 && (
+            <div class="rounded-lg border border-border bg-surface-alt p-4 text-center">
+              <p class="font-mono text-2xl font-semibold text-text">{totalAuditActions}</p>
+              <p class="mt-1 text-xs font-medium text-text-muted">Total actions</p>
+            </div>
+          )}
+        </div>
+      ) : (
+        <p class="text-sm text-text-muted italic">No audit actions recorded yet.</p>
+      )}
+    </section>
+
+    <!-- Source Effectiveness -->
+    <section class="mb-8">
+      <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted mb-4">
+        Source Effectiveness
+      </h2>
+      {sourceEff.length > 0 ? (
+        <div class="overflow-x-auto rounded-xl border border-border">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="border-b border-border bg-surface-alt">
+                <th class="px-4 py-3 text-left font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted">
+                  Source
+                </th>
+                <th class="px-4 py-3 text-right font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted">
+                  Total Found
+                </th>
+                <th class="px-4 py-3 text-right font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted">
+                  Total New
+                </th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-border bg-surface">
+              {sourceEff.map((s) => (
+                <tr class="hover:bg-surface-alt transition-colors duration-[80ms]">
+                  <td class="px-4 py-3 font-medium text-text">{s.source_name}</td>
+                  <td class="px-4 py-3 text-right font-mono text-text-secondary">{s.total_found}</td>
+                  <td class="px-4 py-3 text-right font-mono text-text-secondary">{s.total_new}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ) : (
+        <p class="text-sm text-text-muted italic">No source effectiveness data available.</p>
+      )}
+    </section>
+
+  </main>
+</BaseLayout>
+
+<script define:vars={{ confidenceData, confidenceColors, timelineData, hasTimeline }}>
+  if (confidenceData.values.length > 0 || hasTimeline) {
+    import('https://cdn.jsdelivr.net/npm/chart.js@4/+esm').then(({ ArcElement, Tooltip, Legend, DoughnutController, LineElement, PointElement, CategoryScale, LinearScale, LineController, Filler, Chart }) => {
+      Chart.register(ArcElement, Tooltip, Legend, DoughnutController, LineElement, PointElement, CategoryScale, LinearScale, LineController, Filler);
+
+      const canvas = document.getElementById('confidence-chart');
+      if (!canvas) return;
+
+      // Confidence doughnut
+      const canvas = document.getElementById('confidence-chart');
+      if (canvas) {
+        new Chart(canvas, {
+          type: 'doughnut',
+          data: {
+            labels: confidenceData.labels,
+            datasets: [
+              {
+                data: confidenceData.values,
+                backgroundColor: confidenceData.colors,
+                borderWidth: 0,
+                hoverOffset: 4,
+              },
+            ],
+          },
+          options: {
+            responsive: false,
+            cutout: '68%',
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                callbacks: { label: (ctx) => ` ${ctx.label}: ${ctx.parsed}` },
+                bodyColor: '#94a3b8',
+                titleColor: '#94a3b8',
+                backgroundColor: '#1e293b',
+                borderColor: '#334155',
+                borderWidth: 1,
+              },
+            },
+          },
+        });
+      }
+
+      // Entry timeline line chart
+      if (hasTimeline) {
+        const timelineCanvas = document.getElementById('timeline-chart');
+        if (timelineCanvas) {
+          new Chart(timelineCanvas, {
+            type: 'line',
+            data: {
+              labels: timelineData.labels,
+              datasets: [{
+                label: 'Total entries',
+                data: timelineData.values,
+                borderColor: '#06b6d4',
+                backgroundColor: 'rgba(6, 182, 212, 0.1)',
+                fill: true,
+                tension: 0.3,
+                pointRadius: 3,
+                pointBackgroundColor: '#06b6d4',
+              }],
+            },
+            options: {
+              responsive: true,
+              maintainAspectRatio: true,
+              plugins: { legend: { display: false }, tooltip: { enabled: true } },
+              scales: {
+                y: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' }, border: { display: false } },
+                x: { ticks: { color: '#94a3b8', maxRotation: 45 }, grid: { display: false }, border: { display: false } },
+              },
+            },
+          });
+        }
+      }
+    });
+  }
+</script>

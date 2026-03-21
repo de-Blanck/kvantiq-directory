@@ -1,78 +1,74 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import TagList from '../../components/TagList.astro';
-import JsonLd from '../../components/JsonLd.astro';
-import Sources from '../../components/Sources.astro';
+import DetailPage from '../../components/DetailPage.tsx';
+import { findRelated, type RelatedItem } from '../../lib/related';
 
 export async function getStaticPaths() {
+  const companies = await getCollection('companies');
+  const benchmarks = await getCollection('benchmarks');
   const useCases = await getCollection('use-cases');
-  return useCases.map(u => ({ params: { slug: u.data.slug }, props: { useCase: u.data } }));
+  const challenges = await getCollection('challenges');
+  const resources = await getCollection('resources');
+
+  const allItems: RelatedItem[] = [
+    ...companies.map(c => ({ slug: c.data.slug, name: c.data.name, description: c.data.description, collection: 'companies', tags: c.data.tags, href: `/companies/${c.data.slug}/` })),
+    ...benchmarks.map(b => ({ slug: b.data.slug, name: b.data.name, description: b.data.description, collection: 'benchmarks', tags: b.data.tags, href: `/benchmarks/${b.data.slug}/` })),
+    ...useCases.map(u => ({ slug: u.data.slug, name: u.data.name, description: u.data.description, collection: 'use-cases', tags: u.data.tags, href: `/use-cases/${u.data.slug}/` })),
+    ...challenges.map(ch => ({ slug: ch.data.slug, name: ch.data.name, description: ch.data.description, collection: 'challenges', tags: ch.data.tags, href: `/challenges/${ch.data.slug}/` })),
+    ...resources.map(r => ({ slug: r.data.slug, name: r.data.name, description: r.data.description, collection: 'resources', tags: r.data.tags, href: `/resources/` })),
+  ];
+
+  return useCases.map(u => ({
+    params: { slug: u.data.slug },
+    props: {
+      useCase: u.data,
+      related: findRelated(u.data.slug, u.data.tags, allItems),
+    },
+  }));
 }
 
-const { useCase } = Astro.props;
+const { useCase, related } = Astro.props;
 
 const articleLd = {
-  "@context": "https://schema.org", "@type": "Article",
-  "headline": useCase.name, "description": useCase.description,
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": useCase.name,
+  "description": useCase.description,
   "about": { "@type": "Thing", "name": useCase.industry },
-  "citation": useCase.sources.map(s => ({
+  "citation": useCase.sources.map((s: { type: string; url: string; title?: string }) => ({
     "@type": s.type === 'doi' || s.type === 'arxiv' ? 'ScholarlyArticle' : 'WebPage',
     "url": s.url,
     ...(s.title && { "name": s.title }),
   })),
 };
 
-const faqLd = {
-  "@context": "https://schema.org", "@type": "FAQPage",
-  "mainEntity": [
-    { "@type": "Question", "name": `What problem does ${useCase.name} solve?`, "acceptedAnswer": { "@type": "Answer", "text": useCase.problem } },
-    { "@type": "Question", "name": `How does quantum computing help with ${useCase.name.toLowerCase()}?`, "acceptedAnswer": { "@type": "Answer", "text": useCase.approach } },
-  ],
-};
+const categoryLabel = useCase.category.replace(/-/g, ' ').replace(/^\w/, (c: string) => c.toUpperCase());
+const stats = [
+  { value: useCase.industry, label: 'Industry' },
+  // Only show category if it's meaningfully different from industry
+  ...(categoryLabel.toLowerCase() !== useCase.industry.toLowerCase() ? [{ value: categoryLabel, label: 'Category' }] : []),
+  ...(useCase.results ? [{ value: 'Published', label: 'Results' }] : []),
+];
+
+const meta = [useCase.industry, useCase.category.replace(/^\w/, (c: string) => c.toUpperCase())].filter(Boolean).join(' · ');
 ---
 <BaseLayout title={useCase.name} description={useCase.description} jsonLd={articleLd}>
-  <JsonLd data={faqLd} />
-  <article>
-    <h1 class="text-3xl font-bold">{useCase.name}</h1>
-    <div class="summary mt-4" role="doc-abstract">
-      <p class="text-text-secondary">{useCase.description}<sup><a href="#ref-1" class="text-info ml-0.5">[1]</a></sup></p>
-      <ul class="mt-3 space-y-1 text-sm text-text-secondary">
-        <li>Industry: {useCase.industry}</li>
-        <li>Category: <span class="capitalize">{useCase.category}</span></li>
-      </ul>
-    </div>
-    <div class="mt-4"><TagList tags={useCase.tags} /></div>
-
-    <section class="mt-8">
-      <h2 class="text-xl font-semibold">What is the problem?</h2>
-      <p class="mt-2 text-text-secondary">{useCase.problem}</p>
-    </section>
-
-    <section class="mt-6">
-      <h2 class="text-xl font-semibold">How does quantum computing help?</h2>
-      <p class="mt-2 text-text-secondary">{useCase.approach}</p>
-    </section>
-
-    {useCase.results && (
-      <section class="mt-6">
-        <h2 class="text-xl font-semibold">What are the results?</h2>
-        <p class="mt-2 text-text-secondary">{useCase.results}</p>
-      </section>
-    )}
-
-    <section class="faq mt-8 rounded-lg border border-border p-6">
-      <h2 class="text-lg font-semibold">Frequently Asked Questions</h2>
-      <details class="mt-3">
-        <summary class="cursor-pointer font-medium text-text-secondary">What problem does {useCase.name} solve?</summary>
-        <p class="mt-2 text-sm text-text-secondary">{useCase.problem}</p>
-      </details>
-      <details class="mt-3">
-        <summary class="cursor-pointer font-medium text-text-secondary">How does quantum computing help?</summary>
-        <p class="mt-2 text-sm text-text-secondary">{useCase.approach}</p>
-      </details>
-    </section>
-
-    <Sources sources={useCase.sources} />
-  </article>
+  <DetailPage
+    client:load
+    type="Use Case"
+    name={useCase.name}
+    meta={meta}
+    description={useCase.description}
+    tags={useCase.tags}
+    stats={stats}
+    collection="use-cases"
+    news={useCase.news || []}
+    related={related}
+    sources={useCase.sources}
+    extraCards={[
+      { id: 'problem', label: 'Problem', content: useCase.problem },
+      { id: 'approach', label: 'Approach', content: useCase.approach },
+    ]}
+  />
 </BaseLayout>

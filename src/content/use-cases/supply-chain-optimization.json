@@ -15,6 +15,12 @@
       "url": "https://www.accenture.com/us-en/insights/technology/quantum-computing-supply-chain",
       "title": "Quantum Computing in Supply Chain Management",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2212.12239",
+      "title": "Quantum optimization for supply chain management: a survey",
+      "dateAccessed": "2026-03-20"
     }
   ]
 }

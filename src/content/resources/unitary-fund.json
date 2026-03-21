@@ -2,12 +2,18 @@
   "name": "Unitary Fund",
   "slug": "unitary-fund",
   "type": "community",
-  "tags": ["community", "open-source", "grants", "microgrants", "advocacy", "tools"],
+  "tags": [
+    "community",
+    "open-source",
+    "grants",
+    "microgrants",
+    "advocacy",
+    "tools"
+  ],
   "description": "Unitary Foundation is a 501(c)(3) non-profit that supports the quantum technology open-source ecosystem through microgrants, community building, and tool development. Its microgrant programme has awarded over 100 grants to individuals worldwide, producing more than 40 open-source libraries with 400+ contributors across projects including error mitigation, quantum programming, and open hardware.",
   "website": "https://unitary.foundation/",
   "openSource": true,
   "free": true,
-  "language": "",
   "provider": "Unitary Foundation",
   "sources": [
     {

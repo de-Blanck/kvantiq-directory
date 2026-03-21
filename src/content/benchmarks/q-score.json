@@ -15,6 +15,12 @@
       "url": "https://arxiv.org/abs/2102.12973",
       "title": "Q-Score: A Quantum Computing Performance Metric",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://atos.net/en/lp/q-score",
+      "title": "Q-Score — Atos Quantum Computing Benchmark",
+      "dateAccessed": "2026-03-20"
     }
   ]
 }

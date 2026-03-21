@@ -15,6 +15,12 @@
       "url": "https://docs.quantinuum.com/tket",
       "title": "TKET Official Documentation",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://github.com/CQCL/tket",
+      "title": "TKET GitHub Repository",
+      "dateAccessed": "2026-03-20"
     }
   ]
 }

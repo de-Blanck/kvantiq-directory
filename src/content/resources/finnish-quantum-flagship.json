@@ -2,12 +2,17 @@
   "name": "Finnish Quantum Technology Strategy",
   "slug": "finnish-quantum-flagship",
   "type": "funding",
-  "tags": ["funding", "research", "Finland", "public-funding", "strategy"],
+  "tags": [
+    "funding",
+    "research",
+    "Finland",
+    "public-funding",
+    "strategy"
+  ],
   "description": "The Finnish Quantum Technology Strategy is a national initiative coordinated by Business Finland and InstituteQ to establish Finland as a leader in quantum technologies. The program funds quantum computing research, quantum communication infrastructure, and industry partnerships. It brings together Finnish universities, research institutions, and companies to accelerate quantum technology development.",
   "website": "https://instituteq.fi",
   "openSource": false,
   "free": true,
-  "language": "",
   "provider": "Business Finland / InstituteQ",
   "sources": [
     {
@@ -15,6 +20,12 @@
       "url": "https://instituteq.fi",
       "title": "InstituteQ Official Website",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://www.businessfinland.fi/en/whats-new/news/2024/finland-invests-in-quantum-technologies",
+      "title": "Business Finland Quantum Technology Investment Announcement",
+      "dateAccessed": "2026-03-20"
     }
   ]
 }

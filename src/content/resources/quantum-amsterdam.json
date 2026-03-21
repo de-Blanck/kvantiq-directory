@@ -2,12 +2,18 @@
   "name": "Quantum.Amsterdam",
   "slug": "quantum-amsterdam",
   "type": "community",
-  "tags": ["community", "Netherlands", "innovation-hub", "industry", "finance", "ecosystem"],
+  "tags": [
+    "community",
+    "Netherlands",
+    "innovation-hub",
+    "industry",
+    "finance",
+    "ecosystem"
+  ],
   "description": "Quantum.Amsterdam is an innovation hub founded by QuSoft, Centrum Wiskunde & Informatica, and the University of Amsterdam to connect academia, industry, and society in quantum technology. As one of the five official hubs of Quantum Delta NL, it focuses on applications in finance, quantum chemistry, operations research, and security, partnering with companies such as ABN AMRO, ING, and Capgemini.",
   "website": "https://www.quantum.amsterdam/",
   "openSource": false,
   "free": true,
-  "language": "",
   "provider": "QuSoft / University of Amsterdam",
   "sources": [
     {
