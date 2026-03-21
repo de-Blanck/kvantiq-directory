@@ -1,0 +1,124 @@
+{
+  "sources": [
+    {
+      "name": "Danish Quantum Community (DQC)",
+      "url": "https://danishquantumcommunity.com",
+      "feed_type": "ecosystem_network",
+      "strategy": "web_fetch",
+      "geographic_scope": ["DK"],
+      "notes": "Check members page, partners, and news. Also check DQC country partner networks."
+    },
+    {
+      "name": "QuNorth",
+      "url": "https://www.qunorth.com",
+      "feed_type": "ecosystem_network",
+      "strategy": "web_fetch",
+      "geographic_scope": ["DK", "SE", "NO", "FI", "IS"],
+      "notes": "Nordic quantum network. Check members and events."
+    },
+    {
+      "name": "55 North",
+      "url": "https://www.55north.org",
+      "feed_type": "ecosystem_network",
+      "strategy": "web_fetch",
+      "geographic_scope": ["DK", "SE", "NO", "FI", "IS"],
+      "notes": "Nordic quantum initiative."
+    },
+    {
+      "name": "Wallenberg Centre for Quantum Technology (WACQT)",
+      "url": "https://www.chalmers.se/en/centres/wacqt/",
+      "feed_type": "national_initiative",
+      "strategy": "web_fetch",
+      "geographic_scope": ["SE"],
+      "notes": "Swedish quantum research center at Chalmers."
+    },
+    {
+      "name": "Munich Quantum Valley",
+      "url": "https://www.munichquantumvalley.de",
+      "feed_type": "national_initiative",
+      "strategy": "web_fetch",
+      "geographic_scope": ["DE"],
+      "notes": "German quantum computing initiative."
+    },
+    {
+      "name": "Fraunhofer IQS",
+      "url": "https://www.iqs.fraunhofer.de",
+      "feed_type": "national_initiative",
+      "strategy": "web_fetch",
+      "geographic_scope": ["DE"],
+      "notes": "Fraunhofer quantum sensing research."
+    },
+    {
+      "name": "QuTech",
+      "url": "https://qutech.nl",
+      "feed_type": "national_initiative",
+      "strategy": "web_fetch",
+      "geographic_scope": ["NL"],
+      "notes": "Dutch quantum research center (TU Delft + TNO)."
+    },
+    {
+      "name": "National Quantum Computing Centre (UK)",
+      "url": "https://www.nqcc.ac.uk",
+      "feed_type": "national_initiative",
+      "strategy": "web_fetch",
+      "geographic_scope": ["GB"],
+      "notes": "UK national quantum computing centre."
+    },
+    {
+      "name": "EU Quantum Flagship",
+      "url": "https://qt.eu",
+      "feed_type": "national_initiative",
+      "strategy": "web_fetch",
+      "geographic_scope": ["EU"],
+      "notes": "EU-wide quantum technology program. Check projects and news."
+    },
+    {
+      "name": "EuroQCI",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/european-quantum-communication-infrastructure-euroqci",
+      "feed_type": "national_initiative",
+      "strategy": "web_search",
+      "geographic_scope": ["EU"],
+      "notes": "European Quantum Communication Infrastructure."
+    },
+    {
+      "name": "Quantum Computing Report",
+      "url": "https://quantumcomputingreport.com",
+      "feed_type": "industry_tracker",
+      "strategy": "web_search",
+      "geographic_scope": ["global"],
+      "notes": "Search for new companies, funding, and acquisitions. Filter for EU/UK."
+    },
+    {
+      "name": "The Quantum Insider",
+      "url": "https://thequantuminsider.com",
+      "feed_type": "news",
+      "strategy": "web_search",
+      "geographic_scope": ["global"],
+      "notes": "Quantum industry news. Search for European companies and events."
+    },
+    {
+      "name": "arXiv quant-ph",
+      "url": "https://arxiv.org/list/quant-ph/recent",
+      "feed_type": "academic",
+      "strategy": "web_search",
+      "geographic_scope": ["global"],
+      "notes": "Filter for European-affiliated institutions and company-backed research."
+    },
+    {
+      "name": "GitHub Quantum",
+      "url": "https://github.com/topics/quantum-computing",
+      "feed_type": "industry_tracker",
+      "strategy": "web_search",
+      "geographic_scope": ["global"],
+      "notes": "Trending quantum repos. Check for new European tools and frameworks."
+    },
+    {
+      "name": "Crunchbase Quantum",
+      "url": "https://www.crunchbase.com",
+      "feed_type": "funding_database",
+      "strategy": "web_search",
+      "geographic_scope": ["global"],
+      "notes": "Search for recent quantum computing funding rounds in EU/UK."
+    }
+  ]
+}
