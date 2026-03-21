@@ -1,0 +1,27 @@
+[
+  {
+    "date": "2026-03-21",
+    "collection": "benchmarks",
+    "count": 32
+  },
+  {
+    "date": "2026-03-21",
+    "collection": "challenges",
+    "count": 12
+  },
+  {
+    "date": "2026-03-21",
+    "collection": "companies",
+    "count": 74
+  },
+  {
+    "date": "2026-03-21",
+    "collection": "resources",
+    "count": 42
+  },
+  {
+    "date": "2026-03-21",
+    "collection": "use-cases",
+    "count": 23
+  }
+]
