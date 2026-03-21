@@ -7,7 +7,7 @@ Branch: `feature/weekly-agent`
 ## Phase 1: Data Layer
 
 - [x] Task 2: Implement SQLite schema initialization in `scripts/db/schema.ts` and `scripts/db/index.ts` (files exist, need implementation per plan)
-- [ ] Task 3: Write migration script `scripts/db/migrate.ts` to import existing JSON entries from `.worktrees/feature-directory-site/src/content/` into SQLite
+- [x] Task 3: Write migration script `scripts/db/migrate.ts` to import existing JSON entries from `.worktrees/feature-directory-site/src/content/` into SQLite
 
 ## Phase 2: Custom MCP Tools
 
