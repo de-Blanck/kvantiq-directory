@@ -1,0 +1,35 @@
+{
+  "name": "Silent Waves",
+  "slug": "silent-waves",
+  "country": "France",
+  "region": "western-europe",
+  "type": "hardware",
+  "tags": ["twpa", "parametric amplifier", "superconducting", "quantum readout", "cryogenic components"],
+  "founded": 2022,
+  "description": "Silent Waves manufactures traveling-wave parametric amplifiers (TWPAs) for near-quantum-limited amplification of superconducting qubit readout signals. The company's product line (Argo, Carthago, Zephyr) enables single-shot qubit readout while reducing the number of cryogenic isolators required in the readout chain. Silent Waves was spun out of Institut Néel / CNRS in Grenoble.",
+  "website": "https://www.silent-waves.com",
+  "featured": false,
+  "headquarters": "Grenoble, France",
+  "employees": "11-25",
+  "funding": "EIC Transition grant (~€2.5M); partner in SUPREME EU consortium (€25M, 23 members)",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.silent-waves.com",
+      "title": "Silent Waves official website",
+      "dateAccessed": "2026-03-21"
+    },
+    {
+      "type": "url",
+      "url": "https://www.prlog.org/13111061-travelling-wave-parametric-amplifier-isolator-simplifies-quantum-readout-chains.html",
+      "title": "Silent Waves Zephyr TWPA product launch press release (March 2026)",
+      "dateAccessed": "2026-03-21"
+    },
+    {
+      "type": "url",
+      "url": "https://qt.eu/news/2025/2025-03-18_quantum-tech-companies-chosen-in-latest-EIC-round",
+      "title": "Quantum tech companies chosen in latest EIC Transition round (EU Quantum Flagship, March 2025)",
+      "dateAccessed": "2026-03-21"
+    }
+  ]
+}

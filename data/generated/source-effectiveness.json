@@ -1,1 +1,67 @@
-[]
+[
+  {
+    "source_name": "arXiv quant-ph",
+    "total_found": 5,
+    "total_new": 0
+  },
+  {
+    "source_name": "The Quantum Insider",
+    "total_found": 5,
+    "total_new": 0
+  },
+  {
+    "source_name": "Quantum Computing Report",
+    "total_found": 5,
+    "total_new": 0
+  },
+  {
+    "source_name": "QuTech Startups",
+    "total_found": 5,
+    "total_new": 0
+  },
+  {
+    "source_name": "QuTech",
+    "total_found": 5,
+    "total_new": 0
+  },
+  {
+    "source_name": "QuNorth",
+    "total_found": 5,
+    "total_new": 0
+  },
+  {
+    "source_name": "NQCC UK",
+    "total_found": 5,
+    "total_new": 0
+  },
+  {
+    "source_name": "Munich Quantum Valley",
+    "total_found": 5,
+    "total_new": 0
+  },
+  {
+    "source_name": "EU Startups",
+    "total_found": 5,
+    "total_new": 0
+  },
+  {
+    "source_name": "EU Quantum Flagship",
+    "total_found": 5,
+    "total_new": 0
+  },
+  {
+    "source_name": "EIC European Innovation Council",
+    "total_found": 5,
+    "total_new": 0
+  },
+  {
+    "source_name": "Danish Quantum Community",
+    "total_found": 5,
+    "total_new": 0
+  },
+  {
+    "source_name": "Crunchbase Quantum",
+    "total_found": 5,
+    "total_new": 0
+  }
+]

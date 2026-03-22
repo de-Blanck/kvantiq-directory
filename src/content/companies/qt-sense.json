@@ -1,0 +1,35 @@
+{
+  "name": "QT Sense",
+  "slug": "qt-sense",
+  "country": "Netherlands",
+  "region": "western-europe",
+  "type": "hardware",
+  "tags": ["quantum sensing", "nanodiamond", "nv-centers", "life sciences", "drug discovery"],
+  "founded": 2024,
+  "description": "QT Sense develops quantum sensing platforms based on fluorescent nanodiamond NV-center technology to measure oxidative stress and metabolic activity in individual living cells in real time. The company targets drug discovery applications for cancer, sepsis, and inflammatory diseases, and was spun out of University Medical Center Groningen.",
+  "website": "https://qtsense.com",
+  "featured": false,
+  "headquarters": "Groningen, Netherlands",
+  "employees": "11-25",
+  "funding": "€10M total; €4M round February 2026 (seed + QDNL + ONCO-Q grant); €6M round February 2025",
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://qtsense.com",
+      "title": "QT Sense official website",
+      "dateAccessed": "2026-03-21"
+    },
+    {
+      "type": "press-release",
+      "url": "https://www.eu-startups.com/2026/02/qt-sense-raises-e4-million-to-develop-quantum-platform-for-cancer-sepsis-and-arthritis-research/",
+      "title": "QT Sense raises €4M to develop quantum platform for cancer, sepsis and arthritis research (EU Startups, February 2026)",
+      "dateAccessed": "2026-03-21"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/02/04/qt-sense-raises-e4-million-for-quantum-tech-that-analyzes-living-cells-in-real-time/",
+      "title": "QT Sense raises €4M for quantum tech that analyzes living cells in real time (The Quantum Insider, February 2026)",
+      "dateAccessed": "2026-03-21"
+    }
+  ]
+}
