@@ -2,7 +2,7 @@
   "sources": [
     {
       "name": "Danish Quantum Community (DQC)",
-      "url": "https://danishquantumcommunity.com",
+      "url": "https://dqc.dk",
       "feed_type": "ecosystem_network",
       "strategy": "web_fetch",
       "geographic_scope": ["DK"],
