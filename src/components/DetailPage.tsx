@@ -88,8 +88,8 @@ export default function DetailPage(props: DetailPageProps) {
         <div className="flex flex-col gap-4">
           {props.news.slice(0, 3).map((item, i) => (
             <div key={i} className="border-b border-border pb-4 last:border-0 last:pb-0">
-              <div className="text-[14px] font-medium text-text-primary">{item.title}</div>
-              <div className="mt-1 flex gap-2 font-mono text-[12px] text-text-muted">
+              <div className="text-sm font-medium text-text-primary">{item.title}</div>
+              <div className="mt-1 flex gap-2 font-mono text-xs text-text-muted">
                 <span>{item.date}</span>
                 <span className="text-accent">{item.source} ↗</span>
               </div>

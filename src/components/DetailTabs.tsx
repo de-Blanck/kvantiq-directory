@@ -90,7 +90,7 @@ export default function DetailTabs({ children, news, related, onCustomize }: Det
 
           {activeTab === 'news' && (
             <div className="flex flex-col gap-3">
-              <div className="font-mono text-[12px] text-text-muted mb-1">
+              <div className="font-mono text-xs text-text-muted mb-1">
                 {news.length} article{news.length !== 1 ? 's' : ''} · Updated weekly via AI sweep
               </div>
               {news.map((item, i) => (
@@ -101,11 +101,11 @@ export default function DetailTabs({ children, news, related, onCustomize }: Det
                   rel="noopener noreferrer"
                   className="block rounded-xl border border-border bg-surface p-6 transition-colors hover:border-accent/20"
                 >
-                  <div className="text-[16px] font-medium text-text-primary mb-1.5">{item.title}</div>
+                  <div className="text-base font-medium text-text-primary mb-1.5">{item.title}</div>
                   {item.excerpt && (
-                    <div className="text-[14px] text-text-secondary leading-[1.7] mb-3">{item.excerpt}</div>
+                    <div className="text-sm text-text-secondary leading-[1.7] mb-3">{item.excerpt}</div>
                   )}
-                  <div className="flex gap-2 font-mono text-[12px] text-text-muted">
+                  <div className="flex gap-2 font-mono text-xs text-text-muted">
                     <span>{item.date}</span>
                     <span>·</span>
                     <span className="text-accent">{item.source} ↗</span>
@@ -128,7 +128,7 @@ export default function DetailTabs({ children, news, related, onCustomize }: Det
                   </span>
                   <div>
                     <div className="text-[13px] font-medium text-text-primary">{item.name}</div>
-                    <div className="mt-0.5 text-[12px] text-text-secondary line-clamp-2">{item.description}</div>
+                    <div className="mt-0.5 text-xs text-text-secondary line-clamp-2">{item.description}</div>
                   </div>
                 </a>
               ))}

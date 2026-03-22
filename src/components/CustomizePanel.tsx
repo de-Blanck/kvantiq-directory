@@ -34,7 +34,7 @@ export default function CustomizePanel({ open, onClose, cards, onToggle, onReset
             transition={{ type: 'spring', stiffness: 400, damping: 30 }}
             className="fixed right-0 top-0 z-50 h-full w-80 border-l border-border bg-surface p-6 overflow-y-auto"
           >
-            <h3 className="font-heading text-[16px] font-semibold text-text-primary">Customize Layout</h3>
+            <h3 className="font-heading text-base font-semibold text-text-primary">Customize Layout</h3>
             <p className="mt-1 text-[13px] text-text-secondary">Toggle cards on or off. Saved automatically.</p>
 
             <div className="mt-6">

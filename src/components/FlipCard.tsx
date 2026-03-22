@@ -13,9 +13,9 @@ export default function FlipCard({ frontLabel, frontValue, frontSub, backText, c
   const [flipped, setFlipped] = useState(false);
 
   const colorMap = {
-    info: { bg: 'bg-[#EFF6FF]', border: 'border-[#BFDBFE]', text: 'text-[#1E40AF]', accent: 'text-[#2563EB]' },
-    ok: { bg: 'bg-[#ECFDF5]', border: 'border-[#A7F3D0]', text: 'text-[#065F46]', accent: 'text-[#059669]' },
-    warn: { bg: 'bg-[#FFFBEB]', border: 'border-[#FDE68A]', text: 'text-[#92400E]', accent: 'text-[#D97706]' },
+    info: { bg: 'bg-info/10', border: 'border-info/20', text: 'text-info', accent: 'text-info' },
+    ok: { bg: 'bg-accent/10', border: 'border-accent/20', text: 'text-accent', accent: 'text-accent' },
+    warn: { bg: 'bg-warn/10', border: 'border-warn/20', text: 'text-warn', accent: 'text-warn' },
   };
 
   const c = colorMap[color];
@@ -39,7 +39,7 @@ export default function FlipCard({ frontLabel, frontValue, frontSub, backText, c
           className={`absolute inset-0 rounded-xl border ${c.border} ${c.bg} p-5 flex flex-col justify-center`}
           style={{ backfaceVisibility: 'hidden' }}
         >
-          <p className={`font-mono text-[9px] font-medium uppercase tracking-[0.5px] ${c.text}`} style={{ opacity: 0.7 }}>
+          <p className={`font-mono text-[9px] font-medium uppercase tracking-[0.5px] ${c.text} opacity-70`}>
             {frontLabel}
           </p>
           <p className={`mt-2 font-mono text-3xl font-semibold ${c.accent}`}>
@@ -50,7 +50,7 @@ export default function FlipCard({ frontLabel, frontValue, frontSub, backText, c
               {frontSub}
             </p>
           )}
-          <p className={`mt-auto font-mono text-[9px] ${c.text}`} style={{ opacity: 0.5 }}>
+          <p className={`mt-auto font-mono text-[9px] ${c.text} opacity-50`}>
             Hover to flip ↻
           </p>
         </div>
