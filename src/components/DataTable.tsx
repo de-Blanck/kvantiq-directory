@@ -213,8 +213,18 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
                 return (
                   <th
                     key={header.id}
-                    className={`pb-2 pr-4 font-medium select-none ${canSort ? 'cursor-pointer hover:text-text-primary transition-colors duration-75' : ''}`}
+                    className={`pb-2 pr-4 font-medium select-none ${canSort ? 'cursor-pointer hover:text-text-primary transition-colors duration-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent' : ''}`}
                     onClick={canSort ? header.column.getToggleSortingHandler() : undefined}
+                    {...(canSort ? {
+                      tabIndex: 0,
+                      role: 'button' as const,
+                      onKeyDown: (e: React.KeyboardEvent) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          header.column.getToggleSortingHandler()?.(e);
+                        }
+                      },
+                    } : {})}
                   >
                     <span className="inline-flex items-center gap-1">
                       {flexRender(header.column.columnDef.header, header.getContext())}
@@ -234,8 +244,16 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
             {table.getRowModel().rows.map(row => (
               <tr
                 key={row.id}
-                className="border-b border-border cursor-pointer hover:bg-elevated transition-colors duration-75"
+                tabIndex={0}
+                role="link"
+                className="border-b border-border cursor-pointer hover:bg-elevated transition-colors duration-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
                 onClick={() => { window.location.href = row.original.href; }}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    window.location.href = row.original.href;
+                  }
+                }}
               >
                 {row.getVisibleCells().map(cell => (
                   <td key={cell.id} className="py-2.5 pr-4 text-text-secondary">
