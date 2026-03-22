@@ -1,52 +1,19 @@
-# Weekly Agent — Remaining Tasks
+# UI Fixes — Accessibility, Visual Consistency, Polish
 
-Plan: `docs/superpowers/plans/2026-03-21-weekly-agent.md`
-Spec: `docs/superpowers/specs/2026-03-21-weekly-agent-design.md`
-Branch: `feature/weekly-agent`
+All work on `main` branch at `E:\kvantiq-directory\`.
 
-## Phase 1: Data Layer
+## Critical
 
-- [x] Task 2: Implement SQLite schema initialization in `scripts/db/schema.ts` and `scripts/db/index.ts`
-- [x] Task 3: Write migration script `scripts/migrate-to-db.ts` to import existing JSON entries into SQLite
+- [x] Fix transparency overview page — replace all 26 inline `style=` attributes using undefined CSS vars (`--text-secondary`, `--bg-secondary`, `--accent-primary`, `--border-primary`) with Tailwind classes (`text-text-secondary`, `bg-surface`, `text-accent`, `border-border`). Also replace `letter-spacing` inline styles with `tracking-[-0.3px]`. File: `src/pages/transparency/index.astro`
+- [x] Add global focus-visible styles — add `:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }` to `src/styles/global.css`. This fixes keyboard navigation visibility across all interactive elements (WCAG 2.4.7).
+- [ ] Make DataTable rows keyboard-accessible — in `src/components/DataTable.tsx`, add `tabIndex={0}`, `role="link"`, `onKeyDown` handler (Enter/Space → navigate) to clickable `<tr>` elements. Also add `focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent` class. Do the same for sortable `<th>` headers (add `tabIndex={0}`, `role="button"`, `onKeyDown`).
 
-## Phase 2: Custom MCP Tools
+## Important
 
-- [x] Task 4: Implement Resend email tool in `scripts/tools/mcp-server.ts`
-- [x] Task 5: Implement ClickUp task tool in `scripts/tools/mcp-server.ts`
+- [ ] Fix mobile menu — in `src/components/Header.astro`, add `menu.querySelectorAll('a').forEach(function(link) { link.addEventListener('click', closeMenu); });` after the overlay click listener in the `<script is:inline>` block so menu closes when clicking a nav link.
+- [ ] Fix FlipCard colors — in `src/components/FlipCard.tsx`, replace the hardcoded light-mode `colorMap` object with dark-theme-compatible values: `info` → `bg-info/10 border-info/20 text-info`, `ok` → `bg-accent/10 border-accent/20 text-accent`, `warn` → `bg-warn/10 border-warn/20 text-warn`. Also replace `style={{ opacity: 0.7 }}` with class `opacity-70` and `style={{ opacity: 0.5 }}` with class `opacity-50`.
 
-## Phase 3: Agent Core
+## Polish
 
-- [x] Task 6: Write the system prompt in `scripts/prompts/system-prompt.md`
-- [x] Task 7: Create curated sources file `data/sources.json` with all research sources from spec
-- [x] Task 8: Write the main agent script `scripts/weekly-agent.ts` (uses Claude CLI, not Agent SDK)
-
-## Phase 4: Transparency Data Generation
-
-- [x] Task 9: Write transparency data generator `scripts/generate-transparency-data.ts` that queries SQLite and outputs JSON to `data/generated/`
-
-## Phase 5: Transparency Pages
-
-- [x] Task 10: Create transparency overview page `src/pages/transparency/index.astro`
-- [x] Task 11: Create audit dashboard page `src/pages/transparency/audit.astro` with Chart.js
-- [x] Task 12: Create intelligence dashboard page `src/pages/transparency/intelligence.astro` with Chart.js
-
-## Phase 6: GitHub Actions
-
-- [x] Task 13: Create weekly agent workflow `.github/workflows/weekly-agent.yml` (Sunday cron, runs agent, commits DB)
-
-## Phase 7: Integration & Testing
-
-- [x] Task 14: Add navigation link to transparency pages in Header component
-- [x] Task 15: Add prebuild script for transparency data generation in `package.json`
-- [ ] Task 16: Manual end-to-end test — run migration, run agent dry-run, verify transparency pages build
-
-## Post-review fixes applied
-
-- [x] Added UNIQUE(collection, slug) index to entries table for idempotent migration
-- [x] Added performance indexes on entries, audits, events, companies tables
-- [x] Fixed migration to use git creation dates instead of TODAY for date_added
-- [x] Fixed founded_date format to ISO 8601 (YYYY-01-01)
-- [x] Fixed intelligence dashboard field name mismatches (quarter/total_eur, market snapshot fields)
-- [x] Added actual fallback file writing to MCP server tools on failure
-- [x] Added 11 missing curated sources from spec (Magne, QBusiness, SINTEF, VTT, DLR, AIT, Innsbruck, ETH, EPFL, EIC)
-- [x] Migration now prefers worktree content dir, falls back to repo root
+- [ ] Replace standard Tailwind-equivalent custom sizes — find and replace: `text-[12px]` → `text-xs`, `text-[14px]` → `text-sm`, `text-[16px]` → `text-base` across all files. These are exact matches to Tailwind defaults.
+- [ ] Replace inline letter-spacing styles with Tailwind tracking classes across `src/pages/index.astro` (`tracking-[-0.5px]`), `src/pages/about.astro`, `src/pages/transparency/intelligence.astro`, `src/pages/transparency/audit.astro` (all `tracking-[-0.3px]`).
