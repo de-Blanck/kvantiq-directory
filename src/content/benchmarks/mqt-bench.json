@@ -5,6 +5,7 @@
   "category": "other",
   "tags": ["benchmark-suite", "scalable", "compiler", "standardization"],
   "description": "MQT Bench is a comprehensive quantum computing benchmark suite containing over 70 algorithm implementations across various application domains. Developed by the Technical University of Munich, it provides quantum circuits at different abstraction levels (2 to 130 qubits) and in multiple formats. MQT Bench is designed for evaluating quantum compilers, simulators, and hardware platforms.",
+  "hardware": "Multi-platform",
   "framework": "Qiskit",
   "qubits": 130,
   "reproducible": true,

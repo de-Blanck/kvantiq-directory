@@ -5,6 +5,7 @@
   "category": "optimization",
   "tags": ["benchmark-suite", "application-oriented", "scalable", "hardware-agnostic"],
   "description": "SupermarQ is an application-oriented quantum benchmark suite developed by the SuperTech group. It focuses on practical quantum algorithms including QAOA, VQE, and Hamiltonian simulation with scalable problem sizes. SupermarQ provides both algorithm implementations and standardized metrics for evaluating quantum hardware performance on real-world applications.",
+  "hardware": "Multi-platform",
   "qubits": 0,
   "reproducible": true,
   "datePublished": "2022-02-22",

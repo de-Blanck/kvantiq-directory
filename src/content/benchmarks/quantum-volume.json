@@ -5,6 +5,7 @@
   "category": "other",
   "tags": ["metric", "standardization", "IBM", "hardware-performance"],
   "description": "Quantum Volume is a hardware-agnostic metric developed by IBM to measure the capability of quantum computers. It uses random quantum circuits to test the combination of qubit count, gate fidelity, connectivity, and error rates. Quantum Volume provides a single-number metric that captures overall quantum processor performance and has become an industry-standard benchmark.",
+  "hardware": "Multi-platform",
   "framework": "IBM Qiskit",
   "qubits": 0,
   "reproducible": true,

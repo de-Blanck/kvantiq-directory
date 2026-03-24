@@ -6,6 +6,8 @@
   "description": "QOSF Monthly Challenges are ongoing quantum computing coding challenges released monthly by the Quantum Open Source Foundation. Each challenge focuses on different quantum algorithms, protocols, or applications and is designed to help participants learn through hands-on problem-solving. Solutions are shared on GitHub and discussed within the QOSF community.",
   "website": "https://github.com/qosf/monthly-challenges",
   "status": "active",
+  "dateStart": "2020-03-01",
+  "prizes": "Community recognition and mentorship",
   "location": "Online",
   "sources": [
     {

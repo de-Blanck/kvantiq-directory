@@ -5,6 +5,7 @@
   "category": "optimization",
   "tags": ["knapsack", "constrained-optimization", "QAOA", "combinatorial", "NISQ"],
   "description": "Benchmark of quantum optimization algorithms applied to the knapsack problem, a fundamental NP-hard constrained combinatorial optimization problem. Recent advances include copula-QAOA for hardware-efficient constraint handling and Amplitude Amplification-mixer QAOA (AAM-QAOA), which uses a quantum tree generator for feasible-solution state preparation. Benchmark sets test instances with up to 20 items.",
+  "hardware": "Simulator / hardware-agnostic",
   "framework": "Qiskit, PennyLane",
   "qubits": 20,
   "reproducible": true,

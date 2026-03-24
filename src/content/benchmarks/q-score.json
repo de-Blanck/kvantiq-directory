@@ -5,6 +5,7 @@
   "category": "optimization",
   "tags": ["metric", "QAOA", "standardization", "Atos"],
   "description": "Q-Score is a quantum computing benchmark metric developed by Atos that evaluates quantum processors using QAOA applied to the MaxCut problem. It provides a standardized, hardware-agnostic way to compare quantum computing platforms. Q-Score measures the maximum number of variables in a MaxCut problem that can be solved with acceptable quality.",
+  "hardware": "Multi-platform",
   "framework": "Qiskit",
   "qubits": 0,
   "reproducible": true,
