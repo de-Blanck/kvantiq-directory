@@ -1,0 +1,3146 @@
+[
+  {
+    "slug": "terra-quantum",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from terra-quantum.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "eic-accelerator",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from eic-accelerator.json"
+      }
+    ]
+  },
+  {
+    "slug": "bmbf-quantum-technologies",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from bmbf-quantum-technologies.json"
+      }
+    ]
+  },
+  {
+    "slug": "knapsack-quantum",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from knapsack-quantum.json"
+      }
+    ]
+  },
+  {
+    "slug": "qibo",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qibo.json"
+      }
+    ]
+  },
+  {
+    "slug": "parityqc",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from parityqc.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "unitary-fund",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from unitary-fund.json"
+      }
+    ]
+  },
+  {
+    "slug": "vehicle-routing-optimization",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from vehicle-routing-optimization.json"
+      }
+    ]
+  },
+  {
+    "slug": "xiphera",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from xiphera.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "zuriq",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from zuriq.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "iqm",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from iqm.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "qworld",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qworld.json"
+      }
+    ]
+  },
+  {
+    "slug": "n2-dissociation",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from n2-dissociation.json"
+      }
+    ]
+  },
+  {
+    "slug": "quantum-katas",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantum-katas.json"
+      }
+    ]
+  },
+  {
+    "slug": "phasecraft",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from phasecraft.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "fermi-hubbard",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from fermi-hubbard.json"
+      }
+    ]
+  },
+  {
+    "slug": "ibm-quantum-challenge",
+    "collection": "challenges",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from ibm-quantum-challenge.json"
+      }
+    ]
+  },
+  {
+    "slug": "low-noise-factory",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from low-noise-factory.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "orange-quantum-systems",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from orange-quantum-systems.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "planqc",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from planqc.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "qed-c-benchmarks",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qed-c-benchmarks.json"
+      }
+    ]
+  },
+  {
+    "slug": "stim",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from stim.json"
+      }
+    ]
+  },
+  {
+    "slug": "quantum-volume",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantum-volume.json"
+      }
+    ]
+  },
+  {
+    "slug": "qilimanjaro",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qilimanjaro.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "multiverse-computing",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from multiverse-computing.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "arctic-instruments",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from arctic-instruments.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "qmill",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qmill.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "qiskit",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qiskit.json"
+      }
+    ]
+  },
+  {
+    "slug": "adamantq",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from adamantq.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "bosch-quantum-sensing",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from bosch-quantum-sensing.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "transverse-field-ising",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from transverse-field-ising.json"
+      }
+    ]
+  },
+  {
+    "slug": "drug-discovery-hybrid",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from drug-discovery-hybrid.json"
+      }
+    ]
+  },
+  {
+    "slug": "quantum-inspire",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantum-inspire.json"
+      }
+    ]
+  },
+  {
+    "slug": "fraud-detection",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from fraud-detection.json"
+      }
+    ]
+  },
+  {
+    "slug": "kiutra",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from kiutra.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "q-score",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from q-score.json"
+      }
+    ]
+  },
+  {
+    "slug": "sparrow-quantum",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from sparrow-quantum.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "mqt-bench",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from mqt-bench.json"
+      }
+    ]
+  },
+  {
+    "slug": "delft-circuits",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from delft-circuits.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "xeb-cross-entropy",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from xeb-cross-entropy.json"
+      }
+    ]
+  },
+  {
+    "slug": "credit-risk-modeling",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from credit-risk-modeling.json"
+      }
+    ]
+  },
+  {
+    "slug": "battery-materials-simulation",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from battery-materials-simulation.json"
+      }
+    ]
+  },
+  {
+    "slug": "hqs",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from hqs.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "berlin-quantum-hackathon",
+    "collection": "challenges",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from berlin-quantum-hackathon.json"
+      }
+    ]
+  },
+  {
+    "slug": "quantum-amsterdam",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantum-amsterdam.json"
+      }
+    ]
+  },
+  {
+    "slug": "pulser",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from pulser.json"
+      }
+    ]
+  },
+  {
+    "slug": "telecom-network-optimization",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from telecom-network-optimization.json"
+      }
+    ]
+  },
+  {
+    "slug": "qblox",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qblox.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "classiq-coding-competition",
+    "collection": "challenges",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from classiq-coding-competition.json"
+      }
+    ]
+  },
+  {
+    "slug": "cuda-q",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from cuda-q.json"
+      }
+    ]
+  },
+  {
+    "slug": "qruise",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qruise.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "quantumdiamonds",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantumdiamonds.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "quic",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quic.json"
+      }
+    ]
+  },
+  {
+    "slug": "groove-quantum",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "added",
+        "details": "{\"source\":\"weekly-agent-2026-03-21\",\"signals\":[\"funding announcement\",\"live website\"]}"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "weather-forecasting",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from weather-forecasting.json"
+      }
+    ]
+  },
+  {
+    "slug": "algorithmiq",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from algorithmiq.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "portfolio-optimization",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from portfolio-optimization.json"
+      }
+    ]
+  },
+  {
+    "slug": "eu-quantum-flagship",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from eu-quantum-flagship.json"
+      }
+    ]
+  },
+  {
+    "slug": "qureca",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qureca.json"
+      }
+    ]
+  },
+  {
+    "slug": "tudelft-quantum-101",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from tudelft-quantum-101.json"
+      }
+    ]
+  },
+  {
+    "slug": "q-bird",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "added",
+        "details": "{\"source\":\"weekly-agent-2026-03-21\",\"signals\":[\"funding announcement\",\"live website\"]}"
+      }
+    ]
+  },
+  {
+    "slug": "universal-quantum",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from universal-quantum.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "qhack-2025",
+    "collection": "challenges",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qhack-2025.json"
+      }
+    ]
+  },
+  {
+    "slug": "quantware",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantware.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "qbee",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qbee.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "quantum-chemistry-materials",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantum-chemistry-materials.json"
+      }
+    ]
+  },
+  {
+    "slug": "id-quantique",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from id-quantique.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "algorithmic-qubits",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from algorithmic-qubits.json"
+      }
+    ]
+  },
+  {
+    "slug": "qt-sense",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "added",
+        "details": "{\"source\":\"weekly-agent-2026-03-21\",\"signals\":[\"funding announcement\",\"live website\"]}"
+      }
+    ]
+  },
+  {
+    "slug": "mitiq",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from mitiq.json"
+      }
+    ]
+  },
+  {
+    "slug": "welinq",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from welinq.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "mqt",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from mqt.json"
+      }
+    ]
+  },
+  {
+    "slug": "protein-folding-simulation",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from protein-folding-simulation.json"
+      }
+    ]
+  },
+  {
+    "slug": "quanscient",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quanscient.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "orca-computing",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from orca-computing.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "catalyst-design-green-hydrogen",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from catalyst-design-green-hydrogen.json"
+      }
+    ]
+  },
+  {
+    "slug": "energy-grid-optimization",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from energy-grid-optimization.json"
+      }
+    ]
+  },
+  {
+    "slug": "quantum-internet-alliance",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantum-internet-alliance.json"
+      }
+    ]
+  },
+  {
+    "slug": "aircraft-loading-optimization",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from aircraft-loading-optimization.json"
+      }
+    ]
+  },
+  {
+    "slug": "semiqon",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from semiqon.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "creotech-instruments",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from creotech-instruments.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "derivatives-pricing",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from derivatives-pricing.json"
+      }
+    ]
+  },
+  {
+    "slug": "oqc",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from oqc.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "nu-quantum",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from nu-quantum.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "iquhack-2026",
+    "collection": "challenges",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from iquhack-2026.json"
+      }
+    ]
+  },
+  {
+    "slug": "production-scheduling",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from production-scheduling.json"
+      }
+    ]
+  },
+  {
+    "slug": "riverlane",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"web-search\",\"note\":\"403 was bot protection. March 12 2026 QEC roadmap published. Nature Comms paper Dec 2025. Highly active.\",\"date\":\"2026-03-21\"}"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "flagged",
+        "details": "{\"method\":\"http-head\",\"status\":403,\"note\":\"Likely bot-protection (Cloudflare). Website may still be live. Requires manual check or web search.\",\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "qutools",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qutools.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "airbus-bmw-quantum-challenge",
+    "collection": "challenges",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from airbus-bmw-quantum-challenge.json"
+      }
+    ]
+  },
+  {
+    "slug": "carbon-emissions-optimization",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from carbon-emissions-optimization.json"
+      }
+    ]
+  },
+  {
+    "slug": "thinkquantum",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "added",
+        "details": "{\"source\":\"weekly-agent-2026-03-21\",\"signals\":[\"funding announcement\",\"live website\"]}"
+      }
+    ]
+  },
+  {
+    "slug": "beit",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from beit.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "vqe-hydrogen",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from vqe-hydrogen.json"
+      }
+    ]
+  },
+  {
+    "slug": "tsp-quantum",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from tsp-quantum.json"
+      }
+    ]
+  },
+  {
+    "slug": "cirq",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from cirq.json"
+      }
+    ]
+  },
+  {
+    "slug": "qtlabs",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qtlabs.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "qubo-benchmark",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qubo-benchmark.json"
+      }
+    ]
+  },
+  {
+    "slug": "strawberry-fields",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from strawberry-fields.json"
+      }
+    ]
+  },
+  {
+    "slug": "quantum-random-number-generation",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantum-random-number-generation.json"
+      }
+    ]
+  },
+  {
+    "slug": "quantum-generative-model",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantum-generative-model.json"
+      }
+    ]
+  },
+  {
+    "slug": "openqasm",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from openqasm.json"
+      }
+    ]
+  },
+  {
+    "slug": "quantum-foundry-copenhagen",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantum-foundry-copenhagen.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "denmark-quantum-funding",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from denmark-quantum-funding.json"
+      }
+    ]
+  },
+  {
+    "slug": "variational-classifier",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from variational-classifier.json"
+      }
+    ]
+  },
+  {
+    "slug": "wacqt",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from wacqt.json"
+      }
+    ]
+  },
+  {
+    "slug": "equal1",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "added",
+        "details": "{\"source\":\"weekly-agent-2026-03-21\",\"signals\":[\"funding announcement\",\"live website\"]}"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "aqora",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from aqora.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "quobly",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quobly.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "qtedu",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qtedu.json"
+      }
+    ]
+  },
+  {
+    "slug": "bluefors",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from bluefors.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "qnami",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qnami.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "aqt",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from aqt.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "supply-chain-optimization",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from supply-chain-optimization.json"
+      }
+    ]
+  },
+  {
+    "slug": "eviden-quantum",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from eviden-quantum.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "qdevil",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qdevil.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "qaoa-maxcut",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qaoa-maxcut.json"
+      }
+    ]
+  },
+  {
+    "slug": "finnish-quantum-flagship",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from finnish-quantum-flagship.json"
+      }
+    ]
+  },
+  {
+    "slug": "zurich-instruments",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from zurich-instruments.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "xeedq",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from xeedq.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "randomized-benchmarking",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from randomized-benchmarking.json"
+      }
+    ]
+  },
+  {
+    "slug": "mirror-circuits",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from mirror-circuits.json"
+      }
+    ]
+  },
+  {
+    "slug": "qutip",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qutip.json"
+      }
+    ]
+  },
+  {
+    "slug": "kipu-quantum",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from kipu-quantum.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "cubiq-technologies",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "added",
+        "details": "{\"source\":\"weekly-agent-2026-03-21\",\"signals\":[\"funding announcement\",\"live website\"]}"
+      }
+    ]
+  },
+  {
+    "slug": "keequant",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from keequant.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "quantum-machine-learning-classification",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantum-machine-learning-classification.json"
+      }
+    ]
+  },
+  {
+    "slug": "wacqt-quantum-hackathon-2026",
+    "collection": "challenges",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from wacqt-quantum-hackathon-2026.json"
+      }
+    ]
+  },
+  {
+    "slug": "quantastica",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantastica.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "quantum-optics-jena",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantum-optics-jena.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "quantum-game-jam-2025",
+    "collection": "challenges",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantum-game-jam-2025.json"
+      }
+    ]
+  },
+  {
+    "slug": "danish-quantum-community",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from danish-quantum-community.json"
+      }
+    ]
+  },
+  {
+    "slug": "warehouse-optimization",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from warehouse-optimization.json"
+      }
+    ]
+  },
+  {
+    "slug": "hubbard-model",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from hubbard-model.json"
+      }
+    ]
+  },
+  {
+    "slug": "xprize-quantum-applications",
+    "collection": "challenges",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from xprize-quantum-applications.json"
+      }
+    ]
+  },
+  {
+    "slug": "grover-search-scaling",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from grover-search-scaling.json"
+      }
+    ]
+  },
+  {
+    "slug": "kvantify",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from kvantify.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "qkd-throughput",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qkd-throughput.json"
+      }
+    ]
+  },
+  {
+    "slug": "qnn-classification",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qnn-classification.json"
+      }
+    ]
+  },
+  {
+    "slug": "perceval",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from perceval.json"
+      }
+    ]
+  },
+  {
+    "slug": "shor-factoring",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from shor-factoring.json"
+      }
+    ]
+  },
+  {
+    "slug": "blaise-pascal-quantum-challenge-2025",
+    "collection": "challenges",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from blaise-pascal-quantum-challenge-2025.json"
+      }
+    ]
+  },
+  {
+    "slug": "portfolio-optimization",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from portfolio-optimization.json"
+      }
+    ]
+  },
+  {
+    "slug": "supermarq",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from supermarq.json"
+      }
+    ]
+  },
+  {
+    "slug": "france-national-quantum-strategy",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from france-national-quantum-strategy.json"
+      }
+    ]
+  },
+  {
+    "slug": "brilliant-quantum",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from brilliant-quantum.json"
+      }
+    ]
+  },
+  {
+    "slug": "qti",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qti.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "projectq",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from projectq.json"
+      }
+    ]
+  },
+  {
+    "slug": "eurohpc-quantum-computing",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from eurohpc-quantum-computing.json"
+      }
+    ]
+  },
+  {
+    "slug": "rotonium",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from rotonium.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "netqasm",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from netqasm.json"
+      }
+    ]
+  },
+  {
+    "slug": "alice-and-bob",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from alice-and-bob.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "xanadu-codebook",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from xanadu-codebook.json"
+      }
+    ]
+  },
+  {
+    "slug": "h2o-molecule",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from h2o-molecule.json"
+      }
+    ]
+  },
+  {
+    "slug": "scalinq",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from scalinq.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "qkd-networks",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qkd-networks.json"
+      }
+    ]
+  },
+  {
+    "slug": "ibm-quantum-learning",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from ibm-quantum-learning.json"
+      }
+    ]
+  },
+  {
+    "slug": "saxonq",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from saxonq.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "quantum-delta-nl",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantum-delta-nl.json"
+      }
+    ]
+  },
+  {
+    "slug": "qunorth",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qunorth.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "quantum-motion",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantum-motion.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "carbon-capture-modeling",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from carbon-capture-modeling.json"
+      }
+    ]
+  },
+  {
+    "slug": "veriqloud",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from veriqloud.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "quantum-kernel-methods",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantum-kernel-methods.json"
+      }
+    ]
+  },
+  {
+    "slug": "c12",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from c12.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "quantum-industries",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantum-industries.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "quantum-approximate-counting",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantum-approximate-counting.json"
+      }
+    ]
+  },
+  {
+    "slug": "qed-c-application-benchmarks",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qed-c-application-benchmarks.json"
+      }
+    ]
+  },
+  {
+    "slug": "clops",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from clops.json"
+      }
+    ]
+  },
+  {
+    "slug": "qosf-monthly-challenges",
+    "collection": "challenges",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qosf-monthly-challenges.json"
+      }
+    ]
+  },
+  {
+    "slug": "quantinuum",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quantinuum.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "qphox",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qphox.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "silent-waves",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "added",
+        "details": "{\"source\":\"weekly-agent-2026-03-21\",\"signals\":[\"funding announcement\",\"live website\"]}"
+      }
+    ]
+  },
+  {
+    "slug": "pasqal",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from pasqal.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "aqarios",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from aqarios.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "weighted-maxcut",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from weighted-maxcut.json"
+      }
+    ]
+  },
+  {
+    "slug": "quandela",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quandela.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "eurohpc-quantum-grand-challenge",
+    "collection": "challenges",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from eurohpc-quantum-grand-challenge.json"
+      }
+    ]
+  },
+  {
+    "slug": "quix-quantum",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from quix-quantum.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "tket",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from tket.json"
+      }
+    ]
+  },
+  {
+    "slug": "ephos",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from ephos.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "cryptography-post-quantum",
+    "collection": "use-cases",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from cryptography-post-quantum.json"
+      }
+    ]
+  },
+  {
+    "slug": "quantum-dice",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "added",
+        "details": "{\"source\":\"weekly-agent-2026-03-21\",\"signals\":[\"funding announcement\",\"live website\"]}"
+      }
+    ]
+  },
+  {
+    "slug": "qosf",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qosf.json"
+      }
+    ]
+  },
+  {
+    "slug": "lih-ground-state",
+    "collection": "benchmarks",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from lih-ground-state.json"
+      }
+    ]
+  },
+  {
+    "slug": "pixel-photonics",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from pixel-photonics.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "pennylane",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from pennylane.json"
+      }
+    ]
+  },
+  {
+    "slug": "qubit-pharmaceuticals",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from qubit-pharmaceuticals.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "eleqtron",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from eleqtron.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "frostbyte",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "added",
+        "details": "{\"source\":\"weekly-agent-2026-03-21\",\"signals\":[\"funding announcement\",\"live website\"]}"
+      }
+    ]
+  },
+  {
+    "slug": "pyzx",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from pyzx.json"
+      }
+    ]
+  },
+  {
+    "slug": "q-ant",
+    "collection": "companies",
+    "current_confidence": "HIGH",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from q-ant.json"
+      },
+      {
+        "date": "2026-03-21",
+        "confidence": "HIGH",
+        "action": "verified",
+        "details": "{\"method\":\"http-head\",\"status\":200,\"date\":\"2026-03-21\"}"
+      }
+    ]
+  },
+  {
+    "slug": "cern-qti-lectures",
+    "collection": "resources",
+    "current_confidence": "MEDIUM",
+    "date_last_verified": "2026-03-21",
+    "audit_history": [
+      {
+        "date": "2026-03-21",
+        "confidence": "MEDIUM",
+        "action": "migrated",
+        "details": "Migrated from cern-qti-lectures.json"
+      }
+    ]
+  }
+]

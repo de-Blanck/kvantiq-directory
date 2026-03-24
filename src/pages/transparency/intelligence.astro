@@ -1,0 +1,220 @@
+---
+import { readFileSync, existsSync } from 'fs';
+import { resolve } from 'path';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+function loadJson(filename: string, fallback: any = []) {
+  const filePath = resolve('data/generated', filename);
+  if (!existsSync(filePath)) return fallback;
+  try {
+    return JSON.parse(readFileSync(filePath, 'utf-8'));
+  } catch {
+    return fallback;
+  }
+}
+
+const events = loadJson('events.json', []);
+const marketSnapshot = loadJson('market-snapshot.json', {});
+const fundingTimeline = loadJson('funding-timeline.json', []);
+
+const eventIcons: Record<string, string> = {
+  funding:        '&#128176;',
+  acquisition:    '&#129309;',
+  closure:        '&#128683;',
+  breakthrough:   '&#128640;',
+  product_launch: '&#128230;',
+  partnership:    '&#128101;',
+  grant_awarded:  '&#127942;',
+  milestone:      '&#11088;',
+  founded:        '&#127793;',
+  ipo:            '&#128200;',
+  merger:         '&#128260;',
+  pivot:          '&#128259;',
+  expansion:      '&#127758;',
+};
+
+const hasFundingData = Array.isArray(fundingTimeline) && fundingTimeline.length > 0;
+
+const fundingLabels = hasFundingData ? JSON.stringify(fundingTimeline.map((d: any) => d.quarter ?? '')) : '[]';
+const fundingValues = hasFundingData ? JSON.stringify(fundingTimeline.map((d: any) => d.total_eur ?? 0)) : '[]';
+---
+<BaseLayout
+  title="Industry Intelligence — Kvantiq Directory"
+  description="Funding timelines, ecosystem events, and market snapshots for the European quantum computing industry."
+>
+  <main data-pagefind-ignore>
+
+    <!-- Page header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold tracking-[-0.3px] text-text">
+        Industry Intelligence
+      </h1>
+      <p class="mt-2 text-base text-text-secondary leading-relaxed">
+        Funding timelines, ecosystem events, and market snapshots for the European quantum computing industry.
+      </p>
+    </div>
+
+    <!-- Market Snapshot -->
+    <section class="mb-10">
+      <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted mb-4">
+        Market Snapshot
+      </h2>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+        <!-- Total tracked -->
+        <div class="rounded-xl border border-border bg-surface p-5">
+          <p class="font-mono text-[10px] font-medium uppercase tracking-[0.5px] text-text-muted">Total Tracked</p>
+          <p class="mt-2 text-3xl font-bold text-text font-mono">
+            {marketSnapshot.total_companies_tracked ?? '—'}
+          </p>
+          <p class="mt-1 text-xs text-text-secondary">companies &amp; entities</p>
+        </div>
+
+        <!-- Active -->
+        <div class="rounded-xl border border-border bg-surface p-5">
+          <p class="font-mono text-[10px] font-medium uppercase tracking-[0.5px] text-text-muted">Active</p>
+          <p class="mt-2 text-3xl font-bold text-text font-mono">
+            {marketSnapshot.total_active ?? '—'}
+          </p>
+          <p class="mt-1 text-xs text-text-secondary">currently operating</p>
+        </div>
+
+        <!-- Countries -->
+        <div class="rounded-xl border border-border bg-surface p-5">
+          <p class="font-mono text-[10px] font-medium uppercase tracking-[0.5px] text-text-muted">Countries</p>
+          <p class="mt-2 text-3xl font-bold text-text font-mono">
+            {marketSnapshot.countries_represented ?? '—'}
+          </p>
+          <p class="mt-1 text-xs text-text-secondary">European countries</p>
+        </div>
+
+        <!-- Funding YTD -->
+        <div class="rounded-xl border border-border bg-surface p-5">
+          <p class="font-mono text-[10px] font-medium uppercase tracking-[0.5px] text-text-muted">Funding YTD</p>
+          <p class="mt-2 text-3xl font-bold text-text font-mono">
+            {marketSnapshot.total_funding_eur_ytd != null ? `€${(marketSnapshot.total_funding_eur_ytd / 1_000_000).toFixed(1)}M` : '—'}
+          </p>
+          <p class="mt-1 text-xs text-text-secondary">disclosed in EUR</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Funding Timeline -->
+    {hasFundingData && (
+      <section class="mb-10">
+        <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted mb-4">
+          Funding Timeline
+        </h2>
+        <div class="rounded-xl border border-border bg-surface p-6">
+          <canvas id="funding-chart" height="260" aria-label="Funding timeline bar chart" role="img"></canvas>
+        </div>
+      </section>
+    )}
+
+    <!-- Recent Events -->
+    <section class="mb-10">
+      <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted mb-4">
+        Recent Events
+      </h2>
+
+      {events.length === 0 ? (
+        <div class="rounded-xl border border-border bg-surface px-6 py-10 text-center">
+          <p class="text-sm text-text-muted">No events recorded yet.</p>
+        </div>
+      ) : (
+        <div class="rounded-xl border border-border bg-surface divide-y divide-border overflow-hidden">
+          <div class="max-h-[600px] overflow-y-auto">
+            {events.map((event: any) => {
+              const iconHtml = eventIcons[event.event_type] ?? '&#8226;';
+              const isFunding = event.event_type === 'funding' || event.event_type === 'grant_awarded' || event.event_type === 'ipo';
+              return (
+                <div class="flex items-start gap-4 px-5 py-4 transition-colors duration-[120ms] hover:bg-surface-alt">
+                  <!-- Icon -->
+                  <span class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-surface-alt border border-border text-base leading-none" set:html={iconHtml} />
+
+                  <!-- Body -->
+                  <div class="min-w-0 flex-1">
+                    <div class="flex flex-wrap items-center gap-2">
+                      <span class="text-sm font-semibold text-text">{event.company_name ?? event.company ?? '—'}</span>
+                      <span class="rounded-md border border-border bg-surface-alt px-1.5 py-0.5 font-mono text-[10px] text-text-muted capitalize">
+                        {(event.event_type ?? '').replace(/_/g, ' ')}
+                      </span>
+                      {isFunding && event.amount_eur_m != null && (
+                        <span class="rounded-md border border-ok-border bg-ok-surface px-1.5 py-0.5 font-mono text-[10px] font-semibold text-ok-text">
+                          €{event.amount_eur_m}M
+                        </span>
+                      )}
+                    </div>
+                    {event.headline && (
+                      <p class="mt-0.5 text-xs text-text-secondary leading-relaxed">{event.headline}</p>
+                    )}
+                  </div>
+
+                  <!-- Date -->
+                  {event.date && (
+                    <time datetime={event.date} class="shrink-0 font-mono text-[10px] text-text-muted mt-1">
+                      {event.date}
+                    </time>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </section>
+
+  </main>
+</BaseLayout>
+
+{hasFundingData && (
+  <script define:vars={{ fundingLabels, fundingValues }}>
+    (async () => {
+      const { Chart, BarElement, CategoryScale, LinearScale, Tooltip, BarController } = await import(
+        'https://cdn.jsdelivr.net/npm/chart.js@4/+esm'
+      );
+
+      Chart.register(BarElement, CategoryScale, LinearScale, Tooltip, BarController);
+
+      const ctx = document.getElementById('funding-chart');
+      if (!ctx) return;
+
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: JSON.parse(fundingLabels),
+          datasets: [
+            {
+              label: 'Funding (€M)',
+              data: JSON.parse(fundingValues),
+              backgroundColor: '#06b6d4',
+              borderRadius: 4,
+              borderSkipped: false,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: true,
+          plugins: {
+            tooltip: { enabled: true },
+            legend: { display: false },
+          },
+          scales: {
+            y: {
+              ticks: { color: '#94a3b8' },
+              grid: { color: '#1e293b' },
+              border: { display: false },
+            },
+            x: {
+              ticks: { color: '#94a3b8' },
+              grid: { display: false },
+              border: { display: false },
+            },
+          },
+        },
+      });
+    })();
+  </script>
+)}

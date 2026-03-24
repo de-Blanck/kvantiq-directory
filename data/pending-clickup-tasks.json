@@ -1,0 +1,16 @@
+[
+  {
+    "title": "[BORDERLINE] Akhetonics (Germany) — optical computing with quantum mode",
+    "description": "**Company:** Akhetonics\n**Website:** https://www.akhetonics.com\n**Country:** Germany (Berlin)\n**Founded:** 2021\n**Funding:** €6M seed (November 2024, Matterwave Ventures)\n\n**Issue:** Akhetonics builds an all-optical XPU (cross-domain processor) that operates entirely in the photonic domain. Quantum computing is one operating mode of the XPU (via the EU SPOC project on scalable CV quantum computing with Fraunhofer IZM), but the primary product is optical computing — not quantum.\n\n**Activity signal:** LASER World of Photonics exhibitor June 2025; active website.\n\n**Decision needed:** Does Akhetonics meet the 'genuinely quantum' quality gate? The core business is photonic/optical computing with quantum as one mode. If yes, add to directory. If no, exclude and add to blocklist.\n\n**Research agent recommendation:** SKIP pending human review — borderline quantum relevance.",
+    "priority": 2,
+    "tags": "borderline,quality-gate,germany,optical-computing,quantum-relevance",
+    "created_by_run": "2026-03-21"
+  },
+  {
+    "title": "[VERIFY] Delft Networks (Netherlands) — no confirmed standalone website",
+    "description": "**Company:** Delft Networks\n**Country:** Netherlands (Delft)\n**Founded:** 2024\n**What they do:** Quantum networking — entanglement networks using solid-state diamond NV-center qubits. Spun out of QuTech in 2024.\n**Funding:** Believed to have received EIC Transition grant (~€2.5M).\n\n**Issue:** No confirmed standalone website found. Only evidence is the QuTech spinouts page (https://qutech.nl/business-innovation/startups/). Fails quality gate #1 (live website required).\n\n**Decision needed:**\n1. Verify whether Delft Networks has a live website\n2. If yes, add to directory with confirmed sources\n3. If no, hold and re-check in next weekly run\n\n**Research agent recommendation:** SKIP this run. Retry next week.",
+    "priority": 3,
+    "tags": "verify-website,netherlands,quantum-networking,qutech-spinout,hold",
+    "created_by_run": "2026-03-21"
+  }
+]
