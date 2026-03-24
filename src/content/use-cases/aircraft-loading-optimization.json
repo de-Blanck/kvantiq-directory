@@ -8,6 +8,7 @@
   "problem": "Aircraft loading optimization requires assigning cargo items to specific positions in an aircraft while satisfying strict weight distribution, center-of-gravity balance, and volume constraints. The problem is NP-hard in its general form, and suboptimal loading leads to increased fuel consumption, safety risks, and costly re-loading delays.",
   "approach": "The problem is formulated as a QUBO model compatible with quantum annealers or solved using multi-angle variants of QAOA (MAL-VQA) on gate-based quantum processors. The multi-angle approach uses fewer two-qubit gates than standard QAOA, making it suitable for near-term ion-trap quantum hardware.",
   "results": "A 2025 study demonstrated MAL-VQA on IonQ Aria and Forte processors, obtaining optimal solutions for instances ranging from 12 to 28 qubits. Earlier work solving the Airbus Quantum Computing Challenge showed QUBO formulations on quantum annealers could handle the aircraft loading problem under multiple operational constraints.",
+  "companies": ["pasqal", "kipu-quantum", "multiverse-computing"],
   "sources": [
     {
       "type": "arxiv",
