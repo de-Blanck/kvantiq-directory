@@ -12,6 +12,16 @@
   "headquarters": "Grenoble, France",
   "employees": "11-25",
   "funding": "EIC Transition grant (~€2.5M); partner in SUPREME EU consortium (€25M, 23 members)",
+  "accessModel": "Hardware sales (cryogenic amplifiers)",
+  "products": [
+    {"name": "Argo TWPA", "description": "Traveling-wave parametric amplifier for near-quantum-limited amplification of superconducting qubit readout signals"},
+    {"name": "Zephyr TWPA-Isolator", "description": "Combined TWPA and isolator module that simplifies the cryogenic readout chain by reducing required components"}
+  ],
+  "highlights": [
+    "Enables single-shot qubit readout while reducing cryogenic isolator count",
+    "Partner in SUPREME EU consortium (€25M, 23 members)",
+    "Spun out of Institut Néel / CNRS Grenoble"
+  ],
   "sources": [
     {
       "type": "website",

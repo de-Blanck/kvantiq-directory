@@ -12,6 +12,15 @@
   "headquarters": "Delft, Netherlands",
   "employees": "11-25",
   "funding": "€10M EIC Accelerator (grant + equity), awarded 2025",
+  "accessModel": "Hardware sales (quantum processors)",
+  "products": [
+    {"name": "Germanium Spin Qubit Processor", "description": "Scalable quantum processor based on germanium spin qubits compatible with standard semiconductor manufacturing"}
+  ],
+  "highlights": [
+    "Germanium qubits compatible with standard semiconductor fab processes",
+    "€10M EIC Accelerator grant and equity investment in 2025",
+    "Spun out of QuTech (TU Delft / TNO)"
+  ],
   "sources": [
     {
       "type": "website",

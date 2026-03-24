@@ -12,6 +12,15 @@
   "headquarters": "Delft, Netherlands",
   "employees": "11-25",
   "funding": "€7.5M EIC Accelerator (€2.5M grant + €5M equity, signed January 2026); €1M EFRO grant March 2025",
+  "accessModel": "Hardware sales + system integration (QKD systems)",
+  "products": [
+    {"name": "Falqon® MDI-QKD System", "description": "Measurement-Device-Independent Quantum Key Distribution system providing the highest level of QKD security by eliminating detector side-channel attacks"}
+  ],
+  "highlights": [
+    "MDI-QKD removes detector side-channel attack surface — highest QKD security level",
+    "€7.5M EIC Accelerator funding (grant + equity) signed January 2026",
+    "Spun out of QuTech (TU Delft / TNO)"
+  ],
   "sources": [
     {
       "type": "website",

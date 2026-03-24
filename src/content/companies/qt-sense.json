@@ -12,6 +12,15 @@
   "headquarters": "Groningen, Netherlands",
   "employees": "11-25",
   "funding": "€10M total; €4M round February 2026 (seed + QDNL + ONCO-Q grant); €6M round February 2025",
+  "accessModel": "Platform licensing + research partnerships",
+  "products": [
+    {"name": "Nanodiamond NV-Center Sensing Platform", "description": "Quantum sensing platform using fluorescent nanodiamond NV-centers to measure oxidative stress and metabolic activity in individual living cells in real time"}
+  ],
+  "highlights": [
+    "Real-time single-cell metabolic measurement using quantum sensing",
+    "Targets drug discovery for cancer, sepsis, and inflammatory diseases",
+    "€10M total funding across two rounds (2025-2026)"
+  ],
   "sources": [
     {
       "type": "website",

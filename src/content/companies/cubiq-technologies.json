@@ -12,6 +12,15 @@
   "headquarters": "Eindhoven, Netherlands",
   "employees": "1-10",
   "funding": "EIC Transition grant (~€2.5M); NWO Take-off Grant 2 (Dutch Research Council)",
+  "accessModel": "Hardware sales (pluggable QKD modules)",
+  "products": [
+    {"name": "CV-QKD QSFP-28 Transceiver", "description": "Continuous Variable QKD transceiver in standard QSFP-28 pluggable form factor for quantum-secure key distribution"}
+  ],
+  "highlights": [
+    "QKD in standard QSFP-28 pluggable — fraction of cost and power of rack-based systems",
+    "Proof-of-concept demonstrated at ECOC 2025 with Coherent and Liberty Global",
+    "Spun out of Eindhoven University of Technology"
+  ],
   "sources": [
     {
       "type": "website",
