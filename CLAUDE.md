@@ -72,7 +72,7 @@ The site uses an **Editorial Light** theme — warm broken-white, Swiss editoria
 JSON files in `src/content/` with Zod schemas in `src/content.config.ts`:
 
 - **companies** (74) — name, slug, country, region, type, tags, description, website, products, highlights, accessModel, employees, funding, sources, news
-- **benchmarks** (32) — name, slug, algorithm, category, hardware, qubits, framework, sources, news
+- **benchmarks** (32) — name, slug, algorithm, category, hardware, qubits, framework, keyMetrics, significance, sources, news
 - **use-cases** (23) — name, slug, industry, category, problem, approach, results, companies, sources, news
 - **challenges** (12) — name, slug, organizer, prizes, eligibility, teamSize, registrationDeadline, problemDomains, sources, news
 - **resources** (42) — name, slug, type, lastUpdated, maturity, communitySize, sources, news
@@ -97,7 +97,7 @@ Run `npm run audit:content` to check. Ratings:
 | Collection | ADEQUATE minimum | RICH minimum |
 |------------|-----------------|-------------|
 | Companies | desc ≥80 chars, employees OR funding | + products, + highlights |
-| Benchmarks | desc ≥80 chars, hardware | |
+| Benchmarks | desc ≥80 chars, hardware | + keyMetrics, + significance |
 | Use Cases | desc ≥80 chars, results | + companies array |
 | Challenges | desc ≥80 chars, prizes, dateStart | + eligibility, + problemDomains |
 | Resources | desc ≥80 chars | + lastUpdated, + maturity |

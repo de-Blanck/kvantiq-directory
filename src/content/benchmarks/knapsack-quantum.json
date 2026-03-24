@@ -10,6 +10,11 @@
   "qubits": 20,
   "reproducible": true,
   "datePublished": "2024-11-01",
+  "keyMetrics": [
+    {"metric": "Max problem size", "value": "20 items"},
+    {"metric": "Best approach", "value": "AAM-QAOA with quantum tree generator"}
+  ],
+  "significance": "Advances constrained combinatorial optimization by demonstrating hardware-efficient feasible-solution state preparation for NP-hard problems.",
   "sources": [
     {
       "type": "arxiv",

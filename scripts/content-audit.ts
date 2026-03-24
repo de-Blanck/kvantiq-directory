@@ -36,7 +36,11 @@ function auditBenchmark(data: Record<string, unknown>): AuditResult {
   const desc = String(data.description || '');
   if (desc.length < 80) issues.push(`description too short (${desc.length} chars, need 80+)`);
   if (!data.hardware) issues.push('missing hardware');
-  const rating = issues.length > 0 ? 'SPARSE' : 'ADEQUATE';
+  const hasKeyMetrics = Array.isArray(data.keyMetrics) && data.keyMetrics.length > 0;
+  const hasSignificance = !!data.significance;
+  const rating = issues.length > 0 ? 'SPARSE'
+    : (hasKeyMetrics && hasSignificance) ? 'RICH'
+    : 'ADEQUATE';
   return { collection: 'benchmarks', slug: String(data.slug), rating, issues };
 }
 

@@ -10,6 +10,11 @@
   "qubits": 14,
   "reproducible": true,
   "datePublished": "2020-10-27",
+  "keyMetrics": [
+    {"metric": "Qubits required", "value": "14"},
+    {"metric": "Molecule complexity", "value": "Triatomic (3 atoms)"}
+  ],
+  "significance": "Steps beyond simple diatomic benchmarks to a non-trivial electronic structure, testing whether VQE can handle increasing molecular complexity on NISQ hardware.",
   "sources": [
     {
       "type": "arxiv",

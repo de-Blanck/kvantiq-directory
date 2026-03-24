@@ -10,6 +10,8 @@
   "status": "active",
   "prizes": "EUR 4 million Phase 1 funding; Phase 2 EIB venture debt",
   "location": "Europe",
+  "eligibility": "European quantum computing startups only",
+  "problemDomains": ["hardware", "HPC-integration", "quantum-software"],
   "sources": [
     {
       "type": "website",

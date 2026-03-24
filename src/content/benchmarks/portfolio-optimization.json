@@ -9,6 +9,11 @@
   "framework": "Qiskit Finance, PennyLane, D-Wave Ocean",
   "reproducible": true,
   "datePublished": "2025-09-24",
+  "keyMetrics": [
+    {"metric": "Methods compared", "value": "QAOA, VQE, quantum annealing, classical"},
+    {"metric": "Problem type", "value": "Markowitz mean-variance"}
+  ],
+  "significance": "Highlights a critical gap: quantum optimizers minimize cost functions but may violate real financial constraints, questioning practical quantum advantage in finance.",
   "sources": [
     {
       "type": "arxiv",

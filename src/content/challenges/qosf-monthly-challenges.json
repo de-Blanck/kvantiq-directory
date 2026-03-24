@@ -9,6 +9,8 @@
   "dateStart": "2020-03-01",
   "prizes": "Community recognition and mentorship",
   "location": "Online",
+  "eligibility": "Open to all worldwide",
+  "problemDomains": ["quantum-algorithms", "quantum-protocols", "quantum-applications"],
   "sources": [
     {
       "type": "url",

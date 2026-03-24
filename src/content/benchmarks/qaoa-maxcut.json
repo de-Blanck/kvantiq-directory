@@ -10,6 +10,11 @@
   "qubits": 12,
   "reproducible": true,
   "datePublished": "2023-11-20",
+  "keyMetrics": [
+    {"metric": "Problem type", "value": "MaxCut on random graphs"},
+    {"metric": "Qubits tested", "value": "12"}
+  ],
+  "significance": "The canonical benchmark for hybrid quantum-classical optimization, testing how QAOA approximation quality scales with circuit depth and graph complexity.",
   "sources": [
     {
       "type": "arxiv",

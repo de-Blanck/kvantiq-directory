@@ -10,6 +10,12 @@
   "qubits": 130,
   "reproducible": true,
   "datePublished": "2023-07-20",
+  "keyMetrics": [
+    {"metric": "Algorithm implementations", "value": "70+"},
+    {"metric": "Qubit range", "value": "2-130"},
+    {"metric": "Developer", "value": "TU Munich"}
+  ],
+  "significance": "Most comprehensive open-source benchmark suite for quantum computing, enabling standardized evaluation across compilers, simulators, and hardware platforms.",
   "sources": [
     {
       "type": "url",

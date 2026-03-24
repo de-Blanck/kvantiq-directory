@@ -10,6 +10,11 @@
   "qubits": 0,
   "reproducible": true,
   "datePublished": "2021-02-24",
+  "keyMetrics": [
+    {"metric": "Metric type", "value": "Max solvable MaxCut variables"},
+    {"metric": "Developer", "value": "Atos"}
+  ],
+  "significance": "Hardware-agnostic benchmark providing a single standardized number for cross-platform quantum processor comparison on an application-relevant problem.",
   "sources": [
     {
       "type": "arxiv",

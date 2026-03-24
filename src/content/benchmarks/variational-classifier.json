@@ -10,6 +10,11 @@
   "qubits": 8,
   "reproducible": true,
   "datePublished": "2018-04-02",
+  "keyMetrics": [
+    {"metric": "Qubits used", "value": "8"},
+    {"metric": "Datasets", "value": "Iris, MNIST subsets"}
+  ],
+  "significance": "Foundational benchmark for quantum machine learning, establishing the circuit-centric classification paradigm used by most subsequent QML research.",
   "sources": [
     {
       "type": "arxiv",

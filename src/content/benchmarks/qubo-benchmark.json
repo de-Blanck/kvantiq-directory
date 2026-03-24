@@ -9,6 +9,11 @@
   "framework": "D-Wave Ocean, Qiskit",
   "reproducible": true,
   "datePublished": "2021-04-28",
+  "keyMetrics": [
+    {"metric": "Solvers compared", "value": "D-Wave, QAOA, Toshiba SBM, Fujitsu DA"},
+    {"metric": "Instance libraries", "value": "MQLib, NAE 3-SAT, SK models"}
+  ],
+  "significance": "Provides the definitive comparison between quantum, quantum-inspired, and classical solvers on the most commercially relevant optimization formulation.",
   "sources": [
     {
       "type": "arxiv",

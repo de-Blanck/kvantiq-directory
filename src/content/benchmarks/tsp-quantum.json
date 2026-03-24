@@ -10,6 +10,12 @@
   "qubits": 30,
   "reproducible": true,
   "datePublished": "2023-07-14",
+  "keyMetrics": [
+    {"metric": "Max cities (NISQ)", "value": "~6"},
+    {"metric": "Encoding", "value": "QUBO/Ising Hamiltonian"},
+    {"metric": "Qubits used", "value": "30"}
+  ],
+  "significance": "Exposes the harsh scaling reality of quantum optimization: the most famous NP-hard problem remains limited to toy sizes on current quantum hardware.",
   "sources": [
     {
       "type": "arxiv",

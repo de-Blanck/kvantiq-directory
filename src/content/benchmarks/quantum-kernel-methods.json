@@ -10,6 +10,12 @@
   "qubits": 10,
   "reproducible": true,
   "datePublished": "2024-08-19",
+  "keyMetrics": [
+    {"metric": "Datasets evaluated", "value": "64"},
+    {"metric": "Dataset families", "value": "5"},
+    {"metric": "Qubits used", "value": "10"}
+  ],
+  "significance": "Largest systematic evaluation of quantum kernel methods, revealing that quantum advantage is dataset-dependent and not universal for classification tasks.",
   "sources": [
     {
       "type": "arxiv",

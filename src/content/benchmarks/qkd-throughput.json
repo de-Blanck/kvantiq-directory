@@ -9,6 +9,12 @@
   "framework": "SimulaQron, Qiskit (simulation)",
   "reproducible": true,
   "datePublished": "2023-12-08",
+  "keyMetrics": [
+    {"metric": "QBER security bound", "value": "11%"},
+    {"metric": "Six-state bound", "value": "12.6%"},
+    {"metric": "Protocol", "value": "BB84"}
+  ],
+  "significance": "Establishes the fundamental security limits for the most widely deployed quantum cryptography protocol, critical for commercial QKD system certification.",
   "sources": [
     {
       "type": "arxiv",

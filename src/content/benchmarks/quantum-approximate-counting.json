@@ -9,6 +9,11 @@
   "framework": "Qiskit, Cirq",
   "reproducible": true,
   "datePublished": "2019-08-28",
+  "keyMetrics": [
+    {"metric": "Query complexity", "value": "O(1/\u03b5 \u00d7 \u221a(N/K))"},
+    {"metric": "Speedup", "value": "Quadratic over classical"}
+  ],
+  "significance": "Provides a simplified, practical variant of quantum counting that achieves optimal query complexity using only standard Grover iterations.",
   "sources": [
     {
       "type": "arxiv",

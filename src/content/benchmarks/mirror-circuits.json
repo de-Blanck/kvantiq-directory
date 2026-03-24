@@ -10,6 +10,12 @@
   "qubits": 225,
   "reproducible": true,
   "datePublished": "2021-12-18",
+  "keyMetrics": [
+    {"metric": "Max simulated qubits", "value": "225"},
+    {"metric": "Max experimental qubits", "value": "16"},
+    {"metric": "Scalability", "value": "Hundreds of qubits"}
+  ],
+  "significance": "Enables benchmarking at scales impossible for standard randomized benchmarking, and uniquely quantifies crosstalk errors between qubits.",
   "sources": [
     {
       "type": "arxiv",

@@ -9,6 +9,11 @@
   "qubits": 0,
   "reproducible": true,
   "datePublished": "2021-06-15",
+  "keyMetrics": [
+    {"metric": "Algorithms included", "value": "BV, QFT, Hidden Shift, others"},
+    {"metric": "Focus", "value": "Application-oriented evaluation"}
+  ],
+  "significance": "Industry consortium benchmark (QED-C) shifting focus from abstract metrics to real-world application performance, adopted by major quantum hardware vendors.",
   "sources": [
     {
       "type": "url",

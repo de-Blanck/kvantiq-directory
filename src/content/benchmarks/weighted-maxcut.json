@@ -10,6 +10,11 @@
   "qubits": 31,
   "reproducible": true,
   "datePublished": "2025-05-30",
+  "keyMetrics": [
+    {"metric": "Max graph size", "value": "31 nodes"},
+    {"metric": "Methods compared", "value": "QAOA vs QWOA (quantum walk)"}
+  ],
+  "significance": "Demonstrates that weighted instances are substantially harder than unweighted MaxCut, with barren plateaus and local optima proliferating in the optimization landscape.",
   "sources": [
     {
       "type": "arxiv",

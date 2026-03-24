@@ -9,6 +9,8 @@
   "dateStart": "2025-06-01",
   "prizes": "IBM Quantum credits and swag",
   "location": "Online",
+  "eligibility": "Open to all skill levels worldwide",
+  "problemDomains": ["quantum-algorithms", "error-mitigation", "quantum-applications"],
   "sources": [
     {
       "type": "website",

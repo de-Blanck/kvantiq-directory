@@ -9,6 +9,8 @@
   "dateStart": "2026-01-13",
   "prizes": "Not publicly disclosed",
   "location": "Hybrid Berlin",
+  "eligibility": "Open to all skill levels",
+  "problemDomains": ["quantum-machine-learning", "optimization"],
   "sources": [
     {
       "type": "website",

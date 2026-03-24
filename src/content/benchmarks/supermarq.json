@@ -9,6 +9,11 @@
   "qubits": 0,
   "reproducible": true,
   "datePublished": "2022-02-22",
+  "keyMetrics": [
+    {"metric": "Algorithms included", "value": "QAOA, VQE, Hamiltonian sim"},
+    {"metric": "Focus", "value": "Application-oriented, scalable"}
+  ],
+  "significance": "Application-oriented benchmark suite bridging the gap between abstract hardware metrics and real algorithm performance evaluation.",
   "sources": [
     {
       "type": "arxiv",

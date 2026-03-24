@@ -9,6 +9,11 @@
   "framework": "IBM Qiskit",
   "reproducible": true,
   "datePublished": "2021-11-01",
+  "keyMetrics": [
+    {"metric": "Metric type", "value": "Circuit layer ops/sec"},
+    {"metric": "Updated version", "value": "CLOPSh (2023)"}
+  ],
+  "significance": "Industry-standard speed metric capturing full hardware-software stack performance, essential for comparing quantum processor throughput across platforms.",
   "sources": [
     {
       "type": "arxiv",

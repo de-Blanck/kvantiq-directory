@@ -10,6 +10,12 @@
   "qubits": 53,
   "reproducible": true,
   "datePublished": "2019-10-23",
+  "keyMetrics": [
+    {"metric": "Qubits used", "value": "53"},
+    {"metric": "Hardware", "value": "Google Sycamore"},
+    {"metric": "Key property", "value": "Exponential fidelity decay with depth"}
+  ],
+  "significance": "The benchmark behind Google's 2019 quantum supremacy claim, establishing cross-entropy as the primary metric for quantum computational advantage demonstrations.",
   "sources": [
     {
       "type": "url",

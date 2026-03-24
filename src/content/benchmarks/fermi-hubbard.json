@@ -10,6 +10,12 @@
   "qubits": 12,
   "reproducible": true,
   "datePublished": "2024-11-20",
+  "keyMetrics": [
+    {"metric": "Optimizers benchmarked", "value": "30"},
+    {"metric": "VQE instances tested", "value": "372"},
+    {"metric": "Best optimizers", "value": "Momentum, ADAM, SPSA, CMA-ES"}
+  ],
+  "significance": "Largest systematic comparison of classical optimizers for VQE, revealing that finite-difference step size is the dominant factor in convergence quality.",
   "sources": [
     {
       "type": "arxiv",

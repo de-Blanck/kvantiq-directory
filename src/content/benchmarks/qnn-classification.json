@@ -10,6 +10,11 @@
   "qubits": 10,
   "reproducible": true,
   "datePublished": "2021-08-02",
+  "keyMetrics": [
+    {"metric": "Qubits used", "value": "10"},
+    {"metric": "Datasets", "value": "MNIST, Fashion-MNIST"}
+  ],
+  "significance": "Demonstrates that fully parameterized QCNNs achieve strong classification with far fewer parameters than classical counterparts, and evaluates noise robustness.",
   "sources": [
     {
       "type": "arxiv",

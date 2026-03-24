@@ -10,6 +10,8 @@
   "status": "completed",
   "prizes": "Recognition and community awards",
   "location": "Online",
+  "eligibility": "Open to game developers, physicists, and artists worldwide",
+  "problemDomains": ["quantum-physics", "game-development", "creative-computing"],
   "sources": [
     {
       "type": "website",

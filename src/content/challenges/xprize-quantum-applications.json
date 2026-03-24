@@ -10,6 +10,8 @@
   "status": "active",
   "prizes": "USD 5 million total (grand prize USD 3 million)",
   "location": "Online",
+  "eligibility": "Open to global teams from 82+ countries",
+  "problemDomains": ["health", "climate", "energy", "materials-science"],
   "sources": [
     {
       "type": "website",

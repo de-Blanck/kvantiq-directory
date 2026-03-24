@@ -10,6 +10,12 @@
   "qubits": 101,
   "reproducible": true,
   "datePublished": "2024-08-26",
+  "keyMetrics": [
+    {"metric": "Logical error rate", "value": "0.143%", "unit": "per cycle"},
+    {"metric": "Error suppression factor", "value": "2.14x", "unit": "per distance step"},
+    {"metric": "Qubits used", "value": "101"}
+  ],
+  "significance": "First demonstration of quantum error correction operating below the surface code threshold, a critical milestone for fault-tolerant quantum computing.",
   "sources": [
     {
       "type": "arxiv",

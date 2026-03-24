@@ -9,6 +9,11 @@
   "framework": "Qiskit, Cirq, Braket",
   "reproducible": true,
   "datePublished": "2023-12-21",
+  "keyMetrics": [
+    {"metric": "Approach", "value": "Volumetric capability maps"},
+    {"metric": "Domains covered", "value": "Optimization, chemistry, ML"}
+  ],
+  "significance": "Extends abstract benchmarks into application-specific capability assessment, mapping what real problems a quantum processor can tackle at what scale.",
   "sources": [
     {
       "type": "arxiv",

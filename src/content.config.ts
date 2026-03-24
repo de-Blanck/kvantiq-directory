@@ -68,6 +68,12 @@ const benchmarks = defineCollection({
     qubits: z.number().optional(),
     reproducible: z.boolean().default(false),
     datePublished: nonEmpty.optional(),
+    keyMetrics: z.array(z.object({
+      metric: nonEmpty,
+      value: nonEmpty,
+      unit: nonEmpty.optional(),
+    })).optional(),
+    significance: z.string().min(20).optional(),
     sources: z.array(sourceSchema).min(2),
     news: z.array(newsSchema).default([]),
   }),

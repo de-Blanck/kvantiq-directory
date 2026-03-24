@@ -10,6 +10,11 @@
   "qubits": 0,
   "reproducible": true,
   "datePublished": "2019-03-04",
+  "keyMetrics": [
+    {"metric": "Metric type", "value": "Single-number processor capability"},
+    {"metric": "Developer", "value": "IBM"}
+  ],
+  "significance": "The de facto industry standard for comparing quantum processors, capturing the interplay of qubit count, gate fidelity, connectivity, and error rates.",
   "sources": [
     {
       "type": "arxiv",
