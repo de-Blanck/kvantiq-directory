@@ -10,6 +10,22 @@
   "website": "https://aqarios.com",
   "featured": false,
   "headquarters": "Munich, Germany",
+  "employees": "18",
+  "accessModel": "Software licensing + consulting",
+  "products": [
+    {
+      "name": "Luna Platform",
+      "description": "Quantum optimization software with IBM Quantum and NVIDIA CUDA-Q backend integrations"
+    },
+    {
+      "name": "FlexQAOA",
+      "description": "Constraint-aware quantum optimization algorithm embedding constraints directly into quantum circuits"
+    }
+  ],
+  "highlights": [
+    "Won Quantum Effects Award 2025 in Software & Algorithms category",
+    "Spin-off from QAR-Lab at LMU Munich"
+  ],
   "sources": [
     {
       "type": "website",

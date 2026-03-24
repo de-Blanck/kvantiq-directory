@@ -10,6 +10,23 @@
   "website": "https://qutools.com",
   "featured": false,
   "headquarters": "Munich, Germany",
+  "employees": "2-10",
+  "funding": "Grant-funded",
+  "accessModel": "Hardware sales (scientific instruments and educational kits)",
+  "products": [
+    {
+      "name": "quTAG",
+      "description": "Time-to-digital converter for time-correlated single photon counting with 1ps digital resolution"
+    },
+    {
+      "name": "quED-QKD",
+      "description": "Quantum key distribution teaching and research kit implementing BB84 protocol"
+    }
+  ],
+  "highlights": [
+    "Founded 2005 by LMU Munich professors — one of Europe's longest-established quantum optics companies",
+    "Product portfolio spans photon sources, QRNGs, QKD components, and education kits"
+  ],
   "sources": [
     {
       "type": "website",

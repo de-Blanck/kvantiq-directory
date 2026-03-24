@@ -10,6 +10,23 @@
   "website": "https://www.sparrowquantum.com",
   "featured": false,
   "headquarters": "Copenhagen, Denmark",
+  "employees": "47",
+  "funding": "EUR 28M",
+  "accessModel": "Hardware sales (photonic quantum chips)",
+  "products": [
+    {
+      "name": "Sparrow Core",
+      "description": "Deterministic single-photon source photonic chip with best-in-class efficiency and thermal stability"
+    },
+    {
+      "name": "Quantum Dot Nanostructures",
+      "description": "Engineered light-matter interfaces for quantum communication and networking"
+    }
+  ],
+  "highlights": [
+    "Spin-out from Professor Peter Lodahl's group at Niels Bohr Institute",
+    "Photonic approach operates at room temperature and is designed for scalable microchip integration"
+  ],
   "sources": [
     {
       "type": "website",

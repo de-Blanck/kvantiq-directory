@@ -10,6 +10,23 @@
   "website": "https://www.qblox.com",
   "featured": false,
   "headquarters": "Delft, Netherlands",
+  "employees": "100+",
+  "funding": "USD 26M",
+  "accessModel": "Hardware sales (qubit control electronics systems)",
+  "products": [
+    {
+      "name": "Cluster Control System",
+      "description": "Scalable 19-inch rack instrument with up to 20 modules for qubit control and readout up to 18.5 GHz"
+    },
+    {
+      "name": "QRC Module",
+      "description": "Qubit Readout and Control module on RFSoC with 100 MHz to 10 GHz continuous range"
+    }
+  ],
+  "highlights": [
+    "Founded 2018 in Delft; opened Boston office in 2025",
+    "Modular architecture supports superconducting, spin, and other qubit types"
+  ],
   "sources": [
     {
       "type": "website",
