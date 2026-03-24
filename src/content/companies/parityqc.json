@@ -12,6 +12,18 @@
   "headquarters": "Innsbruck, Austria",
   "employees": "30+",
   "funding": "EUR 10M+",
+  "accessModel": "Software licensing + co-design partnerships",
+  "products": [
+    {
+      "name": "ParityOS",
+      "description": "Quantum architecture operating system that provides hardware-optimized blueprints for solving optimization problems"
+    }
+  ],
+  "highlights": [
+    "ParityOS provides a unique architecture blueprint optimized specifically for optimization workloads",
+    "Works directly with quantum hardware providers to co-design more efficient quantum processors",
+    "Spin-off from University of Innsbruck with EUR 10M+ in funding"
+  ],
   "sources": [
     {
       "type": "website",

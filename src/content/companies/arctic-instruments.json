@@ -12,6 +12,18 @@
   "headquarters": "Espoo, Finland",
   "employees": "10+",
   "funding": "EUR 2.35M",
+  "accessModel": "Hardware sales",
+  "products": [
+    {
+      "name": "Quantum-Limited Amplifiers",
+      "description": "Ultra-low-noise superconducting amplifiers for high-fidelity qubit state readout in quantum processors"
+    }
+  ],
+  "highlights": [
+    "Spin-off from VTT Technical Research Centre of Finland",
+    "Secured EUR 2.35M seed round in 2024 to commercialize quantum amplifier technology",
+    "Enables faster and more accurate qubit measurements for superconducting quantum computers"
+  ],
   "sources": [
     {
       "type": "website",

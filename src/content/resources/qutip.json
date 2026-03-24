@@ -9,6 +9,9 @@
   "free": true,
   "language": "Python",
   "provider": "QuTiP Community",
+  "lastUpdated": "2025",
+  "maturity": "mature",
+  "communitySize": "~1,700 GitHub stars",
   "sources": [
     {
       "type": "website",

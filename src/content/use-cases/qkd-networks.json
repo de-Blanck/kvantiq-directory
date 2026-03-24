@@ -8,7 +8,7 @@
   "problem": "Classical key distribution methods rely on computational hardness assumptions that will be broken by large-scale quantum computers running Shor's algorithm. Critical infrastructure, government communications, and financial networks need information-theoretic security guarantees that are immune to both classical and quantum attacks.",
   "approach": "QKD protocols (BB84, CV-QKD) encode cryptographic key bits in quantum states of photons transmitted over optical fiber or free-space links. Any eavesdropping attempt disturbs the quantum states and is detectable. Trusted node networks extend QKD range beyond single-link distance limits, while the EuroQCI initiative deploys national QKD infrastructures interconnected across borders.",
   "results": "EuroQCI has commenced deployment across all 27 EU member states with ESA satellite integration planned. Multiple national QCI networks are operational, and cross-border QKD connections are being established. Commercial QKD systems from European companies like ID Quantique achieve key rates suitable for protecting critical infrastructure.",
-  "companies": ["id-quantique", "veriqloud"],
+  "companies": ["id-quantique", "veriqloud", "keequant", "nu-quantum"],
   "sources": [
     {
       "type": "arxiv",

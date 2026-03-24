@@ -9,6 +9,9 @@
   "free": true,
   "language": "Python",
   "provider": "Xanadu",
+  "lastUpdated": "2024",
+  "maturity": "stable",
+  "communitySize": "~700 GitHub stars",
   "sources": [
     {
       "type": "website",

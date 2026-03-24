@@ -1,8 +1,22 @@
-<div id="search" class="w-full max-w-md"></div>
+<div id="search" class="w-full max-w-md">
+  <!-- Dev-mode fallback: visible until Pagefind UI loads -->
+  <div id="search-fallback" class="relative">
+    <input
+      type="text"
+      disabled
+      placeholder="Search (available after build)"
+      class="w-full rounded-lg border border-border bg-base px-4 py-2.5 text-sm text-text-secondary placeholder:text-text-muted cursor-not-allowed shadow-subtle"
+    />
+  </div>
+</div>
 <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
 <script is:inline src="/pagefind/pagefind-ui.js"></script>
 <script is:inline>
   window.addEventListener('DOMContentLoaded', () => {
-    new PagefindUI({ element: '#search', showSubResults: true });
+    if (typeof PagefindUI !== 'undefined') {
+      var fallback = document.getElementById('search-fallback');
+      if (fallback) fallback.remove();
+      new PagefindUI({ element: '#search', showSubResults: true });
+    }
   });
 </script>

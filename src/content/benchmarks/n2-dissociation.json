@@ -10,6 +10,11 @@
   "qubits": 12,
   "reproducible": true,
   "datePublished": "2024-10-22",
+  "keyMetrics": [
+    {"metric": "Qubits used", "value": "12"},
+    {"metric": "Key method", "value": "Contextual Subspace VQE"}
+  ],
+  "significance": "The N2 triple bond is a stringent test of strongly correlated methods — success here indicates readiness for industrially relevant chemistry problems.",
   "sources": [
     {
       "type": "doi",

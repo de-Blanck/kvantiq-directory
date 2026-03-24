@@ -12,6 +12,22 @@
   "headquarters": "Bezons, France",
   "employees": "1000+",
   "funding": "Part of Atos Group (public company)",
+  "accessModel": "Software licensing + consulting",
+  "products": [
+    {
+      "name": "Qaptiva Platform",
+      "description": "End-to-end quantum computing platform for algorithm development, optimization, and HPC emulation up to 43 qubits"
+    },
+    {
+      "name": "myQLM",
+      "description": "Open-source Python framework for quantum programming, simulation, and algorithm prototyping"
+    }
+  ],
+  "highlights": [
+    "Part of the Atos Group (rebranded as Bull in 2026), one of Europe's largest IT companies",
+    "Qaptiva quantum emulators can simulate up to 43 qubits on classical HPC infrastructure",
+    "Key partner in EuroHPC quantum computing initiatives across Europe"
+  ],
   "sources": [
     {
       "type": "website",

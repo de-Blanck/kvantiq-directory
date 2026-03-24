@@ -11,6 +11,18 @@
   "featured": false,
   "headquarters": "Munich, Germany",
   "funding": "EUR 152M+",
+  "accessModel": "Hardware sales + inspection services",
+  "products": [
+    {
+      "name": "Diamond Quantum Sensor System",
+      "description": "NV-center diamond-based quantum sensing platform for non-destructive magnetic field imaging and semiconductor chip defect localization"
+    }
+  ],
+  "highlights": [
+    "Completed proof-of-concept work with nine of the world's ten largest chip manufacturers",
+    "Planning EUR 152M investment in a dedicated quantum chip inspection facility in Munich",
+    "Spun out of the Technical University of Munich with breakthrough NV-center sensing technology"
+  ],
   "sources": [
     {
       "type": "website",

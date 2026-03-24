@@ -15,6 +15,9 @@
   "openSource": false,
   "free": true,
   "provider": "QuTech (TU Delft / TNO)",
+  "lastUpdated": "Active",
+  "maturity": "stable",
+  "communitySize": "40+ partner organisations",
   "sources": [
     {
       "type": "website",

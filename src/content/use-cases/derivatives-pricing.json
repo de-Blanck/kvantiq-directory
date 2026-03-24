@@ -8,6 +8,7 @@
   "problem": "Pricing complex financial derivatives like exotic options, Bermudan options, and multi-asset baskets requires Monte Carlo integration over high-dimensional probability distributions. Classical methods converge slowly and become prohibitively expensive for portfolios requiring real-time repricing across thousands of instruments.",
   "approach": "Quantum amplitude estimation (QAE) replaces classical Monte Carlo sampling by encoding payoff functions and underlying asset dynamics into quantum circuits. The quantum algorithm achieves a quadratic reduction in the number of samples needed to reach a given pricing accuracy, with recent work using quantum signal processing to further reduce circuit depth and qubit requirements.",
   "results": "Stamatopoulos et al. demonstrated quantum Monte Carlo pricing of financial derivatives with provable quadratic speedup. Subsequent work showed Bermudan option pricing via QAE with Chebyshev interpolation, and a 2025 paper demonstrated dimension-independent quantum speedups for derivative pricing beyond Black-Scholes models.",
+  "companies": ["multiverse-computing", "terra-quantum"],
   "sources": [
     {
       "type": "arxiv",

@@ -11,6 +11,22 @@
   "featured": false,
   "headquarters": "Piaseczno, Poland",
   "funding": "PLN 74M+ (Series K, 2025)",
+  "accessModel": "Hardware sales + system integration",
+  "products": [
+    {
+      "name": "Quantum Control Electronics",
+      "description": "Specialized control systems and electronics for operating and managing quantum computing hardware"
+    },
+    {
+      "name": "QKD Hardware Modules",
+      "description": "Quantum key distribution hardware for secure communications in government and enterprise networks"
+    }
+  ],
+  "highlights": [
+    "Publicly traded Polish company — one of few listed quantum hardware providers in Europe",
+    "Selected by EuroHPC JU to help build Poland's first quantum computer at Poznan Supercomputing Center",
+    "Secured PLN 74M+ in Series K funding in 2025 to spin off dedicated quantum division"
+  ],
   "sources": [
     {
       "type": "website",

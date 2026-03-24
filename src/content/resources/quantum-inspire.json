@@ -9,6 +9,8 @@
   "free": true,
   "language": "Python",
   "provider": "QuTech",
+  "lastUpdated": "2025",
+  "maturity": "stable",
   "sources": [
     {
       "type": "website",

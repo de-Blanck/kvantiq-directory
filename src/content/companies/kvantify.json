@@ -12,6 +12,22 @@
   "headquarters": "Copenhagen, Denmark",
   "employees": "60+",
   "funding": "EUR 10M+",
+  "accessModel": "SaaS platform + consulting",
+  "products": [
+    {
+      "name": "Qrunch",
+      "description": "Cloud platform for molecular simulation and drug discovery using quantum and HPC algorithms"
+    },
+    {
+      "name": "Quantum Algorithm Services",
+      "description": "Custom quantum algorithm development for life sciences and chemical innovation partners"
+    }
+  ],
+  "highlights": [
+    "Flagship product Qrunch provides accessible quantum-powered molecular simulation for life sciences",
+    "Collaborates with Atom Computing and Danish universities on quantum drug discovery research",
+    "60+ employees and EUR 10M+ raised, positioning Denmark as a quantum TechBio hub"
+  ],
   "sources": [
     {
       "type": "website",

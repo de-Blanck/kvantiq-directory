@@ -11,6 +11,18 @@
   "featured": false,
   "headquarters": "Padua, Italy",
   "funding": "EUR 1M+",
+  "accessModel": "Hardware sales + custom systems",
+  "products": [
+    {
+      "name": "Photonic Qudit Processor",
+      "description": "Room-temperature silicon photonics quantum processor using single-photon qudit technology, operable without cryogenic cooling"
+    }
+  ],
+  "highlights": [
+    "Room-temperature operation eliminates need for expensive cryogenic infrastructure",
+    "Compact quantum systems designed for deployment on Earth, in air, and in space",
+    "Backed by CDP Venture Capital with EUR 1M+ seed funding"
+  ],
   "sources": [
     {
       "type": "website",

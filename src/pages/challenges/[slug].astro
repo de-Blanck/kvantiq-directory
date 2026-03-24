@@ -46,6 +46,8 @@ const stats = [
   { value: challenge.status.replace(/^\w/, (c: string) => c.toUpperCase()), label: 'Status' },
   { value: challenge.organizer, label: 'Organizer' },
   ...(challenge.location ? [{ value: challenge.location, label: 'Location' }] : []),
+  ...(challenge.prizes ? [{ value: challenge.prizes, label: 'Prizes' }] : []),
+  ...(challenge.teamSize ? [{ value: challenge.teamSize, label: 'Team Size' }] : []),
 ];
 
 const meta = [challenge.organizer, challenge.status.replace(/^\w/, (c: string) => c.toUpperCase()), challenge.dateStart].filter(Boolean).join(' · ');
@@ -64,5 +66,16 @@ const meta = [challenge.organizer, challenge.status.replace(/^\w/, (c: string) =
     news={challenge.news || []}
     related={related}
     sources={challenge.sources}
+    extraCards={[
+      ...((challenge.eligibility || challenge.registrationDeadline || challenge.problemDomains) ? [{
+        id: 'logistics',
+        label: 'Participation Details',
+        content: [
+          challenge.eligibility ? `Eligibility: ${challenge.eligibility}` : '',
+          challenge.registrationDeadline ? `Registration deadline: ${challenge.registrationDeadline}` : '',
+          challenge.problemDomains?.length ? `Problem domains: ${challenge.problemDomains.join(', ')}` : '',
+        ].filter(Boolean).join(' · '),
+      }] : []),
+    ]}
   />
 </BaseLayout>

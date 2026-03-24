@@ -11,6 +11,22 @@
   "featured": false,
   "headquarters": "Zurich, Switzerland",
   "employees": "100+",
+  "accessModel": "Hardware sales + support",
+  "products": [
+    {
+      "name": "ZQCS Quantum Control System",
+      "description": "Integrated control platform designed for large-scale quantum computer operation bridging software and physical qubits"
+    },
+    {
+      "name": "SHFQC Qubit Controller",
+      "description": "Combined signal generator and readout instrument for superconducting qubit control and measurement"
+    }
+  ],
+  "highlights": [
+    "Acquired by Rohde & Schwarz in 2021, backed by global test-and-measurement leader",
+    "ETH Zurich spin-out with 100+ employees and deep quantum control expertise",
+    "ZQCS platform scales to support next-generation quantum processors"
+  ],
   "sources": [
     {
       "type": "website",

@@ -9,6 +9,9 @@
   "free": true,
   "language": "Python",
   "provider": "IBM",
+  "lastUpdated": "2026",
+  "maturity": "mature",
+  "communitySize": "~5,300 GitHub stars",
   "sources": [
     {
       "type": "website",

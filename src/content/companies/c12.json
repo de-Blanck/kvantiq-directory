@@ -11,6 +11,18 @@
   "featured": false,
   "headquarters": "Paris, France",
   "funding": "EUR 18M",
+  "accessModel": "Hardware sales + research partnerships",
+  "products": [
+    {
+      "name": "Carbon Nanotube Quantum Processor",
+      "description": "Quantum processor using ultra-pure carbon nanotube spin qubits for extended coherence times"
+    }
+  ],
+  "highlights": [
+    "Pioneered carbon nanotube-based spin qubits — a unique approach to quantum computing hardware",
+    "Raised EUR 18M including a EUR 10M seed round covered by TechCrunch",
+    "Founded by researchers from ENS Paris with deep materials science expertise"
+  ],
   "sources": [
     {
       "type": "website",

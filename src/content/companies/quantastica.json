@@ -12,6 +12,22 @@
   "headquarters": "Helsinki, Finland",
   "employees": "10+",
   "funding": "N/A",
+  "accessModel": "Open-source + commercial licensing",
+  "products": [
+    {
+      "name": "Quantum Programming Studio",
+      "description": "Web-based IDE for designing, simulating, and debugging quantum circuits with visual circuit editor and multiple backend support"
+    },
+    {
+      "name": "Quantum Circuit Simulators",
+      "description": "Open-source and commercial quantum circuit simulation tools for developers and researchers"
+    }
+  ],
+  "highlights": [
+    "Provides accessible quantum programming tools aimed at lowering the barrier to entry for developers",
+    "Offers both open-source and commercial quantum software development tools",
+    "Helsinki-based team focused on educational resources and intuitive quantum programming interfaces"
+  ],
   "sources": [
     {
       "type": "website",

@@ -10,6 +10,11 @@
   "qubits": 12,
   "reproducible": true,
   "datePublished": "2024-03-18",
+  "keyMetrics": [
+    {"metric": "Qubits required", "value": "6-12"},
+    {"metric": "Reference method", "value": "Full Configuration Interaction (FCI)"}
+  ],
+  "significance": "Standard test molecule for quantum chemistry on NISQ devices, bridging the gap between trivial H2 simulations and industrially relevant molecular systems.",
   "sources": [
     {
       "type": "doi",

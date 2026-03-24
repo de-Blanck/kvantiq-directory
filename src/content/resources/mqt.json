@@ -9,6 +9,9 @@
   "free": true,
   "language": "Python/C++",
   "provider": "Technical University of Munich",
+  "lastUpdated": "2026",
+  "maturity": "stable",
+  "communitySize": "~500 GitHub stars",
   "sources": [
     {
       "type": "website",

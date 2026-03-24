@@ -27,7 +27,7 @@ export default function CardGrid({ items }: CardGridProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: i * 0.08 }}
-          className="block rounded-xl border border-border bg-surface p-6 transition-all duration-200 hover:border-accent/20 hover:shadow-glow"
+          className="block rounded-xl border border-border bg-surface p-6 transition-all duration-200 hover:border-accent/20 hover:shadow-elevated"
         >
           <div className="flex items-start justify-between gap-2">
             <h3 className="font-heading text-[15px] font-semibold text-text-primary">{item.name}</h3>

@@ -11,6 +11,22 @@
   "featured": false,
   "headquarters": "Vienna, Austria",
   "employees": "30+",
+  "accessModel": "Hardware sales + project-based contracts",
+  "products": [
+    {
+      "name": "Satellite QKD Terminal",
+      "description": "Space-based quantum key distribution terminal for global quantum-secure communication via satellite downlinks"
+    },
+    {
+      "name": "Free-Space QKD System",
+      "description": "Ground-based free-space optical quantum communication system for point-to-point secure key exchange"
+    }
+  ],
+  "highlights": [
+    "Built on over 20 years of pioneering research including world-record satellite quantum downlinks",
+    "Develops space-based quantum communication technology for global quantum-secure networks",
+    "Vienna-based team with deep heritage in free-space and satellite quantum optics"
+  ],
   "sources": [
     {
       "type": "website",

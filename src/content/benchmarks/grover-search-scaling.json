@@ -10,6 +10,11 @@
   "qubits": 6,
   "reproducible": true,
   "datePublished": "2022-11-04",
+  "keyMetrics": [
+    {"metric": "Better-than-classical qubits", "value": "5"},
+    {"metric": "Hardware tested", "value": "127-qubit IBM processors"}
+  ],
+  "significance": "Demonstrates that dynamical decoupling enables better-than-classical Grover search on real hardware, validating quadratic speedup claims on NISQ devices.",
   "sources": [
     {
       "type": "arxiv",

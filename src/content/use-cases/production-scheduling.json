@@ -8,6 +8,7 @@
   "problem": "Production scheduling — assigning jobs to machines while minimizing makespan and balancing workload — is an NP-hard combinatorial optimization problem. As the number of jobs, machines, and constraints grows, classical solvers face exponential scaling that limits real-time rescheduling capabilities in dynamic manufacturing environments.",
   "approach": "Problems are formulated as QUBO (Quadratic Unconstrained Binary Optimization) models compatible with quantum annealers, or solved using QAOA on gate-based quantum processors. Hybrid quantum-classical solvers partition the problem, with the quantum processor exploring the solution space while classical computers handle the master optimization loop.",
   "results": "A BASF benchmark study using D-Wave's hybrid solver on production assignment and scheduling for chemical reactors (up to 150,000 variables) showed results highly competitive with classical solvers, with occasional speedups. Earlier work on flexible job shop scheduling found quantum annealing matched classical heuristics for problems with 20 jobs and 15 machines.",
+  "companies": ["pasqal", "kipu-quantum", "multiverse-computing"],
   "sources": [
     {
       "type": "arxiv",

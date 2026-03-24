@@ -95,7 +95,7 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
         const val = String(getValue());
         if (col.isLink) {
           return (
-            <a href={row.original.href} className="text-accent no-underline hover:underline transition-colors duration-75">
+            <a href={row.original.href} className="text-info no-underline hover:underline transition-colors duration-75">
               {val}
             </a>
           );
@@ -230,8 +230,8 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
                       {flexRender(header.column.columnDef.header, header.getContext())}
                       {canSort && (
                         <span className="text-[10px] inline-flex flex-col leading-none -space-y-0.5">
-                          <span className={sorted === 'asc' ? 'text-accent' : 'text-text-muted'}>▲</span>
-                          <span className={sorted === 'desc' ? 'text-accent' : 'text-text-muted'}>▼</span>
+                          <span className={sorted === 'asc' ? 'text-info' : 'text-text-muted'}>▲</span>
+                          <span className={sorted === 'desc' ? 'text-info' : 'text-text-muted'}>▼</span>
                         </span>
                       )}
                     </span>
@@ -266,7 +266,7 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
               <tr>
                 <td colSpan={columns.length} className="py-8 text-center text-text-muted">
                   No results match your filters.
-                  <button onClick={clearAll} className="ml-2 text-accent hover:underline">Clear all</button>
+                  <button onClick={clearAll} className="ml-2 text-info hover:underline">Clear all</button>
                 </td>
               </tr>
             )}

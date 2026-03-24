@@ -8,6 +8,7 @@
   "problem": "Classical portfolio optimization becomes computationally intractable as the number of assets, constraints, and risk factors grows. The problem is NP-hard in its general form.",
   "approach": "QAOA and variational quantum algorithms encode portfolio constraints into quantum circuits. Hybrid loops optimize parameters classically while evaluating the objective function on quantum hardware.",
   "results": "Demonstrations on small portfolios (10-50 assets) show competitive results with classical methods. Quantum advantage for real-world portfolio sizes is expected as hardware scales.",
+  "companies": ["multiverse-computing", "terra-quantum"],
   "sources": [
     {
       "type": "arxiv",

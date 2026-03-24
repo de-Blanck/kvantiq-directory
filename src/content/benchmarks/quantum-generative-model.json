@@ -10,6 +10,12 @@
   "qubits": 8,
   "reproducible": true,
   "datePublished": "2019-04-01",
+  "keyMetrics": [
+    {"metric": "Qubits used", "value": "8"},
+    {"metric": "Gate complexity", "value": "Polynomial for distribution loading"},
+    {"metric": "Datasets", "value": "MNIST, Fashion-MNIST"}
+  ],
+  "significance": "Demonstrates that quantum generative models can achieve polynomial gate complexity for distribution loading, a potential exponential advantage over classical methods.",
   "sources": [
     {
       "type": "arxiv",

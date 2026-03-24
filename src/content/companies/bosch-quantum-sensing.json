@@ -12,6 +12,18 @@
   "headquarters": "Ludwigsburg, Germany",
   "employees": "30",
   "funding": "N/A",
+  "accessModel": "Hardware sales + licensing",
+  "products": [
+    {
+      "name": "Diamond NV-Center Quantum Sensors",
+      "description": "Quantum magnetometry sensors using nitrogen-vacancy centers for automotive, industrial, and biomedical use"
+    }
+  ],
+  "highlights": [
+    "Joint venture between Bosch and Element Six (De Beers Group)",
+    "Backed by Bosch's global industrial manufacturing and distribution network",
+    "Targets automotive, industrial, and biomedical quantum sensing applications"
+  ],
   "sources": [
     {
       "type": "website",

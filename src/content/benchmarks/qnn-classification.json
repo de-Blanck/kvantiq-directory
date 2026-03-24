@@ -5,10 +5,16 @@
   "category": "machine-learning",
   "tags": ["QNN", "QCNN", "classification", "MNIST", "machine-learning", "hybrid"],
   "description": "Benchmark comparing quantum neural network architectures for image classification tasks on standard datasets including MNIST and Fashion-MNIST. Fully parameterized QCNNs achieve excellent classification accuracy despite a small number of free parameters. Comparative studies evaluate noise robustness across different QCNN model structures, data encoding methods, and optimizers under realistic quantum noise channels.",
+  "hardware": "Simulator / hardware-agnostic",
   "framework": "Qiskit Machine Learning, PennyLane, TensorFlow Quantum",
   "qubits": 10,
   "reproducible": true,
   "datePublished": "2021-08-02",
+  "keyMetrics": [
+    {"metric": "Qubits used", "value": "10"},
+    {"metric": "Datasets", "value": "MNIST, Fashion-MNIST"}
+  ],
+  "significance": "Demonstrates that fully parameterized QCNNs achieve strong classification with far fewer parameters than classical counterparts, and evaluates noise robustness.",
   "sources": [
     {
       "type": "arxiv",

@@ -11,6 +11,22 @@
   "featured": false,
   "headquarters": "Copenhagen, Denmark",
   "employees": "20+",
+  "accessModel": "Hardware sales (component supplier)",
+  "products": [
+    {
+      "name": "QDAC Digital-to-Analog Converters",
+      "description": "Precision multi-channel digital-to-analog converters for quantum dot and superconducting qubit control"
+    },
+    {
+      "name": "QFilter Cryogenic Filters",
+      "description": "Ultra-low-noise cryogenic signal filtering components for millikelvin quantum experiments"
+    }
+  ],
+  "highlights": [
+    "Niels Bohr Institute spin-out acquired by Quantum Machines in 2022",
+    "Supplies critical auxiliary electronics for quantum labs from millikelvin to room temperature",
+    "Products used by leading quantum computing research groups worldwide"
+  ],
   "sources": [
     {
       "type": "press-release",

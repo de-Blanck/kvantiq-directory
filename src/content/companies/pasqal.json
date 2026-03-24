@@ -12,6 +12,22 @@
   "headquarters": "Massy, France",
   "employees": "200+",
   "funding": "EUR 100M+",
+  "accessModel": "Cloud API + on-premise deployment + consulting",
+  "products": [
+    {
+      "name": "Neutral-Atom QPU",
+      "description": "Programmable neutral-atom quantum processors with up to 1,000 qubits for optimization and simulation"
+    },
+    {
+      "name": "Pasqal Cloud",
+      "description": "Cloud access platform for running quantum workloads on Pasqal neutral-atom hardware"
+    }
+  ],
+  "highlights": [
+    "Co-founded by Nobel laureate Alain Aspect, a pioneer of cold atom physics",
+    "EUR 100M+ raised with plans for a USD 2B SPAC listing",
+    "200+ employees delivering enterprise quantum solutions in energy, automotive, and finance"
+  ],
   "sources": [
     {
       "type": "website",

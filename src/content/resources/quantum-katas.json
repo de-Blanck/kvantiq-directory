@@ -9,6 +9,9 @@
   "free": true,
   "language": "Q#",
   "provider": "Microsoft",
+  "lastUpdated": "2025",
+  "maturity": "mature",
+  "communitySize": "~4,500 GitHub stars",
   "sources": [
     {
       "type": "website",

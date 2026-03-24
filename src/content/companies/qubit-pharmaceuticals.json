@@ -12,6 +12,18 @@
   "headquarters": "Paris, France",
   "employees": "60+",
   "funding": "EUR 25M+",
+  "accessModel": "SaaS platform + pharma partnerships",
+  "products": [
+    {
+      "name": "Atlas",
+      "description": "Hybrid HPC and quantum-powered molecular simulation platform for accelerating drug discovery with quantum-level accuracy"
+    }
+  ],
+  "highlights": [
+    "Demonstrated a practical path to quantum utility in drug discovery by 2028",
+    "Spun out of Sorbonne University, CNRS, and CNAM with deep computational chemistry expertise",
+    "Raised EUR 25M+ to scale hybrid quantum-classical molecular simulation for pharma"
+  ],
   "sources": [
     {
       "type": "website",

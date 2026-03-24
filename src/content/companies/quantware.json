@@ -10,6 +10,23 @@
   "website": "https://www.quantware.com",
   "featured": false,
   "headquarters": "Delft, Netherlands",
+  "employees": "58",
+  "funding": "USD 33M",
+  "accessModel": "Hardware sales (off-the-shelf QPUs) + foundry services",
+  "products": [
+    {
+      "name": "Contralto-D QPU",
+      "description": "21-qubit superconducting processor with tunable couplers, available off-the-shelf within 30 days"
+    },
+    {
+      "name": "Soprano-D QPU",
+      "description": "5-qubit fixed-coupler processor for entry-level quantum computing and education"
+    }
+  ],
+  "highlights": [
+    "First company to sell off-the-shelf superconducting quantum processors (2021)",
+    "Spinout of TU Delft/QuTech in Delft's House of Quantum cluster"
+  ],
   "sources": [
     {
       "type": "website",

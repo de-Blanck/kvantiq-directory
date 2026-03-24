@@ -12,6 +12,18 @@
   "headquarters": "Haywards Heath, United Kingdom",
   "employees": "50+",
   "funding": "GBP 100M+",
+  "accessModel": "Hardware development + government contracts",
+  "products": [
+    {
+      "name": "Modular Trapped-Ion Quantum Computer",
+      "description": "Large-scale trapped-ion system using microwave-based qubit control and modular chip architecture connected via electric-field links"
+    }
+  ],
+  "highlights": [
+    "EUR 67M contract from Germany's DLR to build fault-tolerant quantum systems",
+    "Microwave-based qubit control eliminates complex laser setups used by competitors",
+    "Close to GBP 100M in combined public and private funding"
+  ],
   "sources": [
     {
       "type": "website",

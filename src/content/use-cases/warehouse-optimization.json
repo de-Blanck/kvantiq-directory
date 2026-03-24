@@ -8,6 +8,7 @@
   "problem": "Warehouse layout optimization involves assigning products to storage locations to minimize order fulfillment time, picker travel distance, and operational costs. The combinatorial explosion of possible configurations makes exact classical solutions intractable for large warehouses with thousands of SKUs and multiple picking zones.",
   "approach": "The location assignment problem is formulated as a QUBO model and solved on D-Wave quantum annealers. A quantum initialization mechanism (QI4WOP) embeds quantum-generated solutions into existing classical warehouse management software, combining quantum exploration with classical refinement in a hybrid workflow.",
   "results": "A Basque Government-funded study showed that quantum annealer-based warehouse optimization achieved similar result quality to purely classical methods while delivering remarkable savings in computational time. Separate work demonstrated quantum optimization of robot routing in distribution centers.",
+  "companies": ["multiverse-computing", "pasqal", "kipu-quantum"],
   "sources": [
     {
       "type": "arxiv",

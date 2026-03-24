@@ -11,6 +11,18 @@
   "featured": false,
   "headquarters": "Munich, Germany",
   "funding": "EUR 50M+",
+  "accessModel": "Hardware development + government contracts",
+  "products": [
+    {
+      "name": "Optical Lattice QPU",
+      "description": "Neutral-atom quantum processor using optical lattices for scalable quantum computing with thousands of qubits"
+    }
+  ],
+  "highlights": [
+    "Spin-off from Max Planck Institute of Quantum Optics, a world leader in cold atom research",
+    "Partnered with DLR to build Europe's first digital quantum computer using neutral atoms",
+    "EUR 50M+ raised to develop industrial-scale atom-based quantum processors"
+  ],
   "sources": [
     {
       "type": "website",

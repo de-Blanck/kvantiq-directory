@@ -10,6 +10,11 @@
   "qubits": 4,
   "reproducible": true,
   "datePublished": "2024-01-15",
+  "keyMetrics": [
+    {"metric": "Qubits required", "value": "4"},
+    {"metric": "Molecule", "value": "H2 (hydrogen)"}
+  ],
+  "significance": "The 'hello world' of quantum chemistry \u2014 the simplest meaningful molecular simulation, used universally to validate new VQE implementations and hardware.",
   "sources": [
     {
       "type": "arxiv",

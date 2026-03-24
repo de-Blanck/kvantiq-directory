@@ -12,6 +12,22 @@
   "headquarters": "Reading, United Kingdom",
   "employees": "140+",
   "funding": "USD 150M+",
+  "accessModel": "Quantum-as-a-Service (cloud API)",
+  "products": [
+    {
+      "name": "Coaxmon Quantum Processors",
+      "description": "Superconducting quantum processors based on proprietary 3D Coaxmon qubit architecture for improved coherence"
+    },
+    {
+      "name": "OQC Cloud",
+      "description": "Quantum-compute-as-a-service platform providing cloud access to OQC superconducting quantum systems"
+    }
+  ],
+  "highlights": [
+    "Proprietary Coaxmon 3D qubit architecture delivers improved coherence over planar designs",
+    "USD 150M+ raised with roadmap targeting 50,000 logical qubits by 2034",
+    "Deployed quantum systems in commercial data centres and launched UK's first QEC testbed with Riverlane"
+  ],
   "sources": [
     {
       "type": "website",

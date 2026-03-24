@@ -11,6 +11,18 @@
   "featured": false,
   "headquarters": "Grenoble, France",
   "funding": "EUR 19M",
+  "accessModel": "Hardware development + licensing",
+  "products": [
+    {
+      "name": "Silicon Spin Qubit Processor",
+      "description": "Scalable quantum processor leveraging standard semiconductor fabrication processes for silicon spin qubits"
+    }
+  ],
+  "highlights": [
+    "Located near CEA-Leti in Grenoble, leveraging world-class semiconductor R&D infrastructure",
+    "Builds on proven silicon manufacturing techniques for qubit scalability",
+    "EUR 19M in funding to advance silicon-based quantum computing"
+  ],
   "sources": [
     {
       "type": "website",

@@ -10,6 +10,8 @@
   "status": "completed",
   "prizes": "Cash prizes, hardware access, internship opportunities",
   "location": "Online",
+  "eligibility": "Open to all worldwide",
+  "problemDomains": ["quantum-machine-learning", "quantum-chemistry", "optimization"],
   "sources": [
     {
       "type": "website",

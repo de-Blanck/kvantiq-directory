@@ -12,6 +12,22 @@
   "headquarters": "Cambridge, United Kingdom",
   "employees": "170+",
   "funding": "USD 125M+",
+  "accessModel": "Software licensing + partnerships",
+  "products": [
+    {
+      "name": "Local Clustering Decoder",
+      "description": "Hardware-agnostic quantum error correction decoder enabling reliable computation at scale across different qubit platforms"
+    },
+    {
+      "name": "QEC Technology Roadmap",
+      "description": "Published roadmap projecting acceleration of quantum computing's path to utility-scale by 3-5 years"
+    }
+  ],
+  "highlights": [
+    "Raised over $125M including Europe's first Series C in quantum computing",
+    "Hardware-agnostic QEC approach compatible with multiple qubit technologies",
+    "170+ employees focused exclusively on quantum error correction"
+  ],
   "sources": [
     {
       "type": "website",

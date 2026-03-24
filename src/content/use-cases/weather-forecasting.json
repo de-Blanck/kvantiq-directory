@@ -8,6 +8,7 @@
   "problem": "Numerical weather prediction requires solving coupled nonlinear partial differential equations across a three-dimensional atmospheric grid at fine spatial and temporal resolution. The computational cost scales with the cube of resolution improvement, and current classical supercomputers cannot achieve the resolution needed for reliable local-scale forecasts beyond 10-14 days.",
   "approach": "Quantum approaches include quantum neural networks trained on meteorological data for pattern-based forecasting, quantum algorithms for solving nonlinear differential equations governing atmospheric dynamics, and quantum scientific machine learning using differentiable quantum circuits to solve barotropic vorticity equations. Hybrid quantum-classical methods combine quantum feature extraction with classical post-processing.",
   "results": "A quantum neural network trained on NASA POWER meteorological data demonstrated potential to outperform classical RNNs for wind speed prediction. Separately, researchers solved the barotropic vorticity equation using differentiable quantum circuits and used the trained model to predict unseen future atmospheric dynamics to high accuracy.",
+  "companies": ["pasqal", "terra-quantum", "quanscient"],
   "sources": [
     {
       "type": "arxiv",

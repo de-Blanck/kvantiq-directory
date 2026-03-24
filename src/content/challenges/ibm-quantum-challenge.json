@@ -6,7 +6,11 @@
   "description": "IBM Quantum Challenge is a biannual global event where participants solve quantum computing problems using IBM Qiskit and real quantum hardware. Each challenge focuses on different themes such as quantum algorithms, error mitigation, or quantum applications. Challenges are designed for various skill levels from beginners to experts.",
   "website": "https://www.ibm.com/quantum/events",
   "status": "active",
+  "dateStart": "2025-06-01",
+  "prizes": "IBM Quantum credits and swag",
   "location": "Online",
+  "eligibility": "Open to all skill levels worldwide",
+  "problemDomains": ["quantum-algorithms", "error-mitigation", "quantum-applications"],
   "sources": [
     {
       "type": "website",

@@ -8,6 +8,7 @@
   "problem": "Efficient green hydrogen production via water electrolysis requires catalysts for the oxygen evolution reaction (OER) that are both high-performing and cost-effective. Current catalysts rely on scarce iridium, and the combinatorial space of possible multi-element catalyst compositions is too vast for exhaustive experimental screening.",
   "approach": "Quantum-inspired computing and quantum annealers are combined with cluster expansion methods to explore an enormous chemical design space — on the order of hundreds of quadrillions of possible catalyst compositions. Separately, quantum algorithms like VQE are used to simulate the electronic structure of catalytic active sites with higher accuracy than classical density functional theory.",
   "results": "University of Toronto and Fujitsu researchers discovered a new Ru-Cr-Mn-Sb-O2 catalyst family using quantum-inspired optimization, with the best candidate showing 8x higher mass activity than RuO2 and stable performance over 180 hours. The main component, ruthenium, is significantly cheaper than the iridium used in current catalysts.",
+  "companies": ["hqs", "pasqal", "kvantify"],
   "sources": [
     {
       "type": "url",

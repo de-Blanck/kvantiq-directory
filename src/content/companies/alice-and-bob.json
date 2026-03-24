@@ -11,6 +11,22 @@
   "featured": false,
   "headquarters": "Paris, France",
   "funding": "EUR 30M+",
+  "accessModel": "Cloud API + on-premise systems",
+  "products": [
+    {
+      "name": "Cat Qubit Processor",
+      "description": "Superconducting quantum processor using cat qubits for inherent bit-flip error suppression"
+    },
+    {
+      "name": "Felis Cloud Platform",
+      "description": "Cloud-based access to cat qubit quantum computing for algorithm development and testing"
+    }
+  ],
+  "highlights": [
+    "Pioneered cat qubit technology that exponentially suppresses bit-flip errors",
+    "Raised over EUR 30M to build fault-tolerant quantum computers with fewer physical qubits",
+    "Spun out of ENS Paris and INRIA quantum research groups"
+  ],
   "sources": [
     {
       "type": "website",

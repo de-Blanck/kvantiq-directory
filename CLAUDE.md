@@ -1,154 +1,116 @@
-# CLAUDE.md
-
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+# CLAUDE.md — Kvantiq Directory (feature/directory-site worktree)
 
 ## Project
 
-Kvantiq Directory — a static site directory for the European quantum computing ecosystem (companies, benchmarks, use cases, challenges, resources). Focused on Nordics + DACH, optimized for Google SEO and AI/LLM discoverability.
+Kvantiq Directory — a static site directory for the European quantum computing ecosystem. Focused on Nordics + DACH. Optimized for Google SEO and AI/LLM discoverability.
 
-## Repository Structure
-
-The repo uses **git worktrees**. The `main` branch is the repo root (`E:\kvantiq-directory`). Active development happens on the `feature/directory-site` branch in the worktree at `.worktrees/feature-directory-site/`.
-
-When working on the site, operate from the worktree directory:
-```
-E:\kvantiq-directory\.worktrees\feature-directory-site\
-```
+**Live URL:** https://directory.kvantiq.studio
+**Branch:** feature/directory-site
+**Worktree:** E:\kvantiq-directory\.worktrees\feature-directory-site\
 
 ## Tech Stack
 
-- **Astro 6** (static site generator, `output: 'static'`)
-- **Tailwind CSS 4** via `@tailwindcss/vite` plugin (not `@astrojs/tailwind`)
-- **Astro Content Collections** with Zod schema validation for all data
-- **Pagefind** for client-side search (runs as postbuild step)
-- **@astrojs/sitemap** for sitemap generation
-- **Vercel** free tier for hosting
-- Site URL: `https://directory.kvantiq.studio`
-- Node.js >= 22.12.0
+- **Astro 6** (static, `output: 'static'`)
+- **Tailwind CSS 4** via `@tailwindcss/vite` (config in `@theme` block in `global.css`)
+- **React** for interactive components (DetailPage, DetailTabs, ListingView, etc.)
+- **Pagefind** for client-side search (postbuild step, unavailable in dev)
+- **Zod** schema validation at build time (`src/content.config.ts`)
+- **Vercel** free tier hosting
 
 ## Commands
 
-All commands run from the worktree directory (`.worktrees/feature-directory-site/`):
-
 ```bash
-npm run dev        # Start dev server
-npm run build      # Build static site (also runs pagefind postbuild)
-npm run preview    # Preview built site locally
+npm run dev          # Start dev server (default port 4321)
+npm run build        # Build + pagefind postbuild
+npm run preview      # Preview built site
+npm run audit:content # Content quality audit (RICH/ADEQUATE/SPARSE ratings)
 ```
 
-Build output goes to `dist/`. Pagefind generates its index in `dist/pagefind/`.
+## Design System: Editorial Light
+
+The site uses an **Editorial Light** theme — warm broken-white, Swiss editorial-inspired. All tokens defined in `src/styles/global.css` `@theme` block.
+
+### Color Tokens
+
+| Token | Value | Usage |
+|-------|-------|-------|
+| `void` | `#F8F6F1` | Page background (warm parchment) |
+| `base` | `#FFFFFF` | Card backgrounds (clean white) |
+| `surface` | `#F2EFE9` | Header, footer, how-to section |
+| `elevated` | `#EBE7E0` | Hover states, stat boxes |
+| `border` | `#DDD8CF` | All borders (warm taupe) |
+| `text-primary` | `#1C1917` | Headings, body (warm near-black) |
+| `text-secondary` | `#57534E` | Descriptions, labels |
+| `text-muted` | `#78716C` | Timestamps, meta |
+| `accent` | `#B45309` | Amber/rust editorial accent |
+| `info` | `#1D4ED8` | Nav active, buttons, CTAs |
+| `warn` | `#B45309` | Warning badges |
+| `error` | `#DC2626` | Error states |
+
+### Critical Rules
+
+- **`shadow-glow` is `none`** — use `shadow-subtle` or `shadow-elevated` instead
+- **`text-void` is parchment** — use `text-white` for light text on dark backgrounds
+- **No gradients** — `from-accent to-cyan` was Quantum Phosphor. Use solid `bg-info text-white` for CTAs
+- **`bg-accent-glow`** maps to subtle amber tint — safe to use on badges
+- Logo: use `kvantiq-logo-black.png` (not white)
+
+### Typography
+
+| Element | Font | Weight | Size |
+|---------|------|--------|------|
+| Headings | Inter Tight | 600-700 | 24-32px |
+| Body | Inter | 400 | 15px |
+| Card titles | IBM Plex Mono | 600 | 13px uppercase, tracking 0.08em |
+| Meta/timestamps | IBM Plex Mono | 400 | 11-12px |
+| Tags/badges | IBM Plex Mono | 500 | 10-11px |
 
 ## Architecture
 
 ### Data Model
 
-All directory data is JSON files in `src/content/` organized by collection type. Schemas are defined in `src/content.config.ts` using Zod via Astro Content Collections. Collections:
+JSON files in `src/content/` with Zod schemas in `src/content.config.ts`:
 
-- **companies** — `src/content/companies/*.json` (fields: name, slug, country, region, type, tags, description, website, featured, etc.)
-- **benchmarks** — `src/content/benchmarks/*.json`
-- **use-cases** — `src/content/use-cases/*.json`
-- **challenges** — `src/content/challenges/*.json`
-- **resources** — `src/content/resources/*.json`
+- **companies** (74) — name, slug, country, region, type, tags, description, website, products, highlights, accessModel, employees, funding, sources, news
+- **benchmarks** (32) — name, slug, algorithm, category, hardware, qubits, framework, keyMetrics, significance, sources, news
+- **use-cases** (23) — name, slug, industry, category, problem, approach, results, companies, sources, news
+- **challenges** (12) — name, slug, organizer, prizes, eligibility, teamSize, registrationDeadline, problemDomains, sources, news
+- **resources** (42) — name, slug, type, lastUpdated, maturity, communitySize, sources, news
 
-Schema validation happens at build time — invalid JSON breaks the build.
+### Page Pattern
 
-### Page Generation Pattern
+- Index pages: `src/pages/{type}/index.astro` — table + card grid
+- Detail pages: `src/pages/{type}/[slug].astro` — hero + tabbed content
+- **Resources have NO detail pages** — index links to external sites only
 
-Every content type follows the same pattern:
-1. **Index page** (`src/pages/{type}/index.astro`) — comparison table + card grid + `ItemList` JSON-LD
-2. **Detail page** (`src/pages/{type}/[slug].astro`) — uses `getStaticPaths()` + `getCollection()`, includes type-specific JSON-LD schema + FAQ section + summary block with `role="doc-abstract"`
-3. Companies also have **country filter pages** at `src/pages/companies/country/[country].astro`
-4. Resources only have an index page (links out to external sites)
+### Component Pattern for Detail Pages
 
-### Layout & Components
+- `DetailPage.tsx` renders hero + tabs + dashboard grid
+- Collection-specific fields are passed via `extraCards` prop from `.astro` files (strings get wrapped in `<p>`)
+- `products` and `highlights` are direct props on `DetailPage` (need React rendering)
+- `DEFAULT_CARDS` = universal cards (overview, news, related). Do NOT add collection-specific cards here
 
-- `src/layouts/BaseLayout.astro` — HTML shell with SEO meta (Open Graph, Twitter Cards), JSON-LD (`SpeakableSpecification` on every page), Pagefind `data-pagefind-body` on `<main>`
-- `src/components/JsonLd.astro` — renders `<script type="application/ld+json">`
-- `src/components/Header.astro` / `Footer.astro` — site-wide nav (marked `data-pagefind-ignore`)
-- `src/components/ListingCard.astro` — reusable card for grid layouts
-- `src/components/TagList.astro` — tag pill list
-- `src/components/SearchBar.astro` — Pagefind UI widget
-- `src/components/NewsletterSignup.astro` — email capture form
+## Content Quality Thresholds
 
-### AI/LLM Optimization
+Run `npm run audit:content` to check. Ratings:
 
-The site is specifically designed for AI crawler extraction:
-- `public/robots.txt` — explicitly allows 17+ AI crawler user agents
-- `public/llms.txt` — spec-compliant site summary for LLMs
-- `src/pages/llms-full.txt.ts` — build-time endpoint that concatenates all collection entries
-- Every detail page outputs semantic HTML5 with question-format H2 headings, `<time datetime="">` elements, and FAQ sections with `FAQPage` JSON-LD schema
-
-### JSON-LD Schema Types by Page
-
-| Page Type | Schema.org Type |
-|-----------|----------------|
-| Company | `Organization` + `FAQPage` |
-| Benchmark | `Dataset` + `FAQPage` |
-| Use Case | `Article` + `FAQPage` |
-| Challenge | `Event` |
-| Resource | `LearningResource` |
-| All index pages | `ItemList` |
-| All pages | `SpeakableSpecification` (via BaseLayout) |
+| Collection | ADEQUATE minimum | RICH minimum |
+|------------|-----------------|-------------|
+| Companies | desc ≥80 chars, employees OR funding | + products, + highlights |
+| Benchmarks | desc ≥80 chars, hardware | + keyMetrics, + significance |
+| Use Cases | desc ≥80 chars, results | + companies array |
+| Challenges | desc ≥80 chars, prizes, dateStart | + eligibility, + problemDomains |
+| Resources | desc ≥80 chars | + lastUpdated, + maturity |
 
 ## NON-NEGOTIABLE: Content Maintenance Workflow
 
-Every content change — whether by AI or human — MUST follow this pipeline. No exceptions.
+Every content change MUST follow: Branch → Add/Edit JSON → Build validates → PR with template → CI passes → Owner reviews → Merge → Auto-deploy.
 
-### The Pipeline
-
-```
-Branch → Add/Edit JSON → Build validates → PR with template → CI passes → Owner reviews → Merge → Auto-deploy
-```
-
-### Rules
-
-1. **Never commit directly to main.** All changes go through a feature branch and PR.
-2. **Every entry requires minimum 2 verified sources.** Enforced by Zod schema (`sources.min(2)`) and CI. Build fails without them.
-3. **All source URLs must be live and accessible.** CI validates URL format. PR reviewer spot-checks.
-4. **PR must use the template.** The template at `.github/pull_request_template.md` has mandatory checklists for source verification, schema compliance, ethics, and preview.
-5. **CI must pass before merge.** The GitHub Actions workflow validates: build, duplicate slugs, minimum sources, valid URLs, and blocklist compliance.
-6. **No blocklisted companies in the companies collection.** AWS, Google Cloud, Meta, etc. are never listed as companies. Blocklisted company challenges use DuckDuckGo URLs. Open-source tools from blocklisted companies keep direct links.
-7. **Descriptions are factual.** 2-3 sentences, no marketing language, no superlatives.
-8. **Slug matches filename.** `my-company.json` must have `"slug": "my-company"`.
-
-### CI Checks (all must pass)
-
-| Check | What it validates |
-|-------|------------------|
-| `npm run build` | Zod schema validation — catches missing/invalid fields, <2 sources |
-| Duplicate slugs | No two entries in same collection share a slug |
-| Source count | Every entry has >= 2 sources |
-| Source URLs | All source URLs start with `http` |
-| Blocklist | No company entries link to blocklisted domains |
-
-### How the owner audits
-
-- **PR diff** shows exactly which entries were added/changed
-- **PR template checklist** requires source verification, ethics check
-- **Vercel preview deploy** on every PR — see the site before merging
-- **Git history** is the permanent audit trail — every change attributed
-- **Source URLs** in every JSON entry link back to verifiable references
-
-### Adding New Content
-
-1. Create a branch: `git checkout -b content/add-{description}`
-2. Add JSON files to `src/content/{collection}/` matching the Zod schema in `src/content.config.ts`
-3. Each entry needs: all required fields + `sources` array with >= 2 verified sources
-4. Run `npm run build` locally to validate
-5. Push and open a PR — fill out the template completely
-6. Wait for CI to pass and owner to review
-7. Owner merges → Vercel auto-deploys
-
-## Design Spec & Implementation Plan
-
-Detailed specification: `docs/superpowers/specs/2026-03-18-kvantiq-directory-design.md`
-Implementation plan: `docs/superpowers/plans/2026-03-18-kvantiq-directory.md`
-
-## Ethics Policy
-
-The site follows strict ethical guidelines:
-- European-first, open-source preferred for affiliate links
-- No third-party tracking (no Google Analytics, no Facebook pixels)
-- No Google AdSense — only EthicalAds or Carbon Ads (contextual, no profiling)
-- Companies listed based on alignment with open science and European tech sovereignty
-- See the design spec for the full affiliate allowlist/blocklist
+1. Never commit directly to main
+2. Every entry requires minimum 2 verified sources
+3. All source URLs must be live and accessible
+4. PR must use the template
+5. CI must pass before merge
+6. No blocklisted companies (AWS, Google Cloud, Meta, etc.)
+7. Descriptions are factual — no marketing language
+8. Slug matches filename

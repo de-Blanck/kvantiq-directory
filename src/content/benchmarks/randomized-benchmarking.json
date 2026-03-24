@@ -9,6 +9,12 @@
   "framework": "Qiskit, Cirq, pyGSTi",
   "reproducible": true,
   "datePublished": "2012-04-27",
+  "keyMetrics": [
+    {"metric": "Gate set", "value": "Clifford group"},
+    {"metric": "Key output", "value": "Average gate infidelity"},
+    {"metric": "Extension", "value": "Interleaved RB for individual gates"}
+  ],
+  "significance": "The foundational protocol for quantum gate characterization, adopted universally across all quantum computing platforms for calibration and quality control.",
   "sources": [
     {
       "type": "arxiv",

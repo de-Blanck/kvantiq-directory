@@ -52,7 +52,7 @@ export default function DetailTabs({ children, news, related, onCustomize }: Det
   ];
 
   return (
-    <div className="overflow-x-hidden">
+    <div>
       {/* Tab bar */}
       <div className="flex items-center overflow-x-auto rounded-xl border border-border bg-base p-1 mb-4">
         {tabs.map(tab => (
@@ -61,7 +61,7 @@ export default function DetailTabs({ children, news, related, onCustomize }: Det
             onClick={() => setActiveTab(tab.id)}
             className={`shrink-0 rounded-lg px-5 py-2.5 text-[13px] font-medium transition-all duration-150 ${
               activeTab === tab.id
-                ? 'bg-surface text-accent shadow-glow'
+                ? 'bg-surface text-info shadow-subtle'
                 : 'text-text-muted hover:text-text-secondary'
             }`}
           >
@@ -77,14 +77,15 @@ export default function DetailTabs({ children, news, related, onCustomize }: Det
         </button>
       </div>
 
-      {/* Tab content — overflow hidden prevents layout shift */}
-      <AnimatePresence mode="wait">
+      {/* Tab content */}
+      <div className="relative min-h-[200px]">
+      <AnimatePresence mode="popLayout">
         <motion.div
           key={activeTab}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.15 }}
+          exit={{ opacity: 0, position: 'absolute' as any }}
+          transition={{ duration: 0.12 }}
         >
           {activeTab === 'overview' && children}
 
@@ -136,6 +137,7 @@ export default function DetailTabs({ children, news, related, onCustomize }: Det
           )}
         </motion.div>
       </AnimatePresence>
+      </div>
     </div>
   );
 }

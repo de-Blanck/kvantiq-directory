@@ -12,6 +12,18 @@
   "headquarters": "Copenhagen, Denmark",
   "employees": "10+",
   "funding": "EUR 80M",
+  "accessModel": "Cloud access + national infrastructure",
+  "products": [
+    {
+      "name": "Magne Quantum Computer",
+      "description": "Level-2 fault-tolerant quantum system with 50 logical qubits and 1,200+ physical neutral-atom qubits, built by Atom Computing and Microsoft"
+    }
+  ],
+  "highlights": [
+    "EUR 80M joint venture backed by EIFO and Novo Nordisk Foundation",
+    "First commercially available fault-tolerant quantum computer, projected operational late 2026",
+    "Part of Denmark's national quantum infrastructure strategy"
+  ],
   "sources": [
     {
       "type": "website",

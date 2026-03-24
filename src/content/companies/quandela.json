@@ -11,6 +11,22 @@
   "featured": true,
   "headquarters": "Massy, France",
   "funding": "EUR 50M+",
+  "accessModel": "Cloud API + on-premise hardware sales",
+  "products": [
+    {
+      "name": "MosaiQ",
+      "description": "Photonic quantum computing platform offering cloud access and on-premise deployment for optimization and simulation workloads"
+    },
+    {
+      "name": "Single-Photon Sources",
+      "description": "High-performance semiconductor single-photon emitters based on quantum dot technology for photonic quantum computing"
+    }
+  ],
+  "highlights": [
+    "One of Europe's leading photonic quantum computing companies with EUR 50M+ in funding",
+    "Offers both cloud-based and on-premise photonic quantum processors",
+    "Targets optimization, simulation, and machine learning applications"
+  ],
   "sources": [
     {
       "type": "website",

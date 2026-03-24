@@ -9,6 +9,9 @@
   "free": true,
   "language": "Python",
   "provider": "ETH Zurich",
+  "lastUpdated": "2023",
+  "maturity": "stable",
+  "communitySize": "~900 GitHub stars",
   "sources": [
     {
       "type": "website",

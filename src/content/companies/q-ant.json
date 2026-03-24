@@ -12,6 +12,22 @@
   "headquarters": "Stuttgart, Germany",
   "employees": "100+",
   "funding": "EUR 20M+",
+  "accessModel": "Hardware sales + industrial integration",
+  "products": [
+    {
+      "name": "Photonic Quantum Processor",
+      "description": "Integrated photonic quantum computing platform using light-based qubits for computation tasks"
+    },
+    {
+      "name": "Quantum Sensors",
+      "description": "High-precision photonic quantum sensors for industrial metrology and scientific measurement applications"
+    }
+  ],
+  "highlights": [
+    "Spun out from Trumpf, one of Europe's largest high-tech manufacturers",
+    "100+ employees developing both quantum computing and quantum sensing products",
+    "Leverages integrated photonics for scalable quantum technology across industrial verticals"
+  ],
   "sources": [
     {
       "type": "website",

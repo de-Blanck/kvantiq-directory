@@ -5,10 +5,16 @@
   "category": "machine-learning",
   "tags": ["VQC", "classification", "variational", "machine-learning", "hybrid", "data-encoding"],
   "description": "Benchmark of variational quantum classifiers that use parameterized quantum circuits for supervised learning. Circuit-centric quantum classifiers encode classical data into quantum states via feature maps, then apply trainable unitaries and measure a readout qubit for binary classification. Benchmarks evaluate different ansatz architectures, encoding strategies, and circuit depths on standard datasets including Iris, MNIST subsets, and domain-specific applications.",
+  "hardware": "Simulator / hardware-agnostic",
   "framework": "Qiskit Machine Learning, PennyLane",
   "qubits": 8,
   "reproducible": true,
   "datePublished": "2018-04-02",
+  "keyMetrics": [
+    {"metric": "Qubits used", "value": "8"},
+    {"metric": "Datasets", "value": "Iris, MNIST subsets"}
+  ],
+  "significance": "Foundational benchmark for quantum machine learning, establishing the circuit-centric classification paradigm used by most subsequent QML research.",
   "sources": [
     {
       "type": "arxiv",

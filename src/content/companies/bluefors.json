@@ -12,6 +12,22 @@
   "headquarters": "Helsinki, Finland",
   "employees": "700+",
   "funding": "N/A",
+  "accessModel": "On-premise systems",
+  "products": [
+    {
+      "name": "Dilution Refrigerator Systems",
+      "description": "Cryogenic cooling platforms reaching millikelvin temperatures for superconducting quantum processors"
+    },
+    {
+      "name": "KIDE Cryogenic Platform",
+      "description": "Next-generation modular cryogenic measurement system designed for scalable quantum computing infrastructure"
+    }
+  ],
+  "highlights": [
+    "World-leading manufacturer of dilution refrigerators with 700+ employees globally",
+    "Used by virtually every major superconducting quantum computing lab and company worldwide",
+    "Revenue-positive market leader in quantum infrastructure — no venture funding needed"
+  ],
   "sources": [
     {
       "type": "website",

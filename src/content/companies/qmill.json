@@ -12,6 +12,17 @@
   "headquarters": "Espoo, Finland",
   "employees": "10+",
   "funding": "EUR 5M",
+  "accessModel": "Software licensing",
+  "products": [
+    {
+      "name": "QMill Circuit Optimizer",
+      "description": "AI-powered quantum circuit optimization engine that reduces gate counts and improves execution fidelity on real quantum hardware"
+    }
+  ],
+  "highlights": [
+    "Uses machine learning to automatically optimize quantum circuits for practical hardware execution",
+    "Raised EUR 5M seed round in 2024 to scale AI-driven circuit compilation technology"
+  ],
   "sources": [
     {
       "type": "url",

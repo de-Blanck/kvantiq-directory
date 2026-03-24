@@ -10,6 +10,8 @@
   "status": "completed",
   "prizes": "EUR 30,000 total (first place EUR 15,000)",
   "location": "Online",
+  "eligibility": "Open to global innovators and teams",
+  "problemDomains": ["quantum-AI", "sustainability", "SDGs"],
   "sources": [
     {
       "type": "website",

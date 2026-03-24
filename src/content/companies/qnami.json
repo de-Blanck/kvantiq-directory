@@ -12,6 +12,22 @@
   "headquarters": "Muttenz, Switzerland",
   "employees": "10+",
   "funding": "CHF 6.6M",
+  "accessModel": "Hardware sales + service contracts",
+  "products": [
+    {
+      "name": "ProteusQ",
+      "description": "Scanning NV magnetometry microscope for nanoscale magnetic imaging of spintronics devices and materials"
+    },
+    {
+      "name": "QuantileverMX",
+      "description": "Diamond NV-center scanning probe tips for integration into existing atomic force microscopy platforms"
+    }
+  ],
+  "highlights": [
+    "Spin-off from the University of Basel with pioneering NV-center quantum microscopy research",
+    "Serves nanotechnology, life science, and spintronics device characterization markets",
+    "Raised CHF 6.6M to commercialize diamond-based quantum sensing instruments"
+  ],
   "sources": [
     {
       "type": "website",

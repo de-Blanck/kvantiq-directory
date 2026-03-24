@@ -11,6 +11,18 @@
   "featured": false,
   "headquarters": "Saarbrücken, Germany",
   "employees": "23",
+  "accessModel": "Software licensing + consulting",
+  "products": [
+    {
+      "name": "Qruise Platform",
+      "description": "AI-driven digital twin software for controlling, calibrating, and benchmarking quantum devices across computing and sensing platforms"
+    }
+  ],
+  "highlights": [
+    "Co-founded by Tommaso Calarco, a leading figure in European quantum control research",
+    "Spun out of Forschungszentrum Juelich with deep expertise in optimal quantum control",
+    "Creates machine learning digital twins to accelerate quantum hardware development cycles"
+  ],
   "sources": [
     {
       "type": "website",

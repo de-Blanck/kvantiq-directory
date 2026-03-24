@@ -10,6 +10,8 @@
   "status": "completed",
   "prizes": "USD 25,000 total (USD 3,000 per challenge first place)",
   "location": "Online",
+  "eligibility": "Open to all ages worldwide, including youth under 18",
+  "problemDomains": ["circuit-optimization", "quantum-algorithms"],
   "sources": [
     {
       "type": "website",

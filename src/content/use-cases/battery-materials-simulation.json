@@ -8,6 +8,7 @@
   "problem": "Accurately simulating the electronic structure of battery electrode and electrolyte materials requires solving the many-body Schrodinger equation, which is exponentially hard for classical computers. Current density functional theory approximations introduce systematic errors that limit predictive accuracy for new battery chemistries.",
   "approach": "First-quantization quantum algorithms with ionic pseudopotentials reduce the computational cost of simulating periodic battery materials on quantum hardware. The algorithms target properties directly relevant to battery performance — equilibrium cell voltages, ionic diffusion barriers, and phase stability — using fault-tolerant quantum circuits with Toffoli gate decompositions.",
   "results": "Microsoft and PNNL researchers estimated qubit and gate counts for simulating lithium manganese oxide, lithium nickel-manganese oxide, and lithium manganese oxyfluoride. A separate end-to-end quantum algorithm demonstrated feasibility of calculating key lithium-ion battery properties on future fault-tolerant hardware.",
+  "companies": ["pasqal", "hqs", "phasecraft", "quanscient"],
   "sources": [
     {
       "type": "arxiv",

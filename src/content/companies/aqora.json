@@ -10,6 +10,22 @@
   "website": "https://aqora.io",
   "featured": false,
   "headquarters": "Paris, France",
+  "funding": "Bootstrapped",
+  "accessModel": "Platform (competitions, datasets hub, recruitment)",
+  "products": [
+    {
+      "name": "Aqora Competitions Platform",
+      "description": "Hosts quantum computing hackathons and use-case challenges for researchers"
+    },
+    {
+      "name": "Aqora Datasets Hub",
+      "description": "Unified space for uploading, sharing, and exploring quantum-specific datasets with versioning"
+    }
+  ],
+  "highlights": [
+    "Originated from QuantX, an Ecole Polytechnique alumni initiative",
+    "Hosts the Global Industry Challenge connecting enterprises with quantum researchers"
+  ],
   "sources": [
     {
       "type": "website",

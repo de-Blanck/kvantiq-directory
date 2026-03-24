@@ -12,6 +12,22 @@
   "headquarters": "Cambridge, United Kingdom",
   "employees": "60+",
   "funding": "USD 70M+",
+  "accessModel": "Hardware sales + integration partnerships",
+  "products": [
+    {
+      "name": "Qubit-Photon Interface",
+      "description": "Photonic networking module that converts stationary qubits to flying photonic qubits for inter-node entanglement"
+    },
+    {
+      "name": "Entanglement Fabric",
+      "description": "Networking infrastructure enabling modular, distributed quantum computing across multiple hardware platforms"
+    }
+  ],
+  "highlights": [
+    "Raised over USD 70M including the largest Series A globally for quantum networking",
+    "Technology supports trapped-ion and neutral-atom platforms for modular quantum computing",
+    "Opened dedicated trapped-ion qubit networking lab in Cambridge to accelerate distributed QC"
+  ],
   "sources": [
     {
       "type": "website",

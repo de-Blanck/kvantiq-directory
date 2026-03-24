@@ -33,6 +33,11 @@ interface DetailPageProps {
   related: RelatedItem[];
   sources: { type: string; url: string; title?: string; dateAccessed?: string }[];
   extraCards?: { id: string; label: string; content: React.ReactNode }[];
+  products?: { name: string; description: string; url?: string }[];
+  highlights?: string[];
+  keyMetrics?: { metric: string; value: string; unit?: string }[];
+  significance?: string;
+  linkedCompanies?: { name: string; slug: string }[];
 }
 
 // Only content cards — no metrics (in hero), no sources (always at bottom)
@@ -81,6 +86,68 @@ export default function DetailPage(props: DetailPageProps) {
       label: '', // No label — tab already says "Overview"
       content: <p className="text-[15px] text-text-secondary leading-[1.7]">{props.description}</p>,
     },
+    ...(props.products && props.products.length > 0 ? [{
+      id: 'products',
+      label: 'Products',
+      content: (
+        <div className="flex flex-col gap-3">
+          {props.products.map((p, i) => (
+            <div key={i}>
+              <div className="flex items-center gap-2">
+                <span className="font-semibold text-[14px] text-text-primary">{p.name}</span>
+                {p.url && (
+                  <a href={p.url} target="_blank" rel="noopener noreferrer" className="text-info text-[12px] hover:underline">↗</a>
+                )}
+              </div>
+              <p className="text-[13px] text-text-secondary mt-0.5 leading-relaxed">{p.description}</p>
+            </div>
+          ))}
+        </div>
+      ),
+    }] : []),
+    ...(props.highlights && props.highlights.length > 0 ? [{
+      id: 'highlights',
+      label: 'Key Highlights',
+      content: (
+        <ul className="flex flex-col gap-1.5">
+          {props.highlights.map((h, i) => (
+            <li key={i} className="text-[14px] text-text-secondary leading-relaxed">• {h}</li>
+          ))}
+        </ul>
+      ),
+    }] : []),
+    ...(props.keyMetrics && props.keyMetrics.length > 0 ? [{
+      id: 'key-metrics',
+      label: 'Key Metrics',
+      content: (
+        <div className="flex flex-col gap-2">
+          {props.keyMetrics.map((m, i) => (
+            <div key={i} className="flex items-baseline gap-2">
+              <span className="font-mono text-[11px] text-text-muted uppercase tracking-wide shrink-0">{m.metric}</span>
+              <span className="text-[14px] font-semibold text-text-primary">{m.value}{m.unit ? ` ${m.unit}` : ''}</span>
+            </div>
+          ))}
+        </div>
+      ),
+    }] : []),
+    ...(props.significance ? [{
+      id: 'significance',
+      label: 'Why It Matters',
+      content: <p className="text-[15px] text-text-secondary leading-[1.7]">{props.significance}</p>,
+    }] : []),
+    ...(props.linkedCompanies && props.linkedCompanies.length > 0 ? [{
+      id: 'companies',
+      label: 'Companies Involved',
+      content: (
+        <div className="flex flex-wrap gap-2">
+          {props.linkedCompanies.map(c => (
+            <a key={c.slug} href={`/companies/${c.slug}/`} className="rounded-lg border border-border px-3 py-1.5 font-mono text-[12px] text-text-primary hover:border-info/30 hover:text-info transition-colors">
+              {c.name}
+            </a>
+          ))}
+        </div>
+      ),
+    }] : []),
     ...(props.news.length > 0 ? [{
       id: 'news',
       label: 'Latest News',
@@ -91,7 +158,7 @@ export default function DetailPage(props: DetailPageProps) {
               <div className="text-sm font-medium text-text-primary">{item.title}</div>
               <div className="mt-1 flex gap-2 font-mono text-xs text-text-muted">
                 <span>{item.date}</span>
-                <span className="text-accent">{item.source} ↗</span>
+                <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">{item.source} ↗</a>
               </div>
             </div>
           ))}
@@ -183,8 +250,19 @@ export default function DetailPage(props: DetailPageProps) {
         <DashboardGrid
           collection={props.collection}
           cards={dashboardCards}
-          visibleCardIds={cardConfigs.filter(c => c.visible).map(c => c.id)}
-          fullWidthCardIds={cardConfigs.filter(c => c.fullWidth).map(c => c.id)}
+          visibleCardIds={[
+            ...cardConfigs.filter(c => c.visible).map(c => c.id),
+            ...(props.products?.length ? ['products'] : []),
+            ...(props.highlights?.length ? ['highlights'] : []),
+            ...(props.keyMetrics?.length ? ['key-metrics'] : []),
+            ...(props.significance ? ['significance'] : []),
+            ...(props.linkedCompanies?.length ? ['companies'] : []),
+            ...(props.extraCards || []).map(c => c.id),
+          ]}
+          fullWidthCardIds={[
+            ...cardConfigs.filter(c => c.fullWidth).map(c => c.id),
+            ...(props.extraCards || []).map(c => c.id),
+          ]}
         />
       </DetailTabs>
 

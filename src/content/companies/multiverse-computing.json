@@ -11,6 +11,18 @@
   "featured": false,
   "headquarters": "San Sebastián, Spain",
   "funding": "EUR 25M+",
+  "accessModel": "SaaS platform + enterprise licensing",
+  "products": [
+    {
+      "name": "Singularity",
+      "description": "Quantum AI platform for model compression, optimization, and quantum-inspired machine learning at enterprise scale"
+    }
+  ],
+  "highlights": [
+    "Flagship Singularity platform serves finance, energy, and manufacturing sectors with quantum AI",
+    "EUR 25M+ raised, one of Europe's best-funded quantum software startups",
+    "Specializes in model compression and quantum-inspired algorithms for near-term enterprise value"
+  ],
   "sources": [
     {
       "type": "website",

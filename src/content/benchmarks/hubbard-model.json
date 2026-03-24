@@ -10,6 +10,11 @@
   "qubits": 16,
   "reproducible": true,
   "datePublished": "2024-08-01",
+  "keyMetrics": [
+    {"metric": "Qubits tested", "value": "16"},
+    {"metric": "Key finding", "value": "Energy errors plateau for larger lattices"}
+  ],
+  "significance": "Reveals fundamental scalability limitations of VQE for strongly correlated systems, with error plateauing even for the most accurate ansatze.",
   "sources": [
     {
       "type": "arxiv",

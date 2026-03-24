@@ -10,6 +10,23 @@
   "website": "https://www.orangeqs.com",
   "featured": false,
   "headquarters": "Delft, Netherlands",
+  "employees": "30",
+  "funding": "EUR 12M",
+  "accessModel": "Hardware sales (quantum chip testing systems) + software licensing",
+  "products": [
+    {
+      "name": "OrangeQS MAX",
+      "description": "Turnkey high-throughput equipment for testing quantum chips accommodating hundreds of qubits per chip"
+    },
+    {
+      "name": "OrangeQS FLEX",
+      "description": "Flexible quantum chip R&D system with configurable rack and control electronics"
+    }
+  ],
+  "highlights": [
+    "TNO spin-off founded 2020 in Delft",
+    "Test machines check quantum chips in days rather than weeks, enabling faster scaling"
+  ],
   "sources": [
     {
       "type": "website",

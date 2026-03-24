@@ -12,6 +12,18 @@
   "headquarters": "Delft, Netherlands",
   "employees": "35+",
   "funding": "EUR 18M+",
+  "accessModel": "Hardware sales",
+  "products": [
+    {
+      "name": "Quantum Transducer",
+      "description": "Commercial microwave-to-optical quantum transducer enabling quantum computers to network over standard telecom fiber"
+    }
+  ],
+  "highlights": [
+    "Launched the first commercial quantum transducer in March 2026",
+    "Spin-off from TU Delft's Quantum Nanoscience department (QuTech ecosystem)",
+    "Raised EUR 18M+ to enable distributed quantum computing over optical networks"
+  ],
   "sources": [
     {
       "type": "website",

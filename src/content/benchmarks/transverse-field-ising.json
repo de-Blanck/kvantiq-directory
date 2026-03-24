@@ -10,6 +10,12 @@
   "qubits": 36,
   "reproducible": true,
   "datePublished": "2021-06-21",
+  "keyMetrics": [
+    {"metric": "1D chain max", "value": "25 qubits"},
+    {"metric": "2D lattice max", "value": "6\u00d76 sites (36 qubits)"},
+    {"metric": "Hardware tested", "value": "IBM, IQM Garnet, Quantinuum"}
+  ],
+  "significance": "The paradigmatic model for quantum phase transitions, serving as the primary test bed for quantum simulation capabilities across competing hardware platforms.",
   "sources": [
     {
       "type": "arxiv",

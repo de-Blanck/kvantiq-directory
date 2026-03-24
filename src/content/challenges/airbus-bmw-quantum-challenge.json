@@ -10,6 +10,8 @@
   "status": "completed",
   "prizes": "EUR 150K total prizes",
   "location": "Online",
+  "eligibility": "Open to global teams and individuals",
+  "problemDomains": ["optimization", "aerospace-engineering", "automotive-manufacturing"],
   "sources": [
     {
       "type": "website",

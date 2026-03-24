@@ -11,6 +11,18 @@
   "featured": false,
   "headquarters": "Vienna, Austria",
   "funding": "USD 10M",
+  "accessModel": "Hardware sales + system integration",
+  "products": [
+    {
+      "name": "eQKD System",
+      "description": "Entanglement-based quantum key distribution system capable of securing fiber-optic infrastructure over distances up to 350 km"
+    }
+  ],
+  "highlights": [
+    "Founded by researchers from a Nobel Prize-winning quantum communication laboratory",
+    "Specializes in long-distance entanglement-based QKD for critical infrastructure protection",
+    "Raised USD 10M to safeguard European critical infrastructure from quantum threats"
+  ],
   "sources": [
     {
       "type": "website",

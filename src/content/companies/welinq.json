@@ -12,6 +12,18 @@
   "headquarters": "Paris, France",
   "employees": "30+",
   "funding": "EUR 10M+",
+  "accessModel": "Hardware sales + partnerships",
+  "products": [
+    {
+      "name": "Quantum Memory Module",
+      "description": "High-performance quantum memories based on clouds of laser-cooled atoms for interconnecting quantum processors"
+    }
+  ],
+  "highlights": [
+    "Sorbonne University and CNRS spin-out with deep atomic physics expertise",
+    "Builds highest-performance quantum memories for distributed quantum computing",
+    "EUR 10M+ in funding to enable quantum networking in data centers"
+  ],
   "sources": [
     {
       "type": "website",

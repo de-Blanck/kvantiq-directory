@@ -8,7 +8,7 @@
   "problem": "Classical computers struggle to accurately simulate quantum mechanical properties of drug molecules, especially electron correlation effects in large molecular systems. This limits the accuracy of computational drug screening.",
   "approach": "Hybrid quantum-classical algorithms like VQE and quantum machine learning models are used to compute molecular properties. The quantum processor handles the quantum-mechanical simulation while classical computers manage optimization and data processing.",
   "results": "Early results show quantum-enhanced models can achieve chemical accuracy for small molecules. Scaling to pharmaceutically relevant molecules remains an active research challenge.",
-  "companies": ["Pasqal", "IQM"],
+  "companies": ["pasqal", "iqm", "kvantify", "qubit-pharmaceuticals", "algorithmiq"],
   "sources": [
     {
       "type": "arxiv",
