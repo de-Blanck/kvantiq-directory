@@ -9,6 +9,9 @@
   "free": true,
   "language": "Python",
   "provider": "Google",
+  "lastUpdated": "2026",
+  "maturity": "mature",
+  "communitySize": "~4,200 GitHub stars",
   "sources": [
     {
       "type": "website",

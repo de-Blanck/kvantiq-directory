@@ -15,6 +15,9 @@
   "openSource": false,
   "free": false,
   "provider": "QuIC",
+  "lastUpdated": "Active",
+  "maturity": "mature",
+  "communitySize": "160+ members",
   "sources": [
     {
       "type": "website",

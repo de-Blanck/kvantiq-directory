@@ -9,6 +9,9 @@
   "free": true,
   "language": "Python",
   "provider": "QuTech (TU Delft)",
+  "lastUpdated": "2024",
+  "maturity": "experimental",
+  "communitySize": "~50 GitHub stars",
   "sources": [
     {
       "type": "website",

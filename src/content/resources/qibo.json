@@ -9,6 +9,9 @@
   "free": true,
   "language": "Python",
   "provider": "Qibo Collaboration (CERN, INFN, BSC, UB)",
+  "lastUpdated": "2026",
+  "maturity": "stable",
+  "communitySize": "~300 GitHub stars",
   "sources": [
     {
       "type": "website",

@@ -9,6 +9,9 @@
   "free": true,
   "language": "Python / C++",
   "provider": "Google Quantum AI",
+  "lastUpdated": "2026",
+  "maturity": "stable",
+  "communitySize": "~500 GitHub stars",
   "sources": [
     {
       "type": "url",

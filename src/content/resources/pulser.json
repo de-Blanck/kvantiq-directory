@@ -9,6 +9,9 @@
   "free": true,
   "language": "Python",
   "provider": "Pasqal",
+  "lastUpdated": "2026",
+  "maturity": "stable",
+  "communitySize": "~200 GitHub stars",
   "sources": [
     {
       "type": "website",

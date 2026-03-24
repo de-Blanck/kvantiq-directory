@@ -9,6 +9,9 @@
   "free": true,
   "language": "QASM",
   "provider": "OpenQASM Contributors",
+  "lastUpdated": "2025",
+  "maturity": "mature",
+  "communitySize": "~1,800 GitHub stars",
   "sources": [
     {
       "type": "website",

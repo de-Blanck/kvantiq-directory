@@ -9,6 +9,9 @@
   "free": true,
   "language": "Python",
   "provider": "Quandela",
+  "lastUpdated": "2025",
+  "maturity": "stable",
+  "communitySize": "~300 GitHub stars",
   "sources": [
     {
       "type": "website",

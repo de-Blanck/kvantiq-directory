@@ -9,6 +9,9 @@
   "free": true,
   "language": "Python",
   "provider": "Unitary Foundation",
+  "lastUpdated": "2026",
+  "maturity": "stable",
+  "communitySize": "~350 GitHub stars",
   "sources": [
     {
       "type": "website",

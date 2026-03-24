@@ -9,6 +9,8 @@
   "free": true,
   "language": "English",
   "provider": "CERN",
+  "lastUpdated": "Active",
+  "maturity": "stable",
   "sources": [
     {
       "type": "website",

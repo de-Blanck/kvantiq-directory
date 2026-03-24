@@ -9,6 +9,9 @@
   "free": true,
   "language": "Python",
   "provider": "Quantinuum",
+  "lastUpdated": "2026",
+  "maturity": "mature",
+  "communitySize": "~500 GitHub stars",
   "sources": [
     {
       "type": "website",

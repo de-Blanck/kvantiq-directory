@@ -9,6 +9,8 @@
   "free": true,
   "language": "English",
   "provider": "EU Quantum Flagship",
+  "lastUpdated": "Active",
+  "maturity": "mature",
   "sources": [
     {
       "type": "website",

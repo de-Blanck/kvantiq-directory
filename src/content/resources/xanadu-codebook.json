@@ -9,6 +9,8 @@
   "free": true,
   "language": "Python",
   "provider": "Xanadu",
+  "lastUpdated": "Active",
+  "maturity": "stable",
   "sources": [
     {
       "type": "website",

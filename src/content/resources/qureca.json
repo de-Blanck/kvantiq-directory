@@ -9,6 +9,8 @@
   "free": false,
   "language": "English",
   "provider": "QURECA Ltd",
+  "lastUpdated": "Active",
+  "maturity": "stable",
   "sources": [
     {
       "type": "website",
