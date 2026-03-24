@@ -19,16 +19,21 @@ export async function getStaticPaths() {
     ...resources.map(r => ({ slug: r.data.slug, name: r.data.name, description: r.data.description, collection: 'resources', tags: r.data.tags, href: `/resources/` })),
   ];
 
+  const companyMap = new Map(companies.map(c => [c.data.slug, c.data.name]));
+
   return useCases.map(u => ({
     params: { slug: u.data.slug },
     props: {
       useCase: u.data,
       related: findRelated(u.data.slug, u.data.tags, allItems),
+      resolvedCompanies: (u.data.companies || [])
+        .filter((slug: string) => companyMap.has(slug))
+        .map((slug: string) => ({ slug, name: companyMap.get(slug)! })),
     },
   }));
 }
 
-const { useCase, related } = Astro.props;
+const { useCase, related, resolvedCompanies } = Astro.props;
 
 const articleLd = {
   "@context": "https://schema.org",
@@ -69,6 +74,8 @@ const meta = [useCase.industry, useCase.category.replace(/^\w/, (c: string) => c
     extraCards={[
       { id: 'problem', label: 'Problem', content: useCase.problem },
       { id: 'approach', label: 'Approach', content: useCase.approach },
+      ...(useCase.results ? [{ id: 'results', label: 'Results', content: useCase.results }] : []),
     ]}
+    linkedCompanies={resolvedCompanies}
   />
 </BaseLayout>

@@ -64,5 +64,11 @@ const meta = [benchmark.algorithm, benchmark.category.replace(/^\w/, (c: string)
     news={benchmark.news || []}
     related={related}
     sources={benchmark.sources}
+    keyMetrics={benchmark.keyMetrics}
+    significance={benchmark.significance}
+    extraCards={[
+      ...(benchmark.hardware ? [{ id: 'hardware', label: 'Hardware', content: benchmark.hardware }] : []),
+      ...(benchmark.framework ? [{ id: 'framework', label: 'Framework', content: benchmark.framework }] : []),
+    ]}
   />
 </BaseLayout>

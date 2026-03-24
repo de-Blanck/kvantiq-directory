@@ -74,7 +74,7 @@ const meta = [challenge.organizer, challenge.status.replace(/^\w/, (c: string) =
           challenge.eligibility ? `Eligibility: ${challenge.eligibility}` : '',
           challenge.registrationDeadline ? `Registration deadline: ${challenge.registrationDeadline}` : '',
           challenge.problemDomains?.length ? `Problem domains: ${challenge.problemDomains.join(', ')}` : '',
-        ].filter(Boolean).join('\n'),
+        ].filter(Boolean).join(' · '),
       }] : []),
     ]}
   />
