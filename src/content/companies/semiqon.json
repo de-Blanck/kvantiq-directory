@@ -12,6 +12,18 @@
   "headquarters": "Espoo, Finland",
   "employees": "20+",
   "funding": "EUR 19.4M",
+  "accessModel": "Hardware development + licensing",
+  "products": [
+    {
+      "name": "Silicon Quantum Dot Processor",
+      "description": "Scalable quantum processor using silicon quantum dot technology compatible with existing semiconductor fabrication lines"
+    }
+  ],
+  "highlights": [
+    "VTT spin-off leveraging Finland's semiconductor manufacturing expertise",
+    "EUR 19.4M in funding to advance silicon-based quantum processors",
+    "Compatible with existing CMOS fabrication for industrial-scale production"
+  ],
   "sources": [
     {
       "type": "website",

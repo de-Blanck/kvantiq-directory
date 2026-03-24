@@ -11,6 +11,18 @@
   "featured": false,
   "headquarters": "Ulm, Germany",
   "funding": "EUR 30M+",
+  "accessModel": "Hardware development + government contracts",
+  "products": [
+    {
+      "name": "Diamond Spin Qubit Processor",
+      "description": "Compact, energy-efficient solid-state quantum computer based on spin qubits in diamond with fault-tolerant architecture"
+    }
+  ],
+  "highlights": [
+    "EUR 30M awarded by DLR Quantum Computing Initiative",
+    "Targeting 32-qubit fault-tolerant system by 2026 and 256+ qubit mobile processors by 2028",
+    "Compact solid-state design enables mobile quantum computing deployments"
+  ],
   "sources": [
     {
       "type": "website",

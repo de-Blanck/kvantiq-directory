@@ -12,6 +12,22 @@
   "headquarters": "Innsbruck, Austria",
   "employees": "50+",
   "funding": "EUR 10M+",
+  "accessModel": "Cloud API + on-premise systems",
+  "products": [
+    {
+      "name": "PINE System",
+      "description": "Rack-mounted trapped-ion quantum computer for research labs and on-premises deployment"
+    },
+    {
+      "name": "AQT Cloud Access",
+      "description": "Cloud-based access to trapped-ion quantum processors for algorithm development and research"
+    }
+  ],
+  "highlights": [
+    "Spin-off from the University of Innsbruck, a world leader in trapped-ion quantum physics",
+    "Builds compact, rack-mountable quantum computers deployable in standard server rooms",
+    "Part of the European quantum computing ecosystem with EuroHPC partnerships"
+  ],
   "sources": [
     {
       "type": "website",

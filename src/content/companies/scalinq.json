@@ -11,6 +11,18 @@
   "featured": false,
   "headquarters": "Gothenburg, Sweden",
   "employees": "20+",
+  "accessModel": "Hardware sales",
+  "products": [
+    {
+      "name": "LINQER Product Family",
+      "description": "Patent-pending cryogenic-grade packaging solutions and sample holders with 16 to 300 connectors for quantum processors"
+    }
+  ],
+  "highlights": [
+    "Chalmers University of Technology spin-off with deep superconducting qubit expertise",
+    "LINQER packaging supports both superconducting and spin-qubit quantum processors",
+    "Cost-efficient, energy-efficient, high-density cryogenic hardware solutions"
+  ],
   "sources": [
     {
       "type": "website",

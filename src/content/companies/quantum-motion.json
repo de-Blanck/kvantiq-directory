@@ -12,6 +12,18 @@
   "headquarters": "London, United Kingdom",
   "employees": "100+",
   "funding": "GBP 62M+",
+  "accessModel": "Hardware development + government contracts",
+  "products": [
+    {
+      "name": "Silicon CMOS Quantum Processor",
+      "description": "Quantum computing processors fabricated on industry-standard 300mm CMOS silicon technology for scalable qubit architectures"
+    }
+  ],
+  "highlights": [
+    "Delivered the first full-stack silicon CMOS quantum computer to the UK National Quantum Computing Centre",
+    "Advanced to DARPA Quantum Benchmarking Initiative Stage B in 2025",
+    "Founded by researchers from UCL and Oxford with GBP 62M+ in funding"
+  ],
   "sources": [
     {
       "type": "website",

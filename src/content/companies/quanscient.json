@@ -12,6 +12,18 @@
   "headquarters": "Tampere, Finland",
   "employees": "30+",
   "funding": "EUR 5.2M",
+  "accessModel": "Cloud SaaS",
+  "products": [
+    {
+      "name": "Quanscient Allsolve",
+      "description": "Cloud-based quantum-enhanced multiphysics simulation platform for electromagnetics, thermal, and structural engineering analysis"
+    }
+  ],
+  "highlights": [
+    "Combines classical HPC with quantum algorithms to accelerate complex multiphysics simulations",
+    "Raised EUR 5.2M seed funding to develop quantum-enhanced CAE software",
+    "Targets reduced simulation times and more accurate modeling for industrial product development"
+  ],
   "sources": [
     {
       "type": "url",

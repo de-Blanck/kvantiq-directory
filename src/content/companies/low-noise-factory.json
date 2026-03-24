@@ -11,6 +11,22 @@
   "featured": false,
   "headquarters": "Gothenburg, Sweden",
   "employees": "10+",
+  "accessModel": "Hardware sales",
+  "products": [
+    {
+      "name": "Cryogenic LNAs",
+      "description": "Ultra-low-noise cryogenic microwave amplifiers for quantum computing readout and radio astronomy"
+    },
+    {
+      "name": "Room-Temperature LNAs",
+      "description": "High-performance low-noise amplifiers for satellite communications and test instrumentation"
+    }
+  ],
+  "highlights": [
+    "Chalmers University spin-off whose amplifiers are a backbone of superconducting qubit readout chains worldwide",
+    "Products used in quantum computing, radio astronomy, and space exploration applications",
+    "Over 20 years of expertise in ultra-sensitive microwave amplifier design"
+  ],
   "sources": [
     {
       "type": "website",

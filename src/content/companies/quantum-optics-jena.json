@@ -12,6 +12,18 @@
   "headquarters": "Jena, Germany",
   "employees": "21",
   "funding": "EUR 8.5M+",
+  "accessModel": "Hardware sales + integration services",
+  "products": [
+    {
+      "name": "Multi-Party QKD System",
+      "description": "World's first commercial entanglement-based multi-party quantum key distribution system for securing network communications"
+    }
+  ],
+  "highlights": [
+    "Spun off from Fraunhofer IOF with deep expertise in applied optics and entangled photon sources",
+    "Offers the world's first commercial multi-party QKD system serving government and banking networks",
+    "Secured EUR 8.5M+ in Series A funding to scale quantum-secure communication deployments"
+  ],
   "sources": [
     {
       "type": "website",

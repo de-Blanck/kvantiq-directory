@@ -12,6 +12,22 @@
   "headquarters": "Geneva, Switzerland",
   "employees": "100+",
   "funding": "CHF 50M+",
+  "accessModel": "Hardware sales + software licensing",
+  "products": [
+    {
+      "name": "Cerberis QKD System",
+      "description": "Quantum key distribution platform for securing fiber-optic communications over metropolitan and backbone networks"
+    },
+    {
+      "name": "Quantis QRNG",
+      "description": "Quantum random number generators available as PCIe cards, USB devices, and chip-level modules"
+    }
+  ],
+  "highlights": [
+    "Founded in 2001 — one of the world's first commercial quantum technology companies",
+    "Pioneer in quantum-safe security with deployments in government and financial sectors globally",
+    "Over 100 employees and CHF 50M+ in funding — a mature, revenue-generating quantum company"
+  ],
   "sources": [
     {
       "type": "website",

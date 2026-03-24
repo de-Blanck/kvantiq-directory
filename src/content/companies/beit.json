@@ -12,6 +12,18 @@
   "headquarters": "Krakow, Poland",
   "employees": "28",
   "funding": "USD 2.5M+",
+  "accessModel": "Software licensing + consulting",
+  "products": [
+    {
+      "name": "Quantum Algorithm R&D Platform",
+      "description": "Novel quantum algorithms for molecular modelling, computational chemistry, and NP-complete optimization problems"
+    }
+  ],
+  "highlights": [
+    "One of the earliest quantum computing companies in Central and Eastern Europe, founded 2016",
+    "Organizes the Originating Quantum Advantage workshop, the largest quantum gathering in CEE",
+    "Specializes in solving NP-complete problems with quantum algorithmic approaches"
+  ],
   "sources": [
     {
       "type": "website",

@@ -11,6 +11,18 @@
   "featured": false,
   "headquarters": "Karlsruhe, Germany",
   "funding": "EUR 13.5M+",
+  "accessModel": "Software licensing + consulting",
+  "products": [
+    {
+      "name": "Compressed Quantum Algorithms",
+      "description": "Hardware-specific compressed quantum circuits that reduce resource requirements for near-term quantum advantage"
+    }
+  ],
+  "highlights": [
+    "Develops compressed quantum computing techniques to accelerate practical quantum advantage",
+    "Co-designs application- and hardware-specific solutions with leading quantum hardware partners",
+    "Raised EUR 13.5M+ to scale algorithm development across multiple industry verticals"
+  ],
   "sources": [
     {
       "type": "website",

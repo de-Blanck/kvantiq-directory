@@ -12,6 +12,22 @@
   "headquarters": "Espoo, Finland",
   "employees": "11-50",
   "funding": "N/A",
+  "accessModel": "IP licensing + hardware integration",
+  "products": [
+    {
+      "name": "Post-Quantum Cryptography IP Cores",
+      "description": "FPGA and ASIC implementations of quantum-resistant cryptographic algorithms for hardware-level security"
+    },
+    {
+      "name": "xQlave Product Family",
+      "description": "Hardware security solutions implementing NIST-standardized post-quantum encryption for organizational infrastructure"
+    }
+  ],
+  "highlights": [
+    "Specializes in hardware-level post-quantum cryptography implementation",
+    "Supports NIST-standardized quantum-safe algorithms on FPGA and ASIC platforms",
+    "Enables organizations to future-proof infrastructure against quantum threats"
+  ],
   "sources": [
     {
       "type": "website",

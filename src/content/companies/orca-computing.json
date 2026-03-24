@@ -12,6 +12,18 @@
   "headquarters": "London, United Kingdom",
   "employees": "50+",
   "funding": "USD 25M+",
+  "accessModel": "Hardware sales + government contracts",
+  "products": [
+    {
+      "name": "PT Series",
+      "description": "Room-temperature photonic quantum computers using telecom-wavelength single photons and quantum memories"
+    }
+  ],
+  "highlights": [
+    "Photonic quantum computers operate at room temperature using telecom-standard single photons",
+    "Delivered systems to UK Ministry of Defence and the National Quantum Computing Centre",
+    "Leads the Quantum Data Centre of the Future consortium for UK quantum infrastructure"
+  ],
   "sources": [
     {
       "type": "website",

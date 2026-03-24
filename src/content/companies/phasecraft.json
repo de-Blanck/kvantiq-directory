@@ -12,6 +12,18 @@
   "headquarters": "Bristol, United Kingdom",
   "employees": "50+",
   "funding": "USD 40M+",
+  "accessModel": "Research partnerships + software licensing",
+  "products": [
+    {
+      "name": "Quantum Algorithm Suite",
+      "description": "Hardware-agnostic quantum algorithms for materials discovery, chemistry simulation, and energy optimization"
+    }
+  ],
+  "highlights": [
+    "Co-founded by leading quantum researchers from University of Bristol and UCL",
+    "Industry partnerships with Johnson Matthey, Oxford PV, and BT for near-term quantum advantage",
+    "USD 40M+ raised to translate quantum theory into commercial applications"
+  ],
   "sources": [
     {
       "type": "website",

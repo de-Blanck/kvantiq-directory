@@ -12,6 +12,22 @@
   "headquarters": "Karlsruhe, Germany",
   "employees": "20+",
   "funding": "EUR 5M+",
+  "accessModel": "Software licensing + consulting",
+  "products": [
+    {
+      "name": "Qoqo Quantum Toolkit",
+      "description": "Open-source quantum simulation toolkit for materials science and computational chemistry workflows"
+    },
+    {
+      "name": "QUEST Platform",
+      "description": "Quantum-enhanced simulation platform for accelerating industrial materials discovery and chemical research"
+    }
+  ],
+  "highlights": [
+    "Based in Karlsruhe, a hub for German quantum research near KIT",
+    "Focuses on near-term quantum advantage for industrial materials science and chemistry",
+    "Develops both proprietary and open-source quantum simulation tools"
+  ],
   "sources": [
     {
       "type": "website",

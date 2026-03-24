@@ -10,6 +10,18 @@
   "featured": false,
   "headquarters": "Copenhagen, Denmark",
   "employees": "10+",
+  "accessModel": "Fabrication services",
+  "products": [
+    {
+      "name": "QPU Fabrication Services",
+      "description": "Ultra-high-vacuum wafer-based manufacturing of quantum processor units with superconducting, semiconducting, and photonic components"
+    }
+  ],
+  "highlights": [
+    "Owned by the Novo Nordisk Foundation as part of the Novo Nordisk Foundation Quantum Computing Programme",
+    "Located at the Niels Bohr Institute, producing QPUs at extreme atomic and isotopic purity",
+    "Develops next-generation manufacturing tools for superconducting, semiconducting, and photonic quantum chips"
+  ],
   "sources": [
     {
       "type": "website",

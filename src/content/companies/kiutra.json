@@ -12,6 +12,22 @@
   "headquarters": "Munich, Germany",
   "employees": "50+",
   "funding": "EUR 30M+",
+  "accessModel": "Hardware sales",
+  "products": [
+    {
+      "name": "Cryogen-Free Cooling Systems",
+      "description": "Compact magnetic refrigeration systems that cool to millikelvin temperatures without liquid helium"
+    },
+    {
+      "name": "L-Type Cryostat",
+      "description": "Modular cryogenic platform designed for quantum computing and quantum sensing laboratories"
+    }
+  ],
+  "highlights": [
+    "Eliminates dependence on scarce liquid helium with proprietary magnetic refrigeration technology",
+    "Over EUR 30M raised, serving quantum computing labs and sensor manufacturers worldwide",
+    "Spin-off from Technical University of Munich with 50+ employees"
+  ],
   "sources": [
     {
       "type": "website",

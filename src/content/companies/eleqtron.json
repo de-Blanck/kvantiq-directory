@@ -12,6 +12,18 @@
   "headquarters": "Siegen, Germany",
   "employees": "20+",
   "funding": "EUR 5M+",
+  "accessModel": "Cloud API + on-premise systems",
+  "products": [
+    {
+      "name": "EGON Trapped-Ion Quantum Computer",
+      "description": "Microwave-controlled trapped-ion quantum processor designed for scalability and manufacturability"
+    }
+  ],
+  "highlights": [
+    "Spin-off from the University of Siegen with pioneering microwave-based ion trap control",
+    "Uses microwave technology instead of lasers, simplifying trapped-ion system engineering",
+    "Part of Germany's national quantum computing initiative"
+  ],
   "sources": [
     {
       "type": "website",

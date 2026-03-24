@@ -11,6 +11,18 @@
   "featured": false,
   "headquarters": "Lund, Sweden",
   "funding": "SEK 9.2M",
+  "accessModel": "Hardware sales",
+  "products": [
+    {
+      "name": "QDi.AC Quantum Diamond Atomic Clock",
+      "description": "Chip-scale frequency reference using diamond crystal defects for GPS, navigation, and network timing"
+    }
+  ],
+  "highlights": [
+    "Uses nitrogen-vacancy defects in synthetically grown diamonds for quantum sensing",
+    "Targets GPS receivers, inertial navigation, and telecom network synchronization",
+    "Secured SEK 9.2M financing round led by Navigare Ventures"
+  ],
   "sources": [
     {
       "type": "website",

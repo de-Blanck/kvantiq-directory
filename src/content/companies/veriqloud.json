@@ -11,6 +11,22 @@
   "featured": false,
   "headquarters": "Paris, France",
   "funding": "EUR 2M+",
+  "accessModel": "Software licensing + consulting",
+  "products": [
+    {
+      "name": "HyQloud",
+      "description": "Full-stack solution for hybrid classical-quantum cloud datacenters with secure quantum communication protocols"
+    },
+    {
+      "name": "Quantum Key Distribution Software",
+      "description": "Software and protocols for secure quantum communication networks including QKD implementation"
+    }
+  ],
+  "highlights": [
+    "Contributor to FranceQCI national quantum communication infrastructure project",
+    "Pioneer in quantum-secure cloud computing access since 2015",
+    "Full-stack hybrid classical-quantum datacenter solutions"
+  ],
   "sources": [
     {
       "type": "website",

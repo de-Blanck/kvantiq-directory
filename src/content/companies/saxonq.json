@@ -11,6 +11,18 @@
   "featured": false,
   "headquarters": "Leipzig, Germany",
   "employees": "20+",
+  "accessModel": "Hardware sales + cloud access via QCI Connect",
+  "products": [
+    {
+      "name": "Diamond NV-Center Quantum Computer",
+      "description": "Mobile room-temperature quantum computer based on nitrogen-vacancy centers in diamond, requiring no cryogenic cooling"
+    }
+  ],
+  "highlights": [
+    "Room-temperature operation using diamond NV-center qubits — no cryogenics needed",
+    "Connected to DLR Quantum Computing Initiative's QCI Connect platform",
+    "Spun off from Felix Bloch Institute at Universitat Leipzig"
+  ],
   "sources": [
     {
       "type": "website",

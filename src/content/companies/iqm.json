@@ -12,6 +12,22 @@
   "headquarters": "Espoo, Finland",
   "employees": "250+",
   "funding": "EUR 200M+",
+  "accessModel": "On-premise systems + cloud API",
+  "products": [
+    {
+      "name": "IQM Spark",
+      "description": "Compact 5-qubit superconducting quantum computer designed for research labs and educational institutions"
+    },
+    {
+      "name": "IQM Radiance",
+      "description": "High-performance superconducting quantum processor for national computing centers and industrial co-design"
+    }
+  ],
+  "highlights": [
+    "Europe's largest quantum computing company with 250+ employees and EUR 200M+ in funding",
+    "Supplies quantum accelerators to EuroHPC supercomputing centers across Europe",
+    "On track to become one of Europe's first publicly listed quantum computing companies"
+  ],
   "sources": [
     {
       "type": "website",

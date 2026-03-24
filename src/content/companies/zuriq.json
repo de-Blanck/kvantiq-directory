@@ -11,6 +11,18 @@
   "featured": false,
   "headquarters": "Zurich, Switzerland",
   "funding": "CHF 3.8M",
+  "accessModel": "Hardware development + research partnerships",
+  "products": [
+    {
+      "name": "2D Trapped-Ion Quantum Chip",
+      "description": "Novel two-dimensional trapped-ion architecture using combined electric and magnetic fields for free ion movement on a quantum chip"
+    }
+  ],
+  "highlights": [
+    "ETH Zurich spin-off pioneering 2D ion-trap architecture",
+    "CHF 3.8M raised to break qubit-scaling limitations of conventional 1D ion chains",
+    "Unique approach using combined electric and magnetic fields for two-dimensional ion control"
+  ],
   "sources": [
     {
       "type": "website",

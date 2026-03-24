@@ -12,6 +12,18 @@
   "headquarters": "Rorschach, Switzerland",
   "employees": "100+",
   "funding": "$85.9M",
+  "accessModel": "Quantum-as-a-Service platform + consulting",
+  "products": [
+    {
+      "name": "TQ42 Platform",
+      "description": "Hybrid quantum-classical computing platform delivering optimization, machine learning, and cryptography solutions for enterprise"
+    }
+  ],
+  "highlights": [
+    "Over $85M in funding for hybrid quantum-classical enterprise solutions",
+    "100+ employees across quantum algorithms, ML, and cryptography teams",
+    "Serves enterprise clients in optimization, machine learning, and security"
+  ],
   "sources": [
     {
       "type": "website",

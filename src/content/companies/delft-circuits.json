@@ -12,6 +12,22 @@
   "headquarters": "Delft, Netherlands",
   "employees": "40+",
   "funding": "EUR 15M+",
+  "accessModel": "Hardware sales",
+  "products": [
+    {
+      "name": "Cri/oFlex",
+      "description": "Patented high-density cryogenic flex cables with integrated superconducting filters and attenuators"
+    },
+    {
+      "name": "Scalable I/O Solutions",
+      "description": "Cryogenic input/output wiring systems delivering 8x channel density over conventional coaxial cables"
+    }
+  ],
+  "highlights": [
+    "Patented Cri/oFlex technology addresses a key bottleneck in scaling quantum computers beyond hundreds of qubits",
+    "Partnership with Bluefors to develop next-generation scalable quantum I/O infrastructure",
+    "Based in Delft, the epicenter of European quantum research and QuTech ecosystem"
+  ],
   "sources": [
     {
       "type": "website",

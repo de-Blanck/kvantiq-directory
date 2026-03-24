@@ -12,6 +12,22 @@
   "headquarters": "Cambridge, United Kingdom",
   "employees": "600+",
   "funding": "USD 1.2B+",
+  "accessModel": "Cloud API + enterprise contracts",
+  "products": [
+    {
+      "name": "H-Series Quantum Computers",
+      "description": "Trapped-ion quantum processors holding world records for quantum volume, accessible via cloud and on-premise deployment"
+    },
+    {
+      "name": "TKET",
+      "description": "Open-source quantum computing compiler and optimization toolkit supporting multiple hardware backends"
+    }
+  ],
+  "highlights": [
+    "World's largest integrated quantum computing company, formed from Honeywell Quantum Solutions and Cambridge Quantum merger",
+    "H-Series processors hold the record for highest quantum volume among all quantum computers",
+    "Valued at USD 10B+ with over USD 1.2B in funding and 600+ employees"
+  ],
   "sources": [
     {
       "type": "website",

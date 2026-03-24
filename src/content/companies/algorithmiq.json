@@ -12,6 +12,22 @@
   "headquarters": "Helsinki, Finland",
   "employees": "46",
   "funding": "EUR 20M+",
+  "accessModel": "Software licensing + consulting",
+  "products": [
+    {
+      "name": "Aurora",
+      "description": "Quantum-enhanced computational platform for molecular simulations and drug discovery workflows"
+    },
+    {
+      "name": "Quantum Algorithm Library",
+      "description": "Suite of quantum algorithms optimized for life sciences and pharmaceutical research applications"
+    }
+  ],
+  "highlights": [
+    "Founded in Helsinki with deep roots in Finnish quantum research ecosystem",
+    "Raised over EUR 20M to advance quantum algorithms for drug discovery",
+    "Combines quantum computing expertise with domain knowledge in chemistry and biology"
+  ],
   "sources": [
     {
       "type": "website",

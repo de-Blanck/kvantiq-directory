@@ -11,6 +11,22 @@
   "featured": false,
   "headquarters": "Barcelona, Spain",
   "funding": "EUR 12M+",
+  "accessModel": "Cloud API + on-premise deployment",
+  "products": [
+    {
+      "name": "Analog Quantum Processor",
+      "description": "Full-stack superconducting quantum annealer based on fluxonium qubits for optimization workloads"
+    },
+    {
+      "name": "Qilimanjaro Cloud",
+      "description": "Cloud access platform for running quantum optimization tasks on Qilimanjaro analog quantum hardware"
+    }
+  ],
+  "highlights": [
+    "Won the Quantum Spain tender to build the first Spanish quantum computer",
+    "Operates Europe's first multimodal quantum data center at Barcelona Supercomputing Center",
+    "EuroHPC JU awarded EUR 8.5M for a Qilimanjaro quantum annealer deployment"
+  ],
   "sources": [
     {
       "type": "website",

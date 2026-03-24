@@ -11,6 +11,18 @@
   "featured": false,
   "headquarters": "Milan, Italy",
   "funding": "EUR 50M+",
+  "accessModel": "Hardware sales + foundry services",
+  "products": [
+    {
+      "name": "Glass Quantum Photonic Chips",
+      "description": "Custom glass-based photonic integrated circuits for quantum computing and quantum communication"
+    }
+  ],
+  "highlights": [
+    "Operates the world's first dedicated glass photonic chip manufacturing facility in Milan",
+    "Secured EUR 41.5M under the EU Chips Act for a second manufacturing plant in Italy",
+    "Founded by researchers from Stanford, Harvard, and Politecnico di Milano"
+  ],
   "sources": [
     {
       "type": "website",

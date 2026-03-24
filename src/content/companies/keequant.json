@@ -12,6 +12,17 @@
   "headquarters": "Fürth, Germany",
   "employees": "20+",
   "funding": "EUR 5M+",
+  "accessModel": "Hardware sales + integration",
+  "products": [
+    {
+      "name": "QKD System",
+      "description": "Integrated photonic quantum key distribution system for secure communication over fiber networks"
+    }
+  ],
+  "highlights": [
+    "Pioneering integrated-photonics approach to quantum key distribution in Germany",
+    "Focused on critical infrastructure and government-grade quantum security"
+  ],
   "sources": [
     {
       "type": "website",

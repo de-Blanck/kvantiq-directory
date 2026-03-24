@@ -11,6 +11,18 @@
   "featured": false,
   "headquarters": "Florence, Italy",
   "employees": "28",
+  "accessModel": "Hardware sales + system integration",
+  "products": [
+    {
+      "name": "QKD Systems",
+      "description": "Reconfigurable quantum key distribution systems for quantum-secured communication over fiber-optic networks"
+    }
+  ],
+  "highlights": [
+    "Spin-off of the Italian National Institute of Optics (CNR-INO)",
+    "Telsy (TIM Group subsidiary) acquired a strategic stake to integrate QKD into Italian telecom infrastructure",
+    "Serves government agencies, research institutions, and private enterprises with quantum-secured communications"
+  ],
   "sources": [
     {
       "type": "website",

@@ -12,6 +12,18 @@
   "headquarters": "Enschede, Netherlands",
   "employees": "50+",
   "funding": "EUR 15M+",
+  "accessModel": "Hardware sales",
+  "products": [
+    {
+      "name": "Photonic Quantum Processors",
+      "description": "Silicon nitride waveguide-based photonic quantum processors operating at room temperature without cryogenic cooling"
+    }
+  ],
+  "highlights": [
+    "Deployed over 15 photonic quantum systems worldwide including 8-qubit and 64-qubit computers to DLR",
+    "Silicon nitride technology requires no cryogenic cooling, simplifying deployment and maintenance",
+    "Secured EUR 15M Series A to deliver a universal photonic quantum computer"
+  ],
   "sources": [
     {
       "type": "website",

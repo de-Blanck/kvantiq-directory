@@ -11,6 +11,18 @@
   "featured": false,
   "headquarters": "Münster, Germany",
   "employees": "39",
+  "accessModel": "Hardware sales",
+  "products": [
+    {
+      "name": "Waveguide-Integrated SNSPDs",
+      "description": "Superconducting nanowire single-photon detectors integrated on photonic waveguides for high-efficiency detection"
+    }
+  ],
+  "highlights": [
+    "Pioneering waveguide-integrated SNSPD technology combining high efficiency with scalability",
+    "Backed by BMBF, European Innovation Council, and ESA funding programs",
+    "Detectors serve quantum computing, quantum communication, and LiDAR applications"
+  ],
   "sources": [
     {
       "type": "website",
