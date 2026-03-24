@@ -72,15 +72,18 @@ export default function DetailHero({
 
         {stats.length > 0 && (
           <div className="flex flex-wrap gap-3 lg:gap-4">
-            {stats.map(stat => (
-              <div
-                key={stat.label}
-                className="rounded-xl border border-border bg-elevated px-5 py-3 text-center min-w-[100px]"
-              >
-                <div className="font-heading text-xl font-bold text-text-primary">{stat.value}</div>
-                <div className="mt-0.5 font-mono text-[10px] text-text-muted">{stat.label}</div>
-              </div>
-            ))}
+            {stats.map(stat => {
+              const isLong = stat.value.length > 20;
+              return (
+                <div
+                  key={stat.label}
+                  className={`rounded-xl border border-border bg-elevated px-5 py-3 ${isLong ? 'text-left max-w-[280px]' : 'text-center min-w-[100px]'}`}
+                >
+                  <div className={`font-heading font-bold text-text-primary ${isLong ? 'text-[13px] leading-snug' : 'text-xl'}`}>{stat.value}</div>
+                  <div className="mt-0.5 font-mono text-[10px] text-text-muted">{stat.label}</div>
+                </div>
+              );
+            })}
           </div>
         )}
       </div>

@@ -215,8 +215,16 @@ export default function DetailPage(props: DetailPageProps) {
         <DashboardGrid
           collection={props.collection}
           cards={dashboardCards}
-          visibleCardIds={cardConfigs.filter(c => c.visible).map(c => c.id)}
-          fullWidthCardIds={cardConfigs.filter(c => c.fullWidth).map(c => c.id)}
+          visibleCardIds={[
+            ...cardConfigs.filter(c => c.visible).map(c => c.id),
+            ...(props.products?.length ? ['products'] : []),
+            ...(props.highlights?.length ? ['highlights'] : []),
+            ...(props.extraCards || []).map(c => c.id),
+          ]}
+          fullWidthCardIds={[
+            ...cardConfigs.filter(c => c.fullWidth).map(c => c.id),
+            ...(props.extraCards || []).map(c => c.id),
+          ]}
         />
       </DetailTabs>
 
