@@ -12,6 +12,16 @@
   "headquarters": "Oxford, United Kingdom",
   "employees": "11-25",
   "funding": "€2M EIC Accelerator grant (December 2025); backed by IP Group",
+  "accessModel": "Hardware sales + cloud API",
+  "products": [
+    {"name": "QRNG Module", "description": "Photonic quantum random number generator providing certified randomness from quantum vacuum fluctuations"},
+    {"name": "ORBIT™ Probabilistic Processor", "description": "Quantum noise-powered processor that accelerates combinatorial optimization and AI workloads"}
+  ],
+  "highlights": [
+    "ORBIT™ uses quantum noise to accelerate optimization and AI — not just randomness",
+    "EIC Accelerator grant recipient (December 2025)",
+    "Spun out of University of Oxford, backed by IP Group"
+  ],
   "sources": [
     {
       "type": "website",

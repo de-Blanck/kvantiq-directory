@@ -12,6 +12,15 @@
   "headquarters": "Delft, Netherlands",
   "employees": "1-10",
   "funding": "Not yet publicly disclosed",
+  "accessModel": "Hardware sales (cryogenic control ASICs)",
+  "products": [
+    {"name": "Cryogenic CMOS ASICs", "description": "Application-specific integrated circuits for controlling and reading out quantum devices operating near absolute zero"}
+  ],
+  "highlights": [
+    "Addresses the wiring bottleneck limiting scalability of large-scale quantum computers",
+    "Spun out of QuTech (TU Delft / TNO) in 2025",
+    "Cryogenic CMOS approach enables orders-of-magnitude reduction in control wiring"
+  ],
   "sources": [
     {
       "type": "website",

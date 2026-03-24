@@ -12,6 +12,15 @@
   "headquarters": "Dublin, Ireland",
   "employees": "51-100",
   "funding": "$85M total; $60M Series B January 2026, €13.7M DTIF grant October 2025",
+  "accessModel": "Hardware sales (quantum server appliance)",
+  "products": [
+    {"name": "Bell-1 Quantum Server", "description": "Integrated quantum server combining silicon spin qubits, cryogenic control electronics, and classical computing in a standard rack unit at 0.3 K"}
+  ],
+  "highlights": [
+    "Silicon spin qubits fabricated using standard CMOS at TSMC foundries",
+    "$85M total funding including $60M Series B in January 2026",
+    "Spun out of University College Dublin"
+  ],
   "sources": [
     {
       "type": "website",

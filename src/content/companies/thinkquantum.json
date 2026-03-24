@@ -12,6 +12,15 @@
   "headquarters": "Padova, Italy",
   "employees": "11-25",
   "funding": "EIC Transition grant (~€2.5M); partner in QSNP EU project",
+  "accessModel": "Hardware sales + system integration (QKD systems)",
+  "products": [
+    {"name": "QUKY QKD Platform", "description": "QKD system supporting fiber, free-space, and satellite quantum communication using polarization-encoded BB84 protocol"}
+  ],
+  "highlights": [
+    "Multi-channel QKD: fiber, free-space, and satellite links in one platform",
+    "EIC Transition grant recipient, partner in QSNP EU project",
+    "Spun out of University of Padova"
+  ],
   "sources": [
     {
       "type": "website",
