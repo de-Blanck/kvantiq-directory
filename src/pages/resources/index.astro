@@ -26,7 +26,7 @@ const cardItems = sorted.map(r => ({
   name: r.data.name,
   description: r.data.description,
   tags: r.data.tags,
-  meta: `${r.data.type}${r.data.provider ? ` \u00b7 ${r.data.provider}` : ''}`,
+  meta: [r.data.type, r.data.provider, r.data.maturity, r.data.lastUpdated ? `Updated ${r.data.lastUpdated}` : ''].filter(Boolean).join(' \u00b7 '),
   badge: r.data.openSource ? 'Open Source' : undefined,
   badgeColor: 'text-accent bg-accent-glow',
   external: true,

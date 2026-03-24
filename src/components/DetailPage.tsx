@@ -33,6 +33,8 @@ interface DetailPageProps {
   related: RelatedItem[];
   sources: { type: string; url: string; title?: string; dateAccessed?: string }[];
   extraCards?: { id: string; label: string; content: React.ReactNode }[];
+  products?: { name: string; description: string; url?: string }[];
+  highlights?: string[];
 }
 
 // Only content cards — no metrics (in hero), no sources (always at bottom)
@@ -81,6 +83,36 @@ export default function DetailPage(props: DetailPageProps) {
       label: '', // No label — tab already says "Overview"
       content: <p className="text-[15px] text-text-secondary leading-[1.7]">{props.description}</p>,
     },
+    ...(props.products && props.products.length > 0 ? [{
+      id: 'products',
+      label: 'Products',
+      content: (
+        <div className="flex flex-col gap-3">
+          {props.products.map((p, i) => (
+            <div key={i}>
+              <div className="flex items-center gap-2">
+                <span className="font-semibold text-[14px] text-text-primary">{p.name}</span>
+                {p.url && (
+                  <a href={p.url} target="_blank" rel="noopener noreferrer" className="text-info text-[12px] hover:underline">↗</a>
+                )}
+              </div>
+              <p className="text-[13px] text-text-secondary mt-0.5 leading-relaxed">{p.description}</p>
+            </div>
+          ))}
+        </div>
+      ),
+    }] : []),
+    ...(props.highlights && props.highlights.length > 0 ? [{
+      id: 'highlights',
+      label: 'Key Highlights',
+      content: (
+        <ul className="flex flex-col gap-1.5">
+          {props.highlights.map((h, i) => (
+            <li key={i} className="text-[14px] text-text-secondary leading-relaxed">• {h}</li>
+          ))}
+        </ul>
+      ),
+    }] : []),
     ...(props.news.length > 0 ? [{
       id: 'news',
       label: 'Latest News',

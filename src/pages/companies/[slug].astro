@@ -46,6 +46,7 @@ const stats = [
   ...(company.employees ? [{ value: company.employees, label: 'Employees' }] : []),
   ...(company.funding ? [{ value: company.funding, label: 'Funding' }] : []),
   { value: company.region === 'nordics' ? 'Nordics' : company.region === 'dach' ? 'DACH' : company.region.replace(/-/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase()), label: 'Region' },
+  ...(company.accessModel ? [{ value: company.accessModel, label: 'Access' }] : []),
 ];
 
 const meta = [company.country, company.type.replace(/^\w/, (c: string) => c.toUpperCase()), company.founded ? `Founded ${company.founded}` : '', company.headquarters].filter(Boolean).join(' · ');
@@ -64,5 +65,7 @@ const meta = [company.country, company.type.replace(/^\w/, (c: string) => c.toUp
     news={company.news || []}
     related={related}
     sources={company.sources}
+    products={company.products}
+    highlights={company.highlights}
   />
 </BaseLayout>
