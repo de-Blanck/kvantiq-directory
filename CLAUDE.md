@@ -114,3 +114,24 @@ Every content change MUST follow: Branch → Add/Edit JSON → Build validates �
 6. No blocklisted companies (AWS, Google Cloud, Meta, etc.)
 7. Descriptions are factual — no marketing language
 8. Slug matches filename
+
+## Git Workflow
+
+- **Never commit to main.** Always work on a feature branch. The `block-commit-to-main` hook enforces this globally.
+- **Verify branch before committing:** `git branch --show-current` should show a `feature/`, `fix/`, or `content/` branch.
+- **Stage generated files before switching branches.** Any file you create must be `git add`ed in the same turn, OR placed in a gitignored scratch dir. Never leave generated work untracked — past sessions lost documentation during branch switches.
+- **Escape hatch:** If you truly need to commit to main (e.g., updating CLAUDE.md on main itself), append `#allow-main-commit` to the commit command.
+
+## Windows Environment
+
+- **Playwright/Chrome MCP are unreliable on Windows.** Prefer manual screenshot verification or skip visual checks unless the user specifically requests them.
+- **Turbopack cache errors:** If the dev server crashes with junction-point or cache errors, delete `.next` (or the Astro equivalent `dist` + `node_modules/.astro`) before retrying.
+- **Paths:** Use forward slashes or quoted paths in bash. `rm -rf` fails on bracket-named directories — use `rm -r` without force, or quote the path.
+- **Never chain `cd` with `&&`.** Use `git -C <path>` or `npm --prefix <path>` instead. This is enforced by a hook.
+
+## UI Iteration
+
+- **Verify before claiming done.** When the user reports a UI issue, read the current file or take a screenshot BEFORE asserting it's already fixed. Past sessions falsely claimed work was complete without re-checking state.
+- **Paper MCP `insert-children` always appends.** Plan node ordering up front — you cannot insert in the middle.
+- **Provide concrete acceptance criteria before iterating.** For design work, define contrast ratios, spacing values, and reference screenshots up front. Vague "make it look better" loops burn cycles.
+- **Show evidence with every completion claim.** File snippet, command output, or screenshot — if you can't verify, say so explicitly.
