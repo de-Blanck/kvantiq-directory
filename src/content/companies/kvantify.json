@@ -47,5 +47,21 @@
       "title": "Kvantify Qrunch — Unlocking Quantum Computing for Chemical and Biological Innovation",
       "dateAccessed": "2026-03-19"
     }
+  ],
+  "news": [
+    {
+      "title": "Kvantify partners with Danish universities on DKK 17.4M ODAQS quantum software project",
+      "excerpt": "Innovation Fund Denmark backs 2026-2029 ODAQS project with Aarhus and Aalborg universities to simplify quantum software for drug discovery.",
+      "url": "https://thequantuminsider.com/2026/03/06/kvantify-quantum-drug-discovery-project/",
+      "source": "The Quantum Insider",
+      "date": "2026-03-06"
+    },
+    {
+      "title": "Kvantify, Atom Computing and Aarhus University launch EarlyBIRDD quantum drug discovery project",
+      "excerpt": "Four-year DKK 30M EarlyBIRDD project develops quantum methods for early-stage pharmaceutical discovery starting April 2026.",
+      "url": "https://thequantuminsider.com/2026/03/16/kvantify-atom-computing-and-aarhus-university-launch-quantum-drug-discovery-project/",
+      "source": "The Quantum Insider",
+      "date": "2026-03-16"
+    }
   ]
 }

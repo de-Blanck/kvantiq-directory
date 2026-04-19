@@ -37,5 +37,14 @@
       "title": "eleQtron LinkedIn Company Page",
       "dateAccessed": "2026-03-20"
     }
+  ],
+  "news": [
+    {
+      "title": "Ion Hack 2026 brings together trapped-ion quantum talent in Jülich",
+      "excerpt": "eleQtron and JUNIQ co-host a three-day hackathon at Forschungszentrum Jülich focused on trapped-ion simulation and optimisation challenges.",
+      "url": "https://www.fz-juelich.de/en/jsc/systems/quantum-computing/juniq-facility/news/ion-hack-2026-brings-together-quantum-talent-in-julich",
+      "source": "Forschungszentrum Jülich",
+      "date": "2026-04-01"
+    }
   ]
 }

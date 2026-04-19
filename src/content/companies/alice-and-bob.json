@@ -40,5 +40,21 @@
       "title": "Alice & Bob Crunchbase Company Profile",
       "dateAccessed": "2026-03-20"
     }
+  ],
+  "news": [
+    {
+      "title": "Alice & Bob develops 'Elevator Codes' to slash error rates on cat-qubit systems",
+      "excerpt": "New code family projects up to 10,000x lower logical error rates while requiring only roughly 3x more physical qubits.",
+      "url": "https://alice-bob.com/newsroom/reducing-quantum-computing-errors-with-new-code/",
+      "source": "Alice & Bob Newsroom",
+      "date": "2026-01-21"
+    },
+    {
+      "title": "Alice & Bob showcases cat-qubit fault-tolerance advances at APS Global Physics Summit",
+      "excerpt": "More than a dozen talks covered cat-qubit stabilisation, intrinsic error protection and magic-state preparation.",
+      "url": "https://alice-bob.com/newsroom/alice-bob-showcases-advances-in-cat-qubit-fault-tolerance-at-aps-global-physics-summit/",
+      "source": "Alice & Bob Newsroom",
+      "date": "2026-03-11"
+    }
   ]
 }

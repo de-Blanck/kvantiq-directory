@@ -47,5 +47,21 @@
       "title": "IQM Quantum Computers raises €128M Series A2 - TechCrunch",
       "dateAccessed": "2026-03-19"
     }
+  ],
+  "news": [
+    {
+      "title": "IQM to deploy 54-qubit Radiance system at Polish enterprise Galaxy",
+      "excerpt": "First installation of an IQM Radiance-class quantum system inside a private enterprise, scheduled for Q4 2026.",
+      "url": "https://thequantuminsider.com/2026/04/07/iqm-galaxy-quantum-deployment-poland/",
+      "source": "The Quantum Insider",
+      "date": "2026-04-07"
+    },
+    {
+      "title": "IQM introduces AI-powered calibration to make quantum computing enterprise-ready",
+      "excerpt": "Agentic AI calibration using NVIDIA Ising models automates parallel qubit tuning, targeting HPC data-centre deployments.",
+      "url": "https://itdigest.com/computer-science/quantum-computing/iqm-introduces-ai-powered-calibration-to-make-quantum-computing-enterprise-ready/",
+      "source": "IT Digest",
+      "date": "2026-04-15"
+    }
   ]
 }

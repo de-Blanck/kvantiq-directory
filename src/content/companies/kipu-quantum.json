@@ -36,5 +36,14 @@
       "title": "10.5 Million EUR for German Quantum Software Company Kipu Quantum",
       "dateAccessed": "2026-03-19"
     }
+  ],
+  "news": [
+    {
+      "title": "Kipu Quantum launches Rimay quantum feature extraction service",
+      "excerpt": "Rimay integrates quantum-extracted features into classical ML pipelines, with reported accuracy gains for credit-risk, predictive maintenance and leak-detection use cases.",
+      "url": "https://thequantuminsider.com/2026/02/17/kipu-quantum-launches-rimay-feature-extraction/",
+      "source": "The Quantum Insider",
+      "date": "2026-02-17"
+    }
   ]
 }
