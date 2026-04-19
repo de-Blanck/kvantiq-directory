@@ -1,0 +1,45 @@
+{
+  "name": "Quantum-Centric Chemistry Beyond Exact Diagonalization (IBM Heron + Fugaku)",
+  "slug": "quantum-centric-chemistry-ibm-heron",
+  "algorithm": "Sample-based quantum diagonalization (SQD) with classical supercomputer post-processing",
+  "category": "chemistry",
+  "tags": ["chemistry", "SQD", "IBM-Heron", "Fugaku", "iron-sulfur", "N2", "quantum-centric-supercomputing"],
+  "description": "Quantum-centric supercomputing benchmark coupling an IBM Heron quantum processor with the Fugaku classical supercomputer to compute ground-state electronic structure of molecules beyond what exact diagonalization can reach: N2 dissociation and [2Fe-2S] and [4Fe-4S] iron–sulfur clusters. Circuits used up to 77 qubits and 10,570 two-qubit gates; the classical side applied sample-based quantum diagonalization to project noisy quantum samples onto chemically meaningful subspaces. This is one of the first end-to-end benchmarks of the quantum-centric-supercomputing architecture on a real chemistry target set.",
+  "hardware": "IBM Heron superconducting processor + RIKEN Fugaku supercomputer",
+  "framework": "Qiskit + ffsim + custom SQD pipeline",
+  "qubits": 77,
+  "reproducible": false,
+  "datePublished": "2024-05-08",
+  "keyMetrics": [
+    {"metric": "Qubits used", "value": "77"},
+    {"metric": "Two-qubit gates", "value": "10,570"},
+    {"metric": "Molecules", "value": "N2, [2Fe-2S], [4Fe-4S]"},
+    {"metric": "Classical partner", "value": "Fugaku supercomputer"},
+    {"metric": "Method", "value": "Sample-based quantum diagonalization"}
+  ],
+  "significance": "Extends quantum chemistry benchmarks past the exact-diagonalization frontier onto iron–sulfur clusters — a biologically relevant, historically hard target — inside a credible quantum-classical workflow.",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2405.05068",
+      "title": "Chemistry Beyond the Scale of Exact Diagonalization on a Quantum-Centric Supercomputer",
+      "authors": "Robledo-Moreno et al.",
+      "datePublished": "2024-05-08",
+      "dateAccessed": "2026-04-19"
+    },
+    {
+      "type": "url",
+      "url": "https://en.wikipedia.org/wiki/IBM_Quantum_Platform",
+      "title": "IBM Quantum Platform — Wikipedia (Heron processor, research output)",
+      "dateAccessed": "2026-04-19"
+    },
+    {
+      "type": "doi",
+      "url": "https://doi.org/10.1126/sciadv.adu9991",
+      "title": "Chemistry Beyond the Scale of Exact Diagonalization on a Quantum-Centric Supercomputer (Science Advances 11(25), eadu9991)",
+      "authors": "Robledo-Moreno, Motta, Haas, Javadi-Abhari, Jurcevic et al.",
+      "datePublished": "2025-06-18",
+      "dateAccessed": "2026-04-19"
+    }
+  ]
+}

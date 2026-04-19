@@ -1,0 +1,44 @@
+{
+  "name": "Random Circuit Sampling Phase Transition (67 qubits)",
+  "slug": "rcs-phase-transition",
+  "algorithm": "Random Circuit Sampling (RCS) with cross-entropy benchmarking (XEB)",
+  "category": "other",
+  "tags": ["RCS", "XEB", "quantum-advantage", "random-circuits", "superconducting", "Google"],
+  "description": "Benchmark extending the Random Circuit Sampling quantum-advantage demonstration to 67 qubits at 32 cycles. Google's team identified two XEB phase transitions: a dynamical transition with cycle count and a noise-induced quantum phase transition set by error per cycle. The experiment maps out the regime in which random circuits remain classically hard to spoof — even in the presence of realistic hardware noise — and provides an updated reference point for XEB-based quantum-advantage claims.",
+  "hardware": "Google Sycamore-class superconducting processor (67 qubits)",
+  "framework": "Cirq / Google Quantum AI stack",
+  "qubits": 67,
+  "reproducible": false,
+  "datePublished": "2023-04-21",
+  "keyMetrics": [
+    {"metric": "Qubits", "value": "67"},
+    {"metric": "Cycle depth", "value": "32"},
+    {"metric": "Benchmark metric", "value": "XEB fidelity"},
+    {"metric": "Phase transitions observed", "value": "2 (dynamical + noise-induced)"}
+  ],
+  "significance": "Identifies the XEB phase structure separating classically-tractable from classically-hard random-circuit regimes, putting quantum-advantage claims on a firmer, falsifiable footing.",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2304.11119",
+      "title": "Phase transition in Random Circuit Sampling",
+      "authors": "Morvan, Villalonga, Mi et al. (Google Quantum AI)",
+      "datePublished": "2023-04-21",
+      "dateAccessed": "2026-04-19"
+    },
+    {
+      "type": "url",
+      "url": "https://en.wikipedia.org/wiki/Quantum_supremacy",
+      "title": "Quantum supremacy — Wikipedia (Random Circuit Sampling, XEB, phase transitions)",
+      "dateAccessed": "2026-04-19"
+    },
+    {
+      "type": "doi",
+      "url": "https://doi.org/10.1038/s41586-024-07998-6",
+      "title": "Phase transition in Random Circuit Sampling (Nature 634, 328–333)",
+      "authors": "Morvan, Villalonga, Mi, Mandrà et al. (Google Quantum AI)",
+      "datePublished": "2024-10-09",
+      "dateAccessed": "2026-04-19"
+    }
+  ]
+}
