@@ -47,5 +47,14 @@
       "title": "OQC and Riverlane Launch UK's First Quantum Error Corrected Testbed Integrated with HPC",
       "dateAccessed": "2026-03-19"
     }
+  ],
+  "news": [
+    {
+      "title": "OQC unveils 500+ qubit wafer-scale packaging architecture",
+      "excerpt": "New packaging approach houses over 500 superconducting qubits on a single 3-inch die while preserving coherence and readout fidelity.",
+      "url": "https://quantumzeitgeist.com/oxford-quantum-circuits-oqc-wafer-scale-packaging-qubit/",
+      "source": "Quantum Zeitgeist",
+      "date": "2026-02-16"
+    }
   ]
 }

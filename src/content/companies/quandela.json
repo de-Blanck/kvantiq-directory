@@ -40,5 +40,21 @@
       "title": "Quandela Crunchbase Company Profile",
       "dateAccessed": "2026-03-20"
     }
+  ],
+  "news": [
+    {
+      "title": "Quandela deploys Lucy photonic quantum computer integrated with Joliot-Curie HPC",
+      "excerpt": "Franco-German consortium inaugurates the world's most powerful photonic quantum system alongside a European supercomputer for hybrid HPC-quantum workloads.",
+      "url": "https://thequantuminsider.com/2026/04/14/quandela-photonic-quantum-hpc/",
+      "source": "The Quantum Insider",
+      "date": "2026-04-14"
+    },
+    {
+      "title": "OVHcloud adds Quandela Belenos to its Quantum platform",
+      "excerpt": "12-qubit Belenos photonic quantum computer now available on OVHcloud's pay-as-you-go Quantum Platform for AI and simulation workloads.",
+      "url": "https://thequantuminsider.com/2026/04/17/ovhcloud-quandela-belenos-quantum-platform/",
+      "source": "The Quantum Insider",
+      "date": "2026-04-17"
+    }
   ]
 }

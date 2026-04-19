@@ -47,5 +47,21 @@
       "title": "Riverlane publishes QEC Technology Roadmap that can accelerate quantum computing's path to utility-scale by 3-5 years",
       "dateAccessed": "2026-03-19"
     }
+  ],
+  "news": [
+    {
+      "title": "Riverlane publishes QEC roadmap targeting utility-scale quantum by early 2030s",
+      "excerpt": "Roadmap details engineering milestones from MegaQuOp before the end of the decade to TeraQuOp systems in the early 2030s.",
+      "url": "https://thequantuminsider.com/2026/03/12/riverlane-publishes-quantum-error-correction-roadmap-to-speed-utility-scale-quantum-by-3-5-years/",
+      "source": "The Quantum Insider",
+      "date": "2026-03-12"
+    },
+    {
+      "title": "Qblox and Riverlane demonstrate integrated real-time quantum error correction",
+      "excerpt": "Deltaflow 2 QEC system combined with Qblox control hardware delivers sub-microsecond feedback between error detection and correction.",
+      "url": "https://www.prnewswire.com/news-releases/qblox-and-riverlane-demonstrate-integration-enabling-real-time-quantum-error-correction-302716254.html",
+      "source": "PR Newswire",
+      "date": "2026-03-17"
+    }
   ]
 }

@@ -41,5 +41,14 @@
       "title": "Bluefors - Wikipedia",
       "dateAccessed": "2026-03-19"
     }
+  ],
+  "news": [
+    {
+      "title": "Bluefors launches Modular Cryogenic Platform for scalable quantum systems",
+      "excerpt": "New modular architecture is designed to scale quantum infrastructure toward hundreds of thousands of qubits; first multi-module delivery slated for late 2026.",
+      "url": "https://thequantuminsider.com/2026/03/03/bluefors-modular-cryogenic-platform-launch/",
+      "source": "The Quantum Insider",
+      "date": "2026-03-02"
+    }
   ]
 }

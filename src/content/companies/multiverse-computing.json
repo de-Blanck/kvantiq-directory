@@ -36,5 +36,21 @@
       "title": "Multiverse Computing - Wikipedia",
       "dateAccessed": "2026-03-19"
     }
+  ],
+  "news": [
+    {
+      "title": "Multiverse Computing releases free compressed HyperNova 60B AI model",
+      "excerpt": "Spanish 'soonicorn' ships CompactifAI-compressed HyperNova 60B on Hugging Face amid reports of a €500M round at a €1.5B valuation.",
+      "url": "https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/",
+      "source": "TechCrunch",
+      "date": "2026-02-24"
+    },
+    {
+      "title": "Multiverse Computing and Axelera AI partner to bring compressed AI models to edge devices",
+      "excerpt": "Collaboration uses CompactifAI compression with Axelera's edge AI accelerators to run datacentre-class models on energy-efficient devices.",
+      "url": "https://thequantuminsider.com/2026/03/18/ultiverse-computing-axelera-ai-strategic-collaboration-ai-models-edge-devices/",
+      "source": "The Quantum Insider",
+      "date": "2026-03-18"
+    }
   ]
 }

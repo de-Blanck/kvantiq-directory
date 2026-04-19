@@ -37,5 +37,21 @@
       "title": "Enschede-based QuiX Quantum secures EUR 15M to launch first universal photonic quantum computer",
       "dateAccessed": "2026-03-19"
     }
+  ],
+  "news": [
+    {
+      "title": "QuiX Quantum partners with Artilux to improve photonic quantum hardware efficiency",
+      "excerpt": "MoU integrates Artilux's GeSi photonic detectors with QuiX systems to reduce cooling and infrastructure requirements for data-centre deployments.",
+      "url": "https://thequantuminsider.com/2026/02/11/quix-quantum-artilux-hardware-efficiency-partnership/",
+      "source": "The Quantum Insider",
+      "date": "2026-02-11"
+    },
+    {
+      "title": "QuiX Quantum demonstrates below-threshold error mitigation in photonic quantum computing",
+      "excerpt": "First European company to demonstrate a production-ready photonic error-mitigation method compatible with scalable fault-tolerant quantum computing.",
+      "url": "https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time",
+      "source": "QuiX Quantum Newsroom",
+      "date": "2026-04-02"
+    }
   ]
 }

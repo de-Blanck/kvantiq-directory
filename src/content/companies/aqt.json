@@ -41,5 +41,21 @@
       "title": "Alpine Quantum Technologies - The Quantum Insider",
       "dateAccessed": "2026-03-19"
     }
+  ],
+  "news": [
+    {
+      "title": "AQT and Scaleway partner to deliver sovereign European quantum computing",
+      "excerpt": "AQT's IBEX Q1 trapped-ion quantum computer becomes directly accessible through Scaleway's cloud platform.",
+      "url": "https://www.aqt.eu/aqt-and-scaleway-partner-to-deliver-quantum-computing-to-europe/",
+      "source": "AQT Newsroom",
+      "date": "2026-02-18"
+    },
+    {
+      "title": "Horizon Quantum and AQT form strategic hardware-software collaboration",
+      "excerpt": "Horizon's Triple Alpha development environment integrates with AQT's trapped-ion processors for cloud-based quantum program deployment.",
+      "url": "https://thequantuminsider.com/2026/04/16/horizon-quantum-aqt-hardware-software-collaboration/",
+      "source": "The Quantum Insider",
+      "date": "2026-04-16"
+    }
   ]
 }
