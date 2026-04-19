@@ -32,6 +32,14 @@
       "url": "https://itensor.org/",
       "title": "ITensor — tensor network software used for the Eagle benchmark simulation",
       "dateAccessed": "2026-04-19"
+    },
+    {
+      "type": "doi",
+      "url": "https://doi.org/10.1103/PRXQuantum.5.010308",
+      "title": "Efficient tensor network simulation of IBM's Eagle kicked Ising experiment (PRX Quantum 5, 010308)",
+      "authors": "Tindall, Fishman, Stoudenmire, Sels",
+      "datePublished": "2024-01-30",
+      "dateAccessed": "2026-04-19"
     }
   ]
 }

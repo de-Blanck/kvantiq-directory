@@ -32,6 +32,14 @@
       "url": "https://en.wikipedia.org/wiki/QuEra_Computing",
       "title": "QuEra Computing — Wikipedia (48 logical qubits, Harvard/Lukin collaboration, Nature 2023)",
       "dateAccessed": "2026-04-19"
+    },
+    {
+      "type": "doi",
+      "url": "https://doi.org/10.1038/s41586-023-06927-3",
+      "title": "Logical quantum processor based on reconfigurable atom arrays (Nature)",
+      "authors": "Bluvstein, Evered, Geim, Li, Zhou, Manovitz et al.",
+      "datePublished": "2023-12-06",
+      "dateAccessed": "2026-04-19"
     }
   ]
 }

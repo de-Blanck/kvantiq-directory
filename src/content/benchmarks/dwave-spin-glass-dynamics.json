@@ -30,6 +30,14 @@
       "url": "https://en.wikipedia.org/wiki/D-Wave_Systems",
       "title": "D-Wave Systems — Wikipedia (Advantage2 and 2025 Science simulation claim)",
       "dateAccessed": "2026-04-19"
+    },
+    {
+      "type": "doi",
+      "url": "https://doi.org/10.1126/science.ado6285",
+      "title": "Beyond-classical computation in quantum simulation (Science 388, 199–204)",
+      "authors": "King, Nocera, Rams, Dziarmaga, Wiersema et al. (D-Wave + academic collaboration)",
+      "datePublished": "2025-04-10",
+      "dateAccessed": "2026-04-19"
     }
   ]
 }

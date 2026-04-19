@@ -33,6 +33,14 @@
       "title": "Meet Willow, our state-of-the-art quantum chip (Google)",
       "datePublished": "2024-12-09",
       "dateAccessed": "2026-04-19"
+    },
+    {
+      "type": "doi",
+      "url": "https://doi.org/10.1038/s41586-024-08449-y",
+      "title": "Quantum error correction below the surface code threshold (Nature 638, 920–926)",
+      "authors": "Google Quantum AI and Collaborators",
+      "datePublished": "2025-02-20",
+      "dateAccessed": "2026-04-19"
     }
   ]
 }

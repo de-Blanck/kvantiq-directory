@@ -31,6 +31,14 @@
       "url": "https://en.wikipedia.org/wiki/Quantum_supremacy",
       "title": "Quantum supremacy — Wikipedia (Random Circuit Sampling, XEB, phase transitions)",
       "dateAccessed": "2026-04-19"
+    },
+    {
+      "type": "doi",
+      "url": "https://doi.org/10.1038/s41586-024-07998-6",
+      "title": "Phase transition in Random Circuit Sampling (Nature 634, 328–333)",
+      "authors": "Morvan, Villalonga, Mi, Mandrà et al. (Google Quantum AI)",
+      "datePublished": "2024-10-09",
+      "dateAccessed": "2026-04-19"
     }
   ]
 }

@@ -31,6 +31,14 @@
       "url": "https://en.wikipedia.org/wiki/Quantinuum",
       "title": "Quantinuum — Wikipedia (H-Series hardware and certified randomness)",
       "dateAccessed": "2026-04-19"
+    },
+    {
+      "type": "doi",
+      "url": "https://doi.org/10.1038/s41586-025-08737-1",
+      "title": "Certified randomness using a trapped-ion quantum processor (Nature)",
+      "authors": "Liu, Shaydulin, Niroula, DeCross, Hung et al.",
+      "datePublished": "2025-03-26",
+      "dateAccessed": "2026-04-19"
     }
   ]
 }
