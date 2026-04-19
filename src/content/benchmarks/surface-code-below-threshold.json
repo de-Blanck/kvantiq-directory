@@ -1,0 +1,38 @@
+{
+  "name": "Surface Code Quantum Error Correction Below Threshold",
+  "slug": "surface-code-below-threshold",
+  "algorithm": "Distance-5/7 surface code memory",
+  "category": "other",
+  "tags": ["error-correction", "surface-code", "below-threshold", "logical-qubit", "superconducting"],
+  "description": "Memory benchmark demonstrating a quantum error-correcting code operating below the fault-tolerant threshold on a superconducting processor. Google's team ran distance-3, -5 and -7 surface codes and showed that logical error rate per cycle drops by a factor Lambda each time code distance is increased by two, proving exponential error suppression with scale. Also ran a distance-29 repetition code. The distance-7 logical memory outlived its best physical qubit by a factor of 2.4, a first-of-its-kind result for superconducting hardware.",
+  "hardware": "Google superconducting processor (Willow-generation, 105 qubits)",
+  "framework": "Google Quantum AI stack (Cirq-compatible)",
+  "qubits": 105,
+  "reproducible": false,
+  "datePublished": "2024-08-24",
+  "keyMetrics": [
+    {"metric": "Error per cycle (d=7)", "value": "0.143 ± 0.003", "unit": "%"},
+    {"metric": "Lambda (suppression factor)", "value": "2.14 ± 0.02"},
+    {"metric": "Logical vs physical lifetime", "value": "2.4 ± 0.3×"},
+    {"metric": "Decoder latency (d=5)", "value": "63", "unit": "microseconds"},
+    {"metric": "Cycle time", "value": "1.1", "unit": "microseconds"}
+  ],
+  "significance": "First demonstration on superconducting hardware that increasing code distance reduces logical error exponentially — crossing the practical break-even point required for scalable fault-tolerant quantum computation.",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2408.13687",
+      "title": "Quantum error correction below the surface code threshold",
+      "authors": "Google Quantum AI and Collaborators",
+      "datePublished": "2024-08-24",
+      "dateAccessed": "2026-04-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://blog.google/technology/research/google-willow-quantum-chip/",
+      "title": "Meet Willow, our state-of-the-art quantum chip (Google)",
+      "datePublished": "2024-12-09",
+      "dateAccessed": "2026-04-19"
+    }
+  ]
+}

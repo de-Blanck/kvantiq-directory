@@ -1,0 +1,37 @@
+{
+  "name": "Tensor-Network Classical Benchmark of IBM Eagle Kicked Ising",
+  "slug": "tensor-network-eagle-kicked-ising",
+  "algorithm": "Belief-propagation tensor-network simulation (ITensor)",
+  "category": "simulation",
+  "tags": ["tensor-networks", "IBM-Eagle", "kicked-Ising", "classical-benchmark", "heavy-hex"],
+  "description": "Classical-side benchmark that reproduced — and surpassed the accuracy of — IBM's 127-qubit Eagle kicked-Ising utility-scale experiment using tensor networks tailored to the heavy-hexagon lattice. The authors use belief-propagation-based approximate contraction exploiting the tree-like correlations of the state and demonstrate that the classical method is more accurate and more precise than the quantum processor results at the same Trotter depths, and can be pushed to long times in the thermodynamic limit. This benchmark reframes the 127-qubit IBM claim and is widely cited as the reference classical counter-result.",
+  "hardware": "Classical workstation / HPC (no quantum hardware) benchmarking IBM Eagle r3 (127 qubits)",
+  "framework": "ITensor",
+  "qubits": 127,
+  "reproducible": true,
+  "datePublished": "2023-06-26",
+  "keyMetrics": [
+    {"metric": "Qubits simulated", "value": "127"},
+    {"metric": "Lattice", "value": "Heavy-hexagon"},
+    {"metric": "Method", "value": "Belief-propagation tensor network"},
+    {"metric": "Accuracy vs IBM Eagle", "value": "Higher"},
+    {"metric": "Reach", "value": "Thermodynamic limit, long times"}
+  ],
+  "significance": "Definitive classical counter-benchmark to the IBM Eagle utility-scale claim — sets the bar that future utility demonstrations must beat on heavy-hex kicked-Ising dynamics.",
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2306.14887",
+      "title": "Efficient tensor network simulation of IBM's Eagle kicked Ising experiment",
+      "authors": "Tindall, Fishman, Stoudenmire, Sels",
+      "datePublished": "2023-06-26",
+      "dateAccessed": "2026-04-19"
+    },
+    {
+      "type": "url",
+      "url": "https://itensor.org/",
+      "title": "ITensor — tensor network software used for the Eagle benchmark simulation",
+      "dateAccessed": "2026-04-19"
+    }
+  ]
+}
