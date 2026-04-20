@@ -61,7 +61,7 @@ export default function CustomizePanel({ open, onClose, cards, onToggle, onReset
             <div className="mt-6 flex gap-2">
               <button
                 onClick={onClose}
-                className="flex-1 rounded-lg bg-info px-4 py-2.5 text-[13px] font-semibold text-white hover:bg-info/85 transition-colors"
+                className="btn-quantum flex-1 rounded-lg bg-info px-4 py-2.5 text-[13px] font-semibold text-void"
               >
                 Done
               </button>

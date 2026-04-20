@@ -56,7 +56,7 @@ export default function DetailHero({
                 href={websiteUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 rounded-lg bg-info px-5 py-2 text-[13px] font-semibold text-white transition-colors hover:bg-info/85"
+                className="btn-quantum inline-flex items-center gap-1 rounded-lg bg-info px-5 py-2 text-[13px] font-semibold text-void"
               >
                 ↗ {websiteLabel || 'Visit Website'}
               </a>
