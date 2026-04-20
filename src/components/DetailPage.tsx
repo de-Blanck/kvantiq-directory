@@ -169,6 +169,17 @@ export default function DetailPage(props: DetailPageProps) {
     }));
   });
 
+  // Key Metrics spans full width when it has 3+ metrics OR any metric value is long/comma-list.
+  // Short 2-metric cases (typical for benchmarks) stay half-width so the dense
+  // side-by-side layout with "Why It Matters" is preserved.
+  const keyMetricsFullWidth = !!props.keyMetrics && props.keyMetrics.length > 0 && (
+    props.keyMetrics.length >= 3 ||
+    props.keyMetrics.some(m => {
+      const v = `${m.value}${m.unit ? ` ${m.unit}` : ''}`;
+      return v.length > 30 || v.includes(',');
+    })
+  );
+
   const toggleCard = (id: string) => {
     setCardConfigs(prev => prev.map(c => c.id === id ? { ...c, visible: !c.visible } : c));
   };
@@ -230,15 +241,26 @@ export default function DetailPage(props: DetailPageProps) {
       label: 'Key Metrics',
       content: (
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-          {props.keyMetrics.map((m, i) => (
-            <div key={i} className="rounded-lg border border-border bg-base px-4 py-3">
-              <div className="eyebrow text-text-muted">{m.metric}</div>
-              <div className="mt-1.5 data-lg text-text-primary leading-tight">
-                {m.value}
-                {m.unit && <span className="body-sm font-normal text-text-muted ml-1.5">{m.unit}</span>}
+          {props.keyMetrics.map((m, i) => {
+            // Long values (prose sentences, comma-separated lists) span full row
+            // so they don't wrap to 4+ lines inside a narrow 2-col tile.
+            // Threshold ~30 chars matches the point where values in a half-card
+            // tile (approx 150px wide at default breakpoint) start wrapping ugly.
+            const valueText = `${m.value}${m.unit ? ` ${m.unit}` : ''}`;
+            const isLong = valueText.length > 30 || valueText.includes(',');
+            return (
+              <div
+                key={i}
+                className={`rounded-lg border border-border bg-base px-4 py-3 ${isLong ? 'sm:col-span-2' : ''}`}
+              >
+                <div className="eyebrow text-text-muted">{m.metric}</div>
+                <div className="mt-1.5 data-lg text-text-primary leading-tight">
+                  {m.value}
+                  {m.unit && <span className="body-sm font-normal text-text-muted ml-1.5">{m.unit}</span>}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       ),
     }] : []),
@@ -361,6 +383,7 @@ export default function DetailPage(props: DetailPageProps) {
           ]}
           fullWidthCardIds={[
             ...cardConfigs.filter(c => c.fullWidth).map(c => c.id),
+            ...(keyMetricsFullWidth ? ['key-metrics'] : []),
             ...(props.extraCards || []).map(c => c.id),
           ]}
         />
