@@ -21,6 +21,7 @@ export interface DataTableColumn {
 
 export interface DataTableRow {
   href: string;
+  external?: boolean;
   [key: string]: string | number | boolean | undefined;
 }
 
@@ -94,8 +95,13 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
       cell: ({ getValue, row }: { getValue: () => unknown; row: { original: DataTableRow } }) => {
         const val = String(getValue());
         if (col.isLink) {
+          const ext = row.original.external === true;
           return (
-            <a href={row.original.href} className="text-accent no-underline hover:underline">
+            <a
+              href={row.original.href}
+              className="text-accent no-underline hover:underline"
+              {...(ext ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+            >
               {val}
             </a>
           );
@@ -247,11 +253,21 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
                 tabIndex={0}
                 role="link"
                 className="border-b border-border cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
-                onClick={() => { window.location.href = row.original.href; }}
+                onClick={() => {
+                  if (row.original.external) {
+                    window.open(row.original.href, '_blank', 'noopener,noreferrer');
+                  } else {
+                    window.location.href = row.original.href;
+                  }
+                }}
                 onKeyDown={(e) => {
                   if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
-                    window.location.href = row.original.href;
+                    if (row.original.external) {
+                      window.open(row.original.href, '_blank', 'noopener,noreferrer');
+                    } else {
+                      window.location.href = row.original.href;
+                    }
                   }
                 }}
               >

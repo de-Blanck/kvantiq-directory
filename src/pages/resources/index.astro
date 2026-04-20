@@ -8,6 +8,7 @@ const sorted = allResources.sort((a, b) => a.data.name.localeCompare(b.data.name
 
 const tableData = sorted.map(r => ({
   href: r.data.website,
+  external: true,
   name: r.data.name,
   type: r.data.type,
   provider: r.data.provider || '',

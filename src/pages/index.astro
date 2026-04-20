@@ -50,24 +50,24 @@ const websiteLd = {
     <h2 class="eyebrow-lg text-text-secondary">How to use this directory</h2>
     <div class="mt-5 grid gap-6 sm:grid-cols-3">
       <div class="flex gap-4">
-        <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-info/15 font-mono text-sm font-semibold text-info">1</span>
+        <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent-glow font-mono text-sm font-semibold text-accent">1</span>
         <div>
-          <p class="h-sm text-text-primary">Browse or search</p>
-          <p class="mt-1 body-sm text-text-secondary">Use the navigation tabs to explore companies, benchmarks, use cases, challenges, or resources. Or type in the search bar above to find anything instantly.</p>
+          <p class="h-sm text-text-primary">Search or browse</p>
+          <p class="mt-1 body-sm text-text-secondary">Type to jump anywhere, or pick a tab.</p>
         </div>
       </div>
       <div class="flex gap-4">
-        <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-info/15 font-mono text-sm font-semibold text-info">2</span>
+        <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent-glow font-mono text-sm font-semibold text-accent">2</span>
         <div>
-          <p class="h-sm text-text-primary">Filter and sort</p>
-          <p class="mt-1 body-sm text-text-secondary">Each listing page has dropdown filters (country, type, category) and sortable columns. Click any column header to sort. Combine filters to narrow results.</p>
+          <p class="h-sm text-text-primary">Filter, sort, group</p>
+          <p class="mt-1 body-sm text-text-secondary">Sort columns. Filter chips. Group by country, type or category.</p>
         </div>
       </div>
       <div class="flex gap-4">
-        <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-info/15 font-mono text-sm font-semibold text-info">3</span>
+        <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent-glow font-mono text-sm font-semibold text-accent">3</span>
         <div>
-          <p class="h-sm text-text-primary">Dive into details</p>
-          <p class="mt-1 body-sm text-text-secondary">Click any entry to see its full profile — description, metadata, verified sources, and FAQ. Every entry links back to its original sources so you can verify the data yourself.</p>
+          <p class="h-sm text-text-primary">Verify at source</p>
+          <p class="mt-1 body-sm text-text-secondary">Every entry links back to its primary sources.</p>
         </div>
       </div>
     </div>
@@ -80,16 +80,11 @@ const websiteLd = {
       <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {featured.map(c => (
           <a href={`/companies/${c.data.slug}/`} class="card-hover block rounded-xl border border-border bg-surface p-5">
-            <div class="flex items-start justify-between gap-3">
-              <div class="min-w-0">
-                <h3 class="h-md text-text-primary truncate">{c.data.name}</h3>
-                <p class="mt-1 eyebrow text-text-muted">{c.data.country} · {c.data.type}</p>
-              </div>
-              <span class="shrink-0 rounded-md bg-accent-glow border border-accent/20 px-2 py-0.5 eyebrow text-accent">Featured</span>
-            </div>
-            <p class="mt-3 body-sm text-text-secondary line-clamp-3">{c.data.description}</p>
+            <h3 class="h-md text-text-primary truncate">{c.data.name}</h3>
+            <p class="mt-1 eyebrow text-text-muted">{c.data.country} · {c.data.type}</p>
+            <p class="mt-3 body-sm text-text-secondary line-clamp-2">{c.data.description}</p>
             <div class="mt-4 flex flex-wrap gap-1.5">
-              {c.data.tags.slice(0, 4).map((tag: string) => (
+              {c.data.tags.slice(0, 3).map((tag: string) => (
                 <span class="rounded-md border border-border bg-base px-2 py-0.5 font-mono text-xs text-text-muted">{tag}</span>
               ))}
             </div>

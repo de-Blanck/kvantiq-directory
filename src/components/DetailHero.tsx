@@ -25,45 +25,47 @@ export default function DetailHero({
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4 }}
-      className="relative overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-base to-surface p-7 mb-4"
+      className="relative overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-base to-surface p-8 md:p-10 mb-6"
     >
-      <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-accent/[0.03] blur-3xl" />
+      <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-accent/[0.04] blur-3xl" />
 
-      <div className="relative z-10 flex flex-col gap-6 lg:flex-row lg:justify-between lg:items-start">
-        <div className="flex-1">
+      <div className="relative z-10 flex flex-col gap-8 lg:flex-row lg:justify-between lg:items-start">
+        <div className="flex-1 min-w-0">
           <div className="eyebrow text-accent">
             {type}
           </div>
-          <h1 className="h-xl mt-2 text-text-primary">
+          <h1 className="h-xl mt-3 text-text-primary">
             {name}
           </h1>
-          <p className="body-sm mt-2 text-text-secondary">{meta}</p>
+          <p className="body-default mt-3 text-text-secondary">{meta}</p>
 
-          <div className="mt-3 flex flex-wrap gap-1.5">
-            {tags.map(tag => (
-              <span
-                key={tag}
-                className="eyebrow rounded-full border border-accent/20 bg-accent-glow px-3 py-1 text-text-secondary"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
+          {tags.length > 0 && (
+            <div className="mt-5 flex flex-wrap gap-2">
+              {tags.map(tag => (
+                <span
+                  key={tag}
+                  className="eyebrow rounded-full border border-accent/20 bg-accent-glow px-3 py-1 text-text-secondary"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
 
-          <div className="mt-4 flex flex-wrap gap-2">
+          <div className="mt-6 flex flex-wrap gap-3">
             {websiteUrl && (
               <a
                 href={websiteUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-quantum inline-flex items-center gap-1 rounded-lg bg-accent px-5 py-2 text-sm font-semibold text-void"
+                className="btn-quantum inline-flex items-center gap-1 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-void"
               >
                 ↗ {websiteLabel || 'Visit Website'}
               </a>
             )}
             <a
               href="#sources"
-              className="inline-flex items-center rounded-lg border border-border px-5 py-2 text-sm font-medium text-text-secondary transition-colors hover:border-text-muted"
+              className="inline-flex items-center rounded-lg border border-border px-5 py-2.5 text-sm font-medium text-text-secondary transition-colors hover:border-text-muted hover:text-text-primary"
             >
               Sources ({sourceCount})
             </a>
@@ -71,16 +73,16 @@ export default function DetailHero({
         </div>
 
         {stats.length > 0 && (
-          <div className="flex flex-wrap gap-3 lg:gap-4">
+          <div className="flex flex-wrap gap-3 lg:gap-4 lg:min-w-fit">
             {stats.map(stat => {
               const isLong = stat.value.length > 20;
               return (
                 <div
                   key={stat.label}
-                  className={`rounded-xl border border-border bg-elevated px-5 py-3 ${isLong ? 'text-left max-w-[280px]' : 'text-center min-w-[100px]'}`}
+                  className={`rounded-xl border border-border bg-elevated px-6 py-4 ${isLong ? 'text-left max-w-[280px]' : 'text-center min-w-[110px]'}`}
                 >
                   <div className={`text-text-primary ${isLong ? 'body-sm font-semibold' : 'data-lg'}`}>{stat.value}</div>
-                  <div className="eyebrow mt-1 text-text-muted">{stat.label}</div>
+                  <div className="eyebrow mt-1.5 text-text-muted">{stat.label}</div>
                 </div>
               );
             })}
