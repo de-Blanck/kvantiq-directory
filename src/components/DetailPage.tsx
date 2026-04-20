@@ -38,6 +38,10 @@ interface DetailPageProps {
   keyMetrics?: { metric: string; value: string; unit?: string }[];
   significance?: string;
   linkedCompanies?: { name: string; slug: string }[];
+  /** Optional smart cross-links rendered as a chip row under the overview description.
+   *  Examples: "All companies ↗", "See more in Denmark →", "All Quantum Hardware →".
+   *  Each opens in same tab unless external is true. */
+  overviewLinks?: { label: string; href: string; external?: boolean }[];
 }
 
 // Only content cards — no metrics (in hero), no sources (always at bottom)
@@ -84,7 +88,25 @@ export default function DetailPage(props: DetailPageProps) {
     {
       id: 'overview',
       label: '', // No label — tab already says "Overview"
-      content: <p className="body-default text-text-secondary">{props.description}</p>,
+      content: (
+        <div className="flex flex-col gap-4">
+          <p className="body-default text-text-secondary">{props.description}</p>
+          {props.overviewLinks && props.overviewLinks.length > 0 && (
+            <div className="flex flex-wrap gap-2 pt-1">
+              {props.overviewLinks.map((link, i) => (
+                <a
+                  key={i}
+                  href={link.href}
+                  {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                  className="eyebrow rounded-full border border-border bg-base px-3 py-1.5 text-text-secondary transition-colors hover:border-accent/40 hover:text-accent"
+                >
+                  {link.label} {link.external ? '↗' : '→'}
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
+      ),
     },
     ...(props.products && props.products.length > 0 ? [{
       id: 'products',
@@ -120,11 +142,14 @@ export default function DetailPage(props: DetailPageProps) {
       id: 'key-metrics',
       label: 'Key Metrics',
       content: (
-        <div className="flex flex-col gap-2">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
           {props.keyMetrics.map((m, i) => (
-            <div key={i} className="flex items-baseline gap-2">
-              <span className="eyebrow text-text-muted shrink-0">{m.metric}</span>
-              <span className="data-md text-text-primary">{m.value}{m.unit ? ` ${m.unit}` : ''}</span>
+            <div key={i} className="rounded-lg border border-border bg-base px-4 py-3">
+              <div className="eyebrow text-text-muted">{m.metric}</div>
+              <div className="mt-1.5 data-lg text-text-primary leading-tight">
+                {m.value}
+                {m.unit && <span className="body-sm font-normal text-text-muted ml-1.5">{m.unit}</span>}
+              </div>
             </div>
           ))}
         </div>
