@@ -29,8 +29,8 @@ export default function DetailHero({
     >
       <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-accent/[0.04] blur-3xl" />
 
-      <div className="relative z-10 flex flex-col gap-8 lg:flex-row lg:justify-between lg:items-start">
-        <div className="flex-1 min-w-0">
+      <div className="relative z-10 flex flex-col gap-8">
+        <div className="min-w-0">
           <div className="eyebrow text-accent">
             {type}
           </div>
@@ -73,7 +73,7 @@ export default function DetailHero({
         </div>
 
         {stats.length > 0 && (
-          <div className="flex flex-wrap gap-3 lg:gap-4 lg:min-w-fit">
+          <div className="flex flex-wrap gap-3">
             {stats.map(stat => {
               const isLong = stat.value.length > 20;
               return (
