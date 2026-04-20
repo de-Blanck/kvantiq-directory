@@ -3,6 +3,113 @@ import DetailHero from './DetailHero';
 import DetailTabs from './DetailTabs';
 import DashboardGrid from './DashboardGrid';
 
+/**
+ * Products list — each row is either:
+ *  - a full-row anchor that opens the product URL in a new tab (when url exists)
+ *  - a plain static div (when no url) — cursor stays default, nothing to click
+ */
+function ProductsList({ products }: { products: { name: string; description: string; url?: string }[] }) {
+  return (
+    <div className="flex flex-col gap-3">
+      {products.map((p, i) => {
+        const inner = (
+          <>
+            <div className="flex items-center gap-2">
+              <span className="h-sm text-text-primary">{p.name}</span>
+              {p.url && <span className="text-accent text-xs">↗</span>}
+            </div>
+            <p className="body-sm text-text-secondary mt-1">{p.description}</p>
+          </>
+        );
+        if (p.url) {
+          return (
+            <a
+              key={i}
+              href={p.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group -mx-2 cursor-pointer rounded-lg px-2 py-1.5 transition-colors hover:bg-elevated/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60"
+              aria-label={`${p.name} (opens in new tab)`}
+            >
+              {inner}
+            </a>
+          );
+        }
+        return (
+          <div key={i} className="-mx-2 px-2 py-1.5">
+            {inner}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+/**
+ * Highlights list — clicking a highlight toggles a line-clamp vs. full display.
+ * Short highlights (one line) still get a cursor-pointer for consistency; the
+ * toggle is a no-op when already fully visible.
+ */
+function HighlightsList({ highlights }: { highlights: string[] }) {
+  const [expanded, setExpanded] = useState<Set<number>>(new Set());
+  const toggle = (i: number) =>
+    setExpanded(prev => {
+      const next = new Set(prev);
+      if (next.has(i)) next.delete(i);
+      else next.add(i);
+      return next;
+    });
+  return (
+    <ul className="flex flex-col gap-1.5">
+      {highlights.map((h, i) => {
+        const isExpanded = expanded.has(i);
+        return (
+          <li key={i}>
+            <button
+              type="button"
+              onClick={() => toggle(i)}
+              aria-expanded={isExpanded}
+              className={`group flex w-full items-start gap-1.5 rounded-md px-1 py-0.5 text-left transition-colors hover:bg-elevated/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 body-sm text-text-secondary ${
+                isExpanded ? '' : 'line-clamp-2'
+              }`}
+            >
+              <span aria-hidden="true">•</span>
+              <span className="flex-1">{h}</span>
+            </button>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+/**
+ * Dashboard-card news list — top 3 news items. Entire row is clickable and
+ * opens the article URL in a new tab. Matches behavior of Latest News tab.
+ */
+function NewsDashboardList({ news }: { news: { title: string; excerpt?: string; url: string; source: string; date: string }[] }) {
+  return (
+    <div className="flex flex-col gap-4">
+      {news.slice(0, 3).map((item, i) => (
+        <a
+          key={i}
+          href={item.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group -mx-2 block cursor-pointer rounded-lg px-2 py-2 border-b border-border pb-4 last:border-0 last:pb-2 transition-colors hover:bg-elevated/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60"
+          aria-label={`${item.title} — ${item.source} (opens in new tab)`}
+        >
+          <div className="h-sm text-text-primary group-hover:text-accent transition-colors">{item.title}</div>
+          <div className="mt-1 flex gap-2 eyebrow text-text-muted">
+            <span>{item.date}</span>
+            <span className="text-accent">{item.source} ↗</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  );
+}
+
 interface RelatedItem {
   slug: string;
   name: string;
@@ -111,32 +218,12 @@ export default function DetailPage(props: DetailPageProps) {
     ...(props.products && props.products.length > 0 ? [{
       id: 'products',
       label: 'Products',
-      content: (
-        <div className="flex flex-col gap-3">
-          {props.products.map((p, i) => (
-            <div key={i}>
-              <div className="flex items-center gap-2">
-                <span className="h-sm text-text-primary">{p.name}</span>
-                {p.url && (
-                  <a href={p.url} target="_blank" rel="noopener noreferrer" className="text-accent text-xs hover:underline">↗</a>
-                )}
-              </div>
-              <p className="body-sm text-text-secondary mt-1">{p.description}</p>
-            </div>
-          ))}
-        </div>
-      ),
+      content: <ProductsList products={props.products} />,
     }] : []),
     ...(props.highlights && props.highlights.length > 0 ? [{
       id: 'highlights',
       label: 'Key Highlights',
-      content: (
-        <ul className="flex flex-col gap-1.5">
-          {props.highlights.map((h, i) => (
-            <li key={i} className="body-sm text-text-secondary">• {h}</li>
-          ))}
-        </ul>
-      ),
+      content: <HighlightsList highlights={props.highlights} />,
     }] : []),
     ...(props.keyMetrics && props.keyMetrics.length > 0 ? [{
       id: 'key-metrics',
@@ -176,19 +263,7 @@ export default function DetailPage(props: DetailPageProps) {
     ...(props.news.length > 0 ? [{
       id: 'news',
       label: 'Latest News',
-      content: (
-        <div className="flex flex-col gap-4">
-          {props.news.slice(0, 3).map((item, i) => (
-            <div key={i} className="border-b border-border pb-4 last:border-0 last:pb-0">
-              <div className="h-sm text-text-primary">{item.title}</div>
-              <div className="mt-1 flex gap-2 eyebrow text-text-muted">
-                <span>{item.date}</span>
-                <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">{item.source} ↗</a>
-              </div>
-            </div>
-          ))}
-        </div>
-      ),
+      content: <NewsDashboardList news={props.news} />,
     }] : []),
     ...(props.related.length >= 2 ? [{
       id: 'related',
