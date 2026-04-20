@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import JsonLd from '../components/JsonLd.astro';
+import QuantumWaveBackground from '../components/QuantumWaveBackground.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -68,6 +69,7 @@ const resolvedCanonical = canonicalUrl || Astro.url.href;
     }} />
   </head>
   <body class="min-h-screen bg-void text-text-primary">
+    <QuantumWaveBackground />
     <div class="quantum-hairline" aria-hidden="true"></div>
     <Header />
     <main class="mx-auto max-w-7xl px-4 py-8" data-pagefind-body>
