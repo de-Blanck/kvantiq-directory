@@ -1,9 +1,7 @@
 ---
-import { getCollection } from 'astro:content';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import JsonLd from '../components/JsonLd.astro';
-import CommandBar, { type CommandItem } from '../components/CommandBar';
 import '../styles/global.css';
 
 interface Props {
@@ -18,54 +16,6 @@ const { title, description, ogImage, jsonLd, canonicalUrl } = Astro.props;
 const siteTitle = `${title} | Kvantiq Directory`;
 const resolvedOgImage = ogImage || '/og-images/default.png';
 const resolvedCanonical = canonicalUrl || Astro.url.href;
-
-// Build cross-collection search index at build time for the command palette.
-const [companies, benchmarks, useCases, challenges, resources] = await Promise.all([
-  getCollection('companies'),
-  getCollection('benchmarks'),
-  getCollection('use-cases'),
-  getCollection('challenges'),
-  getCollection('resources'),
-]);
-
-const commandItems: CommandItem[] = [
-  ...companies.map((c) => ({
-    id: `companies:${c.data.slug}`,
-    name: c.data.name,
-    description: c.data.description,
-    collection: 'companies' as const,
-    href: `/companies/${c.data.slug}/`,
-  })),
-  ...benchmarks.map((b) => ({
-    id: `benchmarks:${b.data.slug}`,
-    name: b.data.name,
-    description: b.data.description,
-    collection: 'benchmarks' as const,
-    href: `/benchmarks/${b.data.slug}/`,
-  })),
-  ...useCases.map((u) => ({
-    id: `use-cases:${u.data.slug}`,
-    name: u.data.name,
-    description: u.data.description,
-    collection: 'use-cases' as const,
-    href: `/use-cases/${u.data.slug}/`,
-  })),
-  ...challenges.map((ch) => ({
-    id: `challenges:${ch.data.slug}`,
-    name: ch.data.name,
-    description: ch.data.description,
-    collection: 'challenges' as const,
-    href: `/challenges/${ch.data.slug}/`,
-  })),
-  ...resources.map((r) => ({
-    id: `resources:${r.data.slug}`,
-    name: r.data.name,
-    description: r.data.description,
-    collection: 'resources' as const,
-    href: r.data.website,
-    external: true,
-  })),
-].sort((a, b) => a.name.localeCompare(b.name));
 ---
 <!doctype html>
 <html lang="en">
@@ -123,12 +73,27 @@ const commandItems: CommandItem[] = [
     <main class="mx-auto max-w-7xl px-4 py-8" data-pagefind-body>
       <slot />
     </main>
-    <CommandBar items={commandItems} client:idle />
     <Footer />
     <script is:inline>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js');
       }
+
+      // Mouse-proximity edge gradient: updates --mouse-x / --mouse-y on the
+      // nearest .card-hover (or rounded-card / article.rounded-lg) element that
+      // contains the cursor. Delegated — one listener for the whole page.
+      (function () {
+        if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        document.addEventListener('mousemove', function (e) {
+          var t = e.target;
+          if (!t || !t.closest) return;
+          var el = t.closest('.card-hover, [class*="rounded-card"], article.rounded-lg');
+          if (!el) return;
+          var rect = el.getBoundingClientRect();
+          el.style.setProperty('--mouse-x', (e.clientX - rect.left) + 'px');
+          el.style.setProperty('--mouse-y', (e.clientY - rect.top) + 'px');
+        }, { passive: true });
+      })();
     </script>
   </body>
 </html>
