@@ -29,7 +29,15 @@ const cardItems = sorted.map(ch => ({
   meta: `${ch.data.organizer} \u00b7 ${ch.data.status}`,
   badge: ch.data.status === 'active' ? 'Active' : ch.data.status === 'upcoming' ? 'Upcoming' : undefined,
   badgeColor: ch.data.status === 'active' ? 'text-accent bg-accent-glow' : 'text-warn bg-warn/15',
+  // Group-by fields — mirror of tableData keys so CardGrid can group.
+  organizer: ch.data.organizer,
+  status: ch.data.status,
 }));
+
+const groupByOptions = [
+  { key: 'status', label: 'Status' },
+  { key: 'organizer', label: 'Organizer' },
+];
 
 const itemListLd = {
   "@context": "https://schema.org", "@type": "ItemList",
@@ -57,6 +65,7 @@ const itemListLd = {
       tableColumns={tableColumns}
       cardItems={cardItems}
       searchPlaceholder="Search challenges..."
+      groupByOptions={groupByOptions}
     />
   </article>
 </BaseLayout>

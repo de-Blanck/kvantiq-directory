@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import ListingCard from '../../../components/ListingCard.astro';
+import ListingView from '../../../components/ListingView.tsx';
 
 export async function getStaticPaths() {
   const companies = await getCollection('companies');
@@ -17,6 +17,39 @@ export async function getStaticPaths() {
 
 const { countryName, companies } = Astro.props;
 const sorted = companies.sort((a: any, b: any) => a.data.name.localeCompare(b.data.name));
+
+const tableData = sorted.map((c: any) => ({
+  href: `/companies/${c.data.slug}/`,
+  name: c.data.name,
+  type: c.data.type,
+  region: c.data.region,
+  founded: c.data.founded ? String(c.data.founded) : '',
+}));
+
+const tableColumns = [
+  { key: 'name', label: 'Company', isLink: true, sortable: true },
+  { key: 'type', label: 'Type', filterable: true, sortable: true },
+  { key: 'region', label: 'Region', filterable: true, sortable: true },
+  { key: 'founded', label: 'Founded', sortable: true },
+];
+
+const cardItems = sorted.map((c: any) => ({
+  href: `/companies/${c.data.slug}/`,
+  name: c.data.name,
+  description: c.data.description,
+  tags: c.data.tags,
+  meta: c.data.type,
+  badge: c.data.featured ? 'Featured' : undefined,
+  badgeColor: 'text-accent bg-accent-glow',
+  // Group-by fields — mirror of tableData keys so CardGrid can group.
+  type: c.data.type,
+  region: c.data.region,
+}));
+
+const groupByOptions = [
+  { key: 'type', label: 'Type' },
+  { key: 'region', label: 'Region' },
+];
 ---
 <BaseLayout
   title={`Quantum Computing Companies in ${countryName}`}
@@ -31,20 +64,16 @@ const sorted = companies.sort((a: any, b: any) => a.data.name.localeCompare(b.da
     </div>
 
     <div class="mt-4">
-      <a href="/companies/" class="body-sm text-info hover:underline">&larr; All companies</a>
+      <a href="/companies/" class="body-sm text-accent hover:underline">&larr; All companies</a>
     </div>
 
-    <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {sorted.map((c: any) => (
-        <ListingCard
-          title={c.data.name}
-          href={`/companies/${c.data.slug}/`}
-          description={c.data.description}
-          tags={c.data.tags}
-          meta={c.data.type}
-          featured={c.data.featured}
-        />
-      ))}
-    </div>
+    <ListingView
+      client:load
+      tableData={tableData}
+      tableColumns={tableColumns}
+      cardItems={cardItems}
+      searchPlaceholder={`Search companies in ${countryName}...`}
+      groupByOptions={groupByOptions}
+    />
   </article>
 </BaseLayout>

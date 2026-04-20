@@ -25,7 +25,15 @@ const cardItems = sorted.map(u => ({
   description: u.data.description,
   tags: u.data.tags,
   meta: `${u.data.industry} \u00b7 ${u.data.category}`,
+  // Group-by fields — mirror of tableData keys so CardGrid can group.
+  industry: u.data.industry,
+  category: u.data.category,
 }));
+
+const groupByOptions = [
+  { key: 'industry', label: 'Industry' },
+  { key: 'category', label: 'Category' },
+];
 
 const itemListLd = {
   "@context": "https://schema.org",
@@ -54,6 +62,7 @@ const itemListLd = {
       tableColumns={tableColumns}
       cardItems={cardItems}
       searchPlaceholder="Search use cases..."
+      groupByOptions={groupByOptions}
     />
   </article>
 </BaseLayout>

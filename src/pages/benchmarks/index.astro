@@ -30,7 +30,17 @@ const cardItems = sorted.map(b => ({
   meta: `${b.data.algorithm} \u00b7 ${b.data.category}`,
   badge: b.data.reproducible ? 'Reproducible' : undefined,
   badgeColor: 'text-accent bg-accent-glow',
+  // Group-by fields — mirror of tableData keys so CardGrid can group.
+  algorithm: b.data.algorithm,
+  category: b.data.category,
+  framework: b.data.framework || '',
 }));
+
+const groupByOptions = [
+  { key: 'category', label: 'Category' },
+  { key: 'algorithm', label: 'Algorithm' },
+  { key: 'framework', label: 'Framework' },
+];
 
 const itemListLd = {
   "@context": "https://schema.org",
@@ -64,6 +74,7 @@ const itemListLd = {
       tableColumns={tableColumns}
       cardItems={cardItems}
       searchPlaceholder="Search benchmarks..."
+      groupByOptions={groupByOptions}
     />
   </article>
 </BaseLayout>

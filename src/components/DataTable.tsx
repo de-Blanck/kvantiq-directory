@@ -30,9 +30,17 @@ interface DataTableProps {
   columns: DataTableColumn[];
   /** Placeholder text for the search input */
   searchPlaceholder?: string;
+  /** Optional: row field to group rows by. When set, rows are split into sections per unique value. */
+  groupBy?: string;
+  /** Display label for the active groupBy field (e.g. "Country"). */
+  groupByLabel?: string;
 }
 
-export default function DataTable({ data, columns, searchPlaceholder = 'Search...' }: DataTableProps) {
+function titleCase(val: string): string {
+  return val ? val.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()) : '';
+}
+
+export default function DataTable({ data, columns, searchPlaceholder = 'Search...', groupBy, groupByLabel }: DataTableProps) {
   const [sorting, setSorting] = useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
   const [globalFilter, setGlobalFilter] = useState('');
@@ -137,8 +145,26 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
     globalFilterFn: 'includesString',
   });
 
-  const filteredCount = table.getFilteredRowModel().rows.length;
+  const filteredRows = table.getFilteredRowModel().rows;
+  const filteredCount = filteredRows.length;
   const hasActiveFilters = globalFilter || columnFilters.length > 0;
+
+  // When grouping is active, bucket filtered rows by the groupBy field value.
+  // Groups sort alphabetically by group name; within a group, existing sort order is preserved.
+  const groupedRows = useMemo(() => {
+    if (!groupBy) return null;
+    const buckets = new Map<string, typeof filteredRows>();
+    for (const row of filteredRows) {
+      const raw = row.original[groupBy];
+      const key = raw === undefined || raw === null || raw === '' ? '—' : String(raw);
+      if (!buckets.has(key)) buckets.set(key, []);
+      buckets.get(key)!.push(row);
+    }
+    // Empty groups are never rendered (buckets only contain non-empty groups by construction).
+    return Array.from(buckets.entries())
+      .filter(([, rows]) => rows.length > 0)
+      .sort(([a], [b]) => a.localeCompare(b));
+  }, [filteredRows, groupBy]);
 
   const clearAll = () => {
     setGlobalFilter('');
@@ -246,47 +272,104 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
               })}
             </tr>
           </thead>
-          <tbody>
-            {table.getRowModel().rows.map(row => (
-              <tr
-                key={row.id}
-                tabIndex={0}
-                role="link"
-                className="border-b border-border cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
-                onClick={() => {
-                  if (row.original.external) {
-                    window.open(row.original.href, '_blank', 'noopener,noreferrer');
-                  } else {
-                    window.location.href = row.original.href;
-                  }
-                }}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
+          {groupedRows ? (
+            groupedRows.length === 0 ? (
+              <tbody>
+                <tr>
+                  <td colSpan={columns.length} className="py-8 text-center text-text-muted">
+                    No results match your filters.
+                    <button onClick={clearAll} className="ml-2 text-accent hover:underline">Clear all</button>
+                  </td>
+                </tr>
+              </tbody>
+            ) : (
+            groupedRows.map(([groupKey, rows]) => (
+              <tbody key={groupKey}>
+                <tr className="border-b border-border bg-elevated/40">
+                  <td colSpan={columns.length} className="py-3 pr-4">
+                    <span className="h-sm text-text-primary">{titleCase(groupKey)}</span>
+                    <span className="eyebrow ml-3 text-text-muted">
+                      {rows.length} {rows.length === 1 ? 'item' : 'items'}
+                    </span>
+                  </td>
+                </tr>
+                {rows.map(row => (
+                  <tr
+                    key={row.id}
+                    tabIndex={0}
+                    role="link"
+                    className="border-b border-border cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
+                    onClick={() => {
+                      if (row.original.external) {
+                        window.open(row.original.href, '_blank', 'noopener,noreferrer');
+                      } else {
+                        window.location.href = row.original.href;
+                      }
+                    }}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        if (row.original.external) {
+                          window.open(row.original.href, '_blank', 'noopener,noreferrer');
+                        } else {
+                          window.location.href = row.original.href;
+                        }
+                      }
+                    }}
+                  >
+                    {row.getVisibleCells().map(cell => (
+                      <td key={cell.id} className="py-2.5 pr-4 text-text-secondary">
+                        {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            ))
+            )
+          ) : (
+            <tbody>
+              {filteredRows.map(row => (
+                <tr
+                  key={row.id}
+                  tabIndex={0}
+                  role="link"
+                  className="border-b border-border cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
+                  onClick={() => {
                     if (row.original.external) {
                       window.open(row.original.href, '_blank', 'noopener,noreferrer');
                     } else {
                       window.location.href = row.original.href;
                     }
-                  }
-                }}
-              >
-                {row.getVisibleCells().map(cell => (
-                  <td key={cell.id} className="py-2.5 pr-4 text-text-secondary">
-                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  }}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      if (row.original.external) {
+                        window.open(row.original.href, '_blank', 'noopener,noreferrer');
+                      } else {
+                        window.location.href = row.original.href;
+                      }
+                    }
+                  }}
+                >
+                  {row.getVisibleCells().map(cell => (
+                    <td key={cell.id} className="py-2.5 pr-4 text-text-secondary">
+                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+              {filteredCount === 0 && (
+                <tr>
+                  <td colSpan={columns.length} className="py-8 text-center text-text-muted">
+                    No results match your filters.
+                    <button onClick={clearAll} className="ml-2 text-accent hover:underline">Clear all</button>
                   </td>
-                ))}
-              </tr>
-            ))}
-            {filteredCount === 0 && (
-              <tr>
-                <td colSpan={columns.length} className="py-8 text-center text-text-muted">
-                  No results match your filters.
-                  <button onClick={clearAll} className="ml-2 text-accent hover:underline">Clear all</button>
-                </td>
-              </tr>
-            )}
-          </tbody>
+                </tr>
+              )}
+            </tbody>
+          )}
         </table>
       </div>
     </div>

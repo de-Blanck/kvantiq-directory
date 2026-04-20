@@ -31,7 +31,17 @@ const cardItems = sorted.map(r => ({
   badge: r.data.openSource ? 'Open Source' : undefined,
   badgeColor: 'text-accent bg-accent-glow',
   external: true,
+  // Group-by fields — mirror of tableData keys so CardGrid can group.
+  type: r.data.type,
+  provider: r.data.provider || '',
+  openSource: r.data.openSource ? 'Yes' : 'No',
 }));
+
+const groupByOptions = [
+  { key: 'type', label: 'Type' },
+  { key: 'provider', label: 'Provider' },
+  { key: 'openSource', label: 'Open Source' },
+];
 
 const itemListLd = {
   "@context": "https://schema.org", "@type": "ItemList",
@@ -60,6 +70,7 @@ const itemListLd = {
       tableColumns={tableColumns}
       cardItems={cardItems}
       searchPlaceholder="Search resources..."
+      groupByOptions={groupByOptions}
     />
   </article>
 </BaseLayout>
