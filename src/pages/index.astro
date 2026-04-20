@@ -33,10 +33,10 @@ const websiteLd = {
   <!-- Hero -->
   <div class="mb-4 py-8 text-center">
     <div class="mx-auto max-w-7xl">
-      <h1 class="text-4xl font-bold tracking-[-0.5px] text-text-primary sm:text-5xl">
+      <h1 class="h-display text-text-primary">
         European Quantum Computing Directory
       </h1>
-      <p class="mx-auto mt-3 max-w-2xl text-lg text-text-secondary">
+      <p class="mx-auto mt-3 max-w-2xl body-lg text-text-secondary">
         The European quantum computing ecosystem — companies, benchmarks, use cases, challenges, and resources across Nordics and DACH.
       </p>
       <div class="mx-auto mt-5 max-w-md">
@@ -79,13 +79,13 @@ const websiteLd = {
       <h2 class="eyebrow-lg text-text-secondary">Featured Companies</h2>
       <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {featured.map(c => (
-          <a href={`/companies/${c.data.slug}/`} class="block rounded-xl border border-border bg-surface p-5 transition-all duration-[120ms] hover:border-info/20 hover:shadow-elevated">
+          <a href={`/companies/${c.data.slug}/`} class="card-hover block rounded-xl border border-border bg-surface p-5">
             <div class="flex items-start justify-between gap-3">
               <div class="min-w-0">
                 <h3 class="h-md text-text-primary truncate">{c.data.name}</h3>
                 <p class="mt-1 eyebrow text-text-muted">{c.data.country} · {c.data.type}</p>
               </div>
-              <span class="shrink-0 rounded-md bg-accent-glow border border-accent/20 px-2 py-0.5 eyebrow text-accent" style="text-transform: uppercase;">Featured</span>
+              <span class="shrink-0 rounded-md bg-accent-glow border border-accent/20 px-2 py-0.5 eyebrow text-accent">Featured</span>
             </div>
             <p class="mt-3 body-sm text-text-secondary line-clamp-3">{c.data.description}</p>
             <div class="mt-4 flex flex-wrap gap-1.5">
