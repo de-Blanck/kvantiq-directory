@@ -228,11 +228,13 @@ a {
   transition: color 160ms cubic-bezier(0, 0, 0.2, 1);
 }
 
-/* Nav link hover: gradient underline slides in from left (200ms, eased) */
-header nav a {
+/* Nav link hover: gradient underline slides in from left (200ms, eased).
+   Scoped to ul>a nav items only — the logo lockup and Submit CTA must
+   NOT get the gradient underline. */
+header nav ul a {
   position: relative;
 }
-header nav a:not(.nav-active)::after {
+header nav ul a:not(.nav-active)::after {
   content: '';
   position: absolute;
   left: 0;
@@ -244,12 +246,12 @@ header nav a:not(.nav-active)::after {
   transform-origin: left center;
   transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
 }
-header nav a:not(.nav-active):hover::after {
+header nav ul a:not(.nav-active):hover::after {
   transform: scaleX(1);
 }
 
 /* Active nav link: solid gradient bar (no animation, always visible) */
-header nav a.nav-active::after {
+header nav ul a.nav-active::after {
   content: '';
   position: absolute;
   left: 0;
