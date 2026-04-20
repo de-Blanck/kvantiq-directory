@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 
 interface NewsItem {
   title: string;
@@ -43,6 +43,10 @@ function collectionLabel(collection: string): string {
 
 export default function DetailTabs({ children, news, related, onCustomize }: DetailTabsProps) {
   const [activeTab, setActiveTab] = useState<TabId>('overview');
+  const prefersReducedMotion = useReducedMotion();
+  // Respect prefers-reduced-motion: keep the mount/unmount cycle so content
+  // still swaps, but drop the fade duration to 0 so nothing animates.
+  const fadeDuration = prefersReducedMotion ? 0 : 0.18;
 
   // No Sources tab — sources are always visible at bottom (handled by DetailPage)
   const tabs: { id: TabId; label: string }[] = [
@@ -85,7 +89,7 @@ export default function DetailTabs({ children, news, related, onCustomize }: Det
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0, position: 'absolute' as any }}
-          transition={{ duration: 0.12 }}
+          transition={{ duration: fadeDuration, ease: 'easeOut' }}
         >
           {activeTab === 'overview' && children}
 
