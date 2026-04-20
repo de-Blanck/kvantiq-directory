@@ -17,6 +17,17 @@ interface DetailHeroProps {
   sourceCount: number;
 }
 
+/**
+ * Aligned Columns — promoted from hero-variants/HeroAligned.astro (Iteration 1).
+ *
+ * Honours the DS two-font rule:
+ *   Left column = PROSE (Geist). Right column = DATA (IBM Plex Mono).
+ *
+ * The font-family change alone does most of the visual separation — stat
+ * values read as data, not as more body copy. Eyebrows on each column share
+ * the same top baseline so "Company" (accent) <-> "Specifications" (muted)
+ * read as paired section markers.
+ */
 export default function DetailHero({
   type, name, meta, description, tags, stats, websiteUrl, websiteLabel, sourceCount
 }: DetailHeroProps) {
@@ -29,18 +40,16 @@ export default function DetailHero({
     >
       <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-accent/[0.04] blur-3xl" />
 
-      <div className="relative z-10 flex flex-col gap-8">
+      <div className="relative z-10 grid gap-8 lg:grid-cols-[minmax(0,1fr)_240px] lg:gap-12">
+        {/* Prose tower (Geist) */}
         <div className="min-w-0">
-          <div className="eyebrow text-accent">
-            {type}
-          </div>
-          <h1 className="h-xl mt-3 text-text-primary">
-            {name}
-          </h1>
-          <p className="body-default mt-3 text-text-secondary">{meta}</p>
+          <div className="eyebrow text-accent">{type}</div>
+          <h1 className="h-xl mt-3 text-text-primary">{name}</h1>
+          <p className="body-sm mt-3 text-text-muted">{meta}</p>
+          <p className="body-lg mt-5 text-text-secondary">{description}</p>
 
           {tags.length > 0 && (
-            <div className="mt-5 flex flex-wrap gap-2">
+            <div className="mt-6 flex flex-wrap gap-2">
               {tags.map(tag => (
                 <span
                   key={tag}
@@ -52,7 +61,7 @@ export default function DetailHero({
             </div>
           )}
 
-          <div className="mt-6 flex flex-wrap gap-3">
+          <div className="mt-7 flex flex-wrap gap-3">
             {websiteUrl && (
               <a
                 href={websiteUrl}
@@ -72,21 +81,19 @@ export default function DetailHero({
           </div>
         </div>
 
+        {/* Data tower (Mono) */}
         {stats.length > 0 && (
-          <div className="flex flex-wrap gap-3">
-            {stats.map(stat => {
-              const isLong = stat.value.length > 20;
-              return (
-                <div
-                  key={stat.label}
-                  className={`rounded-xl border border-border bg-elevated px-6 py-4 ${isLong ? 'text-left max-w-[280px]' : 'text-center min-w-[110px]'}`}
-                >
-                  <div className={`text-text-primary ${isLong ? 'body-sm font-semibold' : 'data-lg'}`}>{stat.value}</div>
-                  <div className="eyebrow mt-1.5 text-text-muted">{stat.label}</div>
+          <aside className="lg:border-l lg:border-border lg:pl-8">
+            <div className="eyebrow text-text-muted">Specifications</div>
+            <dl className="mt-4 divide-y divide-border">
+              {stats.map(s => (
+                <div key={s.label} className="py-3 first:pt-0 last:pb-0">
+                  <dt className="eyebrow text-text-muted">{s.label}</dt>
+                  <dd className="mt-1.5 data-md text-text-primary break-words">{s.value}</dd>
                 </div>
-              );
-            })}
-          </div>
+              ))}
+            </dl>
+          </aside>
         )}
       </div>
     </motion.div>
