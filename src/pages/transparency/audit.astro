@@ -62,17 +62,19 @@ const hasTimeline = timelineDates.length > 0;
 const timelineData = { labels: timelineDates, values: cumulativeCounts };
 
 // --- Derived values for chart ---
+// Map confidence buckets to brand-aligned hexes (phosphor / cyan / amber warn / red error
+// — all canonical DS tokens). Charts need raw hex because Chart.js can't read CSS vars.
 const confidenceColors: Record<string, string> = {
-  HIGH:   '#22c55e',
-  MEDIUM: '#eab308',
-  LOW:    '#f97316',
-  DEAD:   '#ef4444',
+  HIGH:   '#00E6A0', // --color-accent (phosphor)
+  MEDIUM: '#00D4FF', // --color-cyan
+  LOW:    '#FFAA00', // --color-warn
+  DEAD:   '#EF4444', // --color-error
 };
 
 const confidenceData = {
   labels: confidenceDist.map((d) => d.label),
   values: confidenceDist.map((d) => d.value),
-  colors: confidenceDist.map((d) => confidenceColors[d.label] ?? '#94a3b8'),
+  colors: confidenceDist.map((d) => confidenceColors[d.label] ?? '#A09A93'), // text-muted fallback
 };
 
 const maxCoverageCount = Math.max(...coverageMap.map((c) => c.count), 1);
@@ -88,10 +90,10 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
 
     <!-- Header -->
     <div class="mb-8">
-      <h1 class="text-3xl font-bold tracking-[-0.3px] text-text">
+      <h1 class="h-xl text-text-primary">
         Audit Dashboard
       </h1>
-      <p class="mt-2 text-base text-text-secondary leading-relaxed">
+      <p class="mt-4 body-lg text-text-secondary">
         Directory health metrics — confidence levels, geographic coverage, recent audit actions, and source effectiveness.
       </p>
     </div>
@@ -101,7 +103,7 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
 
       <!-- Confidence Distribution (Chart.js doughnut) -->
       <div class="rounded-xl border border-border bg-surface p-5">
-        <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted mb-4">
+        <h2 class="eyebrow text-text-muted mb-4">
           Confidence Distribution
         </h2>
         {confidenceDist.length > 0 ? (
@@ -112,25 +114,25 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
             <!-- Legend -->
             <ul class="flex flex-wrap justify-center gap-x-4 gap-y-1.5">
               {confidenceDist.map((d) => (
-                <li class="flex items-center gap-1.5 text-xs text-text-secondary">
+                <li class="flex items-center gap-1.5 body-sm text-text-secondary">
                   <span
                     class="inline-block w-2.5 h-2.5 rounded-full shrink-0"
-                    style={`background-color: ${confidenceColors[d.label] ?? '#94a3b8'}`}
+                    style={`background-color: ${confidenceColors[d.label] ?? '#A09A93'}`}
                   ></span>
                   <span class="capitalize">{d.label.toLowerCase()}</span>
-                  <span class="font-mono font-semibold text-text">{d.value}</span>
+                  <span class="data-md text-text-primary">{d.value}</span>
                 </li>
               ))}
             </ul>
           </div>
         ) : (
-          <p class="text-sm text-text-muted italic">No confidence data available.</p>
+          <p class="body-sm text-text-muted italic">No confidence data available.</p>
         )}
       </div>
 
       <!-- Coverage by Country -->
       <div class="rounded-xl border border-border bg-surface p-5">
-        <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted mb-4">
+        <h2 class="eyebrow text-text-muted mb-4">
           Coverage by Country
         </h2>
         {coverageMap.length > 0 ? (
@@ -138,14 +140,14 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
             {coverageMap.map((c) => (
               <li class="group">
                 <div class="flex items-center justify-between mb-0.5">
-                  <span class="text-xs text-text-secondary group-hover:text-text transition-colors duration-[120ms]">
+                  <span class="body-sm text-text-secondary">
                     {c.country}
                   </span>
-                  <span class="font-mono text-xs font-semibold text-text">{c.count}</span>
+                  <span class="data-md text-text-primary">{c.count}</span>
                 </div>
                 <div class="h-1.5 w-full rounded-full bg-border overflow-hidden">
                   <div
-                    class="h-full rounded-full bg-info transition-all duration-300"
+                    class="h-full rounded-full bg-accent transition-all duration-300"
                     style={`width: ${Math.round((c.count / maxCoverageCount) * 100)}%`}
                   ></div>
                 </div>
@@ -153,7 +155,7 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
             ))}
           </ul>
         ) : (
-          <p class="text-sm text-text-muted italic">No coverage data available.</p>
+          <p class="body-sm text-text-muted italic">No coverage data available.</p>
         )}
       </div>
     </div>
@@ -161,7 +163,7 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
     <!-- Entry Count Over Time -->
     {hasTimeline && (
       <section class="mb-8">
-        <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted mb-4">
+        <h2 class="eyebrow text-text-muted mb-4">
           Directory Growth
         </h2>
         <div class="rounded-xl border border-border bg-surface p-6">
@@ -172,82 +174,79 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
 
     <!-- Recent Audit Actions -->
     <section class="mb-8">
-      <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted mb-4">
+      <h2 class="eyebrow text-text-muted mb-4">
         Recent Audit Actions
       </h2>
       {auditSummary.length > 0 ? (
         <div class="grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
           {auditSummary.map((a) => (
             <div class="rounded-lg border border-border bg-surface p-4 text-center">
-              <p class="font-mono text-2xl font-semibold text-text">{a.count}</p>
-              <p class="mt-1 text-xs font-medium capitalize text-text-secondary">
+              <p class="data-lg text-text-primary">{a.count}</p>
+              <p class="mt-1 body-sm capitalize text-text-secondary">
                 {a.action_taken.replace(/_/g, ' ')}
               </p>
             </div>
           ))}
           {totalAuditActions > 0 && (
-            <div class="rounded-lg border border-border bg-surface-alt p-4 text-center">
-              <p class="font-mono text-2xl font-semibold text-text">{totalAuditActions}</p>
-              <p class="mt-1 text-xs font-medium text-text-muted">Total actions</p>
+            <div class="rounded-lg border border-border bg-elevated p-4 text-center">
+              <p class="data-lg text-text-primary">{totalAuditActions}</p>
+              <p class="mt-1 eyebrow text-text-muted">Total actions</p>
             </div>
           )}
         </div>
       ) : (
-        <p class="text-sm text-text-muted italic">No audit actions recorded yet.</p>
+        <p class="body-sm text-text-muted italic">No audit actions recorded yet.</p>
       )}
     </section>
 
     <!-- Source Effectiveness -->
     <section class="mb-8">
-      <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted mb-4">
+      <h2 class="eyebrow text-text-muted mb-4">
         Source Effectiveness
       </h2>
       {sourceEff.length > 0 ? (
         <div class="overflow-x-auto rounded-xl border border-border">
-          <table class="w-full text-sm">
+          <table class="w-full">
             <thead>
-              <tr class="border-b border-border bg-surface-alt">
-                <th class="px-4 py-3 text-left font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted">
+              <tr class="border-b border-border bg-elevated">
+                <th class="px-4 py-3 text-left eyebrow text-text-muted">
                   Source
                 </th>
-                <th class="px-4 py-3 text-right font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted">
+                <th class="px-4 py-3 text-right eyebrow text-text-muted">
                   Total Found
                 </th>
-                <th class="px-4 py-3 text-right font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted">
+                <th class="px-4 py-3 text-right eyebrow text-text-muted">
                   Total New
                 </th>
               </tr>
             </thead>
             <tbody class="divide-y divide-border bg-surface">
               {sourceEff.map((s) => (
-                <tr class="hover:bg-surface-alt transition-colors duration-[80ms]">
-                  <td class="px-4 py-3 font-medium text-text">{s.source_name}</td>
-                  <td class="px-4 py-3 text-right font-mono text-text-secondary">{s.total_found}</td>
-                  <td class="px-4 py-3 text-right font-mono text-text-secondary">{s.total_new}</td>
+                <tr>
+                  <td class="px-4 py-3 body-sm font-medium text-text-primary">{s.source_name}</td>
+                  <td class="px-4 py-3 text-right data-md text-text-secondary">{s.total_found}</td>
+                  <td class="px-4 py-3 text-right data-md text-text-secondary">{s.total_new}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
       ) : (
-        <p class="text-sm text-text-muted italic">No source effectiveness data available.</p>
+        <p class="body-sm text-text-muted italic">No source effectiveness data available.</p>
       )}
     </section>
 
   </main>
 </BaseLayout>
 
-<script define:vars={{ confidenceData, confidenceColors, timelineData, hasTimeline }}>
+<script define:vars={{ confidenceData, timelineData, hasTimeline }}>
   if (confidenceData.values.length > 0 || hasTimeline) {
     import('https://cdn.jsdelivr.net/npm/chart.js@4/+esm').then(({ ArcElement, Tooltip, Legend, DoughnutController, LineElement, PointElement, CategoryScale, LinearScale, LineController, Filler, Chart }) => {
       Chart.register(ArcElement, Tooltip, Legend, DoughnutController, LineElement, PointElement, CategoryScale, LinearScale, LineController, Filler);
 
-      const canvas = document.getElementById('confidence-chart');
-      if (!canvas) return;
-
       // Confidence doughnut
       const canvas = document.getElementById('confidence-chart');
-      if (canvas) {
+      if (canvas && confidenceData.values.length > 0) {
         new Chart(canvas, {
           type: 'doughnut',
           data: {
@@ -268,10 +267,10 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
               legend: { display: false },
               tooltip: {
                 callbacks: { label: (ctx) => ` ${ctx.label}: ${ctx.parsed}` },
-                bodyColor: '#94a3b8',
-                titleColor: '#94a3b8',
-                backgroundColor: '#1e293b',
-                borderColor: '#334155',
+                bodyColor: '#F8FAFC',      // text-text-primary
+                titleColor: '#C4BEB7',     // text-text-secondary
+                backgroundColor: '#0d1117', // surface
+                borderColor: '#1b2332',    // border
                 borderWidth: 1,
               },
             },
@@ -279,7 +278,7 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
         });
       }
 
-      // Entry timeline line chart
+      // Entry timeline line chart — phosphor brand line on void grid
       if (hasTimeline) {
         const timelineCanvas = document.getElementById('timeline-chart');
         if (timelineCanvas) {
@@ -290,12 +289,12 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
               datasets: [{
                 label: 'Total entries',
                 data: timelineData.values,
-                borderColor: '#06b6d4',
-                backgroundColor: 'rgba(6, 182, 212, 0.1)',
+                borderColor: '#00E6A0',                     // accent (phosphor)
+                backgroundColor: 'rgba(0, 230, 160, 0.12)', // accent-glow
                 fill: true,
                 tension: 0.3,
                 pointRadius: 3,
-                pointBackgroundColor: '#06b6d4',
+                pointBackgroundColor: '#00E6A0',
               }],
             },
             options: {
@@ -303,8 +302,8 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
               maintainAspectRatio: true,
               plugins: { legend: { display: false }, tooltip: { enabled: true } },
               scales: {
-                y: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' }, border: { display: false } },
-                x: { ticks: { color: '#94a3b8', maxRotation: 45 }, grid: { display: false }, border: { display: false } },
+                y: { ticks: { color: '#A09A93' }, grid: { color: '#1b2332' }, border: { display: false } },
+                x: { ticks: { color: '#A09A93', maxRotation: 45 }, grid: { display: false }, border: { display: false } },
               },
             },
           });
@@ -313,3 +312,5 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
     });
   }
 </script>
+</content>
+</invoke>
