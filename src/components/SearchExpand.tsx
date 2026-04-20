@@ -24,10 +24,16 @@ const collectionLabels: Record<SearchItem['collection'], string> = {
 };
 
 /**
- * Elastic-expand searchbar.
- * Collapsed: small magnifier pill (44×44).
- * On click: spring-animates to full width + reveals input + inline results dropdown.
+ * Elastic-expand searchbar, center-anchored.
+ * Collapsed: small magnifier pill (44×44), horizontally centered in its container.
+ * On click: spring-animates width outward from center (bidirectional) so the pill
+ * grows to the left AND right simultaneously, never drifting off-axis.
  * Esc / click-outside collapses. No global shortcut, no modal — just a local affordance.
+ *
+ * Technique: the outer wrapper is flex+justify-center so the pill is centered at rest.
+ * The inner motion.div uses `mx-auto` + an explicit animated width (not framer `layout`)
+ * so width interpolates from 44px → target, and `mx-auto` keeps the element
+ * centered on every frame — symmetric outward growth from the midpoint.
  */
 export default function SearchExpand({ items, placeholder = 'Search the directory…' }: Props) {
   const [open, setOpen] = useState(false);
@@ -97,13 +103,21 @@ export default function SearchExpand({ items, placeholder = 'Search the director
     ? { duration: 0.01 }
     : { type: 'spring' as const, stiffness: 380, damping: 28, mass: 0.9 };
 
+  // Target expanded width: caps out at the parent max (max-w-2xl ≈ 672px);
+  // using 100% lets it fill whatever the parent allows, but framer-motion
+  // needs a numeric target on width animations, so we interpolate between
+  // 44px collapsed and 672px expanded and clamp with CSS `max-w-full`.
+  const collapsedWidth = 44;
+  const expandedWidth = 672;
+
   return (
-    <div ref={containerRef} className="relative w-full">
+    <div ref={containerRef} className="relative flex w-full justify-center">
       <motion.div
-        layout
+        initial={false}
+        animate={{ width: open ? expandedWidth : collapsedWidth }}
         transition={spring}
-        className={`relative flex items-center rounded-full border bg-surface shadow-subtle overflow-hidden
-          ${open ? 'w-full border-accent/40' : 'w-11 border-border hover:border-accent/50'}`}
+        className={`relative mx-auto flex max-w-full items-center rounded-full border bg-surface shadow-subtle overflow-hidden
+          ${open ? 'border-accent/40' : 'border-border hover:border-accent/50'}`}
         style={{ height: '44px' }}
       >
         <button
