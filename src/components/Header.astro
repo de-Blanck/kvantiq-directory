@@ -12,7 +12,7 @@ const currentPath = Astro.url.pathname;
 ---
 <header class="border-b border-border bg-surface" data-pagefind-ignore>
   <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-6">
-    <a href="/" class="flex items-center gap-3" aria-label="Kvantiq Studio Directory — Home">
+    <a href="/" class="nav-logo group/logo flex items-center gap-3" aria-label="Kvantiq Studio Directory — Home">
       <svg
         width="21"
         height="33"
@@ -26,9 +26,9 @@ const currentPath = Astro.url.pathname;
         <path d="M1.847 0.646C5.539 9.877 9.231 9.877 12.924 0.646" stroke="#00E6A0" stroke-width="1.292" stroke-linecap="round" stroke-linejoin="round" />
         <path d="M1.847 24.646C5.539 15.416 9.231 15.416 12.924 24.646" stroke="#00E6A0" stroke-width="1.292" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
-      <span class="flex flex-col items-end leading-none font-mono uppercase">
-        <span class="font-semibold text-text-primary" style="font-size: 20px; letter-spacing: 0.12em;">Kvantiq</span>
-        <span class="font-normal text-text-muted" style="font-size: 13px; letter-spacing: 0.16em;">Studio</span>
+      <span class="nav-logo__wordmark flex flex-col items-end leading-none font-mono uppercase" aria-hidden="true">
+        <span class="nav-logo__kvantiq font-semibold text-text-primary" style="font-size: 20px; letter-spacing: 0.12em;">Kvantiq</span>
+        <span class="nav-logo__studio font-normal text-text-muted" style="font-size: 13px; letter-spacing: 0.16em;">Studio</span>
       </span>
     </a>
 

@@ -261,6 +261,94 @@ header nav ul a.nav-active::after {
   background: var(--gradient-quantum);
 }
 
+/* ─────────────────────────────────────────
+   Nav logo lockup — collapsed-by-default,
+   hover-expand wordmark + phosphor corner-
+   to-corner sweep on the STUDIO word.
+
+   Collapsed (default): only the wave mark is visible.
+   Expanded (hover / keyboard focus-within): the stacked
+   KVANTIQ / STUDIO wordmark fades + slides in, and STUDIO
+   receives an animated phosphor background-clip sweep
+   from bottom-left to top-right.
+   Respects prefers-reduced-motion: instant state changes.
+   ───────────────────────────────────────── */
+.nav-logo {
+  /* Contain the collapsing wordmark so the nav doesn't shift.
+     100px fits the natural width of stacked "KVANTIQ / STUDIO" at the
+     current font sizes (KVANTIQ is the wider row ≈ 94px) with a small
+     safety buffer so no letter clips on the trailing edge. */
+  --nav-logo-wordmark-width: 100px;
+  --nav-logo-expand-duration: 240ms;
+  --nav-logo-expand-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.nav-logo__wordmark {
+  /* Width collapses to 0; overflow hides the text entirely. */
+  max-width: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(-6px);
+  transition:
+    max-width var(--nav-logo-expand-duration) var(--nav-logo-expand-ease),
+    opacity calc(var(--nav-logo-expand-duration) * 0.75) ease-out,
+    transform var(--nav-logo-expand-duration) var(--nav-logo-expand-ease);
+  will-change: max-width, opacity, transform;
+}
+
+.nav-logo:hover .nav-logo__wordmark,
+.nav-logo:focus-visible .nav-logo__wordmark,
+.nav-logo:focus-within .nav-logo__wordmark {
+  max-width: var(--nav-logo-wordmark-width);
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* STUDIO word: phosphor corner-to-corner sweep on expand.
+   Technique: a diagonal gradient where the trailing half is the default
+   muted-grey and the leading half is the phosphor accent. The background
+   is sized to 300% so we can park the grey end over the text at rest and
+   slide to the phosphor end on hover. The sweep happens across the large
+   gradient, making the phosphor appear to cross from bottom-right toward
+   top-left over the text in a clean diagonal wipe.
+
+   At rest (background-position: 100% 100%):
+     → text shows muted-grey (trailing end of gradient)
+   On hover (background-position: 0% 0%):
+     → text shows phosphor (leading end of gradient)
+   The transition interpolates the background-position → sweep effect. */
+.nav-logo__studio {
+  background-image: linear-gradient(
+    135deg,
+    var(--color-accent) 0%,
+    var(--color-accent) 40%,
+    var(--color-text-muted) 60%,
+    var(--color-text-muted) 100%
+  );
+  background-size: 300% 300%;
+  background-position: 100% 100%;        /* muted-grey end covers the text at rest */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 520ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.nav-logo:hover .nav-logo__studio,
+.nav-logo:focus-visible .nav-logo__studio,
+.nav-logo:focus-within .nav-logo__studio {
+  background-position: 0% 0%;            /* phosphor end sweeps over the text */
+}
+
+/* Reduced motion: no timings, instant state — the wordmark still reveals
+   on hover but without animation, and STUDIO snaps straight to phosphor. */
+@media (prefers-reduced-motion: reduce) {
+  .nav-logo__wordmark,
+  .nav-logo__studio {
+    transition: none;
+  }
+}
+
 /* Submit CTA: phosphor base + quantum glow on hover (no transform — layout-shift-free) */
 .btn-quantum {
   transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1), background-color 160ms ease-out;
