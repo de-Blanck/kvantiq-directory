@@ -31,19 +31,19 @@ export default function DetailHero({
 
       <div className="relative z-10 flex flex-col gap-6 lg:flex-row lg:justify-between lg:items-start">
         <div className="flex-1">
-          <div className="font-mono text-[11px] font-medium uppercase tracking-[0.15em] text-accent">
+          <div className="eyebrow text-accent">
             {type}
           </div>
-          <h1 className="mt-1 font-heading text-[32px] font-bold leading-tight tracking-[-0.02em] text-text-primary">
+          <h1 className="h-xl mt-2 text-text-primary">
             {name}
           </h1>
-          <p className="mt-1 text-[13px] text-text-secondary">{meta}</p>
+          <p className="body-sm mt-2 text-text-secondary">{meta}</p>
 
           <div className="mt-3 flex flex-wrap gap-1.5">
             {tags.map(tag => (
               <span
                 key={tag}
-                className="rounded-full border border-accent/20 bg-accent-glow px-3 py-1 font-mono text-[11px] text-text-secondary"
+                className="eyebrow rounded-full border border-accent/20 bg-accent-glow px-3 py-1 text-text-secondary"
               >
                 {tag}
               </span>
@@ -56,14 +56,14 @@ export default function DetailHero({
                 href={websiteUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-quantum inline-flex items-center gap-1 rounded-lg bg-info px-5 py-2 text-[13px] font-semibold text-void"
+                className="btn-quantum inline-flex items-center gap-1 rounded-lg bg-accent px-5 py-2 text-sm font-semibold text-void"
               >
                 ↗ {websiteLabel || 'Visit Website'}
               </a>
             )}
             <a
               href="#sources"
-              className="inline-flex items-center rounded-lg border border-border px-5 py-2 text-[13px] font-medium text-text-secondary transition-colors hover:border-text-muted"
+              className="inline-flex items-center rounded-lg border border-border px-5 py-2 text-sm font-medium text-text-secondary transition-colors hover:border-text-muted"
             >
               Sources ({sourceCount})
             </a>
@@ -79,8 +79,8 @@ export default function DetailHero({
                   key={stat.label}
                   className={`rounded-xl border border-border bg-elevated px-5 py-3 ${isLong ? 'text-left max-w-[280px]' : 'text-center min-w-[100px]'}`}
                 >
-                  <div className={`font-heading font-bold text-text-primary ${isLong ? 'text-[13px] leading-snug' : 'text-xl'}`}>{stat.value}</div>
-                  <div className="mt-0.5 font-mono text-[10px] text-text-muted">{stat.label}</div>
+                  <div className={`text-text-primary ${isLong ? 'body-sm font-semibold' : 'data-lg'}`}>{stat.value}</div>
+                  <div className="eyebrow mt-1 text-text-muted">{stat.label}</div>
                 </div>
               );
             })}

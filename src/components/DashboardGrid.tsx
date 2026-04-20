@@ -26,12 +26,12 @@ export default function DashboardGrid({ cards, visibleCardIds, fullWidthCardIds 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: i * 0.08 }}
-            className={`rounded-xl border border-border bg-surface p-6 transition-colors hover:border-accent/10 ${
+            className={`card-hover rounded-xl border border-border bg-surface p-6 ${
               isFull ? 'md:col-span-2' : ''
             }`}
           >
             <div className="flex items-center justify-between mb-4">
-              <span className="font-mono text-[13px] font-semibold uppercase tracking-[0.08em] text-text-primary">
+              <span className="eyebrow-lg text-text-primary">
                 {card.label}
               </span>
             </div>

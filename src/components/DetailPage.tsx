@@ -84,7 +84,7 @@ export default function DetailPage(props: DetailPageProps) {
     {
       id: 'overview',
       label: '', // No label — tab already says "Overview"
-      content: <p className="text-[15px] text-text-secondary leading-[1.7]">{props.description}</p>,
+      content: <p className="body-default text-text-secondary">{props.description}</p>,
     },
     ...(props.products && props.products.length > 0 ? [{
       id: 'products',
@@ -94,12 +94,12 @@ export default function DetailPage(props: DetailPageProps) {
           {props.products.map((p, i) => (
             <div key={i}>
               <div className="flex items-center gap-2">
-                <span className="font-semibold text-[14px] text-text-primary">{p.name}</span>
+                <span className="h-sm text-text-primary">{p.name}</span>
                 {p.url && (
-                  <a href={p.url} target="_blank" rel="noopener noreferrer" className="text-info text-[12px] hover:underline">↗</a>
+                  <a href={p.url} target="_blank" rel="noopener noreferrer" className="text-accent text-xs hover:underline">↗</a>
                 )}
               </div>
-              <p className="text-[13px] text-text-secondary mt-0.5 leading-relaxed">{p.description}</p>
+              <p className="body-sm text-text-secondary mt-1">{p.description}</p>
             </div>
           ))}
         </div>
@@ -111,7 +111,7 @@ export default function DetailPage(props: DetailPageProps) {
       content: (
         <ul className="flex flex-col gap-1.5">
           {props.highlights.map((h, i) => (
-            <li key={i} className="text-[14px] text-text-secondary leading-relaxed">• {h}</li>
+            <li key={i} className="body-sm text-text-secondary">• {h}</li>
           ))}
         </ul>
       ),
@@ -123,8 +123,8 @@ export default function DetailPage(props: DetailPageProps) {
         <div className="flex flex-col gap-2">
           {props.keyMetrics.map((m, i) => (
             <div key={i} className="flex items-baseline gap-2">
-              <span className="font-mono text-[11px] text-text-muted uppercase tracking-wide shrink-0">{m.metric}</span>
-              <span className="text-[14px] font-semibold text-text-primary">{m.value}{m.unit ? ` ${m.unit}` : ''}</span>
+              <span className="eyebrow text-text-muted shrink-0">{m.metric}</span>
+              <span className="data-md text-text-primary">{m.value}{m.unit ? ` ${m.unit}` : ''}</span>
             </div>
           ))}
         </div>
@@ -133,7 +133,7 @@ export default function DetailPage(props: DetailPageProps) {
     ...(props.significance ? [{
       id: 'significance',
       label: 'Why It Matters',
-      content: <p className="text-[15px] text-text-secondary leading-[1.7]">{props.significance}</p>,
+      content: <p className="body-default text-text-secondary">{props.significance}</p>,
     }] : []),
     ...(props.linkedCompanies && props.linkedCompanies.length > 0 ? [{
       id: 'companies',
@@ -141,7 +141,7 @@ export default function DetailPage(props: DetailPageProps) {
       content: (
         <div className="flex flex-wrap gap-2">
           {props.linkedCompanies.map(c => (
-            <a key={c.slug} href={`/companies/${c.slug}/`} className="rounded-lg border border-border px-3 py-1.5 font-mono text-[12px] text-text-primary hover:border-info/30 hover:text-info transition-colors">
+            <a key={c.slug} href={`/companies/${c.slug}/`} className="eyebrow rounded-lg border border-border px-3 py-1.5 text-text-primary hover:border-accent/30 hover:text-accent transition-colors">
               {c.name}
             </a>
           ))}
@@ -155,8 +155,8 @@ export default function DetailPage(props: DetailPageProps) {
         <div className="flex flex-col gap-4">
           {props.news.slice(0, 3).map((item, i) => (
             <div key={i} className="border-b border-border pb-4 last:border-0 last:pb-0">
-              <div className="text-sm font-medium text-text-primary">{item.title}</div>
-              <div className="mt-1 flex gap-2 font-mono text-xs text-text-muted">
+              <div className="h-sm text-text-primary">{item.title}</div>
+              <div className="mt-1 flex gap-2 eyebrow text-text-muted">
                 <span>{item.date}</span>
                 <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">{item.source} ↗</a>
               </div>
@@ -174,10 +174,10 @@ export default function DetailPage(props: DetailPageProps) {
             const label = item.collection === 'use-cases' ? 'Use Case' : item.collection.slice(0, -1).replace(/^\w/, c => c.toUpperCase());
             return (
               <a key={item.slug} href={item.href} className="flex items-center gap-2 py-1.5 border-b border-border last:border-0 hover:text-accent transition-colors">
-                <span className={`shrink-0 rounded px-2 py-0.5 font-mono text-[10px] font-semibold ${badgeColors[item.collection] || badgeColors.resources}`}>
+                <span className={`eyebrow shrink-0 rounded px-2 py-0.5 ${badgeColors[item.collection] || badgeColors.resources}`}>
                   {label}
                 </span>
-                <span className="text-[13px] text-text-primary">{item.name}</span>
+                <span className="body-sm text-text-primary">{item.name}</span>
               </a>
             );
           })}
@@ -187,7 +187,7 @@ export default function DetailPage(props: DetailPageProps) {
     ...(props.extraCards || []).map(card => ({
       ...card,
       content: typeof card.content === 'string'
-        ? <p className="text-[15px] text-text-secondary leading-[1.7]">{card.content}</p>
+        ? <p className="body-default text-text-secondary">{card.content}</p>
         : card.content,
     })),
   ];
@@ -219,12 +219,12 @@ export default function DetailPage(props: DetailPageProps) {
         {customizeOpen && customizableCards.length > 0 && (
           <div className="mb-4 rounded-xl border border-border bg-base p-4">
             <div className="flex items-center justify-between mb-3">
-              <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.08em] text-text-muted">
+              <span className="eyebrow text-text-muted">
                 Show / Hide Cards
               </span>
               <button
                 onClick={resetCards}
-                className="font-mono text-[11px] text-text-muted hover:text-text-secondary transition-colors"
+                className="eyebrow text-text-muted hover:text-text-secondary transition-colors"
               >
                 Reset
               </button>
@@ -234,9 +234,9 @@ export default function DetailPage(props: DetailPageProps) {
                 <button
                   key={card.id}
                   onClick={() => toggleCard(card.id)}
-                  className={`rounded-lg px-3 py-1.5 font-mono text-[11px] font-medium transition-colors ${
+                  className={`eyebrow rounded-lg px-3 py-1.5 transition-colors ${
                     card.visible
-                      ? 'bg-accent/15 text-accent border border-accent/20'
+                      ? 'bg-accent-glow text-accent border border-accent/30'
                       : 'bg-elevated text-text-muted border border-border'
                   }`}
                 >
@@ -268,20 +268,20 @@ export default function DetailPage(props: DetailPageProps) {
 
       {/* Sources — always visible at bottom, subtle, not a card */}
       <div id="sources" className="mt-8 border-t border-border pt-6 scroll-mt-20">
-        <div className="font-mono text-[11px] font-medium uppercase tracking-[0.08em] text-text-muted mb-4">
+        <div className="eyebrow text-text-muted mb-4">
           Sources
         </div>
         <div className="grid sm:grid-cols-2 gap-x-8 gap-y-1">
           {props.sources.map((src, i) => (
             <div key={i} className="flex items-start gap-2.5 py-2">
-              <span className="mt-0.5 text-[13px] text-text-muted">
+              <span className="mt-0.5 body-sm text-text-muted">
                 {src.type === 'arxiv' ? '📄' : src.type === 'doi' ? '🔬' : '🌐'}
               </span>
               <div>
-                <a href={src.url} target="_blank" rel="noopener noreferrer" className="text-[13px] text-accent hover:underline">
+                <a href={src.url} target="_blank" rel="noopener noreferrer" className="body-sm text-accent hover:underline">
                   {src.title || src.url}
                 </a>
-                <div className="font-mono text-[11px] text-text-muted">
+                <div className="eyebrow text-text-muted">
                   {src.type}{src.dateAccessed ? ` · accessed ${src.dateAccessed}` : ''}
                 </div>
               </div>

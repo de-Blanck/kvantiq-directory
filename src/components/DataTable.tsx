@@ -95,7 +95,7 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
         const val = String(getValue());
         if (col.isLink) {
           return (
-            <a href={row.original.href} className="text-info no-underline hover:underline transition-colors duration-75">
+            <a href={row.original.href} className="text-accent no-underline hover:underline">
               {val}
             </a>
           );
@@ -206,7 +206,7 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
       <div className="overflow-x-auto">
         <table className="min-w-full text-sm">
           <thead className="sticky top-0 z-10 bg-void">
-            <tr className="border-b text-left text-text-muted">
+            <tr className="border-b border-border text-left text-text-muted">
               {table.getHeaderGroups()[0].headers.map(header => {
                 const canSort = header.column.getCanSort();
                 const sorted = header.column.getIsSorted();
@@ -229,9 +229,9 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
                     <span className="inline-flex items-center gap-1">
                       {flexRender(header.column.columnDef.header, header.getContext())}
                       {canSort && (
-                        <span className="text-[10px] inline-flex flex-col leading-none -space-y-0.5">
-                          <span className={sorted === 'asc' ? 'text-info' : 'text-text-muted'}>▲</span>
-                          <span className={sorted === 'desc' ? 'text-info' : 'text-text-muted'}>▼</span>
+                        <span className="text-xs inline-flex flex-col leading-none -space-y-0.5">
+                          <span className={sorted === 'asc' ? 'text-accent' : 'text-text-muted'}>▲</span>
+                          <span className={sorted === 'desc' ? 'text-accent' : 'text-text-muted'}>▼</span>
                         </span>
                       )}
                     </span>
@@ -246,7 +246,7 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
                 key={row.id}
                 tabIndex={0}
                 role="link"
-                className="border-b border-border cursor-pointer hover:bg-elevated transition-colors duration-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
+                className="border-b border-border cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
                 onClick={() => { window.location.href = row.original.href; }}
                 onKeyDown={(e) => {
                   if (e.key === 'Enter' || e.key === ' ') {
@@ -266,7 +266,7 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
               <tr>
                 <td colSpan={columns.length} className="py-8 text-center text-text-muted">
                   No results match your filters.
-                  <button onClick={clearAll} className="ml-2 text-info hover:underline">Clear all</button>
+                  <button onClick={clearAll} className="ml-2 text-accent hover:underline">Clear all</button>
                 </td>
               </tr>
             )}

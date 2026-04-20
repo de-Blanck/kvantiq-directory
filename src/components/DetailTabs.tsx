@@ -59,9 +59,9 @@ export default function DetailTabs({ children, news, related, onCustomize }: Det
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`shrink-0 rounded-lg px-5 py-2.5 text-[13px] font-medium transition-all duration-150 ${
+            className={`shrink-0 rounded-lg px-5 py-2.5 text-sm font-medium transition-all duration-150 ${
               activeTab === tab.id
-                ? 'bg-surface text-info shadow-subtle'
+                ? 'bg-elevated text-accent shadow-subtle'
                 : 'text-text-muted hover:text-text-secondary'
             }`}
           >
@@ -71,7 +71,7 @@ export default function DetailTabs({ children, news, related, onCustomize }: Det
         <div className="flex-1" />
         <button
           onClick={onCustomize}
-          className="shrink-0 flex items-center gap-1.5 px-4 py-2.5 font-mono text-[11px] text-text-muted hover:text-text-secondary transition-colors"
+          className="eyebrow shrink-0 flex items-center gap-1.5 px-4 py-2.5 text-text-muted hover:text-text-secondary transition-colors"
         >
           ⚙ Customize
         </button>
@@ -91,7 +91,7 @@ export default function DetailTabs({ children, news, related, onCustomize }: Det
 
           {activeTab === 'news' && (
             <div className="flex flex-col gap-3">
-              <div className="font-mono text-xs text-text-muted mb-1">
+              <div className="eyebrow text-text-muted mb-1">
                 {news.length} article{news.length !== 1 ? 's' : ''} · Updated weekly via AI sweep
               </div>
               {news.map((item, i) => (
@@ -100,13 +100,13 @@ export default function DetailTabs({ children, news, related, onCustomize }: Det
                   href={item.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block rounded-xl border border-border bg-surface p-6 transition-colors hover:border-accent/20"
+                  className="card-hover block rounded-xl border border-border bg-surface p-6"
                 >
-                  <div className="text-base font-medium text-text-primary mb-1.5">{item.title}</div>
+                  <div className="h-md text-text-primary mb-2">{item.title}</div>
                   {item.excerpt && (
-                    <div className="text-sm text-text-secondary leading-[1.7] mb-3">{item.excerpt}</div>
+                    <div className="body-sm text-text-secondary mb-3">{item.excerpt}</div>
                   )}
-                  <div className="flex gap-2 font-mono text-xs text-text-muted">
+                  <div className="flex gap-2 eyebrow text-text-muted">
                     <span>{item.date}</span>
                     <span>·</span>
                     <span className="text-accent">{item.source} ↗</span>
@@ -122,14 +122,14 @@ export default function DetailTabs({ children, news, related, onCustomize }: Det
                 <a
                   key={item.slug}
                   href={item.href}
-                  className="flex items-start gap-3 rounded-xl border border-border bg-surface p-5 transition-colors hover:border-accent/20"
+                  className="card-hover flex items-start gap-3 rounded-xl border border-border bg-surface p-5"
                 >
-                  <span className={`shrink-0 rounded px-2 py-0.5 font-mono text-[10px] font-semibold ${BADGE_COLORS[item.collection] || BADGE_COLORS.resources}`}>
+                  <span className={`eyebrow shrink-0 rounded px-2 py-0.5 ${BADGE_COLORS[item.collection] || BADGE_COLORS.resources}`}>
                     {collectionLabel(item.collection)}
                   </span>
                   <div>
-                    <div className="text-[13px] font-medium text-text-primary">{item.name}</div>
-                    <div className="mt-0.5 text-xs text-text-secondary line-clamp-2">{item.description}</div>
+                    <div className="h-sm text-text-primary">{item.name}</div>
+                    <div className="body-sm mt-1 text-text-secondary line-clamp-2">{item.description}</div>
                   </div>
                 </a>
               ))}

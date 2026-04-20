@@ -18,16 +18,16 @@ export default function ListingView({ tableData, tableColumns, cardItems, search
         <div className="flex rounded-lg border border-border bg-base p-0.5">
           <button
             onClick={() => setView('table')}
-            className={`rounded-md px-3 py-1.5 font-mono text-[11px] transition-colors ${
-              view === 'table' ? 'bg-surface text-accent' : 'text-text-muted hover:text-text-secondary'
+            className={`eyebrow rounded-md px-3 py-1.5 transition-colors ${
+              view === 'table' ? 'bg-elevated text-accent' : 'text-text-muted hover:text-text-secondary'
             }`}
           >
             &#9776; Table
           </button>
           <button
             onClick={() => setView('cards')}
-            className={`rounded-md px-3 py-1.5 font-mono text-[11px] transition-colors ${
-              view === 'cards' ? 'bg-surface text-accent' : 'text-text-muted hover:text-text-secondary'
+            className={`eyebrow rounded-md px-3 py-1.5 transition-colors ${
+              view === 'cards' ? 'bg-elevated text-accent' : 'text-text-muted hover:text-text-secondary'
             }`}
           >
             &#9744; Cards
