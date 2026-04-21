@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Nav Logo Animation — Variant Picker"
+  description="Prototype page: hover Variant A and Variant B to compare nav-logo motion options before promoting one into the live Header."
+>
+  <section class="mx-auto max-w-3xl py-8">
+    <h1 class="text-3xl font-semibold text-text-primary mb-2">
+      Nav Logo Animation — Variant Picker
+    </h1>
+    <p class="text-text-secondary mb-2">
+      Hover each variant to compare. STUDIO color change is shared.
+      Click either lockup to see return-to-default behavior (navigates to <code>/</code>).
+    </p>
+    <p class="text-text-muted text-sm mb-8">
+      Live Header is untouched. Winner will be promoted into
+      <code>.nav-logo</code>; losers + this page are deleted after selection.
+    </p>
+
+    <!-- Variant A -->
+    <section class="mb-10">
+      <h2 class="font-mono uppercase tracking-[0.12em] text-sm text-text-secondary mb-3">
+        Variant A — Collapsed default, expand on hover
+      </h2>
+      <div class="border border-border rounded-md bg-surface px-4 py-6 flex items-center">
+        <a
+          href="/"
+          class="variant-a flex items-center gap-3"
+          aria-label="Kvantiq Studio Directory home (variant A)"
+        >
+          <svg
+            width="21"
+            height="33"
+            viewBox="0 0 16 26"
+            fill="none"
+            aria-hidden="true"
+            class="shrink-0"
+          >
+            <path d="M0 3.416C4.923 13.877 9.846 13.877 14.77 3.416" stroke="#00E6A0" stroke-width="1.846" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M0 21.877C4.923 11.416 9.846 11.416 14.77 21.877" stroke="#00E6A0" stroke-width="1.846" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M1.847 0.646C5.539 9.877 9.231 9.877 12.924 0.646" stroke="#00E6A0" stroke-width="1.292" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M1.847 24.646C5.539 15.416 9.231 15.416 12.924 24.646" stroke="#00E6A0" stroke-width="1.292" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="variant-a__wordmark flex flex-col items-end leading-none font-mono uppercase" aria-hidden="true">
+            <span class="variant-a__kvantiq font-semibold text-text-primary" style="font-size: 20px; letter-spacing: 0.12em;">Kvantiq</span>
+            <span class="variant-a__studio font-normal" style="font-size: 13px; letter-spacing: 0.16em;">Studio</span>
+          </span>
+        </a>
+      </div>
+      <p class="text-text-muted text-sm mt-3">
+        Rest: wave mark only. Hover: wordmark slides + fades in (max-width 0 → 100px,
+        opacity 0 → 1, translateX -6px → 0) over 240ms
+        <code>cubic-bezier(0.2, 0.7, 0.2, 1)</code>. STUDIO warm-white → phosphor green (200ms).
+        Reduced-motion: instant state switch, no timing.
+      </p>
+    </section>
+
+    <!-- Variant B -->
+    <section class="mb-10">
+      <h2 class="font-mono uppercase tracking-[0.12em] text-sm text-text-secondary mb-3">
+        Variant B — Always-visible lockup, micro-motion on hover
+      </h2>
+      <div class="border border-border rounded-md bg-surface px-4 py-6 flex items-center">
+        <a
+          href="/"
+          class="variant-b flex items-center gap-3"
+          aria-label="Kvantiq Studio Directory home (variant B)"
+        >
+          <svg
+            width="21"
+            height="33"
+            viewBox="0 0 16 26"
+            fill="none"
+            aria-hidden="true"
+            class="variant-b__mark shrink-0"
+          >
+            <path d="M0 3.416C4.923 13.877 9.846 13.877 14.77 3.416" stroke="#00E6A0" stroke-width="1.846" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M0 21.877C4.923 11.416 9.846 11.416 14.77 21.877" stroke="#00E6A0" stroke-width="1.846" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M1.847 0.646C5.539 9.877 9.231 9.877 12.924 0.646" stroke="#00E6A0" stroke-width="1.292" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M1.847 24.646C5.539 15.416 9.231 15.416 12.924 24.646" stroke="#00E6A0" stroke-width="1.292" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="flex flex-col items-end leading-none font-mono uppercase" aria-hidden="true">
+            <span class="font-semibold text-text-primary" style="font-size: 20px; letter-spacing: 0.12em;">Kvantiq</span>
+            <span class="variant-b__studio font-normal" style="font-size: 13px; letter-spacing: 0.16em;">Studio</span>
+          </span>
+        </a>
+      </div>
+      <p class="text-text-muted text-sm mt-3">
+        Rest: full lockup visible. Hover: wave mark scales 1.0 → 1.06 over 600ms
+        <code>cubic-bezier(0.2, 0.7, 0.2, 1)</code> and picks up a phosphor
+        <code>drop-shadow</code> glow (6px blur, accent at 55% alpha). STUDIO warm-white
+        → phosphor green (200ms). KVANTIQ + mark geometry stay static. Feels like the
+        mark is "resonating." Reduced-motion: color change only, no wave-mark motion.
+      </p>
+    </section>
+
+    <p class="text-text-muted text-xs border-t border-border pt-4">
+      Scaffolding only — this page lives at
+      <code>src/pages/prototypes/nav-logo.astro</code> and will be deleted after Rune picks.
+    </p>
+  </section>
+</BaseLayout>
