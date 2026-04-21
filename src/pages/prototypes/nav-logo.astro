@@ -87,11 +87,19 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         </a>
       </div>
       <p class="text-text-muted text-sm mt-3">
-        Rest: full lockup visible. Hover: wave mark scales 1.0 → 1.06 over 600ms
-        <code>cubic-bezier(0.2, 0.7, 0.2, 1)</code> and picks up a phosphor
-        <code>drop-shadow</code> glow (6px blur, accent at 55% alpha). STUDIO warm-white
-        → phosphor green (200ms). KVANTIQ + mark geometry stay static. Feels like the
-        mark is "resonating." Reduced-motion: color change only, no wave-mark motion.
+        Rest: full lockup visible, mark static. Hover: wave mark replays the
+        <strong>kvantiq.studio mobile FAB menu-expand</strong> gesture — ported 1:1 from the
+        platform repo (<code>src/components/marketing/mobile-nav.tsx</code>, menu-panel motion).
+        The mark keyframes <code>scale(0.9) translateY(10px) → scale(1) translateY(0)</code>
+        with <code>opacity 0 → 1</code>, origin <code>bottom right</code>, timing
+        <code>250ms cubic-bezier(0.2, 0, 0, 1)</code> for transform +
+        <code>200ms ease</code> for opacity. STUDIO warm-white → phosphor green (200ms).
+        KVANTIQ stays static.
+        <br /><br />
+        <em>Investigation note:</em> the FAB icon on kvantiq.studio has no idle or tap
+        animation — the wave-mark SVG inside the FAB is static. The only motion in that
+        experience is the menu panel. That panel motion is what this variant ports.
+        Reduced-motion: mark stays static, color change only.
       </p>
     </section>
 

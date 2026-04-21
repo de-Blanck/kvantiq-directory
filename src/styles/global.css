@@ -344,27 +344,47 @@ header nav ul a.nav-active::after {
   }
 }
 
-/* Variant B — Always-visible lockup, micro-motion on hover.
-   Full lockup is visible at rest (same as 0286c5f). On hover
-   the wave mark pulses a subtle phosphor drop-shadow glow while
-   simultaneously scaling from 1.0 → 1.06 over 600ms. STUDIO
-   still does the warm-white → phosphor color change. KVANTIQ
-   stays static. Feels like the mark is "resonating" — quantum
-   tech vibe without being cheap. */
+/* Variant B — Always-visible lockup, FAB-menu-expand port on hover.
+   Ported from kvantiq.studio mobile FAB menu-panel motion
+   (platform repo: src/components/marketing/mobile-nav.tsx, lines 141–162).
+
+   IMPORTANT finding from the platform-side investigation: the FAB
+   icon itself has NO idle or tap animation on kvantiq.studio — the
+   wave-mark SVG inside the FAB is static. The only motion in that
+   experience is the menu PANEL that flies out when the FAB is
+   tapped. That motion is:
+     transform: scale(0.9) translateY(10px) → scale(1) translateY(0)
+     opacity:   0 → 1
+     origin:    bottom right
+     timing:    transform 250ms cubic-bezier(0.2, 0, 0, 1),
+                opacity   200ms ease
+
+   We port that exact motion to the wave mark only — the lockup
+   stays always-visible per Variant B constraint. The mark is fully
+   visible at rest; hover "replays" the FAB expand gesture as a
+   one-shot keyframe animation. KVANTIQ stays static. STUDIO still
+   does warm-white → phosphor color change (200ms).
+   No framer-motion dep added — translated 1:1 to CSS keyframes. */
 .variant-b__mark {
-  transform-origin: center;
-  transition:
-    transform 600ms cubic-bezier(0.2, 0.7, 0.2, 1),
-    filter 600ms ease-out;
-  filter: drop-shadow(0 0 0 rgba(0, 230, 160, 0));
-  will-change: transform, filter;
+  transform-origin: bottom right;
+  will-change: transform, opacity;
 }
 
 .variant-b:hover .variant-b__mark,
 .variant-b:focus-visible .variant-b__mark,
 .variant-b:focus-within .variant-b__mark {
-  transform: scale(1.06);
-  filter: drop-shadow(0 0 6px rgba(0, 230, 160, 0.55));
+  animation: variant-b-fab-expand 250ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+@keyframes variant-b-fab-expand {
+  0% {
+    transform: scale(0.9) translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
 }
 
 .variant-b__studio {
@@ -382,12 +402,14 @@ header nav ul a.nav-active::after {
   .variant-b__mark,
   .variant-b__studio {
     transition: none;
+    animation: none;
   }
   .variant-b:hover .variant-b__mark,
   .variant-b:focus-visible .variant-b__mark,
   .variant-b:focus-within .variant-b__mark {
+    animation: none;
     transform: none;
-    filter: none;
+    opacity: 1;
   }
 }
 
