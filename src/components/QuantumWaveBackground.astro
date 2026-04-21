@@ -1,0 +1,128 @@
+---
+/**
+ * QuantumWaveBackground.astro
+ *
+ * Static, fixed, full-viewport SVG that sits behind every page on void.
+ * A "frozen ripple-tank" composition — three overlapping sine waves across
+ * the lower viewport plus a soft radial standing-wave focus in the upper-
+ * right (quantum-interference reading, not a lattice or grid).
+ *
+ * Rendered once in <body> at z-index -10. No animation, no JS, no listeners.
+ * Single vector asset. `preserveAspectRatio="xMidYMid slice"` crops gracefully
+ * at any viewport ratio.
+ *
+ * Palette: brand stops #00E6A0 (phosphor) and #00D4FF (cyan) — the only raw
+ * hex permitted by the design contract, inside SVG attributes only.
+ * All strokes/fills sit at 3–7% alpha to preserve AAA body contrast on void.
+ */
+---
+<div class="quantum-wave-bg" aria-hidden="true">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1600 1000"
+    preserveAspectRatio="xMidYMid slice"
+    width="100%"
+    height="100%"
+    role="presentation"
+    focusable="false"
+  >
+    <defs>
+      {/* Linear gradient for the sine waves — phosphor at bottom, cyan toward top.
+          Alpha stays very low; the gradient only tints the stroke. */}
+      <linearGradient id="qw-stroke" x1="0%" y1="100%" x2="0%" y2="0%">
+        <stop offset="0%" stop-color="#00E6A0" stop-opacity="0.085" />
+        <stop offset="55%" stop-color="#00D4FF" stop-opacity="0.055" />
+        <stop offset="100%" stop-color="#00D4FF" stop-opacity="0.02" />
+      </linearGradient>
+
+      {/* Radial gradient for the standing-wave focus — soft phosphor halo
+          off-center top-right. Fades to fully transparent well before the edges. */}
+      <radialGradient id="qw-focus" cx="78%" cy="22%" r="55%">
+        <stop offset="0%" stop-color="#00E6A0" stop-opacity="0.06" />
+        <stop offset="35%" stop-color="#00D4FF" stop-opacity="0.025" />
+        <stop offset="100%" stop-color="#00D4FF" stop-opacity="0" />
+      </radialGradient>
+
+      {/* Gaussian blur — softens concentric ripple rings so they read as
+          ambient interference rather than geometric circles. */}
+      <filter id="qw-soften" x="-10%" y="-10%" width="120%" height="120%">
+        <feGaussianBlur stdDeviation="6" />
+      </filter>
+    </defs>
+
+    {/* Radial halo wash — single rectangle filled with radial gradient.
+        Gives the composition a quantum "source point" without being a logo mark. */}
+    <rect x="0" y="0" width="1600" height="1000" fill="url(#qw-focus)" />
+
+    {/* Concentric standing-wave rings — fade outward from the same focus.
+        Four rings, blurred, very low stroke opacity. Reads as a dropped-stone
+        ripple frozen mid-propagation. */}
+    <g filter="url(#qw-soften)" fill="none" stroke="#00E6A0">
+      <circle cx="1248" cy="220" r="160" stroke-opacity="0.06" stroke-width="1.2" />
+      <circle cx="1248" cy="220" r="260" stroke-opacity="0.045" stroke-width="1.2" />
+      <circle cx="1248" cy="220" r="380" stroke-opacity="0.03" stroke-width="1.2" />
+      <circle cx="1248" cy="220" r="520" stroke-opacity="0.02" stroke-width="1.2" />
+    </g>
+
+    {/* Overlapping sine waves — three cubic bezier curves across the viewport.
+        Each has a different baseline (680, 760, 830), amplitude, and phase,
+        so their crests interfere rather than stack. Stroke pulls from the
+        linear gradient so lower curves read phosphor, upper curves read cyan.
+        Stroke width 1.2–1.6px keeps them as hairlines, not ribbons. */}
+    <g fill="none" stroke="url(#qw-stroke)" stroke-linecap="round">
+      {/* Wave 1 — deepest, longest wavelength, highest amplitude (~80px) */}
+      <path
+        d="M -40 760
+           C 180 700, 360 820, 560 760
+           S 920 700, 1120 770
+           S 1460 820, 1640 750"
+        stroke-width="1.6"
+        stroke-opacity="0.9"
+      />
+      {/* Wave 2 — mid amplitude (~55px), phase-shifted ~pi/3 */}
+      <path
+        d="M -40 680
+           C 220 740, 420 620, 620 690
+           S 980 760, 1180 680
+           S 1440 620, 1640 700"
+        stroke-width="1.35"
+        stroke-opacity="0.75"
+      />
+      {/* Wave 3 — shortest amplitude (~35px), phase-shifted ~pi, upper band */}
+      <path
+        d="M -40 580
+           C 240 540, 460 620, 680 580
+           S 1020 530, 1220 580
+           S 1460 630, 1640 580"
+        stroke-width="1.2"
+        stroke-opacity="0.6"
+      />
+      {/* Wave 4 — high-frequency tertiary (lowest opacity, upper third) */}
+      <path
+        d="M -40 460
+           C 200 440, 360 490, 540 465
+           S 860 440, 1040 470
+           S 1380 490, 1640 460"
+        stroke-width="1"
+        stroke-opacity="0.45"
+      />
+    </g>
+  </svg>
+</div>
+
+<style>
+  .quantum-wave-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+    pointer-events: none;
+    overflow: hidden;
+    /* Transparent — the void bg-color on <body> shows through, and the SVG
+       paints the waves on top of that void. No background-color here. */
+  }
+  .quantum-wave-bg svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+</style>

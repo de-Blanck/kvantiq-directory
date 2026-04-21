@@ -8,6 +8,7 @@ const sorted = allResources.sort((a, b) => a.data.name.localeCompare(b.data.name
 
 const tableData = sorted.map(r => ({
   href: r.data.website,
+  external: true,
   name: r.data.name,
   type: r.data.type,
   provider: r.data.provider || '',
@@ -30,7 +31,17 @@ const cardItems = sorted.map(r => ({
   badge: r.data.openSource ? 'Open Source' : undefined,
   badgeColor: 'text-accent bg-accent-glow',
   external: true,
+  // Group-by fields — mirror of tableData keys so CardGrid can group.
+  type: r.data.type,
+  provider: r.data.provider || '',
+  openSource: r.data.openSource ? 'Yes' : 'No',
 }));
+
+const groupByOptions = [
+  { key: 'type', label: 'Type' },
+  { key: 'provider', label: 'Provider' },
+  { key: 'openSource', label: 'Open Source' },
+];
 
 const itemListLd = {
   "@context": "https://schema.org", "@type": "ItemList",
@@ -48,9 +59,9 @@ const itemListLd = {
   jsonLd={itemListLd}
 >
   <article>
-    <h1 class="text-3xl font-bold">Quantum Computing Resources</h1>
+    <h1 class="h-xl">Quantum Computing Resources</h1>
     <div class="summary" role="doc-abstract">
-      <p class="mt-2 text-text-secondary">{allResources.length} frameworks, courses, funding programs, and tools for quantum computing.</p>
+      <p class="mt-4 body-lg text-text-secondary">{allResources.length} frameworks, courses, funding programs, and tools for quantum computing.</p>
     </div>
 
     <ListingView
@@ -59,6 +70,7 @@ const itemListLd = {
       tableColumns={tableColumns}
       cardItems={cardItems}
       searchPlaceholder="Search resources..."
+      groupByOptions={groupByOptions}
     />
   </article>
 </BaseLayout>

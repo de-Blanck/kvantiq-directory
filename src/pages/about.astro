@@ -17,46 +17,91 @@ const regions = allCompanies.reduce((acc: Record<string, number>, c) => {
 }, {} as Record<string, number>);
 
 const countriesCount = new Set(allCompanies.map(c => c.data.country)).size;
+
+// Stat tiles — number + label. Total is the hero; these are sub-counters.
+const statTiles = [
+  { value: allCompanies.length, label: 'Companies' },
+  { value: allBenchmarks.length, label: 'Benchmarks' },
+  { value: allUseCases.length, label: 'Use cases' },
+  { value: allChallenges.length, label: 'Challenges' },
+  { value: allResources.length, label: 'Resources' },
+];
 ---
 <BaseLayout title="About — Methodology &amp; Ethics" description="How the Kvantiq Directory works — data collection, source verification, ethics policy, and geographic scope.">
   <div class="mx-auto max-w-3xl">
 
     <!-- Lede -->
-    <h1 class="text-3xl font-bold tracking-[-0.3px] text-text-primary">About this directory</h1>
-    <p class="mt-4 text-base text-text-secondary leading-relaxed">
-      Kvantiq Directory is a curated, open directory of the European quantum computing ecosystem. It is maintained by <strong class="text-text-primary">Kvantiq Studio ApS</strong>, a Danish quantum technology company. The directory is free to use and contains no third-party tracking.
+    <p class="eyebrow text-text-muted">About</p>
+    <h1 class="mt-3 h-xl text-text-primary">About this directory</h1>
+    <p class="mt-4 body-default text-text-secondary">
+      Kvantiq Directory is a curated, open directory of the <span class="text-gradient-quantum">European quantum computing ecosystem</span>. It is maintained by <strong class="text-text-primary">Kvantiq Studio ApS</strong>, a Danish quantum technology company. The directory is free to use and contains no third-party tracking.
     </p>
 
-    <!-- Status line -->
-    <div class="mt-6 flex flex-wrap items-baseline gap-x-6 gap-y-2 border-y border-border py-4">
-      <p class="text-sm text-text-secondary">
-        <span class="font-mono font-semibold text-text-primary">{total}</span> entries
-      </p>
-      <p class="text-sm text-text-secondary">
-        <span class="font-mono font-semibold text-text-primary">{allCompanies.length}</span> companies
-        · <span class="font-mono font-semibold text-text-primary">{allBenchmarks.length}</span> benchmarks
-        · <span class="font-mono font-semibold text-text-primary">{allUseCases.length}</span> use cases
-        · <span class="font-mono font-semibold text-text-primary">{allChallenges.length}</span> challenges
-        · <span class="font-mono font-semibold text-text-primary">{allResources.length}</span> resources
-      </p>
-      <p class="text-sm text-text-secondary">
-        Updated <time datetime="2026-03-19" class="font-mono font-semibold text-text-primary">2026-03-19</time>
-      </p>
-    </div>
+    <!--
+      ── HERO STAT STRIP ──────────────────────────────────────────
+      Editorial counter block. Big phosphor-gradient numeral for the
+      total, then a ruled grid of 5 secondary counts. Each number
+      count-up animates when scrolled into view (~800ms easeOutCubic,
+      skipped when prefers-reduced-motion). Gradient underline sweeps
+      in from the left on tile hover (layout-stable scaleX transform).
+      ──────────────────────────────────────────────────────────── -->
+    <section
+      class="stat-strip mt-10 rounded-xl border border-border bg-base"
+      aria-label="Directory at a glance"
+    >
+      <!-- Hero total -->
+      <div class="flex flex-col items-start gap-2 border-b border-border px-6 py-8 sm:flex-row sm:items-end sm:justify-between sm:gap-6">
+        <div>
+          <p class="eyebrow text-text-muted">Directory at a glance</p>
+          <p class="mt-2 h-display leading-none">
+            <span
+              class="text-gradient-quantum stat-num"
+              data-target={total}
+              aria-label={`${total} total entries`}
+            >{total}</span>
+          </p>
+          <p class="mt-2 body-sm text-text-secondary">verified entries across the European ecosystem</p>
+        </div>
+        <p class="body-sm text-text-muted">
+          Updated <time datetime="2026-03-19" class="data-md text-text-primary">2026-03-19</time>
+        </p>
+      </div>
 
-    <!-- WHY — prominent, colored -->
-    <section class="mt-10 rounded-xl border border-info/20 bg-info/15 p-6">
-      <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-info">Why this directory exists</h2>
-      <p class="mt-3 text-base text-info leading-relaxed">
-        Europe has invested <strong>over EUR 10 billion</strong> in quantum computing through combined EU and national funding programs. There are <strong>150+ quantum computing companies</strong> across the continent — spanning hardware manufacturers, software platforms, consulting firms, and research spinouts.
+      <!-- Secondary tiles -->
+      <ul class="grid grid-cols-2 sm:grid-cols-5">
+        {statTiles.map((tile, i) => (
+          <li
+            class={`stat-tile group relative px-5 py-5 ${i < 3 ? 'border-b border-border sm:border-b-0' : ''} ${i === 3 ? 'border-b border-border sm:border-b-0' : ''} ${i % 2 === 1 ? 'border-l border-border sm:border-l-0' : ''} ${i > 0 ? 'sm:border-l sm:border-border' : ''}`}
+          >
+            <p class="data-lg text-text-primary">
+              <span class="stat-num" data-target={tile.value}>{tile.value}</span>
+            </p>
+            <p class="eyebrow mt-1 text-text-muted">{tile.label}</p>
+            <span class="stat-underline" aria-hidden="true"></span>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <!-- Gradient hairline divider -->
+    <div class="quantum-divider mt-16" aria-hidden="true"></div>
+
+    <!-- WHY — prominent, accent-bordered -->
+    <section class="reveal mt-12 rounded-xl border border-accent/25 bg-accent-glow p-6">
+      <p class="eyebrow text-accent">
+        <span class="eyebrow-glyph" aria-hidden="true">◇</span>Why this directory exists
       </p>
-      <p class="mt-3 text-base text-info leading-relaxed">
-        Yet no single, open directory focused on the European ecosystem exists. The closest alternative — The Quantum Insider — is US-based and paywalled. Kvantiq Directory fills that gap with a <strong>free, transparent, and ethically curated</strong> resource built for the European quantum community.
+      <h2 class="mt-2 h-lg text-text-primary">Europe needs an open, transparent quantum directory</h2>
+      <p class="mt-4 body-default text-text-secondary">
+        Europe has invested <strong class="text-text-primary">over EUR 10 billion</strong> in quantum computing through combined EU and national funding programs. There are <strong class="text-text-primary">150+ quantum computing companies</strong> across the continent — spanning hardware manufacturers, software platforms, consulting firms, and research spinouts.
+      </p>
+      <p class="mt-3 body-default text-text-secondary">
+        Yet no single, open directory focused on the European ecosystem exists. The closest alternative — The Quantum Insider — is US-based and paywalled. Kvantiq Directory fills that gap with a <strong class="text-text-primary">free, transparent, and ethically curated</strong> resource built for the European quantum community.
       </p>
     </section>
 
     <!-- Flip cards -->
-    <div class="mt-8 grid gap-4 sm:grid-cols-2">
+    <div class="reveal mt-8 grid gap-4 sm:grid-cols-2">
       <FlipCard
         client:visible
         frontLabel="Did you know?"
@@ -75,79 +120,262 @@ const countriesCount = new Set(allCompanies.map(c => c.data.country)).size;
       />
     </div>
 
+    <!-- Gradient hairline divider -->
+    <div class="quantum-divider mt-16" aria-hidden="true"></div>
+
     <!-- METHODOLOGY -->
-    <section class="mt-10">
-      <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted">Methodology</h2>
+    <section class="reveal mt-12">
+      <p class="eyebrow text-text-muted">
+        <span class="eyebrow-glyph" aria-hidden="true">◎</span>Methodology
+      </p>
+      <h2 class="mt-2 h-lg text-text-primary">How entries are researched and verified</h2>
 
-      <div class="mt-4 space-y-6">
-        <div class="group grid grid-cols-[120px_1fr] gap-x-4 rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-surface">
-          <p class="text-xs font-semibold text-text-primary pt-0.5 transition-colors duration-[120ms] group-hover:text-info">Collection</p>
-          <p class="text-sm text-text-secondary leading-relaxed">Every entry is independently researched by the Kvantiq Studio team from primary sources: official company websites, peer-reviewed publications, EU project databases (Quantum Flagship, EuroHPC, BMBF), and major tech press (Nature, Science, TechCrunch). No self-reported data or press releases taken at face value.</p>
+      <div class="mt-6 space-y-4">
+        <div class="group grid grid-cols-[140px_1fr] gap-x-4 rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-elevated">
+          <p class="h-sm text-text-primary pt-0.5 transition-colors duration-[120ms] group-hover:text-accent">Collection</p>
+          <p class="body-sm text-text-secondary">Every entry is independently researched by the Kvantiq Studio team from primary sources: official company websites, peer-reviewed publications, EU project databases (Quantum Flagship, EuroHPC, BMBF), and major tech press (Nature, Science, TechCrunch). No self-reported data or press releases taken at face value.</p>
         </div>
 
-        <div class="group grid grid-cols-[120px_1fr] gap-x-4 rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-surface">
-          <p class="text-xs font-semibold text-text-primary pt-0.5 transition-colors duration-[120ms] group-hover:text-info">Verification</p>
-          <p class="text-sm text-text-secondary leading-relaxed">All entries require a minimum of two independently verified sources. Citations follow numbered APS/IEEE style — the standard in physics and quantum computing. Where available, we link to DOI-resolved papers and arXiv preprints. Every source includes a <code class="rounded bg-base px-1 py-0.5 font-mono text-[11px]">dateAccessed</code> field.</p>
+        <div class="group grid grid-cols-[140px_1fr] gap-x-4 rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-elevated">
+          <p class="h-sm text-text-primary pt-0.5 transition-colors duration-[120ms] group-hover:text-accent">Verification</p>
+          <p class="body-sm text-text-secondary">All entries require a minimum of two independently verified sources. Citations follow numbered APS/IEEE style — the standard in physics and quantum computing. Where available, we link to DOI-resolved papers and arXiv preprints. Every source includes a <code class="rounded bg-base px-1 py-0.5 font-mono text-xs text-text-primary">dateAccessed</code> field.</p>
         </div>
 
-        <div class="group grid grid-cols-[120px_1fr] gap-x-4 rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-surface">
-          <p class="text-xs font-semibold text-text-primary pt-0.5 transition-colors duration-[120ms] group-hover:text-info">Inclusion</p>
-          <p class="text-sm text-text-secondary leading-relaxed">Companies must have an active website, verifiable operations, and a clear quantum computing focus. Early-stage startups without public visibility are excluded until they reach a verifiable threshold. Benchmarks must have published methodology and ideally reproducible code.</p>
+        <div class="group grid grid-cols-[140px_1fr] gap-x-4 rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-elevated">
+          <p class="h-sm text-text-primary pt-0.5 transition-colors duration-[120ms] group-hover:text-accent">Inclusion</p>
+          <p class="body-sm text-text-secondary">Companies must have an active website, verifiable operations, and a clear quantum computing focus. Early-stage startups without public visibility are excluded until they reach a verifiable threshold. Benchmarks must have published methodology and ideally reproducible code.</p>
         </div>
 
-        <div class="group grid grid-cols-[120px_1fr] gap-x-4 rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-surface">
-          <p class="text-xs font-semibold text-text-primary pt-0.5 transition-colors duration-[120ms] group-hover:text-info">Updates</p>
-          <p class="text-sm text-text-secondary leading-relaxed">The directory is updated periodically. Each cycle re-verifies existing entries and adds new ones. The build system validates all content against strict Zod schemas — malformed data cannot be published.</p>
+        <div class="group grid grid-cols-[140px_1fr] gap-x-4 rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-elevated">
+          <p class="h-sm text-text-primary pt-0.5 transition-colors duration-[120ms] group-hover:text-accent">Updates</p>
+          <p class="body-sm text-text-secondary">The directory is updated periodically. Each cycle re-verifies existing entries and adds new ones. The build system validates all content against strict Zod schemas — malformed data cannot be published.</p>
         </div>
       </div>
     </section>
 
+    <!-- Gradient hairline divider -->
+    <div class="quantum-divider mt-16" aria-hidden="true"></div>
+
     <!-- GEOGRAPHIC SCOPE -->
-    <section class="mt-10">
-      <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted">Geographic scope</h2>
-      <p class="mt-3 text-sm text-text-secondary leading-relaxed">
-        Nordics and DACH first, then broader Europe. Company coverage by region:
+    <section class="reveal mt-12">
+      <p class="eyebrow text-text-muted">
+        <span class="eyebrow-glyph" aria-hidden="true">◈</span>Geographic scope
       </p>
-      <div class="mt-3 flex flex-wrap gap-x-6 gap-y-1">
+      <h2 class="mt-2 h-lg text-text-primary">Nordics and DACH first, then broader Europe</h2>
+      <p class="mt-4 body-default text-text-secondary">
+        Company coverage by region:
+      </p>
+      <div class="mt-4 flex flex-wrap gap-x-6 gap-y-2">
         {Object.entries(regions).sort((a, b) => b[1] - a[1]).map(([region, count]) => (
-          <p class="text-sm text-text-secondary group cursor-default">
+          <p class="body-sm text-text-secondary group cursor-default">
             <span class="capitalize transition-colors duration-[120ms] group-hover:text-text-primary">{region.replace(/-/g, ' ')}</span>
-            <span class="font-mono font-semibold text-text-primary ml-1">{count}</span>
+            <span class="data-md text-text-primary ml-2">{count}</span>
           </p>
         ))}
       </div>
     </section>
 
+    <!-- Gradient hairline divider -->
+    <div class="quantum-divider mt-16" aria-hidden="true"></div>
+
     <!-- ETHICS -->
-    <section class="mt-10">
-      <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted">Ethics policy</h2>
-      <dl class="mt-4 space-y-4">
-        <div class="group rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-surface">
-          <dt class="text-sm font-semibold text-text-primary transition-colors duration-[120ms] group-hover:text-info">European-first, open-source preferred</dt>
-          <dd class="mt-0.5 text-sm text-text-secondary">We prioritize European companies and open-source projects in our curation and affiliate linking.</dd>
+    <section class="reveal mt-12">
+      <p class="eyebrow text-text-muted">
+        <span class="eyebrow-glyph" aria-hidden="true">◆</span>Ethics policy
+      </p>
+      <h2 class="mt-2 h-lg text-text-primary">What we will and will not do</h2>
+      <dl class="mt-6 space-y-4">
+        <div class="group rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-elevated">
+          <dt class="h-sm text-text-primary transition-colors duration-[120ms] group-hover:text-accent">European-first, open-source preferred</dt>
+          <dd class="mt-1 body-sm text-text-secondary">We prioritize European companies and open-source projects in our curation and affiliate linking.</dd>
         </div>
-        <div class="group rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-surface">
-          <dt class="text-sm font-semibold text-text-primary transition-colors duration-[120ms] group-hover:text-info">No visitor tracking</dt>
-          <dd class="mt-0.5 text-sm text-text-secondary">No Google Analytics. No Facebook pixels. No third-party tracking of any kind. Privacy-respecting analytics only.</dd>
+        <div class="group rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-elevated">
+          <dt class="h-sm text-text-primary transition-colors duration-[120ms] group-hover:text-accent">No visitor tracking</dt>
+          <dd class="mt-1 body-sm text-text-secondary">No Google Analytics. No Facebook pixels. No third-party tracking of any kind. Privacy-respecting analytics only.</dd>
         </div>
-        <div class="group rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-surface">
-          <dt class="text-sm font-semibold text-text-primary transition-colors duration-[120ms] group-hover:text-info">Ethical advertising only</dt>
-          <dd class="mt-0.5 text-sm text-text-secondary">No Google AdSense. Only contextual, privacy-respecting ad networks — EthicalAds or Carbon Ads.</dd>
+        <div class="group rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-elevated">
+          <dt class="h-sm text-text-primary transition-colors duration-[120ms] group-hover:text-accent">Ethical advertising only</dt>
+          <dd class="mt-1 body-sm text-text-secondary">No Google AdSense. Only contextual, privacy-respecting ad networks — EthicalAds or Carbon Ads.</dd>
         </div>
-        <div class="group rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-surface">
-          <dt class="text-sm font-semibold text-text-primary transition-colors duration-[120ms] group-hover:text-info">Transparent linking</dt>
-          <dd class="mt-0.5 text-sm text-text-secondary">Companies on the blocklist (surveillance-capitalism firms) are referenced via privacy-preserving search links, not direct referrals. Their open-source frameworks keep direct links.</dd>
+        <div class="group rounded-lg p-3 -mx-3 transition-colors duration-[120ms] hover:bg-elevated">
+          <dt class="h-sm text-text-primary transition-colors duration-[120ms] group-hover:text-accent">Transparent linking</dt>
+          <dd class="mt-1 body-sm text-text-secondary">Companies on the blocklist (surveillance-capitalism firms) are referenced via privacy-preserving search links, not direct referrals. Their open-source frameworks keep direct links.</dd>
         </div>
       </dl>
     </section>
 
     <!-- SUBMIT -->
-    <section class="mt-10 mb-8 border-t border-border pt-8">
-      <p class="text-sm text-text-secondary">
+    <section class="mt-12 mb-8 border-t border-border pt-8">
+      <p class="body-default text-text-secondary">
         Know a company, benchmark, or resource that should be listed?
-        <a href="/submit/" class="font-medium text-info transition-colors duration-[120ms] hover:text-info/70">Submit a listing</a>.
+        <a href="/submit/" class="font-medium text-accent transition-colors duration-[120ms] hover:text-accent-hover">Submit a listing</a>.
       </p>
     </section>
 
   </div>
 </BaseLayout>
+
+<!--
+  ── Page-local styles ─────────────────────────────────────────────
+  Scoped to /about — never imported elsewhere. All values resolve to
+  design-system tokens (var(--color-*) / var(--gradient-quantum)).
+  ─────────────────────────────────────────────────────────────────
+-->
+<style>
+  /* Gradient hairline divider. 35% opacity so it reads as a quiet
+     signature rather than a loud rule. */
+  .quantum-divider {
+    height: 1px;
+    background: var(--gradient-quantum);
+    opacity: 0.35;
+    border: 0;
+  }
+
+  /* Eyebrow glyph — tiny mono symbol giving each section a visual
+     anchor without heavy iconography. Phosphor-tinted. */
+  .eyebrow-glyph {
+    display: inline-block;
+    color: var(--color-accent);
+    margin-right: 0.45em;
+    opacity: 0.75;
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    transform: translateY(-0.05em);
+  }
+
+  /* Stat tile — gradient underline sweeps in from left on hover.
+     Layout-stable (scaleX transform only, no width/padding changes). */
+  .stat-tile {
+    overflow: hidden;
+  }
+  .stat-underline {
+    position: absolute;
+    left: 1.25rem;
+    right: 1.25rem;
+    bottom: 0.5rem;
+    height: 2px;
+    background: var(--gradient-quantum);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 260ms cubic-bezier(0, 0, 0.2, 1), opacity 260ms ease-out;
+    opacity: 0;
+    border-radius: 2px;
+  }
+  .stat-tile:hover .stat-underline,
+  .stat-tile:focus-within .stat-underline {
+    transform: scaleX(1);
+    opacity: 0.9;
+  }
+
+  /* Reveal-on-scroll — initial hidden state. JS toggles .is-visible. */
+  .reveal {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 340ms cubic-bezier(0, 0, 0.2, 1), transform 340ms cubic-bezier(0, 0, 0.2, 1);
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Respect user preference — reveal is immediate, no counter animation.
+     Failsafe: if JS is disabled, .reveal remains invisible, so we force
+     visibility here too. */
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    .stat-underline {
+      transition: none;
+    }
+  }
+</style>
+
+<script is:inline>
+  // About-page micro-interactions.
+  // 1. Count-up on scroll-into-view for all [data-target] numerals (~800ms).
+  // 2. Stagger-reveal for .reveal sections (once, then unobserve).
+  // Both respect prefers-reduced-motion.
+  (function () {
+    var prefersReduced =
+      typeof window !== 'undefined' &&
+      window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // ── Stat count-up ──
+    function animateCount(el) {
+      var target = parseInt(el.getAttribute('data-target') || '0', 10);
+      if (!isFinite(target) || target <= 0) {
+        el.textContent = String(target);
+        return;
+      }
+      if (prefersReduced) {
+        el.textContent = String(target);
+        return;
+      }
+      var duration = 800;
+      var start = performance.now();
+      function tick(now) {
+        var elapsed = now - start;
+        var t = Math.min(1, elapsed / duration);
+        // easeOutCubic
+        var eased = 1 - Math.pow(1 - t, 3);
+        el.textContent = String(Math.round(target * eased));
+        if (t < 1) requestAnimationFrame(tick);
+        else el.textContent = String(target);
+      }
+      // Seed at 0 before first frame so final value doesn't flash.
+      el.textContent = '0';
+      requestAnimationFrame(tick);
+    }
+
+    var nums = document.querySelectorAll('.stat-num[data-target]');
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              animateCount(entry.target);
+              io.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.4, rootMargin: '0px 0px -10% 0px' }
+      );
+      nums.forEach(function (n) { io.observe(n); });
+    } else {
+      nums.forEach(function (n) {
+        n.textContent = n.getAttribute('data-target') || n.textContent;
+      });
+    }
+
+    // ── Reveal-on-scroll (stagger) ──
+    var reveals = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+    if (prefersReduced) {
+      reveals.forEach(function (r) { r.classList.add('is-visible'); });
+    } else if ('IntersectionObserver' in window) {
+      var ro = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              var target = entry.target;
+              var index = reveals.indexOf(target);
+              // 60ms stagger — feels like rhythm, not a loading screen.
+              var delay = Math.max(0, Math.min(index, 4)) * 60;
+              window.setTimeout(function () {
+                target.classList.add('is-visible');
+              }, delay);
+              ro.unobserve(target);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
+      );
+      reveals.forEach(function (r) { ro.observe(r); });
+    } else {
+      reveals.forEach(function (r) { r.classList.add('is-visible'); });
+    }
+  })();
+</script>

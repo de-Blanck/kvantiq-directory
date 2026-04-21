@@ -17,6 +17,17 @@ interface DetailHeroProps {
   sourceCount: number;
 }
 
+/**
+ * Aligned Columns — promoted from hero-variants/HeroAligned.astro (Iteration 1).
+ *
+ * Honours the DS two-font rule:
+ *   Left column = PROSE (Geist). Right column = DATA (IBM Plex Mono).
+ *
+ * The font-family change alone does most of the visual separation — stat
+ * values read as data, not as more body copy. Eyebrows on each column share
+ * the same top baseline so "Company" (accent) <-> "Specifications" (muted)
+ * read as paired section markers.
+ */
 export default function DetailHero({
   type, name, meta, description, tags, stats, websiteUrl, websiteLabel, sourceCount
 }: DetailHeroProps) {
@@ -25,66 +36,64 @@ export default function DetailHero({
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4 }}
-      className="relative overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-base to-surface p-7 mb-4"
+      className="relative overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-base to-surface p-8 md:p-10 mb-6"
     >
-      <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-accent/[0.03] blur-3xl" />
+      <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-accent/[0.04] blur-3xl" />
 
-      <div className="relative z-10 flex flex-col gap-6 lg:flex-row lg:justify-between lg:items-start">
-        <div className="flex-1">
-          <div className="font-mono text-[11px] font-medium uppercase tracking-[0.15em] text-accent">
-            {type}
-          </div>
-          <h1 className="mt-1 font-heading text-[32px] font-bold leading-tight tracking-[-0.02em] text-text-primary">
-            {name}
-          </h1>
-          <p className="mt-1 text-[13px] text-text-secondary">{meta}</p>
+      <div className="relative z-10 grid gap-8 lg:grid-cols-[minmax(0,1fr)_240px] lg:gap-12">
+        {/* Prose tower (Geist) */}
+        <div className="min-w-0">
+          <div className="eyebrow text-accent">{type}</div>
+          <h1 className="h-xl mt-3 text-text-primary">{name}</h1>
+          <p className="body-sm mt-3 text-text-muted">{meta}</p>
+          <p className="body-lg mt-5 text-text-secondary">{description}</p>
 
-          <div className="mt-3 flex flex-wrap gap-1.5">
-            {tags.map(tag => (
-              <span
-                key={tag}
-                className="rounded-full border border-accent/20 bg-accent-glow px-3 py-1 font-mono text-[11px] text-text-secondary"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
+          {tags.length > 0 && (
+            <div className="mt-6 flex flex-wrap gap-2">
+              {tags.map(tag => (
+                <span
+                  key={tag}
+                  className="eyebrow rounded-full border border-accent/20 bg-accent-glow px-3 py-1 text-text-secondary"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
 
-          <div className="mt-4 flex flex-wrap gap-2">
+          <div className="mt-7 flex flex-wrap gap-3">
             {websiteUrl && (
               <a
                 href={websiteUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 rounded-lg bg-info px-5 py-2 text-[13px] font-semibold text-white transition-colors hover:bg-info/85"
+                className="btn-quantum inline-flex items-center gap-1 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-void"
               >
                 ↗ {websiteLabel || 'Visit Website'}
               </a>
             )}
             <a
               href="#sources"
-              className="inline-flex items-center rounded-lg border border-border px-5 py-2 text-[13px] font-medium text-text-secondary transition-colors hover:border-text-muted"
+              className="inline-flex items-center rounded-lg border border-border px-5 py-2.5 text-sm font-medium text-text-secondary transition-colors hover:border-text-muted hover:text-text-primary"
             >
               Sources ({sourceCount})
             </a>
           </div>
         </div>
 
+        {/* Data tower (Mono) */}
         {stats.length > 0 && (
-          <div className="flex flex-wrap gap-3 lg:gap-4">
-            {stats.map(stat => {
-              const isLong = stat.value.length > 20;
-              return (
-                <div
-                  key={stat.label}
-                  className={`rounded-xl border border-border bg-elevated px-5 py-3 ${isLong ? 'text-left max-w-[280px]' : 'text-center min-w-[100px]'}`}
-                >
-                  <div className={`font-heading font-bold text-text-primary ${isLong ? 'text-[13px] leading-snug' : 'text-xl'}`}>{stat.value}</div>
-                  <div className="mt-0.5 font-mono text-[10px] text-text-muted">{stat.label}</div>
+          <aside className="lg:border-l lg:border-border lg:pl-8">
+            <div className="eyebrow text-text-muted">Specifications</div>
+            <dl className="mt-4 divide-y divide-border">
+              {stats.map(s => (
+                <div key={s.label} className="py-3 first:pt-0 last:pb-0">
+                  <dt className="eyebrow text-text-muted">{s.label}</dt>
+                  <dd className="mt-1.5 data-md text-text-primary break-words">{s.value}</dd>
                 </div>
-              );
-            })}
-          </div>
+              ))}
+            </dl>
+          </aside>
         )}
       </div>
     </motion.div>

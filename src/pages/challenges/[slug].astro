@@ -42,15 +42,52 @@ const eventLd = {
   ...(challenge.location && { "location": { "@type": "Place", "name": challenge.location } }),
 };
 
+const statusRaw = challenge.status.toLowerCase();
+const statusLabel = challenge.status.replace(/^\w/, (c: string) => c.toUpperCase());
+const statusMark = statusRaw === 'active' || statusRaw === 'ongoing' ? '● '
+  : statusRaw === 'upcoming' ? '◇ '
+  : statusRaw === 'closed' ? '○ '
+  : '';
+
+const fmtDate = (d?: string) => {
+  if (!d) return '';
+  try {
+    const date = new Date(d);
+    if (isNaN(date.getTime())) return d;
+    return date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+  } catch { return d; }
+};
+const dateValue = challenge.dateStart && challenge.dateEnd
+  ? `${fmtDate(challenge.dateStart)} – ${fmtDate(challenge.dateEnd)}`
+  : challenge.dateStart
+    ? `From ${fmtDate(challenge.dateStart)}`
+    : '';
+
+const locLc = (challenge.location || '').toLowerCase();
+const format = !challenge.location ? ''
+  : locLc.includes('online') || locLc.includes('virtual') ? 'Online'
+  : locLc.includes('hybrid') ? 'Hybrid'
+  : 'In-person';
+const formatValue = format ? (format === 'In-person' ? `In-person · ${challenge.location}` : format) : '';
+
+// Hero stats — 3 scannable facts max, in priority order
 const stats = [
-  { value: challenge.status.replace(/^\w/, (c: string) => c.toUpperCase()), label: 'Status' },
-  { value: challenge.organizer, label: 'Organizer' },
-  ...(challenge.location ? [{ value: challenge.location, label: 'Location' }] : []),
-  ...(challenge.prizes ? [{ value: challenge.prizes, label: 'Prizes' }] : []),
-  ...(challenge.teamSize ? [{ value: challenge.teamSize, label: 'Team Size' }] : []),
+  { value: `${statusMark}${statusLabel}`, label: 'Status' },
+  ...(dateValue ? [{ value: dateValue, label: 'Dates' }] : []),
+  ...(challenge.prizes ? [{ value: challenge.prizes, label: 'Prize Pool' }] : []),
 ];
 
-const meta = [challenge.organizer, challenge.status.replace(/^\w/, (c: string) => c.toUpperCase()), challenge.dateStart].filter(Boolean).join(' · ');
+// Key metrics card — structured scannable details
+const keyMetrics = [
+  ...(formatValue ? [{ metric: 'Format', value: formatValue }] : []),
+  ...(challenge.organizer ? [{ metric: 'Organizer', value: challenge.organizer }] : []),
+  ...(challenge.teamSize ? [{ metric: 'Team Size', value: challenge.teamSize }] : []),
+  ...(challenge.eligibility ? [{ metric: 'Eligibility', value: challenge.eligibility }] : []),
+  ...(challenge.registrationDeadline ? [{ metric: 'Register By', value: fmtDate(challenge.registrationDeadline) }] : []),
+  ...(challenge.problemDomains?.length ? [{ metric: 'Problem Domains', value: challenge.problemDomains.join(', ') }] : []),
+];
+
+const meta = [challenge.organizer, `${statusMark}${statusLabel}`, fmtDate(challenge.dateStart)].filter(Boolean).join(' · ');
 ---
 <BaseLayout title={challenge.name} description={challenge.description} jsonLd={eventLd}>
   <DetailPage
@@ -66,16 +103,9 @@ const meta = [challenge.organizer, challenge.status.replace(/^\w/, (c: string) =
     news={challenge.news || []}
     related={related}
     sources={challenge.sources}
-    extraCards={[
-      ...((challenge.eligibility || challenge.registrationDeadline || challenge.problemDomains) ? [{
-        id: 'logistics',
-        label: 'Participation Details',
-        content: [
-          challenge.eligibility ? `Eligibility: ${challenge.eligibility}` : '',
-          challenge.registrationDeadline ? `Registration deadline: ${challenge.registrationDeadline}` : '',
-          challenge.problemDomains?.length ? `Problem domains: ${challenge.problemDomains.join(', ')}` : '',
-        ].filter(Boolean).join(' · '),
-      }] : []),
+    keyMetrics={keyMetrics}
+    overviewLinks={[
+      { label: 'Browse all challenges', href: '/challenges/' },
     ]}
   />
 </BaseLayout>

@@ -70,5 +70,8 @@ const meta = [benchmark.algorithm, benchmark.category.replace(/^\w/, (c: string)
       ...(benchmark.hardware ? [{ id: 'hardware', label: 'Hardware', content: benchmark.hardware }] : []),
       ...(benchmark.framework ? [{ id: 'framework', label: 'Framework', content: benchmark.framework }] : []),
     ]}
+    overviewLinks={[
+      { label: 'Browse all benchmarks', href: '/benchmarks/' },
+    ]}
   />
 </BaseLayout>

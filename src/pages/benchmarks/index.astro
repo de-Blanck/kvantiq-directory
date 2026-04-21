@@ -30,7 +30,17 @@ const cardItems = sorted.map(b => ({
   meta: `${b.data.algorithm} \u00b7 ${b.data.category}`,
   badge: b.data.reproducible ? 'Reproducible' : undefined,
   badgeColor: 'text-accent bg-accent-glow',
+  // Group-by fields — mirror of tableData keys so CardGrid can group.
+  algorithm: b.data.algorithm,
+  category: b.data.category,
+  framework: b.data.framework || '',
 }));
+
+const groupByOptions = [
+  { key: 'category', label: 'Category' },
+  { key: 'algorithm', label: 'Algorithm' },
+  { key: 'framework', label: 'Framework' },
+];
 
 const itemListLd = {
   "@context": "https://schema.org",
@@ -51,9 +61,9 @@ const itemListLd = {
   jsonLd={itemListLd}
 >
   <article>
-    <h1 class="text-3xl font-bold">Quantum Computing Benchmarks</h1>
+    <h1 class="h-xl">Quantum Computing Benchmarks</h1>
     <div class="summary" role="doc-abstract">
-      <p class="mt-2 text-text-secondary">
+      <p class="mt-4 body-lg text-text-secondary">
         {allBenchmarks.length} reproducible quantum computing benchmarks for hybrid quantum-classical algorithms.
       </p>
     </div>
@@ -64,6 +74,7 @@ const itemListLd = {
       tableColumns={tableColumns}
       cardItems={cardItems}
       searchPlaceholder="Search benchmarks..."
+      groupByOptions={groupByOptions}
     />
   </article>
 </BaseLayout>

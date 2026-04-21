@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import JsonLd from '../components/JsonLd.astro';
+import QuantumWaveBackground from '../components/QuantumWaveBackground.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -29,13 +30,13 @@ const resolvedCanonical = canonicalUrl || Astro.url.href;
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#0a0a1a" />
+    <meta name="theme-color" content="#06090F" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Kvantiq" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter+Tight:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
     <!-- Open Graph -->
     <meta property="og:title" content={siteTitle} />
@@ -68,6 +69,8 @@ const resolvedCanonical = canonicalUrl || Astro.url.href;
     }} />
   </head>
   <body class="min-h-screen bg-void text-text-primary">
+    <QuantumWaveBackground />
+    <div class="quantum-hairline" aria-hidden="true"></div>
     <Header />
     <main class="mx-auto max-w-7xl px-4 py-8" data-pagefind-body>
       <slot />
@@ -77,6 +80,22 @@ const resolvedCanonical = canonicalUrl || Astro.url.href;
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js');
       }
+
+      // Mouse-proximity edge gradient: updates --mouse-x / --mouse-y on the
+      // nearest .card-hover (or rounded-card / article.rounded-lg) element that
+      // contains the cursor. Delegated — one listener for the whole page.
+      (function () {
+        if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        document.addEventListener('mousemove', function (e) {
+          var t = e.target;
+          if (!t || !t.closest) return;
+          var el = t.closest('.card-hover, [class*="rounded-card"], article.rounded-lg');
+          if (!el) return;
+          var rect = el.getBoundingClientRect();
+          el.style.setProperty('--mouse-x', (e.clientX - rect.left) + 'px');
+          el.style.setProperty('--mouse-y', (e.clientY - rect.top) + 'px');
+        }, { passive: true });
+      })();
     </script>
   </body>
 </html>

@@ -77,5 +77,8 @@ const meta = [useCase.industry, useCase.category.replace(/^\w/, (c: string) => c
       ...(useCase.results ? [{ id: 'results', label: 'Results', content: useCase.results }] : []),
     ]}
     linkedCompanies={resolvedCompanies}
+    overviewLinks={[
+      { label: 'Browse all use cases', href: '/use-cases/' },
+    ]}
   />
 </BaseLayout>

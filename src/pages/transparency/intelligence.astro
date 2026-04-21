@@ -42,59 +42,59 @@ const fundingValues = hasFundingData ? JSON.stringify(fundingTimeline.map((d: an
   title="Industry Intelligence — Kvantiq Directory"
   description="Funding timelines, ecosystem events, and market snapshots for the European quantum computing industry."
 >
-  <main data-pagefind-ignore>
+  <main data-pagefind-ignore class="mx-auto max-w-5xl">
 
     <!-- Page header -->
     <div class="mb-8">
-      <h1 class="text-3xl font-bold tracking-[-0.3px] text-text">
+      <h1 class="h-xl text-text-primary">
         Industry Intelligence
       </h1>
-      <p class="mt-2 text-base text-text-secondary leading-relaxed">
+      <p class="mt-4 body-lg text-text-secondary">
         Funding timelines, ecosystem events, and market snapshots for the European quantum computing industry.
       </p>
     </div>
 
     <!-- Market Snapshot -->
     <section class="mb-10">
-      <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted mb-4">
+      <h2 class="eyebrow text-text-muted mb-4">
         Market Snapshot
       </h2>
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
 
         <!-- Total tracked -->
         <div class="rounded-xl border border-border bg-surface p-5">
-          <p class="font-mono text-[10px] font-medium uppercase tracking-[0.5px] text-text-muted">Total Tracked</p>
-          <p class="mt-2 text-3xl font-bold text-text font-mono">
+          <p class="eyebrow text-text-muted">Total Tracked</p>
+          <p class="mt-2 data-lg text-text-primary">
             {marketSnapshot.total_companies_tracked ?? '—'}
           </p>
-          <p class="mt-1 text-xs text-text-secondary">companies &amp; entities</p>
+          <p class="mt-1 body-sm text-text-secondary">companies &amp; entities</p>
         </div>
 
         <!-- Active -->
         <div class="rounded-xl border border-border bg-surface p-5">
-          <p class="font-mono text-[10px] font-medium uppercase tracking-[0.5px] text-text-muted">Active</p>
-          <p class="mt-2 text-3xl font-bold text-text font-mono">
+          <p class="eyebrow text-text-muted">Active</p>
+          <p class="mt-2 data-lg text-text-primary">
             {marketSnapshot.total_active ?? '—'}
           </p>
-          <p class="mt-1 text-xs text-text-secondary">currently operating</p>
+          <p class="mt-1 body-sm text-text-secondary">currently operating</p>
         </div>
 
         <!-- Countries -->
         <div class="rounded-xl border border-border bg-surface p-5">
-          <p class="font-mono text-[10px] font-medium uppercase tracking-[0.5px] text-text-muted">Countries</p>
-          <p class="mt-2 text-3xl font-bold text-text font-mono">
+          <p class="eyebrow text-text-muted">Countries</p>
+          <p class="mt-2 data-lg text-text-primary">
             {marketSnapshot.countries_represented ?? '—'}
           </p>
-          <p class="mt-1 text-xs text-text-secondary">European countries</p>
+          <p class="mt-1 body-sm text-text-secondary">European countries</p>
         </div>
 
         <!-- Funding YTD -->
         <div class="rounded-xl border border-border bg-surface p-5">
-          <p class="font-mono text-[10px] font-medium uppercase tracking-[0.5px] text-text-muted">Funding YTD</p>
-          <p class="mt-2 text-3xl font-bold text-text font-mono">
+          <p class="eyebrow text-text-muted">Funding YTD</p>
+          <p class="mt-2 data-lg text-text-primary">
             {marketSnapshot.total_funding_eur_ytd != null ? `€${(marketSnapshot.total_funding_eur_ytd / 1_000_000).toFixed(1)}M` : '—'}
           </p>
-          <p class="mt-1 text-xs text-text-secondary">disclosed in EUR</p>
+          <p class="mt-1 body-sm text-text-secondary">disclosed in EUR</p>
         </div>
 
       </div>
@@ -103,7 +103,7 @@ const fundingValues = hasFundingData ? JSON.stringify(fundingTimeline.map((d: an
     <!-- Funding Timeline -->
     {hasFundingData && (
       <section class="mb-10">
-        <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted mb-4">
+        <h2 class="eyebrow text-text-muted mb-4">
           Funding Timeline
         </h2>
         <div class="rounded-xl border border-border bg-surface p-6">
@@ -114,13 +114,13 @@ const fundingValues = hasFundingData ? JSON.stringify(fundingTimeline.map((d: an
 
     <!-- Recent Events -->
     <section class="mb-10">
-      <h2 class="font-mono text-[9px] font-medium uppercase tracking-[0.5px] text-text-muted mb-4">
+      <h2 class="eyebrow text-text-muted mb-4">
         Recent Events
       </h2>
 
       {events.length === 0 ? (
         <div class="rounded-xl border border-border bg-surface px-6 py-10 text-center">
-          <p class="text-sm text-text-muted">No events recorded yet.</p>
+          <p class="body-sm text-text-muted">No events recorded yet.</p>
         </div>
       ) : (
         <div class="rounded-xl border border-border bg-surface divide-y divide-border overflow-hidden">
@@ -129,31 +129,31 @@ const fundingValues = hasFundingData ? JSON.stringify(fundingTimeline.map((d: an
               const iconHtml = eventIcons[event.event_type] ?? '&#8226;';
               const isFunding = event.event_type === 'funding' || event.event_type === 'grant_awarded' || event.event_type === 'ipo';
               return (
-                <div class="flex items-start gap-4 px-5 py-4 transition-colors duration-[120ms] hover:bg-surface-alt">
+                <div class="flex items-start gap-4 px-5 py-4 transition-colors duration-[120ms] hover:bg-elevated">
                   <!-- Icon -->
-                  <span class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-surface-alt border border-border text-base leading-none" set:html={iconHtml} />
+                  <span class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-elevated border border-border text-base leading-none" set:html={iconHtml} />
 
                   <!-- Body -->
                   <div class="min-w-0 flex-1">
                     <div class="flex flex-wrap items-center gap-2">
-                      <span class="text-sm font-semibold text-text">{event.company_name ?? event.company ?? '—'}</span>
-                      <span class="rounded-md border border-border bg-surface-alt px-1.5 py-0.5 font-mono text-[10px] text-text-muted capitalize">
+                      <span class="body-sm font-semibold text-text-primary">{event.company_name ?? event.company ?? '—'}</span>
+                      <span class="rounded-md border border-border bg-elevated px-1.5 py-0.5 eyebrow text-text-muted capitalize">
                         {(event.event_type ?? '').replace(/_/g, ' ')}
                       </span>
                       {isFunding && event.amount_eur_m != null && (
-                        <span class="rounded-md border border-ok-border bg-ok-surface px-1.5 py-0.5 font-mono text-[10px] font-semibold text-ok-text">
+                        <span class="rounded-md border border-accent/30 bg-accent-glow px-1.5 py-0.5 eyebrow text-accent">
                           €{event.amount_eur_m}M
                         </span>
                       )}
                     </div>
                     {event.headline && (
-                      <p class="mt-0.5 text-xs text-text-secondary leading-relaxed">{event.headline}</p>
+                      <p class="mt-0.5 body-sm text-text-secondary">{event.headline}</p>
                     )}
                   </div>
 
                   <!-- Date -->
                   {event.date && (
-                    <time datetime={event.date} class="shrink-0 font-mono text-[10px] text-text-muted mt-1">
+                    <time datetime={event.date} class="shrink-0 eyebrow text-text-muted mt-1">
                       {event.date}
                     </time>
                   )}
@@ -188,7 +188,7 @@ const fundingValues = hasFundingData ? JSON.stringify(fundingTimeline.map((d: an
             {
               label: 'Funding (€M)',
               data: JSON.parse(fundingValues),
-              backgroundColor: '#06b6d4',
+              backgroundColor: '#00D4FF', // --color-cyan, brand secondary
               borderRadius: 4,
               borderSkipped: false,
             },
@@ -203,12 +203,12 @@ const fundingValues = hasFundingData ? JSON.stringify(fundingTimeline.map((d: an
           },
           scales: {
             y: {
-              ticks: { color: '#94a3b8' },
-              grid: { color: '#1e293b' },
+              ticks: { color: '#A09A93' },  // text-muted
+              grid: { color: '#1b2332' },   // border
               border: { display: false },
             },
             x: {
-              ticks: { color: '#94a3b8' },
+              ticks: { color: '#A09A93' },  // text-muted
               grid: { display: false },
               border: { display: false },
             },

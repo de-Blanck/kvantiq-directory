@@ -34,7 +34,17 @@ const cardItems = sorted.map(c => ({
   meta: `${c.data.country} \u00b7 ${c.data.type}`,
   badge: c.data.featured ? 'Featured' : undefined,
   badgeColor: 'text-accent bg-accent-glow',
+  // Group-by fields — mirror of tableData keys so CardGrid can group.
+  country: c.data.country,
+  type: c.data.type,
+  region: c.data.region,
 }));
+
+const groupByOptions = [
+  { key: 'country', label: 'Country' },
+  { key: 'type', label: 'Type' },
+  { key: 'region', label: 'Region' },
+];
 
 const itemListLd = {
   "@context": "https://schema.org",
@@ -56,9 +66,9 @@ const itemListLd = {
   jsonLd={itemListLd}
 >
   <article>
-    <h1 class="text-3xl font-bold">Quantum Computing Companies</h1>
+    <h1 class="h-xl">Quantum Computing Companies</h1>
     <div class="summary" role="doc-abstract">
-      <p class="mt-2 text-text-secondary">
+      <p class="mt-4 body-lg text-text-secondary">
         A curated directory of {allCompanies.length} quantum computing companies in Europe,
         covering hardware, software, cloud, and consulting across the Nordics and DACH regions.
       </p>
@@ -70,6 +80,7 @@ const itemListLd = {
       tableColumns={tableColumns}
       cardItems={cardItems}
       searchPlaceholder="Search companies..."
+      groupByOptions={groupByOptions}
     />
   </article>
 </BaseLayout>

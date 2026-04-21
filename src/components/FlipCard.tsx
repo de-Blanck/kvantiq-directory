@@ -32,35 +32,35 @@ export default function FlipCard({ frontLabel, frontValue, frontSub, backText, c
         animate={{ rotateY: flipped ? 180 : 0 }}
         transition={{ duration: 0.4, ease: [0, 0, 0.2, 1] }}
         style={{ transformStyle: 'preserve-3d' }}
-        className="relative h-[160px]"
+        className="relative h-[280px] md:h-[300px]"
       >
         {/* Front */}
         <div
-          className={`absolute inset-0 rounded-xl border ${c.border} ${c.bg} p-5 flex flex-col justify-center`}
+          className={`absolute inset-0 overflow-hidden rounded-xl border ${c.border} ${c.bg} p-5 flex flex-col justify-center`}
           style={{ backfaceVisibility: 'hidden' }}
         >
-          <p className={`font-mono text-[9px] font-medium uppercase tracking-[0.5px] ${c.text} opacity-70`}>
+          <p className={`eyebrow ${c.text} opacity-75`}>
             {frontLabel}
           </p>
-          <p className={`mt-2 font-mono text-3xl font-semibold ${c.accent}`}>
+          <p className={`mt-3 data-lg ${c.accent}`} style={{ fontSize: '28px' }}>
             {frontValue}
           </p>
           {frontSub && (
-            <p className={`mt-1 text-sm ${c.text}`}>
+            <p className={`mt-1 body-default ${c.text}`}>
               {frontSub}
             </p>
           )}
-          <p className={`mt-auto font-mono text-[9px] ${c.text} opacity-50`}>
+          <p className={`mt-auto eyebrow ${c.text} opacity-55`}>
             Hover to flip ↻
           </p>
         </div>
 
         {/* Back */}
         <div
-          className={`absolute inset-0 rounded-xl border ${c.border} ${c.bg} p-5 flex flex-col justify-center`}
+          className={`absolute inset-0 overflow-hidden rounded-xl border ${c.border} ${c.bg} p-5 flex flex-col justify-center`}
           style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
         >
-          <p className={`text-sm leading-relaxed ${c.text}`}>
+          <p className={`body-sm ${c.text}`}>
             {backText}
           </p>
         </div>

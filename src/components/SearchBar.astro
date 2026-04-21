@@ -1,22 +1,28 @@
-<div id="search" class="w-full max-w-md">
-  <!-- Dev-mode fallback: visible until Pagefind UI loads -->
-  <div id="search-fallback" class="relative">
-    <input
-      type="text"
-      disabled
-      placeholder="Search (available after build)"
-      class="w-full rounded-lg border border-border bg-base px-4 py-2.5 text-sm text-text-secondary placeholder:text-text-muted cursor-not-allowed shadow-subtle"
-    />
-  </div>
-</div>
-<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
-<script is:inline src="/pagefind/pagefind-ui.js"></script>
-<script is:inline>
-  window.addEventListener('DOMContentLoaded', () => {
-    if (typeof PagefindUI !== 'undefined') {
-      var fallback = document.getElementById('search-fallback');
-      if (fallback) fallback.remove();
-      new PagefindUI({ element: '#search', showSubResults: true });
-    }
-  });
-</script>
+---
+import { getCollection } from 'astro:content';
+import SearchExpand, { type SearchItem } from './SearchExpand';
+
+interface Props {
+  placeholder?: string;
+}
+const { placeholder = 'Search the directory…' } = Astro.props;
+
+// Build a lean cross-collection index at build time.
+// Used only by this component's inline results dropdown. No modal, no global shortcut.
+const [companies, benchmarks, useCases, challenges, resources] = await Promise.all([
+  getCollection('companies'),
+  getCollection('benchmarks'),
+  getCollection('use-cases'),
+  getCollection('challenges'),
+  getCollection('resources'),
+]);
+
+const items: SearchItem[] = [
+  ...companies.map(c => ({ id: `companies:${c.data.slug}`, name: c.data.name, description: c.data.description, collection: 'companies' as const, href: `/companies/${c.data.slug}/` })),
+  ...benchmarks.map(b => ({ id: `benchmarks:${b.data.slug}`, name: b.data.name, description: b.data.description, collection: 'benchmarks' as const, href: `/benchmarks/${b.data.slug}/` })),
+  ...useCases.map(u => ({ id: `use-cases:${u.data.slug}`, name: u.data.name, description: u.data.description, collection: 'use-cases' as const, href: `/use-cases/${u.data.slug}/` })),
+  ...challenges.map(ch => ({ id: `challenges:${ch.data.slug}`, name: ch.data.name, description: ch.data.description, collection: 'challenges' as const, href: `/challenges/${ch.data.slug}/` })),
+  ...resources.map(r => ({ id: `resources:${r.data.slug}`, name: r.data.name, description: r.data.description, collection: 'resources' as const, href: r.data.website, external: true })),
+].sort((a, b) => a.name.localeCompare(b.name));
+---
+<SearchExpand client:load items={items} placeholder={placeholder} />

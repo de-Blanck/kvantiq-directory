@@ -34,21 +34,21 @@ export default function CustomizePanel({ open, onClose, cards, onToggle, onReset
             transition={{ type: 'spring', stiffness: 400, damping: 30 }}
             className="fixed right-0 top-0 z-50 h-full w-80 border-l border-border bg-surface p-6 overflow-y-auto"
           >
-            <h3 className="font-heading text-base font-semibold text-text-primary">Customize Layout</h3>
-            <p className="mt-1 text-[13px] text-text-secondary">Toggle cards on or off. Saved automatically.</p>
+            <h3 className="h-sm text-text-primary">Customize Layout</h3>
+            <p className="body-sm mt-1 text-text-secondary">Toggle cards on or off. Saved automatically.</p>
 
             <div className="mt-6">
-              <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.08em] text-text-muted mb-3">
+              <div className="eyebrow text-text-muted mb-3">
                 Visible Cards
               </div>
               {cards.map(card => (
                 <div key={card.id} className="flex items-center justify-between border-b border-border py-3">
-                  <span className="text-[13px] text-text-primary">{card.label}</span>
+                  <span className="body-sm text-text-primary">{card.label}</span>
                   <button
                     onClick={() => onToggle(card.id)}
-                    className={`rounded-full px-2.5 py-0.5 font-mono text-[10px] font-medium transition-colors ${
+                    className={`eyebrow rounded-full px-2.5 py-0.5 transition-colors ${
                       card.visible
-                        ? 'bg-accent/15 text-accent'
+                        ? 'bg-accent-glow text-accent'
                         : 'bg-elevated text-text-muted'
                     }`}
                   >
@@ -61,13 +61,13 @@ export default function CustomizePanel({ open, onClose, cards, onToggle, onReset
             <div className="mt-6 flex gap-2">
               <button
                 onClick={onClose}
-                className="flex-1 rounded-lg bg-info px-4 py-2.5 text-[13px] font-semibold text-white hover:bg-info/85 transition-colors"
+                className="btn-quantum flex-1 rounded-lg bg-accent px-4 py-2.5 text-sm font-semibold text-void"
               >
                 Done
               </button>
               <button
                 onClick={onReset}
-                className="rounded-lg border border-border px-4 py-2.5 text-[13px] text-text-muted hover:text-text-secondary transition-colors"
+                className="rounded-lg border border-border px-4 py-2.5 text-sm text-text-muted hover:text-text-secondary transition-colors"
               >
                 Reset
               </button>

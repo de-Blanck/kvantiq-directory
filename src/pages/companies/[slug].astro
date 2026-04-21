@@ -67,5 +67,9 @@ const meta = [company.country, company.type.replace(/^\w/, (c: string) => c.toUp
     sources={company.sources}
     products={company.products}
     highlights={company.highlights}
+    overviewLinks={[
+      { label: 'Browse all companies', href: '/companies/' },
+      ...(company.country ? [{ label: `${company.country} companies`, href: `/companies/country/${company.country.toLowerCase().replace(/\s+/g, '-')}/` }] : []),
+    ]}
   />
 </BaseLayout>
