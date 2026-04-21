@@ -281,135 +281,51 @@ header nav ul a.nav-active::after {
   color: var(--color-accent);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .nav-logo__studio {
-    transition: none;
-  }
-}
-
 /* ─────────────────────────────────────────
-   PROTOTYPE-ONLY: Nav-logo animation variants A & B
-   Scoped to .variant-a / .variant-b so the live .nav-logo
-   class above is untouched. These classes only exist on the
-   /prototypes/nav-logo/ page and will be deleted after Rune
-   picks a winner (the winner is merged into .nav-logo).
+   Nav-logo wave mark — squish & spread on hover.
+   Each of the 4 stroke paths flattens vertically (squish) while
+   spreading horizontally outward. The outer pair (wider strokes,
+   paths 1 & 2) leads; the inner pair (thinner strokes, paths 3 & 4)
+   follows with a 40ms stagger for a subtle cascading feel.
+   Easing is a back-out cubic-bezier so motion overshoots slightly
+   and settles — that's the "spring back" quality on both directions.
+   transform-box: fill-box is required so transform-origin resolves
+   to each path's own bounding box instead of the SVG root.
    ───────────────────────────────────────── */
-
-/* Variant A — Collapsed default, expand on hover.
-   At rest only the wave mark is visible. On hover / focus-within
-   the stacked wordmark fades + slides in with a 240ms width /
-   opacity / translate transition. STUDIO still does the simple
-   warm-white → phosphor color change from 0286c5f. */
-.variant-a {
-  --variant-a-wordmark-width: 100px;
-  --variant-a-expand-duration: 240ms;
-  --variant-a-expand-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+.nav-logo__stroke {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 420ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.variant-a__wordmark {
-  max-width: 0;
-  overflow: hidden;
-  opacity: 0;
-  transform: translateX(-6px);
-  transition:
-    max-width var(--variant-a-expand-duration) var(--variant-a-expand-ease),
-    opacity calc(var(--variant-a-expand-duration) * 0.75) ease-out,
-    transform var(--variant-a-expand-duration) var(--variant-a-expand-ease);
-  will-change: max-width, opacity, transform;
+.nav-logo:hover .nav-logo__stroke,
+.nav-logo:focus-visible .nav-logo__stroke {
+  transform: scaleY(0.55) scaleX(1.18);
 }
 
-.variant-a:hover .variant-a__wordmark,
-.variant-a:focus-visible .variant-a__wordmark,
-.variant-a:focus-within .variant-a__wordmark {
-  max-width: var(--variant-a-wordmark-width);
-  opacity: 1;
-  transform: translateX(0);
+/* Stagger inner pair behind outer pair on open; on close, reverse
+   so the inner pair leads the return (feels like the tension held
+   inward). */
+.nav-logo__stroke:nth-child(3),
+.nav-logo__stroke:nth-child(4) {
+  transition-delay: 0ms;
 }
 
-.variant-a__studio {
-  color: var(--color-text-muted);
-  transition: color 200ms ease;
-}
-
-.variant-a:hover .variant-a__studio,
-.variant-a:focus-visible .variant-a__studio,
-.variant-a:focus-within .variant-a__studio {
-  color: var(--color-accent);
+.nav-logo:hover .nav-logo__stroke:nth-child(3),
+.nav-logo:hover .nav-logo__stroke:nth-child(4),
+.nav-logo:focus-visible .nav-logo__stroke:nth-child(3),
+.nav-logo:focus-visible .nav-logo__stroke:nth-child(4) {
+  transition-delay: 40ms;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .variant-a__wordmark,
-  .variant-a__studio {
+  .nav-logo__studio,
+  .nav-logo__stroke {
     transition: none;
   }
-}
-
-/* Variant B — Always-visible lockup, FAB-menu-expand port on hover.
-   Ported from kvantiq.studio mobile FAB menu-panel motion
-   (platform repo: src/components/marketing/mobile-nav.tsx, lines 141–162).
-
-   IMPORTANT finding from the platform-side investigation: the FAB
-   icon itself has NO idle or tap animation on kvantiq.studio — the
-   wave-mark SVG inside the FAB is static. The only motion in that
-   experience is the menu PANEL that flies out when the FAB is
-   tapped. That motion is:
-     transform: scale(0.9) translateY(10px) → scale(1) translateY(0)
-     opacity:   0 → 1
-     origin:    bottom right
-     timing:    transform 250ms cubic-bezier(0.2, 0, 0, 1),
-                opacity   200ms ease
-
-   We port that exact motion to the wave mark only — the lockup
-   stays always-visible per Variant B constraint. The mark is fully
-   visible at rest; hover "replays" the FAB expand gesture as a
-   one-shot keyframe animation. KVANTIQ stays static. STUDIO still
-   does warm-white → phosphor color change (200ms).
-   No framer-motion dep added — translated 1:1 to CSS keyframes. */
-.variant-b__mark {
-  transform-origin: bottom right;
-  will-change: transform, opacity;
-}
-
-.variant-b:hover .variant-b__mark,
-.variant-b:focus-visible .variant-b__mark,
-.variant-b:focus-within .variant-b__mark {
-  animation: variant-b-fab-expand 250ms cubic-bezier(0.2, 0, 0, 1);
-}
-
-@keyframes variant-b-fab-expand {
-  0% {
-    transform: scale(0.9) translateY(10px);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1) translateY(0);
-    opacity: 1;
-  }
-}
-
-.variant-b__studio {
-  color: var(--color-text-muted);
-  transition: color 200ms ease;
-}
-
-.variant-b:hover .variant-b__studio,
-.variant-b:focus-visible .variant-b__studio,
-.variant-b:focus-within .variant-b__studio {
-  color: var(--color-accent);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .variant-b__mark,
-  .variant-b__studio {
-    transition: none;
-    animation: none;
-  }
-  .variant-b:hover .variant-b__mark,
-  .variant-b:focus-visible .variant-b__mark,
-  .variant-b:focus-within .variant-b__mark {
-    animation: none;
+  .nav-logo:hover .nav-logo__stroke,
+  .nav-logo:focus-visible .nav-logo__stroke {
     transform: none;
-    opacity: 1;
   }
 }
 
