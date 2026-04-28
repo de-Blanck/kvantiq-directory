@@ -1,12 +1,11 @@
-# CLAUDE.md — Kvantiq Directory (feature/directory-site worktree)
+# CLAUDE.md — Kvantiq Directory
 
 ## Project
 
 Kvantiq Directory — a static site directory for the European quantum computing ecosystem. Focused on Nordics + DACH. Optimized for Google SEO and AI/LLM discoverability.
 
 **Live URL:** https://directory.kvantiq.studio
-**Branch:** feature/directory-site
-**Worktree:** E:\kvantiq-directory\.worktrees\feature-directory-site\
+**Repo:** [`de-Blanck/kvantiq-directory`](https://github.com/de-Blanck/kvantiq-directory)
 
 ## Tech Stack
 
