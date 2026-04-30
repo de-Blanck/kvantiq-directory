@@ -293,7 +293,10 @@ export default function DetailPage(props: DetailPageProps) {
       content: (
         <div className="flex flex-col gap-2">
           {props.related.slice(0, 3).map(item => {
-            const label = item.collection === 'use-cases' ? 'Use Case' : item.collection.slice(0, -1).replace(/^\w/, c => c.toUpperCase());
+            const label = item.collection === 'use-cases'
+              ? 'Use Case'
+              : (item.collection.endsWith('ies') ? item.collection.slice(0, -3) + 'y' : item.collection.slice(0, -1))
+                  .replace(/^\w/, c => c.toUpperCase());
             return (
               <a key={item.slug} href={item.href} className="flex items-center gap-2 py-1.5 border-b border-border last:border-0 hover:text-accent transition-colors">
                 <span className={`eyebrow shrink-0 rounded px-2 py-0.5 ${badgeColors[item.collection] || badgeColors.resources}`}>
