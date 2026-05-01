@@ -1,0 +1,47 @@
+{
+  "name": "QunaSys Denmark",
+  "slug": "qunasys-denmark",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "software",
+  "tags": ["quantum-chemistry", "drug-discovery", "DK-subsidiary", "BII"],
+  "founded": 2023,
+  "description": "QunaSys Denmark ApS is the Danish subsidiary of Tokyo-headquartered QunaSys Inc., established August 2023 at the BioInnovation Institute's Deep Tech Lab Quantum in Copenhagen. As QunaSys's first overseas subsidiary, it leads Danish-funded quantum chemistry research projects. In 2025 it received a DKK 19M Innovation Fund Denmark grant for HyperTenQ, a four-year project with the University of Copenhagen and the Novo Nordisk Foundation Quantum Computing Programme to develop quantum-enhanced chemical simulations for drug discovery.",
+  "website": "https://qunasys.com/en/",
+  "headquarters": "Copenhagen, Denmark (BII Deep Tech Lab Quantum)",
+  "funding": "DKK 19M Innovation Fund Denmark grant (HyperTenQ, 2025-2029)",
+  "accessModel": "Research collaboration + software services",
+  "highlights": [
+    "First overseas subsidiary of QunaSys Inc. (Tokyo); Danish-incorporated ApS at BII Deep Tech Lab Quantum",
+    "DKK 19M Innovation Fund Denmark HyperTenQ grant (2025) with University of Copenhagen and NQCP",
+    "Quantum-enhanced chemical simulation focus targeting drug discovery applications"
+  ],
+  "sources": [
+    {
+      "type": "press-release",
+      "url": "https://qunasys.com/en/news/posts/231011en/",
+      "title": "QunaSys Establishes Danish Subsidiary - QunaSys press release",
+      "datePublished": "2023-10-11",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://investindk.com/cases/qunasys-establishes-its-first-overseas-subsidiary-in-copenhagen-denmark",
+      "title": "QunaSys establishes its first overseas subsidiary in Copenhagen, Denmark - Invest in Denmark",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://qunasys.com/en/news/posts/hypertenq/",
+      "title": "HyperTenQ Project Announcement - QunaSys",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2025/03/03/qunasys-receives-funding-to-advance-quantum-enhanced-chemical-simulations-for-drug-discovery-and-beyond/",
+      "title": "QunaSys Receives Funding to Advance Quantum-Enhanced Chemical Simulations for Drug Discovery and Beyond - The Quantum Insider",
+      "datePublished": "2025-03-03",
+      "dateAccessed": "2026-05-01"
+    }
+  ]
+}

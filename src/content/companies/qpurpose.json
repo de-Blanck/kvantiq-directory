@@ -1,0 +1,39 @@
+{
+  "name": "Qpurpose",
+  "slug": "qpurpose",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "consulting",
+  "tags": ["quantum-algorithms", "energy", "finance", "pharma", "SDU-spinout"],
+  "founded": 2022,
+  "description": "Qpurpose is a quantum algorithms and software services company spun out of the Centre for Quantum Mathematics at the University of Southern Denmark. Founded by Professor Jorgen Ellegaard Andersen, Qpurpose develops practical quantum algorithm services for industrial customers including Orsted (energy), ATP (finance), and Novo Nordisk (pharma). The company collaborates closely with SDU's quantum computing and topological quantum computing research programs.",
+  "website": "https://qpurpose.dk",
+  "headquarters": "Odense, Denmark",
+  "funding": "Privately held; SDU spinout",
+  "accessModel": "Consulting + custom quantum software development",
+  "highlights": [
+    "SDU spinout commercializing quantum algorithm research from the Centre for Quantum Mathematics",
+    "Active partnerships with Orsted (energy), ATP (finance), and Novo Nordisk (pharma)",
+    "Founded by Professor Jorgen Ellegaard Andersen, Centre for Quantum Mathematics at SDU"
+  ],
+  "sources": [
+    {
+      "type": "url",
+      "url": "https://www.sdu.dk/en/forskning/qm/quantum-computing/qpurpose",
+      "title": "Qpurpose: a Spin-off of QM - University of Southern Denmark",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://www.sdu.dk/en/nyheder/novo-nordisk",
+      "title": "QM becomes part of an exciting collaboration with Novo Nordisk and Qpurpose - SDU",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://dqc.dk/qpurpose-enters-project-with-novo-nordisk/",
+      "title": "Qpurpose enters project with Novo Nordisk - Danish Quantum Community",
+      "dateAccessed": "2026-05-01"
+    }
+  ]
+}

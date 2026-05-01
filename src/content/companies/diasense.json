@@ -1,0 +1,47 @@
+{
+  "name": "DIASENSE",
+  "slug": "diasense",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "hardware",
+  "tags": ["quantum-sensing", "NV-centers", "diamond", "semiconductor-metrology", "DTU-spinout"],
+  "founded": 2024,
+  "description": "DIASENSE develops quantum diamond magnetic microscopes based on nitrogen-vacancy (NV) centers for contactless semiconductor chip failure analysis and defect detection. The Lyngby-based DTU spin-out joined the BioInnovation Institute (BII) Venture House 8 cohort and secured EUR 1.3M in follow-on BII funding in March 2026, bringing total funding to approximately EUR 1.8M. Its quantum diamond microscopy targets a chip-yield bottleneck where conventional methods cannot non-invasively map current flow inside packaged integrated circuits.",
+  "website": "https://www.diasense.dk",
+  "headquarters": "Lyngby, Denmark",
+  "funding": "EUR 1.8M (BII)",
+  "accessModel": "Hardware sales (quantum diamond microscopy instruments)",
+  "highlights": [
+    "DTU spinout commercializing NV-center diamond microscopy for semiconductor metrology",
+    "EUR 1.3M follow-on funding from BioInnovation Institute Venture House 8 cohort (March 2026)",
+    "Targeting non-invasive current-flow imaging inside packaged ICs — a chip-yield diagnostic gap"
+  ],
+  "sources": [
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/03/04/bii-backs-quantum-chip-diagnostic-startup-diasense-with-additional-e1-3-million-investment/",
+      "title": "BII Backs Quantum Chip Diagnostic Startup DIASENSE With Additional EUR 1.3 Million Investment - The Quantum Insider",
+      "datePublished": "2026-03-04",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/diasense-receives-e1-3m-1-5m-usd-to-industrialize-quantum-diamond-microscopy/",
+      "title": "DIASENSE Receives EUR 1.3M (USD 1.5M) To Industrialize Quantum Diamond Microscopy - Quantum Computing Report",
+      "datePublished": "2026-03-04",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://bits-chips.com/article/danish-dutch-quantum-diamond-microscope-targets-chip-yield-bottlenecks/",
+      "title": "Danish-Dutch quantum diamond microscope targets chip-yield bottlenecks - Bits&Chips",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://dqc.dk/diasense-new-partner-in-danish-quantum-community/",
+      "title": "DIASENSE - New Partner in Danish Quantum Community",
+      "dateAccessed": "2026-05-01"
+    }
+  ]
+}

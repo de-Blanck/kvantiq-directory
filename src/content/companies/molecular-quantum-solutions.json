@@ -1,0 +1,51 @@
+{
+  "name": "Molecular Quantum Solutions",
+  "slug": "molecular-quantum-solutions",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "software",
+  "tags": ["quantum-chemistry", "materials", "formulation", "drug-discovery", "TechBio"],
+  "founded": 2019,
+  "description": "Molecular Quantum Solutions (MQS) is a Danish quantum chemistry software company providing computational platforms that combine HPC and quantum methods to predict molecular properties for pharmaceutical, biotech, materials, and chemical R&D customers. Its Cebule Dashboard targets formulation chemistry rather than primary drug discovery, complementing traditional quantum chemistry tooling. MQS is backed by Scale Capital, Stokbro Invest, Rockstart, and Rockstart Emerging Tech, and co-organized the 2025 Quantum Innovation Challenge with the BioInnovation Institute.",
+  "website": "https://mqs.dk",
+  "headquarters": "Soborg, Denmark",
+  "funding": "Backed by Scale Capital, Stokbro Invest, Rockstart, and Rockstart Emerging Tech",
+  "accessModel": "SaaS platform (Cebule Dashboard)",
+  "products": [
+    {
+      "name": "Cebule Dashboard",
+      "description": "Computational chemistry platform combining HPC and quantum methods for molecular property prediction in pharma, biotech, materials, and chemical formulation"
+    }
+  ],
+  "highlights": [
+    "Backed by Scale Capital, Stokbro Invest, Rockstart, and Rockstart Emerging Tech",
+    "Focus on formulation chemistry — complementary to primary drug discovery — sets MQS apart in Danish TechBio",
+    "Co-organizer of the 2025 Quantum Innovation Challenge with BioInnovation Institute"
+  ],
+  "sources": [
+    {
+      "type": "url",
+      "url": "https://quantumdenmark.dk/companies/",
+      "title": "Companies - Quantum Denmark",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://www.scalecapital.com/stories/europes-quantum-ecosystem-1-how-mqs-is-leading-the-way-for-denmark",
+      "title": "Europe's Quantum Ecosystem 1: How MQS is leading the way for Denmark - Scale Capital",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://www.biopharmatrend.com/artificial-intelligence/8-startups-applying-quantum-calculations-for-drug-discovery-99/",
+      "title": "8 Startups Applying Quantum Calculations for Drug Discovery - BiopharmaTrend",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/qedma-and-european-partners-launch-eureka-project-for-scalable-quantum-chemistry-simulations/",
+      "title": "QEDMA and European Partners Launch Eureka Project for Scalable Quantum Chemistry Simulations - Quantum Computing Report",
+      "dateAccessed": "2026-05-01"
+    }
+  ]
+}

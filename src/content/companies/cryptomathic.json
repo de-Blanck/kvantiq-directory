@@ -1,0 +1,40 @@
+{
+  "name": "Cryptomathic",
+  "slug": "cryptomathic",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "software",
+  "tags": ["post-quantum-crypto", "key-management", "code-signing", "AU-spinout"],
+  "founded": 1986,
+  "description": "Cryptomathic is an established cryptography software vendor spun out of Aarhus University in 1986, providing key management, code signing, electronic identity, and digital signature solutions to banks, governments, and enterprises. The company has an active post-quantum cryptography product line focused on crypto-agility and PQC migration. Cryptomathic announced a strategic alliance with PQShield in 2024 to deliver NIST-PQC-compliant code-signing and data-protection solutions aligned with CNSA 2.0 recommendations.",
+  "website": "https://www.cryptomathic.com",
+  "headquarters": "Aarhus, Denmark",
+  "funding": "Privately held; one of Denmark's longest-standing cryptography firms (est. 1986)",
+  "accessModel": "Software licensing + enterprise solutions",
+  "highlights": [
+    "Established 1986 as an Aarhus University spinoff; one of Denmark's longest-standing cryptography companies",
+    "Active PQC product line and crypto-agility focus for financial-services migration",
+    "Strategic alliance with PQShield (2024) for NIST-PQC-compliant code-signing and data protection"
+  ],
+  "sources": [
+    {
+      "type": "press-release",
+      "url": "https://www.prnewswire.com/news-releases/cryptomathic-and-pqshield-form-strategic-alliance-to-offer-pqc-solutions-for-code-signing-and-data-protection-in-compliance-with-latest-nist-and-cnsa-recommendations-302252214.html",
+      "title": "Cryptomathic and PQShield form strategic alliance to offer PQC solutions for code-signing and data protection - PR Newswire",
+      "datePublished": "2024-09-12",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://www.insidequantumtechnology.com/news-archive/cryptomathic-focus-on-crypto-agility-not-rushing-to-pqc/",
+      "title": "Cryptomathic - focus on crypto-agility, not rushing to PQC - Inside Quantum Technology",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://digitallead.dk/files/Innovation/Cyberboost%20-%20Quantum%20related%20cyber%20security.pdf",
+      "title": "Cyberboost - Quantum-related cyber security - DigitalLead institutional report",
+      "dateAccessed": "2026-05-01"
+    }
+  ]
+}
