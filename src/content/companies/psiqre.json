@@ -1,0 +1,46 @@
+{
+  "name": "PsiQre",
+  "slug": "psiqre",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "software",
+  "tags": ["post-quantum-crypto", "cryptographic-risk-management", "compliance", "enterprise-software"],
+  "founded": 2025,
+  "description": "PsiQre is a Copenhagen-based post-quantum cybersecurity software startup providing automated cryptographic-asset discovery, risk assessment, and PQC migration governance for enterprise IT and OT environments. Incorporated as PsiQre ApS on 2025-10-14 by founder Arjun Das Kanderi (CVR 45956385), the company addresses the upcoming NIST PQC migration through compliance monitoring and policy-driven governance. PsiQre is a partner in the Danish Quantum Community and Quantum Denmark ecosystem.",
+  "website": "https://psiqre.dk",
+  "headquarters": "Copenhagen, Denmark (Christians Brygge 28, 1559 Kobenhavn V)",
+  "funding": "Privately held; ApS established October 2025",
+  "accessModel": "Enterprise software (governed PQC migration platform)",
+  "highlights": [
+    "Danish ApS incorporated October 2025 (CVR 45956385); founder Arjun Das Kanderi",
+    "Automated cryptographic-asset discovery and PQC migration governance for enterprise IT/OT",
+    "Partner in the Danish Quantum Community and Quantum Denmark ecosystem"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://psiqre.dk",
+      "title": "PsiQre - Post-Quantum Migration, Governed End-to-End",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://datacvr.virk.dk/enhed/virksomhed/45956385",
+      "title": "PsiQre ApS - Danish Central Business Register (CVR 45956385)",
+      "datePublished": "2025-10-14",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumdenmark.dk/companies/",
+      "title": "Companies - Quantum Denmark (PsiQre profile)",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://dqc.dk/partners/",
+      "title": "Partners - Danish Quantum Community (PsiQre listed)",
+      "dateAccessed": "2026-05-01"
+    }
+  ]
+}

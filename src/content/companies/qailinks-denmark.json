@@ -1,0 +1,46 @@
+{
+  "name": "QAILinks Denmark",
+  "slug": "qailinks-denmark",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "software",
+  "tags": ["quantum-AI", "healthcare", "confidential-computing", "federated-learning", "DK-subsidiary"],
+  "founded": 2025,
+  "description": "QAILinks Denmark ApS is a Glostrup-based Danish subsidiary developing a hybrid quantum-AI orchestration platform targeting regulated healthcare data, confidential computing, federated learning workflows, and policy-driven governance. Incorporated as a Danish ApS on 2025-10-12 (CVR 46116720), the company is co-owned by founder Ali Daraeizadeh and parent QAILinks Technologies Corp, and is listed as a Danish Quantum Community and Quantum Denmark partner.",
+  "website": "https://qailinks.com",
+  "headquarters": "Glostrup, Denmark (Baneleddet 13, 4. th., 2600 Glostrup)",
+  "funding": "Privately held; co-owned by founder Ali Daraeizadeh and parent QAILinks Technologies Corp",
+  "accessModel": "Enterprise SaaS (regulated-data quantum-AI orchestration)",
+  "highlights": [
+    "Danish ApS incorporated October 2025 (CVR 46116720); subsidiary of QAILinks Technologies Corp",
+    "Hybrid quantum-AI orchestration platform for healthcare, confidential computing, federated learning",
+    "Partner in the Danish Quantum Community and Quantum Denmark ecosystem"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://qailinks.com",
+      "title": "QAILinks - Quantum AI infrastructure for secure AI execution",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://datacvr.virk.dk/enhed/virksomhed/46116720",
+      "title": "QAILinks Denmark ApS - Danish Central Business Register (CVR 46116720)",
+      "datePublished": "2025-10-12",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumdenmark.dk/companies/",
+      "title": "Companies - Quantum Denmark (QAILinks profile)",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://dqc.dk/partners/",
+      "title": "Partners - Danish Quantum Community (QAILinks listed)",
+      "dateAccessed": "2026-05-01"
+    }
+  ]
+}
