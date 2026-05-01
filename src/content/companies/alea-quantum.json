@@ -1,0 +1,41 @@
+{
+  "name": "Alea Quantum Technologies",
+  "slug": "alea-quantum",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "hardware",
+  "tags": ["QRNG", "cryptography", "photonics", "DTU-spinout"],
+  "founded": 2022,
+  "description": "Alea Quantum Technologies is a DTU spinout that builds high-performing optical quantum random number generator (QRNG) chips for cybersecurity, encryption, and quantum key distribution systems. The company commercializes 20+ years of quantum communication research at the Technical University of Denmark, packaging QRNG generation into chip-scale modules suitable for telecoms and mobile devices. Founded in March 2022 in Lyngby, Alea is backed by the Novo Nordisk Foundation, EU grants, and Innovation Fund Denmark.",
+  "website": "https://alea-quantum.com",
+  "headquarters": "Lyngby, Denmark",
+  "funding": "Backed by Novo Nordisk Foundation, EU grants, Innovation Fund Denmark",
+  "accessModel": "Hardware sales (QRNG chip components)",
+  "highlights": [
+    "DTU spinout commercializing 20+ years of quantum communication research",
+    "Backed by Novo Nordisk Foundation, EU grants, and Innovation Fund Denmark",
+    "Optical QRNG chips designed for QKD, secure encryption, and mobile-scale integration"
+  ],
+  "sources": [
+    {
+      "type": "url",
+      "url": "https://www.dtu.dk/english/newsarchive/2023/05/quantum-technology-for-mobile-phone-encryption-is-coming",
+      "title": "Quantum technology for mobile phone encryption is coming - DTU",
+      "datePublished": "2023-05-01",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://techhq.com/2023/05/qrng-chips-for-mobile-danish-tech-start-up-adds-to-ecosystem/",
+      "title": "QRNG chips for mobile - Danish tech start-up adds to ecosystem - TechHQ",
+      "datePublished": "2023-05-01",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://www.idtechex.com/en/research-article/alea-quantum/30155",
+      "title": "Alea Quantum - IDTechEx Research Article",
+      "dateAccessed": "2026-05-01"
+    }
+  ]
+}

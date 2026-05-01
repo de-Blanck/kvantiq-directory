@@ -1,0 +1,56 @@
+{
+  "name": "Partisia",
+  "slug": "partisia",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "software",
+  "tags": ["MPC", "post-quantum-crypto", "NIST-PQC", "AU-spinout"],
+  "founded": 2008,
+  "description": "Partisia is a multi-party computation (MPC) pioneer spun out of Aarhus University's Cryptography & Cyber Security group. The company co-developed PICNIC and FAEST, signature schemes that competed in the NIST Post-Quantum Cryptography standardization process, and operates a quantum-proof cryptography platform built on 20+ years of MPC innovation. Partisia is a partner in the DKK 25.9M Innovation Fund Denmark AccessQKD project and has expanded into satellite-based QRNG infrastructure through alliances with Squareroot8 and NuSpace.",
+  "website": "https://partisia.com",
+  "headquarters": "Aarhus, Denmark",
+  "funding": "Privately held; partner in DKK 25.9M Innovation Fund Denmark AccessQKD project",
+  "accessModel": "Software platform + cryptographic consulting",
+  "products": [
+    {
+      "name": "Partisia MPC Platform",
+      "description": "Privacy-preserving multi-party computation platform with quantum-resistant cryptographic primitives"
+    },
+    {
+      "name": "PICNIC and FAEST signature schemes",
+      "description": "Post-quantum digital signature schemes co-developed with academic partners; submitted to NIST PQC standardization"
+    }
+  ],
+  "highlights": [
+    "Aarhus University spinout commercializing 20+ years of MPC research",
+    "Co-developer of PICNIC and FAEST signature schemes for NIST PQC competition",
+    "Partner in AccessQKD (DKK 25.9M Innovation Fund Denmark) and FracQtion (Squareroot8 + NuSpace satellite QRNG)"
+  ],
+  "sources": [
+    {
+      "type": "press-release",
+      "url": "https://innovationsfonden.dk/en/news/qgrid-will-protect-critical",
+      "title": "AccessQKD project (DKK 25.9M) - Innovation Fund Denmark",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://news.satnews.com/2025/04/13/partisia-squareroot8-nuspace-forge-alliance-for-quantum-secure-satcom/",
+      "title": "Partisia, Squareroot8, NuSpace forge alliance for quantum-secure satcom - SatNews",
+      "datePublished": "2025-04-13",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/partisia-squareroot8-and-nuspace-partner-to-enable-quantum-secure-multiparty-computation-via-satellite-based-qrng/",
+      "title": "Partisia, Squareroot8, and NuSpace partner to enable quantum-secure multiparty computation via satellite-based QRNG - Quantum Computing Report",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://projects.au.dk/quantum/post-quantum-security-and-communication",
+      "title": "Post-quantum security and communication - Aarhus University",
+      "dateAccessed": "2026-05-01"
+    }
+  ]
+}

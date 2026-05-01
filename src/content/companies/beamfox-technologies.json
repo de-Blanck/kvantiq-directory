@@ -1,0 +1,60 @@
+{
+  "name": "Beamfox Technologies",
+  "slug": "beamfox-technologies",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "software",
+  "tags": ["quantum-photonics", "EBL", "lithography", "nanofabrication", "NBI-spinout"],
+  "founded": 2016,
+  "description": "Beamfox Technologies is a Niels Bohr Institute spinout providing proximity-effect-correction software for electron-beam lithography of quantum nanostructures, photonic-crystal devices, and single-photon sources. Founded in 2016 by NBI quantum photonics researchers Leonardo Midolo, Soren Stobbe, and Anders Esbensen, the company is an industrial partner in the DKK 40M Innovation Fund Denmark EQUAL project (May 2025-2030) led by DTU Electro alongside HZDR, Humboldt University of Berlin, and Lizard Photonics.",
+  "website": "https://www.beamfox.dk",
+  "headquarters": "Copenhagen, Denmark (Njalsgade 76, 2300 Kobenhavn S)",
+  "funding": "Industrial partner in DKK 40M Innovation Fund Denmark EQUAL project (2025-2030)",
+  "accessModel": "Software licensing (lithography proximity-effect-correction tools)",
+  "products": [
+    {
+      "name": "Proximity-effect-correction software",
+      "description": "Electron-beam lithography proximity-effect-correction tooling for quantum-nanostructure fabrication, photonic-crystal devices, and single-photon sources"
+    }
+  ],
+  "highlights": [
+    "NBI quantum photonics spinout commercializing electron-beam lithography proximity-effect-correction software",
+    "Co-founded 2016 by Leonardo Midolo, Soren Stobbe, and Anders Esbensen (NBI Quantum Photonics)",
+    "Industrial partner in DKK 40M Innovation Fund Denmark EQUAL project (May 2025-2030) with DTU Electro, HZDR, Humboldt Berlin, and Lizard Photonics"
+  ],
+  "sources": [
+    {
+      "type": "press-release",
+      "url": "https://innovationsfonden.dk/en/news/research-project-crack-code-quantum",
+      "title": "Research project to crack the code of quantum light sources and quantum networks - Innovation Fund Denmark (EQUAL, DKK 40M)",
+      "datePublished": "2025-05-01",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://www.dtu.dk/english/news/all-news/research-project-to-crack-the-code-of-quantum-light-sources-and-quantum-networks?id=a84d6518-40f9-4f88-81f2-dc17c4117502",
+      "title": "Research project to crack the code of quantum light sources and quantum networks - DTU news",
+      "datePublished": "2025-05-01",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://www.dtu.dk/english/newsarchive/2025/07/danish-quantum-research-strengthens-its-leading-position",
+      "title": "Danish quantum research strengthens its leading position - DTU",
+      "datePublished": "2025-07-01",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hzdr.de/db/Cms?pNid=99&pOid=74943",
+      "title": "EQUAL project announcement - Helmholtz-Zentrum Dresden-Rossendorf (HZDR)",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "website",
+      "url": "https://www.beamfox.dk/about/",
+      "title": "Beamfox Technologies - About (NBI quantum-photonics origin)",
+      "dateAccessed": "2026-05-01"
+    }
+  ]
+}

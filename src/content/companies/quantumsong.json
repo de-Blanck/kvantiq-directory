@@ -1,0 +1,45 @@
+{
+  "name": "QuantumSong",
+  "slug": "quantumsong",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "hardware",
+  "tags": ["quantum-sensing", "magnetometry", "OPM", "geophysics"],
+  "founded": 2025,
+  "description": "QuantumSong is a Copenhagen-based research accelerator developing ruggedized laser-pumped optically-pumped magnetometer (OPM) cells and gradiometers for geophysical applications. Established as the joint R&D arm of Canadian magnetometer manufacturers GEM Systems (land/airborne) and Marine Magnetics (marine), QuantumSong applies quantum-optical sensing technology with research lineage from the Niels Bohr Institute Quantop group to industrial-grade magnetometers for air, land, marine, and VLF surveying.",
+  "website": "https://quantumsong.eu",
+  "headquarters": "Copenhagen, Denmark (Bredgade 20A, 1260 Kobenhavn)",
+  "funding": "Subsidiary of GEM Systems and Marine Magnetics (Canada)",
+  "accessModel": "B2B component supplier (OPM cells and gradiometers)",
+  "highlights": [
+    "Joint R&D arm of GEM Systems and Marine Magnetics for laser-pumped magnetometer cells",
+    "Targets ruggedized magnetometers for air, land, marine, and VLF geophysical surveying",
+    "Research lineage tied to NBI Quantop optical magnetometry program"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://quantumsong.eu/",
+      "title": "QuantumSong - A GEM and Marine Magnetics Research Accelerator",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumdenmark.dk/companies/",
+      "title": "Companies - Quantum Denmark (QuantumSong listed as Danish quantum partner)",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://www.gemsys.ca/",
+      "title": "GEM Systems - parent organization (Canadian quantum-magnetometer manufacturer)",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://nbi.ku.dk/english/research/quantum-optics-and-photonics/quantop/research/mri/",
+      "title": "Optical Magnetometry for MRI - Quantop, Niels Bohr Institute (foundational research lineage)",
+      "dateAccessed": "2026-05-01"
+    }
+  ]
+}

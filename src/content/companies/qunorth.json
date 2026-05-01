@@ -43,5 +43,14 @@
       "title": "EIFO and the Novo Nordisk Foundation Acquire the World's Most Powerful Quantum Computer - Novo Nordisk Fonden",
       "dateAccessed": "2026-03-19"
     }
+  ],
+  "news": [
+    {
+      "title": "QuNorth begins construction of Magne quantum computer in Copenhagen",
+      "excerpt": "Construction of the Magne system began in autumn 2025; commissioning is targeted for late 2026 / early 2027, on track to be the first commercially available fault-tolerant quantum computer.",
+      "url": "https://quantumcomputingreport.com/denmarks-qunorth-to-acquire-50-logical-qubit-magne-quantum-computer-from-atom-computing-and-microsoft/",
+      "source": "Quantum Computing Report",
+      "date": "2025-09-15"
+    }
   ]
 }

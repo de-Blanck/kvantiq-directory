@@ -1,0 +1,57 @@
+{
+  "name": "NKT Photonics",
+  "slug": "nkt-photonics",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "hardware",
+  "tags": ["photonics", "lasers", "quantum-flagship", "quantum-adjacent", "single-photon-pumping"],
+  "description": "NKT Photonics is a Danish photonics company headquartered in Birkerod, manufacturing fiber lasers, photonic crystal fibers, supercontinuum sources, and single-frequency lasers used by quantum and photonics labs worldwide. The company has an explicit Quantum & Nano Technology product line — its Koheras low-noise lasers are widely deployed in cold-atom systems and as pumps for single-photon sources. NKT is the only Danish company in the European Quantum Flagship and is also a member of the European Quantum Industry Consortium, the Quantum Economic Development Consortium, and the Danish Quantum Community board.",
+  "website": "https://www.nktphotonics.com",
+  "headquarters": "Birkerod, Denmark",
+  "funding": "Part of Hamamatsu Photonics K.K. (TYO: 6965)",
+  "accessModel": "Hardware sales (laser systems and photonic components)",
+  "products": [
+    {
+      "name": "Koheras low-noise fiber lasers",
+      "description": "Single-frequency single-mode fiber lasers deployed worldwide as pumps in single-photon sources and as drivers for cold-atom quantum experiments"
+    }
+  ],
+  "highlights": [
+    "Only Danish member of the European Quantum Flagship; member of EuQIC, QED-C, and DQC board",
+    "Koheras low-noise fiber lasers used in 13 dB squeezed-vacuum experiments at 1550 nm (Vahlbruch et al., Optics Letters 2018)",
+    "Deployed 20,000+ single-frequency fiber lasers globally; part of the Hamamatsu group"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.nktphotonics.com/applications/quantum-nano-technology/quantum-computing/",
+      "title": "Quantum Computing - NKT Photonics Quantum & Nano Technology product line",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumconsortium.org/members/",
+      "title": "QED-C Members - Quantum Economic Development Consortium",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://dqc.dk/about/",
+      "title": "About - Danish Quantum Community (NKT Photonics CEO Basil Garabet on board)",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "doi",
+      "url": "https://doi.org/10.1364/OL.43.000110",
+      "title": "Vahlbruch et al., 13 dB squeezed vacuum at 1550 nm pumped by Koheras BOOSTIK, Optics Letters 43(1):110, 2018",
+      "datePublished": "2018-01-01",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "press-release",
+      "url": "https://www.nktphotonics.com/cases/danish-photonic-quantum-computer/",
+      "title": "Danish Photonic Quantum Computer (PhotoQ) case study - NKT Photonics",
+      "dateAccessed": "2026-05-01"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Celare Quantum Communications",
+  "slug": "celare-quantum",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "hardware",
+  "tags": ["CV-QKD", "quantum-communication", "telecom", "DTU-spinout"],
+  "founded": 2024,
+  "description": "Celare Quantum Communications (CQC) is a DTU spinout developing the first commercial continuous-variable quantum key distribution (CV-QKD) network appliance in 19-inch rack format. Founded by DTU researcher Tobias Gehring, CQC builds CV-QKD modules designed to integrate with existing telecom infrastructure, providing physically secure key exchange resistant to both current and future quantum attacks. The company is a partner in the DKK 25.9M Innovation Fund Denmark AccessQKD project alongside DTU, Aarhus University, Partisia, and GlobalConnect.",
+  "website": "https://bii.dk/community/start-ups-projects/celare-quantum-communications/",
+  "headquarters": "Lyngby, Denmark",
+  "funding": "Partner in DKK 25.9M Innovation Fund Denmark AccessQKD consortium",
+  "accessModel": "Hardware sales (CV-QKD network appliances)",
+  "highlights": [
+    "DTU spinout building first commercial 19-inch rack-format CV-QKD network appliance",
+    "Founded by DTU researcher Tobias Gehring; pioneering commercial CV-QKD market entry",
+    "Partner in Innovation Fund Denmark AccessQKD project (DKK 25.9M, with DTU, Partisia, and GlobalConnect)"
+  ],
+  "sources": [
+    {
+      "type": "press-release",
+      "url": "https://innovationsfonden.dk/en/news/qgrid-will-protect-critical",
+      "title": "AccessQKD project - Innovation Fund Denmark",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://qsnp.eu/from-prototype-to-product-celare-quantums-vision-for-qkd-deployment/",
+      "title": "From Prototype to Product: Celare Quantum's vision for QKD deployment - QSNP",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://www.dtu.dk/english/newsarchive/2025/07/danish-quantum-research-strengthens-its-leading-position",
+      "title": "Danish quantum research strengthens its leading position - DTU",
+      "datePublished": "2025-07-01",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://bii.dk/community/start-ups-projects/celare-quantum-communications/",
+      "title": "Celare Quantum Communications - BioInnovation Institute",
+      "dateAccessed": "2026-05-01"
+    }
+  ]
+}

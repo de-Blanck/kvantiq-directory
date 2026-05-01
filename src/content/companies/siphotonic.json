@@ -1,0 +1,45 @@
+{
+  "name": "SiPhotonIC",
+  "slug": "siphotonic",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "hardware",
+  "tags": ["silicon-photonics", "PIC-foundry", "rapid-prototyping", "DTU-spinout"],
+  "founded": 2018,
+  "description": "SiPhotonIC is a DTU spinout providing rapid-prototyping silicon photonic integrated circuit foundry services with 1.5-3.5 month turnaround using DTU Nanolab cleanroom facilities. The company serves both classical optical communications and quantum photonic clients, enabling fabrication of single-photon source chips and quantum photonic integrated circuits. SiPhotonIC is a Quantum Business Network member and Danish Quantum Community partner.",
+  "website": "https://siphotonic.com",
+  "headquarters": "Kongens Lyngby, Denmark",
+  "funding": "Privately held; DTU Centre of Excellence for Silicon Photonics spinout",
+  "accessModel": "Foundry services (silicon-PIC fabrication, B2B)",
+  "highlights": [
+    "DTU spinout offering rapid-prototyping silicon-PIC fabrication with 1.5-3.5 month turnaround",
+    "Uses DTU Nanolab cleanroom; serves both classical comms and quantum photonics clients",
+    "Quantum Business Network (QBN) member and Danish Quantum Community partner"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://siphotonic.com/about/",
+      "title": "SiPhotonIC - Rapid Prototyping of Silicon Photonic ICs",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://orbit.dtu.dk/en/organisations/centre-of-excellence-for-silicon-photonics-for-optical-communicat",
+      "title": "Centre of Excellence for Silicon Photonics for Optical Communications - DTU Research Database",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://qbn.world/qbn-member/siphotonic/",
+      "title": "SiPhotonIC - Quantum Business Network member listing",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://www.alphaevents.com/events-quantumtech/sponsors/siphotonic",
+      "title": "SiPhotonIC - Quantum.Tech sponsor profile (Alpha Events)",
+      "dateAccessed": "2026-05-01"
+    }
+  ]
+}

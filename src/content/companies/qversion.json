@@ -1,0 +1,44 @@
+{
+  "name": "QVersion",
+  "slug": "qversion",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "hardware",
+  "tags": ["mid-IR", "photonics", "lasers", "quantum-sensing", "AU-spinout"],
+  "description": "QVersion is an Aarhus University spinout developing chip-based mid-infrared (2-12 micrometer) laser platforms based on difference-frequency generation. Its laser technology targets molecular sensing and free-space secure communications, with applications spanning gas spectroscopy, environmental monitoring, and quantum-relevant photonics. The company entered the Spin-outs Denmark program in 2025 with founder Emil Zanchetta Ulsig.",
+  "website": "https://qversion.dk",
+  "headquarters": "Aarhus, Denmark",
+  "funding": "Early-stage spinout (Spin-outs Denmark program 2025)",
+  "accessModel": "Hardware sales (chip-based laser modules)",
+  "highlights": [
+    "Aarhus University spinout building chip-based difference-frequency-generation mid-IR lasers",
+    "Mid-IR (2-12 micrometer) range covers molecular sensing fingerprints used in gas spectroscopy and environmental monitoring",
+    "Entered Spin-outs Denmark program in 2025"
+  ],
+  "sources": [
+    {
+      "type": "url",
+      "url": "https://quantumdenmark.dk/companies/",
+      "title": "Companies - Quantum Denmark",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://spinouts.dk/project/qversion/",
+      "title": "QVersion - Spin-outs Denmark",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "website",
+      "url": "https://qversion.dk/",
+      "title": "QVersion Official Website",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://international.au.dk/collaboration/technology-transfer/spin-outs",
+      "title": "Spin-outs - Aarhus University Technology Transfer Office",
+      "dateAccessed": "2026-05-01"
+    }
+  ]
+}
