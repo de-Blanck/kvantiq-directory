@@ -1,0 +1,50 @@
+{
+  "name": "QFactory",
+  "slug": "qfactory",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "hardware",
+  "tags": ["quantum-sensing", "optomechanics", "nanomechanical-resonators", "quantum-memory", "NBI-spinout"],
+  "description": "QFactory is a Niels Bohr Institute spinout developing nanomechanical resonators for quantum sensing, quantum opto- and electromechanics, and quantum memories. Co-founded by CEO Dr. Eric Langman and CSO Prof. Albert Schliesser (head of the NBI Quantum Optomechanics group), the Copenhagen-based ApS (CVR 44133482) was selected for the BioInnovation Institute Venture Lab program as the only quantum-technology company in its cohort.",
+  "website": "https://qfactory.dk",
+  "headquarters": "Copenhagen, Denmark (Blegdamsvej 17, 2100 Kobenhavn O)",
+  "funding": "Selected for BII Venture Lab program (sole quantum entry in cohort)",
+  "accessModel": "Hardware sales (nanomechanical resonators for quantum applications)",
+  "products": [
+    {
+      "name": "Nanomechanical resonators",
+      "description": "Nanomechanical resonators for quantum sensing, quantum opto- and electromechanics, and quantum memory applications"
+    }
+  ],
+  "highlights": [
+    "NBI Quantum Optomechanics spinout commercializing the Schliesser group's research line",
+    "Co-founded by CEO Dr. Eric Langman and CSO Prof. Albert Schliesser (head of NBI Quantum Optomechanics)",
+    "Selected for BioInnovation Institute Venture Lab as the only quantum-technology company in its cohort"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://qfactory.dk/about",
+      "title": "About - QFactory (CVR 44133482, founder bios, product line)",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://techfundingnews.com/bii-venture-lab-11-startups-health-quantum/",
+      "title": "BII Venture Lab announces 11 startups across health and quantum - TechFundingNews",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://slab.nbi.dk/",
+      "title": "Schliesser Lab (Quantum Optomechanics group) - Niels Bohr Institute",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://datacvr.virk.dk/enhed/virksomhed/44133482",
+      "title": "QFactory ApS - Danish Central Business Register (CVR 44133482)",
+      "dateAccessed": "2026-05-01"
+    }
+  ]
+}
