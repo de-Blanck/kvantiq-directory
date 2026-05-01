@@ -1,18 +1,1 @@
-[
-  {
-    "action_taken": "added",
-    "count": 9
-  },
-  {
-    "action_taken": "flagged",
-    "count": 1
-  },
-  {
-    "action_taken": "migrated",
-    "count": 182
-  },
-  {
-    "action_taken": "verified",
-    "count": 76
-  }
-]
+[]
