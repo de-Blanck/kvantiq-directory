@@ -20,7 +20,8 @@
   "highlights": [
     "Owned by the Novo Nordisk Foundation as part of the Novo Nordisk Foundation Quantum Computing Programme",
     "Located at the Niels Bohr Institute, producing QPUs at extreme atomic and isotopic purity",
-    "Develops next-generation manufacturing tools for superconducting, semiconducting, and photonic quantum chips"
+    "Develops next-generation manufacturing tools for superconducting, semiconducting, and photonic quantum chips",
+    "Riber ROSIE oxide-MBE platform delivered in Phase II 2025 partnership for 300mm wafer capability"
   ],
   "sources": [
     {
@@ -34,6 +35,13 @@
       "url": "https://nqcp.ku.dk/about-nqcp/",
       "title": "The Programme — Novo Nordisk Foundation Quantum Computing Programme, University of Copenhagen",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://novonordiskfonden.dk/en/news/special-quantum-fabrication-facility-will-help-to-create-a-generally-applicable-quantum-computer/",
+      "title": "Special quantum fabrication facility will help to create a generally applicable quantum computer - Novo Nordisk Foundation",
+      "datePublished": "2022-09-21",
+      "dateAccessed": "2026-05-01"
     }
   ]
 }

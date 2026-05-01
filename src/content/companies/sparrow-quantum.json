@@ -4,19 +4,19 @@
   "country": "Denmark",
   "region": "nordics",
   "type": "hardware",
-  "tags": ["single-photon", "quantum-networking", "photonics"],
+  "tags": ["single-photon", "quantum-networking", "photonics", "NBI-spinout"],
   "founded": 2016,
-  "description": "Sparrow Quantum develops single-photon sources for quantum networking and quantum computing applications. Their technology provides deterministic single-photon emission, enabling scalable quantum communication networks and photonic quantum information processing.",
+  "description": "Sparrow Quantum develops deterministic single-photon source photonic chips for quantum networking and quantum computing, spun out of Professor Peter Lodahl's group at the Niels Bohr Institute. The Sparrow Core product, launched November 2025, delivers single-photon emission with industry-leading efficiency and thermal stability for room-temperature operation. The company raised a EUR 27.5M follow-on round in December 2025 — described in trade press as Scandinavia's largest quantum-technology investment — on top of a EUR 21.5M Series A in April 2025.",
   "website": "https://www.sparrowquantum.com",
   "featured": false,
-  "headquarters": "Copenhagen, Denmark",
+  "headquarters": "Frederiksberg, Denmark",
   "employees": "47",
-  "funding": "EUR 28M",
+  "funding": "EUR 49M cumulative (EUR 27.5M Dec 2025 + EUR 21.5M Series A Apr 2025)",
   "accessModel": "Hardware sales (photonic quantum chips)",
   "products": [
     {
       "name": "Sparrow Core",
-      "description": "Deterministic single-photon source photonic chip with best-in-class efficiency and thermal stability"
+      "description": "Deterministic single-photon source photonic chip launched November 2025 with best-in-class efficiency and thermal stability for room-temperature operation"
     },
     {
       "name": "Quantum Dot Nanostructures",
@@ -24,21 +24,30 @@
     }
   ],
   "highlights": [
-    "Spin-out from Professor Peter Lodahl's group at Niels Bohr Institute",
-    "Photonic approach operates at room temperature and is designed for scalable microchip integration"
+    "Spin-out from Professor Peter Lodahl's group at Niels Bohr Institute; Lodahl also directs the Hy-Q Center for Hybrid Quantum Networks at NBI",
+    "Photonic approach operates at room temperature and is designed for scalable microchip integration",
+    "December 2025 EUR 27.5M round (North Ventures, Scale Capital, LIFTT EuroInvest) is reported as Scandinavia's largest quantum-technology investment to date"
   ],
   "sources": [
     {
       "type": "website",
       "url": "https://www.sparrowquantum.com",
       "title": "Sparrow Quantum Official Website",
-      "dateAccessed": "2026-03-19"
+      "dateAccessed": "2026-05-01"
     },
     {
-      "type": "url",
-      "url": "https://www.linkedin.com/company/sparrow-quantum/",
-      "title": "Sparrow Quantum LinkedIn Company Page",
-      "dateAccessed": "2026-03-20"
+      "type": "press-release",
+      "url": "https://thequantuminsider.com/2025/12/01/sparrow-quantum-raises-e27-5-million-strengthening-denmarks-role-in-the-global-quantum-race/",
+      "title": "Sparrow Quantum Raises €27.5 Million, Strengthening Denmark's Role in The Global Quantum Race - The Quantum Insider",
+      "datePublished": "2025-12-01",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "press-release",
+      "url": "https://thequantuminsider.com/2025/04/10/sparrow-quantum-secures-e21-5-million-in-series-a-round/",
+      "title": "Sparrow Quantum Secures €21.5 Million in Series A Round - The Quantum Insider",
+      "datePublished": "2025-04-10",
+      "dateAccessed": "2026-05-01"
     }
   ]
 }
