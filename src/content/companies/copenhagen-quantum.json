@@ -1,0 +1,48 @@
+{
+  "name": "Copenhagen Quantum",
+  "slug": "copenhagen-quantum",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "software",
+  "tags": ["quantum-finance", "portfolio-optimization", "risk-modeling", "fintech"],
+  "founded": 2025,
+  "description": "Copenhagen Quantum is a quantum-finance SaaS startup applying quantum algorithms, stochastic modeling, and HPC to portfolio optimization, risk modeling, credit clustering, and insurance segmentation. Founded by Tim Bruun Madsen, an industrial PhD student at the University of Copenhagen Department of Mathematics, the company joined the Danish Quantum Community as a partner in January 2026.",
+  "website": "https://coqu.dk",
+  "headquarters": "Copenhagen, Denmark",
+  "funding": "Privately held; KU industrial-PhD spinoff",
+  "accessModel": "SaaS platform + consulting",
+  "highlights": [
+    "Quantum-finance SaaS for portfolio optimization, risk modeling, credit clustering, and insurance segmentation",
+    "Founded by Tim Bruun Madsen, KU Department of Mathematics industrial PhD student",
+    "Joined the Danish Quantum Community as a partner in January 2026"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://coqu.dk",
+      "title": "Copenhagen Quantum Official Website",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "press-release",
+      "url": "https://dqc.dk/dqc-welcomes-copenhagen-quantum-as-new-partner/",
+      "title": "DQC welcomes Copenhagen Quantum as a new partner - Danish Quantum Community",
+      "datePublished": "2026-01-08",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://www.math.ku.dk/english/about/news/new-names/tim-bruun-madsen-industrial-phd-student/",
+      "title": "Tim Bruun Madsen, Industrial PhD student - University of Copenhagen Department of Mathematics",
+      "datePublished": "2024-09-01",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://investindk.com/insights/quantum-technology-reshaping-denmarks-financial-landscape",
+      "title": "Quantum technology reshaping Denmark's financial landscape - Invest in Denmark",
+      "datePublished": "2025-11-01",
+      "dateAccessed": "2026-05-01"
+    }
+  ]
+}

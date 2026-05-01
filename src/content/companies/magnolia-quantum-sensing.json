@@ -1,0 +1,54 @@
+{
+  "name": "Magnolia Quantum Sensing",
+  "slug": "magnolia-quantum-sensing",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "hardware",
+  "tags": ["quantum-sensing", "magnetometry", "MRI", "biomedical", "NBI-spinout"],
+  "founded": 2025,
+  "description": "Magnolia Quantum Sensing is a Copenhagen-based NBI/DRCMR spinout commercializing the EXAAQ high-field optical cesium magnetometer for magnetic resonance imaging applications. Founded by Hans Staerkind (PhD, NBI/DRCMR) with Quantum Advisor Eugene Polzik, the company commercializes peer-reviewed research published in PRX Quantum (2024) and is supported by the Novo Nordisk Foundation's DKK 150M Center for Biomedical Quantum Sensing grant.",
+  "website": "https://magnolia-qs.com",
+  "headquarters": "Copenhagen, Denmark",
+  "funding": "Linked to Novo Nordisk Foundation DKK 150M Center for Biomedical Quantum Sensing grant lineage",
+  "accessModel": "Hardware sales (quantum sensing instruments)",
+  "products": [
+    {
+      "name": "EXAAQ optical cesium magnetometer",
+      "description": "High-field optical cesium magnetometer for magnetic resonance imaging applications, peer-reviewed in PRX Quantum 5, 020320 (2024)"
+    }
+  ],
+  "highlights": [
+    "NBI/DRCMR spinout commercializing peer-reviewed PRX Quantum research (2024)",
+    "Founded by Hans Staerkind with Quantum Advisor Eugene Polzik (NBI Quantop)",
+    "Linked to Novo Nordisk Foundation DKK 150M Center for Biomedical Quantum Sensing grant"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://magnolia-qs.com/",
+      "title": "Magnolia Quantum Sensing - Rethinking MRI with Quantum Technology",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "doi",
+      "url": "https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.5.020320",
+      "title": "High-Field Optical Cesium Magnetometer for Magnetic Resonance Imaging - PRX Quantum 5, 020320",
+      "datePublished": "2024-05-09",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://cbqs.ku.dk/happening-at-cbqs/quantum-sensor-for-mri-mentioned-by-erhvervsstyrelsen-in-new-publication/",
+      "title": "Quantum sensor for MRI mentioned by Erhvervsstyrelsen - Copenhagen Center for Biomedical Quantum Sensing, KU",
+      "datePublished": "2025-10-01",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "press-release",
+      "url": "https://novonordiskfonden.dk/en/news/researchers-aim-to-advance-quantum-sensing-to-transform-disease-diagnosis-and-prevention/",
+      "title": "Researchers aim to advance quantum sensing - Novo Nordisk Foundation (DKK 150M CBQS grant)",
+      "datePublished": "2024-09-12",
+      "dateAccessed": "2026-05-01"
+    }
+  ]
+}

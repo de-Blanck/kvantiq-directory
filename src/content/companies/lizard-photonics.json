@@ -1,0 +1,54 @@
+{
+  "name": "Lizard Photonics",
+  "slug": "lizard-photonics",
+  "country": "Denmark",
+  "region": "nordics",
+  "type": "hardware",
+  "tags": ["nanophotonics", "NEMS", "single-photon", "quantum-light-sources", "DTU-spinout"],
+  "founded": 2024,
+  "description": "Lizard Photonics is a DTU Electro spinout commercializing a nanoelectromechanical (NEMS) photonics platform for custom photonic-circuit design, optical testing, packaging, and nanofabrication. Founded by Ali Nawaz Babar (CEO), Michael Juhl (CTO), and Soren Stobbe (CSO; head of the Quantum & Nanophotonics section at DTU Electro), the company is a partner in the DKK 40M Innovation Fund Denmark EQUAL project for erbium-based silicon quantum light sources (May 2025 - 2030).",
+  "website": "https://lizardphotonics.com",
+  "headquarters": "Kongens Lyngby, Denmark",
+  "funding": "Partner in DKK 40M Innovation Fund Denmark EQUAL project (May 2025-2030)",
+  "accessModel": "B2B services + research consortium",
+  "products": [
+    {
+      "name": "NEMS photonics platform",
+      "description": "Nanoelectromechanical integrated photonics platform for custom photonic-circuit design, optical testing, packaging, and nanofabrication"
+    }
+  ],
+  "highlights": [
+    "DTU Electro spinout founded 2024 by Babar (CEO), Juhl (CTO), and Stobbe (CSO; head of Quantum & Nanophotonics at DTU Electro)",
+    "Partner in DKK 40M Innovation Fund Denmark EQUAL project for erbium-based silicon quantum light sources",
+    "Nanoelectromechanical photonics platform for custom photonic-circuit fabrication"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://lizardphotonics.com/",
+      "title": "Lizard Photonics - Nanoelectromechanical Integrated Photonics",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "press-release",
+      "url": "https://innovationsfonden.dk/en/news/research-project-crack-code-quantum",
+      "title": "Research project to crack the code of quantum light sources and quantum networks - Innovation Fund Denmark (EQUAL, DKK 40M)",
+      "datePublished": "2025-05-01",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://www.dtu.dk/english/news/all-news/research-project-to-crack-the-code-of-quantum-light-sources-and-quantum-networks?id=a84d6518-40f9-4f88-81f2-dc17c4117502",
+      "title": "Research project to crack the code of quantum light sources and quantum networks - DTU news",
+      "datePublished": "2025-05-01",
+      "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://picmagazine.net/article/121804/Erbium-based_light_sources_for_quantum_technology",
+      "title": "Erbium-based light sources for quantum technology - Photonic Integrated Circuits Magazine",
+      "datePublished": "2025-05-15",
+      "dateAccessed": "2026-05-01"
+    }
+  ]
+}
