@@ -106,13 +106,37 @@ Run `npm run audit:content` to check. Ratings:
 Every content change MUST follow: Branch → Add/Edit JSON → Build validates → PR with template → CI passes → Owner reviews → Merge → Auto-deploy.
 
 1. Never commit directly to main
-2. Every entry requires minimum 2 verified sources
+2. Every new or edited entry requires **minimum 3 credible verifiable sources** (see "Source credibility" below)
 3. All source URLs must be live and accessible
 4. PR must use the template
 5. CI must pass before merge
 6. No blocklisted companies (AWS, Google Cloud, Meta, etc.)
 7. Descriptions are factual — no marketing language
 8. Slug matches filename
+
+## Source credibility (NON-NEGOTIABLE)
+
+The directory's value depends on every claim being verifiable from independent sources. The minimum bar is **3 credible sources per entry**, drawn from at least two of the categories below.
+
+### ✅ Credible sources (count toward the 3)
+
+- Peer-reviewed papers / arXiv preprints with DOI
+- Official institutional pages: universities, research foundations, EU CORDIS, government, regulators
+- Established trade press: Reuters, FT, Bloomberg, The Quantum Insider, HPCwire, Inside Quantum Technology, Quantum Computing Report, EU-Startups, TechCrunch, Sifted, Børsen, Berlingske, Politiken, Semiconductor Today
+- Regulatory / funding records: Innovation Fund Denmark, EIFO, Vækstfonden, Horizon Europe, EU Quantum Flagship participant records
+- Company official press releases — counts as **one source maximum** per entry, must be supplemented by independent sources
+
+### ❌ Not credible (do NOT count toward the 3)
+
+- LinkedIn — self-published
+- Crunchbase free-tier — self-listings, low credibility
+- Company website alone — counts as ONE source; needs ≥2 independent confirmations beyond it
+- Wikipedia — acceptable as a research starting point, does not count toward the bar
+- Press-wire syndication (Yahoo Finance, AccessNewswire, PR Newswire syndication) — counts as the same source as the underlying release, not as a separate source
+
+### Existing entries below the bar
+
+The 3-source bar applies to **all new entries and any edited entries going forward**. Backfilling existing entries that currently have only 2 sources is a separate, deliberate workstream — the Zod schema in `src/content.config.ts` remains at `.min(2)` for now, and will be raised to `.min(3)` per collection only after that collection has been brought up to the new bar.
 
 ## Git Workflow
 
