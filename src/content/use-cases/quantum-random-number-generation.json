@@ -21,6 +21,22 @@
       "url": "https://www.idquantique.com/random-number-generation/overview/",
       "title": "Quantum Random Number Generation (QRNG) - ID Quantique",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.24870",
+      "title": "Demonstration of quantum random number generation using nitrogen vacancy centres",
+      "datePublished": "2026-04-27",
+      "dateAccessed": "2026-05-03"
+    }
+  ],
+  "news": [
+    {
+      "title": "Demonstration of QRNG Using Nitrogen Vacancy Centres Achieves Order-of-Magnitude Rate Improvement",
+      "excerpt": "arXiv:2604.24870 (submitted April 27, 2026) reports QRNG from photons emitted by NV centres in fluorescent nanodiamonds, achieving 0.173–4.77 Mbits/s for regions with up to 50 NV centres — an order-of-magnitude improvement over prior NV-centre QRNG results — with all bits passing NIST and ENT statistical test suites without post-processing.",
+      "url": "https://arxiv.org/abs/2604.24870",
+      "source": "arXiv (quant-ph)",
+      "date": "2026-04-27"
     }
   ]
 }

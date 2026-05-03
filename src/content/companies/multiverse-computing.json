@@ -32,9 +32,17 @@
     },
     {
       "type": "url",
-      "url": "https://en.wikipedia.org/wiki/Multiverse_Computing",
-      "title": "Multiverse Computing - Wikipedia",
-      "dateAccessed": "2026-03-19"
+      "url": "https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/",
+      "title": "Multiverse Computing releases free compressed HyperNova 60B AI model — TechCrunch",
+      "datePublished": "2026-02-24",
+      "dateAccessed": "2026-05-03"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/aiwire/2026/04/28/multiverse-computing-launches-littlelamb-model-family-on-hugging-face-expanding-compact-ai-for-edge-on-device-and-agentic-use-cases/",
+      "title": "Multiverse Computing Launches LittleLamb Model Family on Hugging Face — HPCwire",
+      "datePublished": "2026-04-28",
+      "dateAccessed": "2026-05-03"
     }
   ],
   "news": [
@@ -51,6 +59,13 @@
       "url": "https://thequantuminsider.com/2026/03/18/ultiverse-computing-axelera-ai-strategic-collaboration-ai-models-edge-devices/",
       "source": "The Quantum Insider",
       "date": "2026-03-18"
+    },
+    {
+      "title": "Multiverse Computing Releases LittleLamb Open-Source Compact AI Model Family on Hugging Face",
+      "excerpt": "Multiverse Computing released three open-source language models (LittleLamb 0.3B, Tool-Calling, and Mobile) built from Qwen3-0.6B and compressed approximately 50% using its CompactifAI technology, targeting edge, mobile, and agentic deployments. All three models are available free on Hugging Face.",
+      "url": "https://www.hpcwire.com/aiwire/2026/04/28/multiverse-computing-launches-littlelamb-model-family-on-hugging-face-expanding-compact-ai-for-edge-on-device-and-agentic-use-cases/",
+      "source": "HPCwire",
+      "date": "2026-04-28"
     }
   ]
 }

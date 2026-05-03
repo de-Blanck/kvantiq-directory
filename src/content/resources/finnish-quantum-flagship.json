@@ -14,7 +14,7 @@
   "openSource": false,
   "free": true,
   "provider": "Business Finland / InstituteQ",
-  "lastUpdated": "2025",
+  "lastUpdated": "2026",
   "maturity": "stable",
   "sources": [
     {
@@ -28,6 +28,22 @@
       "url": "https://www.businessfinland.fi/en/whats-new/news/2024/finland-invests-in-quantum-technologies",
       "title": "Business Finland Quantum Technology Investment Announcement",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/vtt-and-csiro-explore-collaboration-via-quantum-leap-project/",
+      "title": "VTT and CSIRO Explore Collaboration via 'Quantum Leap' Project — Quantum Computing Report",
+      "datePublished": "2026-04-30",
+      "dateAccessed": "2026-05-03"
+    }
+  ],
+  "news": [
+    {
+      "title": "Finland and Australia Explore Quantum Technology Collaboration via VTT 'Quantum Leap' Project",
+      "excerpt": "A VTT delegation attended the Quantum Australia Conference in April 2026 to discuss collaboration with CSIRO under VTT's Quantum Leap project, covering quantum software, error correction, and energy-efficient quantum components. Finnish partners include IQM, SemiQon, Neste, Vexlum, and Quanscient, alongside VTT's 50-qubit superconducting quantum computer.",
+      "url": "https://thequantuminsider.com/2026/04/30/finland-and-australia-to-join-forces-on-quantum-technologies/",
+      "source": "The Quantum Insider",
+      "date": "2026-04-30"
     }
   ]
 }

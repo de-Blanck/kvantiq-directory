@@ -11,7 +11,7 @@
   "featured": false,
   "headquarters": "Delft, Netherlands",
   "employees": "11-25",
-  "funding": "€10M EIC Accelerator (grant + equity), awarded 2025",
+  "funding": "€16M total (seed co-led by Innovation Industries and 55 North + EIC Accelerator grant, 2026)",
   "accessModel": "Hardware sales (quantum processors)",
   "products": [
     {"name": "Germanium Spin Qubit Processor", "description": "Scalable quantum processor based on germanium spin qubits compatible with standard semiconductor manufacturing"}
@@ -39,6 +39,15 @@
       "url": "https://quantumcomputingreport.com/groove-quantum-secures-e10-million-eic-accelerator-funding-for-germanium-based-quantum-computing/",
       "title": "Groove Quantum secures €10M EIC Accelerator funding (Quantum Computing Report, 2025)",
       "dateAccessed": "2026-03-21"
+    }
+  ],
+  "news": [
+    {
+      "title": "Groove Quantum Raises €16M and Demonstrates 18-Qubit Germanium Spin-Qubit Processor",
+      "excerpt": "Dutch quantum startup Groove Quantum secured €16 million in combined equity and grants in a seed round co-led by Innovation Industries and 55 North, and simultaneously demonstrated an 18-qubit germanium semiconductor spin-qubit processor, claiming the largest of its kind. The company plans to scale toward a 100-qubit tiled unit cell.",
+      "url": "https://quantumcomputingreport.com/groove-quantum-secures-e16-million-18-7m-usd-to-scale-germanium-spin-qubits-debuts-18-qubit-processor/",
+      "source": "Quantum Computing Report",
+      "date": "2026-04-30"
     }
   ]
 }

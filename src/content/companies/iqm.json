@@ -62,6 +62,13 @@
       "url": "https://itdigest.com/computer-science/quantum-computing/iqm-introduces-ai-powered-calibration-to-make-quantum-computing-enterprise-ready/",
       "source": "IT Digest",
       "date": "2026-04-15"
+    },
+    {
+      "title": "IQM to Deploy 20-Qubit System to TOYO Corporation — Japan's First Enterprise Quantum Purchase",
+      "excerpt": "IQM Quantum Computers signed a contract with Japan's TOYO Corporation to deliver a 20-qubit Radiance quantum system by end-2026, marking the first enterprise quantum computer purchase in Japan. TOYO will operate the system to support Japanese enterprises and researchers in quantum algorithm development and HPC integration.",
+      "url": "https://thequantuminsider.com/2026/04/27/iqm-toyo-quantum-deployment/",
+      "source": "The Quantum Insider",
+      "date": "2026-04-27"
     }
   ]
 }

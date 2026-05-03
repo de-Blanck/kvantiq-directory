@@ -24,6 +24,22 @@
       "url": "https://github.com/PennyLaneAI/pennylane",
       "title": "PennyLane GitHub Repository",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/xanadu-and-ornl-bring-pennylane-quantum-software-to-frontier-supercomputer/",
+      "title": "Xanadu and ORNL Bring PennyLane Quantum Software to Frontier Supercomputer — HPCwire",
+      "datePublished": "2026-04-29",
+      "dateAccessed": "2026-05-03"
+    }
+  ],
+  "news": [
+    {
+      "title": "Xanadu and Oak Ridge National Laboratory Bring PennyLane to Frontier Exascale Supercomputer",
+      "excerpt": "Xanadu and Oak Ridge National Laboratory announced on April 29, 2026 that PennyLane's Lightning simulator now supports MPI-based multi-node execution on Frontier's AMD CPUs and GPUs. Users of the Frontier supercomputer can write and run quantum programs using PennyLane's high-performance Lightning backend.",
+      "url": "https://www.hpcwire.com/off-the-wire/xanadu-and-ornl-bring-pennylane-quantum-software-to-frontier-supercomputer/",
+      "source": "HPCwire",
+      "date": "2026-04-29"
     }
   ]
 }

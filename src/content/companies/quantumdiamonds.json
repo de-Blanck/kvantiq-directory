@@ -35,6 +35,22 @@
       "url": "https://www.eu-startups.com/2025/12/quantumdiamonds-plans-e152m-investment-in-quantum-chip-inspection-facility-in-munich/",
       "title": "QuantumDiamonds plans EUR 152 million investment in quantum chip inspection facility in Munich — EU-Startups",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/04/28/quantumdiamonds-deploys-failure-analysis-technology-at-leading-taiwan-semiconductor-test-house/",
+      "title": "QuantumDiamonds Deploys Failure Analysis Technology at Leading Taiwan Semiconductor Test House — The Quantum Insider",
+      "datePublished": "2026-04-28",
+      "dateAccessed": "2026-05-03"
+    }
+  ],
+  "news": [
+    {
+      "title": "QuantumDiamonds Deploys QDm.1 Failure Analysis System at Taiwan's iST Semiconductor Test House",
+      "excerpt": "QuantumDiamonds installed its QDm.1 quantum diamond microscopy system at Integrated Service Technology (iST) in Hsinchu, Taiwan, marking the company's first operational installation in Asia. The system provides non-destructive 3D current-path imaging for advanced chip packages including 2.5D and 3D stacked architectures.",
+      "url": "https://compoundsemiconductor.net/article/124092/QuantumDiamonds_deploys_tool_at_Taiwanese_test_house",
+      "source": "Compound Semiconductor Magazine",
+      "date": "2026-04-28"
     }
   ]
 }

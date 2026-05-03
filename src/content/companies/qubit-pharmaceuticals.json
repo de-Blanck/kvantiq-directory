@@ -36,6 +36,22 @@
       "url": "https://quantumcomputingreport.com/qubit-pharmaceuticals-announces-dual-breakthroughs-quantum-speedup-and-2028-utility-path-for-drug-discovery/",
       "title": "Qubit Pharmaceuticals Announces Dual Breakthroughs: Quantum Speedup and 2028 Utility Path for Drug Discovery",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/04/30/qubit-pharmaceuticals-to-collaborate-with-the-centre-for-quantum-technologies-in-singapore-to-advance-quantum-algorithms-for-drug-discovery/",
+      "title": "Qubit Pharmaceuticals to Collaborate with CQT Singapore to Advance Quantum Algorithms for Drug Discovery — The Quantum Insider",
+      "datePublished": "2026-04-30",
+      "dateAccessed": "2026-05-03"
+    }
+  ],
+  "news": [
+    {
+      "title": "Qubit Pharmaceuticals and CQT Singapore Announce Two-Year Quantum Drug Discovery Collaboration",
+      "excerpt": "Qubit Pharmaceuticals and the Centre for Quantum Technologies (CQT) at the National University of Singapore announced a two-year research collaboration to develop quantum algorithms for molecular discovery, including the first experimental deployment of a quantum Markov Chain Monte Carlo algorithm on physical quantum hardware.",
+      "url": "https://quantumcomputingreport.com/cqt-and-qubit-pharmaceuticals-partner-to-advance-quantum-drug-discovery/",
+      "source": "Quantum Computing Report",
+      "date": "2026-04-30"
     }
   ]
 }
