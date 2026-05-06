@@ -38,7 +38,8 @@ const BADGE_COLORS: Record<string, string> = {
 
 function collectionLabel(collection: string): string {
   if (collection === 'use-cases') return 'Use Case';
-  return collection.slice(0, -1).replace(/^\w/, c => c.toUpperCase());
+  const singular = collection.endsWith('ies') ? collection.slice(0, -3) + 'y' : collection.slice(0, -1);
+  return singular.replace(/^\w/, c => c.toUpperCase());
 }
 
 export default function DetailTabs({ children, news, related, onCustomize }: DetailTabsProps) {
