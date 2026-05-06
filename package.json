@@ -12,7 +12,8 @@
     "postbuild": "pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro",
-    "audit:content": "npx tsx scripts/content-audit.ts"
+    "audit:content": "npx tsx scripts/content-audit.ts",
+    "test": "node --test --import tsx 'scripts/**/*.test.ts' 'src/lib/**/*.test.ts'"
   },
   "dependencies": {
     "@anthropic-ai/claude-agent-sdk": "^0.2.81",
