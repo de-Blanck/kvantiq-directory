@@ -68,13 +68,13 @@ The site uses an **Editorial Light** theme — warm broken-white, Swiss editoria
 
 ### Data Model
 
-JSON files in `src/content/` with Zod schemas in `src/content.config.ts`:
+JSON files in `src/content/` with Zod schemas in `src/content.config.ts`. Five collections — count each by listing `src/content/<collection>/*.json` rather than relying on a number written here (counts drift; the file system is the source of truth):
 
-- **companies** (74) — name, slug, country, region, type, tags, description, website, products, highlights, accessModel, employees, funding, sources, news
-- **benchmarks** (32) — name, slug, algorithm, category, hardware, qubits, framework, keyMetrics, significance, sources, news
-- **use-cases** (23) — name, slug, industry, category, problem, approach, results, companies, sources, news
-- **challenges** (12) — name, slug, organizer, prizes, eligibility, teamSize, registrationDeadline, problemDomains, sources, news
-- **resources** (42) — name, slug, type, lastUpdated, maturity, communitySize, sources, news
+- **companies** — name, slug, country, region, type, tags, description, website, products, highlights, accessModel, employees, funding, sources, news
+- **benchmarks** — name, slug, algorithm, category, hardware, qubits, framework, keyMetrics, significance, sources, news
+- **use-cases** — name, slug, industry, category, problem, approach, results, companies, sources, news
+- **challenges** — name, slug, organizer, prizes, eligibility, teamSize, registrationDeadline, problemDomains, sources, news
+- **resources** — name, slug, type, lastUpdated, maturity, communitySize, sources, news
 
 ### Page Pattern
 
