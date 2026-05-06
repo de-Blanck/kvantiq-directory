@@ -10,7 +10,8 @@
   "website": "https://alice-bob.com",
   "featured": false,
   "headquarters": "Paris, France",
-  "funding": "EUR 30M+",
+  "employees": "251",
+  "funding": "EUR 130M+",
   "accessModel": "Cloud API + on-premise systems",
   "products": [
     {
@@ -39,6 +40,18 @@
       "url": "https://www.crunchbase.com/organization/alice-bob",
       "title": "Alice & Bob Crunchbase Company Profile",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/03/31/alice-bob-arpae-funding-quantum-materials/",
+      "title": "Alice & Bob Secures $3.9M ARPA-E Award to Use Quantum Computing to Design Rare-Earth-Free Magnets - The Quantum Insider",
+      "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/alice-bob-surpasses-hiring-targets-ahead-of-schedule-as-quantum-workforce-grows/",
+      "title": "Alice & Bob Surpasses Hiring Targets Ahead of Schedule as Quantum Workforce Grows - HPCwire",
+      "dateAccessed": "2026-05-06"
     }
   ],
   "news": [
@@ -55,6 +68,20 @@
       "url": "https://alice-bob.com/newsroom/alice-bob-showcases-advances-in-cat-qubit-fault-tolerance-at-aps-global-physics-summit/",
       "source": "Alice & Bob Newsroom",
       "date": "2026-03-11"
+    },
+    {
+      "title": "Alice & Bob awarded $3.9M ARPA-E grant for rare-earth-free magnet design using quantum computing",
+      "excerpt": "U.S. DOE ARPA-E QC³ programme awarded Alice & Bob and partners from Los Alamos National Laboratory and GE Vernova $3.9M to develop fault-tolerant quantum algorithms for discovering rare-earth-free permanent magnets.",
+      "url": "https://thequantuminsider.com/2026/03/31/alice-bob-arpae-funding-quantum-materials/",
+      "source": "The Quantum Insider",
+      "date": "2026-03-31"
+    },
+    {
+      "title": "Alice & Bob reaches 251 employees, completing hiring plan 30% ahead of schedule",
+      "excerpt": "The company hired more than 100 employees in seven months, bringing headcount to 251 and completing its hiring plan well ahead of schedule.",
+      "url": "https://www.hpcwire.com/off-the-wire/alice-bob-surpasses-hiring-targets-ahead-of-schedule-as-quantum-workforce-grows/",
+      "source": "HPCwire",
+      "date": "2026-04-16"
     }
   ]
 }

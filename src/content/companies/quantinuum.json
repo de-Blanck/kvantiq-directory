@@ -46,6 +46,21 @@
       "url": "https://en.wikipedia.org/wiki/Quantinuum",
       "title": "Quantinuum - Wikipedia",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/05/quantinuum-and-bmw-group-expand-quantum-computing-collaboration-with-new-multi-year-partnership/",
+      "title": "Quantinuum And BMW Group Expand Quantum Computing Collaboration With New Multi-Year Partnership - The Quantum Insider",
+      "dateAccessed": "2026-05-06"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quantinuum and BMW Group expand into multi-year quantum computing partnership for advanced materials science",
+      "excerpt": "The partnership extends BMW's use of successive Quantinuum H-series generations (Helios, Sol, Apollo) for molecular simulation and catalyst research, positioning it as one of the longest-sustained quantum-enterprise commitments.",
+      "url": "https://thequantuminsider.com/2026/05/05/quantinuum-and-bmw-group-expand-quantum-computing-collaboration-with-new-multi-year-partnership/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-05"
     }
   ]
 }
