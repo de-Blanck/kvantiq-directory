@@ -36,6 +36,19 @@
       "url": "https://www.crunchbase.com/organization/parityqc",
       "title": "ParityQC Crunchbase Company Profile",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2603.29379",
+      "title": "YZ-plane measurement-based quantum computation: Universality and Parity Architecture implementation",
+      "authors": "Jaroslav Kysela, Katharina Ludwig, Nitica Sakharwade, Anette Messinger, Wolfgang Lechner",
+      "datePublished": "2026-03-31"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/04/yz-plane-mbqc-parityqc-architecture/",
+      "title": "ParityQC Demonstrates YZ-Plane Measurement-Based Quantum Computation - The Quantum Insider",
+      "dateAccessed": "2026-05-06"
     }
   ],
   "news": [
@@ -52,6 +65,13 @@
       "url": "https://thequantuminsider.com/2026/04/16/parityqc-quantum-fourier-transform-benchmark/",
       "source": "The Quantum Insider",
       "date": "2026-04-16"
+    },
+    {
+      "title": "ParityQC demonstrates universal quantum computation via YZ-plane measurements, removing long-range connectivity requirements",
+      "excerpt": "Researchers show YZ-plane measurements alone achieve universal MBQC and can be embedded in ParityQC Architecture using only local interactions, reducing physical hardware demands.",
+      "url": "https://thequantuminsider.com/2026/05/04/yz-plane-mbqc-parityqc-architecture/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-04"
     }
   ]
 }

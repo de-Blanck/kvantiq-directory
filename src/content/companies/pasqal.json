@@ -40,6 +40,12 @@
       "url": "https://techcrunch.com/2026/03/06/quantum-scale-up-pasqal-plans-2b-spac-listing-promises-to-remain-french/",
       "title": "Quantum scale-up Pasqal plans $2B SPAC listing",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/04/21/pasqal-thoughts-2026-quantum-transition-real-world-deployment/",
+      "title": "Pasqal Showcases Quantum Progress at 2026 Event - The Quantum Insider",
+      "dateAccessed": "2026-05-06"
     }
   ],
   "news": [
@@ -56,6 +62,20 @@
       "url": "https://thequantuminsider.com/2026/03/04/pasqal-latest-quantum-company-to-announce-intentions-to-go-public-valued-at-2-billion/",
       "source": "The Quantum Insider",
       "date": "2026-03-05"
+    },
+    {
+      "title": "Pasqal Thoughts 2026 event marks quantum computing's shift from research to real-world deployment",
+      "excerpt": "More than 150 participants from 10+ countries gathered in Paris to discuss industry use cases in finance, energy, and telecom, and Pasqal's path toward 1,000-qubit systems and HPC integration.",
+      "url": "https://thequantuminsider.com/2026/04/21/pasqal-thoughts-2026-quantum-transition-real-world-deployment/",
+      "source": "The Quantum Insider",
+      "date": "2026-04-21"
+    },
+    {
+      "title": "PINQ² becomes exclusive Canadian distributor of Pasqal neutral-atom quantum computers",
+      "excerpt": "Partnership with PINQ² and Distriq gives Canadian enterprises and researchers access to Pasqal's neutral-atom platform for applications in energy, finance, aerospace, and materials science.",
+      "url": "https://thequantuminsider.com/2026/04/21/pinq2-distriq-exclusive-distributor-pasqal-quantum-canada/",
+      "source": "The Quantum Insider",
+      "date": "2026-04-21"
     }
   ]
 }

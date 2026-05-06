@@ -10,8 +10,8 @@
   "website": "https://www.eleqtron.com",
   "featured": false,
   "headquarters": "Siegen, Germany",
-  "employees": "20+",
-  "funding": "EUR 5M+",
+  "employees": "100+",
+  "funding": "EUR 57M",
   "accessModel": "Cloud API + on-premise systems",
   "products": [
     {
@@ -36,6 +36,18 @@
       "url": "https://www.linkedin.com/company/eleqtron/",
       "title": "eleQtron LinkedIn Company Page",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "url",
+      "url": "https://www.eu-startups.com/2026/05/germanys-eleqtron-raises-e57-million-series-a-to-scale-quantum-computing-systems-for-industrial-applications/",
+      "title": "Germany's eleQtron raises €57 million Series A - EU-Startups",
+      "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/05/eleqtron-secures-e57-million-in-series-a-funding-round/",
+      "title": "eleQtron Secures €57 Million in Series A Funding Round - The Quantum Insider",
+      "dateAccessed": "2026-05-06"
     }
   ],
   "news": [
@@ -45,6 +57,13 @@
       "url": "https://www.fz-juelich.de/en/jsc/systems/quantum-computing/juniq-facility/news/ion-hack-2026-brings-together-quantum-talent-in-julich",
       "source": "Forschungszentrum Jülich",
       "date": "2026-04-01"
+    },
+    {
+      "title": "eleQtron raises €57M Series A led by Schwarz Digits to scale trapped-ion quantum systems for industrial applications",
+      "excerpt": "One of the largest Series A rounds in quantum computing worldwide, with over €54M order backlog; funds will build production capacity and expand cloud access. Additional investors include EIC Fund, Earlybird, Ankaa Ventures, NRW.BANK, and Precitec.",
+      "url": "https://www.eu-startups.com/2026/05/germanys-eleqtron-raises-e57-million-series-a-to-scale-quantum-computing-systems-for-industrial-applications/",
+      "source": "EU-Startups",
+      "date": "2026-05-05"
     }
   ]
 }

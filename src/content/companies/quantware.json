@@ -11,7 +11,7 @@
   "featured": false,
   "headquarters": "Delft, Netherlands",
   "employees": "58",
-  "funding": "USD 33M",
+  "funding": "EUR 152M (USD 178M)",
   "accessModel": "Hardware sales (off-the-shelf QPUs) + foundry services",
   "products": [
     {
@@ -39,6 +39,33 @@
       "url": "https://www.crunchbase.com/organization/quantware",
       "title": "QuantWare Crunchbase Company Profile",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "url",
+      "url": "https://www.eu-startups.com/2026/05/quantware-raises-e152-million-in-the-largest-private-round-for-a-dedicated-quantum-processor-company/",
+      "title": "QuantWare raises €152 million in the largest private round for a dedicated quantum processor company - EU-Startups",
+      "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/05/quantware-raises-178-million-to-build-quantum-processors-at-an-industrial-scale/",
+      "title": "QuantWare Raises $178 Million to Build Quantum Processors at an Industrial Scale - The Quantum Insider",
+      "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/quantware-raises-176m-as-it-builds-kilofab-and-targets-utility-scale-quantum-processors/",
+      "title": "QuantWare Raises $176M as It Builds KiloFab and Targets Utility-Scale Quantum Processors - HPCwire",
+      "dateAccessed": "2026-05-06"
+    }
+  ],
+  "news": [
+    {
+      "title": "QuantWare closes €152M (USD 178M) Series B to build KiloFab — the world's largest open-architecture quantum chip fabrication facility",
+      "excerpt": "The round, the largest ever for a Dutch deep tech company and for any dedicated quantum processor startup worldwide, will fund a new Delft fab increasing production capacity 20x; new investors include Intel Capital and In-Q-Tel.",
+      "url": "https://www.eu-startups.com/2026/05/quantware-raises-e152-million-in-the-largest-private-round-for-a-dedicated-quantum-processor-company/",
+      "source": "EU-Startups",
+      "date": "2026-05-05"
     }
   ]
 }

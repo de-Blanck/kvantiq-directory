@@ -46,6 +46,12 @@
       "url": "https://techcrunch.com/2024/01/16/iqm-quantum-computers-raises-128m-series-a2/",
       "title": "IQM Quantum Computers raises €128M Series A2 - TechCrunch",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/iqm-to-deploy-japans-first-enterprise-purchased-quantum-computer/",
+      "title": "IQM to Deploy Japan's First Enterprise-Purchased Quantum Computer - Quantum Computing Report",
+      "dateAccessed": "2026-05-06"
     }
   ],
   "news": [
@@ -62,6 +68,13 @@
       "url": "https://itdigest.com/computer-science/quantum-computing/iqm-introduces-ai-powered-calibration-to-make-quantum-computing-enterprise-ready/",
       "source": "IT Digest",
       "date": "2026-04-15"
+    },
+    {
+      "title": "IQM deploys Japan's first enterprise quantum computer to TOYO Corporation",
+      "excerpt": "TOYO Corporation purchased a 20-qubit IQM Radiance system for delivery by end of 2026, marking the first enterprise quantum computer deployment in Japan and expanding IQM's Asia-Pacific installed base.",
+      "url": "https://thequantuminsider.com/2026/04/27/iqm-toyo-quantum-deployment/",
+      "source": "The Quantum Insider",
+      "date": "2026-04-27"
     }
   ]
 }
