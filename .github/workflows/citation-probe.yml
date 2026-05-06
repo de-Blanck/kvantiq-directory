@@ -1,0 +1,62 @@
+# .github/workflows/citation-probe.yml
+name: Citation Probe
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'   # Mondays 09:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Run citation probe
+        run: npx tsx scripts/citation-probe.ts
+        timeout-minutes: 15
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet && git diff --cached --quiet && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and open PR
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "Kvantiq Agent"
+          git config user.email "agent@kvantiq.studio"
+          BRANCH="probe/$(date +%Y-%m-%d)"
+          git checkout -b "$BRANCH"
+          git add data/probes/
+          git commit -m "data(probe): weekly run $(date +%Y-%m-%d)"
+          git push -u origin "$BRANCH"
+          gh pr create \
+            --title "Citation Probe — $(date +%Y-%m-%d)" \
+            --body "Automated weekly probe results. Append-only — auto-mergeable. See \`data/probes/runs/$(date +%Y-%m-%d).md\` for the summary." \
+            --base main \
+            --head "$BRANCH" \
+            --label "automated"
+          gh pr merge --auto --squash "$BRANCH" || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
