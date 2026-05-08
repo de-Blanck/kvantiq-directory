@@ -2,8 +2,11 @@
 name: Citation Probe
 
 on:
-  schedule:
-    - cron: '0 9 * * 1'   # Mondays 09:00 UTC
+  # Schedule disabled until LLM API keys are provisioned (see .env.example).
+  # When ready, uncomment the cron and add OPENAI_API_KEY / PERPLEXITY_API_KEY /
+  # GOOGLE_API_KEY to repo secrets (ANTHROPIC_API_KEY is already set).
+  # schedule:
+  #   - cron: '0 9 * * 1'   # Mondays 09:00 UTC
   workflow_dispatch: {}
 
 permissions:
