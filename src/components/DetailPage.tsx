@@ -208,7 +208,7 @@ export default function DetailPage(props: DetailPageProps) {
       label: '', // No label — tab already says "Overview"
       content: (
         <div className="flex flex-col gap-4">
-          <p className="body-default text-text-secondary">{props.description}</p>
+          <p className="summary body-default text-text-secondary">{props.description}</p>
           {props.overviewLinks && props.overviewLinks.length > 0 && (
             <div className="flex flex-wrap gap-2 pt-1">
               {props.overviewLinks.map((link, i) => (
