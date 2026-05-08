@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import DetailPage from '../../components/DetailPage.tsx';
 import { findRelated, type RelatedItem } from '../../lib/related';
+import { buildEventSchema } from '../../lib/jsonld/event.ts';
 
 export async function getStaticPaths() {
   const companies = await getCollection('companies');
@@ -30,17 +31,7 @@ export async function getStaticPaths() {
 
 const { challenge, related } = Astro.props;
 
-const eventLd = {
-  "@context": "https://schema.org",
-  "@type": "Event",
-  "name": challenge.name,
-  "description": challenge.description,
-  "url": challenge.website,
-  "organizer": { "@type": "Organization", "name": challenge.organizer },
-  ...(challenge.dateStart && { "startDate": challenge.dateStart }),
-  ...(challenge.dateEnd && { "endDate": challenge.dateEnd }),
-  ...(challenge.location && { "location": { "@type": "Place", "name": challenge.location } }),
-};
+const eventLd = buildEventSchema(challenge);
 
 const statusRaw = challenge.status.toLowerCase();
 const statusLabel = challenge.status.replace(/^\w/, (c: string) => c.toUpperCase());
