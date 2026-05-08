@@ -1,7 +1,6 @@
 import satori from 'satori';
 import { readFileSync } from 'node:fs';
-import { resolve } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { join } from 'node:path';
 
 export interface OgInput {
   eyebrow: string; // collection type, e.g. "COMPANY"
@@ -19,8 +18,6 @@ const COLORS = {
   accent: '#B45309',
 };
 
-const __dirname = fileURLToPath(new URL('.', import.meta.url));
-
 let fontCache: Array<{ name: string; data: Buffer; weight: number; style: 'normal' }> | null =
   null;
 
@@ -29,13 +26,16 @@ async function loadFonts() {
 
   // Use @fontsource vendored WOFF files (not CDN) so satori can render at build time.
   // Filenames confirmed: inter-latin-600-normal.woff, ibm-plex-mono-latin-400-normal.woff
-  const interPath = resolve(
-    __dirname,
-    '../../node_modules/@fontsource/inter/files/inter-latin-600-normal.woff',
+  // Use process.cwd() (project root) instead of __dirname: Astro prerenders from
+  // dist/.prerender/ so import.meta.url-based __dirname points into dist, not node_modules.
+  const root = process.cwd();
+  const interPath = join(
+    root,
+    'node_modules/@fontsource/inter/files/inter-latin-600-normal.woff',
   );
-  const monoPath = resolve(
-    __dirname,
-    '../../node_modules/@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-400-normal.woff',
+  const monoPath = join(
+    root,
+    'node_modules/@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-400-normal.woff',
   );
 
   fontCache = [
