@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ListingView from '../../components/ListingView.tsx';
+import { buildLearningResourceList } from '../../lib/jsonld/learning-resource-list.ts';
 
 const allResources = await getCollection('resources');
 const sorted = allResources.sort((a, b) => a.data.name.localeCompare(b.data.name));
@@ -43,15 +44,7 @@ const groupByOptions = [
   { key: 'openSource', label: 'Open Source' },
 ];
 
-const itemListLd = {
-  "@context": "https://schema.org", "@type": "ItemList",
-  "name": "Quantum Computing Resources",
-  "numberOfItems": allResources.length,
-  "itemListElement": sorted.map((r, i) => ({
-    "@type": "ListItem", "position": i + 1,
-    "item": { "@type": "LearningResource", "name": r.data.name, "url": r.data.website, "description": r.data.description },
-  })),
-};
+const itemListLd = buildLearningResourceList(sorted.map(r => r.data));
 ---
 <BaseLayout
   title="Quantum Computing Resources"

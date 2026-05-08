@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import DetailPage from '../../components/DetailPage.tsx';
 import { findRelated, type RelatedItem } from '../../lib/related';
+import { buildDatasetSchema } from '../../lib/jsonld/dataset.ts';
 
 export async function getStaticPaths() {
   const companies = await getCollection('companies');
@@ -30,18 +31,7 @@ export async function getStaticPaths() {
 
 const { benchmark, related } = Astro.props;
 
-const datasetLd = {
-  "@context": "https://schema.org",
-  "@type": "Dataset",
-  "name": benchmark.name,
-  "description": benchmark.description,
-  ...(benchmark.datePublished && { "datePublished": benchmark.datePublished }),
-  "citation": benchmark.sources.map((s: { type: string; url: string; title?: string }) => ({
-    "@type": s.type === 'doi' || s.type === 'arxiv' ? 'ScholarlyArticle' : 'WebPage',
-    "url": s.url,
-    ...(s.title && { "name": s.title }),
-  })),
-};
+const datasetLd = buildDatasetSchema(benchmark);
 
 const stats = [
   ...(benchmark.qubits ? [{ value: String(benchmark.qubits), label: 'Qubits' }] : []),
@@ -51,7 +41,7 @@ const stats = [
 
 const meta = [benchmark.algorithm, benchmark.category.replace(/^\w/, (c: string) => c.toUpperCase()), benchmark.qubits ? `${benchmark.qubits} qubits` : '', benchmark.framework].filter(Boolean).join(' · ');
 ---
-<BaseLayout title={benchmark.name} description={benchmark.description} jsonLd={datasetLd}>
+<BaseLayout title={benchmark.name} description={benchmark.description} jsonLd={datasetLd} ogImage={`/og-images/benchmarks/${benchmark.slug}.png`}>
   <DetailPage
     client:load
     type="Benchmark"

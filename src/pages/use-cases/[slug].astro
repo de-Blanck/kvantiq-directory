@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import DetailPage from '../../components/DetailPage.tsx';
 import { findRelated, type RelatedItem } from '../../lib/related';
+import { buildArticleSchema } from '../../lib/jsonld/article.ts';
 
 export async function getStaticPaths() {
   const companies = await getCollection('companies');
@@ -35,18 +36,7 @@ export async function getStaticPaths() {
 
 const { useCase, related, resolvedCompanies } = Astro.props;
 
-const articleLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": useCase.name,
-  "description": useCase.description,
-  "about": { "@type": "Thing", "name": useCase.industry },
-  "citation": useCase.sources.map((s: { type: string; url: string; title?: string }) => ({
-    "@type": s.type === 'doi' || s.type === 'arxiv' ? 'ScholarlyArticle' : 'WebPage',
-    "url": s.url,
-    ...(s.title && { "name": s.title }),
-  })),
-};
+const articleLd = buildArticleSchema(useCase);
 
 const categoryLabel = useCase.category.replace(/-/g, ' ').replace(/^\w/, (c: string) => c.toUpperCase());
 const stats = [
@@ -58,7 +48,7 @@ const stats = [
 
 const meta = [useCase.industry, useCase.category.replace(/^\w/, (c: string) => c.toUpperCase())].filter(Boolean).join(' · ');
 ---
-<BaseLayout title={useCase.name} description={useCase.description} jsonLd={articleLd}>
+<BaseLayout title={useCase.name} description={useCase.description} jsonLd={articleLd} ogImage={`/og-images/use-cases/${useCase.slug}.png`}>
   <DetailPage
     client:load
     type="Use Case"

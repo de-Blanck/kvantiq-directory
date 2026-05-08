@@ -51,7 +51,7 @@ const stats = [
 
 const meta = [company.country, company.type.replace(/^\w/, (c: string) => c.toUpperCase()), company.founded ? `Founded ${company.founded}` : '', company.headquarters].filter(Boolean).join(' · ');
 ---
-<BaseLayout title={company.name} description={company.description} jsonLd={orgLd}>
+<BaseLayout title={company.name} description={company.description} jsonLd={orgLd} ogImage={`/og-images/companies/${company.slug}.png`}>
   <DetailPage
     client:load
     type="Company"
