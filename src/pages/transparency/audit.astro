@@ -62,19 +62,20 @@ const hasTimeline = timelineDates.length > 0;
 const timelineData = { labels: timelineDates, values: cumulativeCounts };
 
 // --- Derived values for chart ---
-// Map confidence buckets to brand-aligned hexes (phosphor / cyan / amber warn / red error
-// — all canonical DS tokens). Charts need raw hex because Chart.js can't read CSS vars.
+// Editorial Light tokens — Chart.js needs raw hex because it can't read CSS vars.
+// Semantic gradient: HIGH = info blue (affirmative), MEDIUM = muted (neutral / unknown),
+// LOW = warn amber, DEAD = error red. Avoids the accent/warn collision in Editorial Light.
 const confidenceColors: Record<string, string> = {
-  HIGH:   '#00E6A0', // --color-accent (phosphor)
-  MEDIUM: '#00D4FF', // --color-cyan
-  LOW:    '#FFAA00', // --color-warn
-  DEAD:   '#EF4444', // --color-error
+  HIGH:   '#1D4ED8', // --color-info
+  MEDIUM: '#78716C', // --color-text-muted
+  LOW:    '#B45309', // --color-warn
+  DEAD:   '#DC2626', // --color-error
 };
 
 const confidenceData = {
   labels: confidenceDist.map((d) => d.label),
   values: confidenceDist.map((d) => d.value),
-  colors: confidenceDist.map((d) => confidenceColors[d.label] ?? '#A09A93'), // text-muted fallback
+  colors: confidenceDist.map((d) => confidenceColors[d.label] ?? '#78716C'), // text-muted fallback
 };
 
 const maxCoverageCount = Math.max(...coverageMap.map((c) => c.count), 1);
@@ -117,7 +118,7 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
                 <li class="flex items-center gap-1.5 body-sm text-text-secondary">
                   <span
                     class="inline-block w-2.5 h-2.5 rounded-full shrink-0"
-                    style={`background-color: ${confidenceColors[d.label] ?? '#A09A93'}`}
+                    style={`background-color: ${confidenceColors[d.label] ?? '#78716C'}`}
                   ></span>
                   <span class="capitalize">{d.label.toLowerCase()}</span>
                   <span class="data-md text-text-primary">{d.value}</span>
@@ -267,10 +268,10 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
               legend: { display: false },
               tooltip: {
                 callbacks: { label: (ctx) => ` ${ctx.label}: ${ctx.parsed}` },
-                bodyColor: '#F8FAFC',      // text-text-primary
-                titleColor: '#C4BEB7',     // text-text-secondary
-                backgroundColor: '#0d1117', // surface
-                borderColor: '#1b2332',    // border
+                bodyColor: '#1C1917',       // text-primary
+                titleColor: '#57534E',      // text-secondary
+                backgroundColor: '#FFFFFF', // base (lifts off warm parchment page)
+                borderColor: '#DDD8CF',     // border
                 borderWidth: 1,
               },
             },
@@ -278,7 +279,7 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
         });
       }
 
-      // Entry timeline line chart — phosphor brand line on void grid
+      // Entry timeline line chart — accent amber on warm parchment grid
       if (hasTimeline) {
         const timelineCanvas = document.getElementById('timeline-chart');
         if (timelineCanvas) {
@@ -289,12 +290,12 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
               datasets: [{
                 label: 'Total entries',
                 data: timelineData.values,
-                borderColor: '#00E6A0',                     // accent (phosphor)
-                backgroundColor: 'rgba(0, 230, 160, 0.12)', // accent-glow
+                borderColor: '#B45309',                     // accent (warm amber/rust)
+                backgroundColor: 'rgba(180, 83, 9, 0.10)',  // accent fill, subtle
                 fill: true,
                 tension: 0.3,
                 pointRadius: 3,
-                pointBackgroundColor: '#00E6A0',
+                pointBackgroundColor: '#B45309',
               }],
             },
             options: {
@@ -302,8 +303,8 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
               maintainAspectRatio: true,
               plugins: { legend: { display: false }, tooltip: { enabled: true } },
               scales: {
-                y: { ticks: { color: '#A09A93' }, grid: { color: '#1b2332' }, border: { display: false } },
-                x: { ticks: { color: '#A09A93', maxRotation: 45 }, grid: { display: false }, border: { display: false } },
+                y: { ticks: { color: '#78716C' }, grid: { color: '#DDD8CF' }, border: { display: false } },
+                x: { ticks: { color: '#78716C', maxRotation: 45 }, grid: { display: false }, border: { display: false } },
               },
             },
           });

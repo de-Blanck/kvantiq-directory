@@ -188,7 +188,7 @@ const fundingValues = hasFundingData ? JSON.stringify(fundingTimeline.map((d: an
             {
               label: 'Funding (€M)',
               data: JSON.parse(fundingValues),
-              backgroundColor: '#00D4FF', // --color-cyan, brand secondary
+              backgroundColor: '#1D4ED8', // --color-info (Editorial Light affirmative blue)
               borderRadius: 4,
               borderSkipped: false,
             },
@@ -203,12 +203,12 @@ const fundingValues = hasFundingData ? JSON.stringify(fundingTimeline.map((d: an
           },
           scales: {
             y: {
-              ticks: { color: '#A09A93' },  // text-muted
-              grid: { color: '#1b2332' },   // border
+              ticks: { color: '#78716C' },  // text-muted
+              grid: { color: '#DDD8CF' },   // border
               border: { display: false },
             },
             x: {
-              ticks: { color: '#A09A93' },  // text-muted
+              ticks: { color: '#78716C' },  // text-muted
               grid: { display: false },
               border: { display: false },
             },
