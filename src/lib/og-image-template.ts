@@ -81,7 +81,7 @@ export async function renderOgSvg(input: OgInput): Promise<string> {
               style: {
                 fontFamily: 'IBM Plex Mono',
                 fontSize: '20px',
-                color: COLORS.secondary,
+                color: COLORS.primary,
                 letterSpacing: '0.08em',
                 textTransform: 'uppercase',
               },
@@ -116,7 +116,7 @@ export async function renderOgSvg(input: OgInput): Promise<string> {
                 alignItems: 'flex-end',
                 fontFamily: 'IBM Plex Mono',
                 fontSize: '22px',
-                color: COLORS.muted,
+                color: COLORS.primary,
                 borderTop: `1px solid ${COLORS.border}`,
                 paddingTop: '20px',
               },
