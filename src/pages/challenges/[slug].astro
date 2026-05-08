@@ -80,7 +80,7 @@ const keyMetrics = [
 
 const meta = [challenge.organizer, `${statusMark}${statusLabel}`, fmtDate(challenge.dateStart)].filter(Boolean).join(' · ');
 ---
-<BaseLayout title={challenge.name} description={challenge.description} jsonLd={eventLd}>
+<BaseLayout title={challenge.name} description={challenge.description} jsonLd={eventLd} ogImage={`/og-images/challenges/${challenge.slug}.png`}>
   <DetailPage
     client:load
     type="Challenge"

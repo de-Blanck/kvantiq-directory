@@ -41,7 +41,7 @@ const stats = [
 
 const meta = [benchmark.algorithm, benchmark.category.replace(/^\w/, (c: string) => c.toUpperCase()), benchmark.qubits ? `${benchmark.qubits} qubits` : '', benchmark.framework].filter(Boolean).join(' · ');
 ---
-<BaseLayout title={benchmark.name} description={benchmark.description} jsonLd={datasetLd}>
+<BaseLayout title={benchmark.name} description={benchmark.description} jsonLd={datasetLd} ogImage={`/og-images/benchmarks/${benchmark.slug}.png`}>
   <DetailPage
     client:load
     type="Benchmark"

@@ -48,7 +48,7 @@ const stats = [
 
 const meta = [useCase.industry, useCase.category.replace(/^\w/, (c: string) => c.toUpperCase())].filter(Boolean).join(' · ');
 ---
-<BaseLayout title={useCase.name} description={useCase.description} jsonLd={articleLd}>
+<BaseLayout title={useCase.name} description={useCase.description} jsonLd={articleLd} ogImage={`/og-images/use-cases/${useCase.slug}.png`}>
   <DetailPage
     client:load
     type="Use Case"
