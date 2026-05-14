@@ -2,25 +2,28 @@
 /**
  * Weekly AI Content Sweep
  *
- * Fetches source URLs for each entry, passes content to Claude API,
- * and extracts news items. Never fabricates — only extracts from fetched content.
+ * Fetches source URLs for each entry, hands the fetched content to Claude Code
+ * via subprocess (`claude -p`), and extracts news items. Never fabricates —
+ * only extracts from fetched content.
  *
- * Usage: ANTHROPIC_API_KEY=sk-... node scripts/ai-sweep.mjs
+ * Auth: requires CLAUDE_CODE_OAUTH_TOKEN in env (subscription billing).
+ * No ANTHROPIC_API_KEY needed.
+ *
+ * Usage: CLAUDE_CODE_OAUTH_TOKEN=... node scripts/ai-sweep.mjs
  */
 
 import fs from 'fs';
 import path from 'path';
-import Anthropic from '@anthropic-ai/sdk';
+import { spawn } from 'child_process';
 
 const CONTENT_DIR = 'src/content';
 const COLLECTIONS = ['companies', 'benchmarks', 'use-cases', 'challenges', 'resources'];
 const MAX_NEWS_PER_ENTRY = 5;
-const NEWS_MAX_AGE_DAYS = 180; // 6 months
+const NEWS_MAX_AGE_DAYS = 180;
 const FETCH_TIMEOUT_MS = 10000;
+const CLAUDE_MODEL = 'claude-haiku-4-5-20251001';
+const CLAUDE_TIMEOUT_MS = 60000;
 
-const client = new Anthropic();
-
-// Strip HTML tags from fetched content
 function stripHtml(html) {
   return html
     .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
@@ -28,10 +31,9 @@ function stripHtml(html) {
     .replace(/<[^>]+>/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
-    .slice(0, 5000); // Cap at 5000 chars per source
+    .slice(0, 5000);
 }
 
-// Fetch URL content with timeout
 async function fetchContent(url) {
   try {
     const controller = new AbortController();
@@ -49,12 +51,10 @@ async function fetchContent(url) {
   }
 }
 
-// Extract domain from URL
 function getDomain(url) {
   try { return new URL(url).hostname; } catch { return ''; }
 }
 
-// Check if date is within max age
 function isRecent(dateStr) {
   const date = new Date(dateStr);
   const now = new Date();
@@ -62,12 +62,52 @@ function isRecent(dateStr) {
   return diffDays <= NEWS_MAX_AGE_DAYS;
 }
 
-// Process a single entry
+// Invoke `claude -p` as a subprocess. Token from CLAUDE_CODE_OAUTH_TOKEN env.
+// Returns the assistant's final text output (no tool use, no streaming events).
+function askClaude(prompt) {
+  return new Promise((resolve, reject) => {
+    const args = [
+      '-p', prompt,
+      '--model', CLAUDE_MODEL,
+      '--output-format', 'text',
+    ];
+    const child = spawn('claude', args, {
+      stdio: ['ignore', 'pipe', 'pipe'],
+      env: process.env,
+    });
+
+    let stdout = '';
+    let stderr = '';
+    const timer = setTimeout(() => {
+      child.kill('SIGKILL');
+      reject(new Error(`claude -p timed out after ${CLAUDE_TIMEOUT_MS}ms`));
+    }, CLAUDE_TIMEOUT_MS);
+
+    child.stdout.on('data', (chunk) => { stdout += chunk.toString('utf8'); });
+    child.stderr.on('data', (chunk) => { stderr += chunk.toString('utf8'); });
+    child.on('error', (err) => { clearTimeout(timer); reject(err); });
+    child.on('close', (code) => {
+      clearTimeout(timer);
+      if (code !== 0) {
+        reject(new Error(`claude -p exited with code ${code}: ${stderr.trim() || stdout.trim()}`));
+        return;
+      }
+      resolve(stdout.trim());
+    });
+  });
+}
+
+// Extract a JSON array from a response that may have prose wrapping.
+function extractJsonArray(text) {
+  const match = text.match(/\[[\s\S]*\]/);
+  if (!match) return null;
+  try { return JSON.parse(match[0]); } catch { return null; }
+}
+
 async function processEntry(collection, file) {
   const filePath = path.join(CONTENT_DIR, collection, file);
   const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
-  // Fetch content from all source URLs + website
   const urlsToFetch = [
     ...(data.sources || []).map(s => s.url),
     ...(data.website ? [data.website] : []),
@@ -84,12 +124,10 @@ async function processEntry(collection, file) {
     }
   }
 
-  // If ALL fetches failed, skip this entry
   if (fetchedContent.length === 0) {
     return { skipped: true, reason: 'all fetches failed' };
   }
 
-  // Ask Claude to extract news from fetched content
   const prompt = `You are given the current directory entry and freshly fetched content from its source URLs.
 Extract ONLY news items that are explicitly stated in the provided content.
 Do NOT invent, infer, or recall information from your training data.
@@ -108,52 +146,45 @@ ${fetchedContent.map(f => `--- ${f.url} ---\n${f.content}`).join('\n\n')}
 Return a JSON array of news items. Each item: { "title": "...", "excerpt": "...", "url": "...", "source": "...", "date": "YYYY-MM-DD" }
 Return ONLY the JSON array, no other text. If no news found, return [].`;
 
+  let response;
   try {
-    const response = await client.messages.create({
-      model: 'claude-haiku-4-5-20251001',
-      max_tokens: 1024,
-      messages: [{ role: 'user', content: prompt }],
-    });
-
-    const text = response.content[0].text.trim();
-    const newsItems = JSON.parse(text);
-
-    if (!Array.isArray(newsItems)) return { skipped: false, added: 0 };
-
-    // Validate: discard items with URLs not matching fetched source domains
-    const validatedNews = newsItems.filter(item => {
-      if (!item.title || !item.url || !item.date || !item.source) return false;
-      if (!/^\d{4}-\d{2}-\d{2}$/.test(item.date)) return false;
-      const itemDomain = getDomain(item.url);
-      return fetchedDomains.has(itemDomain);
-    });
-
-    if (validatedNews.length === 0) return { skipped: false, added: 0 };
-
-    // Merge with existing news, prune old, cap at max
-    const existingNews = (data.news || []).filter(n => isRecent(n.date));
-    const existingUrls = new Set(existingNews.map(n => n.url));
-    const newItems = validatedNews.filter(n => !existingUrls.has(n.url));
-
-    if (newItems.length === 0) return { skipped: false, added: 0 };
-
-    data.news = [...newItems, ...existingNews].slice(0, MAX_NEWS_PER_ENTRY);
-    fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n');
-
-    return { skipped: false, added: newItems.length };
+    response = await askClaude(prompt);
   } catch (err) {
-    return { skipped: true, reason: 'API error: ' + err.message };
+    return { skipped: true, reason: 'claude error: ' + err.message };
   }
+
+  const newsItems = extractJsonArray(response);
+  if (!Array.isArray(newsItems)) return { skipped: false, added: 0 };
+
+  const validatedNews = newsItems.filter(item => {
+    if (!item.title || !item.url || !item.date || !item.source) return false;
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(item.date)) return false;
+    const itemDomain = getDomain(item.url);
+    return fetchedDomains.has(itemDomain);
+  });
+
+  if (validatedNews.length === 0) return { skipped: false, added: 0 };
+
+  const existingNews = (data.news || []).filter(n => isRecent(n.date));
+  const existingUrls = new Set(existingNews.map(n => n.url));
+  const newItems = validatedNews.filter(n => !existingUrls.has(n.url));
+
+  if (newItems.length === 0) return { skipped: false, added: 0 };
+
+  data.news = [...newItems, ...existingNews].slice(0, MAX_NEWS_PER_ENTRY);
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n');
+
+  return { skipped: false, added: newItems.length };
 }
 
-// Main
 async function main() {
-  if (!process.env.ANTHROPIC_API_KEY) {
-    console.error('ANTHROPIC_API_KEY environment variable is required');
+  if (!process.env.CLAUDE_CODE_OAUTH_TOKEN) {
+    console.error('CLAUDE_CODE_OAUTH_TOKEN environment variable is required (run `claude setup-token` to generate one).');
     process.exit(1);
   }
 
-  console.log('=== Kvantiq Directory — Weekly AI Content Sweep ===\n');
+  console.log('=== Kvantiq Directory — Weekly AI Content Sweep ===');
+  console.log(`Model: ${CLAUDE_MODEL} (subscription auth)\n`);
 
   const results = { updated: 0, skipped: 0, total: 0, details: [] };
 

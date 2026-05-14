@@ -5,9 +5,17 @@ on:
     - cron: '0 0 * * 0'  # Sunday midnight UTC
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   sweep:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      # Subscription auth — no ANTHROPIC_API_KEY needed.
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
@@ -18,12 +26,10 @@ jobs:
 
       - run: npm ci
 
-      - name: Install Anthropic SDK
-        run: npm install @anthropic-ai/sdk
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
 
       - name: Run AI sweep
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/ai-sweep.mjs
 
       - name: Validate build
