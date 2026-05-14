@@ -2,9 +2,12 @@
 name: Citation Probe
 
 on:
-  # Schedule disabled until LLM API keys are provisioned (see .env.example).
-  # When ready, uncomment the cron and add OPENAI_API_KEY / PERPLEXITY_API_KEY /
-  # GOOGLE_API_KEY to repo secrets (ANTHROPIC_API_KEY is already set).
+  # Schedule disabled until the non-Anthropic LLM API keys are provisioned.
+  # Required repo secrets when re-enabling:
+  #   - CLAUDE_CODE_OAUTH_TOKEN (already set; subscription auth for the Anthropic adapter)
+  #   - OPENAI_API_KEY
+  #   - PERPLEXITY_API_KEY
+  #   - GOOGLE_API_KEY
   # schedule:
   #   - cron: '0 9 * * 1'   # Mondays 09:00 UTC
   workflow_dispatch: {}
@@ -30,11 +33,14 @@ jobs:
 
       - run: npm ci
 
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
       - name: Run citation probe
         run: npx tsx scripts/citation-probe.ts
         timeout-minutes: 15
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
