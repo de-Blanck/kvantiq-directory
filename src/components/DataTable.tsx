@@ -145,7 +145,8 @@ export default function DataTable({ data, columns, searchPlaceholder = 'Search..
     globalFilterFn: 'includesString',
   });
 
-  const filteredRows = table.getFilteredRowModel().rows;
+  // getRowModel() is filtered + sorted; getFilteredRowModel() is filter-only.
+  const filteredRows = table.getRowModel().rows;
   const filteredCount = filteredRows.length;
   const hasActiveFilters = globalFilter || columnFilters.length > 0;
 
