@@ -52,6 +52,12 @@
       "url": "https://quantumcomputingreport.com/iqm-to-deploy-japans-first-enterprise-purchased-quantum-computer/",
       "title": "IQM to Deploy Japan's First Enterprise-Purchased Quantum Computer - Quantum Computing Report",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/iqm-launches-hpc-integration-service-to-accelerate-hybrid-quantum-hpc-adoption/",
+      "title": "IQM Launches HPC Integration Service to Accelerate Hybrid Quantum-HPC Adoption - HPCwire",
+      "dateAccessed": "2026-05-17"
     }
   ],
   "news": [
@@ -75,6 +81,13 @@
       "url": "https://thequantuminsider.com/2026/04/27/iqm-toyo-quantum-deployment/",
       "source": "The Quantum Insider",
       "date": "2026-04-27"
+    },
+    {
+      "title": "IQM launches HPC Integration Service to run quantum computers as Slurm nodes in supercomputing centers",
+      "excerpt": "Turnkey service integrates IQM Radiance systems into Slurm-managed HPC environments via the open-source QDMI interface, enabling quantum jobs to be submitted alongside CPUs and GPUs. Already running in production at LRZ Munich.",
+      "url": "https://www.hpcwire.com/off-the-wire/iqm-launches-hpc-integration-service-to-accelerate-hybrid-quantum-hpc-adoption/",
+      "source": "HPCwire",
+      "date": "2026-05-12"
     }
   ]
 }
