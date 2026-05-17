@@ -1,39 +1,45 @@
 @import "tailwindcss";
 
 @theme {
-  /* Marketing-Dark — Kvantiq Studio brand palette (kvs tokens) */
-  --color-void: #06090F;        /* page bg — kvs void.base */
-  --color-base: #0d1117;         /* cards — kvs void.elevated */
-  --color-surface: #0d1117;      /* header/footer — void.elevated */
-  --color-elevated: #141b25;    /* hover/active surfaces */
-  --color-border: #1b2332;      /* kvs void.border */
+  /* Editorial Light — warm broken-white, Swiss-editorial-inspired */
+  --color-void: #F8F6F1;         /* page bg — warm parchment */
+  --color-base: #FFFFFF;         /* card bg — clean white */
+  --color-surface: #F2EFE9;      /* header/footer/how-to section */
+  --color-elevated: #EBE7E0;     /* hover/active surfaces, stat boxes */
+  --color-border: #DDD8CF;       /* all borders — warm taupe */
 
-  --color-text-primary: #F8FAFC;   /* slate-50 — primary text */
-  --color-text-secondary: #C4BEB7; /* kvs marketing-text-secondary */
-  --color-text-muted: #A09A93;     /* kvs marketing-text-tertiary */
+  --color-text-primary: #1C1917;   /* warm near-black */
+  --color-text-secondary: #57534E; /* stone-600 */
+  --color-text-muted: #78716C;     /* stone-500 */
 
-  --color-accent: #00E6A0;        /* kvs phosphor — brand signature */
-  --color-accent-hover: #00CC8E;  /* kvs phosphor-hover */
-  --color-accent-glow: rgba(0, 230, 160, 0.12);
-  --color-cyan: #00D4FF;          /* kvs cyan — secondary accent */
+  --color-accent: #B45309;        /* amber-700 — editorial rust */
+  --color-accent-hover: #92400E;  /* amber-800 */
+  --color-accent-glow: rgba(180, 83, 9, 0.10);
 
-  --color-info: #00E6A0;          /* CTAs use phosphor on dark */
-  --color-warn: #FFAA00;          /* platform-dark warn amber */
-  --color-error: #EF4444;         /* red error on dark */
+  --color-info: #1D4ED8;          /* blue-700 — nav active, CTAs */
+  --color-warn: #B45309;          /* same amber as accent on light */
+  --color-error: #DC2626;         /* red-600 */
+
+  /* Brand chrome — phosphor + cyan are preserved ONLY for the brand
+     wave logo, ambient SVG, hairline, and nav underline. They are the
+     Kvantiq Studio brand signature and stay constant across themes. */
+  --color-brand: #00E6A0;         /* Kvantiq phosphor — brand mark only */
+  --color-brand-cyan: #00D4FF;    /* Kvantiq cyan — brand mark only */
 
   /* Typography — Kvantiq Studio brand fonts (Geist + IBM Plex Mono) */
   --font-family-heading: 'Geist', system-ui, sans-serif;
   --font-family-body: 'Geist', system-ui, sans-serif;
   --font-family-mono: 'IBM Plex Mono', monospace;
 
-  /* Shadows — dark-surface elevation */
-  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.35);
-  --shadow-elevated: 0 4px 16px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 24px rgba(0, 230, 160, 0.18);
+  /* Shadows — light-surface elevation. Glow is `none` on Editorial Light. */
+  --shadow-subtle: 0 1px 3px rgba(28, 25, 23, 0.06);
+  --shadow-elevated: 0 4px 16px rgba(28, 25, 23, 0.08);
+  --shadow-glow: none;
 
-  /* Quantum gradient — phosphor → cyan, the Kvantiq brand signature */
+  /* Quantum gradient — phosphor → cyan, the Kvantiq brand signature.
+     Reserved for hairline + nav underline + .text-gradient-quantum. */
   --gradient-quantum: linear-gradient(135deg, #00E6A0 0%, #00D4FF 100%);
-  --gradient-quantum-soft: linear-gradient(135deg, rgba(0, 230, 160, 0.12) 0%, rgba(0, 212, 255, 0.12) 100%);
+  --gradient-quantum-soft: linear-gradient(135deg, rgba(0, 230, 160, 0.10) 0%, rgba(0, 212, 255, 0.10) 100%);
 
   /* ─────────────────────────────────────────
      Tailwind text-scale overrides —
@@ -199,7 +205,7 @@ body {
 :focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 3px;
-  box-shadow: 0 0 0 5px rgba(0, 230, 160, 0.18);
+  box-shadow: 0 0 0 5px rgba(180, 83, 9, 0.18);
   border-radius: 2px;
 }
 
@@ -329,21 +335,21 @@ header nav ul a.nav-active::after {
   }
 }
 
-/* Submit CTA: phosphor base + quantum glow on hover (no transform — layout-shift-free) */
+/* Submit CTA: info-blue base + soft glow on hover (no transform — layout-shift-free) */
 .btn-quantum {
   transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1), background-color 160ms ease-out;
 }
 .btn-quantum:hover {
-  box-shadow: 0 0 0 1px rgba(0, 212, 255, 0.4), 0 6px 20px rgba(0, 230, 160, 0.22);
+  box-shadow: 0 0 0 1px rgba(29, 78, 216, 0.35), 0 6px 20px rgba(29, 78, 216, 0.18);
 }
 
-/* Table rows: subtle bg change + inner glow on hover (no left-edge bar) */
+/* Table rows: subtle bg change + warm inner tint on hover (no left-edge bar) */
 tbody tr {
   transition: background-color 160ms ease-out, box-shadow 200ms ease-out;
 }
 tbody tr:hover {
   background-color: var(--color-elevated);
-  box-shadow: inset 0 0 40px rgba(0, 230, 160, 0.05);
+  box-shadow: inset 0 0 40px rgba(180, 83, 9, 0.04);
 }
 
 /* Cards: localized "aurora" edge gradient that traces the border near the cursor.
@@ -370,9 +376,9 @@ article.rounded-lg::before {
   padding: 1px;
   background: radial-gradient(
     150px circle at var(--mouse-x) var(--mouse-y),
-    #00E6A0 0%,
-    #00D4FF 35%,
-    transparent 65%
+    var(--color-accent) 0%,
+    var(--color-info) 45%,
+    transparent 70%
   );
   -webkit-mask:
     linear-gradient(#000, #000) content-box,
@@ -394,7 +400,7 @@ article.rounded-lg:hover::before {
 .card-hover:hover,
 [class*="rounded-card"]:hover,
 article.rounded-lg:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 0 16px rgba(0, 230, 160, 0.08);
+  box-shadow: 0 8px 24px rgba(28, 25, 23, 0.08), 0 0 16px rgba(180, 83, 9, 0.06);
 }
 
 /* Respect user preference — kill all motion for reduced-motion users */

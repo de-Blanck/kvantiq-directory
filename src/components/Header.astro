@@ -22,10 +22,10 @@ const currentPath = Astro.url.pathname;
         aria-hidden="true"
         class="nav-logo__mark shrink-0"
       >
-        <path class="nav-logo__stroke" d="M0 3.416C4.923 13.877 9.846 13.877 14.77 3.416" stroke="#00E6A0" stroke-width="1.846" stroke-linecap="round" stroke-linejoin="round" />
-        <path class="nav-logo__stroke" d="M0 21.877C4.923 11.416 9.846 11.416 14.77 21.877" stroke="#00E6A0" stroke-width="1.846" stroke-linecap="round" stroke-linejoin="round" />
-        <path class="nav-logo__stroke" d="M1.847 0.646C5.539 9.877 9.231 9.877 12.924 0.646" stroke="#00E6A0" stroke-width="1.292" stroke-linecap="round" stroke-linejoin="round" />
-        <path class="nav-logo__stroke" d="M1.847 24.646C5.539 15.416 9.231 15.416 12.924 24.646" stroke="#00E6A0" stroke-width="1.292" stroke-linecap="round" stroke-linejoin="round" />
+        <path class="nav-logo__stroke" d="M0 3.416C4.923 13.877 9.846 13.877 14.77 3.416" stroke="var(--color-brand)" stroke-width="1.846" stroke-linecap="round" stroke-linejoin="round" />
+        <path class="nav-logo__stroke" d="M0 21.877C4.923 11.416 9.846 11.416 14.77 21.877" stroke="var(--color-brand)" stroke-width="1.846" stroke-linecap="round" stroke-linejoin="round" />
+        <path class="nav-logo__stroke" d="M1.847 0.646C5.539 9.877 9.231 9.877 12.924 0.646" stroke="var(--color-brand)" stroke-width="1.292" stroke-linecap="round" stroke-linejoin="round" />
+        <path class="nav-logo__stroke" d="M1.847 24.646C5.539 15.416 9.231 15.416 12.924 24.646" stroke="var(--color-brand)" stroke-width="1.292" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
       <span class="nav-logo__wordmark flex flex-col items-end leading-none font-mono uppercase" aria-hidden="true">
         <span class="nav-logo__kvantiq font-semibold text-text-primary" style="font-size: 20px; letter-spacing: 0.12em;">Kvantiq</span>
@@ -48,7 +48,7 @@ const currentPath = Astro.url.pathname;
     </ul>
 
     <!-- Desktop Submit Button -->
-    <a href="/submit/" class="btn-quantum hidden md:block rounded-md bg-accent px-3 py-1.5 text-sm font-medium text-void">
+    <a href="/submit/" class="btn-quantum hidden md:block rounded-md bg-info px-3 py-1.5 text-sm font-medium text-white">
       Submit Listing
     </a>
 
@@ -108,7 +108,7 @@ const currentPath = Astro.url.pathname;
 
       <!-- Mobile Submit Button -->
       <div class="mt-auto p-4">
-        <a href="/submit/" class="btn-quantum block text-center rounded-md bg-accent px-4 py-3 text-base font-medium text-void">
+        <a href="/submit/" class="btn-quantum block text-center rounded-md bg-info px-4 py-3 text-base font-medium text-white">
           Submit Listing
         </a>
       </div>
