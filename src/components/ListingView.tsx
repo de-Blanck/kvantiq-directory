@@ -64,7 +64,13 @@ export default function ListingView({
     tableColumns.forEach(col => {
       if (col.filterable) {
         const val = params.get(col.key);
-        if (val) filters[col.key] = val;
+        if (val) {
+          // Canonicalize URL value to the actual data casing so the
+          // <select> renders the active option correctly.
+          const dataValues = [...new Set(tableData.map(r => String(r[col.key] ?? '')).filter(Boolean))];
+          const match = dataValues.find(v => v.toLowerCase() === val.toLowerCase());
+          filters[col.key] = match ?? val;
+        }
       }
     });
     if (Object.keys(filters).length) setColumnFilters(filters);
@@ -155,7 +161,9 @@ export default function ListingView({
 
     const matches = (row: DataTableRow) => {
       for (const [key, val] of filterEntries) {
-        if (String(row[key] ?? '') !== val) return false;
+        // Case-insensitive equals so `?country=germany` and `?country=Germany`
+        // both match data values like "Germany".
+        if (String(row[key] ?? '').toLowerCase() !== val.toLowerCase()) return false;
       }
       if (searchLower) {
         const haystack = colKeys.map(k => String(row[k] ?? '').toLowerCase()).join(' ');
