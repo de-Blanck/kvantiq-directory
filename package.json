@@ -16,7 +16,6 @@
     "test": "tsx scripts/run-tests.ts"
   },
   "dependencies": {
-    "@anthropic-ai/claude-agent-sdk": "^0.2.81",
     "@astrojs/react": "^5.0.1",
     "@astrojs/sitemap": "^3.7.1",
     "@fontsource/ibm-plex-mono": "^5.2.7",
