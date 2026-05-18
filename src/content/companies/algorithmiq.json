@@ -1,17 +1,17 @@
 {
-  "name": "Algorithmiq Oy",
+  "name": "Algorithmiq",
   "slug": "algorithmiq",
-  "country": "Finland",
-  "region": "nordics",
+  "country": "Italy",
+  "region": "southern-europe",
   "type": "software",
   "tags": ["quantum-algorithms", "life-sciences", "drug-discovery", "quantum-chemistry"],
   "founded": 2020,
-  "description": "Algorithmiq develops quantum algorithms for life sciences and drug discovery applications. The company focuses on creating quantum-enhanced computational methods for molecular simulations and pharmaceutical research. Algorithmiq combines quantum computing expertise with domain knowledge in chemistry and biology to accelerate drug development.",
+  "description": "Algorithmiq develops quantum algorithms for life sciences and drug discovery applications. The company focuses on creating quantum-enhanced computational methods for molecular simulations and pharmaceutical research. Originally founded in Helsinki and backed by Finnish quantum research, Algorithmiq relocated its global headquarters to Milan, Italy in May 2026 following an EUR 18M funding round — Italy's largest quantum VC investment to date.",
   "website": "https://algorithmiq.fi",
   "featured": false,
-  "headquarters": "Helsinki, Finland",
+  "headquarters": "Milan, Italy",
   "employees": "46",
-  "funding": "EUR 20M+",
+  "funding": "EUR 36M+",
   "accessModel": "Software licensing + consulting",
   "products": [
     {
@@ -24,22 +24,43 @@
     }
   ],
   "highlights": [
-    "Founded in Helsinki with deep roots in Finnish quantum research ecosystem",
-    "Raised over EUR 20M to advance quantum algorithms for drug discovery",
-    "Combines quantum computing expertise with domain knowledge in chemistry and biology"
+    "Raised EUR 18M in May 2026 — Italy's largest-ever quantum VC investment — led by United Ventures and CDP Venture Capital",
+    "Relocated global headquarters from Helsinki to Milan in May 2026, bringing total funding to EUR 36M",
+    "Combines quantum computing expertise with domain knowledge in chemistry and biology for pharmaceutical R&D"
   ],
   "sources": [
     {
       "type": "website",
       "url": "https://algorithmiq.fi",
       "title": "Algorithmiq Official Website",
-      "dateAccessed": "2026-03-19"
+      "dateAccessed": "2026-05-18"
     },
     {
       "type": "url",
       "url": "https://www.goodnewsfinland.com/algorithmiq-raises-4-million-to-develop-quantum-algorithms-for-life-sciences/",
-      "title": "Algorithmiq raises funding to develop quantum algorithms for life sciences - Good News Finland",
+      "title": "Algorithmiq raises funding to develop quantum algorithms for life sciences — Good News Finland",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://tech.eu/2026/05/11/algorithmiq-moves-global-hq-to-milan-and-raises-eur18m-in-italys-largest-quantum-vc-round/",
+      "title": "Algorithmiq moves global HQ to Milan and raises EUR 18M in Italy's largest quantum VC round — Tech.eu",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/12/algorithmiq-raises-e18-million-establishes-headquarters-in-milan/",
+      "title": "Algorithmiq Raises EUR 18 Million, Establishes Headquarters in Milan — The Quantum Insider",
+      "dateAccessed": "2026-05-18"
+    }
+  ],
+  "news": [
+    {
+      "title": "Algorithmiq relocates global HQ from Helsinki to Milan and raises EUR 18M — Italy's largest quantum VC round",
+      "excerpt": "Algorithmiq established Milan as its global headquarters following an EUR 18M round led by United Ventures and CDP Venture Capital, Italy's largest-ever quantum startup investment. The company retains operations in Finland and brings total funding to EUR 36M. The move follows Italy's National Quantum Strategy launched in 2025.",
+      "url": "https://tech.eu/2026/05/11/algorithmiq-moves-global-hq-to-milan-and-raises-eur18m-in-italys-largest-quantum-vc-round/",
+      "source": "Tech.eu",
+      "date": "2026-05-11"
     }
   ]
 }

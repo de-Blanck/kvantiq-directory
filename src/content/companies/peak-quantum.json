@@ -1,0 +1,56 @@
+{
+  "name": "Peak Quantum",
+  "slug": "peak-quantum",
+  "country": "Germany",
+  "region": "dach",
+  "type": "hardware",
+  "tags": ["superconducting", "error-protection", "quantum-hardware", "chips", "manufacturing"],
+  "founded": 2024,
+  "description": "Peak Quantum is a Munich-based spin-off of the Walther-Meissner-Institute (WMI) at the Technical University of Munich that develops inherently error-protected superconducting quantum processors. Unlike most quantum hardware approaches that apply error correction in software, Peak Quantum integrates error protection directly into the physical qubit architecture to reduce system complexity. The company is part of the SUPREME EU Chips Act pilot manufacturing line for quantum processors.",
+  "website": "https://peakquantum.de",
+  "featured": false,
+  "headquarters": "Munich, Germany",
+  "employees": "5-15",
+  "funding": "EUR 5M+",
+  "accessModel": "QPU supply + R&D partnerships",
+  "highlights": [
+    "Spin-off of the Walther-Meissner-Institute at TU Munich, one of Europe's leading superconducting quantum research groups",
+    "Operates the SUPREME European pilot production line for quantum processors under the EU Chips Act",
+    "Raised EUR 2.2M pre-seed in April 2026, bringing total funding to EUR 5M+ including EU Chips Act subsidies"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://peakquantum.de",
+      "title": "Peak Quantum Official Website",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/04/15/peak-quantum-funding-superconducting-chips/",
+      "title": "Peak Quantum: German Quantum Startup Receives EUR 2.2 Million — The Quantum Insider",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://tech.eu/2026/04/14/peak-quantum-reaches-eur5m-in-total-funding-for-quantum-chips/",
+      "title": "Peak Quantum reaches EUR 5M in total funding for quantum chips — Tech.eu",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://www.munich-quantum-valley.de/news-events/detail/peakquantum-secures-five-million-in-total-funding",
+      "title": "PeakQuantum secures five million in total funding — Munich Quantum Valley",
+      "dateAccessed": "2026-05-18"
+    }
+  ],
+  "news": [
+    {
+      "title": "Peak Quantum closes EUR 2.2M pre-seed round, reaches EUR 5M total funding for error-protected quantum chips",
+      "excerpt": "Munich-based Peak Quantum, a WMI/TU Munich spin-off, closed a EUR 2.2M pre-seed led by Cloudberry Ventures with United Founders and QAI Ventures. The company's total funding exceeds EUR 5M including EU Chips Act subsidies, supporting development of its SUPREME pilot quantum processor manufacturing line.",
+      "url": "https://tech.eu/2026/04/14/peak-quantum-reaches-eur5m-in-total-funding-for-quantum-chips/",
+      "source": "Tech.eu",
+      "date": "2026-04-14"
+    }
+  ]
+}

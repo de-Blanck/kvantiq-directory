@@ -1,0 +1,68 @@
+{
+  "name": "Qutwo",
+  "slug": "qutwo",
+  "country": "Finland",
+  "region": "nordics",
+  "type": "software",
+  "tags": ["quantum-classical", "orchestration", "ai", "enterprise", "hybrid"],
+  "founded": 2026,
+  "description": "Qutwo is a Helsinki-based quantum-AI orchestration company that routes enterprise workloads across classical, quantum-inspired, and quantum hardware through its Qutwo OS platform. Founded in February 2026 by Peter Sarlin (former Silo AI CEO) and co-founders from IQM Quantum Computers and Silo AI, the company targets enterprise AI and optimization use cases that will migrate to quantum hardware as the technology matures.",
+  "website": "https://qutwo.com",
+  "featured": false,
+  "headquarters": "Helsinki, Finland",
+  "employees": "50+",
+  "funding": "EUR 25M",
+  "accessModel": "Software platform + enterprise partnerships",
+  "products": [
+    {
+      "name": "Qutwo OS",
+      "description": "Orchestration layer that routes AI and optimization workloads across classical, quantum-inspired, and quantum hardware based on task requirements and hardware availability"
+    }
+  ],
+  "highlights": [
+    "Founded by Peter Sarlin, who sold Silo AI to AMD for $665M in 2024, with co-founders from IQM Quantum Computers and Silo AI",
+    "Raised EUR 25M angel round in May 2026 at EUR 325M valuation, backed by Yuri Milner, Xavier Niel, and Niklas Zennstrom",
+    "Secured over EUR 20M in contracted revenue within two months of launch through partnerships with Zalando and OP Pohjola"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://qutwo.com",
+      "title": "Qutwo Official Website",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://techcrunch.com/2026/05/05/peter-sarlins-qutwo-reaches-380m-valuation-in-angel-round/",
+      "title": "Peter Sarlin's QuTwo reaches $380M valuation in angel round — TechCrunch",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://tech.eu/2026/05/06/peter-sarlin-s-ai-startup-qutwo-hits-325m-valuation-months-after-launch/",
+      "title": "Peter Sarlin's AI startup Qutwo hits EUR 325M valuation months after launch — Tech.eu",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/qutwo-raises-e25m-29-4m-usd-angel-round-to-bridge-enterprise-ai-and-quantum-computing/",
+      "title": "Qutwo Raises EUR 25M Angel Round to Bridge Enterprise AI and Quantum Computing — Quantum Computing Report",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/06/qutwo-raises-e25-million-to-build-hybrid-quantum-classical-platform/",
+      "title": "QuTwo Raises EUR 25 Million to Build Hybrid Quantum-Classical Platform — The Quantum Insider",
+      "dateAccessed": "2026-05-18"
+    }
+  ],
+  "news": [
+    {
+      "title": "Qutwo raises EUR 25M angel round at EUR 325M valuation to bridge enterprise AI and quantum computing",
+      "excerpt": "Helsinki-based Qutwo, founded by Silo AI CEO Peter Sarlin with co-founders from IQM and Silo AI, raised EUR 25M from Yuri Milner, Xavier Niel, and Niklas Zennstrom. The company has already secured EUR 20M in contracted revenue through design partnerships with Zalando and OP Pohjola.",
+      "url": "https://techcrunch.com/2026/05/05/peter-sarlins-qutwo-reaches-380m-valuation-in-angel-round/",
+      "source": "TechCrunch",
+      "date": "2026-05-05"
+    }
+  ]
+}

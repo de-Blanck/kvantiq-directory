@@ -11,7 +11,7 @@
   "featured": false,
   "headquarters": "London, United Kingdom",
   "employees": "100+",
-  "funding": "GBP 62M+",
+  "funding": "USD 160M+",
   "accessModel": "Hardware development + government contracts",
   "products": [
     {
@@ -22,7 +22,7 @@
   "highlights": [
     "Delivered the first full-stack silicon CMOS quantum computer to the UK National Quantum Computing Centre",
     "Advanced to DARPA Quantum Benchmarking Initiative Stage B in 2025",
-    "Founded by researchers from UCL and Oxford with GBP 62M+ in funding"
+    "Raised USD 160M Series C in May 2026, led by the EU Scaleup Europe Fund in its first major late-stage investment"
   ],
   "sources": [
     {
@@ -42,6 +42,21 @@
       "url": "https://quantumcomputingreport.com/quantum-motion-delivers-full-stack-silicon-cmos-quantum-computer-to-uks-nqcc/",
       "title": "Quantum Motion Delivers Full-Stack Silicon CMOS Quantum Computer to UK's NQCC - Quantum Computing Report",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thenextweb.com/news/quantum-motion-160m-eu-scaleup-europe-fund-first-investment",
+      "title": "Quantum Motion lands $160M in EU's first major late-stage commitment — The Next Web",
+      "dateAccessed": "2026-05-18"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quantum Motion raises USD 160M Series C led by EU Scaleup Europe Fund",
+      "excerpt": "The EU's new Scaleup Europe Fund made its first major late-stage investment by leading a USD 160M Series C in Quantum Motion, the UK silicon CMOS spin-qubit company. The round follows Quantum Motion's delivery of a full-stack silicon CMOS quantum computer to the UK NQCC and advancement to DARPA QBI Stage B.",
+      "url": "https://thequantuminsider.com/2026/05/07/new-investment-in-quantum-motion-strengthens-europes-push-for-scalable-quantum-computing/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-07"
     }
   ]
 }
