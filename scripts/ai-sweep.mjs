@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Weekly AI Content Sweep
+ * AI Content Sweep — runs every 5 calendar days.
  *
  * Fetches source URLs for each entry, hands the fetched content to Claude Code
  * via subprocess (`claude -p`), and extracts news items. Never fabricates —
@@ -183,7 +183,7 @@ async function main() {
     process.exit(1);
   }
 
-  console.log('=== Kvantiq Directory — Weekly AI Content Sweep ===');
+  console.log('=== Kvantiq Directory — AI Content Sweep ===');
   console.log(`Model: ${CLAUDE_MODEL} (subscription auth)\n`);
 
   const results = { updated: 0, skipped: 0, total: 0, details: [] };

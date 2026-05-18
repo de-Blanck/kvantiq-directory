@@ -1,8 +1,10 @@
-name: Weekly AI Content Sweep
+name: AI Content Sweep
+
+# Runs every 5 calendar days, gated identically to the agent workflow.
 
 on:
   schedule:
-    - cron: '0 0 * * 0'  # Sunday midnight UTC
+    - cron: '0 0 * * *'      # Daily fire; gated by cadence job below.
   workflow_dispatch:
 
 permissions:
@@ -10,7 +12,31 @@ permissions:
   pull-requests: write
 
 jobs:
+  cadence:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - id: check
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "[cadence] Manual trigger — running."
+            exit 0
+          fi
+          DOY=$(date -u +%j)
+          if [ $((10#$DOY % 5)) = "0" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "[cadence] Day-of-year $DOY divisible by 5 — running."
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "[cadence] Day-of-year $DOY — skipping (every-5-days cadence)."
+          fi
+
   sweep:
+    needs: cadence
+    if: needs.cadence.outputs.run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:
@@ -39,10 +65,10 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'content: weekly AI content sweep'
-          title: 'content: weekly AI content sweep'
+          commit-message: 'content: AI content sweep'
+          title: 'content: AI content sweep'
           body: |
-            ## Weekly AI Content Sweep
+            ## AI Content Sweep
 
             Automated content freshness check. News items extracted from source URLs only — never fabricated from AI memory.
 
@@ -51,6 +77,6 @@ jobs:
             - [ ] No fabricated funding rounds or partnerships
             - [ ] All news URLs resolve to real pages
             - [ ] Build passes (CI will verify)
-          branch: ai-sweep/weekly
+          branch: ai-sweep/auto
           labels: ai-sweep
           delete-branch: true

@@ -1,16 +1,46 @@
-name: Weekly Kvantiq Agent
+name: Kvantiq Agent
+
+# Runs every 5 calendar days. GitHub Actions cron has no native "every N days"
+# operator (using */5 in day-of-month clusters awkwardly at month boundaries),
+# so the cron fires daily and the `cadence` job exits unless day-of-year is
+# divisible by 5. The expensive `agent` job only spins up on those days.
+# Wobble: one ~6-day gap at the Dec → Jan boundary when DOY resets to 1.
 
 on:
   schedule:
-    - cron: '17 8 * * 0'  # Sundays ~08:17 UTC
-  workflow_dispatch: {}     # Manual trigger
+    - cron: '17 8 * * *'      # Daily fire; gated by cadence job below.
+  workflow_dispatch: {}        # Manual trigger always runs.
 
 permissions:
   contents: write
   pull-requests: write
 
 jobs:
-  weekly-audit:
+  cadence:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - id: check
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "[cadence] Manual trigger — running."
+            exit 0
+          fi
+          DOY=$(date -u +%j)
+          if [ $((10#$DOY % 5)) = "0" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "[cadence] Day-of-year $DOY divisible by 5 — running."
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "[cadence] Day-of-year $DOY — skipping (every-5-days cadence)."
+          fi
+
+  agent:
+    needs: cadence
+    if: needs.cadence.outputs.run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 50
 
@@ -76,14 +106,14 @@ jobs:
         run: |
           git config user.name "Kvantiq Agent"
           git config user.email "agent@kvantiq.studio"
-          BRANCH="weekly/$(date +%Y-%m-%d)"
+          BRANCH="agent/$(date +%Y-%m-%d)"
           git checkout -b "$BRANCH" 2>/dev/null || git checkout "$BRANCH"
           git add -A
-          git commit -m "chore: weekly agent run $(date +%Y-%m-%d)" || true
+          git commit -m "chore: agent run $(date +%Y-%m-%d)" || true
           git push -u origin "$BRANCH"
           gh pr create \
-            --title "Weekly Agent — $(date +%Y-%m-%d)" \
-            --body "Automated weekly directory maintenance. Review changes before merging." \
+            --title "Agent Run — $(date +%Y-%m-%d)" \
+            --body "Automated 5-day directory maintenance. Review changes before merging." \
             --base main \
             --head "$BRANCH" || true
         env:

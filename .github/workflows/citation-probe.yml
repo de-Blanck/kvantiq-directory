@@ -8,8 +8,11 @@ on:
   #   - OPENAI_API_KEY
   #   - PERPLEXITY_API_KEY
   #   - GOOGLE_API_KEY
+  # When uncommented the probe will inherit the every-5-days cadence used by
+  # the other workflows. The simplest activation is to copy the two-job
+  # cadence pattern from weekly-agent.yml (daily cron + DOY-mod-5 gate).
   # schedule:
-  #   - cron: '0 9 * * 1'   # Mondays 09:00 UTC
+  #   - cron: '0 9 * * *'   # Daily fire; add a sibling `cadence` job to gate.
   workflow_dispatch: {}
 
 permissions:
@@ -58,11 +61,11 @@ jobs:
           BRANCH="probe/$(date +%Y-%m-%d)"
           git checkout -b "$BRANCH"
           git add data/probes/
-          git commit -m "data(probe): weekly run $(date +%Y-%m-%d)"
+          git commit -m "data(probe): run $(date +%Y-%m-%d)"
           git push -u origin "$BRANCH"
           gh pr create \
             --title "Citation Probe — $(date +%Y-%m-%d)" \
-            --body "Automated weekly probe results. Append-only — auto-mergeable. See \`data/probes/runs/$(date +%Y-%m-%d).md\` for the summary." \
+            --body "Automated probe results. Append-only — auto-mergeable. See \`data/probes/runs/$(date +%Y-%m-%d).md\` for the summary." \
             --base main \
             --head "$BRANCH" \
             --label "automated"

@@ -1,5 +1,6 @@
 /**
- * Kvantiq Weekly Agent — prompt builder.
+ * Kvantiq Agent — prompt builder. Runs on a 5-day cadence (gated in the
+ * GitHub Actions workflow by day-of-year mod 5).
  *
  * Composes the per-run prompt (date, sources, pending items, workflow phases)
  * and writes it to data/weekly-agent-prompt.md. The GitHub Action then feeds
@@ -8,7 +9,8 @@
  *
  * The agentic loop, tool wiring, and turn limits previously lived in this
  * file via @anthropic-ai/claude-agent-sdk. That moved to the action so the
- * subscription auth path works.
+ * subscription auth path works. Script + output filenames retain "weekly"
+ * naming; renaming cascades through CI/docs/history, separate workstream.
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
@@ -50,9 +52,9 @@ function buildPendingContext(): string {
 
 const TODAY = new Date().toISOString().split('T')[0];
 
-const AGENT_PROMPT = `# Kvantiq Weekly Agent Run — ${TODAY}
+const AGENT_PROMPT = `# Kvantiq Agent Run — ${TODAY}
 
-Today's date is **${TODAY}**.
+Today's date is **${TODAY}**. Cadence: every 5 calendar days.
 
 ## Sources
 
@@ -63,19 +65,19 @@ ${buildPendingContext()}
 
 ---
 
-# Weekly Workflow
+# Workflow
 
-Execute the full weekly workflow as defined in your system prompt:
+Execute the full agent workflow as defined in your system prompt:
 
-**Phase 0 — Startup:** Run SQLite integrity check. Process any pending items listed above. Check for an open weekly PR — if one exists, push to it instead of creating a new one.
+**Phase 0 — Startup:** Run SQLite integrity check. Process any pending items listed above. Check for an open agent PR for today — if one exists, push to it instead of creating a new one.
 
 **Phase 1 — Research:** Search every source above for new companies and events. Apply the entry quality gate. Cap at 10 new entries per PR. Queue overflow in \`data/discovery-queue.json\`.
 
 **Phase 2 — Audit:** For every existing entry in \`src/content/companies/\`, do a tiered audit: HTTP HEAD check on all URLs (use Bash with \`curl -I --max-time 10\`), web search for 90-day activity signals, assign confidence scores, record in the audits table.
 
-**Phase 3 — Act:** Write new JSON files to \`src/content/{collection}/\`. Update stale entries. Update the SQLite database. Create a git branch named \`weekly/${TODAY}\`. Commit all changes. Open a PR via \`gh pr create\`. Create ClickUp tasks for anything needing human judgment using the create_clickup_task MCP tool. Send alert emails for major events using the send_email MCP tool.
+**Phase 3 — Act:** Write new JSON files to \`src/content/{collection}/\`. Update stale entries. Update the SQLite database. Create a git branch named \`agent/${TODAY}\`. Commit all changes. Open a PR via \`gh pr create\`. Create ClickUp tasks for anything needing human judgment using the create_clickup_task MCP tool. Send alert emails for major events using the send_email MCP tool.
 
-**Phase 4 — Report:** Add a \`market_snapshots\` row. Send the weekly digest email to hi@kvantiq.studio. Log sources_checked.
+**Phase 4 — Report:** Add a \`market_snapshots\` row. Send the digest email to hi@kvantiq.studio covering the last 5 days of directory updates + intelligence signals. Log sources_checked.
 
 **Final step:** Run \`npx tsx scripts/generate-transparency-data.ts\` and commit the updated transparency data files.
 
