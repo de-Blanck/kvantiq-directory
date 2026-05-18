@@ -4,9 +4,13 @@ name: Citation Probe
 on:
   # Schedule disabled until LLM API keys are provisioned (see .env.example).
   # When ready, uncomment the cron and add OPENAI_API_KEY / PERPLEXITY_API_KEY /
-  # GOOGLE_API_KEY to repo secrets (ANTHROPIC_API_KEY is already set).
+  # GOOGLE_API_KEY to repo secrets. ANTHROPIC_API_KEY is also still required
+  # here — the probe is multi-provider by design and the Anthropic adapter
+  # measures citation rate from the API endpoint, not the Pro/Max subscription.
+  # Cadence matches the directory agent: every 5 calendar days, gated by
+  # day-of-year mod 5 in a sibling job rather than via cron itself.
   # schedule:
-  #   - cron: '0 9 * * 1'   # Mondays 09:00 UTC
+  #   - cron: '0 9 * * *'   # Daily fire; gate below to every-5-days when active.
   workflow_dispatch: {}
 
 permissions:
@@ -52,11 +56,11 @@ jobs:
           BRANCH="probe/$(date +%Y-%m-%d)"
           git checkout -b "$BRANCH"
           git add data/probes/
-          git commit -m "data(probe): weekly run $(date +%Y-%m-%d)"
+          git commit -m "data(probe): run $(date +%Y-%m-%d)"
           git push -u origin "$BRANCH"
           gh pr create \
             --title "Citation Probe — $(date +%Y-%m-%d)" \
-            --body "Automated weekly probe results. Append-only — auto-mergeable. See \`data/probes/runs/$(date +%Y-%m-%d).md\` for the summary." \
+            --body "Automated probe results. Append-only — auto-mergeable. See \`data/probes/runs/$(date +%Y-%m-%d).md\` for the summary." \
             --base main \
             --head "$BRANCH" \
             --label "automated"

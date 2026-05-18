@@ -1,12 +1,32 @@
 /**
- * Kvantiq Weekly Agent — runs via Claude Agent SDK.
- * Uses Anthropic API credits (Sonnet 4.6).
+ * Kvantiq Agent — runs via the Claude Agent SDK on a 5-day cadence (gated in
+ * the GitHub Actions workflow by day-of-year mod 5). Authenticates against the
+ * Pro/Max subscription using CLAUDE_CODE_OAUTH_TOKEN; ANTHROPIC_API_KEY must
+ * NOT be set or it silently overrides OAuth in non-interactive mode and
+ * switches billing back to per-call API. Script filename retained as
+ * weekly-agent.ts; rename is a separate workstream.
  */
 import { query, createSdkMcpServer } from '@anthropic-ai/claude-agent-sdk';
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import { sendEmail } from './tools/resend.js';
 import { createClickUpTask } from './tools/clickup.js';
+
+if (!process.env.CLAUDE_CODE_OAUTH_TOKEN) {
+  console.error(
+    '[agent] CLAUDE_CODE_OAUTH_TOKEN is required. AI workload runs on the\n' +
+    'Pro/Max subscription, not the Claude API. Generate a token locally with\n' +
+    '`claude setup-token` and add it to repo secrets.'
+  );
+  process.exit(1);
+}
+if (process.env.ANTHROPIC_API_KEY) {
+  // Defensive: in non-interactive mode ANTHROPIC_API_KEY always wins over
+  // OAuth and switches billing back to API. Drop it even if the workflow
+  // file is mis-configured.
+  console.warn('[agent] ANTHROPIC_API_KEY is set; unsetting to keep run on Max subscription.');
+  delete process.env.ANTHROPIC_API_KEY;
+}
 
 const ROOT = join(import.meta.dirname, '..');
 const DATA_DIR = join(ROOT, 'data');
@@ -64,9 +84,9 @@ function buildPendingContext(): string {
 // --- Build the full prompt ---
 const TODAY = new Date().toISOString().split('T')[0];
 
-const AGENT_PROMPT = `# Kvantiq Weekly Agent Run — ${TODAY}
+const AGENT_PROMPT = `# Kvantiq Agent Run — ${TODAY}
 
-Today's date is **${TODAY}**.
+Today's date is **${TODAY}**. Cadence: every 5 calendar days.
 
 ## Sources
 
@@ -77,19 +97,19 @@ ${buildPendingContext()}
 
 ---
 
-# Weekly Workflow
+# Workflow
 
-Execute the full weekly workflow as defined in your system prompt:
+Execute the full agent workflow as defined in your system prompt:
 
-**Phase 0 — Startup:** Run SQLite integrity check. Process any pending items listed above. Check for an open weekly PR — if one exists, push to it instead of creating a new one.
+**Phase 0 — Startup:** Run SQLite integrity check. Process any pending items listed above. Check for an open agent PR for today — if one exists, push to it instead of creating a new one.
 
 **Phase 1 — Research:** Search every source above for new companies and events. Apply the entry quality gate. Cap at 10 new entries per PR. Queue overflow in \`data/discovery-queue.json\`.
 
 **Phase 2 — Audit:** For every existing entry in \`src/content/companies/\`, do a tiered audit: HTTP HEAD check on all URLs (use Bash with \`curl -I --max-time 10\`), web search for 90-day activity signals, assign confidence scores, record in the audits table.
 
-**Phase 3 — Act:** Write new JSON files to \`src/content/{collection}/\`. Update stale entries. Update the SQLite database. Create a git branch named \`weekly/${TODAY}\`. Commit all changes. Open a PR via \`gh pr create\`. Create ClickUp tasks for anything needing human judgment using the create_clickup_task MCP tool. Send alert emails for major events using the send_email MCP tool.
+**Phase 3 — Act:** Write new JSON files to \`src/content/{collection}/\`. Update stale entries. Update the SQLite database. Create a git branch named \`agent/${TODAY}\`. Commit all changes. Open a PR via \`gh pr create\`. Create ClickUp tasks for anything needing human judgment using the create_clickup_task MCP tool. Send alert emails for major events using the send_email MCP tool.
 
-**Phase 4 — Report:** Add a \`market_snapshots\` row. Send the weekly digest email to hi@kvantiq.studio. Log sources_checked.
+**Phase 4 — Report:** Add a \`market_snapshots\` row. Send the digest email to hi@kvantiq.studio covering the last 5 days of directory updates + intelligence signals. Log sources_checked.
 
 **Final step:** Run \`npx tsx scripts/generate-transparency-data.ts\` and commit the updated transparency data files.
 
@@ -102,7 +122,7 @@ const toolServer = createSdkMcpServer({
 });
 
 // --- Run agent ---
-console.log(`[weekly-agent] Starting Kvantiq weekly agent run — ${TODAY}`);
+console.log(`[weekly-agent] Starting Kvantiq agent run — ${TODAY}`);
 console.log(`[weekly-agent] Model: claude-sonnet-4-6`);
 console.log(`[weekly-agent] Root: ${ROOT}`);
 

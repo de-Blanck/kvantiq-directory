@@ -1,16 +1,22 @@
 #!/usr/bin/env node
 /**
- * Weekly AI Content Sweep
+ * AI Content Sweep
  *
- * Fetches source URLs for each entry, passes content to Claude API,
- * and extracts news items. Never fabricates — only extracts from fetched content.
+ * Fetches source URLs for each entry, passes content to Claude (Haiku 4.5)
+ * via the Claude Agent SDK, and extracts news items. Never fabricates — only
+ * extracts from fetched content.
  *
- * Usage: ANTHROPIC_API_KEY=sk-... node scripts/ai-sweep.mjs
+ * Runs on the Pro/Max subscription (OAuth) so it does NOT consume per-call
+ * Claude API credits. Requires CLAUDE_CODE_OAUTH_TOKEN in the environment;
+ * ANTHROPIC_API_KEY must NOT be set or it will silently override OAuth in
+ * non-interactive mode and switch billing back to API.
+ *
+ * Usage: CLAUDE_CODE_OAUTH_TOKEN=sk-ant-oat... node scripts/ai-sweep.mjs
  */
 
 import fs from 'fs';
 import path from 'path';
-import Anthropic from '@anthropic-ai/sdk';
+import { query } from '@anthropic-ai/claude-agent-sdk';
 
 const CONTENT_DIR = 'src/content';
 const COLLECTIONS = ['companies', 'benchmarks', 'use-cases', 'challenges', 'resources'];
@@ -18,7 +24,33 @@ const MAX_NEWS_PER_ENTRY = 5;
 const NEWS_MAX_AGE_DAYS = 180; // 6 months
 const FETCH_TIMEOUT_MS = 10000;
 
-const client = new Anthropic();
+// Single-turn Claude call via the Agent SDK. Returns the concatenated assistant
+// text. Uses Haiku 4.5 because every entry pays one round-trip and we don't
+// need agentic tool use here — this is plain extraction.
+async function askClaude(prompt) {
+  let text = '';
+  for await (const message of query({
+    prompt,
+    options: {
+      model: 'claude-haiku-4-5-20251001',
+      maxTurns: 1,
+      permissionMode: 'bypassPermissions',
+      allowDangerouslySkipPermissions: true,
+    },
+  })) {
+    if (message && typeof message === 'object' && 'type' in message && message.type === 'assistant') {
+      const content = message.content;
+      if (Array.isArray(content)) {
+        for (const block of content) {
+          if (block?.type === 'text' && typeof block.text === 'string') {
+            text += block.text;
+          }
+        }
+      }
+    }
+  }
+  return text;
+}
 
 // Strip HTML tags from fetched content
 function stripHtml(html) {
@@ -109,13 +141,7 @@ Return a JSON array of news items. Each item: { "title": "...", "excerpt": "..."
 Return ONLY the JSON array, no other text. If no news found, return [].`;
 
   try {
-    const response = await client.messages.create({
-      model: 'claude-haiku-4-5-20251001',
-      max_tokens: 1024,
-      messages: [{ role: 'user', content: prompt }],
-    });
-
-    const text = response.content[0].text.trim();
+    const text = (await askClaude(prompt)).trim();
     const newsItems = JSON.parse(text);
 
     if (!Array.isArray(newsItems)) return { skipped: false, added: 0 };
@@ -148,12 +174,23 @@ Return ONLY the JSON array, no other text. If no news found, return [].`;
 
 // Main
 async function main() {
-  if (!process.env.ANTHROPIC_API_KEY) {
-    console.error('ANTHROPIC_API_KEY environment variable is required');
+  if (!process.env.CLAUDE_CODE_OAUTH_TOKEN) {
+    console.error(
+      'CLAUDE_CODE_OAUTH_TOKEN is required. AI workload runs on the Pro/Max\n' +
+      'subscription, not the Claude API. Generate a token locally with\n' +
+      '`claude setup-token` and store it as a repo secret.'
+    );
     process.exit(1);
   }
+  if (process.env.ANTHROPIC_API_KEY) {
+    // In non-interactive mode ANTHROPIC_API_KEY silently overrides the OAuth
+    // token and switches billing back to per-call API. Drop it defensively
+    // even if the workflow file is mis-configured.
+    console.warn('[ai-sweep] ANTHROPIC_API_KEY is set; unsetting to keep run on Max subscription.');
+    delete process.env.ANTHROPIC_API_KEY;
+  }
 
-  console.log('=== Kvantiq Directory — Weekly AI Content Sweep ===\n');
+  console.log('=== Kvantiq Directory — AI Content Sweep ===\n');
 
   const results = { updated: 0, skipped: 0, total: 0, details: [] };
 

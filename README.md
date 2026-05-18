@@ -44,7 +44,7 @@ src/
   pages/            Routes (index, [slug], country pages)
   styles/           Global CSS + design tokens
 public/             Static assets (icons, logos, manifests, robots)
-scripts/            Content audit, weekly agent, DB migration
+scripts/            Content audit, maintenance agent, DB migration
 data/               sources.json (hand-curated source registry)
 .github/workflows/  CI and scheduled content jobs
 ```

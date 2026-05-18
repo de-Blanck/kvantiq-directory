@@ -1,12 +1,42 @@
-name: Weekly AI Content Sweep
+name: AI Content Sweep
+
+# Runs every 5th calendar day, gated identically to the agent workflow. The
+# cron fires daily; the `cadence` job exits early on non-run days.
+#
+# AI workload runs on the Claude Pro/Max subscription via CLAUDE_CODE_OAUTH_TOKEN.
+# ANTHROPIC_API_KEY must NOT be set — see weekly-agent.yml for full reasoning.
 
 on:
   schedule:
-    - cron: '0 0 * * 0'  # Sunday midnight UTC
+    - cron: '0 0 * * *'      # Daily fire; gated by cadence job below.
   workflow_dispatch:
 
 jobs:
+  cadence:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - id: check
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "[cadence] Manual trigger — running."
+            exit 0
+          fi
+          DOY=$(date -u +%j)
+          if [ $((10#$DOY % 5)) = "0" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "[cadence] Day-of-year $DOY divisible by 5 — running."
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "[cadence] Day-of-year $DOY — skipping (every-5-days cadence)."
+          fi
+
   sweep:
+    needs: cadence
+    if: needs.cadence.outputs.run == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,12 +48,15 @@ jobs:
 
       - run: npm ci
 
-      - name: Install Anthropic SDK
-        run: npm install @anthropic-ai/sdk
+      - name: Install Claude Code CLI
+        # ai-sweep.mjs uses @anthropic-ai/claude-agent-sdk (already a project
+        # dep), which shells out to the `claude` CLI. The raw @anthropic-ai/sdk
+        # was retired so AI workload runs on the Pro/Max subscription via OAuth.
+        run: npm install -g @anthropic-ai/claude-code
 
       - name: Run AI sweep
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
         run: node scripts/ai-sweep.mjs
 
       - name: Validate build
@@ -33,10 +66,10 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'content: weekly AI content sweep'
-          title: 'content: weekly AI content sweep'
+          commit-message: 'content: AI content sweep'
+          title: 'content: AI content sweep'
           body: |
-            ## Weekly AI Content Sweep
+            ## AI Content Sweep
 
             Automated content freshness check. News items extracted from source URLs only — never fabricated from AI memory.
 
@@ -45,6 +78,6 @@ jobs:
             - [ ] No fabricated funding rounds or partnerships
             - [ ] All news URLs resolve to real pages
             - [ ] Build passes (CI will verify)
-          branch: ai-sweep/weekly
+          branch: ai-sweep/auto
           labels: ai-sweep
           delete-branch: true

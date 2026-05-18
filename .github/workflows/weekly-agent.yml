@@ -1,16 +1,50 @@
-name: Weekly Kvantiq Agent
+name: Kvantiq Agent
+
+# Runs every 5th calendar day. The cron fires daily; the `cadence` job exits
+# early on the 4 of every 5 days where no run is due, and only on day-of-year
+# divisible by 5 does the `agent` job actually do work. This gives a true
+# 5-day cadence year-round (one ~1-day wobble at the Dec→Jan boundary, which
+# matters less than month-boundary clustering from `*/5` in the day field).
+#
+# AI workload runs on the Claude Pro/Max subscription via CLAUDE_CODE_OAUTH_TOKEN.
+# ANTHROPIC_API_KEY must NOT be set in this workflow — in non-interactive mode
+# it silently overrides OAuth and switches billing back to per-call API.
 
 on:
   schedule:
-    - cron: '17 8 * * 0'  # Sundays ~08:17 UTC
-  workflow_dispatch: {}     # Manual trigger
+    - cron: '17 8 * * *'      # Daily fire; gated by cadence job below.
+  workflow_dispatch: {}        # Manual trigger always runs.
 
 permissions:
   contents: write
   pull-requests: write
 
 jobs:
-  weekly-audit:
+  cadence:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - id: check
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "[cadence] Manual trigger — running."
+            exit 0
+          fi
+          DOY=$(date -u +%j)
+          if [ $((10#$DOY % 5)) = "0" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "[cadence] Day-of-year $DOY divisible by 5 — running."
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "[cadence] Day-of-year $DOY — skipping (every-5-days cadence)."
+          fi
+
+  agent:
+    needs: cadence
+    if: needs.cadence.outputs.run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 50
 
@@ -32,11 +66,11 @@ jobs:
       - name: Run database migration (idempotent)
         run: npx tsx scripts/migrate-to-db.ts
 
-      - name: Run weekly agent
+      - name: Run agent
         run: npx tsx scripts/weekly-agent.ts
         timeout-minutes: 45
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           CLICKUP_API_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
           CLICKUP_LIST_ID: ${{ secrets.CLICKUP_LIST_ID }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
@@ -56,14 +90,14 @@ jobs:
         run: |
           git config user.name "Kvantiq Agent"
           git config user.email "agent@kvantiq.studio"
-          BRANCH="weekly/$(date +%Y-%m-%d)"
+          BRANCH="agent/$(date +%Y-%m-%d)"
           git checkout -b "$BRANCH" 2>/dev/null || git checkout "$BRANCH"
           git add -A
-          git commit -m "chore: weekly agent run $(date +%Y-%m-%d)" || true
+          git commit -m "chore: agent run $(date +%Y-%m-%d)" || true
           git push -u origin "$BRANCH"
           gh pr create \
-            --title "Weekly Agent — $(date +%Y-%m-%d)" \
-            --body "Automated weekly directory maintenance. Review changes before merging." \
+            --title "Agent Run — $(date +%Y-%m-%d)" \
+            --body "Automated 5-day directory maintenance. Review changes before merging." \
             --base main \
             --head "$BRANCH" || true
         env:
