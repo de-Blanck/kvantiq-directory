@@ -4,7 +4,12 @@
   "country": "Finland",
   "region": "nordics",
   "type": "hardware",
-  "tags": ["superconducting", "hybrid", "EuroHPC", "full-stack"],
+  "tags": [
+    "superconducting",
+    "hybrid",
+    "EuroHPC",
+    "full-stack"
+  ],
   "founded": 2018,
   "description": "IQM Quantum Computers is a European leader in building superconducting quantum computers. Based in Finland, IQM provides on-premises quantum computers and partners with EuroHPC to integrate quantum accelerators into European supercomputing centers. IQM focuses on application-specific co-design for industrial quantum advantage.",
   "website": "https://www.meetiqm.com",
@@ -52,6 +57,18 @@
       "url": "https://quantumcomputingreport.com/iqm-to-deploy-japans-first-enterprise-purchased-quantum-computer/",
       "title": "IQM to Deploy Japan's First Enterprise-Purchased Quantum Computer - Quantum Computing Report",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/12/iqm-launches-hpc-integration-service-to-accelerate-hybrid-quantum-hpc-adoption/",
+      "title": "IQM Launches HPC Integration Service to Accelerate Hybrid Quantum-HPC Adoption - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/14/iqm-moves-closer-to-public-markets-with-sec-f-4-filing/",
+      "title": "IQM Moves Closer to Public Markets With SEC F-4 Filing - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
     }
   ],
   "news": [
@@ -75,6 +92,20 @@
       "url": "https://thequantuminsider.com/2026/04/27/iqm-toyo-quantum-deployment/",
       "source": "The Quantum Insider",
       "date": "2026-04-27"
+    },
+    {
+      "title": "IQM Launches HPC Integration Service to Accelerate Hybrid Quantum-HPC Adoption",
+      "excerpt": "IQM launched a turnkey service integrating its superconducting quantum computers as Slurm nodes in HPC environments via its open-source QDMI protocol, already operational at the Leibniz Supercomputing Centre in Germany. The service targets data-centre deployments as IQM advances its planned public listing.",
+      "url": "https://thequantuminsider.com/2026/05/12/iqm-launches-hpc-integration-service-to-accelerate-hybrid-quantum-hpc-adoption/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-12"
+    },
+    {
+      "title": "IQM Moves Closer to Public Markets With SEC F-4 Filing",
+      "excerpt": "IQM Finland Oy filed an SEC Form F-4 registration statement in connection with its planned merger with Real Asset Acquisition Corp. (Nasdaq: RAAQ), targeting a listing under proposed ticker 'IQMX'. The transaction values IQM at approximately $1.8 billion, with over $300 million expected from SPAC trust proceeds and PIPE financing.",
+      "url": "https://thequantuminsider.com/2026/05/14/iqm-moves-closer-to-public-markets-with-sec-f-4-filing/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-14"
     }
   ]
 }
