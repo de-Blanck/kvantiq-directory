@@ -10,12 +10,12 @@
     "infrastructure",
     "PROQCIMA"
   ],
-  "description": "France's National Quantum Strategy, part of the France 2030 investment plan, allocates €1.8 billion to quantum technology development including €1 billion in public funding. The strategy covers quantum computing, simulators, sensors, post-quantum cryptography, and secure communication, and includes the PROQCIMA programme awarding up to €500 million to five companies building French-designed universal quantum computers by 2030.",
+  "description": "France's National Quantum Strategy, part of the France 2030 investment plan, has committed €3.3 billion in total public quantum investment as of May 2026. The strategy covers quantum computing, simulators, sensors, post-quantum cryptography, and secure communication, and includes the PROQCIMA programme awarding up to €500 million to five companies building French-designed universal quantum computers by 2030.",
   "website": "https://quantique.france2030.gouv.fr/",
   "openSource": false,
   "free": true,
   "provider": "French Government (France 2030)",
-  "lastUpdated": "2025",
+  "lastUpdated": "2026",
   "maturity": "mature",
   "sources": [
     {
@@ -29,6 +29,27 @@
       "url": "https://thequantuminsider.com/2024/03/07/france-2030-progress-update-three-years-after-the-launch-of-the-national-quantum-technologies-strategy-and-the-launch-of-the-proqcima-program/",
       "title": "France 2030: Progress Update and Launch of the PROQCIMA Program",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/25/emmanuel-macron-announces-1-55-billion-euros-more-for-quantum-and-semiconductors/",
+      "title": "France Adds €1.55 Billion for Quantum and Semiconductor Development - The Quantum Insider",
+      "dateAccessed": "2026-05-31"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/emmanuel-macron-announces-an-additional-e1-billion-1-16b-usd-in-funding-for-frances-quantum-plan/",
+      "title": "Emmanuel Macron Announces an Additional €1 Billion in Funding for France's Quantum Plan - Quantum Computing Report",
+      "dateAccessed": "2026-05-31"
+    }
+  ],
+  "news": [
+    {
+      "title": "Macron announces €1.55 billion additional investment in French quantum and semiconductor development",
+      "excerpt": "President Macron announced an additional €1 billion for France's national quantum plan and €550 million for advanced semiconductor research, bringing France's total public quantum investment to €3.3 billion under France 2030.",
+      "url": "https://thequantuminsider.com/2026/05/25/emmanuel-macron-announces-1-55-billion-euros-more-for-quantum-and-semiconductors/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-25"
     }
   ]
 }

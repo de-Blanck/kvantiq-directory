@@ -39,6 +39,27 @@
       "url": "https://insidehpc.com/2025/02/eurohpc-ju-acquires-e8-5m-qilimanjaro-quantum-annealer-to-be-at-barcelona-supercomputing-center/",
       "title": "EuroHPC JU Acquires EUR 8.5M Qilimanjaro Quantum Annealer to be at Barcelona Supercomputing Center",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/28/qilimanjaro-inaugurates-an-analog-quantum-computer-at-barcelona-supercomputing-center/",
+      "title": "Qilimanjaro Inaugurates an Analog Quantum Computer at Barcelona Supercomputing Center - The Quantum Insider",
+      "dateAccessed": "2026-05-31"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/qilimanjaro-deploys-an-analog-quantum-computer-at-the-barcelona-supercomputing-center/",
+      "title": "Qilimanjaro Deploys an Analog Quantum Computer at the Barcelona Supercomputing Center - Quantum Computing Report",
+      "dateAccessed": "2026-05-31"
+    }
+  ],
+  "news": [
+    {
+      "title": "Qilimanjaro inaugurates 10-qubit analog quantum system at Barcelona Supercomputing Center",
+      "excerpt": "Under the EuroQCS-Spain project co-financed by EuroHPC JU and Spain's SEDIA, Qilimanjaro inaugurated a 10-qubit analog QPU at BSC-CNS on May 28, 2026. Two follow-on generations are scheduled for 2026–2027, expanding BSC's MareNostrum-Ona hybrid quantum infrastructure.",
+      "url": "https://thequantuminsider.com/2026/05/28/qilimanjaro-inaugurates-an-analog-quantum-computer-at-barcelona-supercomputing-center/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-28"
     }
   ]
 }

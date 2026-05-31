@@ -52,6 +52,12 @@
       "url": "https://thequantuminsider.com/2026/05/05/quantinuum-and-bmw-group-expand-quantum-computing-collaboration-with-new-multi-year-partnership/",
       "title": "Quantinuum And BMW Group Expand Quantum Computing Collaboration With New Multi-Year Partnership - The Quantum Insider",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-26/honeywell-backed-quantinuum-seeks-to-raise-1-05-billion-in-ipo",
+      "title": "Honeywell-Backed Quantinuum Seeks $1.05 Billion in US IPO - Bloomberg",
+      "dateAccessed": "2026-05-31"
     }
   ],
   "news": [
@@ -61,6 +67,13 @@
       "url": "https://thequantuminsider.com/2026/05/05/quantinuum-and-bmw-group-expand-quantum-computing-collaboration-with-new-multi-year-partnership/",
       "source": "The Quantum Insider",
       "date": "2026-05-05"
+    },
+    {
+      "title": "Quantinuum files for IPO targeting USD 12.7B valuation on Nasdaq",
+      "excerpt": "Quantinuum filed to raise $1.05 billion in its landmark IPO, offering shares at $45–$50 each for a fully diluted valuation of approximately $12.7 billion. The company will list on Nasdaq under ticker QNT — the first traditional IPO by a full-stack quantum computing company.",
+      "url": "https://thequantuminsider.com/2026/05/26/honeywell-backed-quantinuum-files-for-landmark-quantum-ipo/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-26"
     }
   ]
 }
