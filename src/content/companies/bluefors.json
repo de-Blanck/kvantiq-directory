@@ -40,6 +40,18 @@
       "url": "https://en.wikipedia.org/wiki/Bluefors",
       "title": "Bluefors - Wikipedia",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/bluefors-joins-chicago-quantum-exchange-to-support-quantum-infrastructure-and-workforce-development/",
+      "title": "Bluefors Joins Chicago Quantum Exchange to Support Quantum Infrastructure and Workforce Development - HPCwire",
+      "dateAccessed": "2026-06-07"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/03/03/bluefors-modular-cryogenic-platform-launch/",
+      "title": "Bluefors Launches Modular Cryogenic Platform for Scalable Quantum Systems - The Quantum Insider",
+      "dateAccessed": "2026-06-07"
     }
   ],
   "news": [
@@ -49,6 +61,13 @@
       "url": "https://thequantuminsider.com/2026/03/03/bluefors-modular-cryogenic-platform-launch/",
       "source": "The Quantum Insider",
       "date": "2026-03-02"
+    },
+    {
+      "title": "Bluefors opens Chicago lab at Hyde Park Labs and joins Chicago Quantum Exchange",
+      "excerpt": "Bluefors celebrated the grand opening of its expanded Bluefors Lab Chicago at the UChicago Science Incubator, providing early-stage startups and researchers with access to cryogenic measurement systems, and joined the Chicago Quantum Exchange to support regional quantum infrastructure and workforce development.",
+      "url": "https://www.hpcwire.com/off-the-wire/bluefors-joins-chicago-quantum-exchange-to-support-quantum-infrastructure-and-workforce-development/",
+      "source": "HPCwire",
+      "date": "2026-05-07"
     }
   ]
 }

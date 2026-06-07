@@ -24,6 +24,21 @@
       "url": "https://blog.google/technology/research/google-gesda-xprize-quantum-applications-finalists/",
       "title": "The 7 finalists in the XPRIZE Quantum Applications competition - Google Blog",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/20/pasqal-finalist-xprize-quantum-applications-competition/",
+      "title": "Pasqal Selected as Finalist in XPRIZE Quantum Applications Competition - The Quantum Insider",
+      "dateAccessed": "2026-06-07"
+    }
+  ],
+  "news": [
+    {
+      "title": "Five wildcard finalists selected to advance to Phase II of XPRIZE Quantum Applications",
+      "excerpt": "From 62 wildcard registration submissions, XPRIZE selected five teams to join Phase I finalists in Phase II, which requires teams to specify hardware needs, demonstrate quantum-over-classical advantage, and project real-world societal impact.",
+      "url": "https://www.xprize.org/news/from-wildcard-entry-to-impact-xprize-quantum-applications-wildcard-finalists-advancing-to-next-phase",
+      "source": "XPRIZE Foundation",
+      "date": "2026-05-11"
     }
   ]
 }

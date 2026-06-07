@@ -35,6 +35,21 @@
       "url": "https://www.dlr.de/en/latest/news/2024/01/planqc-and-dlr-to-build-europes-first-digital-quantum-computer",
       "title": "planqc and DLR to build Europe's first digital quantum computer using neutral atoms",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.datacenterdynamics.com/en/news/planqc-to-lead-development-of-german-government-funded-1000-qubit-quantum-computer/",
+      "title": "planqc to lead development of German government-funded 1,000 qubit quantum computer - Data Centre Dynamics",
+      "dateAccessed": "2026-06-07"
+    }
+  ],
+  "news": [
+    {
+      "title": "planqc to lead €20M BMBF-funded project to build 1,000-qubit quantum computer for Leibniz Supercomputing Centre",
+      "excerpt": "The MAQCS project, funded by the German Federal Ministry of Education and Research, will integrate planqc's neutral-atom dual-core platform with the Leibniz Supercomputing Centre in Munich, targeting 1,000 qubits.",
+      "url": "https://www.datacenterdynamics.com/en/news/planqc-to-lead-development-of-german-government-funded-1000-qubit-quantum-computer/",
+      "source": "Data Centre Dynamics",
+      "date": "2026-04-01"
     }
   ]
 }

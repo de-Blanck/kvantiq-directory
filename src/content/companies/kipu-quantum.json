@@ -35,6 +35,18 @@
       "url": "https://kipu-quantum.com/10-5-million-eur-for-german-quantum-software-company-kipu-quantum/",
       "title": "10.5 Million EUR for German Quantum Software Company Kipu Quantum",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/02/17/kipu-quantum-launches-rimay-feature-extraction/",
+      "title": "Kipu Quantum Launches Rimay Quantum Feature Extraction Service - The Quantum Insider",
+      "dateAccessed": "2026-06-07"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/kipu-quantum-launches-rimay-for-industrial-quantum-enhanced-machine-learning/",
+      "title": "Kipu Quantum Launches Rimay for Industrial Quantum-Enhanced Machine Learning - Quantum Computing Report",
+      "dateAccessed": "2026-06-07"
     }
   ],
   "news": [
@@ -44,6 +56,13 @@
       "url": "https://thequantuminsider.com/2026/02/17/kipu-quantum-launches-rimay-feature-extraction/",
       "source": "The Quantum Insider",
       "date": "2026-02-17"
+    },
+    {
+      "title": "Kipu Quantum launches hybrid offline framework enabling quantum-trained ML without quantum hardware at inference",
+      "excerpt": "The framework trains quantum-enhanced ML models on quantum hardware and deploys them on classical infrastructure, reducing quantum execution costs by a factor of five or more while preserving the accuracy gains from quantum feature extraction.",
+      "url": "https://thequantuminsider.com/2026/05/20/kipu-quantum-makes-quantum-enhanced-ai-deployable-in-production/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-20"
     }
   ]
 }

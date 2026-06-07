@@ -82,6 +82,20 @@
       "url": "https://www.hpcwire.com/off-the-wire/alice-bob-surpasses-hiring-targets-ahead-of-schedule-as-quantum-workforce-grows/",
       "source": "HPCwire",
       "date": "2026-04-16"
+    },
+    {
+      "title": "Alice & Bob secures NVIDIA NVentures investment as Series B extension",
+      "excerpt": "NVentures, NVIDIA's strategic investment arm, backed Alice & Bob in an extension of its Series B round, deepening the two companies' technical collaboration on integrating cat-qubit processors with NVIDIA accelerated computing infrastructure and software stack.",
+      "url": "https://tech.eu/2026/05/22/alice-bob-expands-series-b-with-investment-from-nvidias-venture-arm/",
+      "source": "Tech.eu",
+      "date": "2026-05-22"
+    },
+    {
+      "title": "Alice & Bob releases five-criteria framework for evaluating logical qubits across hardware modalities",
+      "excerpt": "Alice & Bob published a framework defining logical qubit performance using five measurable criteria, aiming to establish a standardised benchmark for fair comparison across different quantum hardware approaches.",
+      "url": "https://www.hpcwire.com/off-the-wire/alice-bob-proposes-five-criteria-framework-for-evaluating-logical-qubits/",
+      "source": "HPCwire",
+      "date": "2026-06-05"
     }
   ]
 }
