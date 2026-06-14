@@ -75,6 +75,20 @@
       "url": "https://thequantuminsider.com/2026/04/27/iqm-toyo-quantum-deployment/",
       "source": "The Quantum Insider",
       "date": "2026-04-27"
+    },
+    {
+      "title": "IQM announces barbell QLDPC codes reducing logical error rates 1,000x with 8x fewer physical qubits",
+      "excerpt": "IQM's new barbell code family of quantum low-density parity-check (QLDPC) codes, tailored to IQM's 12-connectivity Constellation processor, achieves up to 1,000x lower logical error rates than the surface code while requiring 8x fewer physical qubits. The arXiv preprint (2606.06062) details the hardware-native design requiring no complex multi-layer wiring.",
+      "url": "https://quantumcomputingreport.com/iqm-quantum-computers-proposes-non-local-barbell-qldpc-architecture/",
+      "source": "Quantum Computing Report",
+      "date": "2026-06-09"
+    },
+    {
+      "title": "IQM's 54-qubit Radiance system NOX goes live at CINECA, integrated with Italy's Leonardo supercomputer",
+      "excerpt": "The IQM Radiance 54 quantum computer, named NOX, was inaugurated at CINECA's national supercomputing center in Bologna, Italy, and integrated with Leonardo—one of Europe's fastest supercomputers—enabling hybrid classical-quantum workflows for optimization, simulation, and machine learning research.",
+      "url": "https://quantumcomputingreport.com/iqm-radiance-54-superconducting-quantum-computer-goes-live-at-cineca-in-italy/",
+      "source": "Quantum Computing Report",
+      "date": "2026-06-11"
     }
   ]
 }

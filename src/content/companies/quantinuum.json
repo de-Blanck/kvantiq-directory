@@ -52,6 +52,12 @@
       "url": "https://thequantuminsider.com/2026/05/05/quantinuum-and-bmw-group-expand-quantum-computing-collaboration-with-new-multi-year-partnership/",
       "title": "Quantinuum And BMW Group Expand Quantum Computing Collaboration With New Multi-Year Partnership - The Quantum Insider",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://www.cnbc.com/2026/06/04/quantinuum-qnt-stock-first-trade-ipo.html",
+      "title": "Quantinuum closes flat in Nasdaq debut, after upsized $1.68B offering — CNBC",
+      "dateAccessed": "2026-06-14"
     }
   ],
   "news": [
@@ -61,6 +67,13 @@
       "url": "https://thequantuminsider.com/2026/05/05/quantinuum-and-bmw-group-expand-quantum-computing-collaboration-with-new-multi-year-partnership/",
       "source": "The Quantum Insider",
       "date": "2026-05-05"
+    },
+    {
+      "title": "Quantinuum raises $1.68 billion in upsized Nasdaq IPO, begins trading as QNT at $60 per share",
+      "excerpt": "Quantinuum priced 28 million Class A shares at $60 each—above the $53–$55 target range—raising $1.68 billion in aggregate gross proceeds, with shares beginning Nasdaq trading on June 4 under ticker QNT. The IPO valued the company at approximately $15 billion and is the largest quantum computing public offering to date.",
+      "url": "https://thequantuminsider.com/2026/06/04/quantinuum-to-debut-on-nasdaq-after-raising-1-68-billion-in-ipo/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-04"
     }
   ]
 }
