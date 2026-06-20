@@ -95,4 +95,10 @@ first does the work; the others see the open PR and skip.
 - **Windows task didn't fire** — confirm under Task Scheduler; the task runs as
   your user, so it needs you logged in (or stored credentials). Force a run:
   `Start-ScheduledTask -TaskName KvantiqDirectoryWeekly`.
+- **Partial run** — if the sweep times out, crashes, or exhausts the subscription
+  pool partway, the runner still builds and opens a PR with the entries it *did*
+  process, titled `content: weekly AI content sweep (partial)` with a ⚠️ banner.
+  Just review/merge it, or close it and re-run `node scripts/scheduled-run.mjs` to
+  refresh from scratch. (If the sweep fails *and* produced no changes, the run
+  exits non-zero with nothing to PR — check the log.)
 - **Logs** — every run appends to `scheduled-run-debug.log` at the repo root.

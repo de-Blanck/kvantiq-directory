@@ -142,11 +142,18 @@ function dateStamp() {
   return new Date().toISOString().slice(0, 10); // YYYY-MM-DD
 }
 
-function openPr(repo, branch) {
+function openPr(repo, branch, partial) {
   const bodyPath = path.join(os.tmpdir(), `kvantiq-sweep-body-${process.pid}.md`);
-  writeFileSync(bodyPath, [
-    '## Weekly AI Content Sweep',
-    '',
+  const lines = ['## Weekly AI Content Sweep', ''];
+  if (partial) {
+    lines.push(
+      '> ⚠️ **Partial run.** The sweep exited early (timeout, crash, or credit',
+      '> exhaustion), but the entries it had already processed are included here.',
+      '> Re-running the sweep refreshes everything from current sources.',
+      '',
+    );
+  }
+  lines.push(
     'Automated content-freshness pass. News items are extracted only from each',
     "entry's fetched source pages — never fabricated from model memory.",
     '',
@@ -159,10 +166,12 @@ function openPr(repo, branch) {
     '- [ ] All news URLs resolve to real pages',
     '- [ ] Build passes locally',
     '',
-  ].join('\n'));
+  );
+  writeFileSync(bodyPath, lines.join('\n'));
+  const title = `content: weekly AI content sweep${partial ? ' (partial)' : ''}`;
   try {
     const url = capture('gh', ['pr', 'create', '--repo', repo, '--base', 'main',
-      '--head', branch, '--title', 'content: weekly AI content sweep',
+      '--head', branch, '--title', title,
       '--body-file', bodyPath]);
     log(`PR opened: ${url}`);
     // Label is a nicety — never let a missing label fail the run.
@@ -191,26 +200,38 @@ function main() {
   log('Installing dependencies (npm ci)…');
   stream(NPM, ['ci']);
 
-  log('Running AI content sweep…');
-  stream(process.execPath, ['scripts/ai-sweep.mjs']);
+  // Best-effort sweep: a timeout, crash, or credit exhaustion partway through
+  // must not discard the entries already processed. We still build + PR whatever
+  // landed on disk, marked as a partial run.
+  let sweepFailed = false;
+  try {
+    log('Running AI content sweep…');
+    stream(process.execPath, ['scripts/ai-sweep.mjs']);
+  } catch (err) {
+    sweepFailed = true;
+    log(`WARNING: sweep exited abnormally (${err.message}). Will PR any completed work.`);
+  }
 
   if (!hasContentChanges()) {
+    if (sweepFailed) fail('Sweep failed and produced no content changes — nothing to PR.');
     log('Sweep produced no content changes. Nothing to do.');
     return;
   }
 
+  // A broken build still blocks the PR — intentional, even for a partial run.
   log('Validating build (npm run build)…');
   stream(NPM, ['run', 'build']);
 
   const branch = `${SWEEP_BRANCH_PREFIX}-${dateStamp()}`;
-  log(`Changes found. Opening PR on branch ${branch}…`);
+  const partialTag = sweepFailed ? ' (partial)' : '';
+  log(`Changes found${partialTag}. Opening PR on branch ${branch}…`);
   capture('git', ['checkout', '-b', branch]);
   capture('git', ['add', '-A']);
-  capture('git', ['commit', '-m', `content: weekly AI content sweep ${dateStamp()}`]);
+  capture('git', ['commit', '-m', `content: weekly AI content sweep ${dateStamp()}${partialTag}`]);
   capture('git', ['push', '-u', 'origin', branch]);
-  openPr(repo, branch);
+  openPr(repo, branch, sweepFailed);
 
-  log('=== Done ===');
+  log(sweepFailed ? '=== Done (partial run — see WARNING above) ===' : '=== Done ===');
 }
 
 try {
