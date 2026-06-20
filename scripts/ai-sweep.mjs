@@ -15,6 +15,7 @@
 import fs from 'fs';
 import path from 'path';
 import { spawn } from 'child_process';
+import { fileURLToPath } from 'url';
 
 const CONTENT_DIR = 'src/content';
 const COLLECTIONS = ['companies', 'benchmarks', 'use-cases', 'challenges', 'resources'];
@@ -60,6 +61,32 @@ function isRecent(dateStr) {
   const now = new Date();
   const diffDays = (now - date) / (1000 * 60 * 60 * 24);
   return diffDays <= NEWS_MAX_AGE_DAYS;
+}
+
+// Validate + normalize model-extracted news items against the content schema
+// (src/content.config.ts `newsSchema`). title/url/source/date are required and
+// the item is dropped without them; the URL's domain must match a fetched source
+// (anti-fabrication). `excerpt` is OPTIONAL but must be non-empty if present —
+// an empty/whitespace excerpt is dropped rather than written as "", which would
+// fail the content build. Exported for unit testing.
+export function normalizeNewsItems(rawItems, fetchedDomains) {
+  if (!Array.isArray(rawItems)) return [];
+  return rawItems
+    .filter(item => {
+      if (!item || !item.title || !item.url || !item.date || !item.source) return false;
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(item.date)) return false;
+      return fetchedDomains.has(getDomain(item.url));
+    })
+    .map(item => {
+      const out = { title: String(item.title).trim() };
+      const excerpt = item.excerpt ? String(item.excerpt).trim() : '';
+      if (excerpt) out.excerpt = excerpt;
+      out.url = item.url;
+      out.source = String(item.source).trim();
+      out.date = item.date;
+      return out;
+    })
+    .filter(item => item.title && item.source); // guard against whitespace-only title/source
 }
 
 // Invoke `claude -p` as a subprocess. Token from CLAUDE_CODE_OAUTH_TOKEN env.
@@ -160,12 +187,7 @@ Return ONLY the JSON array, no other text. If no news found, return [].`;
   const newsItems = extractJsonArray(response);
   if (!Array.isArray(newsItems)) return { skipped: false, added: 0 };
 
-  const validatedNews = newsItems.filter(item => {
-    if (!item.title || !item.url || !item.date || !item.source) return false;
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(item.date)) return false;
-    const itemDomain = getDomain(item.url);
-    return fetchedDomains.has(itemDomain);
-  });
+  const validatedNews = normalizeNewsItems(newsItems, fetchedDomains);
 
   if (validatedNews.length === 0) return { skipped: false, added: 0 };
 
@@ -231,7 +253,11 @@ async function main() {
   }
 }
 
-main().catch(err => {
-  console.error('Sweep failed:', err);
-  process.exit(1);
-});
+// Only run the sweep when executed directly (`node scripts/ai-sweep.mjs`),
+// not when imported by tests.
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  main().catch(err => {
+    console.error('Sweep failed:', err);
+    process.exit(1);
+  });
+}
