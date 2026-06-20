@@ -71,7 +71,11 @@ function askClaude(prompt) {
       '--model', CLAUDE_MODEL,
       '--output-format', 'text',
     ];
-    const child = spawn('claude', args, {
+    // `claude` is `claude.cmd` on Windows (npm global shim); bare `claude` is
+    // not spawnable without a shell there. Keep the arg array (no shell) so the
+    // large multi-line prompt stays a single, unquoted argument.
+    const claudeBin = process.platform === 'win32' ? 'claude.cmd' : 'claude';
+    const child = spawn(claudeBin, args, {
       stdio: ['ignore', 'pipe', 'pipe'],
       env: process.env,
     });
