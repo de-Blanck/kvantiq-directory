@@ -30,9 +30,9 @@ Repository: `de-Blanck/kvantiq-directory`
 
 ### 3. (Optional) Remove the now-unused API key
 
-Once the new workflows are confirmed working, you can delete the `ANTHROPIC_API_KEY` repo secret. Nothing in this repo references it anymore — the citation-probe's Anthropic adapter was migrated to subscription auth too.
+Once the new workflows are confirmed working, you can delete the `ANTHROPIC_API_KEY` repo secret. Nothing in this repo references it anymore.
 
-The OpenAI, Perplexity, and Google API keys for `citation-probe.yml` remain on their respective per-provider billing models (no subscription equivalent).
+The OpenAI, Perplexity, and Google API keys are no longer needed either — the citation-probe that used them has been removed.
 
 ### 4. Verify
 
@@ -69,11 +69,9 @@ If a weekly run starts dropping work because the pool is exhausted, the symptoms
 
 - **`scripts/weekly-agent.ts`** — Builds the per-run prompt file from `data/sources.json` + any pending files. Runs in the workflow before the action.
 - **`scripts/ai-sweep.mjs`** — Per-entry source fetcher; shells out to `claude -p` for news extraction (Haiku).
-- **`scripts/lib/adapters/anthropic.ts`** — Citation-probe's Anthropic adapter; also subprocess-based.
 - **`scripts/tools/mcp-server.ts`** — Stdio MCP server providing `send_email` and `create_clickup_task` tools to the weekly agent.
 - **`scripts/mcp-config.json`** — Tells the action how to launch the MCP server.
 - **`.github/workflows/weekly-agent.yml`** — Uses `anthropics/claude-code-base-action@beta` with `claude_code_oauth_token`.
 - **`.github/workflows/ai-sweep.yml`** — Uses CLI subprocess via `node scripts/ai-sweep.mjs`.
-- **`.github/workflows/citation-probe.yml`** — Uses CLI subprocess via `npx tsx scripts/citation-probe.ts` (dormant).
 
-The Agent SDK (`@anthropic-ai/claude-agent-sdk`) is no longer in use. Anthropic explicitly excludes the SDK from subscription billing — the CLI is the only subscription-billed surface. Raw `api.anthropic.com` calls (which the citation-probe used to make) are also eliminated.
+The Agent SDK (`@anthropic-ai/claude-agent-sdk`) is no longer in use. Anthropic explicitly excludes the SDK from subscription billing — the CLI is the only subscription-billed surface.
