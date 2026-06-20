@@ -4,7 +4,12 @@
   "country": "Germany",
   "region": "dach",
   "type": "hardware",
-  "tags": ["quantum-key-distribution", "qkd", "quantum-cryptography", "photonics"],
+  "tags": [
+    "quantum-key-distribution",
+    "qkd",
+    "quantum-cryptography",
+    "photonics"
+  ],
   "founded": 2020,
   "description": "KEEQuant is a German quantum security company developing quantum key distribution (QKD) systems using integrated photonics. The company provides secure quantum communication solutions for critical infrastructure, government, and enterprise applications, protecting against current and future cyber threats.",
   "website": "https://www.keequant.com",
@@ -35,6 +40,29 @@
       "url": "https://thequantuminsider.com/companies/keequant/",
       "title": "KEEQuant - The Quantum Insider",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quantum-Sovereign AI for Organizations",
+      "excerpt": "Quantum-Sovereign AI – from critical risk to trusted solution KEEQuant, Collaider and noris network demonstrate a sovereign AI model that combines quantum-secured communication, trusted German infrastructure",
+      "url": "https://www.keequant.com",
+      "source": "KEEQuant",
+      "date": "2026-06-18"
+    },
+    {
+      "title": "QuINSiDa Demonstrates Optical Wireless Quantum Security",
+      "excerpt": "Optical wireless quantum secure communication: free-space QKD and Li-Fi in one system. The German consortium QuINSiDa has achieved a major step towards mobile quantum-secure communication",
+      "url": "https://www.keequant.com",
+      "source": "KEEQuant",
+      "date": "2026-05-26"
+    },
+    {
+      "title": "KEEQuant Unveils Commercial-Grade Chip-Scale QKD",
+      "excerpt": "All major optical building blocks of QKD integrated on photonic chips, enabling scalable, cost-efficient quantum-secure communications for real-world networks",
+      "url": "https://www.keequant.com",
+      "source": "KEEQuant",
+      "date": "2026-03-16"
     }
   ]
 }

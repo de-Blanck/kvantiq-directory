@@ -3,15 +3,27 @@
   "slug": "clops",
   "algorithm": "Parameterized model circuits (Quantum Volume-type)",
   "category": "other",
-  "tags": ["metric", "IBM", "speed", "hardware-performance", "throughput"],
+  "tags": [
+    "metric",
+    "IBM",
+    "speed",
+    "hardware-performance",
+    "throughput"
+  ],
   "description": "CLOPS is a hardware-agnostic speed metric developed by IBM that measures how fast a quantum processor can execute parameterized circuit layers. It captures the full hardware-software stack including gate execution speed, classical compilation time, control instruction generation, and data transfer rates. IBM updated the metric in 2023 to CLOPSh, replacing Quantum Volume with layer fidelity for a more comprehensive assessment.",
   "hardware": "IBM Quantum (applicable to any platform)",
   "framework": "IBM Qiskit",
   "reproducible": true,
   "datePublished": "2021-11-01",
   "keyMetrics": [
-    {"metric": "Metric type", "value": "Circuit layer ops/sec"},
-    {"metric": "Updated version", "value": "CLOPSh (2023)"}
+    {
+      "metric": "Metric type",
+      "value": "Circuit layer ops/sec"
+    },
+    {
+      "metric": "Updated version",
+      "value": "CLOPSh (2023)"
+    }
   ],
   "significance": "Industry-standard speed metric capturing full hardware-software stack performance, essential for comparing quantum processor throughput across platforms.",
   "sources": [
@@ -26,6 +38,22 @@
       "url": "https://www.ibm.com/quantum/blog/circuit-layer-operations-per-second",
       "title": "Driving quantum performance: CLOPS benchmark",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "IBM Proposes Circuit Layer Operations Per Second (CLOPS) as Quantum Performance Metric",
+      "excerpt": "IBM Quantum team proposes CLOPS as a speed benchmark that measures how fast a quantum processor can execute parameterized circuit layers, capturing the full hardware-software stack including gate execution speed, classical compilation time, control instruction generation, and data transfer rates.",
+      "url": "https://www.ibm.com/quantum/blog/circuit-layer-operations-per-second",
+      "source": "IBM Quantum Blog",
+      "date": "2021-11-01"
+    },
+    {
+      "title": "Quality, Speed, and Scale: Three Key Attributes to Measure Near-Term Quantum Computer Performance",
+      "excerpt": "Peer-reviewed paper proposing Circuit Layer Operations Per Second (CLOPS) as a speed benchmark alongside Quantum Volume and qubit count, with procedure for measuring CLOPS and characterization of IBM Quantum systems.",
+      "url": "https://arxiv.org/abs/2110.14108",
+      "source": "arXiv",
+      "date": "2021-10-27"
     }
   ]
 }

@@ -4,7 +4,13 @@
   "country": "Netherlands",
   "region": "western-europe",
   "type": "hardware",
-  "tags": ["cv-qkd", "quantum communication", "pluggable", "photonics", "qsfp"],
+  "tags": [
+    "cv-qkd",
+    "quantum communication",
+    "pluggable",
+    "photonics",
+    "qsfp"
+  ],
   "founded": 2023,
   "description": "CUbIQ Technologies develops Continuous Variable QKD (CV-QKD) transceivers packaged in standard QSFP-28 pluggable modules, enabling quantum-secure key distribution at a fraction of the cost and power of conventional rack-based QKD systems. The company demonstrated a proof-of-concept at ECOC 2025 in collaboration with Coherent and Liberty Global. CUbIQ was spun out of Eindhoven University of Technology.",
   "website": "https://cubiq-technologies.com",
@@ -14,7 +20,10 @@
   "funding": "EIC Transition grant (~€2.5M); NWO Take-off Grant 2 (Dutch Research Council)",
   "accessModel": "Hardware sales (pluggable QKD modules)",
   "products": [
-    {"name": "CV-QKD QSFP-28 Transceiver", "description": "Continuous Variable QKD transceiver in standard QSFP-28 pluggable form factor for quantum-secure key distribution"}
+    {
+      "name": "CV-QKD QSFP-28 Transceiver",
+      "description": "Continuous Variable QKD transceiver in standard QSFP-28 pluggable form factor for quantum-secure key distribution"
+    }
   ],
   "highlights": [
     "QKD in standard QSFP-28 pluggable — fraction of cost and power of rack-based systems",
@@ -39,6 +48,15 @@
       "url": "https://qt.eu/news/2025/2025-03-18_quantum-tech-companies-chosen-in-latest-EIC-round",
       "title": "Quantum tech companies chosen in latest EIC Transition round (EU Quantum Flagship, March 2025)",
       "dateAccessed": "2026-03-21"
+    }
+  ],
+  "news": [
+    {
+      "title": "CUbIQ Technologies Unveils Quantum Key Distribution Breakthrough demonstrated in a QSFP-28 Pluggable in Collaboration with Coherent, and Liberty Global",
+      "excerpt": "CUbIQ Technologies announced a successful proof-of-concept showcasing quantum key distribution in a QSFP-28 pluggable form factor",
+      "url": "https://www.optica.org/about/newsroom/corporate_member_news/2025/cubiq_technologies_unveils_quantum_key_distribution_breakthrough_demonstrated_in_a_qsfp-28_pluggable/",
+      "source": "Optica",
+      "date": "2025-09-29"
     }
   ]
 }

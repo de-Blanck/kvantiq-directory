@@ -3,12 +3,22 @@
   "slug": "catalyst-design-green-hydrogen",
   "industry": "Energy & Chemistry",
   "category": "chemistry",
-  "tags": ["catalyst-design", "green-hydrogen", "electrolysis", "quantum-chemistry", "simulation"],
+  "tags": [
+    "catalyst-design",
+    "green-hydrogen",
+    "electrolysis",
+    "quantum-chemistry",
+    "simulation"
+  ],
   "description": "Quantum and quantum-inspired computing methods are accelerating the discovery of catalysts for water electrolysis, a key process in green hydrogen production. Researchers have used quantum-inspired optimization to discover new catalyst families with mass activity eight times higher than state-of-the-art materials.",
   "problem": "Efficient green hydrogen production via water electrolysis requires catalysts for the oxygen evolution reaction (OER) that are both high-performing and cost-effective. Current catalysts rely on scarce iridium, and the combinatorial space of possible multi-element catalyst compositions is too vast for exhaustive experimental screening.",
   "approach": "Quantum-inspired computing and quantum annealers are combined with cluster expansion methods to explore an enormous chemical design space — on the order of hundreds of quadrillions of possible catalyst compositions. Separately, quantum algorithms like VQE are used to simulate the electronic structure of catalytic active sites with higher accuracy than classical density functional theory.",
   "results": "University of Toronto and Fujitsu researchers discovered a new Ru-Cr-Mn-Sb-O2 catalyst family using quantum-inspired optimization, with the best candidate showing 8x higher mass activity than RuO2 and stable performance over 180 hours. The main component, ruthenium, is significantly cheaper than the iridium used in current catalysts.",
-  "companies": ["hqs", "pasqal", "kvantify"],
+  "companies": [
+    "hqs",
+    "pasqal",
+    "kvantify"
+  ],
   "sources": [
     {
       "type": "url",
@@ -21,6 +31,15 @@
       "url": "https://pubs.acs.org/doi/10.1021/acs.jcim.4c01212",
       "title": "Modeling Heterogeneous Catalysis Using Quantum Computers: An Academic and Industry Perspective",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Using quantum-inspired computing to discover an improved catalyst for clean hydrogen",
+      "excerpt": "Researchers from the University of Toronto and Fujitsu have developed a new way of searching through chemical space for materials with desirable properties, resulting in a promising new catalyst material that could help lower the cost of producing clean hydrogen through water electrolysis.",
+      "url": "https://phys.org/news/2022-12-quantum-inspired-catalyst-hydrogen.html",
+      "source": "phys.org",
+      "date": "2022-12-16"
     }
   ]
 }

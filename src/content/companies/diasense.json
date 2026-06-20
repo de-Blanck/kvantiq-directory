@@ -4,7 +4,13 @@
   "country": "Denmark",
   "region": "nordics",
   "type": "hardware",
-  "tags": ["quantum-sensing", "NV-centers", "diamond", "semiconductor-metrology", "DTU-spinout"],
+  "tags": [
+    "quantum-sensing",
+    "NV-centers",
+    "diamond",
+    "semiconductor-metrology",
+    "DTU-spinout"
+  ],
   "founded": 2024,
   "description": "DIASENSE develops quantum diamond magnetic microscopes based on nitrogen-vacancy (NV) centers for contactless semiconductor chip failure analysis and defect detection. The Lyngby-based DTU spin-out joined the BioInnovation Institute (BII) Venture House 8 cohort and secured EUR 1.3M in follow-on BII funding in March 2026, bringing total funding to approximately EUR 1.8M. Its quantum diamond microscopy targets a chip-yield bottleneck where conventional methods cannot non-invasively map current flow inside packaged integrated circuits.",
   "website": "https://www.diasense.dk",
@@ -42,6 +48,36 @@
       "url": "https://dqc.dk/diasense-new-partner-in-danish-quantum-community/",
       "title": "DIASENSE - New Partner in Danish Quantum Community",
       "dateAccessed": "2026-05-01"
+    }
+  ],
+  "news": [
+    {
+      "title": "BII Backs Quantum Chip Diagnostic Startup Diasense With Additional €1.3 Million Investment",
+      "excerpt": "Copenhagen's BioInnovation Institute provided Diasense with €1.3 million in follow-on financing, bringing its total investment in the quantum semiconductor diagnostics startup to €1.9 million.",
+      "url": "https://thequantuminsider.com/2026/03/04/bii-backs-quantum-chip-diagnostic-startup-diasense-with-additional-e1-3-million-investment/",
+      "source": "The Quantum Insider",
+      "date": "2026-03-04"
+    },
+    {
+      "title": "Diasense Receives €1.3M ($1.5M USD) to Industrialize Quantum Diamond Microscopy",
+      "excerpt": "Diasense, a Copenhagen-based quantum startup, has secured €1.3 million in follow-on funding from the BioInnovation Institute (BII) as part of the Venture House 8 cohort, bringing the company's total support from BII to €1.8 million.",
+      "url": "https://quantumcomputingreport.com/diasense-receives-e1-3m-1-5m-usd-to-industrialize-quantum-diamond-microscopy/",
+      "source": "Quantum Computing Report",
+      "date": "2026-03-04"
+    },
+    {
+      "title": "Danish-Dutch quantum diamond microscope targets chip yield bottlenecks",
+      "excerpt": "A Danish-Dutch consortium has secured about 5.7 million euros to develop a quantum-based failure analysis tool for the semiconductor industry. Led by Diasense, the NG-QDMM project includes 3.9 million euros from the Innovation Fund Denmark.",
+      "url": "https://bits-chips.com/article/danish-dutch-quantum-diamond-microscope-targets-chip-yield-bottlenecks/",
+      "source": "Bits&Chips",
+      "date": "2026-04-21"
+    },
+    {
+      "title": "DIASENSE new partner in Danish Quantum Community",
+      "excerpt": "DIASENSE has joined Danish Quantum Community as a new partner. DIASENSE is a spin-out from The Technical University of Denmark founded in 2024 by Alexander Huck, Ulrik L. Andersen, Marvin Holten, and Christian Stig Dalsgaard Nielsen.",
+      "url": "https://dqc.dk/diasense-new-partner-in-danish-quantum-community/",
+      "source": "Danish Quantum Community",
+      "date": "2025-05-15"
     }
   ]
 }

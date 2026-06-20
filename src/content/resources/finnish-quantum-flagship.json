@@ -29,5 +29,35 @@
       "title": "Business Finland Quantum Technology Investment Announcement",
       "dateAccessed": "2026-03-20"
     }
+  ],
+  "news": [
+    {
+      "title": "InstituteQ university partners launch national cross-institutional studies agreement",
+      "excerpt": "Following InstituteQ's expansion in 2025, students in eligible degree programmes at InstituteQ university partner institutions will be able to register for cross-institutional studies.",
+      "url": "https://instituteq.fi",
+      "source": "InstituteQ",
+      "date": "2026-06-18"
+    },
+    {
+      "title": "Sebastián Bergeret selected as new InstituteQ Chair of Excellence, hosted at University of Jyväskylä",
+      "excerpt": "Professor Sebastián Bergeret has been selected as the University of Jyväskylä's new InstituteQ Chair of Excellence for the 2026-2028 term.",
+      "url": "https://instituteq.fi",
+      "source": "InstituteQ",
+      "date": "2026-06-11"
+    },
+    {
+      "title": "InstituteQ joins €20M European Quantum Academy initiative",
+      "excerpt": "InstituteQ joins the European Quantum Academy to enhance quantum education, aiming to train 600 professionals and 5,000 students across Europe.",
+      "url": "https://instituteq.fi",
+      "source": "InstituteQ",
+      "date": "2026-05-22"
+    },
+    {
+      "title": "InstituteQ Colloquium: Professor Lukas Novotny",
+      "excerpt": "Professor Lukas Novotny will discuss quantum control of levitated nanoparticles and their applications in sensing and measurement precision.",
+      "url": "https://instituteq.fi",
+      "source": "InstituteQ",
+      "date": "2026-04-29"
+    }
   ]
 }

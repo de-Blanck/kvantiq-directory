@@ -4,7 +4,12 @@
   "country": "Denmark",
   "region": "nordics",
   "type": "software",
-  "tags": ["quantum-finance", "portfolio-optimization", "risk-modeling", "fintech"],
+  "tags": [
+    "quantum-finance",
+    "portfolio-optimization",
+    "risk-modeling",
+    "fintech"
+  ],
   "founded": 2025,
   "description": "Copenhagen Quantum is a quantum-finance SaaS startup applying quantum algorithms, stochastic modeling, and HPC to portfolio optimization, risk modeling, credit clustering, and insurance segmentation. Founded by Tim Bruun Madsen, an industrial PhD student at the University of Copenhagen Department of Mathematics, the company joined the Danish Quantum Community as a partner in January 2026.",
   "website": "https://coqu.dk",
@@ -43,6 +48,22 @@
       "title": "Quantum technology reshaping Denmark's financial landscape - Invest in Denmark",
       "datePublished": "2025-11-01",
       "dateAccessed": "2026-05-01"
+    }
+  ],
+  "news": [
+    {
+      "title": "DQC welcomes Copenhagen Quantum as a new partner",
+      "excerpt": "Copenhagen Quantum joins the Danish Quantum Community as a partner, building next-generation quantum solutions for the financial services industry to transform how banks, insurers, and asset managers make decisions.",
+      "url": "https://dqc.dk/dqc-welcomes-copenhagen-quantum-as-new-partner/",
+      "source": "Danish Quantum Community",
+      "date": "2026-01-08"
+    },
+    {
+      "title": "Tim Bruun Madsen joins University of Copenhagen as PhD student",
+      "excerpt": "Tim Bruun Madsen was employed as a PhD student on February 1, 2026, in the Insurance and Economics section at the Department of Mathematical Sciences. His PhD research focuses on quantum computing applications in quantitative finance.",
+      "url": "https://www.math.ku.dk/english/about/news/new-names/tim-bruun-madsen-industrial-phd-student/",
+      "source": "University of Copenhagen Department of Mathematical Sciences",
+      "date": "2026-02-20"
     }
   ]
 }

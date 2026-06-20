@@ -3,7 +3,12 @@
   "slug": "mqt-bench",
   "algorithm": "70+ quantum algorithms across multiple domains",
   "category": "other",
-  "tags": ["benchmark-suite", "scalable", "compiler", "standardization"],
+  "tags": [
+    "benchmark-suite",
+    "scalable",
+    "compiler",
+    "standardization"
+  ],
   "description": "MQT Bench is a comprehensive quantum computing benchmark suite containing over 70 algorithm implementations across various application domains. Developed by the Technical University of Munich, it provides quantum circuits at different abstraction levels (2 to 130 qubits) and in multiple formats. MQT Bench is designed for evaluating quantum compilers, simulators, and hardware platforms.",
   "hardware": "Multi-platform",
   "framework": "Qiskit",
@@ -11,9 +16,18 @@
   "reproducible": true,
   "datePublished": "2023-07-20",
   "keyMetrics": [
-    {"metric": "Algorithm implementations", "value": "70+"},
-    {"metric": "Qubit range", "value": "2-130"},
-    {"metric": "Developer", "value": "TU Munich"}
+    {
+      "metric": "Algorithm implementations",
+      "value": "70+"
+    },
+    {
+      "metric": "Qubit range",
+      "value": "2-130"
+    },
+    {
+      "metric": "Developer",
+      "value": "TU Munich"
+    }
   ],
   "significance": "Most comprehensive open-source benchmark suite for quantum computing, enabling standardized evaluation across compilers, simulators, and hardware platforms.",
   "sources": [
@@ -28,6 +42,15 @@
       "url": "https://github.com/cda-tum/MQTBench",
       "title": "MQT Bench GitHub Repository",
       "dateAccessed": "2026-03-20"
+    }
+  ],
+  "news": [
+    {
+      "title": "MQT Bench: Benchmarking Software and Design Automation Tools for Quantum Computing",
+      "excerpt": "Research paper published in Quantum journal describing MQT Bench, a comprehensive benchmark suite comprising more than 70,000 benchmark circuits ranging from 2 to 130 qubits across four abstraction levels, designed for benchmarking quantum software tools.",
+      "url": "https://quantum-journal.org/papers/q-2023-07-20-1062/",
+      "source": "Quantum Journal",
+      "date": "2023-07-20"
     }
   ]
 }

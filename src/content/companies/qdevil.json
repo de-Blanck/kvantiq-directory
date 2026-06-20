@@ -4,7 +4,12 @@
   "country": "Denmark",
   "region": "nordics",
   "type": "hardware",
-  "tags": ["quantum-control", "auxiliary-electronics", "cryogenic", "superconducting"],
+  "tags": [
+    "quantum-control",
+    "auxiliary-electronics",
+    "cryogenic",
+    "superconducting"
+  ],
   "founded": 2016,
   "description": "QDevil is a Danish quantum technology company that develops and manufactures auxiliary electronics and specialized components critical for operating quantum processing units, from millikelvin to room temperature. Originally a spin-out from the Niels Bohr Institute at the University of Copenhagen, QDevil was acquired by Quantum Machines in 2022 and now operates as its Auxiliary Electronics Division from Copenhagen.",
   "website": "https://www.quantum-machines.co",
@@ -56,6 +61,22 @@
       "title": "QDevil, Niels Bohr Institute, and KU Tech Transfer Office Honored with 2024 DPG Technology Transfer Prize",
       "datePublished": "2024-06-10",
       "dateAccessed": "2026-05-01"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quantum Machines Acquires QDevil to Provide Full-Stack Orchestration Platform",
+      "excerpt": "Quantum Machines announced its acquisition of Danish quantum computing leader QDevil to strengthen its position as the leading provider of quantum control hardware and software.",
+      "url": "https://www.quantum-machines.co/press-release/quantum-machines-acquires-qdevil-to-provide-full-stack-orchestration-platform/",
+      "source": "Quantum Machines Press Release",
+      "date": "2022-03-30"
+    },
+    {
+      "title": "QDevil Receives 2024 Technology Transfer Prize from German Physical Society",
+      "excerpt": "QDevil, a spin-out enterprise from the Niels Bohr Institute, University of Copenhagen, has been awarded the Technology Transfer Prize 2024 from the German Physical Society for the successful process of transforming lab circuits into commercial QDAC and QBoard solutions.",
+      "url": "https://nbi.ku.dk/english/news/happening-at-nbi/nbi-spin-out-enterprise-receives-prestigious-tech-transfer-award",
+      "source": "Niels Bohr Institute",
+      "date": "2023-11-20"
     }
   ]
 }

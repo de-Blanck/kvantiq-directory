@@ -4,7 +4,12 @@
   "country": "Netherlands",
   "region": "western-europe",
   "type": "hardware",
-  "tags": ["quantum-transducer", "quantum-networking", "microwave-to-optical", "QuTech-spinoff"],
+  "tags": [
+    "quantum-transducer",
+    "quantum-networking",
+    "microwave-to-optical",
+    "QuTech-spinoff"
+  ],
   "founded": 2020,
   "description": "QphoX develops quantum transducers that convert quantum information between microwave and optical frequencies, enabling quantum computers to network over standard telecom fiber. A spin-off from TU Delft's Quantum Nanoscience department, QphoX launched the first commercial quantum transducer in March 2026.",
   "website": "https://qphox.eu",
@@ -36,6 +41,43 @@
       "url": "https://qphox.eu/news/qphox-launches-breakthrough-product-allowing-distributed-quantum-computing-over-long-distance-optical-networks/",
       "title": "QphoX Launches Breakthrough Product Allowing Distributed Quantum Computing Over Long-distance Optical Networks",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "QphoX Launches Breakthrough Product Allowing Distributed Quantum Computing Over Long-distance Optical Networks",
+      "excerpt": "QphoX's new Quantum Transducer allows quantum information to travel through optical fiber networks at room temperature and over large distances. IBM will work with the Quantum Transducer to connect superconducting qubits via the company's Quantum Networking Unit test devices. The product will enable the growth of distributed, modular quantum computers operating across long distances.",
+      "url": "https://qphox.eu/news/qphox-launches-breakthrough-product-allowing-distributed-quantum-computing-over-long-distance-optical-networks/",
+      "source": "QphoX",
+      "date": "2026-03-12"
+    },
+    {
+      "title": "QphoX is work package leader in the European Quantum Pilot Line (SUPREME)",
+      "excerpt": "QphoX is work package leader in the European Quantum Pilot Line (SUPREME)",
+      "url": "https://qphox.eu",
+      "source": "QphoX",
+      "date": "2026-03-16"
+    },
+    {
+      "title": "€50 Million European Quantum pilot P4Q to start in 2026",
+      "excerpt": "€50 Million European Quantum pilot P4Q to start in 2026",
+      "url": "https://qphox.eu",
+      "source": "QphoX",
+      "date": "2026-01-20"
+    },
+    {
+      "title": "European Innovation Council selects QphoX to invest €10 Million from its STEP Scale-Up Scheme",
+      "excerpt": "European Innovation Council selects QphoX to invest €10 Million from its STEP Scale-Up Scheme",
+      "url": "https://qphox.eu",
+      "source": "QphoX",
+      "date": "2025-11-20"
+    },
+    {
+      "title": "New Building Block for the Quantum Internet",
+      "excerpt": "New Building Block for the Quantum Internet",
+      "url": "https://qphox.eu",
+      "source": "QphoX",
+      "date": "2025-11-11"
     }
   ]
 }

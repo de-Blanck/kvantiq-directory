@@ -4,7 +4,12 @@
   "country": "Finland",
   "region": "nordics",
   "type": "software",
-  "tags": ["quantum-optimization", "AI", "quantum-circuits", "compiler"],
+  "tags": [
+    "quantum-optimization",
+    "AI",
+    "quantum-circuits",
+    "compiler"
+  ],
   "founded": 2024,
   "description": "QMill develops AI-powered quantum circuit optimization software to improve the performance and efficiency of quantum algorithms. The company's technology uses machine learning to automatically optimize quantum circuits, reducing gate counts and improving execution fidelity on real quantum hardware. QMill's solutions aim to bridge the gap between theoretical quantum algorithms and practical implementation.",
   "website": "https://qmill.com",
@@ -35,6 +40,43 @@
       "url": "https://thequantuminsider.com/2024/11/19/qmill-raises-5m-seed-funding/",
       "title": "QMill Raises $5M Seed Funding - The Quantum Insider",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Blog: QMill's quantum circuits at Junction Quantum Hack 2026",
+      "excerpt": "QMill participated in the pioneering Quantum Hack as both a challenge and tech partner. QMill challenge attracted many participants, who worked on the challenge through the QMill Quantum Advantage Services platform.",
+      "url": "https://qmill.com",
+      "source": "qmill.com",
+      "date": "2026-06-09"
+    },
+    {
+      "title": "Telia teams up with QMill on quantum-safe mobile messaging",
+      "excerpt": "To the lengthening list of names that could help telcos with their quantum-safe networking strategies, add QMill.",
+      "url": "https://qmill.com",
+      "source": "qmill.com",
+      "date": "2026-05-26"
+    },
+    {
+      "title": "Telia and QMill demonstrate a new quantum-enhanced data encryption method",
+      "excerpt": "Telia and QMill demonstrate a new quantum-enhanced data encryption method for mobile networks.",
+      "url": "https://qmill.com",
+      "source": "qmill.com",
+      "date": "2026-05-26"
+    },
+    {
+      "title": "ESL Shipping and QMill explore quantum computing for complex shipping decisions",
+      "excerpt": "ESL Shipping has partnered with QMill to assess quantum computing suitability for optimization problems.",
+      "url": "https://qmill.com",
+      "source": "qmill.com",
+      "date": "2026-05-21"
+    },
+    {
+      "title": "Significant funding for quantum computing projects from Business Finland",
+      "excerpt": "Funding granted for ESL Shipping in optimization and QMill in algorithm R&D.",
+      "url": "https://qmill.com",
+      "source": "qmill.com",
+      "date": "2026-05-21"
     }
   ]
 }

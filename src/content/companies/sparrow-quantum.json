@@ -4,7 +4,12 @@
   "country": "Denmark",
   "region": "nordics",
   "type": "hardware",
-  "tags": ["single-photon", "quantum-networking", "photonics", "NBI-spinout"],
+  "tags": [
+    "single-photon",
+    "quantum-networking",
+    "photonics",
+    "NBI-spinout"
+  ],
   "founded": 2016,
   "description": "Sparrow Quantum develops deterministic single-photon source photonic chips for quantum networking and quantum computing, spun out of Professor Peter Lodahl's group at the Niels Bohr Institute. The Sparrow Core product, launched November 2025, delivers single-photon emission with industry-leading efficiency and thermal stability for room-temperature operation. The company raised a EUR 27.5M follow-on round in December 2025 — described in trade press as Scandinavia's largest quantum-technology investment — on top of a EUR 21.5M Series A in April 2025.",
   "website": "https://www.sparrowquantum.com",
@@ -48,6 +53,22 @@
       "title": "Sparrow Quantum Secures €21.5 Million in Series A Round - The Quantum Insider",
       "datePublished": "2025-04-10",
       "dateAccessed": "2026-05-01"
+    }
+  ],
+  "news": [
+    {
+      "title": "Sparrow Quantum Raises €27.5 Million, Strengthening Denmark's Role in The Global Quantum Race",
+      "excerpt": "Sparrow Quantum raised €27.5 million in Series A funding, marking Scandinavia's largest quantum-technology investment and accelerating the company's push toward industrial photonic quantum chips.",
+      "url": "https://thequantuminsider.com/2025/12/01/sparrow-quantum-raises-e27-5-million-strengthening-denmarks-role-in-the-global-quantum-race/",
+      "source": "The Quantum Insider",
+      "date": "2025-12-01"
+    },
+    {
+      "title": "Sparrow Quantum Secures €21.5 Million in Series A Round",
+      "excerpt": "Sparrow Quantum secured €21.5 million in Series A funding to scale production, advance R&D, and commercialize its photonic quantum chip technology. The investment round was led by PensionDanmark.",
+      "url": "https://thequantuminsider.com/2025/04/10/sparrow-quantum-secures-e21-5-million-in-series-a-round/",
+      "source": "The Quantum Insider",
+      "date": "2025-04-10"
     }
   ]
 }

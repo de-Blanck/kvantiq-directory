@@ -4,7 +4,11 @@
   "country": "Netherlands",
   "region": "western-europe",
   "type": "hardware",
-  "tags": ["superconducting", "quantum-processors", "quantum-chips"],
+  "tags": [
+    "superconducting",
+    "quantum-processors",
+    "quantum-chips"
+  ],
   "founded": 2020,
   "description": "QuantWare manufactures superconducting quantum processors for the global quantum computing industry. As a dedicated quantum chip supplier, they provide off-the-shelf and custom quantum processing units to research institutions and companies building quantum computers.",
   "website": "https://www.quantware.com",
@@ -60,6 +64,13 @@
     }
   ],
   "news": [
+    {
+      "title": "QuantWare Raises $178 Million to Build Quantum Processors at an Industrial Scale",
+      "excerpt": "QuantWare raised $178 million in a Series B round as it advances a 10,000-qubit processor architecture and expands manufacturing capacity to meet growing global demand. The company's VIO™ modular architecture and planned KiloFab facility aim to overcome scaling constraints in superconducting systems.",
+      "url": "https://thequantuminsider.com/2026/05/05/quantware-raises-178-million-to-build-quantum-processors-at-an-industrial-scale/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-05"
+    },
     {
       "title": "QuantWare closes €152M (USD 178M) Series B to build KiloFab — the world's largest open-architecture quantum chip fabrication facility",
       "excerpt": "The round, the largest ever for a Dutch deep tech company and for any dedicated quantum processor startup worldwide, will fund a new Delft fab increasing production capacity 20x; new investors include Intel Capital and In-Q-Tel.",

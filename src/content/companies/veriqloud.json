@@ -4,7 +4,12 @@
   "country": "France",
   "region": "western-europe",
   "type": "software",
-  "tags": ["quantum-cryptography", "quantum-networking", "quantum-security", "FranceQCI"],
+  "tags": [
+    "quantum-cryptography",
+    "quantum-networking",
+    "quantum-security",
+    "FranceQCI"
+  ],
   "founded": 2015,
   "description": "VeriQloud develops software and protocols for secure quantum communication networks, including quantum key distribution and cloud-based quantum computing access. The company contributes to the FranceQCI national quantum communication infrastructure project and offers HyQloud, a full-stack solution for hybrid classical-quantum cloud datacenters.",
   "website": "https://veriqloud.com",
@@ -39,6 +44,15 @@
       "url": "https://www.quantonation.com/2023/05/23/veriqloud-secures-1-9-million-investment-from-quantonation/",
       "title": "VeriQloud Secures EUR 1.9 Million Investment from Quantonation and WinEquity",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "VeriQloud Secures €1.9 Million Investment from Quantonation and WinEquity",
+      "excerpt": "VeriQloud raised €1.9 million in a funding round led by Quantonation and joined by WinEquity. The capital will enable VeriQloud to accelerate the development of its hardware and software solutions for quantum communication networks.",
+      "url": "https://www.quantonation.com/2023/05/23/veriqloud-secures-1-9-million-investment-from-quantonation/",
+      "source": "Quantonation",
+      "date": "2023-05-23"
     }
   ]
 }

@@ -4,7 +4,13 @@
   "country": "United Kingdom",
   "region": "uk",
   "type": "hardware",
-  "tags": ["superconducting", "coaxmon", "quantum-as-a-service", "error-correction", "full-stack"],
+  "tags": [
+    "superconducting",
+    "coaxmon",
+    "quantum-as-a-service",
+    "error-correction",
+    "full-stack"
+  ],
   "founded": 2017,
   "description": "Oxford Quantum Circuits (OQC) is a UK-based quantum computing company spun out of the University of Oxford, developing superconducting quantum processors based on its proprietary Coaxmon three-dimensional qubit architecture. OQC offers quantum-compute-as-a-service and has deployed systems in commercial data centres, with a published roadmap targeting 50,000 logical qubits by 2034.",
   "website": "https://oqc.tech",
@@ -49,6 +55,27 @@
     }
   ],
   "news": [
+    {
+      "title": "Oxford Quantum Circuits raises $100M in Series B funding",
+      "excerpt": "Japanese VC fund SBI Investment leads OQC's $100 million round, the UK's largest ever Series B in quantum computing.",
+      "url": "https://tech.eu/2023/11/27/oxford-quantum-circuits-raises-100m-in-largest-uk-series-b-for-quantum-computing/",
+      "source": "Tech.eu",
+      "date": "2023-11-27"
+    },
+    {
+      "title": "OQC announces public availability of OQC Toshiko platform",
+      "excerpt": "The company announced the public availability of OQC Toshiko, the world's first enterprise-ready quantum computing platform.",
+      "url": "https://tech.eu/2023/11/27/oxford-quantum-circuits-raises-100m-in-largest-uk-series-b-for-quantum-computing/",
+      "source": "Tech.eu",
+      "date": "2023-11-27"
+    },
+    {
+      "title": "OQC and Riverlane Launch UK's First Quantum Error Corrected Testbed Integrated with HPC",
+      "excerpt": "OQC and Riverlane launch the UK's first quantum error corrected testbed integrated with high-performance computing.",
+      "url": "https://quantumcomputingreport.com/oqc-and-riverlane-launch-uks-first-quantum-error-corrected-testbed-integrated-with-hpc/",
+      "source": "Quantum Computing Report",
+      "date": "2026-03-17"
+    },
     {
       "title": "OQC unveils 500+ qubit wafer-scale packaging architecture",
       "excerpt": "New packaging approach houses over 500 superconducting qubits on a single 3-inch die while preserving coherence and readout fidelity.",

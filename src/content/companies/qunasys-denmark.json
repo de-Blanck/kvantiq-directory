@@ -4,7 +4,12 @@
   "country": "Denmark",
   "region": "nordics",
   "type": "software",
-  "tags": ["quantum-chemistry", "drug-discovery", "DK-subsidiary", "BII"],
+  "tags": [
+    "quantum-chemistry",
+    "drug-discovery",
+    "DK-subsidiary",
+    "BII"
+  ],
   "founded": 2023,
   "description": "QunaSys Denmark ApS is the Danish subsidiary of Tokyo-headquartered QunaSys Inc., established August 2023 at the BioInnovation Institute's Deep Tech Lab Quantum in Copenhagen. As QunaSys's first overseas subsidiary, it leads Danish-funded quantum chemistry research projects. In 2025 it received a DKK 19M Innovation Fund Denmark grant for HyperTenQ, a four-year project with the University of Copenhagen and the Novo Nordisk Foundation Quantum Computing Programme to develop quantum-enhanced chemical simulations for drug discovery.",
   "website": "https://qunasys.com/en/",
@@ -42,6 +47,22 @@
       "title": "QunaSys Receives Funding to Advance Quantum-Enhanced Chemical Simulations for Drug Discovery and Beyond - The Quantum Insider",
       "datePublished": "2025-03-03",
       "dateAccessed": "2026-05-01"
+    }
+  ],
+  "news": [
+    {
+      "title": "QunaSys Establishes Overseas Subsidiary in Copenhagen, Denmark",
+      "excerpt": "QunaSys, a leading quantum computing company, announces the establishment of its first overseas subsidiary, QunaSys Denmark ApS, in Copenhagen. The subsidiary officially commenced operations on August 29, 2023, at Deep Tech Lab — Quantum, an accelerator space at Bio Innovation Institute, with the strategic goal of expanding its global clientele and securing top-tier quantum talents.",
+      "url": "https://qunasys.com/en/news/posts/231011en/",
+      "source": "QunaSys",
+      "date": "2023-10-11"
+    },
+    {
+      "title": "QunaSys Secures Innovation Fund Denmark's DKK 19 Million Grant for HyperTenQ Project",
+      "excerpt": "QunaSys has been awarded DKK 19 million from Innovation Fund Denmark for the HyperTenQ project, a four-year collaboration with the University of Copenhagen and the Novo Nordisk Foundation Quantum Computing Programme to advance quantum computing for chemistry, materials science, drug discovery, and energy solutions.",
+      "url": "https://qunasys.com/en/news/posts/hypertenq/",
+      "source": "QunaSys",
+      "date": "2025-03-03"
     }
   ]
 }

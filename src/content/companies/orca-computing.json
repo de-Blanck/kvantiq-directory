@@ -4,7 +4,13 @@
   "country": "United Kingdom",
   "region": "uk",
   "type": "hardware",
-  "tags": ["photonic", "quantum-memory", "room-temperature", "machine-learning", "defence"],
+  "tags": [
+    "photonic",
+    "quantum-memory",
+    "room-temperature",
+    "machine-learning",
+    "defence"
+  ],
   "founded": 2019,
   "description": "ORCA Computing is a London-based quantum computing company building photonic quantum computers that operate at room temperature using telecom-standard single photons stored in quantum memories. Spun out of the University of Oxford, ORCA has delivered systems to the UK Ministry of Defence and the National Quantum Computing Centre, and leads the Quantum Data Centre of the Future consortium.",
   "website": "https://orcacomputing.com",
@@ -42,6 +48,15 @@
       "url": "https://www.datacenterdynamics.com/en/news/uk-ministry-of-defence-acquires-orca-quantum-computer/",
       "title": "UK Ministry of Defence acquires Orca quantum computer - DCD",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "ORCA Computing Delivers First Photonic Quantum Computing System to UK's National Quantum Computing Centre",
+      "excerpt": "ORCA Computing has delivered and installed the UK's first public-sector photonic quantum computing system at the National Quantum Computing Centre (NQCC). The PT Series system was installed and operational within 36 hours, enabling early-stage research into hybrid quantum-classical workflows and practical quantum applications across multiple sectors.",
+      "url": "https://thequantuminsider.com/2025/06/11/orca-computing-delivers-first-photonic-quantum-computing-system-to-uks-national-quantum-computing-centre/",
+      "source": "The Quantum Insider",
+      "date": "2025-06-11"
     }
   ]
 }

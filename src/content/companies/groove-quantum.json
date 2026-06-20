@@ -4,7 +4,12 @@
   "country": "Netherlands",
   "region": "western-europe",
   "type": "hardware",
-  "tags": ["germanium qubits", "semiconductor", "spin qubits", "qutech-spinout"],
+  "tags": [
+    "germanium qubits",
+    "semiconductor",
+    "spin qubits",
+    "qutech-spinout"
+  ],
   "founded": 2024,
   "description": "Groove Quantum builds scalable quantum processors based on germanium spin qubits, using fabrication processes compatible with standard semiconductor manufacturing. The company was spun out of QuTech (TU Delft / TNO) and received a €10M EIC Accelerator grant and equity investment in 2025.",
   "website": "https://groovequantum.com",
@@ -14,7 +19,10 @@
   "funding": "€10M EIC Accelerator (grant + equity), awarded 2025",
   "accessModel": "Hardware sales (quantum processors)",
   "products": [
-    {"name": "Germanium Spin Qubit Processor", "description": "Scalable quantum processor based on germanium spin qubits compatible with standard semiconductor manufacturing"}
+    {
+      "name": "Germanium Spin Qubit Processor",
+      "description": "Scalable quantum processor based on germanium spin qubits compatible with standard semiconductor manufacturing"
+    }
   ],
   "highlights": [
     "Germanium qubits compatible with standard semiconductor fab processes",
@@ -39,6 +47,15 @@
       "url": "https://quantumcomputingreport.com/groove-quantum-secures-e10-million-eic-accelerator-funding-for-germanium-based-quantum-computing/",
       "title": "Groove Quantum secures €10M EIC Accelerator funding (Quantum Computing Report, 2025)",
       "dateAccessed": "2026-03-21"
+    }
+  ],
+  "news": [
+    {
+      "title": "Groove Quantum Secures €10 Million EIC Accelerator Funding",
+      "excerpt": "Groove Quantum was selected as one of 40 companies from over 1,000 applicants across Europe to receive €10 million in funding from the European Innovation Council Accelerator program, including a €2.5 million grant and additional equity investment from the EIC Fund, to scale germanium-based quantum chip technology.",
+      "url": "https://thequantuminsider.com/2025/07/07/groove-quantum-secures-e10-million-to-scale-germanium-based-quantum-chips/",
+      "source": "The Quantum Insider",
+      "date": "2025-07-07"
     }
   ]
 }

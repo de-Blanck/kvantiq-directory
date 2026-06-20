@@ -4,7 +4,13 @@
   "country": "Netherlands",
   "region": "western-europe",
   "type": "hardware",
-  "tags": ["quantum sensing", "nanodiamond", "nv-centers", "life sciences", "drug discovery"],
+  "tags": [
+    "quantum sensing",
+    "nanodiamond",
+    "nv-centers",
+    "life sciences",
+    "drug discovery"
+  ],
   "founded": 2024,
   "description": "QT Sense develops quantum sensing platforms based on fluorescent nanodiamond NV-center technology to measure oxidative stress and metabolic activity in individual living cells in real time. The company targets drug discovery applications for cancer, sepsis, and inflammatory diseases, and was spun out of University Medical Center Groningen.",
   "website": "https://qtsense.com",
@@ -14,7 +20,10 @@
   "funding": "€10M total; €4M round February 2026 (seed + QDNL + ONCO-Q grant); €6M round February 2025",
   "accessModel": "Platform licensing + research partnerships",
   "products": [
-    {"name": "Nanodiamond NV-Center Sensing Platform", "description": "Quantum sensing platform using fluorescent nanodiamond NV-centers to measure oxidative stress and metabolic activity in individual living cells in real time"}
+    {
+      "name": "Nanodiamond NV-Center Sensing Platform",
+      "description": "Quantum sensing platform using fluorescent nanodiamond NV-centers to measure oxidative stress and metabolic activity in individual living cells in real time"
+    }
   ],
   "highlights": [
     "Real-time single-cell metabolic measurement using quantum sensing",
@@ -39,6 +48,15 @@
       "url": "https://thequantuminsider.com/2026/02/04/qt-sense-raises-e4-million-for-quantum-tech-that-analyzes-living-cells-in-real-time/",
       "title": "QT Sense raises €4M for quantum tech that analyzes living cells in real time (The Quantum Insider, February 2026)",
       "dateAccessed": "2026-03-21"
+    }
+  ],
+  "news": [
+    {
+      "title": "QT Sense Raises €4 Million For Quantum Tech That Analyzes Living Cells in Real Time",
+      "excerpt": "QT Sense has raised €4 million to advance Quantum Nuova, a quantum sensing platform that enables real-time measurement of cellular stress and biochemical activity in living cells at single-cell resolution. The financing includes a €3 million seed round led by Cottonwood Technology Fund, follow-on investment from QDNL Participations, and €1 million in non-dilutive funding from ONCO-Q and the Quantum Forward Challenge.",
+      "url": "https://thequantuminsider.com/2026/02/04/qt-sense-raises-e4-million-for-quantum-tech-that-analyzes-living-cells-in-real-time/",
+      "source": "The Quantum Insider",
+      "date": "2026-02-03"
     }
   ]
 }

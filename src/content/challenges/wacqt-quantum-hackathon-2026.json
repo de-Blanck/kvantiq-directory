@@ -2,7 +2,13 @@
   "name": "WACQT Quantum Hackathon 2026",
   "slug": "wacqt-quantum-hackathon-2026",
   "organizer": "WACQT (Wallenberg Centre for Quantum Technology) and IBM",
-  "tags": ["hackathon", "Nordic", "Qiskit", "students", "Sweden"],
+  "tags": [
+    "hackathon",
+    "Nordic",
+    "Qiskit",
+    "students",
+    "Sweden"
+  ],
   "description": "The WACQT Quantum Hackathon at Chalmers University brought together approximately 40 participants to explore quantum technologies, collaborate in teams, and solve real-world problems using IBM's Qiskit quantum tools. Hosted by the Wallenberg Centre for Quantum Technology in Gothenburg, Sweden, the event included a mandatory preparation lecture on quantum computing with Qiskit before the two-day hackathon.",
   "website": "https://www.chalmers.se/en/centres/wacqt/wacqt-quantum-technology-testbed/quantum-hackathon/",
   "dateStart": "2026-01-24",
@@ -11,7 +17,11 @@
   "prizes": "Not disclosed",
   "location": "Gothenburg, Sweden",
   "eligibility": "Open to students and researchers, Qiskit preparation required",
-  "problemDomains": ["quantum-computing", "Qiskit", "real-world-applications"],
+  "problemDomains": [
+    "quantum-computing",
+    "Qiskit",
+    "real-world-applications"
+  ],
   "sources": [
     {
       "type": "website",
@@ -24,6 +34,15 @@
       "url": "https://www.chalmers.se/en/current/news/wacqt-quantum-hackathon-building-skills-for-the-future/",
       "title": "Quantum Hackathon: Building Skills for the Future - Chalmers",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quantum Hackathon: Building Skills for the Future",
+      "excerpt": "The WACQT, Chalmers Next Labs, and IBM hosted a quantum hackathon at Chalmers University in Gothenburg from January 24-25, 2026. Close to 40 participants from Sweden and abroad created quantum circuits applicable to industry use cases. The winning team, the Qiskiteers, impressed the jury with their investigation of efficiently encoding DNA data into quantum state using information theory techniques.",
+      "url": "https://www.chalmers.se/en/current/news/wacqt-quantum-hackathon-building-skills-for-the-future/",
+      "source": "Chalmers",
+      "date": "2026-01-28"
     }
   ]
 }

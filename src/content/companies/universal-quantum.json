@@ -4,7 +4,12 @@
   "country": "United Kingdom",
   "region": "uk",
   "type": "hardware",
-  "tags": ["trapped-ion", "microwave-control", "modular", "fault-tolerant"],
+  "tags": [
+    "trapped-ion",
+    "microwave-control",
+    "modular",
+    "fault-tolerant"
+  ],
   "founded": 2018,
   "description": "Universal Quantum is a University of Sussex spin-out building large-scale trapped-ion quantum computers using microwave-based qubit control instead of lasers, combined with a modular chip architecture connected via electric-field links. The company holds a EUR 67 million contract from Germany's DLR to build fault-tolerant quantum systems and has raised close to GBP 100 million in combined public and private funding.",
   "website": "https://universalquantum.com",
@@ -42,6 +47,22 @@
       "url": "https://www.sussex.ac.uk/broadcast/read/59206",
       "title": "German government tasks Sussex spin-out with building a powerful quantum computer in EUR 67M contract",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "German government tasks Sussex spin-out with building a powerful quantum computer in €67M contract",
+      "excerpt": "Physicists from University of Sussex spin-out company, Universal Quantum, led by Prof Winfried Hensinger and Dr Sebastian Weidt",
+      "url": "https://www.sussex.ac.uk/broadcast/read/59206",
+      "source": "University of Sussex",
+      "date": "2022-11-02"
+    },
+    {
+      "title": "UK Quantum computing is going universal through scaling",
+      "excerpt": "The UK has quietly but decisively established itself as a global leader in quantum technologies and Sussex-based Universal Quantum is leading the way.",
+      "url": "https://tech.eu/2025/07/31/uk-quantum-computing-is-going-universal-through-scaling/",
+      "source": "Tech.eu",
+      "date": "2025-07-31"
     }
   ]
 }

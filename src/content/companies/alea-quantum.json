@@ -4,7 +4,12 @@
   "country": "Denmark",
   "region": "nordics",
   "type": "hardware",
-  "tags": ["QRNG", "cryptography", "photonics", "DTU-spinout"],
+  "tags": [
+    "QRNG",
+    "cryptography",
+    "photonics",
+    "DTU-spinout"
+  ],
   "founded": 2022,
   "description": "Alea Quantum Technologies is a DTU spinout that builds high-performing optical quantum random number generator (QRNG) chips for cybersecurity, encryption, and quantum key distribution systems. The company commercializes 20+ years of quantum communication research at the Technical University of Denmark, packaging QRNG generation into chip-scale modules suitable for telecoms and mobile devices. Founded in March 2022 in Lyngby, Alea is backed by the Novo Nordisk Foundation, EU grants, and Innovation Fund Denmark.",
   "website": "https://alea-quantum.com",
@@ -36,6 +41,22 @@
       "url": "https://www.idtechex.com/en/research-article/alea-quantum/30155",
       "title": "Alea Quantum - IDTechEx Research Article",
       "dateAccessed": "2026-05-01"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quantum technology for mobile phone encryption is coming",
+      "excerpt": "DTU spin-out company Alea Quantum Technologies has developed a quantum mechanical random number generator that can support encryption of 4 gigabytes per second and be produced at low price. EU grants DKK 7 million for further development under Digital Europe programme.",
+      "url": "https://www.dtu.dk/english/newsarchive/2023/05/quantum-technology-for-mobile-phone-encryption-is-coming",
+      "source": "DTU",
+      "date": "2023-05-22"
+    },
+    {
+      "title": "QRNG chips for mobile – Danish tech start-up adds to ecosystem",
+      "excerpt": "Danish tech start-up develops QRNG chips for mobile devices to provide security upgrades for smartphone communications with quantum random number generators.",
+      "url": "https://techhq.com/2023/05/qrng-chips-for-mobile-danish-tech-start-up-adds-to-ecosystem/",
+      "source": "TechHQ",
+      "date": "2023-05-23"
     }
   ]
 }

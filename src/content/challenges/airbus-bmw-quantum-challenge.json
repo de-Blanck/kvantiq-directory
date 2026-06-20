@@ -2,7 +2,12 @@
   "name": "Airbus-BMW Quantum Computing Challenge",
   "slug": "airbus-bmw-quantum-challenge",
   "organizer": "Airbus and BMW Group",
-  "tags": ["challenge", "industry", "optimization", "high-prize"],
+  "tags": [
+    "challenge",
+    "industry",
+    "optimization",
+    "high-prize"
+  ],
   "description": "The Airbus-BMW Quantum Computing Challenge, titled \"The Quantum Mobility Quest\", was a year-long international competition launched in December 2023 and hosted by The Quantum Insider to identify quantum computing applications for aviation and automotive mobility problems. Phase one received detailed proposals from over 100 teams across more than 25 countries. Finalists were given Amazon Braket credits and access to QPUs from IonQ, IQM, QuEra, and Rigetti. Five winning teams — from the University of Southern California, University of Hamburg, 4colors Research (UK), Quandela (France), and TU Delft — were announced at Q2B Silicon Valley on 10 December 2024, each awarded EUR 30,000 across five categories: Quantum Simulation, Quantum Solvers, Quantum-powered Logistics, Quantum-Enhanced Autonomy, and the Golden App.",
   "website": "https://qcc.thequantuminsider.com/",
   "dateStart": "2023-12-01",
@@ -11,7 +16,11 @@
   "prizes": "EUR 150K total (EUR 30K per category, 5 categories)",
   "location": "Online",
   "eligibility": "Open to global teams and individuals",
-  "problemDomains": ["optimization", "aerospace-engineering", "automotive-manufacturing"],
+  "problemDomains": [
+    "optimization",
+    "aerospace-engineering",
+    "automotive-manufacturing"
+  ],
   "sources": [
     {
       "type": "website",
@@ -43,18 +52,11 @@
   ],
   "news": [
     {
-      "title": "Airbus and BMW Group launch Quantum Computing Challenge",
-      "excerpt": "Year-long competition opens for teams worldwide to propose quantum computing solutions for aviation and automotive mobility problems; hosted by The Quantum Insider with AWS providing Amazon Braket resources for finalists.",
-      "url": "https://www.airbus.com/en/newsroom/press-releases/2023-12-airbus-bmw-launch-quantum-computing-challenge",
-      "source": "Airbus Newsroom",
-      "date": "2023-12-01"
-    },
-    {
-      "title": "Quantum Leaps: Winners of Airbus-BMW Quantum Computing Challenge unveiled at Q2B Silicon Valley",
-      "excerpt": "Five winning teams — USC, University of Hamburg, 4colors Research (UK), Quandela (France), and TU Delft — each awarded EUR 30,000 across five categories; over 100 teams from 25+ countries competed.",
-      "url": "https://www.airbus.com/en/newsroom/press-releases/2024-12-quantum-leaps-winners-of-airbus-and-bmw-groups-quantum-computing",
-      "source": "Airbus Newsroom",
-      "date": "2024-12-10"
+      "title": "Winners announced in the Airbus-BMW Group Quantum Computing Challenge",
+      "excerpt": "The five winning teams of the Airbus and BMW Group Quantum Computing Challenge were announced at the Q2B conference in Silicon Valley, California. Winners include University of Southern California, University of Hamburg, 4colors Research Ltd, Quandela, and TU Delft, with solutions for Smart Coating, Quantum Powered Logistics, Quantum Enhanced Autonomy, Quantum Solvers, and the Golden App categories.",
+      "url": "https://aws.amazon.com/blogs/quantum-computing/winners-announced-in-the-airbus-bmw-group-quantum-computing-challenge/",
+      "source": "AWS Quantum Technologies Blog",
+      "date": "2024-12-11"
     }
   ]
 }

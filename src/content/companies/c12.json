@@ -4,7 +4,11 @@
   "country": "France",
   "region": "western-europe",
   "type": "hardware",
-  "tags": ["carbon-nanotube", "spin-qubit", "quantum-processors"],
+  "tags": [
+    "carbon-nanotube",
+    "spin-qubit",
+    "quantum-processors"
+  ],
   "founded": 2020,
   "description": "C12 Quantum Electronics builds quantum processors using carbon nanotube-based spin qubits. Their technology combines the coherence advantages of spin qubits with the unique electronic properties of ultra-pure carbon nanotubes to create scalable quantum computers.",
   "website": "https://www.c12qe.com",
@@ -36,5 +40,6 @@
       "title": "C12 Quantum Electronics raises €10M seed round",
       "dateAccessed": "2026-03-19"
     }
-  ]
+  ],
+  "news": []
 }

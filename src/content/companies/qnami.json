@@ -4,7 +4,12 @@
   "country": "Switzerland",
   "region": "dach",
   "type": "hardware",
-  "tags": ["quantum-sensing", "nanoscale-imaging", "diamond-nv-center", "quantum-microscopy"],
+  "tags": [
+    "quantum-sensing",
+    "nanoscale-imaging",
+    "diamond-nv-center",
+    "quantum-microscopy"
+  ],
   "founded": 2017,
   "description": "Qnami is a Swiss quantum sensing company spun out of the University of Basel, developing nanoscale imaging instruments based on nitrogen-vacancy centers in diamond. The company commercializes quantum microscope technology for applications in nanotechnology, life science, and spintronics device characterization.",
   "website": "https://qnami.ch",
@@ -40,6 +45,15 @@
       "url": "https://www.eetimes.com/swiss-quantum-sensing-startup-raises-e3-6m/",
       "title": "Swiss Quantum Sensing Startup Raises EUR 3.6m - EE Times",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Qnami Joins Quantum Design to Accelerate the Future of Quantum Sensing",
+      "excerpt": "Qnami announced a partnership with Quantum Design to accelerate quantum sensing technology development.",
+      "url": "https://qnami.ch",
+      "source": "Qnami",
+      "date": "2026-06-02"
     }
   ]
 }

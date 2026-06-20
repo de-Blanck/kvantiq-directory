@@ -3,7 +3,13 @@
   "slug": "quantum-kernel-methods",
   "algorithm": "Quantum Support Vector Machine (QSVM) with quantum kernels",
   "category": "machine-learning",
-  "tags": ["quantum-kernel", "QSVM", "classification", "feature-map", "machine-learning"],
+  "tags": [
+    "quantum-kernel",
+    "QSVM",
+    "classification",
+    "feature-map",
+    "machine-learning"
+  ],
   "description": "Benchmark evaluating quantum kernel estimation (QKE) and quantum kernel training (QKT) for classification tasks using quantum support vector machines. A large-scale study examined fidelity-based and projected quantum kernels across 64 datasets and five dataset families. While quantum kernels outperform classical methods on specifically constructed ad-hoc datasets, results on standard classical benchmarks are mixed.",
   "hardware": "Simulator / hardware-agnostic",
   "framework": "Qiskit Machine Learning, PennyLane",
@@ -11,9 +17,18 @@
   "reproducible": true,
   "datePublished": "2024-08-19",
   "keyMetrics": [
-    {"metric": "Datasets evaluated", "value": "64"},
-    {"metric": "Dataset families", "value": "5"},
-    {"metric": "Qubits used", "value": "10"}
+    {
+      "metric": "Datasets evaluated",
+      "value": "64"
+    },
+    {
+      "metric": "Dataset families",
+      "value": "5"
+    },
+    {
+      "metric": "Qubits used",
+      "value": "10"
+    }
   ],
   "significance": "Largest systematic evaluation of quantum kernel methods, revealing that quantum advantage is dataset-dependent and not universal for classification tasks.",
   "sources": [
@@ -28,6 +43,15 @@
       "url": "https://arxiv.org/abs/2409.04406",
       "title": "Quantum Kernel Methods under Scrutiny: A Benchmarking Study",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quantum Kernel Methods under Scrutiny: A Benchmarking Study published in Quantum Machine Intelligence",
+      "excerpt": "Large-scale benchmarking study by Schnabel and Roth examining fidelity-based and projected quantum kernels across 64 datasets and five dataset families, comparing quantum and classical machine learning methods for classification and regression tasks.",
+      "url": "https://arxiv.org/abs/2409.04406",
+      "source": "arXiv / Quantum Machine Intelligence",
+      "date": "2025-04-28"
     }
   ]
 }

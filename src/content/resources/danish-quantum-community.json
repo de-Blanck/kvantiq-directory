@@ -31,5 +31,28 @@
       "title": "About the Danish Quantum Community",
       "dateAccessed": "2026-03-19"
     }
+  ],
+  "news": [
+    {
+      "title": "Danish Quantum Community Announces New Board of Directors",
+      "excerpt": "On 17 June 2026, the Danish Quantum Community (DQC) held its Annual General Assembly kindly hosted by The Niels Bohr",
+      "url": "https://dqc.dk/",
+      "source": "dqc.dk",
+      "date": "2026-06-18"
+    },
+    {
+      "title": "DQC welcomes Wahl&Ross as new partner",
+      "excerpt": "We are pleased to announce that Wahl&Ross has joined the Danish Quantum Community as a new partner. As quantum technologies move from",
+      "url": "https://dqc.dk/",
+      "source": "dqc.dk",
+      "date": "2026-06-09"
+    },
+    {
+      "title": "Nordic Roundtable on the European Quantum Agenda",
+      "excerpt": "Last week, DQC hosted a Nordic roundtable on the European Quantum Agenda together with the Danish Business Authority, with support",
+      "url": "https://dqc.dk/",
+      "source": "dqc.dk",
+      "date": "2026-06-04"
+    }
   ]
 }
