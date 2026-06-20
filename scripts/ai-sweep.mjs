@@ -68,9 +68,12 @@ function isRecent(dateStr) {
 // the item is dropped without them; the URL's domain must match a fetched source
 // (anti-fabrication). `excerpt` is OPTIONAL but must be non-empty if present —
 // an empty/whitespace excerpt is dropped rather than written as "", which would
-// fail the content build. Exported for unit testing.
+// fail the content build. Items sharing a URL are collapsed to the first
+// occurrence (the model often emits several stories that can only cite the
+// entry's homepage). Exported for unit testing.
 export function normalizeNewsItems(rawItems, fetchedDomains) {
   if (!Array.isArray(rawItems)) return [];
+  const seen = new Set();
   return rawItems
     .filter(item => {
       if (!item || !item.title || !item.url || !item.date || !item.source) return false;
@@ -86,7 +89,12 @@ export function normalizeNewsItems(rawItems, fetchedDomains) {
       out.date = item.date;
       return out;
     })
-    .filter(item => item.title && item.source); // guard against whitespace-only title/source
+    .filter(item => item.title && item.source) // guard against whitespace-only title/source
+    .filter(item => { // collapse duplicate URLs, keeping the first
+      if (seen.has(item.url)) return false;
+      seen.add(item.url);
+      return true;
+    });
 }
 
 // Invoke `claude -p` as a subprocess. Token from CLAUDE_CODE_OAUTH_TOKEN env.

@@ -56,3 +56,14 @@ test('trims title and source', () => {
 test('returns [] for non-array input', () => {
   assert.deepEqual(normalizeNewsItems(null, domains), []);
 });
+
+test('collapses items that share a URL, keeping the first', () => {
+  const out = normalizeNewsItems([
+    { ...base, title: 'First story', url: 'https://example.com/x' },
+    { ...base, title: 'Second story', url: 'https://example.com/x' },
+    { ...base, title: 'Different page', url: 'https://example.com/y' },
+  ], domains);
+  assert.equal(out.length, 2);
+  assert.equal(out[0].title, 'First story');
+  assert.equal(out[1].url, 'https://example.com/y');
+});
