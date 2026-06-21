@@ -39,6 +39,18 @@
       "url": "https://www.crunchbase.com/organization/quandela",
       "title": "Quandela Crunchbase Company Profile",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/darpa-selects-quandela-for-stage-a-of-the-quantum-benchmarking-initiative/",
+      "title": "DARPA Selects Quandela for Stage A of the Quantum Benchmarking Initiative - HPCwire",
+      "dateAccessed": "2026-06-21"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quandela-selected-for-stage-a-of-darpas-quantum-benchmarking-initiative/",
+      "title": "Quandela Selected for Stage A of DARPA's Quantum Benchmarking Initiative - Quantum Computing Report",
+      "dateAccessed": "2026-06-21"
     }
   ],
   "news": [
@@ -55,6 +67,13 @@
       "url": "https://thequantuminsider.com/2026/04/17/ovhcloud-quandela-belenos-quantum-platform/",
       "source": "The Quantum Insider",
       "date": "2026-04-17"
+    },
+    {
+      "title": "DARPA selects Quandela for Stage A of the Quantum Benchmarking Initiative",
+      "excerpt": "Quandela joins DARPA's QBI programme, which evaluates whether any quantum computing architecture can achieve utility-scale performance by 2033. Under Stage A, Quandela will develop and defend a concept for a fault-tolerant, utility-scale photonic quantum computer.",
+      "url": "https://thequantuminsider.com/2026/06/16/darpa-selects-quandela-for-stage-a-of-the-quantum-benchmarking-initiative/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-16"
     }
   ]
 }

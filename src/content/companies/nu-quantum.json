@@ -47,5 +47,14 @@
       "title": "Nu Quantum Opens State-of-the-Art Trapped-Ion Qubit Networking Lab in Cambridge",
       "dateAccessed": "2026-03-19"
     }
+  ],
+  "news": [
+    {
+      "title": "Nu Quantum and Atom Computing sign MoU to network neutral-atom QPUs for utility-scale distributed quantum computing",
+      "excerpt": "The transatlantic collaboration will integrate Atom Computing's neutral-atom systems with Nu Quantum's reconfigurable photonic networking hardware, targeting integrated photonics network switches and qubit-photon entanglement interfaces to reach GigaQuOp-scale cluster performance.",
+      "url": "https://www.hpcwire.com/off-the-wire/atom-computing-and-nu-quantum-partner-to-unlock-utility-scale-quantum-computing/",
+      "source": "HPCwire",
+      "date": "2026-06-17"
+    }
   ]
 }

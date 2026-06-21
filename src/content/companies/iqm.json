@@ -52,6 +52,12 @@
       "url": "https://quantumcomputingreport.com/iqm-to-deploy-japans-first-enterprise-purchased-quantum-computer/",
       "title": "IQM to Deploy Japan's First Enterprise-Purchased Quantum Computer - Quantum Computing Report",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/iqm-upsizes-spac-merger-pipe-financing-to-146-million-with-capital-commitment-from-pension-insurer-ilmarinen/",
+      "title": "IQM Upsizes SPAC Merger PIPE Financing to $146 Million with Capital Commitment from Pension Insurer Ilmarinen - Quantum Computing Report",
+      "dateAccessed": "2026-06-21"
     }
   ],
   "news": [
@@ -75,6 +81,13 @@
       "url": "https://thequantuminsider.com/2026/04/27/iqm-toyo-quantum-deployment/",
       "source": "The Quantum Insider",
       "date": "2026-04-27"
+    },
+    {
+      "title": "IQM and RAAQ upsize PIPE financing to USD 146M ahead of Nasdaq and Helsinki listing",
+      "excerpt": "Ilmarinen, Finland's largest pension insurer, committed an additional USD 12M, bringing total PIPE commitments above USD 146M. The SPAC merger values IQM at approximately USD 1.8B pre-money; RAAQ shareholder vote scheduled for 25 June 2026.",
+      "url": "https://thequantuminsider.com/2026/06/02/iqm-and-real-asset-acquisition-corp-announce-upsized-146-million-pipe-with-new-commitment-from-ilmarinen/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-02"
     }
   ]
 }
