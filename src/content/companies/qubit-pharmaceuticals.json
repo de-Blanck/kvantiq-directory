@@ -4,7 +4,12 @@
   "country": "France",
   "region": "western-europe",
   "type": "software",
-  "tags": ["drug-discovery", "molecular-simulation", "hybrid-quantum-classical", "HPC"],
+  "tags": [
+    "drug-discovery",
+    "molecular-simulation",
+    "hybrid-quantum-classical",
+    "HPC"
+  ],
   "founded": 2020,
   "description": "Qubit Pharmaceuticals accelerates drug discovery through molecular simulation powered by hybrid HPC and quantum computing. Spun out of research at Sorbonne University, CNRS, and CNAM, the company's Atlas platform models molecular interactions at quantum-level accuracy, and has demonstrated a practical path to quantum utility in drug discovery by 2028.",
   "website": "https://www.qubit-pharmaceuticals.com",
@@ -36,6 +41,15 @@
       "url": "https://quantumcomputingreport.com/qubit-pharmaceuticals-announces-dual-breakthroughs-quantum-speedup-and-2028-utility-path-for-drug-discovery/",
       "title": "Qubit Pharmaceuticals Announces Dual Breakthroughs: Quantum Speedup and 2028 Utility Path for Drug Discovery",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Qubit Pharmaceuticals Announces Dual Breakthroughs: Quantum Speedup and 2028 Utility Path for Drug Discovery",
+      "excerpt": "Qubit Pharmaceuticals announced two simultaneous milestones: a collaboration with Sorbonne University published in Nature Communications demonstrating quantum algorithms can surpass theoretical speed limits for non-reversible Markov chains, and a preprint with Q-CTRL establishing a timeline for quantum utility in drug discovery by 2028.",
+      "url": "https://quantumcomputingreport.com/qubit-pharmaceuticals-announces-dual-breakthroughs-quantum-speedup-and-2028-utility-path-for-drug-discovery/",
+      "source": "Quantum Computing Report",
+      "date": "2026-06-01"
     }
   ]
 }

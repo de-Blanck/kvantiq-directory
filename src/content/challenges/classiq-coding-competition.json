@@ -2,7 +2,12 @@
   "name": "Classiq Coding Competition",
   "slug": "classiq-coding-competition",
   "organizer": "Classiq",
-  "tags": ["challenge", "circuit-optimization", "quantum-efficiency", "education"],
+  "tags": [
+    "challenge",
+    "circuit-optimization",
+    "quantum-efficiency",
+    "education"
+  ],
   "description": "The Classiq Coding Competition was the first competition focused on quantum circuit efficiency, challenging participants to build the most optimized quantum circuits for real-world problems. The USD 25,000 competition featured four challenges including Hamiltonian exponentiation and Toffoli gate decomposition, attracting nearly 300 contestants from over 50 countries. Notable winners included youth participants under 18.",
   "website": "https://www.classiq.io/insights/classiq-coding-competition-announcement",
   "dateStart": "2022-05-11",
@@ -11,7 +16,10 @@
   "prizes": "USD 25,000 total (USD 3,000 per challenge first place)",
   "location": "Online",
   "eligibility": "Open to all ages worldwide, including youth under 18",
-  "problemDomains": ["circuit-optimization", "quantum-algorithms"],
+  "problemDomains": [
+    "circuit-optimization",
+    "quantum-algorithms"
+  ],
   "sources": [
     {
       "type": "website",
@@ -24,6 +32,22 @@
       "url": "https://www.classiq.io/insights/classiq-coding-competition-results",
       "title": "Winners Announcement - Classiq Coding Competition, Spring 2022",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Classiq Announces the Classiq Coding Competition – a $25K Challenge to Encourage Innovation and Build the World's Best Quantum Circuits",
+      "excerpt": "Classiq announced the Classiq Coding Competition, rewarding those that create highly-efficient quantum circuits to solve important real-world problems. The competition will consist of four problems and will award 17 cash prizes totaling $25,000.",
+      "url": "https://www.classiq.io/insights/classiq-coding-competition-announcement",
+      "source": "Classiq",
+      "date": "2022-05-11"
+    },
+    {
+      "title": "Winners Announcement - Classiq Coding Competition, Spring 2022",
+      "excerpt": "The Classiq Coding Competition received more than 150 solutions from all over the world. Winners and honorable mentions were announced following the judging process.",
+      "url": "https://www.classiq.io/insights/classiq-coding-competition-results",
+      "source": "Classiq",
+      "date": "2022-06-14"
     }
   ]
 }

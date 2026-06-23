@@ -4,7 +4,12 @@
   "country": "Austria",
   "region": "dach",
   "type": "hardware",
-  "tags": ["quantum-key-distribution", "quantum-cryptography", "entanglement", "cybersecurity"],
+  "tags": [
+    "quantum-key-distribution",
+    "quantum-cryptography",
+    "entanglement",
+    "cybersecurity"
+  ],
   "founded": 2023,
   "description": "Quantum Industries is a Vienna-based company specializing in entanglement-based quantum key distribution (eQKD) for secure fiber-optic communications. Founded by quantum communication researchers from a Nobel Prize-winning laboratory, the company manufactures long-distance QKD systems capable of securing infrastructure over distances up to 350 km using entangled photons.",
   "website": "https://www.quantum-industries.eu",
@@ -35,6 +40,15 @@
       "url": "https://tech.eu/2025/03/03/vienna-based-quantum-industries-secures-10m-to-safeguard-europe-s-critical-infrastructure-from-quantum-threats/",
       "title": "Quantum Industries secures $10M to safeguard Europe's critical infrastructure from quantum threats - Tech.eu",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quantum Industries secures $10M to safeguard Europe's critical infrastructure from quantum threats",
+      "excerpt": "Cybersecurity experts predict that Q-day is coming when a fully functional quantum computer can break current encryption within seconds, leaving sensitive data unprotected against hackers and espionage.",
+      "url": "https://tech.eu/2025/03/03/vienna-based-quantum-industries-secures-10m-to-safeguard-europe-s-critical-infrastructure-from-quantum-threats/",
+      "source": "Tech.eu",
+      "date": "2025-03-03"
     }
   ]
 }

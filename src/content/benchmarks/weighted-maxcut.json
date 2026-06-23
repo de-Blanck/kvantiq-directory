@@ -3,7 +3,13 @@
   "slug": "weighted-maxcut",
   "algorithm": "QAOA / Quantum Walk Optimisation Algorithm (QWOA)",
   "category": "optimization",
-  "tags": ["Max-Cut", "weighted-graphs", "QAOA", "combinatorial-optimization", "QWOA"],
+  "tags": [
+    "Max-Cut",
+    "weighted-graphs",
+    "QAOA",
+    "combinatorial-optimization",
+    "QWOA"
+  ],
   "description": "Extended Max-Cut benchmark using weighted graph instances, which present a harder optimization landscape than the standard unweighted variant. Weighted instances introduce a proliferation of poor local optima and exacerbate barren-plateau issues. Recent work compares QAOA with non-variational quantum walk algorithms on weighted instances up to 31 nodes.",
   "hardware": "Simulator / hardware-agnostic",
   "framework": "Qiskit, Cirq",
@@ -11,8 +17,14 @@
   "reproducible": true,
   "datePublished": "2025-05-30",
   "keyMetrics": [
-    {"metric": "Max graph size", "value": "31 nodes"},
-    {"metric": "Methods compared", "value": "QAOA vs QWOA (quantum walk)"}
+    {
+      "metric": "Max graph size",
+      "value": "31 nodes"
+    },
+    {
+      "metric": "Methods compared",
+      "value": "QAOA vs QWOA (quantum walk)"
+    }
   ],
   "significance": "Demonstrates that weighted instances are substantially harder than unweighted MaxCut, with barren plateaus and local optima proliferating in the optimization landscape.",
   "sources": [
@@ -27,6 +39,15 @@
       "url": "https://dl.acm.org/doi/10.1145/3584706",
       "title": "Parameter Transfer for Quantum Approximate Optimization of Weighted MaxCut",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Benchmarking Quantum Heuristics: Non-Variational QWOA for Weighted Maxcut",
+      "excerpt": "Researchers present benchmarking results for the non-variational Quantum Walk Optimisation Algorithm (QWOA) applied to weighted maxcut, demonstrating constant average-case measurement probability for globally optimal solutions across problem sizes up to n = 31, with performance comparisons showing potential quantum advantage over local-search heuristics.",
+      "url": "https://arxiv.org/abs/2505.24191",
+      "source": "arXiv",
+      "date": "2025-05-30"
     }
   ]
 }

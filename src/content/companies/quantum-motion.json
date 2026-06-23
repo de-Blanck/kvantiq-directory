@@ -4,7 +4,13 @@
   "country": "United Kingdom",
   "region": "uk",
   "type": "hardware",
-  "tags": ["silicon", "CMOS", "scalable", "semiconductor", "DARPA"],
+  "tags": [
+    "silicon",
+    "CMOS",
+    "scalable",
+    "semiconductor",
+    "DARPA"
+  ],
   "founded": 2017,
   "description": "Quantum Motion is a UK quantum computing company developing silicon-based quantum processors using industry-standard 300mm CMOS fabrication technology. Founded by researchers from UCL and the University of Oxford, the company delivered the first full-stack silicon CMOS quantum computer to the UK National Quantum Computing Centre and was advanced to DARPA QBI Stage B in 2025.",
   "website": "https://quantummotion.com",
@@ -42,6 +48,15 @@
       "url": "https://quantumcomputingreport.com/quantum-motion-delivers-full-stack-silicon-cmos-quantum-computer-to-uks-nqcc/",
       "title": "Quantum Motion Delivers Full-Stack Silicon CMOS Quantum Computer to UK's NQCC - Quantum Computing Report",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quantum Motion Delivers Full-Stack Silicon CMOS Quantum Computer to UK's NQCC",
+      "excerpt": "Quantum Motion delivered a full-stack quantum computer built using standard silicon CMOS chip fabrication to the UK National Quantum Computing Centre (NQCC). The system consists of a tileable four-qubit unit cell and is the first system of its kind to use mass-manufacturable 300mm silicon CMOS wafer technology.",
+      "url": "https://quantumcomputingreport.com/quantum-motion-delivers-full-stack-silicon-cmos-quantum-computer-to-uks-nqcc/",
+      "source": "Quantum Computing Report",
+      "date": "2025-09-15"
     }
   ]
 }

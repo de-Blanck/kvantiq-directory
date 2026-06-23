@@ -4,7 +4,13 @@
   "country": "United Kingdom",
   "region": "uk",
   "type": "hardware",
-  "tags": ["qrng", "quantum random number generator", "probabilistic computing", "photonics", "oxford-spinout"],
+  "tags": [
+    "qrng",
+    "quantum random number generator",
+    "probabilistic computing",
+    "photonics",
+    "oxford-spinout"
+  ],
   "founded": 2020,
   "description": "Quantum Dice develops photonic quantum random number generators (QRNGs) and the ORBIT™ probabilistic processor, which uses quantum noise sources to accelerate combinatorial optimization and AI workloads. The company was spun out of the University of Oxford and is backed by IP Group. Quantum Dice received an EIC Accelerator grant in December 2025 and partnered with STFC's Hartree Centre.",
   "website": "https://quantum-dice.com",
@@ -14,8 +20,14 @@
   "funding": "€2M EIC Accelerator grant (December 2025); backed by IP Group",
   "accessModel": "Hardware sales + cloud API",
   "products": [
-    {"name": "QRNG Module", "description": "Photonic quantum random number generator providing certified randomness from quantum vacuum fluctuations"},
-    {"name": "ORBIT™ Probabilistic Processor", "description": "Quantum noise-powered processor that accelerates combinatorial optimization and AI workloads"}
+    {
+      "name": "QRNG Module",
+      "description": "Photonic quantum random number generator providing certified randomness from quantum vacuum fluctuations"
+    },
+    {
+      "name": "ORBIT™ Probabilistic Processor",
+      "description": "Quantum noise-powered processor that accelerates combinatorial optimization and AI workloads"
+    }
   ],
   "highlights": [
     "ORBIT™ uses quantum noise to accelerate optimization and AI — not just randomness",
@@ -40,6 +52,22 @@
       "url": "https://quantum-dice.com/news/quantum-dice-and-stfc-hartree-centre-partnership/",
       "title": "Quantum Dice and STFC Hartree Centre partnership (December 2025)",
       "dateAccessed": "2026-03-21"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quantum Dice Joins Equinox Charter to Advance Oxfordshire's Global Innovation Leadership",
+      "excerpt": "Quantum Dice is proud to have signed the Equinox Charter, an initiative led by the University of Oxford to strengthen collaboration across research, industry and government.",
+      "url": "https://quantum-dice.com",
+      "source": "Quantum Dice",
+      "date": "2026-06-04"
+    },
+    {
+      "title": "Quantum Dice Secures €2m From European Innovation Council",
+      "excerpt": "Quantum Dice has secured a €2m EIC Accelerator grant to advance the development and commercialisation of its ORBIT™-powered probabilistic computing platform. The funding will support work on Quantum Dice's quantum-enabled p-bit processor, aimed at solving complex optimisation problems and enabling next-generation probabilistic AI models.",
+      "url": "https://thequantuminsider.com/2025/12/09/quantum-dice-eic-grant/",
+      "source": "The Quantum Insider",
+      "date": "2025-12-09"
     }
   ]
 }

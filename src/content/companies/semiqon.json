@@ -4,7 +4,12 @@
   "country": "Finland",
   "region": "nordics",
   "type": "hardware",
-  "tags": ["silicon-qubits", "semiconductor", "quantum-processors", "VTT-spinoff"],
+  "tags": [
+    "silicon-qubits",
+    "semiconductor",
+    "quantum-processors",
+    "VTT-spinoff"
+  ],
   "founded": 2023,
   "description": "SemiQon Technologies is a VTT spin-off developing silicon-based quantum processors. The company leverages semiconductor manufacturing expertise to build scalable quantum computing hardware using silicon quantum dot technology. SemiQon aims to bring quantum computing closer to industrial production through compatibility with existing semiconductor fabrication processes.",
   "website": "https://semiqon.com",
@@ -36,6 +41,15 @@
       "url": "https://www.vttresearch.com/en/ourservices/semiqon-building-silicon-quantum-computer",
       "title": "SemiQon: Building silicon quantum computer - VTT Case Study",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "What is cryo-CMOS? Our CTO explains",
+      "excerpt": "Our CTO and co-founder, Janne Lehtinen, summarizes key questions about cryo-CMOS technology, including what it means and how it compares to other solutions on the market.",
+      "url": "https://semiqon.com",
+      "source": "semiqon.com",
+      "date": "2026-04-23"
     }
   ]
 }

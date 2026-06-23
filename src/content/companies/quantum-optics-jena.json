@@ -4,7 +4,12 @@
   "country": "Germany",
   "region": "dach",
   "type": "hardware",
-  "tags": ["qkd", "quantum-key-distribution", "entangled-photons", "quantum-communication"],
+  "tags": [
+    "qkd",
+    "quantum-key-distribution",
+    "entangled-photons",
+    "quantum-communication"
+  ],
   "founded": 2020,
   "description": "Quantum Optics Jena develops entanglement-based quantum key distribution systems for secure communications. Spun off from the Fraunhofer Institute for Applied Optics and Fine Mechanics (IOF), the company offers the world's first commercial multi-party QKD system, serving government networks, banks, and research institutions.",
   "website": "https://qo-jena.com",
@@ -36,6 +41,15 @@
       "url": "https://www.bm-t.de/en/2024-en/quantum-optics-jena-secures-e8-5-million-in-series-a-funding-to-revolutionize-secure-communications/",
       "title": "Quantum Optics Jena Secures EUR 8.5 Million in Series A Funding — bm|t",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quantum Optics Jena Secures €8.5 Million in Series A Funding to Revolutionize Secure Communications",
+      "excerpt": "Quantum Optics Jena announced the closing of an €8.5 million Series A funding round led by Join Capital, joined by ELAS Technologies GmbH, Fraunhofer Technologies-Transfer Fonds, beteiligungs­management Thüringen (bm|t), and business angel Malte Pollmann. The funding will fuel QOJ's expansion and accelerate the commercialization of its quantum key distribution technology.",
+      "url": "https://www.bm-t.de/en/2024-en/quantum-optics-jena-secures-e8-5-million-in-series-a-funding-to-revolutionize-secure-communications/",
+      "source": "bm|t",
+      "date": "2024-09-12"
     }
   ]
 }

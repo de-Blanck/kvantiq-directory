@@ -4,7 +4,13 @@
   "country": "France",
   "region": "western-europe",
   "type": "hardware",
-  "tags": ["twpa", "parametric amplifier", "superconducting", "quantum readout", "cryogenic components"],
+  "tags": [
+    "twpa",
+    "parametric amplifier",
+    "superconducting",
+    "quantum readout",
+    "cryogenic components"
+  ],
   "founded": 2022,
   "description": "Silent Waves manufactures traveling-wave parametric amplifiers (TWPAs) for near-quantum-limited amplification of superconducting qubit readout signals. The company's product line (Argo, Carthago, Zephyr) enables single-shot qubit readout while reducing the number of cryogenic isolators required in the readout chain. Silent Waves was spun out of Institut Néel / CNRS in Grenoble.",
   "website": "https://www.silent-waves.com",
@@ -14,8 +20,14 @@
   "funding": "EIC Transition grant (~€2.5M); partner in SUPREME EU consortium (€25M, 23 members)",
   "accessModel": "Hardware sales (cryogenic amplifiers)",
   "products": [
-    {"name": "Argo TWPA", "description": "Traveling-wave parametric amplifier for near-quantum-limited amplification of superconducting qubit readout signals"},
-    {"name": "Zephyr TWPA-Isolator", "description": "Combined TWPA and isolator module that simplifies the cryogenic readout chain by reducing required components"}
+    {
+      "name": "Argo TWPA",
+      "description": "Traveling-wave parametric amplifier for near-quantum-limited amplification of superconducting qubit readout signals"
+    },
+    {
+      "name": "Zephyr TWPA-Isolator",
+      "description": "Combined TWPA and isolator module that simplifies the cryogenic readout chain by reducing required components"
+    }
   ],
   "highlights": [
     "Enables single-shot qubit readout while reducing cryogenic isolator count",
@@ -40,6 +52,22 @@
       "url": "https://qt.eu/news/2025/2025-03-18_quantum-tech-companies-chosen-in-latest-EIC-round",
       "title": "Quantum tech companies chosen in latest EIC Transition round (EU Quantum Flagship, March 2025)",
       "dateAccessed": "2026-03-21"
+    }
+  ],
+  "news": [
+    {
+      "title": "Silent Waves launches The Zephyr",
+      "excerpt": "Silent Waves launches the Zephyr, an integrated TWPA and pump coupler solution for compact, high-efficiency quantum readout",
+      "url": "https://www.silent-waves.com",
+      "source": "silent-waves.com",
+      "date": "2026-03-13"
+    },
+    {
+      "title": "Breakthrough Travelling Wave Parametric Amplifier Isolator Published in Nature Electronics",
+      "excerpt": "A collaborative team from Institut Néel, Silent Waves, with partners from Karlsruhe Institute of Technology and the University of Strasbourg has demonstrated a new superconducting travelling wave parametric amplifier isolator providing 20 dB forward gain and 30 dB reverse isolation.",
+      "url": "https://www.prlog.org/13111061-travelling-wave-parametric-amplifier-isolator-simplifies-quantum-readout-chains.html",
+      "source": "PRLog",
+      "date": "2025-11-14"
     }
   ]
 }

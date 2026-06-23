@@ -3,7 +3,14 @@
   "slug": "certified-randomness-quantinuum",
   "algorithm": "RCS-based certified randomness (challenge-response protocol)",
   "category": "cryptography",
-  "tags": ["randomness", "certification", "trapped-ion", "Quantinuum", "RCS", "cryptography"],
+  "tags": [
+    "randomness",
+    "certification",
+    "trapped-ion",
+    "Quantinuum",
+    "RCS",
+    "cryptography"
+  ],
   "description": "Protocol benchmark generating certifiably random bits on the 56-qubit Quantinuum H2-1 trapped-ion computer. A client issues short random-circuit challenges, receives samples back from the untrusted server, and uses supercomputer-verified XEB scores to bound the entropy produced. The run certified 71,313 bits of min-entropy in a single session — a practical demonstration that quantum devices can deliver cryptographically meaningful randomness whose quality is backed by computational hardness assumptions rather than trust in the hardware.",
   "hardware": "Quantinuum H2-1 trapped-ion quantum computer (56 qubits)",
   "framework": "Quantinuum TKET, classical verification on NERSC Perlmutter / ORNL Frontier",
@@ -11,10 +18,23 @@
   "reproducible": false,
   "datePublished": "2025-03-26",
   "keyMetrics": [
-    {"metric": "Qubits", "value": "56"},
-    {"metric": "Certified min-entropy", "value": "71,313", "unit": "bits"},
-    {"metric": "Protocol", "value": "Random Circuit Sampling challenge-response"},
-    {"metric": "Trust model", "value": "Untrusted server"}
+    {
+      "metric": "Qubits",
+      "value": "56"
+    },
+    {
+      "metric": "Certified min-entropy",
+      "value": "71,313",
+      "unit": "bits"
+    },
+    {
+      "metric": "Protocol",
+      "value": "Random Circuit Sampling challenge-response"
+    },
+    {
+      "metric": "Trust model",
+      "value": "Untrusted server"
+    }
   ],
   "significance": "First end-to-end device-independent-style randomness certification on a commercial quantum processor — turning RCS from a benchmark of classical-hardness into a cryptographic primitive.",
   "sources": [
@@ -39,6 +59,22 @@
       "authors": "Liu, Shaydulin, Niroula, DeCross, Hung et al.",
       "datePublished": "2025-03-26",
       "dateAccessed": "2026-04-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Paper published: Certified randomness using a trapped-ion quantum processor",
+      "excerpt": "Research demonstrates the generation of certifiably random bits using the 56-qubit Quantinuum H2-1 trapped-ion quantum computer. The protocol certifies 71,313 bits of entropy using classical verification across multiple supercomputers.",
+      "url": "https://arxiv.org/abs/2503.20498",
+      "source": "arXiv",
+      "date": "2025-03-26"
+    },
+    {
+      "title": "Quantinuum H-Series sets highest quantum volume benchmark",
+      "excerpt": "The company's H-Series trapped-ion quantum computers set the highest quantum volume to date of 33,554,432.",
+      "url": "https://en.wikipedia.org/wiki/Quantinuum",
+      "source": "Wikipedia",
+      "date": "2025-09-01"
     }
   ]
 }

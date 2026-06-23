@@ -30,5 +30,14 @@
       "title": "About the Danish Quantum Community",
       "dateAccessed": "2026-03-19"
     }
+  ],
+  "news": [
+    {
+      "title": "Danish Quantum Community Announces New Board of Directors",
+      "excerpt": "On 17 June 2026, the Danish Quantum Community (DQC) held its Annual General Assembly kindly hosted by The Niels Bohr Institute.",
+      "url": "https://dqc.dk/",
+      "source": "Danish Quantum Community",
+      "date": "2026-06-18"
+    }
   ]
 }

@@ -4,7 +4,12 @@
   "country": "Finland",
   "region": "nordics",
   "type": "hardware",
-  "tags": ["superconducting", "hybrid", "EuroHPC", "full-stack"],
+  "tags": [
+    "superconducting",
+    "hybrid",
+    "EuroHPC",
+    "full-stack"
+  ],
   "founded": 2018,
   "description": "IQM Quantum Computers is a European leader in building superconducting quantum computers. Based in Finland, IQM provides on-premises quantum computers and partners with EuroHPC to integrate quantum accelerators into European supercomputing centers. IQM focuses on application-specific co-design for industrial quantum advantage.",
   "website": "https://www.meetiqm.com",
@@ -56,24 +61,24 @@
   ],
   "news": [
     {
-      "title": "IQM to deploy 54-qubit Radiance system at Polish enterprise Galaxy",
-      "excerpt": "First installation of an IQM Radiance-class quantum system inside a private enterprise, scheduled for Q4 2026.",
-      "url": "https://thequantuminsider.com/2026/04/07/iqm-galaxy-quantum-deployment-poland/",
-      "source": "The Quantum Insider",
-      "date": "2026-04-07"
+      "title": "IQM Appoints Craig Ciesla, Former Illumina VP, as CTO; Inés de Vega Becomes Chief Scientist",
+      "excerpt": "IQM announces leadership changes with Craig Ciesla joining as Chief Technology Officer and Inés de Vega becoming Chief Scientist.",
+      "url": "https://www.meetiqm.com",
+      "source": "IQM Official Website",
+      "date": "2026-06-19"
     },
     {
-      "title": "IQM introduces AI-powered calibration to make quantum computing enterprise-ready",
-      "excerpt": "Agentic AI calibration using NVIDIA Ising models automates parallel qubit tuning, targeting HPC data-centre deployments.",
-      "url": "https://itdigest.com/computer-science/quantum-computing/iqm-introduces-ai-powered-calibration-to-make-quantum-computing-enterprise-ready/",
-      "source": "IT Digest",
-      "date": "2026-04-15"
+      "title": "Finland's IQM to become one of Europe's first listed quantum companies at $1.8 billion valuation",
+      "excerpt": "IQM announces plans for an initial public offering via SPAC merger with Real Asset Acquisition Corp, targeting a New York primary listing with $1.8 billion valuation and possible dual listing on Helsinki stock exchange.",
+      "url": "https://www.cnbc.com/2026/02/23/finlands-iqm-listing-quantum-computing.html",
+      "source": "CNBC",
+      "date": "2026-02-23"
     },
     {
-      "title": "IQM deploys Japan's first enterprise quantum computer to TOYO Corporation",
-      "excerpt": "TOYO Corporation purchased a 20-qubit IQM Radiance system for delivery by end of 2026, marking the first enterprise quantum computer deployment in Japan and expanding IQM's Asia-Pacific installed base.",
-      "url": "https://thequantuminsider.com/2026/04/27/iqm-toyo-quantum-deployment/",
-      "source": "The Quantum Insider",
+      "title": "IQM to Deploy Japan's First Enterprise-Purchased Quantum Computer",
+      "excerpt": "IQM Quantum Computers reaches agreement with TOYO Corporation for deployment of IQM Radiance 20-qubit system, marking Japan's first enterprise-purchased quantum computer with scheduled delivery by end of 2026.",
+      "url": "https://quantumcomputingreport.com/iqm-to-deploy-japans-first-enterprise-purchased-quantum-computer/",
+      "source": "Quantum Computing Report",
       "date": "2026-04-27"
     }
   ]

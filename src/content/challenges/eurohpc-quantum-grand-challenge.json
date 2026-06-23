@@ -2,7 +2,13 @@
   "name": "EuroHPC Quantum Grand Challenge",
   "slug": "eurohpc-quantum-grand-challenge",
   "organizer": "EuroHPC Joint Undertaking",
-  "tags": ["challenge", "EU-funded", "startups", "hardware", "HPC"],
+  "tags": [
+    "challenge",
+    "EU-funded",
+    "startups",
+    "hardware",
+    "HPC"
+  ],
   "description": "The EuroHPC Quantum Grand Challenge invites European quantum computing startups to develop integrated hardware-software solutions with strong market potential. Phase 1 provides EUR 4 million in funding for technical roadmaps and prototypes, with the most promising projects advancing to Phase 2 for European Investment Bank venture debt financing. Priority is given to solutions integrating with existing EU supercomputing centres.",
   "website": "https://www.eurohpc-ju.europa.eu/quantum-grand-challenge_en",
   "dateStart": "2025-10-14",
@@ -11,7 +17,11 @@
   "prizes": "EUR 4 million Phase 1 funding; Phase 2 EIB venture debt",
   "location": "Europe",
   "eligibility": "European quantum computing startups only",
-  "problemDomains": ["hardware", "HPC-integration", "quantum-software"],
+  "problemDomains": [
+    "hardware",
+    "HPC-integration",
+    "quantum-software"
+  ],
   "sources": [
     {
       "type": "website",
@@ -24,6 +34,15 @@
       "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-opens-quantum-grand-challenge-call-2025-10-14_en",
       "title": "EuroHPC JU Opens Quantum Grand Challenge Call",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "EuroHPC JU Opens Quantum Grand Challenge Call",
+      "excerpt": "The EuroHPC Joint Undertaking (EuroHPC JU) has launched a new call for proposals to strengthen Europe's leadership in quantum computing technologies and accelerate the development of industrial-scale quantum computing platforms.",
+      "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-opens-quantum-grand-challenge-call-2025-10-14_en",
+      "source": "EuroHPC JU",
+      "date": "2025-10-14"
     }
   ]
 }

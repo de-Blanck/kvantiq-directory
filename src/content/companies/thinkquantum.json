@@ -4,7 +4,14 @@
   "country": "Italy",
   "region": "southern-europe",
   "type": "hardware",
-  "tags": ["qkd", "quantum communication", "satellite", "fiber", "free-space", "single-photon"],
+  "tags": [
+    "qkd",
+    "quantum communication",
+    "satellite",
+    "fiber",
+    "free-space",
+    "single-photon"
+  ],
   "founded": 2021,
   "description": "ThinkQuantum develops QKD systems for fiber, free-space, and satellite quantum communication links using polarization-encoded single photons and the BB84 protocol. The company's QUKY platform addresses secure communication across multiple channel types. ThinkQuantum was spun out of the University of Padova and received EIC Transition funding.",
   "website": "https://www.thinkquantum.com",
@@ -14,7 +21,10 @@
   "funding": "EIC Transition grant (~€2.5M); partner in QSNP EU project",
   "accessModel": "Hardware sales + system integration (QKD systems)",
   "products": [
-    {"name": "QUKY QKD Platform", "description": "QKD system supporting fiber, free-space, and satellite quantum communication using polarization-encoded BB84 protocol"}
+    {
+      "name": "QUKY QKD Platform",
+      "description": "QKD system supporting fiber, free-space, and satellite quantum communication using polarization-encoded BB84 protocol"
+    }
   ],
   "highlights": [
     "Multi-channel QKD: fiber, free-space, and satellite links in one platform",
@@ -39,6 +49,15 @@
       "url": "https://qsnp.eu/inside-thinkquantums-vision-for-secure-communication/",
       "title": "Inside ThinkQuantum's vision for secure communication (QSNP project blog, January 2026)",
       "dateAccessed": "2026-03-21"
+    }
+  ],
+  "news": [
+    {
+      "title": "Inside ThinkQuantum's vision for secure communication",
+      "excerpt": "Interview with Luca Calderaro, R&D Manager at ThinkQuantum, discussing the company's journey from academic spin-off to key player in the quantum communication ecosystem, covering QKD, satellite-ground integration, and solutions for quantum networks.",
+      "url": "https://qsnp.eu/inside-thinkquantums-vision-for-secure-communication/",
+      "source": "QSNP",
+      "date": "2025-07-02"
     }
   ]
 }

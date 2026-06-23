@@ -4,7 +4,11 @@
   "country": "France",
   "region": "western-europe",
   "type": "hardware",
-  "tags": ["silicon-spin", "spin-qubit", "quantum-processors"],
+  "tags": [
+    "silicon-spin",
+    "spin-qubit",
+    "quantum-processors"
+  ],
   "founded": 2022,
   "description": "Quobly develops silicon spin qubit quantum computers leveraging semiconductor manufacturing techniques. Based in Grenoble near CEA-Leti, the company focuses on building scalable quantum processors using established silicon fabrication processes.",
   "website": "https://www.quobly.io",
@@ -35,6 +39,15 @@
       "url": "https://www.linkedin.com/company/quobly/",
       "title": "Quobly LinkedIn Company Page",
       "dateAccessed": "2026-03-20"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quobly secures €115M Series A",
+      "excerpt": "A milestone toward commercial silicon quantum computers. Series A led by Bpifrance, STMicroelectronics and SEALSQ, with participation from leading industrial and deeptech investors, to accelerate the industrialization of quantum processors.",
+      "url": "https://www.quobly.io",
+      "source": "Quobly",
+      "date": "2026-06-01"
     }
   ]
 }

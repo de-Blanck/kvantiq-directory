@@ -4,7 +4,12 @@
   "country": "Switzerland",
   "region": "dach",
   "type": "hardware",
-  "tags": ["quantum-cryptography", "qkd", "quantum-random-number-generator", "quantum-security"],
+  "tags": [
+    "quantum-cryptography",
+    "qkd",
+    "quantum-random-number-generator",
+    "quantum-security"
+  ],
   "founded": 2001,
   "description": "ID Quantique is a Swiss quantum technology company and pioneer in quantum-safe security solutions. The company develops quantum key distribution (QKD) systems, quantum random number generators (QRNG), and quantum-safe network encryption products for government, financial, and critical infrastructure customers worldwide.",
   "website": "https://www.idquantique.com",
@@ -40,6 +45,15 @@
       "url": "https://en.wikipedia.org/wiki/ID_Quantique",
       "title": "ID Quantique - Wikipedia",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "IonQ Completes Acquisition of Controlling Stake in ID Quantique",
+      "excerpt": "In 2025, IonQ announced that it had completed its acquisition of a controlling stake in ID Quantique.",
+      "url": "https://en.wikipedia.org/wiki/ID_Quantique",
+      "source": "Wikipedia",
+      "date": "2025-01-01"
     }
   ]
 }

@@ -31,5 +31,14 @@
       "title": "QIA — Quantum Flagship Project Page",
       "dateAccessed": "2026-03-19"
     }
+  ],
+  "news": [
+    {
+      "title": "QIA at Quantum Meets '26: Showcasing Europe's Path from Quantum Internet Research to Impact",
+      "excerpt": "The Quantum Internet Alliance (QIA) was pleased to participate in Quantum Meets '26, bringing together researchers, startups, industry leaders, investors, and policymakers from across the quantum technology ecosystem.",
+      "url": "https://quantuminternetalliance.org/",
+      "source": "Quantum Internet Alliance",
+      "date": "2026-06-20"
+    }
   ]
 }

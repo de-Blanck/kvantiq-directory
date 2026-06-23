@@ -4,7 +4,11 @@
   "country": "Austria",
   "region": "dach",
   "type": "hardware",
-  "tags": ["trapped-ion", "quantum-computing", "ion-trap"],
+  "tags": [
+    "trapped-ion",
+    "quantum-computing",
+    "ion-trap"
+  ],
   "founded": 2018,
   "description": "Alpine Quantum Technologies (AQT) is an Austrian quantum computing company developing trapped-ion quantum computers. Spun out from the University of Innsbruck, AQT builds scalable quantum computing systems using ion-trap technology for research and commercial applications.",
   "website": "https://www.aqt.eu",
@@ -43,6 +47,13 @@
     }
   ],
   "news": [
+    {
+      "title": "AQT realises the first general-purpose quantum computer",
+      "excerpt": "AQT realises the first general-purpose quantum computer",
+      "url": "https://www.aqt.eu",
+      "source": "AQT",
+      "date": "2026-05-29"
+    },
     {
       "title": "AQT and Scaleway partner to deliver sovereign European quantum computing",
       "excerpt": "AQT's IBEX Q1 trapped-ion quantum computer becomes directly accessible through Scaleway's cloud platform.",

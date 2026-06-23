@@ -2,7 +2,13 @@
   "name": "Blaise Pascal Quantum Challenge 2025",
   "slug": "blaise-pascal-quantum-challenge-2025",
   "organizer": "Pasqal",
-  "tags": ["hackathon", "quantum-AI", "sustainability", "SDGs", "neutral-atoms"],
+  "tags": [
+    "hackathon",
+    "quantum-AI",
+    "sustainability",
+    "SDGs",
+    "neutral-atoms"
+  ],
   "description": "The Blaise Pascal Quantum Challenge 2025 invited global innovators to explore how quantum-powered AI can support the UN Sustainable Development Goals. Organized by Pasqal, the challenge attracted 137 submissions from teams worldwide, with the top 15 advancing to a two-week virtual hackathon. The winning team received EUR 15,000 from a total prize pool of EUR 30,000.",
   "website": "https://www.pasqal.com/events/the-blaise-pascal-quantum-challenge-2025-highlights-winners/",
   "dateStart": "2024-12-05",
@@ -11,7 +17,11 @@
   "prizes": "EUR 30,000 total (first place EUR 15,000)",
   "location": "Online",
   "eligibility": "Open to global innovators and teams",
-  "problemDomains": ["quantum-AI", "sustainability", "SDGs"],
+  "problemDomains": [
+    "quantum-AI",
+    "sustainability",
+    "SDGs"
+  ],
   "sources": [
     {
       "type": "website",
@@ -24,6 +34,15 @@
       "url": "https://www.agorize.com/en/challenges/blaisepascalquantumchallenge2025",
       "title": "The Blaise Pascal Quantum Challenge - Agorize",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "The Blaise Pascal Quantum Challenge 2025 – Highlights & Winners",
+      "excerpt": "Pasqal announced the highlights and winners of the 2025 Blaise Pascal Quantum Challenge, which attracted 850+ applicants from 70+ nationalities with 137 proposals submitted. The top 15 finalist teams were selected and mentored by Pasqal, Sumitomo Corp, and Capgemin to develop quantum-powered AI solutions for UN Sustainable Development Goals.",
+      "url": "https://www.pasqal.com/events/the-blaise-pascal-quantum-challenge-2025-highlights-winners/",
+      "source": "Pasqal",
+      "date": "2025-04-25"
     }
   ]
 }

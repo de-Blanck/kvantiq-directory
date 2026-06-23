@@ -4,7 +4,13 @@
   "country": "Denmark",
   "region": "nordics",
   "type": "hardware",
-  "tags": ["quantum-sensing", "magnetometry", "MRI", "biomedical", "NBI-spinout"],
+  "tags": [
+    "quantum-sensing",
+    "magnetometry",
+    "MRI",
+    "biomedical",
+    "NBI-spinout"
+  ],
   "founded": 2025,
   "description": "Magnolia Quantum Sensing is a Copenhagen-based NBI/DRCMR spinout commercializing the EXAAQ high-field optical cesium magnetometer for magnetic resonance imaging applications. Founded by Hans Staerkind (PhD, NBI/DRCMR) with Quantum Advisor Eugene Polzik, the company commercializes peer-reviewed research published in PRX Quantum (2024) and is supported by the Novo Nordisk Foundation's DKK 150M Center for Biomedical Quantum Sensing grant.",
   "website": "https://magnolia-qs.com",
@@ -49,6 +55,22 @@
       "title": "Researchers aim to advance quantum sensing - Novo Nordisk Foundation (DKK 150M CBQS grant)",
       "datePublished": "2024-09-12",
       "dateAccessed": "2026-05-01"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quantum sensor for MRI mentioned by Erhvervsstyrelsen in new publication",
+      "excerpt": "Erhvervsstyrelsen has published a document with 16 use cases of Danish quantum technology. One of the technologies mentioned, a novel optical quantum magnetometer for high magnetic fields, was developed by Hans Stærkind, postdoc at CBQS.",
+      "url": "https://cbqs.ku.dk/happening-at-cbqs/quantum-sensor-for-mri-mentioned-by-erhvervsstyrelsen-in-new-publication/",
+      "source": "Copenhagen Center for Biomedical Quantum Sensing",
+      "date": "2025-01-14"
+    },
+    {
+      "title": "Researchers aim to advance quantum sensing to transform disease diagnosis and prevention",
+      "excerpt": "The Novo Nordisk Foundation has awarded a grant of DKK 150 million to establish the Copenhagen Center for Biomedical Quantum Sensing, under which an international research collaboration aims to develop novel quantum sensing principles and techniques for early detection of diseases.",
+      "url": "https://novonordiskfonden.dk/en/news/researchers-aim-to-advance-quantum-sensing-to-transform-disease-diagnosis-and-prevention/",
+      "source": "Novo Nordisk Foundation",
+      "date": "2024-02-22"
     }
   ]
 }

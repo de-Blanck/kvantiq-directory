@@ -4,7 +4,11 @@
   "country": "Germany",
   "region": "dach",
   "type": "software",
-  "tags": ["quantum-simulation", "materials-science", "quantum-chemistry"],
+  "tags": [
+    "quantum-simulation",
+    "materials-science",
+    "quantum-chemistry"
+  ],
   "founded": 2017,
   "description": "HQS Quantum Simulations is a German quantum software company developing quantum simulation software for materials science and chemistry applications. The company provides quantum algorithms and software tools to accelerate materials discovery and chemical simulations for industrial and research purposes.",
   "website": "https://www.quantumsimulations.de",
@@ -40,6 +44,15 @@
       "url": "https://www.linkedin.com/company/hqs-quantum-simulations/",
       "title": "HQS Quantum Simulations LinkedIn Company Page",
       "dateAccessed": "2026-03-20"
+    }
+  ],
+  "news": [
+    {
+      "title": "HQS launches HQSpectrum — full release of its NMR spectrum prediction and analysis software",
+      "excerpt": "HQS Quantum Simulations introduces HQSpectrum, the first full version of its software for predicting and analyzing Nuclear Magnetic Resonance (NMR) spectra, designed to reduce manual effort in NMR analysis and to improve traceability. Users can preprocess experimental spectra, compare them against computed spectra, adjust results interactively, and export documentation-ready reports.",
+      "url": "https://www.quantumsimulations.de",
+      "source": "HQS Quantum Simulations website",
+      "date": "2026-02-27"
     }
   ]
 }

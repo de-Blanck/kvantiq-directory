@@ -4,7 +4,12 @@
   "country": "Spain",
   "region": "southern-europe",
   "type": "software",
-  "tags": ["quantum-ai", "optimization", "finance", "model-compression"],
+  "tags": [
+    "quantum-ai",
+    "optimization",
+    "finance",
+    "model-compression"
+  ],
   "founded": 2019,
   "description": "Multiverse Computing provides quantum AI software for enterprise applications, specializing in optimization and machine learning. Their flagship product Singularity enables model compression and quantum-inspired algorithms for finance, energy, and manufacturing sectors.",
   "website": "https://multiversecomputing.com",
@@ -38,6 +43,13 @@
     }
   ],
   "news": [
+    {
+      "title": "HyperNova 60B, the world's most efficient model in its category according to Artificial Analysis",
+      "excerpt": "Multiverse Computing's model has been independently validated and ranks as the one that best combines high intelligence with a compact parameter footprint among models of its size.",
+      "url": "https://multiversecomputing.com",
+      "source": "Multiverse Computing",
+      "date": "2026-06-08"
+    },
     {
       "title": "Multiverse Computing releases free compressed HyperNova 60B AI model",
       "excerpt": "Spanish 'soonicorn' ships CompactifAI-compressed HyperNova 60B on Hugging Face amid reports of a €500M round at a €1.5B valuation.",

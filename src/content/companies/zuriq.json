@@ -4,7 +4,12 @@
   "country": "Switzerland",
   "region": "dach",
   "type": "hardware",
-  "tags": ["trapped-ion", "quantum-computing", "2d-ion-trap", "scalable-architecture"],
+  "tags": [
+    "trapped-ion",
+    "quantum-computing",
+    "2d-ion-trap",
+    "scalable-architecture"
+  ],
   "founded": 2024,
   "description": "ZuriQ is an ETH Zurich spin-off developing a novel two-dimensional trapped-ion quantum computing architecture. Unlike conventional one-dimensional ion chain designs, ZuriQ uses combined electric and magnetic fields to allow ions to move freely in two dimensions on a quantum chip, addressing the qubit-scaling limitations of current trapped-ion systems.",
   "website": "https://zuriq.com",
@@ -35,6 +40,15 @@
       "url": "https://thequantuminsider.com/2025/01/23/zuriq-raises-4-2-million-to-break-quantum-computings-scaling-barrier/",
       "title": "ZuriQ Raises $4.2 Million to Break Quantum Computing's Scaling Barrier - The Quantum Insider",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "ZuriQ Raises $4.2 Million to Break Quantum Computing's Scaling Barrier",
+      "excerpt": "ZuriQ has raised $4.2 million to commercialize a new trapped-ion architecture, enabling scalable quantum computing through a unique combination of electric and magnetic fields. The seed funding round was led by Founderful with participation from SquareOne, First Momentum Ventures, OnSight Ventures and QAI Ventures.",
+      "url": "https://thequantuminsider.com/2025/01/23/zuriq-raises-4-2-million-to-break-quantum-computings-scaling-barrier/",
+      "source": "The Quantum Insider",
+      "date": "2025-01-23"
     }
   ]
 }

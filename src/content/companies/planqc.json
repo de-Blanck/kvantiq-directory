@@ -4,7 +4,11 @@
   "country": "Germany",
   "region": "dach",
   "type": "hardware",
-  "tags": ["neutral-atom", "quantum-simulation", "optical-lattice"],
+  "tags": [
+    "neutral-atom",
+    "quantum-simulation",
+    "optical-lattice"
+  ],
   "founded": 2022,
   "description": "planqc is a German quantum computing startup developing atom-based quantum computers using optical lattices. Spun out of the Max Planck Institute of Quantum Optics, planqc aims to build scalable quantum processors with thousands of qubits for industrial applications.",
   "website": "https://www.planqc.eu",
@@ -35,6 +39,15 @@
       "url": "https://www.dlr.de/en/latest/news/2024/01/planqc-and-dlr-to-build-europes-first-digital-quantum-computer",
       "title": "planqc and DLR to build Europe's first digital quantum computer using neutral atoms",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "€2.3M Funding for Hybrid Quantum–Classical Solutions in Industry Optimization",
+      "excerpt": "planqc announced €2.3M funding for hybrid quantum–classical solutions in industry optimization",
+      "url": "https://www.planqc.eu",
+      "source": "planqc.eu",
+      "date": "2026-03-19"
     }
   ]
 }

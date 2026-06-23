@@ -4,7 +4,12 @@
   "country": "Poland",
   "region": "eastern-europe",
   "type": "software",
-  "tags": ["quantum-algorithms", "molecular-modelling", "computational-chemistry", "optimization"],
+  "tags": [
+    "quantum-algorithms",
+    "molecular-modelling",
+    "computational-chemistry",
+    "optimization"
+  ],
   "founded": 2016,
   "description": "Beit is a quantum computing software R&D company developing novel quantum algorithms for molecular modelling and computational chemistry. Founded in Krakow, the company focuses on solving NP-complete problems and has organized the Originating Quantum Advantage in Poland workshop, the largest gathering of quantum computing experts in Central and Eastern Europe.",
   "website": "https://beit.tech",
@@ -36,6 +41,15 @@
       "url": "https://thequantuminsider.com/2019/11/28/polands-vibrant-qc-representative/",
       "title": "Poland's Vibrant QC Representative - The Quantum Insider",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Poland's Vibrant QC Representative",
+      "excerpt": "Beit.Tech, founded in 2016 by CEO Paulina Mazurek, Chief Physics Officer Wojciech Burkot and Chief Mathematics Officer Witold Jarnicki, is a Krakow-based quantum computing startup developing hardware-agnostic algorithms to solve NP-complete problems. The company's software Quasar simplifies quantum assembly code writing and integrates with IBM Qiskit, Google Cirq, and OpenQASM.",
+      "url": "https://thequantuminsider.com/2019/11/28/polands-vibrant-qc-representative/",
+      "source": "The Quantum Insider",
+      "date": "2020-01-25"
     }
   ]
 }

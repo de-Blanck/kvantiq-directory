@@ -2,7 +2,13 @@
   "name": "Xanadu Quantum Codebook",
   "slug": "xanadu-codebook",
   "type": "course",
-  "tags": ["education", "interactive", "PennyLane", "python", "open-source"],
+  "tags": [
+    "education",
+    "interactive",
+    "PennyLane",
+    "python",
+    "open-source"
+  ],
   "description": "The Xanadu Quantum Codebook is a free, interactive introduction to quantum computing built on the PennyLane framework. It teaches quantum algorithms through a structured sequence of coding exercises (codercises) that run directly in the browser. The codebook covers topics from single-qubit gates to advanced quantum algorithms with immediate feedback on solutions.",
   "website": "https://codebook.xanadu.ai",
   "openSource": true,
@@ -23,6 +29,15 @@
       "url": "https://github.com/XanaduAI/Xanadu-Quantum-Codebook",
       "title": "Xanadu Quantum Codebook — GitHub Repository",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Xanadu Quantum Codebook repository archived",
+      "excerpt": "The Xanadu-Quantum-Codebook repository was archived by the owner on January 16, 2025 and is now read-only.",
+      "url": "https://github.com/XanaduAI/Xanadu-Quantum-Codebook",
+      "source": "GitHub",
+      "date": "2025-01-16"
     }
   ]
 }

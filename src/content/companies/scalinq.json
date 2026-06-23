@@ -4,7 +4,13 @@
   "country": "Sweden",
   "region": "nordics",
   "type": "hardware",
-  "tags": ["superconducting", "cryogenic", "quantum-hardware", "packaging", "spin-qubits"],
+  "tags": [
+    "superconducting",
+    "cryogenic",
+    "quantum-hardware",
+    "packaging",
+    "spin-qubits"
+  ],
   "founded": 2022,
   "description": "SCALINQ is a Swedish quantum hardware company and spin-off from Chalmers University of Technology in Gothenburg. The company develops cost-efficient, energy-efficient, high-density cryogenic-grade hardware for superconducting and spin-qubit quantum processors. Its patent-pending LINQER product family provides complete packaging solutions and sample holders with 16 to 300 connectors for quantum computing systems.",
   "website": "https://www.scalinq.com",
@@ -41,6 +47,22 @@
       "url": "https://qsip.se/quantum-in-sweden-articles-scalinq/",
       "title": "Quantum company wants to improve humanity - QSIP",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Releasing LINQER24: Compatible with kiutra L-Type Rapid Puck 80",
+      "excerpt": "SCALINQ releases LINQER24 compatible with kiutra L-Type Rapid Puck 80",
+      "url": "https://www.scalinq.com",
+      "source": "SCALINQ",
+      "date": "2026-03-17"
+    },
+    {
+      "title": "How SCALINQ's here to revolutionize quantum computing",
+      "excerpt": "Interview with SCALINQ CEO Zaid Saeed about the company's mission to revolutionize quantum computing through hardware solutions",
+      "url": "https://www.techarenan.news/2023/01/31/scalinq-quantum-computing-sweden-chalmers-gothenburg-zaid-saeed-startup/",
+      "source": "Techarenan",
+      "date": "2023-01-31"
     }
   ]
 }

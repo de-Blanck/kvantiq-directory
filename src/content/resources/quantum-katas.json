@@ -2,7 +2,13 @@
   "name": "Quantum Katas",
   "slug": "quantum-katas",
   "type": "course",
-  "tags": ["education", "open-source", "Q#", "tutorials", "Microsoft"],
+  "tags": [
+    "education",
+    "open-source",
+    "Q#",
+    "tutorials",
+    "Microsoft"
+  ],
   "description": "Quantum Katas is an open-source collection of self-paced tutorials and programming exercises for learning quantum computing using Microsoft's Q# language. The katas cover topics from basic quantum gates to advanced quantum algorithms and are designed to teach through hands-on problem-solving. Each kata includes automated verification of solutions.",
   "website": "https://quantum.microsoft.com/en-us/tools/quantum-katas",
   "openSource": true,
@@ -24,6 +30,15 @@
       "url": "https://github.com/microsoft/QuantumKatas",
       "title": "Quantum Katas GitHub Repository",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quantum Katas Repository Archived",
+      "excerpt": "The Quantum Katas repository was archived by the owner on August 21, 2024 and is now read-only.",
+      "url": "https://github.com/microsoft/QuantumKatas",
+      "source": "GitHub",
+      "date": "2024-08-21"
     }
   ]
 }

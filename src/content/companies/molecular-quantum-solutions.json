@@ -4,7 +4,13 @@
   "country": "Denmark",
   "region": "nordics",
   "type": "software",
-  "tags": ["quantum-chemistry", "materials", "formulation", "drug-discovery", "TechBio"],
+  "tags": [
+    "quantum-chemistry",
+    "materials",
+    "formulation",
+    "drug-discovery",
+    "TechBio"
+  ],
   "founded": 2019,
   "description": "Molecular Quantum Solutions (MQS) is a Danish quantum chemistry software company providing computational platforms that combine HPC and quantum methods to predict molecular properties for pharmaceutical, biotech, materials, and chemical R&D customers. Its Cebule Dashboard targets formulation chemistry rather than primary drug discovery, complementing traditional quantum chemistry tooling. MQS is backed by Scale Capital, Stokbro Invest, Rockstart, and Rockstart Emerging Tech, and co-organized the 2025 Quantum Innovation Challenge with the BioInnovation Institute.",
   "website": "https://mqs.dk",
@@ -46,6 +52,15 @@
       "url": "https://quantumcomputingreport.com/qedma-and-european-partners-launch-eureka-project-for-scalable-quantum-chemistry-simulations/",
       "title": "QEDMA and European Partners Launch Eureka Project for Scalable Quantum Chemistry Simulations - Quantum Computing Report",
       "dateAccessed": "2026-05-01"
+    }
+  ],
+  "news": [
+    {
+      "title": "Europe's Quantum Ecosystem #1? How MQS is Leading the Way for Denmark",
+      "excerpt": "MQS has started a collaboration with Japanese tech giant Fujitsu and is building commercial ties in North America, Australia, and across the EU.",
+      "url": "https://www.scalecapital.com/stories/europes-quantum-ecosystem-1-how-mqs-is-leading-the-way-for-denmark",
+      "source": "Scale Capital",
+      "date": "2025-07-25"
     }
   ]
 }

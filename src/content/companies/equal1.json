@@ -4,7 +4,12 @@
   "country": "Ireland",
   "region": "western-europe",
   "type": "hardware",
-  "tags": ["silicon spin qubits", "cmos", "cryogenic", "full-stack"],
+  "tags": [
+    "silicon spin qubits",
+    "cmos",
+    "cryogenic",
+    "full-stack"
+  ],
   "founded": 2018,
   "description": "Equal1 develops silicon spin qubit processors fabricated using standard CMOS processes at foundries such as TSMC. The company's Bell-1 quantum server integrates qubits, cryogenic control electronics, and classical computing into a standard rack unit operating at 0.3 K. Equal1 was spun out of University College Dublin.",
   "website": "https://www.equal1.com",
@@ -14,7 +19,10 @@
   "funding": "$85M total; $60M Series B January 2026, €13.7M DTIF grant October 2025",
   "accessModel": "Hardware sales (quantum server appliance)",
   "products": [
-    {"name": "Bell-1 Quantum Server", "description": "Integrated quantum server combining silicon spin qubits, cryogenic control electronics, and classical computing in a standard rack unit at 0.3 K"}
+    {
+      "name": "Bell-1 Quantum Server",
+      "description": "Integrated quantum server combining silicon spin qubits, cryogenic control electronics, and classical computing in a standard rack unit at 0.3 K"
+    }
   ],
   "highlights": [
     "Silicon spin qubits fabricated using standard CMOS at TSMC foundries",
@@ -39,6 +47,15 @@
       "url": "https://siliconangle.com/2026/01/15/irish-startup-equal1-receives-60m-start-deploying-scalable-quantum-computing-tech/",
       "title": "Irish startup Equal1 receives $60M to deploy scalable quantum computing tech (SiliconAngle, January 2026)",
       "dateAccessed": "2026-03-21"
+    }
+  ],
+  "news": [
+    {
+      "title": "Irish startup Equal1 receives $60M to start deploying its scalable quantum computing tech",
+      "excerpt": "Equal1 Ltd. raised $60 million in a new funding round led by the Ireland Strategic Investment Fund to deploy its silicon spin quantum computing technology.",
+      "url": "https://siliconangle.com/2026/01/15/irish-startup-equal1-receives-60m-start-deploying-scalable-quantum-computing-tech/",
+      "source": "SiliconANGLE",
+      "date": "2026-01-15"
     }
   ]
 }

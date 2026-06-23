@@ -4,7 +4,12 @@
   "country": "Denmark",
   "region": "nordics",
   "type": "cloud",
-  "tags": ["neutral-atom", "logical-qubits", "quantum-infrastructure", "EuroHPC"],
+  "tags": [
+    "neutral-atom",
+    "logical-qubits",
+    "quantum-infrastructure",
+    "EuroHPC"
+  ],
   "founded": 2025,
   "description": "QuNorth is a Danish joint venture established by EIFO and the Novo Nordisk Foundation with EUR 80 million in funding to procure and operate the Magne quantum computer in Copenhagen. Magne, delivered by Atom Computing and Microsoft, will be a level-2 quantum system with 50 logical qubits and over 1,200 physical neutral-atom qubits, projected to be the first commercially available fault-tolerant quantum computer when operational in late 2026.",
   "website": "https://qunorth.com",
@@ -46,11 +51,18 @@
   ],
   "news": [
     {
-      "title": "QuNorth begins construction of Magne quantum computer in Copenhagen",
-      "excerpt": "Construction of the Magne system began in autumn 2025; commissioning is targeted for late 2026 / early 2027, on track to be the first commercially available fault-tolerant quantum computer.",
-      "url": "https://quantumcomputingreport.com/denmarks-qunorth-to-acquire-50-logical-qubit-magne-quantum-computer-from-atom-computing-and-microsoft/",
-      "source": "Quantum Computing Report",
-      "date": "2025-09-15"
+      "title": "QuNorth Launches in Denmark with €80M Backing for Level 2 Quantum System",
+      "excerpt": "EIFO and the Novo Nordisk Foundation are investing €80 million to establish QuNorth, a new Nordic quantum initiative to acquire and operate Magne, the world's most powerful commercial quantum computer to date, delivered by Microsoft and Atom Computing.",
+      "url": "https://www.hpcwire.com/off-the-wire/qunorth-launches-in-denmark-with-e80m-backing-for-level-2-quantum-system/",
+      "source": "HPCwire",
+      "date": "2025-07-17"
+    },
+    {
+      "title": "EIFO and the Novo Nordisk Foundation Acquire the World's Most Powerful Quantum Computer",
+      "excerpt": "EIFO and the Novo Nordisk Foundation are investing €80 million in the establishment of QuNorth, a new Nordic quantum initiative. Microsoft and Atom Computing will deliver the world's most powerful quantum computer powered by logical qubits.",
+      "url": "https://novonordiskfonden.dk/en/news/eifo-and-the-novo-nordisk-foundation-acquire-the-worlds-most-powerful-quantum-computer/",
+      "source": "Novo Nordisk Fonden",
+      "date": "2025-07-17"
     }
   ]
 }

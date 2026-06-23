@@ -4,7 +4,11 @@
   "country": "Germany",
   "region": "dach",
   "type": "hardware",
-  "tags": ["trapped-ion", "quantum-computing", "microwave-technology"],
+  "tags": [
+    "trapped-ion",
+    "quantum-computing",
+    "microwave-technology"
+  ],
   "founded": 2020,
   "description": "eleQtron is a German quantum computing company developing trapped-ion quantum computers using microwave technology. Spun out from the University of Siegen, eleQtron focuses on building scalable quantum processors with innovative ion-trap designs for improved performance and manufacturability.",
   "website": "https://www.eleqtron.com",
@@ -51,6 +55,13 @@
     }
   ],
   "news": [
+    {
+      "title": "eleQtron Secures €57 Million in Series A Funding Round",
+      "excerpt": "eleQtron raised €57 million in a Series A round to scale its trapped-ion quantum computing technology, signaling growing momentum toward industrial commercialization in the sector. The funding — led by Schwarz Digits with participation from the European Innovation Council and multiple venture and institutional investors — positions the company among Europe's more prominent quantum players. The company plans to expand production, cloud access, and its MAGIC control technology while leveraging a €54 million order backlog that indicates early commercial demand for its systems.",
+      "url": "https://thequantuminsider.com/2026/05/05/eleqtron-secures-e57-million-in-series-a-funding-round/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-05"
+    },
     {
       "title": "Ion Hack 2026 brings together trapped-ion quantum talent in Jülich",
       "excerpt": "eleQtron and JUNIQ co-host a three-day hackathon at Forschungszentrum Jülich focused on trapped-ion simulation and optimisation challenges.",

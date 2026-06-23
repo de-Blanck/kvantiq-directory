@@ -4,7 +4,12 @@
   "country": "Germany",
   "region": "dach",
   "type": "hardware",
-  "tags": ["diamond-qubits", "nv-center", "room-temperature", "mobile-quantum-computer"],
+  "tags": [
+    "diamond-qubits",
+    "nv-center",
+    "room-temperature",
+    "mobile-quantum-computer"
+  ],
   "founded": 2021,
   "description": "SaxonQ develops mobile quantum computers based on nitrogen-vacancy centers in diamond that operate at room temperature without cryogenic cooling. Spun off from the Felix Bloch Institute at Universität Leipzig, the company produces commercially available quantum systems connected to the DLR Quantum Computing Initiative's QCI Connect platform.",
   "website": "https://www.saxonq.com",
@@ -35,6 +40,15 @@
       "url": "https://qci.dlr.de/en/partner/saxonq/",
       "title": "SaxonQ — DLR Quantum Computing Initiative",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Bechtle ist erster zertifizierter Partner von SaxonQ",
+      "excerpt": "Der mobile Quantencomputer kommt jetzt noch näher zu den Anwendern. Das Team des Bechtle-Kompetenzzentrums für Quantentechnologien aus Bonn war Erste mit Zertifizierung.",
+      "url": "https://www.saxonq.com",
+      "source": "saxonq.com",
+      "date": "2026-06-16"
     }
   ]
 }
