@@ -30,6 +30,9 @@ function stripHtml(html) {
     .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
     .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
     .replace(/<[^>]+>/g, ' ')
+    // Strip control bytes — null bytes in fetched HTML crash the claude spawn
+    // ("args[1] must be a string without null bytes").
+    .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
     .slice(0, 5000);
@@ -56,6 +59,25 @@ function getDomain(url) {
   try { return new URL(url).hostname; } catch { return ''; }
 }
 
+// Source-credibility blocklist (CLAUDE.md -> "Source credibility"). A news item
+// whose link or named source is self-published / low-credibility is rejected
+// even when its domain was a fetched source — so the methodology is enforced at
+// the sweep, not just in human review. Matched on URL host (suffix) and on the
+// source label. Exported for unit testing.
+const BLOCKLISTED_DOMAINS = [
+  'linkedin.com', 'crunchbase.com', 'wikipedia.org', 'facebook.com',
+  'twitter.com', 'x.com', 'medium.com', 'prnewswire.com', 'globenewswire.com',
+  'businesswire.com', 'accessnewswire.com', 'finance.yahoo.com',
+];
+const BLOCKLISTED_SOURCE_RE = /linkedin|crunchbase|wikipedia|facebook|prnewswire|globenewswire|businesswire|accessnewswire/i;
+
+export function isBlocklistedSource(item) {
+  const host = getDomain(item.url || '').replace(/^www\./, '');
+  if (host && BLOCKLISTED_DOMAINS.some(d => host === d || host.endsWith('.' + d))) return true;
+  if (item.source && BLOCKLISTED_SOURCE_RE.test(item.source)) return true;
+  return false;
+}
+
 function isRecent(dateStr) {
   const date = new Date(dateStr);
   const now = new Date();
@@ -71,27 +93,35 @@ function isRecent(dateStr) {
 // fail the content build. Items sharing a URL are collapsed to the first
 // occurrence (the model often emits several stories that can only cite the
 // entry's homepage). Exported for unit testing.
-export function normalizeNewsItems(rawItems, fetchedDomains) {
+export function normalizeNewsItems(rawItems, fetchedDomains, stats) {
   if (!Array.isArray(rawItems)) return [];
+  const bump = (k) => { if (stats) stats[k] = (stats[k] || 0) + 1; };
+  if (stats) stats.raw = (stats.raw || 0) + rawItems.length;
   const seen = new Set();
   return rawItems
     .filter(item => {
-      if (!item || !item.title || !item.url || !item.date || !item.source) return false;
-      if (!/^\d{4}-\d{2}-\d{2}$/.test(item.date)) return false;
-      return fetchedDomains.has(getDomain(item.url));
+      if (!item || !item.title || !item.url || !item.date || !item.source) { bump('rejected_missing_field'); return false; }
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(item.date)) { bump('rejected_bad_date'); return false; }
+      if (!fetchedDomains.has(getDomain(item.url))) { bump('rejected_domain_mismatch'); return false; }
+      if (isBlocklistedSource(item)) { bump('rejected_blocklisted'); return false; }
+      return true;
     })
     .map(item => {
       const out = { title: String(item.title).trim() };
       const excerpt = item.excerpt ? String(item.excerpt).trim() : '';
-      if (excerpt) out.excerpt = excerpt;
+      if (excerpt) out.excerpt = excerpt; else bump('empty_excerpt_dropped');
       out.url = item.url;
       out.source = String(item.source).trim();
       out.date = item.date;
       return out;
     })
-    .filter(item => item.title && item.source) // guard against whitespace-only title/source
+    .filter(item => { // guard against whitespace-only title/source
+      if (item.title && item.source) return true;
+      bump('rejected_blank_title_source');
+      return false;
+    })
     .filter(item => { // collapse duplicate URLs, keeping the first
-      if (seen.has(item.url)) return false;
+      if (seen.has(item.url)) { bump('duplicate_url_collapsed'); return false; }
       seen.add(item.url);
       return true;
     });
@@ -143,7 +173,7 @@ function extractJsonArray(text) {
   try { return JSON.parse(match[0]); } catch { return null; }
 }
 
-async function processEntry(collection, file) {
+async function processEntry(collection, file, stats) {
   const filePath = path.join(CONTENT_DIR, collection, file);
   const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
@@ -195,7 +225,7 @@ Return ONLY the JSON array, no other text. If no news found, return [].`;
   const newsItems = extractJsonArray(response);
   if (!Array.isArray(newsItems)) return { skipped: false, added: 0 };
 
-  const validatedNews = normalizeNewsItems(newsItems, fetchedDomains);
+  const validatedNews = normalizeNewsItems(newsItems, fetchedDomains, stats);
 
   if (validatedNews.length === 0) return { skipped: false, added: 0 };
 
@@ -208,7 +238,31 @@ Return ONLY the JSON array, no other text. If no news found, return [].`;
   data.news = [...newItems, ...existingNews].slice(0, MAX_NEWS_PER_ENTRY);
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n');
 
-  return { skipped: false, added: newItems.length };
+  return { skipped: false, added: newItems.length, items: newItems, country: data.country || null };
+}
+
+function formatDuration(ms) {
+  const s = Math.round(ms / 1000);
+  const m = Math.floor(s / 60);
+  return m > 0 ? `${m}m ${s % 60}s` : `${s}s`;
+}
+
+const REPORT_FILE = path.join('data', 'generated', 'sweep-runs.json');
+const MAX_RUNS_KEPT = 60;
+
+// Prepend a run record to data/generated/sweep-runs.json (newest first), capped.
+// Rendered by the Transparency → Audit Log page (/transparency/sweeps).
+export function writeRunReport(report, file = REPORT_FILE) {
+  let runs = [];
+  try {
+    if (fs.existsSync(file)) runs = JSON.parse(fs.readFileSync(file, 'utf8'));
+    if (!Array.isArray(runs)) runs = [];
+  } catch { runs = []; }
+  runs.unshift(report);
+  runs = runs.slice(0, MAX_RUNS_KEPT);
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  fs.writeFileSync(file, JSON.stringify(runs, null, 2) + '\n');
+  console.log(`\nRun report written -> ${file} (${runs.length} run(s) on file)`);
 }
 
 async function main() {
@@ -220,45 +274,113 @@ async function main() {
   console.log('=== Kvantiq Directory — Weekly AI Content Sweep ===');
   console.log(`Model: ${CLAUDE_MODEL} (subscription auth)\n`);
 
-  const results = { updated: 0, skipped: 0, total: 0, details: [] };
+  const startedAt = new Date();
+  const t0 = Date.now();
+
+  const results = { updated: 0, skipped: 0, total: 0 };
+  const adherence = {};        // rejection counters populated by normalizeNewsItems
+  const byCollection = {};     // collection -> { scanned, updated, news_added }
+  const byCountry = {};        // country -> news items added
+  const bySource = {};         // news source -> count
+  const notFound = [];         // entries with no usable live sources ("didn't find")
+  let newsAdded = 0;
+  let noChange = 0;
 
   for (const collection of COLLECTIONS) {
     const dir = path.join(CONTENT_DIR, collection);
     const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
+    byCollection[collection] = { scanned: 0, updated: 0, news_added: 0 };
 
     for (const file of files) {
       results.total++;
+      byCollection[collection].scanned++;
       const entry = `${collection}/${file}`;
       process.stdout.write(`Processing ${entry}...`);
 
-      const result = await processEntry(collection, file);
+      const result = await processEntry(collection, file, adherence);
 
       if (result.skipped) {
         results.skipped++;
-        results.details.push({ entry, status: 'skipped', reason: result.reason });
+        notFound.push(`${entry} (${result.reason})`);
         console.log(` SKIPPED (${result.reason})`);
       } else if (result.added > 0) {
         results.updated++;
-        results.details.push({ entry, status: 'updated', added: result.added });
+        newsAdded += result.added;
+        byCollection[collection].updated++;
+        byCollection[collection].news_added += result.added;
+        if (result.country) byCountry[result.country] = (byCountry[result.country] || 0) + result.added;
+        for (const it of (result.items || [])) {
+          if (it.source) bySource[it.source] = (bySource[it.source] || 0) + 1;
+        }
         console.log(` UPDATED (+${result.added} news)`);
       } else {
+        noChange++;
         console.log(' no changes');
       }
     }
   }
 
-  console.log('\n=== Summary ===');
-  console.log(`Total entries: ${results.total}`);
-  console.log(`Updated: ${results.updated}`);
-  console.log(`Skipped: ${results.skipped}`);
-  console.log(`Unchanged: ${results.total - results.updated - results.skipped}`);
+  const runtimeMs = Date.now() - t0;
+  const raw = adherence.raw || 0;
+  const rejected =
+    (adherence.rejected_missing_field || 0) +
+    (adherence.rejected_bad_date || 0) +
+    (adherence.rejected_domain_mismatch || 0) +
+    (adherence.rejected_blocklisted || 0) +
+    (adherence.rejected_blank_title_source || 0);
+  // Published items are 100% source-grounded by construction; the headline metric
+  // is the share of model output that cleared every methodology gate.
+  const passRate = raw > 0 ? Math.round(((raw - rejected) / raw) * 1000) / 10 : 100;
 
-  if (results.details.length > 0) {
-    console.log('\n=== Changes ===');
-    results.details.forEach(d => {
-      console.log(`  ${d.entry}: ${d.status}${d.added ? ' (+' + d.added + ' news)' : ''}${d.reason ? ' (' + d.reason + ')' : ''}`);
-    });
-  }
+  const topCountry = Object.entries(byCountry).sort((a, b) => b[1] - a[1])[0];
+  const topSource = Object.entries(bySource).sort((a, b) => b[1] - a[1])[0];
+  const topCollection = Object.entries(byCollection)
+    .map(([c, v]) => [c, v.news_added]).sort((a, b) => b[1] - a[1])[0];
+
+  const highlights = [];
+  if (topCountry) highlights.push(`Most active country: ${topCountry[0]} (+${topCountry[1]} news items)`);
+  if (topSource) highlights.push(`Most-cited source: ${topSource[0]} (${topSource[1]}x)`);
+  if (topCollection && topCollection[1] > 0) highlights.push(`Busiest collection: ${topCollection[0]} (+${topCollection[1]})`);
+  highlights.push(`${Object.keys(bySource).length} distinct sources cited across ${Object.keys(byCountry).length} countries`);
+  if (rejected > 0) highlights.push(`${rejected} item(s) rejected at source to uphold the methodology (anti-fabrication + schema)`);
+
+  const report = {
+    date: startedAt.toISOString().slice(0, 10),
+    started_at: startedAt.toISOString(),
+    finished_at: new Date().toISOString(),
+    runtime_ms: runtimeMs,
+    runtime_human: formatDuration(runtimeMs),
+    model: CLAUDE_MODEL,
+    scanned: results.total,
+    updated: results.updated,
+    no_change: noChange,
+    skipped: results.skipped,
+    news_added: newsAdded,
+    methodology: {
+      items_proposed: raw,
+      items_published: newsAdded,
+      pass_rate_pct: passRate,
+      rejected_missing_field: adherence.rejected_missing_field || 0,
+      rejected_bad_date: adherence.rejected_bad_date || 0,
+      rejected_domain_mismatch: adherence.rejected_domain_mismatch || 0,
+      rejected_blocklisted: adherence.rejected_blocklisted || 0,
+      rejected_blank_title_source: adherence.rejected_blank_title_source || 0,
+      empty_excerpt_dropped: adherence.empty_excerpt_dropped || 0,
+      duplicate_url_collapsed: adherence.duplicate_url_collapsed || 0,
+    },
+    by_collection: byCollection,
+    by_country: byCountry,
+    top_sources: Object.entries(bySource).sort((a, b) => b[1] - a[1]).slice(0, 8).map(([source, count]) => ({ source, count })),
+    not_found: notFound,
+    highlights,
+  };
+
+  console.log('\n=== Summary ===');
+  console.log(`Runtime: ${report.runtime_human}`);
+  console.log(`Scanned: ${report.scanned} | Updated: ${report.updated} | No-change: ${report.no_change} | Skipped: ${report.skipped}`);
+  console.log(`News added: ${report.news_added} | Methodology pass-rate: ${passRate}% (${rejected} rejected of ${raw})`);
+
+  writeRunReport(report);
 }
 
 // Only run the sweep when executed directly (`node scripts/ai-sweep.mjs`),

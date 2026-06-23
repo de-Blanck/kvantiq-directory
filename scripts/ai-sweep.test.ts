@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { normalizeNewsItems } from './ai-sweep.mjs';
+import { normalizeNewsItems, isBlocklistedSource } from './ai-sweep.mjs';
 
 const domains = new Set(['example.com']);
 const base = {
@@ -66,4 +66,21 @@ test('collapses items that share a URL, keeping the first', () => {
   assert.equal(out.length, 2);
   assert.equal(out[0].title, 'First story');
   assert.equal(out[1].url, 'https://example.com/y');
+});
+
+test('isBlocklistedSource flags self-published / low-credibility sources', () => {
+  assert.ok(isBlocklistedSource({ url: 'https://www.linkedin.com/company/x', source: 'LinkedIn' }));
+  assert.ok(isBlocklistedSource({ url: 'https://example.com/x', source: 'Crunchbase' }));
+  assert.ok(isBlocklistedSource({ url: 'https://en.wikipedia.org/wiki/X', source: 'Wikipedia' }));
+  assert.ok(!isBlocklistedSource({ url: 'https://www.reuters.com/x', source: 'Reuters' }));
+});
+
+test('rejects blocklisted sources even when the domain was fetched (methodology enforcement)', () => {
+  const fetched = new Set(['example.com', 'linkedin.com']);
+  const out = normalizeNewsItems([
+    { ...base, title: 'Legit', url: 'https://example.com/news' },
+    { ...base, title: 'Self-published', url: 'https://linkedin.com/company/x', source: 'LinkedIn' },
+  ], fetched);
+  assert.equal(out.length, 1);
+  assert.equal(out[0].title, 'Legit');
 });
