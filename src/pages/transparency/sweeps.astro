@@ -1,0 +1,228 @@
+---
+import { readFileSync, existsSync } from 'fs';
+import { resolve } from 'path';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+interface MethodologyStats {
+  items_proposed?: number;
+  items_published?: number;
+  pass_rate_pct?: number;
+  rejected_missing_field?: number;
+  rejected_bad_date?: number;
+  rejected_domain_mismatch?: number;
+  rejected_blocklisted?: number;
+  rejected_blank_title_source?: number;
+  empty_excerpt_dropped?: number;
+  duplicate_url_collapsed?: number;
+}
+
+interface SweepRun {
+  date: string;
+  started_at?: string;
+  finished_at?: string;
+  runtime_human?: string;
+  model?: string;
+  scanned: number;
+  updated: number;
+  no_change?: number;
+  skipped?: number;
+  news_added?: number;
+  methodology?: MethodologyStats;
+  by_country?: Record<string, number>;
+  top_sources?: Array<{ source: string; count: number }>;
+  not_found?: string[];
+  highlights?: string[];
+  note?: string;
+}
+
+function loadJson<T>(filename: string, fallback: T): T {
+  const filePath = resolve('data/generated', filename);
+  if (!existsSync(filePath)) return fallback;
+  try {
+    return JSON.parse(readFileSync(filePath, 'utf-8')) as T;
+  } catch {
+    return fallback;
+  }
+}
+
+const runs = loadJson<SweepRun[]>('sweep-runs.json', []);
+
+function rejectionTotal(m?: MethodologyStats): number {
+  if (!m) return 0;
+  return (m.rejected_missing_field ?? 0) + (m.rejected_bad_date ?? 0)
+    + (m.rejected_domain_mismatch ?? 0) + (m.rejected_blocklisted ?? 0)
+    + (m.rejected_blank_title_source ?? 0);
+}
+
+// Headline counters across all recorded runs
+const totalNews = runs.reduce((s, r) => s + (r.news_added ?? 0), 0);
+const totalRejected = runs.reduce((s, r) => s + rejectionTotal(r.methodology), 0);
+---
+
+<BaseLayout
+  title="Sweep Log — Weekly Run Reports"
+  description="A dated, public log of every automated content sweep of the Kvantiq quantum computing directory: runtime, what was found and not found, methodology adherence, and statistical highlights for each run."
+>
+  <main data-pagefind-ignore class="mx-auto max-w-4xl">
+
+    <div class="mb-8">
+      <p class="eyebrow text-text-muted mb-2">Transparency</p>
+      <h1 class="h-xl text-text-primary">Sweep Log</h1>
+      <p class="mt-4 body-lg text-text-secondary">
+        Every week an AI agent sweeps the primary sources behind each entry and extracts
+        source-grounded news. This is the public record of those runs — what each sweep found,
+        what it didn&rsquo;t, how strictly it adhered to the
+        <a href="/transparency" class="text-info underline underline-offset-2">source methodology</a>,
+        and a few statistical highlights. Nothing here is hand-edited.
+      </p>
+      {runs.length > 0 && (
+        <div class="mt-6 grid grid-cols-3 gap-4">
+          <div class="rounded-lg border border-border bg-surface p-4 text-center">
+            <p class="data-lg text-text-primary">{runs.length}</p>
+            <p class="mt-1 eyebrow text-text-muted">Runs logged</p>
+          </div>
+          <div class="rounded-lg border border-border bg-surface p-4 text-center">
+            <p class="data-lg text-text-primary">{totalNews}</p>
+            <p class="mt-1 eyebrow text-text-muted">News items published</p>
+          </div>
+          <div class="rounded-lg border border-border bg-surface p-4 text-center">
+            <p class="data-lg text-text-primary">{totalRejected}</p>
+            <p class="mt-1 eyebrow text-text-muted">Rejected at source</p>
+          </div>
+        </div>
+      )}
+    </div>
+
+    {runs.length === 0 ? (
+      <p class="body-sm text-text-muted italic">No sweep runs recorded yet. The first run will appear here.</p>
+    ) : (
+      <ol class="space-y-6">
+        {runs.map((r) => {
+          const m = r.methodology;
+          const rejected = rejectionTotal(m);
+          const countries = Object.entries(r.by_country ?? {}).sort((a, b) => b[1] - a[1]);
+          return (
+            <li class="rounded-xl border border-border bg-surface p-6">
+
+              <!-- Header row -->
+              <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                <h2 class="h-md text-text-primary">Sweep &middot; {r.date}</h2>
+                <span class="data-md text-text-secondary">{r.runtime_human ?? '—'} runtime</span>
+              </div>
+              {r.model && <p class="mt-0.5 body-sm text-text-muted">Model: {r.model}</p>}
+              {r.note && <p class="mt-2 body-sm text-text-muted italic">{r.note}</p>}
+
+              <!-- Counters -->
+              <div class="mt-4 grid grid-cols-2 sm:grid-cols-5 gap-3">
+                <div class="rounded-lg border border-border bg-base p-3 text-center">
+                  <p class="data-md text-text-primary">{r.scanned}</p>
+                  <p class="mt-0.5 eyebrow text-text-muted">Scanned</p>
+                </div>
+                <div class="rounded-lg border border-border bg-base p-3 text-center">
+                  <p class="data-md text-text-primary">{r.updated}</p>
+                  <p class="mt-0.5 eyebrow text-text-muted">Updated</p>
+                </div>
+                <div class="rounded-lg border border-border bg-base p-3 text-center">
+                  <p class="data-md text-text-primary">{r.news_added ?? 0}</p>
+                  <p class="mt-0.5 eyebrow text-text-muted">News added</p>
+                </div>
+                <div class="rounded-lg border border-border bg-base p-3 text-center">
+                  <p class="data-md text-text-primary">{r.no_change ?? 0}</p>
+                  <p class="mt-0.5 eyebrow text-text-muted">No change</p>
+                </div>
+                <div class="rounded-lg border border-border bg-base p-3 text-center">
+                  <p class="data-md text-text-primary">{r.skipped ?? 0}</p>
+                  <p class="mt-0.5 eyebrow text-text-muted">No sources</p>
+                </div>
+              </div>
+
+              <!-- Methodology adherence -->
+              {m && (
+                <div class="mt-4 rounded-lg border border-border bg-elevated p-4">
+                  <div class="flex items-baseline justify-between">
+                    <p class="eyebrow text-text-muted">Methodology adherence</p>
+                    <p class="data-lg text-text-primary">{m.pass_rate_pct ?? 100}%</p>
+                  </div>
+                  <p class="mt-1 body-sm text-text-secondary">
+                    {m.items_published ?? 0} published of {m.items_proposed ?? 0} proposed.
+                    {rejected > 0
+                      ? ` ${rejected} rejected at source — `
+                      : ' No items violated the methodology.'}
+                    {rejected > 0 && (
+                      <span class="text-text-muted">
+                        {[
+                          m.rejected_domain_mismatch ? `${m.rejected_domain_mismatch} not source-grounded` : null,
+                          m.rejected_blocklisted ? `${m.rejected_blocklisted} blocklisted source` : null,
+                          m.rejected_missing_field ? `${m.rejected_missing_field} missing fields` : null,
+                          m.rejected_bad_date ? `${m.rejected_bad_date} bad date` : null,
+                          (m.duplicate_url_collapsed ?? 0) ? `${m.duplicate_url_collapsed} duplicate URL` : null,
+                        ].filter(Boolean).join(', ')}.
+                      </span>
+                    )}
+                  </p>
+                </div>
+              )}
+
+              <!-- Highlights -->
+              {r.highlights && r.highlights.length > 0 && (
+                <ul class="mt-4 space-y-1.5">
+                  {r.highlights.map((h) => (
+                    <li class="body-sm text-text-secondary flex gap-2">
+                      <span class="text-accent">&#9656;</span><span>{h}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              <!-- Top sources + countries -->
+              {(r.top_sources?.length || countries.length > 0) && (
+                <div class="mt-4 grid gap-4 sm:grid-cols-2">
+                  {r.top_sources && r.top_sources.length > 0 && (
+                    <div>
+                      <p class="eyebrow text-text-muted mb-2">Most-cited sources</p>
+                      <ul class="flex flex-wrap gap-1.5">
+                        {r.top_sources.map((s) => (
+                          <li class="rounded-full border border-border bg-base px-2.5 py-0.5 body-sm text-text-secondary">
+                            {s.source} <span class="data-sm text-text-primary">{s.count}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {countries.length > 0 && (
+                    <div>
+                      <p class="eyebrow text-text-muted mb-2">News by country</p>
+                      <ul class="flex flex-wrap gap-1.5">
+                        {countries.slice(0, 12).map(([c, n]) => (
+                          <li class="rounded-full border border-border bg-base px-2.5 py-0.5 body-sm text-text-secondary">
+                            {c} <span class="data-sm text-text-primary">{n}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              <!-- Didn't find -->
+              {r.not_found && r.not_found.length > 0 && (
+                <details class="mt-4 group">
+                  <summary class="cursor-pointer body-sm text-text-muted hover:text-text-secondary">
+                    {r.not_found.length} entr{r.not_found.length === 1 ? 'y' : 'ies'} with no live sources this run
+                  </summary>
+                  <ul class="mt-2 space-y-0.5 pl-4">
+                    {r.not_found.map((e) => (
+                      <li class="data-sm text-text-muted">{e}</li>
+                    ))}
+                  </ul>
+                </details>
+              )}
+
+            </li>
+          );
+        })}
+      </ol>
+    )}
+
+  </main>
+</BaseLayout>
