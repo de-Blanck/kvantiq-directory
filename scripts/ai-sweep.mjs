@@ -108,6 +108,33 @@ function extractJsonArray(text) {
   try { return JSON.parse(match[0]); } catch { return null; }
 }
 
+// Normalize a model-emitted news item: trim string fields and drop an empty or
+// whitespace-only excerpt. The content schema makes `excerpt` optional but
+// rejects empty strings (nonEmpty), so emitting "" fails build-time validation
+// and FATALs the weekly runner. Omitting the field keeps the item schema-valid.
+export function normalizeNewsItem(item) {
+  if (!item || typeof item !== 'object') return {};
+  const out = { ...item };
+  for (const k of ['title', 'excerpt', 'url', 'source', 'date']) {
+    if (typeof out[k] === 'string') out[k] = out[k].trim();
+  }
+  if (!out.excerpt) delete out.excerpt;
+  return out;
+}
+
+// Dedupe news items by URL, preserving order and skipping any URL already seen.
+// The model sometimes emits several items pointing at the same (often homepage)
+// URL when that is the only fetched source; collapse them to one.
+export function dedupeByUrl(items, seenUrls = new Set()) {
+  const out = [];
+  for (const item of items) {
+    if (seenUrls.has(item.url)) continue;
+    seenUrls.add(item.url);
+    out.push(item);
+  }
+  return out;
+}
+
 async function processEntry(collection, file) {
   const filePath = path.join(CONTENT_DIR, collection, file);
   const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -160,7 +187,7 @@ Return ONLY the JSON array, no other text. If no news found, return [].`;
   const newsItems = extractJsonArray(response);
   if (!Array.isArray(newsItems)) return { skipped: false, added: 0 };
 
-  const validatedNews = newsItems.filter(item => {
+  const validatedNews = newsItems.map(normalizeNewsItem).filter(item => {
     if (!item.title || !item.url || !item.date || !item.source) return false;
     if (!/^\d{4}-\d{2}-\d{2}$/.test(item.date)) return false;
     const itemDomain = getDomain(item.url);
@@ -171,7 +198,8 @@ Return ONLY the JSON array, no other text. If no news found, return [].`;
 
   const existingNews = (data.news || []).filter(n => isRecent(n.date));
   const existingUrls = new Set(existingNews.map(n => n.url));
-  const newItems = validatedNews.filter(n => !existingUrls.has(n.url));
+  // Dedupe within the batch and against existing entry news in one pass.
+  const newItems = dedupeByUrl(validatedNews, new Set(existingUrls));
 
   if (newItems.length === 0) return { skipped: false, added: 0 };
 
@@ -231,7 +259,12 @@ async function main() {
   }
 }
 
-main().catch(err => {
-  console.error('Sweep failed:', err);
-  process.exit(1);
-});
+// Only run the sweep when invoked directly — allows importing the pure helpers
+// (normalizeNewsItem, dedupeByUrl) from tests without triggering a real run.
+import { pathToFileURL } from 'url';
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch(err => {
+    console.error('Sweep failed:', err);
+    process.exit(1);
+  });
+}
