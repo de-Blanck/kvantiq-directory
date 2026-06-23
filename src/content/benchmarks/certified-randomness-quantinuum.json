@@ -63,18 +63,11 @@
   ],
   "news": [
     {
-      "title": "Paper published: Certified randomness using a trapped-ion quantum processor",
-      "excerpt": "Research demonstrates the generation of certifiably random bits using the 56-qubit Quantinuum H2-1 trapped-ion quantum computer. The protocol certifies 71,313 bits of entropy using classical verification across multiple supercomputers.",
+      "title": "Certified randomness using a trapped-ion quantum processor",
+      "excerpt": "Research paper demonstrating generation of certifiably random bits using the 56-qubit Quantinuum H2-1 trapped-ion quantum computer. Protocol certified 71,313 bits of entropy using classical verification across multiple supercomputers.",
       "url": "https://arxiv.org/abs/2503.20498",
       "source": "arXiv",
       "date": "2025-03-26"
-    },
-    {
-      "title": "Quantinuum H-Series sets highest quantum volume benchmark",
-      "excerpt": "The company's H-Series trapped-ion quantum computers set the highest quantum volume to date of 33,554,432.",
-      "url": "https://en.wikipedia.org/wiki/Quantinuum",
-      "source": "Wikipedia",
-      "date": "2025-09-01"
     }
   ]
 }

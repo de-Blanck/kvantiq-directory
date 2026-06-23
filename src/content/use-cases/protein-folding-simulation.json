@@ -37,10 +37,10 @@
   "news": [
     {
       "title": "Protein folding with an all-to-all trapped-ion quantum computer",
-      "excerpt": "Experimentally demonstrates protein folding on IonQ's trapped-ion quantum processors for up to 12 amino acids using the bias-field digitized counterdiabatic quantum optimization algorithm, representing the largest quantum hardware implementations of protein folding reported to date.",
+      "excerpt": "Experimental demonstration of quantum protein folding on IonQ's fully connected trapped-ion quantum processors, tackling protein folding on a tetrahedral lattice for up to 12 amino acids, representing the largest quantum hardware implementations reported to date.",
       "url": "https://arxiv.org/abs/2506.07866",
       "source": "arXiv",
-      "date": "2025-06-09"
+      "date": "2025-06-10"
     }
   ]
 }

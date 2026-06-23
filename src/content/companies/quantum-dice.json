@@ -56,18 +56,18 @@
   ],
   "news": [
     {
+      "title": "EIC Accelerator backs Quantum Dice with €2m grant to advance probabilistic computing",
+      "excerpt": "Quantum Dice has secured a €2m EIC Accelerator grant to advance the development and commercialisation of its ORBIT™-powered probabilistic computing platform. The funding will support work on Quantum Dice's quantum-enabled p-bit processor, aimed at solving complex optimisation problems and enabling next-generation probabilistic AI models. The company was selected as one of 40 deep-tech start-ups across Europe.",
+      "url": "https://thequantuminsider.com/2025/12/09/quantum-dice-eic-grant/",
+      "source": "thequantuminsider.com",
+      "date": "2025-12-09"
+    },
+    {
       "title": "Quantum Dice Joins Equinox Charter to Advance Oxfordshire's Global Innovation Leadership",
       "excerpt": "Quantum Dice is proud to have signed the Equinox Charter, an initiative led by the University of Oxford to strengthen collaboration across research, industry and government.",
       "url": "https://quantum-dice.com",
       "source": "Quantum Dice",
       "date": "2026-06-04"
-    },
-    {
-      "title": "Quantum Dice Secures €2m From European Innovation Council",
-      "excerpt": "Quantum Dice has secured a €2m EIC Accelerator grant to advance the development and commercialisation of its ORBIT™-powered probabilistic computing platform. The funding will support work on Quantum Dice's quantum-enabled p-bit processor, aimed at solving complex optimisation problems and enabling next-generation probabilistic AI models.",
-      "url": "https://thequantuminsider.com/2025/12/09/quantum-dice-eic-grant/",
-      "source": "The Quantum Insider",
-      "date": "2025-12-09"
     }
   ]
 }

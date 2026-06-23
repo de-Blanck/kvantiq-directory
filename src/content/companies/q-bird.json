@@ -4,7 +4,13 @@
   "country": "Netherlands",
   "region": "western-europe",
   "type": "hardware",
-  "tags": ["qkd", "quantum communication", "mdi-qkd", "quantum network", "qutech-spinout"],
+  "tags": [
+    "qkd",
+    "quantum communication",
+    "mdi-qkd",
+    "quantum network",
+    "qutech-spinout"
+  ],
   "founded": 2023,
   "description": "Q*Bird is a quantum communication company offering Measurement-Device-Independent Quantum Key Distribution (MDI-QKD) systems under the Falqon® product line. The company provides the highest level of QKD security by removing the detector side-channel attack surface. Q*Bird was spun out of QuTech (TU Delft / TNO) and received an EIC Accelerator grant and equity investment totalling €7.5M in 2025–2026.",
   "website": "https://q-bird.com",
@@ -14,7 +20,10 @@
   "funding": "€7.5M EIC Accelerator (€2.5M grant + €5M equity, signed January 2026); €1M EFRO grant March 2025",
   "accessModel": "Hardware sales + system integration (QKD systems)",
   "products": [
-    {"name": "Falqon® MDI-QKD System", "description": "Measurement-Device-Independent Quantum Key Distribution system providing the highest level of QKD security by eliminating detector side-channel attacks"}
+    {
+      "name": "Falqon® MDI-QKD System",
+      "description": "Measurement-Device-Independent Quantum Key Distribution system providing the highest level of QKD security by eliminating detector side-channel attacks"
+    }
   ],
   "highlights": [
     "MDI-QKD removes detector side-channel attack surface — highest QKD security level",
@@ -39,6 +48,15 @@
       "url": "https://qutech.nl/business-innovation/startups/",
       "title": "QuTech spinout companies page",
       "dateAccessed": "2026-03-21"
+    }
+  ],
+  "news": [
+    {
+      "title": "Q*Bird Receives EIC Accelerator Funding for Quantum Secure Communications",
+      "excerpt": "Q*Bird has signed an EIC Accelerator 2025 agreement securing €2.5 million in grant funding and €5 million in equity to scale its MDI-QKD-based quantum secure communication technologies in Europe. The NEXUS project will enhance MDI-QKD hardware efficiency, expand production capacity, and develop orchestration software for multi-operator quantum networks.",
+      "url": "https://thequantuminsider.com/2026/01/12/qbird-eic-funding-mdi-qkd-europe/",
+      "source": "The Quantum Insider",
+      "date": "2026-01-12"
     }
   ]
 }

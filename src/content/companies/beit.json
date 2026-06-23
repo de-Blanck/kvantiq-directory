@@ -46,7 +46,7 @@
   "news": [
     {
       "title": "Poland's Vibrant QC Representative",
-      "excerpt": "Beit.Tech, founded in 2016 by CEO Paulina Mazurek, Chief Physics Officer Wojciech Burkot and Chief Mathematics Officer Witold Jarnicki, is a Krakow-based quantum computing startup developing hardware-agnostic algorithms to solve NP-complete problems. The company's software Quasar simplifies quantum assembly code writing and integrates with IBM Qiskit, Google Cirq, and OpenQASM.",
+      "excerpt": "Article profiling Poland's quantum computing landscape and Beit.Tech as a Krakow-based startup founded in 2016 by CEO Paulina Mazurek, Chief Physics Officer Wojciech Burkot, and Chief Mathematics Officer Witold Jarnicki. Discusses the company's focus on NISQ quantum computers and NP-complete problem solving.",
       "url": "https://thequantuminsider.com/2019/11/28/polands-vibrant-qc-representative/",
       "source": "The Quantum Insider",
       "date": "2020-01-25"

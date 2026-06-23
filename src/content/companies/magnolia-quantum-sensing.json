@@ -59,17 +59,24 @@
   ],
   "news": [
     {
+      "title": "Kurt Stokbro Joins Magnolia Quantum Sensing",
+      "excerpt": "We are very excited to officially welcome Kurt Stokbro as business advisor and first investor.",
+      "url": "https://magnolia-qs.com/",
+      "source": "magnolia-qs.com",
+      "date": "2026-06-18"
+    },
+    {
       "title": "Quantum sensor for MRI mentioned by Erhvervsstyrelsen in new publication",
-      "excerpt": "Erhvervsstyrelsen has published a document with 16 use cases of Danish quantum technology. One of the technologies mentioned, a novel optical quantum magnetometer for high magnetic fields, was developed by Hans Stærkind, postdoc at CBQS.",
+      "excerpt": "Erhvervsstyrelsen published a document with 16 use cases of Danish quantum technology featuring a novel optical quantum magnetometer for high magnetic fields developed by Hans Stærkind at CBQS.",
       "url": "https://cbqs.ku.dk/happening-at-cbqs/quantum-sensor-for-mri-mentioned-by-erhvervsstyrelsen-in-new-publication/",
-      "source": "Copenhagen Center for Biomedical Quantum Sensing",
+      "source": "cbqs.ku.dk",
       "date": "2025-01-14"
     },
     {
       "title": "Researchers aim to advance quantum sensing to transform disease diagnosis and prevention",
-      "excerpt": "The Novo Nordisk Foundation has awarded a grant of DKK 150 million to establish the Copenhagen Center for Biomedical Quantum Sensing, under which an international research collaboration aims to develop novel quantum sensing principles and techniques for early detection of diseases.",
+      "excerpt": "The Novo Nordisk Foundation awarded DKK 150 million to establish the Copenhagen Center for Biomedical Quantum Sensing to develop novel quantum sensing principles and techniques for early detection of diseases.",
       "url": "https://novonordiskfonden.dk/en/news/researchers-aim-to-advance-quantum-sensing-to-transform-disease-diagnosis-and-prevention/",
-      "source": "Novo Nordisk Foundation",
+      "source": "novonordiskfonden.dk",
       "date": "2024-02-22"
     }
   ]

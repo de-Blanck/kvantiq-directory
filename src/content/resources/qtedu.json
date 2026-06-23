@@ -2,7 +2,13 @@
   "name": "QTEdu",
   "slug": "qtedu",
   "type": "community",
-  "tags": ["education", "European", "competence-framework", "university", "quantum-flagship"],
+  "tags": [
+    "education",
+    "European",
+    "competence-framework",
+    "university",
+    "quantum-flagship"
+  ],
   "description": "QTEdu is the European Quantum Flagship's coordination action for quantum technology education, providing a curated directory of quantum courses, programs, and training opportunities across Europe. The initiative developed the European Competence Framework for Quantum Technologies and supports the QTEdu Open Master pilot, which offers transferrable ECTS credits from quantum programs at multiple European universities.",
   "website": "https://qtedu.eu",
   "openSource": false,
@@ -23,6 +29,15 @@
       "url": "https://epjquantumtechnology.springeropen.com/articles/10.1140/epjqt/s40507-025-00362-1",
       "title": "Building Europe's Quantum Technology Education Community — EPJ Quantum Technology",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Building Europe's quantum technology education community",
+      "excerpt": "Research article investigating the development of the European field of Quantum Technology education, studying the QTEdu CSA and its 11 pilot projects across public, high school, university, and industry education.",
+      "url": "https://epjquantumtechnology.springeropen.com/articles/10.1140/epjqt/s40507-025-00362-1",
+      "source": "EPJ Quantum Technology",
+      "date": "2025-05-26"
     }
   ]
 }

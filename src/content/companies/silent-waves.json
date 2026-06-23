@@ -56,18 +56,18 @@
   ],
   "news": [
     {
+      "title": "Travelling wave parametric amplifier isolator simplifies quantum readout chains",
+      "excerpt": "A collaborative team from Institut Néel (University Grenoble Alpes CNRS Grenoble INP), Silent Waves, with partners from Karlsruhe Institute of Technology and the University of Strasbourg has demonstrated a new superconducting travelling wave parametric amplifier with built in isolation.",
+      "url": "https://www.prlog.org/13111061-travelling-wave-parametric-amplifier-isolator-simplifies-quantum-readout-chains.html",
+      "source": "PRLog",
+      "date": "2025-11-14"
+    },
+    {
       "title": "Silent Waves launches The Zephyr",
       "excerpt": "Silent Waves launches the Zephyr, an integrated TWPA and pump coupler solution for compact, high-efficiency quantum readout",
       "url": "https://www.silent-waves.com",
       "source": "silent-waves.com",
       "date": "2026-03-13"
-    },
-    {
-      "title": "Breakthrough Travelling Wave Parametric Amplifier Isolator Published in Nature Electronics",
-      "excerpt": "A collaborative team from Institut Néel, Silent Waves, with partners from Karlsruhe Institute of Technology and the University of Strasbourg has demonstrated a new superconducting travelling wave parametric amplifier isolator providing 20 dB forward gain and 30 dB reverse isolation.",
-      "url": "https://www.prlog.org/13111061-travelling-wave-parametric-amplifier-isolator-simplifies-quantum-readout-chains.html",
-      "source": "PRLog",
-      "date": "2025-11-14"
     }
   ]
 }

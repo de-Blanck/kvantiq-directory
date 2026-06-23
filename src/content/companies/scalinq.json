@@ -51,18 +51,18 @@
   ],
   "news": [
     {
+      "title": "How SCALINQ's here to revolutionize quantum computing",
+      "excerpt": "Feature interview with SCALINQ CEO Zaid Saeed about the company's mission to revolutionize quantum computing and its recognition as Young Pioneer of the Year 2022",
+      "url": "https://www.techarenan.news/2023/01/31/scalinq-quantum-computing-sweden-chalmers-gothenburg-zaid-saeed-startup/",
+      "source": "Techarenan.news",
+      "date": "2023-01-31"
+    },
+    {
       "title": "Releasing LINQER24: Compatible with kiutra L-Type Rapid Puck 80",
       "excerpt": "SCALINQ releases LINQER24 compatible with kiutra L-Type Rapid Puck 80",
       "url": "https://www.scalinq.com",
       "source": "SCALINQ",
       "date": "2026-03-17"
-    },
-    {
-      "title": "How SCALINQ's here to revolutionize quantum computing",
-      "excerpt": "Interview with SCALINQ CEO Zaid Saeed about the company's mission to revolutionize quantum computing through hardware solutions",
-      "url": "https://www.techarenan.news/2023/01/31/scalinq-quantum-computing-sweden-chalmers-gothenburg-zaid-saeed-startup/",
-      "source": "Techarenan",
-      "date": "2023-01-31"
     }
   ]
 }

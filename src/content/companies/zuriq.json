@@ -45,7 +45,7 @@
   "news": [
     {
       "title": "ZuriQ Raises $4.2 Million to Break Quantum Computing's Scaling Barrier",
-      "excerpt": "ZuriQ has raised $4.2 million to commercialize a new trapped-ion architecture, enabling scalable quantum computing through a unique combination of electric and magnetic fields. The seed funding round was led by Founderful with participation from SquareOne, First Momentum Ventures, OnSight Ventures and QAI Ventures.",
+      "excerpt": "ZuriQ has raised $4.2 million to commercialize a new trapped-ion architecture, enabling scalable quantum computing through a unique combination of electric and magnetic fields. The technology, developed at ETH Zurich, rethinks ion trapping by allowing ions to move freely in all spatial directions, overcoming scaling bottlenecks in traditional one-dimensional chains.",
       "url": "https://thequantuminsider.com/2025/01/23/zuriq-raises-4-2-million-to-break-quantum-computings-scaling-barrier/",
       "source": "The Quantum Insider",
       "date": "2025-01-23"

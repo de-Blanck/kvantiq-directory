@@ -44,7 +44,7 @@
   "news": [
     {
       "title": "Benchmarking Quantum Heuristics: Non-Variational QWOA for Weighted Maxcut",
-      "excerpt": "Researchers present benchmarking results for the non-variational Quantum Walk Optimisation Algorithm (QWOA) applied to weighted maxcut, demonstrating constant average-case measurement probability for globally optimal solutions across problem sizes up to n = 31, with performance comparisons showing potential quantum advantage over local-search heuristics.",
+      "excerpt": "Benchmarking results for non-variational Quantum Walk Optimisation Algorithm applied to weighted maxcut using classical simulations for problem sizes up to n=31. Results show constant average-case measurement probability for globally optimal solutions and suggest favorable scaling compared to classical heuristics.",
       "url": "https://arxiv.org/abs/2505.24191",
       "source": "arXiv",
       "date": "2025-05-30"

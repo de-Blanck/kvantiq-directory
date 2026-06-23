@@ -53,7 +53,7 @@
   "news": [
     {
       "title": "Winners announced in the Airbus-BMW Group Quantum Computing Challenge",
-      "excerpt": "The five winning teams of the Airbus and BMW Group Quantum Computing Challenge were announced at the Q2B conference in Silicon Valley, California. Winners include University of Southern California, University of Hamburg, 4colors Research Ltd, Quandela, and TU Delft, with solutions for Smart Coating, Quantum Powered Logistics, Quantum Enhanced Autonomy, Quantum Solvers, and the Golden App categories.",
+      "excerpt": "Five winning teams were announced at the Q2B conference in Silicon Valley. Winners include teams from the University of Southern California (Smart Coating), 4colors Research Ltd (Quantum Powered Logistics), Quandela (Quantum Enhanced Autonomy), and University of Hamburg (Quantum Solvers), along with a Golden App winner. The challenge was a collaboration between Airbus, BMW Group, The Quantum Insider, and AWS.",
       "url": "https://aws.amazon.com/blogs/quantum-computing/winners-announced-in-the-airbus-bmw-group-quantum-computing-challenge/",
       "source": "AWS Quantum Technologies Blog",
       "date": "2024-12-11"

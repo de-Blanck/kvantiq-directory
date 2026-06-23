@@ -55,11 +55,18 @@
   ],
   "news": [
     {
-      "title": "Riverlane raises $75 million to meet surging global demand for quantum error correction technology",
-      "excerpt": "Riverlane announced a $75 million Series C funding round led by Planet First Partners to deliver its quantum error correction roadmap, with the goal of achieving one million error-free quantum computer operations by 2026.",
+      "title": "Riverlane raises $75 million in Series C funding",
+      "excerpt": "Riverlane announced that it has raised $75 million in Series C funding to deliver its groundbreaking quantum error correction roadmap, with the goal of achieving one million error-free quantum computer operations by 2026.",
       "url": "https://www.riverlane.com/press-release/riverlane-raises-75-million-to-meet-surging-global-demand-for-quantum-error-correction-technology",
       "source": "Riverlane",
       "date": "2024-08-06"
+    },
+    {
+      "title": "Riverlane publishes QEC Technology Roadmap that can accelerate quantum computing's path to utility scale by 3–5 years",
+      "excerpt": "Riverlane published a QEC Technology Roadmap outlining key science and engineering milestones to scale quantum computers from experimental machines to systems capable of solving commercially valuable problems.",
+      "url": "https://www.riverlane.com",
+      "source": "Riverlane",
+      "date": "2026-03-12"
     },
     {
       "title": "Riverlane publishes QEC roadmap targeting utility-scale quantum by early 2030s",
@@ -67,13 +74,6 @@
       "url": "https://thequantuminsider.com/2026/03/12/riverlane-publishes-quantum-error-correction-roadmap-to-speed-utility-scale-quantum-by-3-5-years/",
       "source": "The Quantum Insider",
       "date": "2026-03-12"
-    },
-    {
-      "title": "Qblox and Riverlane demonstrate integrated real-time quantum error correction",
-      "excerpt": "Deltaflow 2 QEC system combined with Qblox control hardware delivers sub-microsecond feedback between error detection and correction.",
-      "url": "https://www.prnewswire.com/news-releases/qblox-and-riverlane-demonstrate-integration-enabling-real-time-quantum-error-correction-302716254.html",
-      "source": "PR Newswire",
-      "date": "2026-03-17"
     }
   ]
 }

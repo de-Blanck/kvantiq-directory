@@ -46,14 +46,14 @@
   "news": [
     {
       "title": "Quantum technology for mobile phone encryption is coming",
-      "excerpt": "DTU spin-out company Alea Quantum Technologies has developed a quantum mechanical random number generator that can support encryption of 4 gigabytes per second and be produced at low price. EU grants DKK 7 million for further development under Digital Europe programme.",
+      "excerpt": "DTU spin-out company Alea Quantum Technologies has developed a quantum mechanical random number generator that is so simple that it can be produced at a low price and support encryption of 4 gigabytes per second. The EU has granted DKK 7 million for further development under the Digital Europe programme.",
       "url": "https://www.dtu.dk/english/newsarchive/2023/05/quantum-technology-for-mobile-phone-encryption-is-coming",
       "source": "DTU",
       "date": "2023-05-22"
     },
     {
       "title": "QRNG chips for mobile – Danish tech start-up adds to ecosystem",
-      "excerpt": "Danish tech start-up develops QRNG chips for mobile devices to provide security upgrades for smartphone communications with quantum random number generators.",
+      "excerpt": "QRNG chips for mobile devices promise an upgrade in keeping smartphone communications safe. The technology enables quantum random number generators as a compact source of entropy for mobile handsets and IoT devices.",
       "url": "https://techhq.com/2023/05/qrng-chips-for-mobile-danish-tech-start-up-adds-to-ecosystem/",
       "source": "TechHQ",
       "date": "2023-05-23"

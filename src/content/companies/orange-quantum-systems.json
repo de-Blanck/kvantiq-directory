@@ -4,7 +4,12 @@
   "country": "Netherlands",
   "region": "western-europe",
   "type": "hardware",
-  "tags": ["testing", "characterization", "quantum-infrastructure", "automation"],
+  "tags": [
+    "testing",
+    "characterization",
+    "quantum-infrastructure",
+    "automation"
+  ],
   "founded": 2019,
   "description": "Orange Quantum Systems develops automated quantum device testing and characterization equipment. Their solutions enable rapid and reliable testing of quantum processors, helping quantum computing companies accelerate development cycles and improve device quality.",
   "website": "https://www.orangeqs.com",
@@ -40,5 +45,6 @@
       "title": "Orange Quantum Systems LinkedIn Company Page",
       "dateAccessed": "2026-03-20"
     }
-  ]
+  ],
+  "news": []
 }

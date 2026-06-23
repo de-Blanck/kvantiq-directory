@@ -51,11 +51,18 @@
   ],
   "news": [
     {
-      "title": "Groove Quantum Secures €10 Million EIC Accelerator Funding",
-      "excerpt": "Groove Quantum was selected as one of 40 companies from over 1,000 applicants across Europe to receive €10 million in funding from the European Innovation Council Accelerator program, including a €2.5 million grant and additional equity investment from the EIC Fund, to scale germanium-based quantum chip technology.",
+      "title": "Groove Quantum Secures €10 Million to Scale Germanium-Based Quantum Chips",
+      "excerpt": "Groove Quantum secured €10 million in EIC Accelerator funding to scale its germanium-based quantum chip technology. The Delft startup was one of 40 companies selected from over 1,000 applicants to receive a mix of grant and equity support.",
       "url": "https://thequantuminsider.com/2025/07/07/groove-quantum-secures-e10-million-to-scale-germanium-based-quantum-chips/",
       "source": "The Quantum Insider",
       "date": "2025-07-07"
+    },
+    {
+      "title": "Groove Quantum Secures €10M EIC Accelerator Funding for Germanium-Based Quantum Computing",
+      "excerpt": "Groove Quantum, a Delft-based company developing germanium-based quantum computing technology, has secured €10 million through the European Innovation Council Accelerator programme, including a €2.5 million grant. The company was selected as one of 40 deep-tech startups from over 1,000 applicants across Europe.",
+      "url": "https://quantumcomputingreport.com/groove-quantum-secures-e10-million-eic-accelerator-funding-for-germanium-based-quantum-computing/",
+      "source": "Quantum Computing Report",
+      "date": "2025-07-01"
     }
   ]
 }

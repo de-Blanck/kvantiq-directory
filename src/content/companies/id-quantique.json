@@ -47,13 +47,5 @@
       "dateAccessed": "2026-03-19"
     }
   ],
-  "news": [
-    {
-      "title": "IonQ Completes Acquisition of Controlling Stake in ID Quantique",
-      "excerpt": "In 2025, IonQ announced that it had completed its acquisition of a controlling stake in ID Quantique.",
-      "url": "https://en.wikipedia.org/wiki/ID_Quantique",
-      "source": "Wikipedia",
-      "date": "2025-01-01"
-    }
-  ]
+  "news": []
 }

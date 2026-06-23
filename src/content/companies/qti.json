@@ -4,7 +4,12 @@
   "country": "Italy",
   "region": "southern-europe",
   "type": "hardware",
-  "tags": ["quantum-key-distribution", "quantum-communications", "qkd", "cybersecurity"],
+  "tags": [
+    "quantum-key-distribution",
+    "quantum-communications",
+    "qkd",
+    "cybersecurity"
+  ],
   "founded": 2020,
   "description": "QTI is an Italian start-up that engineers, develops, and produces reconfigurable quantum key distribution (QKD) systems. A spin-off of the Italian National Institute of Optics (CNR-INO), the company serves private companies, government agencies, and research institutions with quantum-secured communication solutions.",
   "website": "https://www.qticompany.com",
@@ -35,6 +40,22 @@
       "url": "https://www.gruppotim.it/en/press-archive/corporate/2021/PR_Telsy_QTI_EN.html",
       "title": "Telsy buys stake in Quantum Telecommunications Italy (QTI) startup - TIM Group",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Telsy buys stake in Quantum Telecommunications Italy (QTI) startup",
+      "excerpt": "Telsy buys stake in Quantum Telecommunications Italy (QTI) startup",
+      "url": "https://www.gruppotim.it/en/press-archive/corporate/2021/PR_Telsy_QTI_EN.html",
+      "source": "TIM Group",
+      "date": "2021-01-01"
+    },
+    {
+      "title": "QTI establishes a long-distance quantum-safe link combining QKD and PQC in a hybrid architecture",
+      "excerpt": "QTI establishes a long-distance quantum-safe link combining QKD and PQC in a hybrid architecture",
+      "url": "https://www.qticompany.com",
+      "source": "QTI",
+      "date": "2026-01-01"
     }
   ]
 }

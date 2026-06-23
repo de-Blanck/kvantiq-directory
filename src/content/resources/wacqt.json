@@ -33,18 +33,18 @@
   ],
   "news": [
     {
+      "title": "WACQT achieves 25-qubit quantum processor milestone",
+      "excerpt": "A crucial milestone was reached in 2024 when the research team successfully created a 25-qubit quantum processor, a major step toward creating the planned 100-qubit quantum computer.",
+      "url": "https://kaw.wallenberg.org/en/research/initiative-driving-swedens-quantum-revolution",
+      "source": "Knut and Alice Wallenberg Foundation",
+      "date": "2024-01-01"
+    },
+    {
       "title": "WACQT in Almedalen: Quantum Technology and Industry Innovation",
       "excerpt": "Göran Johansson joins conversation on how quantum technology drives innovation and strengthens industry.",
       "url": "https://www.chalmers.se/en/centres/wacqt/",
       "source": "Chalmers University of Technology",
       "date": "2026-06-25"
-    },
-    {
-      "title": "WACQT Research Team Achieves 25-Qubit Quantum Processor Milestone",
-      "excerpt": "A crucial milestone was reached in 2024 when the research team successfully created a 25-qubit quantum processor, a major step toward the 100-qubit quantum computer goal.",
-      "url": "https://kaw.wallenberg.org/en/research/initiative-driving-swedens-quantum-revolution",
-      "source": "Knut and Alice Wallenberg Foundation",
-      "date": "2024-01-01"
     }
   ]
 }

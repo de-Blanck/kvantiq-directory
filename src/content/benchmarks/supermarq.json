@@ -40,11 +40,11 @@
   ],
   "news": [
     {
-      "title": "SupermarQ Awarded Best Paper at HPCA-28",
-      "excerpt": "The SupermarQ paper was awarded Best Paper during the 28th IEEE International Symposium on High-Performance Computer Architecture (HPCA-28) in Seoul, South Korea.",
+      "title": "SupermarQ wins Best Paper at IEEE HPCA-28",
+      "excerpt": "SupermarQ: A Scalable Quantum Benchmark Suite awarded Best Paper during the 28th IEEE International Symposium on High-Performance Computer Architecture (HPCA-28) in Seoul, South Korea",
       "url": "https://arxiv.org/abs/2202.11045",
       "source": "arXiv",
-      "date": "2022-04-01"
+      "date": "2022-03-01"
     }
   ]
 }

@@ -55,18 +55,18 @@
   ],
   "news": [
     {
+      "title": "Aramco and Pasqal launch Saudi Arabia's first Quantum Computer",
+      "excerpt": "Aramco and Pasqal make history with Saudi Arabia's first Quantum Computer and Middle East's first commercial Quantum Computing as a Service platform.",
+      "url": "https://www.pasqal.com",
+      "source": "Pasqal",
+      "date": "2025-11-24"
+    },
+    {
       "title": "Quantum scale-up Pasqal plans $2B SPAC listing, promises to 'remain French'",
       "excerpt": "Pasqal is merging with Bleichroeder Acquisition Corp II and will be listed on the Nasdaq. The merger values Pasqal at $2 billion, pre-money. Pasqal is accompanied by a separate $200 million private funding round.",
       "url": "https://techcrunch.com/2026/03/06/quantum-scale-up-pasqal-plans-2b-spac-listing-promises-to-remain-french/",
       "source": "TechCrunch",
       "date": "2026-03-06"
-    },
-    {
-      "title": "Aramco and Pasqal launch Saudi Arabia's first Quantum Computer and Middle East's first commercial Quantum Computing as a Service platform",
-      "excerpt": "Aramco and Pasqal make history with Saudi Arabia's first quantum computer and Middle East's first commercial Quantum Computing as a Service platform.",
-      "url": "https://www.pasqal.com",
-      "source": "Pasqal",
-      "date": "2025-11-24"
     },
     {
       "title": "Pasqal closes €340M financing in anticipation of public listing",

@@ -3,17 +3,35 @@
   "slug": "dwave-spin-glass-dynamics",
   "algorithm": "Programmable quantum annealing (quench simulation)",
   "category": "simulation",
-  "tags": ["quantum-annealing", "D-Wave", "spin-glass", "dynamics", "beyond-classical"],
+  "tags": [
+    "quantum-annealing",
+    "D-Wave",
+    "spin-glass",
+    "dynamics",
+    "beyond-classical"
+  ],
   "description": "Benchmark of real-time spin-glass quench dynamics on D-Wave superconducting annealers against state-of-the-art classical tensor-network and neural-network simulators. The collaboration showed that for 2D, 3D and infinite-dimensional spin glasses the annealer produces samples in close agreement with the Schrödinger equation while leading classical methods cannot match the accuracy within reasonable runtimes. The paper argues this is a regime where quantum simulation offers a genuine, application-framed advantage for dynamics questions relevant to condensed-matter physics.",
   "hardware": "D-Wave Advantage2 superconducting quantum annealer",
   "framework": "D-Wave Ocean SDK",
   "reproducible": false,
   "datePublished": "2024-03-01",
   "keyMetrics": [
-    {"metric": "System dimensions", "value": "2D, 3D, infinite"},
-    {"metric": "Classical baselines", "value": "Matrix product states, neural-network states"},
-    {"metric": "Agreement target", "value": "Schrödinger equation solutions"},
-    {"metric": "Claim", "value": "Beyond-classical simulation of quench dynamics"}
+    {
+      "metric": "System dimensions",
+      "value": "2D, 3D, infinite"
+    },
+    {
+      "metric": "Classical baselines",
+      "value": "Matrix product states, neural-network states"
+    },
+    {
+      "metric": "Agreement target",
+      "value": "Schrödinger equation solutions"
+    },
+    {
+      "metric": "Claim",
+      "value": "Beyond-classical simulation of quench dynamics"
+    }
   ],
   "significance": "Shifts the D-Wave story from combinatorial optimization to physics-simulation advantage, a domain where classical tensor-network methods had previously been considered competitive.",
   "sources": [
@@ -38,6 +56,15 @@
       "authors": "King, Nocera, Rams, Dziarmaga, Wiersema et al. (D-Wave + academic collaboration)",
       "datePublished": "2025-04-10",
       "dateAccessed": "2026-04-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Beyond-classical computation in quantum simulation",
+      "excerpt": "Superconducting quantum annealing processors can rapidly generate samples in close agreement with solutions of the Schrödinger equation for spin-glass quench dynamics. Several leading approximate methods based on tensor networks and neural networks cannot achieve the same accuracy as the quantum annealer within a reasonable time frame.",
+      "url": "https://arxiv.org/abs/2403.00910",
+      "source": "arXiv",
+      "date": "2025-10-14"
     }
   ]
 }

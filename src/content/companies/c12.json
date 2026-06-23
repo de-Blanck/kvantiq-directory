@@ -41,5 +41,13 @@
       "dateAccessed": "2026-03-19"
     }
   ],
-  "news": []
+  "news": [
+    {
+      "title": "C12 unveils roadmap to useful fault-tolerant quantum computing by 2033",
+      "excerpt": "C12 unveils roadmap to useful fault-tolerant quantum computing by 2033",
+      "url": "https://www.c12qe.com",
+      "source": "c12qe.com",
+      "date": "2026-04-17"
+    }
+  ]
 }

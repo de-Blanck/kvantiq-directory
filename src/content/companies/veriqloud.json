@@ -48,11 +48,18 @@
   ],
   "news": [
     {
-      "title": "VeriQloud Secures €1.9 Million Investment from Quantonation and WinEquity",
-      "excerpt": "VeriQloud raised €1.9 million in a funding round led by Quantonation and joined by WinEquity. The capital will enable VeriQloud to accelerate the development of its hardware and software solutions for quantum communication networks.",
+      "title": "VeriQloud Secures €1.9 Million Investment from Quantonation and WinEquity to Unlock the Power of Quantum Networks",
+      "excerpt": "VeriQloud raised €1.9 million in an investment round led by Quantonation and joined by WinEquity, a fund focused on innovation and early-stage investment.",
       "url": "https://www.quantonation.com/2023/05/23/veriqloud-secures-1-9-million-investment-from-quantonation/",
       "source": "Quantonation",
       "date": "2023-05-23"
+    },
+    {
+      "title": "Interview with Marc at Blond & Quantum",
+      "excerpt": "News item about Marc Kaplan (CEO) at Blond & Quantum",
+      "url": "https://veriqloud.com",
+      "source": "VeriQloud",
+      "date": "2026-06-16"
     }
   ]
 }

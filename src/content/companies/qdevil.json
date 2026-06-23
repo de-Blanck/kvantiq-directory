@@ -66,17 +66,31 @@
   "news": [
     {
       "title": "Quantum Machines Acquires QDevil to Provide Full-Stack Orchestration Platform",
-      "excerpt": "Quantum Machines announced its acquisition of Danish quantum computing leader QDevil to strengthen its position as the leading provider of quantum control hardware and software.",
+      "excerpt": "Quantum Machines (QM), creator of the first universal quantum computing cloud infrastructure, today announced its acquisition of Danish quantum computing leader QDevil. The addition of QDevil's industry-leading products and unique expertise compliments QM's goals from both a hardware and software perspective.",
       "url": "https://www.quantum-machines.co/press-release/quantum-machines-acquires-qdevil-to-provide-full-stack-orchestration-platform/",
       "source": "Quantum Machines Press Release",
       "date": "2022-03-30"
     },
     {
-      "title": "QDevil Receives 2024 Technology Transfer Prize from German Physical Society",
-      "excerpt": "QDevil, a spin-out enterprise from the Niels Bohr Institute, University of Copenhagen, has been awarded the Technology Transfer Prize 2024 from the German Physical Society for the successful process of transforming lab circuits into commercial QDAC and QBoard solutions.",
+      "title": "Quantum Machines acquires QDevil to build out its full-stack quantum orchestration platform",
+      "excerpt": "Quantum Machines, the well-funded Israeli startup that specializes in building control systems for quantum computers, today announced that it has acquired QDevil, a well-known Danish company that specializes in building control hardware for quantum systems.",
+      "url": "https://techcrunch.com/2022/03/30/quantum-machines-acquires-qdevil-to-build-out-its-full-stack-quantum-orchestration-platform/",
+      "source": "TechCrunch",
+      "date": "2022-03-30"
+    },
+    {
+      "title": "NBI Spin-out enterprise receives prestigious tech-transfer award",
+      "excerpt": "QDevil, a quantum technology spin-out enterprise from the Niels Bohr Institute, University of Copenhagen, has been awarded 'The Technology Transfer Prize 2024' from German Physical Society (Deutsche Physikalische Gesellschaft, DPG).",
       "url": "https://nbi.ku.dk/english/news/happening-at-nbi/nbi-spin-out-enterprise-receives-prestigious-tech-transfer-award",
       "source": "Niels Bohr Institute",
       "date": "2023-11-20"
+    },
+    {
+      "title": "QDevil, a division of Quantum Machines, Niels Bohr Institute, and KU Tech Transfer Office Honored with 2024 Technology Transfer Prize by the German Physical Society",
+      "excerpt": "Quantum Machines, the provider of breakthrough quantum control solutions that accelerate the development of practical quantum computers, proudly announces that its quantum electronics division, QDevil, in collaboration with the Niels Bohr Institute and the tech transfer office of the University of Copenhagen, has been honored with the 2024 Technology Transfer Prize by the German Physical Society (DPG).",
+      "url": "https://www.quantum-machines.co/blog/qdevil-a-division-of-quantum-machines-niels-bohr-institute-and-ku-tech-transfer-office-honored-with-2024-technology-transfer-prize-by-the-german-physical-society/",
+      "source": "Quantum Machines Blog",
+      "date": "2023-11-16"
     }
   ]
 }
