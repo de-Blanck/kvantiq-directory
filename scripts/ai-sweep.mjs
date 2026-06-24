@@ -220,8 +220,8 @@ function askClaudeWithSearch(prompt) {
 }
 
 // Ask the model (with web search) for additional credible sources for an entry.
-// Returns raw candidates — NOT yet validated.
-async function discoverSources(data, collection, need) {
+// Returns raw candidates — NOT yet validated. Exported for the backfill smoke test.
+export async function discoverSources(data, collection, need) {
   const kind = collection.replace(/s$/, '');
   const prompt = `Using web search, find ${need} additional CREDIBLE, independent source page(s) about this ${kind}: "${data.name}"${data.country ? ` (${data.country})` : ''}.
 Return ONLY sources you actually find via search — NEVER invent or guess a URL.
