@@ -78,6 +78,12 @@ export function isBlocklistedSource(item) {
   return false;
 }
 
+// Count an entry's CREDIBLE sources — those not on the blocklist. Single source
+// of truth for the 3-credible-source minimum (used by audit-sources.mjs + sweep).
+export function credibleSourceCount(sources) {
+  return (sources || []).filter((s) => !isBlocklistedSource({ url: s.url, source: s.title || '' })).length;
+}
+
 function isRecent(dateStr) {
   const date = new Date(dateStr);
   const now = new Date();
@@ -173,9 +179,22 @@ function extractJsonArray(text) {
   try { return JSON.parse(match[0]); } catch { return null; }
 }
 
+// Extract a JSON object from a response that may have prose wrapping.
+function extractJsonObject(text) {
+  const match = text.match(/\{[\s\S]*\}/);
+  if (!match) return null;
+  try { return JSON.parse(match[0]); } catch { return null; }
+}
+
 async function processEntry(collection, file, stats) {
   const filePath = path.join(CONTENT_DIR, collection, file);
   const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+
+  // Source-bar metrics are a static property of the entry — computed regardless
+  // of whether the sweep fetch/cross-check succeeds.
+  const credible = credibleSourceCount(data.sources);
+  const sourceCount = (data.sources || []).length;
+  const base = { credible, source_count: sourceCount };
 
   const urlsToFetch = [
     ...(data.sources || []).map(s => s.url),
@@ -194,51 +213,58 @@ async function processEntry(collection, file, stats) {
   }
 
   if (fetchedContent.length === 0) {
-    return { skipped: true, reason: 'all fetches failed' };
+    return { ...base, skipped: true, reason: 'all fetches failed' };
   }
 
-  const prompt = `You are given the current directory entry and freshly fetched content from its source URLs.
-Extract ONLY news items that are explicitly stated in the provided content.
-Do NOT invent, infer, or recall information from your training data.
-If the fetched content contains no news, return an empty array.
-Each news item MUST include a direct URL to the source page where you found it.
-Date format: YYYY-MM-DD. If exact date is unclear, use the first of the month.
+  const prompt = `You are auditing a directory entry against freshly fetched content from its own source URLs.
+Do TWO things, using ONLY the fetched content — never invent, infer, or recall from training data.
 
-Current entry:
+1. NEWS: Extract news items explicitly stated in the fetched content. Each MUST include a direct source URL. Date format YYYY-MM-DD (use the first of the month if the day is unclear). If none, use [].
+
+2. CROSS-CHECK: Compare the fetched sources against EACH OTHER and against the entry fields below. Report each CONTRADICTION (sources disagree on a fact such as country, founding year, type, or funding) and each UNSUPPORTED claim (an entry field the fetched sources do not substantiate). Be specific and brief (one sentence each). If everything is consistent, use []. Do not speculate beyond the fetched content.
+
+Entry fields:
 Name: ${data.name}
+Country: ${data.country ?? 'n/a'}
+Type: ${data.type ?? data.org_type ?? data.category ?? 'n/a'}
+Founded: ${data.founded ?? 'n/a'}
 Description: ${data.description}
 Collection: ${collection}
 
 Fetched content from sources:
 ${fetchedContent.map(f => `--- ${f.url} ---\n${f.content}`).join('\n\n')}
 
-Return a JSON array of news items. Each item: { "title": "...", "excerpt": "...", "url": "...", "source": "...", "date": "YYYY-MM-DD" }
-Return ONLY the JSON array, no other text. If no news found, return [].`;
+Return ONLY this JSON object, no other text:
+{ "news": [ { "title": "...", "excerpt": "...", "url": "...", "source": "...", "date": "YYYY-MM-DD" } ], "contradictions": [ "short specific description" ] }`;
 
   let response;
   try {
     response = await askClaude(prompt);
   } catch (err) {
-    return { skipped: true, reason: 'claude error: ' + err.message };
+    return { ...base, skipped: true, reason: 'claude error: ' + err.message };
   }
 
-  const newsItems = extractJsonArray(response);
-  if (!Array.isArray(newsItems)) return { skipped: false, added: 0 };
+  const parsed = extractJsonObject(response);
+  const contradictions = Array.isArray(parsed?.contradictions)
+    ? parsed.contradictions.filter(x => typeof x === 'string' && x.trim()).map(x => x.trim())
+    : [];
+  const newsItems = Array.isArray(parsed?.news) ? parsed.news : [];
+  if (!Array.isArray(newsItems)) return { ...base, skipped: false, added: 0, contradictions };
 
   const validatedNews = normalizeNewsItems(newsItems, fetchedDomains, stats);
 
-  if (validatedNews.length === 0) return { skipped: false, added: 0 };
+  if (validatedNews.length === 0) return { ...base, skipped: false, added: 0, contradictions };
 
   const existingNews = (data.news || []).filter(n => isRecent(n.date));
   const existingUrls = new Set(existingNews.map(n => n.url));
   const newItems = validatedNews.filter(n => !existingUrls.has(n.url));
 
-  if (newItems.length === 0) return { skipped: false, added: 0 };
+  if (newItems.length === 0) return { ...base, skipped: false, added: 0, contradictions };
 
   data.news = [...newItems, ...existingNews].slice(0, MAX_NEWS_PER_ENTRY);
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n');
 
-  return { skipped: false, added: newItems.length, items: newItems, country: data.country || null };
+  return { ...base, skipped: false, added: newItems.length, items: newItems, country: data.country || null, contradictions };
 }
 
 function formatDuration(ms) {
@@ -285,6 +311,10 @@ async function main() {
   const notFound = [];         // entries with no usable live sources ("didn't find")
   let newsAdded = 0;
   let noChange = 0;
+  const MIN_CREDIBLE_SOURCES = 3;
+  const underBar = [];   // entries below the credible-source minimum
+  const crossFlags = []; // entries with source contradictions
+  let crossChecked = 0;  // entries the cross-check actually ran on (fetch succeeded)
 
   for (const collection of COLLECTIONS) {
     const dir = path.join(CONTENT_DIR, collection);
@@ -298,6 +328,15 @@ async function main() {
       process.stdout.write(`Processing ${entry}...`);
 
       const result = await processEntry(collection, file, adherence);
+
+      // Source-bar + cross-check aggregation (independent of news outcome).
+      if (typeof result.credible === 'number' && result.credible < MIN_CREDIBLE_SOURCES) {
+        underBar.push({ entry, credible: result.credible, total: result.source_count });
+      }
+      if (Array.isArray(result.contradictions)) {
+        crossChecked++;
+        if (result.contradictions.length) crossFlags.push({ entry, issues: result.contradictions });
+      }
 
       if (result.skipped) {
         results.skipped++;
@@ -343,6 +382,9 @@ async function main() {
   if (topCollection && topCollection[1] > 0) highlights.push(`Busiest collection: ${topCollection[0]} (+${topCollection[1]})`);
   highlights.push(`${Object.keys(bySource).length} distinct sources cited across ${Object.keys(byCountry).length} countries`);
   if (rejected > 0) highlights.push(`${rejected} item(s) rejected at source to uphold the methodology (anti-fabrication + schema)`);
+  if (underBar.length) highlights.push(`${underBar.length} entr${underBar.length === 1 ? 'y' : 'ies'} below the ${MIN_CREDIBLE_SOURCES}-credible-source minimum (backfill worklist)`);
+  if (crossFlags.length) highlights.push(`${crossFlags.length} entr${crossFlags.length === 1 ? 'y' : 'ies'} flagged for source contradictions by the cross-check`);
+  else if (crossChecked) highlights.push(`Source cross-check clean: no contradictions found across ${crossChecked} entries`);
 
   const report = {
     date: startedAt.toISOString().slice(0, 10),
@@ -367,6 +409,17 @@ async function main() {
       rejected_blank_title_source: adherence.rejected_blank_title_source || 0,
       empty_excerpt_dropped: adherence.empty_excerpt_dropped || 0,
       duplicate_url_collapsed: adherence.duplicate_url_collapsed || 0,
+    },
+    source_bar: {
+      min_credible: MIN_CREDIBLE_SOURCES,
+      below_bar: underBar.length,
+      entries: underBar.sort((a, b) => a.credible - b.credible).slice(0, 80),
+    },
+    cross_check: {
+      entries_checked: crossChecked,
+      flagged: crossFlags.length,
+      contradictions_found: crossFlags.reduce((s, f) => s + f.issues.length, 0),
+      flags: crossFlags.slice(0, 60),
     },
     by_collection: byCollection,
     by_country: byCountry,

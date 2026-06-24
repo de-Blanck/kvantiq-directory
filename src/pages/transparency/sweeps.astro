@@ -28,6 +28,17 @@ interface SweepRun {
   skipped?: number;
   news_added?: number;
   methodology?: MethodologyStats;
+  source_bar?: {
+    min_credible: number;
+    below_bar: number;
+    entries?: Array<{ entry: string; credible: number; total: number }>;
+  };
+  cross_check?: {
+    entries_checked: number;
+    flagged: number;
+    contradictions_found: number;
+    flags?: Array<{ entry: string; issues: string[] }>;
+  };
   by_country?: Record<string, number>;
   top_sources?: Array<{ source: string; count: number }>;
   not_found?: string[];
@@ -160,6 +171,62 @@ const totalRejected = runs.reduce((s, r) => s + rejectionTotal(r.methodology), 0
                       </span>
                     )}
                   </p>
+                </div>
+              )}
+
+              <!-- Source cross-check -->
+              {r.cross_check && (
+                <div class="mt-4 rounded-lg border border-border bg-elevated p-4">
+                  <div class="flex items-baseline justify-between">
+                    <p class="eyebrow text-text-muted">Source cross-check</p>
+                    <p class="data-md text-text-primary">
+                      {r.cross_check.flagged === 0 ? 'No contradictions' : `${r.cross_check.contradictions_found} flagged`}
+                    </p>
+                  </div>
+                  <p class="mt-1 body-sm text-text-secondary">
+                    {r.cross_check.entries_checked} entries checked for inconsistencies and misleading claims across their sources.
+                    {r.cross_check.flagged > 0 && ` ${r.cross_check.flagged} entr${r.cross_check.flagged === 1 ? 'y' : 'ies'} need review.`}
+                  </p>
+                  {r.cross_check.flags && r.cross_check.flags.length > 0 && (
+                    <details class="mt-2 group">
+                      <summary class="cursor-pointer body-sm text-text-muted hover:text-text-secondary">Show flagged entries</summary>
+                      <ul class="mt-2 space-y-2 pl-4">
+                        {r.cross_check.flags.map((fl) => (
+                          <li class="body-sm text-text-secondary">
+                            <span class="data-sm text-text-primary">{fl.entry}</span>
+                            <ul class="mt-0.5 space-y-0.5 pl-3">
+                              {fl.issues.map((iss) => (<li class="text-text-muted">&ndash; {iss}</li>))}
+                            </ul>
+                          </li>
+                        ))}
+                      </ul>
+                    </details>
+                  )}
+                </div>
+              )}
+
+              <!-- Source-credibility bar -->
+              {r.source_bar && (
+                <div class="mt-4 rounded-lg border border-border bg-elevated p-4">
+                  <div class="flex items-baseline justify-between">
+                    <p class="eyebrow text-text-muted">{r.source_bar.min_credible}-credible-source minimum</p>
+                    <p class="data-md text-text-primary">{r.source_bar.below_bar} below bar</p>
+                  </div>
+                  <p class="mt-1 body-sm text-text-secondary">
+                    {r.source_bar.below_bar === 0
+                      ? 'Every entry meets the credible-source minimum.'
+                      : `${r.source_bar.below_bar} entr${r.source_bar.below_bar === 1 ? 'y' : 'ies'} still need additional credible sources (backfill worklist).`}
+                  </p>
+                  {r.source_bar.entries && r.source_bar.entries.length > 0 && (
+                    <details class="mt-2 group">
+                      <summary class="cursor-pointer body-sm text-text-muted hover:text-text-secondary">Show worklist</summary>
+                      <ul class="mt-2 space-y-0.5 pl-4">
+                        {r.source_bar.entries.map((e) => (
+                          <li class="data-sm text-text-muted">{e.entry} — {e.credible}/{e.total} credible</li>
+                        ))}
+                      </ul>
+                    </details>
+                  )}
                 </div>
               )}
 
