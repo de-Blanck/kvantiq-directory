@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { normalizeNewsItems, isBlocklistedSource } from './ai-sweep.mjs';
+import { normalizeNewsItems, isBlocklistedSource, validateDiscoveredSources } from './ai-sweep.mjs';
 
 const domains = new Set(['example.com']);
 const base = {
@@ -83,4 +83,19 @@ test('rejects blocklisted sources even when the domain was fetched (methodology 
   ], fetched);
   assert.equal(out.length, 1);
   assert.equal(out[0].title, 'Legit');
+});
+
+test('validateDiscoveredSources keeps only credible, live-skipped, de-duped candidates', async () => {
+  const data = { name: 'Quobly', sources: [{ url: 'https://quobly.io/' }] };
+  const out = await validateDiscoveredSources([
+    { url: 'https://www.linkedin.com/company/quobly', title: 'LinkedIn' },        // blocklisted
+    { url: 'https://quobly.io', title: 'dup of existing (trailing slash)' },      // duplicate
+    { url: 'not-a-url' },                                                          // malformed
+    { url: 'ftp://x.com/a' },                                                      // bad protocol
+    { url: 'https://www.eu-startups.com/quobly', title: 'EU-Startups', type: 'press-release' },
+    { url: 'https://www.eu-startups.com/quobly' },                                // intra-batch dup
+  ], data, { checkLive: false });
+  assert.equal(out.length, 1);
+  assert.equal(out[0].url, 'https://www.eu-startups.com/quobly');
+  assert.equal(out[0].type, 'press-release');
 });

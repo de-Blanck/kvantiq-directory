@@ -24,6 +24,12 @@ const NEWS_MAX_AGE_DAYS = 180;
 const FETCH_TIMEOUT_MS = 10000;
 const CLAUDE_MODEL = 'claude-haiku-4-5-20251001';
 const CLAUDE_TIMEOUT_MS = 60000;
+const MIN_CREDIBLE_SOURCES = 3;
+// Opt-in: web-search source backfill for under-bar entries. OFF by default so a
+// half-validated web-search step can't disrupt the routine sweep. Enable with
+// `--backfill-sources` once it has been confirmed on a live run.
+const BACKFILL_SOURCES = process.argv.includes('--backfill-sources');
+const SOURCE_DISCOVERY_TIMEOUT_MS = 120000;
 
 function stripHtml(html) {
   return html
@@ -186,6 +192,81 @@ function extractJsonObject(text) {
   try { return JSON.parse(match[0]); } catch { return null; }
 }
 
+// Invoke `claude -p` WITH web-search/fetch tools enabled, for source discovery.
+// Headless tool use needs the tools allow-listed. NOTE: the exact CLI behaviour
+// must be confirmed on a live run before trusting backfill output.
+function askClaudeWithSearch(prompt) {
+  return new Promise((resolve, reject) => {
+    const args = [
+      '-p', prompt,
+      '--model', CLAUDE_MODEL,
+      '--output-format', 'text',
+      '--allowedTools', 'WebSearch WebFetch',
+      '--permission-mode', 'acceptEdits',
+    ];
+    const claudeBin = process.platform === 'win32' ? 'claude.cmd' : 'claude';
+    const child = spawn(claudeBin, args, { stdio: ['ignore', 'pipe', 'pipe'], env: process.env });
+    let stdout = '', stderr = '';
+    const timer = setTimeout(() => { child.kill('SIGKILL'); reject(new Error('source-discovery timed out')); }, SOURCE_DISCOVERY_TIMEOUT_MS);
+    child.stdout.on('data', (c) => { stdout += c.toString('utf8'); });
+    child.stderr.on('data', (c) => { stderr += c.toString('utf8'); });
+    child.on('error', (err) => { clearTimeout(timer); reject(err); });
+    child.on('close', (code) => {
+      clearTimeout(timer);
+      if (code !== 0) { reject(new Error(`claude (search) exited ${code}: ${stderr.trim() || stdout.trim()}`)); return; }
+      resolve(stdout.trim());
+    });
+  });
+}
+
+// Ask the model (with web search) for additional credible sources for an entry.
+// Returns raw candidates — NOT yet validated.
+async function discoverSources(data, collection, need) {
+  const kind = collection.replace(/s$/, '');
+  const prompt = `Using web search, find ${need} additional CREDIBLE, independent source page(s) about this ${kind}: "${data.name}"${data.country ? ` (${data.country})` : ''}.
+Return ONLY sources you actually find via search — NEVER invent or guess a URL.
+Credible = official institutional pages (universities, EU CORDIS, government, funding bodies like Innovation Fund Denmark/EIFO), peer-reviewed papers or arXiv with DOI, or established trade press (Reuters, FT, The Quantum Insider, HPCwire, Inside Quantum Technology, EU-Startups, TechCrunch, Sifted, Borsen).
+NOT credible — do NOT return: LinkedIn, Crunchbase, Wikipedia, Facebook/X, or press-wire syndication.
+Each page must be specifically about "${data.name}", not a generic listing.
+Return ONLY a JSON array, no other text: [ { "url": "https://...", "title": "...", "type": "url|website|doi|arxiv|press-release" } ]`;
+  let resp;
+  try { resp = await askClaudeWithSearch(prompt); } catch { return []; }
+  const arr = extractJsonArray(resp);
+  return Array.isArray(arr) ? arr : [];
+}
+
+// Validate discovered sources before writing them. Anti-fabrication is the whole
+// point: each must parse as http(s), not be blocklisted, not duplicate an
+// existing source, and (when checkLive) be reachable AND actually mention the
+// entity. Exported for unit testing (pass checkLive:false to skip network).
+export async function validateDiscoveredSources(candidates, data, { checkLive = true } = {}) {
+  const norm = (u) => (u || '').replace(/\/+$/, '');
+  const existing = new Set((data.sources || []).map((s) => norm(s.url)));
+  const seen = new Set();
+  const out = [];
+  for (const c of (Array.isArray(candidates) ? candidates : [])) {
+    if (!c || typeof c.url !== 'string') continue;
+    let url; try { url = new URL(c.url); } catch { continue; }
+    if (url.protocol !== 'https:' && url.protocol !== 'http:') continue;
+    const key = norm(c.url);
+    if (existing.has(key) || seen.has(key)) continue;
+    if (isBlocklistedSource({ url: c.url, source: c.title || '' })) continue;
+    if (checkLive) {
+      const content = await fetchContent(c.url);
+      if (!content) continue;
+      const first = (data.name || '').toLowerCase().split(/\s+/)[0];
+      if (first && first.length > 2 && !content.toLowerCase().includes(first)) continue;
+    }
+    seen.add(key);
+    out.push({
+      type: ['doi', 'arxiv', 'url', 'website', 'press-release'].includes(c.type) ? c.type : 'url',
+      url: c.url,
+      ...(c.title ? { title: String(c.title).trim() } : {}),
+    });
+  }
+  return out;
+}
+
 async function processEntry(collection, file, stats) {
   const filePath = path.join(CONTENT_DIR, collection, file);
   const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -194,7 +275,21 @@ async function processEntry(collection, file, stats) {
   // of whether the sweep fetch/cross-check succeeds.
   const credible = credibleSourceCount(data.sources);
   const sourceCount = (data.sources || []).length;
-  const base = { credible, source_count: sourceCount };
+  const base = { credible, source_count: sourceCount, backfilled: 0 };
+
+  // Opt-in: web-search discovery of additional credible sources for under-bar
+  // entries. Only validated (live, on-topic, non-blocklisted) sources are added.
+  if (BACKFILL_SOURCES && credible < MIN_CREDIBLE_SOURCES) {
+    const cands = await discoverSources(data, collection, (MIN_CREDIBLE_SOURCES - credible) + 1);
+    const valid = await validateDiscoveredSources(cands, data, { checkLive: true });
+    if (valid.length) {
+      data.sources = [...(data.sources || []), ...valid];
+      fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n');
+      base.credible = credibleSourceCount(data.sources);
+      base.source_count = data.sources.length;
+      base.backfilled = valid.length;
+    }
+  }
 
   const urlsToFetch = [
     ...(data.sources || []).map(s => s.url),
@@ -311,10 +406,10 @@ async function main() {
   const notFound = [];         // entries with no usable live sources ("didn't find")
   let newsAdded = 0;
   let noChange = 0;
-  const MIN_CREDIBLE_SOURCES = 3;
   const underBar = [];   // entries below the credible-source minimum
   const crossFlags = []; // entries with source contradictions
   let crossChecked = 0;  // entries the cross-check actually ran on (fetch succeeded)
+  let backfilledTotal = 0; // credible sources added by --backfill-sources
 
   for (const collection of COLLECTIONS) {
     const dir = path.join(CONTENT_DIR, collection);
@@ -333,6 +428,7 @@ async function main() {
       if (typeof result.credible === 'number' && result.credible < MIN_CREDIBLE_SOURCES) {
         underBar.push({ entry, credible: result.credible, total: result.source_count });
       }
+      if (result.backfilled) backfilledTotal += result.backfilled;
       if (Array.isArray(result.contradictions)) {
         crossChecked++;
         if (result.contradictions.length) crossFlags.push({ entry, issues: result.contradictions });
@@ -413,6 +509,7 @@ async function main() {
     source_bar: {
       min_credible: MIN_CREDIBLE_SOURCES,
       below_bar: underBar.length,
+      backfilled_total: backfilledTotal,
       entries: underBar.sort((a, b) => a.credible - b.credible).slice(0, 80),
     },
     cross_check: {
