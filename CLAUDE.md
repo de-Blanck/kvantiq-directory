@@ -134,9 +134,15 @@ The directory's value depends on every claim being verifiable from independent s
 - Wikipedia — acceptable as a research starting point, does not count toward the bar
 - Press-wire syndication (Yahoo Finance, AccessNewswire, PR Newswire syndication) — counts as the same source as the underlying release, not as a separate source
 
-### Existing entries below the bar
+### Cross-checking (NON-NEGOTIABLE)
 
-The 3-source bar applies to **all new entries and any edited entries going forward**. Backfilling existing entries that currently have only 2 sources is a separate, deliberate workstream — the Zod schema in `src/content.config.ts` remains at `.min(2)` for now, and will be raised to `.min(3)` per collection only after that collection has been brought up to the new bar.
+Three credible sources is necessary but not sufficient — the sources must also **agree**. For every new or edited entry, cross-check the gathered sources against each other and against the entry's own fields (name, country, type, founding year, funding, key claims). If sources contradict each other or an entry asserts something a source does not support, resolve it before publishing — prefer the higher-credibility source, and never publish a claim that the sources cannot jointly substantiate. The weekly sweep runs this cross-check per entry and records contradictions in the Sweep Log (`/transparency/sweeps`).
+
+### Credible-source counting and the backfill bar
+
+"Credible" = a source NOT on the blocklist above (the `isBlocklistedSource` test in `scripts/ai-sweep.mjs` is the canonical definition). Run **`npm run audit:sources`** to see each entry's credible-source count and the backfill worklist (`--strict` exits non-zero when any entry is below the bar — use it as the gate once a collection is backfilled).
+
+The 3-credible-source minimum applies to **all new entries and any edited entries going forward** (enforced by the sweep flag, the PR template, and `audit:sources`). As of 2026-06-24, ~166 of 218 existing entries are below the bar; bringing them up is a deliberate backfill workstream. The Zod schema in `src/content.config.ts` stays at `.min(2)` for now and is raised to `.min(3)` **per collection only after that collection clears `audit:sources --strict --collection <name>`** — flipping it before backfill would break the build.
 
 ## Git Workflow
 

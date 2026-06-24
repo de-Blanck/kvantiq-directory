@@ -13,6 +13,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "audit:content": "npx tsx scripts/content-audit.ts",
+    "audit:sources": "node scripts/audit-sources.mjs",
     "test": "tsx scripts/run-tests.ts"
   },
   "dependencies": {

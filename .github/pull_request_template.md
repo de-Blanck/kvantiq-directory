@@ -8,7 +8,8 @@
 
 ## Source verification
 
-- [ ] Every new or edited entry has **minimum 3 credible sources** (see CLAUDE.md → "Source credibility")
+- [ ] Every new or edited entry has **minimum 3 credible sources** (see CLAUDE.md → "Source credibility"); verified with `npm run audit:sources`
+- [ ] **Sources cross-checked** — they agree with each other and with the entry's fields; no contradictions or unsupported claims (CLAUDE.md → "Cross-checking")
 - [ ] At least two source categories are represented (e.g. institutional + trade press, or peer-reviewed + funding record)
 - [ ] No LinkedIn, Crunchbase, Wikipedia, or press-wire-syndication-only sources counted toward the 3
 - [ ] Company website (if used) counts as ONE source; entry has ≥2 independent confirmations beyond it
