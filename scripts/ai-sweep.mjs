@@ -316,7 +316,7 @@ Do TWO things, using ONLY the fetched content — never invent, infer, or recall
 
 1. NEWS: Extract news items explicitly stated in the fetched content. Each MUST include a direct source URL. Date format YYYY-MM-DD (use the first of the month if the day is unclear). If none, use [].
 
-2. CROSS-CHECK: Compare the fetched sources against EACH OTHER and against the entry fields below. Report each CONTRADICTION (sources disagree on a fact such as country, founding year, type, or funding) and each UNSUPPORTED claim (an entry field the fetched sources do not substantiate). Be specific and brief (one sentence each). If everything is consistent, use []. Do not speculate beyond the fetched content.
+2. CROSS-CHECK: Report ONLY genuine CONTRADICTIONS — where two fetched sources state conflicting facts, or a fetched source DIRECTLY conflicts with an entry field (e.g. entry says country France but a source states Germany; entry says founded 2020 but a source says 2018). Do NOT flag a field merely because a source omits, does not mention, or does not restate it — absence of confirmation is NOT a contradiction. Be specific and brief (one sentence each), and name the conflicting values. If there are no direct conflicts, use [].
 
 Entry fields:
 Name: ${data.name}
