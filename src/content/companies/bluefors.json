@@ -4,7 +4,11 @@
   "country": "Finland",
   "region": "nordics",
   "type": "hardware",
-  "tags": ["cryogenics", "dilution-refrigeration", "quantum-infrastructure"],
+  "tags": [
+    "cryogenics",
+    "dilution-refrigeration",
+    "quantum-infrastructure"
+  ],
   "founded": 2008,
   "description": "Bluefors is a world-leading manufacturer of ultra-low temperature measurement systems and cryogenic dilution refrigerators. The company provides critical cryogenic infrastructure for quantum computing systems, enabling quantum processors to operate at the near-absolute-zero temperatures required for quantum coherence. Bluefors systems are used by quantum computing companies and research institutions globally.",
   "website": "https://bluefors.com",
@@ -40,6 +44,21 @@
       "url": "https://en.wikipedia.org/wiki/Bluefors",
       "title": "Bluefors - Wikipedia",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/bluefors-delivers-18-cryogenic-systems-to-japans-new-g-quat-quantum-center/",
+      "title": "Bluefors Delivers 18 Cryogenic Systems to Japan's New G-QuAT Quantum Center"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/bluefors-launches-modular-cryogenic-platform-for-large-scale-qubit-integration/",
+      "title": "Bluefors Launches Modular Cryogenic Platform for Large-Scale Qubit Integration"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/03/03/bluefors-modular-cryogenic-platform-launch/",
+      "title": "Bluefors Launches Modular Cryogenic Platform for Scalable Quantum Systems"
     }
   ],
   "news": [

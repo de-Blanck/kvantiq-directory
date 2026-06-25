@@ -44,9 +44,31 @@
       "url": "https://www.linkedin.com/company/hqs-quantum-simulations/",
       "title": "HQS Quantum Simulations LinkedIn Company Page",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "url",
+      "url": "https://cordis.europa.eu/project/id/101214526",
+      "title": "Next-Gen NMR Prediction and Analysis: A Cutting-Edge Tool for High-Precision Structure Identification | HQS-NextNMR | Project | Fact Sheet | HORIZON | CORDIS | European Commission"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/hqs-quantum-simulations-secures-e2-5-million-2-6-million-usd-eic-funding-to-create-quantum-algorithms-that-can-advance-nmr-spectroscopy/",
+      "title": "HQS Quantum Simulations Secures €2.5 Million ($2.6 Million USD) EIC Funding to Create Quantum Algorithms that Can Advance NMR Spectroscopy"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2025/02/03/hqs-quantum-simulations-secures-2-6m-eic-grant-to-advance-nmr-spectroscopy-for-modern-diagnostics/",
+      "title": "HQS Quantum Simulations Secures $2.6M EIC Grant to Advance NMR Spectroscopy for Modern Diagnostics"
     }
   ],
   "news": [
+    {
+      "title": "HQS Quantum Simulations Secures €2.5 Million EIC Funding to Create Quantum Algorithms that Can Advance NMR Spectroscopy",
+      "excerpt": "HQS was selected among 40 innovative teams from 413 proposals for EIC Transition Program funding to advance NMR spectral analysis for personalized medicine, developing advanced quantum algorithms and software tools for high-precision molecular structure identification.",
+      "url": "https://thequantuminsider.com/2025/02/03/hqs-quantum-simulations-secures-2-6m-eic-grant-to-advance-nmr-spectroscopy-for-modern-diagnostics/",
+      "source": "The Quantum Insider",
+      "date": "2025-02-03"
+    },
     {
       "title": "HQS launches HQSpectrum — full release of its NMR spectrum prediction and analysis software",
       "excerpt": "HQS Quantum Simulations introduces HQSpectrum, the first full version of its software for predicting and analyzing Nuclear Magnetic Resonance (NMR) spectra, designed to reduce manual effort in NMR analysis and to improve traceability. Users can preprocess experimental spectra, compare them against computed spectra, adjust results interactively, and export documentation-ready reports.",

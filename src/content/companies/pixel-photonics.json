@@ -40,6 +40,11 @@
       "url": "https://www.optica.org/about/newsroom/corporate_member_news/2025/pixel_photonics_receives_eu1_million_sprind_funding_for_multi-mode_single_photon_detection/",
       "title": "Pixel Photonics receives EUR 1 million SPRIND funding for multi-mode single photon detection — Optica",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2022/10/31/pixel-photonics-picked-as-sub-contractor-for-photonic-quantum-computer-project/",
+      "title": "Pixel Photonics Picked as Sub-Contractor For Photonic Quantum Computer Project"
     }
   ],
   "news": [
@@ -49,6 +54,13 @@
       "url": "https://www.optica.org/about/newsroom/corporate_member_news/2025/pixel_photonics_receives_eu1_million_sprind_funding_for_multi-mode_single_photon_detection/",
       "source": "Optica",
       "date": "2025-02-05"
+    },
+    {
+      "title": "Pixel Photonics Picked as Sub-Contractor For Photonic Quantum Computer Project",
+      "excerpt": "Pixel Photonics, a start-up out of the WWU Münster, was chosen as sub-contractor for a 14 million euros development contract from the DLR. The project, led by quantum computing start-up QuiX, has the goal to develop a photonic quantum computer with a minimum of 64 qubits.",
+      "url": "https://thequantuminsider.com/2022/10/31/pixel-photonics-picked-as-sub-contractor-for-photonic-quantum-computer-project/",
+      "source": "The Quantum Insider",
+      "date": "2022-10-31"
     }
   ]
 }

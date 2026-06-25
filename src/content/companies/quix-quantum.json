@@ -41,15 +41,27 @@
       "url": "https://siliconcanals.com/quix-quantum-secures-15m/",
       "title": "Enschede-based QuiX Quantum secures EUR 15M to launch first universal photonic quantum computer",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/04/02/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time/",
+      "title": "QuiX Quantum Demonstrates Below-Threshold Error Mitigation in Photonic Quantum Computing For First Time"
     }
   ],
   "news": [
     {
       "title": "Enschede-based QuiX Quantum secures €15M to launch first universal photonic quantum computer",
-      "excerpt": "Enschede-based QuiX Quantum, the Dutch photonic quantum computing pioneer, has secured €15M in Series A funding co-led by Invest NL and EIC Fund. Other existing investors, including PhotonVentures, Oost NL, and FORWARD.one, also participated in the round.",
+      "excerpt": "QuiX Quantum secured €15M in Series A funding co-led by Invest NL and EIC Fund. The announcement comes over a year after demonstrating on-chip creation of Greenberger-Horne-Zeilinger (GHZ) states.",
       "url": "https://siliconcanals.com/quix-quantum-secures-15m/",
       "source": "Silicon Canals",
       "date": "2025-07-10"
+    },
+    {
+      "title": "QuiX Quantum Demonstrates Below-Threshold Error Mitigation in Photonic Quantum Computing For First Time",
+      "excerpt": "QuiX Quantum demonstrated 'below threshold' error mitigation on a photonic quantum computer, achieving a net reduction in total errors. The project was conducted on the QuiX Bia Cloud Quantum Computing Service in collaboration with NASA's Quantum AI Lab, University of Twente, and Freie Universität Berlin.",
+      "url": "https://thequantuminsider.com/2026/04/02/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time/",
+      "source": "The Quantum Insider",
+      "date": "2026-04-02"
     },
     {
       "title": "QuiX Quantum partners with Artilux to improve photonic quantum hardware efficiency",

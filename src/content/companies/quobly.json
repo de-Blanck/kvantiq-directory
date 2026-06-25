@@ -39,9 +39,38 @@
       "url": "https://www.linkedin.com/company/quobly/",
       "title": "Quobly LinkedIn Company Page",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/06/03/quobly-secures-e115-million-series-a-to-bring-silicon-based-quantum-computers-to-market/",
+      "title": "Quobly Secures €115 Million Series A to Bring Silicon-Based Quantum Computers to Market"
+    },
+    {
+      "type": "url",
+      "url": "https://sifted.eu/articles/quobly-series-a-115m",
+      "title": "Quantum startup Quobly raises €115m backed by STMicroelectronics"
+    },
+    {
+      "type": "url",
+      "url": "https://tech.eu/2026/06/03/quobly-raises-eur115m-series-a-to-commercialise-silicon-quantum-computing/",
+      "title": "Quobly raises €115M Series A to commercialise silicon quantum computing"
     }
   ],
   "news": [
+    {
+      "title": "Quobly Secures €115 Million Series A to Bring Silicon-Based Quantum Computers to Market",
+      "excerpt": "Quobly has raised €115 million in a Series A round to accelerate the industrialization of its silicon-based quantum computing platform and launch its first cloud-accessible commercial system by the end of 2026.",
+      "url": "https://thequantuminsider.com/2026/06/03/quobly-secures-e115-million-series-a-to-bring-silicon-based-quantum-computers-to-market/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-03"
+    },
+    {
+      "title": "Quantum startup Quobly raises €115m backed by STMicroelectronics",
+      "excerpt": "Quobly, the French startup building quantum computers, has raised a €115m Series A to move the production of its technology from lab to industrial scale.",
+      "url": "https://sifted.eu/articles/quobly-series-a-115m",
+      "source": "Sifted",
+      "date": "2026-06-03"
+    },
     {
       "title": "Quobly secures €115M Series A",
       "excerpt": "A milestone toward commercial silicon quantum computers. Series A led by Bpifrance, STMicroelectronics and SEALSQ, with participation from leading industrial and deeptech investors, to accelerate the industrialization of quantum processors.",

@@ -40,21 +40,31 @@
       "url": "https://techcrunch.com/2023/09/21/qruise-wants-to-build-ai-to-automate-quantum-device-development/",
       "title": "Qruise wants to build AI to automate quantum device development — TechCrunch",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/01/qruise-nv-centre-goethe-university-collaboration/",
+      "title": "Qruise Collaborates with Goethe University on NV Center Systems"
+    },
+    {
+      "type": "url",
+      "url": "https://cordis.europa.eu/project/id/101099538",
+      "title": "Accelerating Quantum Technology Development with Machine Learning | HORIZON | CORDIS | European Commission"
     }
   ],
   "news": [
+    {
+      "title": "Qruise Collaborates with Goethe University on NV Center Systems",
+      "excerpt": "Qruise expanded its work on NV center quantum systems through a collaboration with Goethe University Frankfurt. The partnership focuses on improving bring-up, calibration, and control of NV center-based quantum devices.",
+      "url": "https://thequantuminsider.com/2026/05/01/qruise-nv-centre-goethe-university-collaboration/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-01"
+    },
     {
       "title": "Qruise demonstrates automated bring-up workflows at IQCC using Quantum Machines' OPX1000",
       "url": "https://www.qruise.com",
       "source": "Qruise",
       "date": "2026-04-21"
-    },
-    {
-      "title": "Qruise wants to build AI to automate quantum device development",
-      "excerpt": "Qruise, a spinoff of Forschungszentrum Jülich, is building AI-powered software that can do much of the work currently handled by junior physicists in quantum laboratories.",
-      "url": "https://techcrunch.com/2023/09/21/qruise-wants-to-build-ai-to-automate-quantum-device-development/",
-      "source": "TechCrunch",
-      "date": "2023-09-21"
     }
   ]
 }

@@ -50,18 +50,18 @@
   ],
   "news": [
     {
-      "title": "From Prototype to Product: Celare Quantum's vision for QKD deployment",
-      "excerpt": "Interview with Tobias Gehring, CEO of Celare Quantum, discussing the company's journey from research prototypes to commercial quantum key distribution products, market demand from critical sectors, and their enterprise network appliance designed for telecommunications infrastructure.",
-      "url": "https://qsnp.eu/from-prototype-to-product-celare-quantums-vision-for-qkd-deployment/",
-      "source": "QSNP",
-      "date": "2025-12-11"
-    },
-    {
       "title": "Danish quantum research strengthens its leading position",
-      "excerpt": "Innovation Fund Denmark invests DKK 103 million in quantum projects including the AccessQKD project (DKK 25.9 million), which partners include Celare Quantum Communications, developing world-leading technology for data protection integrated into telecommunications networks.",
+      "excerpt": "Innovation Fund Denmark is investing DKK 25.9 million in AccessQKD project with partners including Celare Quantum Communications ApS, DTU Physics, Aarhus University, GlobalConnect, and Partisia Applications ApS.",
       "url": "https://www.dtu.dk/english/newsarchive/2025/07/danish-quantum-research-strengthens-its-leading-position",
       "source": "DTU",
       "date": "2025-07-04"
+    },
+    {
+      "title": "From Prototype to Product: Celare Quantum's vision for QKD deployment",
+      "excerpt": "Interview with Tobias Gehring, CEO of Celare Quantum, discussing the DTU spinout's continuous-variable QKD systems and development of enterprise network appliances for telecommunication companies.",
+      "url": "https://qsnp.eu/from-prototype-to-product-celare-quantums-vision-for-qkd-deployment/",
+      "source": "QSNP",
+      "date": "2025-12-11"
     }
   ]
 }

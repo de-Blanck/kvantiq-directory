@@ -41,15 +41,20 @@
       "url": "https://thequantuminsider.com/2019/11/28/polands-vibrant-qc-representative/",
       "title": "Poland's Vibrant QC Representative - The Quantum Insider",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.rdworldonline.com/ex-google-founders-bet-quantum-compressed-chemistry-can-crack-covalent-drug-design/",
+      "title": "Ex-Google founders bet quantum-compressed chemistry can crack covalent drug design"
     }
   ],
   "news": [
     {
-      "title": "Poland's Vibrant QC Representative",
-      "excerpt": "Article profiling Poland's quantum computing landscape and Beit.Tech as a Krakow-based startup founded in 2016 by CEO Paulina Mazurek, Chief Physics Officer Wojciech Burkot, and Chief Mathematics Officer Witold Jarnicki. Discusses the company's focus on NISQ quantum computers and NP-complete problem solving.",
-      "url": "https://thequantuminsider.com/2019/11/28/polands-vibrant-qc-representative/",
-      "source": "The Quantum Insider",
-      "date": "2020-01-25"
+      "title": "Ex-Google founders bet quantum-compressed chemistry can crack covalent drug design",
+      "excerpt": "BEIT Inc., a quantum computing startup founded by ex-Googlers in Kraków, has launched CovAngelo, a hybrid quantum-classical platform designed to accurately model chemical reactions in complex molecular environments.",
+      "url": "https://www.rdworldonline.com/ex-google-founders-bet-quantum-compressed-chemistry-can-crack-covalent-drug-design/",
+      "source": "R&D World",
+      "date": "2026-04-30"
     }
   ]
 }

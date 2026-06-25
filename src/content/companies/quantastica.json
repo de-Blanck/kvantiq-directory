@@ -4,7 +4,12 @@
   "country": "Finland",
   "region": "nordics",
   "type": "software",
-  "tags": ["quantum-programming", "simulators", "development-tools", "open-source"],
+  "tags": [
+    "quantum-programming",
+    "simulators",
+    "development-tools",
+    "open-source"
+  ],
   "founded": 2019,
   "description": "Quantastica provides quantum programming tools and simulators for developers and researchers. The company develops open-source and commercial quantum software development tools, including quantum circuit simulators and programming frameworks. Quantastica's solutions aim to make quantum computing more accessible to software developers through intuitive programming interfaces and educational resources.",
   "website": "https://quantastica.com",
@@ -40,6 +45,20 @@
       "url": "https://thequantuminsider.com/2022/04/15/quantastica-quantum-programming-tools/",
       "title": "Quantastica: Quantum Programming Tools - The Quantum Insider",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2021/01/13/quantastica-fantastica-the-computational-bridge-between-the-quantum-the-classical-worlds/",
+      "title": "Quantastica Fantastica, The Computational Bridge Between The Quantum & The Classical Worlds"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quantastica Fantastica, The Computational Bridge Between The Quantum & The Classical Worlds",
+      "excerpt": "Article discussing how Quantastica provides tools to make quantum programming accessible to classical software developers, bridging the gap between quantum and classical worlds.",
+      "url": "https://thequantuminsider.com/2021/01/13/quantastica-fantastica-the-computational-bridge-between-the-quantum-the-classical-worlds/",
+      "source": "The Quantum Insider",
+      "date": "2021-01-13"
     }
   ]
 }

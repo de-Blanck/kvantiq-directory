@@ -4,7 +4,11 @@
   "country": "Germany",
   "region": "dach",
   "type": "hardware",
-  "tags": ["cryogenic-cooling", "quantum-infrastructure", "magnetic-refrigeration"],
+  "tags": [
+    "cryogenic-cooling",
+    "quantum-infrastructure",
+    "magnetic-refrigeration"
+  ],
   "founded": 2018,
   "description": "kiutra is a German deep-tech company developing cryogen-free cooling systems for quantum technologies using magnetic refrigeration. The company provides compact and efficient cooling solutions for quantum computers, quantum sensors, and other cryogenic applications, eliminating the need for liquid helium.",
   "website": "https://www.kiutra.com",
@@ -40,6 +44,25 @@
       "url": "https://thequantuminsider.com/2023/05/30/kiutra-raises-e13-million-for-cryogen-free-cooling-systems/",
       "title": "kiutra Raises €13 Million for Cryogen-Free Cooling Systems - The Quantum Insider",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.htgf.de/en/htgf-financing-round-kiutra/",
+      "title": "HTGF financing round kiutra"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2025/10/02/kiutra-secures-e13-million-to-strengthen-quantum-supply-chains-with-helium-3-free-cooling/",
+      "title": "Kiutra Secures €13 Million to Strengthen Quantum Supply Chains With Helium-3-free Cooling"
+    }
+  ],
+  "news": [
+    {
+      "title": "kiutra secures €13M to strengthen quantum supply chains with helium-3-free cooling",
+      "excerpt": "The €13 million financing round is co-led by NovaCapital (Italy) and 55 North (Denmark), with participation from High-Tech Gründerfonds (Germany). Kiutra has now raised more than €30 million in private and public funding to date.",
+      "url": "https://www.htgf.de/en/htgf-financing-round-kiutra/",
+      "source": "HTGF",
+      "date": "2025-10-02"
     }
   ]
 }

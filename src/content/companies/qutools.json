@@ -4,7 +4,12 @@
   "country": "Germany",
   "region": "dach",
   "type": "hardware",
-  "tags": ["quantum-optics", "entangled-photon-sources", "quantum-education", "quantum-cryptography"],
+  "tags": [
+    "quantum-optics",
+    "entangled-photon-sources",
+    "quantum-education",
+    "quantum-cryptography"
+  ],
   "founded": 2005,
   "description": "qutools develops and manufactures precision instruments for quantum physics experiments, including entangled photon sources, quantum random number generators, and quantum cryptography systems. Founded by quantum physicists from Ludwig-Maximilians-University Munich, the company serves both scientific research and industrial applications in quantum information.",
   "website": "https://qutools.com",
@@ -39,6 +44,11 @@
       "url": "https://qutools.com/quantum-safety-made-in-germany-launch-of-industrial-alliance/",
       "title": "Quantum safety made in Germany — Launch of industrial alliance — qutools",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "website",
+      "url": "https://www.northdata.com/qutools%20GmbH,%20M%C3%BCnchen/HRB%20155713",
+      "title": "qutools GmbH - German Commercial Register (Handelsregister) HRB 155713"
     }
   ]
 }

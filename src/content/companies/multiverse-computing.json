@@ -40,9 +40,45 @@
       "url": "https://en.wikipedia.org/wiki/Multiverse_Computing",
       "title": "Multiverse Computing - Wikipedia",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2025/03/04/multiverse-computing-announces-a-70-million-investment-from-the-spanish-government/",
+      "title": "Multiverse Computing Announces a $70 Million Investment From The Spanish government"
+    },
+    {
+      "type": "url",
+      "url": "https://techcrunch.com/2025/06/12/multiverse-computing-raises-215m-for-tech-that-could-radically-slim-ai-costs/",
+      "title": "Multiverse Computing raises $215M for tech that could radically lower AI costs"
+    },
+    {
+      "type": "url",
+      "url": "https://siliconangle.com/2026/02/10/report-ai-model-compression-startup-multiverse-seeking-e500m-funding-round/",
+      "title": "Report: AI model compression startup Multiverse seeking €500M funding round"
     }
   ],
   "news": [
+    {
+      "title": "Multiverse Computing Announces a $70 Million Investment From The Spanish Government",
+      "excerpt": "Spain's government announced a co-investment of €67 million through the Spanish Society for Technological Transformation (SETT) to advance energy-efficient AI language models.",
+      "url": "https://thequantuminsider.com/2025/03/04/multiverse-computing-announces-a-70-million-investment-from-the-spanish-government/",
+      "source": "The Quantum Insider",
+      "date": "2025-03-04"
+    },
+    {
+      "title": "Multiverse Computing raises $215M for tech that could radically lower AI costs",
+      "excerpt": "Spanish startup Multiverse Computing raised Series B round of €189 million (about $215 million) on the strength of CompactifAI technology capable of reducing LLM size by up to 95%.",
+      "url": "https://techcrunch.com/2025/06/12/multiverse-computing-raises-215m-for-tech-that-could-radically-slim-ai-costs/",
+      "source": "TechCrunch",
+      "date": "2025-06-12"
+    },
+    {
+      "title": "AI model compression startup Multiverse seeking €500M funding round",
+      "excerpt": "Multiverse Computing is reportedly seeking €500 million in new capital, with the round expected to value the company at €1.5 billion.",
+      "url": "https://siliconangle.com/2026/02/10/report-ai-model-compression-startup-multiverse-seeking-e500m-funding-round/",
+      "source": "SiliconANGLE",
+      "date": "2026-02-10"
+    },
     {
       "title": "HyperNova 60B, the world's most efficient model in its category according to Artificial Analysis",
       "excerpt": "Multiverse Computing's model has been independently validated and ranks as the one that best combines high intelligence with a compact parameter footprint among models of its size.",
@@ -56,13 +92,6 @@
       "url": "https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/",
       "source": "TechCrunch",
       "date": "2026-02-24"
-    },
-    {
-      "title": "Multiverse Computing and Axelera AI partner to bring compressed AI models to edge devices",
-      "excerpt": "Collaboration uses CompactifAI compression with Axelera's edge AI accelerators to run datacentre-class models on energy-efficient devices.",
-      "url": "https://thequantuminsider.com/2026/03/18/ultiverse-computing-axelera-ai-strategic-collaboration-ai-models-edge-devices/",
-      "source": "The Quantum Insider",
-      "date": "2026-03-18"
     }
   ]
 }

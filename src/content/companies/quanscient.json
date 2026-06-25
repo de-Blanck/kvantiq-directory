@@ -4,7 +4,12 @@
   "country": "Finland",
   "region": "nordics",
   "type": "software",
-  "tags": ["simulation", "multiphysics", "quantum-enhanced", "CAE"],
+  "tags": [
+    "simulation",
+    "multiphysics",
+    "quantum-enhanced",
+    "CAE"
+  ],
   "founded": 2021,
   "description": "Quanscient develops quantum-enhanced multiphysics simulation software for engineering and industrial applications. The company combines classical high-performance computing with quantum algorithms to accelerate complex simulations in areas such as electromagnetics, thermal analysis, and structural mechanics. Quanscient's platform aims to reduce simulation times and enable more accurate modeling for product development.",
   "website": "https://quanscient.com",
@@ -36,6 +41,25 @@
       "url": "https://quanscient.com",
       "title": "Quanscient Official Website",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/26/finlands-quanscient-announces-e10-million-raise/",
+      "title": "Finland's Quanscient Announces €10 Million Raise"
+    },
+    {
+      "type": "url",
+      "url": "https://www.businessfinland.com/companies/q/quanscient-oy/",
+      "title": "Quanscient Oy - Business Finland Company Directory"
+    }
+  ],
+  "news": [
+    {
+      "title": "Finland's Quanscient Announces €10 Million Raise",
+      "excerpt": "Finnish quantum and simulation company Quanscient raised €10 million in Series A funding to expand internationally and advance a platform combining multiphysics simulation, quantum algorithms and AI-driven hardware engineering.",
+      "url": "https://thequantuminsider.com/2026/05/26/finlands-quanscient-announces-e10-million-raise/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-26"
     }
   ]
 }

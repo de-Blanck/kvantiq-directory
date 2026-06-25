@@ -45,7 +45,37 @@
       "url": "https://en.wikipedia.org/wiki/ID_Quantique",
       "title": "ID Quantique - Wikipedia",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/ionq-completes-acquisition-of-id-quantique/",
+      "title": "IonQ Completes Acquisition of ID Quantique"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2025/02/25/ionq-in-talks-to-acquire-id-quantique-for-250-million-bloomberg-reports/",
+      "title": "IonQ in Talks to Acquire ID Quantique For $250 Million, Bloomberg Reports"
+    },
+    {
+      "type": "url",
+      "url": "https://ggba.swiss/en/ionq-acquires-id-quantique-to-advance-global-quantum-networking/",
+      "title": "IonQ acquires ID Quantique to advance global quantum networking"
     }
   ],
-  "news": []
+  "news": [
+    {
+      "title": "IonQ in Talks to Acquire ID Quantique For $250 Million, Bloomberg Reports",
+      "excerpt": "IonQ Inc. is in advanced negotiations to acquire ID Quantique, a Swiss firm specializing in quantum-safe encryption, in a deal that could be valued at about $250 million, according to Bloomberg.",
+      "url": "https://thequantuminsider.com/2025/02/25/ionq-in-talks-to-acquire-id-quantique-for-250-million-bloomberg-reports/",
+      "source": "The Quantum Insider",
+      "date": "2025-02-25"
+    },
+    {
+      "title": "IonQ acquires ID Quantique to advance global quantum networking",
+      "excerpt": "IonQ, a leading quantum computing company based in Maryland, has reached an agreement to acquire a majority stake in ID Quantique (IDQ), the Geneva-based global leader in quantum-safe networking and quantum detection systems.",
+      "url": "https://ggba.swiss/en/ionq-acquires-id-quantique-to-advance-global-quantum-networking/",
+      "source": "GGBA Swiss",
+      "date": "2025-03-04"
+    }
+  ]
 }

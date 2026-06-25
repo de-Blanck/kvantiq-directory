@@ -40,9 +40,26 @@
       "url": "https://www.eu-startups.com/2025/12/quantumdiamonds-plans-e152m-investment-in-quantum-chip-inspection-facility-in-munich/",
       "title": "QuantumDiamonds plans EUR 152 million investment in quantum chip inspection facility in Munich — EU-Startups",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quantumdiamonds-plans-e152m-178-5m-usd-quantum-chip-inspection-facility-in-munich/",
+      "title": "QuantumDiamonds Plans €152M Quantum Chip Inspection Facility in Munich"
+    },
+    {
+      "type": "url",
+      "url": "https://tech.eu/2025/12/15/quantumdiamonds-invests-over-eur150m-for-quantum-chip-inspection-facility/",
+      "title": "QuantumDiamonds invests over €150M for quantum chip inspection facility"
     }
   ],
   "news": [
+    {
+      "title": "QuantumDiamonds Plans €152M Quantum Chip Inspection Facility in Munich",
+      "excerpt": "Investment to establish production facility for advanced chip testing systems in Germany, with support under European Chips Act",
+      "url": "https://quantumcomputingreport.com/quantumdiamonds-plans-e152m-178-5m-usd-quantum-chip-inspection-facility-in-munich/",
+      "source": "Quantum Computing Report",
+      "date": "2025-12-15"
+    },
     {
       "title": "QD deploys failure analysis technology at leading Taiwan semiconductor test house",
       "excerpt": "QuantumDiamonds deploys failure analysis technology at a leading Taiwan semiconductor test house",

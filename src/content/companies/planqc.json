@@ -39,9 +39,33 @@
       "url": "https://www.dlr.de/en/latest/news/2024/01/planqc-and-dlr-to-build-europes-first-digital-quantum-computer",
       "title": "planqc and DLR to build Europe's first digital quantum computer using neutral atoms",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.mpq.mpg.de/7098253/09-planqc-deutscher-gruenderpreis",
+      "title": "planqc wins German Founder Award 2025"
+    },
+    {
+      "type": "url",
+      "url": "https://www.datacenterdynamics.com/en/news/planqc-to-lead-development-of-german-government-funded-1000-qubit-quantum-computer/",
+      "title": "Planqc to lead development of German government-funded 1,000 qubit quantum computer"
     }
   ],
   "news": [
+    {
+      "title": "planqc wins German Founder Award 2025",
+      "excerpt": "MPQ spin-off planqc awarded prestigious founder prize in Startup category for developing quantum computers based on neutral atoms in optical lattices.",
+      "url": "https://www.mpq.mpg.de/7098253/09-planqc-deutscher-gruenderpreis",
+      "source": "Max Planck Institute of Quantum Optics",
+      "date": "2025-09-12"
+    },
+    {
+      "title": "planqc to lead development of German government-funded 1,000 qubit quantum computer",
+      "excerpt": "planqc selected to lead development of German government-funded 1,000 qubit quantum computer project.",
+      "url": "https://www.datacenterdynamics.com/en/news/planqc-to-lead-development-of-german-government-funded-1000-qubit-quantum-computer/",
+      "source": "DataCenterDynamics",
+      "date": "2026-06-17"
+    },
     {
       "title": "€2.3M Funding for Hybrid Quantum–Classical Solutions in Industry Optimization",
       "excerpt": "planqc announced €2.3M funding for hybrid quantum–classical solutions in industry optimization",

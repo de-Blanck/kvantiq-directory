@@ -43,7 +43,30 @@
       "url": "https://www.linkedin.com/company/qblox/",
       "title": "Qblox LinkedIn Company Page",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "url",
+      "url": "https://eic.ec.europa.eu/qblox_en",
+      "title": "Qblox - European Innovation Council - European Commission"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/qblox-accelerates-utility-scale-quantum-computing-with-nvidia/",
+      "title": "Qblox Accelerates Utility-Scale Quantum Computing With NVIDIA - HPCwire"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quantware-q-ctrl-and-qblox-launch-qub-reference-architecture-for-quantum-adoption/",
+      "title": "QuantWare, Q-CTRL, and Qblox Launch QUB Reference Architecture for Quantum Adoption - Quantum Computing Report"
     }
   ],
-  "news": []
+  "news": [
+    {
+      "title": "QuantWare, Q-CTRL, and Qblox Launch QUB Reference Architecture for Quantum Adoption",
+      "excerpt": "QuantWare, Q-CTRL, and Qblox announced the launch of the Quantum Utility Block (QUB), a family of full-stack, pre-validated quantum computer reference implementations. The first deployment, called Q-PAC, is scheduled for 2026 in Colorado.",
+      "url": "https://quantumcomputingreport.com/quantware-q-ctrl-and-qblox-launch-qub-reference-architecture-for-quantum-adoption/",
+      "source": "Quantum Computing Report",
+      "date": "2025-11-17"
+    }
+  ]
 }

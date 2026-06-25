@@ -4,7 +4,13 @@
   "country": "Denmark",
   "region": "nordics",
   "type": "software",
-  "tags": ["quantum-photonics", "EBL", "lithography", "nanofabrication", "NBI-spinout"],
+  "tags": [
+    "quantum-photonics",
+    "EBL",
+    "lithography",
+    "nanofabrication",
+    "NBI-spinout"
+  ],
   "founded": 2016,
   "description": "Beamfox Technologies is a Niels Bohr Institute spinout providing proximity-effect-correction software for electron-beam lithography of quantum nanostructures, photonic-crystal devices, and single-photon sources. Founded in 2016 by NBI quantum photonics researchers Leonardo Midolo, Soren Stobbe, and Anders Esbensen, the company is an industrial partner in the DKK 40M Innovation Fund Denmark EQUAL project (May 2025-2030) led by DTU Electro alongside HZDR, Humboldt University of Berlin, and Lizard Photonics.",
   "website": "https://www.beamfox.dk",
@@ -55,6 +61,29 @@
       "url": "https://www.beamfox.dk/about/",
       "title": "Beamfox Technologies - About (NBI quantum-photonics origin)",
       "dateAccessed": "2026-05-01"
+    }
+  ],
+  "news": [
+    {
+      "title": "Research project to crack the code of quantum light sources and quantum networks",
+      "excerpt": "A new Danish-German research collaboration is developing new quantum light sources. The Innovation Fund has invested DKK 40 million in the project.",
+      "url": "https://innovationsfonden.dk/en/news/research-project-crack-code-quantum",
+      "source": "Innovation Fund Denmark",
+      "date": "2025-05-08"
+    },
+    {
+      "title": "Research project to crack the code of quantum light sources and quantum networks",
+      "excerpt": "A new research and innovation project aims to develop new quantum light sources. The Innovation Fund has invested DKK 40 million in the project.",
+      "url": "https://www.dtu.dk/english/news/all-news/research-project-to-crack-the-code-of-quantum-light-sources-and-quantum-networks?id=a84d6518-40f9-4f88-81f2-dc17c4117502",
+      "source": "DTU",
+      "date": "2025-05-12"
+    },
+    {
+      "title": "From single photons to storage: New project aims to integrate quantum light sources with quantum memories",
+      "excerpt": "The project EQUAL (Erbium-based silicon quantum light sources) is funded by the Innovation Fund Denmark with 40 million Danish crowns. It started in May of 2025.",
+      "url": "https://www.hzdr.de/db/Cms?pNid=99&pOid=74943",
+      "source": "Helmholtz-Zentrum Dresden-Rossendorf",
+      "date": "2025-06-11"
     }
   ]
 }

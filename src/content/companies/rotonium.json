@@ -41,14 +41,26 @@
       "url": "https://thequantuminsider.com/2024/08/02/deep-tech-startup-rotonium-raises-e1-million-in-seed-funding-to-take-quantum-computers-into-space/",
       "title": "Deep-tech Startup Rotonium Raises EUR 1 Million in Seed Funding to Take Quantum Computers Into Space - The Quantum Insider",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.startupbusiness.it/en/quantum-computing-in-space-rotonium-raises-eur-1-million/141857/",
+      "title": "Quantum computing in space, Rotonium raises EUR 1 million"
     }
   ],
   "news": [
     {
       "title": "Deep-tech Startup Rotonium Raises €1 Million in Seed Funding to Take Quantum Computers Into Space",
-      "excerpt": "Rotonium, an Italian startup, secured €1 million in seed investment to advance quantum computing through innovative single-photon qudit technology, enabling room-temperature operation and miniaturization of quantum computers.",
+      "excerpt": "Rotonium secured €1 million in seed investment from Galaxia and CDP Venture Capital's Tech Transfer Fund to advance quantum computing through single-photon technology and silicon photonics components.",
       "url": "https://thequantuminsider.com/2024/08/02/deep-tech-startup-rotonium-raises-e1-million-in-seed-funding-to-take-quantum-computers-into-space/",
       "source": "The Quantum Insider",
+      "date": "2024-08-02"
+    },
+    {
+      "title": "Quantum computing in space, Rotonium raises EUR 1 million",
+      "excerpt": "Rotonium announced €1 million seed investment to advance quantum computer development, with funding from Galaxia and CDP Venture Capital's Tech Transfer Fund.",
+      "url": "https://www.startupbusiness.it/en/quantum-computing-in-space-rotonium-raises-eur-1-million/141857/",
+      "source": "Startup Business",
       "date": "2024-08-02"
     }
   ]

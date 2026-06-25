@@ -4,7 +4,13 @@
   "country": "Spain",
   "region": "southern-europe",
   "type": "hardware",
-  "tags": ["analog-quantum-computing", "superconducting", "quantum-annealing", "full-stack", "eurohpc"],
+  "tags": [
+    "analog-quantum-computing",
+    "superconducting",
+    "quantum-annealing",
+    "full-stack",
+    "eurohpc"
+  ],
   "founded": 2019,
   "description": "Qilimanjaro Quantum Tech builds full-stack analog quantum computers based on superconducting fluxonium qubits. A spin-off of IFAE, BSC, and the University of Barcelona, the company won the Quantum Spain tender to build the first Spanish quantum computer and operates the first multimodal quantum data center in Europe at the Barcelona Supercomputing Center.",
   "website": "https://qilimanjaro.tech",
@@ -39,6 +45,25 @@
       "url": "https://insidehpc.com/2025/02/eurohpc-ju-acquires-e8-5m-qilimanjaro-quantum-annealer-to-be-at-barcelona-supercomputing-center/",
       "title": "EuroHPC JU Acquires EUR 8.5M Qilimanjaro Quantum Annealer to be at Barcelona Supercomputing Center",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://thequantuminsider.com/2026/05/28/qilimanjaro-inaugurates-an-analog-quantum-computer-at-barcelona-supercomputing-center/",
+      "title": "Qilimanjaro Inaugurates an Analog Quantum Computer at Barcelona Supercomputing Center"
+    },
+    {
+      "type": "press-release",
+      "url": "https://quantumcomputingreport.com/qilimanjaro-deploys-an-analog-quantum-computer-at-the-barcelona-supercomputing-center/",
+      "title": "Qilimanjaro Deploys an Analog Quantum Computer at the Barcelona Supercomputing Center"
+    }
+  ],
+  "news": [
+    {
+      "title": "Qilimanjaro Inaugurates an Analog Quantum Computer at Barcelona Supercomputing Center",
+      "excerpt": "Qilimanjaro Quantum Tech inaugurated a new analog quantum computer at Barcelona Supercomputing Center, expanding the hybrid MareNostrum-Ona infrastructure that combines analog quantum, digital quantum, and classical supercomputing resources.",
+      "url": "https://thequantuminsider.com/2026/05/28/qilimanjaro-inaugurates-an-analog-quantum-computer-at-barcelona-supercomputing-center/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-28"
     }
   ]
 }

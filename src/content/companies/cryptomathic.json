@@ -4,7 +4,12 @@
   "country": "Denmark",
   "region": "nordics",
   "type": "software",
-  "tags": ["post-quantum-crypto", "key-management", "code-signing", "AU-spinout"],
+  "tags": [
+    "post-quantum-crypto",
+    "key-management",
+    "code-signing",
+    "AU-spinout"
+  ],
   "founded": 1986,
   "description": "Cryptomathic is an established cryptography software vendor spun out of Aarhus University in 1986, providing key management, code signing, electronic identity, and digital signature solutions to banks, governments, and enterprises. The company has an active post-quantum cryptography product line focused on crypto-agility and PQC migration. Cryptomathic announced a strategic alliance with PQShield in 2024 to deliver NIST-PQC-compliant code-signing and data-protection solutions aligned with CNSA 2.0 recommendations.",
   "website": "https://www.cryptomathic.com",
@@ -35,6 +40,20 @@
       "url": "https://digitallead.dk/files/Innovation/Cyberboost%20-%20Quantum%20related%20cyber%20security.pdf",
       "title": "Cyberboost - Quantum-related cyber security - DigitalLead institutional report",
       "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://www.globalsecuritymag.com/Controlling-stake-in-Cryptomathic,20210624,113208.html",
+      "title": "Controlling stake in Cryptomathic acquired by Riverside – Global Security Mag Online"
+    }
+  ],
+  "news": [
+    {
+      "title": "Riverside Company acquires controlling stake in Cryptomathic",
+      "excerpt": "The Riverside Company, a global private investor focused on the smaller end of the middle market, has acquired a controlling stake in Cryptomathic. Riverside, supported by its institutional co-investors, is partnering with Cryptomathic's founder and management team who continue to hold key management positions and a minority stake in the business.",
+      "url": "https://www.globalsecuritymag.com/Controlling-stake-in-Cryptomathic,20210624,113208.html",
+      "source": "Global Security Mag",
+      "date": "2021-06-24"
     }
   ]
 }

@@ -4,7 +4,11 @@
   "country": "France",
   "region": "western-europe",
   "type": "hardware",
-  "tags": ["photonic", "quantum-computing", "cloud-access"],
+  "tags": [
+    "photonic",
+    "quantum-computing",
+    "cloud-access"
+  ],
   "founded": 2017,
   "description": "Quandela develops photonic quantum computers based on single-photon sources and manipulation. The company offers both on-premise quantum processors and cloud access to their quantum computing platform, targeting applications in optimization, simulation, and machine learning.",
   "website": "https://www.quandela.com",
@@ -39,9 +43,45 @@
       "url": "https://www.crunchbase.com/organization/quandela",
       "title": "Quandela Crunchbase Company Profile",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "url",
+      "url": "https://sifted.eu/articles/french-startup-quandela-raises-e50m",
+      "title": "French startup Quandela raises €50m to manufacture commercial quantum computers"
+    },
+    {
+      "type": "website",
+      "url": "https://www.cnrs.fr/en/press/quandela-cnrs-universite-paris-saclay-and-universite-paris-cite-join-forces-accelerate",
+      "title": "Quandela, the CNRS, Université Paris-Saclay and Université Paris Cité join forces to accelerate research and innovation in quantum photonics"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2025/02/07/quandelas-hybrid-photonic-approach-reduces-resource-requirements-for-fault-tolerant-quantum-computing/",
+      "title": "Quandela's Hybrid Photonic Approach Reduces Resource Requirements for Fault-Tolerant Quantum Computing"
     }
   ],
   "news": [
+    {
+      "title": "French startup Quandela raises €50m to manufacture commercial quantum computers",
+      "excerpt": "French startup Quandela has raised a €50m Series B to manufacture photonic quantum computers and sell them to industrial customers.",
+      "url": "https://sifted.eu/articles/french-startup-quandela-raises-e50m",
+      "source": "Sifted",
+      "date": "2023-11-07"
+    },
+    {
+      "title": "Quandela, the CNRS, Université Paris-Saclay and Université Paris Cité join forces to accelerate research and innovation in quantum photonics",
+      "excerpt": "Quandela, the CNRS, Université Paris-Saclay, and Université Paris Cité inaugurated the QDlight associated research laboratory focusing on research in quantum photonics.",
+      "url": "https://www.cnrs.fr/en/press/quandela-cnrs-universite-paris-saclay-and-universite-paris-cite-join-forces-accelerate",
+      "source": "CNRS",
+      "date": "2024-11-14"
+    },
+    {
+      "title": "Quandela's Hybrid Photonic Approach Reduces Resource Requirements for Fault-Tolerant Quantum Computing",
+      "excerpt": "Quandela announces a hybrid method that reduces resource requirements for fault-tolerant quantum computing by a factor of 100,000 compared to conventional photonic approaches.",
+      "url": "https://thequantuminsider.com/2025/02/07/quandelas-hybrid-photonic-approach-reduces-resource-requirements-for-fault-tolerant-quantum-computing/",
+      "source": "The Quantum Insider",
+      "date": "2025-02-07"
+    },
     {
       "title": "Quandela deploys Lucy photonic quantum computer integrated with Joliot-Curie HPC",
       "excerpt": "Franco-German consortium inaugurates the world's most powerful photonic quantum system alongside a European supercomputer for hybrid HPC-quantum workloads.",

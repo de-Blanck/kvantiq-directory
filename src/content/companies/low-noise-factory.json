@@ -4,7 +4,12 @@
   "country": "Sweden",
   "region": "nordics",
   "type": "hardware",
-  "tags": ["cryogenic-amplifiers", "microwave", "quantum-readout", "photonics"],
+  "tags": [
+    "cryogenic-amplifiers",
+    "microwave",
+    "quantum-readout",
+    "photonics"
+  ],
   "founded": 2005,
   "description": "Low Noise Factory is a Swedish manufacturer of cryogenic low-noise microwave amplifiers, founded as a spin-off from Chalmers University of Technology in Gothenburg. The company's ultra-sensitive amplifiers operate near absolute zero and are used in quantum computing readout chains, radio astronomy, and space exploration. Low Noise Factory's products have become a backbone component for superconducting qubit measurement setups worldwide.",
   "website": "https://lownoisefactory.com",
@@ -39,6 +44,11 @@
       "url": "https://qsip.se/https-qsip-se-quantum-in-sweden-articles-lnf/",
       "title": "Low noise with high potential - QSIP",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2021/07/18/8-nordic-qc-companies-out-to-make-a-name-for-themselves/",
+      "title": "8 Nordic QC Companies Out To Make a Name For Themselves"
     }
   ]
 }

@@ -45,15 +45,27 @@
       "url": "https://delft-circuits.com/delft-circuits-and-bluefors-join-forces-on-scalable-quantum-i-o-for-next-generation-quantum-computers/",
       "title": "Delft Circuits and Bluefors Join Forces on Scalable Quantum I/O for Next-Generation Quantum Computers",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://thequantuminsider.com/2025/12/03/delft-circuits-new-ceo-financing/",
+      "title": "Delft Circuits Names Martin Danoesastro CEO and Extends Funding Round"
     }
   ],
   "news": [
     {
-      "title": "Delft Circuits and Bluefors Join Forces",
-      "excerpt": "Bluefors, the world leader in cryogenic measurement systems, announced a strategic partnership with Delft Circuits to offer their turnkey quantum input/output (I/O) solutions. By integrating Delft Circuits' Cri/oFlex® technology into Bluefors' dilution refrigerators, customers will now benefit from a complete, proven, fully scalable quantum I/O solution.",
+      "title": "Delft Circuits and Bluefors Join Forces on Scalable Quantum I/O",
+      "excerpt": "Bluefors announced a strategic partnership with Delft Circuits to integrate Cri/oFlex® technology into Bluefors' dilution refrigerators, offering customers a complete, proven quantum I/O solution.",
       "url": "https://delft-circuits.com/delft-circuits-and-bluefors-join-forces-on-scalable-quantum-i-o-for-next-generation-quantum-computers/",
       "source": "Delft Circuits",
       "date": "2025-09-30"
+    },
+    {
+      "title": "Delft Circuits Names Martin Danoesastro CEO and Extends Funding Round",
+      "excerpt": "Delft Circuits appointed Martin Danoesastro as CEO and extended its financing round by €8 million, bringing total funding to €15 million.",
+      "url": "https://thequantuminsider.com/2025/12/03/delft-circuits-new-ceo-financing/",
+      "source": "The Quantum Insider",
+      "date": "2025-12-03"
     }
   ]
 }

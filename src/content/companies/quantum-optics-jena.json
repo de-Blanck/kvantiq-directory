@@ -41,15 +41,27 @@
       "url": "https://www.bm-t.de/en/2024-en/quantum-optics-jena-secures-e8-5-million-in-series-a-funding-to-revolutionize-secure-communications/",
       "title": "Quantum Optics Jena Secures EUR 8.5 Million in Series A Funding — bm|t",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://www.iof.fraunhofer.de/en/pressrelease/2021/quantum-optics-jena.html",
+      "title": "Quantum Optics Jena: Fraunhofer IOF technology start-up"
     }
   ],
   "news": [
     {
-      "title": "Quantum Optics Jena Secures €8.5 Million in Series A Funding to Revolutionize Secure Communications",
-      "excerpt": "Quantum Optics Jena announced the closing of an €8.5 million Series A funding round led by Join Capital, with early investors ELAS Technologies GmbH, Fraunhofer Technologies-Transfer Fonds, and beteiligungsmanagement Thüringen (bm|t) as well as business angel Malte Pollmann. The funding will fuel expansion and accelerate commercialization of its quantum key distribution technology.",
+      "title": "Quantum Optics Jena Secures €8.5 Million in Series A Funding",
+      "excerpt": "Series A funding round led by JoinCapital, joined by ELAS Technologies GmbH, Fraunhofer Technologies-Transfer Fonds, and beteiligungs­management Thüringen (bm|t) to fuel QOJ's expansion and accelerate commercialization of quantum key distribution technology.",
       "url": "https://www.bm-t.de/en/2024-en/quantum-optics-jena-secures-e8-5-million-in-series-a-funding-to-revolutionize-secure-communications/",
       "source": "bm|t",
       "date": "2024-09-12"
+    },
+    {
+      "title": "Quantum Optics Jena Completes Seed Funding",
+      "excerpt": "Fraunhofer IOF spin-off successfully completes seed funding to develop high-security quantum communication systems based on quantum optics and quantum key distribution.",
+      "url": "https://www.iof.fraunhofer.de/en/pressrelease/2021/quantum-optics-jena.html",
+      "source": "Fraunhofer IOF",
+      "date": "2021-02-10"
     }
   ]
 }

@@ -4,7 +4,12 @@
   "country": "Italy",
   "region": "southern-europe",
   "type": "hardware",
-  "tags": ["photonics", "quantum-chips", "glass-photonic", "eu-chips-act"],
+  "tags": [
+    "photonics",
+    "quantum-chips",
+    "glass-photonic",
+    "eu-chips-act"
+  ],
   "founded": 2022,
   "description": "Ephos designs and manufactures glass-based quantum photonic chips at its facility in Milan, the first of its kind worldwide. Founded by researchers from Stanford, Harvard, and Politecnico di Milano, the company has secured EUR 41.5M under the EU Chips Act to build a second manufacturing facility for glass photonic chip production in Italy.",
   "website": "https://ephos.io",
@@ -35,6 +40,25 @@
       "url": "https://www.eu-startups.com/2024/09/milan-based-ephos-raises-e7-6-million-to-deliver-glass-based-quantum-photonic-chips/",
       "title": "Milan-based Ephos raises EUR 7.6 million to deliver glass-based quantum photonic chips - EU-Startups",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.siliconrepublic.com/machines/quantum-chips-photonics-ephos-italy-funding",
+      "title": "Italy is getting a new glass-based quantum photonic chip facility"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2024/09/24/glass-based-photonic-chip-startup-ephos-secures-8-5m-to-innovate-quantum-computing-and-ai-infrastructure/",
+      "title": "Glass-Based Photonic Chip Startup Ephos Secures $8.5M to Innovate Quantum Computing and AI Infrastructure"
+    }
+  ],
+  "news": [
+    {
+      "title": "Ephos Raises $8.5M Seed Funding for Glass Quantum Photonic Chips",
+      "excerpt": "Milan-based quantum photonics startup Ephos raised $8.5 million in seed funding led by Starlight Ventures to establish the world's first glass-based quantum photonic circuits manufacturing facility in Italy.",
+      "url": "https://thequantuminsider.com/2024/09/24/glass-based-photonic-chip-startup-ephos-secures-8-5m-to-innovate-quantum-computing-and-ai-infrastructure/",
+      "source": "The Quantum Insider",
+      "date": "2024-09-24"
     }
   ]
 }

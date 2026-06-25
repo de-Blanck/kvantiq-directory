@@ -4,7 +4,12 @@
   "country": "Austria",
   "region": "dach",
   "type": "hardware",
-  "tags": ["quantum-communication", "satellite-qkd", "free-space-optics", "quantum-key-distribution"],
+  "tags": [
+    "quantum-communication",
+    "satellite-qkd",
+    "free-space-optics",
+    "quantum-key-distribution"
+  ],
   "founded": 2017,
   "description": "Quantum Technology Laboratories (qtlabs) is a Vienna-based company specializing in free-space and satellite-based quantum communication systems. Building on over 20 years of pioneering research including world-record satellite quantum downlinks, qtlabs develops space-based quantum key distribution technology to enable global quantum-secure communication networks.",
   "website": "https://www.qtlabs.at",
@@ -39,6 +44,25 @@
       "url": "https://thequantuminsider.com/2021/05/29/austrian-startup-has-star-trek-like-designs-prototypes-in-quantum-space-communication/",
       "title": "Austrian Startup Has Star Trek-Like Designs & Prototypes in Quantum Space Communication - The Quantum Insider",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "website",
+      "url": "https://esaphilab.at/projects/quantum-technology-laboratories",
+      "title": "Quantum Technology Laboratories | ESA Phi-Lab Austria"
+    },
+    {
+      "type": "website",
+      "url": "https://www.nature.com/nature-index/institution-outputs/austria/quantum-technology-laboratories-gmbh-qtlabs/64ed2a25f7dfa9e1b5041967",
+      "title": "Quantum Technology Laboratories GmbH (qtlabs) | Research profile | Nature Index"
+    }
+  ],
+  "news": [
+    {
+      "title": "Austrian Startup Has Star Trek-Like Designs & Prototypes in Quantum Space Communication",
+      "excerpt": "Coverage of Austrian startup specializing in quantum space communication and satellite quantum cryptography, including Vienna-based research on quantum-encrypted communications",
+      "url": "https://thequantuminsider.com/2021/05/29/austrian-startup-has-star-trek-like-designs-prototypes-in-quantum-space-communication/",
+      "source": "The Quantum Insider",
+      "date": "2021-05-29"
     }
   ]
 }

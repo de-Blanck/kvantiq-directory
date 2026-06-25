@@ -40,7 +40,37 @@
       "url": "https://www.linkedin.com/company/bosch-quantum-sensing/",
       "title": "Bosch Quantum Sensing LinkedIn Company Page",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2025/04/07/bosch-and-element-six-form-joint-venture-to-scale-quantum-sensing-technologies/",
+      "title": "Bosch and Element Six Form Joint Venture to Scale Quantum Sensing Technologies"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/bosch-and-element-six-form-joint-venture-for-quantum-sensing-commercialization/",
+      "title": "Bosch and Element Six Form Joint Venture for Quantum Sensing Commercialization"
+    },
+    {
+      "type": "url",
+      "url": "https://www.eenewseurope.com/en/bosch-element-six-aim-for-chip-scale-diamond-quantum-sensor/",
+      "title": "Bosch, Element Six aim for chip-scale diamond quantum sensor"
     }
   ],
-  "news": []
+  "news": [
+    {
+      "title": "Bosch and Element Six Form Joint Venture to Scale Quantum Sensing Technologies",
+      "excerpt": "Bosch has formed a joint venture with Element Six to commercialize quantum sensors. Bosch will lead operations and Element Six will hold a 25% stake. The new entity Bosch Quantum Sensing is based in Ludwigsburg, Germany.",
+      "url": "https://thequantuminsider.com/2025/04/07/bosch-and-element-six-form-joint-venture-to-scale-quantum-sensing-technologies/",
+      "source": "The Quantum Insider",
+      "date": "2025-04-07"
+    },
+    {
+      "title": "Bosch, Element Six aim for chip-scale diamond quantum sensor",
+      "excerpt": "Bosch is spinning out its quantum sensor startup into a joint venture with synthetic diamond maker Element Six to make chip-scale devices. Long-term goal is to integrate sensors onto a chip.",
+      "url": "https://www.eenewseurope.com/en/bosch-element-six-aim-for-chip-scale-diamond-quantum-sensor/",
+      "source": "eeNews Europe",
+      "date": "2025-04-07"
+    }
+  ]
 }

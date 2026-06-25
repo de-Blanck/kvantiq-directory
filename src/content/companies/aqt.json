@@ -44,9 +44,21 @@
       "url": "https://thequantuminsider.com/companies/alpine-quantum-technologies/",
       "title": "Alpine Quantum Technologies - The Quantum Insider",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2023/12/08/trapped-ion-quantum-computer-now-available-in-munich-quantum-valley/",
+      "title": "Trapped-Ion Quantum Computer Now Available in Munich Quantum Valley"
     }
   ],
   "news": [
+    {
+      "title": "Trapped-Ion Quantum Computer Now Available in Munich Quantum Valley",
+      "excerpt": "The Leibniz Supercomputing Centre procures a 20-qubit ion trap quantum computer developed by Austrian-based start-up Alpine Quantum Technologies for its Quantum Integration Centre.",
+      "url": "https://thequantuminsider.com/2023/12/08/trapped-ion-quantum-computer-now-available-in-munich-quantum-valley/",
+      "source": "The Quantum Insider",
+      "date": "2023-12-08"
+    },
     {
       "title": "AQT realises the first general-purpose quantum computer",
       "excerpt": "AQT realises the first general-purpose quantum computer",

@@ -44,7 +44,25 @@
       "url": "https://www.linkedin.com/company/orange-quantum-systems/",
       "title": "Orange Quantum Systems LinkedIn Company Page",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2025/06/18/orange-quantum-systems-raises-e12-million-seed-round/",
+      "title": "Orange Quantum Systems Raises €12 Million Seed Round"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/orange-quantum-systems-raises-e12m-13-8m-usd-to-scale-high-throughput-quantum-chip-testing/",
+      "title": "Orange Quantum Systems Raises €12M ($13.8M USD) to Scale High-Throughput Quantum Chip Testing"
     }
   ],
-  "news": []
+  "news": [
+    {
+      "title": "Orange Quantum Systems Raises €12 Million Seed Round",
+      "excerpt": "Dutch startup Orange Quantum Systems raised €12 million in an oversubscribed seed round, the largest to date in the Netherlands' quantum computing sector. The funding will accelerate development of scalable quantum chip testing tools.",
+      "url": "https://thequantuminsider.com/2025/06/18/orange-quantum-systems-raises-e12-million-seed-round/",
+      "source": "The Quantum Insider",
+      "date": "2025-06-18"
+    }
+  ]
 }

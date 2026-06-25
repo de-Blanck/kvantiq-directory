@@ -43,14 +43,24 @@
       "url": "https://aqarios.com/aqarios-luna-quantum-platform-launch/",
       "title": "Aqarios launches Luna, a quantum computing platform designed to simplify complex problem-solving for businesses",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.bayern-innovativ.de/en/profiles/aqarios-gmbh/",
+      "title": "Aqarios GmbH Profile | Bayern Innovativ"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/html/2505.16444v1",
+      "title": "Scaling Quantum Simulation-Based Optimization: Demonstrating Efficient Power Grid Management with Deep QAOA Circuits"
     }
   ],
   "news": [
     {
-      "title": "Aqarios Launches Quantum Platform Luna to Bring Quantum Applications Closer to End Users",
-      "excerpt": "Aqarios announced the launch of Luna, a quantum computing platform that simplifies quantum application development and brings quantum computing power directly to businesses without requiring quantum expertise. The platform features over 40 ready-to-use optimization scenarios and more than 30 specialized algorithms.",
+      "title": "Aqarios Launches Luna Quantum Platform",
+      "excerpt": "After a successful closed beta phase, Luna is now available to the public, providing businesses, developers, and researchers with access to a comprehensive suite of quantum tools. Luna democratizes quantum computing, making it accessible to users of all technical backgrounds.",
       "url": "https://aqarios.com/aqarios-luna-quantum-platform-launch/",
-      "source": "Aqarios",
+      "source": "Aqarios official announcement",
       "date": "2024-11-04"
     }
   ]

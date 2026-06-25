@@ -4,7 +4,11 @@
   "country": "Germany",
   "region": "dach",
   "type": "hardware",
-  "tags": ["photonic-quantum", "quantum-sensing", "quantum-computing"],
+  "tags": [
+    "photonic-quantum",
+    "quantum-sensing",
+    "quantum-computing"
+  ],
   "founded": 2018,
   "description": "Q.ANT is a German quantum technology company developing photonic quantum solutions for computing and sensing applications. Spun out from high-tech manufacturer Trumpf, Q.ANT builds quantum sensors and photonic quantum processors using integrated photonics technology for industrial and scientific applications.",
   "website": "https://www.q-ant.com",
@@ -40,6 +44,25 @@
       "url": "https://www.linkedin.com/company/q-ant/",
       "title": "Q.ANT LinkedIn Company Page",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "press-release",
+      "url": "https://qant.com/press-releases/phoquant-quantum-computing-consortium-led-by-qant-receives-50-million-euros-in-research-funding/",
+      "title": "Quantum computing: Phoquant Consortium led by Q.ANT receives 50 million euros in research funding"
+    },
+    {
+      "type": "url",
+      "url": "https://www.trumpf.com/en_US/newsroom/global-press-releases/press-release-detail-page/release/quantum-computing-consortium-led-by-qant-receives-50-million-euros-in-research-funding/",
+      "title": "Quantum computing: consortium led by Q.ANT receives 50 million euros in research funding"
+    }
+  ],
+  "news": [
+    {
+      "title": "Phoquant Consortium led by Q.ANT receives 50 million euros in research funding",
+      "excerpt": "Consortium led by quantum start-up Q.ANT receives 50 million euros in research funding (42M from German Federal Ministry of Education and Research, 8M from consortium partners) for five-year PhoQuant project to develop photonic quantum computing chips and components.",
+      "url": "https://qant.com/press-releases/phoquant-quantum-computing-consortium-led-by-qant-receives-50-million-euros-in-research-funding/",
+      "source": "Q.ANT Press Release",
+      "date": "2022-03-01"
     }
   ]
 }

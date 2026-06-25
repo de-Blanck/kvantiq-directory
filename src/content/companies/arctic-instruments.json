@@ -4,7 +4,12 @@
   "country": "Finland",
   "region": "nordics",
   "type": "hardware",
-  "tags": ["quantum-amplifiers", "superconducting", "measurement", "VTT-spinoff"],
+  "tags": [
+    "quantum-amplifiers",
+    "superconducting",
+    "measurement",
+    "VTT-spinoff"
+  ],
   "founded": 2024,
   "description": "Arctic Instruments is a VTT spin-off specializing in superconducting amplifiers for quantum computers. The company develops ultra-low-noise quantum-limited amplifiers essential for reading out quantum states in superconducting quantum processors. Arctic Instruments' technology enables more accurate and faster qubit measurements, improving the performance and scalability of quantum computing systems.",
   "website": "https://arcticinst.io",
@@ -36,6 +41,11 @@
       "url": "https://www.eu-startups.com/2024/06/arctic-instruments-raises-e2-35-million-seed-funding/",
       "title": "Arctic Instruments raises €2.35 million seed funding - EU-Startups",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.vttresearch.com/en/news-and-ideas/arctic-instruments-raises-eur-235-million-developing-next-generation-amplifiers",
+      "title": "Arctic Instruments raises EUR 2.35 million for developing next-generation amplifiers for quantum computers"
     }
   ]
 }

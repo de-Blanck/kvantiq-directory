@@ -4,7 +4,11 @@
   "country": "Austria",
   "region": "dach",
   "type": "software",
-  "tags": ["quantum-architecture", "quantum-compiler", "optimization"],
+  "tags": [
+    "quantum-architecture",
+    "quantum-compiler",
+    "optimization"
+  ],
   "founded": 2020,
   "description": "ParityQC is an Austrian quantum software company developing quantum computing architecture optimization and compiler technology. The company provides ParityOS, a blueprint for quantum computers optimized for solving optimization problems, and works with hardware providers to improve quantum system performance.",
   "website": "https://www.parityqc.com",
@@ -52,6 +56,13 @@
     }
   ],
   "news": [
+    {
+      "title": "YZ-plane measurement-based quantum computation: Universality and Parity Architecture implementation",
+      "excerpt": "Peer-reviewed paper demonstrating universal quantum computation driven by YZ-plane measurements and embedding into the ParityQC Architecture with register-logic graphs.",
+      "url": "https://arxiv.org/abs/2603.29379",
+      "source": "arXiv",
+      "date": "2026-03-31"
+    },
     {
       "title": "QUDORA and ParityQC partner to optimise quantum algorithms for trapped-ion systems",
       "excerpt": "Partnership combines QUDORA's Near-Field Quantum Control with ParityQC's Parity Twine architecture to reduce gate counts on ion-trap hardware.",

@@ -4,7 +4,13 @@
   "country": "France",
   "region": "western-europe",
   "type": "software",
-  "tags": ["quantum-emulation", "HPC", "Qaptiva", "quantum-software", "EuroHPC"],
+  "tags": [
+    "quantum-emulation",
+    "HPC",
+    "Qaptiva",
+    "quantum-software",
+    "EuroHPC"
+  ],
   "founded": 2014,
   "description": "Eviden, the Atos Group digital business rebranded as Bull in 2026, develops the Qaptiva quantum computing platform for algorithm development, optimization, and emulation on classical HPC infrastructure. The Qaptiva ecosystem includes quantum emulators capable of simulating up to 43 qubits and the open-source myQLM Python framework for quantum programming.",
   "website": "https://eviden.com/solutions/quantum-computing/",
@@ -40,6 +46,16 @@
       "url": "https://www.hpcwire.com/aiwire/2026/01/29/atos-relaunches-bull-brand-for-high-performance-computing-ai-and-quantum/",
       "title": "Atos Relaunches Bull Brand for High Performance Computing, AI, and Quantum",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://www.hpcwire.com/off-the-wire/eviden-enables-quantum-emulation-in-hpc-through-dedicated-software/",
+      "title": "Eviden Enables Quantum Emulation in HPC Through Dedicated Software"
+    },
+    {
+      "type": "url",
+      "url": "https://www.datacenterdynamics.com/en/news/eviden-installs-5-qubit-iqm-quantum-computer-in-france/",
+      "title": "Eviden installs 5-qubit IQM quantum computer in France"
     }
   ]
 }

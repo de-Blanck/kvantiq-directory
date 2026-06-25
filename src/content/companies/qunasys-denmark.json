@@ -51,17 +51,17 @@
   ],
   "news": [
     {
-      "title": "QunaSys Establishes Overseas Subsidiary in Copenhagen, Denmark, to Expand Quantum Technology Footprint in Europe",
-      "excerpt": "QunaSys, a leading quantum computing company, proudly announces the establishment of its first overseas subsidiary, QunaSys Denmark ApS, in the vibrant city of Copenhagen. The subsidiary officially commenced operations on August 29, 2023.",
+      "title": "QunaSys Establishes Overseas Subsidiary in Copenhagen, Denmark",
+      "excerpt": "QunaSys Denmark ApS officially commenced operations on August 29, 2023, at Deep Tech Lab — Quantum at Bio Innovation Institute in Copenhagen, marking the company's first overseas subsidiary.",
       "url": "https://qunasys.com/en/news/posts/231011en/",
-      "source": "QunaSys",
+      "source": "qunasys.com",
       "date": "2023-10-11"
     },
     {
       "title": "QunaSys Secures the Innovation Fund Denmark's Grant for Quantum Chemistry Breakthroughs",
-      "excerpt": "QunaSys is proud to announce that it has been awarded funding from the Innovation Fund Denmark as part of the HyperTenQ project, an initiative aimed at advancing quantum computing for chemistry. With an investment of DKK 19 million, this prestigious grant recognizes QunaSys's leadership in quantum computing and its potential to transform materials science, drug discovery, and sustainable technologies.",
+      "excerpt": "QunaSys awarded DKK 19 million from Innovation Fund Denmark for the HyperTenQ project, a four-year collaboration with the University of Copenhagen and Novo Nordisk Foundation Quantum Computing Programme to advance quantum-enhanced chemical simulations for drug discovery.",
       "url": "https://qunasys.com/en/news/posts/hypertenq/",
-      "source": "QunaSys",
+      "source": "qunasys.com",
       "date": "2025-03-03"
     }
   ]

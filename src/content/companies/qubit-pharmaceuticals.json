@@ -41,9 +41,26 @@
       "url": "https://quantumcomputingreport.com/qubit-pharmaceuticals-announces-dual-breakthroughs-quantum-speedup-and-2028-utility-path-for-drug-discovery/",
       "title": "Qubit Pharmaceuticals Announces Dual Breakthroughs: Quantum Speedup and 2028 Utility Path for Drug Discovery",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.sorbonne-universite.fr/en/start-up/qubit-pharmaceuticals",
+      "title": "Qubit Pharmaceuticals | Sorbonne Université"
+    },
+    {
+      "type": "url",
+      "url": "https://www.eurekalert.org/news-releases/1126479",
+      "title": "Qubit Pharmaceuticals announces strategic collaboration with Singapore's Centre for Quantum Technologies to advance quantum algorithms for drug discovery | EurekAlert!"
     }
   ],
   "news": [
+    {
+      "title": "Qubit Pharmaceuticals announces strategic collaboration with Singapore's Centre for Quantum Technologies to advance quantum algorithms for drug discovery",
+      "excerpt": "Strategic research collaboration to develop novel quantum algorithms for molecular discovery, combining Qubit Pharmaceuticals' expertise in quantum chemistry with CQT's capabilities in quantum computing and experimental implementation.",
+      "url": "https://www.eurekalert.org/news-releases/1126479",
+      "source": "EurekAlert",
+      "date": "2026-04-30"
+    },
     {
       "title": "Qubit Pharmaceuticals Announces Dual Breakthroughs: Quantum Speedup and 2028 Utility Path for Drug Discovery",
       "excerpt": "Qubit Pharmaceuticals announced two simultaneous milestones: a collaboration with Sorbonne University published in Nature Communications demonstrating quantum algorithms can surpass theoretical speed limits for non-reversible Markov chains, and a preprint with Q-CTRL establishing a timeline for quantum utility in drug discovery by 2028.",

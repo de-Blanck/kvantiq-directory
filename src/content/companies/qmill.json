@@ -40,9 +40,21 @@
       "url": "https://thequantuminsider.com/2024/11/19/qmill-raises-5m-seed-funding/",
       "title": "QMill Raises $5M Seed Funding - The Quantum Insider",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://lumi-supercomputer.eu/qmill-devlops-quantum-algorithms/",
+      "title": "QMill develops quantum algorithms for the near future on the LUMI supercomputer"
     }
   ],
   "news": [
+    {
+      "title": "QMill develops quantum algorithms for the near future on the LUMI supercomputer",
+      "excerpt": "QMill is a Finnish startup company developing quantum algorithms for industrial use on a quantum computer in a 3-5 year timespan. The company uses the LUMI supercomputer to simulate and compare algorithms.",
+      "url": "https://lumi-supercomputer.eu/qmill-devlops-quantum-algorithms/",
+      "source": "LUMI Supercomputer",
+      "date": "2025-03-27"
+    },
     {
       "title": "Blog: QMill's quantum circuits at Junction Quantum Hack 2026",
       "excerpt": "QMill participated in the pioneering Quantum Hack as both a challenge and tech partner. QMill challenge attracted many participants, who worked on the challenge through the QMill Quantum Advantage Services platform.",
