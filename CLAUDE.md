@@ -151,6 +151,21 @@ The 3-credible-source minimum applies to **all new entries and any edited entrie
 - **Stage generated files before switching branches.** Any file you create must be `git add`ed in the same turn, OR placed in a gitignored scratch dir. Never leave generated work untracked — past sessions lost documentation during branch switches.
 - **Escape hatch:** If you truly need to commit to main (e.g., updating CLAUDE.md on main itself), append `#allow-main-commit` to the commit command.
 
+## Context & Autonomy
+
+Instantiates the global Context Window Management rules (`~/.claude/CLAUDE.md`) for this repo.
+
+- **Always redirect, then `tail -20`:** these commands are verbose or hit APIs and will flood context if run raw —
+  - `node scripts/scheduled-run.mjs` (AI content sweep)
+  - `npm run build` (Astro + pagefind)
+  - `npx vercel@latest deploy --prod --yes`
+  - `npm run audit:sources` / `npm run audit:content`
+
+  Run as `cmd > some.log 2>&1` then `tail -20 some.log`; open the full log only if the tail shows a problem.
+- **Handoff artifact:** `STATUS.md` at repo root — current content/deploy state, source-backfill progress, and the next step. Read it at session start; update it before ending or handing off.
+- **Phase map for long content work:** sweep → source-backfill (one collection at a time) → build/validate → deploy. Each phase commits on its own branch and updates `STATUS.md` before the next begins.
+- **Always delegate to a subagent:** reading `src/content/**` (200+ JSON entries) and full `audit:sources` output. Return counts and the worklist, not raw dumps.
+
 ## Windows Environment
 
 - **Playwright/Chrome MCP are unreliable on Windows.** Prefer manual screenshot verification or skip visual checks unless the user specifically requests them.
