@@ -2,7 +2,13 @@
   "name": "Pulser",
   "slug": "pulser",
   "type": "framework",
-  "tags": ["neutral-atom", "pulse-level", "open-source", "python", "analog-quantum"],
+  "tags": [
+    "neutral-atom",
+    "pulse-level",
+    "open-source",
+    "python",
+    "analog-quantum"
+  ],
   "description": "Pulser is an open-source Python library for designing, simulating, and executing pulse sequences on neutral-atom quantum processors, developed by Pasqal. It gives users low-level control over laser pulse parameters and atom array configurations, with built-in emulation via QuTiP.",
   "website": "https://docs.pasqal.com/pulser/",
   "openSource": true,
@@ -24,6 +30,16 @@
       "url": "https://github.com/pasqal-io/Pulser",
       "title": "Pulser GitHub Repository",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2104.15044",
+      "title": "Pulser: An open-source package for the design of pulse sequences in programmable neutral-atom arrays"
+    },
+    {
+      "type": "doi",
+      "url": "https://quantum-journal.org/papers/q-2022-01-24-629/",
+      "title": "Pulser: An open-source package for the design of pulse sequences in programmable neutral-atom arrays"
     }
   ]
 }

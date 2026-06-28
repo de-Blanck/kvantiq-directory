@@ -38,15 +38,32 @@
       "url": "https://www.ibm.com/quantum/blog/circuit-layer-operations-per-second",
       "title": "Driving quantum performance: CLOPS benchmark",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "website",
+      "url": "https://www.tomshardware.com/news/ibm-introduces-clops-performance-standard-for-quantum-computing",
+      "title": "IBM Introduces CLOPS Performance Standard for Quantum Computing"
+    },
+    {
+      "type": "website",
+      "url": "https://thequantuminsider.com/2021/11/04/ibm-proposes-a-new-way-to-measure-quantum-speed-clops/",
+      "title": "IBM Proposes a New Way to Measure Quantum Speed: CLOPS"
     }
   ],
   "news": [
     {
-      "title": "IBM Proposes CLOPS Quantum Speed Metric",
-      "excerpt": "IBM introduces Circuit Layer Operations Per Second (CLOPS), a hardware-agnostic speed metric that measures how fast a quantum processor can execute parameterized circuit layers, capturing the full hardware-software stack including gate execution speed, classical compilation time, control instruction generation, and data transfer rates.",
+      "title": "IBM Proposes Circuit Layer Operations Per Second (CLOPS) as Quantum Speed Metric",
+      "excerpt": "IBM scientists propose CLOPS, a hardware-agnostic metric measuring how fast a quantum processor can execute parameterized circuit layers. The metric captures the full hardware-software stack including gate execution speed, runtime compilation, classical control instruction generation, and data transfer rates.",
       "url": "https://www.ibm.com/quantum/blog/circuit-layer-operations-per-second",
       "source": "IBM Quantum Computing Blog",
       "date": "2021-11-01"
+    },
+    {
+      "title": "IBM Proposes a New Way to Measure Quantum Speed: CLOPS",
+      "excerpt": "IBM researchers report a new quantum metric called Circuit Layer Operations Per Second (CLOPS) that measures the speed a quantum processor can execute layers of parameterized circuits. The fastest IBM systems can run up to 1,400 circuit layer operations per second.",
+      "url": "https://thequantuminsider.com/2021/11/04/ibm-proposes-a-new-way-to-measure-quantum-speed-clops/",
+      "source": "The Quantum Insider",
+      "date": "2021-11-04"
     }
   ]
 }

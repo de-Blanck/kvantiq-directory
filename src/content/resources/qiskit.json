@@ -2,7 +2,13 @@
   "name": "Qiskit",
   "slug": "qiskit",
   "type": "framework",
-  "tags": ["quantum-computing", "open-source", "python", "IBM", "circuits"],
+  "tags": [
+    "quantum-computing",
+    "open-source",
+    "python",
+    "IBM",
+    "circuits"
+  ],
   "description": "Qiskit is an open-source SDK for quantum computing developed by IBM. It provides tools for creating and running quantum circuits on simulators and real IBM quantum hardware. Qiskit supports applications in chemistry, optimization, machine learning, and more.",
   "website": "https://qiskit.org",
   "openSource": true,
@@ -24,6 +30,16 @@
       "url": "https://github.com/Qiskit/qiskit",
       "title": "Qiskit GitHub Repository",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2405.08810",
+      "title": "Quantum computing with Qiskit"
+    },
+    {
+      "type": "website",
+      "url": "https://www.ibm.com/quantum/qiskit",
+      "title": "IBM Quantum Computing | Qiskit"
     }
   ]
 }

@@ -34,12 +34,24 @@
       "url": "https://www.agorize.com/en/challenges/blaisepascalquantumchallenge2025",
       "title": "The Blaise Pascal Quantum Challenge - Agorize",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2025/02/12/pasqal-announces-finalists-for-quantum-ai-hackathon-focused-on-sustainability/",
+      "title": "Pasqal Announces Finalists for Quantum AI Hackathon Focused on Sustainability"
     }
   ],
   "news": [
     {
+      "title": "Pasqal Announces 15 Finalists for Quantum AI Hackathon Focused on Sustainability",
+      "excerpt": "Pasqal announced 15 finalists for 'The Blaise Pascal Quantum Challenge' hackathon, where over 800 participants from 70+ countries developed quantum AI solutions for energy, resource efficiency, and healthcare sustainability.",
+      "url": "https://thequantuminsider.com/2025/02/12/pasqal-announces-finalists-for-quantum-ai-hackathon-focused-on-sustainability/",
+      "source": "The Quantum Insider",
+      "date": "2025-02-12"
+    },
+    {
       "title": "The Blaise Pascal Quantum Challenge 2025 - Highlights & Winners",
-      "excerpt": "Pasqal's quantum AI challenge attracted 850+ applicants from 70+ nationalities with 137 proposals submitted. The top 15 finalist teams were selected to compete in a hackathon blending quantum computing and artificial intelligence to address UN Sustainable Development Goals.",
+      "excerpt": "Pasqal announced the highlights and winners of the 2025 hackathon after a successful eight-week challenge blending Quantum Computing and Artificial Intelligence to tackle global sustainability challenges aligned with UN Sustainable Development Goals.",
       "url": "https://www.pasqal.com/events/the-blaise-pascal-quantum-challenge-2025-highlights-winners/",
       "source": "Pasqal",
       "date": "2025-04-25"

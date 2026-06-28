@@ -3,7 +3,12 @@
   "slug": "vqe-hydrogen",
   "algorithm": "Variational Quantum Eigensolver (VQE)",
   "category": "chemistry",
-  "tags": ["VQE", "chemistry", "ground-state", "hybrid"],
+  "tags": [
+    "VQE",
+    "chemistry",
+    "ground-state",
+    "hybrid"
+  ],
   "description": "Benchmark of the Variational Quantum Eigensolver algorithm for computing the ground state energy of the hydrogen molecule (H2). This is a standard benchmark for hybrid quantum-classical chemistry simulations, testing the interplay between quantum circuit evaluation and classical optimization.",
   "hardware": "Various (simulator and hardware)",
   "framework": "Qiskit, PennyLane",
@@ -11,10 +16,16 @@
   "reproducible": true,
   "datePublished": "2024-01-15",
   "keyMetrics": [
-    {"metric": "Qubits required", "value": "4"},
-    {"metric": "Molecule", "value": "H2 (hydrogen)"}
+    {
+      "metric": "Qubits required",
+      "value": "4"
+    },
+    {
+      "metric": "Molecule",
+      "value": "H2 (hydrogen)"
+    }
   ],
-  "significance": "The 'hello world' of quantum chemistry \u2014 the simplest meaningful molecular simulation, used universally to validate new VQE implementations and hardware.",
+  "significance": "The 'hello world' of quantum chemistry — the simplest meaningful molecular simulation, used universally to validate new VQE implementations and hardware.",
   "sources": [
     {
       "type": "arxiv",
@@ -27,6 +38,16 @@
       "url": "https://en.wikipedia.org/wiki/Variational_quantum_eigensolver",
       "title": "Variational Quantum Eigensolver — Wikipedia",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.11478",
+      "title": "Accuracy-Cost Trade-offs for Reference VQE Calculations of H₂ on IBM Quantum Hardware"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2305.06538",
+      "title": "Use VQE to calculate the ground energy of hydrogen molecules on IBM Quantum"
     }
   ]
 }

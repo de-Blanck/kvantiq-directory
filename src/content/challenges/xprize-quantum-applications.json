@@ -2,7 +2,13 @@
   "name": "XPRIZE Quantum Applications",
   "slug": "xprize-quantum-applications",
   "organizer": "XPRIZE Foundation, Google Quantum AI, and GESDA",
-  "tags": ["challenge", "high-prize", "algorithms", "SDGs", "multi-year"],
+  "tags": [
+    "challenge",
+    "high-prize",
+    "algorithms",
+    "SDGs",
+    "multi-year"
+  ],
   "description": "XPRIZE Quantum Applications is a three-year, USD 5 million global competition challenging teams to develop deployable quantum algorithms for real-world impact in health, climate, energy, and materials science. Launched in March 2024, it attracted 376 registered teams from 82 countries, with seven Phase I finalists sharing USD 1 million in December 2025. A Phase II Wildcard Registration window opened in early 2026, with the grand prize of USD 3 million to be awarded in March 2027.",
   "website": "https://duckduckgo.com/?q=XPRIZE+Quantum+Applications+Google+GESDA",
   "dateStart": "2024-03-01",
@@ -11,7 +17,12 @@
   "prizes": "USD 5 million total (grand prize USD 3 million)",
   "location": "Online",
   "eligibility": "Open to global teams from 82+ countries",
-  "problemDomains": ["health", "climate", "energy", "materials-science"],
+  "problemDomains": [
+    "health",
+    "climate",
+    "energy",
+    "materials-science"
+  ],
   "sources": [
     {
       "type": "website",
@@ -24,6 +35,16 @@
       "url": "https://blog.google/technology/research/google-gesda-xprize-quantum-applications-finalists/",
       "title": "The 7 finalists in the XPRIZE Quantum Applications competition - Google Blog",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "website",
+      "url": "https://blog.google/innovation-and-ai/technology/research/google-gesda-xprize-quantum-applications-finalists/",
+      "title": "The 7 finalists in the XPRIZE Quantum Applications competition"
+    },
+    {
+      "type": "website",
+      "url": "https://quantumcomputingreport.com/xprize-quantum-applications-names-seven-finalists-in-5-million-global-competition/",
+      "title": "XPRIZE Quantum Applications Names Seven Finalists in $5 Million Global Competition"
     }
   ]
 }

@@ -2,7 +2,13 @@
   "name": "IBM Quantum Challenge",
   "slug": "ibm-quantum-challenge",
   "organizer": "IBM Quantum",
-  "tags": ["challenge", "IBM", "Qiskit", "global", "recurring"],
+  "tags": [
+    "challenge",
+    "IBM",
+    "Qiskit",
+    "global",
+    "recurring"
+  ],
   "description": "IBM Quantum Challenge is a biannual global event where participants solve quantum computing problems using IBM Qiskit and real quantum hardware. Each challenge focuses on different themes such as quantum algorithms, error mitigation, or quantum applications. Challenges are designed for various skill levels from beginners to experts.",
   "website": "https://www.ibm.com/quantum/events",
   "status": "active",
@@ -10,7 +16,11 @@
   "prizes": "IBM Quantum credits and swag",
   "location": "Online",
   "eligibility": "Open to all skill levels worldwide",
-  "problemDomains": ["quantum-algorithms", "error-mitigation", "quantum-applications"],
+  "problemDomains": [
+    "quantum-algorithms",
+    "error-mitigation",
+    "quantum-applications"
+  ],
   "sources": [
     {
       "type": "website",
@@ -23,6 +33,20 @@
       "url": "https://github.com/qiskit-community/ibm-quantum-challenge-2024",
       "title": "IBM Quantum Challenge GitHub Repository",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "press-release",
+      "url": "https://thequantuminsider.com/2024/05/03/ibm-announces-2024-quantum-challenge-featuring-new-qiskit-1-0-software/",
+      "title": "IBM Announces 2024 Quantum Challenge Featuring New Qiskit 1.0 Software"
+    }
+  ],
+  "news": [
+    {
+      "title": "IBM Announces 2024 Quantum Challenge Featuring Qiskit 1.0",
+      "excerpt": "IBM launched the 2024 IBM Quantum Challenge (June 5-14, 2024) focusing on the newly released Qiskit 1.0, open to participants of all experience levels. The 2024 challenge emphasizes software simulation rather than hardware execution to accommodate large participant numbers.",
+      "url": "https://thequantuminsider.com/2024/05/03/ibm-announces-2024-quantum-challenge-featuring-new-qiskit-1-0-software/",
+      "source": "The Quantum Insider",
+      "date": "2024-05-03"
     }
   ]
 }

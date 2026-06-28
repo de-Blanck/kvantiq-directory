@@ -54,5 +54,21 @@
       "url": "https://thequantuminsider.com/2025/10/07/aqoras-new-datasets-hub-is-building-the-infrastructure-for-quantum-adoption/",
       "title": "Aqora's New Datasets Hub Is Building the Infrastructure for Quantum Adoption"
     }
+  ],
+  "news": [
+    {
+      "title": "Aqora Launches Datasets Hub to Advance Reproducibility in Quantum Research",
+      "excerpt": "Aqora has launched the Aqora Datasets Hub, a platform designed for publishing, discovering, and reusing datasets for reproducible benchmarks and quantum machine learning experiments.",
+      "url": "https://quantumcomputingreport.com/aqora-launches-datasets-hub-to-advance-reproducibility-in-quantum-research/",
+      "source": "Quantum Computing Report",
+      "date": "2025-10-08"
+    },
+    {
+      "title": "Aqora's New Datasets Hub Is Building the Infrastructure for Quantum Adoption",
+      "excerpt": "Aqora has launched a new public datasets hub at aqora.io/datasets, providing a unified space for researchers to upload, share, and explore quantum-specific datasets.",
+      "url": "https://thequantuminsider.com/2025/10/07/aqoras-new-datasets-hub-is-building-the-infrastructure-for-quantum-adoption/",
+      "source": "The Quantum Insider",
+      "date": "2025-10-07"
+    }
   ]
 }

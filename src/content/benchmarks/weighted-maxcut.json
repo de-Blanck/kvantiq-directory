@@ -39,6 +39,11 @@
       "url": "https://dl.acm.org/doi/10.1145/3584706",
       "title": "Parameter Transfer for Quantum Approximate Optimization of Weighted MaxCut",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "doi",
+      "url": "https://link.springer.com/article/10.1007/s42979-020-00437-z",
+      "title": "Efficient Encoding of the Weighted MAX k-CUT on a Quantum Computer Using QAOA"
     }
   ],
   "news": [

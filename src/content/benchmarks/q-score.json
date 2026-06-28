@@ -3,15 +3,26 @@
   "slug": "q-score",
   "algorithm": "QAOA MaxCut",
   "category": "optimization",
-  "tags": ["metric", "QAOA", "standardization", "Atos"],
+  "tags": [
+    "metric",
+    "QAOA",
+    "standardization",
+    "Atos"
+  ],
   "description": "Q-Score is a quantum computing benchmark metric developed by Atos that evaluates quantum processors using QAOA applied to the MaxCut problem. It provides a standardized, hardware-agnostic way to compare quantum computing platforms. Q-Score measures the maximum number of variables in a MaxCut problem that can be solved with acceptable quality.",
   "hardware": "Multi-platform",
   "framework": "Qiskit",
   "reproducible": true,
   "datePublished": "2021-02-24",
   "keyMetrics": [
-    {"metric": "Metric type", "value": "Max solvable MaxCut variables"},
-    {"metric": "Developer", "value": "Atos"}
+    {
+      "metric": "Metric type",
+      "value": "Max solvable MaxCut variables"
+    },
+    {
+      "metric": "Developer",
+      "value": "Atos"
+    }
   ],
   "significance": "Hardware-agnostic benchmark providing a single standardized number for cross-platform quantum processor comparison on an application-relevant problem.",
   "sources": [
@@ -26,6 +37,11 @@
       "url": "https://atos.net/en/lp/q-score",
       "title": "Q-Score — Atos Quantum Computing Benchmark",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2302.00639",
+      "title": "Extending the Q-score to an Application-level Quantum Metric Framework"
     }
   ]
 }

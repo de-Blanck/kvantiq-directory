@@ -3,15 +3,26 @@
   "slug": "quantum-volume",
   "algorithm": "Random quantum circuits",
   "category": "other",
-  "tags": ["metric", "standardization", "IBM", "hardware-performance"],
+  "tags": [
+    "metric",
+    "standardization",
+    "IBM",
+    "hardware-performance"
+  ],
   "description": "Quantum Volume is a hardware-agnostic metric developed by IBM to measure the capability of quantum computers. It uses random quantum circuits to test the combination of qubit count, gate fidelity, connectivity, and error rates. Quantum Volume provides a single-number metric that captures overall quantum processor performance and has become an industry-standard benchmark.",
   "hardware": "Multi-platform",
   "framework": "IBM Qiskit",
   "reproducible": true,
   "datePublished": "2019-03-04",
   "keyMetrics": [
-    {"metric": "Metric type", "value": "Single-number processor capability"},
-    {"metric": "Developer", "value": "IBM"}
+    {
+      "metric": "Metric type",
+      "value": "Single-number processor capability"
+    },
+    {
+      "metric": "Developer",
+      "value": "IBM"
+    }
   ],
   "significance": "The de facto industry standard for comparing quantum processors, capturing the interplay of qubit count, gate fidelity, connectivity, and error rates.",
   "sources": [
@@ -26,6 +37,21 @@
       "url": "https://en.wikipedia.org/wiki/Quantum_volume",
       "title": "Quantum Volume — Wikipedia",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "doi",
+      "url": "https://quantum-journal.org/papers/q-2020-11-15-362/",
+      "title": "A volumetric framework for quantum computer benchmarks"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/1904.05546",
+      "title": "A volumetric framework for quantum computer benchmarks"
+    },
+    {
+      "type": "website",
+      "url": "https://quantumbenchmarkzoo.org/content/system-level-benchmark/others/quantum-volume",
+      "title": "Quantum Volume - QuantumBenchmarkZoo"
     }
   ]
 }

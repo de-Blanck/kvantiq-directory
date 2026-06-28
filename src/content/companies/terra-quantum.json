@@ -40,7 +40,25 @@
       "url": "https://www.crunchbase.com/organization/terra-quantum",
       "title": "Terra Quantum - Crunchbase",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://pkic.org/members/terra-quantum/",
+      "title": "Terra Quantum | PKI Consortium"
+    },
+    {
+      "type": "url",
+      "url": "https://sifted.eu/articles/40000km-quantum-cryptography-breakthrough",
+      "title": "Terra Quantum announces 40,000km quantum cryptography breakthrough | Sifted"
     }
   ],
-  "news": []
+  "news": [
+    {
+      "title": "Terra Quantum announces 40,000km quantum cryptography breakthrough",
+      "excerpt": "Terra Quantum, the Swiss quantum technology company, is announcing a breakthrough in quantum cryptography with a technology that allows quantum cryptography keys to be transmitted over a distance of more than 40,000km.",
+      "url": "https://sifted.eu/articles/40000km-quantum-cryptography-breakthrough",
+      "source": "Sifted",
+      "date": "2021-07-08"
+    }
+  ]
 }

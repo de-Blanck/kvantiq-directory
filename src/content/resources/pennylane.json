@@ -2,7 +2,13 @@
   "name": "PennyLane",
   "slug": "pennylane",
   "type": "framework",
-  "tags": ["quantum-ml", "hybrid", "open-source", "python", "differentiable"],
+  "tags": [
+    "quantum-ml",
+    "hybrid",
+    "open-source",
+    "python",
+    "differentiable"
+  ],
   "description": "PennyLane is an open-source Python library for quantum machine learning, automatic differentiation, and hybrid quantum-classical computing. Developed by Xanadu, it supports multiple quantum hardware backends and integrates with PyTorch, TensorFlow, and JAX.",
   "website": "https://pennylane.ai",
   "openSource": true,
@@ -24,6 +30,16 @@
       "url": "https://github.com/PennyLaneAI/pennylane",
       "title": "PennyLane GitHub Repository",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "website",
+      "url": "https://www.xanadu.ai/products/pennylane/",
+      "title": "PennyLane | Xanadu"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2506.09308",
+      "title": "Quantum Algorithm Software for Condensed Matter Physics"
     }
   ]
 }

@@ -3,7 +3,13 @@
   "slug": "qaoa-maxcut",
   "algorithm": "Quantum Approximate Optimization Algorithm (QAOA)",
   "category": "optimization",
-  "tags": ["QAOA", "optimization", "MaxCut", "hybrid", "combinatorial"],
+  "tags": [
+    "QAOA",
+    "optimization",
+    "MaxCut",
+    "hybrid",
+    "combinatorial"
+  ],
   "description": "Benchmark of the Quantum Approximate Optimization Algorithm for solving the MaxCut problem on random graphs. Tests the quality of approximate solutions as a function of circuit depth (p-levels) and graph size. A standard benchmark for hybrid quantum-classical optimization.",
   "hardware": "Simulator / hardware-agnostic",
   "framework": "PennyLane, Cirq",
@@ -11,8 +17,14 @@
   "reproducible": true,
   "datePublished": "2023-11-20",
   "keyMetrics": [
-    {"metric": "Problem type", "value": "MaxCut on random graphs"},
-    {"metric": "Qubits tested", "value": "12"}
+    {
+      "metric": "Problem type",
+      "value": "MaxCut on random graphs"
+    },
+    {
+      "metric": "Qubits tested",
+      "value": "12"
+    }
   ],
   "significance": "The canonical benchmark for hybrid quantum-classical optimization, testing how QAOA approximation quality scales with circuit depth and graph complexity.",
   "sources": [
@@ -27,6 +39,16 @@
       "url": "https://en.wikipedia.org/wiki/Quantum_optimization_algorithms",
       "title": "Quantum Optimization Algorithms — Wikipedia",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/1706.02998",
+      "title": "Quantum Approximate Optimization Algorithm for MaxCut: A Fermionic View"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/pdf/2604.08367",
+      "title": "Per-Shot Evaluation of QAOA on Max-Cut: A Black-Box Implementation Comparison with Goemans-Williamson"
     }
   ]
 }

@@ -30,9 +30,21 @@
       "url": "https://ieeexplore.ieee.org/document/9915517/",
       "title": "Mixed Quantum-Classical Method for Fraud Detection With Quantum Feature Selection",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "doi",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12468836/",
+      "title": "HQRNN-FD: A Hybrid Quantum Recurrent Neural Network for Fraud Detection"
     }
   ],
   "news": [
+    {
+      "title": "HQRNN-FD: A Hybrid Quantum Recurrent Neural Network for Fraud Detection",
+      "excerpt": "Published research on hybrid quantum recurrent neural networks applied to fraud detection",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12468836/",
+      "source": "Entropy (Basel)",
+      "date": "2025-08-27"
+    },
     {
       "title": "Quantum Machine Learning Study Achieves 0.88 F1-Score for Credit Card Fraud Detection",
       "excerpt": "Comparative analysis of quantum machine learning architectures (VQC, SQNN, EQNN) for financial fraud detection published. Variational Quantum Classifier demonstrates strong performance with F1-score of 0.88 on credit card datasets.",

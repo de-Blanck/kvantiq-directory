@@ -50,18 +50,18 @@
   ],
   "news": [
     {
-      "title": "Quantum Optics Jena Secures €8.5 Million in Series A Funding",
-      "excerpt": "Series A funding round led by JoinCapital, joined by ELAS Technologies GmbH, Fraunhofer Technologies-Transfer Fonds, and beteiligungs­management Thüringen (bm|t) to fuel QOJ's expansion and accelerate commercialization of quantum key distribution technology.",
-      "url": "https://www.bm-t.de/en/2024-en/quantum-optics-jena-secures-e8-5-million-in-series-a-funding-to-revolutionize-secure-communications/",
-      "source": "bm|t",
-      "date": "2024-09-12"
-    },
-    {
-      "title": "Quantum Optics Jena Completes Seed Funding",
-      "excerpt": "Fraunhofer IOF spin-off successfully completes seed funding to develop high-security quantum communication systems based on quantum optics and quantum key distribution.",
+      "title": "Quantum Optics Jena Successfully Completes Seed Funding",
+      "excerpt": "Quantum Optics Jena GmbH, a spin-off from Fraunhofer IOF, has completed seed funding. The founding team is working on building up the start-up to develop quantum-based solutions for state-of-the-art communication systems.",
       "url": "https://www.iof.fraunhofer.de/en/pressrelease/2021/quantum-optics-jena.html",
       "source": "Fraunhofer IOF",
       "date": "2021-02-10"
+    },
+    {
+      "title": "Quantum Optics Jena Secures €8.5 Million in Series A Funding",
+      "excerpt": "Quantum Optics Jena announced the closing of an €8.5 million Series A funding round, led by Join Capital. The investment funds expansion and accelerates commercialization of quantum key distribution technology.",
+      "url": "https://www.bm-t.de/en/2024-en/quantum-optics-jena-secures-e8-5-million-in-series-a-funding-to-revolutionize-secure-communications/",
+      "source": "bm|t",
+      "date": "2024-09-12"
     }
   ]
 }

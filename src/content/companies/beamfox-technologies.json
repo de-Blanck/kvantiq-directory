@@ -66,24 +66,24 @@
   "news": [
     {
       "title": "Research project to crack the code of quantum light sources and quantum networks",
-      "excerpt": "A new Danish-German research collaboration is developing new quantum light sources. The Innovation Fund has invested DKK 40 million in the project.",
+      "excerpt": "A new Danish-German research collaboration is developing new quantum light sources, which could revolutionize cryptography and networks between quantum computers. The Innovation Fund has invested DKK 40 million in the project.",
       "url": "https://innovationsfonden.dk/en/news/research-project-crack-code-quantum",
-      "source": "Innovation Fund Denmark",
+      "source": "Innovationsfonden",
       "date": "2025-05-08"
     },
     {
-      "title": "Research project to crack the code of quantum light sources and quantum networks",
-      "excerpt": "A new research and innovation project aims to develop new quantum light sources. The Innovation Fund has invested DKK 40 million in the project.",
-      "url": "https://www.dtu.dk/english/news/all-news/research-project-to-crack-the-code-of-quantum-light-sources-and-quantum-networks?id=a84d6518-40f9-4f88-81f2-dc17c4117502",
-      "source": "DTU",
-      "date": "2025-05-12"
+      "title": "From single photons to storage: New project aims to integrate quantum light sources with quantum memories",
+      "excerpt": "A Danish-German research collaboration with participation of the Helmholtz-Zentrum Dresden-Rossendorf (HZDR) aims to develop new quantum light sources and technology for scalable quantum networks based on the rare-earth element erbium. The project EQUAL (Erbium-based silicon quantum light sources) is funded by the Innovation Fund Denmark with 40 million Danish crowns. It started in May of 2025.",
+      "url": "https://www.hzdr.de/db/Cms?pNid=99&pOid=74943",
+      "source": "HZDR",
+      "date": "2025-06-11"
     },
     {
-      "title": "From single photons to storage: New project aims to integrate quantum light sources with quantum memories",
-      "excerpt": "The project EQUAL (Erbium-based silicon quantum light sources) is funded by the Innovation Fund Denmark with 40 million Danish crowns. It started in May of 2025.",
-      "url": "https://www.hzdr.de/db/Cms?pNid=99&pOid=74943",
-      "source": "Helmholtz-Zentrum Dresden-Rossendorf",
-      "date": "2025-06-11"
+      "title": "Danish quantum research strengthens its leading position",
+      "excerpt": "Innovation Fund Denmark is boosting Danish quantum research with major investments in new quantum projects. DTU's advanced research facilities provide unique opportunities to develop quantum technology from basic research to concrete applications in society.",
+      "url": "https://www.dtu.dk/english/newsarchive/2025/07/danish-quantum-research-strengthens-its-leading-position",
+      "source": "DTU",
+      "date": "2025-07-04"
     }
   ]
 }

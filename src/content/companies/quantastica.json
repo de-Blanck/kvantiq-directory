@@ -55,7 +55,7 @@
   "news": [
     {
       "title": "Quantastica Fantastica, The Computational Bridge Between The Quantum & The Classical Worlds",
-      "excerpt": "Article discussing how Quantastica provides tools to make quantum programming accessible to classical software developers, bridging the gap between quantum and classical worlds.",
+      "excerpt": "James Dargan discusses Quantastica's role in bridging quantum and classical programming for developers and the challenges of transitioning to quantum programming.",
       "url": "https://thequantuminsider.com/2021/01/13/quantastica-fantastica-the-computational-bridge-between-the-quantum-the-classical-worlds/",
       "source": "The Quantum Insider",
       "date": "2021-01-13"

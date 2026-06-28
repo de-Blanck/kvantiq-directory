@@ -33,9 +33,21 @@
       "url": "https://thetech.com/2026/02/06/iquhack-2026-recap",
       "title": "iQuHACK 2026 Brings Quantum Computing to MIT - The Tech",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://thetech.com/2026/02/19/iquhack-2026",
+      "title": "MIT's 7th annual quantum hackathon, iQuHACK, nurtures a new generation of quantum enthusiasts | The Tech"
     }
   ],
   "news": [
+    {
+      "title": "iQuHACK 2026 draws record 1,400+ participants across 76 countries",
+      "excerpt": "1,400+ participants attended iQuHACK 2026, with more than 400 students from U.S. universities participating in person and 1,000 students from 76 countries joining virtually",
+      "url": "https://thetech.com/2026/02/19/iquhack-2026",
+      "source": "The Tech (MIT)",
+      "date": "2026-02-19"
+    },
     {
       "title": "Remote Applications Open for iQuHACK 2026",
       "excerpt": "iQuHACK 2026 remote applications are still open to the public. In-person applications are now closed. The hackathon runs January 30 to February 1, 2026.",

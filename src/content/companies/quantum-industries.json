@@ -40,14 +40,38 @@
       "url": "https://tech.eu/2025/03/03/vienna-based-quantum-industries-secures-10m-to-safeguard-europe-s-critical-infrastructure-from-quantum-threats/",
       "title": "Quantum Industries secures $10M to safeguard Europe's critical infrastructure from quantum threats - Tech.eu",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.eu-startups.com/2025/03/cybersecurity-for-the-quantum-era-qi-raises-e9-5-million-for-secure-communications/",
+      "title": "Cybersecurity for the quantum era: QI raises €9.5 million for secure communications"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2025/03/03/quantum-industries-raises-10-million-in-successful-seed-funding-round/",
+      "title": "Quantum Industries Raises $10 Million in Successful Seed Funding Round"
     }
   ],
   "news": [
     {
       "title": "Quantum Industries secures $10M to safeguard Europe's critical infrastructure from quantum threats",
-      "excerpt": "Vienna-based Quantum Industries secured $10M in funding to protect critical infrastructure from quantum threats.",
+      "excerpt": "Powerful quantum computers are just years, not decades, away, underscoring the urgent need to protect critical infrastructure from quantum threats.",
       "url": "https://tech.eu/2025/03/03/vienna-based-quantum-industries-secures-10m-to-safeguard-europe-s-critical-infrastructure-from-quantum-threats/",
       "source": "Tech.eu",
+      "date": "2025-03-03"
+    },
+    {
+      "title": "Cybersecurity for the quantum era: QI raises €9.5 million for secure communications",
+      "excerpt": "Vienna-based Quantum Industries GmbH (QI), a startup focused on quantum secure communications for critical infrastructure, announced today the successful completion of its Seed financing round, raising a total of €9.5 million in fresh capital.",
+      "url": "https://www.eu-startups.com/2025/03/cybersecurity-for-the-quantum-era-qi-raises-e9-5-million-for-secure-communications/",
+      "source": "EU-Startups",
+      "date": "2025-03-03"
+    },
+    {
+      "title": "Quantum Industries Raises $10 Million in Successful Seed Funding Round",
+      "excerpt": "Quantum Industries GmbH (QI) has secured $10 million in seed financing to commercialize its quantum secure communication technology for critical infrastructure.",
+      "url": "https://thequantuminsider.com/2025/03/03/quantum-industries-raises-10-million-in-successful-seed-funding-round/",
+      "source": "The Quantum Insider",
       "date": "2025-03-03"
     }
   ]

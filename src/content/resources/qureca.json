@@ -2,7 +2,13 @@
   "name": "QURECA",
   "slug": "qureca",
   "type": "course",
-  "tags": ["education", "industry", "European", "certification", "business"],
+  "tags": [
+    "education",
+    "industry",
+    "European",
+    "certification",
+    "business"
+  ],
   "description": "QURECA is an online education platform focused exclusively on quantum technologies, offering courses for both technical learners and business professionals. The platform provides structured learning paths from introductory quantum computing to advanced topics such as quantum algorithms and quantum strategy for enterprises. Courses are taught by quantum experts from academia and industry, with CPD-certified completion credentials.",
   "website": "https://www.qureca.com",
   "openSource": false,
@@ -23,6 +29,11 @@
       "url": "https://lms.qureca.com/catalogue/online-courses/?v=5f02f0889301",
       "title": "QURECA Online Courses Catalogue",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://digital-skills-jobs.europa.eu/en/community/networking/organisations/qureca",
+      "title": "QURECA | Digital Skills and Jobs Platform - European Union"
     }
   ]
 }

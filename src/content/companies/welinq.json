@@ -4,7 +4,12 @@
   "country": "France",
   "region": "western-europe",
   "type": "hardware",
-  "tags": ["quantum-networking", "quantum-memory", "neutral-atom", "distributed-quantum-computing"],
+  "tags": [
+    "quantum-networking",
+    "quantum-memory",
+    "neutral-atom",
+    "distributed-quantum-computing"
+  ],
   "founded": 2022,
   "description": "Welinq develops quantum networking hardware and software to interconnect quantum processors into scalable networks. A spin-out from Sorbonne University and CNRS, the company builds the highest-performance quantum memories based on clouds of laser-cooled atoms, enabling distributed quantum computing architectures for data centers.",
   "website": "https://www.welinq.fr",
@@ -36,6 +41,31 @@
       "url": "https://www.eu-startups.com/2023/01/paris-based-welinq-secures-e5-million-to-scale-up-quantum-computing-with-quantum-memories/",
       "title": "Paris-based Welinq secures EUR 5 million to scale up quantum computing with quantum memories",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "website",
+      "url": "https://www.sorbonne-universite.fr/en/start-up/welinq",
+      "title": "Welinq | Sorbonne Université"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/02/26/welinq-pasqal-quantum-networking-partnership/",
+      "title": "Welinq and Pasqal Accelerate Networked Quantum Computing with Neutral-Atom Technology"
+    }
+  ],
+  "news": [
+    {
+      "title": "Welinq's araQne meets NVIDIA CUDA-Q: Distributed Quantum Compiling with GPU accelerated verification",
+      "url": "https://www.welinq.fr",
+      "source": "Welinq",
+      "date": "2026-06-23"
+    },
+    {
+      "title": "Welinq and Pasqal Accelerate Networked Quantum Computing with Neutral-Atom Technology",
+      "excerpt": "Welinq and Pasqal expanded their strategic collaboration to develop networked quantum computing architectures based on interconnected neutral-atom processors. The partnership includes the €4 million InterQo project, supported by the Île-de-France Region and Bpifrance.",
+      "url": "https://thequantuminsider.com/2026/02/26/welinq-pasqal-quantum-networking-partnership/",
+      "source": "The Quantum Insider",
+      "date": "2026-02-18"
     }
   ]
 }

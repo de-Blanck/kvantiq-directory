@@ -59,25 +59,25 @@
   ],
   "news": [
     {
-      "title": "Creotech Instruments secures €52 million ESA contract to build Polish satellite constellation CAMILA",
-      "excerpt": "A key player in the European DeepTech market secures major ESA contract.",
-      "url": "https://creotech.pl",
-      "source": "Creotech official website",
-      "date": "2025-04-01"
-    },
-    {
       "title": "EuroHPC JU to Create European Quantum Computing Network with Support from Creotech Instruments",
-      "excerpt": "Creotech Instruments selected as consortium member responsible for installation of quantum computer in Poland at Poznań Supercomputing and Networking Center. Project total cost EUR 100 million.",
+      "excerpt": "EuroHPC JU formalized agreements to establish and integrate quantum computing networks at six strategic locations across Europe. Creotech Instruments will be responsible for the installation of a quantum computer in Poland, as part of the High Performance Computing infrastructure of the Poznań Supercomputing and Networking Center.",
       "url": "https://creotech.pl/news/eurohpc-ju-to-create-european-quantum-computing-network-with-support-from-creotech-instruments/",
-      "source": "Creotech official website",
+      "source": "creotech.pl",
       "date": "2023-06-27"
     },
     {
       "title": "Creotech Instruments S.A. specializes in quantum experiment control devices",
-      "excerpt": "Deep tech company specializes in development and manufacturing of quantum experiment control devices based on Sinara hardware and ARTIQ open software.",
+      "excerpt": "Creotech Instruments S.A. is a deep tech company from Poland that specializes in the development and manufacturing of quantum experiment control devices based on the Sinara hardware and ARTIQ open software.",
       "url": "https://www.insidequantumtechnology.com/news-archive/creotech-instruments-s-a-specializes-in-quantum-experiment-control-devices/",
-      "source": "Inside Quantum Technology",
+      "source": "insidequantumtechnology.com",
       "date": "2023-03-10"
+    },
+    {
+      "title": "Creotech Instruments secures €52 million ESA contract to build Polish satellite constellation CAMILA",
+      "excerpt": "A key player in the European DeepTech market announces major contract for satellite constellation development.",
+      "url": "https://creotech.pl",
+      "source": "creotech.pl",
+      "date": "2025-04-01"
     }
   ]
 }

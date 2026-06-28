@@ -29,15 +29,32 @@
       "url": "https://thequantuminsider.com/2022/06/22/german-federal-ministry-of-education-and-research-announces-quantum-systems-program/",
       "title": "German Federal Ministry of Education and Research Announces Quantum Systems Program",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "website",
+      "url": "https://www.deutschland.de/en/topic/knowledge/quantum-technology-research-promotion-of-young-scientists-quantum-future-science",
+      "title": "A quantum leap into the future: Germany promotes cutting-edge technology"
+    },
+    {
+      "type": "website",
+      "url": "https://www.iof.fraunhofer.de/en/News/BMFTR-promotes-quantum-research.html",
+      "title": "Program of the BMFTR promotes applied quantum research in Germany"
     }
   ],
   "news": [
     {
       "title": "German Federal Ministry of Education and Research Announces Quantum Systems Program",
-      "excerpt": "Research funded by the Federal Ministry of Education and Research (BMBF) has been published in a report entitled Quantum Systems (forschungsprogramm quantensysteme). The 56-page report details how the BMBF is creating a common umbrella for successful research funding in photonics and quantum technologies over the next ten years, with the mission to take Germany to the top of the European group in quantum computing and quantum sensors.",
+      "excerpt": "Research funded by BMBF published in report 'Quantum Systems' with mission to take Germany to top of European group in quantum computing and quantum sensors over next decade",
       "url": "https://thequantuminsider.com/2022/06/22/german-federal-ministry-of-education-and-research-announces-quantum-systems-program/",
       "source": "The Quantum Insider",
-      "date": "2024-04-21"
+      "date": "2022-06-22"
+    },
+    {
+      "title": "Quantum Future Award: First Prize Winner Announced",
+      "excerpt": "Maximilian Kramer, physics student at Free University of Berlin, received first prize of 6,000 euros for master's thesis on self-correcting quantum computer algorithm",
+      "url": "https://www.deutschland.de/en/topic/knowledge/quantum-technology-research-promotion-of-young-scientists-quantum-future-science",
+      "source": "Deutschland.de",
+      "date": "2024-12-23"
     }
   ]
 }

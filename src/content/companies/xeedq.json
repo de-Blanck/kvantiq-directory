@@ -40,15 +40,32 @@
       "url": "https://xeedq.com/the-german-aerospace-center-dlr-awards-30-million-euros-to-xeedq-gmbh-for-building-a-unique-quantum-computer/",
       "title": "DLR awards 30 million Euros to XeedQ",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "website",
+      "url": "https://qci.dlr.de/en/the-first-of-its-kind/",
+      "title": "The first of its kind – DLR Quantum Computing Initiative"
+    },
+    {
+      "type": "url",
+      "url": "https://www.datacenterdynamics.com/en/news/xeedq-installs-baby-diamond-quantum-computer-at-goethe-university/",
+      "title": "XeedQ installs Baby Diamond quantum computer at Goethe University"
     }
   ],
   "news": [
     {
-      "title": "The German Aerospace Center (DLR) awards 30 million Euros to XeedQ GmbH for building a unique quantum computer",
-      "excerpt": "XeedQ GmbH wins a 30 million Euros contract from DLR for building a scalable quantum computer by 2026 at the DLR-Innovationszentrum in Ulm, GERMANY.",
+      "title": "DLR awards 30 million Euros to XeedQ for quantum computer development",
+      "excerpt": "XeedQ GmbH wins a 30 million Euros contract from the German Aerospace Center (DLR) for building a scalable quantum computer by 2026 at the DLR-Innovationszentrum in Ulm",
       "url": "https://xeedq.com/the-german-aerospace-center-dlr-awards-30-million-euros-to-xeedq-gmbh-for-building-a-unique-quantum-computer/",
-      "source": "XeedQ",
+      "source": "XeedQ official website",
       "date": "2022-12-13"
+    },
+    {
+      "title": "XeedQ delivers first XQ1i quantum computer to DLR Innovation Center",
+      "excerpt": "Leipzig-based start-up XeedQ delivers the XQ1i, a four-qubit quantum computer, to the DLR Innovation Center in Ulm for research and development",
+      "url": "https://qci.dlr.de/en/the-first-of-its-kind/",
+      "source": "DLR Quantum Computing Initiative",
+      "date": "2023-10-15"
     }
   ]
 }

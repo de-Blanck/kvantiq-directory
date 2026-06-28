@@ -3,7 +3,13 @@
   "slug": "reconfigurable-atom-logical-processor",
   "algorithm": "Logical qubit computation (surface code, color code, [[8,3,2]] blocks)",
   "category": "other",
-  "tags": ["neutral-atoms", "logical-qubits", "error-correction", "QuEra", "fault-tolerance"],
+  "tags": [
+    "neutral-atoms",
+    "logical-qubits",
+    "error-correction",
+    "QuEra",
+    "fault-tolerance"
+  ],
   "description": "Benchmark of an early error-corrected logical processor running on reconfigurable neutral atom arrays. The Harvard/MIT/QuEra team encoded up to 48 logical qubits on 280 physical atoms and demonstrated fault-tolerant primitives — GHZ state preparation, entanglement teleportation and sampling circuits with up to 228 logical two-qubit gates. Surface-code distances d=3 through d=7 were tested, along with 40-qubit color codes and three-dimensional [[8,3,2]] blocks. Logical-level control and a zoned atom-array architecture let encoded operations outperform bare physical qubits on the same device.",
   "hardware": "Neutral atom array (Harvard/QuEra, up to 280 rubidium atoms)",
   "framework": "Custom QuEra / Harvard control stack",
@@ -11,11 +17,26 @@
   "reproducible": false,
   "datePublished": "2023-12-07",
   "keyMetrics": [
-    {"metric": "Physical qubits", "value": "280"},
-    {"metric": "Logical qubits", "value": "48"},
-    {"metric": "Logical two-qubit gates", "value": "228"},
-    {"metric": "Surface code distances", "value": "d=3 to d=7"},
-    {"metric": "Color code qubits", "value": "40"}
+    {
+      "metric": "Physical qubits",
+      "value": "280"
+    },
+    {
+      "metric": "Logical qubits",
+      "value": "48"
+    },
+    {
+      "metric": "Logical two-qubit gates",
+      "value": "228"
+    },
+    {
+      "metric": "Surface code distances",
+      "value": "d=3 to d=7"
+    },
+    {
+      "metric": "Color code qubits",
+      "value": "40"
+    }
   ],
   "significance": "Largest-scale demonstration at the time that logical encoding on a reprogrammable device beat physical-qubit performance on algorithmic tasks — a key milestone for fault-tolerant, early error-corrected quantum computation.",
   "sources": [
@@ -40,6 +61,20 @@
       "authors": "Bluvstein, Evered, Geim, Li, Zhou, Manovitz et al.",
       "datePublished": "2023-12-06",
       "dateAccessed": "2026-04-19"
+    },
+    {
+      "type": "website",
+      "url": "https://www.nist.gov/publications/logical-quantum-processor-based-reconfigurable-atom-arrays",
+      "title": "Logical quantum processor based on reconfigurable atom arrays"
+    }
+  ],
+  "news": [
+    {
+      "title": "Logical quantum processor based on reconfigurable atom arrays",
+      "excerpt": "Realization of a programmable quantum processor based on encoded logical qubits operating with up to 280 physical qubits, demonstrating fault-tolerant creation of logical GHZ states and entanglement teleportation with surface code distances d=3 to d=7",
+      "url": "https://arxiv.org/abs/2312.03982",
+      "source": "arXiv",
+      "date": "2023-12-06"
     }
   ]
 }

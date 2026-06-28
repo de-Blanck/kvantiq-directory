@@ -50,6 +50,13 @@
   ],
   "news": [
     {
+      "title": "QphoX, Rigetti, and Qblox Demonstrate Optical Readout for Superconducting Qubits",
+      "excerpt": "Researchers from QphoX, Rigetti Computing, and Qblox demonstrate optical readout using a piezo-optomechanical transducer with 81% fidelity, published in Nature Physics.",
+      "url": "https://thequantuminsider.com/2025/02/11/qphox-rigetti-and-qblox-demonstrate-optical-readout-for-superconducting-qubits/",
+      "source": "The Quantum Insider",
+      "date": "2025-02-11"
+    },
+    {
       "title": "QphoX Launches Breakthrough Product Allowing Distributed Quantum Computing Over Long-distance Optical Networks",
       "excerpt": "QphoX's new Quantum Transducer allows quantum information to travel through optical fiber networks at room temperature and over large distances. IBM will work with the Quantum Transducer to connect superconducting qubits via the company's Quantum Networking Unit test devices. The product will enable the growth of distributed, modular quantum computers operating across long distances.",
       "url": "https://qphox.eu/news/qphox-launches-breakthrough-product-allowing-distributed-quantum-computing-over-long-distance-optical-networks/",

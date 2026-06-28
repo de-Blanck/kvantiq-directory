@@ -4,7 +4,12 @@
   "country": "Finland",
   "region": "nordics",
   "type": "software",
-  "tags": ["post-quantum-cryptography", "security", "IP-cores", "FPGA"],
+  "tags": [
+    "post-quantum-cryptography",
+    "security",
+    "IP-cores",
+    "FPGA"
+  ],
   "founded": 2017,
   "description": "Xiphera develops post-quantum cryptography IP cores and hardware security solutions. The company provides FPGA and ASIC implementations of quantum-resistant cryptographic algorithms to protect systems against future quantum computing threats. Xiphera's solutions enable organizations to prepare for the post-quantum era by implementing standardized quantum-safe encryption in their hardware infrastructure.",
   "website": "https://xiphera.com",
@@ -40,6 +45,30 @@
       "url": "https://www.crunchbase.com/organization/xiphera",
       "title": "Xiphera - Crunchbase Company Profile",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://digitalisationworld.com/news/70026/xiphera-contributes-to-strengthening-finlands-quantum-safe-security",
+      "title": "Xiphera contributes to strengthening Finland's quantum-safe security"
+    },
+    {
+      "type": "press-release",
+      "url": "https://arcticstartup.com/xiphera-raises-e480k/",
+      "title": "Finnish startup Xiphera raises funding to protect critical systems by designing security directly into hardware"
+    },
+    {
+      "type": "press-release",
+      "url": "https://www.design-reuse.com/news/11553-xiphera-and-crypto-quantique-announce-partnership-for-quantum-resilient-hardware-trust-engines/",
+      "title": "Xiphera and Crypto Quantique Announce Partnership for Quantum-Resilient Hardware Trust Engines"
+    }
+  ],
+  "news": [
+    {
+      "title": "Xiphera and Crypto Quantique Announce Partnership for Quantum-Resilient Hardware Trust Engines",
+      "excerpt": "Combining Crypto Quantique's PUF technology with Xiphera's quantum-resilient cryptography provides future-proof hardware trust engines to protect devices and data for decades to come.",
+      "url": "https://www.design-reuse.com/news/11553-xiphera-and-crypto-quantique-announce-partnership-for-quantum-resilient-hardware-trust-engines/",
+      "source": "design-reuse.com",
+      "date": "2024-10-30"
     }
   ]
 }

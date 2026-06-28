@@ -29,12 +29,17 @@
       "url": "https://kaw.wallenberg.org/en/research/initiative-driving-swedens-quantum-revolution",
       "title": "The Initiative Driving Sweden's Quantum Revolution — Wallenberg Foundation",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "website",
+      "url": "https://www.chalmers.se/en/centres/wacqt/about-us/",
+      "title": "About WACQT | Chalmers"
     }
   ],
   "news": [
     {
-      "title": "WACQT achieves 25-qubit quantum processor milestone",
-      "excerpt": "A crucial milestone was reached in 2024 when the research team successfully created a 25-qubit quantum processor, a major step toward creating the planned 100-qubit quantum computer.",
+      "title": "25-qubit quantum processor milestone achieved",
+      "excerpt": "A crucial milestone was reached in 2024 when the research team successfully created a 25-qubit quantum processor, a major step toward creating a 100-qubit quantum computer.",
       "url": "https://kaw.wallenberg.org/en/research/initiative-driving-swedens-quantum-revolution",
       "source": "Knut and Alice Wallenberg Foundation",
       "date": "2024-01-01"

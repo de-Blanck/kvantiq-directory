@@ -29,6 +29,32 @@
       "url": "https://www.hpcwire.com/2026/01/21/eurohpc-formalizes-role-in-europes-ai-and-quantum-infrastructure-push/",
       "title": "EuroHPC Formalizes Role in Europe's AI and Quantum Infrastructure Push",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/eurohpc-opens-access-to-its-quantum-computers/",
+      "title": "EuroHPC Opens Access to Its Quantum Computers"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/02/12/europe-launches-euro-q-exa-quantum-computer-germany/",
+      "title": "EuroHPC Deploys Euro-Q-Exa Quantum Computer in Germany"
+    }
+  ],
+  "news": [
+    {
+      "title": "EuroHPC Deploys Euro-Q-Exa Quantum Computer in Germany",
+      "excerpt": "The EuroHPC Joint Undertaking unveiled Euro-Q-Exa, a 54-qubit superconducting quantum computer based on IQM's Radiance platform, at the Leibniz Supercomputing Centre (LRZ) in Germany, supporting hybrid quantum–classical workflows.",
+      "url": "https://thequantuminsider.com/2026/02/12/europe-launches-euro-q-exa-quantum-computer-germany/",
+      "source": "The Quantum Insider",
+      "date": "2026-02-12"
+    },
+    {
+      "title": "EuroHPC Opens Access to Its Quantum Computers",
+      "excerpt": "EuroHPC announced opening access to its quantum computers for researchers and industry.",
+      "url": "https://www.hpcwire.com/off-the-wire/eurohpc-opens-access-to-its-quantum-computers/",
+      "source": "HPCwire",
+      "date": "2026-06-25"
     }
   ]
 }

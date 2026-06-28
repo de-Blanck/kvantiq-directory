@@ -3,12 +3,21 @@
   "slug": "supply-chain-optimization",
   "industry": "Manufacturing",
   "category": "optimization",
-  "tags": ["supply-chain", "logistics", "optimization", "inventory-management", "scheduling"],
+  "tags": [
+    "supply-chain",
+    "logistics",
+    "optimization",
+    "inventory-management",
+    "scheduling"
+  ],
   "description": "Applying quantum computing to optimize complex multi-tier supply chains, including supplier selection, inventory management, production scheduling, and distribution network design.",
   "problem": "Global supply chains involve thousands of interdependent decisions across suppliers, manufacturers, warehouses, and distribution centers. Classical optimization struggles with the combinatorial explosion of possible configurations, especially when incorporating uncertainty and real-time disruptions.",
   "approach": "Hybrid quantum-classical algorithms decompose supply chain problems into QUBO formulations suitable for quantum annealing or QAOA. Quantum processors explore vast solution spaces while classical systems handle constraints, forecasting, and decision implementation.",
   "results": "Case studies with automotive and aerospace manufacturers show potential for 5-10% cost reductions through better inventory positioning and supplier coordination. Real-time disruption response is an emerging application area.",
-  "companies": ["multiverse-computing", "pasqal"],
+  "companies": [
+    "multiverse-computing",
+    "pasqal"
+  ],
   "sources": [
     {
       "type": "url",
@@ -21,6 +30,11 @@
       "url": "https://arxiv.org/abs/2212.12239",
       "title": "Quantum optimization for supply chain management: a survey",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/sandia-highlights-new-quantum-computing-research-focusing-on-global-supply-chain-challenges/",
+      "title": "Sandia Highlights New Quantum Computing Research Focusing on Global Supply Chain Challenges"
     }
   ]
 }

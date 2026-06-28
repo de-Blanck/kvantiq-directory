@@ -53,17 +53,10 @@
   "news": [
     {
       "title": "ORCA Computing Delivers First Photonic Quantum Computing System to UK's National Quantum Computing Centre",
-      "excerpt": "ORCA Computing has delivered and installed the UK's first public-sector photonic quantum computing system at the National Quantum Computing Centre (NQCC), fulfilling a key commitment under the UK's Quantum Computing Testbeds program.",
+      "excerpt": "ORCA Computing has delivered and installed the UK's first public-sector photonic quantum computing system at the National Quantum Computing Centre (NQCC), installed and operational within 36 hours.",
       "url": "https://thequantuminsider.com/2025/06/11/orca-computing-delivers-first-photonic-quantum-computing-system-to-uks-national-quantum-computing-centre/",
       "source": "The Quantum Insider",
       "date": "2025-06-11"
-    },
-    {
-      "title": "UK Ministry of Defence acquires Orca quantum computer",
-      "excerpt": "The ministry's first quantum system",
-      "url": "https://www.datacenterdynamics.com/en/news/uk-ministry-of-defence-acquires-orca-quantum-computer/",
-      "source": "Data Center Dynamics",
-      "date": "2022-06-09"
     }
   ]
 }

@@ -50,18 +50,18 @@
   ],
   "news": [
     {
-      "title": "Danish quantum research strengthens its leading position",
-      "excerpt": "Innovation Fund Denmark is investing DKK 25.9 million in AccessQKD project with partners including Celare Quantum Communications ApS, DTU Physics, Aarhus University, GlobalConnect, and Partisia Applications ApS.",
-      "url": "https://www.dtu.dk/english/newsarchive/2025/07/danish-quantum-research-strengthens-its-leading-position",
-      "source": "DTU",
-      "date": "2025-07-04"
-    },
-    {
       "title": "From Prototype to Product: Celare Quantum's vision for QKD deployment",
-      "excerpt": "Interview with Tobias Gehring, CEO of Celare Quantum, discussing the DTU spinout's continuous-variable QKD systems and development of enterprise network appliances for telecommunication companies.",
+      "excerpt": "Interview with Tobias Gehring, CEO of Celare Quantum, discussing the company's QKD systems, enterprise network appliance approach, and deployment vision for quantum-secure communications in critical sectors.",
       "url": "https://qsnp.eu/from-prototype-to-product-celare-quantums-vision-for-qkd-deployment/",
       "source": "QSNP",
       "date": "2025-12-11"
+    },
+    {
+      "title": "Danish quantum research strengthens its leading position",
+      "excerpt": "Innovation Fund Denmark allocates DKK 103 million to four quantum projects, including AccessQKD led by DTU with partners Celare Quantum Communications ApS, GlobalConnect, Partisia, and Aarhus University.",
+      "url": "https://www.dtu.dk/english/newsarchive/2025/07/danish-quantum-research-strengthens-its-leading-position",
+      "source": "DTU",
+      "date": "2025-07-04"
     }
   ]
 }

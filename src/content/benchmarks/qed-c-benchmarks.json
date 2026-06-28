@@ -3,14 +3,25 @@
   "slug": "qed-c-benchmarks",
   "algorithm": "Multiple algorithms (BV, QFT, Hidden Shift, etc.)",
   "category": "other",
-  "tags": ["benchmark-suite", "scalable", "standardization", "application-oriented"],
+  "tags": [
+    "benchmark-suite",
+    "scalable",
+    "standardization",
+    "application-oriented"
+  ],
   "description": "QED-C (Quantum Economic Development Consortium) Application-Oriented Benchmarks is a comprehensive suite of quantum algorithms designed to evaluate quantum computing platforms. The suite includes implementations across multiple problem domains and is designed to be scalable across varying qubit counts. These benchmarks focus on real-world applications rather than abstract metrics.",
   "hardware": "Multi-platform",
   "reproducible": true,
   "datePublished": "2021-06-15",
   "keyMetrics": [
-    {"metric": "Algorithms included", "value": "BV, QFT, Hidden Shift, others"},
-    {"metric": "Focus", "value": "Application-oriented evaluation"}
+    {
+      "metric": "Algorithms included",
+      "value": "BV, QFT, Hidden Shift, others"
+    },
+    {
+      "metric": "Focus",
+      "value": "Application-oriented evaluation"
+    }
   ],
   "significance": "Industry consortium benchmark (QED-C) shifting focus from abstract metrics to real-world application performance, adopted by major quantum hardware vendors.",
   "sources": [
@@ -25,6 +36,20 @@
       "url": "https://arxiv.org/abs/2110.03137",
       "title": "Application-Oriented Performance Benchmarks for Quantum Computing",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumconsortium.org/quantum-algorithm-exploration-using-application-oriented-performance-benchmarks/",
+      "title": "QED-C | Quantum Algorithm Exploration using Application-Oriented Performance Benchmarks"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quantum Algorithm Exploration using Application-Oriented Performance Benchmarks",
+      "excerpt": "QED-C published report expanding the Application-Oriented Benchmarks with new implementations including scalable HHL linear equation solver and Hydrogen Lattice simulation benchmarks.",
+      "url": "https://quantumconsortium.org/quantum-algorithm-exploration-using-application-oriented-performance-benchmarks/",
+      "source": "QED-C",
+      "date": "2024-02-16"
     }
   ]
 }

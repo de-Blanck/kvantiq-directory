@@ -2,7 +2,12 @@
   "name": "QOSF Monthly Challenges",
   "slug": "qosf-monthly-challenges",
   "organizer": "Quantum Open Source Foundation",
-  "tags": ["challenge", "open-source", "monthly", "community"],
+  "tags": [
+    "challenge",
+    "open-source",
+    "monthly",
+    "community"
+  ],
   "description": "QOSF Monthly Challenges are ongoing quantum computing coding challenges released monthly by the Quantum Open Source Foundation. Each challenge focuses on different quantum algorithms, protocols, or applications and is designed to help participants learn through hands-on problem-solving. Solutions are shared on GitHub and discussed within the QOSF community.",
   "website": "https://github.com/qosf/monthly-challenges",
   "status": "active",
@@ -10,7 +15,11 @@
   "prizes": "Community recognition and mentorship",
   "location": "Online",
   "eligibility": "Open to all worldwide",
-  "problemDomains": ["quantum-algorithms", "quantum-protocols", "quantum-applications"],
+  "problemDomains": [
+    "quantum-algorithms",
+    "quantum-protocols",
+    "quantum-applications"
+  ],
   "sources": [
     {
       "type": "url",
@@ -23,6 +32,11 @@
       "url": "https://qosf.org/monthly_challenges/",
       "title": "QOSF Monthly Challenges Overview",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "website",
+      "url": "https://qosf.org/",
+      "title": "Quantum Open Source Foundation"
     }
   ]
 }

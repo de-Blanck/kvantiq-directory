@@ -3,12 +3,21 @@
   "slug": "quantum-machine-learning-classification",
   "industry": "Technology",
   "category": "machine-learning",
-  "tags": ["QML", "classification", "kernel-methods", "VQC", "variational-quantum"],
+  "tags": [
+    "QML",
+    "classification",
+    "kernel-methods",
+    "VQC",
+    "variational-quantum"
+  ],
   "description": "Leveraging quantum kernel methods and variational quantum classifiers to enhance machine learning tasks, potentially offering computational advantages for specific classification problems.",
   "problem": "Classical machine learning models face challenges with high-dimensional feature spaces and complex decision boundaries. Training deep neural networks requires significant computational resources, and some kernel computations are classically intractable.",
   "approach": "Quantum kernel methods map data to high-dimensional Hilbert spaces where quantum computers naturally operate. Variational Quantum Circuits (VQC) act as parameterized quantum models trained via hybrid quantum-classical optimization loops.",
   "results": "Proof-of-concept demonstrations show quantum kernels can achieve competitive accuracy on specialized datasets. Recent work has identified specific problem structures where quantum models may offer advantages over classical approaches.",
-  "companies": ["multiverse-computing", "terra-quantum"],
+  "companies": [
+    "multiverse-computing",
+    "terra-quantum"
+  ],
   "sources": [
     {
       "type": "arxiv",
@@ -21,6 +30,11 @@
       "url": "https://arxiv.org/abs/2307.10060",
       "title": "A review of quantum machine learning classification algorithms",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2006.12270",
+      "title": "Classification with Quantum Machine Learning: A Survey"
     }
   ]
 }

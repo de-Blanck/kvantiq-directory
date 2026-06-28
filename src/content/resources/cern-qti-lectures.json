@@ -2,7 +2,14 @@
   "name": "CERN QTI Online Lecture Series",
   "slug": "cern-qti-lectures",
   "type": "course",
-  "tags": ["education", "lectures", "European", "CERN", "research", "free"],
+  "tags": [
+    "education",
+    "lectures",
+    "European",
+    "CERN",
+    "research",
+    "free"
+  ],
   "description": "The CERN Quantum Technology Initiative runs a free online lecture series covering quantum theory, simulation, sensing, computing, algorithms, and quantum networks. Lectures are delivered by early-career and senior researchers and recorded for on-demand viewing on the CERN QTI website and the CERN Lectures YouTube channel. The series began in March 2023 and continues on a regular weekly schedule.",
   "website": "https://quantum.cern/online-lecture-series",
   "openSource": false,
@@ -23,6 +30,20 @@
       "url": "https://home.cern/news/announcement/computing/cern-qti-launches-its-new-series-online-lectures-explore-quantum",
       "title": "CERN QTI Launches Its New Series of Online Lectures — CERN",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.insidequantumtechnology.com/news-archive/cerns-new-free-online-course-to-focus-on-practical-aspects-of-quantum-computing-good-introduction-to-qc-for-cios-developers/",
+      "title": "CERN's New Free Online Course to Focus on Practical Aspects of Quantum Computing — Inside Quantum Technology"
+    }
+  ],
+  "news": [
+    {
+      "title": "CERN's New Free Online Course to Focus on Practical Aspects of Quantum Computing",
+      "excerpt": "The lectures start Friday, November 6 at 10:30am CET and will be held every Friday for seven weeks through December 18.",
+      "url": "https://www.insidequantumtechnology.com/news-archive/cerns-new-free-online-course-to-focus-on-practical-aspects-of-quantum-computing-good-introduction-to-qc-for-cios-developers/",
+      "source": "Inside Quantum Technology",
+      "date": "2020-11-06"
     }
   ]
 }

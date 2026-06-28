@@ -30,12 +30,29 @@
       "url": "https://github.com/microsoft/QuantumKatas",
       "title": "Quantum Katas GitHub Repository",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "website",
+      "url": "https://azure.microsoft.com/en-us/blog/quantum/2018/07/23/learn-at-your-own-pace-with-microsoft-quantum-katas/",
+      "title": "Learn at your own pace with Microsoft Quantum Katas - Microsoft Azure Quantum Blog"
+    },
+    {
+      "type": "website",
+      "url": "https://www.infoworld.com/article/2255999/quantum-katas-teach-you-how-to-do-quantum-programming-in-q.html",
+      "title": "Quantum katas teach you how to do quantum programming in Q# - InfoWorld"
     }
   ],
   "news": [
     {
-      "title": "Quantum Katas GitHub Repository Archived",
-      "excerpt": "This repository was archived by the owner on Aug 21, 2024. It is now read-only.",
+      "title": "Quantum katas teach you how to do quantum programming in Q#",
+      "excerpt": "Microsoft Research developed Quantum Katas as a way to teach quantum computing skills through self-paced tutorials and exercises in Q#.",
+      "url": "https://www.infoworld.com/article/2255999/quantum-katas-teach-you-how-to-do-quantum-programming-in-q.html",
+      "source": "InfoWorld",
+      "date": "2018-07-31"
+    },
+    {
+      "title": "QuantumKatas repository archived on GitHub",
+      "excerpt": "The microsoft/QuantumKatas GitHub repository was archived by the owner and is now read-only.",
       "url": "https://github.com/microsoft/QuantumKatas",
       "source": "GitHub",
       "date": "2024-08-21"

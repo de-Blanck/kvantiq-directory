@@ -3,7 +3,13 @@
   "slug": "hubbard-model",
   "algorithm": "Variational Quantum Eigensolver (VQE)",
   "category": "simulation",
-  "tags": ["Hubbard-model", "condensed-matter", "VQE", "strongly-correlated", "simulation"],
+  "tags": [
+    "Hubbard-model",
+    "condensed-matter",
+    "VQE",
+    "strongly-correlated",
+    "simulation"
+  ],
   "description": "Benchmark for quantum simulation of the Hubbard model, a fundamental model of strongly correlated electrons in condensed matter physics. The relative simplicity of the Hubbard Hamiltonian allows efficient implementation on quantum hardware. Classical benchmarks show that even the most accurate VQE ansatze exhibit plateauing ground-state energy errors for larger lattices, with stronger electronic correlations magnifying the issue.",
   "hardware": "Various (IBM Quantum, simulators)",
   "framework": "Qiskit, PennyLane",
@@ -11,8 +17,14 @@
   "reproducible": true,
   "datePublished": "2024-08-01",
   "keyMetrics": [
-    {"metric": "Qubits tested", "value": "16"},
-    {"metric": "Key finding", "value": "Energy errors plateau for larger lattices"}
+    {
+      "metric": "Qubits tested",
+      "value": "16"
+    },
+    {
+      "metric": "Key finding",
+      "value": "Energy errors plateau for larger lattices"
+    }
   ],
   "significance": "Reveals fundamental scalability limitations of VQE for strongly correlated systems, with error plateauing even for the most accurate ansatze.",
   "sources": [
@@ -27,6 +39,25 @@
       "url": "https://www.science.org/doi/10.1126/science.adg9774",
       "title": "Variational benchmarks for quantum many-body problems",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://quantum-journal.org/papers/q-2025-05-20-1748/",
+      "title": "Classical Benchmarks for Variational Quantum Eigensolver Simulations of the Hubbard Model"
+    },
+    {
+      "type": "url",
+      "url": "https://research.ibm.com/publications/variational-quantum-simulation-of-the-fermi-hubbard-model",
+      "title": "Variational quantum simulation of the Fermi-Hubbard model"
+    }
+  ],
+  "news": [
+    {
+      "title": "Classical Benchmarks for Variational Quantum Eigensolver Simulations of the Hubbard Model",
+      "excerpt": "Peer-reviewed publication presenting rigorous classical benchmarking demonstrating factors impacting accuracy of variational quantum eigensolver solutions for the Hubbard model on quantum hardware (up to 32 qubits).",
+      "url": "https://quantum-journal.org/papers/q-2025-05-20-1748/",
+      "source": "Quantum journal",
+      "date": "2025-05-20"
     }
   ]
 }

@@ -29,15 +29,20 @@
       "url": "https://github.com/Qiskit/textbook",
       "title": "Qiskit Textbook GitHub Repository",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "website",
+      "url": "https://www.ibm.com/quantum/blog/iql-migration",
+      "title": "New IBM Quantum Learning expands open-access content library"
     }
   ],
   "news": [
     {
-      "title": "Qiskit Textbook Repository Archived",
-      "excerpt": "The Qiskit textbook repository was archived on GitHub, making it read-only.",
-      "url": "https://github.com/Qiskit/textbook",
-      "source": "GitHub",
-      "date": "2024-01-18"
+      "title": "New IBM Quantum Learning Delivers Expanded Library of Open-Access Content",
+      "excerpt": "IBM Quantum Learning completed migration to the new IBM Quantum Platform at quantum.cloud.ibm.com/learning, with expanded free access to courses and tutorials. New Quantum Diagonalization Algorithms (QDA) course and Qiskit classroom modules launched.",
+      "url": "https://www.ibm.com/quantum/blog/iql-migration",
+      "source": "IBM Quantum Computing Blog",
+      "date": "2025-07-07"
     }
   ]
 }

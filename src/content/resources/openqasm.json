@@ -2,7 +2,13 @@
   "name": "OpenQASM",
   "slug": "openqasm",
   "type": "tool",
-  "tags": ["quantum-assembly", "specification", "open-source", "circuit-description", "interoperability"],
+  "tags": [
+    "quantum-assembly",
+    "specification",
+    "open-source",
+    "circuit-description",
+    "interoperability"
+  ],
   "description": "OpenQASM is an imperative programming language for describing quantum circuits, supporting the circuit model, measurement-based model, and near-term experiments. The current version (3.1) adds explicit timing controls, gate calibration definitions, and classical control flow to the widely adopted specification.",
   "website": "https://openqasm.com",
   "openSource": true,
@@ -24,6 +30,16 @@
       "url": "https://github.com/openqasm/openqasm",
       "title": "OpenQASM GitHub Repository",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2104.14722",
+      "title": "OpenQASM 3: A broader and deeper quantum assembly language"
+    },
+    {
+      "type": "website",
+      "url": "https://research.ibm.com/publications/openqasm-3-a-broader-and-deeper-quantum-assembly-language",
+      "title": "OpenQASM 3: A Broader and Deeper Quantum Assembly Language"
     }
   ]
 }
