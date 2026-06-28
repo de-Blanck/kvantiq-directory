@@ -28,9 +28,26 @@
       "url": "https://www.businessfinland.fi/en/whats-new/news/2024/finland-invests-in-quantum-technologies",
       "title": "Business Finland Quantum Technology Investment Announcement",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "website",
+      "url": "https://www.aalto.fi/en/events/quantum-strategy-the-path-to-making-quantum-technology-finlands-next-success-story",
+      "title": "Quantum Strategy: The path to making quantum technology Finland's next success story | Aalto University"
+    },
+    {
+      "type": "press-release",
+      "url": "https://thequantuminsider.com/2025/04/25/finlands-quantum-strategy-published-outlines-eight-measures-to-strengthen-nations-leadership-position-in-quantum/",
+      "title": "Finland's Quantum Strategy Published, Outlines Eight Measures to Strengthen Nation's Leadership Position in Quantum"
     }
   ],
   "news": [
+    {
+      "title": "Finland's Quantum Strategy Published, Outlines Eight Measures to Strengthen Nation's Leadership Position in Quantum",
+      "excerpt": "Finland has released a national quantum technology strategy outlining eight measures to strengthen its position as a global leader in quantum computing, sensing, and secure communications. The strategy emphasizes targeted investment in education, infrastructure, and industry access to quantum systems.",
+      "url": "https://thequantuminsider.com/2025/04/25/finlands-quantum-strategy-published-outlines-eight-measures-to-strengthen-nations-leadership-position-in-quantum/",
+      "source": "The Quantum Insider",
+      "date": "2025-04-25"
+    },
     {
       "title": "InstituteQ university partners launch national cross-institutional studies agreement",
       "excerpt": "Following InstituteQ's expansion in 2025, students in eligible degree programmes at InstituteQ university partner institutions will be able to register for cross-institutional studies.",

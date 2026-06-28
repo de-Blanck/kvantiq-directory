@@ -52,18 +52,11 @@
   ],
   "news": [
     {
-      "title": "CUbIQ Technologies Unveils Quantum Key Distribution Breakthrough",
-      "excerpt": "CUbIQ Technologies announced a successful proof-of-concept demonstrating CV-QKD in a QSFP-28 pluggable module in collaboration with Coherent and Liberty Global.",
+      "title": "CUbIQ Technologies Unveils Quantum Key Distribution Breakthrough demonstrated in a QSFP-28 Pluggable",
+      "excerpt": "CUbIQ Technologies announced a successful proof-of-concept showcasing quantum key distribution (QKD) in a QSFP-28 pluggable module in collaboration with Coherent and Liberty Global.",
       "url": "https://www.optica.org/about/newsroom/corporate_member_news/2025/cubiq_technologies_unveils_quantum_key_distribution_breakthrough_demonstrated_in_a_qsfp-28_pluggable/",
       "source": "Optica",
       "date": "2025-09-29"
-    },
-    {
-      "title": "Quantum Curious? Catch us at OFC!",
-      "excerpt": "CUbIQ Technologies will be attending OFC 2025 in San Francisco from March 30 to April 3.",
-      "url": "https://cubiq-technologies.com",
-      "source": "CUbIQ Technologies",
-      "date": "2025-03-30"
     }
   ]
 }

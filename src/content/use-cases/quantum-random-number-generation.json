@@ -3,12 +3,20 @@
   "slug": "quantum-random-number-generation",
   "industry": "Cybersecurity",
   "category": "cryptography",
-  "tags": ["QRNG", "random-numbers", "cryptography", "entropy", "photonics"],
+  "tags": [
+    "QRNG",
+    "random-numbers",
+    "cryptography",
+    "entropy",
+    "photonics"
+  ],
   "description": "Quantum Random Number Generators (QRNGs) exploit the inherent randomness of quantum mechanical processes to produce true random numbers for cryptographic key generation, Monte Carlo simulations, and security protocols. European company ID Quantique produces the first QRNG chips to receive NIST Entropy Source Validation certification.",
   "problem": "Classical pseudorandom number generators are deterministic and potentially predictable, creating vulnerabilities in cryptographic systems. Hardware random number generators based on thermal noise or electronic jitter lack formal guarantees of unpredictability, and their entropy sources can degrade or be manipulated.",
   "approach": "QRNGs measure quantum physical processes — such as vacuum fluctuations, photon detection statistics, or single-photon path selection — to generate numbers that are fundamentally unpredictable by the laws of physics. Device-independent and semi-device-independent protocols provide mathematical certificates of randomness without requiring trust in the hardware implementation.",
   "results": "ID Quantique's QRNG chips achieved NIST SP 800-90B Entropy Source Validation certification and are integrated in commercial smartphones and security modules. Academic demonstrations include boson sampling-based QRNGs on programmable silicon photonic processors generating certified multi-bit random numbers simultaneously.",
-  "companies": ["id-quantique"],
+  "companies": [
+    "id-quantique"
+  ],
   "sources": [
     {
       "type": "arxiv",
@@ -21,6 +29,16 @@
       "url": "https://www.idquantique.com/random-number-generation/overview/",
       "title": "Quantum Random Number Generation (QRNG) - ID Quantique",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/1510.08957",
+      "title": "Quantum random number generation"
+    },
+    {
+      "type": "url",
+      "url": "https://cordis.europa.eu/project/id/820405",
+      "title": "QRANGE: Quantum Random Number Generators: cheaper, faster and more secure"
     }
   ]
 }

@@ -28,6 +28,16 @@
       "url": "https://en.wikipedia.org/wiki/Quantum_Flagship",
       "title": "Quantum Flagship Wikipedia Article",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "website",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/quantum-technologies-flagship",
+      "title": "Quantum Technologies Flagship | Shaping Europe's digital future"
+    },
+    {
+      "type": "website",
+      "url": "https://www.eurohpc-ju.europa.eu/quantum-technologies/quantum-technologies-flagship_en",
+      "title": "The Quantum Technologies Flagship - European High Performance Computing Joint Undertaking"
     }
   ]
 }

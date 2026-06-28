@@ -30,15 +30,27 @@
       "url": "https://qt.eu/news/2025/2025-03-18_quantum-tech-companies-chosen-in-latest-EIC-round",
       "title": "EIC Chooses Nine Quantum Tech Start-ups in Latest Funding Round",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "website",
+      "url": "https://sifted.eu/articles/europes-biggest-deeptech-investor-brnd",
+      "title": "Meet Europe's biggest deeptech investor (hint: it's not a VC) | Sifted"
     }
   ],
   "news": [
     {
       "title": "EIC chooses nine quantum tech start-ups in latest funding round",
-      "excerpt": "Nine quantum technology startups selected in the latest EIC Accelerator funding round",
+      "excerpt": "Nine quantum tech companies selected in the latest EIC funding round",
       "url": "https://qt.eu/news/2025/2025-03-18_quantum-tech-companies-chosen-in-latest-EIC-round",
       "source": "Quantum Flagship",
       "date": "2025-03-18"
+    },
+    {
+      "title": "Meet Europe's biggest deeptech investor (hint: it's not a VC)",
+      "excerpt": "The EIC Fund has become the continent's biggest deeptech investor, completing over 300 investment rounds and outspending private VCs in quantum, AI, health, biotech and space sectors",
+      "url": "https://sifted.eu/articles/europes-biggest-deeptech-investor-brnd",
+      "source": "Sifted",
+      "date": "2025-10-27"
     }
   ]
 }

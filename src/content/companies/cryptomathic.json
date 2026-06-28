@@ -49,11 +49,18 @@
   ],
   "news": [
     {
-      "title": "Riverside Company acquires controlling stake in Cryptomathic",
-      "excerpt": "The Riverside Company, a global private investor focused on the smaller end of the middle market, has acquired a controlling stake in Cryptomathic. Riverside, supported by its institutional co-investors, is partnering with Cryptomathic's founder and management team who continue to hold key management positions and a minority stake in the business.",
+      "title": "Controlling stake in Cryptomathic acquired by Riverside",
+      "excerpt": "The Riverside Company acquired a controlling stake in Cryptomathic. The company's founder and management team continue to hold key management positions and a minority stake.",
       "url": "https://www.globalsecuritymag.com/Controlling-stake-in-Cryptomathic,20210624,113208.html",
       "source": "Global Security Mag",
       "date": "2021-06-24"
+    },
+    {
+      "title": "Cryptomathic: Focus on crypto agility, not rushing to PQC",
+      "excerpt": "Managing director Johannes Lintzen discusses the company's measured approach to post-quantum cryptography migration, cautioning against rushing implementation and emphasizing careful assessment of PQC needs.",
+      "url": "https://www.insidequantumtechnology.com/news-archive/cryptomathic-focus-on-crypto-agility-not-rushing-to-pqc/",
+      "source": "Inside Quantum Technology",
+      "date": "2022-08-02"
     }
   ]
 }

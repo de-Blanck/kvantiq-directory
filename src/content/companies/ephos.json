@@ -54,8 +54,22 @@
   ],
   "news": [
     {
-      "title": "Ephos Raises $8.5M Seed Funding for Glass Quantum Photonic Chips",
-      "excerpt": "Milan-based quantum photonics startup Ephos raised $8.5 million in seed funding led by Starlight Ventures to establish the world's first glass-based quantum photonic circuits manufacturing facility in Italy.",
+      "title": "Ephos secures €7.6M seed funding for glass-based quantum photonic chip manufacturing facility in Milan",
+      "excerpt": "Ephos announced a major expansion with a €7.6 million seed funding round and the opening of a state-of-the-art research and manufacturing facility in Milan, the world's first dedicated to producing glass-based quantum photonic circuits. The round was led by Starlight Ventures with participation from Collaborative Fund, Exor Ventures, 2100 Ventures, and Unruly Capital.",
+      "url": "https://www.eu-startups.com/2024/09/milan-based-ephos-raises-e7-6-million-to-deliver-glass-based-quantum-photonic-chips/",
+      "source": "EU-Startups",
+      "date": "2024-09-23"
+    },
+    {
+      "title": "Glass-based quantum photonic chip startup Ephos secures $8.5M seed funding",
+      "excerpt": "Milan-based startup Ephos raised $8.5 million in seed funding to create glass-based photonic chips at scale. The funding will be used to open a state-of-the-art research and manufacturing facility in the Milano Innovation District, and the company also received non-dilutive funding from the European Innovation Council and NATO's Defence Innovation Accelerator.",
+      "url": "https://www.siliconrepublic.com/machines/quantum-chips-photonics-ephos-italy-funding",
+      "source": "Silicon Republic",
+      "date": "2024-09-24"
+    },
+    {
+      "title": "Glass-based photonic chip startup Ephos secures $8.5M for quantum computing and AI infrastructure",
+      "excerpt": "Ephos announced $8.5 million in seed funding led by Starlight Ventures to establish the world's first glass-based quantum photonic circuits manufacturing facility in Milan. Founded by theoretical physicist Andrea Rocchetto, the company received backing from multiple venture firms and non-dilutive funding from the EIC and NATO's DIANA.",
       "url": "https://thequantuminsider.com/2024/09/24/glass-based-photonic-chip-startup-ephos-secures-8-5m-to-innovate-quantum-computing-and-ai-infrastructure/",
       "source": "The Quantum Insider",
       "date": "2024-09-24"

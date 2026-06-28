@@ -30,9 +30,26 @@
       "url": "https://github.com/qutip/qutip",
       "title": "QuTiP GitHub Repository",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2412.04705",
+      "title": "QuTiP 5: The Quantum Toolbox in Python"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/1110.0573",
+      "title": "QuTiP: An open-source Python framework for the dynamics of open quantum systems"
     }
   ],
   "news": [
+    {
+      "title": "QuTiP 5 paper published in Physics Reports",
+      "excerpt": "Peer-reviewed publication of QuTiP v5 features and architecture in Physics Reports",
+      "url": "https://arxiv.org/abs/2412.04705",
+      "source": "arxiv.org / Physics Reports",
+      "date": "2026-01-18"
+    },
     {
       "title": "QuTiP 5.3.0 Released",
       "excerpt": "QuTiP 5.3.0 released with latest features and improvements",

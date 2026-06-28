@@ -59,15 +59,20 @@
       "authors": "Liu, Shaydulin, Niroula, DeCross, Hung et al.",
       "datePublished": "2025-03-26",
       "dateAccessed": "2026-04-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.osti.gov/pages/biblio/2589338",
+      "title": "Certified randomness using a trapped-ion quantum processor"
     }
   ],
   "news": [
     {
-      "title": "Certified randomness using a trapped-ion quantum processor",
-      "excerpt": "Research paper demonstrating generation of certifiably random bits using the 56-qubit Quantinuum H2-1 trapped-ion quantum computer. Protocol certified 71,313 bits of entropy using classical verification across multiple supercomputers.",
-      "url": "https://arxiv.org/abs/2503.20498",
-      "source": "arXiv",
-      "date": "2025-03-26"
+      "title": "Certified randomness using a trapped-ion quantum processor published in Nature",
+      "excerpt": "Researchers demonstrate generation of 71,313 bits of certifiably random entropy using the 56-qubit Quantinuum H2-1 trapped-ion quantum computer, with security verified against near-term adversaries using supercomputer-scale classical hardness assumptions.",
+      "url": "https://doi.org/10.1038/s41586-025-08737-1",
+      "source": "Nature",
+      "date": "2025-03-25"
     }
   ]
 }

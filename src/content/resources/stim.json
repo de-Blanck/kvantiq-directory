@@ -30,6 +30,11 @@
       "url": "https://pypi.org/project/stim/",
       "title": "Stim on PyPI",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2103.02202",
+      "title": "Stim: a fast stabilizer circuit simulator"
     }
   ],
   "news": [

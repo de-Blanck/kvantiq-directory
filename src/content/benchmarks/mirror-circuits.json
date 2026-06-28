@@ -3,7 +3,13 @@
   "slug": "mirror-circuits",
   "algorithm": "Randomized mirror circuits (Clifford-based)",
   "category": "other",
-  "tags": ["benchmarking", "mirror-circuits", "gate-fidelity", "scalable", "crosstalk"],
+  "tags": [
+    "benchmarking",
+    "mirror-circuits",
+    "gate-fidelity",
+    "scalable",
+    "crosstalk"
+  ],
   "description": "Scalable randomized benchmarking method using mirror circuits that estimates the average infidelity of many-qubit logic layers. Unlike standard randomized benchmarking, which becomes infeasible beyond roughly five qubits, mirror circuits scale to hundreds of qubits. The technique can reveal and quantify crosstalk errors, demonstrated with simulations of up to 225 qubits and experiments on up to 16 physical qubits.",
   "hardware": "Various (cloud quantum platforms)",
   "framework": "pyGSTi, Cirq",
@@ -11,9 +17,18 @@
   "reproducible": true,
   "datePublished": "2021-12-18",
   "keyMetrics": [
-    {"metric": "Max simulated qubits", "value": "225"},
-    {"metric": "Max experimental qubits", "value": "16"},
-    {"metric": "Scalability", "value": "Hundreds of qubits"}
+    {
+      "metric": "Max simulated qubits",
+      "value": "225"
+    },
+    {
+      "metric": "Max experimental qubits",
+      "value": "16"
+    },
+    {
+      "metric": "Scalability",
+      "value": "Hundreds of qubits"
+    }
   ],
   "significance": "Enables benchmarking at scales impossible for standard randomized benchmarking, and uniquely quantifies crosstalk errors between qubits.",
   "sources": [
@@ -28,6 +43,16 @@
       "url": "https://arxiv.org/abs/2312.14107",
       "title": "Scalable Full-Stack Benchmarks for Quantum Computers",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2108.10431",
+      "title": "Theory of mirror benchmarking and demonstration on a quantum computer"
+    },
+    {
+      "type": "doi",
+      "url": "https://www.osti.gov/biblio/1891657",
+      "title": "Scalable Randomized Benchmarking of Quantum Computers Using Mirror Circuits"
     }
   ]
 }

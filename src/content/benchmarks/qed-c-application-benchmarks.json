@@ -3,15 +3,27 @@
   "slug": "qed-c-application-benchmarks",
   "algorithm": "Volumetric benchmarking framework",
   "category": "other",
-  "tags": ["QED-C", "volumetric", "application-oriented", "benchmark-suite", "standardization"],
+  "tags": [
+    "QED-C",
+    "volumetric",
+    "application-oriented",
+    "benchmark-suite",
+    "standardization"
+  ],
   "description": "Extension of the QED-C benchmark framework focused on application-specific benchmark profiles that measure quantum hardware capability across problem-relevant circuit shapes and depths. The volumetric benchmarking methodology plots result quality against circuit width and depth to produce capability maps, enabling comparison across different quantum platforms for specific application domains such as optimization, chemistry, and machine learning.",
   "hardware": "Multi-platform",
   "framework": "Qiskit, Cirq, Braket",
   "reproducible": true,
   "datePublished": "2023-12-21",
   "keyMetrics": [
-    {"metric": "Approach", "value": "Volumetric capability maps"},
-    {"metric": "Domains covered", "value": "Optimization, chemistry, ML"}
+    {
+      "metric": "Approach",
+      "value": "Volumetric capability maps"
+    },
+    {
+      "metric": "Domains covered",
+      "value": "Optimization, chemistry, ML"
+    }
   ],
   "significance": "Extends abstract benchmarks into application-specific capability assessment, mapping what real problems a quantum processor can tackle at what scale.",
   "sources": [
@@ -26,6 +38,11 @@
       "url": "https://github.com/SRI-International/QC-App-Oriented-Benchmarks",
       "title": "QED-C Application-Oriented Benchmarks GitHub Repository",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "website",
+      "url": "https://quantumbenchmarkzoo.org/content/benchmarking-tools/benchmark-suites/QED-C",
+      "title": "QED-C Benchmark suite - QuantumBenchmarkZoo"
     }
   ]
 }

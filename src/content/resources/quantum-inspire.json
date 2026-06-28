@@ -2,7 +2,14 @@
   "name": "Quantum Inspire",
   "slug": "quantum-inspire",
   "type": "tool",
-  "tags": ["education", "European", "cloud", "simulator", "hardware", "QuTech"],
+  "tags": [
+    "education",
+    "European",
+    "cloud",
+    "simulator",
+    "hardware",
+    "QuTech"
+  ],
   "description": "Quantum Inspire is a European quantum computing platform operated by QuTech that provides free access to quantum hardware and simulators through a web interface and API. The platform supports circuit-based quantum programming in multiple languages including Qiskit, and is used as the hands-on component of TU Delft's quantum computing courses on edX. It serves as a key educational tool for the European quantum computing community.",
   "website": "https://www.quantum-inspire.com",
   "openSource": false,
@@ -23,6 +30,25 @@
       "url": "https://www.edx.org/learn/computer-science/delft-university-of-technology-quantum-hardware-and-its-applications-with-quantum-inspire",
       "title": "Quantum Hardware and Its Applications with Quantum Inspire — edX",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://qutech.nl/research-engineering/quantum-computing/quantum-inspire/",
+      "title": "Quantum Inspire - QuTech"
+    },
+    {
+      "type": "url",
+      "url": "https://spectrum.ieee.org/quantum-inspire-launches",
+      "title": "Q&A: Architect of New \"Inspire\"; Quantum-Computing Platform on Spin Qubits and Programming Quantum Chips - IEEE Spectrum"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quantum Inspire Launched as Europe's First Public Quantum Computing Platform",
+      "excerpt": "In May 2020, Minister Ingrid van Engelshoven and European Commissioner Mariya Gabriel formally launched Quantum Inspire as Europe's first public quantum computing platform.",
+      "url": "https://qutech.nl/research-engineering/quantum-computing/quantum-inspire/",
+      "source": "QuTech",
+      "date": "2020-05-01"
     }
   ]
 }

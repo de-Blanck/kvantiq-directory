@@ -30,15 +30,32 @@
       "url": "https://quantumconsortium.org/quantum-consortia-qic-qed-c-q-star-and-quic-form-international-council-to-enable-and-grow-the-global-quantum-industry/",
       "title": "Quantum Consortia QIC, QED-C, Q-STAR and QuIC Form International Council",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2025/04/02/quic-report-europes-quantum-edge-hinges-on-urgency-collaboration-and-coordination/",
+      "title": "QuIC Report: Europe's Quantum Edge Hinges on Urgency, Collaboration And Coordination"
+    },
+    {
+      "type": "website",
+      "url": "https://qt.eu/ecosystem/industry/quic",
+      "title": "European Quantum Industry Consortium (QuIC)"
     }
   ],
   "news": [
     {
-      "title": "ICQIA Urges Prioritization of Quantum Technologies During Canada's G7 Presidency",
-      "excerpt": "On October 11, 2024, the International Council of Quantum Industry Associations (ICQIA), submitted a letter to Canadian Prime Minister Justin Trudeau, advocating for the prioritization of quantum technologies during Canada's G7 Presidency in 2025.",
+      "title": "QuIC Inputs on EU Inc. | Building a Stronger Framework for European Innovation",
+      "excerpt": "QuIC publication providing inputs on European innovation framework",
       "url": "https://www.euroquic.org/",
       "source": "euroquic.org",
-      "date": "2024-10-11"
+      "date": "2026-06-03"
+    },
+    {
+      "title": "QuIC Report: Europe's Quantum Edge Hinges on Urgency, Collaboration And Coordination",
+      "excerpt": "Europe risks losing competitive edge in quantum without urgent action on funding and ecosystem development",
+      "url": "https://thequantuminsider.com/2025/04/02/quic-report-europes-quantum-edge-hinges-on-urgency-collaboration-and-coordination/",
+      "source": "thequantuminsider.com",
+      "date": "2025-04-02"
     }
   ]
 }

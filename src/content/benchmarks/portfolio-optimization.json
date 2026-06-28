@@ -3,15 +3,28 @@
   "slug": "portfolio-optimization",
   "algorithm": "QAOA / VQE / Quantum Annealing",
   "category": "optimization",
-  "tags": ["finance", "portfolio", "QAOA", "VQE", "quantum-annealing", "Markowitz"],
+  "tags": [
+    "finance",
+    "portfolio",
+    "QAOA",
+    "VQE",
+    "quantum-annealing",
+    "Markowitz"
+  ],
   "description": "Finance-specific benchmark evaluating quantum optimization algorithms for Markowitz mean-variance portfolio selection. Compares QAOA, VQE, and quantum annealing against classical solvers (MIP, meta-heuristics) on asset selection and allocation problems. Recent studies highlight that while quantum methods minimize cost functions effectively, resulting portfolios may violate practical financial constraints.",
   "hardware": "Multi-platform",
   "framework": "Qiskit Finance, PennyLane, D-Wave Ocean",
   "reproducible": true,
   "datePublished": "2025-09-24",
   "keyMetrics": [
-    {"metric": "Methods compared", "value": "QAOA, VQE, quantum annealing, classical"},
-    {"metric": "Problem type", "value": "Markowitz mean-variance"}
+    {
+      "metric": "Methods compared",
+      "value": "QAOA, VQE, quantum annealing, classical"
+    },
+    {
+      "metric": "Problem type",
+      "value": "Markowitz mean-variance"
+    }
   ],
   "significance": "Highlights a critical gap: quantum optimizers minimize cost functions but may violate real financial constraints, questioning practical quantum advantage in finance.",
   "sources": [
@@ -26,6 +39,11 @@
       "url": "https://arxiv.org/abs/2407.19857",
       "title": "PO-QA: A Framework for Portfolio Optimization using Quantum Algorithms",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2508.21123",
+      "title": "Benchmarking Quantum Solvers in Noisy Digital Simulations for Financial Portfolio Optimization"
     }
   ]
 }

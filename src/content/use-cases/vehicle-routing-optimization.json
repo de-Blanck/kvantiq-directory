@@ -3,12 +3,21 @@
   "slug": "vehicle-routing-optimization",
   "industry": "Logistics",
   "category": "logistics",
-  "tags": ["vehicle-routing", "logistics", "QAOA", "optimization", "last-mile-delivery"],
+  "tags": [
+    "vehicle-routing",
+    "logistics",
+    "QAOA",
+    "optimization",
+    "last-mile-delivery"
+  ],
   "description": "Applying quantum optimization algorithms to solve complex vehicle routing problems, enabling more efficient fleet management and delivery route planning.",
   "problem": "The Vehicle Routing Problem (VRP) with time windows, capacity constraints, and multiple depots is NP-hard and becomes intractable for large fleets. Classical heuristics often miss optimal solutions, leading to increased costs and emissions.",
   "approach": "Quantum Approximate Optimization Algorithm (QAOA) and quantum annealing encode routing constraints into quantum Hamiltonians. Hybrid quantum-classical approaches decompose large problems into quantum-solvable subproblems while maintaining global solution quality.",
   "results": "Pilot projects with logistics companies have demonstrated 10-15% route efficiency improvements on problem instances with 20-50 vehicles. Scaling to real-world fleet sizes remains an active development area.",
-  "companies": ["multiverse-computing", "pasqal"],
+  "companies": [
+    "multiverse-computing",
+    "pasqal"
+  ],
   "sources": [
     {
       "type": "url",
@@ -21,6 +30,11 @@
       "url": "https://arxiv.org/abs/2002.01351",
       "title": "Quantum computing for vehicle routing problems",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2110.06799",
+      "title": "Applying quantum approximate optimization to the heterogeneous vehicle routing problem"
     }
   ]
 }

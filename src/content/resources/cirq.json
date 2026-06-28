@@ -2,7 +2,13 @@
   "name": "Cirq",
   "slug": "cirq",
   "type": "framework",
-  "tags": ["quantum-computing", "open-source", "python", "Google", "NISQ"],
+  "tags": [
+    "quantum-computing",
+    "open-source",
+    "python",
+    "Google",
+    "NISQ"
+  ],
   "description": "Cirq is an open-source Python framework for writing, manipulating, and optimizing quantum circuits. Developed by Google, it is designed for Noisy Intermediate-Scale Quantum (NISQ) devices and provides tools for research and development on quantum hardware.",
   "website": "https://quantumai.google/cirq",
   "openSource": true,
@@ -24,6 +30,25 @@
       "url": "https://github.com/quantumlib/Cirq",
       "title": "Cirq GitHub Repository",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/review-of-the-cirq-quantum-software-framework/",
+      "title": "Cirq Quantum Software Framework Review"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2111.02396",
+      "title": "Simulations of Quantum Circuits with Approximate Noise using qsim and Cirq"
+    }
+  ],
+  "news": [
+    {
+      "title": "Simulations of Quantum Circuits with Approximate Noise using qsim and Cirq",
+      "excerpt": "Research paper introducing multinode quantum trajectory simulations with qsim as a backend of Cirq, with novel algorithms for noisy quantum circuit simulation and comparison with Google's quantum computing platform experiments.",
+      "url": "https://arxiv.org/abs/2111.02396",
+      "source": "arXiv",
+      "date": "2021-11-03"
     }
   ]
 }

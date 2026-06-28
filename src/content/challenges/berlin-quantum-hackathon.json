@@ -2,7 +2,12 @@
   "name": "Berlin Quantum Hackathon 2026",
   "slug": "berlin-quantum-hackathon",
   "organizer": "Kipu Quantum",
-  "tags": ["hackathon", "QML", "optimization", "Berlin"],
+  "tags": [
+    "hackathon",
+    "QML",
+    "optimization",
+    "Berlin"
+  ],
   "description": "The Berlin Quantum Hackathon 2026 was a 6-week hybrid event organized by Kipu Quantum featuring specialized tracks in quantum machine learning and optimization. Participants worked on real-world quantum computing challenges with mentorship from industry experts. The event combined online collaboration with in-person workshops in Berlin.",
   "website": "https://berlinquantumhackathon.com/",
   "status": "completed",
@@ -10,7 +15,10 @@
   "prizes": "Not publicly disclosed",
   "location": "Hybrid Berlin",
   "eligibility": "Open to all skill levels",
-  "problemDomains": ["quantum-machine-learning", "optimization"],
+  "problemDomains": [
+    "quantum-machine-learning",
+    "optimization"
+  ],
   "sources": [
     {
       "type": "website",
@@ -23,6 +31,25 @@
       "url": "https://www.linkedin.com/company/kipu-quantum/",
       "title": "Kipu Quantum LinkedIn Page",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "press-release",
+      "url": "https://thequantuminsider.com/2026/03/12/mayo-clinic-team-wins-quantum-hackathon-with-brain-signal-detection-model/",
+      "title": "Mayo Clinic Team Wins Quantum Hackathon With Brain-Signal Detection Model"
+    },
+    {
+      "type": "website",
+      "url": "https://berlinquantum.de/en/events-tiles/event/berlin-quantum-hackathon",
+      "title": "BERLIN QUANTUM Hackathon | Quantum technology from Berlin"
+    }
+  ],
+  "news": [
+    {
+      "title": "Mayo Clinic Team Wins Quantum Hackathon With Brain-Signal Detection Model",
+      "excerpt": "A Mayo Clinic team won the Berlin Quantum Hackathon 2026 after developing a hybrid quantum–AI model that detects a person's intention to move from EEG brain signals. The five-week international competition involved 180+ applicants with six finalists selected.",
+      "url": "https://thequantuminsider.com/2026/03/12/mayo-clinic-team-wins-quantum-hackathon-with-brain-signal-detection-model/",
+      "source": "The Quantum Insider",
+      "date": "2026-03-12"
     }
   ]
 }

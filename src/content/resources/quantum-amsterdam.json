@@ -30,5 +30,14 @@
       "title": "About Quantum.Amsterdam",
       "dateAccessed": "2026-03-19"
     }
+  ],
+  "news": [
+    {
+      "title": "Meet the Netherlands: the beating heart of quantum!",
+      "excerpt": "Main event on May 20 invites attendees to 'choose their own adventure' during an immersive day of simultaneous programming at Quantum Meets 2026.",
+      "url": "https://www.quantum.amsterdam/",
+      "source": "https://www.quantum.amsterdam/",
+      "date": "2026-05-20"
+    }
   ]
 }

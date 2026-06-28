@@ -3,15 +3,27 @@
   "slug": "quantum-approximate-counting",
   "algorithm": "Quantum Amplitude Estimation (BHMT algorithm)",
   "category": "optimization",
-  "tags": ["counting", "amplitude-estimation", "Grover", "quadratic-speedup", "algorithm"],
+  "tags": [
+    "counting",
+    "amplitude-estimation",
+    "Grover",
+    "quadratic-speedup",
+    "algorithm"
+  ],
   "description": "Benchmark based on the Brassard-Hoyer-Mosca-Tapp (BHMT) quantum counting algorithm, which estimates the number of marked items in an unstructured database with quadratic speedup over classical counting. Given N items with K marked, the algorithm estimates K to within relative error epsilon using O(1/epsilon * sqrt(N/K)) queries. A simplified variant achieves the same query complexity using only Grover iterations.",
   "hardware": "Simulator / hardware-agnostic",
   "framework": "Qiskit, Cirq",
   "reproducible": true,
   "datePublished": "2019-08-28",
   "keyMetrics": [
-    {"metric": "Query complexity", "value": "O(1/\u03b5 \u00d7 \u221a(N/K))"},
-    {"metric": "Speedup", "value": "Quadratic over classical"}
+    {
+      "metric": "Query complexity",
+      "value": "O(1/ε × √(N/K))"
+    },
+    {
+      "metric": "Speedup",
+      "value": "Quadratic over classical"
+    }
   ],
   "significance": "Provides a simplified, practical variant of quantum counting that achieves optimal query complexity using only standard Grover iterations.",
   "sources": [
@@ -26,6 +38,11 @@
       "url": "https://arxiv.org/abs/quant-ph/9805082",
       "title": "Quantum Counting",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "doi",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.STACS.2021.59",
+      "title": "Quantum Approximate Counting with Nonadaptive Grover Iterations"
     }
   ]
 }

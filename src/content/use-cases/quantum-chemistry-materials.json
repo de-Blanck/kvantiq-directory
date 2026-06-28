@@ -3,12 +3,23 @@
   "slug": "quantum-chemistry-materials",
   "industry": "Materials Science",
   "category": "chemistry",
-  "tags": ["materials", "VQE", "catalysts", "battery-materials", "quantum-chemistry"],
+  "tags": [
+    "materials",
+    "VQE",
+    "catalysts",
+    "battery-materials",
+    "quantum-chemistry"
+  ],
   "description": "Using quantum simulation to design novel materials including battery electrodes, catalysts, and semiconductors by accurately modeling electronic structure at the quantum level.",
   "problem": "Classical computational methods struggle with strong electron correlation in transition metal compounds and complex materials. This limits the accurate prediction of material properties like conductivity, catalytic activity, and energy storage capacity.",
   "approach": "Variational Quantum Eigensolver (VQE) and quantum phase estimation algorithms simulate the quantum mechanical behavior of electrons in materials. Quantum computers handle the exponentially complex Hilbert space while classical optimizers refine parameters.",
   "results": "Recent demonstrations have successfully simulated small molecular catalysts and battery materials on NISQ devices. Industry partnerships are exploring lithium-ion battery cathodes and hydrogen storage materials.",
-  "companies": ["hqs", "pasqal", "phasecraft", "kvantify"],
+  "companies": [
+    "hqs",
+    "pasqal",
+    "phasecraft",
+    "kvantify"
+  ],
   "sources": [
     {
       "type": "arxiv",
@@ -21,6 +32,16 @@
       "url": "https://www.hqs.de/resources/quantum-simulation-for-materials-science",
       "title": "HQS Quantum Simulations: Quantum simulation for materials science",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "url",
+      "url": "https://pme.uchicago.edu/news/researchers-use-quantum-computers-simulate-quantum-materials",
+      "title": "Researchers use quantum computers to simulate quantum materials | Pritzker School of Molecular Engineering | The University of Chicago"
+    },
+    {
+      "type": "url",
+      "url": "https://pls.llnl.gov/research-and-development/materials-science/quantum-simulations-group",
+      "title": "Quantum Simulations Group | Lawrence Livermore National Laboratory"
     }
   ]
 }

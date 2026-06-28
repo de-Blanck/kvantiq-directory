@@ -3,7 +3,14 @@
   "slug": "qnn-classification",
   "algorithm": "Quantum Convolutional Neural Network (QCNN)",
   "category": "machine-learning",
-  "tags": ["QNN", "QCNN", "classification", "MNIST", "machine-learning", "hybrid"],
+  "tags": [
+    "QNN",
+    "QCNN",
+    "classification",
+    "MNIST",
+    "machine-learning",
+    "hybrid"
+  ],
   "description": "Benchmark comparing quantum neural network architectures for image classification tasks on standard datasets including MNIST and Fashion-MNIST. Fully parameterized QCNNs achieve excellent classification accuracy despite a small number of free parameters. Comparative studies evaluate noise robustness across different QCNN model structures, data encoding methods, and optimizers under realistic quantum noise channels.",
   "hardware": "Simulator / hardware-agnostic",
   "framework": "Qiskit Machine Learning, PennyLane, TensorFlow Quantum",
@@ -11,8 +18,14 @@
   "reproducible": true,
   "datePublished": "2021-08-02",
   "keyMetrics": [
-    {"metric": "Qubits used", "value": "10"},
-    {"metric": "Datasets", "value": "MNIST, Fashion-MNIST"}
+    {
+      "metric": "Qubits used",
+      "value": "10"
+    },
+    {
+      "metric": "Datasets",
+      "value": "MNIST, Fashion-MNIST"
+    }
   ],
   "significance": "Demonstrates that fully parameterized QCNNs achieve strong classification with far fewer parameters than classical counterparts, and evaluates noise robustness.",
   "sources": [
@@ -27,6 +40,16 @@
       "url": "https://arxiv.org/abs/2501.14412",
       "title": "Quantum Neural Networks: A Comparative Analysis and Noise Robustness Evaluation",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2411.13468",
+      "title": "Benchmarking Quantum Convolutional Neural Networks for Classification and Data Compression Tasks"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2501.17041",
+      "title": "Benchmarking Quantum Convolutional Neural Networks for Signal Classification in Simulated Gamma-Ray Burst Detection"
     }
   ]
 }

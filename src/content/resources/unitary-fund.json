@@ -30,12 +30,22 @@
       "url": "https://unitary.foundation/posts/2024_microgrant_impact/",
       "title": "Celebrating a Milestone: Over 100 Microgrants Awarded by Unitary Fund",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/ibm-quantum-grants-special-quantum-computing-access-to-the-unitary-fund-community/",
+      "title": "IBM Quantum Grants Special Quantum Computing Access to the Unitary Fund Community"
+    },
+    {
+      "type": "url",
+      "url": "https://everyone.plos.org/2018/08/20/the-unitary-fund-a-no-strings-attached-grant-program-for-open-source-quantum-computing/",
+      "title": "The Unitary Fund: a no-strings attached grant program for Open Source quantum computing"
     }
   ],
   "news": [
     {
       "title": "Celebrating a Milestone: Over 100 Microgrants Awarded by Unitary Fund",
-      "excerpt": "The Unitary Fund's microgrant program marked an incredible milestone: over 100 microgrants awarded. The program has created more than 40 different libraries with 400+ contributors and led to 3 startups and 1 non-profit.",
+      "excerpt": "The Unitary Fund's microgrant program marked a milestone of over 100 microgrants awarded, resulting in 40+ open-source libraries with 400+ contributors and 420+ papers citing the research. The grants have spawned 3 startups and 1 non-profit.",
       "url": "https://unitary.foundation/posts/2024_microgrant_impact/",
       "source": "Unitary Foundation",
       "date": "2024-06-11"

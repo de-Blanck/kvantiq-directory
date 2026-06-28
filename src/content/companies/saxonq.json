@@ -40,9 +40,26 @@
       "url": "https://qci.dlr.de/en/partner/saxonq/",
       "title": "SaxonQ — DLR Quantum Computing Initiative",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/saxonq-demonstrates-real-time-applications-on-portable-quantum-computer-and-enters-distribution-agreement-with-bechtle/",
+      "title": "SaxonQ and Quantum Machines Demonstrate Real-Time Applications on a Portable Quantum Computer and SaxonQ Enters Distribution Agreement with Bechtle"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2025/04/09/saxonq-demonstrates-applications-on-a-mobile-quantum-computer-powered-by-quantum-machines-tech/",
+      "title": "SaxonQ Demonstrates Applications on a Mobile Quantum Computer, Powered by Quantum Machines Tech"
     }
   ],
   "news": [
+    {
+      "title": "SaxonQ Demonstrates Applications on a Mobile Quantum Computer, Powered by Quantum Machines Tech",
+      "excerpt": "SaxonQ and Quantum Machines demonstrated the first public real-time quantum applications on a mobile, room-temperature quantum computer at Hannover Messe 2025, including quantum chemical calculations of hydrogen energy levels and real-time image recognition using an NV-center processor.",
+      "url": "https://thequantuminsider.com/2025/04/09/saxonq-demonstrates-applications-on-a-mobile-quantum-computer-powered-by-quantum-machines-tech/",
+      "source": "The Quantum Insider",
+      "date": "2025-04-09"
+    },
     {
       "title": "Bechtle ist erster zertifizierter Partner von SaxonQ",
       "excerpt": "Der mobile Quantencomputer kommt jetzt noch näher zu den Anwendern. Das Team des Bechtle-Kompetenzzentrums für Quantentechnologien aus Bonn war Erste mit Zertifizierung.",

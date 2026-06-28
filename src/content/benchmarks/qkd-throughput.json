@@ -3,16 +3,31 @@
   "slug": "qkd-throughput",
   "algorithm": "BB84 quantum key distribution protocol",
   "category": "cryptography",
-  "tags": ["QKD", "BB84", "key-distribution", "cryptography", "security"],
+  "tags": [
+    "QKD",
+    "BB84",
+    "key-distribution",
+    "cryptography",
+    "security"
+  ],
   "description": "Benchmark evaluating quantum key distribution throughput and security using the BB84 protocol, the foundational QKD scheme proposed by Bennett and Brassard in 1984. The secure bound of the quantum bit error rate (QBER) for BB84 is approximately 11%, extendable to 12.6% with six-state variants. Benchmarks assess secret key rates, QBER tolerance, and distance limits under coherent attacks with decoy-state methods.",
   "hardware": "Photonic QKD systems",
   "framework": "SimulaQron, Qiskit (simulation)",
   "reproducible": true,
   "datePublished": "2023-12-08",
   "keyMetrics": [
-    {"metric": "QBER security bound", "value": "11%"},
-    {"metric": "Six-state bound", "value": "12.6%"},
-    {"metric": "Protocol", "value": "BB84"}
+    {
+      "metric": "QBER security bound",
+      "value": "11%"
+    },
+    {
+      "metric": "Six-state bound",
+      "value": "12.6%"
+    },
+    {
+      "metric": "Protocol",
+      "value": "BB84"
+    }
   ],
   "significance": "Establishes the fundamental security limits for the most widely deployed quantum cryptography protocol, critical for commercial QKD system certification.",
   "sources": [
@@ -27,6 +42,16 @@
       "url": "https://arxiv.org/abs/2110.01973",
       "title": "Asymptotically Optimal Quantum Key Distribution Protocols",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2603.27278",
+      "title": "Quantum Bit Error Rate Analysis in BB84 Quantum Key Distribution: Measurement, Statistical Estimation, and Eavesdropping Detection"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2605.29513",
+      "title": "Performance Analysis of Underwater Quantum Key Distribution Protocols: BB84, SARG04, and BBM92"
     }
   ]
 }

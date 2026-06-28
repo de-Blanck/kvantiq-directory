@@ -2,7 +2,14 @@
   "name": "CUDA-Q",
   "slug": "cuda-q",
   "type": "framework",
-  "tags": ["quantum-computing", "open-source", "python", "c++", "GPU", "HPC"],
+  "tags": [
+    "quantum-computing",
+    "open-source",
+    "python",
+    "c++",
+    "GPU",
+    "HPC"
+  ],
   "description": "CUDA-Q (formerly CUDA Quantum) is NVIDIA's open-source platform for hybrid quantum-classical computing. It enables developers to integrate quantum processing units (QPUs) with GPUs and CPUs for high-performance quantum simulations and algorithm development. CUDA-Q supports both Python and C++.",
   "website": "https://nvidia.com/en-us/solutions/quantum-computing/cuda-q/",
   "openSource": true,
@@ -24,6 +31,25 @@
       "url": "https://github.com/NVIDIA/cuda-quantum",
       "title": "CUDA-Q GitHub Repository",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2501.15939",
+      "title": "Harnessing CUDA-Q's MPS for Tensor Network Simulations of Large-Scale Quantum Circuits"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/pasqal-integrates-nvidia-cuda-q-with-qrmi-for-slurm-native-hybrid-hpc-quantum-workflows/",
+      "title": "Pasqal Integrates NVIDIA CUDA-Q with QRMI for Slurm-Native Hybrid HPC-Quantum Workflows"
+    }
+  ],
+  "news": [
+    {
+      "title": "Harnessing CUDA-Q's MPS for Tensor Network Simulations of Large-Scale Quantum Circuits",
+      "excerpt": "Research paper evaluating CUDA-Q tensor network simulators on an Nvidia Grace Hopper system, particularly the Matrix Product State (MPS) formulation. Submitted to 33rd Euromicro International Conference on Parallel, Distributed and Network-Based Processing (PDP 2025).",
+      "url": "https://arxiv.org/abs/2501.15939",
+      "source": "arXiv",
+      "date": "2025-01-27"
     }
   ]
 }

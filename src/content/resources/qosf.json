@@ -29,6 +29,20 @@
       "url": "https://github.com/qosf",
       "title": "QOSF GitHub Organization",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "press-release",
+      "url": "https://thequantuminsider.com/2020/10/19/quantum-open-source-foundation-kicks-off-the-wittek-quantum-prize/",
+      "title": "Quantum Open Source Foundation Kicks Off the Wittek Quantum Prize"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quantum Open Source Foundation Kicks Off the Wittek Quantum Prize",
+      "excerpt": "The Quantum Open Source Foundation and Unitary Fund launched a $4,000 prize dedicated to celebrating open source software contributors in the quantum computing space",
+      "url": "https://thequantuminsider.com/2020/10/19/quantum-open-source-foundation-kicks-off-the-wittek-quantum-prize/",
+      "source": "The Quantum Insider",
+      "date": "2020-10-19"
     }
   ]
 }

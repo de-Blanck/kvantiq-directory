@@ -2,7 +2,13 @@
   "name": "QWorld",
   "slug": "qworld",
   "type": "community",
-  "tags": ["education", "open-source", "workshops", "European", "nonprofit"],
+  "tags": [
+    "education",
+    "open-source",
+    "workshops",
+    "European",
+    "nonprofit"
+  ],
   "description": "QWorld is a nonprofit global network dedicated to quantum computing education through free workshops, mentorship programs, and open-source training materials. The organization coordinates local quantum groups (QCousins) across Europe and beyond, offering structured workshop series such as QBronze and QSilver that teach quantum programming with hands-on exercises. Its educational materials have been completed over 4,000 times worldwide.",
   "website": "https://qworld.net",
   "openSource": true,
@@ -24,6 +30,11 @@
       "url": "https://www.eitdeeptechtalent.eu/the-pledge/meet-the-pledgers/qworld/",
       "title": "QWorld — EIT Deep Tech Talent Initiative",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "website",
+      "url": "https://open-quantum-institute.cern/acf-partner/qworld/",
+      "title": "QWorld – The Open Quantum Institute (CERN)"
     }
   ]
 }

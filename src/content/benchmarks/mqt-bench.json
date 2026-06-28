@@ -42,6 +42,11 @@
       "url": "https://github.com/cda-tum/MQTBench",
       "title": "MQT Bench GitHub Repository",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2204.13719",
+      "title": "MQT Bench: Benchmarking Software and Design Automation Tools for Quantum Computing"
     }
   ],
   "news": [

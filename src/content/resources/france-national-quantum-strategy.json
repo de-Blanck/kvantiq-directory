@@ -29,15 +29,32 @@
       "url": "https://thequantuminsider.com/2024/03/07/france-2030-progress-update-three-years-after-the-launch-of-the-national-quantum-technologies-strategy-and-the-launch-of-the-proqcima-program/",
       "title": "France 2030: Progress Update and Launch of the PROQCIMA Program",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.cnrs.fr/en/update/french-quantum-national-rd-strategy-just-started",
+      "title": "The French Quantum national R&D strategy just started | CNRS"
+    },
+    {
+      "type": "url",
+      "url": "https://www.pepr-quantique.fr/en/the-national-strategy-for-quantum-technologies/",
+      "title": "The National Strategy for Quantum Technologies | PEPR Quantum"
     }
   ],
   "news": [
     {
-      "title": "France 2030: PROQCIMA Program Launch for Universal Quantum Computers",
-      "excerpt": "France announced the launch of PROQCIMA program, which aims to have two prototypes of universal quantum computers of French design by 2030, as part of the progress review of the National Quantum Technologies Strategy three years after its initial launch.",
+      "title": "France 2030: Progress Update - PROQCIMA Program Launched",
+      "excerpt": "The launch of PROQCIMA was announced, which aims to have two prototypes of universal quantum computers of French design by 2030.",
       "url": "https://thequantuminsider.com/2024/03/07/france-2030-progress-update-three-years-after-the-launch-of-the-national-quantum-technologies-strategy-and-the-launch-of-the-proqcima-program/",
       "source": "The Quantum Insider",
-      "date": "2024-03-06"
+      "date": "2024-03-07"
+    },
+    {
+      "title": "Quantum Priority Research and Equipment Programme (PEPR) Launched",
+      "excerpt": "Ten selected projects were announced during the launch of the €150M Quantum Priority Research and Equipment Programme (PEPR).",
+      "url": "https://www.cnrs.fr/en/update/french-quantum-national-rd-strategy-just-started",
+      "source": "CNRS",
+      "date": "2022-03-07"
     }
   ]
 }

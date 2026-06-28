@@ -57,6 +57,13 @@
   ],
   "news": [
     {
+      "title": "ParityQC: a blueprint for Europe's quantum future",
+      "excerpt": "ParityQC positions itself as a key player in Europe's quantum computing future with its architecture blueprint and operating system.",
+      "url": "https://www.parityqc.com",
+      "source": "ParityQC",
+      "date": "2026-06-10"
+    },
+    {
       "title": "YZ-plane measurement-based quantum computation: Universality and Parity Architecture implementation",
       "excerpt": "Peer-reviewed paper demonstrating universal quantum computation driven by YZ-plane measurements and embedding into the ParityQC Architecture with register-logic graphs.",
       "url": "https://arxiv.org/abs/2603.29379",

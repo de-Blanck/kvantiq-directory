@@ -4,7 +4,13 @@
   "country": "Denmark",
   "region": "nordics",
   "type": "hardware",
-  "tags": ["quantum-sensing", "optomechanics", "nanomechanical-resonators", "quantum-memory", "NBI-spinout"],
+  "tags": [
+    "quantum-sensing",
+    "optomechanics",
+    "nanomechanical-resonators",
+    "quantum-memory",
+    "NBI-spinout"
+  ],
   "description": "QFactory is a Niels Bohr Institute spinout developing nanomechanical resonators for quantum sensing, quantum opto- and electromechanics, and quantum memories. Co-founded by CEO Dr. Eric Langman and CSO Prof. Albert Schliesser (head of the NBI Quantum Optomechanics group), the Copenhagen-based ApS (CVR 44133482) was selected for the BioInnovation Institute Venture Lab program as the only quantum-technology company in its cohort.",
   "website": "https://qfactory.dk",
   "headquarters": "Copenhagen, Denmark (Blegdamsvej 17, 2100 Kobenhavn O)",
@@ -45,6 +51,15 @@
       "url": "https://datacvr.virk.dk/enhed/virksomhed/44133482",
       "title": "QFactory ApS - Danish Central Business Register (CVR 44133482)",
       "dateAccessed": "2026-05-01"
+    }
+  ],
+  "news": [
+    {
+      "title": "Copenhagen's BII accelerates 11 spinouts in human health, climate tech, and quantum with €5.5M cohort",
+      "excerpt": "BioInnovation Institute accelerates cohort of 11 spinouts including quantum technology companies",
+      "url": "https://techfundingnews.com/bii-venture-lab-11-startups-health-quantum/",
+      "source": "TechFundingNews",
+      "date": "2026-06-26"
     }
   ]
 }

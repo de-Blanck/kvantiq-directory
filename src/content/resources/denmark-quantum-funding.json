@@ -29,9 +29,21 @@
       "url": "https://dqc.dk/about/",
       "title": "About the Danish Quantum Community",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.quantum.gov/the-united-states-and-denmark-take-steps-to-strengthen-quantum-cooperation/",
+      "title": "The United States and Denmark Take Steps to Strengthen Quantum Cooperation - National Quantum Initiative"
     }
   ],
   "news": [
+    {
+      "title": "The United States and Denmark Take Steps to Strengthen Quantum Cooperation",
+      "excerpt": "The United States and Denmark signed a Joint Statement on Cooperation in Quantum Information Science and Technology (QIST)",
+      "url": "https://www.quantum.gov/the-united-states-and-denmark-take-steps-to-strengthen-quantum-cooperation/",
+      "source": "National Quantum Initiative (US)",
+      "date": "2022-06-08"
+    },
     {
       "title": "Danish Quantum Community Announces New Board of Directors",
       "excerpt": "On 17 June 2026, the Danish Quantum Community (DQC) held its Annual General Assembly kindly hosted by The Niels Bohr Institute.",

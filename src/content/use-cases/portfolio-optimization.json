@@ -3,12 +3,20 @@
   "slug": "portfolio-optimization",
   "industry": "Finance",
   "category": "finance",
-  "tags": ["portfolio-optimization", "QAOA", "finance", "hybrid"],
+  "tags": [
+    "portfolio-optimization",
+    "QAOA",
+    "finance",
+    "hybrid"
+  ],
   "description": "Applying quantum optimization algorithms to financial portfolio selection, aiming to find optimal asset allocations faster than classical solvers.",
   "problem": "Classical portfolio optimization becomes computationally intractable as the number of assets, constraints, and risk factors grows. The problem is NP-hard in its general form.",
   "approach": "QAOA and variational quantum algorithms encode portfolio constraints into quantum circuits. Hybrid loops optimize parameters classically while evaluating the objective function on quantum hardware.",
   "results": "Demonstrations on small portfolios (10-50 assets) show competitive results with classical methods. Quantum advantage for real-world portfolio sizes is expected as hardware scales.",
-  "companies": ["multiverse-computing", "terra-quantum"],
+  "companies": [
+    "multiverse-computing",
+    "terra-quantum"
+  ],
   "sources": [
     {
       "type": "arxiv",
@@ -21,6 +29,25 @@
       "url": "https://arxiv.org/abs/2207.10555",
       "title": "A survey of quantum computing for finance",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "doi",
+      "url": "https://quantum-journal.org/papers/q-2021-07-28-513/",
+      "title": "Quantum walk-based portfolio optimisation"
+    },
+    {
+      "type": "website",
+      "url": "https://www.scquantum.org/news/quantum-computing-portfolio-optimization-where-quantum-meets-finance",
+      "title": "Quantum Computing for Portfolio Optimization: Where Quantum Meets Finance"
+    }
+  ],
+  "news": [
+    {
+      "title": "SC Quantum and qBraid release white paper on quantum computing for portfolio optimization",
+      "excerpt": "A new white paper from SC Quantum and qBraid explores how quantum algorithms like VQE and QAOA could support portfolio optimization, with discussion of industry applications and challenges for near-term hardware.",
+      "url": "https://www.scquantum.org/news/quantum-computing-portfolio-optimization-where-quantum-meets-finance",
+      "source": "SC Quantum",
+      "date": "2025-09-11"
     }
   ]
 }

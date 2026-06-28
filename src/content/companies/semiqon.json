@@ -41,9 +41,26 @@
       "url": "https://www.vttresearch.com/en/ourservices/semiqon-building-silicon-quantum-computer",
       "title": "SemiQon: Building silicon quantum computer - VTT Case Study",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://cordis.europa.eu/project/id/101218392",
+      "title": "Cool-Chips - Cryogenic CMOS chips for quantum, HPC and space industry | CORDIS | European Commission"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2025/11/03/yc-backed-conductor-quantum-partners-with-finlands-semiqon-to-push-silicon-quantum-computing-forward/",
+      "title": "YC-Backed Conductor Quantum Partners With Finland's SemiQon to Push Silicon Quantum Computing Forward"
     }
   ],
   "news": [
+    {
+      "title": "YC-Backed Conductor Quantum Partners With Finland's SemiQon to Push Silicon Quantum Computing Forward",
+      "excerpt": "Conductor Quantum, a Y Combinator-backed startup, has partnered with SemiQon to accelerate development of scalable silicon-based quantum computers, combining SemiQon's silicon quantum chips with Conductor's AI-driven control software",
+      "url": "https://thequantuminsider.com/2025/11/03/yc-backed-conductor-quantum-partners-with-finlands-semiqon-to-push-silicon-quantum-computing-forward/",
+      "source": "The Quantum Insider",
+      "date": "2025-11-03"
+    },
     {
       "title": "What is cryo-CMOS? Our CTO explains",
       "excerpt": "Our CTO and co-founder, Janne Lehtinen, summarizes key questions about cryo-CMOS technology, including what it means and how it compares to other solutions on the market.",

@@ -3,12 +3,23 @@
   "slug": "drug-discovery-hybrid",
   "industry": "Pharmaceuticals",
   "category": "chemistry",
-  "tags": ["drug-discovery", "molecular-simulation", "VQE", "hybrid"],
+  "tags": [
+    "drug-discovery",
+    "molecular-simulation",
+    "VQE",
+    "hybrid"
+  ],
   "description": "Using hybrid quantum-classical methods to accelerate drug discovery by simulating molecular interactions more accurately than classical methods alone.",
   "problem": "Classical computers struggle to accurately simulate quantum mechanical properties of drug molecules, especially electron correlation effects in large molecular systems. This limits the accuracy of computational drug screening.",
   "approach": "Hybrid quantum-classical algorithms like VQE and quantum machine learning models are used to compute molecular properties. The quantum processor handles the quantum-mechanical simulation while classical computers manage optimization and data processing.",
   "results": "Early results show quantum-enhanced models can achieve chemical accuracy for small molecules. Scaling to pharmaceutically relevant molecules remains an active research challenge.",
-  "companies": ["pasqal", "iqm", "kvantify", "qubit-pharmaceuticals", "algorithmiq"],
+  "companies": [
+    "pasqal",
+    "iqm",
+    "kvantify",
+    "qubit-pharmaceuticals",
+    "algorithmiq"
+  ],
   "sources": [
     {
       "type": "arxiv",
@@ -21,6 +32,11 @@
       "url": "https://www.mckinsey.com/industries/life-sciences/our-insights/quantum-computing-in-drug-research-and-development",
       "title": "McKinsey: Quantum computing in drug research and development",
       "dateAccessed": "2026-03-20"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2108.11644",
+      "title": "Hybrid quantum-classical machine learning for generative chemistry and drug design"
     }
   ]
 }
