@@ -3,7 +3,13 @@
   "slug": "quantum-generative-model",
   "algorithm": "Quantum Generative Adversarial Network (QGAN)",
   "category": "machine-learning",
-  "tags": ["QGAN", "generative-model", "MNIST", "machine-learning", "distribution-learning"],
+  "tags": [
+    "QGAN",
+    "generative-model",
+    "MNIST",
+    "machine-learning",
+    "distribution-learning"
+  ],
   "description": "Benchmark for quantum generative adversarial networks that learn probability distributions and load them into quantum states. Through the interplay of quantum channels and classical neural networks, QGANs achieve polynomial gate complexity for distribution loading. Implementations on IBM Quantum hardware demonstrate competitive image generation on MNIST and Fashion-MNIST, with the MosaiQ framework achieving significant improvements in Frechet Inception Distance scores.",
   "hardware": "IBM Quantum, simulators",
   "framework": "Qiskit Machine Learning, PennyLane",
@@ -11,9 +17,18 @@
   "reproducible": true,
   "datePublished": "2019-04-01",
   "keyMetrics": [
-    {"metric": "Qubits used", "value": "8"},
-    {"metric": "Gate complexity", "value": "Polynomial for distribution loading"},
-    {"metric": "Datasets", "value": "MNIST, Fashion-MNIST"}
+    {
+      "metric": "Qubits used",
+      "value": "8"
+    },
+    {
+      "metric": "Gate complexity",
+      "value": "Polynomial for distribution loading"
+    },
+    {
+      "metric": "Datasets",
+      "value": "MNIST, Fashion-MNIST"
+    }
   ],
   "significance": "Demonstrates that quantum generative models can achieve polynomial gate complexity for distribution loading, a potential exponential advantage over classical methods.",
   "sources": [
@@ -28,6 +43,11 @@
       "url": "https://www.nature.com/articles/s41534-019-0223-2",
       "title": "Quantum Generative Adversarial Networks for learning and loading random distributions (npj Quantum Information)",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2506.18002",
+      "title": "A Survey of Quantum Generative Adversarial Networks: Architectures, Use Cases, and Real-World Implementations"
     }
   ]
 }
