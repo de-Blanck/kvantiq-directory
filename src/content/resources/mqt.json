@@ -50,6 +50,13 @@
       "url": "https://arxiv.org/abs/2405.17543",
       "source": "arXiv",
       "date": "2024-05-27"
+    },
+    {
+      "title": "MQT ProblemSolver 0.5.0 released, integrating mqt-qubomaker and adding resource estimation module",
+      "excerpt": "MQT ProblemSolver 0.5.0 migrates the mqt-qubomaker codebase into the ProblemSolver repository and adds a new resource_estimation module. The standalone mqt-qubomaker package (v1.0.2) was archived as a final release, with development continuing inside ProblemSolver.",
+      "url": "https://github.com/munich-quantum-toolkit/problemsolver/releases",
+      "source": "Munich Quantum Toolkit GitHub",
+      "date": "2026-07-02"
     }
   ]
 }

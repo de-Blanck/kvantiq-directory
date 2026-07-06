@@ -50,6 +50,13 @@
       "url": "https://arxiv.org/abs/2501.15939",
       "source": "arXiv",
       "date": "2025-01-27"
+    },
+    {
+      "title": "CUDA-Q 0.15.0 released with QEC decoder primitives, LLVM 22 upgrade, and Python 3.13 support",
+      "excerpt": "CUDA-Q 0.15.0 adds source-language support for detector, logical_observable, and detectors primitives for quantum error correction, upgrades LLVM from version 16 to 22.1, and adds CUDA 13 and Python 3.13 support. Enables real-time QEC decoding on Quantinuum backends and job submission to QCI backends.",
+      "url": "https://github.com/NVIDIA/cuda-quantum/releases/tag/0.15.0",
+      "source": "CUDA-Q GitHub Releases",
+      "date": "2026-07-02"
     }
   ]
 }

@@ -58,6 +58,18 @@
       "type": "url",
       "url": "https://quantumcomputingreport.com/quantware-q-ctrl-and-qblox-launch-qub-reference-architecture-for-quantum-adoption/",
       "title": "QuantWare, Q-CTRL, and Qblox Launch QUB Reference Architecture for Quantum Adoption - Quantum Computing Report"
+    },
+    {
+      "type": "url",
+      "url": "https://www.koreatimes.co.kr/amp/foreignaffairs/20260703/quantum-leaders-converge-in-seoul-as-dutch-australian-and-canadian-delegations-expand-korea-ties",
+      "title": "Quantum leaders converge in Seoul as Dutch, Australian, and Canadian delegations expand Korea ties - Korea Times",
+      "dateAccessed": "2026-07-05"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/03/south-korea-expands-quantum-cooperation-with-canada-u-k-and-eu-at-quantum-korea-2026/",
+      "title": "South Korea Expands Quantum Cooperation with Canada, UK and EU at Quantum Korea 2026 - The Quantum Insider",
+      "dateAccessed": "2026-07-05"
     }
   ],
   "news": [
@@ -74,6 +86,13 @@
       "url": "https://www.hpcwire.com/off-the-wire/",
       "source": "HPCwire",
       "date": "2026-06-25"
+    },
+    {
+      "title": "Qblox joins Dutch national quantum delegation at Quantum Korea 2026 in Seoul",
+      "excerpt": "Qblox participated in a six-organization Dutch national quantum delegation at Quantum Korea 2026 (July 2–4, Seoul), alongside QDNL, TNO, QuTech, QuantWare, and Delft Circuits. The delegation operated a Netherlands Lounge for targeted meetings with Korean industry and research partners to deepen bilateral quantum cooperation.",
+      "url": "https://thequantuminsider.com/2026/07/03/south-korea-expands-quantum-cooperation-with-canada-u-k-and-eu-at-quantum-korea-2026/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-03"
     }
   ]
 }

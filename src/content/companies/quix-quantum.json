@@ -46,9 +46,28 @@
       "type": "url",
       "url": "https://thequantuminsider.com/2026/04/02/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time/",
       "title": "QuiX Quantum Demonstrates Below-Threshold Error Mitigation in Photonic Quantum Computing For First Time"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/quix-quantum-details-dedalo-roadmap-for-logical-qubits-and-hybrid-hpc-integration/",
+      "title": "QuiX Quantum Details Dedalo Roadmap for Logical Qubits and Hybrid HPC Integration - HPCwire",
+      "dateAccessed": "2026-07-05"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quix-quantum-launches-dedalo-photonic-architecture-to-address-photon-loss-via-single-basis-logical-qubits/",
+      "title": "QuiX Quantum Launches Dedalo Photonic Architecture - Quantum Computing Report",
+      "dateAccessed": "2026-07-05"
     }
   ],
   "news": [
+    {
+      "title": "QuiX Quantum unveils Dedalo photonic architecture for fault-tolerant quantum computing with logical qubits",
+      "excerpt": "QuiX Quantum released Dedalo, a three-tiered photonic quantum computing architecture targeting fault-tolerant systems built on logical qubits using CMOS-compatible silicon nitride photonic integrated circuits. The system operates at room temperature and is designed for modular integration into standard 19-inch HPC server racks.",
+      "url": "https://thequantuminsider.com/2026/06/30/quix-quantum-unveils-path-to-universal-photonic-quantum-computing-with-logical-qubits/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-30"
+    },
     {
       "title": "Enschede-based QuiX Quantum secures €15M to launch first universal photonic quantum computer",
       "excerpt": "QuiX Quantum secured €15M in Series A funding co-led by Invest NL and EIC Fund to deliver its first-generation universal photonic quantum computer.",
