@@ -82,6 +82,13 @@
       "url": "https://www.hpcwire.com/off-the-wire/alice-bob-surpasses-hiring-targets-ahead-of-schedule-as-quantum-workforce-grows/",
       "source": "HPCwire",
       "date": "2026-04-16"
+    },
+    {
+      "title": "Alice & Bob unveils Helium — first on-premise cat-qubit quantum system for research partners",
+      "excerpt": "Alice & Bob launches the Helium Quantum System, a complete on-premise cat-qubit system encoding one logical qubit from 18 cat qubits with ~40 kW power draw, including the Starboard monitoring interface and Slurm-compatible scheduler integration via the open-source QRMI library.",
+      "url": "https://thequantuminsider.com/2026/06/11/alice-bob-unveils-first-quantum-system-available-for-research-partners/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-11"
     }
   ]
 }

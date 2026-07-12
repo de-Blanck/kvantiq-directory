@@ -17,7 +17,7 @@
   "featured": false,
   "headquarters": "Reading, United Kingdom",
   "employees": "140+",
-  "funding": "USD 150M+",
+  "funding": "USD 500M+ (GBP 260M Series C, June 2026)",
   "accessModel": "Quantum-as-a-Service (cloud API)",
   "products": [
     {
@@ -75,6 +75,13 @@
       "url": "https://quantumzeitgeist.com/oxford-quantum-circuits-oqc-wafer-scale-packaging-qubit/",
       "source": "Quantum Zeitgeist",
       "date": "2026-02-16"
+    },
+    {
+      "title": "OQC raises £260M Series C — largest private quantum computing funding round in Europe",
+      "excerpt": "Oxford Quantum Circuits closes an oversubscribed £260M ($350M) Series C led by Bullhound Capital with co-investors including British Business Bank, COFIDES, Alpha Edison, and Magdalen College Oxford. OQC now operates quantum systems in the UK, US, Japan, and Spain.",
+      "url": "https://thequantuminsider.com/2026/06/03/oqc-raises-260-million-in-series-c/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-03"
     }
   ]
 }

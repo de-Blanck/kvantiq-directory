@@ -50,6 +50,20 @@
       "url": "https://arxiv.org/abs/2405.17543",
       "source": "arXiv",
       "date": "2024-05-27"
+    },
+    {
+      "title": "MQT Bench 2.2.3 released — adds Dynamic QFT and Iterative Quantum Phase Estimation circuits",
+      "excerpt": "MQT Bench 2.2.3 adds Dynamic QFT and Iterative Quantum Phase Estimation (IQPE) benchmark circuits with documentation updates and bug fixes.",
+      "url": "https://github.com/munich-quantum-toolkit/bench/releases",
+      "source": "GitHub — Munich Quantum Toolkit",
+      "date": "2026-07-07"
+    },
+    {
+      "title": "MQT DDSIM 2.4.0 released",
+      "excerpt": "MQT DDSIM 2.4.0 released, continuing active development of the decision-diagram-based quantum circuit simulation tool within the Munich Quantum Toolkit.",
+      "url": "https://pypi.org/org/munich-quantum-toolkit/",
+      "source": "PyPI — Munich Quantum Toolkit",
+      "date": "2026-07-09"
     }
   ]
 }
