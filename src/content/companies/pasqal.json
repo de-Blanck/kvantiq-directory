@@ -51,6 +51,12 @@
       "url": "https://thequantuminsider.com/2026/04/21/pasqal-thoughts-2026-quantum-transition-real-world-deployment/",
       "title": "Pasqal Showcases Quantum Progress at 2026 Event - The Quantum Insider",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/chips-ju-and-pasqal-launch-e50m-57-2m-usd-q-planet-pilot-line-to-industrialize-neutral-atom-quantum-chips/",
+      "title": "Chips JU and Pasqal Launch €50M Q-PLANET Pilot Line - Quantum Computing Report",
+      "dateAccessed": "2026-07-19"
     }
   ],
   "news": [
@@ -88,6 +94,13 @@
       "url": "https://thequantuminsider.com/2026/04/21/pasqal-thoughts-2026-quantum-transition-real-world-deployment/",
       "source": "The Quantum Insider",
       "date": "2026-04-21"
+    },
+    {
+      "title": "Chips JU and Pasqal launch €50M Q-PLANET pilot line to industrialise neutral-atom quantum chips",
+      "excerpt": "The EU Chips Joint Undertaking and Pasqal launched Q-PLANET, a six-year €50 million initiative with 28 RTOs and industrial partners across 11 EU Member States, targeting TRL 4 to TRL 6 maturation for neutral-atom quantum chip manufacturing.",
+      "url": "https://thequantuminsider.com/2026/07/13/launch-of-q-planet-european-pilot-line-to-industrialize-neutral-atom-quantum-chips/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-13"
     }
   ]
 }

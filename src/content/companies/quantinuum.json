@@ -52,6 +52,12 @@
       "url": "https://thequantuminsider.com/2026/05/05/quantinuum-and-bmw-group-expand-quantum-computing-collaboration-with-new-multi-year-partnership/",
       "title": "Quantinuum And BMW Group Expand Quantum Computing Collaboration With New Multi-Year Partnership - The Quantum Insider",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://www.cnbc.com/2026/06/04/quantinuum-qnt-stock-first-trade-ipo.html",
+      "title": "Quantinuum closes flat in Nasdaq debut after upsized offering - CNBC",
+      "dateAccessed": "2026-07-19"
     }
   ],
   "news": [
@@ -61,6 +67,20 @@
       "url": "https://thequantuminsider.com/2026/05/05/quantinuum-and-bmw-group-expand-quantum-computing-collaboration-with-new-multi-year-partnership/",
       "source": "The Quantum Insider",
       "date": "2026-05-05"
+    },
+    {
+      "title": "Quantinuum completes Nasdaq IPO at $10B valuation in Europe's largest quantum listing",
+      "excerpt": "Quantinuum raised approximately $1B in its Nasdaq IPO, trading under the ticker QNT, in what became the largest quantum computing IPO from a European company and the sector's biggest public listing to date.",
+      "url": "https://www.cnbc.com/2026/06/04/quantinuum-qnt-stock-first-trade-ipo.html",
+      "source": "CNBC",
+      "date": "2026-06-04"
+    },
+    {
+      "title": "Quantinuum, Rolls-Royce, Riverlane and University of Edinburgh sign agreement to explore quantum computing for industrial design and simulation",
+      "excerpt": "The four-way collaboration targets quantum-accelerated computational fluid dynamics simulations for gas turbine design, combining Quantinuum's H-Series hardware, Riverlane's quantum error correction, and EPCC's HPC infrastructure.",
+      "url": "https://thequantuminsider.com/2026/07/14/quantinuum-rolls-royce-riverlane-and-university-of-edinburgh-sign-agreement-to-explore-quantum-computing-for-industrial-design-and-simulation/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-14"
     }
   ]
 }

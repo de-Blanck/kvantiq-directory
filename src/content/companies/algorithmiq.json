@@ -11,12 +11,12 @@
     "quantum-chemistry"
   ],
   "founded": 2020,
-  "description": "Algorithmiq develops quantum algorithms for life sciences and drug discovery applications. The company focuses on creating quantum-enhanced computational methods for molecular simulations and pharmaceutical research. Algorithmiq combines quantum computing expertise with domain knowledge in chemistry and biology to accelerate drug development.",
+  "description": "Algorithmiq develops quantum algorithms for life sciences and drug discovery applications. The company focuses on quantum-enhanced computational methods for molecular simulations and pharmaceutical research. Founded in Helsinki, Algorithmiq moved its global headquarters to Milan in May 2026 following a EUR 18M funding round, bringing total funding to over EUR 36M.",
   "website": "https://algorithmiq.fi",
   "featured": false,
-  "headquarters": "Helsinki, Finland",
+  "headquarters": "Milan, Italy",
   "employees": "46",
-  "funding": "EUR 20M+",
+  "funding": "EUR 36M+",
   "accessModel": "Software licensing + consulting",
   "products": [
     {
@@ -50,6 +50,28 @@
       "type": "website",
       "url": "https://www.businessfinland.com/companies/a/algorithmiq-oy/",
       "title": "Algorithmiq Oy | Business Finland"
+    },
+    {
+      "type": "url",
+      "url": "https://www.eu-startups.com/2026/05/quantum-software-startup-algorithmiq-raises-e18-million-and-moves-global-hq-from-helsinki-to-milan/",
+      "title": "Quantum software startup Algorithmiq raises €18 million and moves global HQ from Helsinki to Milan - EU-Startups",
+      "dateAccessed": "2026-07-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "Algorithmiq wins €1.7M Wellcome Leap Q4Bio prize for quantum-enabled cancer drug discovery",
+      "excerpt": "Algorithmiq was awarded the $2M Wellcome Leap Q4Bio prize for a quantum-classical workflow simulating photosensitizer drug properties for photodynamic cancer therapy on a 100-qubit IBM quantum system.",
+      "url": "https://thequantuminsider.com/2026/04/16/wellcome-leap-quantum-for-bio-challenge-prize/",
+      "source": "The Quantum Insider",
+      "date": "2026-04-16"
+    },
+    {
+      "title": "Algorithmiq raises €18M and moves global headquarters from Helsinki to Milan",
+      "excerpt": "Algorithmiq closed a EUR 18M funding round — Italy's largest quantum VC investment to date — and relocated its global headquarters from Helsinki to Milan, bringing total funding to over EUR 36M.",
+      "url": "https://tech.eu/2026/05/11/algorithmiq-moves-global-hq-to-milan-and-raises-eur18m-in-italys-largest-quantum-vc-round/",
+      "source": "Tech.eu",
+      "date": "2026-05-11"
     }
   ]
 }

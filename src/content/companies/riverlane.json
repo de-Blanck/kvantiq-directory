@@ -51,6 +51,18 @@
       "url": "https://www.riverlane.com/press-release/riverlane-publishes-qec-technology-roadmap",
       "title": "Riverlane publishes QEC Technology Roadmap that can accelerate quantum computing's path to utility-scale by 3-5 years",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/oqc-and-riverlane-launch-uks-first-quantum-error-corrected-testbed-integrated-with-hpc/",
+      "title": "OQC and Riverlane Launch UK's First Quantum Error-Corrected Testbed Integrated with HPC - Quantum Computing Report",
+      "dateAccessed": "2026-07-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/14/quantinuum-rolls-royce-riverlane-and-university-of-edinburgh-sign-agreement-to-explore-quantum-computing-for-industrial-design-and-simulation/",
+      "title": "Quantinuum, Rolls-Royce, Riverlane and University of Edinburgh Sign Agreement to Explore Quantum Computing For Industrial Design And Simulation - The Quantum Insider",
+      "dateAccessed": "2026-07-19"
     }
   ],
   "news": [
@@ -74,6 +86,13 @@
       "url": "https://thequantuminsider.com/2026/03/12/riverlane-publishes-quantum-error-correction-roadmap-to-speed-utility-scale-quantum-by-3-5-years/",
       "source": "The Quantum Insider",
       "date": "2026-03-12"
+    },
+    {
+      "title": "Quantinuum, Rolls-Royce, Riverlane and University of Edinburgh sign agreement to explore quantum computing for industrial design and simulation",
+      "excerpt": "The four-way collaboration targets quantum-accelerated computational fluid dynamics simulations for gas turbine design, combining Quantinuum's H-Series hardware, Riverlane's quantum error correction, and EPCC's HPC infrastructure.",
+      "url": "https://thequantuminsider.com/2026/07/14/quantinuum-rolls-royce-riverlane-and-university-of-edinburgh-sign-agreement-to-explore-quantum-computing-for-industrial-design-and-simulation/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-14"
     }
   ]
 }
