@@ -31,7 +31,7 @@
   "highlights": [
     "Europe's largest quantum computing company with 250+ employees and EUR 200M+ in funding",
     "Supplies quantum accelerators to EuroHPC supercomputing centers across Europe",
-    "On track to become one of Europe's first publicly listed quantum computing companies"
+    "First European quantum computing company listed on a major U.S. exchange (Nasdaq: IQMX, July 2026)"
   ],
   "sources": [
     {
@@ -57,9 +57,35 @@
       "url": "https://quantumcomputingreport.com/iqm-to-deploy-japans-first-enterprise-purchased-quantum-computer/",
       "title": "IQM to Deploy Japan's First Enterprise-Purchased Quantum Computer - Quantum Computing Report",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/03/iqm-begins-trading-on-nasdaq/",
+      "title": "IQM Joins Nasdaq as Public Quantum Computing Company",
+      "dateAccessed": "2026-07-26"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/08/lumi-ai-factory-iqm-quantum-computer/",
+      "title": "IQM to Deliver Quantum Computer for Europe's LUMI AI Factory",
+      "dateAccessed": "2026-07-26"
     }
   ],
   "news": [
+    {
+      "title": "IQM Quantum Computers lists on Nasdaq, becoming first European quantum computing company on a major U.S. exchange",
+      "excerpt": "IQM began trading on the Nasdaq Global Select Market under ticker IQMX on 2 July 2026, completing its business combination with Real Asset Acquisition Corp. at approximately $1.8 billion valuation.",
+      "url": "https://thequantuminsider.com/2026/07/03/iqm-begins-trading-on-nasdaq/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-03"
+    },
+    {
+      "title": "IQM to deliver Halocene H4 quantum computer to LUMI AI Factory",
+      "excerpt": "IQM announced a contract to supply its Halocene H4 quantum processor to the LUMI AI Factory in Finland, supporting hybrid HPC and AI research and quantum error correction development. Contract value is approximately equal to IQM's total 2025 annual revenue.",
+      "url": "https://thequantuminsider.com/2026/07/08/lumi-ai-factory-iqm-quantum-computer/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-08"
+    },
     {
       "title": "IQM Appoints Craig Ciesla, Former Illumina VP, as CTO; Inés de Vega Becomes Chief Scientist",
       "excerpt": "IQM announces leadership changes with Craig Ciesla joining as Chief Technology Officer and Inés de Vega becoming Chief Scientist.",

@@ -52,9 +52,36 @@
       "url": "https://thequantuminsider.com/2026/05/05/quantinuum-and-bmw-group-expand-quantum-computing-collaboration-with-new-multi-year-partnership/",
       "title": "Quantinuum And BMW Group Expand Quantum Computing Collaboration With New Multi-Year Partnership - The Quantum Insider",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "doi",
+      "url": "https://www.nature.com/articles/s41586-026-10709-y",
+      "title": "Universal gates from braiding and fusing anyons on quantum hardware",
+      "datePublished": "2026-07-15",
+      "dateAccessed": "2026-07-26"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quantinuum-and-academic-partners-demonstrate-first-universal-topological-gate-set-via-non-abelian-anyons/",
+      "title": "Quantinuum and Academic Partners Demonstrate First Universal Topological Gate Set via Non-Abelian Anyons - Quantum Computing Report",
+      "dateAccessed": "2026-07-26"
     }
   ],
   "news": [
+    {
+      "title": "Quantinuum demonstrates first universal topological gate set using non-Abelian anyons, published in Nature",
+      "excerpt": "Quantinuum with University of Chicago, Harvard, and Stony Brook demonstrated a universal gate set via non-Abelian anyon braiding and fusion on the 98-qubit H2 processor. Published in Nature, the approach could reduce reliance on resource-intensive magic state distillation.",
+      "url": "https://www.nature.com/articles/s41586-026-10709-y",
+      "source": "Nature",
+      "date": "2026-07-15"
+    },
+    {
+      "title": "Quantinuum, Rolls-Royce, Riverlane and EPCC sign multi-year collaboration for quantum gas turbine fluid dynamics",
+      "excerpt": "The four partners will develop hybrid quantum-classical workflows for computational fluid dynamics in gas turbine design, using Quantinuum's Helios platform, Riverlane's QEC stack, and EPCC's supercomputing resources. The work builds on prior Rolls-Royce and Riverlane research.",
+      "url": "https://thequantuminsider.com/2026/07/14/quantinuum-rolls-royce-riverlane-and-university-of-edinburgh-sign-agreement-to-explore-quantum-computing-for-industrial-design-and-simulation/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-14"
+    },
     {
       "title": "Quantinuum and BMW Group expand into multi-year quantum computing partnership for advanced materials science",
       "excerpt": "The partnership extends BMW's use of successive Quantinuum H-series generations (Helios, Sol, Apollo) for molecular simulation and catalyst research, positioning it as one of the longest-sustained quantum-enterprise commitments.",

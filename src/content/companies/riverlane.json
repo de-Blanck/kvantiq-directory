@@ -51,6 +51,18 @@
       "url": "https://www.riverlane.com/press-release/riverlane-publishes-qec-technology-roadmap",
       "title": "Riverlane publishes QEC Technology Roadmap that can accelerate quantum computing's path to utility-scale by 3-5 years",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/14/quantinuum-rolls-royce-riverlane-and-university-of-edinburgh-sign-agreement-to-explore-quantum-computing-for-industrial-design-and-simulation/",
+      "title": "Quantinuum, Rolls-Royce, Riverlane and EPCC Sign Agreement to Explore Quantum Computing for Industrial Design and Simulation - The Quantum Insider",
+      "dateAccessed": "2026-07-26"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quantinuum-rolls-royce-riverlane-and-epcc-partner-to-accelerate-fluid-dynamics-simulations/",
+      "title": "Quantinuum, Rolls-Royce, Riverlane and EPCC Partner to Accelerate Fluid Dynamics Simulations - Quantum Computing Report",
+      "dateAccessed": "2026-07-26"
     }
   ],
   "news": [
@@ -67,6 +79,13 @@
       "url": "https://www.riverlane.com",
       "source": "Riverlane",
       "date": "2026-03-12"
+    },
+    {
+      "title": "Riverlane joins Quantinuum, Rolls-Royce and EPCC in multi-year quantum industrial design collaboration",
+      "excerpt": "Riverlane will contribute its QEC stack and fault-tolerant algorithm expertise to a four-way collaboration targeting computational fluid dynamics for gas turbine design, using Quantinuum's 98-qubit Helios processor and EPCC's supercomputing infrastructure.",
+      "url": "https://quantumcomputingreport.com/quantinuum-rolls-royce-riverlane-and-epcc-partner-to-accelerate-fluid-dynamics-simulations/",
+      "source": "Quantum Computing Report",
+      "date": "2026-07-14"
     },
     {
       "title": "Riverlane publishes QEC roadmap targeting utility-scale quantum by early 2030s",
