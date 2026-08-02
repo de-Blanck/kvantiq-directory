@@ -16,6 +16,7 @@
   "featured": false,
   "headquarters": "Munich, Germany",
   "employees": "18",
+  "funding": "~USD 140M via SPAC (Fonterelli SPAC 4 AG); publicly traded on Düsseldorf Stock Exchange (July 2026)",
   "accessModel": "Software licensing + consulting",
   "products": [
     {
@@ -53,6 +54,18 @@
       "type": "arxiv",
       "url": "https://arxiv.org/html/2505.16444v1",
       "title": "Scaling Quantum Simulation-Based Optimization: Demonstrating Efficient Power Grid Management with Deep QAOA Circuits"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/aqarios-enters-public-markets-via-spac-becoming-germanys-first-listed-quantum-pure-play/",
+      "title": "Aqarios Enters Public Markets via SPAC, Becoming Germany's First Listed Quantum Pure-Play - Quantum Computing Report",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/15/aqarios-lists-on-dusseldorf-exchange-says-it-is-germanys-first-pure-play-public-quantum-computing-company/",
+      "title": "Aqarios Lists on Düsseldorf Exchange as Germany's First Pure-Play Public Quantum Company - The Quantum Insider",
+      "dateAccessed": "2026-08-02"
     }
   ],
   "news": [
@@ -62,6 +75,13 @@
       "url": "https://aqarios.com/aqarios-luna-quantum-platform-launch/",
       "source": "aqarios.com",
       "date": "2024-11-04"
+    },
+    {
+      "title": "Aqarios Lists on Düsseldorf Stock Exchange as Germany's First Pure-Play Public Quantum Computing Company",
+      "excerpt": "Aqarios Quantum Technologies AG completed its SPAC merger with Fonterelli SPAC 4 AG and began trading on the Düsseldorf Stock Exchange on July 14, 2026, raising approximately $140M and becoming Germany's first publicly listed pure-play quantum computing company.",
+      "url": "https://quantumcomputingreport.com/aqarios-enters-public-markets-via-spac-becoming-germanys-first-listed-quantum-pure-play/",
+      "source": "Quantum Computing Report",
+      "date": "2026-07-14"
     }
   ]
 }

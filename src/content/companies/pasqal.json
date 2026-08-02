@@ -51,6 +51,18 @@
       "url": "https://thequantuminsider.com/2026/04/21/pasqal-thoughts-2026-quantum-transition-real-world-deployment/",
       "title": "Pasqal Showcases Quantum Progress at 2026 Event - The Quantum Insider",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/13/launch-of-q-planet-european-pilot-line-to-industrialize-neutral-atom-quantum-chips/",
+      "title": "Launch of Q-PLANET European Pilot Line to Industrialize Neutral-Atom Quantum Chips - The Quantum Insider",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/chips-ju-and-pasqal-launch-e50m-q-planet-pilot-line-to-industrialize-neutral-atom-quantum-chips/",
+      "title": "Chips JU and Pasqal Launch €50M Q-PLANET Pilot Line - Quantum Computing Report",
+      "dateAccessed": "2026-08-02"
     }
   ],
   "news": [
@@ -88,6 +100,27 @@
       "url": "https://thequantuminsider.com/2026/04/21/pasqal-thoughts-2026-quantum-transition-real-world-deployment/",
       "source": "The Quantum Insider",
       "date": "2026-04-21"
+    },
+    {
+      "title": "Pasqal and Crédit Agricole CIB Advance Strategic Partnership for Quantum in Capital Markets",
+      "excerpt": "Crédit Agricole CIB and Pasqal formalized an advanced strategic partnership to accelerate quantum computing deployment in capital markets, with initial production use cases targeted for 2028, focusing on risk analytics and portfolio optimization.",
+      "url": "https://www.hpcwire.com/off-the-wire/pasqal-and-credit-agricole-cib-advance-strategic-partnership-to-deploy-quantum-computing-applied-to-finance/",
+      "source": "HPCwire",
+      "date": "2026-06-30"
+    },
+    {
+      "title": "Pasqal and MegazoneCloud Sign MoU to Deploy Neutral-Atom Quantum Computing in South Korea",
+      "excerpt": "Pasqal and MegazoneCloud (South Korea's largest AWS partner) signed an MoU to explore QPU integration into managed cloud services and pursue on-premises QPU deployments at Korean enterprise and HPC customers across finance, logistics, biotech, and manufacturing.",
+      "url": "https://www.hpcwire.com/off-the-wire/pasqal-and-megazonecloud-partner-to-bring-industrial-scale-quantum-computing-to-south-korea/",
+      "source": "HPCwire",
+      "date": "2026-07-07"
+    },
+    {
+      "title": "Pasqal Leads Launch of €50M Q-PLANET EU Pilot Line to Industrialize Neutral-Atom Quantum Chips",
+      "excerpt": "Q-PLANET, coordinated by Pasqal and co-funded by the EU Chips Joint Undertaking, kicked off with 28 European partners across 11 member states. The six-year €50M Framework Partnership Agreement aims to advance neutral-atom chip components from TRL 4 to TRL 6.",
+      "url": "https://thequantuminsider.com/2026/07/13/launch-of-q-planet-european-pilot-line-to-industrialize-neutral-atom-quantum-chips/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-13"
     }
   ]
 }

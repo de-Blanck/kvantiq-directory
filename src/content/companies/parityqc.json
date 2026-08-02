@@ -53,6 +53,18 @@
       "url": "https://thequantuminsider.com/2026/05/04/yz-plane-mbqc-parityqc-architecture/",
       "title": "ParityQC Demonstrates YZ-Plane Measurement-Based Quantum Computation - The Quantum Insider",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/15/classiq-parityqc-quantum-circuit-optimization/",
+      "title": "Classiq and ParityQC Partner to Optimize Quantum Circuit Execution - The Quantum Insider",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/classiq-and-parityqc-partner-to-optimize-and-streamline-quantum-execution/",
+      "title": "Classiq and ParityQC Partner to Optimize and Streamline Quantum Execution - HPCwire",
+      "dateAccessed": "2026-08-02"
     }
   ],
   "news": [
@@ -90,6 +102,13 @@
       "url": "https://thequantuminsider.com/2026/05/04/yz-plane-mbqc-parityqc-architecture/",
       "source": "The Quantum Insider",
       "date": "2026-05-04"
+    },
+    {
+      "title": "ParityQC and Classiq Partner to Optimize Quantum Circuit Execution via Parity Twine",
+      "excerpt": "ParityQC and Classiq announced a technology integration combining ParityQC's Parity Twine compilation technology with Classiq's quantum software platform, targeting reduction of circuit complexity and SWAP gate overhead on near-term hardware.",
+      "url": "https://thequantuminsider.com/2026/07/15/classiq-parityqc-quantum-circuit-optimization/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-15"
     }
   ]
 }

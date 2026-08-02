@@ -51,6 +51,18 @@
       "type": "url",
       "url": "https://thequantuminsider.com/2025/11/03/yc-backed-conductor-quantum-partners-with-finlands-semiqon-to-push-silicon-quantum-computing-forward/",
       "title": "YC-Backed Conductor Quantum Partners With Finland's SemiQon to Push Silicon Quantum Computing Forward"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/03/postscriptum-invests-in-quantum-hardware-developer-semiqon/",
+      "title": "PostScriptum Invests in Quantum Hardware Developer SemiQon - The Quantum Insider",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/postscriptum-executes-strategic-investment-in-semiqon-alongside-e30-million-quantum-fund-commitment/",
+      "title": "PostScriptum Executes Strategic Investment in SemiQon - Quantum Computing Report",
+      "dateAccessed": "2026-08-02"
     }
   ],
   "news": [
@@ -67,6 +79,13 @@
       "url": "https://semiqon.com",
       "source": "semiqon.com",
       "date": "2026-04-23"
+    },
+    {
+      "title": "PostScriptum Makes Strategic Equity Investment in SemiQon Alongside €30M Quantum Hardware Fund Commitment",
+      "excerpt": "PostScriptum (led by Peter Sarlin, co-founder of Silo AI) made a strategic equity investment in SemiQon to support commercial scale-up of its Cryo-CMOS control and readout microchips. PostScriptum simultaneously committed €30M for foundational quantum hardware technologies. SemiQon has already shipped first commercial customer orders.",
+      "url": "https://thequantuminsider.com/2026/07/03/postscriptum-invests-in-quantum-hardware-developer-semiqon/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-03"
     }
   ]
 }

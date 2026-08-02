@@ -15,7 +15,7 @@
   "website": "https://multiversecomputing.com",
   "featured": false,
   "headquarters": "San Sebastián, Spain",
-  "funding": "EUR 25M+",
+  "funding": "USD 570M Series C (July 2026, $1.7B pre-money valuation); total funding ~USD 800M",
   "accessModel": "SaaS platform + enterprise licensing",
   "products": [
     {
@@ -25,7 +25,7 @@
   ],
   "highlights": [
     "Flagship Singularity platform serves finance, energy, and manufacturing sectors with quantum AI",
-    "EUR 25M+ raised, one of Europe's best-funded quantum software startups",
+    "USD 570M Series C raised in July 2026 at $1.7B pre-money valuation, one of Europe's best-funded quantum software startups",
     "Specializes in model compression and quantum-inspired algorithms for near-term enterprise value"
   ],
   "sources": [
@@ -55,6 +55,18 @@
       "type": "url",
       "url": "https://siliconangle.com/2026/02/10/report-ai-model-compression-startup-multiverse-seeking-e500m-funding-round/",
       "title": "Report: AI model compression startup Multiverse seeking €500M funding round"
+    },
+    {
+      "type": "url",
+      "url": "https://sifted.eu/articles/multiverse-computing-series-c-unicorn",
+      "title": "Multiverse Computing raises $570M Series C at $1.7B valuation - Sifted",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://tech.eu/2026/07/27/multiverse-computing-says-has-funding-commitments-up-to-570m-in-latest-round/",
+      "title": "Multiverse Computing announces funding commitments up to $570M - Tech.eu",
+      "dateAccessed": "2026-08-02"
     }
   ],
   "news": [
@@ -92,6 +104,13 @@
       "url": "https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/",
       "source": "TechCrunch",
       "date": "2026-02-24"
+    },
+    {
+      "title": "Multiverse Computing Announces $570M Series C at $1.7B Valuation",
+      "excerpt": "Multiverse Computing announced a Series C targeting up to $570M at a $1.7B pre-money valuation, co-led by Forgepoint Capital International, BNPP Solar Impulse Venture Fund, and Bullhound Capital. The company reported 10x annualized revenue growth since Series B and 96x YoY sales growth in Q1 2026.",
+      "url": "https://sifted.eu/articles/multiverse-computing-series-c-unicorn",
+      "source": "Sifted",
+      "date": "2026-07-27"
     }
   ]
 }

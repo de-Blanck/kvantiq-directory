@@ -14,7 +14,7 @@
   "website": "https://www.quobly.io",
   "featured": false,
   "headquarters": "Grenoble, France",
-  "funding": "EUR 19M",
+  "funding": "EUR 134M+ (seed EUR 19M; Series A EUR 115M, June 2026)",
   "accessModel": "Hardware development + licensing",
   "products": [
     {
@@ -54,6 +54,12 @@
       "type": "url",
       "url": "https://tech.eu/2026/06/03/quobly-raises-eur115m-series-a-to-commercialise-silicon-quantum-computing/",
       "title": "Quobly raises €115M Series A to commercialise silicon quantum computing"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/sealsq-and-quobly-sign-5m-deal-to-secure-silicon-quantum-computing-platforms/",
+      "title": "SEALSQ and Quobly Sign $5M Deal to Secure Silicon Quantum Computing Platforms - HPCwire",
+      "dateAccessed": "2026-08-02"
     }
   ],
   "news": [
@@ -77,6 +83,13 @@
       "url": "https://www.quobly.io",
       "source": "Quobly",
       "date": "2026-06-01"
+    },
+    {
+      "title": "Quobly and SEALSQ Sign $5M Commercial Agreement to Embed Post-Quantum Security in Silicon Quantum Computers",
+      "excerpt": "Quobly and SEALSQ Corp (Nasdaq: LAES) signed a $5M commercial agreement to integrate SEALSQ's post-quantum cryptography and hardware Root-of-Trust infrastructure into Quobly's silicon spin-qubit systems, including the Alloy Pioneer system targeted for cloud access by end of 2026.",
+      "url": "https://www.hpcwire.com/off-the-wire/sealsq-and-quobly-sign-5m-deal-to-secure-silicon-quantum-computing-platforms/",
+      "source": "HPCwire",
+      "date": "2026-07-10"
     }
   ]
 }

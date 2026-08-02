@@ -50,6 +50,18 @@
       "type": "url",
       "url": "https://sifted.eu/articles/40000km-quantum-cryptography-breakthrough",
       "title": "Terra Quantum announces 40,000km quantum cryptography breakthrough | Sifted"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/24/terra-quantum-apex-ai-post-quantum-cryptography/",
+      "title": "Terra Quantum and Apex.AI Demonstrate Quantum-Safe Cloud Communications - The Quantum Insider",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/terra-quantum-and-apex-ai-demonstrate-quantum-safe-cloud-communications/",
+      "title": "Terra Quantum and Apex.AI Demonstrate Quantum-Safe Cloud Communications - HPCwire",
+      "dateAccessed": "2026-08-02"
     }
   ],
   "news": [
@@ -59,6 +71,13 @@
       "url": "https://sifted.eu/articles/40000km-quantum-cryptography-breakthrough",
       "source": "Sifted",
       "date": "2021-07-08"
+    },
+    {
+      "title": "Terra Quantum and Apex.AI Demonstrate NIST Post-Quantum Cryptography for Cloud-Connected Robotic Systems",
+      "excerpt": "Terra Quantum and Apex.AI demonstrated successful integration of NIST-standardized post-quantum cryptography (ML-KEM/CRYSTALS-Kyber) into an Apex.AI robotic software environment for secure edge-to-cloud communication, targeting robotics, automotive, defense, and critical infrastructure.",
+      "url": "https://thequantuminsider.com/2026/07/24/terra-quantum-apex-ai-post-quantum-cryptography/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-24"
     }
   ]
 }

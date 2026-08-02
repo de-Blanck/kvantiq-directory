@@ -16,7 +16,7 @@
   "featured": true,
   "headquarters": "Espoo, Finland",
   "employees": "250+",
-  "funding": "EUR 200M+",
+  "funding": "EUR 200M+ raised; publicly traded on Nasdaq (IQMX) at ~$1.8B valuation (IPO July 2026)",
   "accessModel": "On-premise systems + cloud API",
   "products": [
     {
@@ -26,12 +26,16 @@
     {
       "name": "IQM Radiance",
       "description": "High-performance superconducting quantum processor for national computing centers and industrial co-design"
+    },
+    {
+      "name": "IQM Halocene H4",
+      "description": "150-qubit superconducting system combining quantum error correction with NISQ qubits; co-funded by EuroHPC JU for LUMI AI Factory deployment (delivery 2027)"
     }
   ],
   "highlights": [
     "Europe's largest quantum computing company with 250+ employees and EUR 200M+ in funding",
     "Supplies quantum accelerators to EuroHPC supercomputing centers across Europe",
-    "On track to become one of Europe's first publicly listed quantum computing companies"
+    "Publicly traded on Nasdaq (ticker IQMX) at ~$1.8B valuation as of July 2026, Europe's first quantum computing company on a major US exchange"
   ],
   "sources": [
     {
@@ -57,6 +61,18 @@
       "url": "https://quantumcomputingreport.com/iqm-to-deploy-japans-first-enterprise-purchased-quantum-computer/",
       "title": "IQM to Deploy Japan's First Enterprise-Purchased Quantum Computer - Quantum Computing Report",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/08/lumi-ai-factory-iqm-quantum-computer/",
+      "title": "LUMI AI Factory Selects IQM to Deploy Advanced Quantum Computer - The Quantum Insider",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/lumi-ai-factory-selects-iqm-to-deploy-superconducting-quantum-computer-for-hybrid-hpc-ai-acceleration/",
+      "title": "LUMI AI Factory Selects IQM to Deploy Superconducting Quantum Computer - Quantum Computing Report",
+      "dateAccessed": "2026-08-02"
     }
   ],
   "news": [
@@ -80,6 +96,20 @@
       "url": "https://quantumcomputingreport.com/iqm-to-deploy-japans-first-enterprise-purchased-quantum-computer/",
       "source": "Quantum Computing Report",
       "date": "2026-04-27"
+    },
+    {
+      "title": "IQM Lists on Nasdaq as First European Quantum Company on a Major US Exchange",
+      "excerpt": "IQM completed its business combination with Real Asset Acquisition Corp and began trading on the Nasdaq Global Select Market under ticker IQMX on July 2, 2026, following a €50M BlackRock pre-IPO raise. The deal values IQM at approximately $1.8 billion.",
+      "url": "https://thequantuminsider.com/2026/07/08/lumi-ai-factory-iqm-quantum-computer/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-02"
+    },
+    {
+      "title": "LUMI AI Factory Selects IQM to Deploy 150-Qubit Halocene H4 Quantum Computer",
+      "excerpt": "The LUMI AI Factory (led by CSC – IT Center for Science) selected IQM to deliver the IQM Halocene H4, a 150-qubit superconducting system combining quantum error correction with NISQ qubits, co-funded by EuroHPC JU and four European countries. Delivery planned for 2027.",
+      "url": "https://thequantuminsider.com/2026/07/08/lumi-ai-factory-iqm-quantum-computer/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-08"
     }
   ]
 }

@@ -51,6 +51,18 @@
       "url": "https://www.riverlane.com/press-release/riverlane-publishes-qec-technology-roadmap",
       "title": "Riverlane publishes QEC Technology Roadmap that can accelerate quantum computing's path to utility-scale by 3-5 years",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/14/quantinuum-rolls-royce-riverlane-and-university-of-edinburgh-sign-agreement-to-explore-quantum-computing-for-industrial-design-and-simulation/",
+      "title": "Quantinuum, Rolls-Royce, Riverlane and University of Edinburgh Sign Industrial Simulation Agreement - The Quantum Insider",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/riverlane-and-unitary-foundation-launch-deltakit-community-fund-for-open-source-quantum-error-correction/",
+      "title": "Riverlane and Unitary Foundation Launch Deltakit Community Fund - HPCwire",
+      "dateAccessed": "2026-08-02"
     }
   ],
   "news": [
@@ -74,6 +86,20 @@
       "url": "https://thequantuminsider.com/2026/03/12/riverlane-publishes-quantum-error-correction-roadmap-to-speed-utility-scale-quantum-by-3-5-years/",
       "source": "The Quantum Insider",
       "date": "2026-03-12"
+    },
+    {
+      "title": "Riverlane Joins Quantinuum, Rolls-Royce and University of Edinburgh in Quantum-HPC Industrial Simulation Agreement",
+      "excerpt": "Quantinuum, Rolls-Royce, Riverlane, and EPCC (University of Edinburgh) signed a multi-year agreement to develop fault-tolerant quantum algorithms for gas turbine fluid dynamics simulation. Riverlane contributes quantum error correction expertise.",
+      "url": "https://thequantuminsider.com/2026/07/14/quantinuum-rolls-royce-riverlane-and-university-of-edinburgh-sign-agreement-to-explore-quantum-computing-for-industrial-design-and-simulation/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-14"
+    },
+    {
+      "title": "Riverlane and Unitary Foundation Launch Deltakit Community Fund for Open-Source Quantum Error Correction",
+      "excerpt": "Riverlane and the Unitary Foundation launched a quarterly program awarding $2,000–$4,000 to open-source contributors building features for Riverlane's Deltakit QEC toolkit. Pilot phase launched for H2 2026.",
+      "url": "https://www.hpcwire.com/off-the-wire/riverlane-and-unitary-foundation-launch-deltakit-community-fund-for-open-source-quantum-error-correction/",
+      "source": "HPCwire",
+      "date": "2026-07-28"
     }
   ]
 }
