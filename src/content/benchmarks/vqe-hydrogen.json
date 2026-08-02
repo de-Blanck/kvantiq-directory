@@ -48,6 +48,27 @@
       "type": "arxiv",
       "url": "https://arxiv.org/abs/2305.06538",
       "title": "Use VQE to calculate the ground energy of hydrogen molecules on IBM Quantum"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/30/ibm-algorithmiq-quantum-computation-verification-framework/",
+      "title": "IBM and Algorithmiq Demonstrate Quantum Advantage and Verification Framework for Molecular Simulation - The Quantum Insider",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/ibm-and-algorithmiq-report-quantum-advantage-for-materials-simulation/",
+      "title": "IBM and Algorithmiq Report Quantum Advantage for Materials Simulation - HPCwire",
+      "dateAccessed": "2026-08-02"
+    }
+  ],
+  "news": [
+    {
+      "title": "IBM and Algorithmiq Demonstrate Trusted Quantum Advantage for Molecular Ground-State Simulation",
+      "excerpt": "IBM and Algorithmiq report that their quantum simulation of molecular ground states has withstood classical competition for eight months on the IBM Quantum Advantage Tracker. Algorithmiq released its best classical molecular ground-state simulation method as an open benchmark package.",
+      "url": "https://thequantuminsider.com/2026/07/30/ibm-algorithmiq-quantum-computation-verification-framework/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-30"
     }
   ]
 }

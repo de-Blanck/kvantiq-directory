@@ -41,6 +41,18 @@
       "type": "url",
       "url": "https://www.hpcwire.com/off-the-wire/pasqal-integrates-nvidia-cuda-q-with-qrmi-for-slurm-native-hybrid-hpc-quantum-workflows/",
       "title": "Pasqal Integrates NVIDIA CUDA-Q with QRMI for Slurm-Native Hybrid HPC-Quantum Workflows"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/pnnl-brings-open-source-gpu-acceleration-to-quantum-with-nvidia-nvqlink/",
+      "title": "PNNL Brings Open-Source GPU Acceleration to Quantum with NVIDIA NVQLink - HPCwire",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/27/quantum-x-labs-ai-error-correction-decoder-nvidia-cuda-q/",
+      "title": "NVIDIA Introduces NVQLink for GPU-QPU Integration - The Quantum Insider",
+      "dateAccessed": "2026-08-02"
     }
   ],
   "news": [
@@ -50,6 +62,13 @@
       "url": "https://arxiv.org/abs/2501.15939",
       "source": "arXiv",
       "date": "2025-01-27"
+    },
+    {
+      "title": "NVIDIA Introduces NVQLink — Open Architecture Connecting QPUs to GPUs, Supporting 17 Quantum Hardware Builders",
+      "excerpt": "NVIDIA announced NVQLink on July 27, 2026: an open system architecture for tightly coupling quantum processors to GPU-based HPC clusters via high-speed, low-latency (microsecond) interconnect. NVQLink supports 17 QPU builders, 5 controller builders, and 9 US national laboratories within the CUDA-Q ecosystem.",
+      "url": "https://www.hpcwire.com/off-the-wire/pnnl-brings-open-source-gpu-acceleration-to-quantum-with-nvidia-nvqlink/",
+      "source": "HPCwire",
+      "date": "2026-07-27"
     }
   ]
 }

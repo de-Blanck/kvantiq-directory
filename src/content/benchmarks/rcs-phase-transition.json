@@ -63,6 +63,34 @@
       "type": "url",
       "url": "https://www.nist.gov/publications/phase-transitions-random-circuit-sampling",
       "title": "Phase Transitions in Random Circuit Sampling | NIST"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.25941",
+      "title": "Sampling hard circuits with verifiably high fidelity — 70 logical qubit RCS beyond classical simulation",
+      "authors": "IBM Quantum and University of Chicago",
+      "datePublished": "2026-07-28"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/ibm-and-uchicago-advance-trusted-quantum-computing-with-verified-logical-circuits/",
+      "title": "IBM and UChicago Advance Trusted Quantum Computing with Verified Logical Circuits - HPCwire",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/31/ibm-university-of-chicago-verified-logical-quantum-computation/",
+      "title": "IBM and University of Chicago Demonstrate Verified Logical Quantum Computation - The Quantum Insider",
+      "dateAccessed": "2026-08-02"
+    }
+  ],
+  "news": [
+    {
+      "title": "IBM and UChicago Demonstrate Verified Random Circuit Sampling Beyond Classical Simulation at 70 Logical Qubits",
+      "excerpt": "IBM and University of Chicago ran 70 logical qubits through Clifford+T circuits with XEB fidelity verification, demonstrating hard random circuit sampling beyond practical classical reach. The work advances RCS benchmarking with simultaneous hard sampling and verifiable fidelity.",
+      "url": "https://arxiv.org/abs/2607.25941",
+      "source": "arXiv",
+      "date": "2026-07-30"
     }
   ]
 }
