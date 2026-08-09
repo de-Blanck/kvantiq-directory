@@ -31,7 +31,7 @@
   "highlights": [
     "Europe's largest quantum computing company with 250+ employees and EUR 200M+ in funding",
     "Supplies quantum accelerators to EuroHPC supercomputing centers across Europe",
-    "On track to become one of Europe's first publicly listed quantum computing companies"
+    "Europe's first quantum computing company to list on Nasdaq (ticker IQMX) and Nasdaq Helsinki simultaneously, completing its SPAC merger in July 2026"
   ],
   "sources": [
     {
@@ -80,6 +80,20 @@
       "url": "https://quantumcomputingreport.com/iqm-to-deploy-japans-first-enterprise-purchased-quantum-computer/",
       "source": "Quantum Computing Report",
       "date": "2026-04-27"
+    },
+    {
+      "title": "IQM completes SPAC merger and begins trading on Nasdaq and Nasdaq Helsinki as IQMX",
+      "excerpt": "IQM completed its business combination with Real Asset Acquisition Corp. on July 1, 2026, becoming the first European quantum computing company to list on both Nasdaq in the US and Nasdaq Helsinki simultaneously. ADS trading on Nasdaq commenced July 2, 2026; Helsinki trading began July 3, 2026.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/iqm-quantum-computers-plc-listing-123000958.html",
+      "source": "Yahoo Finance",
+      "date": "2026-07-02"
+    },
+    {
+      "title": "IQM confirms 2026 outlook with €102M+ order backlog after public listing",
+      "excerpt": "Following its Nasdaq debut, IQM reported H1 2026 revenue of €8.9 million and an order backlog exceeding €102.1 million as of August 3. The company initiated full-year guidance of €42M–€47M in revenue and plans to ramp production to 30 full-stack quantum computers annually at its expanded cleanroom.",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-iqm-quantum-computers-posts-higher-backlog-in-q2-2026-93CH-4834505",
+      "source": "Investing.com",
+      "date": "2026-08-04"
     }
   ]
 }

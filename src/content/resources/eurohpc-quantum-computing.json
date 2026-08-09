@@ -55,6 +55,13 @@
       "url": "https://www.hpcwire.com/off-the-wire/eurohpc-opens-access-to-its-quantum-computers/",
       "source": "HPCwire",
       "date": "2026-06-25"
+    },
+    {
+      "title": "EuroHPC launches €12M procurement for MeluXina-Q quantum computer in Luxembourg",
+      "excerpt": "EuroHPC JU launched a procurement process for a silicon spin-qubit quantum computer to be hosted by LuxProvide in Luxembourg and integrated with the MeluXina supercomputer. MeluXina-Q starts at 10 physical qubits with a roadmap to exceed 80 qubits; the tender closes September 1, 2026.",
+      "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-launches-procurement-quantum-computer-luxembourg-2026-07-23_en",
+      "source": "EuroHPC JU",
+      "date": "2026-07-23"
     }
   ]
 }

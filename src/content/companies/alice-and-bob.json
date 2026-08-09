@@ -82,6 +82,27 @@
       "url": "https://www.hpcwire.com/off-the-wire/alice-bob-surpasses-hiring-targets-ahead-of-schedule-as-quantum-workforce-grows/",
       "source": "HPCwire",
       "date": "2026-04-16"
+    },
+    {
+      "title": "Alice & Bob expands €100M Series B with strategic investment from NVIDIA's NVentures arm",
+      "excerpt": "Alice & Bob extended its Series B with an undisclosed investment from NVentures, NVIDIA's venture arm, deepening technical collaboration that spans CUDA-Q, cuQuantum, and Dynamiqs — Alice & Bob's open-source quantum simulation library.",
+      "url": "https://www.hpcwire.com/off-the-wire/alice-bob-expands-e100m-series-b-with-investment-from-nvidias-nventures/",
+      "source": "HPCwire",
+      "date": "2026-05-22"
+    },
+    {
+      "title": "Alice & Bob unveils Helium, its first complete on-premise cat-qubit quantum system",
+      "excerpt": "Alice & Bob unveiled the Helium Quantum System on June 10, 2026, marking the company's first move beyond developing chips to delivering a full quantum computing system for on-premise deployment. Helium encodes Alice & Bob's first logical qubit with as few as 18 cat qubits.",
+      "url": "https://alice-bob.com/newsroom/alice-bob-unveils-first-quantum-system/",
+      "source": "Alice & Bob Newsroom",
+      "date": "2026-06-10"
+    },
+    {
+      "title": "France acquires Alice & Bob Helium cat-qubit system for national HPC research infrastructure",
+      "excerpt": "GENCI and Alice & Bob signed an agreement for France to acquire an 18-cat-qubit Helium quantum computer — the world's first deployment of a cat-qubit system. The machine will be installed at the TGCC and integrated with the Joliot-Curie supercomputer, with user access expected in 2027.",
+      "url": "https://thequantuminsider.com/2026/06/17/france-acquires-alice-and-bob-cat-qubit-quantum-computer-for-national-research-infrastructure/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-17"
     }
   ]
 }
