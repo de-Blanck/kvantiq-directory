@@ -52,6 +52,18 @@
       "url": "https://www.hpcwire.com/off-the-wire/alice-bob-surpasses-hiring-targets-ahead-of-schedule-as-quantum-workforce-grows/",
       "title": "Alice & Bob Surpasses Hiring Targets Ahead of Schedule as Quantum Workforce Grows - HPCwire",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/alice-bob-partners-on-europes-1st-doctoral-network-dedicated-to-quantum-error-correction/",
+      "title": "Alice & Bob Partners on Europe's 1st Doctoral Network Dedicated to Quantum Error Correction - HPCwire",
+      "dateAccessed": "2026-08-16"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/alice-bob-joins-e4-6m-msca-backed-qubric-doctoral-network-for-quantum-error-correction/",
+      "title": "Alice & Bob Joins €4.6M MSCA-Backed QuBriC Doctoral Network for Quantum Error Correction - Quantum Computing Report",
+      "dateAccessed": "2026-08-16"
     }
   ],
   "news": [
@@ -82,6 +94,13 @@
       "url": "https://www.hpcwire.com/off-the-wire/alice-bob-surpasses-hiring-targets-ahead-of-schedule-as-quantum-workforce-grows/",
       "source": "HPCwire",
       "date": "2026-04-16"
+    },
+    {
+      "title": "Alice & Bob joins QuBriC, Europe's first MSCA doctoral network dedicated to quantum error correction",
+      "excerpt": "Alice & Bob joined QuBriC, a Horizon Europe-funded MSCA Doctoral Network uniting 16 universities and seven quantum companies — including ETH Zürich, TU Delft, UCL, INRIA, Riverlane, and IQM — to train 15 doctoral researchers over 48 months, backed by €4.6M. Alice & Bob contributes cat-qubit architecture expertise to help researchers co-design physical QPUs with logical QEC layers.",
+      "url": "https://www.hpcwire.com/off-the-wire/alice-bob-partners-on-europes-1st-doctoral-network-dedicated-to-quantum-error-correction/",
+      "source": "HPCwire",
+      "date": "2026-08-12"
     }
   ]
 }

@@ -51,6 +51,24 @@
       "url": "https://www.riverlane.com/press-release/riverlane-publishes-qec-technology-roadmap",
       "title": "Riverlane publishes QEC Technology Roadmap that can accelerate quantum computing's path to utility-scale by 3-5 years",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/riverlane-and-unitary-foundation-launch-deltakit-community-fund-for-open-source-quantum-error-correction/",
+      "title": "Riverlane and Unitary Foundation Launch Deltakit Community Fund for Open-Source Quantum Error Correction - HPCwire",
+      "dateAccessed": "2026-08-16"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/riverlane-and-unitary-foundation-launch-deltakit-community-fund-for-open-source-qec/",
+      "title": "Riverlane and Unitary Foundation Launch Deltakit Community Fund for Open-Source QEC - Quantum Computing Report",
+      "dateAccessed": "2026-08-16"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/28/riverlane-unitary-foundation-deltakit-community-fund/",
+      "title": "Riverlane and Unitary Foundation Launch Deltakit Community Fund to Accelerate Open-Source Quantum Error Correction - The Quantum Insider",
+      "dateAccessed": "2026-08-16"
     }
   ],
   "news": [
@@ -74,6 +92,13 @@
       "url": "https://thequantuminsider.com/2026/03/12/riverlane-publishes-quantum-error-correction-roadmap-to-speed-utility-scale-quantum-by-3-5-years/",
       "source": "The Quantum Insider",
       "date": "2026-03-12"
+    },
+    {
+      "title": "Riverlane and Unitary Foundation launch Deltakit Community Fund for open-source quantum error correction",
+      "excerpt": "Riverlane and Unitary Foundation launched a rolling quarterly grant program offering awards of $2,000–$4,000 for external contributors building production-grade features for Deltakit, Riverlane's open-source QEC toolkit. The initiative leverages Unitary Foundation's microgrant framework, with the first cohort review beginning the week of August 17, 2026.",
+      "url": "https://www.hpcwire.com/off-the-wire/riverlane-and-unitary-foundation-launch-deltakit-community-fund-for-open-source-quantum-error-correction/",
+      "source": "HPCwire",
+      "date": "2026-07-28"
     }
   ]
 }
