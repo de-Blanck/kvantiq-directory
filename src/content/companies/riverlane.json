@@ -51,6 +51,24 @@
       "url": "https://www.riverlane.com/press-release/riverlane-publishes-qec-technology-roadmap",
       "title": "Riverlane publishes QEC Technology Roadmap that can accelerate quantum computing's path to utility-scale by 3-5 years",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/03/12/riverlane-publishes-quantum-error-correction-roadmap-to-speed-utility-scale-quantum-by-3-5-years/",
+      "title": "Riverlane publishes QEC roadmap targeting utility-scale quantum by early 2030s - The Quantum Insider",
+      "dateAccessed": "2026-08-23"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/riverlane-and-unitary-foundation-launch-deltakit-community-fund-for-open-source-quantum-error-correction/",
+      "title": "Riverlane and Unitary Foundation Launch Deltakit Community Fund for Open-Source QEC - HPCwire",
+      "dateAccessed": "2026-08-23"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/riverlane-and-unitary-foundation-launch-deltakit-community-fund-for-open-source-qec/",
+      "title": "Riverlane and Unitary Foundation Launch Deltakit Community Fund for Open-Source QEC - Quantum Computing Report",
+      "dateAccessed": "2026-08-23"
     }
   ],
   "news": [
@@ -74,6 +92,13 @@
       "url": "https://thequantuminsider.com/2026/03/12/riverlane-publishes-quantum-error-correction-roadmap-to-speed-utility-scale-quantum-by-3-5-years/",
       "source": "The Quantum Insider",
       "date": "2026-03-12"
+    },
+    {
+      "title": "Riverlane and Unitary Foundation launch Deltakit Community Fund for open-source quantum error correction",
+      "excerpt": "Riverlane and the Unitary Foundation launched the Deltakit Community Fund, a quarterly microgrant program awarding $2,000–$4,000 to contributors building open-source QEC features into Deltakit. The advisory committee began reviewing first-cohort applications on August 17, 2026.",
+      "url": "https://thequantuminsider.com/2026/07/28/riverlane-unitary-foundation-deltakit-community-fund/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-28"
     }
   ]
 }
