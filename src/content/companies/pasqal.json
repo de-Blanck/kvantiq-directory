@@ -16,7 +16,7 @@
   "featured": true,
   "headquarters": "Massy, France",
   "employees": "200+",
-  "funding": "EUR 100M+",
+  "funding": "Public (Nasdaq: PSQL, August 2026); USD 360M cash at IPO close",
   "accessModel": "Cloud API + on-premise deployment + consulting",
   "products": [
     {
@@ -30,7 +30,7 @@
   ],
   "highlights": [
     "Co-founded by Nobel laureate Alain Aspect, a pioneer of cold atom physics",
-    "EUR 100M+ raised with plans for a USD 2B SPAC listing",
+    "Listed on Nasdaq (PSQL, August 2026) at approximately USD 2B valuation with USD 360M cash at close",
     "200+ employees delivering enterprise quantum solutions in energy, automotive, and finance"
   ],
   "sources": [
@@ -51,6 +51,12 @@
       "url": "https://thequantuminsider.com/2026/04/21/pasqal-thoughts-2026-quantum-transition-real-world-deployment/",
       "title": "Pasqal Showcases Quantum Progress at 2026 Event - The Quantum Insider",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/08/29/pasqal-shares-nearly-double-in-nasdaq-debut/",
+      "title": "Pasqal Shares Nearly Double in Nasdaq Debut - The Quantum Insider",
+      "dateAccessed": "2026-08-30"
     }
   ],
   "news": [
@@ -88,6 +94,20 @@
       "url": "https://thequantuminsider.com/2026/04/21/pasqal-thoughts-2026-quantum-transition-real-world-deployment/",
       "source": "The Quantum Insider",
       "date": "2026-04-21"
+    },
+    {
+      "title": "Pasqal and Eleven Ventures Form Joint Venture for Quantum Computing in Saudi Arabia",
+      "excerpt": "Pasqal and Eleven Ventures agreed to establish a commercial joint venture to deploy and commercialize Pasqal's neutral-atom quantum computing systems in Saudi Arabia and the wider region, with plans to deploy multiple quantum systems and develop local quantum talent.",
+      "url": "https://thequantuminsider.com/2026/08/24/pasqal-eleven-ventures-joint-venture-quantum-computing-saudi-arabia/",
+      "source": "The Quantum Insider",
+      "date": "2026-08-24"
+    },
+    {
+      "title": "Pasqal Completes Nasdaq Listing Under Ticker PSQL, Shares Nearly Double on Debut",
+      "excerpt": "Pasqal completed its business combination with Bleichroeder Acquisition Corp. II on August 28, 2026, beginning trading on Nasdaq under tickers PSQL and PSQLW with approximately USD 360 million in cash at close. Shares rose 95.2% to USD 19.11 on the first day of trading.",
+      "url": "https://thequantuminsider.com/2026/08/29/pasqal-shares-nearly-double-in-nasdaq-debut/",
+      "source": "The Quantum Insider",
+      "date": "2026-08-29"
     }
   ]
 }

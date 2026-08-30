@@ -16,7 +16,7 @@
   "featured": true,
   "headquarters": "Espoo, Finland",
   "employees": "250+",
-  "funding": "EUR 200M+",
+  "funding": "Public (Nasdaq: IQMX, July 2026); EUR 309.4M cash post-listing",
   "accessModel": "On-premise systems + cloud API",
   "products": [
     {
@@ -31,7 +31,7 @@
   "highlights": [
     "Europe's largest quantum computing company with 250+ employees and EUR 200M+ in funding",
     "Supplies quantum accelerators to EuroHPC supercomputing centers across Europe",
-    "On track to become one of Europe's first publicly listed quantum computing companies"
+    "Listed on Nasdaq Global Select Market (ticker IQMX, July 2026), one of Europe's first publicly listed quantum computing companies"
   ],
   "sources": [
     {
@@ -57,6 +57,12 @@
       "url": "https://quantumcomputingreport.com/iqm-to-deploy-japans-first-enterprise-purchased-quantum-computer/",
       "title": "IQM to Deploy Japan's First Enterprise-Purchased Quantum Computer - Quantum Computing Report",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/08/04/iqm-quantum-computers-h1-2026-results-full-year-outlook/",
+      "title": "IQM Quantum Computers Reports First Half 2026 Results and Provides Full-Year Outlook - The Quantum Insider",
+      "dateAccessed": "2026-08-30"
     }
   ],
   "news": [
@@ -80,6 +86,20 @@
       "url": "https://quantumcomputingreport.com/iqm-to-deploy-japans-first-enterprise-purchased-quantum-computer/",
       "source": "Quantum Computing Report",
       "date": "2026-04-27"
+    },
+    {
+      "title": "IQM to Deliver Quantum Computer for Europe's LUMI AI Factory",
+      "excerpt": "IQM was selected to deliver a quantum computer integrated with the LUMI AI Factory supercomputing infrastructure in Finland, expanding its footprint alongside AI supercomputing centers.",
+      "url": "https://thequantuminsider.com/2026/07/08/lumi-ai-factory-iqm-quantum-computer/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-08"
+    },
+    {
+      "title": "IQM Completes Nasdaq Listing and Reports H1 2026 Results: EUR 102M+ Backlog, 26 Systems Sold",
+      "excerpt": "IQM began trading on the Nasdaq Global Select Market (ticker IQMX) on July 2, 2026. H1 2026 results reported EUR 8.9 million in revenue, EUR 102.1 million order backlog, and EUR 309.4 million cash balance. The company confirmed 2026 guidance of EUR 42-47 million in revenue.",
+      "url": "https://thequantuminsider.com/2026/08/04/iqm-quantum-computers-h1-2026-results-full-year-outlook/",
+      "source": "The Quantum Insider",
+      "date": "2026-08-04"
     }
   ]
 }
