@@ -33,9 +33,9 @@
     }
   ],
   "highlights": [
-    "Europe's largest quantum computing company with 250+ employees and EUR 337M+ cash post-listing",
-    "Listed on Nasdaq (IQMX) and Nasdaq Helsinki in July 2026, the first European quantum computing company to go public",
-    "Supplies quantum accelerators to EuroHPC supercomputing centers across Europe; 26 systems sold, 17 delivered globally as of August 2026"
+    "Europe's largest quantum computing company with 250+ employees and EUR 200M+ in funding",
+    "Supplies quantum accelerators to EuroHPC supercomputing centers across Europe",
+    "First European quantum computing company listed on Nasdaq (ticker: IQMX), trading since July 3, 2026"
   ],
   "sources": [
     {
@@ -107,8 +107,8 @@
     {
       "type": "url",
       "url": "https://thequantuminsider.com/2026/07/03/iqm-begins-trading-on-nasdaq/",
-      "title": "IQM Joins Nasdaq as Public Quantum Computing Company",
-      "dateAccessed": "2026-07-26"
+      "title": "IQM Joins Nasdaq as Public Quantum Computing Company - The Quantum Insider",
+      "dateAccessed": "2026-08-23"
     },
     {
       "type": "url",
@@ -133,6 +133,12 @@
       "url": "https://www.hpcwire.com/off-the-wire/lumi-ai-factory-selects-iqm-to-deploy-advanced-quantum-computer-accelerating-hybrid-hpc-and-ai-development/",
       "title": "LUMI AI Factory Selects IQM to Deploy Advanced Quantum Computer - HPCwire",
       "dateAccessed": "2026-08-16"
+    },
+    {
+      "type": "url",
+      "url": "https://www.datacenterdynamics.com/en/news/quantum-earnings-q2-2026-d-wave-ionq-and-rigetti-publish-financial-results-alongside-newly-ipo-ed-iqm-quantum-computers/",
+      "title": "Quantum earnings Q2 2026 - Data Center Dynamics",
+      "dateAccessed": "2026-08-23"
     }
   ],
   "news": [
@@ -263,8 +269,8 @@
       "date": "2026-07-08"
     },
     {
-      "title": "IQM Quantum Computers lists on Nasdaq, becoming first European quantum computing company on a major U.S. exchange",
-      "excerpt": "IQM began trading on the Nasdaq Global Select Market under ticker IQMX on 2 July 2026, completing its business combination with Real Asset Acquisition Corp. at approximately $1.8 billion valuation.",
+      "title": "IQM begins trading on Nasdaq as IQMX, first European quantum company on major U.S. exchange",
+      "excerpt": "IQM Quantum Computers completed its business combination with Real Asset Acquisition Corp and began trading on the Nasdaq Global Select Market under ticker IQMX on July 3, 2026, with a pro forma cash position of EUR 337 million and 23 deployed quantum systems globally.",
       "url": "https://thequantuminsider.com/2026/07/03/iqm-begins-trading-on-nasdaq/",
       "source": "The Quantum Insider",
       "date": "2026-07-03"
@@ -302,6 +308,13 @@
       "excerpt": "IQM's first earnings report as a listed company showed H1 2026 revenues of EUR 8.87 million (+47% YoY), an order backlog of EUR 102.1 million as of August 3, and FY 2026 guidance of EUR 42–47 million revenue. IQM has sold 26 full-stack quantum computers and delivered 17 globally, with new customers including Galaxy Systemy Informatyczne (Poland, first private enterprise globally to purchase an IQM system) and TOYO Corporation (Japan).",
       "url": "https://thequantuminsider.com/2026/08/04/iqm-quantum-computers-h1-2026-results-full-year-outlook/",
       "source": "The Quantum Insider",
+      "date": "2026-08-04"
+    },
+    {
+      "title": "IQM reports H1 2026 results: EUR 8.9M revenue, EUR 102M order backlog, 26 systems sold",
+      "excerpt": "IQM's inaugural earnings as a public company showed H1 2026 revenue of EUR 8.9 million, an order backlog exceeding EUR 102.1 million, and 26 quantum systems sold with 17 delivered globally, including first U.S. delivery to Oak Ridge National Laboratory. Full-year 2026 guidance set at EUR 42–47 million revenue.",
+      "url": "https://www.globenewswire.com/news-release/2026/08/04/3338027/0/en/iqm-quantum-computers-reports-first-earnings-as-public-company-reporting-first-half-and-second-quarter-2026-results-and-initiates-fy-2026-guidance-supported-by-over-eur-102-million.html",
+      "source": "GlobeNewswire",
       "date": "2026-08-04"
     }
   ]

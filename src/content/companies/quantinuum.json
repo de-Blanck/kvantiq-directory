@@ -143,6 +143,18 @@
       "url": "https://thequantuminsider.com/2026/08/12/quantinuum-revenue-jumps-279-in-first-earnings-report-since-ipo/",
       "title": "Quantinuum Revenue Jumps 279% in First Earnings Report Since IPO - The Quantum Insider",
       "dateAccessed": "2026-08-16"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quantinuum-reports-q2-2026-results-revenue-up-279-yoy-1-7b-traditional-ipo-and-oracle-cloud-integration/",
+      "title": "Quantinuum Reports Q2 2026 Results: Revenue Up 279% YoY, $1.7B Traditional IPO, and Oracle Cloud Integration - Quantum Computing Report",
+      "dateAccessed": "2026-08-23"
+    },
+    {
+      "type": "url",
+      "url": "https://www.datacenterdynamics.com/en/news/quantum-earnings-q2-2026-d-wave-ionq-and-rigetti-publish-financial-results-alongside-newly-ipo-ed-iqm-quantum-computers/",
+      "title": "Quantum earnings Q2 2026 - Data Center Dynamics",
+      "dateAccessed": "2026-08-23"
     }
   ],
   "news": [
@@ -257,6 +269,20 @@
       "url": "https://thequantuminsider.com/2026/08/12/quantinuum-revenue-jumps-279-in-first-earnings-report-since-ipo/",
       "source": "The Quantum Insider",
       "date": "2026-08-12"
+    },
+    {
+      "title": "Quantinuum reports Q2 2026 results: $8M revenue (+279% YoY), $1.7B IPO proceeds, 2026 guidance $28–32M",
+      "excerpt": "Quantinuum's first quarterly earnings as a public company showed Q2 2026 revenue of $8 million, a 279% year-over-year increase, with $2.1 billion cash on hand from the June 2026 traditional IPO. The company set full-year 2026 revenue guidance of $28–32 million.",
+      "url": "https://quantumcomputingreport.com/quantinuum-reports-q2-2026-results-revenue-up-279-yoy-1-7b-traditional-ipo-and-oracle-cloud-integration/",
+      "source": "Quantum Computing Report",
+      "date": "2026-08-11"
+    },
+    {
+      "title": "Quantinuum and Oracle partner to deploy Helios trapped-ion quantum computer on Oracle Cloud Infrastructure",
+      "excerpt": "Quantinuum and Oracle announced a multi-year strategic partnership to make Quantinuum's Helios quantum computer available as a managed service on Oracle Cloud Infrastructure, enabling OCI customers to access trapped-ion quantum computing alongside HPC and GPU workloads.",
+      "url": "https://www.quantinuum.com/press-releases/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure",
+      "source": "Quantinuum",
+      "date": "2026-08-11"
     }
   ]
 }

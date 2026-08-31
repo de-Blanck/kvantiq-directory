@@ -17,7 +17,7 @@
   "featured": false,
   "headquarters": "Reading, United Kingdom",
   "employees": "140+",
-  "funding": "USD 500M+ (GBP 260M Series C, June 2026)",
+  "funding": "GBP 260M (USD 350M) Series C",
   "accessModel": "Quantum-as-a-Service (cloud API)",
   "products": [
     {
@@ -31,8 +31,8 @@
   ],
   "highlights": [
     "Proprietary Coaxmon 3D qubit architecture delivers improved coherence over planar designs",
-    "USD 150M+ raised with roadmap targeting 50,000 logical qubits by 2034",
-    "Deployed quantum systems in commercial data centres and launched UK's first QEC testbed with Riverlane"
+    "Raised £260M Series C (June 2026), Europe's largest private quantum funding round, with roadmap targeting 50,000 logical qubits by 2034",
+    "Deployed quantum systems in commercial data centres across UK, US, Japan, and Spain; launched UK's first QEC testbed with Riverlane"
   ],
   "sources": [
     {
@@ -52,6 +52,12 @@
       "url": "https://quantumcomputingreport.com/oqc-and-riverlane-launch-uks-first-quantum-error-corrected-testbed-integrated-with-hpc/",
       "title": "OQC and Riverlane Launch UK's First Quantum Error Corrected Testbed Integrated with HPC",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://sifted.eu/articles/oxford-quantum-circuits-series-c",
+      "title": "Oxford Quantum Circuits raises blockbuster $350m Series C - Sifted",
+      "dateAccessed": "2026-08-23"
     }
   ],
   "news": [
@@ -88,6 +94,13 @@
       "excerpt": "Oxford Quantum Circuits closes an oversubscribed £260M ($350M) Series C led by Bullhound Capital with co-investors including British Business Bank, COFIDES, Alpha Edison, and Magdalen College Oxford. OQC now operates quantum systems in the UK, US, Japan, and Spain.",
       "url": "https://thequantuminsider.com/2026/06/03/oqc-raises-260-million-in-series-c/",
       "source": "The Quantum Insider",
+      "date": "2026-06-03"
+    },
+    {
+      "title": "OQC raises £260M Series C, Europe's largest private quantum funding round, led by Bullhound Capital",
+      "excerpt": "Oxford Quantum Circuits closed an oversubscribed £260 million ($350 million) Series C on June 3, 2026, the largest private funding round by a European quantum computing company. The round was led by Bullhound Capital with an anchor commitment of £100 million from the British Business Bank, alongside Mastercard, COFIDES, and other investors.",
+      "url": "https://sifted.eu/articles/oxford-quantum-circuits-series-c",
+      "source": "Sifted",
       "date": "2026-06-03"
     }
   ]
