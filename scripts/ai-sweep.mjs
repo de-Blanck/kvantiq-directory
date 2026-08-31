@@ -19,8 +19,6 @@ import { fileURLToPath } from 'url';
 
 const CONTENT_DIR = 'src/content';
 const COLLECTIONS = ['companies', 'benchmarks', 'use-cases', 'challenges', 'resources'];
-const MAX_NEWS_PER_ENTRY = 5;
-const NEWS_MAX_AGE_DAYS = 180;
 const FETCH_TIMEOUT_MS = 10000;
 const CLAUDE_MODEL = 'claude-haiku-4-5-20251001';
 const CLAUDE_TIMEOUT_MS = 60000;
@@ -90,12 +88,6 @@ export function credibleSourceCount(sources) {
   return (sources || []).filter((s) => !isBlocklistedSource({ url: s.url, source: s.title || '' })).length;
 }
 
-function isRecent(dateStr) {
-  const date = new Date(dateStr);
-  const now = new Date();
-  const diffDays = (now - date) / (1000 * 60 * 60 * 24);
-  return diffDays <= NEWS_MAX_AGE_DAYS;
-}
 
 // Validate + normalize model-extracted news items against the content schema
 // (src/content.config.ts `newsSchema`). title/url/source/date are required and
@@ -350,13 +342,23 @@ Return ONLY this JSON object, no other text:
 
   if (validatedNews.length === 0) return { ...base, skipped: false, added: 0, contradictions };
 
-  const existingNews = (data.news || []).filter(n => isRecent(n.date));
+  const existingNews = data.news || [];
   const existingUrls = new Set(existingNews.map(n => n.url));
   const newItems = validatedNews.filter(n => !existingUrls.has(n.url));
 
   if (newItems.length === 0) return { ...base, skipped: false, added: 0, contradictions };
 
-  data.news = [...newItems, ...existingNews].slice(0, MAX_NEWS_PER_ENTRY);
+  // Newest first, existing history preserved in full, deduped by URL. News is
+  // never truncated or aged out — trimming here silently destroyed sourced
+  // history (PR #85: the old cap of 5 would have cut 78 items, the 180-day
+  // prune another 176). The UI shows the newest 3 on the dashboard card and
+  // the full list under the news tab, so long arrays cost nothing on-page.
+  const seen = new Set();
+  data.news = [...newItems, ...existingNews].filter(n => {
+    if (seen.has(n.url)) return false;
+    seen.add(n.url);
+    return true;
+  });
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n');
 
   return { ...base, skipped: false, added: newItems.length, items: newItems, country: data.country || null, contradictions };
