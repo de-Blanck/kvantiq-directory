@@ -100,6 +100,18 @@
       "url": "https://www.cnbc.com/2026/06/04/quantinuum-qnt-stock-first-trade-ipo.html",
       "title": "Quantinuum closes flat in Nasdaq debut, after upsized $1.68B offering — CNBC",
       "dateAccessed": "2026-06-14"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/microsofts-application-of-error-correction-to-trapped-ion-qubits-published-in-nature/",
+      "title": "Microsoft's Application of Error Correction to Trapped-Ion Qubits Published in Nature - HPCwire",
+      "dateAccessed": "2026-06-21"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/sandia-national-laboratories-and-quantinuum-validate-98-qubit-helios-trapped-ion-framework/",
+      "title": "Sandia National Laboratories and Quantinuum Validate 98-Qubit Helios Trapped-Ion Framework - Quantum Computing Report",
+      "dateAccessed": "2026-06-21"
     }
   ],
   "news": [
@@ -165,6 +177,20 @@
       "url": "https://thequantuminsider.com/2026/06/04/quantinuum-to-debut-on-nasdaq-after-raising-1-68-billion-in-ipo/",
       "source": "The Quantum Insider",
       "date": "2026-06-04"
+    },
+    {
+      "title": "Microsoft and Quantinuum publish peer-reviewed Nature paper showing 800× quantum error correction improvement",
+      "excerpt": "Using Microsoft's qubit-virtualization platform on Quantinuum trapped-ion hardware, the teams demonstrated logical error-rate reductions from 11× to 800× over physical baselines, with repeated mid-computation error correction across up to 12 logical qubits.",
+      "url": "https://www.hpcwire.com/off-the-wire/microsofts-application-of-error-correction-to-trapped-ion-qubits-published-in-nature/",
+      "source": "HPCwire",
+      "date": "2026-06-13"
+    },
+    {
+      "title": "Sandia National Laboratories and Quantinuum validate 98-qubit Helios system with 99.9975% single-qubit fidelity",
+      "excerpt": "A Nature paper co-authored by Sandia and Quantinuum reports 99.9975% single-qubit fidelity, 99.921% two-qubit fidelity, and 99.967% SPAM fidelity for the Helios QCCD trapped-ion system, confirming it operates in a regime that challenges contemporary supercomputers.",
+      "url": "https://quantumcomputingreport.com/sandia-national-laboratories-and-quantinuum-validate-98-qubit-helios-trapped-ion-framework/",
+      "source": "Quantum Computing Report",
+      "date": "2026-06-17"
     }
   ]
 }

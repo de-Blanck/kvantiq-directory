@@ -70,6 +70,18 @@
       "url": "https://quantumcomputingreport.com/whos-news-strategic-leadership-appointments-at-quandela-zapata-quantum-imperagen-and-eigenq/",
       "title": "Strategic Leadership Appointments at Quandela, Zapata Quantum, Imperagen, and EigenQ - Quantum Computing Report",
       "dateAccessed": "2026-05-31"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/darpa-selects-quandela-for-stage-a-of-the-quantum-benchmarking-initiative/",
+      "title": "DARPA Selects Quandela for Stage A of the Quantum Benchmarking Initiative - HPCwire",
+      "dateAccessed": "2026-06-21"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quandela-selected-for-stage-a-of-darpas-quantum-benchmarking-initiative/",
+      "title": "Quandela Selected for Stage A of DARPA's Quantum Benchmarking Initiative - Quantum Computing Report",
+      "dateAccessed": "2026-06-21"
     }
   ],
   "news": [
@@ -114,6 +126,13 @@
       "url": "https://thequantuminsider.com/2026/05/29/quandela-adds-industry-veterans-to-leadership-and-governance-teams/",
       "source": "The Quantum Insider",
       "date": "2026-05-29"
+    },
+    {
+      "title": "DARPA selects Quandela for Stage A of the Quantum Benchmarking Initiative",
+      "excerpt": "Quandela joins DARPA's QBI programme, which evaluates whether any quantum computing architecture can achieve utility-scale performance by 2033. Under Stage A, Quandela will develop and defend a concept for a fault-tolerant, utility-scale photonic quantum computer.",
+      "url": "https://thequantuminsider.com/2026/06/16/darpa-selects-quandela-for-stage-a-of-the-quantum-benchmarking-initiative/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-16"
     }
   ]
 }

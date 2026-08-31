@@ -133,6 +133,20 @@
       "url": "https://thequantuminsider.com/2026/06/11/alice-bob-unveils-first-quantum-system-available-for-research-partners/",
       "source": "The Quantum Insider",
       "date": "2026-06-11"
+    },
+    {
+      "title": "Alice & Bob unveils Helium Quantum System, its first complete on-premise quantum computer for research partners",
+      "excerpt": "The Helium Quantum System encodes Alice & Bob's first logical qubit with as few as 18 cat-qubits and includes Starboard control software with Slurm scheduler compatibility. An upgradeable platform, it will also support the forthcoming 48-cat-qubit chip.",
+      "url": "https://www.hpcwire.com/off-the-wire/alice-bob-introduces-helium-platform-for-quantum-error-correction-and-logical-qubit-research/",
+      "source": "HPCwire",
+      "date": "2026-06-11"
+    },
+    {
+      "title": "France's GENCI acquires Alice & Bob cat-qubit quantum computer in world's first state procurement of cat-qubit system",
+      "excerpt": "GENCI and Alice & Bob signed an agreement at VivaTech for an 18-cat-qubit quantum computer to be hosted at CEA's TGCC and integrated with the Joliot-Curie supercomputer. The system — the first early fault-tolerant quantum computer in a European computing centre — is expected to be accessible to researchers in 2027.",
+      "url": "https://quantumcomputingreport.com/france-finalizes-world-first-acquisition-of-alice-bob-cat-qubit-quantum-computer-under-hqi-initiative/",
+      "source": "Quantum Computing Report",
+      "date": "2026-06-17"
     }
   ]
 }
