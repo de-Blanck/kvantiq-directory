@@ -21,6 +21,14 @@
     {
       "name": "Diamond NV-Center Quantum Computer",
       "description": "Mobile room-temperature quantum computer based on nitrogen-vacancy centers in diamond, requiring no cryogenic cooling"
+    },
+    {
+      "name": "SXQ128",
+      "description": "128-qubit NV-center room-temperature quantum computer in 19-inch server rack form factor; available commercially (delivery within 3 months as of July 2026)"
+    },
+    {
+      "name": "SXQ512",
+      "description": "512-qubit NV-center room-temperature quantum computer; commercial deliveries from Q2 2027"
     }
   ],
   "highlights": [
@@ -50,6 +58,24 @@
       "type": "url",
       "url": "https://thequantuminsider.com/2025/04/09/saxonq-demonstrates-applications-on-a-mobile-quantum-computer-powered-by-quantum-machines-tech/",
       "title": "SaxonQ Demonstrates Applications on a Mobile Quantum Computer, Powered by Quantum Machines Tech"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/21/saxon-q-diamond-nv-center-quantum-computers/",
+      "title": "SaxonQ Launches SXQ128 and SXQ512 Room-Temperature Diamond Quantum Computers - The Quantum Insider",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/saxon-q-brings-room-temperature-diamond-quantum-computing-to-commercial-market/",
+      "title": "Saxon Q Brings Room-Temperature Diamond Quantum Computing to Commercial Market - HPCwire",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/saxon-q-launches-100-qubit-diamond-based-room-temperature-quantum-computers/",
+      "title": "Saxon Q Launches Diamond-Based Room-Temperature Quantum Computers - Quantum Computing Report",
+      "dateAccessed": "2026-08-02"
     }
   ],
   "news": [
@@ -66,6 +92,13 @@
       "url": "https://www.saxonq.com",
       "source": "saxonq.com",
       "date": "2026-06-16"
+    },
+    {
+      "title": "SaxonQ Commercially Launches SXQ128 and SXQ512 Room-Temperature Diamond NV-Center Quantum Computers",
+      "excerpt": "University of Leipzig spin-off SaxonQ launched its first commercial diamond NV-center systems: the SXQ128 (128 qubits, available immediately) and SXQ512 (512 qubits, deliveries from Q2 2027). Both systems operate at room temperature in a standard 19-inch server rack using a patented sulfur co-implantation process achieving over 85% qubit yield.",
+      "url": "https://thequantuminsider.com/2026/07/21/saxon-q-diamond-nv-center-quantum-computers/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-21"
     }
   ]
 }

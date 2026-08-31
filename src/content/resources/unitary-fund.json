@@ -40,6 +40,18 @@
       "type": "url",
       "url": "https://everyone.plos.org/2018/08/20/the-unitary-fund-a-no-strings-attached-grant-program-for-open-source-quantum-computing/",
       "title": "The Unitary Fund: a no-strings attached grant program for Open Source quantum computing"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/28/riverlane-unitary-foundation-deltakit-community-fund/",
+      "title": "Riverlane and Unitary Foundation Launch Deltakit Community Fund for Open-Source QEC - The Quantum Insider",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/riverlane-and-unitary-foundation-launch-deltakit-community-fund-for-open-source-qec/",
+      "title": "Riverlane and Unitary Foundation Launch Deltakit Community Fund - Quantum Computing Report",
+      "dateAccessed": "2026-08-02"
     }
   ],
   "news": [
@@ -49,6 +61,13 @@
       "url": "https://unitary.foundation/posts/2024_microgrant_impact/",
       "source": "Unitary Foundation",
       "date": "2024-06-11"
+    },
+    {
+      "title": "Unitary Foundation and Riverlane Launch Deltakit Community Fund for Open-Source QEC Development",
+      "excerpt": "Riverlane and the Unitary Foundation launched the Deltakit Community Fund on July 28, 2026 — a rolling quarterly microgrant program ($2,000–$4,000 per project) for external developers building features for Riverlane's open-source Deltakit QEC SDK. First review cohort deadline: August 17, 2026.",
+      "url": "https://thequantuminsider.com/2026/07/28/riverlane-unitary-foundation-deltakit-community-fund/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-28"
     }
   ]
 }

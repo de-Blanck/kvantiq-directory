@@ -48,6 +48,34 @@
       "type": "arxiv",
       "url": "https://arxiv.org/abs/2403.00938",
       "title": "Experimental demonstration of scalable cross-entropy benchmarking to detect measurement-induced phase transitions on a superconducting quantum processor"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.25941",
+      "title": "Sampling hard circuits with verifiably high fidelity (IBM/UChicago, 70 logical qubits, XEB-verified fidelity)",
+      "authors": "IBM Quantum and University of Chicago",
+      "datePublished": "2026-07-28"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/ibm-and-uchicago-advance-trusted-quantum-computing-with-verified-logical-circuits/",
+      "title": "IBM and UChicago Advance Trusted Quantum Computing with Verified Logical Circuits - HPCwire",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://news.uchicago.edu/story/ibm-uchicago-demonstrate-quantum-advantage-outperforming-traditional-computers-quantum",
+      "title": "IBM, UChicago demonstrate quantum advantage, outperforming traditional computers - UChicago News",
+      "dateAccessed": "2026-08-02"
+    }
+  ],
+  "news": [
+    {
+      "title": "IBM and UChicago Demonstrate Quantum Advantage via XEB-Verified Fidelity on 70 Logical Qubits",
+      "excerpt": "IBM and University of Chicago researchers used XEB-based fidelity verification to demonstrate quantum advantage using 70 logical qubits in a depth-70 Clifford+T circuit with 468 T gates and 2,415 two-qubit logical operations, achieving logical error rates 10× lower than underlying physical error rates.",
+      "url": "https://arxiv.org/abs/2607.25941",
+      "source": "arXiv",
+      "date": "2026-07-30"
     }
   ]
 }

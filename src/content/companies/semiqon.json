@@ -55,14 +55,20 @@
     {
       "type": "url",
       "url": "https://thequantuminsider.com/2026/07/03/postscriptum-invests-in-quantum-hardware-developer-semiqon/",
-      "title": "PostScriptum Executes Strategic Investment in SemiQon Alongside €30 Million Quantum Fund Commitment - The Quantum Insider",
-      "dateAccessed": "2026-07-05"
+      "title": "PostScriptum Invests in Quantum Hardware Developer SemiQon - The Quantum Insider",
+      "dateAccessed": "2026-08-02"
     },
     {
       "type": "url",
       "url": "https://quantumcomputingreport.com/postscriptum-executes-strategic-investment-in-semiqon-alongside-e30-million-34-35-million-usd-quantum-fund-commitment/",
       "title": "PostScriptum Executes Strategic Investment in SemiQon - Quantum Computing Report",
       "dateAccessed": "2026-07-05"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/postscriptum-executes-strategic-investment-in-semiqon-alongside-e30-million-quantum-fund-commitment/",
+      "title": "PostScriptum Executes Strategic Investment in SemiQon - Quantum Computing Report",
+      "dateAccessed": "2026-08-02"
     }
   ],
   "news": [
@@ -81,8 +87,8 @@
       "date": "2026-04-23"
     },
     {
-      "title": "PostScriptum makes strategic investment in SemiQon alongside €30 million dedicated quantum hardware fund",
-      "excerpt": "PostScriptum, a founder's office led by Peter Sarlin, made an undisclosed strategic investment in Finnish cryo-CMOS chip maker SemiQon and simultaneously announced a €30 million quantum hardware fund targeting cryo-electronics, sub-kelvin components, and cooling modules for industrial-scale quantum computing.",
+      "title": "PostScriptum Makes Strategic Equity Investment in SemiQon Alongside €30M Quantum Hardware Fund Commitment",
+      "excerpt": "PostScriptum (led by Peter Sarlin, co-founder of Silo AI) made a strategic equity investment in SemiQon to support commercial scale-up of its Cryo-CMOS control and readout microchips. PostScriptum simultaneously committed €30M for foundational quantum hardware technologies. SemiQon has already shipped first commercial customer orders.",
       "url": "https://thequantuminsider.com/2026/07/03/postscriptum-invests-in-quantum-hardware-developer-semiqon/",
       "source": "The Quantum Insider",
       "date": "2026-07-03"

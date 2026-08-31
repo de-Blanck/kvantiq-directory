@@ -67,6 +67,44 @@
       "dateAccessed": "2026-04-19"
     }
   ],
+  "sources": [
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2408.13687",
+      "title": "Quantum error correction below the surface code threshold",
+      "authors": "Google Quantum AI and Collaborators",
+      "datePublished": "2024-08-24",
+      "dateAccessed": "2026-04-19"
+    },
+    {
+      "type": "press-release",
+      "url": "https://blog.google/technology/research/google-willow-quantum-chip/",
+      "title": "Meet Willow, our state-of-the-art quantum chip (Google)",
+      "datePublished": "2024-12-09",
+      "dateAccessed": "2026-04-19"
+    },
+    {
+      "type": "doi",
+      "url": "https://doi.org/10.1038/s41586-024-08449-y",
+      "title": "Quantum error correction below the surface code threshold (Nature 638, 920–926)",
+      "authors": "Google Quantum AI and Collaborators",
+      "datePublished": "2025-02-20",
+      "dateAccessed": "2026-04-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.25941",
+      "title": "Sampling hard circuits with verifiably high fidelity — logical error rates 10× below physical on 70 logical qubits",
+      "authors": "IBM Quantum and University of Chicago",
+      "datePublished": "2026-07-28"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/ibm-and-uchicago-advance-trusted-quantum-computing-with-verified-logical-circuits/",
+      "title": "IBM and UChicago Advance Trusted Quantum Computing with Verified Logical Circuits - HPCwire",
+      "dateAccessed": "2026-08-02"
+    }
+  ],
   "news": [
     {
       "title": "Quantum error correction below the surface code threshold",
@@ -74,6 +112,13 @@
       "url": "https://arxiv.org/abs/2408.13687",
       "source": "arXiv",
       "date": "2024-08-24"
+    },
+    {
+      "title": "IBM and UChicago Achieve Logical Error Rates 10× Below Physical in 70-Logical-Qubit Encoded Circuits",
+      "excerpt": "IBM and UChicago ran 70 logical qubits with effective logical error rates 10× lower than physical qubit error rates, completing 2,415 logical two-qubit gates and 468 T gates. Results are released openly on the IBM Quantum Advantage Tracker.",
+      "url": "https://arxiv.org/abs/2607.25941",
+      "source": "arXiv",
+      "date": "2026-07-30"
     }
   ]
 }
