@@ -16,7 +16,7 @@
   "free": true,
   "language": "Python/C++",
   "provider": "NVIDIA",
-  "lastUpdated": "2026",
+  "lastUpdated": "2026-08-03",
   "maturity": "stable",
   "communitySize": "~600 GitHub stars",
   "sources": [
@@ -76,6 +76,13 @@
       "url": "https://www.hpcwire.com/off-the-wire/pnnl-brings-open-source-gpu-acceleration-to-quantum-with-nvidia-nvqlink/",
       "source": "HPCwire",
       "date": "2026-07-27"
+    },
+    {
+      "title": "CUDA-Q 0.15.1 released",
+      "excerpt": "NVIDIA released CUDA-Q 0.15.1, a patch update to the hybrid quantum-classical computing platform with bug fixes and improvements to simulation backends.",
+      "url": "https://github.com/NVIDIA/cuda-quantum/releases/tag/0.15.1",
+      "source": "GitHub",
+      "date": "2026-08-03"
     }
   ]
 }

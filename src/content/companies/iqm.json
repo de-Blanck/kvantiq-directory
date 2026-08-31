@@ -33,9 +33,9 @@
     }
   ],
   "highlights": [
-    "Europe's largest quantum computing company with 250+ employees and EUR 200M+ in funding",
-    "Supplies quantum accelerators to EuroHPC supercomputing centers across Europe",
-    "Europe's first quantum computing company to list on Nasdaq (ticker IQMX) and Nasdaq Helsinki simultaneously, completing its SPAC merger in July 2026"
+    "Europe's largest quantum computing company with 250+ employees and EUR 337M+ cash post-listing",
+    "Listed on Nasdaq (IQMX) and Nasdaq Helsinki in July 2026, the first European quantum computing company to go public",
+    "Supplies quantum accelerators to EuroHPC supercomputing centers across Europe; 26 systems sold, 17 delivered globally as of August 2026"
   ],
   "sources": [
     {
@@ -95,8 +95,8 @@
     {
       "type": "url",
       "url": "https://www.eu-startups.com/2026/07/espoo-based-iqm-goes-public-on-nasdaq-in-european-quantum-first-with-e127-million-in-pipe-financing/",
-      "title": "IQM goes public on Nasdaq in European quantum first with €127M in PIPE financing - EU-Startups",
-      "dateAccessed": "2026-07-05"
+      "title": "IQM goes public on Nasdaq in European quantum first with €127 million in PIPE financing - EU-Startups",
+      "dateAccessed": "2026-08-16"
     },
     {
       "type": "url",
@@ -121,6 +121,18 @@
       "url": "https://quantumcomputingreport.com/lumi-ai-factory-selects-iqm-to-deploy-superconducting-quantum-computer-for-hybrid-hpc-ai-acceleration/",
       "title": "LUMI AI Factory Selects IQM to Deploy Superconducting Quantum Computer - Quantum Computing Report",
       "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/08/04/iqm-quantum-computers-h1-2026-results-full-year-outlook/",
+      "title": "IQM Quantum Computers H1 2026 Results and Full-Year Outlook - The Quantum Insider",
+      "dateAccessed": "2026-08-16"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/lumi-ai-factory-selects-iqm-to-deploy-advanced-quantum-computer-accelerating-hybrid-hpc-and-ai-development/",
+      "title": "LUMI AI Factory Selects IQM to Deploy Advanced Quantum Computer - HPCwire",
+      "dateAccessed": "2026-08-16"
     }
   ],
   "news": [
@@ -269,6 +281,27 @@
       "excerpt": "Following its Nasdaq debut, IQM reported H1 2026 revenue of €8.9 million and an order backlog exceeding €102.1 million as of August 3. The company initiated full-year guidance of €42M–€47M in revenue and plans to ramp production to 30 full-stack quantum computers annually at its expanded cleanroom.",
       "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-iqm-quantum-computers-posts-higher-backlog-in-q2-2026-93CH-4834505",
       "source": "Investing.com",
+      "date": "2026-08-04"
+    },
+    {
+      "title": "IQM begins trading on Nasdaq as Europe's first publicly listed quantum computing company",
+      "excerpt": "IQM completed its business combination with Real Asset Acquisition Corp. and began trading as IQMX on the Nasdaq Global Select Market on July 2, 2026, and on Nasdaq Helsinki on July 3. The company raised EUR 127 million in PIPE financing, bringing total cash reserves to approximately EUR 337 million, providing runway to Q2 2028.",
+      "url": "https://www.eu-startups.com/2026/07/espoo-based-iqm-goes-public-on-nasdaq-in-european-quantum-first-with-e127-million-in-pipe-financing/",
+      "source": "EU-Startups",
+      "date": "2026-07-02"
+    },
+    {
+      "title": "LUMI AI Factory selects IQM to deploy Halocene H4 quantum computer for hybrid HPC-AI acceleration",
+      "excerpt": "The LUMI AI Factory (operated by CSC, Finland) selected IQM to deliver the Halocene H4 superconducting quantum computer — described as the first system combining quantum error correction with NISQ qubits — for deployment in 2027. The contract is jointly funded by the EuroHPC Joint Undertaking and five national governments including Finland, Czechia, Norway, and Poland.",
+      "url": "https://www.hpcwire.com/off-the-wire/lumi-ai-factory-selects-iqm-to-deploy-advanced-quantum-computer-accelerating-hybrid-hpc-and-ai-development/",
+      "source": "HPCwire",
+      "date": "2026-07-08"
+    },
+    {
+      "title": "IQM reports first earnings as a public company: EUR 8.9M H1 revenue, EUR 102M order backlog",
+      "excerpt": "IQM's first earnings report as a listed company showed H1 2026 revenues of EUR 8.87 million (+47% YoY), an order backlog of EUR 102.1 million as of August 3, and FY 2026 guidance of EUR 42–47 million revenue. IQM has sold 26 full-stack quantum computers and delivered 17 globally, with new customers including Galaxy Systemy Informatyczne (Poland, first private enterprise globally to purchase an IQM system) and TOYO Corporation (Japan).",
+      "url": "https://thequantuminsider.com/2026/08/04/iqm-quantum-computers-h1-2026-results-full-year-outlook/",
+      "source": "The Quantum Insider",
       "date": "2026-08-04"
     }
   ]

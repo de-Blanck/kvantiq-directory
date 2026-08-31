@@ -15,7 +15,7 @@
   "free": true,
   "language": "Python",
   "provider": "IBM",
-  "lastUpdated": "2026",
+  "lastUpdated": "2026-08-13",
   "maturity": "mature",
   "communitySize": "~5,300 GitHub stars",
   "sources": [
@@ -64,6 +64,15 @@
       "url": "https://github.com/Qiskit/qiskit/releases/tag/2.5.0",
       "source": "Qiskit GitHub Releases",
       "date": "2026-07-02"
+    }
+  ],
+  "news": [
+    {
+      "title": "Qiskit 2.5.2 released",
+      "excerpt": "IBM released Qiskit 2.5.2, a patch update to the open-source quantum computing SDK addressing bug fixes and stability improvements.",
+      "url": "https://github.com/Qiskit/qiskit/releases/tag/2.5.2",
+      "source": "GitHub",
+      "date": "2026-08-13"
     }
   ]
 }

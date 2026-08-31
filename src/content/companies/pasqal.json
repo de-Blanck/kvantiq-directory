@@ -16,7 +16,7 @@
   "featured": true,
   "headquarters": "Massy, France",
   "employees": "200+",
-  "funding": "EUR 100M+",
+  "funding": "EUR 340M+",
   "accessModel": "Cloud API + on-premise deployment + consulting",
   "products": [
     {
@@ -30,7 +30,7 @@
   ],
   "highlights": [
     "Co-founded by Nobel laureate Alain Aspect, a pioneer of cold atom physics",
-    "EUR 100M+ raised with plans for a USD 2B SPAC listing",
+    "Over EUR 340M in financing secured; pursuing Nasdaq listing under ticker PSQL after SEC declared F-4 registration effective August 5, 2026",
     "200+ employees delivering enterprise quantum solutions in energy, automotive, and finance"
   ],
   "sources": [
@@ -93,6 +93,18 @@
       "url": "https://quantumcomputingreport.com/chips-ju-and-pasqal-launch-e50m-q-planet-pilot-line-to-industrialize-neutral-atom-quantum-chips/",
       "title": "Chips JU and Pasqal Launch €50M Q-PLANET Pilot Line - Quantum Computing Report",
       "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/sec-declares-registration-statement-effective-for-pasqals-business-combination-with-bleichroeder-acquisition-corp-ii/",
+      "title": "SEC Declares Registration Statement Effective for Pasqal's Business Combination with Bleichroeder Acquisition Corp. II - Quantum Computing Report",
+      "dateAccessed": "2026-08-16"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/pasqal-uses-photonic-chip-to-trap-individual-atoms-for-neutral-atom-quantum-computing/",
+      "title": "Pasqal Uses Photonic Chip to Trap Individual Atoms for Neutral-Atom Quantum Computing - HPCwire",
+      "dateAccessed": "2026-08-16"
     }
   ],
   "news": [
@@ -221,6 +233,20 @@
       "url": "https://thequantuminsider.com/2026/08/06/pasqal-business-combination-filing-bleichroeder-declared-effective-sec/",
       "source": "The Quantum Insider",
       "date": "2026-08-06"
+    },
+    {
+      "title": "SEC declares Pasqal SPAC merger registration effective ahead of August 25 shareholder vote",
+      "excerpt": "The SEC declared effective the joint Form F-4 Registration Statement for Pasqal's business combination with Bleichroeder Acquisition Corp. II (NASDAQ: BBCQ). Bleichroeder shareholders are scheduled to vote on August 25, 2026; upon closing, the combined company will trade on Nasdaq under ticker PSQL.",
+      "url": "https://quantumcomputingreport.com/sec-declares-registration-statement-effective-for-pasqals-business-combination-with-bleichroeder-acquisition-corp-ii/",
+      "source": "Quantum Computing Report",
+      "date": "2026-08-06"
+    },
+    {
+      "title": "Pasqal traps individual atoms using photonic integrated circuit in world-first for neutral-atom quantum computing",
+      "excerpt": "Pasqal demonstrated trapping of individual atoms using laser light from a photonic integrated circuit (PIC), achieved in collaboration with subsidiary Aeponyx. The milestone moves optical tweezer functions from large free-space optical benches onto a solid-state silicon nitride photonic chip, addressing a key scaling bottleneck on the path to fault-tolerant quantum computing.",
+      "url": "https://www.hpcwire.com/off-the-wire/pasqal-uses-photonic-chip-to-trap-individual-atoms-for-neutral-atom-quantum-computing/",
+      "source": "HPCwire",
+      "date": "2026-08-10"
     }
   ]
 }
