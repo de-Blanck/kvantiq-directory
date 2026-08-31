@@ -16,8 +16,8 @@
   "website": "https://quantummotion.com",
   "featured": false,
   "headquarters": "London, United Kingdom",
-  "employees": "100+",
-  "funding": "GBP 62M+",
+  "employees": "120+",
+  "funding": "USD 160M+ (Series C, May 2026)",
   "accessModel": "Hardware development + government contracts",
   "products": [
     {
@@ -48,6 +48,27 @@
       "url": "https://quantumcomputingreport.com/quantum-motion-delivers-full-stack-silicon-cmos-quantum-computer-to-uks-nqcc/",
       "title": "Quantum Motion Delivers Full-Stack Silicon CMOS Quantum Computer to UK's NQCC - Quantum Computing Report",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/07/quantum-motion-160m-series-c-silicon-quantum-computing/",
+      "title": "Quantum Motion Raises $160M for Silicon Quantum Computing Development - The Quantum Insider",
+      "dateAccessed": "2026-05-10"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/quantum-motion-secures-160m-to-advance-silicon-cmos-quantum-systems/",
+      "title": "Quantum Motion Secures $160M to Advance Silicon CMOS Quantum Systems - HPCwire",
+      "dateAccessed": "2026-05-10"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quantum Motion raises $160M Series C to scale silicon CMOS quantum processors",
+      "excerpt": "The round, co-led by DCVC and Kembara with participation from the British Business Bank and Firgun, is the largest VC deal for a UK-based quantum company. Quantum Motion will use the funding to commercialise silicon-based quantum computers targeting standard data centre deployments.",
+      "url": "https://thequantuminsider.com/2026/05/07/quantum-motion-160m-series-c-silicon-quantum-computing/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-07"
     }
   ],
   "news": [

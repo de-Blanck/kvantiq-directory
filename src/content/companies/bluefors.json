@@ -59,6 +59,24 @@
       "type": "url",
       "url": "https://thequantuminsider.com/2026/03/03/bluefors-modular-cryogenic-platform-launch/",
       "title": "Bluefors Launches Modular Cryogenic Platform for Scalable Quantum Systems"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/07/bluefors-joins-chicago-quantum-exchange/",
+      "title": "Bluefors Joins Chicago Quantum Exchange - The Quantum Insider",
+      "dateAccessed": "2026-05-10"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/bluefors-joins-chicago-quantum-exchange-to-support-quantum-infrastructure-and-workforce-development/",
+      "title": "Bluefors Joins Chicago Quantum Exchange to Support Quantum Infrastructure and Workforce Development - HPCwire",
+      "dateAccessed": "2026-05-10"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/bluefors-joins-chicago-quantum-exchange-to-strengthen-regional-cryogenic-infrastructure/",
+      "title": "Bluefors Joins Chicago Quantum Exchange to Strengthen Regional Cryogenic Infrastructure - Quantum Computing Report",
+      "dateAccessed": "2026-05-10"
     }
   ],
   "news": [
@@ -75,6 +93,13 @@
       "url": "https://thequantuminsider.com/2026/03/03/bluefors-modular-cryogenic-platform-launch/",
       "source": "The Quantum Insider",
       "date": "2026-03-02"
+    },
+    {
+      "title": "Bluefors joins Chicago Quantum Exchange and opens Lab Service facility at UChicago",
+      "excerpt": "Bluefors becomes a member of the Chicago Quantum Exchange and opens a Bluefors Lab Service facility within the UChicago Science Incubator at Hyde Park Labs on 12 May 2026, giving early-stage startups and researchers flexible access to an LD400He cryogenic measurement system.",
+      "url": "https://thequantuminsider.com/2026/05/07/bluefors-joins-chicago-quantum-exchange/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-07"
     }
   ]
 }

@@ -53,6 +53,19 @@
       "url": "https://thequantuminsider.com/2026/05/04/yz-plane-mbqc-parityqc-architecture/",
       "title": "ParityQC Demonstrates YZ-Plane Measurement-Based Quantum Computation - The Quantum Insider",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2604.15436",
+      "title": "Parity-unfolded distillation architecture for noise-biased platforms",
+      "authors": "Konstantin Tiurev, Christoph Fleckenstein, Christophe Goeller, Paul Schnabl, Matthias Traube, Nitica Sakharwade, Anette Messinger, Josua Unger, Wolfgang Lechner",
+      "datePublished": "2026-04-16"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/parityqc-and-university-of-innsbruck-propose-distillation-architecture-to-reduce-ftqc-overhead/",
+      "title": "ParityQC and University of Innsbruck Propose Distillation Architecture to Reduce FTQC Overhead - Quantum Computing Report",
+      "dateAccessed": "2026-05-10"
     }
   ],
   "news": [
@@ -90,6 +103,13 @@
       "url": "https://thequantuminsider.com/2026/05/04/yz-plane-mbqc-parityqc-architecture/",
       "source": "The Quantum Insider",
       "date": "2026-05-04"
+    },
+    {
+      "title": "ParityQC and University of Innsbruck propose parity-unfolded distillation architecture cutting FTQC overhead",
+      "excerpt": "The new fault-tolerant scheme, optimised for noise-biased platforms, achieves a 26% reduction in physical qubit footprint and a 43% decrease in logical error rate compared with standard distillation methods, using nearest-neighbour interactions only.",
+      "url": "https://thequantuminsider.com/2026/05/07/parity-unfolded-distillation-architecture-to-lower-resource-overhead/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-07"
     }
   ]
 }
