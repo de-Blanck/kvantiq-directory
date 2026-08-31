@@ -80,6 +80,20 @@
   ],
   "news": [
     {
+      "title": "QuiX Quantum Installs Feed-Forward Control Unit for Universal Photonic Quantum Computer",
+      "excerpt": "QuiX Quantum announced the first installation of its Feed-Forward Control Unit (FFCU), a hardware component designed to help the system respond to quantum measurements in real time.",
+      "url": "https://thequantuminsider.com/2026/06/03/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-03"
+    },
+    {
+      "title": "QuiX Quantum Details Dedalo Roadmap for Logical Qubits and Hybrid HPC Integration",
+      "excerpt": "QuiX Quantum released its vision of universal photonic quantum computing with logical qubits through Dedalo, a new system architecture designed to achieve practical, fault-tolerant systems that work seamlessly with classical supercomputers.",
+      "url": "https://www.hpcwire.com/off-the-wire/quix-quantum-details-dedalo-roadmap-for-logical-qubits-and-hybrid-hpc-integration/",
+      "source": "HPCwire",
+      "date": "2026-06-30"
+    },
+    {
       "title": "Enschede-based QuiX Quantum secures €15M to launch first universal photonic quantum computer",
       "excerpt": "QuiX Quantum secured €15M in Series A funding co-led by Invest NL and EIC Fund to deliver its first-generation universal photonic quantum computer.",
       "url": "https://siliconcanals.com/quix-quantum-secures-15m/",

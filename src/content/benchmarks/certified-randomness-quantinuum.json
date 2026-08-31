@@ -68,6 +68,13 @@
   ],
   "news": [
     {
+      "title": "Certified randomness using a trapped-ion quantum processor",
+      "excerpt": "arXiv preprint of peer-reviewed work demonstrating certified randomness generation on Quantinuum H2-1 using classical verification with measured supercomputer performance.",
+      "url": "https://arxiv.org/abs/2503.20498",
+      "source": "arXiv:2503.20498 [quant-ph]",
+      "date": "2025-03-26"
+    },
+    {
       "title": "Certified randomness using a trapped-ion quantum processor published in Nature",
       "excerpt": "Researchers demonstrate generation of 71,313 bits of certifiably random entropy using the 56-qubit Quantinuum H2-1 trapped-ion quantum computer, with security verified against near-term adversaries using supercomputer-scale classical hardness assumptions.",
       "url": "https://doi.org/10.1038/s41586-025-08737-1",

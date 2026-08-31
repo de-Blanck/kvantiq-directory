@@ -4,7 +4,13 @@
   "country": "France",
   "region": "western-europe",
   "type": "hardware",
-  "tags": ["superconducting", "cryogenic", "wiring", "enabling-technology", "quantum-infrastructure"],
+  "tags": [
+    "superconducting",
+    "cryogenic",
+    "wiring",
+    "enabling-technology",
+    "quantum-infrastructure"
+  ],
   "founded": 2025,
   "description": "Isentroniq is a Paris-area deep-tech startup solving the cryogenic wiring bottleneck that limits superconducting quantum computers. The company develops dense, near-heatless wiring infrastructure that enables up to 1,000x more qubits in existing dilution refrigerators, targeting systems capable of 1 million qubits at approximately EUR 50M cost. Founded by Paul Magnard, former lead architect at Alice and Bob with a PhD from ETH Zurich.",
   "website": "https://www.isentroniq.com",
@@ -39,6 +45,13 @@
     }
   ],
   "news": [
+    {
+      "title": "Isentroniq Raises €7.5M to Advance Wiring Technology for Superconducting Qubits",
+      "excerpt": "Isentroniq, a French quantum hardware startup, has announced a €7.5 million ($8.7 million USD) funding round to develop and industrialize its wiring technology. The round was led by Heartcore, with participation from OVNI Capital, Kima Ventures, iXcore, Better Angle, and Epsilon VC.",
+      "url": "https://quantumcomputingreport.com/isentroniq-raises-e7-5m-8-7m-usd-to-advance-wiring-technology-for-superconducting-qubits/",
+      "source": "Quantum Computing Report",
+      "date": "2025-10-14"
+    },
     {
       "title": "Isentroniq raises EUR 7.5M pre-seed to solve superconducting quantum computer wiring bottleneck",
       "excerpt": "Paris-area startup Isentroniq raised EUR 7.5M led by Heartcore to commercialise cryogenic wiring technology that can increase qubit capacity in dilution refrigerators by up to 1,000x. The company was founded by Paul Magnard, former lead architect at Alice and Bob, targeting 1M-qubit capable systems at EUR 50M cost.",

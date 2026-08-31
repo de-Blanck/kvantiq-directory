@@ -36,5 +36,14 @@
       "url": "https://www.hpcwire.com/off-the-wire/sandia-highlights-new-quantum-computing-research-focusing-on-global-supply-chain-challenges/",
       "title": "Sandia Highlights New Quantum Computing Research Focusing on Global Supply Chain Challenges"
     }
+  ],
+  "news": [
+    {
+      "title": "Sandia Highlights New Quantum Computing Research Focusing on Global Supply Chain Challenges",
+      "excerpt": "Sandia National Laboratories scientists developed FALQON (Feedback-based Algorithm for Quantum Optimization), a new framework for programming quantum computers to overcome supply-chain vulnerabilities exposed by the war in Ukraine and COVID-19 pandemic.",
+      "url": "https://www.hpcwire.com/off-the-wire/sandia-highlights-new-quantum-computing-research-focusing-on-global-supply-chain-challenges/",
+      "source": "HPCwire",
+      "date": "2023-02-16"
+    }
   ]
 }

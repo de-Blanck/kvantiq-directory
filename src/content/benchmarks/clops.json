@@ -52,6 +52,13 @@
   ],
   "news": [
     {
+      "title": "Quality, Speed, and Scale: three key attributes to measure the performance of near-term quantum computers",
+      "excerpt": "We propose a speed benchmark, using an update to the quantum volume experiments that allows the measurement of Circuit Layer Operations Per Second (CLOPS) and identify how both classical and quantum components play a role in improving performance.",
+      "url": "https://arxiv.org/abs/2110.14108",
+      "source": "arXiv",
+      "date": "2021-10-27"
+    },
+    {
       "title": "IBM Proposes Circuit Layer Operations Per Second (CLOPS) as Quantum Speed Metric",
       "excerpt": "IBM scientists propose CLOPS, a hardware-agnostic metric measuring how fast a quantum processor can execute parameterized circuit layers. The metric captures the full hardware-software stack including gate execution speed, runtime compilation, classical control instruction generation, and data transfer rates.",
       "url": "https://www.ibm.com/quantum/blog/circuit-layer-operations-per-second",

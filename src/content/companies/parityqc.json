@@ -82,6 +82,13 @@
   ],
   "news": [
     {
+      "title": "Classiq and ParityQC Partner to Optimize and Streamline Quantum Execution",
+      "excerpt": "Classiq and ParityQC announced a partnership to integrate ParityQC's Parity Twine technology with Classiq's quantum software engineering platform to improve quantum program execution on hardware with limited qubit connectivity.",
+      "url": "https://www.hpcwire.com/off-the-wire/classiq-and-parityqc-partner-to-optimize-and-streamline-quantum-execution/",
+      "source": "HPCwire",
+      "date": "2026-07-15"
+    },
+    {
       "title": "ParityQC: a blueprint for Europe's quantum future",
       "excerpt": "ParityQC positions itself as a key player in Europe's quantum computing future with its architecture blueprint and operating system.",
       "url": "https://www.parityqc.com",

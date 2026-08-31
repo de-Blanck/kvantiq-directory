@@ -109,6 +109,13 @@
   ],
   "news": [
     {
+      "title": "Riverlane Demonstrates 16.32µs QEC Latency with Deltaflow 2",
+      "excerpt": "Riverlane achieved mean latency of 16.32µs for quantum error correction using Deltaflow 2 on Google's 2024 Willow experiment data, approximately four times lower than Google's 63µs result.",
+      "url": "https://quantumzeitgeist.com/qec-latency-google-riverlane-cuts/",
+      "source": "Quantum Zeitgeist",
+      "date": "2026-04-11"
+    },
+    {
       "title": "Riverlane raises $75 million to meet surging global demand for quantum error correction technology",
       "excerpt": "Riverlane announced that it has raised $75 million in Series C funding to deliver its groundbreaking quantum error correction (QEC) roadmap, led by Planet First Partners.",
       "url": "https://www.riverlane.com/press-release/riverlane-raises-75-million-to-meet-surging-global-demand-for-quantum-error-correction-technology",

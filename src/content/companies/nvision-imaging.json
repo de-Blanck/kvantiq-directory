@@ -4,7 +4,13 @@
   "country": "Germany",
   "region": "dach",
   "type": "hybrid",
-  "tags": ["quantum-sensing", "MRI", "healthcare", "photonic-computing", "molecular-qubits"],
+  "tags": [
+    "quantum-sensing",
+    "MRI",
+    "healthcare",
+    "photonic-computing",
+    "molecular-qubits"
+  ],
   "founded": 2016,
   "description": "NVision Imaging Technologies develops quantum-based molecular technologies with two platforms: POLARIS, which uses quantum polarisation to enhance MRI signals by 10,000x for cancer metabolism imaging; and PIQC, a quantum computing platform based on molecular qubits native to photonic chips. Founded as a spinout of Ulm University, NVision has research collaborations with Cambridge, TU Munich, and Memorial Sloan Kettering Cancer Center.",
   "website": "https://www.nvision-quantum.com",
@@ -49,6 +55,13 @@
     }
   ],
   "news": [
+    {
+      "title": "NVision Raises $55M, Expands from Quantum MRI Sensing into Quantum Computing",
+      "excerpt": "$55 million Series B financing round anchored by Abbott. Major expansion from quantum sensing into quantum computing.",
+      "url": "https://www.hpcwire.com/off-the-wire/nvision-raises-55m-expands-from-quantum-mri-sensing-into-quantum-computing/",
+      "source": "HPCwire",
+      "date": "2026-05-13"
+    },
     {
       "title": "NVision raises USD 55M Series B and expands into quantum computing with PIQC photonic platform",
       "excerpt": "NVision Imaging Technologies announced a USD 55M Series B anchored by Abbott, bringing total funding above USD 85M. Simultaneously the company launched PIQC, a molecular-qubit photonic quantum computing platform, expanding beyond its established POLARIS quantum MRI contrast enhancement technology. New Cambridge UK hub and Aarhus Denmark partnership announced in the same month.",

@@ -159,6 +159,20 @@
   ],
   "news": [
     {
+      "title": "Honeywell Announces Quantinuum's Filing of Registration Statement For IPO",
+      "excerpt": "Quantinuum has publicly filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission for a proposed initial public offering and plans to list on the Nasdaq under the ticker symbol QNT.",
+      "url": "https://thequantuminsider.com/2026/05/08/honeywell-announces-quantinuum-filing-of-registration-statement-for-ipo/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-08"
+    },
+    {
+      "title": "Quantinuum and Academic Partners Demonstrate First Universal Topological Gate Set via Non-Abelian Anyons",
+      "excerpt": "A multi-institutional collaboration including Quantinuum, Caltech, University of Chicago, Harvard, and Stony Brook University successfully demonstrated the first universal topological gate set using non-Abelian anyons.",
+      "url": "https://quantumcomputingreport.com/quantinuum-and-academic-partners-demonstrate-first-universal-topological-gate-set-via-non-abelian-anyons/",
+      "source": "Quantum Computing Report",
+      "date": "2026-06-01"
+    },
+    {
       "title": "Quantinuum and BMW Group expand into multi-year quantum computing partnership for advanced materials science",
       "excerpt": "The partnership extends BMW's use of successive Quantinuum H-series generations (Helios, Sol, Apollo) for molecular simulation and catalyst research, positioning it as one of the longest-sustained quantum-enterprise commitments.",
       "url": "https://thequantuminsider.com/2026/05/05/quantinuum-and-bmw-group-expand-quantum-computing-collaboration-with-new-multi-year-partnership/",

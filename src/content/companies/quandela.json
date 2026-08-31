@@ -86,6 +86,13 @@
   ],
   "news": [
     {
+      "title": "Selected for DARPA Quantum Benchmarking Initiative Stage A",
+      "excerpt": "Quandela selected by DARPA to participate in Stage A of the Quantum Benchmarking Initiative (QBI), a program designed to assess whether quantum computing architectures can achieve utility-scale operation by 2033.",
+      "url": "https://www.hpcwire.com/off-the-wire/darpa-selects-quandela-for-stage-a-of-the-quantum-benchmarking-initiative/",
+      "source": "HPCwire",
+      "date": "2026-06-16"
+    },
+    {
       "title": "French startup Quandela raises €50m to manufacture commercial quantum computers",
       "excerpt": "Quandela has raised a €50m Series B to manufacture photonic quantum computers and sell them to industrial customers, marking increased production after delivering its first photonic quantum computer to OVHcloud.",
       "url": "https://sifted.eu/articles/french-startup-quandela-raises-e50m",

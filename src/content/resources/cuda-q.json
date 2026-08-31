@@ -57,6 +57,20 @@
   ],
   "news": [
     {
+      "title": "Pasqal Integrates NVIDIA CUDA-Q with QRMI for Slurm-Native Hybrid HPC-Quantum Workflows",
+      "excerpt": "Pasqal announced integration of NVIDIA CUDA-Q platform with its Quantum Resource Management Interface (QRMI) runtime, enabling CUDA-Q workloads to be scheduled through Slurm-based HPC workflows.",
+      "url": "https://www.hpcwire.com/off-the-wire/pasqal-integrates-nvidia-cuda-q-with-qrmi-for-slurm-native-hybrid-hpc-quantum-workflows/",
+      "source": "HPCwire",
+      "date": "2026-03-16"
+    },
+    {
+      "title": "Quantum X Labs Tests AI-Based Error Correction Decoder With NVIDIA CUDA-Q Tools",
+      "excerpt": "Quantum X Labs reported progress on AI-driven quantum error-correction program using NVIDIA CUDA-Q QEC software libraries, benchmarking transformer-based decoder against classical MWPM decoder.",
+      "url": "https://thequantuminsider.com/2026/07/27/quantum-x-labs-ai-error-correction-decoder-nvidia-cuda-q/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-27"
+    },
+    {
       "title": "Harnessing CUDA-Q's MPS for Tensor Network Simulations of Large-Scale Quantum Circuits",
       "excerpt": "Research paper evaluating CUDA-Q tensor network simulators on an Nvidia Grace Hopper system, particularly the Matrix Product State (MPS) formulation. Submitted to 33rd Euromicro International Conference on Parallel, Distributed and Network-Based Processing (PDP 2025).",
       "url": "https://arxiv.org/abs/2501.15939",

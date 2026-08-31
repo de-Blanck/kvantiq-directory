@@ -4,7 +4,13 @@
   "country": "United Kingdom",
   "region": "uk",
   "type": "hardware",
-  "tags": ["superconducting", "quantum-hardware", "manufacturing", "components", "sensors"],
+  "tags": [
+    "superconducting",
+    "quantum-hardware",
+    "manufacturing",
+    "components",
+    "sensors"
+  ],
   "founded": 2025,
   "description": "Quantcore is a University of Glasgow spin-out that designs, manufactures, and tests niobium-based superconducting quantum components including processors, resonators, and sensors. Operating from the James Watt Nanofabrication Centre, the company supplies sovereign UK quantum hardware to national laboratories and quantum computer manufacturers, addressing the supply chain gap for domestic superconducting components.",
   "website": "https://quantcore.co.uk",
@@ -45,6 +51,13 @@
     }
   ],
   "news": [
+    {
+      "title": "Quantcore Raises £2.5M in Seed Funding",
+      "excerpt": "Quantcore, a University of Glasgow spin-out, has raised £2.5m in seed funding to create a sovereign supply chain for quantum hardware. The funding round was co-led by PXN Ventures, Blackfinch Ventures and Scottish Enterprise, with investment also coming from Quantum Exponential and STAC. The company plans to grow its team from four to 12 employees over the next 18 months.",
+      "url": "https://www.gla.ac.uk/news/headline_1248072_en.html",
+      "source": "University of Glasgow",
+      "date": "2026-02-24"
+    },
     {
       "title": "Quantcore raises GBP 2.5M seed to build UK sovereign quantum hardware manufacturing capability",
       "excerpt": "University of Glasgow spin-out Quantcore has raised GBP 2.5M in seed funding co-led by PXN Ventures and Blackfinch Ventures, with backing from Scottish Enterprise and Quantum Exponential. The company will grow from 4 to 12 employees and manufacture niobium-based superconducting processors, resonators, and sensors from the James Watt Nanofabrication Centre.",

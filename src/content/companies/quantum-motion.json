@@ -70,6 +70,20 @@
   ],
   "news": [
     {
+      "title": "DARPA Advances Quantum Motion to QBI Stage B",
+      "excerpt": "DARPA advanced the company to QBI Stage B in November 2025, one of just 11 companies to progress, on a finding that the silicon-based fault-tolerant design was credible.",
+      "url": "https://thenextweb.com/news/quantum-motion-160m-eu-scaleup-europe-fund-first-investment",
+      "source": "The Next Web",
+      "date": "2025-11-01"
+    },
+    {
+      "title": "Quantum Motion Raises $160 Million Series C",
+      "excerpt": "Quantum Motion raised $160 million in Series C funding to advance its silicon-based quantum computing platform toward commercial deployment. The round is co-led by DCVC and Kembara, with participation from the British Business Bank and Firgun.",
+      "url": "https://thequantuminsider.com/2026/05/07/quantum-motion-160m-silicon-quantum-computing/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-07"
+    },
+    {
       "title": "Quantum Motion Delivers Full-Stack Silicon CMOS Quantum Computer to UK's NQCC",
       "excerpt": "Quantum Motion has delivered a full-stack quantum computer built using standard silicon CMOS chip fabrication to the UK National Quantum Computing Centre, the first silicon spin-qubit computer installed at the Centre.",
       "url": "https://quantumcomputingreport.com/quantum-motion-delivers-full-stack-silicon-cmos-quantum-computer-to-uks-nqcc/",
