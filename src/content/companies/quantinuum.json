@@ -70,6 +70,24 @@
       "url": "https://www.hpcwire.com/off-the-wire/honeywell-announces-quantinuums-filing-of-registration-statement-for-proposed-ipo/",
       "title": "Honeywell Announces Quantinuum's Filing of Registration Statement for Proposed IPO - HPCwire",
       "dateAccessed": "2026-05-17"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/20/quantinuum-announces-collaboration-with-synopsys-toward-advancing-industrial-design-with-quantum-computing/",
+      "title": "Quantinuum Announces Collaboration with Synopsys Toward Advancing Industrial Design with Quantum Computing - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/21/quantinuum-enters-into-letter-of-intent-with-the-u-s-department-of-commerce-for-funding-opportunity-to-accelerate-u-s-leadership-in-quantum-computing/",
+      "title": "Quantinuum Signs Letter of Intent with U.S. Department of Commerce - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/22/quantinuum-bp-wave-physics-quantum-computing/",
+      "title": "Quantinuum and bp Explore Quantum Computing for Seismic Imaging - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
     }
   ],
   "news": [
@@ -93,6 +111,27 @@
       "url": "https://www.hpcwire.com/off-the-wire/honeywell-announces-quantinuums-filing-of-registration-statement-for-proposed-ipo/",
       "source": "HPCwire",
       "date": "2026-05-08"
+    },
+    {
+      "title": "Quantinuum Announces Collaboration with Synopsys to Advance Industrial Design with Quantum Computing",
+      "excerpt": "Quantinuum and Synopsys launched a strategic collaboration to integrate quantum computing into engineering simulation workflows for computational fluid dynamics and electromagnetic simulation. The initiative aims to develop quantum-enabled solvers that improve accuracy and accelerate design cycles without requiring engineers to change existing processes.",
+      "url": "https://thequantuminsider.com/2026/05/20/quantinuum-announces-collaboration-with-synopsys-toward-advancing-industrial-design-with-quantum-computing/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-20"
+    },
+    {
+      "title": "Quantinuum Signs Letter of Intent with U.S. Department of Commerce to Advance Fault-Tolerant Trapped-Ion Quantum Computing",
+      "excerpt": "Quantinuum signed a Letter of Intent with the U.S. Department of Commerce's CHIPS R&D Office for proposed federal funding to advance large-scale, fault-tolerant trapped-ion quantum computers and strengthen domestic manufacturing capabilities. GlobalFoundries and Monarch Quantum are expected to support the effort through semiconductor, advanced packaging, and integrated photonics technologies.",
+      "url": "https://thequantuminsider.com/2026/05/21/quantinuum-enters-into-letter-of-intent-with-the-u-s-department-of-commerce-for-funding-opportunity-to-accelerate-u-s-leadership-in-quantum-computing/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-21"
+    },
+    {
+      "title": "Quantinuum and bp Collaborate on Quantum Computing for Seismic Imaging",
+      "excerpt": "Quantinuum and bp launched a quantum computing collaboration to improve seismic imaging and subsurface energy exploration using hybrid quantum-classical methods. The project builds on an earlier feasibility pilot and addresses computationally intensive wave-physics modelling that could theoretically achieve the same accuracy gains as classical doubling of resolution with far fewer resources.",
+      "url": "https://thequantuminsider.com/2026/05/22/quantinuum-bp-wave-physics-quantum-computing/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-22"
     }
   ]
 }

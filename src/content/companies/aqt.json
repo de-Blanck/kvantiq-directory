@@ -49,6 +49,18 @@
       "type": "url",
       "url": "https://thequantuminsider.com/2023/12/08/trapped-ion-quantum-computer-now-available-in-munich-quantum-valley/",
       "title": "Trapped-Ion Quantum Computer Now Available in Munich Quantum Valley"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/06/aqt-high-performing-quantum-computer-europe-32768-qv/",
+      "title": "AQT Launches LYNX Series — European Record Quantum Volume of 32,768 - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/aqt-launches-lynx-series-trapped-ion-quantum-systems/",
+      "title": "AQT Launches LYNX Series Trapped-Ion Quantum Systems - HPCwire",
+      "dateAccessed": "2026-05-24"
     }
   ],
   "news": [
@@ -79,6 +91,13 @@
       "url": "https://thequantuminsider.com/2026/04/16/horizon-quantum-aqt-hardware-software-collaboration/",
       "source": "The Quantum Insider",
       "date": "2026-04-16"
+    },
+    {
+      "title": "AQT Launches LYNX Series Trapped-Ion Quantum Systems with European Record Quantum Volume of 32,768",
+      "excerpt": "Alpine Quantum Technologies launched its LYNX Series of compact rack-mountable trapped-ion quantum computers, achieving a quantum volume of 32,768 — the highest achieved by a European quantum company. The LYNX Q1 ships from stock for same-day availability, targeting research labs and enterprises requiring on-premises quantum access.",
+      "url": "https://thequantuminsider.com/2026/05/06/aqt-high-performing-quantum-computer-europe-32768-qv/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-06"
     }
   ]
 }

@@ -46,6 +46,18 @@
       "type": "url",
       "url": "https://thequantuminsider.com/2026/04/02/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time/",
       "title": "QuiX Quantum Demonstrates Below-Threshold Error Mitigation in Photonic Quantum Computing For First Time"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/21/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems/",
+      "title": "QuiX Quantum Introduces PACU, a Photonic Assembly Control Unit For Scalable Quantum Systems - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quix-quantum-launches-pacu-control-unit-standardizing-photonic-hardware-layer/",
+      "title": "QuiX Quantum Launches PACU Control Unit Standardizing Photonic Hardware Layer - Quantum Computing Report",
+      "dateAccessed": "2026-05-24"
     }
   ],
   "news": [
@@ -76,6 +88,13 @@
       "url": "https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time",
       "source": "QuiX Quantum Newsroom",
       "date": "2026-04-02"
+    },
+    {
+      "title": "QuiX Quantum Introduces PACU, a Photonic Assembly Control Unit for Scalable Quantum Systems",
+      "excerpt": "QuiX Quantum launched PACU, a rack-mountable 3U control unit supporting up to 1,000 low-speed and 32 high-speed phase shifters, designed to standardize the photonic hardware layer for scalable quantum systems and ease data-centre integration. The launch marks a strategic shift toward becoming a full-stack, fabless quantum system vendor.",
+      "url": "https://thequantuminsider.com/2026/05/21/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-21"
     }
   ]
 }

@@ -4,7 +4,11 @@
   "country": "France",
   "region": "western-europe",
   "type": "hardware",
-  "tags": ["cat-qubit", "fault-tolerant", "superconducting"],
+  "tags": [
+    "cat-qubit",
+    "fault-tolerant",
+    "superconducting"
+  ],
   "founded": 2020,
   "description": "Alice & Bob develops cat qubit quantum computers designed for fault-tolerant quantum computing. Their technology uses superconducting circuits with reduced error rates, aiming to build practical quantum computers that require fewer physical qubits for error correction.",
   "website": "https://alice-bob.com",
@@ -58,6 +62,12 @@
       "url": "https://www.vttresearch.com/en/news-and-ideas/supreme-quantum-project-enforces-finlands-leading-role-european-quantum-research",
       "title": "SUPREME quantum project enforces Finland's leading role in European quantum research - VTT Technical Research Centre",
       "dateAccessed": "2026-05-17"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/22/alice-bob-announces-investment-from-nvidias-vc-arm-in-series-b-extension/",
+      "title": "Alice & Bob Announces Investment From NVIDIA's NVentures in Series B Extension - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
     }
   ],
   "news": [
@@ -95,6 +105,13 @@
       "url": "https://www.vttresearch.com/en/news-and-ideas/supreme-quantum-project-enforces-finlands-leading-role-european-quantum-research",
       "source": "VTT Technical Research Centre",
       "date": "2026-05-12"
+    },
+    {
+      "title": "Alice & Bob Announces Investment from NVIDIA's NVentures in Series B Extension",
+      "excerpt": "NVentures, NVIDIA's venture capital arm, made an undisclosed investment in Alice & Bob's €100M Series B extension, following over a year of collaboration integrating cat-qubit hardware with NVIDIA's CUDA-Q, cuQuantum, Dynamiqs, and NVQLink. The companies plan to jointly work toward integrating cat-qubit hardware with NVIDIA's accelerated computing infrastructure at HPC centres.",
+      "url": "https://thequantuminsider.com/2026/05/22/alice-bob-announces-investment-from-nvidias-vc-arm-in-series-b-extension/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-22"
     }
   ]
 }

@@ -57,6 +57,24 @@
       "url": "https://www.globenewswire.com/news-release/2026/05/11/3291836/0/en/pasqal-selected-as-finalist-in-xprize-quantum-applications-competition.html",
       "title": "Pasqal Selected as Finalist in XPRIZE Quantum Applications Competition - GlobeNewswire",
       "dateAccessed": "2026-05-17"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/19/aramco-and-pasqal-launch-saudi-arabias-first-quantum-computer-and-middle-easts-first-commercial-qcaas-platform/",
+      "title": "Aramco and Pasqal Launch Saudi Arabia's First Quantum Computer and Middle East's First Commercial QCaaS Platform - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/20/pasqal-finalist-xprize-quantum-applications-competition/",
+      "title": "Pasqal Selected as Finalist in XPRIZE Quantum Applications Competition - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/22/pasqal-demonstrates-logical-qubits-outperform-physical-qubits-solving-differential-equations/",
+      "title": "Pasqal Demonstrates Logical Qubits Outperform Physical Qubits Solving Differential Equations - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
     }
   ],
   "news": [
@@ -108,6 +126,27 @@
       "url": "https://www.globenewswire.com/news-release/2026/05/11/3291836/0/en/pasqal-selected-as-finalist-in-xprize-quantum-applications-competition.html",
       "source": "GlobeNewswire",
       "date": "2026-05-11"
+    },
+    {
+      "title": "Aramco and Pasqal Launch Saudi Arabia's First Quantum Computer and Middle East's First Commercial QCaaS Platform",
+      "excerpt": "Aramco and Pasqal inaugurated the Middle East's first commercial Quantum Computing as a Service platform at Aramco's Dhahran data centre, powered by a Pasqal neutral-atom QPU controlling 200 programmable qubits. The platform provides low-latency cloud access for industrial applications in energy, materials, and chemicals.",
+      "url": "https://thequantuminsider.com/2026/05/19/aramco-and-pasqal-launch-saudi-arabias-first-quantum-computer-and-middle-easts-first-commercial-qcaas-platform/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-19"
+    },
+    {
+      "title": "Pasqal Selected as Wildcard Finalist in XPRIZE Quantum Applications Competition",
+      "excerpt": "Pasqal was selected as one of five wildcard finalists in the XPRIZE Quantum Applications competition, advancing from 62 submissions and joining seven previously named Phase I finalists. Teams advance toward deeper technical validation for the $5 million grand prize, with results expected in March 2027.",
+      "url": "https://thequantuminsider.com/2026/05/20/pasqal-finalist-xprize-quantum-applications-competition/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-20"
+    },
+    {
+      "title": "Pasqal Demonstrates Logical Qubits Outperforming Physical Qubits for Solving Differential Equations",
+      "excerpt": "Pasqal published research demonstrating, for the first time in neutral-atom quantum computing, that logical qubits outperform physical qubits when solving differential equations on real hardware, improving accuracy by over 50% on average and up to 10x on certain nonlinear problems. Hardware achieved 99.4% gate fidelity across aerospace, energy, pharmaceutical, and financial modeling applications.",
+      "url": "https://thequantuminsider.com/2026/05/22/pasqal-demonstrates-logical-qubits-outperform-physical-qubits-solving-differential-equations/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-22"
     }
   ]
 }

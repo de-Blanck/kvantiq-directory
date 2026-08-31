@@ -51,6 +51,12 @@
       "url": "https://www.globenewswire.com/news-release/2026/05/11/3291836/0/en/pasqal-selected-as-finalist-in-xprize-quantum-applications-competition.html",
       "title": "Pasqal Selected as Finalist in XPRIZE Quantum Applications Competition - GlobeNewswire",
       "dateAccessed": "2026-05-17"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/20/pasqal-finalist-xprize-quantum-applications-competition/",
+      "title": "Pasqal Selected as Finalist in XPRIZE Quantum Applications Competition - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
     }
   ],
   "news": [
@@ -60,6 +66,13 @@
       "url": "https://www.globenewswire.com/news-release/2026/05/11/3291836/0/en/pasqal-selected-as-finalist-in-xprize-quantum-applications-competition.html",
       "source": "GlobeNewswire",
       "date": "2026-05-11"
+    },
+    {
+      "title": "Five Wildcard Finalists Announced for XPRIZE Quantum Applications Competition, Including Pasqal",
+      "excerpt": "XPRIZE announced five wildcard finalists from 62 submissions, joining seven Phase I finalists in the $5 million competition. Pasqal (France) was among those selected, advancing to deeper technical validation and real-world benchmarking toward the $3 million grand prize expected in March 2027.",
+      "url": "https://thequantuminsider.com/2026/05/20/pasqal-finalist-xprize-quantum-applications-competition/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-20"
     }
   ]
 }

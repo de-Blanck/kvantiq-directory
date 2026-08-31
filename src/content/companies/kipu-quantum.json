@@ -50,6 +50,18 @@
       "type": "website",
       "url": "https://www.berlin.de/deeptech/en/blog/deep-tech-talk-kipu-quantum-1579231.en.php",
       "title": "Deep Tech Talk: Kipu Quantum - Berlin.de"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/20/kipu-quantum-makes-quantum-enhanced-ai-deployable-in-production/",
+      "title": "Kipu Quantum Makes Quantum-Enhanced AI Deployable in Production - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/kipu-quantum-launches-hybrid-framework-to-enable-offline-inference-for-quantum-machine-learning/",
+      "title": "Kipu Quantum Launches Hybrid Framework to Enable Offline Inference for Quantum Machine Learning - Quantum Computing Report",
+      "dateAccessed": "2026-05-24"
     }
   ],
   "news": [
@@ -59,6 +71,13 @@
       "url": "https://thequantuminsider.com/2026/02/17/kipu-quantum-launches-rimay-feature-extraction/",
       "source": "The Quantum Insider",
       "date": "2026-02-17"
+    },
+    {
+      "title": "Kipu Quantum Makes Quantum-Enhanced AI Deployable in Production",
+      "excerpt": "Kipu Quantum launched a hybrid quantum-classical framework that trains machine learning models on a 156-qubit IBM Quantum Heron r2 processor but deploys inference entirely on classical hardware with microsecond latency, eliminating real-time QPU dependencies. The framework, integrated into Kipu's Rimay product suite, demonstrated approximately 10% accuracy improvement on molecular toxicity classification over classical baselines.",
+      "url": "https://thequantuminsider.com/2026/05/20/kipu-quantum-makes-quantum-enhanced-ai-deployable-in-production/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-20"
     }
   ]
 }

@@ -63,6 +63,18 @@
       "url": "https://www.hpcwire.com/off-the-wire/iqm-launches-hpc-integration-service-to-accelerate-hybrid-quantum-hpc-adoption/",
       "title": "IQM Launches HPC Integration Service to Accelerate Hybrid Quantum-HPC Adoption - HPCwire",
       "dateAccessed": "2026-05-17"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/12/iqm-launches-hpc-integration-service-to-accelerate-hybrid-quantum-hpc-adoption/",
+      "title": "IQM Launches HPC Integration Service to Accelerate Hybrid Quantum-HPC Adoption - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/14/iqm-moves-closer-to-public-markets-with-sec-f-4-filing/",
+      "title": "IQM Moves Closer to Public Markets With SEC F-4 Filing - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
     }
   ],
   "news": [
@@ -120,6 +132,20 @@
       "excerpt": "IQM Finland Oy and Real Asset Acquisition Corp. publicly filed a Form F-4 registration statement with the SEC on May 14, 2026. IQM intends to list American Depositary Shares on the NASDAQ Global Exchange under ticker IQMX, targeting position as Europe's first listed quantum computing company.",
       "url": "https://iqm.tech/press-releases/iqm-a-global-leader-for-quantum-computing-to-become-the-first-listed-european-quantum-company-through-merger-with-real-asset-acquisition-corp/",
       "source": "IQM Press Release",
+      "date": "2026-05-14"
+    },
+    {
+      "title": "IQM Launches HPC Integration Service to Accelerate Hybrid Quantum-HPC Adoption",
+      "excerpt": "IQM launched a turnkey service integrating its superconducting quantum computers as Slurm nodes in HPC environments via its open-source QDMI protocol, already operational at the Leibniz Supercomputing Centre in Germany. The service targets data-centre deployments as IQM advances its planned public listing.",
+      "url": "https://thequantuminsider.com/2026/05/12/iqm-launches-hpc-integration-service-to-accelerate-hybrid-quantum-hpc-adoption/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-12"
+    },
+    {
+      "title": "IQM Moves Closer to Public Markets With SEC F-4 Filing",
+      "excerpt": "IQM Finland Oy filed an SEC Form F-4 registration statement in connection with its planned merger with Real Asset Acquisition Corp. (Nasdaq: RAAQ), targeting a listing under proposed ticker 'IQMX'. The transaction values IQM at approximately $1.8 billion, with over $300 million expected from SPAC trust proceeds and PIPE financing.",
+      "url": "https://thequantuminsider.com/2026/05/14/iqm-moves-closer-to-public-markets-with-sec-f-4-filing/",
+      "source": "The Quantum Insider",
       "date": "2026-05-14"
     }
   ]
