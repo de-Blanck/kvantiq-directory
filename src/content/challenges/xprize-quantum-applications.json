@@ -23,6 +23,15 @@
     "energy",
     "materials-science"
   ],
+  "news": [
+    {
+      "title": "Pasqal selected as Phase II wildcard finalist in XPRIZE Quantum Applications competition",
+      "excerpt": "Pasqal was chosen as one of five wildcard finalists out of 62 Wildcard Registration submissions, advancing to the Phase II stage of the XPRIZE Quantum Applications competition alongside the original seven Phase I finalists. The grand prize of USD 3 million will be awarded in March 2027.",
+      "url": "https://thequantuminsider.com/2026/05/20/pasqal-finalist-xprize-quantum-applications-competition/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-20"
+    }
+  ],
   "sources": [
     {
       "type": "website",

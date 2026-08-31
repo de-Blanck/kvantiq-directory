@@ -127,6 +127,20 @@
       "url": "https://thequantuminsider.com/2026/06/30/quix-quantum-unveils-path-to-universal-photonic-quantum-computing-with-logical-qubits/",
       "source": "The Quantum Insider",
       "date": "2026-06-30"
+    },
+    {
+      "title": "QuiX Quantum unveils Carina — first Dutch quantum computer delivered to DLR Germany",
+      "excerpt": "QuiX Quantum announced Carina on July 14, 2026: the world's first universal photonic quantum computing architecture designed for data-centre deployment, operating at room temperature with 8 input and 4 computational photonic qubits. QuiX delivered Carina to the German Aerospace Center (DLR QCI) in Ulm, becoming the first Dutch company to deliver a complete quantum computer to a customer.",
+      "url": "https://www.hpcwire.com/off-the-wire/quix-quantum-unveils-universal-photonic-quantum-computing-architecture/",
+      "source": "HPCwire",
+      "date": "2026-07-14"
+    },
+    {
+      "title": "QuiX Quantum launches Alquor 2.0 rack-mountable photonic processor platform in 8-, 20-, and 32-mode configurations",
+      "excerpt": "QuiX Quantum launched Alquor 2.0 on August 4, 2026 — a commercial, 3U rack-mountable photonic processor platform built on silicon nitride running at room temperature, with air cooling and Ethernet connectivity. Prices range from €240 (8-mode) to €790 (32-mode), with a 20% early-adopter discount for academic orders by September 30, 2026.",
+      "url": "https://www.hpcwire.com/off-the-wire/quix-quantum-launches-alquor-2-0-photonic-quantum-processor-platform/",
+      "source": "HPCwire",
+      "date": "2026-08-04"
     }
   ]
 }

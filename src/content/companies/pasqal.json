@@ -153,11 +153,11 @@
       "date": "2026-05-18"
     },
     {
-      "title": "Pasqal selected as Phase II finalist in XPRIZE Quantum Applications competition",
-      "excerpt": "Pasqal was chosen from 62 wildcard submissions to advance as a Phase II finalist in the USD 5M XPRIZE Quantum Applications competition, which challenges teams to demonstrate measurable quantum advantage on real-world problems.",
+      "title": "Pasqal selected as Phase II wildcard finalist in USD 5M XPRIZE Quantum Applications competition",
+      "excerpt": "Pasqal was chosen as one of five wildcard finalists in the XPRIZE Quantum Applications competition, selected from 62 Wildcard Registration submissions. As a finalist Pasqal advances toward the March 2027 grand prize stage worth USD 3 million.",
       "url": "https://thequantuminsider.com/2026/05/20/pasqal-finalist-xprize-quantum-applications-competition/",
       "source": "The Quantum Insider",
-      "date": "2026-05-11"
+      "date": "2026-05-20"
     },
     {
       "title": "Pasqal Demonstrates Logical Qubits Outperforming Physical Qubits for Solving Differential Equations",
@@ -214,6 +214,13 @@
       "url": "https://www.hpcwire.com/off-the-wire/pasqal-and-credit-agricole-cib-advance-strategic-partnership-to-deploy-quantum-computing-applied-to-finance/",
       "source": "HPCwire",
       "date": "2026-06-30"
+    },
+    {
+      "title": "Pasqal SEC F-4 declared effective; shareholder vote on Bleichroeder SPAC combination set for August 25",
+      "excerpt": "The SEC declared effective Pasqal's joint Form F-4 registration statement with Bleichroeder Acquisition Corp. II on August 5, 2026. Bleichroeder has set August 25 as the date for its extraordinary general meeting to approve the proposed business combination; the combined entity will trade on Nasdaq under ticker PSQL.",
+      "url": "https://thequantuminsider.com/2026/08/06/pasqal-business-combination-filing-bleichroeder-declared-effective-sec/",
+      "source": "The Quantum Insider",
+      "date": "2026-08-06"
     }
   ]
 }

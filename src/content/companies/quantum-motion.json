@@ -17,7 +17,7 @@
   "featured": false,
   "headquarters": "London, United Kingdom",
   "employees": "120+",
-  "funding": "GBP 180M+ (incl. USD 160M Series C, 2026)",
+  "funding": "GBP 182M+",
   "accessModel": "Hardware development + government contracts",
   "products": [
     {
@@ -88,6 +88,13 @@
       "excerpt": "The round, co-led by DCVC and Kembara with participation from the British Business Bank, Firgun, Bosch Ventures, Porsche SE, and returning investors, makes Quantum Motion the UK's best-funded quantum company. Funds will scale the 300mm CMOS silicon spin qubit platform toward utility-scale commercial deployment.",
       "url": "https://thequantuminsider.com/2026/05/07/quantum-motion-160m-series-c-silicon-quantum-computing/",
       "source": "The Quantum Insider",
+      "date": "2026-05-07"
+    },
+    {
+      "title": "Quantum Motion closes $160M Series C to commercialise silicon CMOS quantum computers for data centres",
+      "excerpt": "DCVC and Kembara co-led Quantum Motion's £120M Series C ($160M), joined by the British Business Bank, Oxford Science Enterprises, Bosch Ventures, Porsche Automobil Holding, Inkef, and Parkwalk Advisors. The round makes Quantum Motion the UK's best-funded quantum computing firm and will fund commercialisation of silicon transistor-based quantum computers that fit in standard data centre racks with 1,000× lower energy use.",
+      "url": "https://sifted.eu/articles/quantum-motion-series-c",
+      "source": "Sifted",
       "date": "2026-05-07"
     }
   ]

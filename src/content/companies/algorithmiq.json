@@ -66,8 +66,9 @@
     {
       "type": "url",
       "url": "https://www.eu-startups.com/2026/05/quantum-software-startup-algorithmiq-raises-e18-million-and-moves-global-hq-from-helsinki-to-milan/",
-      "title": "Quantum software startup Algorithmiq raises €18 million and moves global HQ from Helsinki to Milan - EU-Startups",
-      "dateAccessed": "2026-07-19"
+      "title": "Quantum software startup Algorithmiq raises €18 million and moves global HQ from Helsinki to Milan",
+      "dateAccessed": "2026-08-09",
+      "datePublished": "2026-05-12"
     }
   ],
   "news": [
@@ -84,6 +85,20 @@
       "url": "https://thequantuminsider.com/2026/04/16/wellcome-leap-quantum-for-bio-challenge-prize/",
       "source": "The Quantum Insider",
       "date": "2026-04-16"
+    },
+    {
+      "title": "Algorithmiq raises €18M and moves global headquarters from Helsinki to Milan",
+      "excerpt": "United Ventures and CDP Venture Capital co-led a €18M round for Algorithmiq, bringing total funding to €36M. The company simultaneously relocated its global HQ from Helsinki to Milan — Italy's largest-ever VC investment in a quantum startup — citing proximity to European enterprise customers and institutional investors.",
+      "url": "https://www.eu-startups.com/2026/05/quantum-software-startup-algorithmiq-raises-e18-million-and-moves-global-hq-from-helsinki-to-milan/",
+      "source": "EU-Startups",
+      "date": "2026-05-12"
+    },
+    {
+      "title": "IBM and Algorithmiq demonstrate quantum advantage in trusted materials simulation beyond classical verification",
+      "excerpt": "On July 30, 2026, IBM and Algorithmiq announced a joint framework for validating quantum computations when classical verification is unavailable, demonstrating quantum advantage in simulating a heterogeneous quantum material on IBM's Heron processors. Algorithmiq simultaneously released a new benchmark for quantum advantage claims.",
+      "url": "https://newsroom.ibm.com/2026-07-30-ibm-and-algorithmiq-demonstrate-quantum-advantage,-establishing-a-framework-for-trusted-quantum-computation-beyond-classical-verification",
+      "source": "IBM Newsroom",
+      "date": "2026-07-30"
     }
   ]
 }
