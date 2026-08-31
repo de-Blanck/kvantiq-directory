@@ -15,8 +15,8 @@
   "website": "https://www.meetiqm.com",
   "featured": true,
   "headquarters": "Espoo, Finland",
-  "employees": "250+",
-  "funding": "EUR 250M+",
+  "employees": "400+",
+  "funding": "EUR 200M+ (listed on Nasdaq Helsinki & Nasdaq US, July 2026)",
   "accessModel": "On-premise systems + cloud API",
   "products": [
     {
@@ -26,12 +26,16 @@
     {
       "name": "IQM Radiance",
       "description": "High-performance superconducting quantum processor for national computing centers and industrial co-design"
+    },
+    {
+      "name": "IQM Halocene H4",
+      "description": "Advanced superconducting quantum computer combining quantum error correction with NISQ qubits; 150-qubit QPU targeting fault-tolerant QEC research and hybrid HPC-AI workloads"
     }
   ],
   "highlights": [
     "Europe's largest quantum computing company with 250+ employees and EUR 200M+ in funding",
     "Supplies quantum accelerators to EuroHPC supercomputing centers across Europe",
-    "On track to become one of Europe's first publicly listed quantum computing companies"
+    "Europe's first publicly listed quantum computing company, dual-listed on Nasdaq Helsinki (IQMX) and Nasdaq US as of July 2026"
   ],
   "sources": [
     {
@@ -86,13 +90,19 @@
       "type": "url",
       "url": "https://techcrunch.com/2026/07/02/iqm-europes-first-public-quantum-company-admits-the-future-of-the-tech-is-uncertain/",
       "title": "IQM, Europe's first public quantum company, admits the future of the tech is uncertain - TechCrunch",
-      "dateAccessed": "2026-07-05"
+      "dateAccessed": "2026-07-12"
     },
     {
       "type": "url",
       "url": "https://www.eu-startups.com/2026/07/espoo-based-iqm-goes-public-on-nasdaq-in-european-quantum-first-with-e127-million-in-pipe-financing/",
       "title": "IQM goes public on Nasdaq in European quantum first with €127M in PIPE financing - EU-Startups",
       "dateAccessed": "2026-07-05"
+    },
+    {
+      "type": "url",
+      "url": "https://lumi-supercomputer.eu/iqm-selected-to-deliver-the-lumi-iq-quantum-computer/",
+      "title": "IQM selected to deliver the LUMI-IQ quantum computer - LUMI Supercomputer (EuroHPC)",
+      "dateAccessed": "2026-07-12"
     }
   ],
   "news": [
@@ -202,11 +212,25 @@
       "date": "2026-06-11"
     },
     {
-      "title": "IQM Quantum Computers begins trading on Nasdaq as first European quantum company on a major U.S. exchange",
-      "excerpt": "IQM (ticker: IQMX) began trading on the Nasdaq Global Select Market on July 2, 2026, following completion of its business combination with Real Asset Acquisition Corp. IQM entered trading with 23 quantum computers sold globally and approximately EUR 198.7 million in net SPAC proceeds.",
+      "title": "IQM lists on Nasdaq Helsinki and Nasdaq US as Europe's first public quantum computing company",
+      "excerpt": "IQM Quantum Computers begins trading on Nasdaq US (IQMX) on July 2 and Nasdaq Helsinki on July 3, 2026, completing its SPAC merger with Real Asset Acquisition Corp and becoming the first European quantum computing company listed on a major US exchange.",
       "url": "https://techcrunch.com/2026/07/02/iqm-europes-first-public-quantum-company-admits-the-future-of-the-tech-is-uncertain/",
       "source": "TechCrunch",
-      "date": "2026-07-02"
+      "date": "2026-07-03"
+    },
+    {
+      "title": "IQM acquires Quantistry assets to expand industrial quantum software platform",
+      "excerpt": "IQM acquires selected software assets and IP from Quantistry GmbH (Berlin), a cloud-native simulation workflow platform for automotive, aerospace, chemicals, materials, and pharma industries, forming a full-stack industrial quantum simulation platform.",
+      "url": "https://thequantuminsider.com/2026/07/06/iqm-acquires-quantistry-assets/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-06"
+    },
+    {
+      "title": "LUMI AI Factory selects IQM to deploy 150-qubit IQM Halocene H4 quantum computer",
+      "excerpt": "CSC – IT Center for Science (Finland) selects IQM to deliver the IQM Halocene H4 superconducting quantum computer (LUMI-IQ) for integration with the LUMI supercomputer by 2027, jointly funded by EuroHPC JU, Finland, Czechia, Norway and Poland. Contract value approximately equals IQM's full 2025 revenue.",
+      "url": "https://thequantuminsider.com/2026/07/08/lumi-ai-factory-iqm-quantum-computer/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-08"
     }
   ]
 }

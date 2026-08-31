@@ -128,8 +128,8 @@
       "date": "2026-06-05"
     },
     {
-      "title": "Alice & Bob unveils Helium on-premise quantum system for cat-qubit fault-tolerance research",
-      "excerpt": "The Helium system is designed to encode the company's first logical qubit using as few as 18 cat-qubits, with a planned upgrade path to a 48 cat-qubit processor supporting multiple logical qubits. The platform integrates with HPC environments via Slurm, the open-source QRMI library, and Alice & Bob's Felis software framework.",
+      "title": "Alice & Bob unveils Helium — first on-premise cat-qubit quantum system for research partners",
+      "excerpt": "Alice & Bob launches the Helium Quantum System, a complete on-premise cat-qubit system encoding one logical qubit from 18 cat qubits with ~40 kW power draw, including the Starboard monitoring interface and Slurm-compatible scheduler integration via the open-source QRMI library.",
       "url": "https://thequantuminsider.com/2026/06/11/alice-bob-unveils-first-quantum-system-available-for-research-partners/",
       "source": "The Quantum Insider",
       "date": "2026-06-11"
