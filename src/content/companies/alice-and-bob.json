@@ -126,6 +126,13 @@
       "url": "https://www.hpcwire.com/off-the-wire/alice-bob-proposes-five-criteria-framework-for-evaluating-logical-qubits/",
       "source": "HPCwire",
       "date": "2026-06-05"
+    },
+    {
+      "title": "Alice & Bob unveils Helium on-premise quantum system for cat-qubit fault-tolerance research",
+      "excerpt": "The Helium system is designed to encode the company's first logical qubit using as few as 18 cat-qubits, with a planned upgrade path to a 48 cat-qubit processor supporting multiple logical qubits. The platform integrates with HPC environments via Slurm, the open-source QRMI library, and Alice & Bob's Felis software framework.",
+      "url": "https://thequantuminsider.com/2026/06/11/alice-bob-unveils-first-quantum-system-available-for-research-partners/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-11"
     }
   ]
 }

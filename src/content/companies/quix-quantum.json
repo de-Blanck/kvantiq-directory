@@ -58,6 +58,12 @@
       "url": "https://quantumcomputingreport.com/quix-quantum-launches-pacu-control-unit-standardizing-photonic-hardware-layer/",
       "title": "QuiX Quantum Launches PACU Control Unit Standardizing Photonic Hardware Layer - Quantum Computing Report",
       "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/06/03/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer/",
+      "title": "QuiX Quantum Installs Real-Time Control Component for Universal Photonic Quantum Computer — The Quantum Insider",
+      "dateAccessed": "2026-06-14"
     }
   ],
   "news": [
@@ -95,6 +101,13 @@
       "url": "https://thequantuminsider.com/2026/05/21/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems/",
       "source": "The Quantum Insider",
       "date": "2026-05-21"
+    },
+    {
+      "title": "QuiX Quantum installs Feed-Forward Control Unit enabling real-time adaptive measurement for universal photonic quantum computing",
+      "excerpt": "The FFCU combines FPGA-based processing with custom electronics to convert single-photon detector signals into phase-control actions with ~150 ns latency, enabling measurement-based quantum computation where each measurement outcome immediately dictates the next operation—a critical step toward universality in photonic quantum computing.",
+      "url": "https://www.hpcwire.com/off-the-wire/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer/",
+      "source": "HPCwire",
+      "date": "2026-06-04"
     }
   ]
 }

@@ -147,6 +147,13 @@
       "url": "https://thequantuminsider.com/2026/05/22/pasqal-demonstrates-logical-qubits-outperform-physical-qubits-solving-differential-equations/",
       "source": "The Quantum Insider",
       "date": "2026-05-22"
+    },
+    {
+      "title": "Pasqal inaugurates SOL, Italy's first neutral-atom quantum computer, at CINECA in Bologna",
+      "excerpt": "Pasqal's 140-qubit Orion QPU system, named SOL, was inaugurated at CINECA in Bologna, Italy—Europe's third Pasqal neutral-atom deployment. The system integrates with CINECA's Leonardo supercomputer for hybrid classical-quantum computing, co-financed by EuroHPC Joint Undertaking and Italy's Ministry of University and Research.",
+      "url": "https://www.hpcwire.com/off-the-wire/pasqal-inaugurates-italys-1st-neutral-atom-quantum-computer-3rd-pasqal-system-in-europe/",
+      "source": "HPCwire",
+      "date": "2026-06-11"
     }
   ]
 }
