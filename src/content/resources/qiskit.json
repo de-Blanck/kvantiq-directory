@@ -40,6 +40,21 @@
       "type": "website",
       "url": "https://www.ibm.com/quantum/qiskit",
       "title": "IBM Quantum Computing | Qiskit"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/ibm-improves-qubit-reset-by-25x-and-releases-qiskit-v2-5/",
+      "title": "IBM Improves Qubit Reset by 25x and Releases Qiskit v2.5 - Quantum Computing Report",
+      "dateAccessed": "2026-07-26"
+    }
+  ],
+  "news": [
+    {
+      "title": "Qiskit SDK v2.5 released with new C API capabilities and improved transpiler performance",
+      "excerpt": "Qiskit v2.5 introduced classical control flow inspection in the C API, new preset pass managers for Pauli-based computation and Clifford+T representations, and major transpiler performance improvements. IBM also announced renaming the Qiskit Runtime Service to IBM Quantum Compute Service.",
+      "url": "https://quantumcomputingreport.com/ibm-improves-qubit-reset-by-25x-and-releases-qiskit-v2-5/",
+      "source": "Quantum Computing Report",
+      "date": "2026-07-14"
     }
   ],
   "news": [

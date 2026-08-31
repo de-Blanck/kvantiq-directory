@@ -68,6 +68,12 @@
       "url": "https://thequantuminsider.com/2026/05/22/alice-bob-announces-investment-from-nvidias-vc-arm-in-series-b-extension/",
       "title": "Alice & Bob Announces Investment From NVIDIA's NVentures in Series B Extension - The Quantum Insider",
       "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/alice-bob-secures-nventures-backing-and-backs-expanded-e1-billion-french-plan-quantique/",
+      "title": "Alice & Bob Secures NVentures Backing and Backs Expanded €1 Billion French Plan Quantique - Quantum Computing Report",
+      "dateAccessed": "2026-07-26"
     }
   ],
   "news": [
@@ -147,6 +153,13 @@
       "url": "https://quantumcomputingreport.com/france-finalizes-world-first-acquisition-of-alice-bob-cat-qubit-quantum-computer-under-hqi-initiative/",
       "source": "Quantum Computing Report",
       "date": "2026-06-17"
+    },
+    {
+      "title": "Alice & Bob expands €100M Series B with investment from NVIDIA's NVentures venture arm",
+      "excerpt": "NVIDIA's NVentures invested in an extension of Alice & Bob's Series B round. Alice & Bob and NVIDIA collaborate on CUDA-Q, cuQuantum, and NVQLink (NVIDIA's open hybrid quantum-classical architecture). Financial terms were not disclosed.",
+      "url": "https://quantumcomputingreport.com/alice-bob-secures-nventures-backing-and-backs-expanded-e1-billion-french-plan-quantique/",
+      "source": "Quantum Computing Report",
+      "date": "2026-05-22"
     }
   ]
 }

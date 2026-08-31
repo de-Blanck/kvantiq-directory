@@ -112,6 +112,19 @@
       "url": "https://quantumcomputingreport.com/sandia-national-laboratories-and-quantinuum-validate-98-qubit-helios-trapped-ion-framework/",
       "title": "Sandia National Laboratories and Quantinuum Validate 98-Qubit Helios Trapped-Ion Framework - Quantum Computing Report",
       "dateAccessed": "2026-06-21"
+    },
+    {
+      "type": "doi",
+      "url": "https://www.nature.com/articles/s41586-026-10709-y",
+      "title": "Universal gates from braiding and fusing anyons on quantum hardware",
+      "datePublished": "2026-07-15",
+      "dateAccessed": "2026-07-26"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quantinuum-and-academic-partners-demonstrate-first-universal-topological-gate-set-via-non-abelian-anyons/",
+      "title": "Quantinuum and Academic Partners Demonstrate First Universal Topological Gate Set via Non-Abelian Anyons - Quantum Computing Report",
+      "dateAccessed": "2026-07-26"
     }
   ],
   "news": [
@@ -193,11 +206,18 @@
       "date": "2026-06-17"
     },
     {
-      "title": "Quantinuum, Rolls-Royce, Riverlane and University of Edinburgh sign agreement to explore quantum computing for industrial design and simulation",
-      "excerpt": "The four-way collaboration targets quantum-accelerated computational fluid dynamics simulations for gas turbine design, combining Quantinuum's H-Series hardware, Riverlane's quantum error correction, and EPCC's HPC infrastructure.",
+      "title": "Quantinuum, Rolls-Royce, Riverlane and EPCC sign multi-year collaboration for quantum gas turbine fluid dynamics",
+      "excerpt": "The four partners will develop hybrid quantum-classical workflows for computational fluid dynamics in gas turbine design, using Quantinuum's Helios platform, Riverlane's QEC stack, and EPCC's supercomputing resources. The work builds on prior Rolls-Royce and Riverlane research.",
       "url": "https://thequantuminsider.com/2026/07/14/quantinuum-rolls-royce-riverlane-and-university-of-edinburgh-sign-agreement-to-explore-quantum-computing-for-industrial-design-and-simulation/",
       "source": "The Quantum Insider",
       "date": "2026-07-14"
+    },
+    {
+      "title": "Quantinuum demonstrates first universal topological gate set using non-Abelian anyons, published in Nature",
+      "excerpt": "Quantinuum with University of Chicago, Harvard, and Stony Brook demonstrated a universal gate set via non-Abelian anyon braiding and fusion on the 98-qubit H2 processor. Published in Nature, the approach could reduce reliance on resource-intensive magic state distillation.",
+      "url": "https://www.nature.com/articles/s41586-026-10709-y",
+      "source": "Nature",
+      "date": "2026-07-15"
     }
   ]
 }

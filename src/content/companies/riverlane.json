@@ -73,8 +73,14 @@
     {
       "type": "url",
       "url": "https://thequantuminsider.com/2026/07/14/quantinuum-rolls-royce-riverlane-and-university-of-edinburgh-sign-agreement-to-explore-quantum-computing-for-industrial-design-and-simulation/",
-      "title": "Quantinuum, Rolls-Royce, Riverlane and University of Edinburgh Sign Agreement to Explore Quantum Computing For Industrial Design And Simulation - The Quantum Insider",
-      "dateAccessed": "2026-07-19"
+      "title": "Quantinuum, Rolls-Royce, Riverlane and EPCC Sign Agreement to Explore Quantum Computing for Industrial Design and Simulation - The Quantum Insider",
+      "dateAccessed": "2026-07-26"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quantinuum-rolls-royce-riverlane-and-epcc-partner-to-accelerate-fluid-dynamics-simulations/",
+      "title": "Quantinuum, Rolls-Royce, Riverlane and EPCC Partner to Accelerate Fluid Dynamics Simulations - Quantum Computing Report",
+      "dateAccessed": "2026-07-26"
     }
   ],
   "news": [
@@ -118,6 +124,13 @@
       "excerpt": "The four-way collaboration targets quantum-accelerated computational fluid dynamics simulations for gas turbine design, combining Quantinuum's H-Series hardware, Riverlane's quantum error correction, and EPCC's HPC infrastructure.",
       "url": "https://thequantuminsider.com/2026/07/14/quantinuum-rolls-royce-riverlane-and-university-of-edinburgh-sign-agreement-to-explore-quantum-computing-for-industrial-design-and-simulation/",
       "source": "The Quantum Insider",
+      "date": "2026-07-14"
+    },
+    {
+      "title": "Riverlane joins Quantinuum, Rolls-Royce and EPCC in multi-year quantum industrial design collaboration",
+      "excerpt": "Riverlane will contribute its QEC stack and fault-tolerant algorithm expertise to a four-way collaboration targeting computational fluid dynamics for gas turbine design, using Quantinuum's 98-qubit Helios processor and EPCC's supercomputing infrastructure.",
+      "url": "https://quantumcomputingreport.com/quantinuum-rolls-royce-riverlane-and-epcc-partner-to-accelerate-fluid-dynamics-simulations/",
+      "source": "Quantum Computing Report",
       "date": "2026-07-14"
     }
   ]

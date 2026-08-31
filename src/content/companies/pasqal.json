@@ -80,7 +80,13 @@
       "type": "url",
       "url": "https://quantumcomputingreport.com/chips-ju-and-pasqal-launch-e50m-57-2m-usd-q-planet-pilot-line-to-industrialize-neutral-atom-quantum-chips/",
       "title": "Chips JU and Pasqal Launch €50M Q-PLANET Pilot Line - Quantum Computing Report",
-      "dateAccessed": "2026-07-19"
+      "dateAccessed": "2026-07-26"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/13/launch-of-q-planet-european-pilot-line-to-industrialize-neutral-atom-quantum-chips/",
+      "title": "Launch of Q-PLANET European Pilot Line to Industrialize Neutral Atom Quantum Chips - The Quantum Insider",
+      "dateAccessed": "2026-07-26"
     }
   ],
   "news": [
@@ -187,6 +193,13 @@
       "excerpt": "The EU Chips Joint Undertaking and Pasqal launched Q-PLANET, a six-year €50 million initiative with 28 RTOs and industrial partners across 11 EU Member States, targeting TRL 4 to TRL 6 maturation for neutral-atom quantum chip manufacturing.",
       "url": "https://thequantuminsider.com/2026/07/13/launch-of-q-planet-european-pilot-line-to-industrialize-neutral-atom-quantum-chips/",
       "source": "The Quantum Insider",
+      "date": "2026-07-13"
+    },
+    {
+      "title": "Pasqal leads Q-PLANET, €50M EU pilot line to industrialize neutral-atom quantum chips",
+      "excerpt": "Chips JU and Pasqal launched Q-PLANET, a €50M initiative coordinated by Pasqal with 28 European partners across 11 member states. The six-year framework aims to establish a pan-European fab for neutral atom quantum chips, targeting industrialization at scale by 2030.",
+      "url": "https://quantumcomputingreport.com/chips-ju-and-pasqal-launch-e50m-57-2m-usd-q-planet-pilot-line-to-industrialize-neutral-atom-quantum-chips/",
+      "source": "Quantum Computing Report",
       "date": "2026-07-13"
     }
   ]
