@@ -16,7 +16,7 @@
   "featured": false,
   "headquarters": "Delft, Netherlands",
   "employees": "11-25",
-  "funding": "€10M EIC Accelerator (grant + equity), awarded 2025",
+  "funding": "EUR 16M (seed + EIC grants)",
   "accessModel": "Hardware sales (quantum processors)",
   "products": [
     {
@@ -25,9 +25,9 @@
     }
   ],
   "highlights": [
-    "Germanium qubits compatible with standard semiconductor fab processes",
-    "€10M EIC Accelerator grant and equity investment in 2025",
-    "Spun out of QuTech (TU Delft / TNO)"
+    "Germanium qubits compatible with standard semiconductor fab processes, enabling use of existing chip foundries",
+    "Raised EUR 16M seed in April 2026 co-led by Innovation Industries and 55 North; debuted world's largest 18-qubit semiconductor spin-qubit processor",
+    "Spun out of QuTech (TU Delft / TNO) in 2024 by Dr Anne-Marije Zwerville and Dr Nico Hendrickx"
   ],
   "sources": [
     {
@@ -47,6 +47,21 @@
       "url": "https://quantumcomputingreport.com/groove-quantum-secures-e10-million-eic-accelerator-funding-for-germanium-based-quantum-computing/",
       "title": "Groove Quantum secures €10M EIC Accelerator funding (Quantum Computing Report, 2025)",
       "dateAccessed": "2026-03-21"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/groove-quantum-secures-e16-million-18-7m-usd-to-scale-germanium-spin-qubits-debuts-18-qubit-processor/",
+      "title": "Groove Quantum Secures EUR 16M to Scale Germanium Spin-Qubits; Debuts 18-Qubit Processor — Quantum Computing Report",
+      "dateAccessed": "2026-05-18"
+    }
+  ],
+  "news": [
+    {
+      "title": "Groove Quantum raises EUR 16M seed and unveils world's largest 18-qubit semiconductor spin-qubit processor",
+      "excerpt": "Groove Quantum raised EUR 16M in combined seed funding co-led by Innovation Industries and 55 North, with EIC Fund and Verve Ventures participating. The company simultaneously demonstrated an 18-qubit germanium spin-qubit processor — the largest semiconductor spin-qubit system built to date — targeting CMOS-compatible industrial-scale quantum manufacturing.",
+      "url": "https://www.eu-startups.com/2026/04/dutch-quantum-startup-groove-quantum-raises-e16-million-to-advance-scalable-chip-manufacturing/",
+      "source": "EU-Startups",
+      "date": "2026-04-30"
     }
   ],
   "news": [

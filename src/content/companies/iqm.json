@@ -93,6 +93,34 @@
       "url": "https://www.hpcwire.com/off-the-wire/iqm-launches-hpc-integration-service-to-accelerate-hybrid-quantum-hpc-adoption/",
       "source": "HPCwire",
       "date": "2026-05-12"
+    },
+    {
+      "title": "IQM to deploy 54-qubit Radiance system at Polish enterprise Galaxy",
+      "excerpt": "First installation of an IQM Radiance-class quantum system inside a private enterprise, scheduled for Q4 2026.",
+      "url": "https://thequantuminsider.com/2026/04/07/iqm-galaxy-quantum-deployment-poland/",
+      "source": "The Quantum Insider",
+      "date": "2026-04-07"
+    },
+    {
+      "title": "IQM introduces AI-powered calibration to make quantum computing enterprise-ready",
+      "excerpt": "Agentic AI calibration using NVIDIA Ising models automates parallel qubit tuning, targeting HPC data-centre deployments.",
+      "url": "https://itdigest.com/computer-science/quantum-computing/iqm-introduces-ai-powered-calibration-to-make-quantum-computing-enterprise-ready/",
+      "source": "IT Digest",
+      "date": "2026-04-15"
+    },
+    {
+      "title": "IQM deploys Japan's first enterprise quantum computer to TOYO Corporation",
+      "excerpt": "TOYO Corporation purchased a 20-qubit IQM Radiance system for delivery by end of 2026, marking the first enterprise quantum computer deployment in Japan and expanding IQM's Asia-Pacific installed base.",
+      "url": "https://thequantuminsider.com/2026/04/27/iqm-toyo-quantum-deployment/",
+      "source": "The Quantum Insider",
+      "date": "2026-04-27"
+    },
+    {
+      "title": "IQM files Form F-4 with SEC, advancing NASDAQ listing as IQMX via SPAC merger with Real Asset Acquisition Corp.",
+      "excerpt": "IQM Finland Oy and Real Asset Acquisition Corp. publicly filed a Form F-4 registration statement with the SEC on May 14, 2026. IQM intends to list American Depositary Shares on the NASDAQ Global Exchange under ticker IQMX, targeting position as Europe's first listed quantum computing company.",
+      "url": "https://iqm.tech/press-releases/iqm-a-global-leader-for-quantum-computing-to-become-the-first-listed-european-quantum-company-through-merger-with-real-asset-acquisition-corp/",
+      "source": "IQM Press Release",
+      "date": "2026-05-14"
     }
   ]
 }

@@ -1,0 +1,56 @@
+{
+  "name": "Quantcore",
+  "slug": "quantcore",
+  "country": "United Kingdom",
+  "region": "uk",
+  "type": "hardware",
+  "tags": ["superconducting", "quantum-hardware", "manufacturing", "components", "sensors"],
+  "founded": 2025,
+  "description": "Quantcore is a University of Glasgow spin-out that designs, manufactures, and tests niobium-based superconducting quantum components including processors, resonators, and sensors. Operating from the James Watt Nanofabrication Centre, the company supplies sovereign UK quantum hardware to national laboratories and quantum computer manufacturers, addressing the supply chain gap for domestic superconducting components.",
+  "website": "https://quantcore.co.uk",
+  "featured": false,
+  "headquarters": "Glasgow, United Kingdom",
+  "employees": "4-12",
+  "funding": "GBP 2.5M",
+  "accessModel": "Component supply + manufacturing services",
+  "highlights": [
+    "Spun out of the University of Glasgow's James Watt Nanofabrication Centre in August 2025",
+    "Supplies niobium-based superconducting components to UK national laboratories",
+    "Raised GBP 2.5M seed round co-led by PXN Ventures and Blackfinch Ventures with Scottish Enterprise backing"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://quantcore.co.uk",
+      "title": "Quantcore Official Website",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://www.gla.ac.uk/news/headline_1248072_en.html",
+      "title": "New spin-out Quantcore launches with GBP 2.5M investment — University of Glasgow",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/02/24/quantcore-raises-2-5m-uk-quantum-manufacturing/",
+      "title": "Quantcore Raises GBP 2.5M to Expand UK Quantum Hardware Manufacturing — The Quantum Insider",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quantcore-secures-2-5m-3-4m-usd-to-establish-sovereign-niobium-based-quantum-hardware-manufacturing/",
+      "title": "Quantcore Secures GBP 2.5M to Establish Sovereign Niobium-Based Quantum Hardware Manufacturing — Quantum Computing Report",
+      "dateAccessed": "2026-05-18"
+    }
+  ],
+  "news": [
+    {
+      "title": "Quantcore raises GBP 2.5M seed to build UK sovereign quantum hardware manufacturing capability",
+      "excerpt": "University of Glasgow spin-out Quantcore has raised GBP 2.5M in seed funding co-led by PXN Ventures and Blackfinch Ventures, with backing from Scottish Enterprise and Quantum Exponential. The company will grow from 4 to 12 employees and manufacture niobium-based superconducting processors, resonators, and sensors from the James Watt Nanofabrication Centre.",
+      "url": "https://thequantuminsider.com/2026/02/24/quantcore-raises-2-5m-uk-quantum-manufacturing/",
+      "source": "The Quantum Insider",
+      "date": "2026-02-24"
+    }
+  ]
+}

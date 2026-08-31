@@ -1,0 +1,50 @@
+{
+  "name": "QSENSATO",
+  "slug": "qsensato",
+  "country": "Italy",
+  "region": "southern-europe",
+  "type": "hardware",
+  "tags": ["quantum-sensing", "photonics", "atomic-sensors", "metrology", "space"],
+  "founded": 2024,
+  "description": "QSENSATO is an Italian deep-tech company developing atomic-photonic chips for quantum sensing and metrology. The company uses femtosecond laser-written vapor cells (LWVCs) integrated into transparent glass substrates to build miniaturised, robust quantum sensors targeting space, defence, automotive, remote sensing, and biomedical applications. A joint spinout of ICFO (Barcelona) and CNR-IFN (Milan), with operations based in Bari, Italy.",
+  "website": "https://qsensato.com",
+  "featured": false,
+  "headquarters": "Bari, Italy",
+  "employees": "~5",
+  "funding": "EUR 500K",
+  "accessModel": "Sensor component supply + R&D partnerships",
+  "highlights": [
+    "Joint spinout of ICFO (Barcelona) and CNR-IFN (Milan) — combining leading European quantum photonics research groups",
+    "Raised EUR 500K pre-seed in May 2025 from LIFTT and Quantum Italia",
+    "Technology platform targets space, defence, automotive, biomedical markets with miniaturised laser-written quantum vapor cell sensors"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://qsensato.com",
+      "title": "QSENSATO Official Website",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/qsensato-raises-e500k-560k-usd-to-advance-integrated-atomic-quantum-sensors-for-precision-sensing/",
+      "title": "QSENSATO Raises EUR 500K to Advance Integrated Atomic Quantum Sensors — Quantum Computing Report",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://www.icfo.eu/innovation/spin-offs/meet-spin-offs/qsensato/",
+      "title": "QSENSATO — ICFO Spin-Off Page",
+      "dateAccessed": "2026-05-18"
+    }
+  ],
+  "news": [
+    {
+      "title": "QSENSATO raises EUR 500K pre-seed for atomic-photonic quantum sensor chips from LIFTT and Quantum Italia",
+      "excerpt": "Italian quantum sensing startup QSENSATO, a dual spinout of ICFO and CNR-IFN, raised EUR 500K in May 2025 from LIFTT and Quantum Italia. The company develops laser-written vapor cell chips for miniaturised quantum sensors targeting space, defence, and biomedical applications.",
+      "url": "https://quantumcomputingreport.com/qsensato-raises-e500k-560k-usd-to-advance-integrated-atomic-quantum-sensors-for-precision-sensing/",
+      "source": "Quantum Computing Report",
+      "date": "2025-05-01"
+    }
+  ]
+}
