@@ -44,21 +44,35 @@ function stripHtml(html) {
     .slice(0, 5000);
 }
 
+const FETCH_RETRIES = 2;          // attempts after the first, on transport errors
+const FETCH_RETRY_BASE_MS = 1500; // doubled per retry
+
+const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+
+// A transport failure (DNS, reset, timeout) is usually transient; an HTTP error
+// status is the site's answer and is not worth retrying. The 2026-08-31 run lost
+// 199 of 226 entries because a network blip at entry 28 was treated as a
+// permanent per-entry verdict.
 async function fetchContent(url) {
-  try {
+  for (let attempt = 0; attempt <= FETCH_RETRIES; attempt++) {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
-    const res = await fetch(url, {
-      signal: controller.signal,
-      headers: { 'User-Agent': 'Kvantiq-Directory-Bot/1.0 (content-sweep)' },
-    });
-    clearTimeout(timeout);
-    if (!res.ok) return null;
-    const text = await res.text();
-    return stripHtml(text);
-  } catch {
-    return null;
+    try {
+      const res = await fetch(url, {
+        signal: controller.signal,
+        headers: { 'User-Agent': 'Kvantiq-Directory-Bot/1.0 (content-sweep)' },
+      });
+      if (!res.ok) return null;
+      const text = await res.text();
+      return stripHtml(text);
+    } catch {
+      if (attempt === FETCH_RETRIES) return null;
+      await sleep(FETCH_RETRY_BASE_MS * 2 ** attempt);
+    } finally {
+      clearTimeout(timeout);
+    }
   }
+  return null;
 }
 
 function getDomain(url) {
@@ -399,6 +413,9 @@ async function main() {
   const t0 = Date.now();
 
   const results = { updated: 0, skipped: 0, total: 0 };
+  const MAX_CONSECUTIVE_FETCH_FAILURES = 8;
+  let consecutiveFetchFailures = 0;
+  let aborted = false;
   const adherence = {};        // rejection counters populated by normalizeNewsItems
   const byCollection = {};     // collection -> { scanned, updated, news_added }
   const byCountry = {};        // country -> news items added
@@ -412,6 +429,7 @@ async function main() {
   let backfilledTotal = 0; // credible sources added by --backfill-sources
 
   for (const collection of COLLECTIONS) {
+    if (aborted) break;
     const dir = path.join(CONTENT_DIR, collection);
     const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
     byCollection[collection] = { scanned: 0, updated: 0, news_added: 0 };
@@ -423,6 +441,8 @@ async function main() {
       process.stdout.write(`Processing ${entry}...`);
 
       const result = await processEntry(collection, file, adherence);
+      // Any entry that fetched something proves the network is alive.
+      if (!result.skipped) consecutiveFetchFailures = 0;
 
       // Source-bar + cross-check aggregation (independent of news outcome).
       if (typeof result.credible === 'number' && result.credible < MIN_CREDIBLE_SOURCES) {
@@ -438,6 +458,18 @@ async function main() {
         results.skipped++;
         notFound.push(`${entry} (${result.reason})`);
         console.log(` SKIPPED (${result.reason})`);
+        // Every entry failing to fetch anything means the network is gone, not
+        // that 200 entries all went stale at once. Stop instead of burning
+        // hours producing an empty run (2026-08-31: 110 minutes, 0 results).
+        if (result.reason === 'all fetches failed') {
+          consecutiveFetchFailures++;
+          if (consecutiveFetchFailures >= MAX_CONSECUTIVE_FETCH_FAILURES) {
+            console.error(`\n\nABORTED: ${consecutiveFetchFailures} entries in a row failed every fetch — the network looks down.`);
+            console.error('Nothing scanned after this point is meaningful. Fix connectivity and re-run.');
+            aborted = true;
+            break;
+          }
+        }
       } else if (result.added > 0) {
         results.updated++;
         newsAdded += result.added;
