@@ -66,6 +66,12 @@
       "url": "https://quantumcomputingreport.com/parityqc-and-university-of-innsbruck-propose-distillation-architecture-to-reduce-ftqc-overhead/",
       "title": "ParityQC and University of Innsbruck Propose Distillation Architecture to Reduce FTQC Overhead - Quantum Computing Report",
       "dateAccessed": "2026-05-10"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/classiq-and-parityqc-partner-to-optimize-and-streamline-quantum-execution/",
+      "title": "Classiq and ParityQC Partner to Optimize and Streamline Quantum Execution - HPCwire",
+      "dateAccessed": "2026-07-19"
     }
   ],
   "news": [
@@ -110,6 +116,13 @@
       "url": "https://thequantuminsider.com/2026/05/07/parity-unfolded-distillation-architecture-to-lower-resource-overhead/",
       "source": "The Quantum Insider",
       "date": "2026-05-07"
+    },
+    {
+      "title": "Classiq and ParityQC partner to optimise quantum circuit execution, set new QFT benchmark on IBM Heron",
+      "excerpt": "Classiq and ParityQC integrated Classiq's optimisation protocol with ParityQC's Parity Twine technology, setting a new quantum Fourier transform benchmark on IBM Quantum Heron hardware and targeting fault-tolerant quantum systems with limited qubit connectivity.",
+      "url": "https://thequantuminsider.com/2026/07/15/classiq-parityqc-quantum-circuit-optimization/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-15"
     }
   ]
 }

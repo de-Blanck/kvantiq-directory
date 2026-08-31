@@ -11,7 +11,7 @@
     "quantum-chemistry"
   ],
   "founded": 2020,
-  "description": "Algorithmiq develops quantum algorithms for life sciences and drug discovery applications. The company focuses on creating quantum-enhanced computational methods for molecular simulations and pharmaceutical research. Originally founded in Helsinki and backed by Finnish quantum research, Algorithmiq relocated its global headquarters to Milan, Italy in May 2026 following an EUR 18M funding round — Italy's largest quantum VC investment to date.",
+  "description": "Algorithmiq develops quantum algorithms for life sciences and drug discovery applications. The company focuses on quantum-enhanced computational methods for molecular simulations and pharmaceutical research. Founded in Helsinki, Algorithmiq moved its global headquarters to Milan in May 2026 following a EUR 18M funding round, bringing total funding to over EUR 36M.",
   "website": "https://algorithmiq.fi",
   "featured": false,
   "headquarters": "Milan, Italy",
@@ -62,15 +62,28 @@
       "url": "https://thequantuminsider.com/2026/05/12/algorithmiq-raises-e18-million-establishes-headquarters-in-milan/",
       "title": "Algorithmiq Raises EUR 18 Million, Establishes Headquarters in Milan — The Quantum Insider",
       "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://www.eu-startups.com/2026/05/quantum-software-startup-algorithmiq-raises-e18-million-and-moves-global-hq-from-helsinki-to-milan/",
+      "title": "Quantum software startup Algorithmiq raises €18 million and moves global HQ from Helsinki to Milan - EU-Startups",
+      "dateAccessed": "2026-07-19"
     }
   ],
   "news": [
     {
-      "title": "Algorithmiq relocates global HQ from Helsinki to Milan and raises EUR 18M — Italy's largest quantum VC round",
-      "excerpt": "Algorithmiq established Milan as its global headquarters following an EUR 18M round led by United Ventures and CDP Venture Capital, Italy's largest-ever quantum startup investment. The company retains operations in Finland and brings total funding to EUR 36M. The move follows Italy's National Quantum Strategy launched in 2025.",
+      "title": "Algorithmiq raises €18M and moves global headquarters from Helsinki to Milan",
+      "excerpt": "Algorithmiq closed a EUR 18M funding round — Italy's largest quantum VC investment to date — and relocated its global headquarters from Helsinki to Milan, bringing total funding to over EUR 36M.",
       "url": "https://tech.eu/2026/05/11/algorithmiq-moves-global-hq-to-milan-and-raises-eur18m-in-italys-largest-quantum-vc-round/",
       "source": "Tech.eu",
       "date": "2026-05-11"
+    },
+    {
+      "title": "Algorithmiq wins €1.7M Wellcome Leap Q4Bio prize for quantum-enabled cancer drug discovery",
+      "excerpt": "Algorithmiq was awarded the $2M Wellcome Leap Q4Bio prize for a quantum-classical workflow simulating photosensitizer drug properties for photodynamic cancer therapy on a 100-qubit IBM quantum system.",
+      "url": "https://thequantuminsider.com/2026/04/16/wellcome-leap-quantum-for-bio-challenge-prize/",
+      "source": "The Quantum Insider",
+      "date": "2026-04-16"
     }
   ]
 }

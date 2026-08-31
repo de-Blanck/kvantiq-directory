@@ -75,6 +75,12 @@
       "url": "https://thequantuminsider.com/2026/05/22/pasqal-demonstrates-logical-qubits-outperform-physical-qubits-solving-differential-equations/",
       "title": "Pasqal Demonstrates Logical Qubits Outperform Physical Qubits Solving Differential Equations - The Quantum Insider",
       "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/chips-ju-and-pasqal-launch-e50m-57-2m-usd-q-planet-pilot-line-to-industrialize-neutral-atom-quantum-chips/",
+      "title": "Chips JU and Pasqal Launch €50M Q-PLANET Pilot Line - Quantum Computing Report",
+      "dateAccessed": "2026-07-19"
     }
   ],
   "news": [
@@ -175,6 +181,13 @@
       "url": "https://www.hpcwire.com/off-the-wire/pasqal-and-megazonecloud-partner-to-bring-industrial-scale-quantum-computing-to-south-korea/",
       "source": "HPCwire",
       "date": "2026-07-07"
+    },
+    {
+      "title": "Chips JU and Pasqal launch €50M Q-PLANET pilot line to industrialise neutral-atom quantum chips",
+      "excerpt": "The EU Chips Joint Undertaking and Pasqal launched Q-PLANET, a six-year €50 million initiative with 28 RTOs and industrial partners across 11 EU Member States, targeting TRL 4 to TRL 6 maturation for neutral-atom quantum chip manufacturing.",
+      "url": "https://thequantuminsider.com/2026/07/13/launch-of-q-planet-european-pilot-line-to-industrialize-neutral-atom-quantum-chips/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-13"
     }
   ]
 }

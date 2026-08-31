@@ -98,8 +98,8 @@
     {
       "type": "url",
       "url": "https://www.cnbc.com/2026/06/04/quantinuum-qnt-stock-first-trade-ipo.html",
-      "title": "Quantinuum closes flat in Nasdaq debut, after upsized $1.68B offering — CNBC",
-      "dateAccessed": "2026-06-14"
+      "title": "Quantinuum closes flat in Nasdaq debut after upsized offering - CNBC",
+      "dateAccessed": "2026-07-19"
     },
     {
       "type": "url",
@@ -165,8 +165,8 @@
       "date": "2026-05-26"
     },
     {
-      "title": "Quantinuum raises USD 1.68 billion in heavily oversubscribed Nasdaq IPO",
-      "excerpt": "Quantinuum priced 28 million shares at USD 60 each, raising USD 1.68 billion in a more than 20-times oversubscribed IPO on Nasdaq under the ticker QNT, valuing the company at USD 15.6 billion at debut.",
+      "title": "Quantinuum completes Nasdaq IPO at $10B valuation in Europe's largest quantum listing",
+      "excerpt": "Quantinuum raised approximately $1B in its Nasdaq IPO, trading under the ticker QNT, in what became the largest quantum computing IPO from a European company and the sector's biggest public listing to date.",
       "url": "https://www.cnbc.com/2026/06/04/quantinuum-qnt-stock-first-trade-ipo.html",
       "source": "CNBC",
       "date": "2026-06-04"
@@ -191,6 +191,13 @@
       "url": "https://quantumcomputingreport.com/sandia-national-laboratories-and-quantinuum-validate-98-qubit-helios-trapped-ion-framework/",
       "source": "Quantum Computing Report",
       "date": "2026-06-17"
+    },
+    {
+      "title": "Quantinuum, Rolls-Royce, Riverlane and University of Edinburgh sign agreement to explore quantum computing for industrial design and simulation",
+      "excerpt": "The four-way collaboration targets quantum-accelerated computational fluid dynamics simulations for gas turbine design, combining Quantinuum's H-Series hardware, Riverlane's quantum error correction, and EPCC's HPC infrastructure.",
+      "url": "https://thequantuminsider.com/2026/07/14/quantinuum-rolls-royce-riverlane-and-university-of-edinburgh-sign-agreement-to-explore-quantum-computing-for-industrial-design-and-simulation/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-14"
     }
   ]
 }
