@@ -65,6 +65,13 @@
   ],
   "news": [
     {
+      "title": "AQT Launches LYNX Series Trapped-Ion Quantum Systems",
+      "excerpt": "AQT unveiled LYNX Series, new generation of 19-inch rack-mounted quantum computers achieving record-breaking Quantum Volume of 32768.",
+      "url": "https://www.hpcwire.com/off-the-wire/aqt-launches-lynx-series-trapped-ion-quantum-systems/",
+      "source": "HPCwire",
+      "date": "2026-05-08"
+    },
+    {
       "title": "Trapped-Ion Quantum Computer Now Available in Munich Quantum Valley",
       "excerpt": "AQT's 20-qubit ion trap system deployed to Leibniz Supercomputing Centre with €9.8M Bavarian funding",
       "url": "https://thequantuminsider.com/2023/12/08/trapped-ion-quantum-computer-now-available-in-munich-quantum-valley/",

@@ -57,14 +57,12 @@
   ],
   "news": [
     {
-      "title": "Groove Quantum raises EUR 16M seed and unveils world's largest 18-qubit semiconductor spin-qubit processor",
-      "excerpt": "Groove Quantum raised EUR 16M in combined seed funding co-led by Innovation Industries and 55 North, with EIC Fund and Verve Ventures participating. The company simultaneously demonstrated an 18-qubit germanium spin-qubit processor — the largest semiconductor spin-qubit system built to date — targeting CMOS-compatible industrial-scale quantum manufacturing.",
-      "url": "https://www.eu-startups.com/2026/04/dutch-quantum-startup-groove-quantum-raises-e16-million-to-advance-scalable-chip-manufacturing/",
-      "source": "EU-Startups",
+      "title": "Groove Quantum Secures €16 Million and Debuts 18-Qubit Processor",
+      "excerpt": "Groove Quantum, a TU Delft spin-out, secured €16 million in combined equity and grants, including a €10 million seed round co-led by Innovation Industries and 55 North, plus €6 million in grants from EIC Accelerator and JU Chips Act programs. The company unveiled an 18-qubit semiconductor spin-qubit processor.",
+      "url": "https://quantumcomputingreport.com/groove-quantum-secures-e16-million-18-7m-usd-to-scale-germanium-spin-qubits-debuts-18-qubit-processor/",
+      "source": "Quantum Computing Report",
       "date": "2026-04-30"
-    }
-  ],
-  "news": [
+    },
     {
       "title": "Groove Quantum Secures €10 Million EIC Accelerator Funding",
       "excerpt": "Groove Quantum secured €10 million in EIC Accelerator funding to scale its germanium-based quantum chip technology. The Delft startup was one of 40 companies selected from over 1,000 applicants to receive a mix of grant and equity support.",
