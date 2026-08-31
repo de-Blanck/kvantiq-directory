@@ -51,6 +51,12 @@
       "url": "https://thequantuminsider.com/2026/04/21/pasqal-thoughts-2026-quantum-transition-real-world-deployment/",
       "title": "Pasqal Showcases Quantum Progress at 2026 Event - The Quantum Insider",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://www.globenewswire.com/news-release/2026/05/11/3291836/0/en/pasqal-selected-as-finalist-in-xprize-quantum-applications-competition.html",
+      "title": "Pasqal Selected as Finalist in XPRIZE Quantum Applications Competition - GlobeNewswire",
+      "dateAccessed": "2026-05-17"
     }
   ],
   "news": [
@@ -88,6 +94,20 @@
       "url": "https://thequantuminsider.com/2026/04/21/pasqal-thoughts-2026-quantum-transition-real-world-deployment/",
       "source": "The Quantum Insider",
       "date": "2026-04-21"
+    },
+    {
+      "title": "PINQ² becomes exclusive Canadian distributor of Pasqal neutral-atom quantum computers",
+      "excerpt": "Partnership with PINQ² and Distriq gives Canadian enterprises and researchers access to Pasqal's neutral-atom platform for applications in energy, finance, aerospace, and materials science.",
+      "url": "https://thequantuminsider.com/2026/04/21/pinq2-distriq-exclusive-distributor-pasqal-quantum-canada/",
+      "source": "The Quantum Insider",
+      "date": "2026-04-21"
+    },
+    {
+      "title": "Pasqal selected as finalist in XPRIZE Quantum Applications competition",
+      "excerpt": "Pasqal selected as one of five wildcard finalists from 62 submissions in the XPRIZE Quantum Applications competition backed by Google Quantum AI and GESDA, advancing to Phase II.",
+      "url": "https://www.globenewswire.com/news-release/2026/05/11/3291836/0/en/pasqal-selected-as-finalist-in-xprize-quantum-applications-competition.html",
+      "source": "GlobeNewswire",
+      "date": "2026-05-11"
     }
   ]
 }

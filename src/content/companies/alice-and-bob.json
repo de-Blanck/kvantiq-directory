@@ -52,6 +52,12 @@
       "url": "https://www.hpcwire.com/off-the-wire/alice-bob-surpasses-hiring-targets-ahead-of-schedule-as-quantum-workforce-grows/",
       "title": "Alice & Bob Surpasses Hiring Targets Ahead of Schedule as Quantum Workforce Grows - HPCwire",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://www.vttresearch.com/en/news-and-ideas/supreme-quantum-project-enforces-finlands-leading-role-european-quantum-research",
+      "title": "SUPREME quantum project enforces Finland's leading role in European quantum research - VTT Technical Research Centre",
+      "dateAccessed": "2026-05-17"
     }
   ],
   "news": [
@@ -82,6 +88,13 @@
       "url": "https://www.hpcwire.com/off-the-wire/alice-bob-surpasses-hiring-targets-ahead-of-schedule-as-quantum-workforce-grows/",
       "source": "HPCwire",
       "date": "2026-04-16"
+    },
+    {
+      "title": "EU SUPREME €50M superconducting quantum manufacturing project kicks off in Helsinki with Alice & Bob as consortium partner",
+      "excerpt": "The 23-partner SUPREME consortium held its official kick-off at VTT Helsinki (11–13 May), targeting TRL 6 industrialization of superconducting quantum chip manufacturing over 3.5 years. Alice & Bob will use the shared foundry to design and test cat-qubit chips.",
+      "url": "https://www.vttresearch.com/en/news-and-ideas/supreme-quantum-project-enforces-finlands-leading-role-european-quantum-research",
+      "source": "VTT Technical Research Centre",
+      "date": "2026-05-12"
     }
   ]
 }

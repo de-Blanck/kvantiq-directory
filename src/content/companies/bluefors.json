@@ -70,13 +70,13 @@
       "type": "url",
       "url": "https://www.hpcwire.com/off-the-wire/bluefors-joins-chicago-quantum-exchange-to-support-quantum-infrastructure-and-workforce-development/",
       "title": "Bluefors Joins Chicago Quantum Exchange to Support Quantum Infrastructure and Workforce Development - HPCwire",
-      "dateAccessed": "2026-05-10"
+      "dateAccessed": "2026-05-17"
     },
     {
       "type": "url",
       "url": "https://quantumcomputingreport.com/bluefors-joins-chicago-quantum-exchange-to-strengthen-regional-cryogenic-infrastructure/",
       "title": "Bluefors Joins Chicago Quantum Exchange to Strengthen Regional Cryogenic Infrastructure - Quantum Computing Report",
-      "dateAccessed": "2026-05-10"
+      "dateAccessed": "2026-05-17"
     }
   ],
   "news": [
@@ -99,6 +99,13 @@
       "excerpt": "Bluefors becomes a member of the Chicago Quantum Exchange and opens a Bluefors Lab Service facility within the UChicago Science Incubator at Hyde Park Labs on 12 May 2026, giving early-stage startups and researchers flexible access to an LD400He cryogenic measurement system.",
       "url": "https://thequantuminsider.com/2026/05/07/bluefors-joins-chicago-quantum-exchange/",
       "source": "The Quantum Insider",
+      "date": "2026-05-07"
+    },
+    {
+      "title": "Bluefors joins Chicago Quantum Exchange to support quantum infrastructure and workforce development",
+      "excerpt": "Bluefors became a member of the Chicago Quantum Exchange, reinforcing Midwest quantum supply chain development. A second Bluefors Lab (580 sq ft) at Hyde Park Labs, UChicago celebrated its opening on 12 May.",
+      "url": "https://www.hpcwire.com/off-the-wire/bluefors-joins-chicago-quantum-exchange-to-support-quantum-infrastructure-and-workforce-development/",
+      "source": "HPCwire",
       "date": "2026-05-07"
     }
   ]

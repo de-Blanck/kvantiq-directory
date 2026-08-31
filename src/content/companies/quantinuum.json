@@ -4,7 +4,13 @@
   "country": "United Kingdom",
   "region": "uk",
   "type": "hybrid",
-  "tags": ["trapped-ion", "full-stack", "quantum-volume", "cybersecurity", "TKET"],
+  "tags": [
+    "trapped-ion",
+    "full-stack",
+    "quantum-volume",
+    "cybersecurity",
+    "TKET"
+  ],
   "founded": 2021,
   "description": "Quantinuum is the world's largest integrated quantum computing company, formed in 2021 from the merger of Honeywell Quantum Solutions and Cambridge Quantum. Registered in the UK with European headquarters in Cambridge, the company builds trapped-ion quantum computers (H-Series) that hold the record for highest quantum volume. Quantinuum also develops quantum software including the open-source TKET compiler and quantum cybersecurity products.",
   "website": "https://www.quantinuum.com",
@@ -63,7 +69,7 @@
       "type": "url",
       "url": "https://www.hpcwire.com/off-the-wire/honeywell-announces-quantinuums-filing-of-registration-statement-for-proposed-ipo/",
       "title": "Honeywell Announces Quantinuum's Filing of Registration Statement for Proposed IPO - HPCwire",
-      "dateAccessed": "2026-05-10"
+      "dateAccessed": "2026-05-17"
     }
   ],
   "news": [
@@ -79,6 +85,13 @@
       "excerpt": "Honeywell-backed Quantinuum publicly filed a Form S-1 with the SEC for a proposed IPO of Class A common stock on the Nasdaq Global Select Market under ticker QNT, with J.P. Morgan and Morgan Stanley as joint lead book-running managers.",
       "url": "https://thequantuminsider.com/2026/05/08/honeywell-announces-quantinuums-filing-of-registration-statement-for-ipo/",
       "source": "The Quantum Insider",
+      "date": "2026-05-08"
+    },
+    {
+      "title": "Quantinuum publicly files S-1 registration statement for proposed Nasdaq IPO under ticker QNT",
+      "excerpt": "Honeywell announced the public filing of Quantinuum's S-1 registration for a proposed Nasdaq IPO under ticker QNT. The filing disclosed 2025 revenue of $30.9M and a net loss of $192.6M. J.P. Morgan and Morgan Stanley are joint lead book-running managers.",
+      "url": "https://www.hpcwire.com/off-the-wire/honeywell-announces-quantinuums-filing-of-registration-statement-for-proposed-ipo/",
+      "source": "HPCwire",
       "date": "2026-05-08"
     }
   ]
