@@ -14,7 +14,7 @@
   "website": "https://www.quobly.io",
   "featured": false,
   "headquarters": "Grenoble, France",
-  "funding": "EUR 19M",
+  "funding": "EUR 134M+",
   "accessModel": "Hardware development + licensing",
   "products": [
     {
@@ -43,7 +43,8 @@
     {
       "type": "url",
       "url": "https://thequantuminsider.com/2026/06/03/quobly-secures-e115-million-series-a-to-bring-silicon-based-quantum-computers-to-market/",
-      "title": "Quobly Secures €115 Million Series A to Bring Silicon-Based Quantum Computers to Market"
+      "title": "Quobly Secures €115 Million Series A to Bring Silicon-Based Quantum Computers to Market - The Quantum Insider",
+      "dateAccessed": "2026-06-07"
     },
     {
       "type": "url",
@@ -53,13 +54,20 @@
     {
       "type": "url",
       "url": "https://tech.eu/2026/06/03/quobly-raises-eur115m-series-a-to-commercialise-silicon-quantum-computing/",
-      "title": "Quobly raises €115M Series A to commercialise silicon quantum computing"
+      "title": "Quobly raises €115M Series A to commercialise silicon quantum computing - Tech.eu",
+      "dateAccessed": "2026-06-07"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/quobly-raises-e115m-series-a-to-industrialize-silicon-quantum-computing/",
+      "title": "Quobly Raises €115M Series A to Industrialize Silicon Quantum Computing - HPCwire",
+      "dateAccessed": "2026-06-07"
     }
   ],
   "news": [
     {
-      "title": "Quobly Secures €115 Million Series A to Bring Silicon-Based Quantum Computers to Market",
-      "excerpt": "Quobly has raised €115 million in a Series A round to accelerate the industrialization of its silicon-based quantum computing platform and launch its first cloud-accessible commercial system by the end of 2026.",
+      "title": "Quobly raises €115M Series A to commercialise silicon-based quantum computers",
+      "excerpt": "The round was led by Bpifrance and STMicroelectronics, with participation from the European Innovation Council (EIC Fund), ALIAD (Air Liquide Venture Capital), Blast, and existing investor Innovacom. Quobly plans to launch its Alloy Pioneer system via cloud in 2026.",
       "url": "https://thequantuminsider.com/2026/06/03/quobly-secures-e115-million-series-a-to-bring-silicon-based-quantum-computers-to-market/",
       "source": "The Quantum Insider",
       "date": "2026-06-03"

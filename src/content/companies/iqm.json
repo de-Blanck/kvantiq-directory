@@ -16,7 +16,7 @@
   "featured": true,
   "headquarters": "Espoo, Finland",
   "employees": "250+",
-  "funding": "EUR 200M+",
+  "funding": "EUR 250M+",
   "accessModel": "On-premise systems + cloud API",
   "products": [
     {
@@ -154,6 +154,20 @@
       "url": "https://thequantuminsider.com/2026/05/26/polands-poznan-university-of-technology-unveils-iqm-quantum-computer-to-drive-research-and-education/",
       "source": "The Quantum Insider",
       "date": "2026-05-26"
+    },
+    {
+      "title": "IQM secures €50M financing from BlackRock ahead of public listing",
+      "excerpt": "Funds managed by BlackRock provided a €50M financing facility to accelerate IQM's technology roadmap, R&D, and market expansion ahead of its planned Nasdaq dual listing at a USD 1.8B pre-money valuation.",
+      "url": "https://thequantuminsider.com/2026/03/30/iqm-secures-e50-million-financing-to-accelerate-global-growth/",
+      "source": "The Quantum Insider",
+      "date": "2026-03-30"
+    },
+    {
+      "title": "IQM and Real Asset Acquisition Corp. upsize PIPE to USD 146M with Ilmarinen",
+      "excerpt": "IQM and SPAC partner Real Asset Acquisition Corp. upsized their PIPE financing to USD 146 million with a new commitment from Finnish pension insurer Ilmarinen, maintaining IQM's pre-money valuation at USD 1.8 billion ahead of a planned Nasdaq dual listing as IQMX.",
+      "url": "https://thequantuminsider.com/2026/06/02/iqm-and-real-asset-acquisition-corp-announce-upsized-146-million-pipe-with-new-commitment-from-ilmarinen/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-02"
     }
   ]
 }
