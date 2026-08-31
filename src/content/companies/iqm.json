@@ -16,7 +16,7 @@
   "featured": true,
   "headquarters": "Espoo, Finland",
   "employees": "400+",
-  "funding": "EUR 200M+ raised; publicly traded on Nasdaq (IQMX) at ~$1.8B valuation (IPO July 2026)",
+  "funding": "Public (Nasdaq: IQMX, July 2026); EUR 309.4M cash post-listing",
   "accessModel": "On-premise systems + cloud API",
   "products": [
     {
@@ -35,7 +35,7 @@
   "highlights": [
     "Europe's largest quantum computing company with 250+ employees and EUR 200M+ in funding",
     "Supplies quantum accelerators to EuroHPC supercomputing centers across Europe",
-    "First European quantum computing company listed on Nasdaq (ticker: IQMX), trading since July 3, 2026"
+    "Listed on Nasdaq Global Select Market (ticker IQMX, July 2026), one of Europe's first publicly listed quantum computing companies"
   ],
   "sources": [
     {
@@ -125,8 +125,8 @@
     {
       "type": "url",
       "url": "https://thequantuminsider.com/2026/08/04/iqm-quantum-computers-h1-2026-results-full-year-outlook/",
-      "title": "IQM Quantum Computers H1 2026 Results and Full-Year Outlook - The Quantum Insider",
-      "dateAccessed": "2026-08-16"
+      "title": "IQM Quantum Computers Reports First Half 2026 Results and Provides Full-Year Outlook - The Quantum Insider",
+      "dateAccessed": "2026-08-30"
     },
     {
       "type": "url",
@@ -262,8 +262,8 @@
       "date": "2026-07-06"
     },
     {
-      "title": "LUMI AI Factory Selects IQM to Deploy 150-Qubit Halocene H4 Quantum Computer",
-      "excerpt": "The LUMI AI Factory (led by CSC – IT Center for Science) selected IQM to deliver the IQM Halocene H4, a 150-qubit superconducting system combining quantum error correction with NISQ qubits, co-funded by EuroHPC JU and four European countries. Delivery planned for 2027.",
+      "title": "IQM to Deliver Quantum Computer for Europe's LUMI AI Factory",
+      "excerpt": "IQM was selected to deliver a quantum computer integrated with the LUMI AI Factory supercomputing infrastructure in Finland, expanding its footprint alongside AI supercomputing centers.",
       "url": "https://thequantuminsider.com/2026/07/08/lumi-ai-factory-iqm-quantum-computer/",
       "source": "The Quantum Insider",
       "date": "2026-07-08"
@@ -304,8 +304,8 @@
       "date": "2026-07-08"
     },
     {
-      "title": "IQM reports first earnings as a public company: EUR 8.9M H1 revenue, EUR 102M order backlog",
-      "excerpt": "IQM's first earnings report as a listed company showed H1 2026 revenues of EUR 8.87 million (+47% YoY), an order backlog of EUR 102.1 million as of August 3, and FY 2026 guidance of EUR 42–47 million revenue. IQM has sold 26 full-stack quantum computers and delivered 17 globally, with new customers including Galaxy Systemy Informatyczne (Poland, first private enterprise globally to purchase an IQM system) and TOYO Corporation (Japan).",
+      "title": "IQM Completes Nasdaq Listing and Reports H1 2026 Results: EUR 102M+ Backlog, 26 Systems Sold",
+      "excerpt": "IQM began trading on the Nasdaq Global Select Market (ticker IQMX) on July 2, 2026. H1 2026 results reported EUR 8.9 million in revenue, EUR 102.1 million order backlog, and EUR 309.4 million cash balance. The company confirmed 2026 guidance of EUR 42-47 million in revenue.",
       "url": "https://thequantuminsider.com/2026/08/04/iqm-quantum-computers-h1-2026-results-full-year-outlook/",
       "source": "The Quantum Insider",
       "date": "2026-08-04"

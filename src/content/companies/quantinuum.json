@@ -135,8 +135,8 @@
     {
       "type": "url",
       "url": "https://www.oracle.com/news/announcement/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure-2026-08-11/",
-      "title": "Quantinuum and Oracle Partner to Accelerate Hybrid Quantum Compute Adoption on Oracle Cloud Infrastructure",
-      "dateAccessed": "2026-08-16"
+      "title": "Quantinuum and Oracle Partner on Hybrid Quantum-AI Cloud - Oracle",
+      "dateAccessed": "2026-08-30"
     },
     {
       "type": "url",
@@ -282,6 +282,13 @@
       "excerpt": "Quantinuum and Oracle announced a multi-year strategic partnership to make Quantinuum's Helios quantum computer available as a managed service on Oracle Cloud Infrastructure, enabling OCI customers to access trapped-ion quantum computing alongside HPC and GPU workloads.",
       "url": "https://www.quantinuum.com/press-releases/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure",
       "source": "Quantinuum",
+      "date": "2026-08-11"
+    },
+    {
+      "title": "Quantinuum and Oracle Announce Multi-Year Strategic Partnership for Hybrid Quantum-AI Cloud",
+      "excerpt": "Quantinuum and Oracle announced a multi-year strategic partnership to deploy Quantinuum's Helios quantum computer in a US-based OCI AI data center, enabling hybrid quantum-AI workloads as an Oracle Cloud Infrastructure service for enterprise customers in materials, pharmaceuticals, logistics, and finance.",
+      "url": "https://thequantuminsider.com/2026/08/12/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure/",
+      "source": "The Quantum Insider",
       "date": "2026-08-11"
     }
   ]
