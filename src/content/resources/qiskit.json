@@ -41,5 +41,14 @@
       "url": "https://www.ibm.com/quantum/qiskit",
       "title": "IBM Quantum Computing | Qiskit"
     }
+  ],
+  "news": [
+    {
+      "title": "Qiskit 2.5.0 released with multi-IR staged pass manager and expanded C API",
+      "excerpt": "Qiskit 2.5.0 introduces a multi-IR staged pass manager for flexible compilation across intermediate representations, expands the C API with control flow and classical expression support, and adds multi-threaded gate optimization and parallelized unitary synthesis. Minimum NumPy version raised to 2.0.",
+      "url": "https://github.com/Qiskit/qiskit/releases/tag/2.5.0",
+      "source": "Qiskit GitHub Releases",
+      "date": "2026-07-02"
+    }
   ]
 }

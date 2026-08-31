@@ -15,7 +15,7 @@
   "free": true,
   "language": "Python",
   "provider": "Quandela",
-  "lastUpdated": "2025",
+  "lastUpdated": "2026",
   "maturity": "stable",
   "communitySize": "~300 GitHub stars",
   "sources": [
@@ -40,6 +40,15 @@
       "type": "website",
       "url": "https://www.quandela.com/products-and-services/perceval/",
       "title": "Perceval - Quantum Software - Open Source Solutions"
+    }
+  ],
+  "news": [
+    {
+      "title": "Perceval 1.2.4 released with Kipu Quantum Hub connector",
+      "excerpt": "Perceval 1.2.4 adds a new KipuSession connector enabling job submission to the Kipu Quantum Hub (installable via pip install perceval-quandela[kipu]), and enhances GenericInterferometer to accept string values for interferometer shape specification.",
+      "url": "https://github.com/Quandela/Perceval/releases/tag/v1.2.4",
+      "source": "Perceval GitHub Releases",
+      "date": "2026-07-02"
     }
   ]
 }

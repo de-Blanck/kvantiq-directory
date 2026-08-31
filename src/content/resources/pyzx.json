@@ -15,7 +15,7 @@
   "free": true,
   "language": "Python",
   "provider": "ZX Calculus Community",
-  "lastUpdated": "2025",
+  "lastUpdated": "2026",
   "maturity": "stable",
   "communitySize": "~400 GitHub stars",
   "sources": [
@@ -40,6 +40,15 @@
       "type": "url",
       "url": "https://quantum-journal.org/papers/q-2020-06-04-279/",
       "title": "Graph-theoretic Simplification of Quantum Circuits with the ZX-calculus"
+    }
+  ],
+  "news": [
+    {
+      "title": "PyZX 0.10.4 released with 'magic cat' decomposition strategy and strict phase type checking",
+      "excerpt": "PyZX 0.10.4 introduces the magic cat decomposition strategy from arXiv:2202.09202, adds a strict_phase_types setting enabled by default to prevent float phases at set_phase/add_to_phase, and fixes a crash in full_reduce when processing non-Clifford spiders.",
+      "url": "https://github.com/Quantomatic/pyzx/releases/tag/v0.10.4",
+      "source": "PyZX GitHub Releases",
+      "date": "2026-07-01"
     }
   ]
 }

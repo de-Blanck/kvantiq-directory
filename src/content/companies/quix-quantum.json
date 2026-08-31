@@ -64,6 +64,18 @@
       "url": "https://thequantuminsider.com/2026/06/03/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer/",
       "title": "QuiX Quantum Installs Real-Time Control Component for Universal Photonic Quantum Computer — The Quantum Insider",
       "dateAccessed": "2026-06-14"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/quix-quantum-details-dedalo-roadmap-for-logical-qubits-and-hybrid-hpc-integration/",
+      "title": "QuiX Quantum Details Dedalo Roadmap for Logical Qubits and Hybrid HPC Integration - HPCwire",
+      "dateAccessed": "2026-07-05"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quix-quantum-launches-dedalo-photonic-architecture-to-address-photon-loss-via-single-basis-logical-qubits/",
+      "title": "QuiX Quantum Launches Dedalo Photonic Architecture - Quantum Computing Report",
+      "dateAccessed": "2026-07-05"
     }
   ],
   "news": [
@@ -108,6 +120,13 @@
       "url": "https://www.hpcwire.com/off-the-wire/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer/",
       "source": "HPCwire",
       "date": "2026-06-04"
+    },
+    {
+      "title": "QuiX Quantum unveils Dedalo photonic architecture for fault-tolerant quantum computing with logical qubits",
+      "excerpt": "QuiX Quantum released Dedalo, a three-tiered photonic quantum computing architecture targeting fault-tolerant systems built on logical qubits using CMOS-compatible silicon nitride photonic integrated circuits. The system operates at room temperature and is designed for modular integration into standard 19-inch HPC server racks.",
+      "url": "https://thequantuminsider.com/2026/06/30/quix-quantum-unveils-path-to-universal-photonic-quantum-computing-with-logical-qubits/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-30"
     }
   ]
 }
