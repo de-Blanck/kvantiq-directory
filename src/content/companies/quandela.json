@@ -58,6 +58,18 @@
       "type": "url",
       "url": "https://thequantuminsider.com/2025/02/07/quandelas-hybrid-photonic-approach-reduces-resource-requirements-for-fault-tolerant-quantum-computing/",
       "title": "Quandela's Hybrid Photonic Approach Reduces Resource Requirements for Fault-Tolerant Quantum Computing"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/29/quandela-adds-industry-veterans-to-leadership-and-governance-teams/",
+      "title": "Quandela Adds Industry Veterans to Leadership and Governance Teams - The Quantum Insider",
+      "dateAccessed": "2026-05-31"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/whos-news-strategic-leadership-appointments-at-quandela-zapata-quantum-imperagen-and-eigenq/",
+      "title": "Strategic Leadership Appointments at Quandela, Zapata Quantum, Imperagen, and EigenQ - Quantum Computing Report",
+      "dateAccessed": "2026-05-31"
     }
   ],
   "news": [
@@ -95,6 +107,13 @@
       "url": "https://thequantuminsider.com/2026/04/17/ovhcloud-quandela-belenos-quantum-platform/",
       "source": "The Quantum Insider",
       "date": "2026-04-17"
+    },
+    {
+      "title": "Quandela appoints Cyril Dujardin as COO and Michel Zecri as VP of Industrialization",
+      "excerpt": "Dujardin brings 25+ years in deeptech, cybersecurity, and critical infrastructure (Atos, Eutelsat/OneWeb) as COO, while Zecri leads industrialization as Quandela scales photonic quantum hardware production.",
+      "url": "https://thequantuminsider.com/2026/05/29/quandela-adds-industry-veterans-to-leadership-and-governance-teams/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-29"
     }
   ]
 }

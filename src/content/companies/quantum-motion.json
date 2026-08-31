@@ -17,7 +17,7 @@
   "featured": false,
   "headquarters": "London, United Kingdom",
   "employees": "120+",
-  "funding": "USD 160M+",
+  "funding": "GBP 180M+ (incl. USD 160M Series C, 2026)",
   "accessModel": "Hardware development + government contracts",
   "products": [
     {
@@ -28,7 +28,7 @@
   "highlights": [
     "Delivered the first full-stack silicon CMOS quantum computer to the UK National Quantum Computing Centre",
     "Advanced to DARPA Quantum Benchmarking Initiative Stage B in 2025",
-    "Raised USD 160M Series C in May 2026, led by the EU Scaleup Europe Fund in its first major late-stage investment"
+    "Raised USD 160M Series C in May 2026 co-led by DCVC and Kembara, positioning it as the UK's best-funded quantum company"
   ],
   "sources": [
     {
@@ -80,6 +80,13 @@
       "title": "Quantum Motion raises USD 160M Series C led by EU Scaleup Europe Fund",
       "excerpt": "The EU's new Scaleup Europe Fund made its first major late-stage investment by leading a USD 160M Series C in Quantum Motion, the UK silicon CMOS spin-qubit company. The round follows Quantum Motion's delivery of a full-stack silicon CMOS quantum computer to the UK NQCC and advancement to DARPA QBI Stage B.",
       "url": "https://thequantuminsider.com/2026/05/07/new-investment-in-quantum-motion-strengthens-europes-push-for-scalable-quantum-computing/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-07"
+    },
+    {
+      "title": "Quantum Motion raises USD 160M Series C to scale silicon spin qubit processors",
+      "excerpt": "The round, co-led by DCVC and Kembara with participation from the British Business Bank, Firgun, Bosch Ventures, Porsche SE, and returning investors, makes Quantum Motion the UK's best-funded quantum company. Funds will scale the 300mm CMOS silicon spin qubit platform toward utility-scale commercial deployment.",
+      "url": "https://thequantuminsider.com/2026/05/07/quantum-motion-160m-series-c-silicon-quantum-computing/",
       "source": "The Quantum Insider",
       "date": "2026-05-07"
     }
