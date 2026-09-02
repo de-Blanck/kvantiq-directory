@@ -1,8 +1,8 @@
 # Source contradictions — worklist
 
-**Generated:** 2026-09-01 · **Open:** 4 · **Resolved:** 49 (34 corrected, 15 dismissed)
+**Generated:** 2026-09-01 · **Open:** 0 · **Resolved:** 53 (38 corrected, 15 dismissed) · **Closed out 2026-09-02**
 
-**Of the 4 open:** 2 blocked on dead source URLs (`diasense`, `xeedq`), 2 left unverified rather than guessed (`bmbf-quantum-technologies`, `ibm-quantum-challenge`).
+All 53 closed. Two required replacement sources after the originals 404'd (`diasense`, `xeedq`); two needed research beyond the sweep report (`bmbf-quantum-technologies`, `ibm-quantum-challenge`).
 
 **Sources:** the 2026-09-01 full sweep cross-check (48, PR #88) + the backlog consolidation (5, PR #85)
 
@@ -40,7 +40,7 @@ and headquarters cities — the fields the weekly sweep has never been able to t
       - Entry states 'Recent work compares QAOA with non-variational quantum walk algorithms' but arxiv 2505.24191 compares QWOA with two classical local-search heuristics, not QAOA.
 - [x] **`challenges/berlin-quantum-hackathon.json`** — resolved 2026-09-02 (PR #95) — berlinquantumhackathon.com states "5 Weeks" of coding and mentorship
       - Entry states '6-week hybrid event' but the official hackathon website (berlinquantumhackathon.com) states '5 Weeks Coding + Mentorship'
-- [ ] **`challenges/ibm-quantum-challenge.json`** — **OPEN 2026-09-02** — not verified. Annual vs biannual could not be confirmed from a credible current source, and the hardware-vs-simulation point is year-specific
+- [x] **`challenges/ibm-quantum-challenge.json`** — resolved 2026-09-02 (PR #98) — "biannual" is correct: IBM Research states it is "a bi-annual global event … held in the Spring and in the Fall each year", so the flag's "annual" claim is wrong. The hardware claim was overstated though, and now notes that editions vary (2024 was simulation-focused)
       - Entry claims 'biannual' event, but Quantum Insider states it is 'an annual educational coding contest'
       - Entry emphasizes participants solve problems 'using IBM Qiskit and real quantum hardware,' but 2024 challenge explicitly 'will focus on software simulation rather than requiring hardware use'
 - [x] **`challenges/quantum-game-jam-2025.json`** — resolved 2026-09-02 (PR #95) — itch.io: "ran from 2025-09-05 13:00:00 to 2025-09-08 14:00:00"; dateStart/dateEnd corrected
@@ -55,7 +55,7 @@ and headquarters cities — the fields the weekly sweep has never been able to t
       - Entry founded date is 2023; sources (The Quantum Insider, LinkedIn) state the in-house startup was founded in 2022.
 - [x] **`companies/cryptomathic.json`** — dismissed 2026-09-02 (PR #92) — Global Security Mag states "Founded in 1986" explicitly; the IQT figure is arithmetic from a rounded "37 years ago"
       - Founding year: Global Security Mag (2021) states 'Founded in 1986' but Inside Quantum Technology (2022) states 'founded 37 years ago' (implying ~1985)
-- [ ] **`companies/diasense.json`** — **BLOCKED 2026-09-02** — cannot verify: the cited Quantum Insider article returns HTTP 404, so the EUR 1.8M/1.9M and Lyngby/Copenhagen conflicts have no live source to arbitrate. Needs a replacement source
+- [x] **`companies/diasense.json`** — resolved 2026-09-02 (PR #98) — the cited URL was malformed (404); the live article states BII's "total support for the company to EUR 1.9 million" and "Diasense, founded in Copenhagen in 2024". Funding, location and source URL all corrected
       - Total BII funding after March 2026 round: entry states €1.8M but TheQuantumInsider states €1.9M as total BII investment
       - Location: entry describes as 'Lyngby-based' but multiple sources (TheQuantumInsider, QuantumComputingReport) describe as 'Copenhagen-based'
 - [x] **`companies/hqs.json`** — resolved 2026-09-02 (PR #91)
@@ -98,11 +98,11 @@ and headquarters cities — the fields the weekly sweep has never been able to t
       - Entry lists Country: Switzerland, but PKI Consortium source states Terra Quantum is 'based in Germany and Switzerland'
 - [x] **`companies/veriqloud.json`** — resolved 2026-09-02 (PR #94) — type software -> hybrid; Qline is quantum communication hardware
       - Entry type is 'software' but Quantonation source explicitly states Qline is 'quantum communication hardware' and describes VeriQloud as developing both hardware and software solutions.
-- [ ] **`companies/xeedq.json`** — **BLOCKED 2026-09-02** — cannot verify: the cited xeedq.com DLR announcement returns HTTP 404. The 256-qubit target year cannot be checked against it
+- [x] **`companies/xeedq.json`** — resolved 2026-09-02 (PR #98) — dead source URL replaced with the live one. xeedq.com/about states only "a 32-qubit, fault-tolerant quantum computer by 2026" and "very-large qubit numbers … before the turn of the decade"; the 2028 date for 256+ qubits was not sourced, and the 2022 DLR announcement had targeted 256+ by 2026
       - Entry states '256+ qubit mobile processors by 2028'; DLR award announcement (Dec 2022) states 'goal to reach 256 qubits or more by 2026'
 - [x] **`companies/zuriq.json`** — resolved 2026-09-02 (PR #94) — zuriq.com: "natively three-dimensional"; the 2D array is one part of it
       - Entry describes ions moving 'freely in two dimensions'; sources state ions move 'in all spatial directions' and describe 'natively three-dimensional' architecture.
-- [ ] **`resources/bmbf-quantum-technologies.json`** — **OPEN 2026-09-02** — not verified. The EUR 2bn and the Fraunhofer EUR 1.1bn (2021) may refer to different scopes and years; needs a current BMFTR figure before either is asserted
+- [x] **`resources/bmbf-quantum-technologies.json`** — resolved 2026-09-02 (PR #98) — the entry conflated instruments. The 2023 federal action plan commits EUR 3bn through 2026 (EUR 1.37bn to the lead ministry, ~EUR 800M to research institutes); the ~EUR 2bn figure was the separate 2020 stimulus package, and Fraunhofer's EUR 1.1bn an earlier package again. All now stated with sources
       - Entry states programme funding exceeds €2 billion; Fraunhofer IOF source (2021) states 1.1 billion euros for the quantum technology funding package
 - [x] **`resources/cern-qti-lectures.json`** — dismissed 2026-09-02 (PR #95) — quantum.cern describes the current series as a follow-up to QT4HEP22 (Nov 2022), consistent with the entry's March 2023 start. The 2020 IQT article refers to an earlier, separate CERN QTI series
       - Entry states series began March 2023; Inside Quantum Technology (2020-11-06) reports CERN QTI lectures started November 6, 2020

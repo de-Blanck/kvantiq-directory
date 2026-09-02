@@ -10,7 +10,7 @@
     "public-funding",
     "hardware"
   ],
-  "description": "The German Federal Ministry of Education and Research (BMBF) funds quantum technology development through a programme exceeding €2 billion, targeting quantum computing, communication, and sensing. The initiative includes the Quantum Systems research programme, funding for six hardware demonstrator platforms, and the Quantum Future talent pipeline for students and junior researchers.",
+  "description": "The German Federal Ministry of Education and Research (BMFTR, formerly BMBF) is the lead ministry for federal quantum technology funding. The federal government's 2023 action plan commits EUR 3 billion to quantum technologies through 2026, of which EUR 1.37 billion sits with the lead research ministry and around EUR 800 million with state-financed research institutes; an earlier commitment of roughly EUR 2 billion came through the 2020 economic stimulus package. The initiative includes the Quantum Systems research programme, funding for six hardware demonstrator platforms, and the Quantum Future talent pipeline for students and junior researchers.",
   "website": "https://www.quantensysteme.info/information-in-english",
   "openSource": false,
   "free": true,
@@ -39,6 +39,18 @@
       "type": "website",
       "url": "https://www.iof.fraunhofer.de/en/News/BMFTR-promotes-quantum-research.html",
       "title": "Program of the BMFTR promotes applied quantum research in Germany"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2023/05/03/germany-announces-3-billion-euro-action-plan-for-a-universal-quantum-computer/",
+      "title": "Germany Announces 3 Billion Euro Action Plan For a Universal Quantum Computer",
+      "dateAccessed": "2026-09-02"
+    },
+    {
+      "type": "website",
+      "url": "https://www.bmftr.bund.de/SharedDocs/Downloads/DE/2024/2024-12-11-handlungskonzept-quantentechnologie-en.pdf",
+      "title": "Quantum Technologies Conceptual Framework Programme of the Federal Government",
+      "dateAccessed": "2026-09-02"
     }
   ],
   "news": [
