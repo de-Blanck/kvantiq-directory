@@ -31,3 +31,4 @@ data/generated/
 data/pending-*.json
 data/kvantiq.db
 data/weekly-agent-prompt.md
+.env*.local
