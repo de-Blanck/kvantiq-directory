@@ -61,7 +61,7 @@ The subscription's programmatic credit pool is separate from your interactive (t
 
 If a weekly run starts dropping work because the pool is exhausted, the symptoms are the same as the old "credit balance" error. Mitigations:
 
-1. Bump `max_turns` down in `.github/workflows/weekly-agent.yml` (currently 200) to cap per-run consumption
+1. Cap per-run consumption in `scripts/scheduled-run.mjs` (the workflow that once held `max_turns` is gone)
 2. Move `ai-sweep` to a cheaper model — already on `claude-haiku-4-5-20251001`
 3. Reduce sweep frequency (cron change in workflow files)
 
@@ -71,7 +71,7 @@ If a weekly run starts dropping work because the pool is exhausted, the symptoms
 - **`scripts/ai-sweep.mjs`** — Per-entry source fetcher; shells out to `claude -p` for news extraction (Haiku).
 - **`scripts/tools/mcp-server.ts`** — Stdio MCP server providing `send_email` and `create_clickup_task` tools to the weekly agent.
 - **`scripts/mcp-config.json`** — Tells the action how to launch the MCP server.
-- **`.github/workflows/weekly-agent.yml`** — Uses `anthropics/claude-code-base-action@beta` with `claude_code_oauth_token`.
-- **`.github/workflows/ai-sweep.yml`** — Uses CLI subprocess via `node scripts/ai-sweep.mjs`.
+- **`scripts/weekly-agent.ts`** — Prompt builder only. The GitHub Action that consumed it (`anthropics/claude-code-base-action@beta` with `claude_code_oauth_token`) was removed in `b88d6f6`.
+- **`scripts/scheduled-run.mjs`** — The current runner. Invokes `node scripts/ai-sweep.mjs` as a CLI subprocess, scheduled by launchd or Task Scheduler (see `scheduler/`). Reads `CLAUDE_CODE_OAUTH_TOKEN` from the environment or a repo-root `.env`.
 
 The Agent SDK (`@anthropic-ai/claude-agent-sdk`) is no longer in use. Anthropic explicitly excludes the SDK from subscription billing — the CLI is the only subscription-billed surface.

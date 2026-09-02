@@ -46,7 +46,7 @@ src/
 public/             Static assets (icons, logos, manifests, robots)
 scripts/            Content audit, weekly agent, DB migration
 data/               sources.json (hand-curated source registry)
-.github/workflows/  CI and scheduled content jobs
+scheduler/          launchd / Task Scheduler installers for the content sweep
 ```
 
 ## Contributing
