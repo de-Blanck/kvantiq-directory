@@ -1,5 +1,5 @@
 {
-  "name": "AdamantQ",
+  "name": "Adamant Quanta",
   "slug": "adamantq",
   "country": "Sweden",
   "region": "nordics",
@@ -12,7 +12,7 @@
     "navigation"
   ],
   "founded": 2022,
-  "description": "AdamantQ is a Swedish quantum technology company based in Lund that develops chip-scale quantum sensing and timing devices using crystal defects within synthetically grown diamonds. Its primary product, the Quantum Diamond Atomic Clock (QDi.AC), provides a compact frequency reference with exceptional timing holdover for applications in GPS receivers, inertial navigation systems, and network infrastructure.",
+  "description": "Adamant Quanta is a Swedish quantum technology company based in Lund that develops chip-scale quantum sensing and timing devices using crystal defects within synthetically grown diamonds. Its primary product, the Quantum Diamond Atomic Clock (QDi.AC), provides a compact frequency reference with exceptional timing holdover for applications in GPS receivers, inertial navigation systems, and network infrastructure.",
   "website": "https://www.adamantq.com",
   "featured": false,
   "headquarters": "Lund, Sweden",

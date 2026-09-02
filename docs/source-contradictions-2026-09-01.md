@@ -1,6 +1,8 @@
 # Source contradictions — worklist
 
-**Generated:** 2026-09-01 · **Open:** 53 · **Resolved:** 0
+**Generated:** 2026-09-01 · **Open:** 4 · **Resolved:** 49 (34 corrected, 15 dismissed)
+
+**Of the 4 open:** 2 blocked on dead source URLs (`diasense`, `xeedq`), 2 left unverified rather than guessed (`bmbf-quantum-technologies`, `ibm-quantum-challenge`).
 
 **Sources:** the 2026-09-01 full sweep cross-check (48, PR #88) + the backlog consolidation (5, PR #85)
 
@@ -22,7 +24,7 @@ and headquarters cities — the fields the weekly sweep has never been able to t
 
 - [x] **`benchmarks/lih-ground-state.json`** — resolved 2026-09-02 (PR #93) — arXiv:2502.09595 is BenchQC, benchmarking aluminium clusters; replaced with Kandala et al. (arXiv:1704.05018), the canonical hardware LiH VQE result
       - Entry describes benchmark for lithium hydride (LiH), but fetched source (arxiv.org/abs/2502.09595) benchmarks aluminum clusters (Al⁻, Al₂, Al₃⁻) instead.
-- [ ] **`benchmarks/mqt-bench.json`**
+- [x] **`benchmarks/mqt-bench.json`** — resolved 2026-09-02 (PR #91)
       - Entry states 'over 70 algorithm implementations'; all three sources consistently state 'more than 70,000 benchmark circuits' — a significant numerical and conceptual discrepancy in describing MQT Bench's content.
 - [x] **`benchmarks/portfolio-optimization.json`** — resolved 2026-09-02 (PR #93) — restated to match arXiv:2509.17876: classical MIP and tailored heuristics significantly outperform quantum at fixed time budgets
       - Entry states quantum methods 'minimize cost functions effectively,' but Source 1 (arXiv:2509.17876) concludes classical heuristics consistently outperform quantum approaches with 'only very limited room for potential quantum advantage.'
@@ -43,7 +45,7 @@ and headquarters cities — the fields the weekly sweep has never been able to t
       - Entry emphasizes participants solve problems 'using IBM Qiskit and real quantum hardware,' but 2024 challenge explicitly 'will focus on software simulation rather than requiring hardware use'
 - [x] **`challenges/quantum-game-jam-2025.json`** — resolved 2026-09-02 (PR #95) — itch.io: "ran from 2025-09-05 13:00:00 to 2025-09-08 14:00:00"; dateStart/dateEnd corrected
       - Entry states event ran October 5–7, 2025, but itch.io (official jam page) states it ran September 5–8, 2025.
-- [ ] **`companies/adamantq.json`**
+- [x] **`companies/adamantq.json`** — resolved 2026-09-02 (PR #91)
       - Company name: entry lists 'AdamantQ' but both Navigare Ventures and Industrifonden sources consistently refer to the company as 'Adamant Quanta'
 - [x] **`companies/algorithmiq.json`** — dismissed 2026-09-02 (PR #92) — entry already states Finnish founding and the May 2026 Milan move; `country` correctly reflects current HQ
       - Country field lists Italy, but fetched sources confirm Algorithmiq was founded in Helsinki, Finland in 2020 and relocated to Milan only in May 2026.
@@ -56,13 +58,13 @@ and headquarters cities — the fields the weekly sweep has never been able to t
 - [ ] **`companies/diasense.json`** — **BLOCKED 2026-09-02** — cannot verify: the cited Quantum Insider article returns HTTP 404, so the EUR 1.8M/1.9M and Lyngby/Copenhagen conflicts have no live source to arbitrate. Needs a replacement source
       - Total BII funding after March 2026 round: entry states €1.8M but TheQuantumInsider states €1.9M as total BII investment
       - Location: entry describes as 'Lyngby-based' but multiple sources (TheQuantumInsider, QuantumComputingReport) describe as 'Copenhagen-based'
-- [ ] **`companies/hqs.json`**
+- [x] **`companies/hqs.json`** — resolved 2026-09-02 (PR #91)
       - Entry describes company as developing 'quantum simulation software for materials science and chemistry applications' and 'materials discovery,' but all sources state HQS develops spectroscopy software (NMR, UV/Vis, IR, relaxometry) for diagnostic and analytical purposes in life sciences, chemistry, and pharma—fundamentally different applications.
 - [x] **`companies/isentroniq.json`** — resolved 2026-09-02 (PR #94) — reworded to co-founder
       - Entry states 'Founded by Paul Magnard' but Quantum Computing Report identifies him as 'co-founder and CEO', indicating multiple founders
-- [ ] **`companies/multiverse-computing.json`**
+- [x] **`companies/multiverse-computing.json`** — resolved 2026-09-02 (PR #91)
       - Entry states Singularity is the flagship product that 'enables model compression', but all fetched sources identify CompactifAI as the model compression platform (Wikipedia explicitly: 'The AI model compression platform, CompactifAI'), with Singularity listed as a separate product without compression attribution.
-- [ ] **`companies/nkt-photonics.json`**
+- [x] **`companies/nkt-photonics.json`** — resolved 2026-09-02 (PR #91)
       - Entry name is 'NKT Photonics' but fetched sources confirm the company was renamed to 'Hamamatsu Photonics A/S' on June 25, 2026, and now operates as the Lasers & Fibers Business Unit of Hamamatsu Photonics Group.
 - [x] **`companies/nvision-imaging.json`** — resolved 2026-09-02 (PR #94) — nvision-imaging.com 301-redirects to nvision-quantum.com; copyright reads "2026 NVision Quantum"
       - Entry name is 'NVision Imaging Technologies' but all fetched sources refer to 'NVision' or 'NVision Quantum' (website copyright: '© 2026 NVision Quantum')
@@ -112,11 +114,11 @@ and headquarters cities — the fields the weekly sweep has never been able to t
       - Entry mentions simulator backend 'SquidASM' but arXiv paper (2111.09823) states 'Our SDK can be used at home by making use of our existing quantum simulators, NetSquid and SimulaQron' — source names NetSquid, not SquidASM
 - [x] **`resources/quantum-delta-nl.json`** — resolved 2026-09-02 (PR #95) — the EUR 615M figure had no live source (quantumdelta.nl fails TLS). Replaced with the two documented figures: EUR 273M National Growth Fund award, EUR 264M via the Recovery and Resilience Facility per the European Commission
       - Entry states €615 million from National Growth Fund; EC source states EUR 264 million from Recovery and Resilience Fund
-- [ ] **`resources/unitary-fund.json`**
+- [x] **`resources/unitary-fund.json`** — resolved 2026-09-02 (PR #91)
       - Entry name is 'Unitary Fund' but official website (https://unitary.foundation/) identifies the organization as 'Unitary Foundation'.
 - [x] **`resources/wacqt.json`** — resolved 2026-09-02 (PR #95) — both figures are institutional and both now stated: Wallenberg funds "SEK 1.4 billion during 2018-2030"; Chalmers describes "a 12 year SEK 1 billion research effort"
       - Budget discrepancy: entry states SEK 1.4 billion, but Chalmers website states SEK 1 billion (Wallenberg Foundation source confirms 1.4 billion during 2018–2030).
-- [ ] **`resources/xanadu-codebook.json`**
+- [x] **`resources/xanadu-codebook.json`** — resolved 2026-09-02 (PR #91)
       - Entry name 'Xanadu Quantum Codebook' conflicts with GitHub repo statement that the resource is 'now known as the PennyLane Codebook' — current branding is PennyLane Codebook, not Xanadu Quantum Codebook
 
 ## B. Consolidation conflicts (5)

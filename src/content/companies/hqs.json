@@ -10,7 +10,7 @@
     "quantum-chemistry"
   ],
   "founded": 2017,
-  "description": "HQS Quantum Simulations is a German quantum software company developing quantum simulation software for materials science and chemistry applications. The company provides quantum algorithms and software tools to accelerate materials discovery and chemical simulations for industrial and research purposes.",
+  "description": "HQS Quantum Simulations is a German quantum software company building spectroscopy software — its own positioning is \"software for spectroscopy\". Its tools predict and analyse NMR, UV/Vis and IR spectra for life sciences, chemistry and pharma, applying quantum-mechanical simulation to industrial analytical workflows. It also ships HQStage, a modular quantum simulation and quantum computing toolkit for developers and researchers.",
   "website": "https://www.quantumsimulations.de",
   "featured": false,
   "headquarters": "Karlsruhe, Germany",
@@ -19,17 +19,21 @@
   "accessModel": "Software licensing + consulting",
   "products": [
     {
-      "name": "Qoqo Quantum Toolkit",
-      "description": "Open-source quantum simulation toolkit for materials science and computational chemistry workflows"
+      "name": "HQSpectrum",
+      "description": "Browser-based NMR analysis platform for predicting, adjusting, verifying and exporting traceable spectroscopy reports"
     },
     {
-      "name": "QUEST Platform",
-      "description": "Quantum-enhanced simulation platform for accelerating industrial materials discovery and chemical research"
+      "name": "HQS-NextNMR",
+      "description": "Software for improving mixture analysis on compact low-field NMR devices"
+    },
+    {
+      "name": "HQStage",
+      "description": "Modular quantum simulation and quantum computing toolkit with ten simulation modules for developers and researchers"
     }
   ],
   "highlights": [
     "Based in Karlsruhe, a hub for German quantum research near KIT",
-    "Focuses on near-term quantum advantage for industrial materials science and chemistry",
+    "Focuses on NMR spectroscopy as a near-term path to quantum advantage in diagnostics and analytics",
     "Develops both proprietary and open-source quantum simulation tools"
   ],
   "sources": [
