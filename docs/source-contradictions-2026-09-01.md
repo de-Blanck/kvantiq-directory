@@ -53,52 +53,52 @@ and headquarters cities — the fields the weekly sweep has never been able to t
       - Entry founded date is 2023; sources (The Quantum Insider, LinkedIn) state the in-house startup was founded in 2022.
 - [x] **`companies/cryptomathic.json`** — dismissed 2026-09-02 (PR #92) — Global Security Mag states "Founded in 1986" explicitly; the IQT figure is arithmetic from a rounded "37 years ago"
       - Founding year: Global Security Mag (2021) states 'Founded in 1986' but Inside Quantum Technology (2022) states 'founded 37 years ago' (implying ~1985)
-- [ ] **`companies/diasense.json`**
+- [ ] **`companies/diasense.json`** — **BLOCKED 2026-09-02** — cannot verify: the cited Quantum Insider article returns HTTP 404, so the EUR 1.8M/1.9M and Lyngby/Copenhagen conflicts have no live source to arbitrate. Needs a replacement source
       - Total BII funding after March 2026 round: entry states €1.8M but TheQuantumInsider states €1.9M as total BII investment
       - Location: entry describes as 'Lyngby-based' but multiple sources (TheQuantumInsider, QuantumComputingReport) describe as 'Copenhagen-based'
 - [ ] **`companies/hqs.json`**
       - Entry describes company as developing 'quantum simulation software for materials science and chemistry applications' and 'materials discovery,' but all sources state HQS develops spectroscopy software (NMR, UV/Vis, IR, relaxometry) for diagnostic and analytical purposes in life sciences, chemistry, and pharma—fundamentally different applications.
-- [ ] **`companies/isentroniq.json`**
+- [x] **`companies/isentroniq.json`** — resolved 2026-09-02 (PR #94) — reworded to co-founder
       - Entry states 'Founded by Paul Magnard' but Quantum Computing Report identifies him as 'co-founder and CEO', indicating multiple founders
 - [ ] **`companies/multiverse-computing.json`**
       - Entry states Singularity is the flagship product that 'enables model compression', but all fetched sources identify CompactifAI as the model compression platform (Wikipedia explicitly: 'The AI model compression platform, CompactifAI'), with Singularity listed as a separate product without compression attribution.
 - [ ] **`companies/nkt-photonics.json`**
       - Entry name is 'NKT Photonics' but fetched sources confirm the company was renamed to 'Hamamatsu Photonics A/S' on June 25, 2026, and now operates as the Lasers & Fibers Business Unit of Hamamatsu Photonics Group.
-- [ ] **`companies/nvision-imaging.json`**
+- [x] **`companies/nvision-imaging.json`** — resolved 2026-09-02 (PR #94) — nvision-imaging.com 301-redirects to nvision-quantum.com; copyright reads "2026 NVision Quantum"
       - Entry name is 'NVision Imaging Technologies' but all fetched sources refer to 'NVision' or 'NVision Quantum' (website copyright: '© 2026 NVision Quantum')
 - [x] **`companies/orange-quantum-systems.json`** — dismissed 2026-09-02 (PR #92) — sole counter-source is LinkedIn, excluded by CLAUDE.md
       - Founded year: entry states 2019, but LinkedIn profile states 'Opgericht 2020' (Founded 2020)
-- [ ] **`companies/parityqc.json`**
+- [x] **`companies/parityqc.json`** — dismissed 2026-09-02 (PR #94) — "the quantum architecture company" is self-description, not a schema category. The type enum is hardware|software|cloud|consulting|research|hybrid|other, and ParityOS is software
       - Entry Type is 'software', but all sources (parityqc.com, HPCwire, The Quantum Insider) explicitly identify ParityQC as 'the quantum architecture company'
 - [x] **`companies/phasecraft.json`** — resolved 2026-09-02 (PR #92) — founded 2019 per University of Bristol
       - Entry states 'Founded: 2018' but uktech.news source explicitly states 'Founded in 2019'
-- [ ] **`companies/q-ant.json`**
+- [x] **`companies/q-ant.json`** — resolved 2026-09-02 (PR #94) — confirmed: www.q-ant.com is an unrelated football-analytics platform. Q.ANT is qant.com; website and sources corrected, funding updated to the EUR 62M Series A (July 2025)
       - Critical sourcing error: www.q-ant.com currently hosts a football data management platform unrelated to quantum computing, not Q.ANT's quantum technology content. Entry field validation via this source is unreliable.
 - [x] **`companies/qblox.json`** — dismissed 2026-09-02 (PR #92) — sole counter-source is LinkedIn, excluded by CLAUDE.md; the EIC institutional page states no year
       - Entry states Founded: 2019, but LinkedIn company page states Founded: 2018
-- [ ] **`companies/qmill.json`**
+- [x] **`companies/qmill.json`** — dismissed 2026-09-02 (PR #94) — "quantum algorithm and software company" maps to software in the schema enum; no separate algorithms category exists
       - Entry type is 'software' but fetched sources explicitly describe QMill as 'quantum algorithm and software company' — type should be 'algorithms & software' or similar, not software alone.
 - [x] **`companies/qphox.json`** — resolved 2026-09-02 (PR #92) — founded 2021 per qphox.eu
       - Entry founded year is 2020, but QphoX website states 'QphoX was established in 2021'
 - [x] **`companies/qubit-pharmaceuticals.json`** — resolved 2026-09-02 (PR #92) — founded 2021 per own site
       - Entry states founded 2020; website states 'our inception in 2021' for the company
-- [ ] **`companies/qunorth.json`**
+- [x] **`companies/qunorth.json`** — resolved 2026-09-02 (PR #94) — qunorth.com: Magne "expected to be fully operational in early 2027"
       - Entry states Magne operational 'late 2026'; qunorth.com states 'early 2027'
-- [ ] **`companies/rotonium.json`**
+- [x] **`companies/rotonium.json`** — dismissed 2026-09-02 (PR #94) — the entry follows The Quantum Insider (qudit), the more credible of the two conflicting sources; startupbusiness.it is the weaker
       - The Quantum Insider refers to 'single-photon qudit technology' while startupbusiness.it refers to 'single-photon qubit' — sources conflict on core technology terminology.
-- [ ] **`companies/scalinq.json`**
+- [x] **`companies/scalinq.json`** — resolved 2026-09-02 (PR #94) — scalinq.com: "LINQER is a patent-granted solution"
       - Entry states LINQER is 'patent-pending' but fetched source states it is 'patent-granted'
-- [ ] **`companies/siphotonic.json`**
+- [x] **`companies/siphotonic.json`** — resolved 2026-09-02 (PR #94) — siphotonic.com: 1-3 months prototyping, 3-4 months MPW
       - Entry states turnaround of '1.5-3.5 months' but fetched sources consistently state '1–3 months' for on-demand prototyping runs and '3–4 months' for MPW runs
-- [ ] **`companies/sparrow-quantum.json`**
+- [x] **`companies/sparrow-quantum.json`** — dismissed 2026-09-02 (PR #94) — the sources conflict with each other, labelling both the April 2025 EUR 21.5M and December 2025 EUR 27.5M rounds "Series A". The entry's neutral "follow-on round" is contradicted by neither
       - Entry describes December 2025 €27.5M round as a 'follow-on round,' but The Quantum Insider article (Dec 1, 2025) explicitly labels it 'Series A funding'—conflicting with April 2025 article also calling the €21.5M round 'Series A'.
-- [ ] **`companies/terra-quantum.json`**
+- [x] **`companies/terra-quantum.json`** — dismissed 2026-09-02 (PR #94) — country is single-valued in the schema and Terra Quantum is headquartered in Switzerland; German operations do not change the HQ
       - Entry lists Country: Switzerland, but PKI Consortium source states Terra Quantum is 'based in Germany and Switzerland'
-- [ ] **`companies/veriqloud.json`**
+- [x] **`companies/veriqloud.json`** — resolved 2026-09-02 (PR #94) — type software -> hybrid; Qline is quantum communication hardware
       - Entry type is 'software' but Quantonation source explicitly states Qline is 'quantum communication hardware' and describes VeriQloud as developing both hardware and software solutions.
-- [ ] **`companies/xeedq.json`**
+- [ ] **`companies/xeedq.json`** — **BLOCKED 2026-09-02** — cannot verify: the cited xeedq.com DLR announcement returns HTTP 404. The 256-qubit target year cannot be checked against it
       - Entry states '256+ qubit mobile processors by 2028'; DLR award announcement (Dec 2022) states 'goal to reach 256 qubits or more by 2026'
-- [ ] **`companies/zuriq.json`**
+- [x] **`companies/zuriq.json`** — resolved 2026-09-02 (PR #94) — zuriq.com: "natively three-dimensional"; the 2D array is one part of it
       - Entry describes ions moving 'freely in two dimensions'; sources state ions move 'in all spatial directions' and describe 'natively three-dimensional' architecture.
 - [ ] **`resources/bmbf-quantum-technologies.json`**
       - Entry states programme funding exceeds €2 billion; Fraunhofer IOF source (2021) states 1.1 billion euros for the quantum technology funding package

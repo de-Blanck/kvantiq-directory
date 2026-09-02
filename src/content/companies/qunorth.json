@@ -11,7 +11,7 @@
     "EuroHPC"
   ],
   "founded": 2025,
-  "description": "QuNorth is a Danish joint venture established by EIFO and the Novo Nordisk Foundation with EUR 80 million in funding to procure and operate the Magne quantum computer in Copenhagen. Magne, delivered by Atom Computing and Microsoft, will be a level-2 quantum system with 50 logical qubits and over 1,200 physical neutral-atom qubits, projected to be the first commercially available fault-tolerant quantum computer when operational in late 2026.",
+  "description": "QuNorth is a Danish joint venture established by EIFO and the Novo Nordisk Foundation with EUR 80 million in funding to procure and operate the Magne quantum computer in Copenhagen. Magne, delivered by Atom Computing and Microsoft, will be a level-2 quantum system with 50 logical qubits and over 1,200 physical neutral-atom qubits, projected to be the first commercially available fault-tolerant quantum computer when operational in early 2027.",
   "website": "https://qunorth.com",
   "featured": false,
   "headquarters": "Copenhagen, Denmark",
@@ -26,7 +26,7 @@
   ],
   "highlights": [
     "EUR 80M joint venture backed by EIFO and Novo Nordisk Foundation",
-    "First commercially available fault-tolerant quantum computer, projected operational late 2026",
+    "First commercially available fault-tolerant quantum computer, projected operational early 2027",
     "Part of Denmark's national quantum infrastructure strategy"
   ],
   "sources": [
