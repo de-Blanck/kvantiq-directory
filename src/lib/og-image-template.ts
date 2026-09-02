@@ -18,7 +18,8 @@ const COLORS = {
   accent: '#B45309',
 };
 
-let fontCache: Array<{ name: string; data: Buffer; weight: number; style: 'normal' }> | null =
+type LoadedFont = { name: string; data: Buffer; weight: 400 | 600 | 700; style: 'normal' };
+let fontCache: LoadedFont[] | null =
   null;
 
 async function loadFonts() {
@@ -131,11 +132,14 @@ export async function renderOgSvg(input: OgInput): Promise<string> {
           },
         ],
       },
-    },
+      // satori renders this plain element tree directly, but types its first
+      // parameter as ReactNode. The cast keeps the tree readable rather than
+      // wrapping every node in createElement.
+    } as unknown as Parameters<typeof satori>[0],
     {
       width: 1200,
       height: 630,
-      fonts,
+      fonts: fonts as unknown as Parameters<typeof satori>[1]['fonts'],
     },
   );
 }

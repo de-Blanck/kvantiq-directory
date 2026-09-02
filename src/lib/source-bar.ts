@@ -11,7 +11,6 @@
  * from the sitemap and from the search index, and served noindex with a banner.
  * Their URLs keep working, so nothing already indexed turns into a 404.
  */
-// @ts-expect-error - scripts/ai-sweep.mjs is plain JS with no type declarations
 import { isBlocklistedSource } from '../../scripts/ai-sweep.mjs';
 
 export const MIN_CREDIBLE_SOURCES = 3;

@@ -59,7 +59,7 @@ const groupByOptions = [
 >
   <article>
     <h1 class="h-xl">Quantum Companies in {countryName}</h1>
-    <div class="summary" role="doc-abstract">
+    <div class="summary" role={"doc-abstract" as astroHTML.JSX.AriaRole}>
       <p class="mt-4 body-lg text-text-secondary">
         {companies.length} quantum computing {companies.length === 1 ? 'company' : 'companies'} based in {countryName}.
       </p>

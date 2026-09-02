@@ -10,19 +10,13 @@ const { placeholder = 'Search the directory…' } = Astro.props;
 
 // Build a lean cross-collection index at build time.
 // Used only by this component's inline results dropdown. No modal, no global shortcut.
-const [companies, benchmarks, useCases, challenges, resources] = (await Promise.all([
-  getCollection('companies'),
-  getCollection('benchmarks'),
-  getCollection('use-cases'),
-  getCollection('challenges'),
-  getCollection('resources'),
-])).map(publishedOnly) as [
-  Awaited<ReturnType<typeof getCollection<'companies'>>>,
-  Awaited<ReturnType<typeof getCollection<'benchmarks'>>>,
-  Awaited<ReturnType<typeof getCollection<'use-cases'>>>,
-  Awaited<ReturnType<typeof getCollection<'challenges'>>>,
-  Awaited<ReturnType<typeof getCollection<'resources'>>>,
-];
+const [companies, benchmarks, useCases, challenges, resources] = await Promise.all([
+  getCollection('companies').then(publishedOnly),
+  getCollection('benchmarks').then(publishedOnly),
+  getCollection('use-cases').then(publishedOnly),
+  getCollection('challenges').then(publishedOnly),
+  getCollection('resources').then(publishedOnly),
+]);
 
 const items: SearchItem[] = [
   ...companies.map(c => ({ id: `companies:${c.data.slug}`, name: c.data.name, description: c.data.description, collection: 'companies' as const, href: `/companies/${c.data.slug}/` })),

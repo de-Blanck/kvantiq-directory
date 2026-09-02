@@ -71,7 +71,8 @@ export const GET: APIRoute = async ({ params }) => {
   const resvg = new Resvg(svg, { fitTo: { mode: 'width', value: 1200 } });
   const png = resvg.render().asPng();
 
-  return new Response(png, {
+  // Buffer is not a BodyInit; a Uint8Array view over the same memory is.
+  return new Response(new Uint8Array(png), {
     headers: {
       'content-type': 'image/png',
       'cache-control': 'public, max-age=31536000, immutable',
