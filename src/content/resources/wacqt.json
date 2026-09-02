@@ -10,7 +10,7 @@
     "quantum-computing",
     "hardware"
   ],
-  "description": "WACQT is a 12-year Swedish research programme with a budget of SEK 1.4 billion, funded primarily by the Knut and Alice Wallenberg Foundation. Coordinated by Chalmers University of Technology with KTH and Lund University, it develops expertise in quantum computing, simulation, communication, and sensing, with a prime objective of building a 100-qubit quantum computer.",
+  "description": "WACQT is a 12-year Swedish research programme funded primarily by the Knut and Alice Wallenberg Foundation, which states SEK 1.4 billion across 2018–2030 (Chalmers describes the coordinated effort as SEK 1 billion over 12 years). Coordinated by Chalmers University of Technology with KTH and Lund University, it develops expertise in quantum computing, simulation, communication, and sensing, with a prime objective of building a 100-qubit quantum computer.",
   "website": "https://www.chalmers.se/en/centres/wacqt/",
   "openSource": false,
   "free": true,

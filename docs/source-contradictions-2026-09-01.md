@@ -36,12 +36,12 @@ and headquarters cities — the fields the weekly sweep has never been able to t
       - Entry Type field states 'optimization', but all fetched sources consistently describe SupermarQ as a 'benchmark suite' for measuring quantum hardware performance, not an optimization tool.
 - [x] **`benchmarks/weighted-maxcut.json`** — resolved 2026-09-02 (PR #93) — arXiv:2505.24191 compares QWOA against two classical local-search heuristics, not against QAOA
       - Entry states 'Recent work compares QAOA with non-variational quantum walk algorithms' but arxiv 2505.24191 compares QWOA with two classical local-search heuristics, not QAOA.
-- [ ] **`challenges/berlin-quantum-hackathon.json`**
+- [x] **`challenges/berlin-quantum-hackathon.json`** — resolved 2026-09-02 (PR #95) — berlinquantumhackathon.com states "5 Weeks" of coding and mentorship
       - Entry states '6-week hybrid event' but the official hackathon website (berlinquantumhackathon.com) states '5 Weeks Coding + Mentorship'
-- [ ] **`challenges/ibm-quantum-challenge.json`**
+- [ ] **`challenges/ibm-quantum-challenge.json`** — **OPEN 2026-09-02** — not verified. Annual vs biannual could not be confirmed from a credible current source, and the hardware-vs-simulation point is year-specific
       - Entry claims 'biannual' event, but Quantum Insider states it is 'an annual educational coding contest'
       - Entry emphasizes participants solve problems 'using IBM Qiskit and real quantum hardware,' but 2024 challenge explicitly 'will focus on software simulation rather than requiring hardware use'
-- [ ] **`challenges/quantum-game-jam-2025.json`**
+- [x] **`challenges/quantum-game-jam-2025.json`** — resolved 2026-09-02 (PR #95) — itch.io: "ran from 2025-09-05 13:00:00 to 2025-09-08 14:00:00"; dateStart/dateEnd corrected
       - Entry states event ran October 5–7, 2025, but itch.io (official jam page) states it ran September 5–8, 2025.
 - [ ] **`companies/adamantq.json`**
       - Company name: entry lists 'AdamantQ' but both Navigare Ventures and Industrifonden sources consistently refer to the company as 'Adamant Quanta'
@@ -100,21 +100,21 @@ and headquarters cities — the fields the weekly sweep has never been able to t
       - Entry states '256+ qubit mobile processors by 2028'; DLR award announcement (Dec 2022) states 'goal to reach 256 qubits or more by 2026'
 - [x] **`companies/zuriq.json`** — resolved 2026-09-02 (PR #94) — zuriq.com: "natively three-dimensional"; the 2D array is one part of it
       - Entry describes ions moving 'freely in two dimensions'; sources state ions move 'in all spatial directions' and describe 'natively three-dimensional' architecture.
-- [ ] **`resources/bmbf-quantum-technologies.json`**
+- [ ] **`resources/bmbf-quantum-technologies.json`** — **OPEN 2026-09-02** — not verified. The EUR 2bn and the Fraunhofer EUR 1.1bn (2021) may refer to different scopes and years; needs a current BMFTR figure before either is asserted
       - Entry states programme funding exceeds €2 billion; Fraunhofer IOF source (2021) states 1.1 billion euros for the quantum technology funding package
-- [ ] **`resources/cern-qti-lectures.json`**
+- [x] **`resources/cern-qti-lectures.json`** — dismissed 2026-09-02 (PR #95) — quantum.cern describes the current series as a follow-up to QT4HEP22 (Nov 2022), consistent with the entry's March 2023 start. The 2020 IQT article refers to an earlier, separate CERN QTI series
       - Entry states series began March 2023; Inside Quantum Technology (2020-11-06) reports CERN QTI lectures started November 6, 2020
-- [ ] **`resources/eic-accelerator.json`**
+- [x] **`resources/eic-accelerator.json`** — resolved 2026-09-02 (PR #95) — official EIC page: grant "below EUR 2.5 million" plus equity of "EUR 1 - EUR 10 million". The EUR 17.5M ceiling was not real
       - Entry claims investments 'ranging from €2.5 million to €17.5 million', but official EIC source states maximum equity investment is €10 million, not €17.5 million.
-- [ ] **`resources/ibm-quantum-learning.json`**
+- [x] **`resources/ibm-quantum-learning.json`** — resolved 2026-09-02 (PR #95) — type course -> other; it is a platform hosting many courses, and the enum has no platform value
       - Entry type field says 'course' but fetched sources describe IBM Quantum Learning as a 'comprehensive educational platform' and 'library of 10+ courses' — a platform with multiple courses, not a single course.
-- [ ] **`resources/netqasm.json`**
+- [x] **`resources/netqasm.json`** — resolved 2026-09-02 (PR #95) — arXiv:2111.09823 names "NetSquid and SimulaQron"; SquidASM appears nowhere in it
       - Entry mentions simulator backend 'SquidASM' but arXiv paper (2111.09823) states 'Our SDK can be used at home by making use of our existing quantum simulators, NetSquid and SimulaQron' — source names NetSquid, not SquidASM
-- [ ] **`resources/quantum-delta-nl.json`**
+- [x] **`resources/quantum-delta-nl.json`** — resolved 2026-09-02 (PR #95) — the EUR 615M figure had no live source (quantumdelta.nl fails TLS). Replaced with the two documented figures: EUR 273M National Growth Fund award, EUR 264M via the Recovery and Resilience Facility per the European Commission
       - Entry states €615 million from National Growth Fund; EC source states EUR 264 million from Recovery and Resilience Fund
 - [ ] **`resources/unitary-fund.json`**
       - Entry name is 'Unitary Fund' but official website (https://unitary.foundation/) identifies the organization as 'Unitary Foundation'.
-- [ ] **`resources/wacqt.json`**
+- [x] **`resources/wacqt.json`** — resolved 2026-09-02 (PR #95) — both figures are institutional and both now stated: Wallenberg funds "SEK 1.4 billion during 2018-2030"; Chalmers describes "a 12 year SEK 1 billion research effort"
       - Budget discrepancy: entry states SEK 1.4 billion, but Chalmers website states SEK 1 billion (Wallenberg Foundation source confirms 1.4 billion during 2018–2030).
 - [ ] **`resources/xanadu-codebook.json`**
       - Entry name 'Xanadu Quantum Codebook' conflicts with GitHub repo statement that the resource is 'now known as the PennyLane Codebook' — current branding is PennyLane Codebook, not Xanadu Quantum Codebook
