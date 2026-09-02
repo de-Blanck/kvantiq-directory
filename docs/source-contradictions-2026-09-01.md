@@ -45,13 +45,13 @@ and headquarters cities — the fields the weekly sweep has never been able to t
       - Entry states event ran October 5–7, 2025, but itch.io (official jam page) states it ran September 5–8, 2025.
 - [ ] **`companies/adamantq.json`**
       - Company name: entry lists 'AdamantQ' but both Navigare Ventures and Industrifonden sources consistently refer to the company as 'Adamant Quanta'
-- [ ] **`companies/algorithmiq.json`**
+- [x] **`companies/algorithmiq.json`** — dismissed 2026-09-02 (PR #92) — entry already states Finnish founding and the May 2026 Milan move; `country` correctly reflects current HQ
       - Country field lists Italy, but fetched sources confirm Algorithmiq was founded in Helsinki, Finland in 2020 and relocated to Milan only in May 2026.
-- [ ] **`companies/beit.json`**
+- [x] **`companies/beit.json`** — dismissed 2026-09-02 (PR #92) — The Quantum Insider directly confirms 2016; R&D World only paraphrases what "BEIT says"
       - Founded date conflict: entry states 2016, The Quantum Insider (2019-11-28) confirms 2016, but R&D World (2026-04-30) states 'where BEIT says it was founded in 2017'
-- [ ] **`companies/bosch-quantum-sensing.json`**
+- [x] **`companies/bosch-quantum-sensing.json`** — resolved 2026-09-02 (PR #92) — in-house startup Feb 2022, JV from 2025
       - Entry founded date is 2023; sources (The Quantum Insider, LinkedIn) state the in-house startup was founded in 2022.
-- [ ] **`companies/cryptomathic.json`**
+- [x] **`companies/cryptomathic.json`** — dismissed 2026-09-02 (PR #92) — Global Security Mag states "Founded in 1986" explicitly; the IQT figure is arithmetic from a rounded "37 years ago"
       - Founding year: Global Security Mag (2021) states 'Founded in 1986' but Inside Quantum Technology (2022) states 'founded 37 years ago' (implying ~1985)
 - [ ] **`companies/diasense.json`**
       - Total BII funding after March 2026 round: entry states €1.8M but TheQuantumInsider states €1.9M as total BII investment
@@ -66,21 +66,21 @@ and headquarters cities — the fields the weekly sweep has never been able to t
       - Entry name is 'NKT Photonics' but fetched sources confirm the company was renamed to 'Hamamatsu Photonics A/S' on June 25, 2026, and now operates as the Lasers & Fibers Business Unit of Hamamatsu Photonics Group.
 - [ ] **`companies/nvision-imaging.json`**
       - Entry name is 'NVision Imaging Technologies' but all fetched sources refer to 'NVision' or 'NVision Quantum' (website copyright: '© 2026 NVision Quantum')
-- [ ] **`companies/orange-quantum-systems.json`**
+- [x] **`companies/orange-quantum-systems.json`** — dismissed 2026-09-02 (PR #92) — sole counter-source is LinkedIn, excluded by CLAUDE.md
       - Founded year: entry states 2019, but LinkedIn profile states 'Opgericht 2020' (Founded 2020)
 - [ ] **`companies/parityqc.json`**
       - Entry Type is 'software', but all sources (parityqc.com, HPCwire, The Quantum Insider) explicitly identify ParityQC as 'the quantum architecture company'
-- [ ] **`companies/phasecraft.json`**
+- [x] **`companies/phasecraft.json`** — resolved 2026-09-02 (PR #92) — founded 2019 per University of Bristol
       - Entry states 'Founded: 2018' but uktech.news source explicitly states 'Founded in 2019'
 - [ ] **`companies/q-ant.json`**
       - Critical sourcing error: www.q-ant.com currently hosts a football data management platform unrelated to quantum computing, not Q.ANT's quantum technology content. Entry field validation via this source is unreliable.
-- [ ] **`companies/qblox.json`**
+- [x] **`companies/qblox.json`** — dismissed 2026-09-02 (PR #92) — sole counter-source is LinkedIn, excluded by CLAUDE.md; the EIC institutional page states no year
       - Entry states Founded: 2019, but LinkedIn company page states Founded: 2018
 - [ ] **`companies/qmill.json`**
       - Entry type is 'software' but fetched sources explicitly describe QMill as 'quantum algorithm and software company' — type should be 'algorithms & software' or similar, not software alone.
-- [ ] **`companies/qphox.json`**
+- [x] **`companies/qphox.json`** — resolved 2026-09-02 (PR #92) — founded 2021 per qphox.eu
       - Entry founded year is 2020, but QphoX website states 'QphoX was established in 2021'
-- [ ] **`companies/qubit-pharmaceuticals.json`**
+- [x] **`companies/qubit-pharmaceuticals.json`** — resolved 2026-09-02 (PR #92) — founded 2021 per own site
       - Entry states founded 2020; website states 'our inception in 2021' for the company
 - [ ] **`companies/qunorth.json`**
       - Entry states Magne operational 'late 2026'; qunorth.com states 'early 2027'
