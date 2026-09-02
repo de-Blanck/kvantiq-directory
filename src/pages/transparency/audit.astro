@@ -2,6 +2,8 @@
 import { readFileSync, existsSync } from 'fs';
 import { resolve } from 'path';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { credibleSourceCount, MIN_CREDIBLE_SOURCES } from '../../lib/source-bar';
 
 // --- Types ---
 interface ConfidenceEntry {
@@ -30,6 +32,31 @@ interface TimelineEntry {
   collection: string;
   count: number;
 }
+
+// --- Entries held back by the source bar ---
+// Below MIN_CREDIBLE_SOURCES they are excluded from listings, sitemap and search,
+// and served noindex. Listed publicly here rather than hidden, so the gate is visible.
+const DETAIL_ROUTE: Record<string, string | null> = {
+  companies: 'companies', benchmarks: 'benchmarks', 'use-cases': 'use-cases',
+  challenges: 'challenges', resources: null,
+};
+const unlisted = (
+  await Promise.all(
+    Object.keys(DETAIL_ROUTE).map(async (c) =>
+      (await getCollection(c as 'companies')).map((e) => ({
+        collection: c,
+        name: e.data.name,
+        slug: e.data.slug,
+        href: DETAIL_ROUTE[c] ? `/${DETAIL_ROUTE[c]}/${e.data.slug}/` : null,
+        credible: credibleSourceCount(e.data.sources),
+        total: (e.data.sources || []).length,
+      })),
+    ),
+  )
+)
+  .flat()
+  .filter((e) => e.credible < MIN_CREDIBLE_SOURCES)
+  .sort((a, b) => a.collection.localeCompare(b.collection) || a.name.localeCompare(b.name));
 
 // --- Data loader ---
 function loadJson<T>(filename: string, fallback: T): T {
@@ -98,6 +125,35 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
         Directory health metrics — confidence levels, geographic coverage, recent audit actions, and source effectiveness.
       </p>
     </div>
+
+    <!-- Source bar -->
+    <section class="mb-8 rounded-xl border border-warn/40 bg-surface p-5">
+      <h2 class="eyebrow text-warn mb-4">
+        Held back by the source bar — {unlisted.length}
+      </h2>
+      <p class="body-sm text-text-secondary mb-4">
+        Every entry needs at least {MIN_CREDIBLE_SOURCES} independent credible sources before it is
+        published. These fall short, so they are excluded from the directory listings, the sitemap
+        and search, and are served <code class="font-mono text-[12px]">noindex</code>. Their pages
+        stay reachable so nothing already linked breaks. They return to the directory when the
+        missing sources are found — not by lowering the bar.
+      </p>
+      {unlisted.length === 0 ? (
+        <p class="body-sm text-text-secondary">Nothing is currently below the bar.</p>
+      ) : (
+        <ul class="grid gap-2 sm:grid-cols-2">
+          {unlisted.map((e) => (
+            <li class="flex items-baseline justify-between gap-3 border-b border-border py-1.5">
+              <span class="text-[15px] text-text-primary">
+                {e.href ? <a class="text-info underline" href={e.href}>{e.name}</a> : e.name}
+                <span class="ml-2 font-mono text-[10px] uppercase tracking-[0.08em] text-text-muted">{e.collection}</span>
+              </span>
+              <span class="whitespace-nowrap font-mono text-[11px] text-warn">{e.credible}/{MIN_CREDIBLE_SOURCES} credible</span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
 
     <!-- 2-column grid: Confidence Chart + Coverage -->
     <div class="grid gap-6 sm:grid-cols-2 mb-8">

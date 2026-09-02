@@ -1,10 +1,11 @@
 ---
 import { getCollection } from 'astro:content';
+import { publishedOnly } from '../../../lib/source-bar';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import ListingView from '../../../components/ListingView.tsx';
 
 export async function getStaticPaths() {
-  const companies = await getCollection('companies');
+  const companies = publishedOnly(await getCollection('companies'));
   const countries = [...new Set(companies.map(c => c.data.country))];
   return countries.map(country => ({
     // Must match the href built in companies/[slug].astro, which hyphenates spaces.

@@ -1,9 +1,10 @@
 ---
 import { getCollection } from 'astro:content';
+import { publishedOnly } from '../../lib/source-bar';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ListingView from '../../components/ListingView.tsx';
 
-const allUseCases = await getCollection('use-cases');
+const allUseCases = publishedOnly(await getCollection('use-cases'));
 const sorted = allUseCases.sort((a, b) => a.data.name.localeCompare(b.data.name));
 
 const tableData = sorted.map(u => ({

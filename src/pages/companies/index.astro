@@ -1,9 +1,10 @@
 ---
 import { getCollection } from 'astro:content';
+import { publishedOnly } from '../../lib/source-bar';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ListingView from '../../components/ListingView.tsx';
 
-const allCompanies = await getCollection('companies');
+const allCompanies = publishedOnly(await getCollection('companies'));
 const sorted = allCompanies.sort((a, b) => {
   if (a.data.featured !== b.data.featured) return b.data.featured ? 1 : -1;
   return a.data.name.localeCompare(b.data.name);

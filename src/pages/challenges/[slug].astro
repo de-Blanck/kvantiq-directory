@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { isPublished } from '../../lib/source-bar';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import DetailPage from '../../components/DetailPage.tsx';
 import { findRelated, type RelatedItem } from '../../lib/related';
@@ -80,7 +81,7 @@ const keyMetrics = [
 
 const meta = [challenge.organizer, `${statusMark}${statusLabel}`, fmtDate(challenge.dateStart)].filter(Boolean).join(' · ');
 ---
-<BaseLayout title={challenge.name} description={challenge.description} jsonLd={eventLd} ogImage={`/og-images/challenges/${challenge.slug}.png`}>
+<BaseLayout unverified={!isPublished(challenge)} title={challenge.name} description={challenge.description} jsonLd={eventLd} ogImage={`/og-images/challenges/${challenge.slug}.png`}>
   <DetailPage
     client:load
     type="Challenge"

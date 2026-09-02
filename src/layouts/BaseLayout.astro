@@ -12,9 +12,11 @@ interface Props {
   ogImage?: string;
   jsonLd?: Record<string, unknown>;
   canonicalUrl?: string;
+  /** Entry is below the 3-credible-source bar: unlisted, noindex, not search-indexed. */
+  unverified?: boolean;
 }
 
-const { title, description, ogImage, jsonLd, canonicalUrl } = Astro.props;
+const { title, description, ogImage, jsonLd, canonicalUrl, unverified = false } = Astro.props;
 const siteTitle = `${title} | Kvantiq Directory`;
 const resolvedOgImage = ogImage || '/og-images/default.png';
 const resolvedCanonical = canonicalUrl || Astro.url.href;
@@ -54,6 +56,8 @@ const resolvedCanonical = canonicalUrl || Astro.url.href;
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={resolvedOgImage} />
 
+    {unverified && <meta name="robots" content="noindex, follow" />}
+
     <!-- Analytics — Vercel Web Analytics (cookieless, no PII, included in the Pro plan) -->
     <Analytics />
 
@@ -76,7 +80,18 @@ const resolvedCanonical = canonicalUrl || Astro.url.href;
     <QuantumWaveBackground />
     <div class="quantum-hairline" aria-hidden="true"></div>
     <Header />
-    <main class="mx-auto max-w-7xl px-4 py-8" data-pagefind-body>
+    <main class="mx-auto max-w-7xl px-4 py-8" data-pagefind-body={unverified ? undefined : true} data-pagefind-ignore={unverified ? true : undefined}>
+      {unverified && (
+        <aside class="mb-6 rounded-lg border border-warn/40 bg-accent-glow px-4 py-3" role="note">
+          <p class="font-mono text-[11px] uppercase tracking-[0.08em] text-warn">Below the source bar — not published</p>
+          <p class="mt-1 text-[15px] text-text-secondary">
+            This entry has fewer than three independent credible sources, so it is excluded from
+            the directory listings, the sitemap and search. It stays reachable at its own URL while
+            it is being sourced. See <a class="text-info underline" href="/transparency/audit/">the audit page</a>
+            for how the bar is applied.
+          </p>
+        </aside>
+      )}
       <slot />
     </main>
     <Footer />

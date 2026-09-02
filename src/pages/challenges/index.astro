@@ -1,9 +1,10 @@
 ---
 import { getCollection } from 'astro:content';
+import { publishedOnly } from '../../lib/source-bar';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ListingView from '../../components/ListingView.tsx';
 
-const allChallenges = await getCollection('challenges');
+const allChallenges = publishedOnly(await getCollection('challenges'));
 const sorted = allChallenges.sort((a, b) => a.data.name.localeCompare(b.data.name));
 
 const tableData = sorted.map(ch => ({
