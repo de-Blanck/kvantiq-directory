@@ -3,24 +3,23 @@
 Session handoff document. Read at session start; update before ending. See
 `CLAUDE.md` → "Context & Autonomy" for the rules that govern this file.
 
-**Last updated:** 2026-06-28
-**Branch:** main is baseline; `docs/context-autonomy-section` (PR #64) holds this file + CLAUDE.md section
-**State:** Source-backfill workstream landed; content live but NOT deployed
+**Last updated:** 2026-09-02
+**Branch:** main (current, 46 commits ahead of 2026-07-26 session baseline)
+**State:** Multiple PRs merged since last STATUS.md update; deploy status unknown
 
-## What's done (2026-06-28 session)
-- Autonomous source-backfill run (`ai-sweep.mjs --backfill-sources`, ~3h21m) → **PR #65 merged**.
-- Targeted re-backfill of stragglers (reused exported discovery/validation fns) → **PR #66 merged**.
-- Source-bar: below the 3-credible bar **122 → 14** (56% → 6%). 275+8 credible URLs added.
-- Encoded the autonomous-run pattern: global `~/.claude/CLAUDE.md` (pushed) + this repo's "Context & Autonomy" section (**PR #64, OPEN**).
+## What's done since 2026-06-28 (reconstructed from git log)
+- **PR #73 merged (2026-09-02):** Automated weekly refresh — 7 entries updated (IQM Nasdaq/LUMI, Pasqal Q-PLANET, Quantinuum anyons/Rolls-Royce, Riverlane, Alice & Bob NVIDIA, EuroHPC Luxembourg, Qiskit v2.5). Heartbeat issue: #74.
+- **Multiple subsequent PRs merged** (exact PR numbers not recorded here): 8 new company entries added (isentroniq, nvision-imaging, peak-quantum, qsensato, quantcore, quantum-fabrix, qutwo, zerothird), plus broad news/source updates across benchmarks, resources, and companies. Source contradictions documented in `docs/source-contradictions-2026-09-01.md`.
 
 ## Content snapshot (filesystem = source of truth)
-218 entries · **204 at/above** the 3-credible bar · **14 below (6%)**.
+Run `npm run audit:content` and `npm run audit:sources` for current counts — do NOT trust numbers written here.
 
 ## What's next / open
-- [ ] **Merge PR #64** (docs Context & Autonomy + this STATUS.md). Until merged, STATUS.md is not on main.
-- [ ] **Deploy** current main to prod: `vercel --prod` (no auto-deploy). Last deploy 2026-06-25. Two content PRs (#65, #66) merged but NOT yet published.
-- [ ] **14 entries still below bar** — abstract benchmarks (shor-factoring, h2o-molecule, lih-ground-state, grover-search-scaling, transverse-field-ising, dwave-spin-glass-dynamics, quantum-centric-chemistry-ibm-heron), use-cases (aircraft-loading-optimization, catalyst-design-green-hydrogen, production-scheduling), challenges (qhack-2025, quantum-game-jam-2025, wacqt-quantum-hackathon-2026), resources (quantum-amsterdam). No discoverable 3rd independent credible source — manual sourcing or accept-as-is. Not a tooling gap.
-- [ ] **No Zod `.min(3)` flip yet** — no collection fully clears `audit:sources --strict --collection <name>`.
+- [ ] **Deploy** current main to prod: `vercel --prod` (no auto-deploy). Run `git log --oneline origin/main` to count undeployed PRs.
+- [ ] **Fix quantinuum sources**: Wikipedia entry still in sources array (not credible). Added TQI/QCR/Nature in #73 but old Wikipedia entry remains. Manual cleanup needed.
+- [ ] **Fix riverlane sources**: Pre-#73 sources were all riverlane.com (1 effective credible source). TQI+QCR added in #73; old entries remain. Manual cleanup.
+- [ ] **Source-bar stragglers**: Run `npm run audit:sources` for the current below-bar list. As of 2026-06-28 there were 14; the 2026-08-31 full scan likely reduced this further.
+- [ ] **No Zod `.min(3)` flip yet** — check `audit:sources --strict --collection <name>` per collection before flipping.
 
 ## Parked (decision pending, not started)
 - **Industry-intelligence subpage** (`/transparency/intelligence/`, a stub). Built for funding-events + market-snapshots data we don't hold structured. **Decision (Rune, 2026-06-28): strip the two unpopulatable sections (Funding Timeline, Recent Events), repoint Market Snapshot to the 3 KPIs derivable from existing content (Total Tracked, Countries, Active).** Own branch + plan + sign-off when picked up. Funding-events curation = separate later workstream.
