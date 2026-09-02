@@ -133,11 +133,11 @@ Superseded values remain intact in the source branches.
 | `companies/pasqal.json` | funding + highlights | `Public (Nasdaq: PSQL, August 2026); USD 360M cash at IPO close` (#83) | `EUR 340M+` |
 | `companies/quantum-motion.json` | funding | `GBP 182M+` (#77) | `GBP 180M+ (incl. USD 160M Series C, 2026)` (#49) |
 
-- [ ] `companies/iqm.json`
-- [ ] `companies/multiverse-computing.json`
-- [ ] `companies/oqc.json`
-- [ ] `companies/pasqal.json`
-- [ ] `companies/quantum-motion.json`
+- [x] `companies/iqm.json` — resolved 2026-09-02 (PR #96) — the funding field said post-IPO while highlight[0] still claimed "EUR 200M+ in funding"; the highlight now matches
+- [x] `companies/multiverse-computing.json` — resolved 2026-09-02 (PR #96) — The Quantum Insider: "$570 million (EUR 500M)" Series C at "$1.7 billion" pre-money, expected to "bring total funding to $800 million". The consolidation had kept USD 285M+, two rounds out of date
+- [x] `companies/oqc.json` — resolved 2026-09-02 (PR #96) — the field describes the documented GBP 260M Series C (June 2026), matching the entry's own highlight. The superseded "USD 500M+" total had no source
+- [x] `companies/pasqal.json` — resolved 2026-09-02 (PR #96) — funding and highlights agree on the August 2026 Nasdaq listing, USD 360M cash at close, ~USD 2B valuation; nothing left to arbitrate
+- [x] `companies/quantum-motion.json` — resolved 2026-09-02 (PR #96) — GBP 182M+ is the newer figure and is consistent with the entry's own USD 160M Series C highlight; no material conflict
 
 ## Provenance
 
