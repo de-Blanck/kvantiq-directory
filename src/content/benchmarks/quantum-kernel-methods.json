@@ -10,7 +10,7 @@
     "feature-map",
     "machine-learning"
   ],
-  "description": "Benchmark evaluating quantum kernel estimation (QKE) and quantum kernel training (QKT) for classification tasks using quantum support vector machines. A large-scale study examined fidelity-based and projected quantum kernels across 64 datasets and five dataset families. While quantum kernels outperform classical methods on specifically constructed ad-hoc datasets, results on standard classical benchmarks are mixed.",
+  "description": "Benchmark evaluating quantum kernel estimation (QKE) and quantum kernel training (QKT) for both classification and regression tasks using quantum support vector machines. A large-scale study examined fidelity-based and projected quantum kernels across 64 datasets and five dataset families. While quantum kernels outperform classical methods on specifically constructed ad-hoc datasets, results on standard classical benchmarks are mixed.",
   "hardware": "Simulator / hardware-agnostic",
   "framework": "Qiskit Machine Learning, PennyLane",
   "qubits": 10,
@@ -30,7 +30,7 @@
       "value": "10"
     }
   ],
-  "significance": "Largest systematic evaluation of quantum kernel methods, revealing that quantum advantage is dataset-dependent and not universal for classification tasks.",
+  "significance": "Largest systematic evaluation of quantum kernel methods across classification and regression, revealing that quantum advantage is dataset-dependent rather than universal.",
   "sources": [
     {
       "type": "arxiv",
