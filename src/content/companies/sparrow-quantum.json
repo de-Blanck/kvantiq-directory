@@ -53,6 +53,12 @@
       "title": "Sparrow Quantum Secures €21.5 Million in Series A Round - The Quantum Insider",
       "datePublished": "2025-04-10",
       "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/sparrow-quantum-selected-for-eurohpc-quantum-grand-challenge-funding/",
+      "title": "Sparrow Quantum Selected for EuroHPC Quantum Grand Challenge Funding - HPCwire",
+      "dateAccessed": "2026-08-30"
     }
   ],
   "news": [
@@ -69,6 +75,13 @@
       "url": "https://thequantuminsider.com/2025/04/10/sparrow-quantum-secures-e21-5-million-in-series-a-round/",
       "source": "The Quantum Insider",
       "date": "2025-04-10"
+    },
+    {
+      "title": "Sparrow Quantum Selected for EuroHPC Quantum Grand Challenge, Denmark's Only Pick",
+      "excerpt": "Sparrow Quantum was selected as one of 13 European companies for the EuroHPC Quantum Grand Challenge, receiving EUR 300,000 in EU funding for EU-SCALE — a project to develop the technical and commercial roadmap for integrating its deterministic photon-generating chips into a photonic quantum computing system.",
+      "url": "https://www.hpcwire.com/off-the-wire/sparrow-quantum-selected-for-eurohpc-quantum-grand-challenge-funding/",
+      "source": "HPCwire",
+      "date": "2026-08-26"
     }
   ]
 }

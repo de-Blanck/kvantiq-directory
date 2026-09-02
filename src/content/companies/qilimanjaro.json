@@ -47,20 +47,22 @@
       "dateAccessed": "2026-03-19"
     },
     {
-      "type": "press-release",
+      "type": "url",
       "url": "https://thequantuminsider.com/2026/05/28/qilimanjaro-inaugurates-an-analog-quantum-computer-at-barcelona-supercomputing-center/",
-      "title": "Qilimanjaro Inaugurates an Analog Quantum Computer at Barcelona Supercomputing Center"
+      "title": "Qilimanjaro Inaugurates an Analog Quantum Computer at Barcelona Supercomputing Center - The Quantum Insider",
+      "dateAccessed": "2026-05-31"
     },
     {
-      "type": "press-release",
+      "type": "url",
       "url": "https://quantumcomputingreport.com/qilimanjaro-deploys-an-analog-quantum-computer-at-the-barcelona-supercomputing-center/",
-      "title": "Qilimanjaro Deploys an Analog Quantum Computer at the Barcelona Supercomputing Center"
+      "title": "Qilimanjaro Deploys an Analog Quantum Computer at the Barcelona Supercomputing Center - Quantum Computing Report",
+      "dateAccessed": "2026-05-31"
     }
   ],
   "news": [
     {
-      "title": "Qilimanjaro Inaugurates an Analog Quantum Computer at Barcelona Supercomputing Center",
-      "excerpt": "Qilimanjaro Quantum Tech inaugurated a new analog quantum computer at Barcelona Supercomputing Center, expanding the hybrid MareNostrum-Ona infrastructure that combines analog quantum, digital quantum, and classical supercomputing resources.",
+      "title": "Qilimanjaro inaugurates 10-qubit analog quantum system at Barcelona Supercomputing Center",
+      "excerpt": "Under the EuroQCS-Spain project co-financed by EuroHPC JU and Spain's SEDIA, Qilimanjaro inaugurated a 10-qubit analog QPU at BSC-CNS on May 28, 2026. Two follow-on generations are scheduled for 2026–2027, expanding BSC's MareNostrum-Ona hybrid quantum infrastructure.",
       "url": "https://thequantuminsider.com/2026/05/28/qilimanjaro-inaugurates-an-analog-quantum-computer-at-barcelona-supercomputing-center/",
       "source": "The Quantum Insider",
       "date": "2026-05-28"

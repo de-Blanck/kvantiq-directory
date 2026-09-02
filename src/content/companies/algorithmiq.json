@@ -1,8 +1,8 @@
 {
-  "name": "Algorithmiq Oy",
+  "name": "Algorithmiq",
   "slug": "algorithmiq",
-  "country": "Finland",
-  "region": "nordics",
+  "country": "Italy",
+  "region": "southern-europe",
   "type": "software",
   "tags": [
     "quantum-algorithms",
@@ -11,12 +11,12 @@
     "quantum-chemistry"
   ],
   "founded": 2020,
-  "description": "Algorithmiq develops quantum algorithms for life sciences and drug discovery applications. The company focuses on creating quantum-enhanced computational methods for molecular simulations and pharmaceutical research. Algorithmiq combines quantum computing expertise with domain knowledge in chemistry and biology to accelerate drug development.",
+  "description": "Algorithmiq develops quantum algorithms for life sciences and drug discovery applications. The company focuses on quantum-enhanced computational methods for molecular simulations and pharmaceutical research. Founded in Helsinki, Algorithmiq moved its global headquarters to Milan in May 2026 following a EUR 18M funding round, bringing total funding to over EUR 36M.",
   "website": "https://algorithmiq.fi",
   "featured": false,
-  "headquarters": "Helsinki, Finland",
+  "headquarters": "Milan, Italy",
   "employees": "46",
-  "funding": "EUR 20M+",
+  "funding": "EUR 36M+",
   "accessModel": "Software licensing + consulting",
   "products": [
     {
@@ -29,27 +29,83 @@
     }
   ],
   "highlights": [
-    "Founded in Helsinki with deep roots in Finnish quantum research ecosystem",
-    "Raised over EUR 20M to advance quantum algorithms for drug discovery",
-    "Combines quantum computing expertise with domain knowledge in chemistry and biology"
+    "Raised EUR 18M in May 2026 — Italy's largest-ever quantum VC investment — led by United Ventures and CDP Venture Capital",
+    "Relocated global headquarters from Helsinki to Milan in May 2026, bringing total funding to EUR 36M",
+    "Combines quantum computing expertise with domain knowledge in chemistry and biology for pharmaceutical R&D"
   ],
   "sources": [
     {
       "type": "website",
       "url": "https://algorithmiq.fi",
       "title": "Algorithmiq Official Website",
-      "dateAccessed": "2026-03-19"
+      "dateAccessed": "2026-05-18"
     },
     {
       "type": "url",
       "url": "https://www.goodnewsfinland.com/algorithmiq-raises-4-million-to-develop-quantum-algorithms-for-life-sciences/",
-      "title": "Algorithmiq raises funding to develop quantum algorithms for life sciences - Good News Finland",
+      "title": "Algorithmiq raises funding to develop quantum algorithms for life sciences — Good News Finland",
       "dateAccessed": "2026-03-19"
     },
     {
       "type": "website",
       "url": "https://www.businessfinland.com/companies/a/algorithmiq-oy/",
       "title": "Algorithmiq Oy | Business Finland"
+    },
+    {
+      "type": "url",
+      "url": "https://tech.eu/2026/05/11/algorithmiq-moves-global-hq-to-milan-and-raises-eur18m-in-italys-largest-quantum-vc-round/",
+      "title": "Algorithmiq moves global HQ to Milan and raises EUR 18M in Italy's largest quantum VC round — Tech.eu",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/12/algorithmiq-raises-e18-million-establishes-headquarters-in-milan/",
+      "title": "Algorithmiq Raises EUR 18 Million, Establishes Headquarters in Milan — The Quantum Insider",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://www.eu-startups.com/2026/05/quantum-software-startup-algorithmiq-raises-e18-million-and-moves-global-hq-from-helsinki-to-milan/",
+      "title": "Quantum software startup Algorithmiq raises €18 million and moves global HQ from Helsinki to Milan",
+      "dateAccessed": "2026-08-09",
+      "datePublished": "2026-05-12"
+    }
+  ],
+  "news": [
+    {
+      "title": "Algorithmiq wins Wellcome Leap Q4Bio Challenge",
+      "excerpt": "Algorithmiq won the $2 million Wellcome Leap Q4Bio Challenge, demonstrating progress in quantum algorithms for life sciences.",
+      "url": "https://thequantuminsider.com/2026/05/12/algorithmiq-raises-e18-million-establishes-headquarters-in-milan/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-12"
+    },
+    {
+      "title": "Algorithmiq raises €18M and moves global headquarters from Helsinki to Milan",
+      "excerpt": "Algorithmiq closed a EUR 18M funding round — Italy's largest quantum VC investment to date — and relocated its global headquarters from Helsinki to Milan, bringing total funding to over EUR 36M.",
+      "url": "https://tech.eu/2026/05/11/algorithmiq-moves-global-hq-to-milan-and-raises-eur18m-in-italys-largest-quantum-vc-round/",
+      "source": "Tech.eu",
+      "date": "2026-05-11"
+    },
+    {
+      "title": "Algorithmiq wins €1.7M Wellcome Leap Q4Bio prize for quantum-enabled cancer drug discovery",
+      "excerpt": "Algorithmiq was awarded the $2M Wellcome Leap Q4Bio prize for a quantum-classical workflow simulating photosensitizer drug properties for photodynamic cancer therapy on a 100-qubit IBM quantum system.",
+      "url": "https://thequantuminsider.com/2026/04/16/wellcome-leap-quantum-for-bio-challenge-prize/",
+      "source": "The Quantum Insider",
+      "date": "2026-04-16"
+    },
+    {
+      "title": "Algorithmiq raises €18M and moves global headquarters from Helsinki to Milan",
+      "excerpt": "United Ventures and CDP Venture Capital co-led a €18M round for Algorithmiq, bringing total funding to €36M. The company simultaneously relocated its global HQ from Helsinki to Milan — Italy's largest-ever VC investment in a quantum startup — citing proximity to European enterprise customers and institutional investors.",
+      "url": "https://www.eu-startups.com/2026/05/quantum-software-startup-algorithmiq-raises-e18-million-and-moves-global-hq-from-helsinki-to-milan/",
+      "source": "EU-Startups",
+      "date": "2026-05-12"
+    },
+    {
+      "title": "IBM and Algorithmiq demonstrate quantum advantage in trusted materials simulation beyond classical verification",
+      "excerpt": "On July 30, 2026, IBM and Algorithmiq announced a joint framework for validating quantum computations when classical verification is unavailable, demonstrating quantum advantage in simulating a heterogeneous quantum material on IBM's Heron processors. Algorithmiq simultaneously released a new benchmark for quantum advantage claims.",
+      "url": "https://newsroom.ibm.com/2026-07-30-ibm-and-algorithmiq-demonstrate-quantum-advantage,-establishing-a-framework-for-trusted-quantum-computation-beyond-classical-verification",
+      "source": "IBM Newsroom",
+      "date": "2026-07-30"
     }
   ]
 }

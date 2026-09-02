@@ -43,5 +43,14 @@
       "url": "https://pls.llnl.gov/research-and-development/materials-science/quantum-simulations-group",
       "title": "Quantum Simulations Group | Lawrence Livermore National Laboratory"
     }
+  ],
+  "news": [
+    {
+      "title": "Researchers use quantum computers to simulate quantum materials",
+      "excerpt": "Research application of quantum computers for simulating quantum materials",
+      "url": "https://pme.uchicago.edu/news/researchers-use-quantum-computers-simulate-quantum-materials",
+      "source": "UChicago Pritzker School of Molecular Engineering",
+      "date": "2022-05-26"
+    }
   ]
 }

@@ -43,6 +43,13 @@
   ],
   "news": [
     {
+      "title": "QHack 2026: Quantum Computing Championship",
+      "excerpt": "Tackle quantum coding challenges and climb the leaderboard with the chance to win USD $67K in cash prizes, October 16–23",
+      "url": "https://codebook.xanadu.ai",
+      "source": "PennyLane Codebook",
+      "date": "2026-10-16"
+    },
+    {
       "title": "Xanadu Quantum Codebook repository archived",
       "excerpt": "The repository was archived by the owner on Jan 16, 2025 and is now read-only",
       "url": "https://github.com/XanaduAI/Xanadu-Quantum-Codebook",

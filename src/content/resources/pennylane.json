@@ -15,7 +15,7 @@
   "free": true,
   "language": "Python",
   "provider": "Xanadu",
-  "lastUpdated": "2026",
+  "lastUpdated": "2026-05-13",
   "maturity": "mature",
   "communitySize": "~2,400 GitHub stars",
   "sources": [
@@ -40,6 +40,21 @@
       "type": "arxiv",
       "url": "https://arxiv.org/abs/2506.09308",
       "title": "Quantum Algorithm Software for Condensed Matter Physics"
+    },
+    {
+      "type": "url",
+      "url": "https://pypi.org/project/pennylane/",
+      "title": "PennyLane - Python Package Index (PyPI)",
+      "dateAccessed": "2026-05-17"
+    }
+  ],
+  "news": [
+    {
+      "title": "PennyLane v0.45.0 released with QRAM implementations and fault-tolerant compilation tools",
+      "excerpt": "Version 0.45 adds three QRAM implementations (Bucket Brigade, Select-Only, Hybrid), a decomp_inspector() function for decomposition analysis, and resource estimation support. NumPy 2.0+ is now required.",
+      "url": "https://pennylane.ai/blog/2026/05/pennylane-release-0.45",
+      "source": "PennyLane Blog",
+      "date": "2026-05-13"
     }
   ]
 }

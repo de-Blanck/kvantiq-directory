@@ -16,7 +16,7 @@
   "free": true,
   "language": "Python/C++",
   "provider": "NVIDIA",
-  "lastUpdated": "2026",
+  "lastUpdated": "2026-08-03",
   "maturity": "stable",
   "communitySize": "~600 GitHub stars",
   "sources": [
@@ -41,15 +41,62 @@
       "type": "url",
       "url": "https://www.hpcwire.com/off-the-wire/pasqal-integrates-nvidia-cuda-q-with-qrmi-for-slurm-native-hybrid-hpc-quantum-workflows/",
       "title": "Pasqal Integrates NVIDIA CUDA-Q with QRMI for Slurm-Native Hybrid HPC-Quantum Workflows"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/pnnl-brings-open-source-gpu-acceleration-to-quantum-with-nvidia-nvqlink/",
+      "title": "PNNL Brings Open-Source GPU Acceleration to Quantum with NVIDIA NVQLink - HPCwire",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/27/quantum-x-labs-ai-error-correction-decoder-nvidia-cuda-q/",
+      "title": "NVIDIA Introduces NVQLink for GPU-QPU Integration - The Quantum Insider",
+      "dateAccessed": "2026-08-02"
     }
   ],
   "news": [
+    {
+      "title": "Pasqal Integrates NVIDIA CUDA-Q with QRMI for Slurm-Native Hybrid HPC-Quantum Workflows",
+      "excerpt": "Pasqal announced integration of NVIDIA CUDA-Q platform with its Quantum Resource Management Interface (QRMI) runtime, enabling CUDA-Q workloads to be scheduled through Slurm-based HPC workflows.",
+      "url": "https://www.hpcwire.com/off-the-wire/pasqal-integrates-nvidia-cuda-q-with-qrmi-for-slurm-native-hybrid-hpc-quantum-workflows/",
+      "source": "HPCwire",
+      "date": "2026-03-16"
+    },
+    {
+      "title": "Quantum X Labs Tests AI-Based Error Correction Decoder With NVIDIA CUDA-Q Tools",
+      "excerpt": "Quantum X Labs reported progress on AI-driven quantum error-correction program using NVIDIA CUDA-Q QEC software libraries, benchmarking transformer-based decoder against classical MWPM decoder.",
+      "url": "https://thequantuminsider.com/2026/07/27/quantum-x-labs-ai-error-correction-decoder-nvidia-cuda-q/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-27"
+    },
     {
       "title": "Harnessing CUDA-Q's MPS for Tensor Network Simulations of Large-Scale Quantum Circuits",
       "excerpt": "Research paper evaluating CUDA-Q tensor network simulators on an Nvidia Grace Hopper system, particularly the Matrix Product State (MPS) formulation. Submitted to 33rd Euromicro International Conference on Parallel, Distributed and Network-Based Processing (PDP 2025).",
       "url": "https://arxiv.org/abs/2501.15939",
       "source": "arXiv",
       "date": "2025-01-27"
+    },
+    {
+      "title": "CUDA-Q 0.15.0 released with QEC decoder primitives, LLVM 22 upgrade, and Python 3.13 support",
+      "excerpt": "CUDA-Q 0.15.0 adds source-language support for detector, logical_observable, and detectors primitives for quantum error correction, upgrades LLVM from version 16 to 22.1, and adds CUDA 13 and Python 3.13 support. Enables real-time QEC decoding on Quantinuum backends and job submission to QCI backends.",
+      "url": "https://github.com/NVIDIA/cuda-quantum/releases/tag/0.15.0",
+      "source": "CUDA-Q GitHub Releases",
+      "date": "2026-07-02"
+    },
+    {
+      "title": "NVIDIA Introduces NVQLink — Open Architecture Connecting QPUs to GPUs, Supporting 17 Quantum Hardware Builders",
+      "excerpt": "NVIDIA announced NVQLink on July 27, 2026: an open system architecture for tightly coupling quantum processors to GPU-based HPC clusters via high-speed, low-latency (microsecond) interconnect. NVQLink supports 17 QPU builders, 5 controller builders, and 9 US national laboratories within the CUDA-Q ecosystem.",
+      "url": "https://www.hpcwire.com/off-the-wire/pnnl-brings-open-source-gpu-acceleration-to-quantum-with-nvidia-nvqlink/",
+      "source": "HPCwire",
+      "date": "2026-07-27"
+    },
+    {
+      "title": "CUDA-Q 0.15.1 released",
+      "excerpt": "NVIDIA released CUDA-Q 0.15.1, a patch update to the hybrid quantum-classical computing platform with bug fixes and improvements to simulation backends.",
+      "url": "https://github.com/NVIDIA/cuda-quantum/releases/tag/0.15.1",
+      "source": "GitHub",
+      "date": "2026-08-03"
     }
   ]
 }

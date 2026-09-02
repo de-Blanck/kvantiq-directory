@@ -44,6 +44,13 @@
   ],
   "news": [
     {
+      "title": "Learn at your own pace with Microsoft Quantum Katas",
+      "excerpt": "Microsoft Azure Quantum Team announces Quantum Katas as a way to explore quantum computing and learn Q# programming.",
+      "url": "https://azure.microsoft.com/en-us/blog/quantum/2018/07/23/learn-at-your-own-pace-with-microsoft-quantum-katas/",
+      "source": "Microsoft Azure Quantum Blog",
+      "date": "2018-07-23"
+    },
+    {
       "title": "Quantum katas teach you how to do quantum programming in Q#",
       "excerpt": "Microsoft Research developed Quantum Katas as a way to teach quantum computing skills through self-paced tutorials and exercises in Q#.",
       "url": "https://www.infoworld.com/article/2255999/quantum-katas-teach-you-how-to-do-quantum-programming-in-q.html",

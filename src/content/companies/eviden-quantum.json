@@ -60,6 +60,13 @@
   ],
   "news": [
     {
+      "title": "Eviden Enables Quantum Emulation in HPC Through Dedicated Software",
+      "excerpt": "Eviden announces the launch of Qaptiva HPC, innovative software for high-performance computing environments that enables quantum computing emulation on current HPC architecture without additional hardware integration.",
+      "url": "https://www.hpcwire.com/off-the-wire/eviden-enables-quantum-emulation-in-hpc-through-dedicated-software/",
+      "source": "HPCWire",
+      "date": "2024-11-18"
+    },
+    {
       "title": "Eviden installs 5-qubit IQM quantum computer in France",
       "excerpt": "Eviden installs 5-qubit IQM quantum computer in France",
       "url": "https://www.datacenterdynamics.com/en/news/eviden-installs-5-qubit-iqm-quantum-computer-in-france/",

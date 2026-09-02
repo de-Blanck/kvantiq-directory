@@ -4,7 +4,11 @@
   "country": "France",
   "region": "western-europe",
   "type": "hardware",
-  "tags": ["cat-qubit", "fault-tolerant", "superconducting"],
+  "tags": [
+    "cat-qubit",
+    "fault-tolerant",
+    "superconducting"
+  ],
   "founded": 2020,
   "description": "Alice & Bob develops cat qubit quantum computers designed for fault-tolerant quantum computing. Their technology uses superconducting circuits with reduced error rates, aiming to build practical quantum computers that require fewer physical qubits for error correction.",
   "website": "https://alice-bob.com",
@@ -52,6 +56,42 @@
       "url": "https://www.hpcwire.com/off-the-wire/alice-bob-surpasses-hiring-targets-ahead-of-schedule-as-quantum-workforce-grows/",
       "title": "Alice & Bob Surpasses Hiring Targets Ahead of Schedule as Quantum Workforce Grows - HPCwire",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://www.vttresearch.com/en/news-and-ideas/supreme-quantum-project-enforces-finlands-leading-role-european-quantum-research",
+      "title": "SUPREME quantum project enforces Finland's leading role in European quantum research - VTT Technical Research Centre",
+      "dateAccessed": "2026-05-17"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/22/alice-bob-announces-investment-from-nvidias-vc-arm-in-series-b-extension/",
+      "title": "Alice & Bob Announces Investment From NVIDIA's NVentures in Series B Extension - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/alice-bob-secures-nventures-backing-and-backs-expanded-e1-billion-french-plan-quantique/",
+      "title": "Alice & Bob Secures NVentures Backing and Backs Expanded €1 Billion French Plan Quantique - Quantum Computing Report",
+      "dateAccessed": "2026-07-26"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/alice-bob-partners-on-europes-1st-doctoral-network-dedicated-to-quantum-error-correction/",
+      "title": "Alice & Bob Partners on Europe's 1st Doctoral Network Dedicated to Quantum Error Correction - HPCwire",
+      "dateAccessed": "2026-08-16"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/alice-bob-joins-e4-6m-msca-backed-qubric-doctoral-network-for-quantum-error-correction/",
+      "title": "Alice & Bob Joins €4.6M MSCA-Backed QuBriC Doctoral Network for Quantum Error Correction - Quantum Computing Report",
+      "dateAccessed": "2026-08-23"
+    },
+    {
+      "type": "url",
+      "url": "https://www.siliconrepublic.com/machines/alice-bob-partner-european-doctoral-network-quantum-error-correction",
+      "title": "Alice & Bob to work with European network on quantum error fixes - Silicon Republic",
+      "dateAccessed": "2026-08-23"
     }
   ],
   "news": [
@@ -82,6 +122,97 @@
       "url": "https://www.hpcwire.com/off-the-wire/alice-bob-surpasses-hiring-targets-ahead-of-schedule-as-quantum-workforce-grows/",
       "source": "HPCwire",
       "date": "2026-04-16"
+    },
+    {
+      "title": "EU SUPREME €50M superconducting quantum manufacturing project kicks off in Helsinki with Alice & Bob as consortium partner",
+      "excerpt": "The 23-partner SUPREME consortium held its official kick-off at VTT Helsinki (11–13 May), targeting TRL 6 industrialization of superconducting quantum chip manufacturing over 3.5 years. Alice & Bob will use the shared foundry to design and test cat-qubit chips.",
+      "url": "https://www.vttresearch.com/en/news-and-ideas/supreme-quantum-project-enforces-finlands-leading-role-european-quantum-research",
+      "source": "VTT Technical Research Centre",
+      "date": "2026-05-12"
+    },
+    {
+      "title": "Alice & Bob expands €100M Series B with investment from NVIDIA's NVentures",
+      "excerpt": "NVIDIA's venture arm NVentures joined Alice & Bob's Series B in an undisclosed extension, deepening collaboration on CUDA-Q, cuQuantum, and NVQLink for hybrid quantum-classical workloads on GPU supercomputers.",
+      "url": "https://thequantuminsider.com/2026/05/22/alice-bob-announces-investment-from-nvidias-vc-arm-in-series-b-extension/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-22"
+    },
+    {
+      "title": "Alice & Bob secures NVIDIA NVentures investment as Series B extension",
+      "excerpt": "NVentures, NVIDIA's strategic investment arm, backed Alice & Bob in an extension of its Series B round, deepening the two companies' technical collaboration on integrating cat-qubit processors with NVIDIA accelerated computing infrastructure and software stack.",
+      "url": "https://tech.eu/2026/05/22/alice-bob-expands-series-b-with-investment-from-nvidias-venture-arm/",
+      "source": "Tech.eu",
+      "date": "2026-05-22"
+    },
+    {
+      "title": "Alice & Bob releases five-criteria framework for evaluating logical qubits across hardware modalities",
+      "excerpt": "Alice & Bob published a framework defining logical qubit performance using five measurable criteria, aiming to establish a standardised benchmark for fair comparison across different quantum hardware approaches.",
+      "url": "https://www.hpcwire.com/off-the-wire/alice-bob-proposes-five-criteria-framework-for-evaluating-logical-qubits/",
+      "source": "HPCwire",
+      "date": "2026-06-05"
+    },
+    {
+      "title": "Alice & Bob unveils Helium — first on-premise cat-qubit quantum system for research partners",
+      "excerpt": "Alice & Bob launches the Helium Quantum System, a complete on-premise cat-qubit system encoding one logical qubit from 18 cat qubits with ~40 kW power draw, including the Starboard monitoring interface and Slurm-compatible scheduler integration via the open-source QRMI library.",
+      "url": "https://thequantuminsider.com/2026/06/11/alice-bob-unveils-first-quantum-system-available-for-research-partners/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-11"
+    },
+    {
+      "title": "Alice & Bob unveils Helium Quantum System, its first complete on-premise quantum computer for research partners",
+      "excerpt": "The Helium Quantum System encodes Alice & Bob's first logical qubit with as few as 18 cat-qubits and includes Starboard control software with Slurm scheduler compatibility. An upgradeable platform, it will also support the forthcoming 48-cat-qubit chip.",
+      "url": "https://www.hpcwire.com/off-the-wire/alice-bob-introduces-helium-platform-for-quantum-error-correction-and-logical-qubit-research/",
+      "source": "HPCwire",
+      "date": "2026-06-11"
+    },
+    {
+      "title": "France's GENCI acquires Alice & Bob cat-qubit quantum computer in world's first state procurement of cat-qubit system",
+      "excerpt": "GENCI and Alice & Bob signed an agreement at VivaTech for an 18-cat-qubit quantum computer to be hosted at CEA's TGCC and integrated with the Joliot-Curie supercomputer. The system — the first early fault-tolerant quantum computer in a European computing centre — is expected to be accessible to researchers in 2027.",
+      "url": "https://quantumcomputingreport.com/france-finalizes-world-first-acquisition-of-alice-bob-cat-qubit-quantum-computer-under-hqi-initiative/",
+      "source": "Quantum Computing Report",
+      "date": "2026-06-17"
+    },
+    {
+      "title": "Alice & Bob expands €100M Series B with investment from NVIDIA's NVentures venture arm",
+      "excerpt": "NVIDIA's NVentures invested in an extension of Alice & Bob's Series B round. Alice & Bob and NVIDIA collaborate on CUDA-Q, cuQuantum, and NVQLink (NVIDIA's open hybrid quantum-classical architecture). Financial terms were not disclosed.",
+      "url": "https://quantumcomputingreport.com/alice-bob-secures-nventures-backing-and-backs-expanded-e1-billion-french-plan-quantique/",
+      "source": "Quantum Computing Report",
+      "date": "2026-05-22"
+    },
+    {
+      "title": "Alice & Bob expands €100M Series B with strategic investment from NVIDIA's NVentures arm",
+      "excerpt": "Alice & Bob extended its Series B with an undisclosed investment from NVentures, NVIDIA's venture arm, deepening technical collaboration that spans CUDA-Q, cuQuantum, and Dynamiqs — Alice & Bob's open-source quantum simulation library.",
+      "url": "https://www.hpcwire.com/off-the-wire/alice-bob-expands-e100m-series-b-with-investment-from-nvidias-nventures/",
+      "source": "HPCwire",
+      "date": "2026-05-22"
+    },
+    {
+      "title": "Alice & Bob unveils Helium, its first complete on-premise cat-qubit quantum system",
+      "excerpt": "Alice & Bob unveiled the Helium Quantum System on June 10, 2026, marking the company's first move beyond developing chips to delivering a full quantum computing system for on-premise deployment. Helium encodes Alice & Bob's first logical qubit with as few as 18 cat qubits.",
+      "url": "https://alice-bob.com/newsroom/alice-bob-unveils-first-quantum-system/",
+      "source": "Alice & Bob Newsroom",
+      "date": "2026-06-10"
+    },
+    {
+      "title": "France acquires Alice & Bob Helium cat-qubit system for national HPC research infrastructure",
+      "excerpt": "GENCI and Alice & Bob signed an agreement for France to acquire an 18-cat-qubit Helium quantum computer — the world's first deployment of a cat-qubit system. The machine will be installed at the TGCC and integrated with the Joliot-Curie supercomputer, with user access expected in 2027.",
+      "url": "https://thequantuminsider.com/2026/06/17/france-acquires-alice-and-bob-cat-qubit-quantum-computer-for-national-research-infrastructure/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-17"
+    },
+    {
+      "title": "Alice & Bob joins QuBriC, Europe's first MSCA Doctoral Network dedicated to quantum error correction",
+      "excerpt": "Alice & Bob joined QuBriC, a €4.6 million Horizon Europe MSCA Doctoral Network bringing together 16 universities and 7 quantum companies to train 15 PhD researchers in quantum error correction. Alice & Bob contributes cat-qubit expertise to help co-design physical QPUs with logical QEC layers.",
+      "url": "https://www.hpcwire.com/off-the-wire/alice-bob-partners-on-europes-1st-doctoral-network-dedicated-to-quantum-error-correction/",
+      "source": "HPCwire",
+      "date": "2026-08-12"
+    },
+    {
+      "title": "Alice & Bob Joins Europe's First Quantum Error Correction Doctoral Network QuBriC",
+      "excerpt": "Alice & Bob joined QuBriC, a EUR 4.6 million MSCA Doctoral Network uniting 16 academic institutions and seven quantum enterprises to train 15 PhD candidates in quantum error correction. Alice & Bob will contribute its cat-qubit architecture to train researchers in co-designing physical QPUs with logical QEC layers.",
+      "url": "https://thequantuminsider.com/2026/08/12/alice-bob-partners-europe-first-doctoral-network-quantum-error-correction/",
+      "source": "The Quantum Insider",
+      "date": "2026-08-12"
     }
   ]
 }

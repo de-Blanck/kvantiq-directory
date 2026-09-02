@@ -19,8 +19,6 @@ import { fileURLToPath } from 'url';
 
 const CONTENT_DIR = 'src/content';
 const COLLECTIONS = ['companies', 'benchmarks', 'use-cases', 'challenges', 'resources'];
-const MAX_NEWS_PER_ENTRY = 5;
-const NEWS_MAX_AGE_DAYS = 180;
 const FETCH_TIMEOUT_MS = 10000;
 const CLAUDE_MODEL = 'claude-haiku-4-5-20251001';
 const CLAUDE_TIMEOUT_MS = 60000;
@@ -44,21 +42,35 @@ function stripHtml(html) {
     .slice(0, 5000);
 }
 
+const FETCH_RETRIES = 2;          // attempts after the first, on transport errors
+const FETCH_RETRY_BASE_MS = 1500; // doubled per retry
+
+const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+
+// A transport failure (DNS, reset, timeout) is usually transient; an HTTP error
+// status is the site's answer and is not worth retrying. The 2026-08-31 run lost
+// 199 of 226 entries because a network blip at entry 28 was treated as a
+// permanent per-entry verdict.
 async function fetchContent(url) {
-  try {
+  for (let attempt = 0; attempt <= FETCH_RETRIES; attempt++) {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
-    const res = await fetch(url, {
-      signal: controller.signal,
-      headers: { 'User-Agent': 'Kvantiq-Directory-Bot/1.0 (content-sweep)' },
-    });
-    clearTimeout(timeout);
-    if (!res.ok) return null;
-    const text = await res.text();
-    return stripHtml(text);
-  } catch {
-    return null;
+    try {
+      const res = await fetch(url, {
+        signal: controller.signal,
+        headers: { 'User-Agent': 'Kvantiq-Directory-Bot/1.0 (content-sweep)' },
+      });
+      if (!res.ok) return null;
+      const text = await res.text();
+      return stripHtml(text);
+    } catch {
+      if (attempt === FETCH_RETRIES) return null;
+      await sleep(FETCH_RETRY_BASE_MS * 2 ** attempt);
+    } finally {
+      clearTimeout(timeout);
+    }
   }
+  return null;
 }
 
 function getDomain(url) {
@@ -90,12 +102,6 @@ export function credibleSourceCount(sources) {
   return (sources || []).filter((s) => !isBlocklistedSource({ url: s.url, source: s.title || '' })).length;
 }
 
-function isRecent(dateStr) {
-  const date = new Date(dateStr);
-  const now = new Date();
-  const diffDays = (now - date) / (1000 * 60 * 60 * 24);
-  return diffDays <= NEWS_MAX_AGE_DAYS;
-}
 
 // Validate + normalize model-extracted news items against the content schema
 // (src/content.config.ts `newsSchema`). title/url/source/date are required and
@@ -350,13 +356,23 @@ Return ONLY this JSON object, no other text:
 
   if (validatedNews.length === 0) return { ...base, skipped: false, added: 0, contradictions };
 
-  const existingNews = (data.news || []).filter(n => isRecent(n.date));
+  const existingNews = data.news || [];
   const existingUrls = new Set(existingNews.map(n => n.url));
   const newItems = validatedNews.filter(n => !existingUrls.has(n.url));
 
   if (newItems.length === 0) return { ...base, skipped: false, added: 0, contradictions };
 
-  data.news = [...newItems, ...existingNews].slice(0, MAX_NEWS_PER_ENTRY);
+  // Newest first, existing history preserved in full, deduped by URL. News is
+  // never truncated or aged out — trimming here silently destroyed sourced
+  // history (PR #85: the old cap of 5 would have cut 78 items, the 180-day
+  // prune another 176). The UI shows the newest 3 on the dashboard card and
+  // the full list under the news tab, so long arrays cost nothing on-page.
+  const seen = new Set();
+  data.news = [...newItems, ...existingNews].filter(n => {
+    if (seen.has(n.url)) return false;
+    seen.add(n.url);
+    return true;
+  });
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n');
 
   return { ...base, skipped: false, added: newItems.length, items: newItems, country: data.country || null, contradictions };
@@ -399,6 +415,9 @@ async function main() {
   const t0 = Date.now();
 
   const results = { updated: 0, skipped: 0, total: 0 };
+  const MAX_CONSECUTIVE_FETCH_FAILURES = 8;
+  let consecutiveFetchFailures = 0;
+  let aborted = false;
   const adherence = {};        // rejection counters populated by normalizeNewsItems
   const byCollection = {};     // collection -> { scanned, updated, news_added }
   const byCountry = {};        // country -> news items added
@@ -412,6 +431,7 @@ async function main() {
   let backfilledTotal = 0; // credible sources added by --backfill-sources
 
   for (const collection of COLLECTIONS) {
+    if (aborted) break;
     const dir = path.join(CONTENT_DIR, collection);
     const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
     byCollection[collection] = { scanned: 0, updated: 0, news_added: 0 };
@@ -423,6 +443,8 @@ async function main() {
       process.stdout.write(`Processing ${entry}...`);
 
       const result = await processEntry(collection, file, adherence);
+      // Any entry that fetched something proves the network is alive.
+      if (!result.skipped) consecutiveFetchFailures = 0;
 
       // Source-bar + cross-check aggregation (independent of news outcome).
       if (typeof result.credible === 'number' && result.credible < MIN_CREDIBLE_SOURCES) {
@@ -438,6 +460,18 @@ async function main() {
         results.skipped++;
         notFound.push(`${entry} (${result.reason})`);
         console.log(` SKIPPED (${result.reason})`);
+        // Every entry failing to fetch anything means the network is gone, not
+        // that 200 entries all went stale at once. Stop instead of burning
+        // hours producing an empty run (2026-08-31: 110 minutes, 0 results).
+        if (result.reason === 'all fetches failed') {
+          consecutiveFetchFailures++;
+          if (consecutiveFetchFailures >= MAX_CONSECUTIVE_FETCH_FAILURES) {
+            console.error(`\n\nABORTED: ${consecutiveFetchFailures} entries in a row failed every fetch — the network looks down.`);
+            console.error('Nothing scanned after this point is meaningful. Fix connectivity and re-run.');
+            aborted = true;
+            break;
+          }
+        }
       } else if (result.added > 0) {
         results.updated++;
         newsAdded += result.added;

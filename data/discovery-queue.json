@@ -1,0 +1,111 @@
+{
+  "generated": "2026-05-18",
+  "note": "Overflow candidates from daily run 2026-05-18. Cap of 10 new entries reached. Review and add in next run.",
+  "candidates": [
+    {
+      "name": "Arq Quantum Technologies",
+      "slug": "arq-quantum",
+      "country": "Spain",
+      "region": "southern-europe",
+      "type": "hardware",
+      "tags": ["quantum-networking", "quantum-internet", "repeaters", "photonics"],
+      "website": null,
+      "linkedin": "https://www.linkedin.com/company/arquantum",
+      "founded": 2025,
+      "description": "Barcelona ICFO spinout developing rare-earth-based quantum repeater hardware for the quantum internet, formally incorporated September 2025, publicly launched March 2026.",
+      "funding": "Not disclosed",
+      "headquarters": "Barcelona, Spain",
+      "sources": [
+        "https://quantumzeitgeist.com/arq-quantum-technologies-repeater-launch/",
+        "https://qt.eu/news/2026/2026-03-11_EU_showcases_QT_talent_at_MWC_2026",
+        "https://www.mwcbarcelona.com/exhibitors/35634-arq-quantum-technologies"
+      ],
+      "note": "No standalone website confirmed — only LinkedIn. Blocks entry quality gate criterion #1. Human should verify if website exists before adding.",
+      "priority": "medium",
+      "justification": "ICFO spinout with EU Flagship connection. MWC 2026 presence confirms active company. Blocked by missing website."
+    },
+    {
+      "name": "Photarix",
+      "slug": "photarix",
+      "country": "United Kingdom",
+      "region": "uk",
+      "type": "hardware",
+      "tags": ["QKD", "photonics", "single-photon", "quantum-security"],
+      "website": "https://photarix.com",
+      "founded": 2024,
+      "description": "Lancaster University spinout developing room-temperature Quantum Ring Single-Photon LEDs (QR SPLEDs) for telecom-compatible QKD without cryogenic cooling.",
+      "funding": "Pre-seed (CyberASAP Innovate UK)",
+      "headquarters": "Lancaster, UK",
+      "sources": [
+        "https://www.lancaster.ac.uk/news/university-spin-out-company-pioneering-quantum-secure-encryption",
+        "https://www.internationalcyberexpo.com/speakers/gizem-acar-tekin",
+        "https://www.cyberuk.uk/2026/sponsor/1017598/photarix"
+      ],
+      "note": "Pre-seed only, small team. CYBERUK 2026 sponsor confirms activity. Low funding limits priority.",
+      "priority": "medium",
+      "justification": "Novel room-temperature QKD hardware, government programme participation, DSIT-invited. Add when cap resets."
+    },
+    {
+      "name": "Qinara",
+      "slug": "qinara",
+      "country": "United Kingdom",
+      "region": "uk",
+      "type": "software",
+      "tags": ["quantum-software", "circuit-optimization", "hybrid-computing"],
+      "website": "https://www.qinara.co.uk",
+      "founded": 2025,
+      "description": "Edinburgh University (Bayes Centre) spin-out developing Qronos, a deep reinforcement learning quantum circuit optimizer achieving 73-89% gate-count reductions vs Qiskit/TKET.",
+      "funding": "SMART grant + Old College Capital pre-seed",
+      "headquarters": "Edinburgh, UK",
+      "sources": [
+        "https://bayes-centre.ed.ac.uk/accelerating-entrepreneurship/vbi/venture-builder-incubator-cohort-5/qinara",
+        "https://thequantuminsider.com/2025/11/17/qronos-advancing-quantum-circuit-optimization/",
+        "https://www.qinara.co.uk/"
+      ],
+      "note": "Very early stage (pre-seed). Strong technical credentials but minimal funding/revenue signal.",
+      "priority": "low",
+      "justification": "Interesting quantum software approach but very early. Low funding signal limits priority."
+    },
+    {
+      "name": "CCRAFT",
+      "slug": "ccraft",
+      "country": "Switzerland",
+      "region": "dach",
+      "type": "hardware",
+      "tags": ["photonics", "foundry", "quantum-enabling", "TFLN"],
+      "website": "https://www.ccraft.com",
+      "founded": 2025,
+      "description": "CSEM spinout operating world's first production-ready industrial foundry for Thin-Film Lithium Niobate photonic integrated circuits, enabling quantum photonics and QKD components.",
+      "funding": "EUR 2.7M capacity scale-up",
+      "headquarters": "Neuchatel, Switzerland",
+      "sources": [
+        "https://ggba.swiss/en/csem-spin-off-ccraft-launches-worlds-first-industrial-foundry-for-tfln-photonic-chips/",
+        "https://optics.org/news/16/6/41",
+        "https://www.ccraft.com/"
+      ],
+      "note": "Primarily a photonics foundry — quantum is one use case. Borderline quantum relevance. Human should decide if enabling-tech scope includes photonics foundries.",
+      "priority": "low",
+      "justification": "Novel infrastructure play. Scope borderline — flag for human judgment on quantum-enabling threshold."
+    },
+    {
+      "name": "QDaria",
+      "slug": "qdaria",
+      "country": "Norway",
+      "region": "nordics",
+      "type": "hardware",
+      "tags": ["topological-qubits", "quantum-computing", "Fibonacci-anyons"],
+      "website": "https://qdaria.com",
+      "founded": 2025,
+      "description": "Norway's first quantum computing startup developing topological quantum computers using Fibonacci anyon qubits. Allied with Rigetti Computing for Novera QPU deployment.",
+      "funding": "Seeking EUR 15M Series A (not yet closed)",
+      "headquarters": "Oslo, Norway",
+      "sources": [
+        "https://qdaria.com/",
+        "https://www.insidequantumtechnology.com/news-archive/daniel-mo-houshmand-ceo-of-qdaria-will-speak-at-iqt-quantum-ai-in-nyc-october-29-30-3/"
+      ],
+      "note": "Only 5 employees, no confirmed funding raised, Fibonacci anyon claims unvalidated. Very early stage. Low confidence.",
+      "priority": "low",
+      "justification": "Norwegian quantum startup fills geographic gap but activity signals are weak. Requires more maturity before inclusion."
+    }
+  ]
+}

@@ -3,7 +3,13 @@
   "slug": "lih-ground-state",
   "algorithm": "Variational Quantum Eigensolver (VQE)",
   "category": "chemistry",
-  "tags": ["VQE", "chemistry", "lithium-hydride", "ground-state", "NISQ"],
+  "tags": [
+    "VQE",
+    "chemistry",
+    "lithium-hydride",
+    "ground-state",
+    "NISQ"
+  ],
   "description": "Benchmark for computing the ground-state energy of lithium hydride (LiH) using the Variational Quantum Eigensolver. LiH is a standard test molecule for quantum chemistry on NISQ devices, requiring 6-12 qubits depending on the active space and basis set. The benchmark tests VQE accuracy against Full Configuration Interaction (FCI) results across a range of bond distances.",
   "hardware": "Various (IBM Quantum, simulators)",
   "framework": "Qiskit Nature, PennyLane",
@@ -11,8 +17,14 @@
   "reproducible": true,
   "datePublished": "2024-03-18",
   "keyMetrics": [
-    {"metric": "Qubits required", "value": "6-12"},
-    {"metric": "Reference method", "value": "Full Configuration Interaction (FCI)"}
+    {
+      "metric": "Qubits required",
+      "value": "6-12"
+    },
+    {
+      "metric": "Reference method",
+      "value": "Full Configuration Interaction (FCI)"
+    }
   ],
   "significance": "Standard test molecule for quantum chemistry on NISQ devices, bridging the gap between trivial H2 simulations and industrially relevant molecular systems.",
   "sources": [
@@ -27,6 +39,15 @@
       "url": "https://arxiv.org/abs/2502.09595",
       "title": "BenchQC: A Benchmarking Toolkit for Quantum Computation",
       "dateAccessed": "2026-03-19"
+    }
+  ],
+  "news": [
+    {
+      "title": "BenchQC: A Benchmarking Toolkit for Quantum Computation",
+      "excerpt": "New benchmarking toolkit for quantum computation released, benchmarking VQE performance for calculating ground-state energies with plans to make results accessible on JARVIS and develop a Python package for quantum chemistry and materials science communities.",
+      "url": "https://arxiv.org/abs/2502.09595",
+      "source": "arXiv",
+      "date": "2025-02-13"
     }
   ]
 }

@@ -49,6 +49,13 @@
       "url": "https://arxiv.org/abs/2111.02396",
       "source": "arXiv",
       "date": "2021-11-03"
+    },
+    {
+      "title": "Cirq 1.7.0 released with Python 3.14 support, new CY/CCY gates, and LaTeX circuit rendering",
+      "excerpt": "Cirq 1.7.0 adds Python 3.14 and protobuf-6 support, introduces CY and CCY gates, a new LATEST circuit insertion strategy, and experimental LaTeX/Quantikz publication-quality circuit rendering. Also updates the IonQ API to v0.4 and raises the minimum NumPy version to 2.1.",
+      "url": "https://github.com/quantumlib/Cirq/releases/tag/v1.7.0",
+      "source": "Cirq GitHub Releases",
+      "date": "2026-06-29"
     }
   ]
 }

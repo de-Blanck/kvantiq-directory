@@ -65,6 +65,13 @@
   ],
   "news": [
     {
+      "title": "Quantum Machines Acquires QDevil",
+      "excerpt": "Quantum Machines announced its acquisition of QDevil, a Danish company specializing in control hardware for quantum systems. The acquisition combines QDevil's electronics and specialized components with Quantum Machines' Pulse Processing Units and software to provide a full-stack quantum orchestration platform.",
+      "url": "https://techcrunch.com/2022/03/30/quantum-machines-acquires-qdevil-to-build-out-its-full-stack-quantum-orchestration-platform/",
+      "source": "TechCrunch",
+      "date": "2022-03-30"
+    },
+    {
       "title": "QDevil wins 2024 Technology Transfer Prize from German Physical Society",
       "excerpt": "QDevil, a division of Quantum Machines and spin-out from the Niels Bohr Institute, has been honored with the 2024 Technology Transfer Prize by the German Physical Society (DPG) for exceptional contributions to physics and successful commercialization of quantum electronics solutions including QDAC and QBoard.",
       "url": "https://nbi.ku.dk/english/news/happening-at-nbi/nbi-spin-out-enterprise-receives-prestigious-tech-transfer-award",

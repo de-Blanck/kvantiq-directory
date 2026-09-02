@@ -40,6 +40,27 @@
       "authors": "Tindall, Fishman, Stoudenmire, Sels",
       "datePublished": "2024-01-30",
       "dateAccessed": "2026-04-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/qedma-and-ibm-report-error-mitigation-software-extends-quantum-computing-beyond-classical-simulation/",
+      "title": "Qedma and IBM Report Error Mitigation Extends Quantum Computing Beyond Classical Simulation - HPCwire",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/30/ibm-qedma-error-mitigated-quantum-simulation-classical-benchmarks/",
+      "title": "IBM and Qedma Demonstrate Quantum Advantage for Floquet Ising Simulation - The Quantum Insider",
+      "dateAccessed": "2026-08-02"
+    }
+  ],
+  "news": [
+    {
+      "title": "IBM and Qedma Demonstrate Quantum Advantage Simulating Floquet Ising Model at 74 Qubits, Surpassing Fugaku Supercomputer",
+      "excerpt": "IBM and Qedma demonstrated quantum advantage simulating a two-dimensional Floquet Ising model on IBM's Heron processor at up to 74 qubits using Qedma's QESEM error mitigation. Results surpassed what RIKEN's Fugaku supercomputer could deliver. Qedma released its best classical method as an open benchmark for future advantage claims.",
+      "url": "https://www.hpcwire.com/off-the-wire/qedma-and-ibm-report-error-mitigation-software-extends-quantum-computing-beyond-classical-simulation/",
+      "source": "HPCwire",
+      "date": "2026-07-30"
     }
   ]
 }

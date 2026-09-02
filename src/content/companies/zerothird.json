@@ -1,0 +1,60 @@
+{
+  "name": "zerothird",
+  "slug": "zerothird",
+  "country": "Austria",
+  "region": "dach",
+  "type": "hardware",
+  "tags": ["QKD", "quantum-communication", "entanglement", "quantum-security", "cryptography"],
+  "founded": 2023,
+  "description": "zerothird is a Vienna-based company developing entanglement-based quantum key distribution (eQKD) systems for enterprise security. The technology traces its lineage to Nobel Prize-winning quantum entanglement research. Products include a Key-as-a-Service (KaaS) platform, eQKD systems, and quantum photon source and detector hardware. In February 2026, zerothird launched a live quantum-secure banking pilot with Erste Group and A1 Telekom in Vienna.",
+  "website": "https://zerothird.com",
+  "featured": false,
+  "headquarters": "Vienna, Austria",
+  "employees": "10-20",
+  "funding": "USD 10M",
+  "accessModel": "Key-as-a-Service (KaaS) + hardware sales",
+  "products": [
+    {
+      "name": "eQKD System",
+      "description": "Entanglement-based quantum key distribution system for point-to-point and network quantum-secure communications"
+    },
+    {
+      "name": "Key-as-a-Service (KaaS)",
+      "description": "Cloud-delivered quantum-secure key management platform for enterprise cryptographic infrastructure"
+    }
+  ],
+  "highlights": [
+    "Live quantum-secure banking pilot with Erste Group and A1 Telekom launched February 2026 — first live eQKD bank deployment in Austria",
+    "Raised USD 10M Series A from Sparring Capital in H1 2025",
+    "Technology based on Nobel Prize-winning quantum entanglement research; led by Rupert Ursin and Felix Tiefenbacher"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://zerothird.com",
+      "title": "zerothird Official Website",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://www.erstegroup.com/en/news-media/press-releases/2026/02/23/erste-group-sets-new-standards-in-quantum-encryption",
+      "title": "Erste Group sets new standards in quantum encryption — Erste Group Press Release",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://www.thefastmode.com/technology-solutions/47271-erste-group-pilots-quantum-secure-banking-in-vienna-with-zerothird-and-a1",
+      "title": "Erste Group Pilots Quantum-Secure Banking in Vienna with zerothird and A1 — The Fast Mode",
+      "dateAccessed": "2026-05-18"
+    }
+  ],
+  "news": [
+    {
+      "title": "zerothird and Erste Group launch live quantum-secure banking pilot with A1 Telekom in Vienna",
+      "excerpt": "Erste Group, zerothird, and A1 Telekom launched Austria's first live entanglement-based QKD deployment for banking in February 2026. The pilot uses zerothird's eQKD system to secure communications between Erste Group branches, demonstrating the first operational deployment of quantum-secure encryption in European retail banking.",
+      "url": "https://www.erstegroup.com/en/news-media/press-releases/2026/02/23/erste-group-sets-new-standards-in-quantum-encryption",
+      "source": "Erste Group",
+      "date": "2026-02-23"
+    }
+  ]
+}

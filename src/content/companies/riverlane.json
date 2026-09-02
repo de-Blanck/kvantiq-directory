@@ -51,9 +51,70 @@
       "url": "https://www.riverlane.com/press-release/riverlane-publishes-qec-technology-roadmap",
       "title": "Riverlane publishes QEC Technology Roadmap that can accelerate quantum computing's path to utility-scale by 3-5 years",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/riverlane-demonstrates-real-time-qec-latency-performance-advancements/",
+      "title": "Riverlane Demonstrates Real-Time QEC Latency Performance Advancements — Quantum Computing Report",
+      "dateAccessed": "2026-06-14"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumzeitgeist.com/qec-latency-google-riverlane-cuts/",
+      "title": "Riverlane Cuts QEC Latency 10x Faster Than Google's Results — Quantum Zeitgeist",
+      "dateAccessed": "2026-06-14"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/oqc-and-riverlane-launch-uks-first-quantum-error-corrected-testbed-integrated-with-hpc/",
+      "title": "OQC and Riverlane Launch UK's First Quantum Error-Corrected Testbed Integrated with HPC - Quantum Computing Report",
+      "dateAccessed": "2026-07-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/14/quantinuum-rolls-royce-riverlane-and-university-of-edinburgh-sign-agreement-to-explore-quantum-computing-for-industrial-design-and-simulation/",
+      "title": "Quantinuum, Rolls-Royce, Riverlane and University of Edinburgh Sign Industrial Simulation Agreement - The Quantum Insider",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quantinuum-rolls-royce-riverlane-and-epcc-partner-to-accelerate-fluid-dynamics-simulations/",
+      "title": "Quantinuum, Rolls-Royce, Riverlane and EPCC Partner to Accelerate Fluid Dynamics Simulations - Quantum Computing Report",
+      "dateAccessed": "2026-07-26"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/riverlane-and-unitary-foundation-launch-deltakit-community-fund-for-open-source-quantum-error-correction/",
+      "title": "Riverlane and Unitary Foundation Launch Deltakit Community Fund for Open-Source QEC - HPCwire",
+      "dateAccessed": "2026-08-23"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/riverlane-and-unitary-foundation-launch-deltakit-community-fund-for-open-source-qec/",
+      "title": "Riverlane and Unitary Foundation Launch Deltakit Community Fund for Open-Source QEC - Quantum Computing Report",
+      "dateAccessed": "2026-08-23"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/28/riverlane-unitary-foundation-deltakit-community-fund/",
+      "title": "Riverlane and Unitary Foundation Launch Deltakit Community Fund to Accelerate Open-Source Quantum Error Correction - The Quantum Insider",
+      "dateAccessed": "2026-08-16"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/03/12/riverlane-publishes-quantum-error-correction-roadmap-to-speed-utility-scale-quantum-by-3-5-years/",
+      "title": "Riverlane publishes QEC roadmap targeting utility-scale quantum by early 2030s - The Quantum Insider",
+      "dateAccessed": "2026-08-23"
     }
   ],
   "news": [
+    {
+      "title": "Riverlane Demonstrates 16.32µs QEC Latency with Deltaflow 2",
+      "excerpt": "Riverlane achieved mean latency of 16.32µs for quantum error correction using Deltaflow 2 on Google's 2024 Willow experiment data, approximately four times lower than Google's 63µs result.",
+      "url": "https://quantumzeitgeist.com/qec-latency-google-riverlane-cuts/",
+      "source": "Quantum Zeitgeist",
+      "date": "2026-04-11"
+    },
     {
       "title": "Riverlane raises $75 million to meet surging global demand for quantum error correction technology",
       "excerpt": "Riverlane announced that it has raised $75 million in Series C funding to deliver its groundbreaking quantum error correction (QEC) roadmap, led by Planet First Partners.",
@@ -74,6 +135,48 @@
       "url": "https://thequantuminsider.com/2026/03/12/riverlane-publishes-quantum-error-correction-roadmap-to-speed-utility-scale-quantum-by-3-5-years/",
       "source": "The Quantum Insider",
       "date": "2026-03-12"
+    },
+    {
+      "title": "Qblox and Riverlane demonstrate integrated real-time quantum error correction",
+      "excerpt": "Deltaflow 2 QEC system combined with Qblox control hardware delivers sub-microsecond feedback between error detection and correction.",
+      "url": "https://www.prnewswire.com/news-releases/qblox-and-riverlane-demonstrate-integration-enabling-real-time-quantum-error-correction-302716254.html",
+      "source": "PR Newswire",
+      "date": "2026-03-17"
+    },
+    {
+      "title": "Riverlane's Deltaflow 2 achieves 16.32µs mean latency on real QPU data, 4x lower than Google's Willow results",
+      "excerpt": "Using data from Google's 2024 Willow experiment (d5 rotated surface code over one million rounds), Deltaflow 2 demonstrated 16.32µs mean latency, beating Riverlane's 20µs target and approaching the ~10µs threshold for utility-scale QEC. Maximum sub-shot latency outperformed prior published benchmarks by 10x.",
+      "url": "https://quantumcomputingreport.com/riverlane-demonstrates-real-time-qec-latency-performance-advancements/",
+      "source": "Quantum Computing Report",
+      "date": "2026-04-09"
+    },
+    {
+      "title": "Riverlane Joins Quantinuum, Rolls-Royce and University of Edinburgh in Quantum-HPC Industrial Simulation Agreement",
+      "excerpt": "Quantinuum, Rolls-Royce, Riverlane, and EPCC (University of Edinburgh) signed a multi-year agreement to develop fault-tolerant quantum algorithms for gas turbine fluid dynamics simulation. Riverlane contributes quantum error correction expertise.",
+      "url": "https://thequantuminsider.com/2026/07/14/quantinuum-rolls-royce-riverlane-and-university-of-edinburgh-sign-agreement-to-explore-quantum-computing-for-industrial-design-and-simulation/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-14"
+    },
+    {
+      "title": "Riverlane joins Quantinuum, Rolls-Royce and EPCC in multi-year quantum industrial design collaboration",
+      "excerpt": "Riverlane will contribute its QEC stack and fault-tolerant algorithm expertise to a four-way collaboration targeting computational fluid dynamics for gas turbine design, using Quantinuum's 98-qubit Helios processor and EPCC's supercomputing infrastructure.",
+      "url": "https://quantumcomputingreport.com/quantinuum-rolls-royce-riverlane-and-epcc-partner-to-accelerate-fluid-dynamics-simulations/",
+      "source": "Quantum Computing Report",
+      "date": "2026-07-14"
+    },
+    {
+      "title": "Riverlane and Unitary Foundation launch Deltakit Community Fund for open-source quantum error correction",
+      "excerpt": "Riverlane and Unitary Foundation launched a rolling quarterly grant program offering awards of $2,000–$4,000 for external contributors building production-grade features for Deltakit, Riverlane's open-source QEC toolkit. The initiative leverages Unitary Foundation's microgrant framework, with the first cohort review beginning the week of August 17, 2026.",
+      "url": "https://www.hpcwire.com/off-the-wire/riverlane-and-unitary-foundation-launch-deltakit-community-fund-for-open-source-quantum-error-correction/",
+      "source": "HPCwire",
+      "date": "2026-07-28"
+    },
+    {
+      "title": "Riverlane and Unitary Foundation launch Deltakit Community Fund for open-source quantum error correction",
+      "excerpt": "Riverlane and the Unitary Foundation launched the Deltakit Community Fund, a quarterly microgrant program awarding $2,000–$4,000 to contributors building open-source QEC features into Deltakit. The advisory committee began reviewing first-cohort applications on August 17, 2026.",
+      "url": "https://thequantuminsider.com/2026/07/28/riverlane-unitary-foundation-deltakit-community-fund/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-28"
     }
   ]
 }

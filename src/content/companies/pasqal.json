@@ -16,7 +16,7 @@
   "featured": true,
   "headquarters": "Massy, France",
   "employees": "200+",
-  "funding": "EUR 100M+",
+  "funding": "Public (Nasdaq: PSQL, August 2026); USD 360M cash at IPO close",
   "accessModel": "Cloud API + on-premise deployment + consulting",
   "products": [
     {
@@ -30,7 +30,7 @@
   ],
   "highlights": [
     "Co-founded by Nobel laureate Alain Aspect, a pioneer of cold atom physics",
-    "EUR 100M+ raised with plans for a USD 2B SPAC listing",
+    "Listed on Nasdaq (PSQL, August 2026) at approximately USD 2B valuation with USD 360M cash at close",
     "200+ employees delivering enterprise quantum solutions in energy, automotive, and finance"
   ],
   "sources": [
@@ -51,9 +51,76 @@
       "url": "https://thequantuminsider.com/2026/04/21/pasqal-thoughts-2026-quantum-transition-real-world-deployment/",
       "title": "Pasqal Showcases Quantum Progress at 2026 Event - The Quantum Insider",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://www.globenewswire.com/news-release/2026/05/11/3291836/0/en/pasqal-selected-as-finalist-in-xprize-quantum-applications-competition.html",
+      "title": "Pasqal Selected as Finalist in XPRIZE Quantum Applications Competition - GlobeNewswire",
+      "dateAccessed": "2026-05-17"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/19/aramco-and-pasqal-launch-saudi-arabias-first-quantum-computer-and-middle-easts-first-commercial-qcaas-platform/",
+      "title": "Aramco and Pasqal Launch Saudi Arabia's First Quantum Computer and Middle East's First Commercial QCaaS Platform - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/20/pasqal-finalist-xprize-quantum-applications-competition/",
+      "title": "Pasqal Selected as Finalist in XPRIZE Quantum Applications Competition - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/22/pasqal-demonstrates-logical-qubits-outperform-physical-qubits-solving-differential-equations/",
+      "title": "Pasqal Demonstrates Logical Qubits Outperform Physical Qubits Solving Differential Equations - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/chips-ju-and-pasqal-launch-e50m-57-2m-usd-q-planet-pilot-line-to-industrialize-neutral-atom-quantum-chips/",
+      "title": "Chips JU and Pasqal Launch €50M Q-PLANET Pilot Line - Quantum Computing Report",
+      "dateAccessed": "2026-07-26"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/13/launch-of-q-planet-european-pilot-line-to-industrialize-neutral-atom-quantum-chips/",
+      "title": "Launch of Q-PLANET European Pilot Line to Industrialize Neutral-Atom Quantum Chips - The Quantum Insider",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/chips-ju-and-pasqal-launch-e50m-q-planet-pilot-line-to-industrialize-neutral-atom-quantum-chips/",
+      "title": "Chips JU and Pasqal Launch €50M Q-PLANET Pilot Line - Quantum Computing Report",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/sec-declares-registration-statement-effective-for-pasqals-business-combination-with-bleichroeder-acquisition-corp-ii/",
+      "title": "SEC Declares Registration Statement Effective for Pasqal's Business Combination with Bleichroeder Acquisition Corp. II - Quantum Computing Report",
+      "dateAccessed": "2026-08-16"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/pasqal-uses-photonic-chip-to-trap-individual-atoms-for-neutral-atom-quantum-computing/",
+      "title": "Pasqal Uses Photonic Chip to Trap Individual Atoms for Neutral-Atom Quantum Computing - HPCwire",
+      "dateAccessed": "2026-08-23"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/08/29/pasqal-shares-nearly-double-in-nasdaq-debut/",
+      "title": "Pasqal Shares Nearly Double in Nasdaq Debut - The Quantum Insider",
+      "dateAccessed": "2026-08-30"
     }
   ],
   "news": [
+    {
+      "title": "Pasqal and KACST launch multi-year quantum technology research program",
+      "excerpt": "Pasqal announced multi-year quantum technology research program partnership",
+      "url": "https://www.hpcwire.com/off-the-wire/",
+      "source": "HPCwire",
+      "date": "2026-08-28"
+    },
     {
       "title": "Aramco and Pasqal make history with Saudi Arabia's first quantum computer",
       "excerpt": "Aramco and Pasqal launch Saudi Arabia's first Quantum Computer and Middle East's first commercial Quantum Computing as a Service platform",
@@ -88,6 +155,125 @@
       "url": "https://thequantuminsider.com/2026/04/21/pasqal-thoughts-2026-quantum-transition-real-world-deployment/",
       "source": "The Quantum Insider",
       "date": "2026-04-21"
+    },
+    {
+      "title": "PINQ² becomes exclusive Canadian distributor of Pasqal neutral-atom quantum computers",
+      "excerpt": "Partnership with PINQ² and Distriq gives Canadian enterprises and researchers access to Pasqal's neutral-atom platform for applications in energy, finance, aerospace, and materials science.",
+      "url": "https://thequantuminsider.com/2026/04/21/pinq2-distriq-exclusive-distributor-pasqal-quantum-canada/",
+      "source": "The Quantum Insider",
+      "date": "2026-04-21"
+    },
+    {
+      "title": "Pasqal selected as finalist in XPRIZE Quantum Applications competition",
+      "excerpt": "Pasqal selected as one of five wildcard finalists from 62 submissions in the XPRIZE Quantum Applications competition backed by Google Quantum AI and GESDA, advancing to Phase II.",
+      "url": "https://www.globenewswire.com/news-release/2026/05/11/3291836/0/en/pasqal-selected-as-finalist-in-xprize-quantum-applications-competition.html",
+      "source": "GlobeNewswire",
+      "date": "2026-05-11"
+    },
+    {
+      "title": "Aramco and Pasqal launch Saudi Arabia's first quantum computer and Middle East's first QCaaS platform",
+      "excerpt": "Aramco inaugurated the Kingdom of Saudi Arabia's first quantum computer at its Dhahran data center, running Pasqal's 200-qubit neutral-atom QPU, with a commercial Quantum Computing as a Service platform for energy, logistics, and industrial optimization workloads.",
+      "url": "https://thequantuminsider.com/2026/05/19/aramco-and-pasqal-launch-saudi-arabias-first-quantum-computer-and-middle-easts-first-commercial-qcaas-platform/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-18"
+    },
+    {
+      "title": "Pasqal selected as Phase II wildcard finalist in USD 5M XPRIZE Quantum Applications competition",
+      "excerpt": "Pasqal was chosen as one of five wildcard finalists in the XPRIZE Quantum Applications competition, selected from 62 Wildcard Registration submissions. As a finalist Pasqal advances toward the March 2027 grand prize stage worth USD 3 million.",
+      "url": "https://thequantuminsider.com/2026/05/20/pasqal-finalist-xprize-quantum-applications-competition/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-20"
+    },
+    {
+      "title": "Pasqal Demonstrates Logical Qubits Outperforming Physical Qubits for Solving Differential Equations",
+      "excerpt": "Pasqal published research demonstrating, for the first time in neutral-atom quantum computing, that logical qubits outperform physical qubits when solving differential equations on real hardware, improving accuracy by over 50% on average and up to 10x on certain nonlinear problems. Hardware achieved 99.4% gate fidelity across aerospace, energy, pharmaceutical, and financial modeling applications.",
+      "url": "https://thequantuminsider.com/2026/05/22/pasqal-demonstrates-logical-qubits-outperform-physical-qubits-solving-differential-equations/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-22"
+    },
+    {
+      "title": "Pasqal inaugurates SOL, Italy's first neutral-atom quantum computer, at CINECA in Bologna",
+      "excerpt": "Pasqal's 140-qubit Orion QPU system, named SOL, was inaugurated at CINECA in Bologna, Italy—Europe's third Pasqal neutral-atom deployment. The system integrates with CINECA's Leonardo supercomputer for hybrid classical-quantum computing, co-financed by EuroHPC Joint Undertaking and Italy's Ministry of University and Research.",
+      "url": "https://www.hpcwire.com/off-the-wire/pasqal-inaugurates-italys-1st-neutral-atom-quantum-computer-3rd-pasqal-system-in-europe/",
+      "source": "HPCwire",
+      "date": "2026-06-11"
+    },
+    {
+      "title": "Pasqal inaugurates Italy's first neutral-atom quantum computer at CINECA",
+      "excerpt": "A 140-qubit Pasqal Orion system named SOL was installed at CINECA in Bologna, Italy, integrated with the EuroHPC Leonardo supercomputer for hybrid quantum-classical workloads. This is Pasqal's third EuroHPC-linked system in Europe.",
+      "url": "https://thequantuminsider.com/2026/06/11/pasqal-inaugurates-italys-first-neutral-atom-quantum-computer-third-system-europe/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-11"
+    },
+    {
+      "title": "Crédit Agricole CIB and Pasqal advance strategic partnership to industrialize quantum computing for capital markets",
+      "excerpt": "Crédit Agricole CIB and Pasqal signed a new phase of their partnership — started in 2019 — shifting from research exploration to industrializing quantum algorithms for capital markets, with first production use cases for capital reserve monitoring of risk-weighted assets targeted for 2028.",
+      "url": "https://thequantuminsider.com/2026/06/30/credit-agricole-cib-pasqal-strategic-partnership-quantum-computing-finance/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-30"
+    },
+    {
+      "title": "Pasqal and MegazoneCloud Sign MoU to Deploy Neutral-Atom Quantum Computing in South Korea",
+      "excerpt": "Pasqal and MegazoneCloud (South Korea's largest AWS partner) signed an MoU to explore QPU integration into managed cloud services and pursue on-premises QPU deployments at Korean enterprise and HPC customers across finance, logistics, biotech, and manufacturing.",
+      "url": "https://www.hpcwire.com/off-the-wire/pasqal-and-megazonecloud-partner-to-bring-industrial-scale-quantum-computing-to-south-korea/",
+      "source": "HPCwire",
+      "date": "2026-07-07"
+    },
+    {
+      "title": "Pasqal Leads Launch of €50M Q-PLANET EU Pilot Line to Industrialize Neutral-Atom Quantum Chips",
+      "excerpt": "Q-PLANET, coordinated by Pasqal and co-funded by the EU Chips Joint Undertaking, kicked off with 28 European partners across 11 member states. The six-year €50M Framework Partnership Agreement aims to advance neutral-atom chip components from TRL 4 to TRL 6.",
+      "url": "https://thequantuminsider.com/2026/07/13/launch-of-q-planet-european-pilot-line-to-industrialize-neutral-atom-quantum-chips/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-13"
+    },
+    {
+      "title": "Pasqal leads Q-PLANET, €50M EU pilot line to industrialize neutral-atom quantum chips",
+      "excerpt": "Chips JU and Pasqal launched Q-PLANET, a €50M initiative coordinated by Pasqal with 28 European partners across 11 member states. The six-year framework aims to establish a pan-European fab for neutral atom quantum chips, targeting industrialization at scale by 2030.",
+      "url": "https://quantumcomputingreport.com/chips-ju-and-pasqal-launch-e50m-57-2m-usd-q-planet-pilot-line-to-industrialize-neutral-atom-quantum-chips/",
+      "source": "Quantum Computing Report",
+      "date": "2026-07-13"
+    },
+    {
+      "title": "Pasqal and Crédit Agricole CIB Advance Strategic Partnership for Quantum in Capital Markets",
+      "excerpt": "Crédit Agricole CIB and Pasqal formalized an advanced strategic partnership to accelerate quantum computing deployment in capital markets, with initial production use cases targeted for 2028, focusing on risk analytics and portfolio optimization.",
+      "url": "https://www.hpcwire.com/off-the-wire/pasqal-and-credit-agricole-cib-advance-strategic-partnership-to-deploy-quantum-computing-applied-to-finance/",
+      "source": "HPCwire",
+      "date": "2026-06-30"
+    },
+    {
+      "title": "Pasqal receives SEC clearance for SPAC combination with Bleichroeder; shareholder vote set for August 25, 2026",
+      "excerpt": "Pasqal's joint Form F-4 registration statement with Bleichroeder Acquisition Corp. II was declared effective by the SEC on August 5, 2026. Bleichroeder scheduled an extraordinary general meeting for August 25, 2026 for shareholders to vote on the proposed $2 billion business combination.",
+      "url": "https://thequantuminsider.com/2026/08/06/pasqal-business-combination-filing-bleichroeder-declared-effective-sec/",
+      "source": "The Quantum Insider",
+      "date": "2026-08-06"
+    },
+    {
+      "title": "SEC declares Pasqal SPAC merger registration effective ahead of August 25 shareholder vote",
+      "excerpt": "The SEC declared effective the joint Form F-4 Registration Statement for Pasqal's business combination with Bleichroeder Acquisition Corp. II (NASDAQ: BBCQ). Bleichroeder shareholders are scheduled to vote on August 25, 2026; upon closing, the combined company will trade on Nasdaq under ticker PSQL.",
+      "url": "https://quantumcomputingreport.com/sec-declares-registration-statement-effective-for-pasqals-business-combination-with-bleichroeder-acquisition-corp-ii/",
+      "source": "Quantum Computing Report",
+      "date": "2026-08-06"
+    },
+    {
+      "title": "Pasqal demonstrates on-chip qubit control using photonic integrated circuit, trapping four rubidium atoms",
+      "excerpt": "Pasqal, in collaboration with its subsidiary Aeponyx, demonstrated trapping four individual rubidium atoms using laser light generated by a silicon nitride photonic integrated circuit — replacing bulk optics with a chip-scale approach. The result supports Pasqal's roadmap to scale toward 10,000+ physical atoms.",
+      "url": "https://www.hpcwire.com/off-the-wire/pasqal-uses-photonic-chip-to-trap-individual-atoms-for-neutral-atom-quantum-computing/",
+      "source": "HPCwire",
+      "date": "2026-08-10"
+    },
+    {
+      "title": "Pasqal and Eleven Ventures Form Joint Venture for Quantum Computing in Saudi Arabia",
+      "excerpt": "Pasqal and Eleven Ventures agreed to establish a commercial joint venture to deploy and commercialize Pasqal's neutral-atom quantum computing systems in Saudi Arabia and the wider region, with plans to deploy multiple quantum systems and develop local quantum talent.",
+      "url": "https://thequantuminsider.com/2026/08/24/pasqal-eleven-ventures-joint-venture-quantum-computing-saudi-arabia/",
+      "source": "The Quantum Insider",
+      "date": "2026-08-24"
+    },
+    {
+      "title": "Pasqal Completes Nasdaq Listing Under Ticker PSQL, Shares Nearly Double on Debut",
+      "excerpt": "Pasqal completed its business combination with Bleichroeder Acquisition Corp. II on August 28, 2026, beginning trading on Nasdaq under tickers PSQL and PSQLW with approximately USD 360 million in cash at close. Shares rose 95.2% to USD 19.11 on the first day of trading.",
+      "url": "https://thequantuminsider.com/2026/08/29/pasqal-shares-nearly-double-in-nasdaq-debut/",
+      "source": "The Quantum Insider",
+      "date": "2026-08-29"
     }
   ]
 }

@@ -4,7 +4,13 @@
   "country": "United Kingdom",
   "region": "uk",
   "type": "hybrid",
-  "tags": ["trapped-ion", "full-stack", "quantum-volume", "cybersecurity", "TKET"],
+  "tags": [
+    "trapped-ion",
+    "full-stack",
+    "quantum-volume",
+    "cybersecurity",
+    "TKET"
+  ],
   "founded": 2021,
   "description": "Quantinuum is the world's largest integrated quantum computing company, formed in 2021 from the merger of Honeywell Quantum Solutions and Cambridge Quantum. Registered in the UK with European headquarters in Cambridge, the company builds trapped-ion quantum computers (H-Series) that hold the record for highest quantum volume. Quantinuum also develops quantum software including the open-source TKET compiler and quantum cybersecurity products.",
   "website": "https://www.quantinuum.com",
@@ -26,7 +32,7 @@
   "highlights": [
     "World's largest integrated quantum computing company, formed from Honeywell Quantum Solutions and Cambridge Quantum merger",
     "H-Series processors hold the record for highest quantum volume among all quantum computers",
-    "Valued at USD 10B+ with over USD 1.2B in funding and 600+ employees"
+    "Listed on Nasdaq under ticker QNT in June 2026, raising $1.68B in IPO at $14-15B valuation; Q2 2026 revenue $8M (+279% YoY) with 180 organizations on the Nexus platform"
   ],
   "sources": [
     {
@@ -52,15 +58,252 @@
       "url": "https://thequantuminsider.com/2026/05/05/quantinuum-and-bmw-group-expand-quantum-computing-collaboration-with-new-multi-year-partnership/",
       "title": "Quantinuum And BMW Group Expand Quantum Computing Collaboration With New Multi-Year Partnership - The Quantum Insider",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/08/honeywell-announces-quantinuums-filing-of-registration-statement-for-ipo/",
+      "title": "Honeywell Announces Quantinuum's Filing of Registration Statement for IPO - The Quantum Insider",
+      "dateAccessed": "2026-05-10"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/honeywell-announces-quantinuums-filing-of-registration-statement-for-proposed-ipo/",
+      "title": "Honeywell Announces Quantinuum's Filing of Registration Statement for Proposed IPO - HPCwire",
+      "dateAccessed": "2026-05-17"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/20/quantinuum-announces-collaboration-with-synopsys-toward-advancing-industrial-design-with-quantum-computing/",
+      "title": "Quantinuum Announces Collaboration with Synopsys Toward Advancing Industrial Design with Quantum Computing - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/21/quantinuum-enters-into-letter-of-intent-with-the-u-s-department-of-commerce-for-funding-opportunity-to-accelerate-u-s-leadership-in-quantum-computing/",
+      "title": "Quantinuum Signs Letter of Intent with U.S. Department of Commerce - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/22/quantinuum-bp-wave-physics-quantum-computing/",
+      "title": "Quantinuum and bp Explore Quantum Computing for Seismic Imaging - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-26/honeywell-backed-quantinuum-seeks-to-raise-1-05-billion-in-ipo",
+      "title": "Honeywell-Backed Quantinuum Seeks $1.05 Billion in US IPO - Bloomberg",
+      "dateAccessed": "2026-05-31"
+    },
+    {
+      "type": "url",
+      "url": "https://www.cnbc.com/2026/06/04/quantinuum-qnt-stock-first-trade-ipo.html",
+      "title": "Quantinuum closes flat in Nasdaq debut after upsized offering - CNBC",
+      "dateAccessed": "2026-07-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/microsofts-application-of-error-correction-to-trapped-ion-qubits-published-in-nature/",
+      "title": "Microsoft's Application of Error Correction to Trapped-Ion Qubits Published in Nature - HPCwire",
+      "dateAccessed": "2026-06-21"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/sandia-national-laboratories-and-quantinuum-validate-98-qubit-helios-trapped-ion-framework/",
+      "title": "Sandia National Laboratories and Quantinuum Validate 98-Qubit Helios Trapped-Ion Framework - Quantum Computing Report",
+      "dateAccessed": "2026-06-21"
+    },
+    {
+      "type": "doi",
+      "url": "https://www.nature.com/articles/s41586-026-10709-y",
+      "title": "Universal gates from braiding and fusing anyons on quantum hardware",
+      "datePublished": "2026-07-15",
+      "dateAccessed": "2026-07-26"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quantinuum-and-academic-partners-demonstrate-first-universal-topological-gate-set-via-non-abelian-anyons/",
+      "title": "Quantinuum and Academic Partners Demonstrate First Universal Topological Gate Set via Non-Abelian Anyons - Quantum Computing Report",
+      "dateAccessed": "2026-07-26"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/06/04/quantinuum-to-debut-on-nasdaq-after-raising-1-68-billion-in-ipo/",
+      "title": "Quantinuum to Debut on Nasdaq After Raising $1.68 Billion in IPO - The Quantum Insider",
+      "dateAccessed": "2026-08-16"
+    },
+    {
+      "type": "url",
+      "url": "https://www.oracle.com/news/announcement/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure-2026-08-11/",
+      "title": "Quantinuum and Oracle Partner on Hybrid Quantum-AI Cloud - Oracle",
+      "dateAccessed": "2026-08-30"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/08/12/quantinuum-revenue-jumps-279-in-first-earnings-report-since-ipo/",
+      "title": "Quantinuum Revenue Jumps 279% in First Earnings Report Since IPO - The Quantum Insider",
+      "dateAccessed": "2026-08-16"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quantinuum-reports-q2-2026-results-revenue-up-279-yoy-1-7b-traditional-ipo-and-oracle-cloud-integration/",
+      "title": "Quantinuum Reports Q2 2026 Results: Revenue Up 279% YoY, $1.7B Traditional IPO, and Oracle Cloud Integration - Quantum Computing Report",
+      "dateAccessed": "2026-08-23"
+    },
+    {
+      "type": "url",
+      "url": "https://www.datacenterdynamics.com/en/news/quantum-earnings-q2-2026-d-wave-ionq-and-rigetti-publish-financial-results-alongside-newly-ipo-ed-iqm-quantum-computers/",
+      "title": "Quantum earnings Q2 2026 - Data Center Dynamics",
+      "dateAccessed": "2026-08-23"
     }
   ],
   "news": [
+    {
+      "title": "Honeywell Announces Quantinuum's Filing of Registration Statement For IPO",
+      "excerpt": "Quantinuum has publicly filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission for a proposed initial public offering and plans to list on the Nasdaq under the ticker symbol QNT.",
+      "url": "https://thequantuminsider.com/2026/05/08/honeywell-announces-quantinuum-filing-of-registration-statement-for-ipo/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-08"
+    },
+    {
+      "title": "Quantinuum and Academic Partners Demonstrate First Universal Topological Gate Set via Non-Abelian Anyons",
+      "excerpt": "A multi-institutional collaboration including Quantinuum, Caltech, University of Chicago, Harvard, and Stony Brook University successfully demonstrated the first universal topological gate set using non-Abelian anyons.",
+      "url": "https://quantumcomputingreport.com/quantinuum-and-academic-partners-demonstrate-first-universal-topological-gate-set-via-non-abelian-anyons/",
+      "source": "Quantum Computing Report",
+      "date": "2026-06-01"
+    },
     {
       "title": "Quantinuum and BMW Group expand into multi-year quantum computing partnership for advanced materials science",
       "excerpt": "The partnership extends BMW's use of successive Quantinuum H-series generations (Helios, Sol, Apollo) for molecular simulation and catalyst research, positioning it as one of the longest-sustained quantum-enterprise commitments.",
       "url": "https://thequantuminsider.com/2026/05/05/quantinuum-and-bmw-group-expand-quantum-computing-collaboration-with-new-multi-year-partnership/",
       "source": "The Quantum Insider",
       "date": "2026-05-05"
+    },
+    {
+      "title": "Quantinuum files S-1 for Nasdaq IPO under ticker QNT",
+      "excerpt": "Honeywell-backed Quantinuum publicly filed a Form S-1 with the SEC for a proposed IPO of Class A common stock on the Nasdaq Global Select Market under ticker QNT, with J.P. Morgan and Morgan Stanley as joint lead book-running managers.",
+      "url": "https://thequantuminsider.com/2026/05/08/honeywell-announces-quantinuums-filing-of-registration-statement-for-ipo/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-08"
+    },
+    {
+      "title": "Quantinuum publicly files S-1 registration statement for proposed Nasdaq IPO under ticker QNT",
+      "excerpt": "Honeywell announced the public filing of Quantinuum's S-1 registration for a proposed Nasdaq IPO under ticker QNT. The filing disclosed 2025 revenue of $30.9M and a net loss of $192.6M. J.P. Morgan and Morgan Stanley are joint lead book-running managers.",
+      "url": "https://www.hpcwire.com/off-the-wire/honeywell-announces-quantinuums-filing-of-registration-statement-for-proposed-ipo/",
+      "source": "HPCwire",
+      "date": "2026-05-08"
+    },
+    {
+      "title": "Quantinuum Announces Collaboration with Synopsys to Advance Industrial Design with Quantum Computing",
+      "excerpt": "Quantinuum and Synopsys launched a strategic collaboration to integrate quantum computing into engineering simulation workflows for computational fluid dynamics and electromagnetic simulation. The initiative aims to develop quantum-enabled solvers that improve accuracy and accelerate design cycles without requiring engineers to change existing processes.",
+      "url": "https://thequantuminsider.com/2026/05/20/quantinuum-announces-collaboration-with-synopsys-toward-advancing-industrial-design-with-quantum-computing/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-20"
+    },
+    {
+      "title": "Quantinuum Signs Letter of Intent with U.S. Department of Commerce to Advance Fault-Tolerant Trapped-Ion Quantum Computing",
+      "excerpt": "Quantinuum signed a Letter of Intent with the U.S. Department of Commerce's CHIPS R&D Office for proposed federal funding to advance large-scale, fault-tolerant trapped-ion quantum computers and strengthen domestic manufacturing capabilities. GlobalFoundries and Monarch Quantum are expected to support the effort through semiconductor, advanced packaging, and integrated photonics technologies.",
+      "url": "https://thequantuminsider.com/2026/05/21/quantinuum-enters-into-letter-of-intent-with-the-u-s-department-of-commerce-for-funding-opportunity-to-accelerate-u-s-leadership-in-quantum-computing/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-21"
+    },
+    {
+      "title": "Quantinuum and bp Collaborate on Quantum Computing for Seismic Imaging",
+      "excerpt": "Quantinuum and bp launched a quantum computing collaboration to improve seismic imaging and subsurface energy exploration using hybrid quantum-classical methods. The project builds on an earlier feasibility pilot and addresses computationally intensive wave-physics modelling that could theoretically achieve the same accuracy gains as classical doubling of resolution with far fewer resources.",
+      "url": "https://thequantuminsider.com/2026/05/22/quantinuum-bp-wave-physics-quantum-computing/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-22"
+    },
+    {
+      "title": "Quantinuum files for IPO targeting USD 12.7B valuation on Nasdaq",
+      "excerpt": "Quantinuum filed to raise $1.05 billion in its landmark IPO, offering shares at $45–$50 each for a fully diluted valuation of approximately $12.7 billion. The company will list on Nasdaq under ticker QNT — the first traditional IPO by a full-stack quantum computing company.",
+      "url": "https://thequantuminsider.com/2026/05/26/honeywell-backed-quantinuum-files-for-landmark-quantum-ipo/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-26"
+    },
+    {
+      "title": "Quantinuum raises $1.68 billion in upsized Nasdaq IPO at $60 per share, valued at $14B+",
+      "excerpt": "Quantinuum priced its IPO at $60 per share on June 3, 2026 — above the $53–$55 range — and raised $1.68 billion through 28 million Class A shares. Trading began on the Nasdaq Global Select Market (ticker: QNT) on June 4, opening at $68 per share. The IPO valued Quantinuum at over $14 billion.",
+      "url": "https://www.cnbc.com/2026/06/04/quantinuum-qnt-stock-first-trade-ipo.html",
+      "source": "CNBC",
+      "date": "2026-06-04"
+    },
+    {
+      "title": "Quantinuum begins trading on Nasdaq after $1.68B IPO",
+      "excerpt": "Quantinuum debuted on the Nasdaq after raising $1.68 billion in its initial public offering, selling 28 million shares priced at $60 each above the marketed range. The offering implied a valuation of $14-15 billion, with the company trading under ticker symbol QNT.",
+      "url": "https://thequantuminsider.com/2026/06/04/quantinuum-to-debut-on-nasdaq-after-raising-1-68-billion-in-ipo/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-04"
+    },
+    {
+      "title": "Microsoft and Quantinuum publish peer-reviewed Nature paper showing 800× quantum error correction improvement",
+      "excerpt": "Using Microsoft's qubit-virtualization platform on Quantinuum trapped-ion hardware, the teams demonstrated logical error-rate reductions from 11× to 800× over physical baselines, with repeated mid-computation error correction across up to 12 logical qubits.",
+      "url": "https://www.hpcwire.com/off-the-wire/microsofts-application-of-error-correction-to-trapped-ion-qubits-published-in-nature/",
+      "source": "HPCwire",
+      "date": "2026-06-13"
+    },
+    {
+      "title": "Sandia National Laboratories and Quantinuum validate 98-qubit Helios system with 99.9975% single-qubit fidelity",
+      "excerpt": "A Nature paper co-authored by Sandia and Quantinuum reports 99.9975% single-qubit fidelity, 99.921% two-qubit fidelity, and 99.967% SPAM fidelity for the Helios QCCD trapped-ion system, confirming it operates in a regime that challenges contemporary supercomputers.",
+      "url": "https://quantumcomputingreport.com/sandia-national-laboratories-and-quantinuum-validate-98-qubit-helios-trapped-ion-framework/",
+      "source": "Quantum Computing Report",
+      "date": "2026-06-17"
+    },
+    {
+      "title": "Quantinuum, Rolls-Royce, Riverlane and EPCC sign multi-year collaboration for quantum gas turbine fluid dynamics",
+      "excerpt": "The four partners will develop hybrid quantum-classical workflows for computational fluid dynamics in gas turbine design, using Quantinuum's Helios platform, Riverlane's QEC stack, and EPCC's supercomputing resources. The work builds on prior Rolls-Royce and Riverlane research.",
+      "url": "https://thequantuminsider.com/2026/07/14/quantinuum-rolls-royce-riverlane-and-university-of-edinburgh-sign-agreement-to-explore-quantum-computing-for-industrial-design-and-simulation/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-14"
+    },
+    {
+      "title": "Quantinuum demonstrates first universal topological gate set using non-Abelian anyons, published in Nature",
+      "excerpt": "Quantinuum with University of Chicago, Harvard, and Stony Brook demonstrated a universal gate set via non-Abelian anyon braiding and fusion on the 98-qubit H2 processor. Published in Nature, the approach could reduce reliance on resource-intensive magic state distillation.",
+      "url": "https://www.nature.com/articles/s41586-026-10709-y",
+      "source": "Nature",
+      "date": "2026-07-15"
+    },
+    {
+      "title": "Quantinuum to report Q2 2026 results on August 11 in inaugural earnings as public company",
+      "excerpt": "Quantinuum scheduled its first public earnings report for August 11, 2026 — its inaugural disclosure since the $1.68 billion June IPO. Analyst expectations include approximately $7.8 million in Q2 revenue and a loss of $0.26 per share.",
+      "url": "https://www.quantinuum.com/press-releases/quantinuum-to-report-second-quarter-financial-results-on-august-11-2026",
+      "source": "Quantinuum Newsroom",
+      "date": "2026-07-28"
+    },
+    {
+      "title": "Quantinuum and Oracle partner to bring Helios quantum computer to Oracle Cloud Infrastructure",
+      "excerpt": "OCI customers will be able to access Quantinuum's Helios trapped-ion quantum computer through Oracle Cloud Infrastructure's quantum service alongside HPC and GPU resources, enabling hybrid quantum-AI workloads. Helios will be deployed in a US-based OCI AI data centre.",
+      "url": "https://www.oracle.com/news/announcement/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure-2026-08-11/",
+      "source": "Oracle",
+      "date": "2026-08-11"
+    },
+    {
+      "title": "Quantinuum Q2 2026 revenue up 279% YoY in first earnings report as a public company",
+      "excerpt": "Quantinuum reported $8 million in Q2 2026 revenue, up 279% year over year, in its first quarterly earnings report since the IPO. FY 2026 guidance was set at $28-32 million, and the Nexus cloud platform is now used by 180 organizations.",
+      "url": "https://thequantuminsider.com/2026/08/12/quantinuum-revenue-jumps-279-in-first-earnings-report-since-ipo/",
+      "source": "The Quantum Insider",
+      "date": "2026-08-12"
+    },
+    {
+      "title": "Quantinuum reports Q2 2026 results: $8M revenue (+279% YoY), $1.7B IPO proceeds, 2026 guidance $28–32M",
+      "excerpt": "Quantinuum's first quarterly earnings as a public company showed Q2 2026 revenue of $8 million, a 279% year-over-year increase, with $2.1 billion cash on hand from the June 2026 traditional IPO. The company set full-year 2026 revenue guidance of $28–32 million.",
+      "url": "https://quantumcomputingreport.com/quantinuum-reports-q2-2026-results-revenue-up-279-yoy-1-7b-traditional-ipo-and-oracle-cloud-integration/",
+      "source": "Quantum Computing Report",
+      "date": "2026-08-11"
+    },
+    {
+      "title": "Quantinuum and Oracle partner to deploy Helios trapped-ion quantum computer on Oracle Cloud Infrastructure",
+      "excerpt": "Quantinuum and Oracle announced a multi-year strategic partnership to make Quantinuum's Helios quantum computer available as a managed service on Oracle Cloud Infrastructure, enabling OCI customers to access trapped-ion quantum computing alongside HPC and GPU workloads.",
+      "url": "https://www.quantinuum.com/press-releases/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure",
+      "source": "Quantinuum",
+      "date": "2026-08-11"
+    },
+    {
+      "title": "Quantinuum and Oracle Announce Multi-Year Strategic Partnership for Hybrid Quantum-AI Cloud",
+      "excerpt": "Quantinuum and Oracle announced a multi-year strategic partnership to deploy Quantinuum's Helios quantum computer in a US-based OCI AI data center, enabling hybrid quantum-AI workloads as an Oracle Cloud Infrastructure service for enterprise customers in materials, pharmaceuticals, logistics, and finance.",
+      "url": "https://thequantuminsider.com/2026/08/12/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure/",
+      "source": "The Quantum Insider",
+      "date": "2026-08-11"
     }
   ]
 }

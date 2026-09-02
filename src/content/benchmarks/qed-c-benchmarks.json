@@ -45,6 +45,13 @@
   ],
   "news": [
     {
+      "title": "Application-Oriented Performance Benchmarks for Quantum Computing",
+      "excerpt": "Peer-reviewed paper introducing the open-source QED-C benchmark suite for measuring quantum computing hardware effectiveness across various algorithms and problem sizes.",
+      "url": "https://arxiv.org/abs/2110.03137",
+      "source": "arXiv",
+      "date": "2023-01-10"
+    },
+    {
       "title": "Quantum Algorithm Exploration using Application-Oriented Performance Benchmarks",
       "excerpt": "QED-C published report expanding the Application-Oriented Benchmarks with new implementations including scalable HHL linear equation solver and Hydrogen Lattice simulation benchmarks.",
       "url": "https://quantumconsortium.org/quantum-algorithm-exploration-using-application-oriented-performance-benchmarks/",

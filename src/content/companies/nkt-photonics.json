@@ -21,6 +21,15 @@
     "Koheras low-noise fiber lasers used in 13 dB squeezed-vacuum experiments at 1550 nm (Vahlbruch et al., Optics Letters 2018)",
     "Deployed 20,000+ single-frequency fiber lasers globally; part of the Hamamatsu group"
   ],
+  "news": [
+    {
+      "title": "NKT Photonics renamed Hamamatsu Photonics A/S following Hamamatsu Photonics K.K. acquisition",
+      "excerpt": "Effective June 25, 2026, NKT Photonics A/S was renamed Hamamatsu Photonics A/S and repositioned as the Lasers & Fibers Business Unit within the Hamamatsu Photonics Group. Products and staff remain unchanged; Koheras low-noise lasers continue under the new brand.",
+      "url": "https://www.news-medical.net/news/20260706/NKT-Photonics-becomes-Hamamatsu-Photonics-AS.aspx",
+      "source": "News Medical Life Sciences",
+      "date": "2026-07-06"
+    }
+  ],
   "sources": [
     {
       "type": "website",
@@ -52,6 +61,27 @@
       "url": "https://www.nktphotonics.com/cases/danish-photonic-quantum-computer/",
       "title": "Danish Photonic Quantum Computer (PhotoQ) case study - NKT Photonics",
       "dateAccessed": "2026-05-01"
+    },
+    {
+      "type": "url",
+      "url": "https://optics.org/press-releases/nkt-photonics-as-to-be-renamed-to-hamamatsu-photonics-as",
+      "title": "NKT Photonics A/S to be renamed to Hamamatsu Photonics A/S - optics.org",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://www.laserfocusworld.com/directory/laser-sources/laser-systems-ultrafast/press-release/55387300/hamamatsu-photonics-a-s-nkt-photonics-a-s-to-be-renamed-to-hamamatsu-photonics-a-s",
+      "title": "NKT Photonics A/S to be renamed to Hamamatsu Photonics A/S - Laser Focus World",
+      "dateAccessed": "2026-08-02"
+    }
+  ],
+  "news": [
+    {
+      "title": "NKT Photonics A/S formally renamed Hamamatsu Photonics A/S, effective June 25, 2026",
+      "excerpt": "NKT Photonics A/S was officially renamed Hamamatsu Photonics A/S effective June 25, 2026, formalising its integration into the Hamamatsu Photonics Group following the 2024 acquisition. Operations, product portfolio, and customer relationships remain unchanged.",
+      "url": "https://optics.org/press-releases/nkt-photonics-as-to-be-renamed-to-hamamatsu-photonics-as",
+      "source": "optics.org",
+      "date": "2026-06-25"
     }
   ]
 }

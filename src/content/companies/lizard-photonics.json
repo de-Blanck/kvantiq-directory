@@ -4,7 +4,13 @@
   "country": "Denmark",
   "region": "nordics",
   "type": "hardware",
-  "tags": ["nanophotonics", "NEMS", "single-photon", "quantum-light-sources", "DTU-spinout"],
+  "tags": [
+    "nanophotonics",
+    "NEMS",
+    "single-photon",
+    "quantum-light-sources",
+    "DTU-spinout"
+  ],
   "founded": 2024,
   "description": "Lizard Photonics is a DTU Electro spinout commercializing a nanoelectromechanical (NEMS) photonics platform for custom photonic-circuit design, optical testing, packaging, and nanofabrication. Founded by Ali Nawaz Babar (CEO), Michael Juhl (CTO), and Soren Stobbe (CSO; head of the Quantum & Nanophotonics section at DTU Electro), the company is a partner in the DKK 40M Innovation Fund Denmark EQUAL project for erbium-based silicon quantum light sources (May 2025 - 2030).",
   "website": "https://lizardphotonics.com",
@@ -49,6 +55,22 @@
       "title": "Erbium-based light sources for quantum technology - Photonic Integrated Circuits Magazine",
       "datePublished": "2025-05-15",
       "dateAccessed": "2026-05-01"
+    }
+  ],
+  "news": [
+    {
+      "title": "Research project to crack the code of quantum light sources and quantum networks",
+      "excerpt": "A new Danish-German research collaboration is developing new quantum light sources, which could revolutionize cryptography and networks between quantum computers. The Innovation Fund has invested DKK 40 million in the project.",
+      "url": "https://www.dtu.dk/english/news/all-news/research-project-to-crack-the-code-of-quantum-light-sources-and-quantum-networks?id=a84d6518-40f9-4f88-81f2-dc17c4117502",
+      "source": "DTU",
+      "date": "2025-05-12"
+    },
+    {
+      "title": "Erbium-based light sources for quantum technology",
+      "excerpt": "A new Danish-German research collaboration has received funding of DKK 40 million from Innovation Fund Denmark for a five-year project titled Erbium-based silicon quantum light sources (EQUAL).",
+      "url": "https://picmagazine.net/article/121804/Erbium-based_light_sources_for_quantum_technology",
+      "source": "PIC Magazine",
+      "date": "2025-05-22"
     }
   ]
 }

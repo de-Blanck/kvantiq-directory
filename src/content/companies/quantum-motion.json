@@ -16,8 +16,8 @@
   "website": "https://quantummotion.com",
   "featured": false,
   "headquarters": "London, United Kingdom",
-  "employees": "100+",
-  "funding": "GBP 62M+",
+  "employees": "120+",
+  "funding": "GBP 182M+",
   "accessModel": "Hardware development + government contracts",
   "products": [
     {
@@ -28,7 +28,7 @@
   "highlights": [
     "Delivered the first full-stack silicon CMOS quantum computer to the UK National Quantum Computing Centre",
     "Advanced to DARPA Quantum Benchmarking Initiative Stage B in 2025",
-    "Founded by researchers from UCL and Oxford with GBP 62M+ in funding"
+    "Raised USD 160M Series C in May 2026 co-led by DCVC and Kembara, positioning it as the UK's best-funded quantum company"
   ],
   "sources": [
     {
@@ -48,15 +48,68 @@
       "url": "https://quantumcomputingreport.com/quantum-motion-delivers-full-stack-silicon-cmos-quantum-computer-to-uks-nqcc/",
       "title": "Quantum Motion Delivers Full-Stack Silicon CMOS Quantum Computer to UK's NQCC - Quantum Computing Report",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/07/quantum-motion-160m-series-c-silicon-quantum-computing/",
+      "title": "Quantum Motion Raises $160M for Silicon Quantum Computing Development - The Quantum Insider",
+      "dateAccessed": "2026-05-10"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/quantum-motion-secures-160m-to-advance-silicon-cmos-quantum-systems/",
+      "title": "Quantum Motion Secures $160M to Advance Silicon CMOS Quantum Systems - HPCwire",
+      "dateAccessed": "2026-05-10"
+    },
+    {
+      "type": "url",
+      "url": "https://thenextweb.com/news/quantum-motion-160m-eu-scaleup-europe-fund-first-investment",
+      "title": "Quantum Motion lands $160M in EU's first major late-stage commitment — The Next Web",
+      "dateAccessed": "2026-05-18"
     }
   ],
   "news": [
+    {
+      "title": "DARPA Advances Quantum Motion to QBI Stage B",
+      "excerpt": "DARPA advanced the company to QBI Stage B in November 2025, one of just 11 companies to progress, on a finding that the silicon-based fault-tolerant design was credible.",
+      "url": "https://thenextweb.com/news/quantum-motion-160m-eu-scaleup-europe-fund-first-investment",
+      "source": "The Next Web",
+      "date": "2025-11-01"
+    },
+    {
+      "title": "Quantum Motion Raises $160 Million Series C",
+      "excerpt": "Quantum Motion raised $160 million in Series C funding to advance its silicon-based quantum computing platform toward commercial deployment. The round is co-led by DCVC and Kembara, with participation from the British Business Bank and Firgun.",
+      "url": "https://thequantuminsider.com/2026/05/07/quantum-motion-160m-silicon-quantum-computing/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-07"
+    },
     {
       "title": "Quantum Motion Delivers Full-Stack Silicon CMOS Quantum Computer to UK's NQCC",
       "excerpt": "Quantum Motion has delivered a full-stack quantum computer built using standard silicon CMOS chip fabrication to the UK National Quantum Computing Centre, the first silicon spin-qubit computer installed at the Centre.",
       "url": "https://quantumcomputingreport.com/quantum-motion-delivers-full-stack-silicon-cmos-quantum-computer-to-uks-nqcc/",
       "source": "Quantum Computing Report",
       "date": "2025-09-15"
+    },
+    {
+      "title": "Quantum Motion raises USD 160M Series C led by EU Scaleup Europe Fund",
+      "excerpt": "The EU's new Scaleup Europe Fund made its first major late-stage investment by leading a USD 160M Series C in Quantum Motion, the UK silicon CMOS spin-qubit company. The round follows Quantum Motion's delivery of a full-stack silicon CMOS quantum computer to the UK NQCC and advancement to DARPA QBI Stage B.",
+      "url": "https://thequantuminsider.com/2026/05/07/new-investment-in-quantum-motion-strengthens-europes-push-for-scalable-quantum-computing/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-07"
+    },
+    {
+      "title": "Quantum Motion raises USD 160M Series C to scale silicon spin qubit processors",
+      "excerpt": "The round, co-led by DCVC and Kembara with participation from the British Business Bank, Firgun, Bosch Ventures, Porsche SE, and returning investors, makes Quantum Motion the UK's best-funded quantum company. Funds will scale the 300mm CMOS silicon spin qubit platform toward utility-scale commercial deployment.",
+      "url": "https://thequantuminsider.com/2026/05/07/quantum-motion-160m-series-c-silicon-quantum-computing/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-07"
+    },
+    {
+      "title": "Quantum Motion closes $160M Series C to commercialise silicon CMOS quantum computers for data centres",
+      "excerpt": "DCVC and Kembara co-led Quantum Motion's £120M Series C ($160M), joined by the British Business Bank, Oxford Science Enterprises, Bosch Ventures, Porsche Automobil Holding, Inkef, and Parkwalk Advisors. The round makes Quantum Motion the UK's best-funded quantum computing firm and will fund commercialisation of silicon transistor-based quantum computers that fit in standard data centre racks with 1,000× lower energy use.",
+      "url": "https://sifted.eu/articles/quantum-motion-series-c",
+      "source": "Sifted",
+      "date": "2026-05-07"
     }
   ]
 }

@@ -50,6 +50,30 @@
       "type": "website",
       "url": "https://www.berlin.de/deeptech/en/blog/deep-tech-talk-kipu-quantum-1579231.en.php",
       "title": "Deep Tech Talk: Kipu Quantum - Berlin.de"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/20/kipu-quantum-makes-quantum-enhanced-ai-deployable-in-production/",
+      "title": "Kipu Quantum Makes Quantum-Enhanced AI Deployable in Production - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/kipu-quantum-launches-hybrid-framework-to-enable-offline-inference-for-quantum-machine-learning/",
+      "title": "Kipu Quantum Launches Hybrid Framework to Enable Offline Inference for Quantum Machine Learning - Quantum Computing Report",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/02/17/kipu-quantum-launches-rimay-feature-extraction/",
+      "title": "Kipu Quantum Launches Rimay Quantum Feature Extraction Service - The Quantum Insider",
+      "dateAccessed": "2026-06-07"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/kipu-quantum-launches-rimay-for-industrial-quantum-enhanced-machine-learning/",
+      "title": "Kipu Quantum Launches Rimay for Industrial Quantum-Enhanced Machine Learning - Quantum Computing Report",
+      "dateAccessed": "2026-06-07"
     }
   ],
   "news": [
@@ -59,6 +83,13 @@
       "url": "https://thequantuminsider.com/2026/02/17/kipu-quantum-launches-rimay-feature-extraction/",
       "source": "The Quantum Insider",
       "date": "2026-02-17"
+    },
+    {
+      "title": "Kipu Quantum launches hybrid offline framework enabling quantum-trained ML without quantum hardware at inference",
+      "excerpt": "The framework trains quantum-enhanced ML models on quantum hardware and deploys them on classical infrastructure, reducing quantum execution costs by a factor of five or more while preserving the accuracy gains from quantum feature extraction.",
+      "url": "https://thequantuminsider.com/2026/05/20/kipu-quantum-makes-quantum-enhanced-ai-deployable-in-production/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-20"
     }
   ]
 }

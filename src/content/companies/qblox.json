@@ -58,9 +58,54 @@
       "type": "url",
       "url": "https://quantumcomputingreport.com/quantware-q-ctrl-and-qblox-launch-qub-reference-architecture-for-quantum-adoption/",
       "title": "QuantWare, Q-CTRL, and Qblox Launch QUB Reference Architecture for Quantum Adoption - Quantum Computing Report"
+    },
+    {
+      "type": "url",
+      "url": "https://www.koreatimes.co.kr/amp/foreignaffairs/20260703/quantum-leaders-converge-in-seoul-as-dutch-australian-and-canadian-delegations-expand-korea-ties",
+      "title": "Quantum leaders converge in Seoul as Dutch, Australian, and Canadian delegations expand Korea ties - Korea Times",
+      "dateAccessed": "2026-07-05"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/03/south-korea-expands-quantum-cooperation-with-canada-u-k-and-eu-at-quantum-korea-2026/",
+      "title": "South Korea Expands Quantum Cooperation with Canada, UK and EU at Quantum Korea 2026 - The Quantum Insider",
+      "dateAccessed": "2026-07-05"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/06/25/qblox-collaborates-with-hpe-to-advance-hybrid-classical-quantum-computing/",
+      "title": "Qblox Collaborates with HPE to Advance Hybrid Classical-Quantum Computing - The Quantum Insider",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/qblox-collaborates-with-hpe-to-advance-hybrid-classical-quantum-computing/",
+      "title": "Qblox Collaborates with HPE to Advance Hybrid Classical-Quantum Computing - HPCwire",
+      "dateAccessed": "2026-08-02"
     }
   ],
   "news": [
+    {
+      "title": "Qblox Accelerates Utility-Scale Quantum Computing With NVIDIA",
+      "excerpt": "Qblox and NVIDIA announced leveraging NVIDIA NVQLink to enable tight integration of NVIDIA GPUs with Qblox Q1 pulse processors for scalable, utility-scale quantum computers.",
+      "url": "https://www.hpcwire.com/off-the-wire/qblox-accelerates-utility-scale-quantum-computing-with-nvidia/",
+      "source": "HPCwire",
+      "date": "2025-10-29"
+    },
+    {
+      "title": "Qblox and HPE Collaborate on Hybrid Quantum-HPC Computing",
+      "excerpt": "Qblox announced a collaboration with HPE to advance hybrid classical-quantum computing, with Qblox control systems serving as a core enabler for integrating quantum technologies with HPC and AI infrastructure.",
+      "url": "https://thequantuminsider.com/2026/06/25/qblox-collaborates-with-hpe-to-advance-hybrid-classical-quantum-computing/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-25"
+    },
+    {
+      "title": "Qblox Participates in Quantum Korea 2026",
+      "excerpt": "The Netherlands delegation brought six leading quantum organizations including Qblox to Quantum Korea 2026, showcasing expertise in quantum computing, hardware, control systems, and networking.",
+      "url": "https://www.koreatimes.co.kr/amp/foreignaffairs/20260703/quantum-leaders-converge-in-seoul-as-dutch-australian-and-canadian-delegations-expand-korea-ties",
+      "source": "Korea Times",
+      "date": "2026-07-03"
+    },
     {
       "title": "QuantWare, Q-CTRL, and Qblox Launch QUB Reference Architecture for Quantum Adoption",
       "excerpt": "QuantWare, Q-CTRL, and Qblox announced the launch of the Quantum Utility Block (QUB), a family of full-stack, pre-validated quantum computer reference implementations built on the Quantum Open Architecture (QOA).",
@@ -74,6 +119,13 @@
       "url": "https://www.hpcwire.com/off-the-wire/",
       "source": "HPCwire",
       "date": "2026-06-25"
+    },
+    {
+      "title": "Qblox joins Dutch national quantum delegation at Quantum Korea 2026 in Seoul",
+      "excerpt": "Qblox participated in a six-organization Dutch national quantum delegation at Quantum Korea 2026 (July 2–4, Seoul), alongside QDNL, TNO, QuTech, QuantWare, and Delft Circuits. The delegation operated a Netherlands Lounge for targeted meetings with Korean industry and research partners to deepen bilateral quantum cooperation.",
+      "url": "https://thequantuminsider.com/2026/07/03/south-korea-expands-quantum-cooperation-with-canada-u-k-and-eu-at-quantum-korea-2026/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-03"
     }
   ]
 }

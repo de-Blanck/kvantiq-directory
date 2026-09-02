@@ -38,5 +38,14 @@
       "url": "https://www.ncsc.gov.uk/guidance/pqc-migration-timelines",
       "title": "Timelines for migration to post-quantum cryptography | National Cyber Security Centre"
     }
+  ],
+  "news": [
+    {
+      "title": "NIST releases principal post-quantum cryptography standards",
+      "excerpt": "NIST released the principal three PQC standards in 2024 and is developing additional standards to serve as backups or alternatives. Organizations should begin applying these standards now to migrate their systems to quantum-resistant cryptography.",
+      "url": "https://csrc.nist.gov/projects/post-quantum-cryptography",
+      "source": "NIST Post-Quantum Cryptography Project",
+      "date": "2024-01-01"
+    }
   ]
 }

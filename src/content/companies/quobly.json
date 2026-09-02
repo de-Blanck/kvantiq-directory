@@ -14,7 +14,7 @@
   "website": "https://www.quobly.io",
   "featured": false,
   "headquarters": "Grenoble, France",
-  "funding": "EUR 19M",
+  "funding": "EUR 134M+ (seed EUR 19M; Series A EUR 115M, June 2026)",
   "accessModel": "Hardware development + licensing",
   "products": [
     {
@@ -43,7 +43,8 @@
     {
       "type": "url",
       "url": "https://thequantuminsider.com/2026/06/03/quobly-secures-e115-million-series-a-to-bring-silicon-based-quantum-computers-to-market/",
-      "title": "Quobly Secures €115 Million Series A to Bring Silicon-Based Quantum Computers to Market"
+      "title": "Quobly Secures €115 Million Series A to Bring Silicon-Based Quantum Computers to Market - The Quantum Insider",
+      "dateAccessed": "2026-06-07"
     },
     {
       "type": "url",
@@ -53,13 +54,26 @@
     {
       "type": "url",
       "url": "https://tech.eu/2026/06/03/quobly-raises-eur115m-series-a-to-commercialise-silicon-quantum-computing/",
-      "title": "Quobly raises €115M Series A to commercialise silicon quantum computing"
+      "title": "Quobly raises €115M Series A to commercialise silicon quantum computing - Tech.eu",
+      "dateAccessed": "2026-06-07"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/quobly-raises-e115m-series-a-to-industrialize-silicon-quantum-computing/",
+      "title": "Quobly Raises €115M Series A to Industrialize Silicon Quantum Computing - HPCwire",
+      "dateAccessed": "2026-06-07"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/sealsq-and-quobly-sign-5m-deal-to-secure-silicon-quantum-computing-platforms/",
+      "title": "SEALSQ and Quobly Sign $5M Deal to Secure Silicon Quantum Computing Platforms - HPCwire",
+      "dateAccessed": "2026-08-02"
     }
   ],
   "news": [
     {
-      "title": "Quobly Secures €115 Million Series A to Bring Silicon-Based Quantum Computers to Market",
-      "excerpt": "Quobly has raised €115 million in a Series A round to accelerate the industrialization of its silicon-based quantum computing platform and launch its first cloud-accessible commercial system by the end of 2026.",
+      "title": "Quobly raises €115M Series A to commercialise silicon-based quantum computers",
+      "excerpt": "The round was led by Bpifrance and STMicroelectronics, with participation from the European Innovation Council (EIC Fund), ALIAD (Air Liquide Venture Capital), Blast, and existing investor Innovacom. Quobly plans to launch its Alloy Pioneer system via cloud in 2026.",
       "url": "https://thequantuminsider.com/2026/06/03/quobly-secures-e115-million-series-a-to-bring-silicon-based-quantum-computers-to-market/",
       "source": "The Quantum Insider",
       "date": "2026-06-03"
@@ -77,6 +91,13 @@
       "url": "https://www.quobly.io",
       "source": "Quobly",
       "date": "2026-06-01"
+    },
+    {
+      "title": "Quobly and SEALSQ Sign $5M Commercial Agreement to Embed Post-Quantum Security in Silicon Quantum Computers",
+      "excerpt": "Quobly and SEALSQ Corp (Nasdaq: LAES) signed a $5M commercial agreement to integrate SEALSQ's post-quantum cryptography and hardware Root-of-Trust infrastructure into Quobly's silicon spin-qubit systems, including the Alloy Pioneer system targeted for cloud access by end of 2026.",
+      "url": "https://www.hpcwire.com/off-the-wire/sealsq-and-quobly-sign-5m-deal-to-secure-silicon-quantum-computing-platforms/",
+      "source": "HPCwire",
+      "date": "2026-07-10"
     }
   ]
 }

@@ -15,8 +15,8 @@
   "website": "https://www.meetiqm.com",
   "featured": true,
   "headquarters": "Espoo, Finland",
-  "employees": "250+",
-  "funding": "EUR 200M+",
+  "employees": "400+",
+  "funding": "Public (Nasdaq: IQMX, July 2026); EUR 309.4M cash post-listing",
   "accessModel": "On-premise systems + cloud API",
   "products": [
     {
@@ -26,12 +26,16 @@
     {
       "name": "IQM Radiance",
       "description": "High-performance superconducting quantum processor for national computing centers and industrial co-design"
+    },
+    {
+      "name": "IQM Halocene H4",
+      "description": "150-qubit superconducting system combining quantum error correction with NISQ qubits; co-funded by EuroHPC JU for LUMI AI Factory deployment (delivery 2027)"
     }
   ],
   "highlights": [
     "Europe's largest quantum computing company with 250+ employees and EUR 200M+ in funding",
     "Supplies quantum accelerators to EuroHPC supercomputing centers across Europe",
-    "On track to become one of Europe's first publicly listed quantum computing companies"
+    "Listed on Nasdaq Global Select Market (ticker IQMX, July 2026), one of Europe's first publicly listed quantum computing companies"
   ],
   "sources": [
     {
@@ -57,9 +61,94 @@
       "url": "https://quantumcomputingreport.com/iqm-to-deploy-japans-first-enterprise-purchased-quantum-computer/",
       "title": "IQM to Deploy Japan's First Enterprise-Purchased Quantum Computer - Quantum Computing Report",
       "dateAccessed": "2026-05-06"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/iqm-launches-hpc-integration-service-to-accelerate-hybrid-quantum-hpc-adoption/",
+      "title": "IQM Launches HPC Integration Service to Accelerate Hybrid Quantum-HPC Adoption - HPCwire",
+      "dateAccessed": "2026-05-17"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/12/iqm-launches-hpc-integration-service-to-accelerate-hybrid-quantum-hpc-adoption/",
+      "title": "IQM Launches HPC Integration Service to Accelerate Hybrid Quantum-HPC Adoption - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/14/iqm-moves-closer-to-public-markets-with-sec-f-4-filing/",
+      "title": "IQM Moves Closer to Public Markets With SEC F-4 Filing - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/iqm-upsizes-spac-merger-pipe-financing-to-146-million-with-capital-commitment-from-pension-insurer-ilmarinen/",
+      "title": "IQM Upsizes SPAC Merger PIPE Financing to $146 Million with Capital Commitment from Pension Insurer Ilmarinen - Quantum Computing Report",
+      "dateAccessed": "2026-06-21"
+    },
+    {
+      "type": "url",
+      "url": "https://techcrunch.com/2026/07/02/iqm-europes-first-public-quantum-company-admits-the-future-of-the-tech-is-uncertain/",
+      "title": "IQM, Europe's first public quantum company, admits the future of the tech is uncertain - TechCrunch",
+      "dateAccessed": "2026-07-12"
+    },
+    {
+      "type": "url",
+      "url": "https://www.eu-startups.com/2026/07/espoo-based-iqm-goes-public-on-nasdaq-in-european-quantum-first-with-e127-million-in-pipe-financing/",
+      "title": "IQM goes public on Nasdaq in European quantum first with €127 million in PIPE financing - EU-Startups",
+      "dateAccessed": "2026-08-16"
+    },
+    {
+      "type": "url",
+      "url": "https://lumi-supercomputer.eu/iqm-selected-to-deliver-the-lumi-iq-quantum-computer/",
+      "title": "IQM selected to deliver the LUMI-IQ quantum computer - LUMI Supercomputer (EuroHPC)",
+      "dateAccessed": "2026-07-12"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/03/iqm-begins-trading-on-nasdaq/",
+      "title": "IQM Joins Nasdaq as Public Quantum Computing Company - The Quantum Insider",
+      "dateAccessed": "2026-08-23"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/07/08/lumi-ai-factory-iqm-quantum-computer/",
+      "title": "LUMI AI Factory Selects IQM to Deploy Advanced Quantum Computer - The Quantum Insider",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/lumi-ai-factory-selects-iqm-to-deploy-superconducting-quantum-computer-for-hybrid-hpc-ai-acceleration/",
+      "title": "LUMI AI Factory Selects IQM to Deploy Superconducting Quantum Computer - Quantum Computing Report",
+      "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/08/04/iqm-quantum-computers-h1-2026-results-full-year-outlook/",
+      "title": "IQM Quantum Computers Reports First Half 2026 Results and Provides Full-Year Outlook - The Quantum Insider",
+      "dateAccessed": "2026-08-30"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/lumi-ai-factory-selects-iqm-to-deploy-advanced-quantum-computer-accelerating-hybrid-hpc-and-ai-development/",
+      "title": "LUMI AI Factory Selects IQM to Deploy Advanced Quantum Computer - HPCwire",
+      "dateAccessed": "2026-08-16"
+    },
+    {
+      "type": "url",
+      "url": "https://www.datacenterdynamics.com/en/news/quantum-earnings-q2-2026-d-wave-ionq-and-rigetti-publish-financial-results-alongside-newly-ipo-ed-iqm-quantum-computers/",
+      "title": "Quantum earnings Q2 2026 - Data Center Dynamics",
+      "dateAccessed": "2026-08-23"
     }
   ],
   "news": [
+    {
+      "title": "LUMI AI Factory Selects IQM to Deploy Advanced Quantum Computer",
+      "excerpt": "The LUMI AI Factory selected IQM Quantum Computers to deliver the IQM Halocene H4 quantum computer with 150 qubits for integration into hybrid HPC and AI environment in Kajaani, Finland. Scheduled for delivery in 2027.",
+      "url": "https://lumi-supercomputer.eu/iqm-selected-to-deliver-the-lumi-iq-quantum-computer/",
+      "source": "LUMI Supercomputer",
+      "date": "2026-07-08"
+    },
     {
       "title": "IQM Appoints Craig Ciesla, Former Illumina VP, as CTO; Inés de Vega Becomes Chief Scientist",
       "excerpt": "IQM announces leadership changes with Craig Ciesla joining as Chief Technology Officer and Inés de Vega becoming Chief Scientist.",
@@ -80,6 +169,160 @@
       "url": "https://quantumcomputingreport.com/iqm-to-deploy-japans-first-enterprise-purchased-quantum-computer/",
       "source": "Quantum Computing Report",
       "date": "2026-04-27"
+    },
+    {
+      "title": "IQM launches HPC Integration Service to run quantum computers as Slurm nodes in supercomputing centers",
+      "excerpt": "Turnkey service integrates IQM Radiance systems into Slurm-managed HPC environments via the open-source QDMI interface, enabling quantum jobs to be submitted alongside CPUs and GPUs. Already running in production at LRZ Munich.",
+      "url": "https://www.hpcwire.com/off-the-wire/iqm-launches-hpc-integration-service-to-accelerate-hybrid-quantum-hpc-adoption/",
+      "source": "HPCwire",
+      "date": "2026-05-12"
+    },
+    {
+      "title": "IQM to deploy 54-qubit Radiance system at Polish enterprise Galaxy",
+      "excerpt": "First installation of an IQM Radiance-class quantum system inside a private enterprise, scheduled for Q4 2026.",
+      "url": "https://thequantuminsider.com/2026/04/07/iqm-galaxy-quantum-deployment-poland/",
+      "source": "The Quantum Insider",
+      "date": "2026-04-07"
+    },
+    {
+      "title": "IQM introduces AI-powered calibration to make quantum computing enterprise-ready",
+      "excerpt": "Agentic AI calibration using NVIDIA Ising models automates parallel qubit tuning, targeting HPC data-centre deployments.",
+      "url": "https://itdigest.com/computer-science/quantum-computing/iqm-introduces-ai-powered-calibration-to-make-quantum-computing-enterprise-ready/",
+      "source": "IT Digest",
+      "date": "2026-04-15"
+    },
+    {
+      "title": "IQM deploys Japan's first enterprise quantum computer to TOYO Corporation",
+      "excerpt": "TOYO Corporation purchased a 20-qubit IQM Radiance system for delivery by end of 2026, marking the first enterprise quantum computer deployment in Japan and expanding IQM's Asia-Pacific installed base.",
+      "url": "https://thequantuminsider.com/2026/04/27/iqm-toyo-quantum-deployment/",
+      "source": "The Quantum Insider",
+      "date": "2026-04-27"
+    },
+    {
+      "title": "IQM files Form F-4 with SEC, advancing NASDAQ listing as IQMX via SPAC merger with Real Asset Acquisition Corp.",
+      "excerpt": "IQM Finland Oy and Real Asset Acquisition Corp. publicly filed a Form F-4 registration statement with the SEC on May 14, 2026. IQM intends to list American Depositary Shares on the NASDAQ Global Exchange under ticker IQMX, targeting position as Europe's first listed quantum computing company.",
+      "url": "https://iqm.tech/press-releases/iqm-a-global-leader-for-quantum-computing-to-become-the-first-listed-european-quantum-company-through-merger-with-real-asset-acquisition-corp/",
+      "source": "IQM Press Release",
+      "date": "2026-05-14"
+    },
+    {
+      "title": "IQM Launches HPC Integration Service to Accelerate Hybrid Quantum-HPC Adoption",
+      "excerpt": "IQM launched a turnkey service integrating its superconducting quantum computers as Slurm nodes in HPC environments via its open-source QDMI protocol, already operational at the Leibniz Supercomputing Centre in Germany. The service targets data-centre deployments as IQM advances its planned public listing.",
+      "url": "https://thequantuminsider.com/2026/05/12/iqm-launches-hpc-integration-service-to-accelerate-hybrid-quantum-hpc-adoption/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-12"
+    },
+    {
+      "title": "IQM Moves Closer to Public Markets With SEC F-4 Filing",
+      "excerpt": "IQM Finland Oy filed an SEC Form F-4 registration statement in connection with its planned merger with Real Asset Acquisition Corp. (Nasdaq: RAAQ), targeting a listing under proposed ticker 'IQMX'. The transaction values IQM at approximately $1.8 billion, with over $300 million expected from SPAC trust proceeds and PIPE financing.",
+      "url": "https://thequantuminsider.com/2026/05/14/iqm-moves-closer-to-public-markets-with-sec-f-4-filing/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-14"
+    },
+    {
+      "title": "Poznan University of Technology deploys IQM Radiance R1 — Poland's second IQM installation",
+      "excerpt": "PUT unveiled its first locally installed quantum computer, an IQM Radiance R1, supporting new engineering and master's degree programs in quantum technologies starting October 2026 and a Polish Quantum Olympiad for secondary school students.",
+      "url": "https://thequantuminsider.com/2026/05/26/polands-poznan-university-of-technology-unveils-iqm-quantum-computer-to-drive-research-and-education/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-26"
+    },
+    {
+      "title": "IQM secures €50M financing from BlackRock ahead of public listing",
+      "excerpt": "Funds managed by BlackRock provided a €50M financing facility to accelerate IQM's technology roadmap, R&D, and market expansion ahead of its planned Nasdaq dual listing at a USD 1.8B pre-money valuation.",
+      "url": "https://thequantuminsider.com/2026/03/30/iqm-secures-e50-million-financing-to-accelerate-global-growth/",
+      "source": "The Quantum Insider",
+      "date": "2026-03-30"
+    },
+    {
+      "title": "IQM and RAAQ upsize PIPE financing to USD 146M ahead of Nasdaq and Helsinki listing",
+      "excerpt": "Ilmarinen, Finland's largest pension insurer, committed an additional USD 12M, bringing total PIPE commitments above USD 146M. The SPAC merger values IQM at approximately USD 1.8B pre-money; RAAQ shareholder vote scheduled for 25 June 2026.",
+      "url": "https://thequantuminsider.com/2026/06/02/iqm-and-real-asset-acquisition-corp-announce-upsized-146-million-pipe-with-new-commitment-from-ilmarinen/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-02"
+    },
+    {
+      "title": "IQM announces barbell QLDPC codes reducing logical error rates 1,000x with 8x fewer physical qubits",
+      "excerpt": "IQM's new barbell code family of quantum low-density parity-check (QLDPC) codes, tailored to IQM's 12-connectivity Constellation processor, achieves up to 1,000x lower logical error rates than the surface code while requiring 8x fewer physical qubits. The arXiv preprint (2606.06062) details the hardware-native design requiring no complex multi-layer wiring.",
+      "url": "https://quantumcomputingreport.com/iqm-quantum-computers-proposes-non-local-barbell-qldpc-architecture/",
+      "source": "Quantum Computing Report",
+      "date": "2026-06-09"
+    },
+    {
+      "title": "IQM's 54-qubit Radiance system NOX goes live at CINECA, integrated with Italy's Leonardo supercomputer",
+      "excerpt": "The IQM Radiance 54 quantum computer, named NOX, was inaugurated at CINECA's national supercomputing center in Bologna, Italy, and integrated with Leonardo—one of Europe's fastest supercomputers—enabling hybrid classical-quantum workflows for optimization, simulation, and machine learning research.",
+      "url": "https://quantumcomputingreport.com/iqm-radiance-54-superconducting-quantum-computer-goes-live-at-cineca-in-italy/",
+      "source": "Quantum Computing Report",
+      "date": "2026-06-11"
+    },
+    {
+      "title": "IQM lists on Nasdaq Helsinki and Nasdaq US as Europe's first public quantum computing company",
+      "excerpt": "IQM Quantum Computers begins trading on Nasdaq US (IQMX) on July 2 and Nasdaq Helsinki on July 3, 2026, completing its SPAC merger with Real Asset Acquisition Corp and becoming the first European quantum computing company listed on a major US exchange.",
+      "url": "https://techcrunch.com/2026/07/02/iqm-europes-first-public-quantum-company-admits-the-future-of-the-tech-is-uncertain/",
+      "source": "TechCrunch",
+      "date": "2026-07-03"
+    },
+    {
+      "title": "IQM acquires Quantistry assets to expand industrial quantum software platform",
+      "excerpt": "IQM acquires selected software assets and IP from Quantistry GmbH (Berlin), a cloud-native simulation workflow platform for automotive, aerospace, chemicals, materials, and pharma industries, forming a full-stack industrial quantum simulation platform.",
+      "url": "https://thequantuminsider.com/2026/07/06/iqm-acquires-quantistry-assets/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-06"
+    },
+    {
+      "title": "IQM to Deliver Quantum Computer for Europe's LUMI AI Factory",
+      "excerpt": "IQM was selected to deliver a quantum computer integrated with the LUMI AI Factory supercomputing infrastructure in Finland, expanding its footprint alongside AI supercomputing centers.",
+      "url": "https://thequantuminsider.com/2026/07/08/lumi-ai-factory-iqm-quantum-computer/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-08"
+    },
+    {
+      "title": "IQM begins trading on Nasdaq as IQMX, first European quantum company on major U.S. exchange",
+      "excerpt": "IQM Quantum Computers completed its business combination with Real Asset Acquisition Corp and began trading on the Nasdaq Global Select Market under ticker IQMX on July 3, 2026, with a pro forma cash position of EUR 337 million and 23 deployed quantum systems globally.",
+      "url": "https://thequantuminsider.com/2026/07/03/iqm-begins-trading-on-nasdaq/",
+      "source": "The Quantum Insider",
+      "date": "2026-07-03"
+    },
+    {
+      "title": "IQM completes SPAC merger and begins trading on Nasdaq and Nasdaq Helsinki as IQMX",
+      "excerpt": "IQM completed its business combination with Real Asset Acquisition Corp. on July 1, 2026, becoming the first European quantum computing company to list on both Nasdaq in the US and Nasdaq Helsinki simultaneously. ADS trading on Nasdaq commenced July 2, 2026; Helsinki trading began July 3, 2026.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/iqm-quantum-computers-plc-listing-123000958.html",
+      "source": "Yahoo Finance",
+      "date": "2026-07-02"
+    },
+    {
+      "title": "IQM confirms 2026 outlook with €102M+ order backlog after public listing",
+      "excerpt": "Following its Nasdaq debut, IQM reported H1 2026 revenue of €8.9 million and an order backlog exceeding €102.1 million as of August 3. The company initiated full-year guidance of €42M–€47M in revenue and plans to ramp production to 30 full-stack quantum computers annually at its expanded cleanroom.",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-iqm-quantum-computers-posts-higher-backlog-in-q2-2026-93CH-4834505",
+      "source": "Investing.com",
+      "date": "2026-08-04"
+    },
+    {
+      "title": "IQM begins trading on Nasdaq as Europe's first publicly listed quantum computing company",
+      "excerpt": "IQM completed its business combination with Real Asset Acquisition Corp. and began trading as IQMX on the Nasdaq Global Select Market on July 2, 2026, and on Nasdaq Helsinki on July 3. The company raised EUR 127 million in PIPE financing, bringing total cash reserves to approximately EUR 337 million, providing runway to Q2 2028.",
+      "url": "https://www.eu-startups.com/2026/07/espoo-based-iqm-goes-public-on-nasdaq-in-european-quantum-first-with-e127-million-in-pipe-financing/",
+      "source": "EU-Startups",
+      "date": "2026-07-02"
+    },
+    {
+      "title": "LUMI AI Factory selects IQM to deploy Halocene H4 quantum computer for hybrid HPC-AI acceleration",
+      "excerpt": "The LUMI AI Factory (operated by CSC, Finland) selected IQM to deliver the Halocene H4 superconducting quantum computer — described as the first system combining quantum error correction with NISQ qubits — for deployment in 2027. The contract is jointly funded by the EuroHPC Joint Undertaking and five national governments including Finland, Czechia, Norway, and Poland.",
+      "url": "https://www.hpcwire.com/off-the-wire/lumi-ai-factory-selects-iqm-to-deploy-advanced-quantum-computer-accelerating-hybrid-hpc-and-ai-development/",
+      "source": "HPCwire",
+      "date": "2026-07-08"
+    },
+    {
+      "title": "IQM Completes Nasdaq Listing and Reports H1 2026 Results: EUR 102M+ Backlog, 26 Systems Sold",
+      "excerpt": "IQM began trading on the Nasdaq Global Select Market (ticker IQMX) on July 2, 2026. H1 2026 results reported EUR 8.9 million in revenue, EUR 102.1 million order backlog, and EUR 309.4 million cash balance. The company confirmed 2026 guidance of EUR 42-47 million in revenue.",
+      "url": "https://thequantuminsider.com/2026/08/04/iqm-quantum-computers-h1-2026-results-full-year-outlook/",
+      "source": "The Quantum Insider",
+      "date": "2026-08-04"
+    },
+    {
+      "title": "IQM reports H1 2026 results: EUR 8.9M revenue, EUR 102M order backlog, 26 systems sold",
+      "excerpt": "IQM's inaugural earnings as a public company showed H1 2026 revenue of EUR 8.9 million, an order backlog exceeding EUR 102.1 million, and 26 quantum systems sold with 17 delivered globally, including first U.S. delivery to Oak Ridge National Laboratory. Full-year 2026 guidance set at EUR 42–47 million revenue.",
+      "url": "https://www.globenewswire.com/news-release/2026/08/04/3338027/0/en/iqm-quantum-computers-reports-first-earnings-as-public-company-reporting-first-half-and-second-quarter-2026-results-and-initiates-fy-2026-guidance-supported-by-over-eur-102-million.html",
+      "source": "GlobeNewswire",
+      "date": "2026-08-04"
     }
   ]
 }

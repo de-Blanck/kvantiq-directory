@@ -58,9 +58,40 @@
       "type": "url",
       "url": "https://thequantuminsider.com/2025/02/07/quandelas-hybrid-photonic-approach-reduces-resource-requirements-for-fault-tolerant-quantum-computing/",
       "title": "Quandela's Hybrid Photonic Approach Reduces Resource Requirements for Fault-Tolerant Quantum Computing"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/29/quandela-adds-industry-veterans-to-leadership-and-governance-teams/",
+      "title": "Quandela Adds Industry Veterans to Leadership and Governance Teams - The Quantum Insider",
+      "dateAccessed": "2026-05-31"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/whos-news-strategic-leadership-appointments-at-quandela-zapata-quantum-imperagen-and-eigenq/",
+      "title": "Strategic Leadership Appointments at Quandela, Zapata Quantum, Imperagen, and EigenQ - Quantum Computing Report",
+      "dateAccessed": "2026-05-31"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/darpa-selects-quandela-for-stage-a-of-the-quantum-benchmarking-initiative/",
+      "title": "DARPA Selects Quandela for Stage A of the Quantum Benchmarking Initiative - HPCwire",
+      "dateAccessed": "2026-06-21"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quandela-selected-for-stage-a-of-darpas-quantum-benchmarking-initiative/",
+      "title": "Quandela Selected for Stage A of DARPA's Quantum Benchmarking Initiative - Quantum Computing Report",
+      "dateAccessed": "2026-06-21"
     }
   ],
   "news": [
+    {
+      "title": "Selected for DARPA Quantum Benchmarking Initiative Stage A",
+      "excerpt": "Quandela selected by DARPA to participate in Stage A of the Quantum Benchmarking Initiative (QBI), a program designed to assess whether quantum computing architectures can achieve utility-scale operation by 2033.",
+      "url": "https://www.hpcwire.com/off-the-wire/darpa-selects-quandela-for-stage-a-of-the-quantum-benchmarking-initiative/",
+      "source": "HPCwire",
+      "date": "2026-06-16"
+    },
     {
       "title": "French startup Quandela raises €50m to manufacture commercial quantum computers",
       "excerpt": "Quandela has raised a €50m Series B to manufacture photonic quantum computers and sell them to industrial customers, marking increased production after delivering its first photonic quantum computer to OVHcloud.",
@@ -95,6 +126,20 @@
       "url": "https://thequantuminsider.com/2026/04/17/ovhcloud-quandela-belenos-quantum-platform/",
       "source": "The Quantum Insider",
       "date": "2026-04-17"
+    },
+    {
+      "title": "Quandela appoints Cyril Dujardin as COO and Michel Zecri as VP of Industrialization",
+      "excerpt": "Dujardin brings 25+ years in deeptech, cybersecurity, and critical infrastructure (Atos, Eutelsat/OneWeb) as COO, while Zecri leads industrialization as Quandela scales photonic quantum hardware production.",
+      "url": "https://thequantuminsider.com/2026/05/29/quandela-adds-industry-veterans-to-leadership-and-governance-teams/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-29"
+    },
+    {
+      "title": "DARPA selects Quandela for Stage A of the Quantum Benchmarking Initiative",
+      "excerpt": "Quandela joins DARPA's QBI programme, which evaluates whether any quantum computing architecture can achieve utility-scale performance by 2033. Under Stage A, Quandela will develop and defend a concept for a fault-tolerant, utility-scale photonic quantum computer.",
+      "url": "https://thequantuminsider.com/2026/06/16/darpa-selects-quandela-for-stage-a-of-the-quantum-benchmarking-initiative/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-16"
     }
   ]
 }

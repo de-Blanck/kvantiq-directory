@@ -42,6 +42,13 @@
   ],
   "news": [
     {
+      "title": "IBM Quantum Challenge 2024",
+      "excerpt": "GitHub repository for IBM Quantum Challenge 2024 (June 5-14, 2024). Repository archived August 4, 2026.",
+      "url": "https://github.com/qiskit-community/ibm-quantum-challenge-2024",
+      "source": "GitHub",
+      "date": "2024-06-05"
+    },
+    {
       "title": "IBM Announces 2024 Quantum Challenge Featuring Qiskit 1.0",
       "excerpt": "IBM launched the 2024 IBM Quantum Challenge (June 5-14, 2024) focusing on the newly released Qiskit 1.0, open to participants of all experience levels. The 2024 challenge emphasizes software simulation rather than hardware execution to accommodate large participant numbers.",
       "url": "https://thequantuminsider.com/2024/05/03/ibm-announces-2024-quantum-challenge-featuring-new-qiskit-1-0-software/",

@@ -13,7 +13,7 @@
   "website": "https://www.eurohpc-ju.europa.eu/quantum-grand-challenge_en",
   "dateStart": "2025-10-14",
   "dateEnd": "2026-05-31",
-  "status": "active",
+  "status": "completed",
   "prizes": "EUR 4 million Phase 1 funding; Phase 2 EIB venture debt",
   "location": "Europe",
   "eligibility": "European quantum computing startups only",
@@ -39,6 +39,12 @@
       "type": "press-release",
       "url": "https://www.hpcwire.com/off-the-wire/eurohpc-opens-quantum-grand-challenge-call/",
       "title": "EuroHPC Opens Quantum Grand Challenge Call"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/eurohpc-joint-undertaking-selects-13-european-qpu-startups-for-quantum-grand-challenge/",
+      "title": "EuroHPC JU Selects 13 European QPU Startups for Quantum Grand Challenge - Quantum Computing Report",
+      "dateAccessed": "2026-08-30"
     }
   ],
   "news": [
@@ -48,6 +54,13 @@
       "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-opens-quantum-grand-challenge-call-2025-10-14_en",
       "source": "EuroHPC JU",
       "date": "2025-10-14"
+    },
+    {
+      "title": "EuroHPC Quantum Grand Challenge Selects 13 European Quantum Startups",
+      "excerpt": "The EuroHPC JU Governing Board approved 13 European quantum computing startups (from 27 eligible proposals out of 30 received) for Phase 1 Coordination and Support Action funding on 19 June 2026. Each selected company gains a pathway to up to EUR 30 million in European Investment Bank venture debt financing in Phase 2. Sparrow Quantum (Denmark) is the only Nordic participant selected.",
+      "url": "https://quantumcomputingreport.com/eurohpc-joint-undertaking-selects-13-european-qpu-startups-for-quantum-grand-challenge/",
+      "source": "Quantum Computing Report",
+      "date": "2026-06-19"
     }
   ]
 }

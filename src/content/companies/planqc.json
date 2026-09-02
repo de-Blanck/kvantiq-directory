@@ -48,7 +48,8 @@
     {
       "type": "url",
       "url": "https://www.datacenterdynamics.com/en/news/planqc-to-lead-development-of-german-government-funded-1000-qubit-quantum-computer/",
-      "title": "Planqc to lead development of German government-funded 1,000 qubit quantum computer"
+      "title": "planqc to lead development of German government-funded 1,000 qubit quantum computer - Data Centre Dynamics",
+      "dateAccessed": "2026-06-07"
     }
   ],
   "news": [
@@ -60,11 +61,11 @@
       "date": "2025-09-12"
     },
     {
-      "title": "planqc to lead development of German government-funded 1,000 qubit quantum computer",
-      "excerpt": "planqc selected to lead development of German government-funded 1,000 qubit quantum computer project.",
+      "title": "planqc to lead €20M BMBF-funded project to build 1,000-qubit quantum computer for Leibniz Supercomputing Centre",
+      "excerpt": "The MAQCS project, funded by the German Federal Ministry of Education and Research, will integrate planqc's neutral-atom dual-core platform with the Leibniz Supercomputing Centre in Munich, targeting 1,000 qubits.",
       "url": "https://www.datacenterdynamics.com/en/news/planqc-to-lead-development-of-german-government-funded-1000-qubit-quantum-computer/",
-      "source": "DataCenterDynamics",
-      "date": "2026-06-17"
+      "source": "Data Centre Dynamics",
+      "date": "2026-04-01"
     },
     {
       "title": "€2.3M Funding for Hybrid Quantum–Classical Solutions in Industry Optimization",

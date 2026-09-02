@@ -55,6 +55,13 @@
   ],
   "news": [
     {
+      "title": "Paris-based Welinq secures €5 million to scale up quantum computing with quantum memories",
+      "excerpt": "French startup Welinq raised €5 million in a pre-seed round led by Quantonation with support from Runa Capital. Founded in 2022 by Tom Darras, Julien Laurat, Eleni Diamanti and Jean Lautier-Gaud, Welinq was launched to provide solutions to the scale up of quantum computing.",
+      "url": "https://www.eu-startups.com/2023/01/paris-based-welinq-secures-e5-million-to-scale-up-quantum-computing-with-quantum-memories/",
+      "source": "EU-Startups",
+      "date": "2023-01-23"
+    },
+    {
       "title": "Welinq's araQne meets NVIDIA CUDA-Q: Distributed Quantum Compiling with GPU accelerated verification",
       "url": "https://www.welinq.fr",
       "source": "Welinq",

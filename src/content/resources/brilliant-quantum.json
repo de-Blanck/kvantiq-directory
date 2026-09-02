@@ -35,5 +35,14 @@
       "url": "https://quantumcomputingreport.com/microsoft-and-brilliant-org-partner-to-offer-a-new-quantum-computing-course/",
       "title": "Microsoft and Brilliant.org Partner to Offer a New Quantum Computing Course - Quantum Computing Report"
     }
+  ],
+  "news": [
+    {
+      "title": "Microsoft, Brilliant team up to offer quantum curriculum",
+      "excerpt": "Microsoft and Brilliant partner to offer a new quantum computing course developed in collaboration with researchers from Microsoft, X (Alphabet), and Caltech's IQIM",
+      "url": "https://azure.microsoft.com/en-us/blog/quantum/2019/05/23/microsoft-brilliant-team-up-to-offer-quantum-curriculum/",
+      "source": "Microsoft Azure Quantum Blog",
+      "date": "2019-05-23"
+    }
   ]
 }

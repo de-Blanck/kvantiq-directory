@@ -1,0 +1,86 @@
+{
+  "name": "Quantum Fabrix",
+  "slug": "quantum-fabrix",
+  "country": "United Kingdom",
+  "region": "uk",
+  "type": "hardware",
+  "tags": [
+    "trapped-ion",
+    "atom-sources",
+    "manufacturing",
+    "quantum-hardware",
+    "modular"
+  ],
+  "founded": 2024,
+  "description": "Quantum Fabrix (QFX) is a University of Oxford spin-out developing miniaturised atom sources (MAS) for trapped-ion quantum computers, enabling sub-millisecond ion loading and modular scalable quantum hardware. Operating from Begbroke Science Park in Oxford, QFX supplies critical hardware components to trapped-ion quantum computer manufacturers. The company also develops SrROCK, a strontium-based quantum timing and sensing component.",
+  "website": "https://www.qfx.io",
+  "featured": false,
+  "headquarters": "Oxford, United Kingdom",
+  "employees": "~10",
+  "funding": "GBP 2M",
+  "accessModel": "Hardware component supply",
+  "products": [
+    {
+      "name": "Miniature Atom Source (MAS)",
+      "description": "Compact atom source enabling sub-millisecond ion loading for trapped-ion quantum processors, enabling modular and scalable quantum hardware design"
+    },
+    {
+      "name": "SrROCK",
+      "description": "Strontium-based quantum timing and sensing component for precision measurement applications"
+    }
+  ],
+  "highlights": [
+    "Raised GBP 2M seed in October 2025 led by Paul Graham (Y Combinator co-founder) alongside UK government quantum programme funding",
+    "University of Oxford spin-out operating from Begbroke Science Park (Oxford) — James Watt Nanofabrication equivalent for ion-trap hardware",
+    "Participated in UK National Quantum Technologies Showcase November 2025 and published arXiv paper on rapid ion loading December 2025"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.qfx.io",
+      "title": "Quantum Fabrix Official Website",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/university-of-oxford-spinout-qfx-closes-2m-2-7m-usd-seed-round-for-modular-quantum-hardware/",
+      "title": "University of Oxford Spinout QFX Closes GBP 2M Seed Round for Modular Quantum Hardware — Quantum Computing Report",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2025/10/20/university-of-oxford-spin-out-qfx-announces-seed-funding-round-appoints-industry-leaders-to-executive-team/",
+      "title": "University of Oxford Spin-Out QFX Announces Seed Funding Round — The Quantum Insider",
+      "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://siliconcanals.com/quantum-fabrix-secures-2-2m/",
+      "title": "Quantum Fabrix secures GBP 2M — Silicon Canals",
+      "dateAccessed": "2026-05-18"
+    }
+  ],
+  "news": [
+    {
+      "title": "Oxford University researchers demonstrate rapid ion trap loading using QFX's miniaturised atom source technology",
+      "excerpt": "Oxford University researchers have demonstrated rapid ion trap loading using QFX's Miniaturised Atom Source (MAS) technology, showcasing ultra‑low‑power, highly directional atom delivery that enables sub‑millisecond ion loading for next‑generation trapped‑ion quantum processors.",
+      "url": "https://www.qfx.io",
+      "source": "QFX",
+      "date": "2026-01-22"
+    },
+    {
+      "title": "University of Oxford Spinout QFX Closes £2M Seed Round for Modular Quantum Hardware",
+      "excerpt": "University of Oxford Spinout QFX has closed a £2 million ($2.7 million USD) seed funding round led by Paul Graham, co-founder of Y-Combinator. The capital will support QFX's mission to deliver modular quantum technologies for computing, sensing, and secure communications.",
+      "url": "https://quantumcomputingreport.com/university-of-oxford-spinout-qfx-closes-2m-2-7m-usd-seed-round-for-modular-quantum-hardware/",
+      "source": "Quantum Computing Report",
+      "date": "2025-10-20"
+    },
+    {
+      "title": "Quantum Fabrix raises GBP 2M seed for miniaturised atom sources for trapped-ion quantum computers",
+      "excerpt": "Oxford spin-out QFX closed a GBP 2M seed round led by Paul Graham (Y Combinator co-founder) and UK government quantum programme funding in October 2025. The company's miniature atom source technology enables sub-millisecond ion loading, targeting supply to trapped-ion quantum computer manufacturers for modular scalable systems.",
+      "url": "https://thequantuminsider.com/2025/10/20/university-of-oxford-spin-out-qfx-announces-seed-funding-round-appoints-industry-leaders-to-executive-team/",
+      "source": "The Quantum Insider",
+      "date": "2025-10-20"
+    }
+  ]
+}

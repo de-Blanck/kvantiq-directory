@@ -46,9 +46,53 @@
       "type": "url",
       "url": "https://thequantuminsider.com/2026/04/02/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time/",
       "title": "QuiX Quantum Demonstrates Below-Threshold Error Mitigation in Photonic Quantum Computing For First Time"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/05/21/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems/",
+      "title": "QuiX Quantum Introduces PACU, a Photonic Assembly Control Unit For Scalable Quantum Systems - The Quantum Insider",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quix-quantum-launches-pacu-control-unit-standardizing-photonic-hardware-layer/",
+      "title": "QuiX Quantum Launches PACU Control Unit Standardizing Photonic Hardware Layer - Quantum Computing Report",
+      "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/06/03/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer/",
+      "title": "QuiX Quantum Installs Real-Time Control Component for Universal Photonic Quantum Computer — The Quantum Insider",
+      "dateAccessed": "2026-06-14"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/quix-quantum-details-dedalo-roadmap-for-logical-qubits-and-hybrid-hpc-integration/",
+      "title": "QuiX Quantum Details Dedalo Roadmap for Logical Qubits and Hybrid HPC Integration - HPCwire",
+      "dateAccessed": "2026-07-05"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quix-quantum-launches-dedalo-photonic-architecture-to-address-photon-loss-via-single-basis-logical-qubits/",
+      "title": "QuiX Quantum Launches Dedalo Photonic Architecture - Quantum Computing Report",
+      "dateAccessed": "2026-07-05"
     }
   ],
   "news": [
+    {
+      "title": "QuiX Quantum Installs Feed-Forward Control Unit for Universal Photonic Quantum Computer",
+      "excerpt": "QuiX Quantum announced the first installation of its Feed-Forward Control Unit (FFCU), a hardware component designed to help the system respond to quantum measurements in real time.",
+      "url": "https://thequantuminsider.com/2026/06/03/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-03"
+    },
+    {
+      "title": "QuiX Quantum Details Dedalo Roadmap for Logical Qubits and Hybrid HPC Integration",
+      "excerpt": "QuiX Quantum released its vision of universal photonic quantum computing with logical qubits through Dedalo, a new system architecture designed to achieve practical, fault-tolerant systems that work seamlessly with classical supercomputers.",
+      "url": "https://www.hpcwire.com/off-the-wire/quix-quantum-details-dedalo-roadmap-for-logical-qubits-and-hybrid-hpc-integration/",
+      "source": "HPCwire",
+      "date": "2026-06-30"
+    },
     {
       "title": "Enschede-based QuiX Quantum secures €15M to launch first universal photonic quantum computer",
       "excerpt": "QuiX Quantum secured €15M in Series A funding co-led by Invest NL and EIC Fund to deliver its first-generation universal photonic quantum computer.",
@@ -76,6 +120,41 @@
       "url": "https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time",
       "source": "QuiX Quantum Newsroom",
       "date": "2026-04-02"
+    },
+    {
+      "title": "QuiX Quantum Introduces PACU, a Photonic Assembly Control Unit for Scalable Quantum Systems",
+      "excerpt": "QuiX Quantum launched PACU, a rack-mountable 3U control unit supporting up to 1,000 low-speed and 32 high-speed phase shifters, designed to standardize the photonic hardware layer for scalable quantum systems and ease data-centre integration. The launch marks a strategic shift toward becoming a full-stack, fabless quantum system vendor.",
+      "url": "https://thequantuminsider.com/2026/05/21/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems/",
+      "source": "The Quantum Insider",
+      "date": "2026-05-21"
+    },
+    {
+      "title": "QuiX Quantum installs Feed-Forward Control Unit enabling real-time adaptive measurement for universal photonic quantum computing",
+      "excerpt": "The FFCU combines FPGA-based processing with custom electronics to convert single-photon detector signals into phase-control actions with ~150 ns latency, enabling measurement-based quantum computation where each measurement outcome immediately dictates the next operation—a critical step toward universality in photonic quantum computing.",
+      "url": "https://www.hpcwire.com/off-the-wire/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer/",
+      "source": "HPCwire",
+      "date": "2026-06-04"
+    },
+    {
+      "title": "QuiX Quantum unveils Dedalo photonic architecture for fault-tolerant quantum computing with logical qubits",
+      "excerpt": "QuiX Quantum released Dedalo, a three-tiered photonic quantum computing architecture targeting fault-tolerant systems built on logical qubits using CMOS-compatible silicon nitride photonic integrated circuits. The system operates at room temperature and is designed for modular integration into standard 19-inch HPC server racks.",
+      "url": "https://thequantuminsider.com/2026/06/30/quix-quantum-unveils-path-to-universal-photonic-quantum-computing-with-logical-qubits/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-30"
+    },
+    {
+      "title": "QuiX Quantum unveils Carina — first Dutch quantum computer delivered to DLR Germany",
+      "excerpt": "QuiX Quantum announced Carina on July 14, 2026: the world's first universal photonic quantum computing architecture designed for data-centre deployment, operating at room temperature with 8 input and 4 computational photonic qubits. QuiX delivered Carina to the German Aerospace Center (DLR QCI) in Ulm, becoming the first Dutch company to deliver a complete quantum computer to a customer.",
+      "url": "https://www.hpcwire.com/off-the-wire/quix-quantum-unveils-universal-photonic-quantum-computing-architecture/",
+      "source": "HPCwire",
+      "date": "2026-07-14"
+    },
+    {
+      "title": "QuiX Quantum launches Alquor 2.0 rack-mountable photonic processor platform in 8-, 20-, and 32-mode configurations",
+      "excerpt": "QuiX Quantum launched Alquor 2.0 on August 4, 2026 — a commercial, 3U rack-mountable photonic processor platform built on silicon nitride running at room temperature, with air cooling and Ethernet connectivity. Prices range from €240 (8-mode) to €790 (32-mode), with a 20% early-adopter discount for academic orders by September 30, 2026.",
+      "url": "https://www.hpcwire.com/off-the-wire/quix-quantum-launches-alquor-2-0-photonic-quantum-processor-platform/",
+      "source": "HPCwire",
+      "date": "2026-08-04"
     }
   ]
 }

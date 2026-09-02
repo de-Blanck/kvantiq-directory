@@ -15,7 +15,7 @@
   "free": true,
   "language": "Python",
   "provider": "IBM",
-  "lastUpdated": "2026",
+  "lastUpdated": "2026-08-13",
   "maturity": "mature",
   "communitySize": "~5,300 GitHub stars",
   "sources": [
@@ -40,6 +40,39 @@
       "type": "website",
       "url": "https://www.ibm.com/quantum/qiskit",
       "title": "IBM Quantum Computing | Qiskit"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/ibm-improves-qubit-reset-by-25x-and-releases-qiskit-v2-5/",
+      "title": "IBM Improves Qubit Reset by 25x and Releases Qiskit v2.5 - Quantum Computing Report",
+      "dateAccessed": "2026-07-26"
+    }
+  ],
+  "news": [
+    {
+      "title": "Qiskit SDK v2.5 released with new C API capabilities and improved transpiler performance",
+      "excerpt": "Qiskit v2.5 introduced classical control flow inspection in the C API, new preset pass managers for Pauli-based computation and Clifford+T representations, and major transpiler performance improvements. IBM also announced renaming the Qiskit Runtime Service to IBM Quantum Compute Service.",
+      "url": "https://quantumcomputingreport.com/ibm-improves-qubit-reset-by-25x-and-releases-qiskit-v2-5/",
+      "source": "Quantum Computing Report",
+      "date": "2026-07-14"
+    }
+  ],
+  "news": [
+    {
+      "title": "Qiskit 2.5.0 released with multi-IR staged pass manager and expanded C API",
+      "excerpt": "Qiskit 2.5.0 introduces a multi-IR staged pass manager for flexible compilation across intermediate representations, expands the C API with control flow and classical expression support, and adds multi-threaded gate optimization and parallelized unitary synthesis. Minimum NumPy version raised to 2.0.",
+      "url": "https://github.com/Qiskit/qiskit/releases/tag/2.5.0",
+      "source": "Qiskit GitHub Releases",
+      "date": "2026-07-02"
+    }
+  ],
+  "news": [
+    {
+      "title": "Qiskit 2.5.2 released",
+      "excerpt": "IBM released Qiskit 2.5.2, a patch update to the open-source quantum computing SDK addressing bug fixes and stability improvements.",
+      "url": "https://github.com/Qiskit/qiskit/releases/tag/2.5.2",
+      "source": "GitHub",
+      "date": "2026-08-13"
     }
   ]
 }
