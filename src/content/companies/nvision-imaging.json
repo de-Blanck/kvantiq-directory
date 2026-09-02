@@ -1,5 +1,5 @@
 {
-  "name": "NVision Imaging Technologies",
+  "name": "NVision Quantum (formerly NVision Imaging Technologies)",
   "slug": "nvision-imaging",
   "country": "Germany",
   "region": "dach",
@@ -12,7 +12,7 @@
     "molecular-qubits"
   ],
   "founded": 2016,
-  "description": "NVision Imaging Technologies develops quantum-based molecular technologies with two platforms: POLARIS, which uses quantum polarisation to enhance MRI signals by 10,000x for cancer metabolism imaging; and PIQC, a quantum computing platform based on molecular qubits native to photonic chips. Founded as a spinout of Ulm University, NVision has research collaborations with Cambridge, TU Munich, and Memorial Sloan Kettering Cancer Center.",
+  "description": "NVision Quantum — which rebranded from NVision Imaging Technologies, its former domain now redirecting to nvision-quantum.com — develops quantum-based molecular technologies with two platforms: POLARIS, which uses quantum polarisation to enhance MRI signals by 10,000x for cancer metabolism imaging; and PIQC, a quantum computing platform based on molecular qubits native to photonic chips. Founded as a spinout of Ulm University, NVision has research collaborations with Cambridge, TU Munich, and Memorial Sloan Kettering Cancer Center.",
   "website": "https://www.nvision-quantum.com",
   "featured": false,
   "headquarters": "Ulm, Germany",

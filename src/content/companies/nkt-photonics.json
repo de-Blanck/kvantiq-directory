@@ -1,11 +1,17 @@
 {
-  "name": "NKT Photonics",
+  "name": "Hamamatsu Photonics A/S (formerly NKT Photonics)",
   "slug": "nkt-photonics",
   "country": "Denmark",
   "region": "nordics",
   "type": "hardware",
-  "tags": ["photonics", "lasers", "quantum-flagship", "quantum-adjacent", "single-photon-pumping"],
-  "description": "NKT Photonics is a Danish photonics company headquartered in Birkerod, manufacturing fiber lasers, photonic crystal fibers, supercontinuum sources, and single-frequency lasers used by quantum and photonics labs worldwide. The company has an explicit Quantum & Nano Technology product line — its Koheras low-noise lasers are widely deployed in cold-atom systems and as pumps for single-photon sources. NKT is the only Danish company in the European Quantum Flagship and is also a member of the European Quantum Industry Consortium, the Quantum Economic Development Consortium, and the Danish Quantum Community board.",
+  "tags": [
+    "photonics",
+    "lasers",
+    "quantum-flagship",
+    "quantum-adjacent",
+    "single-photon-pumping"
+  ],
+  "description": "Hamamatsu Photonics A/S — renamed from NKT Photonics A/S on 25 June 2026 following Hamamatsu Photonics' 2024 acquisition, and now the Lasers & Fibers Business Unit of the Hamamatsu Photonics Group — is a Danish photonics manufacturer headquartered in Birkerod, producing fiber lasers, photonic crystal fibers, supercontinuum sources, and single-frequency lasers used by quantum and photonics labs worldwide. The company has an explicit Quantum & Nano Technology product line — its Koheras low-noise lasers are widely deployed in cold-atom systems and as pumps for single-photon sources. It is the only Danish company in the European Quantum Flagship and is also a member of the European Quantum Industry Consortium, the Quantum Economic Development Consortium, and the Danish Quantum Community board.",
   "website": "https://www.nktphotonics.com",
   "headquarters": "Birkerod, Denmark",
   "funding": "Part of Hamamatsu Photonics K.K. (TYO: 6965)",
@@ -19,15 +25,15 @@
   "highlights": [
     "Only Danish member of the European Quantum Flagship; member of EuQIC, QED-C, and DQC board",
     "Koheras low-noise fiber lasers used in 13 dB squeezed-vacuum experiments at 1550 nm (Vahlbruch et al., Optics Letters 2018)",
-    "Deployed 20,000+ single-frequency fiber lasers globally; part of the Hamamatsu group"
+    "Deployed 20,000+ single-frequency fiber lasers globally; renamed to Hamamatsu Photonics A/S in June 2026"
   ],
   "news": [
     {
-      "title": "NKT Photonics renamed Hamamatsu Photonics A/S following Hamamatsu Photonics K.K. acquisition",
-      "excerpt": "Effective June 25, 2026, NKT Photonics A/S was renamed Hamamatsu Photonics A/S and repositioned as the Lasers & Fibers Business Unit within the Hamamatsu Photonics Group. Products and staff remain unchanged; Koheras low-noise lasers continue under the new brand.",
-      "url": "https://www.news-medical.net/news/20260706/NKT-Photonics-becomes-Hamamatsu-Photonics-AS.aspx",
-      "source": "News Medical Life Sciences",
-      "date": "2026-07-06"
+      "title": "NKT Photonics A/S formally renamed Hamamatsu Photonics A/S, effective June 25, 2026",
+      "excerpt": "NKT Photonics A/S was officially renamed Hamamatsu Photonics A/S effective June 25, 2026, formalising its integration into the Hamamatsu Photonics Group following the 2024 acquisition. Operations, product portfolio, and customer relationships remain unchanged.",
+      "url": "https://optics.org/press-releases/nkt-photonics-as-to-be-renamed-to-hamamatsu-photonics-as",
+      "source": "optics.org",
+      "date": "2026-06-25"
     }
   ],
   "sources": [
@@ -73,15 +79,6 @@
       "url": "https://www.laserfocusworld.com/directory/laser-sources/laser-systems-ultrafast/press-release/55387300/hamamatsu-photonics-a-s-nkt-photonics-a-s-to-be-renamed-to-hamamatsu-photonics-a-s",
       "title": "NKT Photonics A/S to be renamed to Hamamatsu Photonics A/S - Laser Focus World",
       "dateAccessed": "2026-08-02"
-    }
-  ],
-  "news": [
-    {
-      "title": "NKT Photonics A/S formally renamed Hamamatsu Photonics A/S, effective June 25, 2026",
-      "excerpt": "NKT Photonics A/S was officially renamed Hamamatsu Photonics A/S effective June 25, 2026, formalising its integration into the Hamamatsu Photonics Group following the 2024 acquisition. Operations, product portfolio, and customer relationships remain unchanged.",
-      "url": "https://optics.org/press-releases/nkt-photonics-as-to-be-renamed-to-hamamatsu-photonics-as",
-      "source": "optics.org",
-      "date": "2026-06-25"
     }
   ]
 }

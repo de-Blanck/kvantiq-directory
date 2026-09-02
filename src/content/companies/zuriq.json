@@ -11,7 +11,7 @@
     "scalable-architecture"
   ],
   "founded": 2024,
-  "description": "ZuriQ is an ETH Zurich spin-off developing a novel two-dimensional trapped-ion quantum computing architecture. Unlike conventional one-dimensional ion chain designs, ZuriQ uses combined electric and magnetic fields to allow ions to move freely in two dimensions on a quantum chip, addressing the qubit-scaling limitations of current trapped-ion systems.",
+  "description": "ZuriQ is an ETH Zurich spin-off developing a trapped-ion quantum computing architecture the company describes as \"natively three-dimensional\". Unlike conventional one-dimensional ion chain designs, ZuriQ uses combined electric and magnetic fields to move ions in all spatial directions on a quantum chip — including the first native 2D trapped-ion array — addressing the qubit-scaling limitations of current trapped-ion systems.",
   "website": "https://zuriq.com",
   "featured": false,
   "headquarters": "Zurich, Switzerland",
@@ -24,9 +24,9 @@
     }
   ],
   "highlights": [
-    "ETH Zurich spin-off pioneering 2D ion-trap architecture",
+    "ETH Zurich spin-off building a natively three-dimensional ion-trap architecture",
     "CHF 3.8M raised to break qubit-scaling limitations of conventional 1D ion chains",
-    "Unique approach using combined electric and magnetic fields for two-dimensional ion control"
+    "Combined electric and magnetic fields move ions in all spatial directions, not just along a chain"
   ],
   "sources": [
     {

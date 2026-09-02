@@ -5,7 +5,7 @@ Session handoff document. Read at session start; update before ending. See
 
 **Last updated:** 2026-09-02
 **Branch:** `main` (4914547)
-**State:** Backlog consolidated, full re-scan landed, **deployed to production**
+**State:** Backlog consolidated, full re-scan landed, 49 source contradictions resolved. **Deployed 2026-09-02 — the contradiction fixes are NOT yet live.**
 
 ## What's done (2026-08-31 → 2026-09-02 session)
 
@@ -35,12 +35,23 @@ Session handoff document. Read at session start; update before ending. See
 
 226 entries · 463 news items · **211 at/above** the 3-credible bar · **15 below (7%)**.
 
+Content accuracy pass 2026-09-02: 34 entries corrected. The worst were `q-ant`, whose
+`website` pointed at an unrelated football-analytics platform; `portfolio-optimization`,
+which asserted a positive quantum result from a paper concluding the opposite; and
+`lih-ground-state`, which cited a paper benchmarking aluminium clusters rather than LiH.
+
 ## What's next / open
 
-- [ ] **53 source contradictions** — `docs/source-contradictions-2026-09-01.md`. Entries whose
-      own sources disagree, mostly founding years, funding totals, headquarters cities.
-      No automated pass can fix these: `ai-sweep.mjs` writes only `news` and `sources`.
-      This is the highest-value content work on the board.
+- [ ] **4 source contradictions left** — `docs/source-contradictions-2026-09-01.md`.
+      49 of 53 resolved 2026-09-02 across PRs #91-#96 (34 corrected, 15 dismissed).
+      The remainder: `diasense` and `xeedq` are **blocked** — their cited sources now
+      return HTTP 404, so nothing live can arbitrate them and they need replacement
+      sources. `bmbf-quantum-technologies` and `ibm-quantum-challenge` are **unverified**
+      — no credible current source found, left flagged rather than guessed.
+      Note for future sweeps: roughly a third of the cross-check flags were noise
+      (LinkedIn-only counter-sources, objections to the schema's `type` enum, sources
+      contradicting each other, and one flag that asserted the opposite of what the
+      entry said). Treat the list as leads, not defects.
 - [ ] **15 entries below the source bar** — the 14 long-standing ones plus `nvision-imaging`
       (new, from a sweep). No discoverable 3rd independent credible source; manual sourcing
       or accept-as-is. Not a tooling gap.

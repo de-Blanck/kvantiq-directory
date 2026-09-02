@@ -11,21 +11,25 @@
     "model-compression"
   ],
   "founded": 2019,
-  "description": "Multiverse Computing provides quantum AI software for enterprise applications, specializing in optimization and machine learning. Their flagship product Singularity enables model compression and quantum-inspired algorithms for finance, energy, and manufacturing sectors.",
+  "description": "Multiverse Computing provides quantum and quantum-inspired AI software for enterprise applications. Its CompactifAI platform compresses large language models for faster, cheaper inference on enterprise systems and edge devices, while its Singularity platform applies quantum-inspired optimization across finance, energy and manufacturing.",
   "website": "https://multiversecomputing.com",
   "featured": false,
   "headquarters": "San Sebastián, Spain",
-  "funding": "USD 285M+",
+  "funding": "USD 570M Series C (July 2026) at USD 1.7B pre-money; total funding expected to reach USD 800M",
   "accessModel": "SaaS platform + enterprise licensing",
   "products": [
     {
+      "name": "CompactifAI",
+      "description": "LLM compression platform reducing model size for faster, lower-cost inference on enterprise and edge hardware"
+    },
+    {
       "name": "Singularity",
-      "description": "Quantum AI platform for model compression, optimization, and quantum-inspired machine learning at enterprise scale"
+      "description": "Quantum-inspired optimization platform serving finance, energy and manufacturing, and underpinning the CompactifAI compression work"
     }
   ],
   "highlights": [
-    "Flagship Singularity platform serves finance, energy, and manufacturing sectors with quantum AI",
-    "USD 285M+ raised across multiple rounds; Series C announced July 2026, targeting up to $570M at $1.7B pre-money valuation",
+    "CompactifAI compresses large language models; Singularity provides quantum-inspired optimization",
+    "USD 570M Series C announced July 2026 at a USD 1.7B pre-money valuation, expected to bring total funding to USD 800M",
     "Specializes in model compression and quantum-inspired algorithms for near-term enterprise value"
   ],
   "sources": [

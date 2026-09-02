@@ -2,7 +2,7 @@
   "name": "SupermarQ",
   "slug": "supermarq",
   "algorithm": "QAOA, VQE, Hamiltonian Simulation",
-  "category": "optimization",
+  "category": "other",
   "tags": [
     "benchmark-suite",
     "application-oriented",
