@@ -7,7 +7,8 @@ export async function getStaticPaths() {
   const companies = await getCollection('companies');
   const countries = [...new Set(companies.map(c => c.data.country))];
   return countries.map(country => ({
-    params: { country: country.toLowerCase() },
+    // Must match the href built in companies/[slug].astro, which hyphenates spaces.
+    params: { country: country.toLowerCase().replace(/\s+/g, '-') },
     props: {
       countryName: country,
       companies: companies.filter(c => c.data.country === country),
