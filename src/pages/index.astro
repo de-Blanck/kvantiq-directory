@@ -1,15 +1,16 @@
 ---
 import { getCollection } from 'astro:content';
+import { publishedOnly } from '../lib/source-bar';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import NewsletterSignup from '../components/NewsletterSignup.astro';
 import JsonLd from '../components/JsonLd.astro';
 import SearchBar from '../components/SearchBar.astro';
 
-const allCompanies = await getCollection('companies');
-const allBenchmarks = await getCollection('benchmarks');
-const allUseCases = await getCollection('use-cases');
-const allChallenges = await getCollection('challenges');
-const allResources = await getCollection('resources');
+const allCompanies = publishedOnly(await getCollection('companies'));
+const allBenchmarks = publishedOnly(await getCollection('benchmarks'));
+const allUseCases = publishedOnly(await getCollection('use-cases'));
+const allChallenges = publishedOnly(await getCollection('challenges'));
+const allResources = publishedOnly(await getCollection('resources'));
 const featured = allCompanies.filter(c => c.data.featured).sort((a, b) => a.data.name.localeCompare(b.data.name));
 
 const websiteLd = {

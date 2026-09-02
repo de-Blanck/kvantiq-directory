@@ -1,10 +1,11 @@
 ---
 import { getCollection } from 'astro:content';
+import { publishedOnly } from '../../lib/source-bar';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ListingView from '../../components/ListingView.tsx';
 import { buildLearningResourceList } from '../../lib/jsonld/learning-resource-list.ts';
 
-const allResources = await getCollection('resources');
+const allResources = publishedOnly(await getCollection('resources'));
 const sorted = allResources.sort((a, b) => a.data.name.localeCompare(b.data.name));
 
 const tableData = sorted.map(r => ({

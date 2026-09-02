@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { isPublished } from '../../lib/source-bar';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import DetailPage from '../../components/DetailPage.tsx';
 import { findRelated, type RelatedItem } from '../../lib/related';
@@ -48,7 +49,7 @@ const stats = [
 
 const meta = [useCase.industry, useCase.category.replace(/^\w/, (c: string) => c.toUpperCase())].filter(Boolean).join(' · ');
 ---
-<BaseLayout title={useCase.name} description={useCase.description} jsonLd={articleLd} ogImage={`/og-images/use-cases/${useCase.slug}.png`}>
+<BaseLayout unverified={!isPublished(useCase)} title={useCase.name} description={useCase.description} jsonLd={articleLd} ogImage={`/og-images/use-cases/${useCase.slug}.png`}>
   <DetailPage
     client:load
     type="Use Case"

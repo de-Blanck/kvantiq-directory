@@ -1,4 +1,5 @@
 import { getCollection } from 'astro:content';
+import { publishedOnly } from '../lib/source-bar';
 import type { APIRoute } from 'astro';
 
 function formatSources(sources: { type: string; url: string; title?: string }[]): string {
@@ -6,11 +7,11 @@ function formatSources(sources: { type: string; url: string; title?: string }[])
 }
 
 export const GET: APIRoute = async () => {
-  const companies = await getCollection('companies');
-  const benchmarks = await getCollection('benchmarks');
-  const useCases = await getCollection('use-cases');
-  const challenges = await getCollection('challenges');
-  const resources = await getCollection('resources');
+  const companies = publishedOnly(await getCollection('companies'));
+  const benchmarks = publishedOnly(await getCollection('benchmarks'));
+  const useCases = publishedOnly(await getCollection('use-cases'));
+  const challenges = publishedOnly(await getCollection('challenges'));
+  const resources = publishedOnly(await getCollection('resources'));
 
   let content = '# Kvantiq Directory — Full Content\n\n';
   content += '> The European directory for quantum computing.\n\n';
