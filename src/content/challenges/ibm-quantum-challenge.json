@@ -9,7 +9,7 @@
     "global",
     "recurring"
   ],
-  "description": "IBM Quantum Challenge is a biannual global event where participants solve quantum computing problems using IBM Qiskit and real quantum hardware. Each challenge focuses on different themes such as quantum algorithms, error mitigation, or quantum applications. Challenges are designed for various skill levels from beginners to experts.",
+  "description": "IBM Quantum Challenge is a biannual global event, run in Spring and Fall, where participants solve quantum computing problems with Qiskit on IBM Quantum's cloud platform. Editions vary in whether they run on real hardware or on simulators — the 2024 challenge focused on software simulation rather than requiring hardware access. Each challenge focuses on different themes such as quantum algorithms, error mitigation, or quantum applications, and is designed for skill levels from beginner to expert.",
   "website": "https://www.ibm.com/quantum/events",
   "status": "active",
   "dateStart": "2025-06-01",
@@ -38,6 +38,12 @@
       "type": "press-release",
       "url": "https://thequantuminsider.com/2024/05/03/ibm-announces-2024-quantum-challenge-featuring-new-qiskit-1-0-software/",
       "title": "IBM Announces 2024 Quantum Challenge Featuring New Qiskit 1.0 Software"
+    },
+    {
+      "type": "website",
+      "url": "https://research.ibm.com/projects/quantum-challenges",
+      "title": "IBM Research — Quantum Challenges",
+      "dateAccessed": "2026-09-02"
     }
   ],
   "news": [

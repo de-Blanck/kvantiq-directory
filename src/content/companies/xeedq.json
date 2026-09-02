@@ -11,7 +11,7 @@
     "room-temperature"
   ],
   "founded": 2021,
-  "description": "XeedQ develops quantum processors based on spin qubits in diamond, producing compact, energy-efficient solid-state quantum computers. Awarded EUR 30 million by the DLR Quantum Computing Initiative, the company aims to deliver a 32-qubit fault-tolerant system by 2026 and 256+ qubit mobile processors by 2028.",
+  "description": "XeedQ develops quantum processors based on spin qubits in diamond, producing compact, energy-efficient solid-state quantum computers. Awarded EUR 30 million by the DLR Quantum Computing Initiative, the company aims to deliver a 32-qubit fault-tolerant system by 2026. Its 2022 DLR award announcement targeted 256 qubits or more by 2026; the current roadmap commits only to \"very-large qubit numbers … before the turn of the decade\", without a year for the 256-qubit mobile processor.",
   "website": "https://xeedq.com",
   "featured": false,
   "headquarters": "Ulm, Germany",
@@ -25,7 +25,7 @@
   ],
   "highlights": [
     "EUR 30M awarded by DLR Quantum Computing Initiative",
-    "Targeting 32-qubit fault-tolerant system by 2026 and 256+ qubit mobile processors by 2028",
+    "Targeting a 32-qubit fault-tolerant system by 2026; the 256+ qubit mobile processor has no current committed date",
     "Compact solid-state design enables mobile quantum computing deployments"
   ],
   "sources": [

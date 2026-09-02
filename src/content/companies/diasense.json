@@ -12,14 +12,14 @@
     "DTU-spinout"
   ],
   "founded": 2024,
-  "description": "DIASENSE develops quantum diamond magnetic microscopes based on nitrogen-vacancy (NV) centers for contactless semiconductor chip failure analysis and defect detection. The Lyngby-based DTU spin-out joined the BioInnovation Institute (BII) Venture House 8 cohort and secured EUR 1.3M in follow-on BII funding in March 2026, bringing total funding to approximately EUR 1.8M. Its quantum diamond microscopy targets a chip-yield bottleneck where conventional methods cannot non-invasively map current flow inside packaged integrated circuits.",
+  "description": "DIASENSE develops quantum diamond magnetic microscopes based on nitrogen-vacancy (NV) centers for contactless semiconductor chip failure analysis and defect detection. The Copenhagen-founded DTU spin-out joined the BioInnovation Institute (BII) Venture House 8 cohort and secured EUR 1.3M in follow-on BII funding in March 2026, bringing total funding to approximately EUR 1.8M. Its quantum diamond microscopy targets a chip-yield bottleneck where conventional methods cannot non-invasively map current flow inside packaged integrated circuits.",
   "website": "https://www.diasense.dk",
   "headquarters": "Lyngby, Denmark",
-  "funding": "EUR 1.8M (BII)",
+  "funding": "EUR 1.9M (BII total, incl. EUR 1.3M follow-on March 2026)",
   "accessModel": "Hardware sales (quantum diamond microscopy instruments)",
   "highlights": [
     "DTU spinout commercializing NV-center diamond microscopy for semiconductor metrology",
-    "EUR 1.3M follow-on funding from BioInnovation Institute Venture House 8 cohort (March 2026)",
+    "EUR 1.3M follow-on from BioInnovation Institute (March 2026), bringing BII's total support to EUR 1.9M",
     "Targeting non-invasive current-flow imaging inside packaged ICs — a chip-yield diagnostic gap"
   ],
   "sources": [
@@ -28,7 +28,7 @@
       "url": "https://thequantuminsider.com/2026/03/04/bii-backs-quantum-chip-diagnostic-startup-diasense-with-additional-e1-3-million-investment/",
       "title": "BII Backs Quantum Chip Diagnostic Startup DIASENSE With Additional EUR 1.3 Million Investment - The Quantum Insider",
       "datePublished": "2026-03-04",
-      "dateAccessed": "2026-05-01"
+      "dateAccessed": "2026-09-02"
     },
     {
       "type": "url",
