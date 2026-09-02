@@ -10,7 +10,7 @@
     "hybrid",
     "combinatorial"
   ],
-  "description": "Benchmark of the Quantum Approximate Optimization Algorithm for solving the MaxCut problem on random graphs. Tests the quality of approximate solutions as a function of circuit depth (p-levels) and graph size. A standard benchmark for hybrid quantum-classical optimization.",
+  "description": "Benchmark of the Quantum Approximate Optimization Algorithm for solving MaxCut. The original analysis (Farhi, Goldstone & Gutmann, 2014) studies regular graphs, deriving performance guarantees for 2-regular and 3-regular instances at fixed p; benchmark suites extend this to random regular and Erdos-Renyi instances. Tests the quality of approximate solutions as a function of circuit depth (p-levels) and graph size. A standard benchmark for hybrid quantum-classical optimization.",
   "hardware": "Simulator / hardware-agnostic",
   "framework": "PennyLane, Cirq",
   "qubits": 12,

@@ -9,7 +9,7 @@
     "instruction-set",
     "european"
   ],
-  "description": "NetQASM is an instruction set architecture and Python SDK for programming quantum network applications, developed by QuTech at TU Delft. It provides an assembly-level interface to quantum network controllers and can be run on simulator backends such as SquidASM and SimulaQron.",
+  "description": "NetQASM is an instruction set architecture and Python SDK for programming quantum network applications, developed by QuTech at TU Delft. It provides an assembly-level interface to quantum network controllers and can be run on the NetSquid and SimulaQron simulator backends.",
   "website": "https://netqasm.readthedocs.io",
   "openSource": true,
   "free": true,

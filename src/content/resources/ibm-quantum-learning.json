@@ -1,7 +1,7 @@
 {
   "name": "IBM Quantum Learning",
   "slug": "ibm-quantum-learning",
-  "type": "course",
+  "type": "other",
   "tags": [
     "education",
     "python",

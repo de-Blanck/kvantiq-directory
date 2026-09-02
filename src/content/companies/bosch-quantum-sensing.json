@@ -9,8 +9,8 @@
     "diamond-nv-centers",
     "quantum-magnetometry"
   ],
-  "founded": 2023,
-  "description": "Bosch Quantum Sensing is a German quantum sensing company developing quantum sensors using diamond nitrogen-vacancy (NV) centers. Established as a joint venture between Bosch and Element Six, the company focuses on quantum magnetometry and sensing solutions for automotive, industrial, and biomedical applications.",
+  "founded": 2022,
+  "description": "Bosch Quantum Sensing is a German quantum sensing company developing quantum sensors using diamond nitrogen-vacancy (NV) centers. Bosch established it as an in-house startup in February 2022; in 2025 it became a joint venture with synthetic-diamond specialist Element Six, which holds a 25% stake. It focuses on quantum magnetometry and sensing solutions for automotive, industrial, and biomedical applications.",
   "website": "https://www.bosch-quantumsensing.com",
   "featured": false,
   "headquarters": "Ludwigsburg, Germany",
@@ -24,7 +24,7 @@
     }
   ],
   "highlights": [
-    "Joint venture between Bosch and Element Six (De Beers Group)",
+    "Founded as a Bosch in-house startup in February 2022; joint venture with Element Six (De Beers Group) since 2025",
     "Backed by Bosch's global industrial manufacturing and distribution network",
     "Targets automotive, industrial, and biomedical quantum sensing applications"
   ],
@@ -55,6 +55,12 @@
       "type": "url",
       "url": "https://www.eenewseurope.com/en/bosch-element-six-aim-for-chip-scale-diamond-quantum-sensor/",
       "title": "Bosch, Element Six aim for chip-scale diamond quantum sensor"
+    },
+    {
+      "type": "press-release",
+      "url": "https://www.bosch-quantumsensing.com/insights-and-updates/news/bosch-establishes-startup-for-quantum-sensing/",
+      "title": "Bosch establishes startup for quantum sensing",
+      "dateAccessed": "2026-09-02"
     }
   ],
   "news": [

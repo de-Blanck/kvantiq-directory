@@ -11,11 +11,11 @@
   ],
   "founded": 2018,
   "description": "Q.ANT is a German quantum technology company developing photonic quantum solutions for computing and sensing applications. Spun out from high-tech manufacturer Trumpf, Q.ANT builds quantum sensors and photonic quantum processors using integrated photonics technology for industrial and scientific applications.",
-  "website": "https://www.q-ant.com",
+  "website": "https://qant.com",
   "featured": false,
   "headquarters": "Stuttgart, Germany",
   "employees": "100+",
-  "funding": "EUR 20M+",
+  "funding": "EUR 62M Series A (July 2025)",
   "accessModel": "Hardware sales + industrial integration",
   "products": [
     {
@@ -29,15 +29,15 @@
   ],
   "highlights": [
     "Spun out from Trumpf, one of Europe's largest high-tech manufacturers",
-    "100+ employees developing both quantum computing and quantum sensing products",
+    "Raised EUR 62M Series A in July 2025, among Europe's largest photonic-computing rounds",
     "Leverages integrated photonics for scalable quantum technology across industrial verticals"
   ],
   "sources": [
     {
       "type": "website",
-      "url": "https://www.q-ant.com",
-      "title": "Q.ANT Official Website",
-      "dateAccessed": "2026-03-19"
+      "url": "https://qant.com/about-us/",
+      "title": "Q.ANT — About Us",
+      "dateAccessed": "2026-09-02"
     },
     {
       "type": "url",
@@ -54,6 +54,12 @@
       "type": "url",
       "url": "https://www.trumpf.com/en_US/newsroom/global-press-releases/press-release-detail-page/release/quantum-computing-consortium-led-by-qant-receives-50-million-euros-in-research-funding/",
       "title": "Quantum computing: consortium led by Q.ANT receives 50 million euros in research funding"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2025/07/17/q-ant-raises-e62-million-in-a-series-to-fund-commercialization-of-its-photonic-processing-system/",
+      "title": "Q.ANT Raises EUR 62 Million to Fund Commercialization of Its Photonic Processing System",
+      "dateAccessed": "2026-09-02"
     }
   ],
   "news": [
