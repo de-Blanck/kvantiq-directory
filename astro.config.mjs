@@ -26,7 +26,8 @@ function unlistedPaths() {
     for (const file of fs.readdirSync(dir).filter((f) => f.endsWith('.json'))) {
       const data = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf-8'));
       const credible = (data.sources || []).filter(
-        (s) => !isBlocklistedSource({ url: s.url, source: s.title || '' }),
+        (/** @type {{ url: string, title?: string }} */ s) =>
+          !isBlocklistedSource({ url: s.url, source: s.title || '' }),
       ).length;
       if (credible < 3) out.add(`/${route}/${data.slug}/`);
     }
