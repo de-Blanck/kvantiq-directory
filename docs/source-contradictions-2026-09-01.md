@@ -20,21 +20,21 @@ and headquarters cities — the fields the weekly sweep has never been able to t
 
 ## A. Sweep cross-check (48)
 
-- [ ] **`benchmarks/lih-ground-state.json`**
+- [x] **`benchmarks/lih-ground-state.json`** — resolved 2026-09-02 (PR #93) — arXiv:2502.09595 is BenchQC, benchmarking aluminium clusters; replaced with Kandala et al. (arXiv:1704.05018), the canonical hardware LiH VQE result
       - Entry describes benchmark for lithium hydride (LiH), but fetched source (arxiv.org/abs/2502.09595) benchmarks aluminum clusters (Al⁻, Al₂, Al₃⁻) instead.
 - [ ] **`benchmarks/mqt-bench.json`**
       - Entry states 'over 70 algorithm implementations'; all three sources consistently state 'more than 70,000 benchmark circuits' — a significant numerical and conceptual discrepancy in describing MQT Bench's content.
-- [ ] **`benchmarks/portfolio-optimization.json`**
+- [x] **`benchmarks/portfolio-optimization.json`** — resolved 2026-09-02 (PR #93) — restated to match arXiv:2509.17876: classical MIP and tailored heuristics significantly outperform quantum at fixed time budgets
       - Entry states quantum methods 'minimize cost functions effectively,' but Source 1 (arXiv:2509.17876) concludes classical heuristics consistently outperform quantum approaches with 'only very limited room for potential quantum advantage.'
-- [ ] **`benchmarks/qaoa-maxcut.json`**
+- [x] **`benchmarks/qaoa-maxcut.json`** — resolved 2026-09-02 (PR #93) — Farhi et al. analyse 2- and 3-regular graphs; description no longer attributes "random graphs" to that paper
       - Entry states benchmark tests 'random graphs', but the original QAOA paper (arXiv:1411.4028) explicitly analyzes performance on '2-regular and 3-regular graphs' (regular graphs, not random).
-- [ ] **`benchmarks/quantum-kernel-methods.json`**
+- [x] **`benchmarks/quantum-kernel-methods.json`** — resolved 2026-09-02 (PR #93) — arXiv:2409.04406 covers "both classification and regression tasks"
       - Entry describes benchmark as 'for classification tasks' but source 2409.04406 explicitly states it encompasses 'both classification and regression tasks'
-- [ ] **`benchmarks/quantum-volume.json`**
+- [x] **`benchmarks/quantum-volume.json`** — dismissed 2026-09-02 (PR #93) — the flag rests on Wikipedia, which CLAUDE.md excludes. IBM's own paper (arXiv:1811.12926) states "We introduce a single-number metric, quantum volume"; the Moll et al. abstract only discusses it
       - Entry says 'developed by IBM' but Wikipedia states originally defined by Nikolaj Moll et al. (2018), with IBM providing a 2019 redefinition
-- [ ] **`benchmarks/supermarq.json`**
+- [x] **`benchmarks/supermarq.json`** — resolved 2026-09-02 (PR #93) — category optimization -> other; it is a benchmark suite
       - Entry Type field states 'optimization', but all fetched sources consistently describe SupermarQ as a 'benchmark suite' for measuring quantum hardware performance, not an optimization tool.
-- [ ] **`benchmarks/weighted-maxcut.json`**
+- [x] **`benchmarks/weighted-maxcut.json`** — resolved 2026-09-02 (PR #93) — arXiv:2505.24191 compares QWOA against two classical local-search heuristics, not against QAOA
       - Entry states 'Recent work compares QAOA with non-variational quantum walk algorithms' but arxiv 2505.24191 compares QWOA with two classical local-search heuristics, not QAOA.
 - [ ] **`challenges/berlin-quantum-hackathon.json`**
       - Entry states '6-week hybrid event' but the official hackathon website (berlinquantumhackathon.com) states '5 Weeks Coding + Mentorship'

@@ -11,7 +11,7 @@
     "quantum-annealing",
     "Markowitz"
   ],
-  "description": "Finance-specific benchmark evaluating quantum optimization algorithms for Markowitz mean-variance portfolio selection. Compares QAOA, VQE, and quantum annealing against classical solvers (MIP, meta-heuristics) on asset selection and allocation problems. Recent studies highlight that while quantum methods minimize cost functions effectively, resulting portfolios may violate practical financial constraints.",
+  "description": "Finance-specific benchmark evaluating quantum optimization algorithms for Markowitz mean-variance portfolio selection. Compares QAOA, VQE, and quantum annealing against classical solvers (MIP, meta-heuristics) on asset selection and allocation problems. Recent studies find classical mixed-integer programming and problem-tailored heuristics significantly outperform the quantum approaches at fixed time budgets — instances of up to 1,000 assets solve to proven optimality in seconds — leaving \"only very limited room for a potential quantum advantage\" on this problem variant.",
   "hardware": "Multi-platform",
   "framework": "Qiskit Finance, PennyLane, D-Wave Ocean",
   "reproducible": true,
@@ -26,7 +26,7 @@
       "value": "Markowitz mean-variance"
     }
   ],
-  "significance": "Highlights a critical gap: quantum optimizers minimize cost functions but may violate real financial constraints, questioning practical quantum advantage in finance.",
+  "significance": "Sets a concrete classical baseline for quantum finance claims: on mean-variance portfolio selection, classical solvers currently dominate, and quantum-produced portfolios may additionally violate practical financial constraints.",
   "sources": [
     {
       "type": "arxiv",

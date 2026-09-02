@@ -10,7 +10,7 @@
     "combinatorial-optimization",
     "QWOA"
   ],
-  "description": "Extended Max-Cut benchmark using weighted graph instances, which present a harder optimization landscape than the standard unweighted variant. Weighted instances introduce a proliferation of poor local optima and exacerbate barren-plateau issues. Recent work compares QAOA with non-variational quantum walk algorithms on weighted instances up to 31 nodes.",
+  "description": "Extended Max-Cut benchmark using weighted graph instances, which present a harder optimization landscape than the standard unweighted variant. Weighted instances introduce a proliferation of poor local optima and exacerbate barren-plateau issues. Recent work benchmarks the non-variational Quantum Walk Optimisation Algorithm against two classical local-search heuristics on weighted instances up to 31 nodes, reporting more favourable scaling with problem size.",
   "hardware": "Simulator / hardware-agnostic",
   "framework": "Qiskit, Cirq",
   "qubits": 31,
