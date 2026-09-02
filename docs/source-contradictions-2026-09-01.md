@@ -1,6 +1,8 @@
 # Source contradictions — worklist
 
-**Generated:** 2026-09-01 · **Open:** 46 · **Resolved:** 7
+**Generated:** 2026-09-01 · **Open:** 4 · **Resolved:** 49 (34 corrected, 15 dismissed)
+
+**Of the 4 open:** 2 blocked on dead source URLs (`diasense`, `xeedq`), 2 left unverified rather than guessed (`bmbf-quantum-technologies`, `ibm-quantum-challenge`).
 
 **Sources:** the 2026-09-01 full sweep cross-check (48, PR #88) + the backlog consolidation (5, PR #85)
 
