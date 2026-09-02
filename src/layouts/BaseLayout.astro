@@ -3,6 +3,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import JsonLd from '../components/JsonLd.astro';
 import QuantumWaveBackground from '../components/QuantumWaveBackground.astro';
+import Analytics from '@vercel/analytics/astro';
 import '../styles/global.css';
 
 interface Props {
@@ -53,12 +54,8 @@ const resolvedCanonical = canonicalUrl || Astro.url.href;
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={resolvedOgImage} />
 
-    <!-- Analytics — Plausible (privacy-friendly, GDPR-clean) -->
-    <script defer data-domain="directory.kvantiq.studio" src="https://plausible.io/js/script.js"></script>
-
-    <!-- Search engine verification — replace tokens with values from GSC + Bing Webmaster -->
-    <meta name="google-site-verification" content="GSC_VERIFICATION_TOKEN_PLACEHOLDER" />
-    <meta name="msvalidate.01" content="BING_VERIFICATION_TOKEN_PLACEHOLDER" />
+    <!-- Analytics — Vercel Web Analytics (cookieless, no PII, included in the Pro plan) -->
+    <Analytics />
 
     <!-- JSON-LD structured data -->
     {jsonLd && <JsonLd data={jsonLd} />}
