@@ -46,7 +46,11 @@ Session handoff document. Read at session start; update before ending. See
   The 2026-06-28 note claiming no third source was discoverable was wrong 13 times out of 15.
 - **Country-page 404 fixed** (PR #100) — every UK company page had linked to a dead URL
   since 2026-03-19.
-- **Rulebook updated** (PR #102) — CLAUDE.md now records the publish gate.
+- **Rulebook updated** (PRs #102, #107) — CLAUDE.md records the publish gate, the
+  corrected below-bar count, and which collection sits at which schema floor.
+- **Schema backstop** (PR #107) — `.min(3)` on the four cleared collections, verified
+  by a negative test (dropping a source fails the build) rather than by the passing
+  case alone.
 
 ## Content snapshot (filesystem = source of truth)
 
@@ -74,11 +78,16 @@ which asserted a positive quantum result from a paper concluding the opposite; a
         not the 2025 edition. Nothing found substantiates "11th edition" or the September dates.
       Both are correctly withheld: one-off community events with no independent reporting.
       Revisit only if coverage appears; do not pad with organizer-controlled sources.
-- [ ] **Zod `.min(3)` flip** — still pending per collection. Now tidiness rather
-      than safety: the publish gate keeps under-sourced entries off the site
-      regardless of what the schema allows.
+- [x] **Zod `.min(3)` flip — done for the four cleared collections** (PR #107).
+      Companies, benchmarks, use-cases and resources enforce a floor of 3 at build
+      time. **Challenges stays at `.min(2)`** and should stay there until the two
+      withheld entries above either gain a third source or are removed — raising it
+      would turn an intentionally unpublished entry into a build failure.
+      The schema is a backstop, not the gate: it counts raw sources, while
+      `src/lib/source-bar.ts` counts credible ones and is still what decides what ships.
 - [ ] **Unpin TypeScript** from `^6` once `astro check` supports the 7.x native
-      compiler (withastro/roadmap#1321).
+      compiler (withastro/roadmap#1321). Rechecked 2026-09-03: latest is still 7.0.2
+      and `@astrojs/check` is still 0.9.10 — no change, nothing to do yet.
 
 ## Deploy
 
