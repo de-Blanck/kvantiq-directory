@@ -22,7 +22,10 @@ Kvantiq Directory — a static site directory for the European quantum computing
 npm run dev          # Start dev server (default port 4321)
 npm run build        # Build + pagefind postbuild
 npm run preview      # Preview built site
+npm run type-check   # astro check — 0 errors required (TypeScript pinned to ^6)
+npm test             # Unit tests (node:test via tsx)
 npm run audit:content # Content quality audit (RICH/ADEQUATE/SPARSE ratings)
+npm run audit:sources # Credible-source counts + the under-bar worklist
 ```
 
 ## Design System: Editorial Light
@@ -142,7 +145,13 @@ Three credible sources is necessary but not sufficient — the sources must also
 
 "Credible" = a source NOT on the blocklist above (the `isBlocklistedSource` test in `scripts/ai-sweep.mjs` is the canonical definition). Run **`npm run audit:sources`** to see each entry's credible-source count and the backfill worklist (`--strict` exits non-zero when any entry is below the bar — use it as the gate once a collection is backfilled).
 
-The 3-credible-source minimum applies to **all new entries and any edited entries going forward** (enforced by the sweep flag, the PR template, and `audit:sources`). As of 2026-06-24, ~166 of 218 existing entries are below the bar; bringing them up is a deliberate backfill workstream. The Zod schema in `src/content.config.ts` stays at `.min(2)` for now and is raised to `.min(3)` **per collection only after that collection clears `audit:sources --strict --collection <name>`** — flipping it before backfill would break the build.
+The 3-credible-source minimum applies to **all new entries and any edited entries going forward** (enforced by the sweep flag, the PR template, and `audit:sources`).
+
+**Entries below the bar are not published.** Since 2026-09-02 the site enforces this at render time: an under-bar entry is excluded from every listing, from the homepage, from country pages, from `llms-full.txt`, from the search index and from the sitemap, and its detail page is served `noindex, follow` with a banner explaining why. All of them are listed publicly on `/transparency/audit/`. The gate lives in `src/lib/source-bar.ts`, which imports `isBlocklistedSource` from `scripts/ai-sweep.mjs` rather than reimplementing it — the site, the sweep and `audit:sources` must never disagree about what "credible" means.
+
+Withholding rather than deleting is deliberate: the URLs stay alive so nothing already indexed becomes a 404. An entry returns to the directory by gaining a third credible source, never by lowering the bar.
+
+As of 2026-09-02, **15 of 226 entries are below the bar** and therefore unpublished (the 2026-06-24 figure of ~166 of 218 predates the source-backfill workstream). The Zod schema in `src/content.config.ts` stays at `.min(2)` and is raised to `.min(3)` **per collection only after that collection clears `audit:sources --strict --collection <name>`** — flipping it early turns an unpublished entry into a build failure. That flip is now a tidiness step rather than a safety one: the publish gate already keeps under-sourced entries off the site regardless of what the schema allows.
 
 ## Git Workflow
 
