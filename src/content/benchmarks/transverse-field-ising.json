@@ -3,7 +3,13 @@
   "slug": "transverse-field-ising",
   "algorithm": "VQE / Hamiltonian Simulation / Exact Diagonalisation",
   "category": "simulation",
-  "tags": ["Ising-model", "phase-transition", "VQE", "simulation", "condensed-matter"],
+  "tags": [
+    "Ising-model",
+    "phase-transition",
+    "VQE",
+    "simulation",
+    "condensed-matter"
+  ],
   "description": "Benchmark for quantum simulation of the transverse-field Ising model (TFIM), a paradigmatic model for studying quantum phase transitions. Implementations range from VQE ground-state calculations on NISQ hardware (tested on IQM Garnet, IBM Quantum) to Hamiltonian simulation of dynamics on trapped-ion platforms. Studies cover 1D chains up to 25 qubits and 2D lattices up to 6x6 sites.",
   "hardware": "IBM Quantum, IQM Garnet, Quantinuum, simulators",
   "framework": "Qiskit, Cirq, PennyLane",
@@ -11,9 +17,18 @@
   "reproducible": true,
   "datePublished": "2021-06-21",
   "keyMetrics": [
-    {"metric": "1D chain max", "value": "25 qubits"},
-    {"metric": "2D lattice max", "value": "6\u00d76 sites (36 qubits)"},
-    {"metric": "Hardware tested", "value": "IBM, IQM Garnet, Quantinuum"}
+    {
+      "metric": "1D chain max",
+      "value": "25 qubits"
+    },
+    {
+      "metric": "2D lattice max",
+      "value": "6×6 sites (36 qubits)"
+    },
+    {
+      "metric": "Hardware tested",
+      "value": "IBM, IQM Garnet, Quantinuum"
+    }
   ],
   "significance": "The paradigmatic model for quantum phase transitions, serving as the primary test bed for quantum simulation capabilities across competing hardware platforms.",
   "sources": [
@@ -28,6 +43,12 @@
       "url": "https://arxiv.org/abs/2601.17515",
       "title": "Quantum Phase Transitions in the Transverse-Field Ising Model: A Comparative Study of Exact, Variational, and Hardware-Based Approaches",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2306.14887",
+      "title": "Efficient tensor network simulation of IBM's Eagle kicked Ising experiment — classical counterpoint on the 127-qubit result",
+      "dateAccessed": "2026-09-03"
     }
   ]
 }

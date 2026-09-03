@@ -39,6 +39,12 @@
       "url": "https://arxiv.org/abs/1704.05018",
       "title": "Hardware-efficient Variational Quantum Eigensolver for Small Molecules and Quantum Magnets (Kandala et al., Nature 2017)",
       "dateAccessed": "2026-09-02"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/1803.10238",
+      "title": "Quantum chemistry calculations on a trapped-ion quantum simulator (Hempel et al., Phys. Rev. X 8, 031022) — H2 and LiH",
+      "dateAccessed": "2026-09-03"
     }
   ],
   "news": [
