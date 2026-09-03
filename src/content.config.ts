@@ -49,7 +49,7 @@ const companies = defineCollection({
       url: z.string().url().optional(),
     })).optional(),
     highlights: z.array(nonEmpty).optional(),
-    sources: z.array(sourceSchema).min(2),
+    sources: z.array(sourceSchema).min(3, 'Needs at least 3 sources — see the source bar in CLAUDE.md'),
     news: z.array(newsSchema).default([]),
   }),
 });
@@ -74,7 +74,7 @@ const benchmarks = defineCollection({
       unit: nonEmpty.optional(),
     })).optional(),
     significance: z.string().min(20).optional(),
-    sources: z.array(sourceSchema).min(2),
+    sources: z.array(sourceSchema).min(3, 'Needs at least 3 sources — see the source bar in CLAUDE.md'),
     news: z.array(newsSchema).default([]),
   }),
 });
@@ -92,7 +92,7 @@ const useCases = defineCollection({
     approach: z.string().min(20, 'Approach must be at least 20 characters'),
     results: nonEmpty.optional(),
     companies: z.array(nonEmpty).optional(),
-    sources: z.array(sourceSchema).min(2),
+    sources: z.array(sourceSchema).min(3, 'Needs at least 3 sources — see the source bar in CLAUDE.md'),
     news: z.array(newsSchema).default([]),
   }),
 });
@@ -115,6 +115,10 @@ const challenges = defineCollection({
     teamSize: nonEmpty.optional(),
     registrationDeadline: nonEmpty.optional(),
     problemDomains: z.array(nonEmpty).optional(),
+    // Stays at 2: qhack-2025 and quantum-game-jam-2025 are deliberately withheld
+    // by the publish gate (src/lib/source-bar.ts), not deleted. Raising this to 3
+    // would turn an unpublished entry into a build failure. Raise it once
+    // `npm run audit:sources --strict --collection challenges` clears.
     sources: z.array(sourceSchema).min(2),
     news: z.array(newsSchema).default([]),
   }),
@@ -136,7 +140,7 @@ const resources = defineCollection({
     lastUpdated: nonEmpty.optional(),
     maturity: z.enum(['experimental', 'stable', 'mature', 'archived']).optional(),
     communitySize: nonEmpty.optional(),
-    sources: z.array(sourceSchema).min(2),
+    sources: z.array(sourceSchema).min(3, 'Needs at least 3 sources — see the source bar in CLAUDE.md'),
     news: z.array(newsSchema).default([]),
   }),
 });
