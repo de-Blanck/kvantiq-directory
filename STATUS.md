@@ -5,7 +5,7 @@ Session handoff document. Read at session start; update before ending. See
 
 **Last updated:** 2026-09-03
 **Branch:** `main`
-**State:** All source contradictions closed, publish gate live, type checking in place. **218 of 226 entries published.**
+**State:** All source contradictions closed, publish gate live, type checking in place. **221 of 226 entries published.**
 
 ## What's done — 2026-08-31 → 2026-09-02
 
@@ -42,14 +42,14 @@ Session handoff document. Read at session start; update before ending. See
 - **Type checking** (PR #101) — the repo had none. `astro check` was exiting 0 by prompting
   to install TypeScript and never running. Now `npm run type-check`, TypeScript pinned to
   `^6`. It found 16 errors, two of them introduced by #99 the same day.
-- **7 benchmarks sourced back above the bar** (PR #103) — 15 → 8 below.
+- **7 benchmarks and 3 use cases sourced back above the bar** (PRs #103, #105) — 15 → 5 below.
 - **Country-page 404 fixed** (PR #100) — every UK company page had linked to a dead URL
   since 2026-03-19.
 - **Rulebook updated** (PR #102) — CLAUDE.md now records the publish gate.
 
 ## Content snapshot (filesystem = source of truth)
 
-226 entries · 463 news items · **218 at/above** the 3-credible bar · **8 below (4%)**.
+226 entries · 463 news items · **221 at/above** the 3-credible bar · **5 below (2%)**.
 
 The 8 below the bar are **withheld from the published site** (excluded from listings,
 sitemap and search, served noindex, listed on `/transparency/audit/`). See CLAUDE.md →
@@ -62,16 +62,17 @@ which asserted a positive quantum result from a paper concluding the opposite; a
 
 ## What's next / open
 
-- [ ] **8 entries below the source bar, therefore unpublished** — 3 use cases
-      (`aircraft-loading-optimization`, `catalyst-design-green-hydrogen`,
-      `production-scheduling`), 3 challenges (`qhack-2025`, `quantum-game-jam-2025`,
-      `wacqt-quantum-hackathon-2026`), `companies/nvision-imaging`,
-      `resources/quantum-amsterdam`. Each is exactly one credible source short.
-      The 7 benchmarks in this position were all sourced on 2026-09-03 (PR #103)
-      after a 2026-06-28 note had concluded no third source was discoverable —
-      that note was wrong, so treat "not findable" as unproven for these eight too.
-      The 3 use cases look winnable; the 3 one-off challenge events are the hard
-      cases, where accepting them as unpublished may be the honest answer.
+- [ ] **5 entries below the source bar, therefore unpublished** — 3 challenges
+      (`qhack-2025`, `quantum-game-jam-2025`, `wacqt-quantum-hackathon-2026`),
+      `companies/nvision-imaging`, `resources/quantum-amsterdam`. Each is exactly
+      one credible source short.
+      The 7 benchmarks and 3 use cases in this position were all sourced on
+      2026-09-03 (PRs #103, #105) after a 2026-06-28 note had concluded no third
+      source was discoverable — that note was wrong ten times over, so treat
+      "not findable" as unproven here too.
+      These five are the genuinely hard ones: one-off events and small orgs with
+      thin independent coverage. Accepting them as unpublished is a legitimate
+      outcome, not a failure.
 - [ ] **Zod `.min(3)` flip** — still pending per collection. Now tidiness rather
       than safety: the publish gate keeps under-sourced entries off the site
       regardless of what the schema allows.

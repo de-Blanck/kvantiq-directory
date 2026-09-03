@@ -31,6 +31,12 @@
       "url": "https://www.sciencedirect.com/science/article/pii/S1755581721000432",
       "title": "Quantum algorithms for process parallel flexible job shop scheduling",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9023457/",
+      "title": "Evaluating the job shop scheduling problem on a D-Wave quantum annealer (Scientific Reports) — Advantage and 2000Q, documenting where quantum annealing struggles at realistic scale",
+      "dateAccessed": "2026-09-03"
     }
   ],
   "news": [

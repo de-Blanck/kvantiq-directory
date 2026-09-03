@@ -31,6 +31,12 @@
       "url": "https://arxiv.org/abs/2102.09621",
       "title": "Aircraft Loading Optimization -- QUBO models under multiple constraints",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/1903.08189",
+      "title": "Aircraft Loading Optimization: MemComputing the 5th Airbus Problem — the same Airbus challenge problem solved with a quantum-inspired approach",
+      "dateAccessed": "2026-09-03"
     }
   ],
   "news": [
