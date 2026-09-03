@@ -3,7 +3,13 @@
   "slug": "h2o-molecule",
   "algorithm": "Variational Quantum Eigensolver (VQE)",
   "category": "chemistry",
-  "tags": ["VQE", "water", "chemistry", "ground-state", "potential-energy-surface"],
+  "tags": [
+    "VQE",
+    "water",
+    "chemistry",
+    "ground-state",
+    "potential-energy-surface"
+  ],
   "description": "Benchmark for quantum simulation of the water molecule (H2O), computing ground-state energies and potential energy surfaces using VQE. As a triatomic molecule with a non-trivial electronic structure, H2O serves as a step up in complexity from diatomic benchmarks like H2 and LiH. VQE implementations can approximate the ground-state energy with high chemical accuracy on both simulators and NISQ hardware.",
   "hardware": "Various (IBM Quantum, simulators)",
   "framework": "Qiskit Nature, PennyLane",
@@ -11,8 +17,14 @@
   "reproducible": true,
   "datePublished": "2020-10-27",
   "keyMetrics": [
-    {"metric": "Qubits required", "value": "14"},
-    {"metric": "Molecule complexity", "value": "Triatomic (3 atoms)"}
+    {
+      "metric": "Qubits required",
+      "value": "14"
+    },
+    {
+      "metric": "Molecule complexity",
+      "value": "Triatomic (3 atoms)"
+    }
   ],
   "significance": "Steps beyond simple diatomic benchmarks to a non-trivial electronic structure, testing whether VQE can handle increasing molecular complexity on NISQ hardware.",
   "sources": [
@@ -27,6 +39,12 @@
       "url": "https://arxiv.org/abs/2109.00401",
       "title": "Investigating potential energy surfaces of noncollinear molecule using variational quantum circuit",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/1902.10171",
+      "title": "Ground-state energy estimation of the water molecule on a trapped ion quantum computer (Nam et al.)",
+      "dateAccessed": "2026-09-03"
     }
   ]
 }

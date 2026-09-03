@@ -51,18 +51,18 @@
       "dateAccessed": "2026-04-19"
     },
     {
-      "type": "url",
-      "url": "https://en.wikipedia.org/wiki/IBM_Quantum_Platform",
-      "title": "IBM Quantum Platform — Wikipedia (Heron processor, research output)",
-      "dateAccessed": "2026-04-19"
-    },
-    {
       "type": "doi",
       "url": "https://doi.org/10.1126/sciadv.adu9991",
       "title": "Chemistry Beyond the Scale of Exact Diagonalization on a Quantum-Centric Supercomputer (Science Advances 11(25), eadu9991)",
       "authors": "Robledo-Moreno, Motta, Haas, Javadi-Abhari, Jurcevic et al.",
       "datePublished": "2025-06-18",
       "dateAccessed": "2026-04-19"
+    },
+    {
+      "type": "website",
+      "url": "https://www.ibm.com/quantum/blog/riken-fugaku-qcsc",
+      "title": "RIKEN and IBM demonstrate quantum-centric supercomputing — closed-loop Heron + Fugaku SQD on iron-sulfur molecules",
+      "dateAccessed": "2026-09-03"
     }
   ],
   "news": [
