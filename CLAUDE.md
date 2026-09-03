@@ -151,7 +151,9 @@ The 3-credible-source minimum applies to **all new entries and any edited entrie
 
 Withholding rather than deleting is deliberate: the URLs stay alive so nothing already indexed becomes a 404. An entry returns to the directory by gaining a third credible source, never by lowering the bar.
 
-As of 2026-09-02, **15 of 226 entries are below the bar** and therefore unpublished (the 2026-06-24 figure of ~166 of 218 predates the source-backfill workstream). The Zod schema in `src/content.config.ts` stays at `.min(2)` and is raised to `.min(3)` **per collection only after that collection clears `audit:sources --strict --collection <name>`** — flipping it early turns an unpublished entry into a build failure. That flip is now a tidiness step rather than a safety one: the publish gate already keeps under-sourced entries off the site regardless of what the schema allows.
+As of 2026-09-03, **2 of 226 entries are below the bar** and therefore unpublished — `challenges/qhack-2025` and `challenges/quantum-game-jam-2025`, both assessed as genuinely unsourceable rather than merely un-backfilled (the 2026-06-24 figure of ~166 of 218 predates the source-backfill workstream).
+
+The Zod schema in `src/content.config.ts` is raised to `.min(3)` **per collection only after that collection clears `audit:sources --strict --collection <name>`** — flipping it early turns an unpublished entry into a build failure. Companies, benchmarks, use-cases and resources are at `.min(3)`; **challenges stays at `.min(2)`** until those two entries either gain a third source or are removed. The schema is a backstop, not the gate: it counts raw sources while the publish gate counts *credible* ones, so `src/lib/source-bar.ts` remains the thing that decides what ships.
 
 ## Git Workflow
 
