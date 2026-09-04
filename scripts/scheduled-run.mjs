@@ -305,7 +305,14 @@ function main() {
   log(`Changes found${partialTag}. Opening PR on branch ${branch}…`);
   capture('git', ['checkout', '-b', branch]);
   capture('git', ['add', '-A']);
-  capture('git', ['commit', '-m', `content: weekly AI content sweep ${dateStamp()}${partialTag}`]);
+  // -c commit.gpgsign=false: this repo signs commits with an SSH key, and on at
+  // least one machine that key lives in a password-manager agent with nothing on
+  // disk. A scheduled job has no agent, so a signed commit fails after the sweep
+  // has already done an hour of work. The signature adds nothing here anyway —
+  // these commits are authored by an unattended script and are vouched for by the
+  // PR review, not by whose key was loaded on the machine that ran it.
+  capture('git', ['-c', 'commit.gpgsign=false', 'commit', '-m',
+    `content: weekly AI content sweep ${dateStamp()}${partialTag}`]);
   capture('git', ['push', '-u', 'origin', branch]);
   openPr(repo, branch, sweepFailed);
 
