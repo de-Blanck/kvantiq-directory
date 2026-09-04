@@ -45,8 +45,86 @@ function log(msg) {
   try { appendFileSync(LOG_FILE, line + '\n'); } catch { /* logging is best-effort */ }
 }
 
+const FAILURE_ISSUE_TITLE = 'Weekly sweep failed';
+
+// Read the tail of the run log, for the issue body. Best-effort.
+function logTail(lines = 25) {
+  try {
+    return readFileSync(LOG_FILE, 'utf8').trimEnd().split('\n').slice(-lines).join('\n');
+  } catch {
+    return '(no log available)';
+  }
+}
+
+/**
+ * File a GitHub issue when the run dies.
+ *
+ * Every fatal path in this script used to end at `process.exit(1)` with the
+ * reason in a log file nobody opens. That mattered more than it looks: a
+ * completed sweep always appends a run record to sweep-runs.json, which is
+ * tracked, so a finished run always produces a PR. A run that dies before that
+ * produces nothing — and "no PR" was therefore indistinguishable from "ran fine,
+ * nothing to change".
+ *
+ * Deduped on the title, so a machine that stays broken files one issue rather
+ * than one a week. Never throws: the failure path must not fail.
+ */
+function reportFailure(msg) {
+  try {
+    const repo = capture('gh', ['repo', 'view', '--json', 'nameWithOwner', '-q', '.nameWithOwner']);
+    const open = JSON.parse(capture('gh', ['issue', 'list', '--repo', repo, '--state', 'open',
+      '--json', 'title,url', '--limit', '50']));
+    const existing = open.find((i) => (i.title || '').startsWith(FAILURE_ISSUE_TITLE));
+    if (existing) {
+      log(`An open failure issue already exists (${existing.url}) — not filing another.`);
+      return;
+    }
+
+    const bodyPath = path.join(os.tmpdir(), `kvantiq-sweep-failure-${process.pid}.md`);
+    const body = [
+      `The scheduled weekly sweep failed on ${new Date().toISOString()}.`,
+      '',
+      '**Reason**',
+      '',
+      '```',
+      msg,
+      '```',
+      '',
+      '**Last lines of the run log**',
+      '',
+      '```',
+      logTail(),
+      '```',
+      '',
+      'Run it by hand to reproduce:',
+      '',
+      '```',
+      'launchctl start com.kvantiq.directory.weekly   # macOS',
+      'node scripts/scheduled-run.mjs                 # any machine',
+      '```',
+      '',
+      'This issue is filed once and not repeated while it stays open. Close it once',
+      'the cause is fixed, so the next failure is visible again.',
+      '',
+    ].join('\n');
+    writeFileSync(bodyPath, body);
+    try {
+      const url = capture('gh', ['issue', 'create', '--repo', repo,
+        '--title', `${FAILURE_ISSUE_TITLE} — ${dateStamp()}`, '--body-file', bodyPath]);
+      log(`Filed failure issue: ${url}`);
+    } finally {
+      try { rmSync(bodyPath, { force: true }); } catch { /* best-effort cleanup */ }
+    }
+  } catch (err) {
+    // A failure to report the failure is not worth crashing over — but say so,
+    // because it means this run is silent after all.
+    log(`WARNING: could not file a failure issue (${err && err.message ? err.message : err}). This run is unreported.`);
+  }
+}
+
 function fail(msg) {
   log(`FATAL: ${msg}`);
+  reportFailure(msg);
   process.exit(1);
 }
 

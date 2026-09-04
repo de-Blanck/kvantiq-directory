@@ -134,9 +134,23 @@ It runs `scripts/scheduled-run.mjs`, which bills against the Max subscription th
 **opens a PR without merging**. Preflight verified 2026-09-04: `gh` authenticated, `claude`
 on PATH, rotated token accepted.
 
-**Fragility to know about:** the plist hardcodes the nvm node path
-(`~/.nvm/versions/node/v24.15.0/bin/node`). An nvm node upgrade breaks the schedule silently
-— re-run `scheduler/install-macos.sh` after any node version change.
+**Failure reporting.** A completed sweep always appends a run record to the tracked
+`sweep-runs.json`, so a finished run always produces a PR. A run that dies before that used
+to produce nothing at all — which made "no PR" indistinguishable from "ran fine, nothing
+changed". Since 2026-09-04 every fatal path files a GitHub issue (`Weekly sweep failed — …`)
+with the reason and the tail of the run log, deduped so a machine that stays broken files one
+issue rather than one a week. Close the issue once fixed, or the next failure is suppressed.
+Verified end-to-end by forcing a preflight failure in a throwaway clone (issue #114, closed).
+
+**Residual gap:** if launchd never fires at all — machine off or asleep through Sunday 03:00,
+agent unloaded — nothing runs, so nothing reports. That cannot be detected from inside the
+script; it needs an external heartbeat, which we have not built. In practice a missing PR two
+weeks running is the signal.
+
+**Node path.** The plist hardcodes `~/.nvm/versions/node/v24.15.0/bin/node`. This is less
+fragile than it looks: nvm keeps old versions on disk, so installing a newer node does not
+break the schedule — the job simply keeps running on 24.15.0. It breaks only on an explicit
+`nvm uninstall`, an nvm cleanup, or a new machine. Re-run `scheduler/install-macos.sh` then.
 
 ## Deploy
 
