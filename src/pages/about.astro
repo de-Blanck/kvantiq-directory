@@ -1,4 +1,6 @@
 ---
+import { readFileSync, existsSync } from 'fs';
+import { resolve } from 'path';
 import { getCollection } from 'astro:content';
 import { publishedOnly } from '../lib/source-bar';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -18,6 +20,21 @@ const regions = allCompanies.reduce((acc: Record<string, number>, c) => {
 }, {} as Record<string, number>);
 
 const countriesCount = new Set(allCompanies.map(c => c.data.country)).size;
+
+// The date the directory was last checked, taken from the newest sweep run rather
+// than typed in by hand. A hardcoded date sitting beside live counts was stale by
+// five months and made every number next to it look unmaintained.
+function lastSweepDate(): string | null {
+  const path = resolve('data/generated/sweep-runs.json');
+  if (!existsSync(path)) return null;
+  try {
+    const runs = JSON.parse(readFileSync(path, 'utf-8'));
+    return Array.isArray(runs) && runs[0]?.date ? String(runs[0].date) : null;
+  } catch {
+    return null;
+  }
+}
+const lastSweep = lastSweepDate();
 
 // Stat tiles — number + label. Total is the hero; these are sub-counters.
 const statTiles = [
@@ -63,9 +80,11 @@ const statTiles = [
           </p>
           <p class="mt-2 body-sm text-text-secondary">verified entries across the European ecosystem</p>
         </div>
-        <p class="body-sm text-text-muted">
-          Updated <time datetime="2026-03-19" class="data-md text-text-primary">2026-03-19</time>
-        </p>
+        {lastSweep && (
+          <p class="body-sm text-text-muted">
+            Last verified <a href="/transparency/sweeps/" class="hover:text-accent"><time datetime={lastSweep} class="data-md text-text-primary">{lastSweep}</time></a>
+          </p>
+        )}
       </div>
 
       <!-- Secondary tiles -->
@@ -92,12 +111,12 @@ const statTiles = [
       <p class="eyebrow text-accent">
         <span class="eyebrow-glyph" aria-hidden="true">◇</span>Why this directory exists
       </p>
-      <h2 class="mt-2 h-lg text-text-primary">Europe needs an open, transparent quantum directory</h2>
+      <h2 class="mt-2 h-lg text-text-primary">An open, checkable record of the European ecosystem</h2>
       <p class="mt-4 body-default text-text-secondary">
-        Europe has invested <strong class="text-text-primary">over EUR 10 billion</strong> in quantum computing through combined EU and national funding programs. There are <strong class="text-text-primary">150+ quantum computing companies</strong> across the continent — spanning hardware manufacturers, software platforms, consulting firms, and research spinouts.
+        Europe's quantum sector is spread across national programmes, university spinouts and early-stage companies, and the public record of who is doing what is scattered — a press release here, a funding database there, much of it paywalled or self-reported.
       </p>
       <p class="mt-3 body-default text-text-secondary">
-        Yet no single, open directory focused on the European ecosystem exists. The closest alternative — The Quantum Insider — is US-based and paywalled. Kvantiq Directory fills that gap with a <strong class="text-text-primary">free, transparent, and ethically curated</strong> resource built for the European quantum community.
+        This directory is one attempt at a public answer you can check. It tracks <strong class="text-text-primary">{allCompanies.length} companies across {countriesCount} countries</strong>, shows the sources behind every entry, and withholds any entry that fewer than three credible sources can substantiate — those are listed openly on the <a href="/transparency/audit/" class="text-accent hover:underline">audit dashboard</a> rather than quietly dropped. It is free and carries no third-party tracking.
       </p>
     </section>
 
@@ -162,7 +181,7 @@ const statTiles = [
       <p class="eyebrow text-text-muted">
         <span class="eyebrow-glyph" aria-hidden="true">◈</span>Geographic scope
       </p>
-      <h2 class="mt-2 h-lg text-text-primary">Nordics and DACH first, then broader Europe</h2>
+      <h2 class="mt-2 h-lg text-text-primary">Strongest in the Nordics and DACH, across {countriesCount} countries</h2>
       <p class="mt-4 body-default text-text-secondary">
         Company coverage by region:
       </p>
