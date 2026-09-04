@@ -32,3 +32,6 @@ data/pending-*.json
 data/kvantiq.db
 data/weekly-agent-prompt.md
 .env*.local
+
+# Local visual-audit artifacts (Playwright PNGs, preview HTML) — never committed
+.local-design-audit/

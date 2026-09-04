@@ -1,46 +1,69 @@
 ---
-import { readFileSync, existsSync } from 'fs';
-import { resolve } from 'path';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { publishedOnly, MIN_CREDIBLE_SOURCES } from '../../lib/source-bar';
 
-function loadJson(filename: string, fallback: any = []) {
-  const filePath = resolve('data/generated', filename);
-  if (!existsSync(filePath)) return fallback;
-  try {
-    return JSON.parse(readFileSync(filePath, 'utf-8'));
-  } catch {
-    return fallback;
-  }
+// Everything on this page is derived from the content collections at build time.
+// It deliberately reads nothing from data/generated/: the three files this page
+// used to depend on (market-snapshot, funding-timeline, events) are written by no
+// script and were empty in production from the day the page shipped.
+
+const companiesAll  = await getCollection('companies');
+const benchmarksAll = await getCollection('benchmarks');
+const useCasesAll   = await getCollection('use-cases');
+const challengesAll = await getCollection('challenges');
+const resourcesAll  = await getCollection('resources');
+
+// Counts run through the source bar so this page never advertises an entry the
+// site itself withholds.
+const companies  = publishedOnly(companiesAll);
+const benchmarks = publishedOnly(benchmarksAll);
+const useCases   = publishedOnly(useCasesAll);
+const challenges = publishedOnly(challengesAll);
+const resources  = publishedOnly(resourcesAll);
+
+const collectionRows = [
+  { label: 'Companies',  href: '/companies/',  published: companies.length,  total: companiesAll.length },
+  { label: 'Benchmarks', href: '/benchmarks/', published: benchmarks.length, total: benchmarksAll.length },
+  { label: 'Use cases',  href: '/use-cases/',  published: useCases.length,   total: useCasesAll.length },
+  { label: 'Challenges', href: '/challenges/', published: challenges.length, total: challengesAll.length },
+  { label: 'Resources',  href: '/resources/',  published: resources.length,  total: resourcesAll.length },
+].map((r) => ({ ...r, withheld: r.total - r.published }));
+
+const totalPublished = collectionRows.reduce((n, r) => n + r.published, 0);
+const totalTracked   = collectionRows.reduce((n, r) => n + r.total, 0);
+const totalWithheld  = totalTracked - totalPublished;
+
+const countryCount = new Set(companies.map((c) => c.data.country)).size;
+
+function tally(values: string[]): { label: string; count: number }[] {
+  const counts = new Map<string, number>();
+  for (const v of values) counts.set(v, (counts.get(v) ?? 0) + 1);
+  return [...counts.entries()]
+    .map(([label, count]) => ({ label, count }))
+    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
 }
 
-const events = loadJson('events.json', []);
-const marketSnapshot = loadJson('market-snapshot.json', {});
-const fundingTimeline = loadJson('funding-timeline.json', []);
-
-const eventIcons: Record<string, string> = {
-  funding:        '&#128176;',
-  acquisition:    '&#129309;',
-  closure:        '&#128683;',
-  breakthrough:   '&#128640;',
-  product_launch: '&#128230;',
-  partnership:    '&#128101;',
-  grant_awarded:  '&#127942;',
-  milestone:      '&#11088;',
-  founded:        '&#127793;',
-  ipo:            '&#128200;',
-  merger:         '&#128260;',
-  pivot:          '&#128259;',
-  expansion:      '&#127758;',
+const TYPE_LABELS: Record<string, string> = {
+  hardware: 'Hardware', software: 'Software', cloud: 'Cloud',
+  consulting: 'Consulting', research: 'Research', hybrid: 'Hybrid', other: 'Other',
 };
 
-const hasFundingData = Array.isArray(fundingTimeline) && fundingTimeline.length > 0;
+const REGION_LABELS: Record<string, string> = {
+  nordics: 'Nordics', dach: 'DACH', uk: 'UK',
+  'western-europe': 'Western Europe', 'southern-europe': 'Southern Europe',
+  'eastern-europe': 'Eastern Europe',
+};
 
-const fundingLabels = hasFundingData ? JSON.stringify(fundingTimeline.map((d: any) => d.quarter ?? '')) : '[]';
-const fundingValues = hasFundingData ? JSON.stringify(fundingTimeline.map((d: any) => d.total_eur ?? 0)) : '[]';
+const byType   = tally(companies.map((c) => c.data.type));
+const byRegion = tally(companies.map((c) => c.data.region));
+
+const maxType   = Math.max(1, ...byType.map((d) => d.count));
+const maxRegion = Math.max(1, ...byRegion.map((d) => d.count));
 ---
 <BaseLayout
   title="Industry Intelligence"
-  description="Funding timelines, ecosystem events, and market snapshots for the European quantum computing industry."
+  description="How the Kvantiq Directory covers the European quantum computing ecosystem: entries tracked, coverage by collection, and the shape of the companies listed."
 >
   <main data-pagefind-ignore class="mx-auto max-w-5xl">
 
@@ -50,171 +73,153 @@ const fundingValues = hasFundingData ? JSON.stringify(fundingTimeline.map((d: an
         Industry Intelligence
       </h1>
       <p class="mt-4 body-lg text-text-secondary">
-        Funding timelines, ecosystem events, and market snapshots for the European quantum computing industry.
+        The shape of what this directory covers — how many entries are tracked, where they
+        sit, and what kinds of organisations they are. Every figure is derived from the
+        published entries themselves, not from a separate dataset.
       </p>
     </div>
 
-    <!-- Market Snapshot -->
+    <!-- At a glance -->
     <section class="mb-10">
       <h2 class="eyebrow text-text-muted mb-4">
-        Market Snapshot
+        At a Glance
       </h2>
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
 
-        <!-- Total tracked -->
         <div class="rounded-xl border border-border bg-surface p-5">
-          <p class="eyebrow text-text-muted">Total Tracked</p>
-          <p class="mt-2 data-lg text-text-primary">
-            {marketSnapshot.total_companies_tracked ?? '—'}
-          </p>
-          <p class="mt-1 body-sm text-text-secondary">companies &amp; entities</p>
+          <p class="eyebrow text-text-muted">Entries Published</p>
+          <p class="mt-2 data-lg text-text-primary">{totalPublished}</p>
+          <p class="mt-1 body-sm text-text-secondary">across five collections</p>
         </div>
 
-        <!-- Active -->
         <div class="rounded-xl border border-border bg-surface p-5">
-          <p class="eyebrow text-text-muted">Active</p>
-          <p class="mt-2 data-lg text-text-primary">
-            {marketSnapshot.total_active ?? '—'}
-          </p>
-          <p class="mt-1 body-sm text-text-secondary">currently operating</p>
+          <p class="eyebrow text-text-muted">Organisations</p>
+          <p class="mt-2 data-lg text-text-primary">{companies.length}</p>
+          <p class="mt-1 body-sm text-text-secondary">companies &amp; institutes</p>
         </div>
 
-        <!-- Countries -->
         <div class="rounded-xl border border-border bg-surface p-5">
           <p class="eyebrow text-text-muted">Countries</p>
-          <p class="mt-2 data-lg text-text-primary">
-            {marketSnapshot.countries_represented ?? '—'}
-          </p>
-          <p class="mt-1 body-sm text-text-secondary">European countries</p>
+          <p class="mt-2 data-lg text-text-primary">{countryCount}</p>
+          <p class="mt-1 body-sm text-text-secondary">represented by a company</p>
         </div>
 
-        <!-- Funding YTD -->
-        <div class="rounded-xl border border-border bg-surface p-5">
-          <p class="eyebrow text-text-muted">Funding YTD</p>
-          <p class="mt-2 data-lg text-text-primary">
-            {marketSnapshot.total_funding_eur_ytd != null ? `€${(marketSnapshot.total_funding_eur_ytd / 1_000_000).toFixed(1)}M` : '—'}
+        <a
+          href="/transparency/audit/"
+          class="group block rounded-xl border border-border bg-surface p-5 transition-colors duration-[120ms] hover:bg-elevated"
+        >
+          <p class="eyebrow text-text-muted">Withheld</p>
+          <p class="mt-2 data-lg text-text-primary">{totalWithheld}</p>
+          <p class="mt-1 body-sm text-text-secondary">
+            below the {MIN_CREDIBLE_SOURCES}-source bar &rarr;
           </p>
-          <p class="mt-1 body-sm text-text-secondary">disclosed in EUR</p>
-        </div>
+        </a>
 
       </div>
     </section>
 
-    <!-- Funding Timeline -->
-    {hasFundingData && (
-      <section class="mb-10">
-        <h2 class="eyebrow text-text-muted mb-4">
-          Funding Timeline
-        </h2>
-        <div class="rounded-xl border border-border bg-surface p-6">
-          <canvas id="funding-chart" height="260" aria-label="Funding timeline bar chart" role="img"></canvas>
-        </div>
-      </section>
-    )}
-
-    <!-- Recent Events -->
+    <!-- Coverage by collection -->
     <section class="mb-10">
       <h2 class="eyebrow text-text-muted mb-4">
-        Recent Events
+        Coverage by Collection
       </h2>
+      <div class="overflow-x-auto rounded-xl border border-border bg-surface">
+        <table class="w-full text-left">
+          <thead class="border-b border-border bg-elevated">
+            <tr>
+              <th class="px-5 py-3 eyebrow text-text-muted">Collection</th>
+              <th class="px-5 py-3 eyebrow text-text-muted text-right">Published</th>
+              <th class="px-5 py-3 eyebrow text-text-muted text-right">Withheld</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-border">
+            {collectionRows.map((row) => (
+              <tr class="transition-colors duration-[120ms] hover:bg-elevated">
+                <td class="px-5 py-3 body-sm">
+                  <a href={row.href} class="text-text-primary hover:text-accent">{row.label}</a>
+                </td>
+                <td class="px-5 py-3 data-md text-text-primary text-right">{row.published}</td>
+                <td class={`px-5 py-3 data-md text-right ${row.withheld > 0 ? 'text-warn' : 'text-text-muted'}`}>
+                  {row.withheld > 0 ? row.withheld : '0'}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-      {events.length === 0 ? (
-        <div class="rounded-xl border border-border bg-surface px-6 py-10 text-center">
-          <p class="body-sm text-text-muted">No events recorded yet.</p>
-        </div>
-      ) : (
-        <div class="rounded-xl border border-border bg-surface divide-y divide-border overflow-hidden">
-          <div class="max-h-[600px] overflow-y-auto">
-            {events.map((event: any) => {
-              const iconHtml = eventIcons[event.event_type] ?? '&#8226;';
-              const isFunding = event.event_type === 'funding' || event.event_type === 'grant_awarded' || event.event_type === 'ipo';
-              return (
-                <div class="flex items-start gap-4 px-5 py-4 transition-colors duration-[120ms] hover:bg-elevated">
-                  <!-- Icon -->
-                  <span class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-elevated border border-border text-base leading-none" set:html={iconHtml} />
+    <!-- Composition -->
+    <div class="grid gap-6 sm:grid-cols-2 mb-10">
 
-                  <!-- Body -->
-                  <div class="min-w-0 flex-1">
-                    <div class="flex flex-wrap items-center gap-2">
-                      <span class="body-sm font-semibold text-text-primary">{event.company_name ?? event.company ?? '—'}</span>
-                      <span class="rounded-md border border-border bg-elevated px-1.5 py-0.5 eyebrow text-text-muted capitalize">
-                        {(event.event_type ?? '').replace(/_/g, ' ')}
-                      </span>
-                      {isFunding && event.amount_eur_m != null && (
-                        <span class="rounded-md border border-accent/30 bg-accent-glow px-1.5 py-0.5 eyebrow text-accent">
-                          €{event.amount_eur_m}M
-                        </span>
-                      )}
-                    </div>
-                    {event.headline && (
-                      <p class="mt-0.5 body-sm text-text-secondary">{event.headline}</p>
-                    )}
-                  </div>
+      <!-- By type -->
+      <div class="rounded-xl border border-border bg-surface p-5">
+        <h2 class="eyebrow text-text-muted mb-4">
+          Companies by Type
+        </h2>
+        <ul class="space-y-2">
+          {byType.map((d) => (
+            <li class="group">
+              <div class="flex items-center justify-between mb-0.5">
+                <span class="body-sm text-text-secondary">{TYPE_LABELS[d.label] ?? d.label}</span>
+                <span class="data-md text-text-primary">{d.count}</span>
+              </div>
+              <div class="h-1.5 w-full rounded-full bg-border overflow-hidden">
+                <div
+                  class="h-full rounded-full bg-accent transition-all duration-300"
+                  style={`width: ${Math.round((d.count / maxType) * 100)}%`}
+                ></div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
 
-                  <!-- Date -->
-                  {event.date && (
-                    <time datetime={event.date} class="shrink-0 eyebrow text-text-muted mt-1">
-                      {event.date}
-                    </time>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
+      <!-- By region -->
+      <div class="rounded-xl border border-border bg-surface p-5">
+        <h2 class="eyebrow text-text-muted mb-4">
+          Companies by Region
+        </h2>
+        <ul class="space-y-2">
+          {byRegion.map((d) => (
+            <li class="group">
+              <div class="flex items-center justify-between mb-0.5">
+                <span class="body-sm text-text-secondary">{REGION_LABELS[d.label] ?? d.label}</span>
+                <span class="data-md text-text-primary">{d.count}</span>
+              </div>
+              <div class="h-1.5 w-full rounded-full bg-border overflow-hidden">
+                <div
+                  class="h-full rounded-full bg-accent transition-all duration-300"
+                  style={`width: ${Math.round((d.count / maxRegion) * 100)}%`}
+                ></div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- What this page does not show -->
+    <section class="mb-10">
+      <div class="rounded-xl border border-border bg-surface p-5">
+        <h2 class="eyebrow text-text-muted mb-3">
+          What This Page Does Not Show
+        </h2>
+        <p class="body-sm text-text-secondary">
+          No funding totals, funding timeline, or feed of ecosystem events. Reporting those
+          honestly means tracking rounds and outcomes against independent sources for every
+          organisation listed, and this directory does not do that yet. Until it does, the
+          figures would be a floor of whatever happened to get written down rather than a
+          measurement of the ecosystem — so they are absent rather than approximate.
+        </p>
+        <p class="mt-3 body-sm text-text-secondary">
+          For how entries are verified, corrected and held back, see the
+          <a href="/transparency/audit/" class="text-accent hover:underline">audit dashboard</a>
+          and the <a href="/transparency/sweeps/" class="text-accent hover:underline">sweep log</a>.
+        </p>
+      </div>
     </section>
 
   </main>
 </BaseLayout>
-
-{hasFundingData && (
-  <script define:vars={{ fundingLabels, fundingValues }}>
-    (async () => {
-      const { Chart, BarElement, CategoryScale, LinearScale, Tooltip, BarController } = await import(
-        'https://cdn.jsdelivr.net/npm/chart.js@4/+esm'
-      );
-
-      Chart.register(BarElement, CategoryScale, LinearScale, Tooltip, BarController);
-
-      const ctx = document.getElementById('funding-chart');
-      if (!ctx) return;
-
-      new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: JSON.parse(fundingLabels),
-          datasets: [
-            {
-              label: 'Funding (€M)',
-              data: JSON.parse(fundingValues),
-              backgroundColor: '#1D4ED8', // --color-info (Editorial Light affirmative blue)
-              borderRadius: 4,
-              borderSkipped: false,
-            },
-          ],
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: true,
-          plugins: {
-            tooltip: { enabled: true },
-            legend: { display: false },
-          },
-          scales: {
-            y: {
-              ticks: { color: '#78716C' },  // text-muted
-              grid: { color: '#DDD8CF' },   // border
-              border: { display: false },
-            },
-            x: {
-              ticks: { color: '#78716C' },  // text-muted
-              grid: { display: false },
-              border: { display: false },
-            },
-          },
-        },
-      });
-    })();
-  </script>
-)}
