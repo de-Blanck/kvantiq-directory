@@ -105,13 +105,38 @@ which asserted a positive quantum result from a paper concluding the opposite; a
       would turn an intentionally unpublished entry into a build failure.
       The schema is a backstop, not the gate: it counts raw sources, while
       `src/lib/source-bar.ts` counts credible ones and is still what decides what ships.
-- [ ] **Rotate the Claude Code OAuth token.** `.env` was uploaded to Vercel on every CLI
-      deploy before 2026-09-04 (deployment `dpl_6Hd41Fw3GgyU3G8mHrNG9Z3MVfMp` and earlier).
-      Not publicly served, but readable by anyone with `synapse-q` team access and retained
-      by Vercel. Blocked on Rune. Unblock: rotate, then rewrite `.env` locally.
-- [ ] **Unpin TypeScript** from `^6` once `astro check` supports the 7.x native
-      compiler (withastro/roadmap#1321). Rechecked 2026-09-03: latest is still 7.0.2
-      and `@astrojs/check` is still 0.9.10 — no change, nothing to do yet.
+- [x] **Claude Code OAuth token rotated** (2026-09-04). The old one had been uploaded to
+      Vercel on every CLI deploy before `.vercelignore` existed (deployment
+      `dpl_6Hd41Fw3GgyU3G8mHrNG9Z3MVfMp` and earlier). New token written to `.env` (mode 600,
+      gitignored, vercelignored) and verified against the `claude` CLI. Worth confirming the
+      old token is revoked in Claude account settings — not verified from here.
+- **TypeScript is pinned to `^6` deliberately — not an open item.** `astro check` needs the
+      programmatic compiler API that TypeScript 7.x's native port does not expose, and
+      `@astrojs/check` is still at 0.9.10 (checked 2026-09-04). The only alternative is
+      dropping `astro check` for `tsc --noEmit`, which would stop type-checking `.astro`
+      files — most of this codebase — to buy a cosmetic version bump. The pin costs nothing:
+      0 errors, 0 warnings. Revisit only if `@astrojs/check` ships 7.x support.
+
+## Sweep schedule
+
+Installed 2026-09-04 on this Mac: launchd agent **`com.kvantiq.directory.weekly`**,
+Sundays 03:00 local, missed runs fire at next wake.
+
+```
+plist   ~/Library/LaunchAgents/com.kvantiq.directory.weekly.plist
+log     scheduled-run-debug.log (repo root, gitignored)
+run now launchctl start com.kvantiq.directory.weekly
+remove  launchctl unload <plist> && rm <plist>
+```
+
+It runs `scripts/scheduled-run.mjs`, which bills against the Max subscription through the
+`claude` CLI — no GitHub Actions, no API key. It validates the build before pushing and
+**opens a PR without merging**. Preflight verified 2026-09-04: `gh` authenticated, `claude`
+on PATH, rotated token accepted.
+
+**Fragility to know about:** the plist hardcodes the nvm node path
+(`~/.nvm/versions/node/v24.15.0/bin/node`). An nvm node upgrade breaks the schedule silently
+— re-run `scheduler/install-macos.sh` after any node version change.
 
 ## Deploy
 
