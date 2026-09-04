@@ -1,5 +1,326 @@
 [
   {
+    "date": "2026-09-04",
+    "started_at": "2026-09-04T10:02:05.127Z",
+    "finished_at": "2026-09-04T10:54:20.050Z",
+    "runtime_ms": 3134921,
+    "runtime_human": "52m 15s",
+    "model": "claude-haiku-4-5-20251001",
+    "scanned": 226,
+    "updated": 1,
+    "no_change": 11,
+    "skipped": 214,
+    "news_added": 1,
+    "methodology": {
+      "items_proposed": 22,
+      "items_published": 1,
+      "pass_rate_pct": 100,
+      "rejected_missing_field": 0,
+      "rejected_bad_date": 0,
+      "rejected_domain_mismatch": 0,
+      "rejected_blocklisted": 0,
+      "rejected_blank_title_source": 0,
+      "empty_excerpt_dropped": 0,
+      "duplicate_url_collapsed": 0
+    },
+    "source_bar": {
+      "min_credible": 3,
+      "below_bar": 2,
+      "backfilled_total": 0,
+      "entries": [
+        {
+          "entry": "challenges/qhack-2025.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "challenges/quantum-game-jam-2025.json",
+          "credible": 2,
+          "total": 2
+        }
+      ]
+    },
+    "cross_check": {
+      "entries_checked": 12,
+      "flagged": 2,
+      "contradictions_found": 2,
+      "flags": [
+        {
+          "entry": "companies/algorithmiq.json",
+          "issues": [
+            "Entry states total funding 'over EUR 36M' but sources state exactly €36 million"
+          ]
+        },
+        {
+          "entry": "companies/beit.json",
+          "issues": [
+            "Founding year conflict: Entry and The Quantum Insider (2019-11-28) state 2016; R&D World (2026-04-30) states 2017."
+          ]
+        }
+      ]
+    },
+    "by_collection": {
+      "companies": {
+        "scanned": 110,
+        "updated": 1,
+        "news_added": 1
+      },
+      "benchmarks": {
+        "scanned": 39,
+        "updated": 0,
+        "news_added": 0
+      },
+      "use-cases": {
+        "scanned": 23,
+        "updated": 0,
+        "news_added": 0
+      },
+      "challenges": {
+        "scanned": 12,
+        "updated": 0,
+        "news_added": 0
+      },
+      "resources": {
+        "scanned": 42,
+        "updated": 0,
+        "news_added": 0
+      }
+    },
+    "by_country": {
+      "Germany": 1
+    },
+    "top_sources": [
+      {
+        "source": "Bosch Quantum Sensing",
+        "count": 1
+      }
+    ],
+    "not_found": [
+      "companies/c12.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/celare-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/copenhagen-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/creotech-instruments.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/cryptomathic.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/cubiq-technologies.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/delft-circuits.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/diasense.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/eleqtron.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/ephos.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/equal1.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/eviden-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/frostbyte.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/groove-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/hqs.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/id-quantique.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/iqm.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/isentroniq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/keequant.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/kipu-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/kiutra.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/kvantify.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/lizard-photonics.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/low-noise-factory.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/magnolia-quantum-sensing.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/molecular-quantum-solutions.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/multiverse-computing.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/nkt-photonics.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/nu-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/nvision-imaging.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/oqc.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/orange-quantum-systems.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/orca-computing.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/parityqc.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/partisia.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/pasqal.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/peak-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/phasecraft.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/pixel-photonics.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/planqc.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/psiqre.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/q-ant.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/q-bird.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qailinks-denmark.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qbee.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qblox.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qdevil.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qfactory.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qilimanjaro.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qmill.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qnami.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qphox.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qpurpose.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qruise.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qsensato.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qt-sense.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qti.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qtlabs.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/quandela.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/quanscient.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantastica.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantcore.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantinuum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantum-dice.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantum-fabrix.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantum-foundry-copenhagen.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantum-industries.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantum-motion.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantum-optics-jena.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantumdiamonds.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantumsong.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantware.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qubit-pharmaceuticals.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/quix-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qunasys-denmark.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qunorth.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/quobly.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qutools.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qutwo.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/qversion.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/riverlane.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/rotonium.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/saxonq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/scalinq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/semiqon.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/silent-waves.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/siphotonic.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/sparrow-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/terra-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/thinkquantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/universal-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/veriqloud.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/welinq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/xeedq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/xiphera.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/zerothird.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/zurich-instruments.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "companies/zuriq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/algorithmic-qubits.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/certified-randomness-quantinuum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/clops.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/dwave-spin-glass-dynamics.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/fermi-hubbard.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/grover-search-scaling.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/h2o-molecule.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/hubbard-model.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/knapsack-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/lih-ground-state.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/mirror-circuits.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/mqt-bench.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/n2-dissociation.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/portfolio-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/q-score.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/qaoa-maxcut.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/qed-c-application-benchmarks.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/qed-c-benchmarks.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/qkd-throughput.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/qnn-classification.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/quantum-approximate-counting.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/quantum-centric-chemistry-ibm-heron.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/quantum-generative-model.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/quantum-kernel-methods.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/quantum-volume.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/qubo-benchmark.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/randomized-benchmarking.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/rcs-phase-transition.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/reconfigurable-atom-logical-processor.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/shor-factoring.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/supermarq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/surface-code-below-threshold.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/tensor-network-eagle-kicked-ising.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/transverse-field-ising.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/tsp-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/variational-classifier.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/vqe-hydrogen.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/weighted-maxcut.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/xeb-cross-entropy.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/aircraft-loading-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/battery-materials-simulation.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/carbon-capture-modeling.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/carbon-emissions-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/catalyst-design-green-hydrogen.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/credit-risk-modeling.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/cryptography-post-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/derivatives-pricing.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/drug-discovery-hybrid.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/energy-grid-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/fraud-detection.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/portfolio-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/production-scheduling.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/protein-folding-simulation.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/qkd-networks.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/quantum-chemistry-materials.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/quantum-machine-learning-classification.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/quantum-random-number-generation.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/supply-chain-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/telecom-network-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/vehicle-routing-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/warehouse-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/weather-forecasting.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "challenges/airbus-bmw-quantum-challenge.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "challenges/berlin-quantum-hackathon.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "challenges/blaise-pascal-quantum-challenge-2025.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "challenges/classiq-coding-competition.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "challenges/eurohpc-quantum-grand-challenge.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "challenges/ibm-quantum-challenge.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "challenges/iquhack-2026.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "challenges/qhack-2025.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "challenges/qosf-monthly-challenges.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "challenges/quantum-game-jam-2025.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "challenges/wacqt-quantum-hackathon-2026.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "challenges/xprize-quantum-applications.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/bmbf-quantum-technologies.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/brilliant-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/cern-qti-lectures.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/cirq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/cuda-q.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/danish-quantum-community.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/denmark-quantum-funding.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/eic-accelerator.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/eu-quantum-flagship.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/eurohpc-quantum-computing.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/finnish-quantum-flagship.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/france-national-quantum-strategy.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/ibm-quantum-learning.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/mitiq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/mqt.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/netqasm.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/openqasm.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/pennylane.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/perceval.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/projectq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/pulser.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/pyzx.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/qibo.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/qiskit.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/qosf.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/qtedu.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/quantum-amsterdam.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/quantum-delta-nl.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/quantum-inspire.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/quantum-internet-alliance.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/quantum-katas.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/quic.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/qureca.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/qutip.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/qworld.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/stim.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/strawberry-fields.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/tket.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/tudelft-quantum-101.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/unitary-fund.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/wacqt.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
+      "resources/xanadu-codebook.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))"
+    ],
+    "highlights": [
+      "Most active country: Germany (+1 news items)",
+      "Most-cited source: Bosch Quantum Sensing (1x)",
+      "Busiest collection: companies (+1)",
+      "1 distinct sources cited across 1 countries",
+      "2 entries below the 3-credible-source minimum (backfill worklist)",
+      "2 entries flagged for source contradictions by the cross-check"
+    ]
+  },
+  {
     "date": "2026-08-31",
     "started_at": "2026-08-31T20:43:35.895Z",
     "finished_at": "2026-08-31T22:35:45.702Z",
@@ -910,5 +1231,1479 @@
       "15 entries below the 3-credible-source minimum (backfill worklist)",
       "6 entries flagged for source contradictions by the cross-check"
     ]
+  },
+  {
+    "date": "2026-06-28",
+    "started_at": "2026-06-28T09:54:26.075Z",
+    "finished_at": "2026-06-28T13:15:33.182Z",
+    "runtime_ms": 12067106,
+    "runtime_human": "201m 7s",
+    "model": "claude-haiku-4-5-20251001",
+    "scanned": 218,
+    "updated": 110,
+    "no_change": 107,
+    "skipped": 1,
+    "news_added": 151,
+    "methodology": {
+      "items_proposed": 252,
+      "items_published": 151,
+      "pass_rate_pct": 100,
+      "rejected_missing_field": 0,
+      "rejected_bad_date": 0,
+      "rejected_domain_mismatch": 0,
+      "rejected_blocklisted": 0,
+      "rejected_blank_title_source": 0,
+      "empty_excerpt_dropped": 2,
+      "duplicate_url_collapsed": 45
+    },
+    "source_bar": {
+      "min_credible": 3,
+      "below_bar": 21,
+      "backfilled_total": 158,
+      "entries": [
+        {
+          "entry": "companies/adamantq.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "companies/zuriq.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/dwave-spin-glass-dynamics.json",
+          "credible": 2,
+          "total": 3
+        },
+        {
+          "entry": "benchmarks/fermi-hubbard.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/grover-search-scaling.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/h2o-molecule.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/lih-ground-state.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/quantum-centric-chemistry-ibm-heron.json",
+          "credible": 2,
+          "total": 3
+        },
+        {
+          "entry": "benchmarks/quantum-generative-model.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/shor-factoring.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/transverse-field-ising.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/xeb-cross-entropy.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/aircraft-loading-optimization.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/catalyst-design-green-hydrogen.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/production-scheduling.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "challenges/qhack-2025.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "challenges/quantum-game-jam-2025.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "challenges/wacqt-quantum-hackathon-2026.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "resources/brilliant-quantum.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "resources/quantum-amsterdam.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "resources/xanadu-codebook.json",
+          "credible": 2,
+          "total": 2
+        }
+      ]
+    },
+    "cross_check": {
+      "entries_checked": 217,
+      "flagged": 40,
+      "contradictions_found": 43,
+      "flags": [
+        {
+          "entry": "companies/adamantq.json",
+          "issues": [
+            "Entry name is 'AdamantQ', but official funding announcement (Navigare Ventures, 2023-06-19) consistently refers to the company as 'Adamant Quanta' — legal entity name may be 'Adamant Quanta' rather than 'AdamantQ'."
+          ]
+        },
+        {
+          "entry": "companies/algorithmiq.json",
+          "issues": [
+            "Entry states Country: Finland, but company website (algorithmiq.fi) lists HQ as Via della Chiusa 15, 20123 Milano, Italia (Milan, Italy)"
+          ]
+        },
+        {
+          "entry": "companies/beit.json",
+          "issues": [
+            "Founded year: entry states 2016, but R&D World (2026-04-30) states 'BEIT says it was founded in 2017'"
+          ]
+        },
+        {
+          "entry": "companies/bosch-quantum-sensing.json",
+          "issues": [
+            "Founded year: entry states 2023, but LinkedIn and The Quantum Insider both confirm 2022"
+          ]
+        },
+        {
+          "entry": "companies/cryptomathic.json",
+          "issues": [
+            "Inside Quantum Technology (Aug 2022) states company founded '37 years ago' (~1985), but entry and Global Security Mag state founded 1986"
+          ]
+        },
+        {
+          "entry": "companies/diasense.json",
+          "issues": [
+            "Total BII funding amount: The Quantum Insider states €1.9M, while Quantum Computing Report and entry both state €1.8M."
+          ]
+        },
+        {
+          "entry": "companies/nkt-photonics.json",
+          "issues": [
+            "Entry names company 'NKT Photonics' but fetched website states current official name is Hamamatsu Photonics (Lasers & Fibers business unit): 'Today, as the Lasers & Fibers business unit of Hamamatsu Photonics' with 'New name. Same people.'"
+          ]
+        },
+        {
+          "entry": "companies/orange-quantum-systems.json",
+          "issues": [
+            "Entry founded 2019, but LinkedIn profile states Opgericht 2020"
+          ]
+        },
+        {
+          "entry": "companies/phasecraft.json",
+          "issues": [
+            "Entry states Founded: 2018, but UKTech News (2023-08-16) states 'Founded in 2019'"
+          ]
+        },
+        {
+          "entry": "companies/qblox.json",
+          "issues": [
+            "Founded year: entry states 2019, but LinkedIn source states Founded 2018"
+          ]
+        },
+        {
+          "entry": "companies/qilimanjaro.json",
+          "issues": [
+            "Entry claims 'the first multimodal quantum data center in Europe' but source characterizes MareNostrum-Ona as 'one of the most advanced of its kind in Europe'—implying others exist."
+          ]
+        },
+        {
+          "entry": "companies/qphox.json",
+          "issues": [
+            "Entry founded year is 2020, but qphox.eu states 'QphoX was established in 2021'"
+          ]
+        },
+        {
+          "entry": "companies/qubit-pharmaceuticals.json",
+          "issues": [
+            "Entry states Founded: 2020, but official website states 'inception in 2021'"
+          ]
+        },
+        {
+          "entry": "companies/rotonium.json",
+          "issues": [
+            "The Quantum Insider describes the core technology as 'single-photon qudit' while StartupBusiness.it describes it as 'single-photon qubit'—different quantum computing concepts."
+          ]
+        },
+        {
+          "entry": "companies/scalinq.json",
+          "issues": [
+            "Entry claims LINQER is 'patent-pending' but official SCALINQ website states it is a 'patent-granted solution'."
+          ]
+        },
+        {
+          "entry": "companies/siphotonic.json",
+          "issues": [
+            "Turnaround time: entry states 1.5-3.5 months, but siphotonic.com and QBN member page both state 1-3 months for on-demand prototyping runs."
+          ]
+        },
+        {
+          "entry": "companies/sparrow-quantum.json",
+          "issues": [
+            "Entry calls December 2025 €27.5M a 'follow-on round', but The Quantum Insider source explicitly states it is a 'Series A round'."
+          ]
+        },
+        {
+          "entry": "companies/terra-quantum.json",
+          "issues": [
+            "Entry lists Country as 'Switzerland' (singular); PKI Consortium source states Terra Quantum is 'based in Germany and Switzerland' (both countries)"
+          ]
+        },
+        {
+          "entry": "companies/xeedq.json",
+          "issues": [
+            "Entry states '256+ qubit mobile processors by 2028' but DLR award article (2022-12-13) states 'goal to reach 256 qubits or more by 2026'"
+          ]
+        },
+        {
+          "entry": "companies/xiphera.json",
+          "issues": [
+            "Entry Type: 'software' but sources state 'No CPU and no software. Pure hardware logic' with FPGA and ASIC implementations"
+          ]
+        },
+        {
+          "entry": "companies/zuriq.json",
+          "issues": [
+            "Entry describes 'two-dimensional trapped-ion' architecture with ions moving 'in two dimensions'; sources consistently state architecture is 'natively three-dimensional' and allows ions to move 'in all spatial directions.'"
+          ]
+        },
+        {
+          "entry": "benchmarks/lih-ground-state.json",
+          "issues": [
+            "Entry describes benchmark for lithium hydride (LiH) ground-state energy, but fetched paper (arXiv:2502.09595) benchmarks aluminum clusters (Al⁻, Al₂, Al₃⁻) for ground-state energy estimation instead."
+          ]
+        },
+        {
+          "entry": "benchmarks/portfolio-optimization.json",
+          "issues": [
+            "Entry characterizes quantum methods as effectively minimizing cost functions, but arXiv:2509.17876 (2025) concludes classical methods consistently outperform quantum approaches with 'very limited room for quantum advantage' in portfolio optimization."
+          ]
+        },
+        {
+          "entry": "benchmarks/qaoa-maxcut.json",
+          "issues": [
+            "Entry specifies MaxCut on 'random graphs' but source arXiv:1411.4028 (foundational Farhi et al. paper) studies MaxCut on 'regular graphs' (2-regular and 3-regular)"
+          ]
+        },
+        {
+          "entry": "benchmarks/qed-c-benchmarks.json",
+          "issues": [
+            "Entry lists Country as n/a, but sources indicate SRI International (Arlington, VA, USA)",
+            "Entry lists Founded as n/a, but the benchmark suite was first published on 2021-10-07 via arXiv"
+          ]
+        },
+        {
+          "entry": "benchmarks/quantum-kernel-methods.json",
+          "issues": [
+            "Entry name specifies 'Classification Benchmark' but primary source Schnabel & Roth (arXiv:2409.04406, published Quantum Machine Intelligence 2025-04-24) encompasses both classification and regression tasks, not classification alone."
+          ]
+        },
+        {
+          "entry": "benchmarks/quantum-volume.json",
+          "issues": [
+            "Entry states 'developed by IBM' but Wikipedia and arXiv sources indicate quantum volume was originally defined in 2018 by Nikolaj Moll et al.; IBM provided a 2019 redefinition, not the original development."
+          ]
+        },
+        {
+          "entry": "benchmarks/qubo-benchmark.json",
+          "issues": [
+            "Entry states benchmark compares 'gate-based QAOA' against other solvers, but arXiv:2104.14096 benchmarks only D-Wave HSS, Toshiba SBM, Fujitsu DA, and simulated annealing—no QAOA."
+          ]
+        },
+        {
+          "entry": "benchmarks/vqe-hydrogen.json",
+          "issues": [
+            "ArXiv:1304.3061 (the seminal VQE paper) demonstrates the algorithm on He-H+ (helium-hydride ion), not H2 (hydrogen molecule), contradicting the entry's specific focus on 'VQE Hydrogen Molecule Ground State.'"
+          ]
+        },
+        {
+          "entry": "challenges/airbus-bmw-quantum-challenge.json",
+          "issues": [
+            "Announcement date: entry states '10 December 2024' but AWS blog explicitly states '11 DEC 2024'",
+            "First category name: entry lists 'Quantum Simulation' but AWS blog identifies it as 'Smart Coating' (University of Southern California use case)"
+          ]
+        },
+        {
+          "entry": "challenges/berlin-quantum-hackathon.json",
+          "issues": [
+            "Entry states '6-week hybrid event' but multiple sources (berlinquantumhackathon.com, thequantuminsider.com) explicitly state 'five-week' competition, not six."
+          ]
+        },
+        {
+          "entry": "challenges/ibm-quantum-challenge.json",
+          "issues": [
+            "Entry states 'biannual' event; source describes it as 'annual educational coding contest'",
+            "Entry description says challenge uses 'real quantum hardware'; 2024 challenge explicitly used software simulation instead to accommodate participant volume"
+          ]
+        },
+        {
+          "entry": "challenges/quantum-game-jam-2025.json",
+          "issues": [
+            "Entry states event ran 'October 5 to 7, 2025' but itch.io explicitly states it ran from 2025-09-05 to 2025-09-08 (September 5-8, 2025)."
+          ]
+        },
+        {
+          "entry": "resources/bmbf-quantum-technologies.json",
+          "issues": [
+            "Entry claims program funds 'exceeding €2 billion'; Fraunhofer IOF source (May 2021) states '1.1 billion euros' announced for five-year period"
+          ]
+        },
+        {
+          "entry": "resources/cern-qti-lectures.json",
+          "issues": [
+            "Entry states series began March 2023, but Inside Quantum Technology (2020-11-06) reports CERN lecture series starting November 6, 2020—conflicting start dates."
+          ]
+        },
+        {
+          "entry": "resources/eic-accelerator.json",
+          "issues": [
+            "Entry states investments 'ranging from €2.5 million to €17.5 million', but official EIC source states investment component is 'Up to €10 million'"
+          ]
+        },
+        {
+          "entry": "resources/netqasm.json",
+          "issues": [
+            "Entry lists simulator backends as SquidASM and SimulaQron; arXiv abstract by NetQASM authors (Dahlberg et al., 2021) explicitly states NetSquid and SimulaQron, with no mention of SquidASM."
+          ]
+        },
+        {
+          "entry": "resources/qtedu.json",
+          "issues": [
+            "Entry describes QTEdu in present tense as 'providing' and 'supporting' active initiatives, but CORDIS records show the funded project ended 31 August 2022."
+          ]
+        },
+        {
+          "entry": "resources/quantum-delta-nl.json",
+          "issues": [
+            "Funding mismatch: entry states '€615 million from the National Growth Fund' but EC source states 'EUR 264 million from the Recovery and Resilience Fund'"
+          ]
+        },
+        {
+          "entry": "resources/wacqt.json",
+          "issues": [
+            "Entry states budget 'SEK 1.4 billion', but Chalmers sources consistently state 'SEK 1 billion' (Wallenberg Foundation source confirms 1.4 billion for 2018–2030 period)"
+          ]
+        }
+      ]
+    },
+    "by_collection": {
+      "companies": {
+        "scanned": 102,
+        "updated": 69,
+        "news_added": 98
+      },
+      "benchmarks": {
+        "scanned": 39,
+        "updated": 7,
+        "news_added": 8
+      },
+      "use-cases": {
+        "scanned": 23,
+        "updated": 7,
+        "news_added": 8
+      },
+      "challenges": {
+        "scanned": 12,
+        "updated": 7,
+        "news_added": 11
+      },
+      "resources": {
+        "scanned": 42,
+        "updated": 20,
+        "news_added": 26
+      }
+    },
+    "by_country": {
+      "Denmark": 24,
+      "Germany": 17,
+      "France": 11,
+      "Austria": 5,
+      "Finland": 5,
+      "Poland": 3,
+      "Netherlands": 11,
+      "Italy": 6,
+      "Ireland": 1,
+      "Switzerland": 4,
+      "Spain": 2,
+      "United Kingdom": 9
+    },
+    "top_sources": [
+      {
+        "source": "The Quantum Insider",
+        "count": 34
+      },
+      {
+        "source": "arXiv",
+        "count": 9
+      },
+      {
+        "source": "EU-Startups",
+        "count": 6
+      },
+      {
+        "source": "DTU",
+        "count": 3
+      },
+      {
+        "source": "HPCwire",
+        "count": 3
+      },
+      {
+        "source": "Sifted",
+        "count": 3
+      },
+      {
+        "source": "Quantum Computing Report",
+        "count": 2
+      },
+      {
+        "source": "QSNP",
+        "count": 2
+      }
+    ],
+    "not_found": [
+      "resources/quantum-internet-alliance.json (claude error: claude -p timed out after 60000ms)"
+    ],
+    "highlights": [
+      "Most active country: Denmark (+24 news items)",
+      "Most-cited source: The Quantum Insider (34x)",
+      "Busiest collection: companies (+98)",
+      "87 distinct sources cited across 12 countries",
+      "21 entries below the 3-credible-source minimum (backfill worklist)",
+      "40 entries flagged for source contradictions by the cross-check"
+    ]
+  },
+  {
+    "date": "2026-06-24",
+    "started_at": "2026-06-24T07:43:12.497Z",
+    "finished_at": "2026-06-24T10:54:46.067Z",
+    "runtime_ms": 11493568,
+    "runtime_human": "191m 34s",
+    "model": "claude-haiku-4-5-20251001",
+    "scanned": 218,
+    "updated": 56,
+    "no_change": 27,
+    "skipped": 135,
+    "news_added": 83,
+    "methodology": {
+      "items_proposed": 137,
+      "items_published": 83,
+      "pass_rate_pct": 99.3,
+      "rejected_missing_field": 0,
+      "rejected_bad_date": 0,
+      "rejected_domain_mismatch": 0,
+      "rejected_blocklisted": 1,
+      "rejected_blank_title_source": 0,
+      "empty_excerpt_dropped": 0,
+      "duplicate_url_collapsed": 21
+    },
+    "source_bar": {
+      "min_credible": 3,
+      "below_bar": 122,
+      "backfilled_total": 76,
+      "entries": [
+        {
+          "entry": "companies/terra-quantum.json",
+          "credible": 1,
+          "total": 2
+        },
+        {
+          "entry": "companies/xiphera.json",
+          "credible": 1,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/qaoa-maxcut.json",
+          "credible": 1,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/quantum-volume.json",
+          "credible": 1,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/vqe-hydrogen.json",
+          "credible": 1,
+          "total": 2
+        },
+        {
+          "entry": "challenges/berlin-quantum-hackathon.json",
+          "credible": 1,
+          "total": 2
+        },
+        {
+          "entry": "resources/eu-quantum-flagship.json",
+          "credible": 1,
+          "total": 2
+        },
+        {
+          "entry": "companies/adamantq.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "companies/algorithmiq.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "companies/quantum-industries.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "companies/saxonq.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "companies/semiqon.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "companies/veriqloud.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "companies/welinq.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "companies/xeedq.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "companies/zuriq.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/algorithmic-qubits.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/certified-randomness-quantinuum.json",
+          "credible": 2,
+          "total": 3
+        },
+        {
+          "entry": "benchmarks/clops.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/dwave-spin-glass-dynamics.json",
+          "credible": 2,
+          "total": 3
+        },
+        {
+          "entry": "benchmarks/fermi-hubbard.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/grover-search-scaling.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/h2o-molecule.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/hubbard-model.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/knapsack-quantum.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/lih-ground-state.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/mirror-circuits.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/mqt-bench.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/n2-dissociation.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/portfolio-optimization.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/q-score.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/qed-c-application-benchmarks.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/qed-c-benchmarks.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/qkd-throughput.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/qnn-classification.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/quantum-approximate-counting.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/quantum-centric-chemistry-ibm-heron.json",
+          "credible": 2,
+          "total": 3
+        },
+        {
+          "entry": "benchmarks/quantum-generative-model.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/quantum-kernel-methods.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/qubo-benchmark.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/randomized-benchmarking.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/rcs-phase-transition.json",
+          "credible": 2,
+          "total": 3
+        },
+        {
+          "entry": "benchmarks/reconfigurable-atom-logical-processor.json",
+          "credible": 2,
+          "total": 3
+        },
+        {
+          "entry": "benchmarks/shor-factoring.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/supermarq.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/transverse-field-ising.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/tsp-quantum.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/variational-classifier.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/weighted-maxcut.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/xeb-cross-entropy.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/aircraft-loading-optimization.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/battery-materials-simulation.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/carbon-capture-modeling.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/carbon-emissions-optimization.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/catalyst-design-green-hydrogen.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/credit-risk-modeling.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/cryptography-post-quantum.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/drug-discovery-hybrid.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/energy-grid-optimization.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/fraud-detection.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/portfolio-optimization.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/production-scheduling.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/protein-folding-simulation.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/qkd-networks.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/quantum-chemistry-materials.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/quantum-machine-learning-classification.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/quantum-random-number-generation.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/supply-chain-optimization.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/telecom-network-optimization.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/vehicle-routing-optimization.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/warehouse-optimization.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "challenges/blaise-pascal-quantum-challenge-2025.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "challenges/classiq-coding-competition.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "challenges/eurohpc-quantum-grand-challenge.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "challenges/ibm-quantum-challenge.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "challenges/iquhack-2026.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "challenges/qhack-2025.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "challenges/qosf-monthly-challenges.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "challenges/quantum-game-jam-2025.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "challenges/wacqt-quantum-hackathon-2026.json",
+          "credible": 2,
+          "total": 2
+        }
+      ]
+    },
+    "cross_check": {
+      "entries_checked": 83,
+      "flagged": 39,
+      "contradictions_found": 51,
+      "flags": [
+        {
+          "entry": "companies/adamantq.json",
+          "issues": [
+            "Company name: entry lists 'AdamantQ' but sources identify the company as 'Adamant Quanta'"
+          ]
+        },
+        {
+          "entry": "companies/algorithmiq.json",
+          "issues": [
+            "Entry lists Country: Finland, but official website shows HQ address in Milano, Italy (Via della Chiusa 15, 20123 Milano)"
+          ]
+        },
+        {
+          "entry": "companies/aqarios.json",
+          "issues": [
+            "Entry lists SAP and MTU Aero Engines as clients; fetched sources confirm only E.ON and BASF."
+          ]
+        },
+        {
+          "entry": "companies/beit.json",
+          "issues": [
+            "Founding year: Entry claims 2016; Quantum Insider (2019) confirms 2016, but R&D World (2026) states BEIT 'says it was founded in 2017'"
+          ]
+        },
+        {
+          "entry": "companies/bosch-quantum-sensing.json",
+          "issues": [
+            "Entry founded year is 2023, but all sources (LinkedIn, The Quantum Insider, eeNews Europe) consistently state the in-house startup was founded in 2022; the joint venture was announced April 2025."
+          ]
+        },
+        {
+          "entry": "companies/c12.json",
+          "issues": [
+            "Entry claims 'spin qubits' but fetched sources only mention 'carbon nanotubes' without specifying qubit type."
+          ]
+        },
+        {
+          "entry": "companies/celare-quantum.json",
+          "issues": [
+            "Founded: 2024 is unsupported by fetched sources; no founding year is stated anywhere."
+          ]
+        },
+        {
+          "entry": "companies/cryptomathic.json",
+          "issues": [
+            "Entry claims Cryptomathic was 'spun out of Aarhus University' but sources only confirm founding in Aarhus, Denmark—no university spinout mentioned.",
+            "IQT article (2022) states 'founded 37 years ago' suggesting 1985, conflicting with entry and Global Security Mag's 1986 date."
+          ]
+        },
+        {
+          "entry": "companies/delft-circuits.json",
+          "issues": [
+            "Entry claims 'eight times greater channel density' but sources only state 'eight channels per flex' (absolute count) and 'up to 50% more channels per side-loading port' — the multiplier is unsupported."
+          ]
+        },
+        {
+          "entry": "companies/diasense.json",
+          "issues": [
+            "Entry states company is 'Lyngby-based,' but sources describe it as 'Copenhagen-based'",
+            "Total BII funding contradicts between sources: €1.9 million (The Quantum Insider) vs €1.8 million (Quantum Computing Report)"
+          ]
+        },
+        {
+          "entry": "companies/eleqtron.json",
+          "issues": [
+            "LinkedIn source (https://www.linkedin.com/company/eleqtron/) is for a different company: Eleqtron Projects B.V. in Numansdorp, Netherlands, founded 2002, construction/EV charging hardware — not quantum computing.",
+            "Entry claims 'Spun out from the University of Siegen' but fetched sources only state it came from 'Spitzenforschung' (top research) without naming the university."
+          ]
+        },
+        {
+          "entry": "companies/ephos.json",
+          "issues": [
+            "Entry claims EUR 41.5M from EU Chips Act; sources report $8.5M seed round from Starlight Ventures with non-dilutive EIC and NATO funding—no EU Chips Act mentioned.",
+            "Entry states founders include Stanford, Harvard, and Politecnico di Milano researchers; sources identify only Andrea Rocchetto (theoretical physicist) as founder.",
+            "Entry references 'second manufacturing facility'; sources describe only the first Milan facility with no mention of a second."
+          ]
+        },
+        {
+          "entry": "companies/eviden-quantum.json",
+          "issues": [
+            "Founded: 2014 is not supported by fetched sources; no founding date for Eviden or its quantum division is provided."
+          ]
+        },
+        {
+          "entry": "companies/hqs.json",
+          "issues": [
+            "Entry claims company develops 'quantum simulation software for materials science and chemistry applications' broadly, but sources consistently describe focus as specifically on spectroscopy (NMR, UV/Vis, IR) for analytical and diagnostic purposes in life sciences, chemistry, and pharma.",
+            "Entry claims company 'accelerate materials discovery and chemical simulations' but sources focus on NMR spectrum prediction and analysis for diagnostics and analytical chemistry, not materials discovery."
+          ]
+        },
+        {
+          "entry": "companies/kipu-quantum.json",
+          "issues": [
+            "Entry describes 'compressed quantum algorithms' but fetched sources use 'energy-efficient, problem-specific quantum algorithms'—term 'compressed' does not appear"
+          ]
+        },
+        {
+          "entry": "companies/kvantify.json",
+          "issues": [
+            "Founded 2022: no founding date found in fetched sources."
+          ]
+        },
+        {
+          "entry": "companies/lizard-photonics.json",
+          "issues": [
+            "Founded: 2024 is not verified in any source.",
+            "Søren Stobbe confirmed as DTU professor in EQUAL project; sources do not verify his role as CSO at Lizard Photonics."
+          ]
+        },
+        {
+          "entry": "companies/magnolia-quantum-sensing.json",
+          "issues": [
+            "PRX Quantum (2024) publication mentioned in entry not referenced in any fetched source."
+          ]
+        },
+        {
+          "entry": "companies/multiverse-computing.json",
+          "issues": [
+            "Entry describes company as 'specializing in optimization and machine learning' but fetched sources consistently describe primary focus as AI model compression using quantum-inspired tensor network techniques."
+          ]
+        },
+        {
+          "entry": "companies/nkt-photonics.json",
+          "issues": [
+            "Entry claims membership in 'European Quantum Industry Consortium' but fetched sources only confirm QED-C (Quantum Economic Development Consortium) membership."
+          ]
+        },
+        {
+          "entry": "companies/nu-quantum.json",
+          "issues": [
+            "Entry claims 'over $70 million' raised, but all sources consistently state only $60 million Series A with no mention of additional funding rounds."
+          ]
+        },
+        {
+          "entry": "companies/oqc.json",
+          "issues": [
+            "Entry claims 'published roadmap targeting 50,000 logical qubits by 2034' but fetched sources mention a Roadmap page without confirming this specific target."
+          ]
+        },
+        {
+          "entry": "companies/orange-quantum-systems.json",
+          "issues": [
+            "Founded date mismatch: entry states 2019, but LinkedIn company page states Opgericht 2020."
+          ]
+        },
+        {
+          "entry": "companies/partisia.json",
+          "issues": [
+            "Entry claims 'DKK 25.9M Innovation Fund Denmark AccessQKD project' but fetched QGRID announcement states 13.8M kroner for QGRID—unclear if these are the same project or different initiatives.",
+            "Entry emphasizes MPC as core identity but official Partisia website (partisia.com) now leads with Decentralized Identity as primary product focus, with MPC as a supporting technology."
+          ]
+        },
+        {
+          "entry": "companies/pasqal.json",
+          "issues": [
+            "Founding year 2019 is not supported by any fetched source.",
+            "Description lists 'automotive' as a key industry, but fetched sources cite 'energy, finance, and telecommunications' instead."
+          ]
+        },
+        {
+          "entry": "companies/phasecraft.json",
+          "issues": [
+            "Entry claims founded 2018, but uktech.news article states 'Founded in 2019'"
+          ]
+        },
+        {
+          "entry": "companies/q-ant.json",
+          "issues": [
+            "Entry website q-ant.com hosts a football data platform unrelated to quantum computing; quantum sources use qant.com (no hyphen) or TRUMPF corporate site."
+          ]
+        },
+        {
+          "entry": "companies/qbee.json",
+          "issues": [
+            "Entry claims 'earth observation' as a domain; fetched sources mention chemistry, genetics/genomics, finance, and space applications but do not cite earth observation.",
+            "Entry describes QBee as 'software' company; both sources describe it as 'quantum technology startup' or 'quantum computing accelerator company', which are broader technology categories."
+          ]
+        },
+        {
+          "entry": "companies/qblox.json",
+          "issues": [
+            "Entry founding year 2019 contradicts LinkedIn profile which states Founded 2018"
+          ]
+        },
+        {
+          "entry": "companies/qdevil.json",
+          "issues": [
+            "Acquisition timing: QM press release and TechCrunch state March 30, 2022; NBI and QM blog state June 2022."
+          ]
+        },
+        {
+          "entry": "companies/qfactory.json",
+          "issues": [
+            "Claim of being the only quantum-technology company in its cohort unsupported by fetched sources."
+          ]
+        },
+        {
+          "entry": "companies/qilimanjaro.json",
+          "issues": [
+            "Entry claims founded 2019, but no source mentions founding date.",
+            "Entry describes Qilimanjaro as a spin-off of IFAE, BSC, and University of Barcelona, but no source mentions this origin.",
+            "Entry claims they operate 'the first multimodal quantum data center in Europe,' but sources describe MareNostrum-Ona as 'one of the most advanced' without claiming it is the first."
+          ]
+        },
+        {
+          "entry": "companies/qmill.json",
+          "issues": [
+            "Entry claims 'improving execution fidelity on real quantum hardware' but neither source explicitly substantiates this benefit."
+          ]
+        },
+        {
+          "entry": "companies/qnami.json",
+          "issues": [
+            "Entry specifies 'spintronics device characterization' as an application, but fetched sources list only 'nanotechnology, life science and earth science'."
+          ]
+        },
+        {
+          "entry": "companies/qphox.json",
+          "issues": [
+            "Founded year: entry claims 2020, but official QphoX website states 'QphoX was established in 2021'"
+          ]
+        },
+        {
+          "entry": "companies/qruise.json",
+          "issues": [
+            "Entry claims founded 2021; no source provides an explicit founding date."
+          ]
+        },
+        {
+          "entry": "companies/qt-sense.json",
+          "issues": [
+            "Entry claims target applications include sepsis and inflammatory diseases; fetched sources list only cardiology, oncology, infectious diseases, and neurodegenerative—no explicit mention of sepsis or inflammatory diseases."
+          ]
+        },
+        {
+          "entry": "companies/qtlabs.json",
+          "issues": [
+            "Entry claims 'world-record satellite quantum downlinks' but sources confirm only 'pioneering experience in satellite-based quantum communications' and contributions to 'Nobel Prize-winning research' without explicitly verifying the 'world-record downlinks' achievement."
+          ]
+        },
+        {
+          "entry": "companies/quantastica.json",
+          "issues": [
+            "Founded: 2019 — sources reference May 2019 as the Quantum Programming Studio's Rigetti Developer Partner partnership date, not as company founding year"
+          ]
+        }
+      ],
+      "note": "First calibration pass: 78 \"field not restated by source\" items were filtered out (absence is not a contradiction); the checker has since been tuned to flag only direct conflicts."
+    },
+    "by_collection": {
+      "companies": {
+        "scanned": 102,
+        "updated": 56,
+        "news_added": 83
+      },
+      "benchmarks": {
+        "scanned": 39,
+        "updated": 0,
+        "news_added": 0
+      },
+      "use-cases": {
+        "scanned": 23,
+        "updated": 0,
+        "news_added": 0
+      },
+      "challenges": {
+        "scanned": 12,
+        "updated": 0,
+        "news_added": 0
+      },
+      "resources": {
+        "scanned": 42,
+        "updated": 0,
+        "news_added": 0
+      }
+    },
+    "by_country": {
+      "Sweden": 1,
+      "Denmark": 21,
+      "Germany": 15,
+      "Austria": 4,
+      "Poland": 4,
+      "Netherlands": 10,
+      "Italy": 3,
+      "Switzerland": 2,
+      "Spain": 4,
+      "United Kingdom": 8,
+      "France": 7,
+      "Belgium": 1,
+      "Finland": 3
+    },
+    "top_sources": [
+      {
+        "source": "The Quantum Insider",
+        "count": 21
+      },
+      {
+        "source": "DTU",
+        "count": 3
+      },
+      {
+        "source": "Quantum Computing Report",
+        "count": 3
+      },
+      {
+        "source": "Creotech official website",
+        "count": 2
+      },
+      {
+        "source": "Optica",
+        "count": 2
+      },
+      {
+        "source": "Danish Quantum Community",
+        "count": 2
+      },
+      {
+        "source": "TechCrunch",
+        "count": 2
+      },
+      {
+        "source": "Tech.eu",
+        "count": 2
+      }
+    ],
+    "not_found": [
+      "companies/aqora.json (claude error: claude -p timed out after 60000ms)",
+      "companies/molecular-quantum-solutions.json (claude error: claude -p timed out after 60000ms)",
+      "companies/psiqre.json (claude error: claude -p timed out after 60000ms)",
+      "companies/q-bird.json (claude error: claude -p timed out after 60000ms)",
+      "companies/saxonq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "companies/scalinq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "companies/semiqon.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "companies/silent-waves.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "companies/siphotonic.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "companies/sparrow-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "companies/terra-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "companies/thinkquantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "companies/universal-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "companies/veriqloud.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "companies/welinq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "companies/xeedq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "companies/xiphera.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "companies/zurich-instruments.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "companies/zuriq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/algorithmic-qubits.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/certified-randomness-quantinuum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/clops.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/dwave-spin-glass-dynamics.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/fermi-hubbard.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/grover-search-scaling.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/h2o-molecule.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/hubbard-model.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/knapsack-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/lih-ground-state.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/mirror-circuits.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/mqt-bench.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/n2-dissociation.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/portfolio-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/q-score.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/qaoa-maxcut.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/qed-c-application-benchmarks.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/qed-c-benchmarks.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/qkd-throughput.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/qnn-classification.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/quantum-approximate-counting.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/quantum-centric-chemistry-ibm-heron.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/quantum-generative-model.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/quantum-kernel-methods.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/quantum-volume.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/qubo-benchmark.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/randomized-benchmarking.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/rcs-phase-transition.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/reconfigurable-atom-logical-processor.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/shor-factoring.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/supermarq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/surface-code-below-threshold.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/tensor-network-eagle-kicked-ising.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/transverse-field-ising.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/tsp-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/variational-classifier.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/vqe-hydrogen.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/weighted-maxcut.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/xeb-cross-entropy.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/aircraft-loading-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/battery-materials-simulation.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/carbon-capture-modeling.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/carbon-emissions-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/catalyst-design-green-hydrogen.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/credit-risk-modeling.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/cryptography-post-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/derivatives-pricing.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/drug-discovery-hybrid.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/energy-grid-optimization.json (claude error: claude -p timed out after 60000ms)",
+      "use-cases/fraud-detection.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/portfolio-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/production-scheduling.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/protein-folding-simulation.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/qkd-networks.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/quantum-chemistry-materials.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/quantum-machine-learning-classification.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/quantum-random-number-generation.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/supply-chain-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/telecom-network-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/vehicle-routing-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/warehouse-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/weather-forecasting.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "challenges/airbus-bmw-quantum-challenge.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "challenges/berlin-quantum-hackathon.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "challenges/blaise-pascal-quantum-challenge-2025.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "challenges/classiq-coding-competition.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "challenges/eurohpc-quantum-grand-challenge.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "challenges/ibm-quantum-challenge.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "challenges/iquhack-2026.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "challenges/qhack-2025.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "challenges/qosf-monthly-challenges.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "challenges/quantum-game-jam-2025.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "challenges/wacqt-quantum-hackathon-2026.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "challenges/xprize-quantum-applications.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/bmbf-quantum-technologies.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/brilliant-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/cern-qti-lectures.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/cirq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/cuda-q.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/danish-quantum-community.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/denmark-quantum-funding.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/eic-accelerator.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/eu-quantum-flagship.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/eurohpc-quantum-computing.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/finnish-quantum-flagship.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/france-national-quantum-strategy.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/ibm-quantum-learning.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/mitiq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/mqt.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/netqasm.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/openqasm.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/pennylane.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/perceval.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/projectq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/pulser.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/pyzx.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/qibo.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/qiskit.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/qosf.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/qtedu.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/quantum-amsterdam.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/quantum-delta-nl.json (all fetches failed)",
+      "resources/quantum-inspire.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/quantum-internet-alliance.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/quantum-katas.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/quic.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/qureca.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/qutip.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/qworld.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/stim.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/strawberry-fields.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/tket.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/tudelft-quantum-101.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/unitary-fund.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/wacqt.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "resources/xanadu-codebook.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))"
+    ],
+    "highlights": [
+      "Most active country: Denmark (+21 news items)",
+      "Most-cited source: The Quantum Insider (21x)",
+      "Busiest collection: companies (+83)",
+      "51 distinct sources cited across 13 countries",
+      "1 item(s) rejected at source to uphold the methodology (anti-fabrication + schema)",
+      "122 entries below the 3-credible-source minimum (backfill worklist)",
+      "75 entries flagged for source contradictions by the cross-check"
+    ]
+  },
+  {
+    "date": "2026-06-23",
+    "runtime_human": "65m 47s",
+    "model": "claude-haiku-4-5-20251001",
+    "scanned": 218,
+    "updated": 69,
+    "no_change": 146,
+    "skipped": 3,
+    "news_added": 47,
+    "top_sources": [
+      {
+        "source": "TechCrunch",
+        "count": 2
+      },
+      {
+        "source": "VeriQloud",
+        "count": 1
+      },
+      {
+        "source": "University of Sussex",
+        "count": 1
+      },
+      {
+        "source": "UK Tech News",
+        "count": 1
+      },
+      {
+        "source": "TIM Group",
+        "count": 1
+      },
+      {
+        "source": "thequantuminsider.com",
+        "count": 1
+      },
+      {
+        "source": "The Quantum Insider",
+        "count": 1
+      }
+    ],
+    "not_found": [
+      "resources/quantum-delta-nl.json (all fetches failed)",
+      "resources/xanadu-codebook.json (claude -p timed out)",
+      "companies/cryptomathic.json (fetched content had null bytes)"
+    ],
+    "highlights": [
+      "~47 news items published across 69 entries",
+      "Methodology fix shipped right after this run: 7 news items from excluded sources (LinkedIn etc.) were removed directory-wide, and the sweep now rejects blocklisted sources automatically",
+      "3 entries returned no usable result (1 fetch failure, 1 model timeout, 1 null-byte fetch — fetch sanitization added)"
+    ],
+    "note": "Methodology rejection counters and country breakdown were not captured — this run predates the per-run instrumentation, which lands on the next sweep."
+  },
+  {
+    "date": "2026-06-20",
+    "runtime_human": "62m",
+    "model": "claude-haiku-4-5-20251001",
+    "scanned": 218,
+    "updated": 93,
+    "no_change": 124,
+    "skipped": 1,
+    "news_added": 151,
+    "top_sources": [
+      {
+        "source": "The Quantum Insider",
+        "count": 17
+      },
+      {
+        "source": "Danish Quantum Community",
+        "count": 6
+      },
+      {
+        "source": "Quantum Computing Report",
+        "count": 5
+      },
+      {
+        "source": "QphoX",
+        "count": 5
+      },
+      {
+        "source": "qmill.com",
+        "count": 5
+      },
+      {
+        "source": "arXiv",
+        "count": 5
+      }
+    ],
+    "highlights": [
+      "First run of the portable scheduled runner (Max subscription, no GitHub Actions)",
+      "Most-cited source: The Quantum Insider (17x)",
+      "151 news items published across 93 entries"
+    ],
+    "note": "Reconstructed from git history — predates per-run instrumentation, so methodology rejection counters and the country breakdown were not captured. In manual cleanup that run, 4 empty-excerpt and 34 duplicate-URL items were removed."
   }
 ]
