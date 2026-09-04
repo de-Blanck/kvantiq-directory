@@ -16,7 +16,11 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 LABEL="com.kvantiq.directory.weekly"
 PLIST="$HOME/Library/LaunchAgents/$LABEL.plist"
-LOG="$REPO_ROOT/scheduled-run-debug.log"
+# Two separate streams. The runner appends its own narrative to
+# scheduled-run-debug.log; launchd captures raw child-process output (npm ci,
+# the sweep, the build) here. Pointing both at one file doubled every log line
+# and made the tail quoted into a failure issue half as useful.
+LOG="$REPO_ROOT/scheduled-run-launchd.log"
 
 NODE="$(command -v node || true)"
 if [ -z "$NODE" ]; then

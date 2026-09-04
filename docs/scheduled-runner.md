@@ -31,6 +31,24 @@ Each machine that should be able to run it needs:
 
 - **Node 22+**, **git**, **npm**
 - **GitHub CLI** authenticated: `gh auth login` (needs push + PR rights on the repo)
+- **An HTTPS `origin`, not SSH.** A scheduled job runs without your SSH agent, so an
+  `git@github.com:` remote fails with `Permission denied (publickey)` even though it
+  works perfectly in your terminal. This bit us on 2026-09-04: the key on that Mac lives
+  in a password-manager SSH agent with no private key on disk at all, so no amount of
+  `~/.ssh/config` would have helped. Point git at `gh`'s token instead — it is in the
+  system keyring and does work headlessly:
+
+  ```bash
+  gh auth setup-git
+  git remote set-url origin https://github.com/<owner>/<repo>.git
+  ```
+
+  Verify it works the way the scheduler will see it, with the agent hidden:
+
+  ```bash
+  env -u SSH_AUTH_SOCK git fetch origin --prune
+  env -u SSH_AUTH_SOCK git push --dry-run origin main
+  ```
 - **Claude CLI** on `PATH` (the same `claude` you use interactively)
 - **A clone of this repo**
 - **The subscription token** — generate once with `claude setup-token`, then put
