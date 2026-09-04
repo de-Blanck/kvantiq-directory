@@ -11,6 +11,7 @@ const allBenchmarks = publishedOnly(await getCollection('benchmarks'));
 const allUseCases = publishedOnly(await getCollection('use-cases'));
 const allChallenges = publishedOnly(await getCollection('challenges'));
 const allResources = publishedOnly(await getCollection('resources'));
+const countriesCount = new Set(allCompanies.map(c => c.data.country)).size;
 const featured = allCompanies.filter(c => c.data.featured).sort((a, b) => a.data.name.localeCompare(b.data.name));
 
 const websiteLd = {
@@ -28,7 +29,7 @@ const websiteLd = {
 ---
 <BaseLayout
   title="European Quantum Computing Directory"
-  description="The curated directory of quantum computing companies, benchmarks, use cases, and resources across Europe. Focused on Nordics and DACH."
+  description={`The curated directory of quantum computing companies, benchmarks, use cases, and resources across Europe — ${allCompanies.length} companies in ${countriesCount} countries.`}
   jsonLd={websiteLd}
   ogImage="/og-images/companies/pasqal.png"
 >
@@ -39,7 +40,7 @@ const websiteLd = {
         European Quantum Computing Directory
       </h1>
       <p class="mx-auto mt-3 max-w-2xl body-lg text-text-secondary">
-        The European quantum computing ecosystem — companies, benchmarks, use cases, challenges, and resources across Nordics and DACH.
+        The European quantum computing ecosystem — companies, benchmarks, use cases, challenges, and resources from {countriesCount} countries.
       </p>
       <div class="mx-auto mt-8 flex max-w-2xl justify-center">
         <SearchBar placeholder="Search the directory…" />

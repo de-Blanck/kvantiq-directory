@@ -5,6 +5,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import ListingView from '../../components/ListingView.tsx';
 
 const allCompanies = publishedOnly(await getCollection('companies'));
+const countriesCount = new Set(allCompanies.map(c => c.data.country)).size;
 const sorted = allCompanies.sort((a, b) => {
   if (a.data.featured !== b.data.featured) return b.data.featured ? 1 : -1;
   return a.data.name.localeCompare(b.data.name);
@@ -71,7 +72,7 @@ const itemListLd = {
     <div class="summary" role={"doc-abstract" as astroHTML.JSX.AriaRole}>
       <p class="mt-4 body-lg text-text-secondary">
         A curated directory of {allCompanies.length} quantum computing companies in Europe,
-        covering hardware, software, cloud, and consulting across the Nordics and DACH regions.
+        covering hardware, software, cloud, and consulting across {countriesCount} countries.
       </p>
     </div>
 
