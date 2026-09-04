@@ -1,0 +1,914 @@
+[
+  {
+    "date": "2026-08-31",
+    "started_at": "2026-08-31T20:43:35.895Z",
+    "finished_at": "2026-08-31T22:35:45.702Z",
+    "runtime_ms": 6729806,
+    "runtime_human": "112m 10s",
+    "model": "claude-haiku-4-5-20251001",
+    "scanned": 226,
+    "updated": 46,
+    "no_change": 176,
+    "skipped": 4,
+    "news_added": 59,
+    "methodology": {
+      "items_proposed": 316,
+      "items_published": 59,
+      "pass_rate_pct": 98.4,
+      "rejected_missing_field": 0,
+      "rejected_bad_date": 0,
+      "rejected_domain_mismatch": 1,
+      "rejected_blocklisted": 4,
+      "rejected_blank_title_source": 0,
+      "empty_excerpt_dropped": 0,
+      "duplicate_url_collapsed": 31
+    },
+    "source_bar": {
+      "min_credible": 3,
+      "below_bar": 15,
+      "backfilled_total": 0,
+      "entries": [
+        {
+          "entry": "companies/nvision-imaging.json",
+          "credible": 2,
+          "total": 3
+        },
+        {
+          "entry": "benchmarks/dwave-spin-glass-dynamics.json",
+          "credible": 2,
+          "total": 3
+        },
+        {
+          "entry": "benchmarks/grover-search-scaling.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/h2o-molecule.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/lih-ground-state.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/quantum-centric-chemistry-ibm-heron.json",
+          "credible": 2,
+          "total": 3
+        },
+        {
+          "entry": "benchmarks/shor-factoring.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/transverse-field-ising.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/aircraft-loading-optimization.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/catalyst-design-green-hydrogen.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/production-scheduling.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "challenges/qhack-2025.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "challenges/quantum-game-jam-2025.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "challenges/wacqt-quantum-hackathon-2026.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "resources/quantum-amsterdam.json",
+          "credible": 2,
+          "total": 2
+        }
+      ]
+    },
+    "cross_check": {
+      "entries_checked": 222,
+      "flagged": 48,
+      "contradictions_found": 50,
+      "flags": [
+        {
+          "entry": "companies/adamantq.json",
+          "issues": [
+            "Company name: entry lists 'AdamantQ' but both Navigare Ventures and Industrifonden sources consistently refer to the company as 'Adamant Quanta'"
+          ]
+        },
+        {
+          "entry": "companies/algorithmiq.json",
+          "issues": [
+            "Country field lists Italy, but fetched sources confirm Algorithmiq was founded in Helsinki, Finland in 2020 and relocated to Milan only in May 2026."
+          ]
+        },
+        {
+          "entry": "companies/beit.json",
+          "issues": [
+            "Founded date conflict: entry states 2016, The Quantum Insider (2019-11-28) confirms 2016, but R&D World (2026-04-30) states 'where BEIT says it was founded in 2017'"
+          ]
+        },
+        {
+          "entry": "companies/bosch-quantum-sensing.json",
+          "issues": [
+            "Entry founded date is 2023; sources (The Quantum Insider, LinkedIn) state the in-house startup was founded in 2022."
+          ]
+        },
+        {
+          "entry": "companies/cryptomathic.json",
+          "issues": [
+            "Founding year: Global Security Mag (2021) states 'Founded in 1986' but Inside Quantum Technology (2022) states 'founded 37 years ago' (implying ~1985)"
+          ]
+        },
+        {
+          "entry": "companies/diasense.json",
+          "issues": [
+            "Total BII funding after March 2026 round: entry states €1.8M but TheQuantumInsider states €1.9M as total BII investment",
+            "Location: entry describes as 'Lyngby-based' but multiple sources (TheQuantumInsider, QuantumComputingReport) describe as 'Copenhagen-based'"
+          ]
+        },
+        {
+          "entry": "companies/hqs.json",
+          "issues": [
+            "Entry describes company as developing 'quantum simulation software for materials science and chemistry applications' and 'materials discovery,' but all sources state HQS develops spectroscopy software (NMR, UV/Vis, IR, relaxometry) for diagnostic and analytical purposes in life sciences, chemistry, and pharma—fundamentally different applications."
+          ]
+        },
+        {
+          "entry": "companies/isentroniq.json",
+          "issues": [
+            "Entry states 'Founded by Paul Magnard' but Quantum Computing Report identifies him as 'co-founder and CEO', indicating multiple founders"
+          ]
+        },
+        {
+          "entry": "companies/multiverse-computing.json",
+          "issues": [
+            "Entry states Singularity is the flagship product that 'enables model compression', but all fetched sources identify CompactifAI as the model compression platform (Wikipedia explicitly: 'The AI model compression platform, CompactifAI'), with Singularity listed as a separate product without compression attribution."
+          ]
+        },
+        {
+          "entry": "companies/nkt-photonics.json",
+          "issues": [
+            "Entry name is 'NKT Photonics' but fetched sources confirm the company was renamed to 'Hamamatsu Photonics A/S' on June 25, 2026, and now operates as the Lasers & Fibers Business Unit of Hamamatsu Photonics Group."
+          ]
+        },
+        {
+          "entry": "companies/nvision-imaging.json",
+          "issues": [
+            "Entry name is 'NVision Imaging Technologies' but all fetched sources refer to 'NVision' or 'NVision Quantum' (website copyright: '© 2026 NVision Quantum')"
+          ]
+        },
+        {
+          "entry": "companies/orange-quantum-systems.json",
+          "issues": [
+            "Founded year: entry states 2019, but LinkedIn profile states 'Opgericht 2020' (Founded 2020)"
+          ]
+        },
+        {
+          "entry": "companies/parityqc.json",
+          "issues": [
+            "Entry Type is 'software', but all sources (parityqc.com, HPCwire, The Quantum Insider) explicitly identify ParityQC as 'the quantum architecture company'"
+          ]
+        },
+        {
+          "entry": "companies/phasecraft.json",
+          "issues": [
+            "Entry states 'Founded: 2018' but uktech.news source explicitly states 'Founded in 2019'"
+          ]
+        },
+        {
+          "entry": "companies/q-ant.json",
+          "issues": [
+            "Critical sourcing error: www.q-ant.com currently hosts a football data management platform unrelated to quantum computing, not Q.ANT's quantum technology content. Entry field validation via this source is unreliable."
+          ]
+        },
+        {
+          "entry": "companies/qblox.json",
+          "issues": [
+            "Entry states Founded: 2019, but LinkedIn company page states Founded: 2018"
+          ]
+        },
+        {
+          "entry": "companies/qmill.json",
+          "issues": [
+            "Entry type is 'software' but fetched sources explicitly describe QMill as 'quantum algorithm and software company' — type should be 'algorithms & software' or similar, not software alone."
+          ]
+        },
+        {
+          "entry": "companies/qphox.json",
+          "issues": [
+            "Entry founded year is 2020, but QphoX website states 'QphoX was established in 2021'"
+          ]
+        },
+        {
+          "entry": "companies/qubit-pharmaceuticals.json",
+          "issues": [
+            "Entry states founded 2020; website states 'our inception in 2021' for the company"
+          ]
+        },
+        {
+          "entry": "companies/qunorth.json",
+          "issues": [
+            "Entry states Magne operational 'late 2026'; qunorth.com states 'early 2027'"
+          ]
+        },
+        {
+          "entry": "companies/rotonium.json",
+          "issues": [
+            "The Quantum Insider refers to 'single-photon qudit technology' while startupbusiness.it refers to 'single-photon qubit' — sources conflict on core technology terminology."
+          ]
+        },
+        {
+          "entry": "companies/scalinq.json",
+          "issues": [
+            "Entry states LINQER is 'patent-pending' but fetched source states it is 'patent-granted'"
+          ]
+        },
+        {
+          "entry": "companies/siphotonic.json",
+          "issues": [
+            "Entry states turnaround of '1.5-3.5 months' but fetched sources consistently state '1–3 months' for on-demand prototyping runs and '3–4 months' for MPW runs"
+          ]
+        },
+        {
+          "entry": "companies/sparrow-quantum.json",
+          "issues": [
+            "Entry describes December 2025 €27.5M round as a 'follow-on round,' but The Quantum Insider article (Dec 1, 2025) explicitly labels it 'Series A funding'—conflicting with April 2025 article also calling the €21.5M round 'Series A'."
+          ]
+        },
+        {
+          "entry": "companies/terra-quantum.json",
+          "issues": [
+            "Entry lists Country: Switzerland, but PKI Consortium source states Terra Quantum is 'based in Germany and Switzerland'"
+          ]
+        },
+        {
+          "entry": "companies/veriqloud.json",
+          "issues": [
+            "Entry type is 'software' but Quantonation source explicitly states Qline is 'quantum communication hardware' and describes VeriQloud as developing both hardware and software solutions."
+          ]
+        },
+        {
+          "entry": "companies/xeedq.json",
+          "issues": [
+            "Entry states '256+ qubit mobile processors by 2028'; DLR award announcement (Dec 2022) states 'goal to reach 256 qubits or more by 2026'"
+          ]
+        },
+        {
+          "entry": "companies/zuriq.json",
+          "issues": [
+            "Entry describes ions moving 'freely in two dimensions'; sources state ions move 'in all spatial directions' and describe 'natively three-dimensional' architecture."
+          ]
+        },
+        {
+          "entry": "benchmarks/lih-ground-state.json",
+          "issues": [
+            "Entry describes benchmark for lithium hydride (LiH), but fetched source (arxiv.org/abs/2502.09595) benchmarks aluminum clusters (Al⁻, Al₂, Al₃⁻) instead."
+          ]
+        },
+        {
+          "entry": "benchmarks/mqt-bench.json",
+          "issues": [
+            "Entry states 'over 70 algorithm implementations'; all three sources consistently state 'more than 70,000 benchmark circuits' — a significant numerical and conceptual discrepancy in describing MQT Bench's content."
+          ]
+        },
+        {
+          "entry": "benchmarks/portfolio-optimization.json",
+          "issues": [
+            "Entry states quantum methods 'minimize cost functions effectively,' but Source 1 (arXiv:2509.17876) concludes classical heuristics consistently outperform quantum approaches with 'only very limited room for potential quantum advantage.'"
+          ]
+        },
+        {
+          "entry": "benchmarks/qaoa-maxcut.json",
+          "issues": [
+            "Entry states benchmark tests 'random graphs', but the original QAOA paper (arXiv:1411.4028) explicitly analyzes performance on '2-regular and 3-regular graphs' (regular graphs, not random)."
+          ]
+        },
+        {
+          "entry": "benchmarks/quantum-kernel-methods.json",
+          "issues": [
+            "Entry describes benchmark as 'for classification tasks' but source 2409.04406 explicitly states it encompasses 'both classification and regression tasks'"
+          ]
+        },
+        {
+          "entry": "benchmarks/quantum-volume.json",
+          "issues": [
+            "Entry says 'developed by IBM' but Wikipedia states originally defined by Nikolaj Moll et al. (2018), with IBM providing a 2019 redefinition"
+          ]
+        },
+        {
+          "entry": "benchmarks/supermarq.json",
+          "issues": [
+            "Entry Type field states 'optimization', but all fetched sources consistently describe SupermarQ as a 'benchmark suite' for measuring quantum hardware performance, not an optimization tool."
+          ]
+        },
+        {
+          "entry": "benchmarks/weighted-maxcut.json",
+          "issues": [
+            "Entry states 'Recent work compares QAOA with non-variational quantum walk algorithms' but arxiv 2505.24191 compares QWOA with two classical local-search heuristics, not QAOA."
+          ]
+        },
+        {
+          "entry": "challenges/berlin-quantum-hackathon.json",
+          "issues": [
+            "Entry states '6-week hybrid event' but the official hackathon website (berlinquantumhackathon.com) states '5 Weeks Coding + Mentorship'"
+          ]
+        },
+        {
+          "entry": "challenges/ibm-quantum-challenge.json",
+          "issues": [
+            "Entry claims 'biannual' event, but Quantum Insider states it is 'an annual educational coding contest'",
+            "Entry emphasizes participants solve problems 'using IBM Qiskit and real quantum hardware,' but 2024 challenge explicitly 'will focus on software simulation rather than requiring hardware use'"
+          ]
+        },
+        {
+          "entry": "challenges/quantum-game-jam-2025.json",
+          "issues": [
+            "Entry states event ran October 5–7, 2025, but itch.io (official jam page) states it ran September 5–8, 2025."
+          ]
+        },
+        {
+          "entry": "resources/bmbf-quantum-technologies.json",
+          "issues": [
+            "Entry states programme funding exceeds €2 billion; Fraunhofer IOF source (2021) states 1.1 billion euros for the quantum technology funding package"
+          ]
+        },
+        {
+          "entry": "resources/cern-qti-lectures.json",
+          "issues": [
+            "Entry states series began March 2023; Inside Quantum Technology (2020-11-06) reports CERN QTI lectures started November 6, 2020"
+          ]
+        },
+        {
+          "entry": "resources/eic-accelerator.json",
+          "issues": [
+            "Entry claims investments 'ranging from €2.5 million to €17.5 million', but official EIC source states maximum equity investment is €10 million, not €17.5 million."
+          ]
+        },
+        {
+          "entry": "resources/ibm-quantum-learning.json",
+          "issues": [
+            "Entry type field says 'course' but fetched sources describe IBM Quantum Learning as a 'comprehensive educational platform' and 'library of 10+ courses' — a platform with multiple courses, not a single course."
+          ]
+        },
+        {
+          "entry": "resources/netqasm.json",
+          "issues": [
+            "Entry mentions simulator backend 'SquidASM' but arXiv paper (2111.09823) states 'Our SDK can be used at home by making use of our existing quantum simulators, NetSquid and SimulaQron' — source names NetSquid, not SquidASM"
+          ]
+        },
+        {
+          "entry": "resources/quantum-delta-nl.json",
+          "issues": [
+            "Entry states €615 million from National Growth Fund; EC source states EUR 264 million from Recovery and Resilience Fund"
+          ]
+        },
+        {
+          "entry": "resources/unitary-fund.json",
+          "issues": [
+            "Entry name is 'Unitary Fund' but official website (https://unitary.foundation/) identifies the organization as 'Unitary Foundation'."
+          ]
+        },
+        {
+          "entry": "resources/wacqt.json",
+          "issues": [
+            "Budget discrepancy: entry states SEK 1.4 billion, but Chalmers website states SEK 1 billion (Wallenberg Foundation source confirms 1.4 billion during 2018–2030)."
+          ]
+        },
+        {
+          "entry": "resources/xanadu-codebook.json",
+          "issues": [
+            "Entry name 'Xanadu Quantum Codebook' conflicts with GitHub repo statement that the resource is 'now known as the PennyLane Codebook' — current branding is PennyLane Codebook, not Xanadu Quantum Codebook"
+          ]
+        }
+      ]
+    },
+    "by_collection": {
+      "companies": {
+        "scanned": 110,
+        "updated": 28,
+        "news_added": 36
+      },
+      "benchmarks": {
+        "scanned": 39,
+        "updated": 6,
+        "news_added": 7
+      },
+      "use-cases": {
+        "scanned": 23,
+        "updated": 4,
+        "news_added": 6
+      },
+      "challenges": {
+        "scanned": 12,
+        "updated": 1,
+        "news_added": 1
+      },
+      "resources": {
+        "scanned": 42,
+        "updated": 7,
+        "news_added": 9
+      }
+    },
+    "by_country": {
+      "Italy": 2,
+      "Switzerland": 2,
+      "Finland": 2,
+      "France": 5,
+      "Denmark": 5,
+      "Germany": 5,
+      "Austria": 1,
+      "Belgium": 1,
+      "Netherlands": 5,
+      "United Kingdom": 8
+    },
+    "top_sources": [
+      {
+        "source": "The Quantum Insider",
+        "count": 12
+      },
+      {
+        "source": "HPCwire",
+        "count": 12
+      },
+      {
+        "source": "Quantum Computing Report",
+        "count": 6
+      },
+      {
+        "source": "arXiv",
+        "count": 3
+      },
+      {
+        "source": "Microsoft Azure Quantum Blog",
+        "count": 2
+      },
+      {
+        "source": "LUMI Supercomputer",
+        "count": 1
+      },
+      {
+        "source": "DTU",
+        "count": 1
+      },
+      {
+        "source": "PIC Magazine",
+        "count": 1
+      }
+    ],
+    "not_found": [
+      "companies/partisia.json (claude error: claude -p timed out after 60000ms)",
+      "benchmarks/knapsack-quantum.json (claude error: claude -p timed out after 60000ms)",
+      "use-cases/carbon-capture-modeling.json (claude error: claude -p timed out after 60000ms)",
+      "resources/qiskit.json (claude error: claude -p timed out after 60000ms)"
+    ],
+    "highlights": [
+      "Most active country: United Kingdom (+8 news items)",
+      "Most-cited source: The Quantum Insider (12x)",
+      "Busiest collection: companies (+36)",
+      "29 distinct sources cited across 10 countries",
+      "5 item(s) rejected at source to uphold the methodology (anti-fabrication + schema)",
+      "15 entries below the 3-credible-source minimum (backfill worklist)",
+      "48 entries flagged for source contradictions by the cross-check"
+    ]
+  },
+  {
+    "date": "2026-08-31",
+    "started_at": "2026-08-31T11:32:16.158Z",
+    "finished_at": "2026-08-31T13:30:01.391Z",
+    "runtime_ms": 7065232,
+    "runtime_human": "117m 45s",
+    "model": "claude-haiku-4-5-20251001",
+    "scanned": 226,
+    "updated": 7,
+    "no_change": 20,
+    "skipped": 199,
+    "news_added": 7,
+    "methodology": {
+      "items_proposed": 53,
+      "items_published": 7,
+      "pass_rate_pct": 100,
+      "rejected_missing_field": 0,
+      "rejected_bad_date": 0,
+      "rejected_domain_mismatch": 0,
+      "rejected_blocklisted": 0,
+      "rejected_blank_title_source": 0,
+      "empty_excerpt_dropped": 0,
+      "duplicate_url_collapsed": 2
+    },
+    "source_bar": {
+      "min_credible": 3,
+      "below_bar": 15,
+      "backfilled_total": 0,
+      "entries": [
+        {
+          "entry": "companies/nvision-imaging.json",
+          "credible": 2,
+          "total": 3
+        },
+        {
+          "entry": "benchmarks/dwave-spin-glass-dynamics.json",
+          "credible": 2,
+          "total": 3
+        },
+        {
+          "entry": "benchmarks/grover-search-scaling.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/h2o-molecule.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/lih-ground-state.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/quantum-centric-chemistry-ibm-heron.json",
+          "credible": 2,
+          "total": 3
+        },
+        {
+          "entry": "benchmarks/shor-factoring.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "benchmarks/transverse-field-ising.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/aircraft-loading-optimization.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/catalyst-design-green-hydrogen.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "use-cases/production-scheduling.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "challenges/qhack-2025.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "challenges/quantum-game-jam-2025.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "challenges/wacqt-quantum-hackathon-2026.json",
+          "credible": 2,
+          "total": 2
+        },
+        {
+          "entry": "resources/quantum-amsterdam.json",
+          "credible": 2,
+          "total": 2
+        }
+      ]
+    },
+    "cross_check": {
+      "entries_checked": 27,
+      "flagged": 6,
+      "contradictions_found": 6,
+      "flags": [
+        {
+          "entry": "companies/adamantq.json",
+          "issues": [
+            "Entry name 'AdamantQ' vs. formal company name 'Adamant Quanta' used in financing announcement and investor portfolio."
+          ]
+        },
+        {
+          "entry": "companies/beit.json",
+          "issues": [
+            "Entry states founded 2016, but R&D World Online (2026) states BEIT was founded in 2017 in Kraków (conflicts with both entry and Quantum Insider 2019 article)"
+          ]
+        },
+        {
+          "entry": "companies/bosch-quantum-sensing.json",
+          "issues": [
+            "Entry states Founded: 2023, but LinkedIn and Quantum Insider both state the in-house startup was founded in 2022"
+          ]
+        },
+        {
+          "entry": "companies/cryptomathic.json",
+          "issues": [
+            "IQT article (2022-08-02) states Cryptomathic was 'founded 37 years ago,' calculating to 1985, but entry states Founded: 1986"
+          ]
+        },
+        {
+          "entry": "companies/diasense.json",
+          "issues": [
+            "Total BII funding amount: Quantum Insider reports €1.9M, Quantum Computing Report reports €1.8M (entry claims ~€1.8M)"
+          ]
+        },
+        {
+          "entry": "companies/hqs.json",
+          "issues": [
+            "Entry describes HQS as 'quantum simulation software for materials science...applications' and 'accelerate materials discovery', but all fetched sources describe HQS as spectroscopy software (NMR, UV/Vis, IR) for life sciences, chemistry, and pharma—with no mention of materials science or materials discovery."
+          ]
+        }
+      ]
+    },
+    "by_collection": {
+      "companies": {
+        "scanned": 110,
+        "updated": 7,
+        "news_added": 7
+      },
+      "benchmarks": {
+        "scanned": 39,
+        "updated": 0,
+        "news_added": 0
+      },
+      "use-cases": {
+        "scanned": 23,
+        "updated": 0,
+        "news_added": 0
+      },
+      "challenges": {
+        "scanned": 12,
+        "updated": 0,
+        "news_added": 0
+      },
+      "resources": {
+        "scanned": 42,
+        "updated": 0,
+        "news_added": 0
+      }
+    },
+    "by_country": {
+      "Germany": 1,
+      "Austria": 1,
+      "Denmark": 1,
+      "Poland": 1,
+      "France": 1,
+      "Netherlands": 2
+    },
+    "top_sources": [
+      {
+        "source": "The Quantum Insider",
+        "count": 2
+      },
+      {
+        "source": "HPCwire",
+        "count": 1
+      },
+      {
+        "source": "DTU",
+        "count": 1
+      },
+      {
+        "source": "HPCWire",
+        "count": 1
+      },
+      {
+        "source": "FrostByte official website",
+        "count": 1
+      },
+      {
+        "source": "Quantum Computing Report",
+        "count": 1
+      }
+    ],
+    "not_found": [
+      "companies/id-quantique.json (claude error: claude -p timed out after 60000ms)",
+      "companies/iqm.json (all fetches failed)",
+      "companies/isentroniq.json (all fetches failed)",
+      "companies/keequant.json (all fetches failed)",
+      "companies/kipu-quantum.json (all fetches failed)",
+      "companies/kiutra.json (all fetches failed)",
+      "companies/kvantify.json (all fetches failed)",
+      "companies/lizard-photonics.json (all fetches failed)",
+      "companies/low-noise-factory.json (all fetches failed)",
+      "companies/magnolia-quantum-sensing.json (all fetches failed)",
+      "companies/molecular-quantum-solutions.json (all fetches failed)",
+      "companies/multiverse-computing.json (all fetches failed)",
+      "companies/nkt-photonics.json (all fetches failed)",
+      "companies/nu-quantum.json (all fetches failed)",
+      "companies/nvision-imaging.json (all fetches failed)",
+      "companies/oqc.json (all fetches failed)",
+      "companies/orange-quantum-systems.json (all fetches failed)",
+      "companies/orca-computing.json (all fetches failed)",
+      "companies/parityqc.json (all fetches failed)",
+      "companies/partisia.json (all fetches failed)",
+      "companies/pasqal.json (all fetches failed)",
+      "companies/peak-quantum.json (all fetches failed)",
+      "companies/phasecraft.json (all fetches failed)",
+      "companies/pixel-photonics.json (all fetches failed)",
+      "companies/planqc.json (all fetches failed)",
+      "companies/psiqre.json (all fetches failed)",
+      "companies/q-ant.json (all fetches failed)",
+      "companies/q-bird.json (all fetches failed)",
+      "companies/qailinks-denmark.json (all fetches failed)",
+      "companies/qbee.json (all fetches failed)",
+      "companies/qblox.json (all fetches failed)",
+      "companies/qdevil.json (all fetches failed)",
+      "companies/qfactory.json (all fetches failed)",
+      "companies/qilimanjaro.json (all fetches failed)",
+      "companies/qmill.json (all fetches failed)",
+      "companies/qnami.json (all fetches failed)",
+      "companies/qphox.json (all fetches failed)",
+      "companies/qpurpose.json (all fetches failed)",
+      "companies/qruise.json (all fetches failed)",
+      "companies/qsensato.json (all fetches failed)",
+      "companies/qt-sense.json (all fetches failed)",
+      "companies/qti.json (all fetches failed)",
+      "companies/qtlabs.json (all fetches failed)",
+      "companies/quandela.json (all fetches failed)",
+      "companies/quanscient.json (all fetches failed)",
+      "companies/quantastica.json (all fetches failed)",
+      "companies/quantcore.json (all fetches failed)",
+      "companies/quantinuum.json (all fetches failed)",
+      "companies/quantum-dice.json (all fetches failed)",
+      "companies/quantum-fabrix.json (all fetches failed)",
+      "companies/quantum-foundry-copenhagen.json (all fetches failed)",
+      "companies/quantum-industries.json (all fetches failed)",
+      "companies/quantum-motion.json (all fetches failed)",
+      "companies/quantum-optics-jena.json (all fetches failed)",
+      "companies/quantumdiamonds.json (all fetches failed)",
+      "companies/quantumsong.json (all fetches failed)",
+      "companies/quantware.json (all fetches failed)",
+      "companies/qubit-pharmaceuticals.json (all fetches failed)",
+      "companies/quix-quantum.json (all fetches failed)",
+      "companies/qunasys-denmark.json (all fetches failed)",
+      "companies/qunorth.json (all fetches failed)",
+      "companies/quobly.json (all fetches failed)",
+      "companies/qutools.json (all fetches failed)",
+      "companies/qutwo.json (all fetches failed)",
+      "companies/qversion.json (all fetches failed)",
+      "companies/riverlane.json (all fetches failed)",
+      "companies/rotonium.json (all fetches failed)",
+      "companies/saxonq.json (all fetches failed)",
+      "companies/scalinq.json (all fetches failed)",
+      "companies/semiqon.json (all fetches failed)",
+      "companies/silent-waves.json (all fetches failed)",
+      "companies/siphotonic.json (all fetches failed)",
+      "companies/sparrow-quantum.json (all fetches failed)",
+      "companies/terra-quantum.json (all fetches failed)",
+      "companies/thinkquantum.json (all fetches failed)",
+      "companies/universal-quantum.json (all fetches failed)",
+      "companies/veriqloud.json (all fetches failed)",
+      "companies/welinq.json (all fetches failed)",
+      "companies/xeedq.json (all fetches failed)",
+      "companies/xiphera.json (all fetches failed)",
+      "companies/zerothird.json (all fetches failed)",
+      "companies/zurich-instruments.json (all fetches failed)",
+      "companies/zuriq.json (all fetches failed)",
+      "benchmarks/algorithmic-qubits.json (all fetches failed)",
+      "benchmarks/certified-randomness-quantinuum.json (all fetches failed)",
+      "benchmarks/clops.json (all fetches failed)",
+      "benchmarks/dwave-spin-glass-dynamics.json (all fetches failed)",
+      "benchmarks/fermi-hubbard.json (all fetches failed)",
+      "benchmarks/grover-search-scaling.json (all fetches failed)",
+      "benchmarks/h2o-molecule.json (all fetches failed)",
+      "benchmarks/hubbard-model.json (all fetches failed)",
+      "benchmarks/knapsack-quantum.json (all fetches failed)",
+      "benchmarks/lih-ground-state.json (all fetches failed)",
+      "benchmarks/mirror-circuits.json (all fetches failed)",
+      "benchmarks/mqt-bench.json (all fetches failed)",
+      "benchmarks/n2-dissociation.json (all fetches failed)",
+      "benchmarks/portfolio-optimization.json (all fetches failed)",
+      "benchmarks/q-score.json (all fetches failed)",
+      "benchmarks/qaoa-maxcut.json (all fetches failed)",
+      "benchmarks/qed-c-application-benchmarks.json (all fetches failed)",
+      "benchmarks/qed-c-benchmarks.json (all fetches failed)",
+      "benchmarks/qkd-throughput.json (all fetches failed)",
+      "benchmarks/qnn-classification.json (all fetches failed)",
+      "benchmarks/quantum-approximate-counting.json (all fetches failed)",
+      "benchmarks/quantum-centric-chemistry-ibm-heron.json (all fetches failed)",
+      "benchmarks/quantum-generative-model.json (all fetches failed)",
+      "benchmarks/quantum-kernel-methods.json (all fetches failed)",
+      "benchmarks/quantum-volume.json (all fetches failed)",
+      "benchmarks/qubo-benchmark.json (all fetches failed)",
+      "benchmarks/randomized-benchmarking.json (all fetches failed)",
+      "benchmarks/rcs-phase-transition.json (all fetches failed)",
+      "benchmarks/reconfigurable-atom-logical-processor.json (all fetches failed)",
+      "benchmarks/shor-factoring.json (all fetches failed)",
+      "benchmarks/supermarq.json (all fetches failed)",
+      "benchmarks/surface-code-below-threshold.json (all fetches failed)",
+      "benchmarks/tensor-network-eagle-kicked-ising.json (all fetches failed)",
+      "benchmarks/transverse-field-ising.json (all fetches failed)",
+      "benchmarks/tsp-quantum.json (all fetches failed)",
+      "benchmarks/variational-classifier.json (all fetches failed)",
+      "benchmarks/vqe-hydrogen.json (all fetches failed)",
+      "benchmarks/weighted-maxcut.json (all fetches failed)",
+      "benchmarks/xeb-cross-entropy.json (all fetches failed)",
+      "use-cases/aircraft-loading-optimization.json (all fetches failed)",
+      "use-cases/battery-materials-simulation.json (all fetches failed)",
+      "use-cases/carbon-capture-modeling.json (all fetches failed)",
+      "use-cases/carbon-emissions-optimization.json (all fetches failed)",
+      "use-cases/catalyst-design-green-hydrogen.json (all fetches failed)",
+      "use-cases/credit-risk-modeling.json (all fetches failed)",
+      "use-cases/cryptography-post-quantum.json (all fetches failed)",
+      "use-cases/derivatives-pricing.json (all fetches failed)",
+      "use-cases/drug-discovery-hybrid.json (all fetches failed)",
+      "use-cases/energy-grid-optimization.json (all fetches failed)",
+      "use-cases/fraud-detection.json (all fetches failed)",
+      "use-cases/portfolio-optimization.json (all fetches failed)",
+      "use-cases/production-scheduling.json (all fetches failed)",
+      "use-cases/protein-folding-simulation.json (all fetches failed)",
+      "use-cases/qkd-networks.json (all fetches failed)",
+      "use-cases/quantum-chemistry-materials.json (all fetches failed)",
+      "use-cases/quantum-machine-learning-classification.json (all fetches failed)",
+      "use-cases/quantum-random-number-generation.json (all fetches failed)",
+      "use-cases/supply-chain-optimization.json (all fetches failed)",
+      "use-cases/telecom-network-optimization.json (all fetches failed)",
+      "use-cases/vehicle-routing-optimization.json (all fetches failed)",
+      "use-cases/warehouse-optimization.json (all fetches failed)",
+      "use-cases/weather-forecasting.json (all fetches failed)",
+      "challenges/airbus-bmw-quantum-challenge.json (all fetches failed)",
+      "challenges/berlin-quantum-hackathon.json (all fetches failed)",
+      "challenges/blaise-pascal-quantum-challenge-2025.json (all fetches failed)",
+      "challenges/classiq-coding-competition.json (all fetches failed)",
+      "challenges/eurohpc-quantum-grand-challenge.json (all fetches failed)",
+      "challenges/ibm-quantum-challenge.json (all fetches failed)",
+      "challenges/iquhack-2026.json (all fetches failed)",
+      "challenges/qhack-2025.json (all fetches failed)",
+      "challenges/qosf-monthly-challenges.json (all fetches failed)",
+      "challenges/quantum-game-jam-2025.json (all fetches failed)",
+      "challenges/wacqt-quantum-hackathon-2026.json (all fetches failed)",
+      "challenges/xprize-quantum-applications.json (all fetches failed)",
+      "resources/bmbf-quantum-technologies.json (all fetches failed)",
+      "resources/brilliant-quantum.json (all fetches failed)",
+      "resources/cern-qti-lectures.json (all fetches failed)",
+      "resources/cirq.json (all fetches failed)",
+      "resources/cuda-q.json (all fetches failed)",
+      "resources/danish-quantum-community.json (all fetches failed)",
+      "resources/denmark-quantum-funding.json (all fetches failed)",
+      "resources/eic-accelerator.json (all fetches failed)",
+      "resources/eu-quantum-flagship.json (all fetches failed)",
+      "resources/eurohpc-quantum-computing.json (all fetches failed)",
+      "resources/finnish-quantum-flagship.json (all fetches failed)",
+      "resources/france-national-quantum-strategy.json (all fetches failed)",
+      "resources/ibm-quantum-learning.json (all fetches failed)",
+      "resources/mitiq.json (all fetches failed)",
+      "resources/mqt.json (all fetches failed)",
+      "resources/netqasm.json (all fetches failed)",
+      "resources/openqasm.json (all fetches failed)",
+      "resources/pennylane.json (all fetches failed)",
+      "resources/perceval.json (all fetches failed)",
+      "resources/projectq.json (all fetches failed)",
+      "resources/pulser.json (all fetches failed)",
+      "resources/pyzx.json (all fetches failed)",
+      "resources/qibo.json (all fetches failed)",
+      "resources/qiskit.json (all fetches failed)",
+      "resources/qosf.json (all fetches failed)",
+      "resources/qtedu.json (all fetches failed)",
+      "resources/quantum-amsterdam.json (all fetches failed)",
+      "resources/quantum-delta-nl.json (all fetches failed)",
+      "resources/quantum-inspire.json (all fetches failed)",
+      "resources/quantum-internet-alliance.json (all fetches failed)",
+      "resources/quantum-katas.json (all fetches failed)",
+      "resources/quic.json (all fetches failed)",
+      "resources/qureca.json (all fetches failed)",
+      "resources/qutip.json (all fetches failed)",
+      "resources/qworld.json (all fetches failed)",
+      "resources/stim.json (all fetches failed)",
+      "resources/strawberry-fields.json (all fetches failed)",
+      "resources/tket.json (all fetches failed)",
+      "resources/tudelft-quantum-101.json (all fetches failed)",
+      "resources/unitary-fund.json (all fetches failed)",
+      "resources/wacqt.json (all fetches failed)",
+      "resources/xanadu-codebook.json (all fetches failed)"
+    ],
+    "highlights": [
+      "Most active country: Netherlands (+2 news items)",
+      "Most-cited source: The Quantum Insider (2x)",
+      "Busiest collection: companies (+7)",
+      "6 distinct sources cited across 6 countries",
+      "15 entries below the 3-credible-source minimum (backfill worklist)",
+      "6 entries flagged for source contradictions by the cross-check"
+    ]
+  }
+]
