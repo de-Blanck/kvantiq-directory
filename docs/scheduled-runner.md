@@ -49,6 +49,13 @@ Each machine that should be able to run it needs:
   env -u SSH_AUTH_SOCK git fetch origin --prune
   env -u SSH_AUTH_SOCK git push --dry-run origin main
   ```
+
+  The same applies to **commit signing**, and it bites later — after the sweep has
+  already spent an hour. If `commit.gpgsign` is on with `gpg.format=ssh`, the commit
+  needs the same agent the fetch did. The runner therefore commits with
+  `-c commit.gpgsign=false`; its commits are vouched for by the PR review rather than
+  by whose key happened to be loaded on the machine that ran it. Nothing to configure,
+  but worth knowing why those commits are unsigned.
 - **Claude CLI** on `PATH` (the same `claude` you use interactively)
 - **A clone of this repo**
 - **The subscription token** — generate once with `claude setup-token`, then put
