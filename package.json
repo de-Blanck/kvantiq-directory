@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "tsx scripts/migrate-to-db.ts && tsx scripts/generate-transparency-data.ts",
+    "prebuild": "tsx scripts/migrate-to-db.ts && tsx scripts/generate-transparency-data.ts && node scripts/check-transparency-data.mjs",
     "build": "astro build",
     "postbuild": "pagefind --site dist",
     "preview": "astro preview",
@@ -15,7 +15,8 @@
     "audit:content": "npx tsx scripts/content-audit.ts",
     "audit:sources": "node scripts/audit-sources.mjs",
     "test": "tsx scripts/run-tests.ts",
-    "type-check": "astro check"
+    "type-check": "astro check",
+    "check:data": "node scripts/check-transparency-data.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^5.0.1",
