@@ -318,7 +318,8 @@
       "1 distinct sources cited across 1 countries",
       "2 entries below the 3-credible-source minimum (backfill worklist)",
       "2 entries flagged for source contradictions by the cross-check"
-    ]
+    ],
+    "note": "This run stopped after 12 entries when the Claude subscription session limit was reached. The 214 counted under \"No sources\" were never checked — the sweep did not reach them, and this counter predates the separate \"Not checked\" figure introduced afterwards. The sweep now stops on a quota error and resumes from that entry on the next run."
   },
   {
     "date": "2026-08-31",

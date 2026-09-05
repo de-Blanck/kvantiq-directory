@@ -385,6 +385,43 @@ function formatDuration(ms) {
 }
 
 const REPORT_FILE = path.join('data', 'generated', 'sweep-runs.json');
+
+// How many entries one run may touch. The directory has more entries than a
+// single Claude subscription session can process: the 2026-09-04 run got through
+// about 12 before hitting the session limit, then failed the remaining 214. So a
+// run takes a fixed-size slice and the next run continues where this one stopped,
+// cycling the whole directory over roughly four weeks.
+const CHUNK_SIZE = Number(process.env.SWEEP_CHUNK_SIZE || 60);
+
+// The cursor lives in the newest run record rather than a file of its own, so it
+// is already tracked, already public, and cannot drift from the run it describes.
+export function readCursor(file = REPORT_FILE) {
+  try {
+    const runs = JSON.parse(fs.readFileSync(file, 'utf8'));
+    const n = runs?.[0]?.chunk?.next_index;
+    return Number.isInteger(n) && n >= 0 ? n : 0;
+  } catch {
+    return 0;
+  }
+}
+
+// The slice this run will touch, wrapping past the end of the list so the
+// rotation is continuous. Pure and exported so the wrap-around is testable
+// without running a sweep.
+export function planChunk(entries, startIndex, size) {
+  const total = entries.length;
+  if (total === 0 || size <= 0) return [];
+  const n = Math.min(size, total);
+  const out = [];
+  for (let i = 0; i < n; i++) out.push(entries[(startIndex + i) % total]);
+  return out;
+}
+
+// A model error that means "no quota left" — every subsequent entry will fail the
+// same way, so the run must stop rather than spend 40 minutes proving it.
+export function isQuotaError(reason) {
+  return /session limit|usage limit|quota|rate.?limit/i.test(String(reason || ''));
+}
 const MAX_RUNS_KEPT = 60;
 
 // Prepend a run record to data/generated/sweep-runs.json (newest first), capped.
@@ -414,7 +451,7 @@ async function main() {
   const startedAt = new Date();
   const t0 = Date.now();
 
-  const results = { updated: 0, skipped: 0, total: 0 };
+  const results = { updated: 0, skipped: 0, notChecked: 0, total: 0 };
   const MAX_CONSECUTIVE_FETCH_FAILURES = 8;
   let consecutiveFetchFailures = 0;
   let aborted = false;
@@ -430,13 +467,29 @@ async function main() {
   let crossChecked = 0;  // entries the cross-check actually ran on (fetch succeeded)
   let backfilledTotal = 0; // credible sources added by --backfill-sources
 
+  // One flat, deterministically ordered list so the rotation cursor means the same
+  // thing from run to run. readdirSync order is not guaranteed, hence the sort.
+  const allEntries = [];
   for (const collection of COLLECTIONS) {
-    if (aborted) break;
     const dir = path.join(CONTENT_DIR, collection);
-    const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
     byCollection[collection] = { scanned: 0, updated: 0, news_added: 0 };
+    for (const file of fs.readdirSync(dir).filter(f => f.endsWith('.json')).sort()) {
+      allEntries.push({ collection, file });
+    }
+  }
 
-    for (const file of files) {
+  const totalEntries = allEntries.length;
+  const startIndex = totalEntries ? readCursor() % totalEntries : 0;
+  const plan = planChunk(allEntries, startIndex, CHUNK_SIZE);
+  let processed = 0;
+  let abortReason = null;
+
+  console.log(`Sweeping ${plan.length} of ${totalEntries} entries, starting at index ${startIndex}.`);
+  console.log(`The remaining ${Math.max(0, totalEntries - plan.length)} are covered by later runs.\n`);
+
+  {
+    for (const { collection, file } of plan) {
+      if (aborted) break;
       results.total++;
       byCollection[collection].scanned++;
       const entry = `${collection}/${file}`;
@@ -457,6 +510,18 @@ async function main() {
       }
 
       if (result.skipped) {
+        // Out of quota: everything after this fails identically. Stop here and
+        // let the next run resume from this entry, rather than burning the rest
+        // of the hour and reporting 214 entries as if they had been checked.
+        if (isQuotaError(result.reason)) {
+          results.notChecked++;
+          notFound.push(`${entry} (${result.reason})`);
+          console.error(`\n\nSTOPPED: out of Claude session quota at ${entry}.`);
+          console.error(`Processed ${processed} of ${plan.length} planned entries. The next run resumes here.`);
+          abortReason = 'session quota exhausted';
+          aborted = true;
+          break;
+        }
         results.skipped++;
         notFound.push(`${entry} (${result.reason})`);
         console.log(` SKIPPED (${result.reason})`);
@@ -486,8 +551,12 @@ async function main() {
         noChange++;
         console.log(' no changes');
       }
+      processed++;
     }
   }
+
+  // Resume at the entry the run stopped on, so an aborted run loses nothing.
+  const nextIndex = totalEntries ? (startIndex + processed) % totalEntries : 0;
 
   const runtimeMs = Date.now() - t0;
   const raw = adherence.raw || 0;
@@ -511,6 +580,12 @@ async function main() {
   if (topSource) highlights.push(`Most-cited source: ${topSource[0]} (${topSource[1]}x)`);
   if (topCollection && topCollection[1] > 0) highlights.push(`Busiest collection: ${topCollection[0]} (+${topCollection[1]})`);
   highlights.push(`${Object.keys(bySource).length} distinct sources cited across ${Object.keys(byCountry).length} countries`);
+  if (totalEntries > plan.length) {
+    highlights.push(`Rotating sweep: entries ${startIndex + 1}\u2013${startIndex + plan.length} of ${totalEntries}; the next run continues from ${nextIndex + 1}`);
+  }
+  if (abortReason) {
+    highlights.push(`Run stopped early (${abortReason}) after ${processed} of ${plan.length} planned entries \u2014 the rest were not checked, not found empty`);
+  }
   if (rejected > 0) highlights.push(`${rejected} item(s) rejected at source to uphold the methodology (anti-fabrication + schema)`);
   if (underBar.length) highlights.push(`${underBar.length} entr${underBar.length === 1 ? 'y' : 'ies'} below the ${MIN_CREDIBLE_SOURCES}-credible-source minimum (backfill worklist)`);
   if (crossFlags.length) highlights.push(`${crossFlags.length} entr${crossFlags.length === 1 ? 'y' : 'ies'} flagged for source contradictions by the cross-check`);
@@ -527,7 +602,19 @@ async function main() {
     updated: results.updated,
     no_change: noChange,
     skipped: results.skipped,
+    // Distinct from `skipped`: those entries had no usable sources, these were
+    // never looked at because the run ran out of quota. Reporting them together
+    // told readers we checked and found nothing, which was not true.
+    not_checked: results.notChecked,
     news_added: newsAdded,
+    chunk: {
+      size: CHUNK_SIZE,
+      start_index: startIndex,
+      next_index: nextIndex,
+      total_entries: totalEntries,
+      planned: plan.length,
+    },
+    aborted: abortReason,
     methodology: {
       items_proposed: raw,
       items_published: newsAdded,
@@ -561,7 +648,7 @@ async function main() {
 
   console.log('\n=== Summary ===');
   console.log(`Runtime: ${report.runtime_human}`);
-  console.log(`Scanned: ${report.scanned} | Updated: ${report.updated} | No-change: ${report.no_change} | Skipped: ${report.skipped}`);
+  console.log(`Scanned: ${report.scanned} | Updated: ${report.updated} | No-change: ${report.no_change} | Skipped: ${report.skipped} | Not checked: ${report.not_checked}`);
   console.log(`News added: ${report.news_added} | Methodology pass-rate: ${passRate}% (${rejected} rejected of ${raw})`);
 
   writeRunReport(report);
