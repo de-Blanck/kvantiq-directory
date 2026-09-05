@@ -1,6 +1,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { normalizeNewsItems, isBlocklistedSource, validateDiscoveredSources } from './ai-sweep.mjs';
+import { normalizeNewsItems, isBlocklistedSource, validateDiscoveredSources, planChunk, isQuotaError, readCursor } from './ai-sweep.mjs';
+import { mkdtempSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 
 const domains = new Set(['example.com']);
 const base = {
@@ -98,4 +101,81 @@ test('validateDiscoveredSources keeps only credible, live-skipped, de-duped cand
   assert.equal(out.length, 1);
   assert.equal(out[0].url, 'https://www.eu-startups.com/quobly');
   assert.equal(out[0].type, 'press-release');
+});
+
+
+// --- Rotating chunk ---
+// The directory has more entries than one Claude session's quota, so each run
+// takes a slice and the next continues from where it stopped.
+
+const entries = Array.from({ length: 10 }, (_, i) => ({ collection: 'c', file: `${i}.json` }));
+
+test('planChunk takes a slice of the requested size', () => {
+  const plan = planChunk(entries, 0, 4);
+  assert.equal(plan.length, 4);
+  assert.deepEqual(plan.map(e => e.file), ['0.json', '1.json', '2.json', '3.json']);
+});
+
+test('planChunk wraps past the end so the rotation is continuous', () => {
+  const plan = planChunk(entries, 8, 4);
+  assert.deepEqual(plan.map(e => e.file), ['8.json', '9.json', '0.json', '1.json']);
+});
+
+test('planChunk never returns more entries than exist', () => {
+  assert.equal(planChunk(entries, 0, 999).length, 10);
+});
+
+test('planChunk handles the degenerate cases', () => {
+  assert.deepEqual(planChunk([], 0, 5), []);
+  assert.deepEqual(planChunk(entries, 0, 0), []);
+});
+
+test('consecutive chunks cover every entry exactly once per cycle', () => {
+  const size = 3;
+  const seen: string[] = [];
+  let cursor = 0;
+  for (let run = 0; run < 4; run++) {
+    const plan = planChunk(entries, cursor, size);
+    seen.push(...plan.map(e => e.file));
+    cursor = (cursor + plan.length) % entries.length;
+  }
+  // 4 runs x 3 = 12 slots over 10 entries: every entry seen, two seen twice.
+  assert.equal(new Set(seen).size, 10);
+});
+
+// --- Quota detection ---
+// A quota error means every later entry fails identically, so the run must stop
+// rather than report unchecked entries as having no sources.
+
+test('isQuotaError recognises the session-limit message the sweep actually hit', () => {
+  assert.equal(isQuotaError("claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm"), true);
+});
+
+test('isQuotaError recognises related quota wording', () => {
+  assert.equal(isQuotaError('usage limit reached'), true);
+  assert.equal(isQuotaError('rate limit exceeded'), true);
+  assert.equal(isQuotaError('quota exhausted'), true);
+});
+
+test('isQuotaError does not fire on ordinary failures', () => {
+  assert.equal(isQuotaError('all fetches failed'), false);
+  assert.equal(isQuotaError('claude error: claude -p timed out after 60000ms'), false);
+  assert.equal(isQuotaError(undefined), false);
+});
+
+// --- Cursor ---
+
+test('readCursor reads next_index from the newest run record', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'sweep-cursor-'));
+  const file = join(dir, 'runs.json');
+  writeFileSync(file, JSON.stringify([{ date: '2026-09-05', chunk: { next_index: 60 } }, { date: '2026-09-04', chunk: { next_index: 0 } }]));
+  assert.equal(readCursor(file), 60);
+});
+
+test('readCursor falls back to 0 when the file is missing or has no cursor', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'sweep-cursor-'));
+  assert.equal(readCursor(join(dir, 'nope.json')), 0);
+  const legacy = join(dir, 'legacy.json');
+  writeFileSync(legacy, JSON.stringify([{ date: '2026-06-20' }]));
+  assert.equal(readCursor(legacy), 0);
 });
