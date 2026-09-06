@@ -51,6 +51,32 @@ for (const [file, usedBy] of REQUIRED) {
   if (empty) problems.push(`${file} is empty — ${usedBy} would render with no data.`);
 }
 
+// The growth chart on /transparency/audit/ plots entry-timeline.json by date. Every
+// date collapsing onto the build day means date_added was never resolved — the
+// signature of a build with no git history and no first-seen ledger, which is what
+// production looked like until 2026-09-06.
+const ledgerPath = resolve(DIR, '../entry-first-seen.json');
+if (!existsSync(ledgerPath)) {
+  problems.push(
+    'data/entry-first-seen.json is missing — the growth chart would date every entry the build day.',
+  );
+} else {
+  const timelinePath = resolve(DIR, 'entry-timeline.json');
+  if (existsSync(timelinePath)) {
+    try {
+      const rows = JSON.parse(readFileSync(timelinePath, 'utf-8'));
+      const today = new Date().toISOString().slice(0, 10);
+      if (Array.isArray(rows) && rows.length > 0 && rows.every((r) => r.date === today)) {
+        problems.push(
+          `entry-timeline.json dates every entry ${today} — the growth chart would be a single point.`,
+        );
+      }
+    } catch {
+      // Already reported as invalid JSON above.
+    }
+  }
+}
+
 if (problems.length > 0) {
   console.error('\nTransparency data check FAILED:\n');
   for (const p of problems) console.error(`  - ${p}`);

@@ -4,7 +4,8 @@
 #
 # Anything the build genuinely needs must stay OUT of this list: package.json,
 # astro.config.mjs, tsconfig.json, src/, public/, scripts/, data/sources.json,
-# data/discovery-queue.json, and data/generated/sweep-runs.json.
+# data/discovery-queue.json, data/entry-first-seen.json, and
+# data/generated/sweep-runs.json.
 
 # Secrets — never
 .env

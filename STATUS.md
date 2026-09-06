@@ -3,7 +3,7 @@
 Session handoff document. Read at session start; update before ending. See
 `CLAUDE.md` → "Context & Autonomy" for the rules that govern this file.
 
-**Last updated:** 2026-09-03
+**Last updated:** 2026-09-06
 **Branch:** `main`
 **State:** All source contradictions closed, publish gate live, type checking in place. **224 of 226 entries published.**
 
@@ -84,6 +84,18 @@ which asserted a positive quantum result from a paper concluding the opposite; a
   derives from the data. Removed a five-month-stale hardcoded date, "150+ companies" sitting
   above a rendered 110, two unsourced figures, the "no open European directory exists" claim,
   and "across Nordics and DACH" in five places. `public/llms.txt` became a generated route.
+
+## What's done — 2026-09-06
+
+- **Directory Growth chart fixed** — `/transparency/audit/` plotted a single point on the
+  build date (`labels: ["2026-09-05"], values: [226]` in production) instead of the real
+  five-step curve 183 → 226. `migrate-to-db.ts` derived `date_added` from `git log
+  --diff-filter=A`, but `.vercelignore` excludes `.git`, so every lookup failed and every
+  entry fell back to today. First-seen dates are now resolved once from git history and
+  committed to `data/entry-first-seen.json`; git is consulted only for slugs the ledger has
+  never seen, and a date never moves once written. `check-transparency-data.mjs` fails the
+  build if the ledger is missing or the timeline collapses onto the build day. Verified in a
+  git-less copy of the repo: correct timeline with the ledger, single point without it.
 
 ## What's next / open
 
