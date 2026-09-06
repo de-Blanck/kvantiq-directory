@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { extractMain, extractVar, emptyStates, hash, normalize, ROUTES } from './verify-live.mjs';
+import { extractMain, extractVar, emptyStates, hash, normalize, stripScripts, CHART_VARS, ROUTES } from './verify-live.mjs';
 
 const page = (body: string) =>
   `<!DOCTYPE html><html><head><title>x</title></head><body><main class="a">${body}</main>` +
@@ -57,4 +57,34 @@ test('normalize still distinguishes pages whose content differs', () => {
   const a = '<astro-island uid="a" prefix="r1"><p>226</p></astro-island>';
   const b = '<astro-island uid="b" prefix="r1"><p>225</p></astro-island>';
   assert.notEqual(normalize(a), normalize(b));
+});
+
+test('normalize drops the scoped-style hash but keeps the marker', () => {
+  const v6 = '<main data-astro-cid-brfismk2><h1 data-astro-cid-brfismk2>Transparency</h1></main>';
+  const v7 = '<main data-astro-cid-wdfd2i7g><h1 data-astro-cid-wdfd2i7g>Transparency</h1></main>';
+  assert.equal(normalize(v6), normalize(v7));
+  assert.ok(normalize(v6).includes('data-astro-cid'), 'the marker itself must survive');
+});
+
+test('normalize still catches an element losing its scope marker', () => {
+  const before = '<main data-astro-cid-aaa><h1 data-astro-cid-aaa>x</h1></main>';
+  const after = '<main data-astro-cid-bbb><h1>x</h1></main>';
+  assert.notEqual(normalize(before), normalize(after));
+});
+
+test('stripScripts removes framework noise and keeps the markup', () => {
+  const html = '<main><p>226 entries</p><script>var a=1;</script><div>x</div><script type="module">let c=2;</script></main>';
+  const stripped = stripScripts(html);
+  assert.ok(!stripped.includes('var a=1'), 'inline script bodies go');
+  assert.ok(!stripped.includes('let c=2'), 'module script bodies go');
+  assert.ok(stripped.includes('226 entries') && stripped.includes('<div>x</div>'), 'markup stays');
+});
+
+test('stripScripts leaves a page without scripts untouched', () => {
+  const html = '<main><p>226 entries</p></main>';
+  assert.equal(stripScripts(html), html);
+});
+
+test('every chart the transparency pages render is named in CHART_VARS', () => {
+  assert.ok(CHART_VARS.includes('timelineData'), 'the growth chart');
 });

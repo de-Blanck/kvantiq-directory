@@ -63,10 +63,36 @@ export const ROUTES = [
  * so the comparison is about what the page says.
  */
 export function normalize(html) {
-  return html
-    .replace(/(<astro-island\b[^>]*?)\suid="[^"]*"/g, '$1 uid=""')
-    .replace(/(<astro-island\b[^>]*?)\sprefix="[^"]*"/g, '$1 prefix=""');
+  return (
+    html
+      .replace(/(<astro-island\b[^>]*?)\suid="[^"]*"/g, '$1 uid=""')
+      .replace(/(<astro-island\b[^>]*?)\sprefix="[^"]*"/g, '$1 prefix=""')
+      // Scoped-style markers: Astro derives the hash from its own internals, and the
+      // derivation changed between v6 and v7 — every element gained a new hash while
+      // the page said exactly the same thing. The marker is kept, so a change in
+      // *which* elements are scoped still shows up; only the arbitrary hash goes.
+      .replace(/data-astro-cid-[a-z0-9]+/g, 'data-astro-cid')
+  );
 }
+
+/**
+ * The markup a reader sees, without any <script>.
+ *
+ * Astro inlines its own hydration runtime into every page carrying an island, and
+ * that bundle is minified with different variable names from build to build and
+ * from version to version — v7 emitted the same runtime 23 bytes shorter than v6,
+ * with `a` renamed to `c`. Comparing it compares the bundler, not the site. The
+ * data a page hands to a chart is checked separately, by name, in CHART_VARS.
+ */
+export function stripScripts(html) {
+  return html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, '');
+}
+
+/**
+ * Chart payloads compared explicitly, because stripScripts drops the block they
+ * live in. Add a name here when a page starts feeding a new chart.
+ */
+export const CHART_VARS = ['timelineData'];
 
 /** The rendered page body, without the head or any script Vercel injects. */
 export function extractMain(html) {
@@ -157,14 +183,23 @@ async function main() {
       continue;
     }
 
-    if (hash(localMain) !== hash(liveMain)) {
-      const timelineLocal = JSON.stringify(extractVar(local, 'timelineData'));
-      const timelineLive = JSON.stringify(extractVar(live, 'timelineData'));
-      const detail =
-        timelineLocal !== timelineLive
-          ? `\n      chart data differs — built: ${timelineLocal}\n                          live:  ${timelineLive}`
-          : `\n      built ${localMain.length} chars (${hash(localMain)}), live ${liveMain.length} chars (${hash(liveMain)})`;
-      problems.push(`${route} — rendered content differs.${detail}`);
+    const localContent = stripScripts(localMain);
+    const liveContent = stripScripts(liveMain);
+    if (hash(localContent) !== hash(liveContent)) {
+      problems.push(
+        `${route} — rendered content differs.\n` +
+          `      built ${localContent.length} chars (${hash(localContent)}), ` +
+          `live ${liveContent.length} chars (${hash(liveContent)})`,
+      );
+      continue;
+    }
+
+    const chartDiff = CHART_VARS.map((name) => [name, JSON.stringify(extractVar(local, name)), JSON.stringify(extractVar(live, name))])
+      .filter(([, built, live_]) => built !== live_);
+    if (chartDiff.length > 0) {
+      for (const [name, built, live_] of chartDiff) {
+        problems.push(`${route} — ${name} differs.\n      built: ${built}\n      live:  ${live_}`);
+      }
       continue;
     }
 
@@ -175,7 +210,7 @@ async function main() {
       continue;
     }
 
-    console.log(`  ok  ${route} (${hash(localMain)}, ${built.size} empty state${built.size === 1 ? '' : 's'})`);
+    console.log(`  ok  ${route} (${hash(localContent)}, ${built.size} empty state${built.size === 1 ? '' : 's'})`);
   }
 
   if (problems.length > 0) {

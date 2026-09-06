@@ -41,6 +41,11 @@ const UNLISTED = unlistedPaths();
 export default defineConfig({
   site: 'https://directory.kvantiq.studio',
   output: 'static',
+  // Astro 7 changed this default to 'jsx', which strips whitespace by JSX rules
+  // rather than HTML rules and silently alters inline spacing across the site.
+  // Pinned to the previous behaviour so the version upgrade changes no output;
+  // adopting 'jsx' is its own change, with its own screenshots.
+  compressHTML: true,
   vite: {
     plugins: [tailwindcss()]
   },
