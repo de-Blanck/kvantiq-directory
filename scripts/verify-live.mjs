@@ -35,13 +35,38 @@ const DIST = resolve(ROOT, 'dist');
 const BASE = process.env.LIVE_BASE_URL ?? 'https://directory.kvantiq.studio';
 const BYPASS = process.env.VERCEL_AUTOMATION_BYPASS_SECRET;
 
-/** Pages whose rendered content must match the build. */
+/**
+ * Pages whose rendered content must match the build. One of each shape: the
+ * transparency dashboards, a listing, an entry detail page, a country page and the
+ * homepage — so a change in a shared layout or component is caught, not just a
+ * change on the page someone was thinking about.
+ */
 export const ROUTES = [
+  '/',
   '/transparency/',
   '/transparency/audit/',
   '/transparency/intelligence/',
   '/transparency/sweeps/',
+  '/companies/',
+  '/companies/kvantify/',
+  '/companies/country/denmark/',
+  '/benchmarks/',
+  '/use-cases/',
+  '/challenges/',
+  '/resources/',
 ];
+
+/**
+ * Astro stamps every hydrated island with a `uid` generated fresh on each build,
+ * so two builds of identical source never produce identical HTML on any page
+ * carrying a React island. Those ids are build noise, not content: neutralise them
+ * so the comparison is about what the page says.
+ */
+export function normalize(html) {
+  return html
+    .replace(/(<astro-island\b[^>]*?)\suid="[^"]*"/g, '$1 uid=""')
+    .replace(/(<astro-island\b[^>]*?)\sprefix="[^"]*"/g, '$1 prefix=""');
+}
 
 /** The rendered page body, without the head or any script Vercel injects. */
 export function extractMain(html) {
@@ -49,7 +74,7 @@ export function extractMain(html) {
   if (open === -1) return null;
   const close = html.lastIndexOf('</main>');
   if (close === -1 || close < open) return null;
-  return html.slice(open, close + '</main>'.length);
+  return normalize(html.slice(open, close + '</main>'.length));
 }
 
 export function hash(text) {
