@@ -1,45 +1,43 @@
 ---
-import { readFileSync, existsSync } from 'fs';
-import { resolve } from 'path';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { credibleSourceCount, MIN_CREDIBLE_SOURCES } from '../../lib/source-bar';
 
-function loadJson(filename: string, fallback: unknown = {}) {
-  const filePath = resolve('data/generated', filename);
-  if (!existsSync(filePath)) return fallback;
-  try {
-    return JSON.parse(readFileSync(filePath, 'utf-8'));
-  } catch {
-    return fallback;
-  }
-}
+// Counted from the entries themselves. This page used to total the country column
+// of a generated database dump, which meant it silently counted only the entries
+// that happen to carry a country — companies — and called the result "verified
+// entries".
+const COLLECTIONS = ['companies', 'benchmarks', 'use-cases', 'challenges', 'resources'] as const;
 
-const confidenceDistribution = loadJson('confidence-distribution.json', []) as Array<{ label: string; value: number }>;
-const coverageMap = loadJson('coverage-map.json', []) as Array<{ country: string; count: number }>;
+const entries = (
+  await Promise.all(
+    COLLECTIONS.map(async (c) => (await getCollection(c as 'companies')).map((e) => e.data)),
+  )
+).flat();
 
-const totalEntries = Array.isArray(coverageMap)
-  ? coverageMap.reduce((sum, entry) => sum + (entry.count ?? 0), 0)
-  : 0;
+const totalEntries = entries.length;
+const publishedEntries = entries.filter((e) => credibleSourceCount(e.sources) >= MIN_CREDIBLE_SOURCES).length;
 
 const didYouKnow = [
   {
-    front: `${totalEntries || '200+'} verified entries`,
-    back: 'Every entry in this directory is individually researched and verified against a minimum of two independent sources before publication. No self-reported data. No unverified press releases.',
+    front: `${publishedEntries} published entries`,
+    back: `Every entry is researched against primary sources and needs at least ${MIN_CREDIBLE_SOURCES} independent credible ones before it is published. ${totalEntries - publishedEntries} of ${totalEntries} currently fall short and are held back — listed openly on the audit dashboard rather than hidden. No self-reported data.`,
   },
   {
     front: 'Weekly AI audit',
     back: 'An AI agent scans primary sources — company websites, EU project databases, arXiv, and major tech press — every week to flag stale data and propose updates for human review.',
   },
   {
-    front: 'Confidence scoring',
-    back: 'Each entry carries a confidence score reflecting source quality: high (peer-reviewed or official), medium (reputable press), or low (single or indirect source). Low-confidence entries are flagged for re-verification.',
+    front: 'A bar, not a score',
+    back: 'There is no confidence grade to interpret. Each entry shows what it rests on: how many independent credible sources it carries, and when each was last accessed. An entry that drops below the bar leaves the listings until the sources are found — the bar is never lowered.',
   },
   {
     front: 'AI + human review',
     back: 'Full transparency means every change is attributed — AI suggestions are logged, human decisions are recorded in git history. The complete audit trail is public and permanent.',
   },
   {
-    front: '90-day activity rule',
-    back: "Entries are evaluated on a rolling 90-day window. Companies or projects with no verifiable activity in the past quarter are flagged as potentially inactive and scheduled for review.",
+    front: 'Rolling re-verification',
+    back: 'Each weekly sweep takes a fixed slice of the directory and re-reads every source on it, so the whole directory cycles roughly monthly. Each run is dated and public, including the entries it could not complete.',
   },
   {
     front: 'Open methodology',
@@ -56,7 +54,7 @@ const steps = [
   {
     number: '02',
     title: 'Verify',
-    description: 'Every entry requires a minimum of two independently verified sources. Citations follow APA/IEEE style with DOI links where available. Each source includes a dateAccessed field.',
+    description: `Every entry requires at least ${MIN_CREDIBLE_SOURCES} independent credible sources — self-published pages, press-wire syndication and company releases beyond the first do not count toward the bar. Citations carry DOI links where available, and each source records the date it was accessed.`,
   },
   {
     number: '03',

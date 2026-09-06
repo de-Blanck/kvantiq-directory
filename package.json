@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "tsx scripts/migrate-to-db.ts && tsx scripts/generate-transparency-data.ts && node scripts/check-transparency-data.mjs",
+    "prebuild": "tsx scripts/sync-entry-first-seen.ts && node scripts/check-transparency-data.mjs",
     "build": "astro build",
     "postbuild": "pagefind --site dist",
     "preview": "astro preview",
@@ -30,7 +30,6 @@
     "@tanstack/react-table": "^8.21.3",
     "@vercel/analytics": "^2.0.1",
     "astro": "^6.0.6",
-    "better-sqlite3": "^12.8.0",
     "framer-motion": "^12.38.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
@@ -44,7 +43,6 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "@playwright/test": "^1.58.2",
-    "@types/better-sqlite3": "^7.6.13",
     "@types/react-grid-layout": "^1.3.6",
     "@types/uuid": "^10.0.0",
     "pagefind": "^1.4.0",

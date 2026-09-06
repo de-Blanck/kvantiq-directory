@@ -174,27 +174,35 @@ break the schedule — the job simply keeps running on 24.15.0. It breaks only o
 
 ## Deploy
 
-No Git integration on the Vercel project (`link: NONE`) — merging to `main` deploys nothing.
-Production is CLI-only and manual, run from inside the repo:
+**Merging to `main` deploys.** The Vercel project was connected to the GitHub repo on
+2026-09-06 (`link: github de-Blanck/kvantiq-directory`, production branch `main`), so
+production follows `main` on its own and pull requests get preview deployments. Before
+that, production and `main` were joined only by someone remembering to run the CLI —
+which is how the growth chart stayed wrong in production for months.
+
+After a production deploy, confirm production renders what the build produced:
+
+```
+npm run verify:live
+```
+
+It diffs the chart data and the empty states of every `/transparency/` page against
+`dist/`, and exits non-zero on any difference. Point it at a preview with
+`LIVE_BASE_URL=…` (Deployment Protection redirects plain fetches to vercel.com; the
+script says so rather than reporting an empty page).
+
+**CLI fallback**, if the git integration is ever unavailable:
 
 ```
 npm run build && vercel --prod --scope synapse-q && npm run verify:live
 ```
 
-Project: `feature-directory-site` on the `synapse-q` team → `directory.kvantiq.studio`.
-
-**`npm run verify:live` is not optional.** Vercel builds from an upload with no `.git`
-and no `data/kvantiq.db`, so a build step can behave differently there than it does
-here — and nothing compared the two until 2026-09-06. It diffs the chart data and the
-empty states on every `/transparency/` page against `dist/`, and exits non-zero on any
-difference. Point it elsewhere with `LIVE_BASE_URL=…` (a bare deployment URL needs
-`vercel curl` — Deployment Protection redirects plain fetches to vercel.com, and the
-script says so rather than reporting an empty page).
-
 Run the CLI from the repo directory itself. `--cwd` is not enough: the CLI reads the
 `.vercel` link of the shell's working directory, so running it from another repo
 deploys this source against that project's framework preset and fails with a
 misleading error (`No Next.js version detected`, 2026-09-06).
+
+Project: `feature-directory-site` on the `synapse-q` team → `directory.kvantiq.studio`.
 
 ## Parked (decision pending, not started)
 
