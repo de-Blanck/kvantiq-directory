@@ -3,9 +3,9 @@
 Session handoff document. Read at session start; update before ending. See
 `CLAUDE.md` → "Context & Autonomy" for the rules that govern this file.
 
-**Last updated:** 2026-09-06
+**Last updated:** 2026-09-06 (evening)
 **Branch:** `main`
-**State:** All source contradictions closed, publish gate live, type checking in place. **224 of 226 entries published.**
+**State:** Audit Dashboard rebuilt on real evidence; merging to `main` now deploys and is verified against production; 0 open Dependabot alerts; Astro 7. **224 of 226 entries published.**
 
 ## What's done — 2026-08-31 → 2026-09-02
 
@@ -118,7 +118,41 @@ which asserted a positive quantum result from a paper concluding the opposite; a
   compares each deployed page's rendered `<main>` against `dist/` and is run after every merge.
 - **Sweep gained `--only`** (#130) for repairing entries without spending a rotation slice.
 
+- **Dependency debt cleared** (#133, #135, #136). 58 open Dependabot alerts → **0**. 19 advisories
+  closed inside existing ranges, then Astro 6 → 7.3.1 for the rest (`@astrojs/react` 5 → 6;
+  sitemap and check needed no bump). `compressHTML` is pinned to `true`: v7 changed the default to
+  `'jsx'`, which strips whitespace by JSX rules and would shift inline spacing site-wide. Adopting
+  `'jsx'` is a separate change and needs its own screenshots.
+- **`verify:live` covers twelve routes** (#129, #135). It compares each page's rendered `<main>`
+  against `dist/`, with build noise separated from content and tested: island `uid`s and
+  `data-astro-cid-*` hashes are regenerated per build (and per Astro version), and Astro's inlined
+  hydration runtime is minified differently each time. Bundler chunk hashes are deliberately NOT
+  normalised — a differing chunk name means production is running different JS, which is the point.
+  Chart payloads are compared by name via `CHART_VARS`; add a name there when a page feeds a new chart.
+  Astro 7 was verified this way: all twelve routes byte-identical to the Astro 6 site in production.
+
 ## What's next / open
+
+- **Next, and the only item here that makes the product more useful:** the directory has not
+      grown since **2026-05-18** — the growth chart says so itself. `data/discovery-queue.json`
+      holds five candidates from that date, four already at 3 credible sources: Arq Quantum
+      Technologies (ES), Photarix (UK), Qinara (UK), CCRAFT (CH), and QDaria (NO, 2 sources —
+      below the bar). Unblock: nothing. Just the content workflow in CLAUDE.md.
+- **106 entries sit exactly at the 3-source bar** (47%), so a single retracted source would
+      unpublish any of them. A backfill pass targeting a fourth credible source is the
+      directory's largest structural fragility, and it is now measured on the audit dashboard.
+- **Four entries never recovered their 2026-09-06 sweep updates** — `bosch-quantum-sensing`,
+      `cubiq-technologies`, `peak-quantum`, `q-bird`. Their edits were destroyed by a
+      `git reset --hard` in the shared checkout mid-run; the targeted re-run (`--only`) recovered
+      six of ten, and these four returned no change on the second pass. The rotation will reach
+      them normally. Unblock: nothing needed.
+- **Protection Bypass for Automation is not configured** (Vercel → Project Settings → Deployment
+      Protection). Until it is, `npm run verify:live` can only check production; preview
+      deployments redirect to the Vercel SSO page, which the script reports as protection rather
+      than as an empty page. Unblock: Rune enables it, then set
+      `VERCEL_AUTOMATION_BYPASS_SECRET` in `.env`.
+- **`compressHTML: 'jsx'`** — deferred deliberately (see above). Unblock: a PR that adopts it and
+      shows before/after screenshots of a text-dense page.
 
 - [x] **Source-bar backfill complete — 13 of 15 recovered.** 224 of 226 entries published.
       Two remain unpublished and are assessed as **genuinely unsourceable**, not pending:
