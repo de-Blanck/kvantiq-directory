@@ -1,50 +1,72 @@
 #!/usr/bin/env node
 /**
- * Post-deploy check: does production render the numbers this build produced?
+ * Post-deploy check: does the deployed site render what this build produced?
  *
- * Deploys here are manual (`vercel --prod`), the build runs on Vercel from an
- * upload that deliberately omits .git and the local SQLite db, and nothing ever
- * compared the result against the build that was reviewed. That gap is how the
- * growth chart stayed a single point in production for months while every local
- * build drew it correctly (fixed 2026-09-06), and how the Industry Intelligence
- * page shipped empty before that.
+ * Vercel builds from an upload with no .git and no local database, and until
+ * 2026-09-06 nothing ever compared the result against the build that was
+ * reviewed. That gap is how the growth chart stayed a single point in production
+ * for months while every local build drew it correctly, and how the Industry
+ * Intelligence page shipped blank.
  *
- * This diffs the data embedded in the live HTML against the same data in dist/.
- * Run it after every production deploy:
+ * The comparison is the rendered <main> of each page, hashed. Everything a reader
+ * sees is inside it, so this catches any wrong number — not only the ones a probe
+ * thought to name. The <head> and Vercel's injected analytics script are excluded
+ * because they legitimately differ between a local build and a deployment.
  *
- *   npm run build && vercel --prod --scope synapse-q && npm run verify:live
+ *   npm run build && npm run verify:live
  *
- * Exits non-zero on any mismatch, so it can gate a deploy script or a cron.
+ * Against a preview rather than production:
+ *
+ *   LIVE_BASE_URL=https://<deployment>.vercel.app npm run verify:live
+ *
+ * Preview deployments are behind Deployment Protection. Set
+ * VERCEL_AUTOMATION_BYPASS_SECRET (Project Settings → Deployment Protection →
+ * Protection Bypass for Automation) and it is sent as the bypass header;
+ * without it the check reports the protection rather than pretending the page
+ * is empty.
  */
 import { readFileSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = resolve(ROOT, 'dist');
 const BASE = process.env.LIVE_BASE_URL ?? 'https://directory.kvantiq.studio';
+const BYPASS = process.env.VERCEL_AUTOMATION_BYPASS_SECRET;
 
-// Pages to compare, and the chart values each injects into its script. `define:vars`
-// serialises those as `const <name> = <json>;` in the built HTML, so they can be read
-// back out of both the local file and the live response and diffed exactly.
-const PROBES = [
-  ['/transparency/audit/', ['timelineData', 'confidenceData']],
-  ['/transparency/', []],
-  ['/transparency/intelligence/', []],
-  ['/transparency/sweeps/', []],
+/** Pages whose rendered content must match the build. */
+export const ROUTES = [
+  '/transparency/',
+  '/transparency/audit/',
+  '/transparency/intelligence/',
+  '/transparency/sweeps/',
 ];
 
-// Every transparency page falls back to an empty state when its data is missing —
-// "No coverage data available.", "No events recorded yet." — and that fallback is
-// the whole failure mode: the page still builds, still renders, still says nothing.
-// An empty state that appears live but not in the local build means production lost
-// data this build had.
-const EMPTY_STATE = /No [^<.]{3,60}?(?:available|recorded|yet)/g;
+/** The rendered page body, without the head or any script Vercel injects. */
+export function extractMain(html) {
+  const open = html.indexOf('<main');
+  if (open === -1) return null;
+  const close = html.lastIndexOf('</main>');
+  if (close === -1 || close < open) return null;
+  return html.slice(open, close + '</main>'.length);
+}
 
-const emptyStates = (html) => new Set(html.match(EMPTY_STATE) ?? []);
+export function hash(text) {
+  return createHash('sha256').update(text).digest('hex').slice(0, 12);
+}
 
-function extract(html, name) {
-  // Astro emits `const timelineData = {...};` — match the JSON object that follows.
+/**
+ * Empty states a page falls back to when its data is missing — "No coverage data
+ * available.", "No events recorded yet." One that appears live but not in the
+ * local build means production lost data this build had.
+ */
+export function emptyStates(html) {
+  return new Set(html.match(/No [^<.]{3,60}(?:available|recorded|yet)/g) ?? []);
+}
+
+/** A chart's data, as `define:vars` serialises it: `const timelineData = {...};` */
+export function extractVar(html, name) {
   const at = html.indexOf(`${name} = `);
   if (at === -1) return null;
   const from = html.indexOf('{', at);
@@ -63,77 +85,90 @@ function extract(html, name) {
   return null;
 }
 
-const problems = [];
+async function main() {
+  const problems = [];
 
-for (const [route, names] of PROBES) {
-  const localPath = resolve(DIST, `.${route}index.html`);
-  if (!existsSync(localPath)) {
-    problems.push(`${route} — no built page at dist${route}index.html. Run \`npm run build\` first.`);
-    continue;
-  }
-  const local = readFileSync(localPath, 'utf-8');
-
-  let live;
-  try {
-    const res = await fetch(`${BASE}${route}`, { headers: { 'cache-control': 'no-cache' } });
-    if (!res.ok) {
-      problems.push(`${route} — production returned HTTP ${res.status}.`);
+  for (const route of ROUTES) {
+    const localPath = resolve(DIST, `.${route}index.html`);
+    if (!existsSync(localPath)) {
+      problems.push(`${route} — no built page at dist${route}index.html. Run \`npm run build\` first.`);
       continue;
     }
-    if (new URL(res.url).host !== new URL(BASE).host) {
-      problems.push(
-        `${route} — request was redirected to ${new URL(res.url).host}. That is Deployment Protection, ` +
-          `not the site: verify a public URL, or fetch it with \`vercel curl\`.`,
-      );
+    const local = readFileSync(localPath, 'utf-8');
+
+    let live;
+    try {
+      const res = await fetch(`${BASE}${route}`, {
+        headers: {
+          'cache-control': 'no-cache',
+          ...(BYPASS ? { 'x-vercel-protection-bypass': BYPASS, 'x-vercel-set-bypass-cookie': 'true' } : {}),
+        },
+      });
+      if (new URL(res.url).host !== new URL(BASE).host) {
+        problems.push(
+          `${route} — redirected to ${new URL(res.url).host}. That is Deployment Protection, not the site: ` +
+            'set VERCEL_AUTOMATION_BYPASS_SECRET, or verify a public URL.',
+        );
+        continue;
+      }
+      if (!res.ok) {
+        problems.push(`${route} — returned HTTP ${res.status}.`);
+        continue;
+      }
+      live = await res.text();
+    } catch (err) {
+      problems.push(`${route} — could not be fetched: ${err.message}`);
       continue;
     }
-    live = await res.text();
-  } catch (err) {
-    problems.push(`${route} — could not fetch production: ${err.message}`);
-    continue;
-  }
 
-  for (const name of names) {
-    const expected = extract(local, name);
-    const actual = extract(live, name);
-    if (expected === null) {
-      problems.push(`${route} — ${name} is absent from the local build; the probe is stale.`);
+    const localMain = extractMain(local);
+    const liveMain = extractMain(live);
+    if (!localMain) {
+      problems.push(`${route} — the local build has no <main>; the check cannot compare this page.`);
       continue;
     }
-    if (actual === null) {
-      problems.push(`${route} — ${name} is absent from the live page. It renders nothing there.`);
+    if (!liveMain) {
+      problems.push(`${route} — the deployed page has no <main>. It is not rendering this page at all.`);
       continue;
     }
-    const e = JSON.stringify(expected);
-    const a = JSON.stringify(actual);
-    if (e !== a) {
-      problems.push(`${route} — ${name} differs.\n      built: ${e}\n      live:  ${a}`);
-    } else {
-      console.log(`  ok  ${route} ${name}`);
+
+    if (hash(localMain) !== hash(liveMain)) {
+      const timelineLocal = JSON.stringify(extractVar(local, 'timelineData'));
+      const timelineLive = JSON.stringify(extractVar(live, 'timelineData'));
+      const detail =
+        timelineLocal !== timelineLive
+          ? `\n      chart data differs — built: ${timelineLocal}\n                          live:  ${timelineLive}`
+          : `\n      built ${localMain.length} chars (${hash(localMain)}), live ${liveMain.length} chars (${hash(liveMain)})`;
+      problems.push(`${route} — rendered content differs.${detail}`);
+      continue;
     }
+
+    const built = emptyStates(local);
+    const extra = [...emptyStates(live)].filter((m) => !built.has(m));
+    if (extra.length > 0) {
+      problems.push(`${route} — production renders empty states this build does not: ${extra.join(', ')}.`);
+      continue;
+    }
+
+    console.log(`  ok  ${route} (${hash(localMain)}, ${built.size} empty state${built.size === 1 ? '' : 's'})`);
   }
 
-  const builtEmpty = emptyStates(local);
-  const liveEmpty = [...emptyStates(live)].filter((m) => !builtEmpty.has(m));
-  if (liveEmpty.length > 0) {
-    problems.push(
-      `${route} — production renders empty states this build does not: ${liveEmpty.map((m) => `"${m}"`).join(', ')}.`,
-    );
-  } else {
-    console.log(`  ok  ${route} empty states (${builtEmpty.size} expected)`);
-  }
-}
-
-if (problems.length > 0) {
-  console.error('\nLive verification FAILED:\n');
-  for (const p of problems) console.error(`  - ${p}`);
-  console.error(`
-Production is rendering something other than the build that was reviewed. The
-usual cause is a build step that behaves differently on Vercel than it does here
-— the upload has no .git and no data/kvantiq.db (see .vercelignore), so anything
-derived from those must come from a committed file instead.
+  if (problems.length > 0) {
+    console.error('\nLive verification FAILED:\n');
+    for (const p of problems) console.error(`  - ${p}`);
+    console.error(`
+The deployed site is rendering something other than the build that was reviewed.
+The usual cause is a build step that behaves differently on Vercel than it does
+here — the upload has no .git and no local database (see .vercelignore), so
+anything derived from those must come from a committed file instead.
 `);
-  process.exit(1);
+    process.exit(1);
+  }
+
+  console.log(`\nLive verification passed — ${BASE} matches dist/ on ${ROUTES.length} pages.`);
 }
 
-console.log(`\nLive verification passed — ${BASE} matches dist/.`);
+// Importable for tests; only verifies when run directly.
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  await main();
+}
