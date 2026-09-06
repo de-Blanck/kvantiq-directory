@@ -3,9 +3,9 @@
 Session handoff document. Read at session start; update before ending. See
 `CLAUDE.md` → "Context & Autonomy" for the rules that govern this file.
 
-**Last updated:** 2026-09-06 (evening)
+**Last updated:** 2026-09-06 (late evening)
 **Branch:** `main`
-**State:** Audit Dashboard rebuilt on real evidence; merging to `main` now deploys and is verified against production; 0 open Dependabot alerts; Astro 7. **224 of 226 entries published.**
+**State:** Audit Dashboard rebuilt on real evidence; merging to `main` deploys and is verified against production; 0 open Dependabot alerts; Astro 7. **Two launchd agents now run unattended** — the weekly sweep and a merge-when-green job. **224 of 226 entries published.**
 
 ## What's done — 2026-08-31 → 2026-09-02
 
@@ -131,7 +131,34 @@ which asserted a positive quantum result from a paper concluding the opposite; a
   Chart payloads are compared by name via `CHART_VARS`; add a name there when a page feeds a new chart.
   Astro 7 was verified this way: all twelve routes byte-identical to the Astro 6 site in production.
 
+- **Automation, P1 + P2** (#138, #139). GitHub Actions cannot run here, so nothing gated a pull
+  request and every merge needed a person. `npm run gate` (type-check, tests, build; `--live` adds
+  `verify:live`, deliberately not in the default run because pre-merge the deployed site is still
+  the previous build) and `scripts/auto-merge.mjs` close that: eligible PRs are gated, merged on
+  green, then production is verified. **Eligible means** labelled `auto-merge` or from Dependabot,
+  not draft, not conflicting, and touching nothing on `NEVER_AUTOMERGE` (`CLAUDE.md`, `.github/`,
+  `scheduler/`, the automation's own scripts, `.env`, the ignore files). One merge per run; on
+  production drift it opens an issue rather than reverting. **Kill switch:** create
+  `.automation-paused` at the repo root — gitignored, its first line is the reason.
+  Proven end to end on #139: gated, merged, deployed, verified, unattended.
+- **The sweep no longer shares the checkout** (#138). It runs in `../.worktrees/sweep` with `.env`
+  and `node_modules` symlinked — verified to type-check, test and build 206 pages there. Paired
+  with a `block-git-during-job` hook in `claude-config` (`66f98f2`) that refuses `reset --hard`,
+  forced checkout, `clean -f`, bare `stash` and `worktree remove` in a checkout where a job is
+  running. Both halves exist because a `git reset --hard` destroyed ten entries' sweep work on
+  2026-09-06.
+
 ## What's next / open
+
+- **The autonomy tier policy is not written down yet.** Proposed 2026-09-06 and approved in
+      conversation only: Tier 0 never (rulebook, force-push, secrets, deleting entries, lowering the
+      source bar, account settings), Tier 1 autonomous (deps, docs, tests, sweep repairs, changes
+      `verify:live` proves output-identical), Tier 2 autonomous with evidence (content clearing the
+      3-source gate; panels built from existing components), Tier 3 Rune's (visual design, product
+      direction). It belongs in `CLAUDE.md`, which is a rulebook change and needs Rune's explicit
+      approval — which is exactly why `CLAUDE.md` is on the never-automerge list. Until then the
+      auto-merge job only takes Dependabot PRs and ones labelled by hand.
+- **16 open GitHub issues** have not been triaged in this work. Unblock: read them.
 
 - **Next, and the only item here that makes the product more useful:** the directory has not
       grown since **2026-05-18** — the growth chart says so itself. `data/discovery-queue.json`
