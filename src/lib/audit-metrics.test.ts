@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {
   growthSeries, entriesMissingFromLedger, coverageByCountry, entryKey,
   sourceStrength, daysBetween, newestDate, ageDistribution, sourceConcentration, hostname,
+  evidenceSummary, describeAge,
 } from './audit-metrics.ts';
 
 const ledger = {
@@ -154,4 +155,41 @@ test('sourceConcentration honours the row limit', () => {
   const entries = Array.from({ length: 20 }, (_, i) => ({ sources: [{ url: `https://d${i}.com/x` }] }));
   assert.equal(sourceConcentration(entries, () => true, 5).rows.length, 5);
   assert.equal(sourceConcentration(entries, () => true, 5).distinctDomains, 20);
+});
+
+test('evidenceSummary counts credible sources and dates the newest access', () => {
+  const credible = (s: { url: string }) => !s.url.includes('linkedin');
+  const summary = evidenceSummary(
+    [
+      { url: 'https://arxiv.org/a', dateAccessed: '2026-05-01' },
+      { url: 'https://linkedin.com/b', dateAccessed: '2026-09-01' },
+      { url: 'https://hpcwire.com/c', dateAccessed: '2026-08-20' },
+    ],
+    '2026-09-06',
+    credible,
+  );
+  assert.deepEqual(summary, { credible: 2, total: 3, lastAccessed: '2026-09-01', days: 5 });
+});
+
+test('evidenceSummary survives an entry with no sources at all', () => {
+  assert.deepEqual(evidenceSummary(undefined, '2026-09-06', () => true), {
+    credible: 0, total: 0, lastAccessed: null, days: null,
+  });
+});
+
+test('evidenceSummary reports no date when no source records one', () => {
+  const summary = evidenceSummary([{ url: 'https://a.com/x' }], '2026-09-06', () => true);
+  assert.equal(summary.lastAccessed, null);
+  assert.equal(summary.days, null);
+});
+
+test('describeAge reads the way a person would say it', () => {
+  assert.equal(describeAge(0), 'today');
+  assert.equal(describeAge(1), 'yesterday');
+  assert.equal(describeAge(18), '18 days ago');
+  assert.equal(describeAge(44), '44 days ago');
+  assert.equal(describeAge(120), '4 months ago');
+  assert.equal(describeAge(400), '13 months ago');
+  assert.equal(describeAge(900), '2 years ago');
+  assert.equal(describeAge(null), null);
 });

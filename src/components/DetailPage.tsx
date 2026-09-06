@@ -139,6 +139,10 @@ interface DetailPageProps {
   news: { title: string; excerpt?: string; url: string; source: string; date: string }[];
   related: RelatedItem[];
   sources: { type: string; url: string; title?: string; dateAccessed?: string }[];
+  /** What this entry rests on, computed at build time: how many of its sources count
+   *  toward the publish bar, and when they were last read. Shown next to the sources
+   *  themselves so a reader can check it rather than take it on trust. */
+  evidence?: { credible: number; total: number; lastAccessed: string | null; age: string | null };
   extraCards?: { id: string; label: string; content: React.ReactNode }[];
   products?: { name: string; description: string; url?: string }[];
   highlights?: string[];
@@ -332,6 +336,7 @@ export default function DetailPage(props: DetailPageProps) {
         websiteUrl={props.websiteUrl}
         websiteLabel={props.websiteLabel}
         sourceCount={props.sources.length}
+        evidence={props.evidence}
       />
 
       <DetailTabs
@@ -394,8 +399,19 @@ export default function DetailPage(props: DetailPageProps) {
 
       {/* Sources — always visible at bottom, subtle, not a card */}
       <div id="sources" className="mt-8 border-t border-border pt-6 scroll-mt-20">
-        <div className="eyebrow text-text-muted mb-4">
-          Sources
+        <div className="mb-4 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+          <div className="eyebrow text-text-muted">
+            Sources
+          </div>
+          {props.evidence && props.evidence.total > 0 && (
+            <p className="body-sm text-text-muted">
+              <span className="text-text-secondary">
+                {props.evidence.credible} of {props.evidence.total} count toward the source bar
+              </span>
+              {props.evidence.age && ` · last read ${props.evidence.age}`}
+              {props.evidence.lastAccessed && ` (${props.evidence.lastAccessed})`}
+            </p>
+          )}
         </div>
         <div className="grid sm:grid-cols-2 gap-x-8 gap-y-1">
           {props.sources.map((src, i) => (

@@ -233,3 +233,48 @@ export function hostname(url: string | undefined): string | null {
     return null;
   }
 }
+
+export interface EvidenceSummary {
+  /** Sources that count toward the publish bar. */
+  credible: number;
+  /** Every source listed, credible or not. */
+  total: number;
+  /** The most recent date any source was accessed. */
+  lastAccessed: string | null;
+  /** Days since that date, or null when no source records one. */
+  days: number | null;
+}
+
+/**
+ * What a single entry rests on, for the reader looking at that entry.
+ *
+ * The dashboard shows these two axes across the whole directory; this is the same
+ * pair for one entry, so a reader can check the claim against the source list
+ * printed directly below it. It is deliberately not combined into a score: the
+ * directory had one of those, written as a constant, and it told nobody anything.
+ */
+export function evidenceSummary(
+  sources: SourceLike[] | undefined,
+  today: string,
+  isCredible: (source: SourceLike) => boolean,
+): EvidenceSummary {
+  const all = sources ?? [];
+  const lastAccessed = newestDate(all.map((s) => s.dateAccessed));
+  return {
+    credible: all.filter(isCredible).length,
+    total: all.length,
+    lastAccessed,
+    days: daysBetween(lastAccessed, today),
+  };
+}
+
+/** "today", "yesterday", "18 days ago", "5 months ago" — for a reader, not a machine. */
+export function describeAge(days: number | null): string | null {
+  if (days === null) return null;
+  if (days <= 0) return 'today';
+  if (days === 1) return 'yesterday';
+  if (days < 45) return `${days} days ago`;
+  const months = Math.round(days / 30);
+  if (months < 24) return `${months} months ago`;
+  return `${Math.round(days / 365)} years ago`;
+}

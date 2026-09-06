@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
-import { isPublished } from '../../lib/source-bar';
+import { isPublished, isCredibleSource } from '../../lib/source-bar';
+import { evidenceSummary, describeAge } from '../../lib/audit-metrics';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import DetailPage from '../../components/DetailPage.tsx';
 import { findRelated, type RelatedItem } from '../../lib/related';
@@ -80,6 +81,11 @@ const keyMetrics = [
 ];
 
 const meta = [challenge.organizer, `${statusMark}${statusLabel}`, fmtDate(challenge.dateStart)].filter(Boolean).join(' · ');
+// The evidence line the page shows in place of a confidence grade: how many of
+// this entry's sources count toward the bar, and when they were last read.
+const summary = evidenceSummary(challenge.sources, new Date().toISOString().slice(0, 10), isCredibleSource);
+const evidence = { ...summary, age: describeAge(summary.days) };
+
 ---
 <BaseLayout unverified={!isPublished(challenge)} title={challenge.name} description={challenge.description} jsonLd={eventLd} ogImage={`/og-images/challenges/${challenge.slug}.png`}>
   <DetailPage
@@ -95,6 +101,7 @@ const meta = [challenge.organizer, `${statusMark}${statusLabel}`, fmtDate(challe
     news={challenge.news || []}
     related={related}
     sources={challenge.sources}
+    evidence={evidence}
     keyMetrics={keyMetrics}
     overviewLinks={[
       { label: 'Browse all challenges', href: '/challenges/' },
