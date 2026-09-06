@@ -15,6 +15,7 @@ interface DetailHeroProps {
   websiteUrl?: string;
   websiteLabel?: string;
   sourceCount: number;
+  evidence?: { credible: number; total: number; lastAccessed: string | null; age: string | null };
 }
 
 /**
@@ -29,7 +30,7 @@ interface DetailHeroProps {
  * read as paired section markers.
  */
 export default function DetailHero({
-  type, name, meta, description, tags, stats, websiteUrl, websiteLabel, sourceCount
+  type, name, meta, description, tags, stats, websiteUrl, websiteLabel, sourceCount, evidence
 }: DetailHeroProps) {
   return (
     <motion.div
@@ -79,6 +80,15 @@ export default function DetailHero({
               Sources ({sourceCount})
             </a>
           </div>
+
+          {/* The two facts the directory keeps instead of a confidence grade. Both are
+              checkable against the source list further down the page. */}
+          {evidence && evidence.total > 0 && (
+            <p className="mt-3 body-sm text-text-muted">
+              {evidence.credible} credible source{evidence.credible === 1 ? '' : 's'}
+              {evidence.age && ` · last verified ${evidence.age}`}
+            </p>
+          )}
         </div>
 
         {/* Data tower (Mono) */}

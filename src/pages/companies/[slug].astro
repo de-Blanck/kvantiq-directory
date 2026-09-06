@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
-import { isPublished } from '../../lib/source-bar';
+import { isPublished, isCredibleSource } from '../../lib/source-bar';
+import { evidenceSummary, describeAge } from '../../lib/audit-metrics';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import DetailPage from '../../components/DetailPage.tsx';
 import { findRelated, type RelatedItem } from '../../lib/related';
@@ -51,6 +52,11 @@ const stats = [
 ];
 
 const meta = [company.country, company.type.replace(/^\w/, (c: string) => c.toUpperCase()), company.founded ? `Founded ${company.founded}` : '', company.headquarters].filter(Boolean).join(' · ');
+// The evidence line the page shows in place of a confidence grade: how many of
+// this entry's sources count toward the bar, and when they were last read.
+const summary = evidenceSummary(company.sources, new Date().toISOString().slice(0, 10), isCredibleSource);
+const evidence = { ...summary, age: describeAge(summary.days) };
+
 ---
 <BaseLayout unverified={!isPublished(company)} title={company.name} description={company.description} jsonLd={orgLd} ogImage={`/og-images/companies/${company.slug}.png`}>
   <DetailPage
@@ -66,6 +72,7 @@ const meta = [company.country, company.type.replace(/^\w/, (c: string) => c.toUp
     news={company.news || []}
     related={related}
     sources={company.sources}
+    evidence={evidence}
     products={company.products}
     highlights={company.highlights}
     overviewLinks={[

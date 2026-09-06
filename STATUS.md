@@ -105,6 +105,19 @@ which asserted a positive quantum result from a paper concluding the opposite; a
   runs on Vercel — a build that would ship wrong numbers fails instead. `npm run verify:live`
   (new) diffs the deployed pages against `dist/` after a production deploy.
 
+- **Audit Dashboard rebuilt on evidence** (#127, #131). Five of six panels rendered a constant
+  (`current_confidence`, written as the literal `'MEDIUM'` for all 226 entries at migration time)
+  or nothing at all. The confidence score is retired rather than derived: entries carry the two
+  facts a reader can check instead — how many credible sources they rest on, and when those were
+  last read. The SQLite layer that existed only to launder content into those constants is gone
+  (`migrate-to-db.ts`, `scripts/db/*`, the generator, `better-sqlite3`, seven dead artifacts).
+  Panels now: source strength, verification freshness, news recency, completeness, source
+  concentration, coverage, growth, held-back entries — each a tested pure function in
+  `src/lib/audit-metrics.ts`.
+- **Merging deploys** (2026-09-06). The Vercel project is connected to the repo; `npm run verify:live`
+  compares each deployed page's rendered `<main>` against `dist/` and is run after every merge.
+- **Sweep gained `--only`** (#130) for repairing entries without spending a rotation slice.
+
 ## What's next / open
 
 - [x] **Source-bar backfill complete — 13 of 15 recovered.** 224 of 226 entries published.

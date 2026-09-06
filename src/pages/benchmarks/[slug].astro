@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
-import { isPublished } from '../../lib/source-bar';
+import { isPublished, isCredibleSource } from '../../lib/source-bar';
+import { evidenceSummary, describeAge } from '../../lib/audit-metrics';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import DetailPage from '../../components/DetailPage.tsx';
 import { findRelated, type RelatedItem } from '../../lib/related';
@@ -41,6 +42,11 @@ const stats = [
 ];
 
 const meta = [benchmark.algorithm, benchmark.category.replace(/^\w/, (c: string) => c.toUpperCase()), benchmark.qubits ? `${benchmark.qubits} qubits` : '', benchmark.framework].filter(Boolean).join(' · ');
+// The evidence line the page shows in place of a confidence grade: how many of
+// this entry's sources count toward the bar, and when they were last read.
+const summary = evidenceSummary(benchmark.sources, new Date().toISOString().slice(0, 10), isCredibleSource);
+const evidence = { ...summary, age: describeAge(summary.days) };
+
 ---
 <BaseLayout unverified={!isPublished(benchmark)} title={benchmark.name} description={benchmark.description} jsonLd={datasetLd} ogImage={`/og-images/benchmarks/${benchmark.slug}.png`}>
   <DetailPage
@@ -55,6 +61,7 @@ const meta = [benchmark.algorithm, benchmark.category.replace(/^\w/, (c: string)
     news={benchmark.news || []}
     related={related}
     sources={benchmark.sources}
+    evidence={evidence}
     keyMetrics={benchmark.keyMetrics}
     significance={benchmark.significance}
     extraCards={[

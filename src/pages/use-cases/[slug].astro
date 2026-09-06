@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
-import { isPublished } from '../../lib/source-bar';
+import { isPublished, isCredibleSource } from '../../lib/source-bar';
+import { evidenceSummary, describeAge } from '../../lib/audit-metrics';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import DetailPage from '../../components/DetailPage.tsx';
 import { findRelated, type RelatedItem } from '../../lib/related';
@@ -48,6 +49,11 @@ const stats = [
 ];
 
 const meta = [useCase.industry, useCase.category.replace(/^\w/, (c: string) => c.toUpperCase())].filter(Boolean).join(' · ');
+// The evidence line the page shows in place of a confidence grade: how many of
+// this entry's sources count toward the bar, and when they were last read.
+const summary = evidenceSummary(useCase.sources, new Date().toISOString().slice(0, 10), isCredibleSource);
+const evidence = { ...summary, age: describeAge(summary.days) };
+
 ---
 <BaseLayout unverified={!isPublished(useCase)} title={useCase.name} description={useCase.description} jsonLd={articleLd} ogImage={`/og-images/use-cases/${useCase.slug}.png`}>
   <DetailPage
@@ -62,6 +68,7 @@ const meta = [useCase.industry, useCase.category.replace(/^\w/, (c: string) => c
     news={useCase.news || []}
     related={related}
     sources={useCase.sources}
+    evidence={evidence}
     extraCards={[
       { id: 'problem', label: 'Problem', content: useCase.problem },
       { id: 'approach', label: 'Approach', content: useCase.approach },
