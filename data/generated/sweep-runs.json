@@ -1,5 +1,176 @@
 [
   {
+    "date": "2026-09-06",
+    "started_at": "2026-09-06T01:28:36.262Z",
+    "finished_at": "2026-09-06T06:18:01.895Z",
+    "runtime_ms": 17365631,
+    "runtime_human": "289m 26s",
+    "model": "claude-haiku-4-5-20251001",
+    "scanned": 60,
+    "updated": 9,
+    "no_change": 43,
+    "skipped": 8,
+    "not_checked": 0,
+    "news_added": 9,
+    "chunk": {
+      "size": 60,
+      "start_index": 0,
+      "next_index": 60,
+      "total_entries": 226,
+      "planned": 60
+    },
+    "aborted": null,
+    "methodology": {
+      "items_proposed": 112,
+      "items_published": 9,
+      "pass_rate_pct": 97.3,
+      "rejected_missing_field": 0,
+      "rejected_bad_date": 0,
+      "rejected_domain_mismatch": 0,
+      "rejected_blocklisted": 3,
+      "rejected_blank_title_source": 0,
+      "empty_excerpt_dropped": 0,
+      "duplicate_url_collapsed": 8
+    },
+    "source_bar": {
+      "min_credible": 3,
+      "below_bar": 0,
+      "backfilled_total": 0,
+      "entries": []
+    },
+    "cross_check": {
+      "entries_checked": 52,
+      "flagged": 7,
+      "contradictions_found": 7,
+      "flags": [
+        {
+          "entry": "companies/beit.json",
+          "issues": [
+            "Founding year: entry and thequantuminsider.com state 2016, but rdworldonline.com states the R&D base in Kraków was founded in 2017 per the company's own account (with Delaware incorporation in 2018)"
+          ]
+        },
+        {
+          "entry": "companies/cryptomathic.json",
+          "issues": [
+            "Founded year: Entry states 1986, but Inside Quantum Technology article (02 Aug 2022) states 'founded 37 years ago in Aarhus, Denmark' which calculates to 1985."
+          ]
+        },
+        {
+          "entry": "companies/diasense.json",
+          "issues": [
+            "Entry states total funding approximately €1.8M; The Quantum Insider reports BII's investment alone totals €1.9M (March 4, 2026 source), meaning total funding must exceed €1.8M."
+          ]
+        },
+        {
+          "entry": "companies/nu-quantum.json",
+          "issues": [
+            "Entry states 'over $70 million' raised, but all fetched sources consistently report '$60 million Series A' with no evidence of additional funding rounds."
+          ]
+        },
+        {
+          "entry": "companies/orange-quantum-systems.json",
+          "issues": [
+            "Entry founded year is 2019, but LinkedIn source states 'Opgericht 2020' (Founded 2020)"
+          ]
+        },
+        {
+          "entry": "companies/q-ant.json",
+          "issues": [
+            "Entry claims Q.ANT 'builds quantum sensors and photonic quantum processors,' but all fetched sources describe only photonic processors for AI/HPC computing; no sources mention quantum sensors."
+          ]
+        },
+        {
+          "entry": "companies/qblox.json",
+          "issues": [
+            "Founded date contradiction: entry states 2019, LinkedIn states 2018"
+          ]
+        }
+      ]
+    },
+    "by_collection": {
+      "companies": {
+        "scanned": 60,
+        "updated": 9,
+        "news_added": 9
+      },
+      "benchmarks": {
+        "scanned": 0,
+        "updated": 0,
+        "news_added": 0
+      },
+      "use-cases": {
+        "scanned": 0,
+        "updated": 0,
+        "news_added": 0
+      },
+      "challenges": {
+        "scanned": 0,
+        "updated": 0,
+        "news_added": 0
+      },
+      "resources": {
+        "scanned": 0,
+        "updated": 0,
+        "news_added": 0
+      }
+    },
+    "by_country": {
+      "Netherlands": 2,
+      "Denmark": 3,
+      "Germany": 3,
+      "Austria": 1
+    },
+    "top_sources": [
+      {
+        "source": "Quantum Computing Report",
+        "count": 3
+      },
+      {
+        "source": "CUbIQ Technologies",
+        "count": 1
+      },
+      {
+        "source": "Lundbeckfonden",
+        "count": 1
+      },
+      {
+        "source": "Innovation Fund Denmark",
+        "count": 1
+      },
+      {
+        "source": "Munich Quantum Valley",
+        "count": 1
+      },
+      {
+        "source": "The Quantum Insider",
+        "count": 1
+      },
+      {
+        "source": "Q*Bird website",
+        "count": 1
+      }
+    ],
+    "not_found": [
+      "companies/adamantq.json (claude error: claude -p timed out after 60000ms)",
+      "companies/alea-quantum.json (claude error: claude -p timed out after 60000ms)",
+      "companies/algorithmiq.json (claude error: claude -p timed out after 60000ms)",
+      "companies/alice-and-bob.json (claude error: claude -p timed out after 60000ms)",
+      "companies/aqarios.json (claude error: claude -p timed out after 60000ms)",
+      "companies/aqora.json (claude error: claude -p timed out after 60000ms)",
+      "companies/aqt.json (claude error: claude -p timed out after 60000ms)",
+      "companies/arctic-instruments.json (claude error: claude -p timed out after 60000ms)"
+    ],
+    "highlights": [
+      "Most active country: Denmark (+3 news items)",
+      "Most-cited source: Quantum Computing Report (3x)",
+      "Busiest collection: companies (+9)",
+      "7 distinct sources cited across 4 countries",
+      "Rotating sweep: entries 1–60 of 226; the next run continues from 61",
+      "3 item(s) rejected at source to uphold the methodology (anti-fabrication + schema)",
+      "7 entries flagged for source contradictions by the cross-check"
+    ]
+  },
+  {
     "date": "2026-09-04",
     "started_at": "2026-09-04T10:02:05.127Z",
     "finished_at": "2026-09-04T10:54:20.050Z",
