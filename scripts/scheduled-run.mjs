@@ -220,7 +220,7 @@ function dateStamp() {
   return new Date().toISOString().slice(0, 10); // YYYY-MM-DD
 }
 
-function openPr(repo, branch, partial) {
+function openPr(repo, branch, partial, drift) {
   const bodyPath = path.join(os.tmpdir(), `kvantiq-sweep-body-${process.pid}.md`);
   const lines = ['## Weekly AI Content Sweep', ''];
   if (partial) {
@@ -228,6 +228,16 @@ function openPr(repo, branch, partial) {
       '> ⚠️ **Partial run.** The sweep exited early (timeout, crash, or credit',
       '> exhaustion), but the entries it had already processed are included here.',
       '> Re-running the sweep refreshes everything from current sources.',
+      '',
+    );
+  }
+  if (drift) {
+    lines.push(
+      '> 🔴 **Production does not match `main`.** `npm run verify:live` failed against',
+      '> the deployed site while this run built cleanly, so production is stale or is',
+      '> rendering different numbers. Details:',
+      '>',
+      ...drift.split('\n').filter(Boolean).map((l) => `> ${l}`),
       '',
     );
   }
@@ -243,6 +253,7 @@ function openPr(repo, branch, partial) {
     '- [ ] No fabricated funding rounds or partnerships',
     '- [ ] All news URLs resolve to real pages',
     '- [ ] Build passes locally',
+    ...(drift ? ['- [ ] **Production drift above is understood and resolved**'] : []),
     '',
   );
   writeFileSync(bodyPath, lines.join('\n'));
@@ -300,6 +311,26 @@ function main() {
   log('Validating build (npm run build)…');
   stream(NPM, ['run', 'build']);
 
+  // With a fresh build on disk, this is the only routine look anything takes at
+  // production. It compares the deployed transparency pages against what this build
+  // produces: a mismatch means the site is stale, or is rendering different numbers
+  // from the same source — which is how the growth chart stayed wrong for months
+  // (fixed 2026-09-06). Never fatal: the sweep's content work is still worth a PR,
+  // and a drifted production is a review item, not a reason to throw the run away.
+  log('Checking production against this build (npm run verify:live)…');
+  const live = probe(NPM, ['run', 'verify:live']);
+  let drift = null;
+  if (!live.ok) {
+    // verify-live.mjs writes its findings to stderr; capture() folds that into the
+    // thrown message, so the bullet lines are what is worth quoting into the PR.
+    const output = live.err?.message ?? '';
+    drift = output.split('\n').map((l) => l.trim()).filter((l) => l.startsWith('- ')).join('\n')
+      || 'see the runner log';
+    log(`WARNING: production does not match this build.\n${drift}`);
+  } else {
+    log('Production matches this build.');
+  }
+
   const branch = `${SWEEP_BRANCH_PREFIX}-${dateStamp()}`;
   const partialTag = sweepFailed ? ' (partial)' : '';
   log(`Changes found${partialTag}. Opening PR on branch ${branch}…`);
@@ -314,7 +345,7 @@ function main() {
   capture('git', ['-c', 'commit.gpgsign=false', 'commit', '-m',
     `content: weekly AI content sweep ${dateStamp()}${partialTag}`]);
   capture('git', ['push', '-u', 'origin', branch]);
-  openPr(repo, branch, sweepFailed);
+  openPr(repo, branch, sweepFailed, drift);
 
   log(sweepFailed ? '=== Done (partial run — see WARNING above) ===' : '=== Done ===');
 }
