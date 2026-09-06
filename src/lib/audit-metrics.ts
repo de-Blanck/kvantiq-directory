@@ -86,3 +86,150 @@ export function coverageByCountry(entries: CountryLike[]): CountryCount[] {
     .map(([country, count]) => ({ country, count }))
     .sort((a, b) => b.count - a.count || a.country.localeCompare(b.country));
 }
+
+// ── Evidence panels ──────────────────────────────────────────────────────────
+// What the dashboard shows in place of the confidence score it used to assert:
+// how much independent sourcing each entry rests on, and how recently that
+// sourcing was actually looked at. Both are counted from the entries themselves.
+
+export interface SourceLike {
+  url: string;
+  title?: string;
+  dateAccessed?: string;
+}
+
+/** Ordered bucket keys; the page maps these to the Editorial Light palette. */
+export type BucketKey =
+  | 'belowBar' | 'atBar' | 'wellSourced' | 'stronglySourced'
+  | 'under30' | 'd30to90' | 'd90to180' | 'over180' | 'none';
+
+export interface Bucket {
+  key: BucketKey;
+  label: string;
+  count: number;
+}
+
+/**
+ * Entries by how many independent credible sources they carry. The bar is a
+ * threshold, not a grade: below it an entry is unpublished, and above it the
+ * distribution says how far the directory clears its own minimum.
+ */
+export function sourceStrength(credibleCounts: number[], min = 3): Bucket[] {
+  const buckets: Bucket[] = [
+    { key: 'belowBar', label: `Below the bar (under ${min})`, count: 0 },
+    { key: 'atBar', label: `At the bar (${min})`, count: 0 },
+    { key: 'wellSourced', label: `Well sourced (${min + 1}–${min + 2})`, count: 0 },
+    { key: 'stronglySourced', label: `Strongly sourced (${min + 3}+)`, count: 0 },
+  ];
+  for (const n of credibleCounts) {
+    if (n < min) buckets[0].count++;
+    else if (n === min) buckets[1].count++;
+    else if (n <= min + 2) buckets[2].count++;
+    else buckets[3].count++;
+  }
+  return buckets;
+}
+
+/** Whole days between two ISO dates, or null if either is unusable. */
+export function daysBetween(from: string | undefined | null, to: string): number | null {
+  if (!from || !/^\d{4}-\d{2}-\d{2}/.test(from)) return null;
+  const start = Date.parse(from.slice(0, 10));
+  const end = Date.parse(to.slice(0, 10));
+  if (Number.isNaN(start) || Number.isNaN(end)) return null;
+  return Math.floor((end - start) / 86_400_000);
+}
+
+/** The most recent of a set of ISO dates, ignoring anything unparseable. */
+export function newestDate(dates: (string | undefined | null)[]): string | null {
+  const valid = dates.filter((d): d is string => !!d && /^\d{4}-\d{2}-\d{2}/.test(d)).map((d) => d.slice(0, 10));
+  return valid.length > 0 ? valid.sort().at(-1)! : null;
+}
+
+/**
+ * How long ago each entry was last touched, bucketed. A date in the future is
+ * treated as today rather than dropped: it is still evidence, just badly typed.
+ */
+export function ageDistribution(dates: (string | null)[], today: string, noneLabel = 'None recorded'): Bucket[] {
+  const buckets: Bucket[] = [
+    { key: 'under30', label: 'Within 30 days', count: 0 },
+    { key: 'd30to90', label: '30–90 days', count: 0 },
+    { key: 'd90to180', label: '90–180 days', count: 0 },
+    { key: 'over180', label: 'Over 180 days', count: 0 },
+    { key: 'none', label: noneLabel, count: 0 },
+  ];
+  for (const date of dates) {
+    const days = daysBetween(date, today);
+    if (days === null) buckets[4].count++;
+    else if (days < 30) buckets[0].count++;
+    else if (days < 90) buckets[1].count++;
+    else if (days < 180) buckets[2].count++;
+    else buckets[3].count++;
+  }
+  return buckets;
+}
+
+export interface DomainRow {
+  domain: string;
+  entries: number;
+  urls: number;
+  credible: boolean;
+}
+
+export interface DomainConcentration {
+  totalUrls: number;
+  distinctDomains: number;
+  rows: DomainRow[];
+}
+
+/**
+ * Which outlets the directory leans on, counted by how many distinct entries cite
+ * them. Published as a check on itself: a directory that gets a third of its
+ * evidence from one outlet is not as independently sourced as its source counts
+ * suggest. `isCredible` is passed in so this stays a pure function.
+ */
+export function sourceConcentration(
+  entries: { sources?: SourceLike[] }[],
+  isCredible: (source: SourceLike) => boolean,
+  limit = 15,
+): DomainConcentration {
+  const entryCounts = new Map<string, number>();
+  const urlCounts = new Map<string, number>();
+  const credibility = new Map<string, boolean>();
+  let totalUrls = 0;
+
+  for (const entry of entries) {
+    const seenHere = new Set<string>();
+    for (const source of entry.sources ?? []) {
+      const domain = hostname(source.url);
+      if (!domain) continue;
+      totalUrls++;
+      urlCounts.set(domain, (urlCounts.get(domain) ?? 0) + 1);
+      credibility.set(domain, isCredible(source));
+      if (!seenHere.has(domain)) {
+        seenHere.add(domain);
+        entryCounts.set(domain, (entryCounts.get(domain) ?? 0) + 1);
+      }
+    }
+  }
+
+  const rows = [...entryCounts.entries()]
+    .map(([domain, entriesCiting]) => ({
+      domain,
+      entries: entriesCiting,
+      urls: urlCounts.get(domain) ?? 0,
+      credible: credibility.get(domain) ?? true,
+    }))
+    .sort((a, b) => b.entries - a.entries || a.domain.localeCompare(b.domain));
+
+  return { totalUrls, distinctDomains: rows.length, rows: rows.slice(0, limit) };
+}
+
+/** Bare hostname, `www.` stripped. Returns null for anything unparseable. */
+export function hostname(url: string | undefined): string | null {
+  if (!url) return null;
+  try {
+    return new URL(url).hostname.replace(/^www\./, '').toLowerCase();
+  } catch {
+    return null;
+  }
+}
