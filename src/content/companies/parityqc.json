@@ -82,6 +82,13 @@
   ],
   "news": [
     {
+      "title": "Parity-unfolded distillation architecture for noise-biased platforms",
+      "excerpt": "Physicists from ParityQC and University of Innsbruck introduced a fault-tolerant quantum computing scheme designed to lower resource overhead required for non-Clifford gates.",
+      "url": "https://arxiv.org/abs/2604.15436",
+      "source": "arXiv",
+      "date": "2026-04-16"
+    },
+    {
       "title": "Classiq and ParityQC Partner to Optimize and Streamline Quantum Execution",
       "excerpt": "Classiq and ParityQC announced a partnership to integrate ParityQC's Parity Twine technology with Classiq's quantum software engineering platform to improve quantum program execution on hardware with limited qubit connectivity.",
       "url": "https://www.hpcwire.com/off-the-wire/classiq-and-parityqc-partner-to-optimize-and-streamline-quantum-execution/",
