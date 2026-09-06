@@ -111,6 +111,18 @@
       "url": "https://thequantuminsider.com/2026/08/29/pasqal-shares-nearly-double-in-nasdaq-debut/",
       "title": "Pasqal Shares Nearly Double in Nasdaq Debut - The Quantum Insider",
       "dateAccessed": "2026-08-30"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/09/02/pasqal-true-nexus-quantum-computing-protein-function/",
+      "title": "Pasqal and True Nexus Apply Quantum Computing to Protein Gelation",
+      "dateAccessed": "2026-09-06"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/pasqal-and-true-nexus-advance-quantum-approach-to-protein-design/",
+      "title": "Pasqal and True Nexus Advance Quantum Approach to Protein Design",
+      "dateAccessed": "2026-09-06"
     }
   ],
   "news": [
@@ -274,6 +286,13 @@
       "url": "https://thequantuminsider.com/2026/08/29/pasqal-shares-nearly-double-in-nasdaq-debut/",
       "source": "The Quantum Insider",
       "date": "2026-08-29"
+    },
+    {
+      "title": "Pasqal and True Nexus encode protein gelation structures on neutral-atom QPU in first quantum-biology milestone",
+      "excerpt": "Pasqal and True Nexus announced the successful use of Pasqal's neutral-atom quantum computer to encode protein structures relevant to gelation — the process that determines food texture. The collaboration combines AI-driven protein analysis with neutral-atom quantum computing to map how protein structure determines functionality, targeting applications in food technology and biotechnology under Saudi Arabia's Vision 2030 initiative.",
+      "url": "https://thequantuminsider.com/2026/09/02/pasqal-true-nexus-quantum-computing-protein-function/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-02"
     }
   ]
 }
