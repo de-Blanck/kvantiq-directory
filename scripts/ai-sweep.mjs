@@ -27,6 +27,15 @@ const MIN_CREDIBLE_SOURCES = 3;
 // half-validated web-search step can't disrupt the routine sweep. Enable with
 // `--backfill-sources` once it has been confirmed on a live run.
 const BACKFILL_SOURCES = process.argv.includes('--backfill-sources');
+
+// `--only companies/kvantify,companies/q-ant` sweeps exactly those entries and
+// leaves the rotation cursor where it was. For repairing a run that lost work —
+// an interrupted sweep, or entries whose updates were destroyed before they were
+// committed — without spending a whole rotation slice on it.
+const ONLY_ARG = (() => {
+  const flag = process.argv.indexOf('--only');
+  return flag !== -1 ? process.argv[flag + 1] : undefined;
+})();
 const SOURCE_DISCOVERY_TIMEOUT_MS = 120000;
 
 function stripHtml(html) {
@@ -408,6 +417,23 @@ export function readCursor(file = REPORT_FILE) {
 // The slice this run will touch, wrapping past the end of the list so the
 // rotation is continuous. Pure and exported so the wrap-around is testable
 // without running a sweep.
+/**
+ * The entries named by `--only`, in the directory's own order, plus any name that
+ * matched nothing. Accepts `collection/slug` or `collection/slug.json` so a key
+ * copied from a log or from the growth ledger works either way.
+ */
+export function selectTargeted(entries, names) {
+  const wanted = new Set(
+    String(names || '')
+      .split(',')
+      .map((n) => n.trim().replace(/\.json$/, ''))
+      .filter(Boolean),
+  );
+  const plan = entries.filter((e) => wanted.has(`${e.collection}/${e.file.replace(/\.json$/, '')}`));
+  const found = new Set(plan.map((e) => `${e.collection}/${e.file.replace(/\.json$/, '')}`));
+  return { plan, missing: [...wanted].filter((n) => !found.has(n)).sort() };
+}
+
 export function planChunk(entries, startIndex, size) {
   const total = entries.length;
   if (total === 0 || size <= 0) return [];
@@ -480,12 +506,28 @@ async function main() {
 
   const totalEntries = allEntries.length;
   const startIndex = totalEntries ? readCursor() % totalEntries : 0;
-  const plan = planChunk(allEntries, startIndex, CHUNK_SIZE);
+
+  let plan;
+  if (ONLY_ARG) {
+    const targeted = selectTargeted(allEntries, ONLY_ARG);
+    if (targeted.missing.length > 0) {
+      console.error(`--only named ${targeted.missing.length} entr${targeted.missing.length === 1 ? 'y' : 'ies'} that do not exist: ${targeted.missing.join(', ')}`);
+      process.exit(1);
+    }
+    plan = targeted.plan;
+  } else {
+    plan = planChunk(allEntries, startIndex, CHUNK_SIZE);
+  }
+
   let processed = 0;
   let abortReason = null;
 
-  console.log(`Sweeping ${plan.length} of ${totalEntries} entries, starting at index ${startIndex}.`);
-  console.log(`The remaining ${Math.max(0, totalEntries - plan.length)} are covered by later runs.\n`);
+  if (ONLY_ARG) {
+    console.log(`Targeted sweep of ${plan.length} named entr${plan.length === 1 ? 'y' : 'ies'}. The rotation cursor stays at index ${startIndex}.\n`);
+  } else {
+    console.log(`Sweeping ${plan.length} of ${totalEntries} entries, starting at index ${startIndex}.`);
+    console.log(`The remaining ${Math.max(0, totalEntries - plan.length)} are covered by later runs.\n`);
+  }
 
   {
     for (const { collection, file } of plan) {
@@ -556,7 +598,9 @@ async function main() {
   }
 
   // Resume at the entry the run stopped on, so an aborted run loses nothing.
-  const nextIndex = totalEntries ? (startIndex + processed) % totalEntries : 0;
+  // A targeted run repairs specific entries; it must not consume a rotation slice,
+  // so the cursor the next scheduled run reads stays exactly where it was.
+  const nextIndex = ONLY_ARG ? startIndex : totalEntries ? (startIndex + processed) % totalEntries : 0;
 
   const runtimeMs = Date.now() - t0;
   const raw = adherence.raw || 0;
@@ -581,7 +625,11 @@ async function main() {
   if (topCollection && topCollection[1] > 0) highlights.push(`Busiest collection: ${topCollection[0]} (+${topCollection[1]})`);
   highlights.push(`${Object.keys(bySource).length} distinct sources cited across ${Object.keys(byCountry).length} countries`);
   if (totalEntries > plan.length) {
-    highlights.push(`Rotating sweep: entries ${startIndex + 1}\u2013${startIndex + plan.length} of ${totalEntries}; the next run continues from ${nextIndex + 1}`);
+    highlights.push(
+      ONLY_ARG
+        ? `Targeted sweep of ${plan.length} named entries; the rotation is untouched and continues from ${nextIndex + 1}`
+        : `Rotating sweep: entries ${startIndex + 1}\u2013${startIndex + plan.length} of ${totalEntries}; the next run continues from ${nextIndex + 1}`,
+    );
   }
   if (abortReason) {
     highlights.push(`Run stopped early (${abortReason}) after ${processed} of ${plan.length} planned entries \u2014 the rest were not checked, not found empty`);
@@ -608,7 +656,8 @@ async function main() {
     not_checked: results.notChecked,
     news_added: newsAdded,
     chunk: {
-      size: CHUNK_SIZE,
+      mode: ONLY_ARG ? 'targeted' : 'rotation',
+      size: ONLY_ARG ? plan.length : CHUNK_SIZE,
       start_index: startIndex,
       next_index: nextIndex,
       total_entries: totalEntries,

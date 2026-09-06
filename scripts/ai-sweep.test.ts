@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { normalizeNewsItems, isBlocklistedSource, validateDiscoveredSources, planChunk, isQuotaError, readCursor } from './ai-sweep.mjs';
+import { normalizeNewsItems, isBlocklistedSource, validateDiscoveredSources, planChunk, isQuotaError, readCursor, selectTargeted } from './ai-sweep.mjs';
 import { mkdtempSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -178,4 +178,35 @@ test('readCursor falls back to 0 when the file is missing or has no cursor', () 
   const legacy = join(dir, 'legacy.json');
   writeFileSync(legacy, JSON.stringify([{ date: '2026-06-20' }]));
   assert.equal(readCursor(legacy), 0);
+});
+
+test('selectTargeted picks named entries in directory order', () => {
+  const entries = [
+    { collection: 'companies', file: 'a.json' },
+    { collection: 'companies', file: 'b.json' },
+    { collection: 'resources', file: 'c.json' },
+  ];
+  const { plan, missing } = selectTargeted(entries, 'resources/c,companies/a');
+  assert.deepEqual(plan, [
+    { collection: 'companies', file: 'a.json' },
+    { collection: 'resources', file: 'c.json' },
+  ]);
+  assert.deepEqual(missing, []);
+});
+
+test('selectTargeted accepts keys with or without the .json suffix, and trims', () => {
+  const entries = [{ collection: 'companies', file: 'kvantify.json' }];
+  assert.equal(selectTargeted(entries, 'companies/kvantify.json').plan.length, 1);
+  assert.equal(selectTargeted(entries, '  companies/kvantify , ').plan.length, 1);
+});
+
+test('selectTargeted reports names that match nothing rather than silently sweeping less', () => {
+  const entries = [{ collection: 'companies', file: 'a.json' }];
+  const { plan, missing } = selectTargeted(entries, 'companies/a,companies/ghost,typo');
+  assert.equal(plan.length, 1);
+  assert.deepEqual(missing, ['companies/ghost', 'typo']);
+});
+
+test('selectTargeted with no names selects nothing', () => {
+  assert.deepEqual(selectTargeted([{ collection: 'companies', file: 'a.json' }], '').plan, []);
 });

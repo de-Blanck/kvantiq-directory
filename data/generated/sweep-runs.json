@@ -1,6 +1,128 @@
 [
   {
     "date": "2026-09-06",
+    "started_at": "2026-09-06T12:46:32.158Z",
+    "finished_at": "2026-09-06T12:53:16.682Z",
+    "runtime_ms": 404523,
+    "runtime_human": "6m 45s",
+    "model": "claude-haiku-4-5-20251001",
+    "scanned": 10,
+    "updated": 6,
+    "no_change": 4,
+    "skipped": 0,
+    "not_checked": 0,
+    "news_added": 6,
+    "chunk": {
+      "mode": "targeted",
+      "size": 10,
+      "start_index": 0,
+      "next_index": 0,
+      "total_entries": 226,
+      "planned": 10
+    },
+    "aborted": null,
+    "methodology": {
+      "items_proposed": 22,
+      "items_published": 6,
+      "pass_rate_pct": 95.5,
+      "rejected_missing_field": 0,
+      "rejected_bad_date": 0,
+      "rejected_domain_mismatch": 0,
+      "rejected_blocklisted": 1,
+      "rejected_blank_title_source": 0,
+      "empty_excerpt_dropped": 0,
+      "duplicate_url_collapsed": 2
+    },
+    "source_bar": {
+      "min_credible": 3,
+      "below_bar": 0,
+      "backfilled_total": 0,
+      "entries": []
+    },
+    "cross_check": {
+      "entries_checked": 10,
+      "flagged": 1,
+      "contradictions_found": 1,
+      "flags": [
+        {
+          "entry": "companies/parityqc.json",
+          "issues": [
+            "Entry type is 'software', but sources consistently describe ParityQC as 'the quantum architecture company' \u2014 identity/classification conflict"
+          ]
+        }
+      ]
+    },
+    "by_collection": {
+      "companies": {
+        "scanned": 10,
+        "updated": 6,
+        "news_added": 6
+      },
+      "benchmarks": {
+        "scanned": 0,
+        "updated": 0,
+        "news_added": 0
+      },
+      "use-cases": {
+        "scanned": 0,
+        "updated": 0,
+        "news_added": 0
+      },
+      "challenges": {
+        "scanned": 0,
+        "updated": 0,
+        "news_added": 0
+      },
+      "resources": {
+        "scanned": 0,
+        "updated": 0,
+        "news_added": 0
+      }
+    },
+    "by_country": {
+      "Denmark": 3,
+      "Germany": 2,
+      "Austria": 1
+    },
+    "top_sources": [
+      {
+        "source": "Lundbeck Foundation",
+        "count": 1
+      },
+      {
+        "source": "Innovation Fund Denmark",
+        "count": 1
+      },
+      {
+        "source": "NVision Quantum",
+        "count": 1
+      },
+      {
+        "source": "arXiv",
+        "count": 1
+      },
+      {
+        "source": "Quantum Computing Report",
+        "count": 1
+      },
+      {
+        "source": "The Quantum Insider",
+        "count": 1
+      }
+    ],
+    "not_found": [],
+    "highlights": [
+      "Most active country: Denmark (+3 news items)",
+      "Most-cited source: Lundbeck Foundation (1x)",
+      "Busiest collection: companies (+6)",
+      "6 distinct sources cited across 3 countries",
+      "Targeted sweep of 10 named entries; the rotation is untouched and continues from 1",
+      "1 item(s) rejected at source to uphold the methodology (anti-fabrication + schema)",
+      "1 entry flagged for source contradictions by the cross-check"
+    ]
+  },
+  {
+    "date": "2026-09-06",
     "started_at": "2026-09-06T01:28:36.262Z",
     "finished_at": "2026-09-06T06:18:01.895Z",
     "runtime_ms": 17365631,
@@ -46,7 +168,7 @@
         {
           "entry": "companies/beit.json",
           "issues": [
-            "Founding year: entry and thequantuminsider.com state 2016, but rdworldonline.com states the R&D base in Kraków was founded in 2017 per the company's own account (with Delaware incorporation in 2018)"
+            "Founding year: entry and thequantuminsider.com state 2016, but rdworldonline.com states the R&D base in Krak\u00f3w was founded in 2017 per the company's own account (with Delaware incorporation in 2018)"
           ]
         },
         {
@@ -58,7 +180,7 @@
         {
           "entry": "companies/diasense.json",
           "issues": [
-            "Entry states total funding approximately €1.8M; The Quantum Insider reports BII's investment alone totals €1.9M (March 4, 2026 source), meaning total funding must exceed €1.8M."
+            "Entry states total funding approximately \u20ac1.8M; The Quantum Insider reports BII's investment alone totals \u20ac1.9M (March 4, 2026 source), meaning total funding must exceed \u20ac1.8M."
           ]
         },
         {
@@ -165,10 +287,11 @@
       "Most-cited source: Quantum Computing Report (3x)",
       "Busiest collection: companies (+9)",
       "7 distinct sources cited across 4 countries",
-      "Rotating sweep: entries 1–60 of 226; the next run continues from 61",
+      "Rotating sweep: entries 1\u201360 of 226; the next run continues from 61",
       "3 item(s) rejected at source to uphold the methodology (anti-fabrication + schema)",
       "7 entries flagged for source contradictions by the cross-check"
-    ]
+    ],
+    "note": "Nine entries were updated during this run, but the edits were destroyed in the working checkout by a `git reset --hard` before the commit, so the pull request carried only this record. Six were recovered by the targeted run of the same date; the rest are left to the normal rotation."
   },
   {
     "date": "2026-09-04",
@@ -219,7 +342,7 @@
         {
           "entry": "companies/algorithmiq.json",
           "issues": [
-            "Entry states total funding 'over EUR 36M' but sources state exactly €36 million"
+            "Entry states total funding 'over EUR 36M' but sources state exactly \u20ac36 million"
           ]
         },
         {
@@ -267,220 +390,220 @@
       }
     ],
     "not_found": [
-      "companies/c12.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/celare-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/copenhagen-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/creotech-instruments.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/cryptomathic.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/cubiq-technologies.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/delft-circuits.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/diasense.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/eleqtron.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/ephos.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/equal1.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/eviden-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/frostbyte.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/groove-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/hqs.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/id-quantique.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/iqm.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/isentroniq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/keequant.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/kipu-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/kiutra.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/kvantify.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/lizard-photonics.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/low-noise-factory.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/magnolia-quantum-sensing.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/molecular-quantum-solutions.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/multiverse-computing.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/nkt-photonics.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/nu-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/nvision-imaging.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/oqc.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/orange-quantum-systems.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/orca-computing.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/parityqc.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/partisia.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/pasqal.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/peak-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/phasecraft.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/pixel-photonics.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/planqc.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/psiqre.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/q-ant.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/q-bird.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qailinks-denmark.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qbee.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qblox.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qdevil.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qfactory.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qilimanjaro.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qmill.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qnami.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qphox.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qpurpose.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qruise.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qsensato.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qt-sense.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qti.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qtlabs.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/quandela.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/quanscient.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/quantastica.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/quantcore.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/quantinuum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/quantum-dice.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/quantum-fabrix.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/quantum-foundry-copenhagen.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/quantum-industries.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/quantum-motion.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/quantum-optics-jena.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/quantumdiamonds.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/quantumsong.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/quantware.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qubit-pharmaceuticals.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/quix-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qunasys-denmark.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qunorth.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/quobly.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qutools.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qutwo.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/qversion.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/riverlane.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/rotonium.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/saxonq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/scalinq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/semiqon.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/silent-waves.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/siphotonic.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/sparrow-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/terra-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/thinkquantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/universal-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/veriqloud.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/welinq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/xeedq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/xiphera.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/zerothird.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/zurich-instruments.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "companies/zuriq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/algorithmic-qubits.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/certified-randomness-quantinuum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/clops.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/dwave-spin-glass-dynamics.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/fermi-hubbard.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/grover-search-scaling.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/h2o-molecule.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/hubbard-model.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/knapsack-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/lih-ground-state.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/mirror-circuits.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/mqt-bench.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/n2-dissociation.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/portfolio-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/q-score.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/qaoa-maxcut.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/qed-c-application-benchmarks.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/qed-c-benchmarks.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/qkd-throughput.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/qnn-classification.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/quantum-approximate-counting.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/quantum-centric-chemistry-ibm-heron.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/quantum-generative-model.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/quantum-kernel-methods.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/quantum-volume.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/qubo-benchmark.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/randomized-benchmarking.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/rcs-phase-transition.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/reconfigurable-atom-logical-processor.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/shor-factoring.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/supermarq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/surface-code-below-threshold.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/tensor-network-eagle-kicked-ising.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/transverse-field-ising.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/tsp-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/variational-classifier.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/vqe-hydrogen.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/weighted-maxcut.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "benchmarks/xeb-cross-entropy.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/aircraft-loading-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/battery-materials-simulation.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/carbon-capture-modeling.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/carbon-emissions-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/catalyst-design-green-hydrogen.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/credit-risk-modeling.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/cryptography-post-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/derivatives-pricing.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/drug-discovery-hybrid.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/energy-grid-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/fraud-detection.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/portfolio-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/production-scheduling.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/protein-folding-simulation.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/qkd-networks.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/quantum-chemistry-materials.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/quantum-machine-learning-classification.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/quantum-random-number-generation.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/supply-chain-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/telecom-network-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/vehicle-routing-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/warehouse-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "use-cases/weather-forecasting.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "challenges/airbus-bmw-quantum-challenge.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "challenges/berlin-quantum-hackathon.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "challenges/blaise-pascal-quantum-challenge-2025.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "challenges/classiq-coding-competition.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "challenges/eurohpc-quantum-grand-challenge.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "challenges/ibm-quantum-challenge.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "challenges/iquhack-2026.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "challenges/qhack-2025.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "challenges/qosf-monthly-challenges.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "challenges/quantum-game-jam-2025.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "challenges/wacqt-quantum-hackathon-2026.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "challenges/xprize-quantum-applications.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/bmbf-quantum-technologies.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/brilliant-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/cern-qti-lectures.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/cirq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/cuda-q.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/danish-quantum-community.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/denmark-quantum-funding.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/eic-accelerator.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/eu-quantum-flagship.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/eurohpc-quantum-computing.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/finnish-quantum-flagship.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/france-national-quantum-strategy.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/ibm-quantum-learning.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/mitiq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/mqt.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/netqasm.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/openqasm.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/pennylane.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/perceval.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/projectq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/pulser.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/pyzx.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/qibo.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/qiskit.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/qosf.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/qtedu.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/quantum-amsterdam.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/quantum-delta-nl.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/quantum-inspire.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/quantum-internet-alliance.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/quantum-katas.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/quic.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/qureca.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/qutip.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/qworld.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/stim.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/strawberry-fields.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/tket.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/tudelft-quantum-101.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/unitary-fund.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/wacqt.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))",
-      "resources/xanadu-codebook.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 2:10pm (Europe/Copenhagen))"
+      "companies/c12.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/celare-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/copenhagen-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/creotech-instruments.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/cryptomathic.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/cubiq-technologies.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/delft-circuits.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/diasense.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/eleqtron.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/ephos.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/equal1.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/eviden-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/frostbyte.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/groove-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/hqs.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/id-quantique.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/iqm.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/isentroniq.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/keequant.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/kipu-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/kiutra.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/kvantify.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/lizard-photonics.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/low-noise-factory.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/magnolia-quantum-sensing.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/molecular-quantum-solutions.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/multiverse-computing.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/nkt-photonics.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/nu-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/nvision-imaging.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/oqc.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/orange-quantum-systems.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/orca-computing.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/parityqc.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/partisia.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/pasqal.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/peak-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/phasecraft.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/pixel-photonics.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/planqc.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/psiqre.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/q-ant.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/q-bird.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qailinks-denmark.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qbee.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qblox.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qdevil.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qfactory.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qilimanjaro.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qmill.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qnami.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qphox.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qpurpose.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qruise.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qsensato.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qt-sense.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qti.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qtlabs.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/quandela.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/quanscient.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantastica.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantcore.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantinuum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantum-dice.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantum-fabrix.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantum-foundry-copenhagen.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantum-industries.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantum-motion.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantum-optics-jena.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantumdiamonds.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantumsong.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/quantware.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qubit-pharmaceuticals.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/quix-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qunasys-denmark.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qunorth.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/quobly.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qutools.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qutwo.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/qversion.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/riverlane.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/rotonium.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/saxonq.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/scalinq.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/semiqon.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/silent-waves.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/siphotonic.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/sparrow-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/terra-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/thinkquantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/universal-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/veriqloud.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/welinq.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/xeedq.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/xiphera.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/zerothird.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/zurich-instruments.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "companies/zuriq.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/algorithmic-qubits.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/certified-randomness-quantinuum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/clops.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/dwave-spin-glass-dynamics.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/fermi-hubbard.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/grover-search-scaling.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/h2o-molecule.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/hubbard-model.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/knapsack-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/lih-ground-state.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/mirror-circuits.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/mqt-bench.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/n2-dissociation.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/portfolio-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/q-score.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/qaoa-maxcut.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/qed-c-application-benchmarks.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/qed-c-benchmarks.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/qkd-throughput.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/qnn-classification.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/quantum-approximate-counting.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/quantum-centric-chemistry-ibm-heron.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/quantum-generative-model.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/quantum-kernel-methods.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/quantum-volume.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/qubo-benchmark.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/randomized-benchmarking.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/rcs-phase-transition.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/reconfigurable-atom-logical-processor.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/shor-factoring.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/supermarq.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/surface-code-below-threshold.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/tensor-network-eagle-kicked-ising.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/transverse-field-ising.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/tsp-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/variational-classifier.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/vqe-hydrogen.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/weighted-maxcut.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "benchmarks/xeb-cross-entropy.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/aircraft-loading-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/battery-materials-simulation.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/carbon-capture-modeling.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/carbon-emissions-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/catalyst-design-green-hydrogen.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/credit-risk-modeling.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/cryptography-post-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/derivatives-pricing.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/drug-discovery-hybrid.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/energy-grid-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/fraud-detection.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/portfolio-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/production-scheduling.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/protein-folding-simulation.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/qkd-networks.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/quantum-chemistry-materials.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/quantum-machine-learning-classification.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/quantum-random-number-generation.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/supply-chain-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/telecom-network-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/vehicle-routing-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/warehouse-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "use-cases/weather-forecasting.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "challenges/airbus-bmw-quantum-challenge.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "challenges/berlin-quantum-hackathon.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "challenges/blaise-pascal-quantum-challenge-2025.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "challenges/classiq-coding-competition.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "challenges/eurohpc-quantum-grand-challenge.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "challenges/ibm-quantum-challenge.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "challenges/iquhack-2026.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "challenges/qhack-2025.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "challenges/qosf-monthly-challenges.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "challenges/quantum-game-jam-2025.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "challenges/wacqt-quantum-hackathon-2026.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "challenges/xprize-quantum-applications.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/bmbf-quantum-technologies.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/brilliant-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/cern-qti-lectures.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/cirq.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/cuda-q.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/danish-quantum-community.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/denmark-quantum-funding.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/eic-accelerator.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/eu-quantum-flagship.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/eurohpc-quantum-computing.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/finnish-quantum-flagship.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/france-national-quantum-strategy.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/ibm-quantum-learning.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/mitiq.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/mqt.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/netqasm.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/openqasm.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/pennylane.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/perceval.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/projectq.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/pulser.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/pyzx.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/qibo.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/qiskit.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/qosf.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/qtedu.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/quantum-amsterdam.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/quantum-delta-nl.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/quantum-inspire.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/quantum-internet-alliance.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/quantum-katas.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/quic.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/qureca.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/qutip.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/qworld.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/stim.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/strawberry-fields.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/tket.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/tudelft-quantum-101.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/unitary-fund.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/wacqt.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))",
+      "resources/xanadu-codebook.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 2:10pm (Europe/Copenhagen))"
     ],
     "highlights": [
       "Most active country: Germany (+1 news items)",
@@ -490,7 +613,7 @@
       "2 entries below the 3-credible-source minimum (backfill worklist)",
       "2 entries flagged for source contradictions by the cross-check"
     ],
-    "note": "This run stopped after 12 entries when the Claude subscription session limit was reached. The 214 counted under \"No sources\" were never checked — the sweep did not reach them, and this counter predates the separate \"Not checked\" figure introduced afterwards. The sweep now stops on a quota error and resumes from that entry on the next run."
+    "note": "This run stopped after 12 entries when the Claude subscription session limit was reached. The 214 counted under \"No sources\" were never checked \u2014 the sweep did not reach them, and this counter predates the separate \"Not checked\" figure introduced afterwards. The sweep now stops on a quota error and resumes from that entry on the next run."
   },
   {
     "date": "2026-08-31",
@@ -636,14 +759,14 @@
         {
           "entry": "companies/diasense.json",
           "issues": [
-            "Total BII funding after March 2026 round: entry states €1.8M but TheQuantumInsider states €1.9M as total BII investment",
+            "Total BII funding after March 2026 round: entry states \u20ac1.8M but TheQuantumInsider states \u20ac1.9M as total BII investment",
             "Location: entry describes as 'Lyngby-based' but multiple sources (TheQuantumInsider, QuantumComputingReport) describe as 'Copenhagen-based'"
           ]
         },
         {
           "entry": "companies/hqs.json",
           "issues": [
-            "Entry describes company as developing 'quantum simulation software for materials science and chemistry applications' and 'materials discovery,' but all sources state HQS develops spectroscopy software (NMR, UV/Vis, IR, relaxometry) for diagnostic and analytical purposes in life sciences, chemistry, and pharma—fundamentally different applications."
+            "Entry describes company as developing 'quantum simulation software for materials science and chemistry applications' and 'materials discovery,' but all sources state HQS develops spectroscopy software (NMR, UV/Vis, IR, relaxometry) for diagnostic and analytical purposes in life sciences, chemistry, and pharma\u2014fundamentally different applications."
           ]
         },
         {
@@ -667,7 +790,7 @@
         {
           "entry": "companies/nvision-imaging.json",
           "issues": [
-            "Entry name is 'NVision Imaging Technologies' but all fetched sources refer to 'NVision' or 'NVision Quantum' (website copyright: '© 2026 NVision Quantum')"
+            "Entry name is 'NVision Imaging Technologies' but all fetched sources refer to 'NVision' or 'NVision Quantum' (website copyright: '\u00a9 2026 NVision Quantum')"
           ]
         },
         {
@@ -703,7 +826,7 @@
         {
           "entry": "companies/qmill.json",
           "issues": [
-            "Entry type is 'software' but fetched sources explicitly describe QMill as 'quantum algorithm and software company' — type should be 'algorithms & software' or similar, not software alone."
+            "Entry type is 'software' but fetched sources explicitly describe QMill as 'quantum algorithm and software company' \u2014 type should be 'algorithms & software' or similar, not software alone."
           ]
         },
         {
@@ -727,7 +850,7 @@
         {
           "entry": "companies/rotonium.json",
           "issues": [
-            "The Quantum Insider refers to 'single-photon qudit technology' while startupbusiness.it refers to 'single-photon qubit' — sources conflict on core technology terminology."
+            "The Quantum Insider refers to 'single-photon qudit technology' while startupbusiness.it refers to 'single-photon qubit' \u2014 sources conflict on core technology terminology."
           ]
         },
         {
@@ -739,13 +862,13 @@
         {
           "entry": "companies/siphotonic.json",
           "issues": [
-            "Entry states turnaround of '1.5-3.5 months' but fetched sources consistently state '1–3 months' for on-demand prototyping runs and '3–4 months' for MPW runs"
+            "Entry states turnaround of '1.5-3.5 months' but fetched sources consistently state '1\u20133 months' for on-demand prototyping runs and '3\u20134 months' for MPW runs"
           ]
         },
         {
           "entry": "companies/sparrow-quantum.json",
           "issues": [
-            "Entry describes December 2025 €27.5M round as a 'follow-on round,' but The Quantum Insider article (Dec 1, 2025) explicitly labels it 'Series A funding'—conflicting with April 2025 article also calling the €21.5M round 'Series A'."
+            "Entry describes December 2025 \u20ac27.5M round as a 'follow-on round,' but The Quantum Insider article (Dec 1, 2025) explicitly labels it 'Series A funding'\u2014conflicting with April 2025 article also calling the \u20ac21.5M round 'Series A'."
           ]
         },
         {
@@ -775,13 +898,13 @@
         {
           "entry": "benchmarks/lih-ground-state.json",
           "issues": [
-            "Entry describes benchmark for lithium hydride (LiH), but fetched source (arxiv.org/abs/2502.09595) benchmarks aluminum clusters (Al⁻, Al₂, Al₃⁻) instead."
+            "Entry describes benchmark for lithium hydride (LiH), but fetched source (arxiv.org/abs/2502.09595) benchmarks aluminum clusters (Al\u207b, Al\u2082, Al\u2083\u207b) instead."
           ]
         },
         {
           "entry": "benchmarks/mqt-bench.json",
           "issues": [
-            "Entry states 'over 70 algorithm implementations'; all three sources consistently state 'more than 70,000 benchmark circuits' — a significant numerical and conceptual discrepancy in describing MQT Bench's content."
+            "Entry states 'over 70 algorithm implementations'; all three sources consistently state 'more than 70,000 benchmark circuits' \u2014 a significant numerical and conceptual discrepancy in describing MQT Bench's content."
           ]
         },
         {
@@ -836,13 +959,13 @@
         {
           "entry": "challenges/quantum-game-jam-2025.json",
           "issues": [
-            "Entry states event ran October 5–7, 2025, but itch.io (official jam page) states it ran September 5–8, 2025."
+            "Entry states event ran October 5\u20137, 2025, but itch.io (official jam page) states it ran September 5\u20138, 2025."
           ]
         },
         {
           "entry": "resources/bmbf-quantum-technologies.json",
           "issues": [
-            "Entry states programme funding exceeds €2 billion; Fraunhofer IOF source (2021) states 1.1 billion euros for the quantum technology funding package"
+            "Entry states programme funding exceeds \u20ac2 billion; Fraunhofer IOF source (2021) states 1.1 billion euros for the quantum technology funding package"
           ]
         },
         {
@@ -854,25 +977,25 @@
         {
           "entry": "resources/eic-accelerator.json",
           "issues": [
-            "Entry claims investments 'ranging from €2.5 million to €17.5 million', but official EIC source states maximum equity investment is €10 million, not €17.5 million."
+            "Entry claims investments 'ranging from \u20ac2.5 million to \u20ac17.5 million', but official EIC source states maximum equity investment is \u20ac10 million, not \u20ac17.5 million."
           ]
         },
         {
           "entry": "resources/ibm-quantum-learning.json",
           "issues": [
-            "Entry type field says 'course' but fetched sources describe IBM Quantum Learning as a 'comprehensive educational platform' and 'library of 10+ courses' — a platform with multiple courses, not a single course."
+            "Entry type field says 'course' but fetched sources describe IBM Quantum Learning as a 'comprehensive educational platform' and 'library of 10+ courses' \u2014 a platform with multiple courses, not a single course."
           ]
         },
         {
           "entry": "resources/netqasm.json",
           "issues": [
-            "Entry mentions simulator backend 'SquidASM' but arXiv paper (2111.09823) states 'Our SDK can be used at home by making use of our existing quantum simulators, NetSquid and SimulaQron' — source names NetSquid, not SquidASM"
+            "Entry mentions simulator backend 'SquidASM' but arXiv paper (2111.09823) states 'Our SDK can be used at home by making use of our existing quantum simulators, NetSquid and SimulaQron' \u2014 source names NetSquid, not SquidASM"
           ]
         },
         {
           "entry": "resources/quantum-delta-nl.json",
           "issues": [
-            "Entry states €615 million from National Growth Fund; EC source states EUR 264 million from Recovery and Resilience Fund"
+            "Entry states \u20ac615 million from National Growth Fund; EC source states EUR 264 million from Recovery and Resilience Fund"
           ]
         },
         {
@@ -884,13 +1007,13 @@
         {
           "entry": "resources/wacqt.json",
           "issues": [
-            "Budget discrepancy: entry states SEK 1.4 billion, but Chalmers website states SEK 1 billion (Wallenberg Foundation source confirms 1.4 billion during 2018–2030)."
+            "Budget discrepancy: entry states SEK 1.4 billion, but Chalmers website states SEK 1 billion (Wallenberg Foundation source confirms 1.4 billion during 2018\u20132030)."
           ]
         },
         {
           "entry": "resources/xanadu-codebook.json",
           "issues": [
-            "Entry name 'Xanadu Quantum Codebook' conflicts with GitHub repo statement that the resource is 'now known as the PennyLane Codebook' — current branding is PennyLane Codebook, not Xanadu Quantum Codebook"
+            "Entry name 'Xanadu Quantum Codebook' conflicts with GitHub repo statement that the resource is 'now known as the PennyLane Codebook' \u2014 current branding is PennyLane Codebook, not Xanadu Quantum Codebook"
           ]
         }
       ]
@@ -1104,7 +1227,7 @@
         {
           "entry": "companies/beit.json",
           "issues": [
-            "Entry states founded 2016, but R&D World Online (2026) states BEIT was founded in 2017 in Kraków (conflicts with both entry and Quantum Insider 2019 article)"
+            "Entry states founded 2016, but R&D World Online (2026) states BEIT was founded in 2017 in Krak\u00f3w (conflicts with both entry and Quantum Insider 2019 article)"
           ]
         },
         {
@@ -1122,13 +1245,13 @@
         {
           "entry": "companies/diasense.json",
           "issues": [
-            "Total BII funding amount: Quantum Insider reports €1.9M, Quantum Computing Report reports €1.8M (entry claims ~€1.8M)"
+            "Total BII funding amount: Quantum Insider reports \u20ac1.9M, Quantum Computing Report reports \u20ac1.8M (entry claims ~\u20ac1.8M)"
           ]
         },
         {
           "entry": "companies/hqs.json",
           "issues": [
-            "Entry describes HQS as 'quantum simulation software for materials science...applications' and 'accelerate materials discovery', but all fetched sources describe HQS as spectroscopy software (NMR, UV/Vis, IR) for life sciences, chemistry, and pharma—with no mention of materials science or materials discovery."
+            "Entry describes HQS as 'quantum simulation software for materials science...applications' and 'accelerate materials discovery', but all fetched sources describe HQS as spectroscopy software (NMR, UV/Vis, IR) for life sciences, chemistry, and pharma\u2014with no mention of materials science or materials discovery."
           ]
         }
       ]
@@ -1548,7 +1671,7 @@
         {
           "entry": "companies/adamantq.json",
           "issues": [
-            "Entry name is 'AdamantQ', but official funding announcement (Navigare Ventures, 2023-06-19) consistently refers to the company as 'Adamant Quanta' — legal entity name may be 'Adamant Quanta' rather than 'AdamantQ'."
+            "Entry name is 'AdamantQ', but official funding announcement (Navigare Ventures, 2023-06-19) consistently refers to the company as 'Adamant Quanta' \u2014 legal entity name may be 'Adamant Quanta' rather than 'AdamantQ'."
           ]
         },
         {
@@ -1578,7 +1701,7 @@
         {
           "entry": "companies/diasense.json",
           "issues": [
-            "Total BII funding amount: The Quantum Insider states €1.9M, while Quantum Computing Report and entry both state €1.8M."
+            "Total BII funding amount: The Quantum Insider states \u20ac1.9M, while Quantum Computing Report and entry both state \u20ac1.8M."
           ]
         },
         {
@@ -1608,7 +1731,7 @@
         {
           "entry": "companies/qilimanjaro.json",
           "issues": [
-            "Entry claims 'the first multimodal quantum data center in Europe' but source characterizes MareNostrum-Ona as 'one of the most advanced of its kind in Europe'—implying others exist."
+            "Entry claims 'the first multimodal quantum data center in Europe' but source characterizes MareNostrum-Ona as 'one of the most advanced of its kind in Europe'\u2014implying others exist."
           ]
         },
         {
@@ -1626,7 +1749,7 @@
         {
           "entry": "companies/rotonium.json",
           "issues": [
-            "The Quantum Insider describes the core technology as 'single-photon qudit' while StartupBusiness.it describes it as 'single-photon qubit'—different quantum computing concepts."
+            "The Quantum Insider describes the core technology as 'single-photon qudit' while StartupBusiness.it describes it as 'single-photon qubit'\u2014different quantum computing concepts."
           ]
         },
         {
@@ -1644,7 +1767,7 @@
         {
           "entry": "companies/sparrow-quantum.json",
           "issues": [
-            "Entry calls December 2025 €27.5M a 'follow-on round', but The Quantum Insider source explicitly states it is a 'Series A round'."
+            "Entry calls December 2025 \u20ac27.5M a 'follow-on round', but The Quantum Insider source explicitly states it is a 'Series A round'."
           ]
         },
         {
@@ -1674,7 +1797,7 @@
         {
           "entry": "benchmarks/lih-ground-state.json",
           "issues": [
-            "Entry describes benchmark for lithium hydride (LiH) ground-state energy, but fetched paper (arXiv:2502.09595) benchmarks aluminum clusters (Al⁻, Al₂, Al₃⁻) for ground-state energy estimation instead."
+            "Entry describes benchmark for lithium hydride (LiH) ground-state energy, but fetched paper (arXiv:2502.09595) benchmarks aluminum clusters (Al\u207b, Al\u2082, Al\u2083\u207b) for ground-state energy estimation instead."
           ]
         },
         {
@@ -1711,7 +1834,7 @@
         {
           "entry": "benchmarks/qubo-benchmark.json",
           "issues": [
-            "Entry states benchmark compares 'gate-based QAOA' against other solvers, but arXiv:2104.14096 benchmarks only D-Wave HSS, Toshiba SBM, Fujitsu DA, and simulated annealing—no QAOA."
+            "Entry states benchmark compares 'gate-based QAOA' against other solvers, but arXiv:2104.14096 benchmarks only D-Wave HSS, Toshiba SBM, Fujitsu DA, and simulated annealing\u2014no QAOA."
           ]
         },
         {
@@ -1749,19 +1872,19 @@
         {
           "entry": "resources/bmbf-quantum-technologies.json",
           "issues": [
-            "Entry claims program funds 'exceeding €2 billion'; Fraunhofer IOF source (May 2021) states '1.1 billion euros' announced for five-year period"
+            "Entry claims program funds 'exceeding \u20ac2 billion'; Fraunhofer IOF source (May 2021) states '1.1 billion euros' announced for five-year period"
           ]
         },
         {
           "entry": "resources/cern-qti-lectures.json",
           "issues": [
-            "Entry states series began March 2023, but Inside Quantum Technology (2020-11-06) reports CERN lecture series starting November 6, 2020—conflicting start dates."
+            "Entry states series began March 2023, but Inside Quantum Technology (2020-11-06) reports CERN lecture series starting November 6, 2020\u2014conflicting start dates."
           ]
         },
         {
           "entry": "resources/eic-accelerator.json",
           "issues": [
-            "Entry states investments 'ranging from €2.5 million to €17.5 million', but official EIC source states investment component is 'Up to €10 million'"
+            "Entry states investments 'ranging from \u20ac2.5 million to \u20ac17.5 million', but official EIC source states investment component is 'Up to \u20ac10 million'"
           ]
         },
         {
@@ -1779,13 +1902,13 @@
         {
           "entry": "resources/quantum-delta-nl.json",
           "issues": [
-            "Funding mismatch: entry states '€615 million from the National Growth Fund' but EC source states 'EUR 264 million from the Recovery and Resilience Fund'"
+            "Funding mismatch: entry states '\u20ac615 million from the National Growth Fund' but EC source states 'EUR 264 million from the Recovery and Resilience Fund'"
           ]
         },
         {
           "entry": "resources/wacqt.json",
           "issues": [
-            "Entry states budget 'SEK 1.4 billion', but Chalmers sources consistently state 'SEK 1 billion' (Wallenberg Foundation source confirms 1.4 billion for 2018–2030 period)"
+            "Entry states budget 'SEK 1.4 billion', but Chalmers sources consistently state 'SEK 1 billion' (Wallenberg Foundation source confirms 1.4 billion for 2018\u20132030 period)"
           ]
         }
       ]
@@ -2358,34 +2481,34 @@
         {
           "entry": "companies/cryptomathic.json",
           "issues": [
-            "Entry claims Cryptomathic was 'spun out of Aarhus University' but sources only confirm founding in Aarhus, Denmark—no university spinout mentioned.",
+            "Entry claims Cryptomathic was 'spun out of Aarhus University' but sources only confirm founding in Aarhus, Denmark\u2014no university spinout mentioned.",
             "IQT article (2022) states 'founded 37 years ago' suggesting 1985, conflicting with entry and Global Security Mag's 1986 date."
           ]
         },
         {
           "entry": "companies/delft-circuits.json",
           "issues": [
-            "Entry claims 'eight times greater channel density' but sources only state 'eight channels per flex' (absolute count) and 'up to 50% more channels per side-loading port' — the multiplier is unsupported."
+            "Entry claims 'eight times greater channel density' but sources only state 'eight channels per flex' (absolute count) and 'up to 50% more channels per side-loading port' \u2014 the multiplier is unsupported."
           ]
         },
         {
           "entry": "companies/diasense.json",
           "issues": [
             "Entry states company is 'Lyngby-based,' but sources describe it as 'Copenhagen-based'",
-            "Total BII funding contradicts between sources: €1.9 million (The Quantum Insider) vs €1.8 million (Quantum Computing Report)"
+            "Total BII funding contradicts between sources: \u20ac1.9 million (The Quantum Insider) vs \u20ac1.8 million (Quantum Computing Report)"
           ]
         },
         {
           "entry": "companies/eleqtron.json",
           "issues": [
-            "LinkedIn source (https://www.linkedin.com/company/eleqtron/) is for a different company: Eleqtron Projects B.V. in Numansdorp, Netherlands, founded 2002, construction/EV charging hardware — not quantum computing.",
+            "LinkedIn source (https://www.linkedin.com/company/eleqtron/) is for a different company: Eleqtron Projects B.V. in Numansdorp, Netherlands, founded 2002, construction/EV charging hardware \u2014 not quantum computing.",
             "Entry claims 'Spun out from the University of Siegen' but fetched sources only state it came from 'Spitzenforschung' (top research) without naming the university."
           ]
         },
         {
           "entry": "companies/ephos.json",
           "issues": [
-            "Entry claims EUR 41.5M from EU Chips Act; sources report $8.5M seed round from Starlight Ventures with non-dilutive EIC and NATO funding—no EU Chips Act mentioned.",
+            "Entry claims EUR 41.5M from EU Chips Act; sources report $8.5M seed round from Starlight Ventures with non-dilutive EIC and NATO funding\u2014no EU Chips Act mentioned.",
             "Entry states founders include Stanford, Harvard, and Politecnico di Milano researchers; sources identify only Andrea Rocchetto (theoretical physicist) as founder.",
             "Entry references 'second manufacturing facility'; sources describe only the first Milan facility with no mention of a second."
           ]
@@ -2406,7 +2529,7 @@
         {
           "entry": "companies/kipu-quantum.json",
           "issues": [
-            "Entry describes 'compressed quantum algorithms' but fetched sources use 'energy-efficient, problem-specific quantum algorithms'—term 'compressed' does not appear"
+            "Entry describes 'compressed quantum algorithms' but fetched sources use 'energy-efficient, problem-specific quantum algorithms'\u2014term 'compressed' does not appear"
           ]
         },
         {
@@ -2419,7 +2542,7 @@
           "entry": "companies/lizard-photonics.json",
           "issues": [
             "Founded: 2024 is not verified in any source.",
-            "Søren Stobbe confirmed as DTU professor in EQUAL project; sources do not verify his role as CSO at Lizard Photonics."
+            "S\u00f8ren Stobbe confirmed as DTU professor in EQUAL project; sources do not verify his role as CSO at Lizard Photonics."
           ]
         },
         {
@@ -2461,7 +2584,7 @@
         {
           "entry": "companies/partisia.json",
           "issues": [
-            "Entry claims 'DKK 25.9M Innovation Fund Denmark AccessQKD project' but fetched QGRID announcement states 13.8M kroner for QGRID—unclear if these are the same project or different initiatives.",
+            "Entry claims 'DKK 25.9M Innovation Fund Denmark AccessQKD project' but fetched QGRID announcement states 13.8M kroner for QGRID\u2014unclear if these are the same project or different initiatives.",
             "Entry emphasizes MPC as core identity but official Partisia website (partisia.com) now leads with Decentralized Identity as primary product focus, with MPC as a supporting technology."
           ]
         },
@@ -2544,7 +2667,7 @@
         {
           "entry": "companies/qt-sense.json",
           "issues": [
-            "Entry claims target applications include sepsis and inflammatory diseases; fetched sources list only cardiology, oncology, infectious diseases, and neurodegenerative—no explicit mention of sepsis or inflammatory diseases."
+            "Entry claims target applications include sepsis and inflammatory diseases; fetched sources list only cardiology, oncology, infectious diseases, and neurodegenerative\u2014no explicit mention of sepsis or inflammatory diseases."
           ]
         },
         {
@@ -2556,7 +2679,7 @@
         {
           "entry": "companies/quantastica.json",
           "issues": [
-            "Founded: 2019 — sources reference May 2019 as the Quantum Programming Studio's Rigetti Developer Partner partnership date, not as company founding year"
+            "Founded: 2019 \u2014 sources reference May 2019 as the Quantum Programming Studio's Rigetti Developer Partner partnership date, not as company founding year"
           ]
         }
       ],
@@ -2643,137 +2766,137 @@
       "companies/molecular-quantum-solutions.json (claude error: claude -p timed out after 60000ms)",
       "companies/psiqre.json (claude error: claude -p timed out after 60000ms)",
       "companies/q-bird.json (claude error: claude -p timed out after 60000ms)",
-      "companies/saxonq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "companies/scalinq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "companies/semiqon.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "companies/silent-waves.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "companies/siphotonic.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "companies/sparrow-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "companies/terra-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "companies/thinkquantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "companies/universal-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "companies/veriqloud.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "companies/welinq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "companies/xeedq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "companies/xiphera.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "companies/zurich-instruments.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "companies/zuriq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/algorithmic-qubits.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/certified-randomness-quantinuum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/clops.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/dwave-spin-glass-dynamics.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/fermi-hubbard.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/grover-search-scaling.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/h2o-molecule.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/hubbard-model.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/knapsack-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/lih-ground-state.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/mirror-circuits.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/mqt-bench.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/n2-dissociation.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/portfolio-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/q-score.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/qaoa-maxcut.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/qed-c-application-benchmarks.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/qed-c-benchmarks.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/qkd-throughput.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/qnn-classification.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/quantum-approximate-counting.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/quantum-centric-chemistry-ibm-heron.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/quantum-generative-model.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/quantum-kernel-methods.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/quantum-volume.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/qubo-benchmark.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/randomized-benchmarking.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/rcs-phase-transition.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/reconfigurable-atom-logical-processor.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/shor-factoring.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/supermarq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/surface-code-below-threshold.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/tensor-network-eagle-kicked-ising.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/transverse-field-ising.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/tsp-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/variational-classifier.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/vqe-hydrogen.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/weighted-maxcut.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "benchmarks/xeb-cross-entropy.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/aircraft-loading-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/battery-materials-simulation.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/carbon-capture-modeling.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/carbon-emissions-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/catalyst-design-green-hydrogen.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/credit-risk-modeling.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/cryptography-post-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/derivatives-pricing.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/drug-discovery-hybrid.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "companies/saxonq.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "companies/scalinq.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "companies/semiqon.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "companies/silent-waves.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "companies/siphotonic.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "companies/sparrow-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "companies/terra-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "companies/thinkquantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "companies/universal-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "companies/veriqloud.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "companies/welinq.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "companies/xeedq.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "companies/xiphera.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "companies/zurich-instruments.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "companies/zuriq.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/algorithmic-qubits.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/certified-randomness-quantinuum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/clops.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/dwave-spin-glass-dynamics.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/fermi-hubbard.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/grover-search-scaling.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/h2o-molecule.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/hubbard-model.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/knapsack-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/lih-ground-state.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/mirror-circuits.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/mqt-bench.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/n2-dissociation.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/portfolio-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/q-score.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/qaoa-maxcut.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/qed-c-application-benchmarks.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/qed-c-benchmarks.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/qkd-throughput.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/qnn-classification.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/quantum-approximate-counting.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/quantum-centric-chemistry-ibm-heron.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/quantum-generative-model.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/quantum-kernel-methods.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/quantum-volume.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/qubo-benchmark.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/randomized-benchmarking.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/rcs-phase-transition.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/reconfigurable-atom-logical-processor.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/shor-factoring.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/supermarq.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/surface-code-below-threshold.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/tensor-network-eagle-kicked-ising.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/transverse-field-ising.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/tsp-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/variational-classifier.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/vqe-hydrogen.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/weighted-maxcut.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "benchmarks/xeb-cross-entropy.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/aircraft-loading-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/battery-materials-simulation.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/carbon-capture-modeling.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/carbon-emissions-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/catalyst-design-green-hydrogen.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/credit-risk-modeling.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/cryptography-post-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/derivatives-pricing.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/drug-discovery-hybrid.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
       "use-cases/energy-grid-optimization.json (claude error: claude -p timed out after 60000ms)",
-      "use-cases/fraud-detection.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/portfolio-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/production-scheduling.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/protein-folding-simulation.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/qkd-networks.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/quantum-chemistry-materials.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/quantum-machine-learning-classification.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/quantum-random-number-generation.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/supply-chain-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/telecom-network-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/vehicle-routing-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/warehouse-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "use-cases/weather-forecasting.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "challenges/airbus-bmw-quantum-challenge.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "challenges/berlin-quantum-hackathon.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "challenges/blaise-pascal-quantum-challenge-2025.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "challenges/classiq-coding-competition.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "challenges/eurohpc-quantum-grand-challenge.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "challenges/ibm-quantum-challenge.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "challenges/iquhack-2026.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "challenges/qhack-2025.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "challenges/qosf-monthly-challenges.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "challenges/quantum-game-jam-2025.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "challenges/wacqt-quantum-hackathon-2026.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "challenges/xprize-quantum-applications.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/bmbf-quantum-technologies.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/brilliant-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/cern-qti-lectures.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/cirq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/cuda-q.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/danish-quantum-community.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/denmark-quantum-funding.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/eic-accelerator.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/eu-quantum-flagship.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/eurohpc-quantum-computing.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/finnish-quantum-flagship.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/france-national-quantum-strategy.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/ibm-quantum-learning.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/mitiq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/mqt.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/netqasm.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/openqasm.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/pennylane.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/perceval.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/projectq.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/pulser.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/pyzx.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/qibo.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/qiskit.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/qosf.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/qtedu.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/quantum-amsterdam.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/fraud-detection.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/portfolio-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/production-scheduling.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/protein-folding-simulation.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/qkd-networks.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/quantum-chemistry-materials.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/quantum-machine-learning-classification.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/quantum-random-number-generation.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/supply-chain-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/telecom-network-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/vehicle-routing-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/warehouse-optimization.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "use-cases/weather-forecasting.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "challenges/airbus-bmw-quantum-challenge.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "challenges/berlin-quantum-hackathon.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "challenges/blaise-pascal-quantum-challenge-2025.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "challenges/classiq-coding-competition.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "challenges/eurohpc-quantum-grand-challenge.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "challenges/ibm-quantum-challenge.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "challenges/iquhack-2026.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "challenges/qhack-2025.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "challenges/qosf-monthly-challenges.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "challenges/quantum-game-jam-2025.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "challenges/wacqt-quantum-hackathon-2026.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "challenges/xprize-quantum-applications.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/bmbf-quantum-technologies.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/brilliant-quantum.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/cern-qti-lectures.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/cirq.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/cuda-q.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/danish-quantum-community.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/denmark-quantum-funding.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/eic-accelerator.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/eu-quantum-flagship.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/eurohpc-quantum-computing.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/finnish-quantum-flagship.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/france-national-quantum-strategy.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/ibm-quantum-learning.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/mitiq.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/mqt.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/netqasm.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/openqasm.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/pennylane.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/perceval.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/projectq.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/pulser.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/pyzx.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/qibo.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/qiskit.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/qosf.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/qtedu.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/quantum-amsterdam.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
       "resources/quantum-delta-nl.json (all fetches failed)",
-      "resources/quantum-inspire.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/quantum-internet-alliance.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/quantum-katas.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/quic.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/qureca.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/qutip.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/qworld.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/stim.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/strawberry-fields.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/tket.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/tudelft-quantum-101.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/unitary-fund.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/wacqt.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))",
-      "resources/xanadu-codebook.json (claude error: claude -p exited with code 1: You've hit your session limit · resets 1:40pm (Europe/Copenhagen))"
+      "resources/quantum-inspire.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/quantum-internet-alliance.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/quantum-katas.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/quic.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/qureca.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/qutip.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/qworld.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/stim.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/strawberry-fields.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/tket.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/tudelft-quantum-101.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/unitary-fund.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/wacqt.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))",
+      "resources/xanadu-codebook.json (claude error: claude -p exited with code 1: You've hit your session limit \u00b7 resets 1:40pm (Europe/Copenhagen))"
     ],
     "highlights": [
       "Most active country: Denmark (+21 news items)",
@@ -2832,9 +2955,9 @@
     "highlights": [
       "~47 news items published across 69 entries",
       "Methodology fix shipped right after this run: 7 news items from excluded sources (LinkedIn etc.) were removed directory-wide, and the sweep now rejects blocklisted sources automatically",
-      "3 entries returned no usable result (1 fetch failure, 1 model timeout, 1 null-byte fetch — fetch sanitization added)"
+      "3 entries returned no usable result (1 fetch failure, 1 model timeout, 1 null-byte fetch \u2014 fetch sanitization added)"
     ],
-    "note": "Methodology rejection counters and country breakdown were not captured — this run predates the per-run instrumentation, which lands on the next sweep."
+    "note": "Methodology rejection counters and country breakdown were not captured \u2014 this run predates the per-run instrumentation, which lands on the next sweep."
   },
   {
     "date": "2026-06-20",
@@ -2876,6 +2999,6 @@
       "Most-cited source: The Quantum Insider (17x)",
       "151 news items published across 93 entries"
     ],
-    "note": "Reconstructed from git history — predates per-run instrumentation, so methodology rejection counters and the country breakdown were not captured. In manual cleanup that run, 4 empty-excerpt and 34 duplicate-URL items were removed."
+    "note": "Reconstructed from git history \u2014 predates per-run instrumentation, so methodology rejection counters and the country breakdown were not captured. In manual cleanup that run, 4 empty-excerpt and 34 duplicate-URL items were removed."
   }
 ]
