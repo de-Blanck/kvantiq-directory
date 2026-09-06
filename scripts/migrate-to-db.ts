@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync, existsSync } from 'fs';
+import { readFileSync, readdirSync, existsSync, writeFileSync, mkdirSync } from 'fs';
 import { resolve, basename } from 'path';
 import { execSync } from 'child_process';
 import { v4 as uuid } from 'uuid';
@@ -76,7 +76,7 @@ function getFoundedDate(founded: number | string | undefined): string | null {
   return year.length === 4 ? `${year}-01-01` : year;
 }
 
-function getGitCreationDate(filePath: string): string {
+function getGitCreationDate(filePath: string): string | null {
   try {
     const result = execSync(
       `git log --follow --format=%aI --diff-filter=A -- "${filePath.replace(/\\/g, '/')}"`,
@@ -91,7 +91,56 @@ function getGitCreationDate(filePath: string): string {
   } catch {
     // git not available or file not tracked
   }
-  return TODAY;
+  return null;
+}
+
+// ── First-seen ledger ────────────────────────────────────────────────────────
+// `date_added` drives the Directory Growth chart on /transparency/audit/, and git
+// history is the only place the real dates live. But the deploy upload excludes
+// `.git` (see .vercelignore), so on Vercel every `git log` above returns nothing
+// and every entry would be dated the build day — the chart collapsed to a single
+// point in production until 2026-09-06.
+//
+// So the dates are resolved once, where history exists, and committed to
+// data/entry-first-seen.json. The ledger is authoritative; git is only consulted
+// for slugs the ledger has never seen, and an entry's date never moves once written.
+const LEDGER_PATH = resolve(import.meta.dirname, '../data/entry-first-seen.json');
+
+type FirstSeenLedger = Record<string, string>;
+
+function loadLedger(): FirstSeenLedger {
+  if (!existsSync(LEDGER_PATH)) return {};
+  try {
+    const parsed = JSON.parse(readFileSync(LEDGER_PATH, 'utf-8')) as unknown;
+    if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
+      return parsed as FirstSeenLedger;
+    }
+    console.warn('[warn] entry-first-seen.json is not an object — starting a new ledger');
+  } catch (err) {
+    console.warn(`[warn] Could not read entry-first-seen.json: ${(err as Error).message}`);
+  }
+  return {};
+}
+
+function saveLedger(ledger: FirstSeenLedger): void {
+  const sorted = Object.fromEntries(
+    Object.entries(ledger).sort(([a], [b]) => a.localeCompare(b))
+  );
+  mkdirSync(resolve(LEDGER_PATH, '..'), { recursive: true });
+  writeFileSync(LEDGER_PATH, JSON.stringify(sorted, null, 2) + '\n');
+}
+
+function hasGitHistory(): boolean {
+  try {
+    execSync('git rev-parse --is-inside-work-tree', {
+      encoding: 'utf-8',
+      cwd: CONTENT_DIR,
+      stdio: ['ignore', 'pipe', 'ignore'],
+    });
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 // ── Main ─────────────────────────────────────────────────────────────────────
@@ -100,6 +149,15 @@ function migrate(): void {
   const db = getDb();
 
   console.log(`[migrate] Content directory: ${CONTENT_DIR}`);
+
+  const ledger = loadLedger();
+  const ledgerSizeBefore = Object.keys(ledger).length;
+  const gitHistory = hasGitHistory();
+  let newlyLedgered = 0;
+  console.log(
+    `[migrate] First-seen ledger: ${ledgerSizeBefore} known slugs` +
+      (gitHistory ? '' : ' (no git history here — unknown slugs fall back to today)')
+  );
 
   // Check for existing entries to skip (idempotency via unique index)
   const existingCount = (db.prepare('SELECT COUNT(*) AS c FROM entries').get() as { c: number }).c;
@@ -183,7 +241,15 @@ function migrate(): void {
         const subcategory = getSubcategory(collection, data);
         const url = getUrl(data);
         const country = data.country ?? null;
-        const dateAdded = getGitCreationDate(resolve(collectionDir, file));
+        const ledgerKey = `${collection}/${slug}`;
+        const dateAdded =
+          ledger[ledgerKey] ??
+          (gitHistory ? getGitCreationDate(resolve(collectionDir, file)) : null) ??
+          TODAY;
+        if (ledger[ledgerKey] !== dateAdded) {
+          ledger[ledgerKey] = dateAdded;
+          newlyLedgered++;
+        }
 
         // Insert into entries (skips if collection+slug already exists)
         const newId = uuid();
@@ -242,6 +308,14 @@ function migrate(): void {
 
   runMigration();
   db.close();
+
+  saveLedger(ledger);
+  if (newlyLedgered > 0) {
+    console.log(
+      `[migrate] First-seen ledger: +${newlyLedgered} slug(s) dated ` +
+        `${gitHistory ? 'from git history' : `${TODAY} (no git history)`} — commit data/entry-first-seen.json`
+    );
+  }
 
   // Summary
   console.log('\n── Migration complete ──────────────────────────────────');
