@@ -97,6 +97,14 @@ which asserted a positive quantum result from a paper concluding the opposite; a
   build if the ledger is missing or the timeline collapses onto the build day. Verified in a
   git-less copy of the repo: correct timeline with the ledger, single point without it.
 
+- **Guards against silent transparency-data loss** — the growth-chart bug passed every
+  existing check because the files were present and non-empty. `check-transparency-data.mjs`
+  now asserts the generated data against `src/content` instead: the first-seen ledger covers
+  every entry, the timeline totals the real entry count, no date is the build day or in the
+  future, and the confidence/coverage/audit totals match. It runs inside `prebuild`, so it
+  runs on Vercel — a build that would ship wrong numbers fails instead. `npm run verify:live`
+  (new) diffs the deployed pages against `dist/` after a production deploy.
+
 ## What's next / open
 
 - [x] **Source-bar backfill complete — 13 of 15 recovered.** 224 of 226 entries published.
@@ -170,10 +178,23 @@ No Git integration on the Vercel project (`link: NONE`) — merging to `main` de
 Production is CLI-only and manual, run from inside the repo:
 
 ```
-vercel --prod --scope synapse-q
+npm run build && vercel --prod --scope synapse-q && npm run verify:live
 ```
 
 Project: `feature-directory-site` on the `synapse-q` team → `directory.kvantiq.studio`.
+
+**`npm run verify:live` is not optional.** Vercel builds from an upload with no `.git`
+and no `data/kvantiq.db`, so a build step can behave differently there than it does
+here — and nothing compared the two until 2026-09-06. It diffs the chart data and the
+empty states on every `/transparency/` page against `dist/`, and exits non-zero on any
+difference. Point it elsewhere with `LIVE_BASE_URL=…` (a bare deployment URL needs
+`vercel curl` — Deployment Protection redirects plain fetches to vercel.com, and the
+script says so rather than reporting an empty page).
+
+Run the CLI from the repo directory itself. `--cwd` is not enough: the CLI reads the
+`.vercel` link of the shell's working directory, so running it from another repo
+deploys this source against that project's framework preset and fails with a
+misleading error (`No Next.js version detected`, 2026-09-06).
 
 ## Parked (decision pending, not started)
 
