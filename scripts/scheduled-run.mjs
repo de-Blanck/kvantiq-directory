@@ -28,13 +28,32 @@
  */
 
 import { spawnSync } from 'node:child_process';
-import { existsSync, readFileSync, appendFileSync, writeFileSync, rmSync } from 'node:fs';
+import { existsSync, readFileSync, appendFileSync, writeFileSync, rmSync, symlinkSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import os from 'node:os';
 import path from 'node:path';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const LOG_FILE = path.join(REPO_ROOT, 'scheduled-run-debug.log'); // gitignored via *-debug.log*
+
+// The sweep gets its own checkout.
+//
+// It used to run in REPO_ROOT — the same working copy a person or a Claude
+// session is using — and it starts by resetting that copy hard to origin. On
+// 2026-09-06 the reverse happened: a session ran `git reset --hard` while the
+// sweep was mid-run and destroyed the updates it had written to ten entries,
+// after which the sweep's own `git add -A` swallowed an unrelated uncommitted
+// edit into its commit. Neither side did anything unreasonable; they were simply
+// in the same directory.
+//
+// A dedicated worktree removes the shared surface entirely. It is kept between
+// runs (re-pointed at origin each time) rather than added and removed, so a run
+// costs no extra clone and an interrupted run leaves something inspectable.
+const WORKTREE = path.resolve(REPO_ROOT, '..', '.worktrees', 'sweep');
+const WORK_BRANCH = 'sweep-work';
+
+/** Where git and npm commands run. Set to the worktree once it exists. */
+let WORK = REPO_ROOT;
 const SWEEP_BRANCH_PREFIX = 'ai-sweep/weekly';
 const IS_WIN = process.platform === 'win32';
 const NPM = IS_WIN ? 'npm.cmd' : 'npm';
@@ -131,7 +150,7 @@ function fail(msg) {
 // Run a command, capturing stdout. Throws on non-zero exit.
 function capture(cmd, args, opts = {}) {
   const r = spawnSync(cmd, args, {
-    cwd: REPO_ROOT,
+    cwd: WORK,
     encoding: 'utf8',
     env: process.env,
     maxBuffer: 64 * 1024 * 1024,
@@ -146,7 +165,7 @@ function capture(cmd, args, opts = {}) {
 
 // Run a command, streaming output to this process. Throws on non-zero exit.
 function stream(cmd, args, opts = {}) {
-  const r = spawnSync(cmd, args, { cwd: REPO_ROOT, stdio: 'inherit', env: process.env, ...opts });
+  const r = spawnSync(cmd, args, { cwd: WORK, stdio: 'inherit', env: process.env, ...opts });
   if (r.error) throw r.error;
   if (r.status !== 0) throw new Error(`${cmd} ${args.join(' ')} exited ${r.status}`);
 }
@@ -191,16 +210,45 @@ function preflight() {
   if (!probe('gh', ['auth', 'status']).ok) fail('gh is not authenticated. Run `gh auth login`.');
 }
 
+/**
+ * Put the sweep in its own worktree, pointed at origin's default branch.
+ *
+ * .env and node_modules are symlinked from the main checkout: the first is
+ * gitignored and holds the token the sweep needs, the second is expensive to
+ * duplicate and identical either way (this repo has no workspace packages).
+ */
+function prepareWorktree(branch) {
+  if (!existsSync(WORKTREE)) {
+    log(`Creating the sweep worktree at ${WORKTREE}…`);
+    capture('git', ['worktree', 'add', '-B', WORK_BRANCH, WORKTREE, `origin/${branch}`], { cwd: REPO_ROOT });
+  }
+  WORK = WORKTREE;
+
+  capture('git', ['checkout', '-B', WORK_BRANCH, `origin/${branch}`]);
+  capture('git', ['reset', '--hard', `origin/${branch}`]);
+  capture('git', ['clean', '-fd']); // scoped to the worktree — nobody else works here
+
+  for (const link of ['.env', 'node_modules']) {
+    const target = path.join(REPO_ROOT, link);
+    const dest = path.join(WORKTREE, link);
+    if (existsSync(target) && !existsSync(dest)) {
+      try {
+        symlinkSync(target, dest);
+      } catch (err) {
+        log(`WARNING: could not link ${link} into the worktree (${err.message}).`);
+      }
+    }
+  }
+}
+
 function syncToMain() {
-  log('Syncing clone to origin default branch…');
-  capture('git', ['fetch', 'origin', '--prune']);
+  log('Syncing to origin default branch…');
+  capture('git', ['fetch', 'origin', '--prune'], { cwd: REPO_ROOT });
   let branch = 'main';
   try {
-    branch = capture('git', ['symbolic-ref', 'refs/remotes/origin/HEAD']).split('/').pop() || 'main';
+    branch = capture('git', ['symbolic-ref', 'refs/remotes/origin/HEAD'], { cwd: REPO_ROOT }).split('/').pop() || 'main';
   } catch { /* fall back to main */ }
-  capture('git', ['checkout', branch]);
-  capture('git', ['reset', '--hard', `origin/${branch}`]);
-  capture('git', ['clean', '-fd']); // no -x: preserves gitignored .env and logs
+  prepareWorktree(branch);
   return branch;
 }
 

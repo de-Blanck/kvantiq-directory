@@ -1,9 +1,17 @@
 #!/usr/bin/env bash
 #
-# Install the weekly Kvantiq Directory runner as a launchd agent (macOS).
+# Install the Kvantiq Directory launchd agents (macOS).
 # Works on both Intel and Apple Silicon. Re-run to update.
 #
-# It schedules `node scripts/scheduled-run.mjs` for Sundays at 03:00 local time.
+# Two agents:
+#   com.kvantiq.directory.weekly     scripts/scheduled-run.mjs   Sundays 03:00
+#   com.kvantiq.directory.automerge  scripts/auto-merge.mjs      every 2 hours
+#
+# The second one exists because GitHub Actions cannot run on this repo, so no
+# status check gates a pull request. It runs the same gate a person would run
+# and merges only what is provably safe — see scripts/auto-merge.mjs for the
+# eligibility rules. Pause both by creating <repo>/.automation-paused.
+#
 # launchd runs a missed job at the next wake if the Mac was asleep/off.
 #
 # Prereqs (see docs/scheduled-runner.md): node, npm, gh (authenticated), the
@@ -81,3 +89,46 @@ echo
 echo "Test it now without waiting for Sunday:"
 echo "  launchctl start $LABEL   # runs the job immediately"
 echo "To remove: launchctl unload \"$PLIST\" && rm \"$PLIST\""
+
+# ── Auto-merge agent ─────────────────────────────────────────────────────────
+MERGE_LABEL="com.kvantiq.directory.automerge"
+MERGE_PLIST="$HOME/Library/LaunchAgents/$MERGE_LABEL.plist"
+MERGE_LOG="$REPO_ROOT/auto-merge-launchd.log"
+
+cat > "$MERGE_PLIST" <<EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>$MERGE_LABEL</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>$NODE</string>
+    <string>scripts/auto-merge.mjs</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>$REPO_ROOT</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>$PATH</string>
+  </dict>
+  <key>StartInterval</key>
+  <integer>7200</integer>
+  <key>RunAtLoad</key>
+  <false/>
+  <key>StandardOutPath</key>
+  <string>$MERGE_LOG</string>
+  <key>StandardErrorPath</key>
+  <string>$MERGE_LOG</string>
+</dict>
+</plist>
+EOF
+
+launchctl unload "$MERGE_PLIST" 2>/dev/null || true
+launchctl load "$MERGE_PLIST"
+
+echo "Installed $MERGE_LABEL — every 2 hours, logging to $MERGE_LOG"
+echo "  dry run:  node scripts/auto-merge.mjs --dry-run"
+echo "  pause:    echo 'reason' > $REPO_ROOT/.automation-paused"
