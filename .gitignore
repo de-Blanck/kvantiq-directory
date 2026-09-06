@@ -8,6 +8,11 @@ node_modules/
 # Logs
 *-debug.log*
 scheduled-run-launchd.log
+auto-merge-launchd.log
+
+# The automation kill switch is local and deliberate: pausing automation on this
+# machine should not be a commit, and should not propagate to anyone else.
+.automation-paused
 
 # Environment variables
 .env

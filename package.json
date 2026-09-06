@@ -17,7 +17,8 @@
     "test": "tsx scripts/run-tests.ts",
     "type-check": "astro check",
     "check:data": "node scripts/check-transparency-data.mjs",
-    "verify:live": "node scripts/verify-live.mjs"
+    "verify:live": "node scripts/verify-live.mjs",
+    "gate": "node scripts/gate.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^6.0.5",
