@@ -15,12 +15,15 @@ import { isBlocklistedSource } from '../../scripts/ai-sweep.mjs';
 
 export const MIN_CREDIBLE_SOURCES = 3;
 
-type SourceLike = { url: string; title?: string };
+export type SourceLike = { url: string; title?: string; dateAccessed?: string };
+
+/** One source, judged. Blocklisted domains and self-published labels do not count. */
+export function isCredibleSource(source: SourceLike): boolean {
+  return !isBlocklistedSource({ url: source.url, source: source.title || '' });
+}
 
 export function credibleSourceCount(sources: SourceLike[] | undefined): number {
-  return (sources || []).filter(
-    (s) => !isBlocklistedSource({ url: s.url, source: s.title || '' }),
-  ).length;
+  return (sources || []).filter(isCredibleSource).length;
 }
 
 /** True when the entry clears the bar and may appear in listings, sitemap and search. */
