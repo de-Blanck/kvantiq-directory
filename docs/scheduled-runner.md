@@ -1,5 +1,16 @@
 # Scheduled Runner (portable, no GitHub Actions)
 
+Two launchd agents, both installed by `scheduler/install-macos.sh`:
+
+| Agent | Runs | When |
+|---|---|---|
+| `com.kvantiq.directory.weekly` | `scripts/scheduled-run.mjs` — the AI content sweep | Sundays 03:00 |
+| `com.kvantiq.directory.automerge` | `scripts/auto-merge.mjs` — gate and merge eligible PRs | every 2 hours |
+
+Pause both at once by creating `.automation-paused` at the repo root; its first
+line is echoed as the reason. The file is gitignored, so pausing on this machine
+does not propagate to anyone else.
+
 The weekly **AI content sweep** runs from any machine you control — Intel Mac,
 Apple-Silicon Mac, or Windows — on a local schedule. The Claude work bills
 against your **Max subscription** through the `claude` CLI. There is no GitHub
@@ -14,7 +25,17 @@ place but its schedule should be disabled (see "Avoiding duplicates").
 
 1. Preflight — checks `git`, `npm`, `gh` (authenticated), the `claude` CLI, and
    the subscription token.
-2. Resets the clone cleanly to `origin`'s default branch.
+2. Prepares a dedicated **worktree** at `../.worktrees/sweep`, reset to
+   `origin`'s default branch, with `.env` and `node_modules` symlinked from the
+   main checkout. Everything after this step runs there.
+
+   The sweep used to run in the main working copy — the same one a person or a
+   Claude session uses — and it begins by resetting that copy hard. On
+   2026-09-06 the reverse happened: a session's `git reset --hard` destroyed the
+   updates the sweep had already written to ten entries, and the sweep's own
+   `git add -A` then swallowed an unrelated uncommitted edit into its commit.
+   The worktree removes the shared surface; a guard hook in `claude-config`
+   refuses destructive git in a checkout where a job is running.
 3. **Dedup guard** — if an open `ai-sweep/weekly*` PR already exists, it exits.
    So if two machines are on at the scheduled time, you still get **one** PR.
 4. `npm ci`.
@@ -22,8 +43,34 @@ place but its schedule should be disabled (see "Avoiding duplicates").
    fetched source pages (never fabricated).
 6. If nothing changed, exits cleanly.
 7. `npm run build` to validate — a broken build never becomes a PR.
-8. Branches `ai-sweep/weekly-YYYY-MM-DD`, commits, pushes, opens a PR. **Never
-   merges** — you review.
+8. Runs `npm run verify:live` and, if production does not match this build,
+   quotes the findings into the PR body under a review checkbox. Never fatal.
+9. Branches `ai-sweep/weekly-YYYY-MM-DD`, commits, pushes, opens a PR. **Never
+   merges** — you review. Content is Tier 2: a green build cannot vouch for it.
+
+## What the auto-merge agent runs
+
+`scripts/auto-merge.mjs`, every two hours. GitHub Actions cannot run on this
+repo, so no status check gates a pull request; this runs the same gate a person
+would run and merges only what is provably safe.
+
+1. Stops immediately if `.automation-paused` exists.
+2. Lists open PRs and decides eligibility: labelled `auto-merge` or authored by
+   Dependabot, not draft, not conflicting, and touching nothing on
+   `NEVER_AUTOMERGE` — the rulebook, `.github/`, `scheduler/`, the automation's
+   own scripts, `.env`, the ignore files. Everything else waits for review.
+3. One PR per run. Checks it out, installs, runs `npm run gate` (type-check,
+   tests, build). On failure it comments the failing step and leaves the PR open.
+4. On green: merges, waits for the deploy, then runs `npm run verify:live`. If
+   production disagrees with the build it **opens an issue rather than
+   reverting** — reverting is a judgement call, and the deploy may still be in
+   flight.
+
+```bash
+node scripts/auto-merge.mjs --dry-run   # decide and explain, change nothing
+npm run gate                            # the same gate, by hand
+npm run gate -- --live                  # adds verify:live, for after a deploy
+```
 
 ## Per-machine prerequisites
 
