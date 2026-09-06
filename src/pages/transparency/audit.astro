@@ -4,110 +4,69 @@ import { resolve } from 'path';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { credibleSourceCount, MIN_CREDIBLE_SOURCES } from '../../lib/source-bar';
+import { growthSeries, coverageByCountry, entriesMissingFromLedger } from '../../lib/audit-metrics';
 
-// --- Types ---
-interface ConfidenceEntry {
-  label: string;
-  value: number;
-}
+// Every panel on this page is derived here, from the entries themselves and from
+// data/entry-first-seen.json. Nothing is read out of a generated database dump:
+// the three panels that were (confidence distribution, recent audit actions,
+// source effectiveness) rendered a constant written once at migration time, or
+// nothing at all, and were removed rather than restyled.
 
-interface CoverageEntry {
-  country: string;
-  count: number;
-}
+const COLLECTIONS = ['companies', 'benchmarks', 'use-cases', 'challenges', 'resources'] as const;
 
-interface AuditActionEntry {
-  action_taken: string;
-  count: number;
-}
-
-interface SourceEffectivenessEntry {
-  source_name: string;
-  total_found: number;
-  total_new: number;
-}
-
-interface TimelineEntry {
-  date: string;
-  collection: string;
-  count: number;
-}
-
-// --- Entries held back by the source bar ---
-// Below MIN_CREDIBLE_SOURCES they are excluded from listings, sitemap and search,
-// and served noindex. Listed publicly here rather than hidden, so the gate is visible.
 const DETAIL_ROUTE: Record<string, string | null> = {
   companies: 'companies', benchmarks: 'benchmarks', 'use-cases': 'use-cases',
   challenges: 'challenges', resources: null,
 };
-const unlisted = (
+
+const entries = (
   await Promise.all(
-    Object.keys(DETAIL_ROUTE).map(async (c) =>
-      (await getCollection(c as 'companies')).map((e) => ({
-        collection: c,
-        name: e.data.name,
+    COLLECTIONS.map(async (collection) =>
+      (await getCollection(collection as 'companies')).map((e) => ({
+        collection,
         slug: e.data.slug,
-        href: DETAIL_ROUTE[c] ? `/${DETAIL_ROUTE[c]}/${e.data.slug}/` : null,
+        name: e.data.name,
+        country: (e.data as { country?: string | null }).country ?? null,
+        href: DETAIL_ROUTE[collection] ? `/${DETAIL_ROUTE[collection]}/${e.data.slug}/` : null,
         credible: credibleSourceCount(e.data.sources),
         total: (e.data.sources || []).length,
       })),
     ),
   )
-)
-  .flat()
+).flat();
+
+// --- Entries held back by the source bar ---
+// Below MIN_CREDIBLE_SOURCES they are excluded from listings, sitemap and search,
+// and served noindex. Listed publicly here rather than hidden, so the gate is visible.
+const unlisted = entries
   .filter((e) => e.credible < MIN_CREDIBLE_SOURCES)
   .sort((a, b) => a.collection.localeCompare(b.collection) || a.name.localeCompare(b.name));
 
-// --- Data loader ---
-function loadJson<T>(filename: string, fallback: T): T {
-  const filePath = resolve('data/generated', filename);
-  if (!existsSync(filePath)) return fallback;
+// --- First-seen ledger: the only honest basis for a growth chart ---
+// Git history holds the real dates, but the deploy upload excludes .git, so they
+// are resolved once and committed. See scripts/sync-entry-first-seen.ts.
+function loadLedger(): Record<string, string> {
+  const path = resolve('data/entry-first-seen.json');
+  if (!existsSync(path)) return {};
   try {
-    return JSON.parse(readFileSync(filePath, 'utf-8')) as T;
+    return JSON.parse(readFileSync(path, 'utf-8')) as Record<string, string>;
   } catch {
-    return fallback;
+    return {};
   }
 }
 
-const confidenceDist = loadJson<ConfidenceEntry[]>('confidence-distribution.json', []);
-const coverageMap    = loadJson<CoverageEntry[]>('coverage-map.json', []);
-const auditSummary   = loadJson<AuditActionEntry[]>('audit-summary.json', []);
-const sourceEff      = loadJson<SourceEffectivenessEntry[]>('source-effectiveness.json', []);
-const entryTimeline  = loadJson<TimelineEntry[]>('entry-timeline.json', []);
+const firstSeen = loadLedger();
+const growth = growthSeries(firstSeen, entries);
+const unplaceable = entriesMissingFromLedger(firstSeen, entries);
+const hasGrowth = growth.length > 1;
 
-// Aggregate timeline by date for the chart
-const timelineDates = [...new Set(entryTimeline.map((e) => e.date))].sort();
-const timelineCounts = timelineDates.map((d) =>
-  entryTimeline.filter((e) => e.date === d).reduce((sum, e) => sum + e.count, 0)
-);
-// Cumulative total
-const cumulativeCounts = timelineCounts.reduce<number[]>((acc, v) => {
-  acc.push((acc.length > 0 ? acc[acc.length - 1] : 0) + v);
-  return acc;
-}, []);
-const hasTimeline = timelineDates.length > 0;
-const timelineData = { labels: timelineDates, values: cumulativeCounts };
+const coverage = coverageByCountry(entries);
+const maxCoverageCount = Math.max(...coverage.map((c) => c.count), 1);
 
-// --- Derived values for chart ---
-// Editorial Light tokens — Chart.js needs raw hex because it can't read CSS vars.
-// Semantic gradient: HIGH = info blue (affirmative), MEDIUM = muted (neutral / unknown),
-// LOW = warn amber, DEAD = error red. Avoids the accent/warn collision in Editorial Light.
-const confidenceColors: Record<string, string> = {
-  HIGH:   '#1D4ED8', // --color-info
-  MEDIUM: '#78716C', // --color-text-muted
-  LOW:    '#B45309', // --color-warn
-  DEAD:   '#DC2626', // --color-error
+const timelineData = {
+  labels: growth.map((p) => p.date),
+  values: growth.map((p) => p.total),
 };
-
-const confidenceData = {
-  labels: confidenceDist.map((d) => d.label),
-  values: confidenceDist.map((d) => d.value),
-  colors: confidenceDist.map((d) => confidenceColors[d.label] ?? '#78716C'), // text-muted fallback
-};
-
-const maxCoverageCount = Math.max(...coverageMap.map((c) => c.count), 1);
-
-const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
 ---
 
 <BaseLayout
@@ -122,7 +81,9 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
         Audit Dashboard
       </h1>
       <p class="mt-4 body-lg text-text-secondary">
-        Directory health metrics — confidence levels, geographic coverage, recent audit actions, and source effectiveness.
+        Directory health, measured — which entries clear the source bar, when the directory grew,
+        and where its coverage sits. Every figure on this page is computed from the entries
+        themselves; none of it is asserted.
       </p>
     </div>
 
@@ -155,46 +116,15 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
       )}
     </section>
 
-    <!-- 2-column grid: Confidence Chart + Coverage -->
-    <div class="grid gap-6 sm:grid-cols-2 mb-8">
-
-      <!-- Confidence Distribution (Chart.js doughnut) -->
-      <div class="rounded-xl border border-border bg-surface p-5">
-        <h2 class="eyebrow text-text-muted mb-4">
-          Confidence Distribution
-        </h2>
-        {confidenceDist.length > 0 ? (
-          <div class="flex flex-col items-center gap-4">
-            <div class="relative w-48 h-48">
-              <canvas id="confidence-chart" width="192" height="192"></canvas>
-            </div>
-            <!-- Legend -->
-            <ul class="flex flex-wrap justify-center gap-x-4 gap-y-1.5">
-              {confidenceDist.map((d) => (
-                <li class="flex items-center gap-1.5 body-sm text-text-secondary">
-                  <span
-                    class="inline-block w-2.5 h-2.5 rounded-full shrink-0"
-                    style={`background-color: ${confidenceColors[d.label] ?? '#78716C'}`}
-                  ></span>
-                  <span class="capitalize">{d.label.toLowerCase()}</span>
-                  <span class="data-md text-text-primary">{d.value}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ) : (
-          <p class="body-sm text-text-muted italic">No confidence data available.</p>
-        )}
-      </div>
-
-      <!-- Coverage by Country -->
+    <!-- Coverage by country -->
+    <section class="mb-8">
       <div class="rounded-xl border border-border bg-surface p-5">
         <h2 class="eyebrow text-text-muted mb-4">
           Coverage by Country
         </h2>
-        {coverageMap.length > 0 ? (
+        {coverage.length > 0 ? (
           <ul class="space-y-2">
-            {coverageMap.map((c) => (
+            {coverage.map((c) => (
               <li class="group">
                 <div class="flex items-center justify-between mb-0.5">
                   <span class="body-sm text-text-secondary">
@@ -215,10 +145,10 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
           <p class="body-sm text-text-muted italic">No coverage data available.</p>
         )}
       </div>
-    </div>
+    </section>
 
-    <!-- Entry Count Over Time -->
-    {hasTimeline && (
+    <!-- Entry count over time -->
+    {hasGrowth && (
       <section class="mb-8">
         <h2 class="eyebrow text-text-muted mb-4">
           Directory Growth
@@ -226,148 +156,51 @@ const totalAuditActions = auditSummary.reduce((sum, a) => sum + a.count, 0);
         <div class="rounded-xl border border-border bg-surface p-6">
           <canvas id="timeline-chart" height="200" aria-label="Directory entry count over time" role="img"></canvas>
         </div>
+        <p class="mt-3 body-sm text-text-muted">
+          {growth.at(-1)?.total} entries, dated by the commit that introduced each one.
+          {unplaceable.length > 0 && ` ${unplaceable.length} newer entr${unplaceable.length === 1 ? 'y is' : 'ies are'} not yet dated and are omitted.`}
+        </p>
       </section>
     )}
-
-    <!-- Recent Audit Actions -->
-    <section class="mb-8">
-      <h2 class="eyebrow text-text-muted mb-4">
-        Recent Audit Actions
-      </h2>
-      {auditSummary.length > 0 ? (
-        <div class="grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
-          {auditSummary.map((a) => (
-            <div class="rounded-lg border border-border bg-surface p-4 text-center">
-              <p class="data-lg text-text-primary">{a.count}</p>
-              <p class="mt-1 body-sm capitalize text-text-secondary">
-                {a.action_taken.replace(/_/g, ' ')}
-              </p>
-            </div>
-          ))}
-          {totalAuditActions > 0 && (
-            <div class="rounded-lg border border-border bg-elevated p-4 text-center">
-              <p class="data-lg text-text-primary">{totalAuditActions}</p>
-              <p class="mt-1 eyebrow text-text-muted">Total actions</p>
-            </div>
-          )}
-        </div>
-      ) : (
-        <p class="body-sm text-text-muted italic">No audit actions recorded yet.</p>
-      )}
-    </section>
-
-    <!-- Source Effectiveness -->
-    <section class="mb-8">
-      <h2 class="eyebrow text-text-muted mb-4">
-        Source Effectiveness
-      </h2>
-      {sourceEff.length > 0 ? (
-        <div class="overflow-x-auto rounded-xl border border-border">
-          <table class="w-full">
-            <thead>
-              <tr class="border-b border-border bg-elevated">
-                <th class="px-4 py-3 text-left eyebrow text-text-muted">
-                  Source
-                </th>
-                <th class="px-4 py-3 text-right eyebrow text-text-muted">
-                  Total Found
-                </th>
-                <th class="px-4 py-3 text-right eyebrow text-text-muted">
-                  Total New
-                </th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-border bg-surface">
-              {sourceEff.map((s) => (
-                <tr>
-                  <td class="px-4 py-3 body-sm font-medium text-text-primary">{s.source_name}</td>
-                  <td class="px-4 py-3 text-right data-md text-text-secondary">{s.total_found}</td>
-                  <td class="px-4 py-3 text-right data-md text-text-secondary">{s.total_new}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      ) : (
-        <p class="body-sm text-text-muted italic">No source effectiveness data available.</p>
-      )}
-    </section>
 
   </main>
 </BaseLayout>
 
-<script define:vars={{ confidenceData, timelineData, hasTimeline }}>
-  if (confidenceData.values.length > 0 || hasTimeline) {
-    import('https://cdn.jsdelivr.net/npm/chart.js@4/+esm').then(({ ArcElement, Tooltip, Legend, DoughnutController, LineElement, PointElement, CategoryScale, LinearScale, LineController, Filler, Chart }) => {
-      Chart.register(ArcElement, Tooltip, Legend, DoughnutController, LineElement, PointElement, CategoryScale, LinearScale, LineController, Filler);
+<script define:vars={{ timelineData, hasGrowth }}>
+  // Entry timeline — accent amber on the warm parchment grid. Chart.js needs raw
+  // hex because it cannot read the CSS custom properties the rest of the page uses.
+  if (hasGrowth) {
+    import('https://cdn.jsdelivr.net/npm/chart.js@4/+esm').then(({ Tooltip, LineElement, PointElement, CategoryScale, LinearScale, LineController, Filler, Chart }) => {
+      Chart.register(Tooltip, LineElement, PointElement, CategoryScale, LinearScale, LineController, Filler);
 
-      // Confidence doughnut
-      const canvas = document.getElementById('confidence-chart');
-      if (canvas && confidenceData.values.length > 0) {
-        new Chart(canvas, {
-          type: 'doughnut',
-          data: {
-            labels: confidenceData.labels,
-            datasets: [
-              {
-                data: confidenceData.values,
-                backgroundColor: confidenceData.colors,
-                borderWidth: 0,
-                hoverOffset: 4,
-              },
-            ],
-          },
-          options: {
-            responsive: false,
-            cutout: '68%',
-            plugins: {
-              legend: { display: false },
-              tooltip: {
-                callbacks: { label: (ctx) => ` ${ctx.label}: ${ctx.parsed}` },
-                bodyColor: '#1C1917',       // text-primary
-                titleColor: '#57534E',      // text-secondary
-                backgroundColor: '#FFFFFF', // base (lifts off warm parchment page)
-                borderColor: '#DDD8CF',     // border
-                borderWidth: 1,
-              },
-            },
-          },
-        });
-      }
+      const canvas = document.getElementById('timeline-chart');
+      if (!canvas) return;
 
-      // Entry timeline line chart — accent amber on warm parchment grid
-      if (hasTimeline) {
-        const timelineCanvas = document.getElementById('timeline-chart');
-        if (timelineCanvas) {
-          new Chart(timelineCanvas, {
-            type: 'line',
-            data: {
-              labels: timelineData.labels,
-              datasets: [{
-                label: 'Total entries',
-                data: timelineData.values,
-                borderColor: '#B45309',                     // accent (warm amber/rust)
-                backgroundColor: 'rgba(180, 83, 9, 0.10)',  // accent fill, subtle
-                fill: true,
-                tension: 0.3,
-                pointRadius: 3,
-                pointBackgroundColor: '#B45309',
-              }],
-            },
-            options: {
-              responsive: true,
-              maintainAspectRatio: true,
-              plugins: { legend: { display: false }, tooltip: { enabled: true } },
-              scales: {
-                y: { ticks: { color: '#78716C' }, grid: { color: '#DDD8CF' }, border: { display: false } },
-                x: { ticks: { color: '#78716C', maxRotation: 45 }, grid: { display: false }, border: { display: false } },
-              },
-            },
-          });
-        }
-      }
+      new Chart(canvas, {
+        type: 'line',
+        data: {
+          labels: timelineData.labels,
+          datasets: [{
+            label: 'Total entries',
+            data: timelineData.values,
+            borderColor: '#B45309',                     // accent (warm amber/rust)
+            backgroundColor: 'rgba(180, 83, 9, 0.10)',  // accent fill, subtle
+            fill: true,
+            tension: 0.3,
+            pointRadius: 3,
+            pointBackgroundColor: '#B45309',
+          }],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: true,
+          plugins: { legend: { display: false }, tooltip: { enabled: true } },
+          scales: {
+            y: { ticks: { color: '#78716C' }, grid: { color: '#DDD8CF' }, border: { display: false } },
+            x: { ticks: { color: '#78716C', maxRotation: 45 }, grid: { display: false }, border: { display: false } },
+          },
+        },
+      });
     });
   }
 </script>
-</content>
-</invoke>
