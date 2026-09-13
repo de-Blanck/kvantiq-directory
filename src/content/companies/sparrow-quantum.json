@@ -82,6 +82,13 @@
       "url": "https://www.hpcwire.com/off-the-wire/sparrow-quantum-selected-for-eurohpc-quantum-grand-challenge-funding/",
       "source": "HPCwire",
       "date": "2026-08-26"
+    },
+    {
+      "title": "Sparrow Quantum Sets World Record: 500 Million Usable Single Photons Per Second",
+      "excerpt": "Sparrow Quantum demonstrated the highest single-photon flux ever reported — over 500 million single photons per second into a single-mode fiber — developed with Ruhr-Universität Bochum. Operating at 1 GHz with over 50% fiber efficiency, the source combines speed with high photon purity and indistinguishability, addressing a longstanding photon bottleneck in photonic quantum computing.",
+      "url": "https://thequantuminsider.com/2026/09/07/sparrow-quantum-sets-record-with-500-million-usable-photons-per-second/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-07"
     }
   ]
 }

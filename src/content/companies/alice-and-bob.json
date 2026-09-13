@@ -213,6 +213,13 @@
       "url": "https://thequantuminsider.com/2026/08/12/alice-bob-partners-europe-first-doctoral-network-quantum-error-correction/",
       "source": "The Quantum Insider",
       "date": "2026-08-12"
+    },
+    {
+      "title": "Alice & Bob and Hyperion Research Report Maps Path to HPC-Quantum-AI Integration",
+      "excerpt": "Alice & Bob and Hyperion Research released a report on the prerequisites for enabling HPC-Quantum-AI systems, finding that HPC practitioners are concerned an immature quantum stack deployed too early risks eroding community trust. The report outlines how hardware advances toward fault tolerance must align with the HPC ecosystem's readiness.",
+      "url": "https://www.hpcwire.com/off-the-wire/alice-bob-and-hyperion-report-maps-path-to-hpc-quantum-ai-integration/",
+      "source": "HPCwire",
+      "date": "2026-09-09"
     }
   ]
 }
