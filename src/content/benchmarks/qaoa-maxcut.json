@@ -49,6 +49,29 @@
       "type": "arxiv",
       "url": "https://arxiv.org/pdf/2604.08367",
       "title": "Per-Shot Evaluation of QAOA on Max-Cut: A Black-Box Implementation Comparison with Goemans-Williamson"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20225",
+      "title": "Generative AI accelerates quantum optimization (IonQ, ORNL, NVIDIA, UTK — IEEE Quantum Week 2026 Best Paper)",
+      "authors": "IonQ, ORNL, NVIDIA, University of Tennessee Knoxville",
+      "datePublished": "2026-07-01",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/ionq-and-partners-report-ai-method-for-scaling-hybrid-quantum-optimization/",
+      "title": "IonQ and Partners Report AI Method for Scaling Hybrid Quantum Optimization",
+      "dateAccessed": "2026-09-20"
+    }
+  ],
+  "news": [
+    {
+      "title": "IonQ and ORNL Win IEEE Quantum Week Best Paper for Generative AI QAOA Circuit Synthesis",
+      "excerpt": "IonQ, ORNL, NVIDIA, and the University of Tennessee–Knoxville presented work showing a trained generative model can synthesise QAOA circuits directly, eliminating the trial-and-error variational loop. On a dense 100-variable combinatorial benchmark, model-generated answer quality roughly doubled as sub-problem size grew; circuit-generation time stayed nearly constant at ~28 seconds versus state-of-the-art variational search scaling to over 11 minutes at 12 qubits. The paper won Best Paper at IEEE Quantum Week 2026.",
+      "url": "https://thequantuminsider.com/2026/09/16/ionq-ornl-nvidia-tennessee-ai-quantum-optimization-tradeoff/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-16"
     }
   ]
 }

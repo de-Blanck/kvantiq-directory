@@ -48,6 +48,14 @@
       "type": "website",
       "url": "https://thequantuminsider.com/2021/11/04/ibm-proposes-a-new-way-to-measure-quantum-speed-clops/",
       "title": "IBM Proposes a New Way to Measure Quantum Speed: CLOPS"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.12146",
+      "title": "Benchmarking the computational power of quantum computers (QUOPS framework — introduces QUOPS rate Ω as architecture-agnostic throughput metric)",
+      "authors": "Timothy Proctor et al. (Sandia, Quantinuum, NVIDIA, Google, IBM)",
+      "datePublished": "2026-09-10",
+      "dateAccessed": "2026-09-20"
     }
   ],
   "news": [
@@ -71,6 +79,20 @@
       "url": "https://thequantuminsider.com/2021/11/04/ibm-proposes-a-new-way-to-measure-quantum-speed-clops/",
       "source": "The Quantum Insider",
       "date": "2021-11-04"
+    },
+    {
+      "title": "QUOPS Rate (Ω) Proposed as Architecture-Agnostic Successor to CLOPS-Style Throughput Metrics",
+      "excerpt": "The QUOPS paper from Sandia, Quantinuum, and NVIDIA introduces two complementary metrics: Q (maximum circuit size executed successfully) and Ω (QUOPS per second, a throughput rate). QUOPS rate directly parallels CLOPS as a cross-platform throughput benchmark but incorporates logical-qubit performance. Helios-1 reached 303 Ω/s, Willow 4,400 Ω/s, and ibm_boston 2,900 Ω/s — showing IBM and Google lead on speed while Quantinuum leads on circuit size.",
+      "url": "https://arxiv.org/abs/2609.12146",
+      "source": "arXiv",
+      "date": "2026-09-10"
+    },
+    {
+      "title": "Quantum Computers Need 100,000-Fold Performance Gain For Scientific Utility, Study Finds",
+      "excerpt": "Benchmarking study by Sandia, Quantinuum, NVIDIA and partner labs introduces QUOPS as a cross-platform metric. The QUOPS rate (Ω, operations per second) parallels CLOPS as a throughput benchmark; the study benchmarks Google Willow (4,400 Ω/s), IBM ibm_boston (2,900 Ω/s), and Quantinuum Helios-1 (303 Ω/s) simultaneously — the first direct cross-platform throughput comparison of this scale.",
+      "url": "https://thequantuminsider.com/2026/09/15/quantum-computers-need-100000-fold-performance-gain-for-scientific-utility-study-finds/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-15"
     }
   ]
 }

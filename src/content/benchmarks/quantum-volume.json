@@ -52,6 +52,36 @@
       "type": "website",
       "url": "https://quantumbenchmarkzoo.org/content/system-level-benchmark/others/quantum-volume",
       "title": "Quantum Volume - QuantumBenchmarkZoo"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.12146",
+      "title": "Benchmarking the computational power of quantum computers (QUOPS framework)",
+      "authors": "Timothy Proctor et al. (Sandia, Quantinuum, NVIDIA, Google, IBM)",
+      "datePublished": "2026-09-10",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/sandia-quantinuum-and-nvidia-introduce-quops-framework-to-benchmark-physical-and-logical-quantum-performance/",
+      "title": "Sandia, Quantinuum, and NVIDIA Introduce QUOPS Framework to Benchmark Physical and Logical Quantum Performance",
+      "dateAccessed": "2026-09-20"
+    }
+  ],
+  "news": [
+    {
+      "title": "Sandia, Quantinuum, and NVIDIA Introduce QUOPS Framework, Finds Quantum Hardware 100,000× Below Practical Utility",
+      "excerpt": "A Sandia National Laboratories-led team introduced the Quantum Universal Operations Performance System (QUOPS), an architecture-agnostic metric benchmarking the largest circuits a processor can execute successfully and how quickly. Testing Google Willow (Q=216), IBM ibm_boston (Q=204), Quantinuum H2-1 (Q=1,320) and Helios-1 (Q=1,504), the study finds current hardware must improve ~100,000-fold in computational capability to reach examined scientific workloads.",
+      "url": "https://quantumcomputingreport.com/sandia-quantinuum-and-nvidia-introduce-quops-framework-to-benchmark-physical-and-logical-quantum-performance/",
+      "source": "Quantum Computing Report",
+      "date": "2026-09-15"
+    },
+    {
+      "title": "Quantum Computers Need 100,000-Fold Performance Gain For Scientific Utility, Study Finds",
+      "excerpt": "Benchmarking study by Sandia, Quantinuum, NVIDIA and partner labs introduces QUOPS as a cross-platform metric and measures processors from Google, IBM, and Quantinuum. Quantinuum's Helios-1 reached 1,504 QUOPS — the highest physical score — while Google Willow and IBM ibm_boston reached 216 and 204 QUOPS respectively. The paper concludes current systems fall five orders of magnitude short of the capability needed to solve recognised scientific problems.",
+      "url": "https://thequantuminsider.com/2026/09/15/quantum-computers-need-100000-fold-performance-gain-for-scientific-utility-study-finds/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-15"
     }
   ]
 }
