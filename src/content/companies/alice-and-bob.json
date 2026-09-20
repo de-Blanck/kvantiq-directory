@@ -92,6 +92,18 @@
       "url": "https://www.siliconrepublic.com/machines/alice-bob-partner-european-doctoral-network-quantum-error-correction",
       "title": "Alice & Bob to work with European network on quantum error fixes - Silicon Republic",
       "dateAccessed": "2026-08-23"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/09/17/alice-bob-partners-with-the-cea-to-accelerate-quantum-hpc-integration-and-industrial-use-cases/",
+      "title": "Alice & Bob Partners With The CEA to Accelerate Quantum-HPC Integration — The Quantum Insider",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/alice-bob-and-cea-partner-to-accelerate-quantum-hpc-integration-and-industrial-use-cases/",
+      "title": "Alice & Bob and CEA Partner to Accelerate Quantum-HPC Integration and Industrial Use Cases — HPCwire",
+      "dateAccessed": "2026-09-20"
     }
   ],
   "news": [
@@ -213,6 +225,13 @@
       "url": "https://thequantuminsider.com/2026/08/12/alice-bob-partners-europe-first-doctoral-network-quantum-error-correction/",
       "source": "The Quantum Insider",
       "date": "2026-08-12"
+    },
+    {
+      "title": "Alice & Bob and CEA partner to integrate cat-qubit software into HPC environments",
+      "excerpt": "Alice & Bob and France's CEA signed a partnership to integrate Alice & Bob's software into CEA's Eviden Bull Qaptiva platform and supercomputing infrastructure, enabling hybrid classical-quantum HPC workflows. Alice & Bob's Helium system will be installed at CEA in 2027.",
+      "url": "https://thequantuminsider.com/2026/09/17/alice-bob-partners-with-the-cea-to-accelerate-quantum-hpc-integration-and-industrial-use-cases/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-17"
     }
   ]
 }

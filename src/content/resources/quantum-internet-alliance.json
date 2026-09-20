@@ -40,6 +40,18 @@
       "type": "website",
       "url": "https://thequantuminsider.com/2025/10/31/round-three-of-the-quantum-internet-application-challenge-kicks-off/",
       "title": "Round Three of The Quantum Internet Application Challenge Kicks Off"
+    },
+    {
+      "type": "url",
+      "url": "https://connect.geant.org/2026/09/09/geant-and-the-quantum-internet-alliance-sign-mou-to-strengthen-europes-quantum-networking-future",
+      "title": "GÉANT and the Quantum Internet Alliance sign MoU to strengthen Europe's quantum networking future — GÉANT CONNECT",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/geant-and-quantum-internet-alliance-partner-to-advance-european-quantum-networking-architecture/",
+      "title": "GÉANT and Quantum Internet Alliance Partner to Advance European Quantum Networking Architecture — Quantum Computing Report",
+      "dateAccessed": "2026-09-20"
     }
   ],
   "news": [
@@ -56,6 +68,13 @@
       "url": "https://quantuminternetalliance.org/",
       "source": "Quantum Internet Alliance",
       "date": "2026-06-20"
+    },
+    {
+      "title": "GÉANT and Quantum Internet Alliance Sign MoU to Advance European Quantum Networking",
+      "excerpt": "GÉANT — the pan-European research and education network operator connecting 40 European NRENs — and the Quantum Internet Alliance signed a Memorandum of Understanding on September 8, 2026 in Amsterdam to co-develop quantum networking infrastructure, standards, and cross-border interoperability protocols. The partnership aims to establish a sovereign European Quantum Internet.",
+      "url": "https://connect.geant.org/2026/09/09/geant-and-the-quantum-internet-alliance-sign-mou-to-strengthen-europes-quantum-networking-future",
+      "source": "GÉANT CONNECT",
+      "date": "2026-09-09"
     }
   ]
 }
