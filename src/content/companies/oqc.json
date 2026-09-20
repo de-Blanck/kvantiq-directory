@@ -58,6 +58,19 @@
       "url": "https://sifted.eu/articles/oxford-quantum-circuits-series-c",
       "title": "Oxford Quantum Circuits raises blockbuster $350m Series C - Sifted",
       "dateAccessed": "2026-08-23"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/oxford-quantum-circuits-releases-erado-an-open-source-qiskit-simulator-for-erasure-noise-and-post-selection/",
+      "title": "Oxford Quantum Circuits Releases Erado: Open-Source Qiskit Simulator — Quantum Computing Report",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.31428",
+      "title": "The limits of erasure-based postselection for quantum error mitigation — Griffiths et al.",
+      "datePublished": "2026-06-30",
+      "dateAccessed": "2026-09-20"
     }
   ],
   "news": [
@@ -102,6 +115,13 @@
       "url": "https://sifted.eu/articles/oxford-quantum-circuits-series-c",
       "source": "Sifted",
       "date": "2026-06-03"
+    },
+    {
+      "title": "OQC releases Erado, open-source Qiskit simulator for erasure noise and post-selection",
+      "excerpt": "OQC launched Erado, a Python library integrated into its QCaaS SDK as a 16-qubit AerSimulator backend, enabling simulation of erasure noise models and dual-rail qubit encodings. A companion paper (arXiv:2606.31428) shows postselection fully mitigates the erasure channel below 3.0% check-error rates.",
+      "url": "https://quantumcomputingreport.com/oxford-quantum-circuits-releases-erado-an-open-source-qiskit-simulator-for-erasure-noise-and-post-selection/",
+      "source": "Quantum Computing Report",
+      "date": "2026-09-17"
     }
   ]
 }

@@ -78,6 +78,24 @@
       "url": "https://thequantuminsider.com/2026/07/15/classiq-parityqc-quantum-circuit-optimization/",
       "title": "Classiq and ParityQC Partner to Optimize Quantum Circuit Execution - The Quantum Insider",
       "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/09/15/parityqc-parity-twine-compiler-product/",
+      "title": "ParityQC Launches Parity Twine Optimizer for Quantum Optimization — The Quantum Insider",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/parityqc-launches-parity-twine-optimizer-in-ibm-qiskit-functions-catalog/",
+      "title": "ParityQC Launches Parity Twine Optimizer in IBM Qiskit Functions Catalog — HPCwire",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/parityqc-launches-parity-twine-optimizer-via-ibm-qiskit-functions-catalog/",
+      "title": "ParityQC Launches Parity Twine Optimizer via IBM Qiskit Functions Catalog — Quantum Computing Report",
+      "dateAccessed": "2026-09-20"
     }
   ],
   "news": [
@@ -143,6 +161,13 @@
       "url": "https://thequantuminsider.com/2026/07/15/classiq-parityqc-quantum-circuit-optimization/",
       "source": "The Quantum Insider",
       "date": "2026-07-15"
+    },
+    {
+      "title": "ParityQC launches Parity Twine Optimizer in IBM Qiskit Functions Catalog",
+      "excerpt": "ParityQC's Parity Twine Optimizer is now available as a Qiskit Function in IBM's catalog, with a 30-day free trial for IBM Quantum Network members. The optimizer natively maps optimization problem graphs onto QPU coupling maps, eliminating SWAP gate overhead and reducing circuit depth for IBM Heron and IBM Nighthawk topologies.",
+      "url": "https://thequantuminsider.com/2026/09/15/parityqc-parity-twine-compiler-product/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-15"
     }
   ]
 }
