@@ -96,6 +96,13 @@
   ],
   "news": [
     {
+      "title": "Alice & Bob Joins €4.6M MSCA-Backed QuBriC Doctoral Network for Quantum Error Correction",
+      "excerpt": "Alice & Bob joined QuBriC, Europe's first Marie Skłodowska-Curie Actions Doctoral Network dedicated to Quantum Error Correction, uniting 16 academic institutions and 7 quantum enterprises.",
+      "url": "https://quantumcomputingreport.com/alice-bob-joins-e4-6m-msca-backed-qubric-doctoral-network-for-quantum-error-correction/",
+      "source": "Quantum Computing Report",
+      "date": "2026-08-12"
+    },
+    {
       "title": "Alice & Bob develops 'Elevator Codes' to slash error rates on cat-qubit systems",
       "excerpt": "New code family projects up to 10,000x lower logical error rates while requiring only roughly 3x more physical qubits.",
       "url": "https://alice-bob.com/newsroom/reducing-quantum-computing-errors-with-new-code/",
