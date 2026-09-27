@@ -52,6 +52,13 @@
   ],
   "news": [
     {
+      "title": "Q*Bird becomes Falqon® Systems, building the infrastructure for Quantum Secure Networks (QSN)",
+      "excerpt": "The Dutch quantum communications pioneer becomes Falqon® Systems reflecting its long-term vision to enable Quantum Secure Networks.",
+      "url": "https://q-bird.com",
+      "source": "Q*Bird official website",
+      "date": "2026-09-01"
+    },
+    {
       "title": "Q*Bird Receives EIC Accelerator Funding for Quantum Secure Communications",
       "excerpt": "Q*Bird has signed an EIC Accelerator 2025 agreement securing €2.5 million in grant funding and €5 million in equity to scale its MDI-QKD-based quantum secure communication technologies in Europe. The NEXUS project will enhance MDI-QKD hardware efficiency, expand production capacity, and develop orchestration software for multi-operator quantum networks.",
       "url": "https://thequantuminsider.com/2026/01/12/qbird-eic-funding-mdi-qkd-europe/",
