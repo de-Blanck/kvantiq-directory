@@ -15,7 +15,7 @@
   "free": true,
   "language": "Python",
   "provider": "Xanadu",
-  "lastUpdated": "2026-05-13",
+  "lastUpdated": "2026-09-10",
   "maturity": "mature",
   "communitySize": "~2,400 GitHub stars",
   "sources": [
@@ -55,6 +55,13 @@
       "url": "https://pennylane.ai/blog/2026/05/pennylane-release-0.45",
       "source": "PennyLane Blog",
       "date": "2026-05-13"
+    },
+    {
+      "title": "Xanadu and AMD release Backline open-source PennyLane extension for sub-3-microsecond QEC latency",
+      "excerpt": "Xanadu and AMD released Backline, an open-source PennyLane extension delivering sub-3-microsecond classical-quantum loop latency across CPUs, GPUs, and FPGAs, targeting quantum error correction and real-time quantum control applications.",
+      "url": "https://quantumcomputingreport.com/xanadu-and-amd-launch-open-source-backline-extension-for-pennylane/",
+      "source": "Quantum Computing Report",
+      "date": "2026-09-10"
     }
   ]
 }
