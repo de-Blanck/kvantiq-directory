@@ -213,6 +213,13 @@
       "url": "https://thequantuminsider.com/2026/08/12/alice-bob-partners-europe-first-doctoral-network-quantum-error-correction/",
       "source": "The Quantum Insider",
       "date": "2026-08-12"
+    },
+    {
+      "title": "Alice & Bob and CEA partner to integrate cat-qubit software with Qaptiva HPC platform",
+      "excerpt": "Alice & Bob and France's CEA signed a partnership to integrate Alice & Bob's cat-qubit software stack into CEA's Qaptiva HPC platform, enabling write-once quantum programs to run across different quantum machines, alongside a joint research programme targeting early fault-tolerant use cases in condensed matter physics.",
+      "url": "https://thequantuminsider.com/2026/09/17/alice-bob-partners-with-the-cea-to-accelerate-quantum-hpc-integration-and-industrial-use-cases/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-17"
     }
   ]
 }

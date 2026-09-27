@@ -323,6 +323,27 @@
       "url": "https://www.globenewswire.com/news-release/2026/08/04/3338027/0/en/iqm-quantum-computers-reports-first-earnings-as-public-company-reporting-first-half-and-second-quarter-2026-results-and-initiates-fy-2026-guidance-supported-by-over-eur-102-million.html",
       "source": "GlobeNewswire",
       "date": "2026-08-04"
+    },
+    {
+      "title": "IQM adopts NVIDIA CUDA-Q Logical as primary fault-tolerant orchestration layer",
+      "excerpt": "IQM announced adoption of NVIDIA's CUDA-Q Logical as its primary logical orchestration layer for the Halocene QEC product line, enabling hardware-agnostic fault-tolerant benchmarking across physical and logical qubits, announced at IEEE Quantum Week 2026 in Toronto.",
+      "url": "https://quantumcomputingreport.com/iqm-adopts-nvidia-cuda-q-logical-framework-to-drive-open-architecture-fault-tolerant-system-benchmarking/",
+      "source": "Quantum Computing Report",
+      "date": "2026-09-14"
+    },
+    {
+      "title": "TOYO Corporation purchases second IQM Spark to open dual-QPU testbed in Japan",
+      "excerpt": "TOYO Corporation purchased a second full-stack IQM Spark 5-qubit quantum computer for installation at its R&D centre in Kiba, Tokyo, to be paired with its existing IQM Radiance 20-qubit system at AIST's G-QuAT facility, supporting talent development and algorithm validation across Japan's quantum ecosystem.",
+      "url": "https://thequantuminsider.com/2026/09/15/toyo-corporation-buys-second-iqm-quantum-computer/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-15"
+    },
+    {
+      "title": "IQM sells Spark system to Brazil's Eldorado Research Institute, marking first South America deployment",
+      "excerpt": "IQM announced a sale of an IQM Spark quantum system to the Eldorado Research Institute in Campinas, Brazil — the company's first deployment in South America — with installation planned for Q1 2027.",
+      "url": "https://thequantuminsider.com/2026/09/17/iqm-quantum-computer-south-america-brazil-eldorado/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-17"
     }
   ]
 }
