@@ -11,12 +11,12 @@
     "fault-tolerant"
   ],
   "founded": 2018,
-  "description": "Universal Quantum is a University of Sussex spin-out building large-scale trapped-ion quantum computers using microwave-based qubit control instead of lasers, combined with a modular chip architecture connected via electric-field links. The company holds a EUR 67 million contract from Germany's DLR to build fault-tolerant quantum systems and has raised close to GBP 100 million in combined public and private funding.",
+  "description": "Universal Quantum is a University of Sussex spin-out building large-scale trapped-ion quantum computers using microwave-based qubit control instead of lasers, combined with a modular chip architecture connected via electric-field links. The company holds a EUR 67 million contract from Germany's DLR to build fault-tolerant quantum systems and closed a USD 100 million+ Series A in October 2026, bringing total private funding to above USD 125 million.",
   "website": "https://universalquantum.com",
   "featured": false,
   "headquarters": "Haywards Heath, United Kingdom",
   "employees": "50+",
-  "funding": "GBP 100M+",
+  "funding": "USD 100M+ Series A (Oct 2026); EUR 67M DLR contract (2022)",
   "accessModel": "Hardware development + government contracts",
   "products": [
     {
@@ -27,7 +27,7 @@
   "highlights": [
     "EUR 67M contract from Germany's DLR to build fault-tolerant quantum systems",
     "Microwave-based qubit control eliminates complex laser setups used by competitors",
-    "Close to GBP 100M in combined public and private funding"
+    "USD 100M+ Series A closed October 2026 (co-led by DCVC and Firgun Ventures), total private funding above USD 125 million"
   ],
   "sources": [
     {
@@ -47,6 +47,12 @@
       "url": "https://www.sussex.ac.uk/broadcast/read/59206",
       "title": "German government tasks Sussex spin-out with building a powerful quantum computer in EUR 67M contract",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://tech.eu/2026/10/08/university-of-sussex-quantum-spinout-raises-record-ps100m-series-a/",
+      "title": "University of Sussex spinout Universal Quantum raises record £100M Series A — Tech.eu",
+      "dateAccessed": "2026-10-11"
     }
   ],
   "news": [
@@ -63,6 +69,13 @@
       "url": "https://www.sussex.ac.uk/broadcast/read/59206",
       "source": "University of Sussex",
       "date": "2022-11-02"
+    },
+    {
+      "title": "Universal Quantum closes record USD 100M+ Series A to scale modular trapped-ion technology globally",
+      "excerpt": "Universal Quantum raised over USD 100 million in a Series A co-led by DCVC and Firgun Ventures, described as the largest UK quantum company Series A. Funding will support a new R&D centre in Singapore and expansion in Hamburg (Germany), the United States and Japan.",
+      "url": "https://tech.eu/2026/10/08/university-of-sussex-quantum-spinout-raises-record-ps100m-series-a/",
+      "source": "Tech.eu",
+      "date": "2026-10-08"
     }
   ]
 }
