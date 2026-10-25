@@ -16,7 +16,7 @@
   "featured": false,
   "headquarters": "Haywards Heath, United Kingdom",
   "employees": "50+",
-  "funding": "GBP 100M+",
+  "funding": "USD 100M+ Series A (October 2026); total USD 125M+",
   "accessModel": "Hardware development + government contracts",
   "products": [
     {
@@ -63,6 +63,13 @@
       "url": "https://www.sussex.ac.uk/broadcast/read/59206",
       "source": "University of Sussex",
       "date": "2022-11-02"
+    },
+    {
+      "title": "Universal Quantum raises over $100M Series A to scale modular trapped-ion hardware globally",
+      "excerpt": "Universal Quantum closed a $100M+ Series A co-led by DCVC and Firgun Ventures, with Singapore's EDBI, Artal (Invus-advised), Integral GlobalTech (Japan), and Roblox founder Dave Baszucki among backers. Funding supports a new Singapore R&D hub and expansion in the US, Japan, and Hamburg. Total funding exceeds $125M.",
+      "url": "https://thequantuminsider.com/2026/10/08/universal-quantum-raises-over-100-million-series-a/",
+      "source": "The Quantum Insider",
+      "date": "2026-10-08"
     }
   ]
 }
