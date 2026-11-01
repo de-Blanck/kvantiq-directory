@@ -16,7 +16,7 @@
   "free": true,
   "language": "Python/C++",
   "provider": "NVIDIA",
-  "lastUpdated": "2026-08-03",
+  "lastUpdated": "2026-09-14",
   "maturity": "stable",
   "communitySize": "~600 GitHub stars",
   "sources": [
@@ -97,6 +97,13 @@
       "url": "https://github.com/NVIDIA/cuda-quantum/releases/tag/0.15.1",
       "source": "GitHub",
       "date": "2026-08-03"
+    },
+    {
+      "title": "NVIDIA unveils CUDA-Q Logical layer for fault-tolerant quantum computing orchestration",
+      "excerpt": "NVIDIA expanded its open-source CUDA-Q platform with CUDA-Q Logical, a programmable orchestration layer for fault-tolerant quantum systems, unveiled at IEEE Quantum Week 2026 in Toronto. The layer includes the QUOPS benchmark (developed by Sandia National Laboratories) and supports cross-hardware simulation; Fermilab reported cutting fault-tolerant architecture work from five months to three weeks.",
+      "url": "https://quantumcomputingreport.com/nvidia-unveils-cuda-q-logical-to-accelerate-fault-tolerant-system-orchestration-across-hardware-modalities/",
+      "source": "Quantum Computing Report",
+      "date": "2026-09-14"
     }
   ]
 }

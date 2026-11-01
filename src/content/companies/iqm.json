@@ -323,6 +323,13 @@
       "url": "https://www.globenewswire.com/news-release/2026/08/04/3338027/0/en/iqm-quantum-computers-reports-first-earnings-as-public-company-reporting-first-half-and-second-quarter-2026-results-and-initiates-fy-2026-guidance-supported-by-over-eur-102-million.html",
       "source": "GlobeNewswire",
       "date": "2026-08-04"
+    },
+    {
+      "title": "IQM demonstrates entanglement across complete 54-qubit Emerald processor for cloud users",
+      "excerpt": "IQM demonstrated a GHZ state with fidelity above 0.5 across all 54 qubits of its Emerald processor — the classical entanglement threshold — using an automated gate-ordering routine. The result is now accessible to IQM Resonance cloud users, extending the reliable working range from roughly 30 to 54 qubits.",
+      "url": "https://thequantuminsider.com/2026/10/29/iqm-full-chip-entanglement-54-qubit-processor/",
+      "source": "The Quantum Insider",
+      "date": "2026-10-29"
     }
   ]
 }
