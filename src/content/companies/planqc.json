@@ -50,6 +50,12 @@
       "url": "https://www.datacenterdynamics.com/en/news/planqc-to-lead-development-of-german-government-funded-1000-qubit-quantum-computer/",
       "title": "planqc to lead development of German government-funded 1,000 qubit quantum computer - Data Centre Dynamics",
       "dateAccessed": "2026-06-07"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/germany-advances-key-consortia-in-e640-million-717-2-million-usd-fault-tolerant-quantum-computing-competition",
+      "title": "Germany Advances Key Consortia in €640 Million Fault-Tolerant Quantum Computing Competition - Quantum Computing Report",
+      "dateAccessed": "2026-11-15"
     }
   ],
   "news": [
@@ -73,6 +79,13 @@
       "url": "https://www.planqc.eu",
       "source": "planqc.eu",
       "date": "2026-03-19"
+    },
+    {
+      "title": "planqc and LOGIQC Consortium Selected for Germany's €640M Quantum Computing Competition",
+      "excerpt": "planqc's LOGIQC consortium was selected as one of six groups in Germany's Quantum Computing Competition (QCC), funded by the BMFTR at up to €640 million. The consortium will build a neutral ytterbium-atom quantum computer targeting fault-tolerant operation, with partners including MPQ, LMU, the University of Tübingen, Forschungszentrum Jülich and TOPTICA Photonics.",
+      "url": "https://thequantuminsider.com/2026/10/05/planqc-logiqc-germany-quantum-computing-competition/",
+      "source": "The Quantum Insider",
+      "date": "2026-10-05"
     }
   ]
 }

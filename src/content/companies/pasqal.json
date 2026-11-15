@@ -274,6 +274,27 @@
       "url": "https://thequantuminsider.com/2026/08/29/pasqal-shares-nearly-double-in-nasdaq-debut/",
       "source": "The Quantum Insider",
       "date": "2026-08-29"
+    },
+    {
+      "title": "Pasqal's 256-Qubit Processor Reveals Unexpected Quantum Magnet Behavior",
+      "excerpt": "Pasqal used its 256-qubit neutral-atom processor to study a 2D quantum magnet and observed an unexpected slowdown in magnetic relaxation that classical simulation methods did not predict, documenting quantum simulation capability at this scale.",
+      "url": "https://thequantuminsider.com/2026/10/29/pasqal-processor-unexpected-quantum-magnet-behavior/",
+      "source": "The Quantum Insider",
+      "date": "2026-10-29"
+    },
+    {
+      "title": "Pasqal Launches AI-Assisted Workflow for Cloud Quantum Experiments",
+      "excerpt": "Pasqal launched an AI-assisted workflow on Pasqal Cloud that converts scientific ideas or published protocols into experiments executed directly on neutral-atom quantum processing units, aiming to reduce setup time for cloud-based quantum research.",
+      "url": "https://thequantuminsider.com/2026/10/28/pasqal-ai-workflow-cloud-quantum-experiments/",
+      "source": "The Quantum Insider",
+      "date": "2026-10-28"
+    },
+    {
+      "title": "Pasqal Reports Q3 2026 Results: QPU Services Revenue Grows 53%, Backlog €69.8M",
+      "excerpt": "Pasqal (Nasdaq: PSQL) reported Q3 2026 revenue of €3.3 million (down from €5.7 million due to absence of system sales), while QPU services revenue grew 53% year-on-year to €3.1 million. Booked and awarded business totalled €69.8 million and cash stood at €312.8 million as of September 30, 2026.",
+      "url": "https://thequantuminsider.com/2026/11/06/pasqal-q3-revenue-decline-services-growth/",
+      "source": "The Quantum Insider",
+      "date": "2026-11-06"
     }
   ]
 }

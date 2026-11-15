@@ -213,6 +213,13 @@
       "url": "https://thequantuminsider.com/2026/08/12/alice-bob-partners-europe-first-doctoral-network-quantum-error-correction/",
       "source": "The Quantum Insider",
       "date": "2026-08-12"
+    },
+    {
+      "title": "Alice & Bob Shares First Results from France's PROQCIMA Quantum Program",
+      "excerpt": "Alice & Bob published Phase 1 results from PROQCIMA, the French national quantum computing program, reporting that its cat-qubit architecture can reduce the physical qubit overhead required for fault-tolerant quantum computing by up to 200 times compared with alternative approaches.",
+      "url": "https://www.hpcwire.com/off-the-wire/alice-bob-shares-1st-results-from-frances-proqcima-quantum-program/",
+      "source": "HPCwire",
+      "date": "2026-10-20"
     }
   ]
 }
