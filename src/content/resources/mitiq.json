@@ -36,5 +36,14 @@
       "url": "https://quantum-journal.org/papers/q-2022-08-11-774/",
       "title": "Mitiq: A software package for error mitigation on noisy quantum computers"
     }
+  ],
+  "news": [
+    {
+      "title": "Mitiq v1.1.0 released",
+      "excerpt": "Mitiq v1.1.0 adds an experimental debiasing (symmetrization) technique that runs circuit variants with randomly permuted qubit labels and combines results by averaging or shot-wise plurality vote. Probabilistic Error Amplification now accepts user-supplied OperationRepresentations so hardware-learned noise models can be amplified directly.",
+      "url": "https://github.com/unitaryfoundation/mitiq/releases/tag/v1.1.0",
+      "source": "GitHub",
+      "date": "2026-09-04"
+    }
   ]
 }

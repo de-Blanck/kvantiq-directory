@@ -16,7 +16,7 @@
   "featured": false,
   "headquarters": "Delft, Netherlands",
   "employees": "30",
-  "funding": "EUR 12M",
+  "funding": "EUR 15M",
   "accessModel": "Hardware sales (quantum chip testing systems) + software licensing",
   "products": [
     {
@@ -54,6 +54,24 @@
       "type": "url",
       "url": "https://quantumcomputingreport.com/orange-quantum-systems-raises-e12m-13-8m-usd-to-scale-high-throughput-quantum-chip-testing/",
       "title": "Orange Quantum Systems Raises €12M ($13.8M USD) to Scale High-Throughput Quantum Chip Testing"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/whos-news-strategic-appointments-at-semiqon-orangeqs-ionq-haiqu-and-jij/",
+      "title": "Who's News: Strategic Appointments at SemiQon, OrangeQS, IonQ, Haiqu, and Jij - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/04/21/orangeqs-extends-seed-round-to-e15-million-and-partners-with-rigetti-quantware-and-peak-quantum/",
+      "title": "OrangeQS Extends Seed Round to EUR 15 Million And Partners With Rigetti, QuantWare and Peak Quantum - The Quantum Insider",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/orangeqs-extends-seed-round-to-e15m-17-6m-usd-and-launches-partnership-program/",
+      "title": "OrangeQS Extends Seed Round to EUR 15M ($17.6M USD) and Launches Partnership Program - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
@@ -63,6 +81,13 @@
       "url": "https://thequantuminsider.com/2025/06/18/orange-quantum-systems-raises-e12-million-seed-round/",
       "source": "The Quantum Insider",
       "date": "2025-06-18"
+    },
+    {
+      "title": "OrangeQS appoints Raj Badoni as Chief Commercial Officer",
+      "excerpt": "Orange Quantum Systems appointed Raj Badoni as Chief Commercial Officer to expand its FLOW product and wider quantum chip testing portfolio. Badoni previously held commercial roles at KLA, ASM, Onto Innovation and SMART Photonics.",
+      "url": "https://thequantuminsider.com/2026/11/12/orangeqs-raj-badoni-chief-commercial-officer/",
+      "source": "The Quantum Insider",
+      "date": "2026-11-12"
     }
   ]
 }

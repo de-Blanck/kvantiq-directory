@@ -35,6 +35,18 @@
       "type": "doi",
       "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12468836/",
       "title": "HQRNN-FD: A Hybrid Quantum Recurrent Neural Network for Fraud Detection"
+    },
+    {
+      "type": "url",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-explore-quantum-computing-tackle-financial-crime",
+      "title": "FCA to explore quantum computing to tackle financial crime - Financial Conduct Authority",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/uk-financial-conduct-authority-launches-quantum-experimentation-group-to-evaluate-financial-crime-detection/",
+      "title": "UK Financial Conduct Authority Launches Quantum Experimentation Group to Evaluate Financial Crime Detection - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
@@ -51,6 +63,13 @@
       "url": "https://arxiv.org/abs/2412.19441",
       "source": "arXiv / Applied Intelligence",
       "date": "2026-01-14"
+    },
+    {
+      "title": "UK FCA sets up Quantum Experimentation Group to test quantum machine learning for fraud and AML detection",
+      "excerpt": "The UK Financial Conduct Authority announced its first regulator-led quantum computing experimentation group, which will initially explore whether quantum machine learning can help detect money laundering and fraud using an FCA synthetic dataset. Firms, quantum technology providers and national research laboratories can register interest until 31 December 2026, and the group launches in Q1 2027.",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-explore-quantum-computing-tackle-financial-crime",
+      "source": "Financial Conduct Authority",
+      "date": "2026-11-05"
     }
   ]
 }

@@ -36,5 +36,14 @@
       "url": "https://link.springer.com/article/10.1140/epjqt/s40507-025-00323-8",
       "title": "Quantum powered credit risk assessment: a novel approach using Hybrid Quantum-Classical Deep Neural Network for Row-Type Dependent Predictive Analysis"
     }
+  ],
+  "news": [
+    {
+      "title": "Kipu Quantum's Rimay applied to credit-risk classification on IBM hardware",
+      "excerpt": "Kipu Quantum's Rimay quantum feature-extraction function, released in the IBM Quantum Functions Catalog, includes an end-to-end credit-risk classification tutorial. On a 48-qubit German credit dataset (1,000 samples), a hybrid random forest using quantum features raised recall from 0.921 to 0.957 and AUC from 0.781 to 0.798 against classical baselines.",
+      "url": "https://quantumcomputingreport.com/kipu-quantum-launches-rimay-quantum-feature-extraction-in-ibm-quantum-functions-catalog/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-12"
+    }
   ]
 }

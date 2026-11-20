@@ -66,6 +66,18 @@
       "url": "https://thenextweb.com/news/quantum-motion-160m-eu-scaleup-europe-fund-first-investment",
       "title": "Quantum Motion lands $160M in EU's first major late-stage commitment — The Next Web",
       "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/09/03/quantum-motion-additional-funding-silicon-quantum-computing/",
+      "title": "Quantum Motion Raises Additional Funding for Silicon Quantum Computing - The Quantum Insider",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quantum-motion-finalizes-second-close-of-series-c-funding-round-for-silicon-qpu-scaling/",
+      "title": "Quantum Motion Finalizes Second Close of Series C Funding Round for Silicon QPU Scaling - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
@@ -110,6 +122,13 @@
       "url": "https://sifted.eu/articles/quantum-motion-series-c",
       "source": "Sifted",
       "date": "2026-05-07"
+    },
+    {
+      "title": "Quantum Motion completes second close of Series C",
+      "excerpt": "Quantum Motion announced a second close of its Series C with new investment from imec.ventures, Lansdowne Partners, Sony Innovation Fund, S3 Ventures and Inkef; the extension was led by existing leads DCVC and Kembara. No amount was disclosed; the company said funds support custom silicon co-development, a new US lab in Maryland and its participation in Stage B of DARPA's Quantum Benchmarking Initiative.",
+      "url": "https://thequantuminsider.com/2026/09/03/quantum-motion-additional-funding-silicon-quantum-computing/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-03"
     }
   ]
 }

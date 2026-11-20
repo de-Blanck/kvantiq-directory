@@ -111,6 +111,12 @@
       "url": "https://thequantuminsider.com/2026/08/29/pasqal-shares-nearly-double-in-nasdaq-debut/",
       "title": "Pasqal Shares Nearly Double in Nasdaq Debut - The Quantum Insider",
       "dateAccessed": "2026-08-30"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/pasqal-demonstrates-hybrid-gpu-to-qpu-workflows-using-slurm-26-11-hierarchical-resources-qrmi-and-cuda-q/",
+      "title": "Pasqal Demonstrates Hybrid GPU-to-QPU Workflows Using Slurm 26.11 Hierarchical Resources, QRMI, and CUDA-Q - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
@@ -274,6 +280,13 @@
       "url": "https://thequantuminsider.com/2026/08/29/pasqal-shares-nearly-double-in-nasdaq-debut/",
       "source": "The Quantum Insider",
       "date": "2026-08-29"
+    },
+    {
+      "title": "Pasqal integrates its QPUs with Slurm 26.11 hierarchical resources",
+      "excerpt": "Pasqal announced an integration with the Hierarchical Resources (HRES) capability added to the Slurm workload manager in version 26.11, allowing its neutral-atom QPUs to be scheduled natively alongside CPUs and GPUs. The work builds on the QRMI interface co-developed with IBM and was presented at SC26.",
+      "url": "https://thequantuminsider.com/2026/11/19/pasqal-integrates-quantum-processors-slurm-hres/",
+      "source": "The Quantum Insider",
+      "date": "2026-11-19"
     }
   ]
 }

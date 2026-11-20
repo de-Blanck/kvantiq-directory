@@ -139,6 +139,18 @@
       "url": "https://www.datacenterdynamics.com/en/news/quantum-earnings-q2-2026-d-wave-ionq-and-rigetti-publish-financial-results-alongside-newly-ipo-ed-iqm-quantum-computers/",
       "title": "Quantum earnings Q2 2026 - Data Center Dynamics",
       "dateAccessed": "2026-08-23"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/turkiye-signs-agreement-with-iqm-quantum-computers-to-deploy-54-qubit-radiance-r3-system-at-tubitak-in-2027/",
+      "title": "Türkiye Signs Agreement with IQM Quantum Computers to Deploy 54-Qubit Radiance R3 System at TÜBİTAK in 2027 - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/iqm-announces-zero-downtime-upgrade-program-for-halocene-product-line-scaling-past-1000-qubits/",
+      "title": "IQM Announces Zero-Downtime Upgrade Program for Halocene Product Line Scaling Past 1,000 Qubits - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
@@ -323,6 +335,34 @@
       "url": "https://www.globenewswire.com/news-release/2026/08/04/3338027/0/en/iqm-quantum-computers-reports-first-earnings-as-public-company-reporting-first-half-and-second-quarter-2026-results-and-initiates-fy-2026-guidance-supported-by-over-eur-102-million.html",
       "source": "GlobeNewswire",
       "date": "2026-08-04"
+    },
+    {
+      "title": "IQM introduces upgrade programme for its Halocene error-correction product line",
+      "excerpt": "IQM announced an upgrade programme for Halocene giving customers a path from the current 150-qubit system to systems of over 1,000 qubits. New systems are installed while the existing one keeps running, and IQM's HPC integration service is included with every upgrade; IQM presented the programme at SC26 in Chicago.",
+      "url": "https://thequantuminsider.com/2026/11/17/iqm-halocene-quantum-systems-upgrade-programme/",
+      "source": "The Quantum Insider",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Türkiye signs agreement with IQM for 54-qubit Radiance system at TÜBİTAK",
+      "excerpt": "TÜBİTAK signed an agreement with IQM to install an on-premises 54-qubit IQM Radiance R3 superconducting quantum computer, with commissioning scheduled for 2027. The system will be owned by TÜBİTAK, run under the national designation ARF Quantum and integrate with its existing HPC environment; financial terms were not disclosed.",
+      "url": "https://quantumcomputingreport.com/turkiye-signs-agreement-with-iqm-quantum-computers-to-deploy-54-qubit-radiance-r3-system-at-tubitak-in-2027/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-16"
+    },
+    {
+      "title": "IQM supports Slurm 26.11 QPU scheduling; MQSC demonstrates open-source integration on IQM systems",
+      "excerpt": "At SC26 IQM announced support for NVIDIA's work making QPUs a schedulable resource in the Slurm workload manager via the Hierarchical Resources (HRES) plugin in Slurm 26.11. Munich Quantum Software Company demonstrated an open-source orchestrator using HRES and QDMI to schedule IQM processors such as the 54-qubit IQM Emerald.",
+      "url": "https://quantumcomputingreport.com/iqm-and-mqsc-demonstrate-open-source-slurm-26-11-qpu-scheduling-using-qdmi-and-hierarchical-resources/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-16"
+    },
+    {
+      "title": "IQM and AMD demonstrate hybrid QPU-GPU chemistry workflow on ROCm",
+      "excerpt": "IQM and AMD demonstrated a hybrid quantum-selected configuration interaction workflow splitting ground-state energy calculations between the 20-qubit IQM Garnet processor and AMD Instinct GPUs running ROCm. The validation on molecular hydrogen is framed as an interoperability test rather than a quantum-advantage claim, and is published as an open-source notebook on IQM Academy.",
+      "url": "https://quantumcomputingreport.com/iqm-and-amd-demonstrate-reproducible-hybrid-qpu-gpu-chemistry-workflow-using-rocm/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-17"
     }
   ]
 }

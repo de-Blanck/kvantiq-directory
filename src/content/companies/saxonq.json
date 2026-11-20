@@ -76,6 +76,18 @@
       "url": "https://quantumcomputingreport.com/saxon-q-launches-100-qubit-diamond-based-room-temperature-quantum-computers/",
       "title": "Saxon Q Launches Diamond-Based Room-Temperature Quantum Computers - Quantum Computing Report",
       "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/11/17/saxon-q-announces-quantum-watchdog-to-detect-when-quantum-computers-fail/",
+      "title": "SAXON Q Announces Quantum Watchdog to Detect When Quantum Computers Fail - The Quantum Insider",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/saxon-q-introduces-patented-quantum-watchdog-system-for-runtime-qpu-fault-detection/",
+      "title": "SAXON Q Introduces Patented Quantum Watchdog System for Runtime QPU Fault Detection - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
@@ -106,6 +118,13 @@
       "url": "https://thequantuminsider.com/2026/07/21/saxon-q-diamond-nv-center-quantum-computers/",
       "source": "The Quantum Insider",
       "date": "2026-07-21"
+    },
+    {
+      "title": "SAXON Q announces patented Quantum Watchdog fault-detection system",
+      "excerpt": "SAXON Q announced Quantum Watchdog, a patented system running on a separate classical processor that monitors a quantum computer by inserting test problems with known answers and tracking power, temperature and magnetic field, switching the machine to safe mode on failure. The company is offering licences to hardware makers and integrators, with implementation expected from early 2027; patents are granted in Europe, the US and China.",
+      "url": "https://thequantuminsider.com/2026/11/17/saxon-q-announces-quantum-watchdog-to-detect-when-quantum-computers-fail/",
+      "source": "The Quantum Insider",
+      "date": "2026-11-17"
     }
   ]
 }

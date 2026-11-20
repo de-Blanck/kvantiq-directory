@@ -82,6 +82,12 @@
       "url": "https://quantumcomputingreport.com/quandela-selected-for-stage-a-of-darpas-quantum-benchmarking-initiative/",
       "title": "Quandela Selected for Stage A of DARPA's Quantum Benchmarking Initiative - Quantum Computing Report",
       "dateAccessed": "2026-06-21"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/11/19/quandela-hermes-epitek-mou-photonic-quantum-technology/",
+      "title": "Quandela and Hermes-Epitek Join Forces to Advance Photonic Quantum Technologies - The Quantum Insider",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
@@ -140,6 +146,20 @@
       "url": "https://thequantuminsider.com/2026/06/16/darpa-selects-quandela-for-stage-a-of-the-quantum-benchmarking-initiative/",
       "source": "The Quantum Insider",
       "date": "2026-06-16"
+    },
+    {
+      "title": "Quandela signs Qatar deployment alliance and Taiwan photonic hardware MoU",
+      "excerpt": "Quandela agreed a partnership with Mekdam Holding Group and MEEZA to deploy cloud and on-premises photonic quantum systems in GCC states, and signed an MoU with Taiwan's Hermes-Epitek to co-develop photonic quantum hardware, starting with a fibre-coupled testbed in Taiwan. Both were announced on 12-13 November 2026.",
+      "url": "https://quantumcomputingreport.com/quandela-expands-international-photonic-footprint-with-deployment-alliance-in-qatar-and-foundry-mou-in-taiwan/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-18"
+    },
+    {
+      "title": "Quandela, CNRS and NVIDIA define a photonic simulability frontier on H100 GPUs",
+      "excerpt": "Researchers from Quandela, CNRS and NVIDIA published a benchmark defining the number of photonic inputs at which exact classical simulation on a single NVIDIA H100 GPU drops to one sample per second. Their optimised GPU code raised that frontier from 32.5 to 38.3 single-photon inputs.",
+      "url": "https://quantumcomputingreport.com/quandela-and-nvidia-benchmark-photonic-quantum-simulability-frontiers-on-h100-gpus/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-18"
     }
   ]
 }

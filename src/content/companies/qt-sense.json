@@ -48,6 +48,12 @@
       "url": "https://thequantuminsider.com/2026/02/04/qt-sense-raises-e4-million-for-quantum-tech-that-analyzes-living-cells-in-real-time/",
       "title": "QT Sense raises €4M for quantum tech that analyzes living cells in real time (The Quantum Insider, February 2026)",
       "dateAccessed": "2026-03-21"
+    },
+    {
+      "type": "url",
+      "url": "https://www.kvk.nl/en/press/kvk-innovation-top-100-qt-sense-wins-with-quantum-microscope-for-faster-diagnoses/",
+      "title": "KVK Innovation Top 100: QT Sense wins with quantum microscope for faster diagnoses - KVK",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
@@ -64,6 +70,13 @@
       "url": "https://thequantuminsider.com/2026/02/04/qt-sense-raises-e4-million-for-quantum-tech-that-analyzes-living-cells-in-real-time/",
       "source": "The Quantum Insider",
       "date": "2026-02-03"
+    },
+    {
+      "title": "QT Sense wins the 2026 KVK Innovation Top 100",
+      "excerpt": "The Netherlands Chamber of Commerce (KVK) named QT Sense overall winner of the 21st KVK Innovation Top 100 for its nanodiamond quantum microscope for real-time single-cell measurements. KVK noted a first system is in use at a hospital for research into early sepsis diagnosis.",
+      "url": "https://www.kvk.nl/en/press/kvk-innovation-top-100-qt-sense-wins-with-quantum-microscope-for-faster-diagnoses/",
+      "source": "KVK",
+      "date": "2026-11-13"
     }
   ]
 }

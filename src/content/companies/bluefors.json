@@ -78,6 +78,18 @@
       "url": "https://quantumcomputingreport.com/bluefors-joins-chicago-quantum-exchange-to-strengthen-regional-cryogenic-infrastructure/",
       "title": "Bluefors Joins Chicago Quantum Exchange to Strengthen Regional Cryogenic Infrastructure - Quantum Computing Report",
       "dateAccessed": "2026-05-17"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/xanadu-and-bluefors-form-multi-million-dollar-strategic-partnership-to-develop-modular-cryogenic-infrastructure-for-utility-scale-quantum-data-centers/",
+      "title": "Xanadu and Bluefors Form Multi-Million Dollar Strategic Partnership - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/09/29/xanadu-bluefors-cryogenic-infrastructure-utility-scale-quantum/",
+      "title": "Xanadu and Bluefors Develop Cryogenic Infrastructure for Utility-Scale Quantum Computing - The Quantum Insider",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
@@ -108,6 +120,13 @@
       "url": "https://www.hpcwire.com/off-the-wire/bluefors-joins-chicago-quantum-exchange-to-support-quantum-infrastructure-and-workforce-development/",
       "source": "HPCwire",
       "date": "2026-05-07"
+    },
+    {
+      "title": "Xanadu and Bluefors sign multi-million-dollar cryogenic infrastructure partnership",
+      "excerpt": "Xanadu and Bluefors announced a multi-million-dollar strategic partnership to develop a modular cryogenic prototype for utility-scale photonic quantum computing data centres. The compact cryogenic modules are meant to replace industrial-scale cryoplants for cooling superconducting nanowire single-photon detector arrays.",
+      "url": "https://quantumcomputingreport.com/xanadu-and-bluefors-form-multi-million-dollar-strategic-partnership-to-develop-modular-cryogenic-infrastructure-for-utility-scale-quantum-data-centers/",
+      "source": "Quantum Computing Report",
+      "date": "2026-09-30"
     }
   ]
 }

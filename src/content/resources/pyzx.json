@@ -49,6 +49,13 @@
       "url": "https://github.com/Quantomatic/pyzx/releases/tag/v0.10.4",
       "source": "PyZX GitHub Releases",
       "date": "2026-07-01"
+    },
+    {
+      "title": "PyZX v0.10.8 released",
+      "excerpt": "PyZX v0.10.8 adds cubic-time flow finding for XY, X and Y measurements with a new pyzx.flow.pauli_flow entry point. full_reduce now converts arity-2 H-boxes to Hadamard edges, and a bug where basic_optimization applied an XPhase gate to the wrong qubit was fixed.",
+      "url": "https://github.com/zxcalc/pyzx/releases/tag/v0.10.8",
+      "source": "GitHub",
+      "date": "2026-11-01"
     }
   ]
 }

@@ -36,5 +36,14 @@
       "url": "https://www.quantinuum.com/blog/just-the-tket-quantum-software-tool-now-open-source",
       "title": "Just the TKET: Quantum software tool now open source"
     }
+  ],
+  "news": [
+    {
+      "title": "TKET v2.18.5 released",
+      "excerpt": "Quantinuum released TKET v2.18.5, a patch that fixes a segfault in the LexiRoute lookahead on classical vertices and out-of-bounds accesses caught by debug-mode assertions, and adds documentation fixes.",
+      "url": "https://github.com/quantinuum/tket/releases/tag/v2.18.5",
+      "source": "GitHub",
+      "date": "2026-10-08"
+    }
   ]
 }

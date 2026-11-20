@@ -76,6 +76,20 @@
       "url": "https://qant.com/press-releases/phoquant-quantum-computing-consortium-led-by-qant-receives-50-million-euros-in-research-funding/",
       "source": "Q.ANT",
       "date": "2022-03-01"
+    },
+    {
+      "title": "Q.ANT and IONOS launch photonic computing pilot on bare-metal cloud",
+      "excerpt": "Q.ANT and IONOS launched a joint pilot that lets developers run AI workloads on Q.ANT photonic processors installed in an IONOS data centre in Germany as bare-metal servers. It follows the open-source SDK Q.ANT released in September 2026.",
+      "url": "https://thequantuminsider.com/2026/11/09/qant-photonic-processors-ionos-cloud-infrastructure/",
+      "source": "The Quantum Insider",
+      "date": "2026-11-09"
+    },
+    {
+      "title": "Q.ANT unveils NPU Gen 2+ with optical Discrete Fourier Transforms at SC26",
+      "excerpt": "Q.ANT unveiled the NPU Gen 2+, a new generation of its photonic Native Processing Unit that adds optical Discrete Fourier Transforms, at SC26 in Chicago, and demonstrated a hybrid photonic-GPU system for language models.",
+      "url": "https://thequantuminsider.com/2026/11/17/q-ant-demonstrates-hybrid-photonic-gpu-system-for-language-models/",
+      "source": "The Quantum Insider",
+      "date": "2026-11-17"
     }
   ]
 }

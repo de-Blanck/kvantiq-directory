@@ -36,5 +36,21 @@
       "url": "https://arxiv.org/abs/2110.06799",
       "title": "Applying quantum approximate optimization to the heterogeneous vehicle routing problem"
     }
+  ],
+  "news": [
+    {
+      "title": "QFactorial and Monash University win A$1.12 million grant for quantum logistics optimization",
+      "excerpt": "QFactorial, with Monash University, the University of Queensland and Griffith University, received about A$1.12 million in Stage 2 of Round 2 of Australia's Critical Technologies Challenge Program for a 15-month project on vehicle routing, load balancing and fleet scheduling. The project aims to move QFactorial's routing platform from TRL 5 to TRL 7, with IBM Quantum, AWS and Fujitsu providing compute and Team Global Express and Opal Packaging as end users.",
+      "url": "https://quantumcomputingreport.com/qfactorial-and-monash-university-secure-a1-12-million-758-6k-usd-australian-government-grant-for-quantum-logistics-optimization/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-13"
+    },
+    {
+      "title": "SoftBank and Classiq drone-routing project wins NEDO quantum challenge award",
+      "excerpt": "A SoftBank Corp. and Classiq project applying hybrid quantum machine learning to partition 1,921 Tokyo delivery nodes for drone routing received the Outstanding Research Award in Japan's NEDO quantum challenge, reporting a 2.31% shorter drone delivery distance on quantum hardware than a classical baseline.",
+      "url": "https://quantumcomputingreport.com/classiq-collaborations-with-shionogi-kddi-research-and-softbank-earn-awards-in-japans-nedo-quantum-challenge/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-17"
+    }
   ]
 }

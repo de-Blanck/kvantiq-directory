@@ -42,6 +42,28 @@
       "type": "website",
       "url": "https://www.ipms.fraunhofer.de/en/applications/Quantum-Technologies/Quantum-Communication/Quantum-Key-Distribution.html",
       "title": "Quantum Key Distribution (QKD) - Fraunhofer IPMS"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/11/18/8000-km-quantum-safe-network-us-europe-demonstration/",
+      "title": "Hybrid QKD and PQC Network Connects Chicago and Europe Across 8,000 km - The Quantum Insider",
+      "dateAccessed": "2026-11-20"
+    }
+  ],
+  "news": [
+    {
+      "title": "Hybrid QKD and post-quantum network spans 8,000 km between Spain, Amsterdam and Chicago",
+      "excerpt": "A consortium including the University of the Basque Country (EHU), Luxquanta, Ciena, GEANT, PCSS, RedIRIS and SURF demonstrated a hybrid quantum-safe network at SC26 linking five nodes in Chicago, Amsterdam and Bizkaia over about 8,000 km. Luxquanta QKD systems ran on the short links (including a 25 km EHU link), while the long Bilbao-Amsterdam and Amsterdam-Chicago links used ML-KEM post-quantum key establishment.",
+      "url": "https://thequantuminsider.com/2026/11/18/8000-km-quantum-safe-network-us-europe-demonstration/",
+      "source": "The Quantum Insider",
+      "date": "2026-11-18"
+    },
+    {
+      "title": "NEC and IBM Japan combine QKD and post-quantum cryptography in a TLS proxy",
+      "excerpt": "NEC and IBM Japan completed a July-September 2026 demonstration that fed keys from NEC's QKD system, via the ETSI GS QKD 014 interface, into a customized IBM Quantum Safe Proxy, combining them with ML-KEM-768 to derive TLS traffic keys without changes to existing applications. The companies plan to explore deployments for financial institutions and inter-data-center links.",
+      "url": "https://quantumcomputingreport.com/nec-and-ibm-japan-demonstrate-hybrid-qkd-and-post-quantum-cryptography-tls-proxy-architecture/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-16"
     }
   ]
 }
