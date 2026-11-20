@@ -28,15 +28,24 @@
       "dateAccessed": "2026-03-19"
     },
     {
-      "type": "arxiv",
-      "url": "https://arxiv.org/abs/2310.15060",
-      "title": "Post-quantum cryptography: current state and quantum mitigation strategies",
-      "dateAccessed": "2026-03-20"
+      "type": "url",
+      "url": "https://www.enisa.europa.eu/publications/post-quantum-cryptography-current-state-and-quantum-mitigation",
+      "title": "Post-Quantum Cryptography: Current state and quantum mitigation",
+      "authors": "European Union Agency for Cybersecurity (ENISA)",
+      "dateAccessed": "2026-11-20"
     },
     {
       "type": "website",
       "url": "https://www.ncsc.gov.uk/guidance/pqc-migration-timelines",
       "title": "Timelines for migration to post-quantum cryptography | National Cyber Security Centre"
+    },
+    {
+      "type": "doi",
+      "url": "https://doi.org/10.1038/s41586-022-04623-2",
+      "title": "Transitioning organizations to post-quantum cryptography",
+      "authors": "Joseph, Misoczki, Manzano, Tricot et al.",
+      "datePublished": "2022-05-11",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [

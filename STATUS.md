@@ -3,7 +3,7 @@
 Session handoff document. Read at session start; update before ending. See
 `CLAUDE.md` → "Context & Autonomy" for the rules that govern this file.
 
-**Last updated:** 2026-09-06 (late evening)
+**Last updated:** 2026-11-20 (citation corrections only; the State line below is as of 2026-09-06 and was not re-verified)
 **Branch:** `main`
 **State:** Audit Dashboard rebuilt on real evidence; merging to `main` deploys and is verified against production; 0 open Dependabot alerts; Astro 7. **Two launchd agents now run unattended** — the weekly sweep and a merge-when-green job. **224 of 226 entries published.**
 
@@ -148,7 +148,57 @@ which asserted a positive quantum result from a paper concluding the opposite; a
   running. Both halves exist because a `git reset --hard` destroyed ten entries' sweep work on
   2026-09-06.
 
+## What's done — 2026-11-20
+
+- **Six arXiv citations that pointed to unrelated papers are corrected** (branch
+  `content/fix-arxiv-citations`). All six had been in the repo since 2026-03-19/20, and each
+  use case counted its one toward the 3-source bar: `supply-chain-optimization`
+  (arXiv:2212.12239 is a hadron-physics paper), `energy-grid-optimization` (2303.00445 is about
+  error mitigation for HCl; the paper the title names is 2003.00254), `cryptography-post-quantum`
+  (2310.15060 is fractal analysis; the recorded title is an ENISA report),
+  `quantum-chemistry-materials` (2106.13832, de Sitter thermodynamics),
+  `quantum-machine-learning-classification` (2307.10060, fluid dynamics) and
+  `drug-discovery-hybrid` (2006.14510, a survey of quantum computing for finance). Each id was
+  looked up in the arXiv registry and its title compared with the recorded one; the replacements
+  were verified the same way (arXiv API, DOI registration records).
+- **Four arXiv titles that named a different paper are corrected.** The links were right, the
+  titles were not: `portfolio-optimization` (1911.05296, 2207.10555), `vqe-hydrogen` (1304.3061)
+  and `quantum-machine-learning-classification` (2101.11020).
+- **Two dead links and one moved link replaced in those entries.** Pasqal's energy article and
+  Accenture's supply-chain page return 404; LLNL's Quantum Simulations Group moved to
+  `qsg.llnl.gov`.
+- **Two claims the sources did not support are reworded**: "5-10% cost reductions" in
+  `supply-chain-optimization` and "faster than classical methods" in `energy-grid-optimization`.
+- Gate green (type-check, tests, build). `audit:sources` unchanged: 224 of 226 at or above the bar.
+
+**Why the existing checks missed this:** `audit:sources` counts sources by domain, and the sweep
+looks for contradictions between the texts it fetches. Neither checks that an arXiv id is the
+paper its title names, or that a link still resolves.
+
 ## What's next / open
+
+- **Eleven weekly refresh PRs are open and unmerged** (#141 → #164, 2026-09-06 → 2026-11-20).
+      All are drafts without the `auto-merge` label, so the merge job skips them, and `main` has
+      not changed since 2026-09-06. This is the situation #85 cleaned up once already. Dependabot
+      #155 (2026-10-16) is also still open although it is eligible, and the sweep failed on
+      2026-10-11 (#152); whether the merge job is running was not investigated. Unblock: Rune
+      (the tier policy below, or the label), then a consolidation like #85.
+- **No check verifies citation identity or link health.** A registry lookup per source (arXiv
+      API, DOI content negotiation) would have caught all ten title mismatches. Found and not
+      changed: `vehicle-routing-optimization` (arXiv:2002.01351) and `q-score` (arXiv:2102.12973)
+      carry descriptive titles that differ from the papers' own (the papers are the right ones);
+      35 further source links returned 404 or redirected to a front page when checked on
+      2026-11-13 (38 in all; three are fixed in the 2026-11-20 PR).
+- **Claims not re-verified in entries the 2026-11-20 PR touched.** `portfolio-optimization`
+      ("10-50 assets", "quantum advantage … is expected") and `quantum-chemistry-materials`
+      ("small molecular catalysts and battery materials on NISQ devices") are not obviously
+      stated by the sources that were read. The HQS link on `quantum-chemistry-materials` could
+      not be reached from the session that made the PR.
+- **Three entry-level issues need Rune's decision.** `benchmarks/algorithmic-qubits` is named
+      after IonQ's #AQ metric but describes Google's below-threshold surface-code result, which
+      `surface-code-below-threshold` already covers. The website of `companies/quantum-industries`
+      redirects to zerothird.com, which is a separate entry. The website of `companies/q-bird`
+      redirects to falqonsystems.com.
 
 - **The autonomy tier policy is not written down yet.** Proposed 2026-09-06 and approved in
       conversation only: Tier 0 never (rulebook, force-push, secrets, deleting entries, lowering the
