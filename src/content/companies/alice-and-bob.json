@@ -92,6 +92,18 @@
       "url": "https://www.siliconrepublic.com/machines/alice-bob-partner-european-doctoral-network-quantum-error-correction",
       "title": "Alice & Bob to work with European network on quantum error fixes - Silicon Republic",
       "dateAccessed": "2026-08-23"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/11/18/alice-bobs-updated-roadmap-targets-200-logical-qubits-from-3600-physical-qubits-by-2030/",
+      "title": "Alice & Bob's Updated Roadmap Targets 200 Logical Qubits From 3,600 Physical Qubits by 2030 - The Quantum Insider",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/alice-bob-accelerates-modular-cat-qubit-roadmap-to-200-logical-qubits-from-3600-physical-qubits-by-2030/",
+      "title": "Alice & Bob Accelerates Modular Cat-Qubit Roadmap to 200 Logical Qubits from 3,600 Physical Qubits by 2030 - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
@@ -213,6 +225,20 @@
       "url": "https://thequantuminsider.com/2026/08/12/alice-bob-partners-europe-first-doctoral-network-quantum-error-correction/",
       "source": "The Quantum Insider",
       "date": "2026-08-12"
+    },
+    {
+      "title": "Alice & Bob updates roadmap to target 200 logical qubits by 2030",
+      "excerpt": "Alice & Bob published a modular roadmap targeting 200 logical qubits as soon as 2030 with a system called Carbon built from 3,600 physical cat qubits, double its previous target. The roadmap sets milestones up to 2034.",
+      "url": "https://quantumcomputingreport.com/alice-bob-accelerates-modular-cat-qubit-roadmap-to-200-logical-qubits-from-3600-physical-qubits-by-2030/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-18"
+    },
+    {
+      "title": "Alice & Bob integrates cat-qubit systems with Slurm 26.11 via QRMI",
+      "excerpt": "At SC26 Alice & Bob described how its Felis cloud API connects to NVIDIA's Slurm 26.11 workload manager through the vendor-neutral Quantum Resource Management Interface (QRMI), developed with the STFC Hartree Centre and contributors from IBM and Pasqal. Its QRMI implementation also supports OpenPBS, IBM Spectrum LSF, Grid Engine and Flux.",
+      "url": "https://quantumcomputingreport.com/alice-bob-details-qrmi-and-slurm-26-11-hierarchical-resource-integration-for-cat-qubit-systems-at-sc26/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-16"
     }
   ]
 }

@@ -50,5 +50,14 @@
       "url": "https://arxiv.org/pdf/2604.08367",
       "title": "Per-Shot Evaluation of QAOA on Max-Cut: A Black-Box Implementation Comparison with Goemans-Williamson"
     }
+  ],
+  "news": [
+    {
+      "title": "Aqarios releases constraint-native QAOA solver in IBM Qiskit Functions Catalog",
+      "excerpt": "Munich-based Aqarios released its Constrained Quantum Optimizer, built on iterative warm-start XY-mixer QAOA, in the IBM Qiskit Functions Catalog. Vendor-reported results on IBM Heron processors include a 100% feasible optimum on a 132-qubit Karate Club Max-4-Cut instance on ibm_marrakesh, and replacing variational training with warm-starting reduced QPU time from 130-200 seconds to about 30 seconds on medium and large tiers.",
+      "url": "https://quantumcomputingreport.com/aqarios-launches-constraint-native-quantum-optimizer-in-the-ibm-qiskit-functions-catalog/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-17"
+    }
   ]
 }

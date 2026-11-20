@@ -53,6 +53,13 @@
       "url": "https://www.c12qe.com",
       "source": "c12qe.com",
       "date": "2026-04-17"
+    },
+    {
+      "title": "C12 and Thales present QuantumTrack hybrid quantum-classical radar tracking system",
+      "excerpt": "C12 and Thales announced QuantumTrack, a hybrid quantum-classical system for real-time multi-target radar tracking, which won the 2026 Quantum Effects Award in the quantum computing hardware category. On C12's Callisto emulator it matched the time-to-solution of the best classical solver; the partners plan next to demonstrate it on C12's own chip.",
+      "url": "https://thequantuminsider.com/2026/09/29/c12-thales-quantumtrack-real-time-radar-tracking/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-29"
     }
   ]
 }

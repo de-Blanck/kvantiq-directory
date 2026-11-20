@@ -61,6 +61,18 @@
       "url": "https://www.hpcwire.com/off-the-wire/aqt-launches-lynx-series-trapped-ion-quantum-systems/",
       "title": "AQT Launches LYNX Series Trapped-Ion Quantum Systems - HPCwire",
       "dateAccessed": "2026-05-24"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/09/23/german-government-selects-qudora-led-consortium-for-e122-million-project/",
+      "title": "German Government Selects QUDORA-Led Consortium For €122 Million Project - The Quantum Insider",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/german-government-selects-qudora-led-consortium-for-e122-million-138-8-usd-nfqc-1k-trapped-ion-quantum-computer-project/",
+      "title": "German Government Selects QUDORA-Led Consortium for €122 Million NFQC-1k Trapped-Ion Quantum Computer Project - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
@@ -105,6 +117,13 @@
       "url": "https://thequantuminsider.com/2026/05/06/aqt-high-performing-quantum-computer-europe-32768-qv/",
       "source": "The Quantum Insider",
       "date": "2026-05-06"
+    },
+    {
+      "title": "AQT Germany part of QUDORA-led consortium selected for €122M NFQC-1k trapped-ion project",
+      "excerpt": "Germany's research ministry BMFTR selected a seven-member consortium led by QUDORA, including AQT Germany GmbH, for the NFQC-1k project to build a trapped-ion quantum computer with at least 1,000 physical and 50 logical qubits. The project has an estimated total volume of about €122 million over up to five years; after the outline evaluation the consortium was invited to submit a full proposal.",
+      "url": "https://quantumcomputingreport.com/german-government-selects-qudora-led-consortium-for-e122-million-138-8-usd-nfqc-1k-trapped-ion-quantum-computer-project/",
+      "source": "Quantum Computing Report",
+      "date": "2026-09-23"
     }
   ]
 }

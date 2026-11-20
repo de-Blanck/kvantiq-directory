@@ -42,6 +42,18 @@
       "type": "url",
       "url": "https://pls.llnl.gov/research-and-development/materials-science/quantum-simulations-group",
       "title": "Quantum Simulations Group | Lawrence Livermore National Laboratory"
+    },
+    {
+      "type": "url",
+      "url": "https://www.uva.nl/en/news/2026/mmd-techhub-launches-four-quantum-simulation-projects-for-molecules-and-materials",
+      "title": "MMD TechHub launches four quantum simulation projects for molecules and materials - University of Amsterdam",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/university-of-amsterdam-awards-e800000-across-four-quantum-simulation-projects-for-chemistry-and-materials-design/",
+      "title": "University of Amsterdam Awards €800,000 Across Four Quantum Simulation Projects for Chemistry and Materials Design - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
@@ -51,6 +63,13 @@
       "url": "https://pme.uchicago.edu/news/researchers-use-quantum-computers-simulate-quantum-materials",
       "source": "UChicago Pritzker School of Molecular Engineering",
       "date": "2022-05-26"
+    },
+    {
+      "title": "University of Amsterdam funds four quantum simulation projects for molecules and materials",
+      "excerpt": "The University of Amsterdam Faculty of Science launched the Q-SIM4MMD initiative within its MMD TechHub, giving each of four projects EUR 200,000 in seed funding over two years. Projects cover quantum machine learning for molecular and material design, quantum computing in bioinformatics, safer and more sustainable molecules, and benchmarking quantum simulations of 2D Hubbard models and spin chains against classical tensor networks.",
+      "url": "https://www.uva.nl/en/news/2026/mmd-techhub-launches-four-quantum-simulation-projects-for-molecules-and-materials",
+      "source": "University of Amsterdam",
+      "date": "2026-11-11"
     }
   ]
 }

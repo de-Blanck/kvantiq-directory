@@ -71,6 +71,13 @@
       "url": "https://pypi.org/org/munich-quantum-toolkit/",
       "source": "PyPI — Munich Quantum Toolkit",
       "date": "2026-07-09"
+    },
+    {
+      "title": "MQT Core 4.2.0 released",
+      "excerpt": "MQT Core 4.2.0 adds native exact decision-diagram estimation, Qiskit 2.6 support through its native C API, native QIR and IQM serializers, OpenQASM 2 export through the compiler, and extended OpenQASM array operations. Patch release 4.2.1 followed on 15 November, adding IonQ native gate support in OpenQASM and QIR.",
+      "url": "https://github.com/munich-quantum-toolkit/core/releases/tag/v4.2.0",
+      "source": "GitHub",
+      "date": "2026-11-10"
     }
   ]
 }

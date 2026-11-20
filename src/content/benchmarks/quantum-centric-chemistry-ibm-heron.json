@@ -63,6 +63,24 @@
       "url": "https://www.ibm.com/quantum/blog/riken-fugaku-qcsc",
       "title": "RIKEN and IBM demonstrate quantum-centric supercomputing — closed-loop Heron + Fugaku SQD on iron-sulfur molecules",
       "dateAccessed": "2026-09-03"
+    },
+    {
+      "type": "url",
+      "url": "https://arxiv.org/abs/2611.04496",
+      "title": "Broken-Symmetry Reference States for Sample-Based Quantum Diagonalization with Near-DMRG Accuracy - arXiv",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/ibm-riken-and-nvidia-achieve-79x-accuracy-gain-in-quantum-classical-simulations-of-iron-sulfur-clusters/",
+      "title": "IBM, RIKEN, and NVIDIA Achieve 79x Accuracy Gain in Quantum-Classical Simulations of Iron-Sulfur Clusters - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://arxiv.org/abs/2605.01138",
+      "title": "Crossing the 12,000-atom barrier with heterogeneous quantum-classical supercomputing - arXiv",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
@@ -72,6 +90,20 @@
       "url": "https://arxiv.org/abs/2405.05068",
       "source": "arXiv",
       "date": "2025-07-13"
+    },
+    {
+      "title": "IBM, RIKEN and NVIDIA report 79-fold SQD accuracy gain on iron-sulfur cluster",
+      "excerpt": "IBM Quantum, RIKEN and NVIDIA ran sample-based quantum diagonalization (SQD) for the [Fe4S4(SCH3)4]2- iron-sulfur cluster using 88 active qubits on ibm_kingston, paired with RIKEN's GB200-based ROQUO supercomputer. Seeding SQD with broken-symmetry unrestricted Hartree-Fock reference states gave a 79-fold improvement in energy accuracy over earlier RHF-seeded SQD work, with an extrapolated energy 0.33 mHa from the extrapolated DMRG value.",
+      "url": "https://quantumcomputingreport.com/ibm-riken-and-nvidia-achieve-79x-accuracy-gain-in-quantum-classical-simulations-of-iron-sulfur-clusters/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-16"
+    },
+    {
+      "title": "Cleveland Clinic, RIKEN and IBM extend quantum-centric chemistry to 12,000-atom protein-ligand complexes",
+      "excerpt": "A Cleveland Clinic, RIKEN and IBM collaboration, a 2026 Gordon Bell Prize finalist, used two 156-qubit IBM Heron r2 processors (up to 94 active qubits) with Fugaku, Miyabi-G and ROQUO to compute fragment energies for trypsin-benzamidine (12,635 atoms) and T4-lysozyme with n-butyl-benzene (11,608 atoms). The team reports a more than 40x increase in molecular size over the earlier 303-atom Trp-cage study and up to a 210x improvement in fragment energy accuracy over prior quantum-embedding benchmarks.",
+      "url": "https://quantumcomputingreport.com/cleveland-clinic-riken-and-ibm-cross-12000-atom-barrier-in-heterogeneous-quantum-classical-drug-binding-simulations/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-12"
     }
   ]
 }

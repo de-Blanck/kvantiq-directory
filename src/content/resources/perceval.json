@@ -49,6 +49,13 @@
       "url": "https://github.com/Quandela/Perceval/releases/tag/v1.2.4",
       "source": "Perceval GitHub Releases",
       "date": "2026-07-02"
+    },
+    {
+      "title": "Perceval v1.3.0 \"Sir Galaad\" released with error mitigation and new computation workflow",
+      "excerpt": "Quandela released Perceval v1.3.0, which adds error mitigation classes and a new computation workflow based on SimulatedComputer and RemoteComputer, with noise now attached to Computers rather than Experiments. Bug-fix release v1.3.1 followed on 1 October.",
+      "url": "https://github.com/Quandela/Perceval/releases/tag/v1.3.0",
+      "source": "GitHub",
+      "date": "2026-09-18"
     }
   ]
 }

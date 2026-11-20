@@ -58,6 +58,12 @@
       "url": "https://siliconcanals.com/quantum-fabrix-secures-2-2m/",
       "title": "Quantum Fabrix secures GBP 2M — Silicon Canals",
       "dateAccessed": "2026-05-18"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/10/14/qfx-wins-6-8-million-innovate-uk-contract-for-quantum-timing-hardware/",
+      "title": "QFX Wins £6.8 Million Innovate UK Contract for Quantum Timing Hardware - The Quantum Insider",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
@@ -81,6 +87,13 @@
       "url": "https://thequantuminsider.com/2025/10/20/university-of-oxford-spin-out-qfx-announces-seed-funding-round-appoints-industry-leaders-to-executive-team/",
       "source": "The Quantum Insider",
       "date": "2025-10-20"
+    },
+    {
+      "title": "QFX wins £6.8 million Innovate UK contract for SrROCK Phase II quantum timing hardware",
+      "excerpt": "Innovate UK awarded QFX a £6.8 million contract for Phase II of its SrROCK programme, following a first phase. QFX will build a compact, low-power strontium optical-clock physics package for data centre timing and future satellite missions, including space-relevant testing and establishing UK manufacturing for atomic and vacuum systems.",
+      "url": "https://thequantuminsider.com/2026/10/14/qfx-wins-6-8-million-innovate-uk-contract-for-quantum-timing-hardware/",
+      "source": "The Quantum Insider",
+      "date": "2026-10-14"
     }
   ]
 }

@@ -48,6 +48,18 @@
       "type": "doi",
       "url": "https://link.springer.com/article/10.1007/s42484-025-00273-5",
       "title": "Quantum kernel methods under scrutiny: a benchmarking study"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/iqm-researchers-benchmark-projected-quantum-kernels-across-45-qubits-using-cross-device-referee-challenger-protocol/",
+      "title": "IQM Researchers Benchmark Projected Quantum Kernels Across 45 Qubits Using Cross-Device Referee-Challenger Protocol - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://arxiv.org/abs/2610.41848",
+      "title": "Engineered Learning Problems on Noisy Quantum Processors - arXiv",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
@@ -57,6 +69,13 @@
       "url": "https://arxiv.org/abs/2409.04406",
       "source": "arXiv / Quantum Machine Intelligence",
       "date": "2025-04-28"
+    },
+    {
+      "title": "IQM benchmarks projected quantum kernels on up to 45 qubits with referee-challenger protocol",
+      "excerpt": "Researchers at IQM Quantum Computers and QbitSoft benchmarked projected quantum kernel classifiers on the 54-qubit IQM Emerald and 20-qubit IQM Garnet processors at 15, 30 and 45 qubits, using a cross-device referee-challenger protocol intended to stop models from scoring well by fitting device-specific noise. At 15 qubits with shallow circuits the quantum model reached 81% accuracy versus 51% for the best classical model; at 30 and 45 qubits the gap over 11 classical models was 17 to 28 points, while a 45-qubit matrix product state simulation matched the hardware result.",
+      "url": "https://quantumcomputingreport.com/iqm-researchers-benchmark-projected-quantum-kernels-across-45-qubits-using-cross-device-referee-challenger-protocol/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-17"
     }
   ]
 }

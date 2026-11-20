@@ -41,5 +41,14 @@
       "url": "https://quantum-journal.org/papers/q-2022-01-24-629/",
       "title": "Pulser: An open-source package for the design of pulse sequences in programmable neutral-atom arrays"
     }
+  ],
+  "news": [
+    {
+      "title": "Pulser v1.10.0 released",
+      "excerpt": "Pasqal released Pulser v1.10.0, adding a Pauli Strings operator and new pulser.math functions (cdist, allclose), excluding DMM channels from laser noise calculations and dropping Python 3.10 support. On 17 November patch releases v1.10.1, v1.9.2, v1.8.1, v1.7.3 and v1.6.7 fixed a legacy serializer issue that allowed classmethods.",
+      "url": "https://github.com/pasqal-io/Pulser/releases/tag/v1.10.0",
+      "source": "GitHub",
+      "date": "2026-10-29"
+    }
   ]
 }

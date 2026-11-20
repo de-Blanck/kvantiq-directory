@@ -76,6 +76,18 @@
       "url": "https://quantumcomputingreport.com/quix-quantum-launches-dedalo-photonic-architecture-to-address-photon-loss-via-single-basis-logical-qubits/",
       "title": "QuiX Quantum Launches Dedalo Photonic Architecture - Quantum Computing Report",
       "dateAccessed": "2026-07-05"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/11/17/quix-quantum-taiwanese-partners-photonic-detector-project/",
+      "title": "QuiX Quantum and Partners Develop Near-Room-Temperature Detectors for Photonic Quantum - The Quantum Insider",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quix-quantum-and-dutch-photonics-consortium-form-national-mission-for-100-qubit-computer/",
+      "title": "QuiX Quantum and Dutch Photonics Consortium Form National Mission for 100-Qubit Computer - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
@@ -155,6 +167,13 @@
       "url": "https://www.hpcwire.com/off-the-wire/quix-quantum-launches-alquor-2-0-photonic-quantum-processor-platform/",
       "source": "HPCwire",
       "date": "2026-08-04"
+    },
+    {
+      "title": "QuiX Quantum, Artilux and Brillink awarded TechBridge Taiwan funding for QSPAD photonic detector project",
+      "excerpt": "QuiX Quantum and Taiwanese partners Artilux and Brillink received funding under the TechBridge Taiwan Call 2026, a joint programme of the Netherlands Enterprise Agency and Taiwan's Industrial Development Administration. The 36-month QSPAD project (January 2027 to December 2029) will integrate germanium-silicon single-photon avalanche diode arrays with QuiX's silicon nitride photonic circuits, targeting operation at or near room temperature with thermoelectric cooling.",
+      "url": "https://thequantuminsider.com/2026/11/17/quix-quantum-taiwanese-partners-photonic-detector-project/",
+      "source": "The Quantum Insider",
+      "date": "2026-11-17"
     }
   ]
 }

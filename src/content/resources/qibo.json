@@ -36,5 +36,14 @@
       "url": "https://arxiv.org/abs/2009.01845",
       "title": "Qibo: a framework for quantum simulation with hardware acceleration"
     }
+  ],
+  "news": [
+    {
+      "title": "Qibo 0.3.7 released",
+      "excerpt": "Qibo 0.3.7 adds Quantum Shannon Decomposition and a preset pipeline to the transpiler, implementations of quantum phase estimation and amplitude amplification, and Python 3.14 support.",
+      "url": "https://github.com/qiboteam/qibo/releases/tag/v0.3.7",
+      "source": "GitHub",
+      "date": "2026-11-10"
+    }
   ]
 }

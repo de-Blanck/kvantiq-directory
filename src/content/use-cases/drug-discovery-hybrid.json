@@ -37,6 +37,27 @@
       "type": "arxiv",
       "url": "https://arxiv.org/abs/2108.11644",
       "title": "Hybrid quantum-classical machine learning for generative chemistry and drug design"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/cleveland-clinic-riken-and-ibm-cross-12000-atom-barrier-in-heterogeneous-quantum-classical-drug-binding-simulations/",
+      "title": "Cleveland Clinic, RIKEN, and IBM Cross 12,000-Atom Barrier in Heterogeneous Quantum-Classical Drug Binding Simulations - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://arxiv.org/abs/2605.01138",
+      "title": "Crossing the 12,000-atom barrier with heterogeneous quantum-classical supercomputing: quantum chemistry of protein-ligand complexes - arXiv",
+      "dateAccessed": "2026-11-20"
+    }
+  ],
+  "news": [
+    {
+      "title": "Cleveland Clinic, RIKEN and IBM run hybrid quantum-classical protein-ligand binding calculations above 12,000 atoms",
+      "excerpt": "Cleveland Clinic, RIKEN and IBM Quantum used two IBM Heron r2 processors with the Fugaku, Miyabi-G and ROQUO classical systems to run electronic-structure calculations on trypsin-benzamidine (12,635 atoms) and T4-lysozyme with n-butyl-benzene (11,608 atoms). The mixed workflow estimated the T4-lysozyme ligand binding affinity at -21.07 kcal/mol; the work is a 2026 Gordon Bell Prize finalist.",
+      "url": "https://quantumcomputingreport.com/cleveland-clinic-riken-and-ibm-cross-12000-atom-barrier-in-heterogeneous-quantum-classical-drug-binding-simulations/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-12"
     }
   ]
 }

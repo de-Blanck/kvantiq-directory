@@ -46,6 +46,12 @@
       "type": "url",
       "url": "https://www.startupbusiness.it/en/quantum-computing-in-space-rotonium-raises-eur-1-million/141857/",
       "title": "Quantum computing in space, Rotonium raises EUR 1 million"
+    },
+    {
+      "type": "url",
+      "url": "https://www.agi.it/innovazione/news/2026-11-11/primo-computer-quantistico-fotonico-italia-39982403/",
+      "title": "Primo computer quantistico fotonico in Italia - AGI",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
@@ -69,6 +75,13 @@
       "url": "https://www.rotonium.com",
       "source": "Rotonium official website",
       "date": "2026-05-25"
+    },
+    {
+      "title": "Rotonium presents four-qubit room-temperature photonic quantum computer prototype in Padua",
+      "excerpt": "Rotonium presented in Padua a prototype quantum computer with a photonic processor of four effective qubits on an 18 x 4 mm chip, operating at room temperature with no cryogenic cooling in the quantum chain. The company encodes multiple qubits within a single photon and its roadmap targets 96 effective qubits by 2030.",
+      "url": "https://www.agi.it/innovazione/news/2026-11-11/primo-computer-quantistico-fotonico-italia-39982403/",
+      "source": "AGI",
+      "date": "2026-11-11"
     }
   ]
 }

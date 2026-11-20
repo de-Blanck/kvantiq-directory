@@ -61,6 +61,13 @@
       "url": "https://qmill.com",
       "source": "qmill.com",
       "date": "2026-06-09"
+    },
+    {
+      "title": "Telia, Nokia and QMill demonstrate quantum-computer-assisted key exchange in a 5G network",
+      "excerpt": "Telia Finland, Nokia and QMill ran a proof of concept in which QMill's solution, integrated into Nokia 5G base station software, used a quantum computer for key exchange alongside standard post-quantum cryptography, seeded with user-verifiable quantum random numbers. The test ran in Telia's 5G innovation environment.",
+      "url": "https://thequantuminsider.com/2026/11/17/telia-nokia-and-qmill-demonstrate-quantum-powered-encryption-in-a-5g-network/",
+      "source": "The Quantum Insider",
+      "date": "2026-11-17"
     }
   ]
 }

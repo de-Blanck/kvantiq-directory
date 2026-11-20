@@ -74,6 +74,12 @@
       "url": "https://quantumcomputingreport.com/kipu-quantum-launches-rimay-for-industrial-quantum-enhanced-machine-learning/",
       "title": "Kipu Quantum Launches Rimay for Industrial Quantum-Enhanced Machine Learning - Quantum Computing Report",
       "dateAccessed": "2026-06-07"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/kipu-quantum-launches-rimay-quantum-feature-extraction-in-ibm-quantum-functions-catalog/",
+      "title": "Kipu Quantum Launches Rimay Quantum Feature Extraction in IBM Quantum Functions Catalog - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
@@ -90,6 +96,13 @@
       "url": "https://thequantuminsider.com/2026/05/20/kipu-quantum-makes-quantum-enhanced-ai-deployable-in-production/",
       "source": "The Quantum Insider",
       "date": "2026-05-20"
+    },
+    {
+      "title": "Kipu Quantum makes Rimay available in IBM Quantum Functions Catalog",
+      "excerpt": "Kipu Quantum made its Rimay quantum feature extraction service available in the IBM Quantum Functions Catalog for IBM Quantum Flex, Premium and On-Prem users, following its earlier Iskay optimizer listing. Kipu said Rimay was deployed with a Fortune 100 enterprise on an IBM Quantum Nighthawk processor for customer-intent prediction.",
+      "url": "https://quantumcomputingreport.com/kipu-quantum-launches-rimay-quantum-feature-extraction-in-ibm-quantum-functions-catalog/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-12"
     }
   ]
 }

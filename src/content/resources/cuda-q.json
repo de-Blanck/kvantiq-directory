@@ -16,7 +16,7 @@
   "free": true,
   "language": "Python/C++",
   "provider": "NVIDIA",
-  "lastUpdated": "2026-08-03",
+  "lastUpdated": "2026-11-16",
   "maturity": "stable",
   "communitySize": "~600 GitHub stars",
   "sources": [
@@ -97,6 +97,20 @@
       "url": "https://github.com/NVIDIA/cuda-quantum/releases/tag/0.15.1",
       "source": "GitHub",
       "date": "2026-08-03"
+    },
+    {
+      "title": "CUDA-Q 0.17.0 released",
+      "excerpt": "NVIDIA released CUDA-Q 0.17.0, which adds an EDEM package for dynamically building detector error models, a separate cudaq-core PyPI package, an overhauled compiler configuration and a custabilizer backend for stabilizer simulation. The release also updates the CUDA-Q Realtime transport and dispatch APIs and includes breaking API removals and renames.",
+      "url": "https://github.com/NVIDIA/cuda-quantum/releases/tag/0.17.0",
+      "source": "GitHub",
+      "date": "2026-11-16"
+    },
+    {
+      "title": "NVIDIA releases TCBP-JOBS decoder in CUDA-Q QEC 0.9.0 alongside IBM and Fermilab codesign platform",
+      "excerpt": "NVIDIA announced the TCBP-JOBS quantum error-correction decoding algorithm, available in the CUDA-Q QEC 0.9.0 library, which it reports speeds up computationally intensive parts of QEC research by up to 13,000x. The announcement also covered a quantum-classical codesign collaboration with IBM and Fermi National Accelerator Laboratory.",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-collaboration-with-ibm-and-fermi-national-accelerator-laboratory-to-launch-quantum-classical-codesign-platform-plus-error-correction-breakthrough-to-advance-practical-quantum-computing",
+      "source": "NVIDIA Newsroom",
+      "date": "2026-11-16"
     }
   ]
 }

@@ -48,6 +48,12 @@
       "url": "https://www.datacenterdynamics.com/en/news/uk-ministry-of-defence-acquires-orca-quantum-computer/",
       "title": "UK Ministry of Defence acquires Orca quantum computer - DCD",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/orca-computing-launches-pt-3-photonic-quantum-system-in-london-for-hybrid-ai-and-industrial-optimization/",
+      "title": "ORCA Computing Launches PT-3 Photonic Quantum System in London for Hybrid AI and Industrial Optimization - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
@@ -57,6 +63,13 @@
       "url": "https://thequantuminsider.com/2025/06/11/orca-computing-delivers-first-photonic-quantum-computing-system-to-uks-national-quantum-computing-centre/",
       "source": "The Quantum Insider",
       "date": "2025-06-11"
+    },
+    {
+      "title": "ORCA Computing launches PT-3 photonic quantum computer",
+      "excerpt": "ORCA Computing launched the PT-3, the third generation of its room-temperature photonic quantum computers. The first system is operating at the Digital Realty Innovation Lab in London alongside NVIDIA GPU infrastructure.",
+      "url": "https://thequantuminsider.com/2026/10/15/orca-computing-launches-pt-3-the-latest-generation-of-its-photonic-quantum-computers/",
+      "source": "The Quantum Insider",
+      "date": "2026-10-15"
     }
   ]
 }

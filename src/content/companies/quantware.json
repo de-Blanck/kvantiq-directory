@@ -77,6 +77,13 @@
       "url": "https://www.eu-startups.com/2026/05/quantware-raises-e152-million-in-the-largest-private-round-for-a-dedicated-quantum-processor-company/",
       "source": "EU-Startups",
       "date": "2026-05-05"
+    },
+    {
+      "title": "Q-CTRL demonstrates autonomous cold-start calibration on QuantWare Contralto-D21 processors",
+      "excerpt": "Q-CTRL reported fully autonomous bring-up and gate calibration of QuantWare's 21-qubit Contralto-D21 superconducting processor using its Boulder Opal platform, taking five-qubit feedline blocks from uncalibrated to operational in under 3 hours each. Reported results were 99.95% median single-qubit fidelity and a 96% device-median two-qubit (CZ) fidelity, above 98% at peak.",
+      "url": "https://quantumcomputingreport.com/q-ctrl-demonstrates-push-button-cold-start-calibration-on-quantware-superconducting-qpus/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-11"
     }
   ]
 }
