@@ -12,8 +12,8 @@
   ],
   "description": "Using quantum optimization to manage complex energy distribution networks, balance renewable energy sources, and optimize grid stability in real-time.",
   "problem": "Modern power grids must balance fluctuating renewable energy sources, unpredictable demand, storage systems, and distributed generation. The combinatorial optimization problem grows exponentially with grid complexity, making real-time optimization classically challenging.",
-  "approach": "Quantum annealing and QAOA formulate grid optimization as quadratic unconstrained binary optimization (QUBO) problems. These algorithms find near-optimal power flow solutions, unit commitment schedules, and demand response strategies faster than classical methods.",
-  "results": "Early trials demonstrate feasibility for medium-scale grid optimization problems. EDF and Pasqal have partnered to explore quantum optimization for European grid management scenarios.",
+  "approach": "Quantum annealing and QAOA formulate energy optimization tasks such as unit commitment, facility location and electric-vehicle charging schedules as binary optimization (QUBO) problems. The cited studies compare these approaches with classical algorithms and describe the limits of current hardware; they do not show a speed advantage over classical methods.",
+  "results": "In numerical tests on small instances, QAOA matched or improved on the approximation ratios of conventional approximation algorithms for two electric-vehicle smart-charging problems (EDF and Pasqal, 2021). EDF, Pasqal and GENCI reported an energy demand forecasting run on more than 100 qubits in January 2025. Pasqal has worked with EDF's R&D department since 2018.",
   "companies": [
     "pasqal",
     "multiverse-computing"
@@ -21,20 +21,30 @@
   "sources": [
     {
       "type": "url",
-      "url": "https://www.pasqal.com/articles/quantum-computing-for-energy",
-      "title": "Quantum Computing for Energy Optimization",
-      "dateAccessed": "2026-03-19"
+      "url": "https://thequantuminsider.com/2025/01/21/pasqal-genci-and-edf-use-neutral-atom-quantum-computing-to-advance-ev-smart-charging-and-energy-forecasting/",
+      "title": "Pasqal, GENCI, and EDF Use Neutral Atom Quantum Computing to Advance EV Smart Charging and Energy Forecasting",
+      "datePublished": "2025-01-21",
+      "dateAccessed": "2026-11-20"
     },
     {
       "type": "arxiv",
-      "url": "https://arxiv.org/abs/2303.00445",
-      "title": "Quantum computing for energy systems optimization: challenges and opportunities",
-      "dateAccessed": "2026-03-20"
+      "url": "https://arxiv.org/abs/2003.00254",
+      "title": "Quantum computing for energy systems optimization: Challenges and opportunities",
+      "authors": "Ajagekar, You",
+      "dateAccessed": "2026-11-20"
     },
     {
       "type": "arxiv",
       "url": "https://arxiv.org/abs/2301.07512",
       "title": "Optimization Algorithms in Smart Grids: A Systematic Literature Review"
+    },
+    {
+      "type": "doi",
+      "url": "https://doi.org/10.1140/epjqt/s40507-021-00100-3",
+      "title": "Qualifying quantum approaches for hard industrial optimization problems. A case study in the field of smart-charging of electric vehicles",
+      "authors": "Dalyac, Henriet, Jeandel, Lechner et al.",
+      "datePublished": "2021-05-17",
+      "dateAccessed": "2026-11-20"
     }
   ]
 }

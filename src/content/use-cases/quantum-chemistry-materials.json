@@ -23,9 +23,11 @@
   "sources": [
     {
       "type": "arxiv",
-      "url": "https://arxiv.org/abs/2106.13832",
-      "title": "Quantum simulation of molecules and materials with quantum computers",
-      "dateAccessed": "2026-03-19"
+      "url": "https://arxiv.org/abs/2001.03685",
+      "title": "Quantum algorithms for quantum chemistry and quantum materials science",
+      "authors": "Bauer, Bravyi, Motta, Chan",
+      "datePublished": "2020-01-10",
+      "dateAccessed": "2026-11-20"
     },
     {
       "type": "url",
@@ -40,8 +42,9 @@
     },
     {
       "type": "url",
-      "url": "https://pls.llnl.gov/research-and-development/materials-science/quantum-simulations-group",
-      "title": "Quantum Simulations Group | Lawrence Livermore National Laboratory"
+      "url": "https://qsg.llnl.gov/",
+      "title": "Quantum Simulations Group | Lawrence Livermore National Laboratory",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
