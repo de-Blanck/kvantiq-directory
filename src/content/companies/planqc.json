@@ -50,6 +50,12 @@
       "url": "https://www.datacenterdynamics.com/en/news/planqc-to-lead-development-of-german-government-funded-1000-qubit-quantum-computer/",
       "title": "planqc to lead development of German government-funded 1,000 qubit quantum computer - Data Centre Dynamics",
       "dateAccessed": "2026-06-07"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/10/05/made-in-europe-award-2026-planqc-commercialising/",
+      "title": "planqc Wins Made in Europe Award for Quantum Computing — The Quantum Insider",
+      "dateAccessed": "2026-10-11"
     }
   ],
   "news": [
@@ -73,6 +79,13 @@
       "url": "https://www.planqc.eu",
       "source": "planqc.eu",
       "date": "2026-03-19"
+    },
+    {
+      "title": "planqc wins Made in Europe Award 2026 in Commercialising category",
+      "excerpt": "planqc was honoured at the Made in Europe Awards in Berlin in the Commercialising category, recognising the company's work building European-owned neutral-atom quantum computing capacity. CEO Alexander Glätzle accepted the award from a German federal digital affairs parliamentary state secretary.",
+      "url": "https://thequantuminsider.com/2026/10/05/made-in-europe-award-2026-planqc-commercialising/",
+      "source": "The Quantum Insider",
+      "date": "2026-10-05"
     }
   ]
 }
