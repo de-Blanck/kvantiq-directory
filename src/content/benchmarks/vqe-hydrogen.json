@@ -30,8 +30,9 @@
     {
       "type": "arxiv",
       "url": "https://arxiv.org/abs/1304.3061",
-      "title": "The theory of variational hybrid quantum-classical algorithms",
-      "dateAccessed": "2026-03-19"
+      "title": "A variational eigenvalue solver on a quantum processor",
+      "dateAccessed": "2026-11-20",
+      "authors": "Peruzzo, McClean, Shadbolt, Yung et al."
     },
     {
       "type": "url",
