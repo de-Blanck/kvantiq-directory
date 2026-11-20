@@ -82,6 +82,13 @@
   ],
   "news": [
     {
+      "title": "ParityQC and University of Innsbruck Propose Distillation Architecture to Reduce FTQC Overhead",
+      "excerpt": "Physicists from ParityQC and the University of Innsbruck introduced the Parity-Unfolded Distillation Architecture, a fault-tolerant quantum computing scheme designed to lower resource overhead required for non-Clifford gates.",
+      "url": "https://quantumcomputingreport.com/parityqc-and-university-of-innsbruck-propose-distillation-architecture-to-reduce-ftqc-overhead/",
+      "source": "Quantum Computing Report",
+      "date": "2026-05-07"
+    },
+    {
       "title": "Parity-unfolded distillation architecture for noise-biased platforms",
       "excerpt": "Physicists from ParityQC and University of Innsbruck introduced a fault-tolerant quantum computing scheme designed to lower resource overhead required for non-Clifford gates.",
       "url": "https://arxiv.org/abs/2604.15436",
