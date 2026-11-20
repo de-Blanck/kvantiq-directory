@@ -177,6 +177,13 @@
       "url": "https://thequantuminsider.com/2026/07/28/riverlane-unitary-foundation-deltakit-community-fund/",
       "source": "The Quantum Insider",
       "date": "2026-07-28"
+    },
+    {
+      "title": "Riverlane and NVIDIA Demonstrate AI-Accelerated QEC Decoder Calibration; NVIDIA Takes Strategic Stake",
+      "excerpt": "Riverlane and NVIDIA demonstrated GPU-accelerated AI reducing calibration time for Riverlane's Local Clustering Decoder from ~3 minutes on one CPU core to 2.8 seconds on an NVIDIA H100 (roughly 65× speedup). NVIDIA also took a strategic minority equity stake in Riverlane as part of planned investments in five UK AI ventures.",
+      "url": "https://thequantuminsider.com/2026/10/15/riverlane-nvidia-ai-quantum-decoder-calibration/",
+      "source": "The Quantum Insider",
+      "date": "2026-10-15"
     }
   ]
 }

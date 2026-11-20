@@ -304,6 +304,27 @@
       "url": "https://thequantuminsider.com/2026/08/12/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure/",
       "source": "The Quantum Insider",
       "date": "2026-08-11"
+    },
+    {
+      "title": "Quantinuum Achieves 99.9995% Logical Fidelity on Helios — 10x Error Rate Reduction",
+      "excerpt": "Quantinuum announced 99.9995% logical fidelity on its Helios trapped-ion system using a color code, a tenfold improvement over its September 2026 result and roughly 100 times better than the best published result on other hardware modalities. Logical error rates decreased with each increase in code distance.",
+      "url": "https://thequantuminsider.com/2026/10/19/quantinuum-reports-a-10x-reduction-in-logical-error-rate-on-helios/",
+      "source": "The Quantum Insider",
+      "date": "2026-10-19"
+    },
+    {
+      "title": "Quantinuum Raises 2026 Revenue Outlook After Landing Largest Cloud Agreement",
+      "excerpt": "Quantinuum reported Q3 2026 results and raised its full-year revenue guidance after signing its largest cloud computing agreement to date. Q3 revenue grew 233% year-over-year. Full-year 2026 guidance raised to $31–34 million from $28–32 million.",
+      "url": "https://thequantuminsider.com/2026/11/05/quantinuum-raises-revenue-outlook-after-landing-its-largest-cloud-agreement/",
+      "source": "The Quantum Insider",
+      "date": "2026-11-05"
+    },
+    {
+      "title": "Quantinuum and RIKEN Expand Quantum-AI Hybrid Supercomputing Partnership in Japan",
+      "excerpt": "Quantinuum and RIKEN expanded their partnership, upgrading the Reimei system to Quantinuum's H2 processor, and signed a separate agreement with SoftBank to explore direct coupling of quantum systems with AI data centres in Japan.",
+      "url": "https://thequantuminsider.com/2026/11/10/quantinuum-riken-quantum-computing-partnership-japan/",
+      "source": "The Quantum Insider",
+      "date": "2026-11-10"
     }
   ]
 }

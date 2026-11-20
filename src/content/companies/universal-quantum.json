@@ -47,6 +47,12 @@
       "url": "https://www.sussex.ac.uk/broadcast/read/59206",
       "title": "German government tasks Sussex spin-out with building a powerful quantum computer in EUR 67M contract",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/10/08/universal-quantum-raises-over-100-million-series-a/",
+      "title": "Universal Quantum Raises Over $100 Million Series A - The Quantum Insider",
+      "dateAccessed": "2026-11-15"
     }
   ],
   "news": [
@@ -63,6 +69,13 @@
       "url": "https://www.sussex.ac.uk/broadcast/read/59206",
       "source": "University of Sussex",
       "date": "2022-11-02"
+    },
+    {
+      "title": "Universal Quantum Raises Over $100 Million Series A to Scale Modular Trapped-Ion Systems",
+      "excerpt": "Universal Quantum closed a $100 million+ Series A co-led by DCVC and Firgun Ventures, with participation from EDBI, Artal (Invus), Main Sequence and others — reported as the largest Series A by a UK quantum computing company. Funds support a new Singapore R&D centre and expansion in the US, Japan and Germany.",
+      "url": "https://quantumcomputingreport.com/trapped-ion-developer-universal-quantum-closes-100-million-series-a-round-to-scale-modular-hardware/",
+      "source": "Quantum Computing Report",
+      "date": "2026-10-08"
     }
   ]
 }
