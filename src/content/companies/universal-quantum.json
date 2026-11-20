@@ -16,7 +16,7 @@
   "featured": false,
   "headquarters": "Haywards Heath, United Kingdom",
   "employees": "50+",
-  "funding": "GBP 100M+",
+  "funding": "USD 100M (Series A, October 2026)",
   "accessModel": "Hardware development + government contracts",
   "products": [
     {
@@ -63,6 +63,20 @@
       "url": "https://www.sussex.ac.uk/broadcast/read/59206",
       "source": "University of Sussex",
       "date": "2022-11-02"
+    },
+    {
+      "title": "Universal Quantum opens first R&D Competency Centre outside Europe in Singapore",
+      "excerpt": "Universal Quantum established a dedicated R&D hub in Singapore focused on high-density microchip interconnects for trapped-ion scaling. The centre aims to address physical interconnection barriers in modular quantum computing and is supported by Singapore's Economic Development Board.",
+      "url": "https://quantumcomputingreport.com/universal-quantum-establishes-first-rd-competency-centre-outside-europe-in-singapore/",
+      "source": "Quantum Computing Report",
+      "date": "2026-09-01"
+    },
+    {
+      "title": "Universal Quantum closes $100M Series A — largest for a UK-headquartered quantum firm",
+      "excerpt": "Universal Quantum closed a $100 million Series A round co-led by DCVC and backed by Singapore's EDBI, the largest Series A raised by a UK-headquartered quantum computing company. Funds will scale production of its iQPU trapped-ion chip, fabricated on a standard 200mm commercial foundry line, and expand its U.S. and Singapore presence.",
+      "url": "https://quantumcomputingreport.com/trapped-ion-developer-universal-quantum-closes-100-million-series-a-round-to-scale-modular-hardware/",
+      "source": "Quantum Computing Report",
+      "date": "2026-10-09"
     }
   ]
 }
