@@ -140,6 +140,13 @@
       "url": "https://thequantuminsider.com/2026/06/16/darpa-selects-quandela-for-stage-a-of-the-quantum-benchmarking-initiative/",
       "source": "The Quantum Insider",
       "date": "2026-06-16"
+    },
+    {
+      "title": "Quandela validates low-latency photonic QPU integration with NVIDIA NVQLink at ISC 2026",
+      "excerpt": "Quandela experimentally validated a low-latency integration path between its photonic quantum processor and NVIDIA GPU infrastructure using NVQLink, with sub-4-microsecond round-trip latency targets, paving the way for co-located QPU deployment inside HPC data centers. Results presented at ISC 2026 in Hamburg.",
+      "url": "https://thequantuminsider.com/2026/06/23/quandela-validates-low-latency-photonic-qpu-integration-with-nvidia-accelerated-computing/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-23"
     }
   ]
 }

@@ -16,7 +16,7 @@
   "free": true,
   "language": "Python/C++",
   "provider": "NVIDIA",
-  "lastUpdated": "2026-08-03",
+  "lastUpdated": "2026-09-14",
   "maturity": "stable",
   "communitySize": "~600 GitHub stars",
   "sources": [
@@ -97,6 +97,13 @@
       "url": "https://github.com/NVIDIA/cuda-quantum/releases/tag/0.15.1",
       "source": "GitHub",
       "date": "2026-08-03"
+    },
+    {
+      "title": "NVIDIA unveils CUDA-Q Logical at IEEE Quantum Week 2026 for fault-tolerant quantum computing",
+      "excerpt": "NVIDIA announced CUDA-Q Logical, an orchestration and compilation layer above physical QPU execution that co-designs logical algorithms, QEC codes, real-time decoders, and hardware control in one pipeline. Early adopters include Fermilab (reduced 5-month modeling task to 3 weeks), Sandia, IQM, and Infleqtion. Available open-source on GitHub.",
+      "url": "https://quantumcomputingreport.com/nvidia-unveils-cuda-q-logical-to-accelerate-fault-tolerant-system-orchestration-across-hardware-modalities/",
+      "source": "Quantum Computing Report",
+      "date": "2026-09-14"
     }
   ]
 }
