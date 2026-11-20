@@ -16,7 +16,7 @@
   "free": true,
   "language": "Python/C++",
   "provider": "NVIDIA",
-  "lastUpdated": "2026-08-03",
+  "lastUpdated": "2026-09-14",
   "maturity": "stable",
   "communitySize": "~600 GitHub stars",
   "sources": [
@@ -97,6 +97,13 @@
       "url": "https://github.com/NVIDIA/cuda-quantum/releases/tag/0.15.1",
       "source": "GitHub",
       "date": "2026-08-03"
+    },
+    {
+      "title": "NVIDIA launches CUDA-Q Logical at IEEE Quantum Week, adopted by IQM and Infleqtion",
+      "excerpt": "NVIDIA announced CUDA-Q Logical at IEEE Quantum Week 2026 in Toronto — an extensible fault-tolerant compilation and orchestration framework integrating QEC code design, real-time decoding, and physical QPU micro-architectures in a unified pipeline, adopted at launch by IQM Quantum Computers and Infleqtion.",
+      "url": "https://www.hpcwire.com/off-the-wire/nvidia-expands-open-source-cuda-q-platform-for-fault-tolerant-quantum-computing/",
+      "source": "HPCwire",
+      "date": "2026-09-14"
     }
   ]
 }

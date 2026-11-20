@@ -76,6 +76,13 @@
       "url": "https://qant.com/press-releases/phoquant-quantum-computing-consortium-led-by-qant-receives-50-million-euros-in-research-funding/",
       "source": "Q.ANT",
       "date": "2022-03-01"
+    },
+    {
+      "title": "Q.ANT releases open-source SDK for its photonic Native Processing Units",
+      "excerpt": "Q.ANT released an open-source SDK for its photonic Native Processing Units, including C and Python APIs, sample applications, documentation, and a CPU-based simulation backend, with cloud access via IONOS to follow.",
+      "url": "https://thequantuminsider.com/2026/09/23/q-ant-open-source-sdk-photonic-computing/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-23"
     }
   ]
 }

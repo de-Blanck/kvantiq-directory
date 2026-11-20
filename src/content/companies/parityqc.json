@@ -143,6 +143,13 @@
       "url": "https://thequantuminsider.com/2026/07/15/classiq-parityqc-quantum-circuit-optimization/",
       "source": "The Quantum Insider",
       "date": "2026-07-15"
+    },
+    {
+      "title": "ParityQC launches Parity Twine Optimizer in IBM Qiskit Functions Catalog",
+      "excerpt": "ParityQC launched the Parity Twine Optimizer via the IBM Qiskit Functions Catalog, a hardware-independent compiler that reduces gate count and circuit depth for quantum optimization problems, available to IBM Quantum Network members via 30-day free trial.",
+      "url": "https://thequantuminsider.com/2026/09/15/parityqc-parity-twine-compiler-product/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-15"
     }
   ]
 }
