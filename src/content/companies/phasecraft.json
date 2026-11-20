@@ -16,7 +16,7 @@
   "featured": false,
   "headquarters": "Bristol, United Kingdom",
   "employees": "50+",
-  "funding": "USD 40M+",
+  "funding": "USD 50M+ (incl. grants and contracts)",
   "accessModel": "Research partnerships + software licensing",
   "products": [
     {
@@ -47,6 +47,30 @@
       "url": "https://www.uktech.news/deep-tech/phasecraft-quantum-computing-20230816",
       "title": "Phasecraft raises GBP 13m for practical quantum problem-solving - UKTech News",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/phasecraft-joins-darpas-quantum-benchmarking-initiative/",
+      "title": "Phasecraft Joins DARPA's Quantum Benchmarking Initiative",
+      "dateAccessed": "2026-09-06"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/03/03/phasecraft-joins-darpa-quantum-benchmarking-initiative/",
+      "title": "Phasecraft Joins DARPA's Quantum Benchmarking Initiative",
+      "dateAccessed": "2026-09-06"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/06/16/phasecraft-tapped-by-arpa-e-to-develop-and-apply-quantum-algorithms-for-catalyst-discovery/",
+      "title": "Phasecraft Wins ARPA-E Award for Quantum Catalyst Discovery Research",
+      "dateAccessed": "2026-09-06"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/phasecraft-tapped-by-arpa-e-to-develop-and-apply-quantum-algorithms-for-catalyst-discovery/",
+      "title": "Phasecraft Tapped by ARPA-E to Develop and Apply Quantum Algorithms for Catalyst Discovery",
+      "dateAccessed": "2026-09-06"
     }
   ],
   "news": [
@@ -63,6 +87,20 @@
       "url": "https://www.uktech.news/deep-tech/phasecraft-quantum-computing-20230816",
       "source": "UKTech News",
       "date": "2023-08-16"
+    },
+    {
+      "title": "Phasecraft joins DARPA's Quantum Benchmarking Initiative to assess utility-scale quantum computing timelines",
+      "excerpt": "Phasecraft commenced work on the University of Maryland's ARLIS contract supporting DARPA's Quantum Benchmarking Initiative (QBI), which aims to assess whether utility-scale quantum computing is achievable by 2033. Phasecraft contributes optimized resource estimates for quantum applications in materials simulation and hard optimization.",
+      "url": "https://www.hpcwire.com/off-the-wire/phasecraft-joins-darpas-quantum-benchmarking-initiative/",
+      "source": "HPCwire",
+      "date": "2026-03-03"
+    },
+    {
+      "title": "Phasecraft wins $4.5M ARPA-E contract to develop quantum algorithms for catalyst discovery",
+      "excerpt": "Phasecraft secured a ~$4.5 million USD contract from the U.S. Department of Energy's ARPA-E under the Quantum Computing for Computational Chemistry (QC3) programme to develop optimised quantum algorithms for simulating and discovering novel catalysts. The project targets low-cost hydrogen production and critical mineral reduction, in collaboration with Johnson Matthey, Harvard University, and QuEra.",
+      "url": "https://thequantuminsider.com/2026/06/16/phasecraft-tapped-by-arpa-e-to-develop-and-apply-quantum-algorithms-for-catalyst-discovery/",
+      "source": "The Quantum Insider",
+      "date": "2026-06-16"
     }
   ]
 }

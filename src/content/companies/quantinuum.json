@@ -155,6 +155,18 @@
       "url": "https://www.datacenterdynamics.com/en/news/quantum-earnings-q2-2026-d-wave-ionq-and-rigetti-publish-financial-results-alongside-newly-ipo-ed-iqm-quantum-computers/",
       "title": "Quantum earnings Q2 2026 - Data Center Dynamics",
       "dateAccessed": "2026-08-23"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/09/03/quantinuum-aramco-mou-industrial-quantum-computing/",
+      "title": "Quantinuum and Aramco Sign MOU to Explore Industrial Quantum Computing",
+      "dateAccessed": "2026-09-06"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/quantinuum-and-aramco-sign-mou-on-industrial-quantum-computing-use-cases/",
+      "title": "Quantinuum and Aramco Sign MOU on Industrial Quantum Computing Use Cases",
+      "dateAccessed": "2026-09-06"
     }
   ],
   "news": [
@@ -304,6 +316,13 @@
       "url": "https://thequantuminsider.com/2026/08/12/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure/",
       "source": "The Quantum Insider",
       "date": "2026-08-11"
+    },
+    {
+      "title": "Quantinuum and Aramco sign MoU to explore industrial quantum computing applications",
+      "excerpt": "Quantinuum and Saudi Aramco signed a non-binding MoU at the LEAP technology conference in Riyadh to explore energy-sector quantum computing applications, benchmark quantum modalities, and conduct technical onboarding and knowledge exchange for evaluating fault-tolerant quantum systems in industrial settings.",
+      "url": "https://thequantuminsider.com/2026/09/03/quantinuum-aramco-mou-industrial-quantum-computing/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-03"
     }
   ]
 }
