@@ -17,7 +17,7 @@
   "provider": "QuTech (TU Delft / TNO)",
   "lastUpdated": "Active",
   "maturity": "stable",
-  "communitySize": "40+ partner organisations",
+  "communitySize": "50+ partner organisations",
   "sources": [
     {
       "type": "website",
@@ -40,6 +40,19 @@
       "type": "website",
       "url": "https://thequantuminsider.com/2025/10/31/round-three-of-the-quantum-internet-application-challenge-kicks-off/",
       "title": "Round Three of The Quantum Internet Application Challenge Kicks Off"
+    },
+    {
+      "type": "url",
+      "url": "https://www.sdxcentral.com/news/eu-backs-qia-quantum-network-prototype-with-475m-grant/",
+      "title": "EU backs QIA quantum network prototype with €47.5M grant",
+      "datePublished": "2026-10-08",
+      "dateAccessed": "2026-10-18"
+    },
+    {
+      "type": "url",
+      "url": "https://www.intelligentcio.com/eu/?p=171471",
+      "title": "Europe backs QIA with €47.5m to build full-stack quantum Internet",
+      "dateAccessed": "2026-10-18"
     }
   ],
   "news": [
@@ -56,6 +69,13 @@
       "url": "https://quantuminternetalliance.org/",
       "source": "Quantum Internet Alliance",
       "date": "2026-06-20"
+    },
+    {
+      "title": "EU awards QIA €47.5 million for Phase 2 quantum internet prototype spanning metropolitan-scale networks",
+      "excerpt": "The European Commission awarded the Quantum Internet Alliance a €47.5 million grant under its second Specific Grant Agreement (SGA2) to build a programmable quantum network prototype connecting two metropolitan-scale networks via quantum repeaters. The 42-month program involves over 50 institutions across 12 EU member states, led by TU Delft, with sub-awards including €5.4 million to the University of Innsbruck and AQT for trapped-ion hardware.",
+      "url": "https://www.sdxcentral.com/news/eu-backs-qia-quantum-network-prototype-with-475m-grant/",
+      "source": "SDxCentral",
+      "date": "2026-10-08"
     }
   ]
 }
