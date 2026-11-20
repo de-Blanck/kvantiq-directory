@@ -65,31 +65,6 @@
       "authors": "Google Quantum AI and Collaborators",
       "datePublished": "2025-02-20",
       "dateAccessed": "2026-04-19"
-    }
-  ],
-  "sources": [
-    {
-      "type": "arxiv",
-      "url": "https://arxiv.org/abs/2408.13687",
-      "title": "Quantum error correction below the surface code threshold",
-      "authors": "Google Quantum AI and Collaborators",
-      "datePublished": "2024-08-24",
-      "dateAccessed": "2026-04-19"
-    },
-    {
-      "type": "press-release",
-      "url": "https://blog.google/technology/research/google-willow-quantum-chip/",
-      "title": "Meet Willow, our state-of-the-art quantum chip (Google)",
-      "datePublished": "2024-12-09",
-      "dateAccessed": "2026-04-19"
-    },
-    {
-      "type": "doi",
-      "url": "https://doi.org/10.1038/s41586-024-08449-y",
-      "title": "Quantum error correction below the surface code threshold (Nature 638, 920–926)",
-      "authors": "Google Quantum AI and Collaborators",
-      "datePublished": "2025-02-20",
-      "dateAccessed": "2026-04-19"
     },
     {
       "type": "arxiv",
@@ -103,6 +78,28 @@
       "url": "https://www.hpcwire.com/off-the-wire/ibm-and-uchicago-advance-trusted-quantum-computing-with-verified-logical-circuits/",
       "title": "IBM and UChicago Advance Trusted Quantum Computing with Verified Logical Circuits - HPCwire",
       "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2510.18847",
+      "title": "Surface code scaling on heavy-hex superconducting quantum processors",
+      "authors": "Arian Vezvaee, Cesar Benito, Mario Morford-Oberst, Alejandro Bermudez, Daniel A. Lidar",
+      "datePublished": "2025-10-01",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "doi",
+      "url": "https://doi.org/10.1038/s41467-026-76090-6",
+      "title": "Surface code scaling on heavy-hex superconducting quantum processors (Nature Communications)",
+      "authors": "Vezvaee, Benito, Morford-Oberst, Bermudez, Lidar",
+      "datePublished": "2026-07-29",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/usc-and-quantum-elements-demonstrate-surface-code-scaling-on-ibm-heavy-hex-processors/",
+      "title": "USC and Quantum Elements Demonstrate Surface Code Scaling on IBM Heavy-Hex Processors",
+      "dateAccessed": "2026-09-20"
     }
   ],
   "news": [
@@ -119,6 +116,27 @@
       "url": "https://arxiv.org/abs/2607.25941",
       "source": "arXiv",
       "date": "2026-07-30"
+    },
+    {
+      "title": "USC and Quantum Elements Demonstrate Surface Code Scaling on IBM Heron Heavy-Hex Processors",
+      "excerpt": "Quantum Elements and USC published a Nature Communications paper showing subthreshold surface-code scaling on IBM Heron processors despite their heavy-hex layout mismatching the code's square-grid geometry. The team combined a depth-minimising SWAP-based embedding with gap-aware dynamical decoupling to suppress idle-time errors, achieving below-threshold logical error-rate suppression as code distance increased.",
+      "url": "https://www.hpcwire.com/off-the-wire/quantum-elements-and-usc-demonstrate-surface-code-scaling-on-ibm-heron-processors/",
+      "source": "HPCwire",
+      "date": "2026-09-15"
+    },
+    {
+      "title": "USC And Quantum Elements Error Correction Technique Demonstrates Surface Code Scaling with Logical Qubits on IBM Heron",
+      "excerpt": "Quantum Elements and the University of Southern California demonstrated that surface codes can achieve below-threshold error-rate scaling on IBM Heron processors with heavy-hex qubit connectivity, a geometry not natively suited to surface codes. The Nature Communications paper generalises surface-code QEC beyond hardware designed around square-grid connectivity.",
+      "url": "https://thequantuminsider.com/2026/09/15/usc-and-quantum-elements-error-correction-technique-demonstrates-surface-code-scaling-with-logical-qubits/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-15"
+    },
+    {
+      "title": "NVIDIA Launches CUDA-Q Logical for Fault-Tolerant Quantum Computing at IEEE Quantum Week",
+      "excerpt": "NVIDIA introduced CUDA-Q Logical, an open-source orchestration layer for designing and testing applications on fault-tolerant quantum computers with logical qubits. Fermilab cut fault-tolerant architecture development time from 5 months to 3 weeks; Infleqtion demonstrated qLDPC integration achieving up to 5× fewer physical data qubits than prevailing surface-code approaches.",
+      "url": "https://thequantuminsider.com/2026/09/14/nvidia-expands-open-source-cuda-q-platform/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-14"
     }
   ]
 }

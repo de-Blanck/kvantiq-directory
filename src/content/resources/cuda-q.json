@@ -16,7 +16,7 @@
   "free": true,
   "language": "Python/C++",
   "provider": "NVIDIA",
-  "lastUpdated": "2026-08-03",
+  "lastUpdated": "2026-09-14",
   "maturity": "stable",
   "communitySize": "~600 GitHub stars",
   "sources": [
@@ -53,6 +53,18 @@
       "url": "https://thequantuminsider.com/2026/07/27/quantum-x-labs-ai-error-correction-decoder-nvidia-cuda-q/",
       "title": "NVIDIA Introduces NVQLink for GPU-QPU Integration - The Quantum Insider",
       "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/09/14/nvidia-expands-open-source-cuda-q-platform/",
+      "title": "NVIDIA Expands Open Source CUDA-Q Platform for Fault-Tolerant Quantum Computing — The Quantum Insider",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/nvidia-expands-open-source-cuda-q-platform-for-fault-tolerant-quantum-computing/",
+      "title": "NVIDIA Expands Open Source CUDA-Q Platform for Fault-Tolerant Quantum Computing — HPCwire",
+      "dateAccessed": "2026-09-20"
     }
   ],
   "news": [
@@ -97,6 +109,27 @@
       "url": "https://github.com/NVIDIA/cuda-quantum/releases/tag/0.15.1",
       "source": "GitHub",
       "date": "2026-08-03"
+    },
+    {
+      "title": "CUDA-Q 0.16.0 released with Python 3.14 support, disconnected topologies, and static Rotation Gate Synthesis",
+      "excerpt": "CUDA-Q version 0.16.0 was released on September 12, 2026. Key additions include support for disconnected device topologies in the qubit mapper, Python 3.14 support, expanded mapping support for control flow, static Rotation Gate Synthesis (Clifford + T), and introduction of atomic quantum regions.",
+      "url": "https://github.com/NVIDIA/cuda-quantum/releases/tag/0.16.0",
+      "source": "CUDA-Q GitHub Releases",
+      "date": "2026-09-12"
+    },
+    {
+      "title": "Quantum Machines Demonstrates Live End-to-End CUDA-Q Program Execution via NVIDIA NVQLink",
+      "excerpt": "Quantum Machines became the first quantum control company to run a complete end-to-end NVIDIA CUDA-Q program across live qubits and a classical PPU processor using NVIDIA NVQLink, announced at IEEE Quantum Week 2026. A single CUDA-Q program routes quantum and classical tasks to appropriate processors, exchanging measurements and control decisions in microseconds.",
+      "url": "https://thequantuminsider.com/2026/09/13/quantum-machines-makes-quantum-computers-easier-to-program-with-nvidia-cuda-q-and-nvqlink/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-13"
+    },
+    {
+      "title": "NVIDIA Launches CUDA-Q Logical: Open-Source Framework for Fault-Tolerant Quantum Computing",
+      "excerpt": "NVIDIA introduced CUDA-Q Logical on September 14, 2026 — an open-source compiler orchestration layer that maps logical quantum programs onto error-correcting codes. Fermilab cut fault-tolerant architecture evaluation from five months to three weeks. Iceberg Quantum modelled 1,000 logical qubits with only 150,000 physical qubits. Early adopters include Fermilab, Infleqtion, IQM, QCDesign, Quantum Motion, and Sandia National Laboratories.",
+      "url": "https://thequantuminsider.com/2026/09/14/nvidia-expands-open-source-cuda-q-platform/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-14"
     }
   ]
 }

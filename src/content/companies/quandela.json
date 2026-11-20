@@ -82,6 +82,30 @@
       "url": "https://quantumcomputingreport.com/quandela-selected-for-stage-a-of-darpas-quantum-benchmarking-initiative/",
       "title": "Quandela Selected for Stage A of DARPA's Quantum Benchmarking Initiative - Quantum Computing Report",
       "dateAccessed": "2026-06-21"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/09/02/quandela-canada-quantum-computing-sandbox-photonic-platform/",
+      "title": "Quandela Joins Canada's Quantum Computing Sandbox With Photonic Quantum Platform — The Quantum Insider",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://betakit.com/quandela-brings-first-photonic-system-to-canadas-quantum-computing-sandbox/",
+      "title": "Quandela brings first photonic system to Canada's Quantum Computing Sandbox — BetaKit",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/09/14/quandela-white-paper-photonic-qpu-nvidia-infrastructure/",
+      "title": "Quandela Publishes White Paper on Photonic QPU Integration With NVIDIA Infrastructure — The Quantum Insider",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quandela-and-nvidia-outline-photonic-qpu-integration-architecture-via-nvqlink/",
+      "title": "Quandela and NVIDIA Outline Photonic QPU Integration Architecture via NVQLink — Quantum Computing Report",
+      "dateAccessed": "2026-09-20"
     }
   ],
   "news": [
@@ -140,6 +164,20 @@
       "url": "https://thequantuminsider.com/2026/06/16/darpa-selects-quandela-for-stage-a-of-the-quantum-benchmarking-initiative/",
       "source": "The Quantum Insider",
       "date": "2026-06-16"
+    },
+    {
+      "title": "Quandela joins Canada's Quantum Computing Sandbox via MoU with CMC Microsystems",
+      "excerpt": "Quandela signed an MoU with CMC Microsystems to provide cloud-based photonic quantum computing access to Canada's Quantum Computing Sandbox — the only photonic system in the program — giving SMEs, academics and organizations access to Quandela's Canada-hosted MosaiQ platform.",
+      "url": "https://thequantuminsider.com/2026/09/02/quandela-canada-quantum-computing-sandbox-photonic-platform/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-02"
+    },
+    {
+      "title": "Quandela and NVIDIA publish white paper on photonic QPU integration via NVQLink",
+      "excerpt": "Quandela and NVIDIA outlined a three-phase integration framework — Access, Integration & Discovery, Scale — linking Quandela's MosaiQ QPU to NVIDIA GPU nodes via NVQLink. The approach was presented at IEEE Quantum Week 2026 in Toronto and combines CUDA-Q, cuQuantum and NVQLink for low-latency hybrid workloads.",
+      "url": "https://thequantuminsider.com/2026/09/14/quandela-white-paper-photonic-qpu-nvidia-infrastructure/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-14"
     }
   ]
 }

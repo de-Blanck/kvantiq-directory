@@ -105,6 +105,42 @@
       "url": "https://thequantuminsider.com/2026/03/12/riverlane-publishes-quantum-error-correction-roadmap-to-speed-utility-scale-quantum-by-3-5-years/",
       "title": "Riverlane publishes QEC roadmap targeting utility-scale quantum by early 2030s - The Quantum Insider",
       "dateAccessed": "2026-08-23"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/09/10/altera-riverlane-partner-bring-quantum-error-correction-support-agilex-fpgas/",
+      "title": "Altera and Riverlane Partner to Bring Quantum Error Correction Support to Agilex FPGAs — The Quantum Insider",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/altera-and-riverlane-partner-to-bring-quantum-error-correction-support-to-agilex-fpgas/",
+      "title": "Altera and Riverlane Partner to Bring QEC Support to Agilex FPGAs — HPCwire",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/altera-and-riverlane-partner-on-qec-interfaces-for-agilex-fpgas-following-post-quantum-security-rollout/",
+      "title": "Altera and Riverlane Partner on QEC Interfaces for Agilex FPGAs — Quantum Computing Report",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/09/17/riverlane-establishes-u-s-headquarters-in-maryland-to-accelerate-quantum-computing-innovation/",
+      "title": "Riverlane Establishes U.S. Headquarters in Maryland — The Quantum Insider",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/riverlane-establishes-u-s-headquarters-in-marylands-discovery-district-to-scale-real-time-qec-deployments/",
+      "title": "Riverlane Establishes U.S. Headquarters in Maryland's Discovery District — Quantum Computing Report",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://business.maryland.gov/news/quantum-leader-selects-maryland-for-u-s-headquarters/",
+      "title": "Quantum Leader Selects Maryland for U.S. Headquarters — Maryland Department of Commerce",
+      "dateAccessed": "2026-09-20"
     }
   ],
   "news": [
@@ -177,6 +213,20 @@
       "url": "https://thequantuminsider.com/2026/07/28/riverlane-unitary-foundation-deltakit-community-fund/",
       "source": "The Quantum Insider",
       "date": "2026-07-28"
+    },
+    {
+      "title": "Riverlane and Altera partner to bring QEC support to Agilex FPGAs via open-source QECi interface",
+      "excerpt": "Riverlane validated its QEC Interface (QECi) design on an Altera Agilex 7 FPGA, enabling low-latency data exchange between quantum control systems and QEC decoders. Riverlane joined the Altera Solutions Acceleration Partner Program; the QECi design example is publicly available on GitHub.",
+      "url": "https://thequantuminsider.com/2026/09/10/altera-riverlane-partner-bring-quantum-error-correction-support-agilex-fpgas/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-10"
+    },
+    {
+      "title": "Riverlane establishes US headquarters in Maryland's Discovery District",
+      "excerpt": "Riverlane opened its US headquarters in Maryland's Discovery District, adjacent to the University of Maryland, housing executive offices, laboratory space, and customer integration facilities. The facility will support North American commercial development and research collaborations with US government and academic partners.",
+      "url": "https://thequantuminsider.com/2026/09/17/riverlane-establishes-u-s-headquarters-in-maryland-to-accelerate-quantum-computing-innovation/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-17"
     }
   ]
 }

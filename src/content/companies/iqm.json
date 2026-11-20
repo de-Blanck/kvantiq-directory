@@ -139,6 +139,30 @@
       "url": "https://www.datacenterdynamics.com/en/news/quantum-earnings-q2-2026-d-wave-ionq-and-rigetti-publish-financial-results-alongside-newly-ipo-ed-iqm-quantum-computers/",
       "title": "Quantum earnings Q2 2026 - Data Center Dynamics",
       "dateAccessed": "2026-08-23"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/09/15/toyo-corporation-buys-second-iqm-quantum-computer/",
+      "title": "TOYO Corporation Buys Second IQM Quantum Computer — The Quantum Insider",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/iqm-sells-2nd-quantum-computer-to-toyo-for-japan-ecosystem-access/",
+      "title": "IQM Sells 2nd Quantum Computer to TOYO for Japan Ecosystem Access — HPCwire",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/09/17/iqm-quantum-computer-south-america-brazil-eldorado/",
+      "title": "IQM to Deploy Quantum Computer in South America at Brazil's Eldorado Institute — The Quantum Insider",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/iqm-expands-to-south-america-with-on-premises-qpu-sale-to-brazils-eldorado-research-institute/",
+      "title": "IQM Expands to South America with On-Premises QPU Sale to Brazil's Eldorado Research Institute — Quantum Computing Report",
+      "dateAccessed": "2026-09-20"
     }
   ],
   "news": [
@@ -323,6 +347,20 @@
       "url": "https://www.globenewswire.com/news-release/2026/08/04/3338027/0/en/iqm-quantum-computers-reports-first-earnings-as-public-company-reporting-first-half-and-second-quarter-2026-results-and-initiates-fy-2026-guidance-supported-by-over-eur-102-million.html",
       "source": "GlobeNewswire",
       "date": "2026-08-04"
+    },
+    {
+      "title": "TOYO Corporation buys second IQM quantum computer, opening dual-QPU testbed in Japan",
+      "excerpt": "TOYO Corporation purchased an IQM Spark 5-qubit system, adding to its previously ordered 20-qubit IQM Radiance. Both systems will be operational in early 2027, establishing a dual-QPU open-access testbed for Japanese universities, startups, and industrial researchers.",
+      "url": "https://thequantuminsider.com/2026/09/15/toyo-corporation-buys-second-iqm-quantum-computer/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-15"
+    },
+    {
+      "title": "IQM to deploy first South American quantum computer at Brazil's Eldorado Research Institute",
+      "excerpt": "IQM signed an agreement with Eldorado Research Institute (Campinas) to deliver an IQM Spark system in Q1 2027 — IQM's first sale in South America. Eldorado will open the platform to regional universities, startups, and industrial partners in automotive, energy, fintech, and agribusiness sectors. The deal also includes remote access to IQM's 54-qubit cloud system in Europe.",
+      "url": "https://thequantuminsider.com/2026/09/17/iqm-quantum-computer-south-america-brazil-eldorado/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-17"
     }
   ]
 }
