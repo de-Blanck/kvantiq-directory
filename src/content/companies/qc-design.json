@@ -1,0 +1,72 @@
+{
+  "name": "QC Design",
+  "slug": "qc-design",
+  "country": "Germany",
+  "region": "dach",
+  "type": "software",
+  "tags": [
+    "fault-tolerance",
+    "quantum-error-correction",
+    "design-automation",
+    "quantum-software"
+  ],
+  "founded": 2021,
+  "description": "QC Design is a German quantum software company developing design-automation software and fault-tolerant architectures for quantum hardware manufacturers. Its Plaquette platform simulates and engineers logical qubits and error-correction schemes under realistic hardware imperfections, and is used by hardware developers including QUDORA and C12. The company was co-founded by Ish Dhand and Martin Plenio and is based in Ulm.",
+  "website": "https://www.qc.design",
+  "featured": false,
+  "headquarters": "Ulm, Germany",
+  "funding": "EUR 4M (EIC Accelerator, 2024)",
+  "accessModel": "Software licensing",
+  "products": [
+    {
+      "name": "Plaquette",
+      "description": "Quantum design-automation platform for simulating and engineering fault-tolerant architectures, codes and decoders"
+    }
+  ],
+  "highlights": [
+    "Selected for the European Innovation Council (EIC) Accelerator in 2024",
+    "Plaquette adopted by trapped-ion developer QUDORA and carbon-nanotube developer C12",
+    "Co-founded by CEO Ish Dhand and scientific co-founder Martin Plenio"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.qc.design",
+      "title": "QC Design Official Website",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "website",
+      "url": "https://www.cordis.europa.eu/project/id/101188241/de",
+      "title": "QCDesign – EU CORDIS project record (EIC Accelerator)",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/qudora-adopts-qc-designs-plaquette-software-to-accelerate-fault-tolerance-for-trapped-ion-processors/",
+      "title": "QUDORA Adopts QC Design's Plaquette Software to Accelerate Fault Tolerance for Trapped-Ion Processors - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://mcadcafe.com/nbc/articles/1/2081710/Quantum-design-automation-leader-QC-Design-selected-prestigious-EIC-Accelerator-program-secures-4M-funding",
+      "title": "QC Design selected for EIC Accelerator program, secures EUR 4M funding - MCADCafe",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://www.cbinsights.com/company/qc-design/",
+      "title": "QC Design company profile - CB Insights",
+      "dateAccessed": "2026-11-20"
+    }
+  ],
+  "news": [
+    {
+      "title": "QUDORA adopts QC Design's Plaquette for fault-tolerance design",
+      "excerpt": "QUDORA integrated Plaquette into its R&D workflow to model logical-qubit performance of its trapped-ion architecture.",
+      "url": "https://quantumcomputingreport.com/qudora-adopts-qc-designs-plaquette-software-to-accelerate-fault-tolerance-for-trapped-ion-processors/",
+      "source": "Quantum Computing Report",
+      "date": "2025-12-03"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "IceCirc",
+  "slug": "icecirc",
+  "country": "Germany",
+  "region": "dach",
+  "type": "hardware",
+  "tags": [
+    "cryogenic-electronics",
+    "cryo-cmos",
+    "qubit-control",
+    "quantum-enabling-technology"
+  ],
+  "description": "IceCirc is a spin-off of Forschungszentrum Jülich's Institute for Integrated Computing Architectures (PGI-4/ICA) that designs low-power integrated circuits operating at cryogenic temperatures inside the cryostat, close to the qubits. Its cryogenic ASICs for qubit control and readout aim to reduce the wiring overhead, system complexity and power consumption of scaling quantum computers. The company is led by managing directors Jonas Bühler and Viktor Koch.",
+  "website": "https://icecirc.com",
+  "featured": false,
+  "headquarters": "Jülich, Germany",
+  "accessModel": "Custom cryogenic IC design for quantum hardware makers",
+  "products": [
+    {
+      "name": "Cryogenic control and readout ASICs",
+      "description": "Low-power cryogenic RF and mixed-signal integrated circuits for qubit control and readout inside the cryostat"
+    }
+  ],
+  "highlights": [
+    "Spun out of Forschungszentrum Jülich's PGI-4/ICA institute, building on more than a decade of cryogenic IC research",
+    "Targets control electronics scalable towards quantum computers with very large qubit counts"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://icecirc.com",
+      "title": "IceCirc GmbH Official Website",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "website",
+      "url": "https://www.fz-juelich.de/en/pgi/pgi-4/news/from-research-to-spin-off-icecirc-gmbh-brings-cryogenic-electronics-closer-to-quantum-computers",
+      "title": "From Research to Spin-off: IceCirc GmbH Brings Cryogenic Electronics Closer to Quantum Computers - Forschungszentrum Jülich",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumzeitgeist.com/forschungszentrum-julich-quantum-icecirc-chip/",
+      "title": "Forschungszentrum Jülich Launches IceCirc Quantum Chip Firm - Quantum Zeitgeist",
+      "dateAccessed": "2026-11-20"
+    }
+  ],
+  "news": []
+}

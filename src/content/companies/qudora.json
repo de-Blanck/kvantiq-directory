@@ -1,0 +1,72 @@
+{
+  "name": "QUDORA Technologies",
+  "slug": "qudora",
+  "country": "Germany",
+  "region": "dach",
+  "type": "hardware",
+  "tags": [
+    "trapped-ion",
+    "quantum-computing",
+    "full-stack",
+    "quantum-valley-lower-saxony"
+  ],
+  "founded": 2021,
+  "description": "QUDORA Technologies is a German full-stack quantum computing company building trapped-ion quantum computers and stand-alone ion-trap processors on its proprietary NFQC technology. It is a spin-off of the Physikalisch-Technische Bundesanstalt (PTB), TU Braunschweig and Leibniz Universität Hannover, part of the Quantum Valley Lower Saxony ecosystem, and leads the federally funded NFQC-1k consortium aiming at a fault-tolerant trapped-ion system with at least 1,000 physical qubits.",
+  "website": "https://qudora.com",
+  "featured": false,
+  "headquarters": "Braunschweig, Germany",
+  "accessModel": "On-premise systems + cloud access",
+  "products": [
+    {
+      "name": "NFQC trapped-ion quantum computers",
+      "description": "Full-stack trapped-ion quantum computers and stand-alone ion-trap quantum processors built on surface-electrode traps"
+    }
+  ],
+  "highlights": [
+    "Spin-off of PTB, TU Braunschweig and Leibniz Universität Hannover within Quantum Valley Lower Saxony",
+    "Leads the seven-member NFQC-1k consortium (approx. EUR 122M project volume) selected in the BMFTR Quantum Computing Competition",
+    "Builds an ion-trap prototype with NXP Semiconductors in the DLR QCI project XAPHIRO"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://qudora.com",
+      "title": "QUDORA Technologies Official Website",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "website",
+      "url": "https://qci.dlr.de/en/partner/qudora/",
+      "title": "QUDORA – DLR Quantum Computing Initiative partner page",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "website",
+      "url": "https://qci.dlr.de/en/xaphiro/",
+      "title": "XAPHIRO – Prototype trapped-ion quantum computer with at least 50 qubits – DLR QCI",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/german-government-selects-qudora-led-consortium-for-e122-million-138-8-usd-nfqc-1k-trapped-ion-quantum-computer-project/",
+      "title": "German Government Selects QUDORA-Led Consortium for EUR 122 Million NFQC-1k Trapped-Ion Quantum Computer Project - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/?p=188987",
+      "title": "QUDORA and ParityQC Partner to Optimize Quantum Algorithms for Trapped-Ion Systems - HPCwire",
+      "datePublished": "2026-02-26",
+      "dateAccessed": "2026-11-20"
+    }
+  ],
+  "news": [
+    {
+      "title": "QUDORA and ParityQC partner on algorithm optimization for trapped ions",
+      "excerpt": "The partnership applies ParityQC's architecture to QUDORA's trapped-ion hardware to reduce gate counts and circuit depth.",
+      "url": "https://www.hpcwire.com/?p=188987",
+      "source": "HPCwire",
+      "date": "2026-02-26"
+    }
+  ]
+}
