@@ -323,6 +323,13 @@
       "url": "https://www.globenewswire.com/news-release/2026/08/04/3338027/0/en/iqm-quantum-computers-reports-first-earnings-as-public-company-reporting-first-half-and-second-quarter-2026-results-and-initiates-fy-2026-guidance-supported-by-over-eur-102-million.html",
       "source": "GlobeNewswire",
       "date": "2026-08-04"
+    },
+    {
+      "title": "IQM Sets Three-Stage Upgrade Path for LUMI-IQ to Enable Europe's First Superconducting Logical Qubits by 2029",
+      "excerpt": "IQM announced a three-stage deployment beginning with a 150-physical-qubit Halocene H4 system at the LUMI AI Factory in 2027, scaling to real-time error correction in 2028, and full logical operations including lattice surgery by 2029 — making LUMI-IQ Europe's first publicly owned fault-tolerant superconducting quantum computer, jointly funded by EuroHPC and Finland, Czechia, Norway, and Poland.",
+      "url": "https://quantumcomputingreport.com/lumi-ai-factory-selects-iqms-halocene-roadmap-for-europes-first-superconducting-logical-qubit-system/",
+      "source": "Quantum Computing Report",
+      "date": "2026-09-10"
     }
   ]
 }

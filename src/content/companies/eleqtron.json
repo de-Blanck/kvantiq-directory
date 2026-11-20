@@ -82,6 +82,13 @@
       "url": "https://www.eu-startups.com/2026/05/germanys-eleqtron-raises-e57-million-series-a-to-scale-quantum-computing-systems-for-industrial-applications/",
       "source": "EU-Startups",
       "date": "2026-05-05"
+    },
+    {
+      "title": "Forschungszentrum Jülich and eleQtron Inaugurate JION Trapped-Ion Quantum Computer",
+      "excerpt": "Forschungszentrum Jülich and eleQtron officially launched JION, a trapped-ion QPU using eleQtron's MAGIC microwave technology with ionized ytterbium atoms, now available through the JUNIQ user infrastructure for hybrid quantum-HPC workloads. Developed under the €21 million EPIQ partnership funded by the NRW Ministry of Culture and Science, JION replaces laser control with microwave-based operation for simplified engineering.",
+      "url": "https://www.hpcwire.com/off-the-wire/julich-and-eleqtron-inaugurate-jion-trapped-ion-quantum-computer/",
+      "source": "HPCwire",
+      "date": "2026-09-04"
     }
   ]
 }

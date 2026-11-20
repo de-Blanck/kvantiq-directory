@@ -177,6 +177,13 @@
       "url": "https://thequantuminsider.com/2026/07/28/riverlane-unitary-foundation-deltakit-community-fund/",
       "source": "The Quantum Insider",
       "date": "2026-07-28"
+    },
+    {
+      "title": "Altera and Riverlane Partner to Bring Quantum Error Correction to Agilex FPGAs",
+      "excerpt": "Altera and Riverlane announced a partnership enabling quantum hardware developers to build flexible QEC control systems on Agilex FPGAs, processing quantum data in parallel for rapid error correction. Riverlane published the QECi design example on GitHub as an open-source resource and is demonstrating the solution at IEEE Quantum Week 2026.",
+      "url": "https://www.hpcwire.com/off-the-wire/altera-and-riverlane-partner-to-bring-quantum-error-correction-support-to-agilex-fpgas/",
+      "source": "HPCwire",
+      "date": "2026-09-10"
     }
   ]
 }
