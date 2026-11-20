@@ -1,0 +1,64 @@
+{
+  "name": "QBITFLOW",
+  "slug": "qbitflow",
+  "country": "Germany",
+  "region": "dach",
+  "type": "hardware",
+  "tags": [
+    "quantum-sensing",
+    "cold-atoms",
+    "ultra-high-vacuum",
+    "space-quantum-technology"
+  ],
+  "founded": 2022,
+  "description": "QBITFLOW is a Bremen-based spin-off of the University of Bremen's ZARM institute that develops modular ultra-high-vacuum (UHV) systems and components for cold-atom quantum sensors, drawing on its founders' experience with quantum sensors for space missions. It is an incubatee of ESA BIC Northern Germany and also offers practical quantum-sensor training for technical teams.",
+  "website": "https://www.qbitflow.com",
+  "featured": false,
+  "headquarters": "Bremen, Germany",
+  "employees": "2-10",
+  "accessModel": "Component sales + training",
+  "products": [
+    {
+      "name": "Modular UHV system",
+      "description": "Modular, turn-key ultra-high-vacuum systems and components for cold-atom, ion-trap and other vacuum-dependent quantum experiments"
+    }
+  ],
+  "highlights": [
+    "Spin-off of the University of Bremen's ZARM institute, founded 2022",
+    "Incubated at ESA BIC Northern Germany since 2025"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.qbitflow.com",
+      "title": "QBITFLOW Official Website",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "website",
+      "url": "https://commercialisation.esa.int/startups/qbitflow/",
+      "title": "QBITFLOW - ESA Commercialisation Gateway",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://www.aviaspace-bremen.de/en/2025/06/25/qbitflow-esa-bic-northern-germanys-newest-quantum-pioneer/",
+      "title": "QBITFLOW: ESA BIC Northern Germany's Newest Quantum Pioneer - Aviaspace Bremen",
+      "datePublished": "2025-06-25",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://www.northdata.com/QBITFLOW+GmbH,+Bremen/HRB+38430",
+      "title": "QBITFLOW GmbH, Bremen - commercial register record (HRB 38430) - North Data",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://spaceindex.io/companies/qbitflow",
+      "title": "QBITFLOW - Space Index",
+      "dateAccessed": "2026-11-20"
+    }
+  ],
+  "news": []
+}

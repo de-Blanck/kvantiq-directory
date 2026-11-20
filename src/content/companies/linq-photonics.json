@@ -1,0 +1,65 @@
+{
+  "name": "Linq Photonics",
+  "slug": "linq-photonics",
+  "country": "Germany",
+  "region": "dach",
+  "type": "hardware",
+  "tags": [
+    "integrated-photonics",
+    "photonic-integrated-circuits",
+    "optical-control",
+    "quantum-enabling-technology"
+  ],
+  "founded": 2025,
+  "description": "Linq Photonics is a Heidelberg University spin-off developing photonic integrated circuits and modules that replace free-space optics for controlling atoms and ions in quantum computers. Its hardware handles modulation, routing and delivery of light to qubits, aiming to make optical control more stable, compact and parallel as qubit arrays scale. The company was founded in 2025 by Rasmus Bankwitz, Julius Römer and Jade Robinson.",
+  "website": "https://www.linq-photonics.com",
+  "featured": false,
+  "headquarters": "Heidelberg, Germany",
+  "funding": "EUR 1.35M (EXIST Transfer of Research grant, 2025)",
+  "accessModel": "Hardware sales + custom prototyping",
+  "products": [
+    {
+      "name": "Photonic optical control modules",
+      "description": "Integrated photonic light modulators and circuits for parallel, high-fidelity optical control of atom and ion qubits"
+    }
+  ],
+  "highlights": [
+    "Spun out of Heidelberg University's Kirchhoff Institute for Physics, mentored by Prof. Wolfram Pernice",
+    "Awarded EUR 1.35M through the EXIST Transfer of Research programme in 2025",
+    "Member of the Creative Destruction Lab 2025/26 cohort (Next Gen Computing stream)"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.linq-photonics.com",
+      "title": "Linq Photonics Official Website",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "website",
+      "url": "https://www.uni-heidelberg.de/en/transfer/heiinnovation/linq-receives-exist-transfer-of-research",
+      "title": "Start-up Funding: Linq receives EXIST Transfer of Research - Heidelberg University",
+      "datePublished": "2025-09-17",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "website",
+      "url": "https://www.kip.uni-heidelberg.de/photon/start-ups",
+      "title": "Start-ups - Kirchhoff Institute for Physics, Heidelberg University",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://optecnet.de/en/news/newsdetails/news/linq-photonics-ist-neues-mitglied-bei-photonics-bw.html",
+      "title": "Linq Photonics ist neues Mitglied bei Photonics BW - OptecNet Deutschland",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "website",
+      "url": "https://creativedestructionlab.com/companies/linq-photonics/",
+      "title": "Linq Photonics - Creative Destruction Lab",
+      "dateAccessed": "2026-11-20"
+    }
+  ],
+  "news": []
+}

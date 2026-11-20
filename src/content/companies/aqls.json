@@ -1,0 +1,63 @@
+{
+  "name": "AQLS (Advanced Quantum Light Sources)",
+  "slug": "aqls",
+  "country": "Germany",
+  "region": "dach",
+  "type": "hardware",
+  "tags": [
+    "quantum-photonics",
+    "photon-pair-sources",
+    "spdc",
+    "quantum-enabling-technology"
+  ],
+  "founded": 2023,
+  "description": "AQLS (Advanced Quantum Light Sources) is a Berlin quantum photonics company founded in 2023 by three quantum optics researchers. It builds photon-pair sources based on spontaneous parametric down-conversion (SPDC), including its PPS-DG product, for quantum communication, quantum sensing, metrology and photonic quantum computing research.",
+  "website": "https://www.aqls.eu",
+  "featured": false,
+  "headquarters": "Berlin, Germany",
+  "accessModel": "Hardware sales + custom solutions",
+  "products": [
+    {
+      "name": "PPS-DG photon-pair source",
+      "description": "SPDC-based entangled photon-pair source for quantum optics research, metrology and photonic quantum information processing"
+    }
+  ],
+  "highlights": [
+    "Founded in 2023 by three researchers with a combined 30+ years in quantum optics",
+    "Finalist of Berlin's 9th Deep Tech Award",
+    "Exhibited at World of Quantum 2025"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://www.aqls.eu",
+      "title": "AQLS Official Website",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "website",
+      "url": "https://www.berlin.de/deeptech/en/blog/artikel.1489239.en.php",
+      "title": "Deep Tech Talk: An Interview with AQLS UG - Berlin.de",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "website",
+      "url": "https://exhibitors.world-of-quantum.com/exhibitor-portal/2025/list-of-exhibitors/exhibitordetails/aqls-ug-haftungsbeschraenkt-advanced-quantum-light-sources/?elb=188.1100.5585.1.111",
+      "title": "AQLS UG (haftungsbeschränkt) Advanced Quantum Light Sources - World of Quantum 2025 exhibitor profile",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://www.dpg-verhandlungen.de/year/2026/conference/mainz/static/q10.pdf",
+      "title": "DPG Spring Meeting Mainz 2026, Session Q 10: Quantum Technologies – Photon Detectors and Sources (AQLS co-authored abstract)",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://qbn.world/qbn-member/aqls-gmbh/",
+      "title": "AQLS GmbH - Quantum Business Network member profile",
+      "dateAccessed": "2026-11-20"
+    }
+  ],
+  "news": []
+}

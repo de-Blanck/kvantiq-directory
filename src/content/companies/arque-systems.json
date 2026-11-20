@@ -1,0 +1,66 @@
+{
+  "name": "ARQUE Systems",
+  "slug": "arque-systems",
+  "country": "Germany",
+  "region": "dach",
+  "type": "hardware",
+  "tags": [
+    "spin-qubits",
+    "silicon",
+    "semiconductor-quantum-computing",
+    "electron-shuttling"
+  ],
+  "founded": 2022,
+  "description": "ARQUE Systems is a spin-off of Forschungszentrum Jülich and RWTH Aachen University developing semiconductor quantum computers based on electron spins in silicon. Its architecture couples qubits by shuttling electrons across the chip, an approach intended to support quantum error correction. Its first 5-qubit processor is deployed at the Jülich Supercomputing Centre in a hybrid system with NVIDIA DGX Quantum and Quantum Machines control hardware.",
+  "website": "https://arque.systems",
+  "featured": false,
+  "headquarters": "Aachen, Germany",
+  "accessModel": "Hardware development + HPC integration",
+  "products": [
+    {
+      "name": "Spin-qubit quantum processor",
+      "description": "Silicon electron-spin quantum processor using electron shuttling for qubit coupling; first generation has five qubits"
+    }
+  ],
+  "highlights": [
+    "Founded in September 2022 as a spin-off of Forschungszentrum Jülich and RWTH Aachen University (JARA Institute for Quantum Information)",
+    "5-qubit processor integrated with NVIDIA DGX Quantum and Quantum Machines OPX1000 at the Jülich Supercomputing Centre",
+    "Quantum chips fabricated on industrial wafers at Infineon Dresden"
+  ],
+  "sources": [
+    {
+      "type": "website",
+      "url": "https://arque.systems",
+      "title": "ARQUE Systems Official Website",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "website",
+      "url": "https://www.fz-juelich.de/en/news/archive/press-release/2026/julich-aachen-start-up-arque-systems",
+      "title": "Jülich-Aachen Start-up Paves the Way for Scalable Quantum Computers - Forschungszentrum Jülich",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2025/09/18/julich-supercomputing-centre-to-deploy-nvidia-dgx-quantum-system-with-arque-systems-and-quantum-machines/",
+      "title": "Jülich Supercomputing Centre to Deploy NVIDIA DGX Quantum System with Arque Systems and Quantum Machines - The Quantum Insider",
+      "datePublished": "2025-09-18",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "website",
+      "url": "https://ml4q.de/2025/07/arque-story/",
+      "title": "Inside ARQUE - ML4Q Cluster of Excellence",
+      "dateAccessed": "2026-11-20"
+    }
+  ],
+  "news": [
+    {
+      "title": "Jülich Supercomputing Centre deploys NVIDIA DGX Quantum system with ARQUE Systems and Quantum Machines",
+      "excerpt": "The hybrid system pairs ARQUE's 5-qubit electron-shuttling processor with NVIDIA's Grace Hopper Superchip and Quantum Machines' OPX1000 controller.",
+      "url": "https://thequantuminsider.com/2025/09/18/julich-supercomputing-centre-to-deploy-nvidia-dgx-quantum-system-with-arque-systems-and-quantum-machines/",
+      "source": "The Quantum Insider",
+      "date": "2025-09-18"
+    }
+  ]
+}
