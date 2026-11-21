@@ -1,6 +1,7 @@
 import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
+import { eventSchema } from './lib/events/schema';
 
 // Reusable: non-empty string (rejects "", " ", etc.)
 const nonEmpty = z.string().min(1).transform(s => s.trim()).pipe(z.string().min(1, 'Must not be empty or whitespace-only'));
@@ -145,4 +146,9 @@ const resources = defineCollection({
   }),
 });
 
-export const collections = { companies, benchmarks, 'use-cases': useCases, challenges, resources };
+const events = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/events' }),
+  schema: eventSchema,
+});
+
+export const collections = { companies, benchmarks, 'use-cases': useCases, challenges, resources, events };
