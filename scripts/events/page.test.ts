@@ -34,3 +34,22 @@ test('amount: wrong magnitude, wrong currency, or bare number does not match', (
   assert.ok(!amountInQuote(12_000_000, 'USD', 'raised €12M'));
   assert.ok(!amountInQuote(12_000_000, 'EUR', 'hired 12 million users'));
 });
+
+for (const prefix of ['US$', 'US$ ', 'USD ']) {
+  test(`amount: ${prefix} matches USD`, () => {
+    assert.equal(amountInQuote(12_000_000, 'USD', `raised ${prefix}12M`), true);
+  });
+}
+
+for (const prefix of ['A$', 'C$']) {
+  test(`amount: ${prefix} matches an unspecified currency only`, () => {
+    assert.equal(amountInQuote(12_000_000, 'USD', `raised ${prefix}12M`), false);
+    assert.equal(amountInQuote(12_000_000, null, `raised ${prefix}12M`), true);
+  });
+}
+
+test('date: metadata exactly three days away counts, four days away does not', () => {
+  const html = '<meta property="article:published_time" content="2026-11-18">';
+  for (const date of ['2026-11-15', '2026-11-21']) assert.equal(dateFound(date, html, ''), true);
+  for (const date of ['2026-11-14', '2026-11-22']) assert.equal(dateFound(date, html, ''), false);
+});

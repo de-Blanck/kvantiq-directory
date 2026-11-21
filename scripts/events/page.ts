@@ -151,7 +151,7 @@ export function dateFound(happenedOn: string, html: string, pageText: string): b
   return new RegExp(`\\b(?:${formats.join('|')})\\b`, 'i').test(normalizeForMatch(pageText));
 }
 
-const markers = String.raw`(?:[€$£]|EUR|USD|GBP|DKK|SEK|NOK|CHF|kr\.?)`;
+const markers = String.raw`(?:US\$|[AC]\$|[€$£]|EUR|USD|GBP|DKK|SEK|NOK|CHF|kr\.?)`;
 const number = String.raw`(\d+(?:[.,]\d+)*)`;
 const multiplier = String.raw`(?: ?(billion|million|mio\.?|bn|mn|[kmb]))?`;
 const prefixedAmount = new RegExp(String.raw`(?<![\w.,])(${markers}) ?${number}${multiplier}(?!\w|[.,]\d)`, 'gi');
@@ -161,7 +161,7 @@ const magnitudes: Record<string, number> = {
   b: 1_000_000_000, bn: 1_000_000_000, billion: 1_000_000_000,
 };
 const currencies: Record<string, string[]> = {
-  '€': ['EUR'], '$': ['USD'], '£': ['GBP'], KR: ['DKK', 'SEK', 'NOK'],
+  '€': ['EUR'], '$': ['USD'], 'US$': ['USD'], 'A$': [], 'C$': [], '£': ['GBP'], KR: ['DKK', 'SEK', 'NOK'],
 };
 
 export function amountInQuote(amount: number, currency: string | null, quote: string): boolean {
