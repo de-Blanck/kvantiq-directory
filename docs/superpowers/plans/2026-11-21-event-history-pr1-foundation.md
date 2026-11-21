@@ -9,6 +9,8 @@
 - Attempts are counted per ISO week, writes are atomic, and the feed applies the all-entities rule.
 - Resource links fall back to `/resources/` until PR 3 adds anchors.
 
+**Revision 3 (2026-11-22):** Codex stopped Task 5 on a real gap: duplicate detection needs the post-redirect URL, but the record stored only the submitted one. Records now store `source.finalUrl` (the URL the quote was actually found on; equal to `source.url` when there was no redirect). Tasks 2 and 4 are amended below, and Task 5's loader reads it.
+
 **Goal:** Add the `events` content collection, a deterministic checker that sorts event candidates into published events or a held list, and the `/events.json` + `/event.schema.json` endpoints. No UI.
 
 **Architecture:** The event schema lives in a plain module (`src/lib/events/schema.ts`), so the Astro collection, the checker, the endpoints and the tests share one definition. Judgement (`checkCandidate`, given an already-fetched page) is pure. I/O (`runCheck`: validate input, fetch, write event files atomically, update `data/events-held.json`) is separate and takes an injected fetch, so there is no network in tests.
@@ -108,7 +110,7 @@ test('credibility: ai-sweep re-exports the same function and still counts', () =
   - `RUNTIME_ONLY_RULES: string[]`: human-readable rules that JSON Schema can't express. It is put into the exported schema's `description`.
 - Produces from `pointer-domains.ts`: `POINTER_ONLY_DOMAINS: readonly string[]`.
 - **`eventSchema` shape.** Write it as `z.discriminatedUnion('type', […])` over a shared base, so the structural rules survive `z.toJSONSchema`. The `funding` branch requires the `funding` object. The `corporate` branch allows `subtype` (enum or null). The other four branches have `funding: z.null()` and `subtype: z.null()`.
-  - Base fields: `schemaVersion: z.literal(1)`; `id` matching `^[a-z0-9-]+-\d{4}-\d{2}-\d{2}-(funding|partnership|product|people|corporate|other)-[0-9a-f]{6}$`; `entities` min 1, each `^(companies|benchmarks|use-cases|challenges|resources)/[a-z0-9-]+$`, unique; `happenedOn` and `foundOn` as `isoDate`; `summary`; `quote`; `source: { url: http(s) URL, publisher: non-empty, publishedOn: isoDate.optional() }`; `pointers: z.array(http(s) URL)`; `change: { field: string, from: z.json(), to: z.json() }.nullable()`; `origin`; and `checks` with every key `z.literal(true)` except `amountInQuote: z.literal(true).nullable()`, plus `checkerVersion: z.literal(1)` and `checkedOn: isoDate`.
+  - Base fields: `schemaVersion: z.literal(1)`; `id` matching `^[a-z0-9-]+-\d{4}-\d{2}-\d{2}-(funding|partnership|product|people|corporate|other)-[0-9a-f]{6}$`; `entities` min 1, each `^(companies|benchmarks|use-cases|challenges|resources)/[a-z0-9-]+$`, unique; `happenedOn` and `foundOn` as `isoDate`; `summary`; `quote`; `source: { url: http(s) URL, finalUrl: http(s) URL, publisher: non-empty, publishedOn: isoDate.optional() }`; `pointers: z.array(http(s) URL)`; `change: { field: string, from: z.json(), to: z.json() }.nullable()`; `origin`; and `checks` with every key `z.literal(true)` except `amountInQuote: z.literal(true).nullable()`, plus `checkerVersion: z.literal(1)` and `checkedOn: isoDate`.
   - **No transforms or pipes.** Import `z` from `zod`.
   - **Runtime-only rules** (a `superRefine` on the union, listed in `RUNTIME_ONLY_RULES`): `amountInQuote` is `true` iff the type is funding and `funding.amount` is non-null, `null` otherwise; `foundOn >= happenedOn` is **not** enforced (backfill can find old items late, so that's fine).
 
@@ -256,7 +258,7 @@ export function checkCandidate(c: EventCandidate, ctx: CheckContext): Verdict;  
   5. **quote-not-found:** `quoteFound(c.quote, htmlToText(page.html))`. **date-not-found:** `dateFound`. **amount-not-in-quote:** applies only when funding has an amount: `amountInQuote(amount, currency, quote)`.
   6. **type-unchecked** (no `typeSecondOpinion`), **type-disagreement**.
   7. **Duplicates.** Let `urls` = the normalised submitted and final URLs. If an existing event has the same `entities[0]` and shares a URL with `urls`, return **already-published** with its id: a re-run after a crash, not a hold. Otherwise, if any existing event shares a URL, or has the same `entities[0]` and `type` with `happenedOn` within ±7 days, hold **possible-duplicate**.
-- **On publish,** the record gets: `schemaVersion: 1`; `id = computeEventId(entities[0], happenedOn, type, source.url)`; `foundOn = c.foundOn ?? ctx.today`; `checks` all `true`, with `amountInQuote` per the Global Constraints, `checkerVersion: 1` and `checkedOn: ctx.today`. It must pass `eventSchema.parse`; a failure there is a bug and throws. Return `sourceUrls: urls`.
+- **On publish,** the record gets: `source.finalUrl = page.finalUrl`; `schemaVersion: 1`; `id = computeEventId(entities[0], happenedOn, type, source.url)`; `foundOn = c.foundOn ?? ctx.today`; `checks` all `true`, with `amountInQuote` per the Global Constraints, `checkerVersion: 1` and `checkedOn: ctx.today`. It must pass `eventSchema.parse`; a failure there is a bug and throws. Return `sourceUrls: urls`.
 
 - [ ] **Step 1: Write the failing tests.** `ctx(pageOverrides?, extra?)` holds:
   - published `companies/qilimanjaro` (name `Qilimanjaro`, `websiteHost: 'qilimanjaro.tech'`)
@@ -329,7 +331,8 @@ export type RunOptions = { root: string; input: unknown; today: string; dryRun: 
 export type RunSummary = { published: string[]; alreadyPublished: string[]; held: Record<string, number>;
                            invalid: Array<{ index: number; error: string }>; stale: number; skippedStale: number };
 export function loadEntityIndex(root: string): Map<string, EntityInfo>;  // src/content/<collection>/*.json
-export function loadExistingEvents(root: string): ExistingEvent[];       // src/content/events/**/*.json, parsed with eventSchema; throws on an invalid file or duplicate id
+export function loadExistingEvents(root: string): ExistingEvent[];       // src/content/events/**/*.json, parsed with eventSchema; throws on an invalid file or duplicate id;
+                                                                         // sourceUrls = unique [normalizeUrl(source.url), normalizeUrl(source.finalUrl)]
 export function runCheck(opts: RunOptions): Promise<RunSummary>;
 export function fetchPageLive(url: string): Promise<FetchedPage>;        // global fetch, 20 s timeout, redirect 'follow',
                                                                          // UA 'KvantiqDirectoryEventChecker/1.0 (+https://directory.kvantiq.studio/about/)';

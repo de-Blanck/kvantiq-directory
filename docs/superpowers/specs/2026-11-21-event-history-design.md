@@ -77,7 +77,8 @@ A new content collection `events`: one JSON file per event at `src/content/event
   "happenedOn": "2026-07-08",
   "foundOn": "2026-07-12",                        // first recorded by us; immutable
   "summary": "LUMI AI Factory selects IQM to deliver a 150-qubit system for Kajaani",
-  "source": { "url": "https://lumi-supercomputer.eu/…", "publisher": "LUMI", "publishedOn": "2026-07-08" },
+  "source": { "url": "https://lumi-supercomputer.eu/…", "finalUrl": "https://lumi-supercomputer.eu/…", // finalUrl = after redirects
+              "publisher": "LUMI", "publishedOn": "2026-07-08" },
   "pointers": [],                                 // secondary coverage, e.g. aggregator articles; never the evidence
   "quote": "The LUMI AI Factory has selected IQM Quantum Computers to deliver…",
   "funding": null,                                // required object when type = funding
