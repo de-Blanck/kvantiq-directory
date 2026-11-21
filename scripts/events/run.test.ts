@@ -198,3 +198,12 @@ test('event loader rejects invalid files and duplicate ids', async t => {
   writeFileSync(other, '{}');
   assert.throws(() => loadExistingEvents(root), /other\.json/);
 });
+
+test('pointer-only submitted URL is held without fetching', async t => {
+  const { run } = setup(t);
+  const source = { url: 'https://quantumcomputingreport.com/release', publisher: 'Quantum Computing Report' };
+  assert.deepEqual(await run({
+    input: [candidate({ source })],
+    fetchPage: async () => assert.fail('unexpected fetch'),
+  }), { ...empty, held: { 'pointer-only': 1 } });
+});

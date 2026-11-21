@@ -151,3 +151,15 @@ test('publish preserves the submitted URL and stores the post-redirect URL', () 
   assert.equal(verdict.status, 'publish');
   assert.deepEqual(verdict.record.source, { ...source, finalUrl });
 });
+
+test('possible-duplicate: seven days apart counts, eight days apart does not', () => {
+  const context = (happenedOn: string) => ctx({}, {
+    existing: [{ ...existingEvent, happenedOn, sourceUrls: ['https://example.com/other'] }],
+  });
+  for (const date of ['2026-11-11', '2026-11-25']) {
+    assertHold('possible-duplicate', {}, context(date));
+  }
+  for (const date of ['2026-11-10', '2026-11-26']) {
+    assert.equal(checkCandidate(candidate(), context(date)).status, 'publish');
+  }
+});

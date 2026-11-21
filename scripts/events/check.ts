@@ -26,22 +26,34 @@ function hold(reason: HoldReason): Verdict {
   return { status: 'hold', reason };
 }
 
+function entityHold(c: EventCandidate, entities: CheckContext['entities']): HoldReason | undefined {
+  if (c.entities.some(key => !entities.has(key))) return 'unknown-entity';
+  if (c.entities.some(key => !entities.get(key)!.published)) return 'entity-unpublished';
+}
+
+function sourceHold(publisher: string, urls: string[], hosts: string[]): HoldReason | undefined {
+  if (urls.some(url => !isCredibleSource({ url, title: publisher }))) return 'source-not-credible';
+  if (hosts.some(host => POINTER_ONLY_DOMAINS.some(domain => isHostOrSubdomain(host, domain)))) {
+    return 'pointer-only';
+  }
+}
+
+export function prefetchHold(c: EventCandidate, entities: CheckContext['entities']): HoldReason | undefined {
+  return entityHold(c, entities) ?? sourceHold(c.source.publisher, [c.source.url], [hostOf(c.source.url)]);
+}
+
 export function checkCandidate(c: EventCandidate, ctx: CheckContext): Verdict {
   const { page, entities, existing, today } = ctx;
   const primary = c.entities[0];
-  if (c.entities.some(key => !entities.has(key))) return hold('unknown-entity');
-  if (c.entities.some(key => !entities.get(key)!.published)) return hold('entity-unpublished');
+  const entityReason = entityHold(c, entities);
+  if (entityReason) return hold(entityReason);
   if (page.status !== 200) return hold('source-unreachable');
   if (!page.contentType.toLowerCase().includes('text/html')) return hold('source-not-html');
 
   const sourceUrls = [c.source.url, page.finalUrl];
-  if (sourceUrls.some(url => !isCredibleSource({ url, title: c.source.publisher }))) {
-    return hold('source-not-credible');
-  }
   const hosts = sourceUrls.map(hostOf);
-  if (hosts.some(host => POINTER_ONLY_DOMAINS.some(domain => isHostOrSubdomain(host, domain)))) {
-    return hold('pointer-only');
-  }
+  const sourceReason = sourceHold(c.source.publisher, sourceUrls, hosts);
+  if (sourceReason) return hold(sourceReason);
 
   const sourceCompanies = [...entities.values()].filter(company => {
     const { websiteHost } = company;

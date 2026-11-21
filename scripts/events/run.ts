@@ -4,8 +4,9 @@ import { eventFilePath, eventSchema, isoDate } from '../../src/lib/events/schema
 import { hostOf, normalizeUrl } from '../../src/lib/events/url';
 import { isPublished, type SourceLike } from '../../src/lib/source-bar';
 import { candidateSchema } from './candidate';
-import { checkCandidate, type EntityInfo, type ExistingEvent, type FetchedPage, type HoldReason } from './check';
+import { checkCandidate, prefetchHold, type EntityInfo, type ExistingEvent, type FetchedPage, type HoldReason } from './check';
 import { heldKey, heldListSchema, mergeHeld } from './held';
+import { safeFetch } from './safe-fetch';
 
 export type RunOptions = {
   root: string;
@@ -96,8 +97,10 @@ export async function runCheck(opts: RunOptions): Promise<RunSummary> {
       summary.skippedStale++;
       continue;
     }
-    const page = await fetchPage(sourceUrl);
-    const verdict = checkCandidate(candidate, { page, entities, existing, today });
+    const reasonBeforeFetch = prefetchHold(candidate, entities);
+    const verdict = reasonBeforeFetch
+      ? { status: 'hold' as const, reason: reasonBeforeFetch }
+      : checkCandidate(candidate, { page: await fetchPage(sourceUrl), entities, existing, today });
     if (verdict.status === 'hold') {
       const { reason } = verdict;
       holds.push({ entities: candidate.entities, sourceUrl, reason });
@@ -132,19 +135,7 @@ export async function runCheck(opts: RunOptions): Promise<RunSummary> {
 }
 
 export async function fetchPageLive(url: string): Promise<FetchedPage> {
-  try {
-    const response = await fetch(url, {
-      signal: AbortSignal.timeout(20_000),
-      redirect: 'follow',
-      headers: { 'User-Agent': 'KvantiqDirectoryEventChecker/1.0 (+https://directory.kvantiq.studio/about/)' },
-    });
-    return {
-      status: response.status,
-      contentType: response.headers.get('content-type') ?? '',
-      html: await response.text(),
-      finalUrl: response.url,
-    };
-  } catch {
-    return { status: 0, contentType: '', html: '', finalUrl: url };
-  }
+  return safeFetch(url, {
+    userAgent: 'KvantiqDirectoryEventChecker/1.0 (+https://directory.kvantiq.studio/about/)',
+  });
 }
