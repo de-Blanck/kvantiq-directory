@@ -9,12 +9,14 @@ export type FetchedPage = { status: number; contentType: string; html: string; f
 export type EntityInfo = { key: string; collection: string; name: string; published: boolean; websiteHost: string | null; country: string | null };
 export type ExistingEvent = Pick<EventRecord, 'id' | 'entities' | 'type' | 'happenedOn'> & { sourceUrls: string[] };
 export type CheckContext = { page: FetchedPage; entities: Map<string, EntityInfo>; existing: ExistingEvent[]; today: string };
-export type HoldReason =
-  | 'unknown-entity' | 'entity-unpublished'
-  | 'source-unreachable' | 'source-not-html' | 'source-not-credible'
-  | 'self-published-other' | 'self-published-wording' | 'pointer-only'
-  | 'quote-not-found' | 'date-not-found' | 'amount-not-in-quote'
-  | 'type-unchecked' | 'type-disagreement' | 'possible-duplicate';
+export const HOLD_REASONS = [
+  'unknown-entity', 'entity-unpublished', 'source-unreachable',
+  'source-not-html', 'source-not-credible', 'self-published-other',
+  'self-published-wording', 'pointer-only', 'quote-not-found',
+  'date-not-found', 'amount-not-in-quote', 'type-unchecked',
+  'type-disagreement', 'possible-duplicate',
+] as const;
+export type HoldReason = (typeof HOLD_REASONS)[number];
 export type Verdict =
   | { status: 'publish'; record: EventRecord; sourceUrls: string[] }
   | { status: 'already-published'; id: string }
@@ -72,6 +74,7 @@ export function checkCandidate(c: EventCandidate, ctx: CheckContext): Verdict {
 
   const record = eventSchema.parse({
     ...c,
+    source: { ...c.source, finalUrl: page.finalUrl },
     schemaVersion: 1,
     id: computeEventId(primary, c.happenedOn, c.type, c.source.url),
     foundOn: c.foundOn ?? today,

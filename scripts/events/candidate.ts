@@ -3,6 +3,7 @@ import { CORPORATE_SUBTYPES, EVENT_TYPES, eventFields, fundingSchema, isoDate } 
 
 const base = z.object({
   ...eventFields,
+  source: eventFields.source.omit({ finalUrl: true }),
   foundOn: isoDate.optional(),
   pointers: eventFields.pointers.default([]),
   change: eventFields.change.default(null),

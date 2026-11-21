@@ -14,7 +14,7 @@ function valid(overrides: Record<string, unknown> = {}) {
     happenedOn: '2026-11-18',
     foundOn: '2026-11-22',
     summary: 'Qilimanjaro raises €12M in a Series A',
-    source: { url: 'https://tech.eu/2026/11/18/qilimanjaro-raises', publisher: 'tech.eu' },
+    source: { url: 'https://tech.eu/2026/11/18/qilimanjaro-raises', finalUrl: 'https://tech.eu/2026/11/18/qilimanjaro-raises', publisher: 'tech.eu' },
     pointers: [],
     quote: 'Qilimanjaro has raised €12M in a Series A round.',
     funding: { amount: 12_000_000, currency: 'EUR', round: 'series-a', investors: [] },
@@ -41,6 +41,15 @@ test('id: formatted and URL-variant-proof', () => {
   assert.equal(id, computeEventId('companies/iqm', '2026-07-08', 'partnership', 'https://www.lumi.eu/a/'));
 });
 test('schema: a complete funding event parses', () => assert.ok(eventSchema.safeParse(valid()).success));
+test('schema: final source URL is required', () => {
+  const { finalUrl, ...source } = valid().source;
+  assert.equal(eventSchema.safeParse(valid({ source })).success, false);
+});
+test('schema: final source URL must be HTTP or HTTPS', () => {
+  for (const finalUrl of ['not a URL', 'ftp://example.org/story']) {
+    assert.equal(eventSchema.safeParse(valid({ source: { ...valid().source, finalUrl } })).success, false);
+  }
+});
 test('schema: a corrected date keeps a valid record (id not recomputed)', () =>
   assert.ok(eventSchema.safeParse(valid({ happenedOn: '2026-11-17' })).success));
 test('schema: funding type without funding object fails', () => assert.ok(!eventSchema.safeParse(valid({ funding: null })).success));

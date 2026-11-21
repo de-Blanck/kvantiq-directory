@@ -24,7 +24,7 @@ function event(overrides: Record<string, unknown> = {}) {
     happenedOn: '2026-07-08',
     foundOn: '2026-07-12',
     summary: 'IQM will deliver a quantum system',
-    source: { url: 'https://example.org/story', publisher: 'Example' },
+    source: { url: 'https://example.org/story', finalUrl: 'https://example.org/story', publisher: 'Example' },
     pointers: [],
     quote: 'IQM will deliver a quantum system in Kajaani.',
     funding: null,

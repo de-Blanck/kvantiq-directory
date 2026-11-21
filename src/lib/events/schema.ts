@@ -38,6 +38,7 @@ export const eventFields = {
   quote: z.string().min(20).max(300),
   source: z.object({
     url: sourceUrl,
+    finalUrl: sourceUrl,
     publisher: z.string().min(1),
     publishedOn: isoDate.optional(),
   }),

@@ -144,3 +144,10 @@ test('disclosed funding gets amountInQuote true; undisclosed and non-funding get
     assert.equal(verdict.record.checks.amountInQuote, expected);
   }
 });
+
+test('publish preserves the submitted URL and stores the post-redirect URL', () => {
+  const finalUrl = 'https://tech.eu/news/qilimanjaro-raises';
+  const verdict = checkCandidate(candidate(), ctx({ finalUrl }));
+  assert.equal(verdict.status, 'publish');
+  assert.deepEqual(verdict.record.source, { ...source, finalUrl });
+});
