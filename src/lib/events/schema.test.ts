@@ -41,6 +41,13 @@ test('id: formatted and URL-variant-proof', () => {
   assert.equal(id, computeEventId('companies/iqm', '2026-07-08', 'partnership', 'https://www.lumi.eu/a/'));
 });
 test('schema: a complete funding event parses', () => assert.ok(eventSchema.safeParse(valid()).success));
+test('schema: foundOn must be on or after happenedOn', () => {
+  const happenedOn = '2026-07-08';
+  const result = eventSchema.safeParse(valid({ happenedOn, foundOn: '2026-07-01' }));
+  assert.equal(result.success, false);
+  assert.equal(result.error?.issues[0].message, 'foundOn is before happenedOn');
+  assert.ok(eventSchema.safeParse(valid({ happenedOn, foundOn: happenedOn })).success);
+});
 test('schema: final source URL is required', () => {
   const { finalUrl, ...source } = valid().source;
   assert.equal(eventSchema.safeParse(valid({ source })).success, false);

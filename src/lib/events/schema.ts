@@ -90,6 +90,9 @@ export const eventSchema = z.discriminatedUnion('type', [
   if (record.checks.amountInQuote !== expected) {
     ctx.addIssue({ code: 'custom', path: ['checks', 'amountInQuote'], message: RUNTIME_ONLY_RULES[2] });
   }
+}).refine(record => record.foundOn >= record.happenedOn, {
+  path: ['foundOn'],
+  message: 'foundOn is before happenedOn',
 });
 
 export type EventRecord = z.infer<typeof eventSchema>;

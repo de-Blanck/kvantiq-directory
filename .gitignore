@@ -43,3 +43,6 @@ data/weekly-agent-prompt.md
 
 # Local visual-audit artifacts (Playwright PNGs, preview HTML) — never committed
 .local-design-audit/
+
+# Event checker staging files
+src/content/events/**/*.tmp

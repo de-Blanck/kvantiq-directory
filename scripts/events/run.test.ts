@@ -2,10 +2,10 @@ import { test, type TestContext } from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
-import { join } from 'node:path';
+import { dirname, join } from 'node:path';
 import { computeEventId } from '../../src/lib/events/schema';
 import { heldKey, isoWeek, mergeHeld, type HeldRecord } from './held';
-import { loadExistingEvents, runCheck, type RunOptions } from './run';
+import { loadExistingEvents, readHeldList, runCheck, writeHeldList, type RunOptions } from './run';
 
 const today = '2026-11-22';
 const url = 'https://tech.eu/2026/11/18/qilimanjaro-raises';
@@ -206,4 +206,48 @@ test('pointer-only submitted URL is held without fetching', async t => {
     input: [candidate({ source })],
     fetchPage: async () => assert.fail('unexpected fetch'),
   }), { ...empty, held: { 'pointer-only': 1 } });
+});
+
+test('held-list IO round-trips new hold reasons and rejects mismatched keys before writing', t => {
+  const { root, heldPath } = setup(t);
+  rmSync(heldPath);
+  assert.deepEqual(readHeldList(root), []);
+  const records = mergeHeld([], [
+    { ...heldInput, reason: 'homepage-url' },
+    { ...heldInput, sourceUrl: 'https://tech.eu/other', reason: 'not-extracted' },
+  ], new Set(), today);
+  writeHeldList(root, records);
+  assert.deepEqual(readHeldList(root), records);
+  assert.ok(!existsSync(heldPath + '.tmp'));
+  const raw = readFileSync(heldPath, 'utf8');
+  assert.throws(() => writeHeldList(root, [{ ...records[0], key: 'wrong' }]),
+    /Held key does not match its source/);
+  assert.equal(readFileSync(heldPath, 'utf8'), raw);
+});
+
+test('a future happenedOn with implicit foundOn is invalid and the batch continues', async t => {
+  const { run, heldPath } = setup(t);
+  const summary = await run({ input: [
+    candidate(),
+    candidate({ happenedOn: '2026-11-23' }),
+    candidate({ entities: ['companies/ghost'] }),
+  ] });
+  assert.deepEqual(summary, {
+    ...empty,
+    published: [id],
+    invalid: [{ index: 1, error: 'foundOn is before happenedOn' }],
+    held: { 'entity-unpublished': 1 },
+  });
+  assert.equal(JSON.parse(readFileSync(heldPath, 'utf8'))[0].reason, 'entity-unpublished');
+});
+
+test('a crash leftover is ignored and publishing removes its own temporary file', async t => {
+  const { run, eventPath } = setup(t);
+  const dir = dirname(eventPath);
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(join(dir, 'x.json.tmp'), '{"truncated":');
+  writeFileSync(eventPath + '.tmp', '{"truncated":');
+  assert.deepEqual(await run(), { ...empty, published: [id] });
+  assert.equal(JSON.parse(readFileSync(eventPath, 'utf8')).id, id);
+  assert.ok(!existsSync(eventPath + '.tmp'));
 });
