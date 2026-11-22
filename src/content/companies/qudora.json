@@ -58,6 +58,20 @@
       "title": "QUDORA and ParityQC Partner to Optimize Quantum Algorithms for Trapped-Ion Systems - HPCwire",
       "datePublished": "2026-02-26",
       "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/11/17/qudora-integrates-nvidia-cuda-q-quantum-software-development-kit/",
+      "title": "QUDORA Integrates NVIDIA CUDA-Q into Its Quantum Software Development Kit - The Quantum Insider",
+      "datePublished": "2026-11-17",
+      "dateAccessed": "2026-11-22"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/09/08/qudora-selected-eu-quantum-grand-challenge-near-field-quantum-control/",
+      "title": "QUDORA Joins EuroHPC Quantum Grand Challenge With Near Field Quantum Control Project - The Quantum Insider",
+      "datePublished": "2026-09-08",
+      "dateAccessed": "2026-11-22"
     }
   ],
   "news": [
@@ -67,6 +81,20 @@
       "url": "https://www.hpcwire.com/?p=188987",
       "source": "HPCwire",
       "date": "2026-02-26"
+    },
+    {
+      "title": "QUDORA integrates NVIDIA CUDA-Q into Qamelion emulator and launches German-funded QUANDA HPC consortium",
+      "excerpt": "QUDORA added NVIDIA CUDA-Q support to its SDK (qudora-sdk[cudaq]) so hybrid quantum-classical programs can run on its Qamelion emulator, which models trapped-ion noise, via QUDORA Cloud. It also launched QUANDA, a three-year project funded by Germany's BMFTR with partners including GWDG, Leibniz University Hannover and Deggendorf Institute of Technology, to integrate trapped-ion quantum computers into HPC centres and test quantum machine learning on energy-sector anomaly detection workloads. No funding amount was disclosed.",
+      "url": "https://quantumcomputingreport.com/qudora-integrates-nvidia-cuda-q-into-qamelion-emulator-and-launches-german-funded-quanda-hpc-energy-consortium/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "QUDORA joins EuroHPC Quantum Grand Challenge with Near Field Quantum Control project",
+      "excerpt": "QUDORA is one of 13 European companies selected from 30 proposals in the EuroHPC Joint Undertaking's Quantum Grand Challenge. Its NEQTAR project is to set out a technical and financial path for scaling its Near Field Quantum Control technology alongside European supercomputing infrastructure; Phase 2 from January 2027 allows applications to the EIB Venture Debt Platform.",
+      "url": "https://thequantuminsider.com/2026/09/08/qudora-selected-eu-quantum-grand-challenge-near-field-quantum-control/",
+      "source": "The Quantum Insider",
+      "date": "2026-09-08"
     }
   ]
 }

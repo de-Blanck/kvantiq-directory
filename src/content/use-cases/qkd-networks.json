@@ -42,6 +42,36 @@
       "type": "website",
       "url": "https://www.ipms.fraunhofer.de/en/applications/Quantum-Technologies/Quantum-Communication/Quantum-Key-Distribution.html",
       "title": "Quantum Key Distribution (QKD) - Fraunhofer IPMS"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/11/19/sk-broadband-quantum-security-testbed-korea-singapore-cable/",
+      "title": "SK Broadband to Test Quantum Security on Korea-Singapore Subsea Cable",
+      "datePublished": "2026-11-19",
+      "dateAccessed": "2026-11-22"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.29200",
+      "title": "Fully integrated continuous-variable quantum key distribution with composable security over 100 km",
+      "datePublished": "2026-08-29",
+      "dateAccessed": "2026-11-22"
+    }
+  ],
+  "news": [
+    {
+      "title": "SK Broadband to Test Quantum Security on Korea-Singapore Subsea Cable",
+      "excerpt": "SK Broadband plans a cross-border quantum security testbed on the Busan-Singapore section of the SJC2 subsea cable under the Ministry of Science and ICT / NIA Open Quantum Testbed project. The design uses QKD on domestic and overseas local sections and post-quantum cryptography on the long-distance subsea section, with further demonstrations linked to testbeds in Singapore, Poland and Bulgaria.",
+      "url": "https://thequantuminsider.com/2026/11/19/sk-broadband-quantum-security-testbed-korea-singapore-cable/",
+      "source": "The Quantum Insider",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Researchers Demonstrate Fully Integrated Continuous-Variable QKD Over 100 km with Composable Finite-Size Security",
+      "excerpt": "A team led by Shanghai Jiao Tong University reported an end-to-end chip-integrated continuous-variable QKD link over 100 km of optical fibre with composable finite-size security, using room-temperature silicon coherent receivers instead of cryogenically cooled single-photon detectors. The authors report the longest reach and highest per-symbol secret-key rates for integrated CV-QKD to date.",
+      "url": "https://quantumcomputingreport.com/researchers-demonstrate-fully-integrated-continuous-variable-qkd-over-100-km-with-composable-finite-size-security/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-21"
     }
   ]
 }

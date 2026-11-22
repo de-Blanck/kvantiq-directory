@@ -53,6 +53,22 @@
       "title": "Quantum computing meets particle physics for LHC data analysis",
       "datePublished": "2020-04-03",
       "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/11/19/bmo-reports-quantum-utility-in-machine-learning-application-using-ibm-quantum-computers/",
+      "title": "BMO Reports Quantum Utility in Machine Learning Application Using IBM Quantum Computers",
+      "datePublished": "2026-11-19",
+      "dateAccessed": "2026-11-22"
+    }
+  ],
+  "news": [
+    {
+      "title": "BMO Demonstrates Quantum Utility in Game-Theoretic Machine Learning Feature Selection on IBM Nighthawk r2",
+      "excerpt": "BMO, Democritus University of Thrace and IBM ran a quantum game-theory feature-selection workflow for financial predictive models on IBM processors including Nighthawk r2. BMO reports feature-selection quality comparable to classical baselines with one to two orders of magnitude fewer algorithmic samples; qubit counts, circuit depths and runtime comparisons have not been published and the bank describes the work as an early demonstration.",
+      "url": "https://quantumcomputingreport.com/bmo-demonstrates-quantum-utility-in-game-theoretic-machine-learning-feature-selection-on-ibm-nighthawk-r2/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-20"
     }
   ]
 }

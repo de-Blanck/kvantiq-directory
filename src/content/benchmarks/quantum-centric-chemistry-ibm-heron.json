@@ -63,6 +63,13 @@
       "url": "https://www.ibm.com/quantum/blog/riken-fugaku-qcsc",
       "title": "RIKEN and IBM demonstrate quantum-centric supercomputing — closed-loop Heron + Fugaku SQD on iron-sulfur molecules",
       "dateAccessed": "2026-09-03"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2601.06935",
+      "title": "Extending the Handover-Iterative VQE to Challenging Strongly Correlated Systems: N2 and Fe-S Cluster",
+      "datePublished": "2026-01-11",
+      "dateAccessed": "2026-11-22"
     }
   ],
   "news": [
@@ -72,6 +79,13 @@
       "url": "https://arxiv.org/abs/2405.05068",
       "source": "arXiv",
       "date": "2025-07-13"
+    },
+    {
+      "title": "Qunova Computing Achieves Chemical Accuracy at 80 Qubits on Iron-Sulfur Cluster Using IBM Quantum System Two and Fugaku",
+      "excerpt": "Qunova Computing ran its HI-VQE algorithm on an 80-qubit [4Fe-4S] iron-sulfur cluster simulation across an IBM Quantum System Two processor and RIKEN's Fugaku. The company reports an extrapolated ground-state energy within 1.6 mHa of classical DMRG benchmarks and about 300x lower classical supercomputing cost than prior quantum diagonalization (SQD) runs on Fugaku.",
+      "url": "https://quantumcomputingreport.com/qunova-computing-achieves-chemical-accuracy-at-80-qubits-on-iron-sulfur-cluster-using-ibm-quantum-system-two-and-fugaku/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-13"
     }
   ]
 }

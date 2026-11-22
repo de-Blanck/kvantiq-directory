@@ -61,6 +61,13 @@
       "url": "https://zuriq.com",
       "source": "ZuriQ official website",
       "date": "2025-01-23"
+    },
+    {
+      "title": "Infineon and ZuriQ deepen partnership to advance scalable trapped-ion chips",
+      "excerpt": "Infineon and ZuriQ expanded their collaboration to scale ZuriQ's two-dimensional Penning micro-trap architecture, combining ZuriQ's design with Infineon's semiconductor manufacturing, advanced packaging and integrated photonics. The companies previously trapped a 3x3 array of nine individually controlled ions and aim to move to larger qubit counts and manufacturable processors.",
+      "url": "https://thequantuminsider.com/2026/10/07/infineon-zuriq-scalable-quantum-chips/",
+      "source": "The Quantum Insider",
+      "date": "2026-10-07"
     }
   ]
 }

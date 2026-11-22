@@ -78,6 +78,13 @@
       "url": "https://thequantuminsider.com/2026/07/15/classiq-parityqc-quantum-circuit-optimization/",
       "title": "Classiq and ParityQC Partner to Optimize Quantum Circuit Execution - The Quantum Insider",
       "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.39670",
+      "title": "Error-Corrected Quantum Optimization via Rydberg Atom Array Embeddings",
+      "datePublished": "2026-10-29",
+      "dateAccessed": "2026-11-22"
     }
   ],
   "news": [
@@ -143,6 +150,13 @@
       "url": "https://thequantuminsider.com/2026/07/15/classiq-parityqc-quantum-circuit-optimization/",
       "source": "The Quantum Insider",
       "date": "2026-07-15"
+    },
+    {
+      "title": "University of Innsbruck, ParityQC and QuEra use Rydberg array embeddings as intrinsic error-correcting codes",
+      "excerpt": "Researchers from the University of Innsbruck, ParityQC and QuEra report that the auxiliary qubits used in the Rydberg-Parity embedding of optimization problems on neutral-atom processors also form a classical error-correcting code. They built an iterative decoder and validated it on adiabatic runs on QuEra's Aquila processor with instances of up to 107 atoms, reporting bit-flip thresholds of 23.5-27.5% depending on graph type.",
+      "url": "https://quantumcomputingreport.com/university-of-innsbruck-parityqc-and-quera-turn-rydberg-array-embeddings-into-intrinsic-error-correcting-codes/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-20"
     }
   ]
 }

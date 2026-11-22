@@ -97,6 +97,20 @@
       "url": "https://github.com/NVIDIA/cuda-quantum/releases/tag/0.15.1",
       "source": "GitHub",
       "date": "2026-08-03"
+    },
+    {
+      "title": "QUDORA integrates NVIDIA CUDA-Q into its SDK and Qamelion emulator",
+      "excerpt": "Quantum Computing Report says QUDORA Technologies has integrated NVIDIA CUDA-Q into its software stack. Through the qudora-sdk[cudaq] Python package and QUDORA Cloud, developers can run hybrid quantum-classical CUDA-Q workflows on Qamelion, QUDORA's trapped-ion emulator with adaptive noise modelling, before moving the same CUDA-Q code to hardware.",
+      "url": "https://quantumcomputingreport.com/qudora-integrates-nvidia-cuda-q-into-qamelion-emulator-and-launches-german-funded-quanda-hpc-energy-consortium/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Quantum Motion and NVIDIA add a CUDA-Q backend to the QUICHE quantum chemistry interface",
+      "excerpt": "Quantum Computing Report says Quantum Motion and NVIDIA added NVIDIA CUDA-Q as a prototype backend to QUICHE, the open-source interface co-developed by Quantum Motion, FACCTs and Riverlane that connects quantum algorithms to the ORCA chemistry package. The CUDA-Q Algorithms layer builds the qubit Hamiltonian and runs quantum phase estimation kernels on NVIDIA GPUs. The teams validated the pipeline on the iron-sulfur complex Fe(SH)4- on a single GPU and checked the results against CASSCF benchmarks.",
+      "url": "https://quantumcomputingreport.com/quantum-motion-and-nvidia-integrate-cuda-q-backend-into-quiche-for-end-to-end-quantum-chemistry-workflows/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-20"
     }
   ]
 }

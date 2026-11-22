@@ -45,6 +45,22 @@
       "url": "https://arxiv.org/abs/1902.10171",
       "title": "Ground-state energy estimation of the water molecule on a trapped ion quantum computer (Nam et al.)",
       "dateAccessed": "2026-09-03"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.40561",
+      "title": "Grow, Compress, and Perturb: A Hybrid Quantum-Classical Pathway to Scalable Quantum Chemistry on Quantum Computers",
+      "datePublished": "2026-10-29",
+      "dateAccessed": "2026-11-22"
+    }
+  ],
+  "news": [
+    {
+      "title": "Sorbonne Université and Qubit Pharmaceuticals Introduce VULCAN Hybrid Framework for Scalable Quantum Chemistry",
+      "excerpt": "The VULCAN framework, an alternative to gradient-screened ADAPT-VQE, is reported to reach chemical accuracy on hydrogen chains, BeH2 and H2O at 5% to 20% of the measurement cost of batched ADAPT-VQE in numerical benchmarks, according to an arXiv preprint from Sorbonne Université and Qubit Pharmaceuticals.",
+      "url": "https://quantumcomputingreport.com/sorbonne-universite-and-qubit-pharmaceuticals-introduce-vulcan-hybrid-framework-for-scalable-quantum-chemistry/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-21"
     }
   ]
 }

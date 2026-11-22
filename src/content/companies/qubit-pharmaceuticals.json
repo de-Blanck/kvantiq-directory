@@ -67,6 +67,20 @@
       "url": "https://quantumcomputingreport.com/qubit-pharmaceuticals-announces-dual-breakthroughs-quantum-speedup-and-2028-utility-path-for-drug-discovery/",
       "source": "Quantum Computing Report",
       "date": "2026-06-01"
+    },
+    {
+      "title": "Qubit Pharmaceuticals, Sorbonne Universite and Q-CTRL demonstrate 3D protein hydration-site prediction on IBM Heron processors",
+      "excerpt": "Researchers from Qubit Pharmaceuticals, Sorbonne Universite (CNRS Laboratoire de Chimie Theorique) and Q-CTRL recast water-site prediction in protein pockets as a QUBO problem and ran it on IBM Heron processors at up to 123 qubits across five drug-target structures. On 11 instances of 41 to 116 qubits the solver matched CPLEX-verified optimal placements; the authors estimate competitiveness with leading classical tools at roughly 900 qubits. The work is published in Physical Review Research.",
+      "url": "https://quantumcomputingreport.com/qubit-pharmaceuticals-sorbonne-universite-and-q-ctrl-demonstrate-3d-protein-hydration-site-prediction-on-ibm-heron-processors/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Sorbonne Universite and Qubit Pharmaceuticals introduce VULCAN hybrid framework for quantum chemistry",
+      "excerpt": "VULCAN is a hybrid quantum-classical electronic-structure framework aimed at the gradient-measurement bottleneck of ADAPT-VQE. In the reported benchmarks its operator pools were 4x to 25x smaller than QEB pools and reached chemical accuracy with 5% to 20% of the measurements of batched ADAPT-VQE; a proof-of-principle run on a Quantinuum H2 processor measured the H2 ground-state energy within 1.7e-3 Ha of the exact reference (arXiv:2610.40561).",
+      "url": "https://quantumcomputingreport.com/sorbonne-universite-and-qubit-pharmaceuticals-introduce-vulcan-hybrid-framework-for-scalable-quantum-chemistry/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-21"
     }
   ]
 }

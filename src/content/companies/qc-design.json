@@ -58,6 +58,13 @@
       "url": "https://www.cbinsights.com/company/qc-design/",
       "title": "QC Design company profile - CB Insights",
       "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/qc-design-unveils-meridian-purpose-built-ai-architecture-system-demonstrates-over-10x-reduction-in-logical-error-rates/",
+      "title": "QC Design Unveils Meridian AI Architecture System",
+      "datePublished": "2026-09-24",
+      "dateAccessed": "2026-11-22"
     }
   ],
   "news": [
@@ -67,6 +74,13 @@
       "url": "https://quantumcomputingreport.com/qudora-adopts-qc-designs-plaquette-software-to-accelerate-fault-tolerance-for-trapped-ion-processors/",
       "source": "Quantum Computing Report",
       "date": "2025-12-03"
+    },
+    {
+      "title": "QC Design unveils Meridian AI system for fault-tolerant architecture design",
+      "excerpt": "QC Design introduced Meridian, an AI system for designing fault-tolerant quantum computers that combines frontier models, curated knowledge and validation tools from its Plaquette platform. In a white paper the company reports a median logical error-rate reduction of more than 10x against the best circuits from five published methods across over 100 error-detection design tasks; the figures are not independently verified.",
+      "url": "https://quantumcomputingreport.com/qc-design-unveils-meridian-purpose-built-ai-architecture-system-demonstrates-over-10x-reduction-in-logical-error-rates/",
+      "source": "Quantum Computing Report",
+      "date": "2026-09-24"
     }
   ]
 }

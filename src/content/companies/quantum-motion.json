@@ -110,6 +110,13 @@
       "url": "https://sifted.eu/articles/quantum-motion-series-c",
       "source": "Sifted",
       "date": "2026-05-07"
+    },
+    {
+      "title": "Quantum Motion and NVIDIA integrate CUDA-Q backend into QUICHE for quantum chemistry workflows",
+      "excerpt": "Quantum Motion and NVIDIA added NVIDIA CUDA-Q as a prototype backend to QUICHE, an open-source interface co-developed by Quantum Motion, FACCTs and Riverlane that connects quantum algorithms to the ORCA quantum chemistry package. The pipeline builds the qubit Hamiltonian and runs quantum phase estimation on NVIDIA GPUs; it was validated on the spin-state energetics of Fe(SH)4-, a model of the rubredoxin active site, against exact CASSCF benchmarks.",
+      "url": "https://quantumcomputingreport.com/quantum-motion-and-nvidia-integrate-cuda-q-backend-into-quiche-for-end-to-end-quantum-chemistry-workflows/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-20"
     }
   ]
 }

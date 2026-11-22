@@ -177,6 +177,13 @@
       "url": "https://thequantuminsider.com/2026/07/28/riverlane-unitary-foundation-deltakit-community-fund/",
       "source": "The Quantum Insider",
       "date": "2026-07-28"
+    },
+    {
+      "title": "NVIDIA takes strategic stake in Riverlane",
+      "excerpt": "NVIDIA took a strategic minority equity stake in Riverlane, announced alongside investments in four UK AI ventures as part of NVIDIA's broader UK computing commitment; the size of the stake was not disclosed. The companies also described an expanded collaboration using H100 GPUs to recalibrate Riverlane's decoders, reporting a surface-code training cycle cut from 3 minutes on one CPU core to 2.8 seconds.",
+      "url": "https://quantumcomputingreport.com/nvidia-takes-strategic-stake-in-riverlane-to-accelerate-real-time-quantum-error-correction-and-gpu-decoder-calibration/",
+      "source": "Quantum Computing Report",
+      "date": "2026-10-22"
     }
   ]
 }

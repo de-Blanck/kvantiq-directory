@@ -66,6 +66,13 @@
       "url": "https://qci.dlr.de/en/the-first-of-its-kind/",
       "source": "DLR Quantum Computing Initiative",
       "date": "2023-10-15"
+    },
+    {
+      "title": "Fairfax County Public Schools to install XeedQ 4-qubit quantum computer at Skyview High School",
+      "excerpt": "Fairfax County Public Schools selected XeedQ to supply its XQ1e, a 4-qubit diamond nitrogen-vacancy processor that runs at room temperature on a standard outlet, for Skyview High School, with delivery set for December 2026 and student use from spring 2027. The district describes it as the first reported physical quantum computer in a K-12 public high school.",
+      "url": "https://quantumcomputingreport.com/fairfax-county-public-schools-to-install-xeedq-4-qubit-quantum-computer-at-skyview-high-school/",
+      "source": "Quantum Computing Report",
+      "date": "2026-09-25"
     }
   ]
 }

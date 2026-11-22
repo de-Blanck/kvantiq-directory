@@ -48,6 +48,13 @@
       "url": "https://qutech.nl/business-innovation/startups/",
       "title": "QuTech spinout companies page",
       "dateAccessed": "2026-03-21"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/qutech-spinout-qbird-rebrands-to-falqon-systems-to-commercialize-quantum-secure-networks/",
+      "title": "QuTech Spinout Q*Bird Rebrands to Falqon Systems to Commercialize Quantum Secure Networks",
+      "datePublished": "2026-09-16",
+      "dateAccessed": "2026-11-22"
     }
   ],
   "news": [
@@ -57,6 +64,20 @@
       "url": "https://thequantuminsider.com/2026/01/12/qbird-eic-funding-mdi-qkd-europe/",
       "source": "The Quantum Insider",
       "date": "2026-01-12"
+    },
+    {
+      "title": "Falqon Systems launches Falqon 5000 Series for quantum secure networks",
+      "excerpt": "Falqon Systems (formerly Q*Bird) launched the Falqon 5000 Series, the next generation of its MDI-QKD portfolio after the 4000 Series, comprising a Connectivity Hub (CH5000), QKD Node (QN5000) and Quantum Optical Switch (QOS5000) with support for ETSI GS QKD 004, 014 and 020 and SKIP. Forschungszentrum Jülich is the launch customer and will study QKD integration into power system communication networks.",
+      "url": "https://thequantuminsider.com/2026/11/17/falqon-systems-launches-falqon-5000-series-quantum-secure-networks/",
+      "source": "The Quantum Insider",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "QuTech spinout Q*Bird rebrands to Falqon Systems",
+      "excerpt": "Delft-based Q*Bird, spun out of QuTech and TU Delft in 2022, renamed itself Falqon Systems as it shifts from hardware components to deploying end-to-end quantum secure networks, grouping its products under the Falqon brand (MDI-QKD Series, Key Manager, Domain Controller). Ownership, leadership under CEO Ingrid Romijn, customer contracts and roadmap are reported as unchanged.",
+      "url": "https://quantumcomputingreport.com/qutech-spinout-qbird-rebrands-to-falqon-systems-to-commercialize-quantum-secure-networks/",
+      "source": "Quantum Computing Report",
+      "date": "2026-09-16"
     }
   ]
 }

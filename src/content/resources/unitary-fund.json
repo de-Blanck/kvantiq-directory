@@ -52,6 +52,13 @@
       "url": "https://quantumcomputingreport.com/riverlane-and-unitary-foundation-launch-deltakit-community-fund-for-open-source-qec/",
       "title": "Riverlane and Unitary Foundation Launch Deltakit Community Fund - Quantum Computing Report",
       "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/unitary-foundation-releases-2026-quantum-open-source-survey-covering-sdk-adoption-hybrid-hpc-workflows-and-ai-tooling/",
+      "title": "Unitary Foundation Releases 2026 Quantum Open Source Survey Covering SDK Adoption, Hybrid HPC Workflows, and AI Tooling",
+      "datePublished": "2026-11-17",
+      "dateAccessed": "2026-11-22"
     }
   ],
   "news": [
@@ -68,6 +75,13 @@
       "url": "https://thequantuminsider.com/2026/07/28/riverlane-unitary-foundation-deltakit-community-fund/",
       "source": "The Quantum Insider",
       "date": "2026-07-28"
+    },
+    {
+      "title": "Unitary Foundation publishes results of its 2026 Quantum Open Source Survey",
+      "excerpt": "Quantum Computing Report says Unitary Foundation has published the results of its fifth annual Quantum Open Source Survey. The survey drew more than 1,800 responses from developers, researchers and enterprise practitioners between 10 September and 29 October 2026. The dataset is released under an Open Database License and adds questions on hybrid quantum-classical pipelines, quantum error correction, resource estimation and generative AI use.",
+      "url": "https://quantumcomputingreport.com/unitary-foundation-releases-2026-quantum-open-source-survey-covering-sdk-adoption-hybrid-hpc-workflows-and-ai-tooling/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-17"
     }
   ]
 }

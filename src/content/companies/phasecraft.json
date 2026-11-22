@@ -47,6 +47,13 @@
       "url": "https://www.uktech.news/deep-tech/phasecraft-quantum-computing-20230816",
       "title": "Phasecraft raises GBP 13m for practical quantum problem-solving - UKTech News",
       "dateAccessed": "2026-03-19"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/phasecraft-establishes-u-s-headquarters-in-arlington-virginia-to-accelerate-government-and-defense-quantum-software-partnerships/",
+      "title": "Phasecraft Establishes U.S. Headquarters in Arlington, Virginia",
+      "datePublished": "2026-09-21",
+      "dateAccessed": "2026-11-22"
     }
   ],
   "news": [
@@ -63,6 +70,13 @@
       "url": "https://www.uktech.news/deep-tech/phasecraft-quantum-computing-20230816",
       "source": "UKTech News",
       "date": "2023-08-16"
+    },
+    {
+      "title": "Phasecraft establishes U.S. headquarters in Arlington, Virginia",
+      "excerpt": "Phasecraft selected Ballston in Arlington County, Virginia, as its official U.S. headquarters, supported by the Virginia Economic Development Partnership and the Virginia Jobs Investment Program. The article says the move is meant to grow its U.S. workforce and algorithm development for federal defense, energy and commercial customers; no job or investment figures were given.",
+      "url": "https://quantumcomputingreport.com/phasecraft-establishes-u-s-headquarters-in-arlington-virginia-to-accelerate-government-and-defense-quantum-software-partnerships/",
+      "source": "Quantum Computing Report",
+      "date": "2026-09-21"
     }
   ]
 }

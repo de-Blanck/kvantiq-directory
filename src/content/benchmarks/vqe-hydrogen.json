@@ -61,6 +61,13 @@
       "url": "https://www.hpcwire.com/off-the-wire/ibm-and-algorithmiq-report-quantum-advantage-for-materials-simulation/",
       "title": "IBM and Algorithmiq Report Quantum Advantage for Materials Simulation - HPCwire",
       "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.40561",
+      "title": "Grow, Compress, and Perturb: A Hybrid Quantum-Classical Pathway to Scalable Quantum Chemistry on Quantum Computers",
+      "datePublished": "2026-10-29",
+      "dateAccessed": "2026-11-22"
     }
   ],
   "news": [
@@ -70,6 +77,13 @@
       "url": "https://thequantuminsider.com/2026/07/30/ibm-algorithmiq-quantum-computation-verification-framework/",
       "source": "The Quantum Insider",
       "date": "2026-07-30"
+    },
+    {
+      "title": "Sorbonne Université and Qubit Pharmaceuticals Introduce VULCAN Hybrid Framework for Scalable Quantum Chemistry",
+      "excerpt": "Alongside numerical benchmarks of the VULCAN adaptive VQE framework, the authors report a proof-of-principle hardware run for molecular hydrogen on a Quantinuum System Model H2 trapped-ion processor, measuring a ground-state energy within 1.7 x 10^-3 Ha of the exact reference.",
+      "url": "https://quantumcomputingreport.com/sorbonne-universite-and-qubit-pharmaceuticals-introduce-vulcan-hybrid-framework-for-scalable-quantum-chemistry/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-21"
     }
   ]
 }

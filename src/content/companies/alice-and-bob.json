@@ -92,6 +92,27 @@
       "url": "https://www.siliconrepublic.com/machines/alice-bob-partner-european-doctoral-network-quantum-error-correction",
       "title": "Alice & Bob to work with European network on quantum error fixes - Silicon Republic",
       "dateAccessed": "2026-08-23"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/10/29/alice-bob-22593-qubits-break-rsa-2048/",
+      "title": "Alice & Bob Estimates 22,593 Qubits to Break RSA-2048",
+      "datePublished": "2026-10-29",
+      "dateAccessed": "2026-11-22"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/alice-bob-demonstrates-end-to-end-shors-algorithm-compilation-requiring-23000-cat-qubits-to-break-rsa-2048/",
+      "title": "Alice & Bob Demonstrates End-to-End Shor's Algorithm Compilation Requiring 23,000 Cat Qubits to Break RSA-2048",
+      "datePublished": "2026-10-30",
+      "dateAccessed": "2026-11-22"
+    },
+    {
+      "type": "url",
+      "url": "https://eprint.iacr.org/2026/2665",
+      "title": "Shor's algorithm compiled on cat qubits: 22 593 qubits for RSA-2048 in 3.14 days (IACR ePrint 2026/2665)",
+      "datePublished": "2026-10-29",
+      "dateAccessed": "2026-11-22"
     }
   ],
   "news": [
@@ -213,6 +234,13 @@
       "url": "https://thequantuminsider.com/2026/08/12/alice-bob-partners-europe-first-doctoral-network-quantum-error-correction/",
       "source": "The Quantum Insider",
       "date": "2026-08-12"
+    },
+    {
+      "title": "Alice & Bob estimates 22,593 cat qubits to break RSA-2048 in 3.14 days",
+      "excerpt": "An Alice & Bob-led paper on IACR ePrint, with co-authors from Inria, CEA and the University of Edinburgh, estimates that Shor's algorithm compiled on cat qubits could factor RSA-2048 with 22,593 physical cat qubits in 3.14 days, and attack 256-bit elliptic-curve keys with 29,588 qubits in 61.8 minutes. The gain over the company's 2023 estimate of 49,649 qubits comes from LDPC-cat codes and a redesigned adder. The figures are theoretical resource projections, not a demonstrated attack.",
+      "url": "https://thequantuminsider.com/2026/10/29/alice-bob-22593-qubits-break-rsa-2048/",
+      "source": "The Quantum Insider",
+      "date": "2026-10-29"
     }
   ]
 }

@@ -41,6 +41,22 @@
       "type": "arxiv",
       "url": "https://arxiv.org/abs/2108.11644",
       "title": "Hybrid quantum-classical machine learning for generative chemistry and drug design"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/qubit-pharmaceuticals-sorbonne-universite-and-q-ctrl-demonstrate-3d-protein-hydration-site-prediction-on-ibm-heron-processors/",
+      "title": "Qubit Pharmaceuticals, Sorbonne Université, and Q-CTRL Demonstrate 3D Protein Hydration-Site Prediction on IBM Heron Processors",
+      "datePublished": "2026-11-21",
+      "dateAccessed": "2026-11-22"
+    }
+  ],
+  "news": [
+    {
+      "title": "Qubit Pharmaceuticals, Sorbonne Université, and Q-CTRL Demonstrate 3D Protein Hydration-Site Prediction on IBM Heron Processors",
+      "excerpt": "A peer-reviewed Physical Review Research study cast 3D-RISM protein-pocket water densities as a QUBO problem and ran it on IBM Heron processors at up to 123 qubits across five FDA-approved drug-target structures using Q-CTRL Fire Opal. The authors report recovering the classically verified optimal water configuration in all 11 tested instances and estimate the method becomes competitive with leading classical tools at about 900 qubits and 100,000 two-qubit gates.",
+      "url": "https://quantumcomputingreport.com/qubit-pharmaceuticals-sorbonne-universite-and-q-ctrl-demonstrate-3d-protein-hydration-site-prediction-on-ibm-heron-processors/",
+      "source": "Quantum Computing Report",
+      "date": "2026-11-21"
     }
   ]
 }
