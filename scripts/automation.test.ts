@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { writeFileSync, rmSync, mkdtempSync } from 'node:fs';
+import { writeFileSync, readFileSync, rmSync, mkdtempSync } from 'node:fs';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
 import { stepsFor, pauseReason } from './gate.mjs';
@@ -58,4 +58,12 @@ test('the blocklist covers every path that governs what runs on this machine', (
   for (const p of ['CLAUDE.md', 'scheduler/', 'scripts/gate.mjs', 'scripts/auto-merge.mjs', '.env']) {
     assert.ok(NEVER_AUTOMERGE.includes(p), `${p} missing from the blocklist`);
   }
+});
+
+test('importing auto-merge.mjs does not run the merge job', () => {
+  // This file imports auto-merge.mjs. An unguarded top-level main() once made a
+  // test run merge a real Dependabot PR (#168).
+  const src = readFileSync(new URL('./auto-merge.mjs', import.meta.url), 'utf8');
+  assert.doesNotMatch(src, /^\s*(await\s+)?main\(\)/m, 'main() must not run at import time');
+  assert.match(src, /if \(process\.argv\[1\] && resolve\(process\.argv\[1\]\) === fileURLToPath\(import\.meta\.url\)\) await main\(\);/);
 });

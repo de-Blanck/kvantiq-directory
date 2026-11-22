@@ -136,4 +136,5 @@ async function main() {
     `\`\`\`\n${(live.stdout + live.stderr).trim().slice(-1500)}\n\`\`\``]);
 }
 
-await main();
+// Run only when launched directly; tests import this file for its helpers.
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) await main();
