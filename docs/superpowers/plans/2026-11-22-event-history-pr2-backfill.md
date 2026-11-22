@@ -13,7 +13,14 @@
 
 **Spec:** `docs/superpowers/specs/2026-11-21-event-history-design.md` §4. Builds on PR 1: `scripts/events/*`, `src/lib/events/*`.
 
-**Revision 2:** fixes Codex's plan review (4 blockers, 3 high, 3 medium). The biggest change: harvested scalar changes are **reported, not applied**. That deviates from spec §4.1; see Claude's calls.
+**Revision 3:**
+- **Revision 2** fixed Codex's first review (4 blockers, 3 high, 3 medium). The biggest change: harvested scalar changes are **reported, not applied**. That deviates from spec §4.1; see Claude's calls.
+- **Revision 3** fixes the re-review. Codex confirmed all 10 earlier findings resolved and found 5 new ones:
+  - partial entity coverage
+  - aliases written for entities that never cited the homepage
+  - head SHA before closing
+  - atomic event writes
+  - the date-pair check per candidate
 
 ## Global Constraints
 
@@ -113,10 +120,14 @@
   - `eventSchema` rejects `foundOn < happenedOn` with the message `foundOn is before happenedOn`.
   - `HOLD_REASONS` gains `'homepage-url'` and `'not-extracted'`, appended at the end.
   - `readHeldList(root: string): HeldRecord[]` and `writeHeldList(root: string, records: HeldRecord[]): void` are exported from `run.ts`. The write validates with `heldListSchema`, then writes atomically (`.tmp` + rename). `runCheck` uses both, with behaviour unchanged.
+  - **The date pair is checked per candidate.** In `runCheck`, after input validation, a candidate whose effective `foundOn` (`c.foundOn ?? today`) is before `happenedOn` goes to `summary.invalid` with `error: 'foundOn is before happenedOn'`. Later candidates and the held-list write still run, so the schema refine never throws mid-batch.
+  - **Event files publish atomically, without overwriting.** Each event is written to `<final>.tmp`, then hard-linked into place with `linkSync(tmp, final)` (throws `EEXIST` if the target exists, as `wx` did), then the temp file is removed. `loadExistingEvents` reads only `*.json`, so a leftover `.tmp` file from a crash never blocks a retry. Add `src/content/events/**/*.tmp` to `.gitignore`.
 
 - [ ] **Step 1: Write failing tests.**
   - schema: an event with `foundOn: '2026-07-01'`, `happenedOn: '2026-07-08'` fails with `foundOn is before happenedOn`. Equal dates pass.
   - run: `writeHeldList` then `readHeldList` round-trips. `writeHeldList` with a mismatched key throws and leaves the existing file byte-identical.
+  - run: three candidates, the second with `happenedOn` after `today` and no `foundOn`. The summary has `invalid: [{ index: 1, error: 'foundOn is before happenedOn' }]`, and candidates 0 and 2 are still processed.
+  - run: a stray `src/content/events/2026/x.json.tmp` holding truncated JSON doesn't stop `runCheck`. Publishing onto an existing final path still throws.
 - [ ] **Step 2: Run** `npm test`. Expected: the new tests fail.
 - [ ] **Step 3: Implement.** Put the refine on the union (`z.discriminatedUnion(...).refine(...)`). `z.toJSONSchema` must still work; refines don't appear in the JSON Schema. Move the inline held read and write in `runCheck` into the two functions.
 - [ ] **Step 4: Run** the gate commands. All green, and `dist/event.schema.json` exists after the build.
@@ -185,7 +196,7 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
   ```ts
   export type HarvestSource = { entity: string; source: { type: 'url'; url: string; title: string; dateAccessed: string }; refs: string[] };
   export type HarvestChange = { entity: string; field: string; from: unknown; to: unknown; ref: string; headDate: string; superseded: Array<{ ref: string; to: unknown }> };
-  export type Harvest = { refs: Array<{ ref: string; base: string; headDate: string; otherPaths: string[] }>; news: Array<LegacyItem & { refs: string[]; foundOn: string }>; sources: HarvestSource[]; changes: HarvestChange[] };
+  export type Harvest = { refs: Array<{ ref: string; head: string; base: string; headDate: string; otherPaths: string[] }>; news: Array<LegacyItem & { refs: string[]; foundOn: string }>; sources: HarvestSource[]; changes: HarvestChange[] };
   export type WorkClass = 'fetch' | 'pointer-only' | 'blocklisted' | 'homepage';
   export type WorkItem = { id: string; url: string; resolvedFrom: string[]; entities: string[]; collections: Collection[]; cls: WorkClass; refs: NewsRef[]; happenedOnHint: string; foundOn: string };
   export type Aliases = Record<string, string>; // `${entity}|${normalizeUrl(originalUrl)}` → normalizeUrl(resolvedUrl)
@@ -193,6 +204,7 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
   ```
 - Produces:
   - **`harvest(root: string, refs: string[], mainRef = 'origin/main'): Harvest`.** For each ref:
+    - `head = rev-parse(ref)`, the exact commit read. The closing step compares it with the PR's current head.
     - `base = merge-base(mainRef, ref)`.
     - Only `src/content/**/*.json` paths changed between `base` and `ref` count. Other paths go to `otherPaths`.
     - News added: raw-scanned `news` items at the ref minus those at the base, by normalized URL.
@@ -222,7 +234,10 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
     - **Dates:**
       - `happenedOnHint` = the earliest ref `date`.
       - `foundOn = max(min(firstSeen over its refs), happenedOnHint)`. Legacy refs use `firstSeenOnMain`, falling back to `happenedOnHint`. Harvested refs use their `foundOn`.
-  - **`pendingItems(items: WorkItem[], collection: Collection, match: ReturnType<typeof buildMatcher>): WorkItem[]`** returns items whose `collections` include `collection` and that have at least one ref with `match(ref.entity, ref.url) === null`. So a shared item is processed once, in the first collection run that cites it.
+  - **`pendingItems(items: WorkItem[], collection: Collection, match: ReturnType<typeof buildMatcher>, events: EventRecord[]): { pending: WorkItem[]; partial: Array<{ entities: string[]; sourceUrl: string; reason: 'possible-duplicate' }> }`.**
+    - An item is unresolved when its `collections` include `collection` and at least one ref has `match(ref.entity, ref.url) === null`.
+    - An unresolved item whose normalized URL already belongs to an event (in `source.url`, `source.finalUrl` or `pointers`) is not re-extracted, because the checker would call it `already-published` and B would stay missing. Instead it yields one `partial` hold: the unmatched entities, the item URL, and reason `possible-duplicate`. A person or the routine can extend the event later.
+    - Every other unresolved item is `pending`. So a shared item is processed once, in the first collection run that cites it.
   - **CLI steps:**
     - `harvest`: `discoverRefs`, then write `.backfill/harvest.json`.
     - `worklist`:
@@ -254,6 +269,8 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
     - two homepages `https://www.aqt.eu` and `https://aqt.eu/` both resolved to `https://aqt.eu/news/1` → one `fetch` item, `id = hash12('https://aqt.eu/news/1')`, with both in `resolvedFrom`
     - a legacy item dated 2026-05-01 whose URL was first seen 2026-04-01 → `foundOn: '2026-05-01'`
     - `pendingItems` skips an item whose every ref already matches (Review Focus 1, 2)
+    - an event for U with `entities: ['companies/a']` and a work item for U cited by `companies/a` and `use-cases/b` → not pending, with `partial: [{ entities: ['use-cases/b'], sourceUrl: U, reason: 'possible-duplicate' }]`
+    - `harvest` records `head` equal to `git rev-parse` of the ref
 - [ ] **Step 2: Run** `npm test`. Expected: fail.
 - [ ] **Step 3: Implement.**
 - [ ] **Step 4: Run** `npm test`. Expected: pass.
@@ -277,7 +294,7 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
   - `concurrency` defaults to 4. `perHostGapMs` defaults to 1000, with at most one request in flight per host.
   - A thrown fetch is stored with `status: 0` and `error` set, never rethrown.
   - `text = htmlToText(html)`. The raw HTML isn't stored.
-- **CLI step `prefetch --collection c`:** the targets are the `fetch`-class items from `pendingItems(worklist, c, matcher)`.
+- **CLI step `prefetch --collection c`:** the targets are the `fetch`-class items in `pendingItems(...).pending`.
 
 - [ ] **Step 1: Write failing tests** with a fake `fetchPage`:
   - writes one file per target
@@ -380,7 +397,7 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
     - Reads `.backfill/batches/<c>-*.json`, `.backfill/extracted/<c>-*.json` and `.backfill/second-opinion/<c>.json`.
     - Writes `.backfill/candidates/<c>.json`, `.backfill/holds/<c>-extract.json` and `.backfill/second-opinion-input/<c>.json`.
 - **`recordHolds`:** `writeHeldList(root, mergeHeld(readHeldList(root), holds, new Set(), today))`. Holds whose `(entities, sourceUrl)` already match an event are skipped.
-- **CLI step `holds --collection c`:** records every `.backfill/holds/<c>-*.json` file, plus a hold for each item of `pendingItems(worklist, c, matcher)` with:
+- **CLI step `holds --collection c`:** records every `.backfill/holds/<c>-*.json` file, every `partial` hold from `pendingItems`, and a hold for each item in `pendingItems(...).pending` with:
   - class `pointer-only` → `pointer-only`
   - class `blocklisted` → `source-not-credible`
   - class `homepage` → `homepage-url`
@@ -421,7 +438,7 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
   - A source is kept when `isCredibleSource(source.source)` is true, `isBlocklistedSource(source.source)` is false, the URL isn't already in the entry's `sources`, and the fetch gives status 200.
   - Kept sources are written with `appendToTopLevelArray(raw, 'sources', kept)`, one write per entry file.
   - The others are dropped with a reason: `not-credible`, `blocklisted`, `duplicate` or `status <n>`.
-- **`recordAliases`:** for every item with a non-empty `resolvedFrom`, adds `${entity}|${normalizeUrl(original)}` → `normalizeUrl(item.url)` for each entity and original. The file is written sorted, as `JSON.stringify(obj, null, 2) + '\n'`.
+- **`recordAliases`:** built only from refs that were actually resolved. For each ref in `item.refs` whose own `url` normalizes differently from `item.url`, it adds `${ref.entity}|${normalizeUrl(ref.url)}` → `normalizeUrl(item.url)`. An entity that cited the article directly gets no alias. The file is written sorted, as `JSON.stringify(obj, null, 2) + '\n'`.
 - **`reconcile`:**
   - Rows are every `scanLegacy` item plus every harvested news item.
   - Each row's status is `buildMatcher(loadEventRecords(root), readHeldList(root), loadAliases(root))(entity, url)`. `null` → `missing`.
@@ -439,6 +456,7 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
     - a pointer-only item with a held record → `held: pointer-only`
     - a homepage item resolved to an article that is held, with the alias recorded → `held` (Review Focus 5)
     - an alias pointing to a URL with no event and no hold → `missing`
+    - `recordAliases` on an item where `companies/a` cited homepage H and `companies/b` cited article U directly (resolved H → U) writes only `companies/a|H → U`
     - an item with neither → `missing`, and the CLI exits with 1
   - `applySources`:
     - a blocklisted URL → dropped `blocklisted`
@@ -489,7 +507,7 @@ The pilot order calibrates yield on the small collections first: **use-cases →
     - Rune merges. Then `curl --fail -s https://directory.kvantiq.studio/events.json` shows the new count.
 11. **After the last data PR:**
     - List the open `chore/auto-refresh-*` and `ai-sweep/*` PRs.
-    - Any whose ref isn't in `harvest.json` (e.g. 29 Nov) gets steps 1 and 3–10 in a small top-up PR first.
+    - Any whose ref isn't in `harvest.json` (e.g. 29 Nov), or whose current `headRefOid` (`gh pr view <n> --json headRefOid`) differs from the recorded `head`, gets steps 1 and 3–10 in a small top-up PR first.
     - Then close each one with `gh pr close <n> --comment "Harvested into the event backfill: <links to data PRs>."`.
     - Verify that `gh pr list --search "head:chore/auto-refresh-"` is empty.
 
