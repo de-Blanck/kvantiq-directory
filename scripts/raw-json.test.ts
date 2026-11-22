@@ -36,7 +36,7 @@ test('appends to an empty array and rejects missing or repeated keys', () => {
   assert.throws(() => appendToTopLevelArray('{"sources":null,"sources":[]}', 'sources', [1]));
 });
 
-test.skip('content JSON has no duplicate keys', () => {
+test('content JSON has no duplicate keys', () => {
   const root = new URL('../src/content/', import.meta.url);
   for (const entry of readdirSync(root, { recursive: true, withFileTypes: true })) {
     if (!entry.isFile() || !entry.name.endsWith('.json')) continue;
