@@ -13,7 +13,7 @@
 
 **Spec:** `docs/superpowers/specs/2026-11-21-event-history-design.md` §4. Builds on PR 1: `scripts/events/*`, `src/lib/events/*`.
 
-**Revision 3:**
+**Revision 4:**
 - **Revision 2** fixed Codex's first review (4 blockers, 3 high, 3 medium). The biggest change: harvested scalar changes are **reported, not applied**. That deviates from spec §4.1; see Claude's calls.
 - **Revision 3** fixes the re-review. Codex confirmed all 10 earlier findings resolved and found 5 new ones:
   - partial entity coverage
@@ -23,6 +23,8 @@
   - the date-pair check per candidate
 
   A final Codex check confirmed those 5 resolved and found 1 more: aliases were recorded too late for published homepage resolutions. They are now written at the `worklist` step, with an end-to-end test.
+
+**Revision 4 (as built):** an independent review of PR 2b found 9 issues, fixed in the code. This plan now records them: a `listing` class for URLs whose refs span more than 7 days, redirect holds, alias removal on withdrawn resolutions, required `harvest.json`, uncached fetch failures, sources kept with their metadata, extraction pooled by id, and homepages requiring an empty query string.
 
 ## Global Constraints
 
@@ -196,10 +198,10 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
 - Consumes: Task 3; `readHeldList` (Task 2); `eventSchema` and `EventRecord`; `isBlocklistedSource` (`src/lib/credibility.mjs`); `POINTER_ONLY_DOMAINS` (`src/lib/events/pointer-domains.ts`); `hostOf` and `isHostOrSubdomain` (`src/lib/events/url.ts`).
 - Produces (`types.ts` additions):
   ```ts
-  export type HarvestSource = { entity: string; source: { type: 'url'; url: string; title: string; dateAccessed: string }; refs: string[] };
+  export type HarvestSource = { entity: string; source: { type: 'doi' | 'arxiv' | 'url' | 'website' | 'press-release'; url: string; title?: string; authors?: string; datePublished?: string; dateAccessed?: string }; refs: string[] }; // original field values, never invented
   export type HarvestChange = { entity: string; field: string; from: unknown; to: unknown; ref: string; headDate: string; superseded: Array<{ ref: string; to: unknown }> };
   export type Harvest = { refs: Array<{ ref: string; head: string; base: string; headDate: string; otherPaths: string[] }>; news: Array<LegacyItem & { refs: string[]; foundOn: string }>; sources: HarvestSource[]; changes: HarvestChange[] };
-  export type WorkClass = 'fetch' | 'pointer-only' | 'blocklisted' | 'homepage';
+  export type WorkClass = 'fetch' | 'pointer-only' | 'blocklisted' | 'homepage' | 'listing';
   export type WorkItem = { id: string; url: string; resolvedFrom: string[]; entities: string[]; collections: Collection[]; cls: WorkClass; refs: NewsRef[]; happenedOnHint: string; foundOn: string };
   export type Aliases = Record<string, string>; // `${entity}|${normalizeUrl(originalUrl)}` → normalizeUrl(resolvedUrl)
   export type MatchResult = { status: 'event'; eventId: string } | { status: 'held'; reason: HoldReason } | null;
@@ -232,7 +234,7 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
     - **Effective URL:** each legacy or harvested ref's effective URL is the resolved URL when `hash12(its URL)` has a non-null resolution, otherwise its own URL.
     - **Grouping:** refs are grouped by normalized effective URL into one `WorkItem`, with `id = hash12(effective URL)` and `resolvedFrom` = the distinct original URLs that were replaced.
     - **`entities`:** the citing entities, sorted by collection order, then slug. **`collections`:** their distinct collections, in collection order.
-    - **`cls`:** `pointer-only` if the host is on, or is a subdomain of, the pointer-only list; `blocklisted` if `isBlocklistedSource({ url })`; `homepage` if the path is empty or `/`; otherwise `fetch`.
+    - **`cls`:** `pointer-only` if the host is on, or is a subdomain of, the pointer-only list; `blocklisted` if `isBlocklistedSource({ url })`; `homepage` if the path is empty or `/` and the query string is empty; `listing` if it would be `fetch` but its refs' dates span more than 7 days (held per entity as `homepage-url`, never extracted); otherwise `fetch`.
     - **Dates:**
       - `happenedOnHint` = the earliest ref `date`.
       - `foundOn = max(min(firstSeen over its refs), happenedOnHint)`. Legacy refs use `firstSeenOnMain`, falling back to `happenedOnHint`. Harvested refs use their `foundOn`.
@@ -301,7 +303,7 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
 - **Behaviour:**
   - Cache file: `<cacheDir>/<id>.json`. An existing file is skipped (`cached++`).
   - `concurrency` defaults to 4. `perHostGapMs` defaults to 1000, with at most one request in flight per host.
-  - A thrown fetch is stored with `status: 0` and `error` set, never rethrown.
+  - A failure (thrown fetch, status 0, 429 or 5xx) counts as `failed`, writes no cache file, and is retried on the next run. Real answers such as 403 and 404 are cached.
   - `text = htmlToText(html)`. The raw HTML isn't stored.
 - **CLI step `prefetch --collection c`:** the targets are the `fetch`-class items in `pendingItems(...).pending`.
 
@@ -379,14 +381,14 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
   export const extractionItemSchema: z.ZodType; // strict: id, status, reason?, entities?, type?, subtype?, summary?, quote?, happenedOn?, publisher?, publishedOn?, funding?
   export const secondOpinionSchema: z.ZodType;  // array of strict { id: string, type: EventType }
   export function parseModelJson(raw: string): unknown; // strips one surrounding ``` or ```json fence, then JSON.parse; throws on failure
-  export function buildCandidates(batches: BatchEntry[][], items: Map<string, WorkItem>, extractedRaw: Map<number, string>, secondRaw: string | null): { candidates: unknown[]; holds: Array<{ entities: string[]; sourceUrl: string; reason: HoldReason }>; secondOpinionInput: Array<{ id: string; quote: string; summary: string }> };
+  export function buildCandidates(batches: BatchEntry[][], items: Map<string, WorkItem>, extractedRaw: string[], secondRaw: string | null): { candidates: unknown[]; holds: Array<{ entities: string[]; sourceUrl: string; reason: HoldReason }>; secondOpinionInput: Array<{ id: string; quote: string; summary: string }> };
   export function recordHolds(root: string, holds: Array<{ entities: string[]; sourceUrl: string; reason: HoldReason }>, today: string): { added: number; total: number };
   ```
 - **`buildCandidates` rules:**
-  - `extractedRaw` maps a batch index to that batch's AI output. A missing entry or a `parseModelJson` failure turns every entry of that batch into a hold `not-extracted`, with `sourceUrl` = the item URL.
+  - `extractedRaw` holds every AI output for the collection. Rows are pooled by id across outputs. An output that fails `parseModelJson` contributes no rows. JSON-identical rows collapse to one; conflicting rows make that entry `not-extracted`, with `sourceUrl` = the item URL.
   - Per entry, each of these → hold `not-extracted`:
     - no output object with its id
-    - more than one output object with its id
+    - conflicting output objects with its id
     - `status: 'no-event'`
     - an `extractionItemSchema` failure
     - `entities` not a reordering of the item's own entities
@@ -406,7 +408,7 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
     - Reads `.backfill/batches/<c>-*.json`, `.backfill/extracted/<c>-*.json` and `.backfill/second-opinion/<c>.json`.
     - Writes `.backfill/candidates/<c>.json`, `.backfill/holds/<c>-extract.json` and `.backfill/second-opinion-input/<c>.json`.
 - **`recordHolds`:** `writeHeldList(root, mergeHeld(readHeldList(root), holds, new Set(), today))`. Holds whose `(entities, sourceUrl)` already match an event are skipped.
-- **CLI step `holds --collection c`:** records every `.backfill/holds/<c>-*.json` file, every `partial` hold from `pendingItems`, and a hold for each item in `pendingItems(...).pending` with:
+- **CLI step `holds --collection c`:** records every `.backfill/holds/<c>-*.json` file, every `partial` hold from `pendingItems`, a `possible-duplicate` hold from `redirectHolds` for a pending `fetch` item whose cached `finalUrl` already belongs to an event, one `homepage-url` hold per entity for each `listing` item, and a hold for each item in `pendingItems(...).pending` with:
   - class `pointer-only` → `pointer-only`
   - class `blocklisted` → `source-not-credible`
   - class `homepage` → `homepage-url`
@@ -443,9 +445,9 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
   export function sampleMarkdown(events: EventRecord[]): string;
   ```
 - **`applySources`** handles harvested sources whose entity is in `collection`.
-  - A source is kept when `isCredibleSource(source.source)` is true, `isBlocklistedSource(source.source)` is false, the URL isn't already in the entry's `sources`, and the fetch gives status 200.
+  - A source failing `harvestedSourceSchema` is dropped as `invalid-shape`. A valid one is kept, unchanged, when `isCredibleSource(source.source)` is true, `isBlocklistedSource(source.source)` is false, the URL isn't already in the entry's `sources`, and the fetch gives status 200.
   - Kept sources are written with `appendToTopLevelArray(raw, 'sources', kept)`, one write per entry file.
-  - The others are dropped with a reason: `not-credible`, `blocklisted`, `duplicate` or `status <n>`.
+  - The others are dropped with a reason: `invalid-shape`, `not-credible`, `blocklisted`, `duplicate` or `status <n>`.
 - **`reconcile`:**
   - Rows are every `scanLegacy` item plus every harvested news item.
   - Each row's status is `buildMatcher(loadEventRecords(root), readHeldList(root), loadAliases(root))(entity, url)`. `null` → `missing`.
@@ -488,7 +490,7 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
 
 Run this after PR 2a and PR 2b are merged, and after the 22 Nov routine run has opened its PR.
 
-The runbook needs network, `gh`, the Codex CLI and subagents. Claude runs it in a fresh worktree per data PR.
+The runbook needs network, `gh`, the Codex CLI and subagents. Claude runs it in **one** worktree, creating a new branch from `origin/main` for each data PR, so the gitignored `.backfill/` (harvest, homepage resolutions, page cache) carries across PRs. `worklist`, `apply` and `reconcile` refuse to run if `harvest.json` is missing, and `worklist` refuses if aliases exist without `homepage-resolved.json`.
 
 The pilot order calibrates yield on the small collections first: **use-cases → challenges → benchmarks → resources → companies**. A shared item lands in the first PR that cites it; later collections see it as done.
 
