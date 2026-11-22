@@ -22,6 +22,8 @@
   - atomic event writes
   - the date-pair check per candidate
 
+  A final Codex check confirmed those 5 resolved and found 1 more: aliases were recorded too late for published homepage resolutions. They are now written at the `worklist` step, with an end-to-end test.
+
 ## Global Constraints
 
 - **No GitHub Actions.** Nothing is added under `.github/workflows/`.
@@ -238,12 +240,19 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
     - An item is unresolved when its `collections` include `collection` and at least one ref has `match(ref.entity, ref.url) === null`.
     - An unresolved item whose normalized URL already belongs to an event (in `source.url`, `source.finalUrl` or `pointers`) is not re-extracted, because the checker would call it `already-published` and B would stay missing. Instead it yields one `partial` hold: the unmatched entities, the item URL, and reason `possible-duplicate`. A person or the routine can extend the event later.
     - Every other unresolved item is `pending`. So a shared item is processed once, in the first collection run that cites it.
+  - **`recordAliases(root: string, items: WorkItem[]): number`** (in `worklist.ts`) is built only from refs that were actually resolved.
+    - For each ref in `item.refs` whose own `url` normalizes differently from `item.url`, it adds `${ref.entity}|${normalizeUrl(ref.url)}` → `normalizeUrl(item.url)`.
+    - An entity that cited the article directly gets no alias.
+    - It merges with the existing file, writes it sorted as `JSON.stringify(obj, null, 2) + '\n'`, and returns the number of aliases added.
   - **CLI steps:**
     - `harvest`: `discoverRefs`, then write `.backfill/harvest.json`.
     - `worklist`:
       - Reads `harvest.json` and `.backfill/homepage-resolved.json`, if present.
       - Writes `.backfill/worklist.json` and `.backfill/homepage-input.json`: `[{ hid, url, names, refs }]` for every item still classed `homepage`.
+      - Calls `recordAliases(root, items)` for every item, in every collection.
       - Prints counts by class.
+
+      Aliases record a fact about the resolution, not about the outcome. Writing them before any check means the matcher sees them in every later step, so a published or held article reconciles its original homepage refs. Without them, the `holds` step would turn a successfully published resolved item into a bogus `partial` hold. An alias stays inert until an event or hold exists.
 
 - [ ] **Step 1: Write failing tests.**
   - **harvest**, temp repo: base with `companies/a.json` (one news item, `funding: "EUR 12M"`). Ref `chore/auto-refresh-1` (older) sets funding to `"EUR 13M"`. Ref `chore/auto-refresh-2` (newer):
@@ -428,7 +437,6 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
 - Produces:
   ```ts
   export async function applySources(root: string, sources: HarvestSource[], collection: Collection, fetchPage: (url: string) => Promise<FetchedPage>): Promise<{ applied: number; dropped: Array<{ entity: string; url: string; reason: string }> }>;
-  export function recordAliases(root: string, items: WorkItem[]): number;
   export type ReconcileRow = { entity: string; url: string; origin: 'legacy' | 'harvest'; status: 'event' | 'held' | 'missing'; eventId?: string; reason?: string };
   export function reconcile(root: string, harvest: Harvest | null, collection?: Collection): { rows: ReconcileRow[]; counts: { event: number; held: number; missing: number }; changes: Array<{ entity: string; field: string; to: unknown; status: 'deferred' | 'superseded' }> };
   export function sampleEvents(events: EventRecord[], n: number, seed: number): EventRecord[];
@@ -438,7 +446,6 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
   - A source is kept when `isCredibleSource(source.source)` is true, `isBlocklistedSource(source.source)` is false, the URL isn't already in the entry's `sources`, and the fetch gives status 200.
   - Kept sources are written with `appendToTopLevelArray(raw, 'sources', kept)`, one write per entry file.
   - The others are dropped with a reason: `not-credible`, `blocklisted`, `duplicate` or `status <n>`.
-- **`recordAliases`:** built only from refs that were actually resolved. For each ref in `item.refs` whose own `url` normalizes differently from `item.url`, it adds `${ref.entity}|${normalizeUrl(ref.url)}` → `normalizeUrl(item.url)`. An entity that cited the article directly gets no alias. The file is written sorted, as `JSON.stringify(obj, null, 2) + '\n'`.
 - **`reconcile`:**
   - Rows are every `scanLegacy` item plus every harvested news item.
   - Each row's status is `buildMatcher(loadEventRecords(root), readHeldList(root), loadAliases(root))(entity, url)`. `null` → `missing`.
@@ -447,7 +454,7 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
 - **`sampleEvents`:** deterministic (mulberry32 on `seed`), over events with `origin: 'backfill'` and an entity in the collection.
 - **`sampleMarkdown`:** a table with columns `Entity | Type | Date | Summary | Quote | Source`.
 - **CLI steps:**
-  - `apply --collection c`: `applySources`, then `recordAliases` for that collection's pending items.
+  - `apply --collection c`: `applySources`. Aliases are already written by the `worklist` step (Task 4).
   - `sample --collection c --n N --seed S`: prints the markdown.
 
 - [ ] **Step 1: Write failing tests.**
@@ -457,6 +464,12 @@ PR 2b is over the 400-line target, about 1,000 lines and mostly tests. It is one
     - a homepage item resolved to an article that is held, with the alias recorded → `held` (Review Focus 5)
     - an alias pointing to a URL with no event and no hold → `missing`
     - `recordAliases` on an item where `companies/a` cited homepage H and `companies/b` cited article U directly (resolved H → U) writes only `companies/a|H → U`
+    - **Integration, resolved homepage published end to end:**
+      - legacy `companies/a` cites H, resolved to U
+      - `buildWorklist` and `recordAliases`, then `runCheck` publishes U from a fake `fetchPage` serving a fixture page
+      - then the `holds` step logic (`pendingItems` and `recordHolds`), then `reconcile`
+
+      Expect `companies/a|H` as `event`, no `possible-duplicate` hold, and `missing: 0`.
     - an item with neither → `missing`, and the CLI exits with 1
   - `applySources`:
     - a blocklisted URL → dropped `blocklisted`
