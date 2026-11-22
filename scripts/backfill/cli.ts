@@ -4,6 +4,9 @@ import { parseArgs } from 'node:util';
 import { z } from 'zod';
 import { eventFields, isoDate } from '../../src/lib/events/schema';
 import { fetchPageLive, loadEntityIndex, readHeldList } from '../events/run';
+import { applySources } from './apply';
+import { reconcile } from './reconcile';
+import { sampleEvents, sampleMarkdown } from './sample';
 import { buildMatcher, loadAliases, loadEventRecords } from './match';
 import { buildBatches, type BatchEntry } from './batches';
 import { buildCandidates } from './candidates';
@@ -15,7 +18,7 @@ import { scanLegacy } from './legacy';
 import { COLLECTIONS, hash12, type Collection, type Harvest, type WorkClass, type WorkItem } from './types';
 import { buildWorklist, pendingItems, recordAliases } from './worklist';
 
-const usage = 'Usage: npm run backfill -- <step> [--collection <c>] [--today YYYY-MM-DD]';
+const usage = 'Usage: npm run backfill -- <step> [--collection <c>] [--today YYYY-MM-DD] [--n N --seed S]';
 const homepageResolutions = z.array(z.strictObject({
   hid: z.string().regex(/^[0-9a-f]{12}$/),
   url: eventFields.source.shape.url.nullable(),
@@ -27,6 +30,8 @@ async function main(): Promise<void> {
     options: {
       collection: { type: 'string' },
       today: { type: 'string' },
+      n: { type: 'string' },
+      seed: { type: 'string' },
     },
   });
   if (positionals.length !== 1) throw new Error(usage);
@@ -40,13 +45,15 @@ async function main(): Promise<void> {
     dateStyle: 'short',
   }).format(new Date()));
 
-  await dispatch(positionals[0], { root: process.cwd(), collection, today });
+  await dispatch(positionals[0], { root: process.cwd(), collection, today, n: values.n, seed: values.seed });
 }
 
-async function dispatch(step: string, { root, collection, today }: {
+async function dispatch(step: string, { root, collection, today, n, seed }: {
   root: string;
   collection?: Collection;
   today: string;
+  n?: string;
+  seed?: string;
 }): Promise<void> {
   const dir = join(root, '.backfill');
   function read<T>(file: string): T | null {
@@ -157,10 +164,36 @@ async function dispatch(step: string, { root, collection, today }: {
       console.log(recordHolds(root, holds, today));
       return;
     }
-    case 'apply':
-    case 'reconcile':
-    case 'sample':
-      throw new Error(`Backfill step "${step}" is not implemented yet.`);
+    case 'apply': {
+      if (!collection) throw new Error('apply requires --collection');
+      const sources = read<Harvest>('harvest.json')?.sources ?? [];
+      const { applied, dropped } = await applySources(root, sources, collection, fetchPageLive);
+      console.log({ applied, dropped: dropped.length });
+      for (const item of dropped) console.log(JSON.stringify(item));
+      return;
+    }
+    case 'reconcile': {
+      if (!collection) throw new Error('reconcile requires --collection');
+      const { rows, counts, changes } = reconcile(root, read<Harvest>('harvest.json'), collection);
+      console.log(counts);
+      for (const row of rows) {
+        if (row.status !== 'event') console.log(JSON.stringify(row));
+      }
+      for (const change of changes) console.log(JSON.stringify(change));
+      if (counts.missing > 0) process.exitCode = 1;
+      return;
+    }
+    case 'sample': {
+      if (!collection) throw new Error('sample requires --collection');
+      const count = Number(n);
+      const sampleSeed = Number(seed);
+      if (!n?.trim() || !Number.isSafeInteger(count) || count < 0 || !seed?.trim() || !Number.isSafeInteger(sampleSeed)) {
+        throw new Error('sample requires --n (a non-negative integer) and --seed (an integer)');
+      }
+      const events = loadEventRecords(root).filter(event => event.entities.some(entity => entity.startsWith(collection + '/')));
+      console.log(sampleMarkdown(sampleEvents(events, count, sampleSeed)));
+      return;
+    }
     default:
       throw new Error(`Unknown backfill step "${step}".\n${usage}`);
   }
