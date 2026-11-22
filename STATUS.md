@@ -3,9 +3,9 @@
 Session handoff document. Read at session start; update before ending. See
 `CLAUDE.md` → "Context & Autonomy" for the rules that govern this file.
 
-**Last updated:** 2026-11-20 (citation corrections only; the State line below is as of 2026-09-06 and was not re-verified)
+**Last updated:** 2026-11-22 (event history through the backfill tooling; the rest of the State line is as of 2026-09-06 and was not re-verified)
 **Branch:** `main`
-**State:** Audit Dashboard rebuilt on real evidence; merging to `main` deploys and is verified against production; 0 open Dependabot alerts; Astro 7. **Two launchd agents now run unattended** — the weekly sweep and a merge-when-green job. **224 of 226 entries published.**
+**State:** Audit Dashboard rebuilt on real evidence; merging to `main` deploys and is verified against production; 1 open moderate Dependabot alert (`fflate`, via `satori`); Astro 7. **Two launchd agents now run unattended** — the weekly sweep and a merge-when-green job. **224 of 226 entries published.**
 
 ## What's done — 2026-08-31 → 2026-09-02
 
@@ -175,14 +175,33 @@ which asserted a positive quantum result from a paper concluding the opposite; a
 looks for contradictions between the texts it fetches. Neither checks that an arXiv id is the
 paper its title names, or that a link still resolves.
 
+## What's done — 2026-11-22
+
+- **Event history foundation is merged and live.** Event schema, deterministic checker, held
+  list and `/events.json` (#171); merge-job import fix (#172); duplicate-key repair and backfill
+  guards (#173); backfill tooling (#174). No legacy news has been converted yet.
+- **The citation corrections are merged** (#166), with the EDF attribution corrected. Vercel
+  shows `c653e76` ready in production and the corrected text is live.
+
 ## What's next / open
 
-- **Eleven weekly refresh PRs are open and unmerged** (#141 → #164, 2026-09-06 → 2026-11-20).
-      All are drafts without the `auto-merge` label, so the merge job skips them, and `main` has
-      not changed since 2026-09-06. This is the situation #85 cleaned up once already. Dependabot
-      #155 (2026-10-16) is also still open although it is eligible, and the sweep failed on
-      2026-10-11 (#152); whether the merge job is running was not investigated. Unblock: Rune
-      (the tier policy below, or the label), then a consolidation like #85.
+- **Next: run the event backfill, starting with use-cases.** Wait until the 2026-11-22 23:59
+      routine run has opened its PR. Follow the Runbook in
+      `docs/superpowers/plans/2026-11-22-event-history-pr2-backfill.md`, in the worktree
+      `~/Developer/.worktrees/events-backfill` (it keeps `.backfill/`), with a new branch from
+      `origin/main` per data PR. Order: use-cases, challenges, benchmarks, resources, companies.
+      Real page fetches and real model output are untested until the first data PR.
+- **Do not merge the stuck refresh PRs** (#141 to #164, 12 PRs, plus tonight's). The backfill
+      harvests their news, then closes them after the last data PR. Their 19 field changes are
+      reported only, and are applied in PR 5.
+- **After the backfill:** PR 3 (timeline UI, needs visual sign-off), PR 4 (rulebook), PR 5
+      (routine instructions, Codex merge gate, fact-change gate), PR 6 (retire the local sweep).
+- **Blocked on Rune before PR 5:** connect Codex GitHub code review to this repo and enable the
+      `main` ruleset (require a PR, block force-push and deletion, require conversation
+      resolution, empty bypass list).
+- **Open, not urgent:** issue #170 is probably a false alarm but was not checked. The `fflate`
+      alert is in a dependency of `satori`, and this repo's code does not call `fflate` directly.
+      The McKinsey and `hqs.de` source links could not be confirmed from a script.
 - **No check verifies citation identity or link health.** A registry lookup per source (arXiv
       API, DOI content negotiation) would have caught all ten title mismatches. Found and not
       changed: `vehicle-routing-optimization` (arXiv:2002.01351) and `q-score` (arXiv:2102.12973)
