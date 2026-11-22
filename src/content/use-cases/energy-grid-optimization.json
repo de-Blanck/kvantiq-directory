@@ -13,7 +13,7 @@
   "description": "Using quantum optimization to manage complex energy distribution networks, balance renewable energy sources, and optimize grid stability in real-time.",
   "problem": "Modern power grids must balance fluctuating renewable energy sources, unpredictable demand, storage systems, and distributed generation. The combinatorial optimization problem grows exponentially with grid complexity, making real-time optimization classically challenging.",
   "approach": "Quantum annealing and QAOA formulate energy optimization tasks such as unit commitment, facility location and electric-vehicle charging schedules as binary optimization (QUBO) problems. The cited studies compare these approaches with classical algorithms and describe the limits of current hardware; they do not show a speed advantage over classical methods.",
-  "results": "In numerical tests on small instances, QAOA matched or improved on the approximation ratios of conventional approximation algorithms for two electric-vehicle smart-charging problems (EDF and Pasqal, 2021). EDF, Pasqal and GENCI reported an energy demand forecasting run on more than 100 qubits in January 2025. Pasqal has worked with EDF's R&D department since 2018.",
+  "results": "In numerical tests on small instances, QAOA matched or improved on the approximation ratios of conventional approximation algorithms for two electric-vehicle smart-charging problems (EDF and Pasqal, 2021). Pasqal and GENCI, in partnership with EDF, reported an energy demand forecasting run on more than 100 qubits in January 2025. Pasqal has worked with EDF's R&D department since 2018.",
   "companies": [
     "pasqal",
     "multiverse-computing"
