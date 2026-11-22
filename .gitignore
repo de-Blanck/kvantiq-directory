@@ -46,3 +46,6 @@ data/weekly-agent-prompt.md
 
 # Event checker staging files
 src/content/events/**/*.tmp
+
+# Backfill working files
+.backfill/
