@@ -14,7 +14,7 @@ const trackedFields: Record<Collection, string[]> = {
   'use-cases': [],
 };
 
-type EntrySource = { url: string; title?: string; dateAccessed?: string };
+type EntrySource = HarvestSource['source'];
 
 function git(root: string, ...args: string[]): string {
   return execFileSync('git', ['-C', root, ...args], { encoding: 'utf8' });
@@ -77,12 +77,13 @@ export function harvest(root: string, refs: string[], mainRef = 'origin/main'): 
       const baseSources = topLevelArrays(before, 'sources').flat() as EntrySource[];
       const branchSources = topLevelArrays(after, 'sources').flat() as EntrySource[];
       const baseUrls = new Set(baseSources.map(source => source.url));
-      for (const { url, title, dateAccessed } of branchSources) {
+      for (const source of branchSources) {
+        const { url } = source;
         if (baseUrls.has(url)) continue;
         const foundOn = firstSeen(url);
         keepEarliest(sources, url, {
           entity,
-          source: { type: 'url', url, title: title ?? url, dateAccessed: dateAccessed ?? foundOn },
+          source,
           refs: [ref],
           foundOn,
         });

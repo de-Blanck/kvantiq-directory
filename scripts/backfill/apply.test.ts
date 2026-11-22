@@ -47,3 +47,22 @@ test('apply drops blocked and unavailable sources, appends once and skips duplic
   assert.deepEqual(fetched, [unavailable.source.url, credible.source.url]);
   assert.equal(readFileSync(path, 'utf8'), raw);
 });
+
+
+test('apply preserves source metadata and absent titles and rejects invalid shapes', async t => {
+  const root = mkdtempSync(join(tmpdir(), 'backfill-source-shape-'));
+  t.after(() => rmSync(root, { recursive: true, force: true }));
+  mkdirSync(join(root, 'src/content/companies'), { recursive: true });
+  const path = join(root, 'src/content/companies/a.json');
+  writeFileSync(path, '{"sources":[]}');
+  const sources = [
+    { type: 'arxiv', url: 'https://arxiv.org/abs/1234.5678', authors: 'A. Author', datePublished: '2026-01-01' },
+    { type: 'url', url: 'https://www.reuters.com/article/no-title' },
+    { type: 'blog', url: 'https://www.reuters.com/article/invalid', title: 'Invalid' },
+  ];
+  const result = await applySources(root, sources.map(source => ({ entity: 'companies/a', source, refs: [] })) as HarvestSource[],
+    'companies', async url => ({ status: 200, finalUrl: url, html: '', contentType: 'text/html' }));
+  assert.equal(result.applied, 2);
+  assert.deepEqual(result.dropped, [{ entity: 'companies/a', url: sources[2].url, reason: 'invalid-shape' }]);
+  assert.deepEqual(JSON.parse(readFileSync(path, 'utf8')).sources, sources.slice(0, 2));
+});

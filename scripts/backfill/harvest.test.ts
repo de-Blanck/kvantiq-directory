@@ -37,7 +37,7 @@ test('harvest reports added citations and the latest scalar changes from exact h
   git(['commit', '-m', 'Base']);
   git(['checkout', '-b', older]);
   const earlierNews = { ...added, url: added.url + '?utm_source=refresh' };
-  const earlierSource = { type: 'arxiv', url: source.url + '?utm_source=refresh', title: source.title };
+  const earlierSource = { type: 'arxiv', url: source.url + '?utm_source=refresh', title: source.title, authors: 'A. Author', datePublished: '2026-01-20' };
   write(a, { ...base, funding: 'EUR 13M', news: [old, earlierNews], sources: [earlierSource] });
   git(['commit', '-am', 'Older refresh'], '2026-02-01');
   git(['checkout', '-b', newer, 'main']);
@@ -60,7 +60,7 @@ test('harvest reports added citations and the latest scalar changes from exact h
   ]);
   assert.deepEqual(result.sources, [{
     entity: 'companies/a',
-    source: { ...source, url: earlierSource.url },
+    source: earlierSource,
     refs: [newer, older],
   }]);
   assert.deepEqual(result.changes.find(change => change.field === 'funding'), {

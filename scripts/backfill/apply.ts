@@ -4,7 +4,7 @@ import { isBlocklistedSource } from '../../src/lib/credibility.mjs';
 import { isCredibleSource } from '../../src/lib/source-bar';
 import { appendToTopLevelArray, topLevelArrays } from '../raw-json';
 import type { FetchedPage } from '../events/check';
-import type { Collection, HarvestSource } from './types';
+import { harvestedSourceSchema, type Collection, type HarvestSource } from './types';
 
 export async function applySources(
   root: string,
@@ -32,7 +32,9 @@ export async function applySources(
     for (const source of incoming) {
       const { url } = source;
       let reason: string;
-      if (isBlocklistedSource(source)) {
+      if (!harvestedSourceSchema.safeParse(source).success) {
+        reason = 'invalid-shape';
+      } else if (isBlocklistedSource(source)) {
         reason = 'blocklisted';
       } else if (!isCredibleSource(source)) {
         reason = 'not-credible';

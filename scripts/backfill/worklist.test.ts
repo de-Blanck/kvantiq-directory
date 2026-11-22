@@ -82,6 +82,8 @@ test('worklist clamps the first-seen date to the earliest news date', (t) => {
   }
   const inputPath = join(root, '.backfill/homepage-input.json');
   const hid = hash12(homepage);
+  mkdirSync(join(root, '.backfill'), { recursive: true });
+  writeFileSync(join(root, '.backfill/harvest.json'), JSON.stringify(harvested()));
   assert.match(runWorklist(), /homepage: 1/);
   const [input] = JSON.parse(readFileSync(inputPath, 'utf8'));
   assert.equal(input.hid, hid);
@@ -116,4 +118,31 @@ test('pending items skip complete coverage and flag only unmatched entities on a
   assert.deepEqual(pendingItems(items, 'use-cases', buildMatcher([complete], [], {}), [complete]), {
     pending: [], partial: [],
   });
+});
+
+
+test('listing dates over seven days are separated, while seven days stay fetch', () => {
+  const url = 'https://www.hpcwire.com/off-the-wire/';
+  const a = { ...news('companies', 'pasqal', url), date: '2026-08-28' };
+  const b = { ...news('companies', 'qblox', url), date: '2026-06-25' };
+  assert.equal(buildWorklist('.', [], harvested(a, b), [])[0].cls, 'listing');
+  assert.equal(buildWorklist('.', [], harvested(a, { ...b, date: '2026-08-21' }), [])[0].cls, 'fetch');
+});
+
+test('withdrawing a homepage resolution removes its alias', t => {
+  const root = mkdtempSync(join(tmpdir(), 'backfill-withdraw-'));
+  t.after(() => rmSync(root, { recursive: true, force: true }));
+  const h = 'https://aqt.eu/';
+  const input = harvested(news('companies', 'a', h));
+  recordAliases(root, buildWorklist(root, [], input, [{ hid: hash12(h), url }]));
+  const items = buildWorklist(root, [], input, [{ hid: hash12(h), url: null }]);
+  recordAliases(root, items);
+  assert.deepEqual(loadAliases(root), {});
+  assert.equal(items[0].cls, 'homepage');
+});
+
+test('homepage classification requires an empty query', () => {
+  for (const url of ['https://www.aqt.eu', 'https://aqt.eu/'])
+    assert.equal(buildWorklist('.', [], harvested(news('companies', 'a', url)), [])[0].cls, 'homepage');
+  assert.equal(buildWorklist('.', [], harvested(news('companies', 'a', 'https://www.hpcwire.com/?p=188987')), [])[0].cls, 'fetch');
 });

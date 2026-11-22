@@ -12,8 +12,8 @@ function classify(url: string): WorkClass {
   const host = hostOf(url);
   if (POINTER_ONLY_DOMAINS.some(domain => isHostOrSubdomain(host, domain))) return 'pointer-only';
   if (isBlocklistedSource({ url })) return 'blocklisted';
-  const { pathname } = new URL(url);
-  return pathname === '' || pathname === '/' ? 'homepage' : 'fetch';
+  const { pathname, search } = new URL(url);
+  return (pathname === '' || pathname === '/') && search === '' ? 'homepage' : 'fetch';
 }
 
 export function buildWorklist(
@@ -52,7 +52,10 @@ export function buildWorklist(
     const happenedOnHint = refs.map(ref => ref.date).sort()[0];
     const earliest = group.map(entry => entry.foundOn ?? happenedOnHint).sort()[0];
     const foundOn = earliest < happenedOnHint ? happenedOnHint : earliest;
-    return { id: hash12(url), url, resolvedFrom, entities, collections, cls: classify(url), refs, happenedOnHint, foundOn };
+    let cls = classify(url);
+    const dates = refs.map(ref => Date.parse(ref.date));
+    if (cls === 'fetch' && Math.max(...dates) - Math.min(...dates) > 7 * 86400000) cls = 'listing';
+    return { id: hash12(url), url, resolvedFrom, entities, collections, cls, refs, happenedOnHint, foundOn };
   });
 }
 
@@ -87,6 +90,7 @@ export function recordAliases(root: string, items: WorkItem[]): number {
     for (const ref of item.refs) {
       const original = normalizeUrl(ref.url);
       if (original !== resolved) aliases[`${ref.entity}|${original}`] = resolved;
+      else delete aliases[`${ref.entity}|${original}`];
     }
   }
   const keys = Object.keys(aliases).sort();

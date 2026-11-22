@@ -16,7 +16,7 @@ const batches: BatchEntry[][] = [items.map(item => ({
 const output = (id = 'a') => ({ id, status: 'event', entities: ['companies/a'], type: 'product',
   happenedOn: '2026-02-01', summary: 'A released a product.', quote: 'A released a new quantum product today.', publisher: 'Example' });
 function build(raw?: string, second: string | null = null) {
-  return buildCandidates(batches, new Map(items.map(item => [item.id, item])), new Map(raw === undefined ? [] : [[0, raw]]), second);
+  return buildCandidates(batches, new Map(items.map(item => [item.id, item])), raw === undefined ? [] : [raw], second);
 }
 const expectedHolds = items.map(item => ({ entities: item.entities, sourceUrl: item.url, reason: 'not-extracted' }));
 
@@ -38,7 +38,7 @@ test('invalid, missing, duplicate and no-event entries are held; unknown ids are
     [{ ...output(), happenedOn: '2026-02-30' }],
     [{ ...output(), type: 'funding' }],
     [{ id: 'a', status: 'no-event', reason: 'No dated event' }],
-    [output(), output()], [], [output('unknown')],
+    [output(), { ...output(), summary: 'Conflict' }], [], [output('unknown')],
   ]) {
     const result = build(JSON.stringify(rows));
     assert.deepEqual(result.holds, expectedHolds);
@@ -73,4 +73,14 @@ test('second opinion adds matching types and leaves missing ids unchecked', () =
   const candidates = result.candidates.map(candidate => candidateSchema.parse(candidate));
   assert.equal(candidates[0].typeSecondOpinion, 'people');
   assert.ok(!('typeSecondOpinion' in candidates[1]));
+});
+
+test('extraction rows pool by id across files and collapse identical rows', () => {
+  const split = batches[0].map(entry => [entry]);
+  const build = (raw: string[]) => buildCandidates(split, new Map(items.map(item => [item.id, item])), raw, null);
+  assert.equal(build([JSON.stringify([output('b')]), JSON.stringify([output()])]).candidates.length, 2);
+  assert.equal(build([JSON.stringify([output(), output('b')]), JSON.stringify([output()])]).candidates.length, 2);
+  const result = build([JSON.stringify([output(), output('b')]), JSON.stringify([{ ...output(), summary: 'Conflict' }]), 'bad json']);
+  assert.equal(result.candidates.length, 1);
+  assert.deepEqual(result.holds, [expectedHolds[0]]);
 });

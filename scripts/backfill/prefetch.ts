@@ -66,6 +66,10 @@ export async function prefetchAll(
         lastStart = performance.now();
         try {
           const page = await fetchPage(target.url);
+          if (page.status === 0 || page.status === 429 || page.status >= 500) {
+            counts.failed++;
+            continue;
+          }
           Object.assign(cached, {
             status: page.status, contentType: page.contentType, finalUrl: page.finalUrl,
             publishedDates: publishedDates(page.html), text: htmlToText(page.html),
@@ -74,6 +78,7 @@ export async function prefetchAll(
         } catch (error) {
           cached.error = error instanceof Error ? error.message : String(error);
           counts.failed++;
+          continue;
         }
         // A crash leaves only a .tmp file, which a retry can safely replace.
         writeFileSync(path + '.tmp', JSON.stringify(cached, null, 2) + '\n');

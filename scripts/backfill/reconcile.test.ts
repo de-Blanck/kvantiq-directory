@@ -135,6 +135,8 @@ test('a resolved legacy homepage reconciles after publication without a partial 
 test('reconcile CLI prints missing rows and exits 1', t => {
   const { root, entry } = setup(t);
   entry('companies/a', unmatched);
+  mkdirSync(join(root, '.backfill'));
+  writeFileSync(join(root, '.backfill/harvest.json'), JSON.stringify({ news: [], sources: [], changes: [] }));
   const result = spawnSync(process.execPath, [
     '--import', import.meta.resolve('tsx'), fileURLToPath(new URL('./cli.ts', import.meta.url)),
     'reconcile', '--collection', 'companies',

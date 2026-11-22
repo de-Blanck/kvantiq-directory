@@ -10,7 +10,8 @@ import { sampleEvents, sampleMarkdown } from './sample';
 import { buildMatcher, loadAliases, loadEventRecords } from './match';
 import { buildBatches, type BatchEntry } from './batches';
 import { buildCandidates } from './candidates';
-import { recordHolds } from './holds';
+import { checkPrerequisites } from './prerequisites';
+import { recordHolds, redirectHolds } from './holds';
 import type { HoldReason } from '../events/check';
 import { prefetchAll, readCachedPage } from './prefetch';
 import { discoverRefs, harvest } from './harvest';
@@ -55,6 +56,7 @@ async function dispatch(step: string, { root, collection, today, n, seed }: {
   n?: string;
   seed?: string;
 }): Promise<void> {
+  checkPrerequisites(root, step);
   const dir = join(root, '.backfill');
   function read<T>(file: string): T | null {
     const path = join(dir, file);
@@ -84,7 +86,7 @@ async function dispatch(step: string, { root, collection, today, n, seed }: {
       recordAliases(root, items);
       write('worklist.json', items);
       write('homepage-input.json', homepageInput);
-      const counts: Record<WorkClass, number> = { fetch: 0, 'pointer-only': 0, blocklisted: 0, homepage: 0 };
+      const counts: Record<WorkClass, number> = { fetch: 0, 'pointer-only': 0, blocklisted: 0, homepage: 0, listing: 0 };
       for (const item of items) counts[item.cls]++;
       console.log(counts);
       return;
@@ -128,11 +130,11 @@ async function dispatch(step: string, { root, collection, today, n, seed }: {
       const pattern = new RegExp(`^${collection}-\\d{2,}\\.json$`);
       const files = existsSync(batchDir) ? readdirSync(batchDir).filter(name => pattern.test(name)).sort() : [];
       const batches = files.map(file => read<BatchEntry[]>(join('batches', file))!);
-      const extracted = new Map<number, string>();
-      for (const [index, file] of files.entries()) {
-        const path = join(dir, 'extracted', file);
-        if (existsSync(path)) extracted.set(index, readFileSync(path, 'utf8'));
-      }
+      const extractedDir = join(dir, 'extracted');
+      const extracted = existsSync(extractedDir)
+        ? readdirSync(extractedDir).filter(name => pattern.test(name)).sort()
+          .map(file => readFileSync(join(extractedDir, file), 'utf8'))
+        : [];
       const secondPath = join(dir, 'second-opinion', `${collection}.json`);
       const result = buildCandidates(batches, new Map(items.map(item => [item.id, item])), extracted,
         existsSync(secondPath) ? readFileSync(secondPath, 'utf8') : null);
@@ -148,7 +150,7 @@ async function dispatch(step: string, { root, collection, today, n, seed }: {
       const events = loadEventRecords(root);
       const match = buildMatcher(events, readHeldList(root), loadAliases(root));
       const { pending, partial } = pendingItems(items, collection, match, events);
-      const holds: Array<{ entities: string[]; sourceUrl: string; reason: HoldReason }> = [...partial];
+      const holds: Array<{ entities: string[]; sourceUrl: string; reason: HoldReason }> = [...partial, ...redirectHolds(pending, id => readCachedPage(join(dir, 'pages'), id), events, match)];
       const holdDir = join(dir, 'holds');
       if (existsSync(holdDir)) {
         for (const file of readdirSync(holdDir).sort()) {
@@ -159,7 +161,9 @@ async function dispatch(step: string, { root, collection, today, n, seed }: {
       }
       const reasons = { 'pointer-only': 'pointer-only', blocklisted: 'source-not-credible', homepage: 'homepage-url' } as const;
       for (const item of pending) {
-        if (item.cls !== 'fetch') holds.push({ entities: item.entities, sourceUrl: item.url, reason: reasons[item.cls] });
+        if (item.cls === 'listing') {
+          for (const entity of new Set(item.entities)) holds.push({ entities: [entity], sourceUrl: item.url, reason: 'homepage-url' });
+        } else if (item.cls !== 'fetch') holds.push({ entities: item.entities, sourceUrl: item.url, reason: reasons[item.cls] });
       }
       console.log(recordHolds(root, holds, today));
       return;

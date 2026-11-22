@@ -30,7 +30,7 @@ export function parseModelJson(raw: string): unknown {
 export function buildCandidates(
   batches: BatchEntry[][],
   items: Map<string, WorkItem>,
-  extractedRaw: Map<number, string>,
+  extractedRaw: string[],
   secondRaw: string | null,
 ): {
   candidates: unknown[];
@@ -43,17 +43,25 @@ export function buildCandidates(
   const candidates: unknown[] = [];
   const holds: Array<{ entities: string[]; sourceUrl: string; reason: HoldReason }> = [];
   const secondOpinionInput: Array<{ id: string; quote: string; summary: string }> = [];
-  for (const [index, batch] of batches.entries()) {
-    let rows: unknown[] = [];
+  const rowsById = new Map<string, Map<string, unknown>>();
+  for (const raw of extractedRaw) {
     try {
-      const parsed = parseModelJson(extractedRaw.get(index) ?? '');
-      if (Array.isArray(parsed)) rows = parsed;
-    } catch { /* Unusable extraction holds every entry in this batch. */ }
+      const rows = parseModelJson(raw);
+      if (!Array.isArray(rows)) continue;
+      for (const row of rows) {
+        if (row === null || typeof row !== 'object' || typeof row.id !== 'string') continue;
+        const matches = rowsById.get(row.id) ?? new Map<string, unknown>();
+        matches.set(JSON.stringify(row), row);
+        rowsById.set(row.id, matches);
+      }
+    } catch { /* An unusable output contributes no rows. */ }
+  }
+  for (const batch of batches) {
     for (const entry of batch) {
       const item = items.get(entry.id);
       if (!item) throw new Error(`Missing work item ${entry.id}`);
       const hold = () => holds.push({ entities: item.entities, sourceUrl: item.url, reason: 'not-extracted' });
-      const matches = rows.filter(row => row !== null && typeof row === 'object' && 'id' in row && row.id === entry.id);
+      const matches = [...(rowsById.get(entry.id)?.values() ?? [])];
       if (matches.length !== 1) { hold(); continue; }
       const parsed = extractionItemSchema.safeParse(matches[0]);
       if (!parsed.success || parsed.data.status !== 'event') { hold(); continue; }

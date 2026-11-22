@@ -1,3 +1,4 @@
+import { z } from 'zod';
 import { createHash } from 'node:crypto';
 import { normalizeUrl } from '../../src/lib/events/url';
 import type { HoldReason } from '../events/check';
@@ -31,9 +32,18 @@ export function hash12(url: string): string {
   return createHash('sha256').update(normalizeUrl(url)).digest('hex').slice(0, 12);
 }
 
+export const harvestedSourceSchema = z.object({
+  type: z.enum(['doi', 'arxiv', 'url', 'website', 'press-release']),
+  url: z.string().url(),
+  title: z.string().trim().min(1).optional(),
+  authors: z.string().trim().min(1).optional(),
+  datePublished: z.string().trim().min(1).optional(),
+  dateAccessed: z.string().trim().min(1).optional(),
+});
+
 export type HarvestSource = {
   entity: string;
-  source: { type: 'url'; url: string; title: string; dateAccessed: string };
+  source: z.infer<typeof harvestedSourceSchema>;
   refs: string[];
 };
 
@@ -54,7 +64,7 @@ export type Harvest = {
   changes: HarvestChange[];
 };
 
-export type WorkClass = 'fetch' | 'pointer-only' | 'blocklisted' | 'homepage';
+export type WorkClass = 'fetch' | 'pointer-only' | 'blocklisted' | 'homepage' | 'listing';
 
 export type WorkItem = {
   id: string;
