@@ -3,11 +3,13 @@ import { join } from 'node:path';
 import { parseArgs } from 'node:util';
 import { z } from 'zod';
 import { eventFields, isoDate } from '../../src/lib/events/schema';
-import { loadEntityIndex } from '../events/run';
+import { fetchPageLive, loadEntityIndex, readHeldList } from '../events/run';
+import { buildMatcher, loadAliases, loadEventRecords } from './match';
+import { prefetchAll } from './prefetch';
 import { discoverRefs, harvest } from './harvest';
 import { scanLegacy } from './legacy';
-import { COLLECTIONS, hash12, type Collection, type Harvest, type WorkClass } from './types';
-import { buildWorklist, recordAliases } from './worklist';
+import { COLLECTIONS, hash12, type Collection, type Harvest, type WorkClass, type WorkItem } from './types';
+import { buildWorklist, pendingItems, recordAliases } from './worklist';
 
 const usage = 'Usage: npm run backfill -- <step> [--collection <c>] [--today YYYY-MM-DD]';
 const homepageResolutions = z.array(z.strictObject({
@@ -15,7 +17,7 @@ const homepageResolutions = z.array(z.strictObject({
   url: eventFields.source.shape.url.nullable(),
 }));
 
-function main(): void {
+async function main(): Promise<void> {
   const { values, positionals } = parseArgs({
     allowPositionals: true,
     options: {
@@ -34,14 +36,14 @@ function main(): void {
     dateStyle: 'short',
   }).format(new Date()));
 
-  dispatch(positionals[0], { root: process.cwd(), collection, today });
+  await dispatch(positionals[0], { root: process.cwd(), collection, today });
 }
 
-function dispatch(step: string, { root }: {
+async function dispatch(step: string, { root, collection, today }: {
   root: string;
   collection?: Collection;
   today: string;
-}): void {
+}): Promise<void> {
   const dir = join(root, '.backfill');
   function read<T>(file: string): T | null {
     const path = join(dir, file);
@@ -75,7 +77,18 @@ function dispatch(step: string, { root }: {
       console.log(counts);
       return;
     }
-    case 'prefetch':
+    case 'prefetch': {
+      if (!collection) throw new Error('prefetch requires --collection');
+      const items = read<WorkItem[]>('worklist.json');
+      if (!items) throw new Error('Missing .backfill/worklist.json; run worklist first.');
+      const events = loadEventRecords(root);
+      const match = buildMatcher(events, readHeldList(root), loadAliases(root));
+      const { pending } = pendingItems(items, collection, match, events);
+      console.log(await prefetchAll(pending.filter(item => item.cls === 'fetch'), {
+        cacheDir: join(dir, 'pages'), fetchPage: fetchPageLive, today,
+      }));
+      return;
+    }
     case 'batches':
     case 'candidates':
     case 'holds':
@@ -89,7 +102,7 @@ function dispatch(step: string, { root }: {
 }
 
 try {
-  main();
+  await main();
 } catch (error) {
   console.error(error instanceof Error ? error.message : String(error));
   process.exitCode = 1;
