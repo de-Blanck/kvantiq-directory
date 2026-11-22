@@ -1,7 +1,7 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { basename, join, relative } from 'node:path';
 import { topLevelArrays } from '../raw-json';
-import { COLLECTIONS, type LegacyItem } from './types';
+import { COLLECTIONS, type Collection, type LegacyItem } from './types';
 
 type LegacyNews = Pick<LegacyItem, 'url' | 'title' | 'source' | 'date'> & { excerpt?: string };
 
@@ -17,14 +17,16 @@ export function scanLegacy(root: string): LegacyItem[] {
 
     for (const path of files) {
       const file = relative(root, path);
-      const entity = `${collection}/${basename(path, '.json')}`;
-      const raw = readFileSync(path, 'utf8');
-      for (const news of topLevelArrays(raw, 'news')) {
-        for (const { url, title, excerpt, source, date } of news as LegacyNews[]) {
-          items.push({ entity, collection, file, url, title, excerpt: excerpt ?? null, source, date });
-        }
-      }
+      items.push(...scanEntryNews(readFileSync(path, 'utf8'), collection, file));
     }
   }
   return items;
+}
+
+export function scanEntryNews(raw: string, collection: Collection, file: string): LegacyItem[] {
+  const entity = `${collection}/${basename(file, '.json')}`;
+  const news = topLevelArrays(raw, 'news').flat() as LegacyNews[];
+  return news.map(({ url, title, excerpt, source, date }) => ({
+    entity, collection, file, url, title, excerpt: excerpt ?? null, source, date,
+  }));
 }
