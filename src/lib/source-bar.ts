@@ -2,7 +2,7 @@
  * The 3-credible-source publish gate.
  *
  * CLAUDE.md -> "Source credibility" sets the bar at three credible sources per
- * entry, and names `isBlocklistedSource` in scripts/ai-sweep.mjs as the canonical
+ * entry. `isBlocklistedSource` in src/lib/credibility.mjs is the canonical
  * definition of "credible". That function is imported here rather than
  * reimplemented, so the site, the sweep and `npm run audit:sources` cannot drift
  * apart on what counts.
@@ -11,7 +11,7 @@
  * from the sitemap and from the search index, and served noindex with a banner.
  * Their URLs keep working, so nothing already indexed turns into a 404.
  */
-import { isBlocklistedSource } from '../../scripts/ai-sweep.mjs';
+import { isBlocklistedSource } from './credibility.mjs';
 
 export const MIN_CREDIBLE_SOURCES = 3;
 
