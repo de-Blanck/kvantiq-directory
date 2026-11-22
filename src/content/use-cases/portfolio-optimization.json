@@ -21,14 +21,16 @@
     {
       "type": "arxiv",
       "url": "https://arxiv.org/abs/1911.05296",
-      "title": "Quantum computational finance: quantum algorithm for portfolio optimization",
-      "dateAccessed": "2026-03-19"
+      "title": "Portfolio rebalancing experiments using the Quantum Alternating Operator Ansatz",
+      "dateAccessed": "2026-11-20",
+      "authors": "Hodson, Ruck, Ong, Garvin et al."
     },
     {
       "type": "arxiv",
       "url": "https://arxiv.org/abs/2207.10555",
-      "title": "A survey of quantum computing for finance",
-      "dateAccessed": "2026-03-20"
+      "title": "Benchmarking the performance of portfolio optimization with QAOA",
+      "dateAccessed": "2026-11-20",
+      "authors": "Brandhofer, Braun, Dehn, Hellstern et al."
     },
     {
       "type": "doi",

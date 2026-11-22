@@ -13,23 +13,27 @@
   "description": "Applying quantum computing to optimize complex multi-tier supply chains, including supplier selection, inventory management, production scheduling, and distribution network design.",
   "problem": "Global supply chains involve thousands of interdependent decisions across suppliers, manufacturers, warehouses, and distribution centers. Classical optimization struggles with the combinatorial explosion of possible configurations, especially when incorporating uncertainty and real-time disruptions.",
   "approach": "Hybrid quantum-classical algorithms decompose supply chain problems into QUBO formulations suitable for quantum annealing or QAOA. Quantum processors explore vast solution spaces while classical systems handle constraints, forecasting, and decision implementation.",
-  "results": "Case studies with automotive and aerospace manufacturers show potential for 5-10% cost reductions through better inventory positioning and supplier coordination. Real-time disruption response is an emerging application area.",
+  "results": "A 2023 peer-reviewed study applied a hybrid workflow to multi-truck vehicle routing at the scale of a company's real supply-chain operations, using simulated annealing and the D-Wave hybrid solver as stand-ins for future quantum hardware, and reported strong performance in a realistic supply-chain simulation. A 2024 overview of the literature finds that most published approaches are hybrid and that practical use is limited by current hardware. The cited sources do not establish a cost saving over classical methods. Response to supply-chain disruptions is an active research direction.",
   "companies": [
     "multiverse-computing",
     "pasqal"
   ],
   "sources": [
     {
-      "type": "url",
-      "url": "https://www.accenture.com/us-en/insights/technology/quantum-computing-supply-chain",
-      "title": "Quantum Computing in Supply Chain Management",
-      "dateAccessed": "2026-03-19"
+      "type": "doi",
+      "url": "https://doi.org/10.1038/s41598-023-31765-8",
+      "title": "Supply chain logistics with quantum and classical annealing algorithms",
+      "authors": "Weinberg, Sanches, Ide et al.",
+      "datePublished": "2023-03-23",
+      "dateAccessed": "2026-11-20"
     },
     {
       "type": "arxiv",
-      "url": "https://arxiv.org/abs/2212.12239",
-      "title": "Quantum optimization for supply chain management: a survey",
-      "dateAccessed": "2026-03-20"
+      "url": "https://arxiv.org/abs/2402.17520",
+      "title": "Quantum Computing in Logistics and Supply Chain Management an Overview",
+      "authors": "Phillipson",
+      "datePublished": "2024-02-27",
+      "dateAccessed": "2026-11-20"
     },
     {
       "type": "url",

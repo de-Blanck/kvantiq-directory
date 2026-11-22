@@ -23,15 +23,19 @@
   "sources": [
     {
       "type": "arxiv",
-      "url": "https://arxiv.org/abs/2006.14510",
-      "title": "Quantum computational chemistry for drug discovery",
-      "dateAccessed": "2026-03-19"
+      "url": "https://arxiv.org/abs/2301.04114",
+      "title": "Drug design on quantum computers",
+      "authors": "Santagati, Aspuru-Guzik, Babbush, Degroote et al.",
+      "datePublished": "2023-01-10",
+      "dateAccessed": "2026-11-20"
     },
     {
       "type": "url",
-      "url": "https://www.mckinsey.com/industries/life-sciences/our-insights/quantum-computing-in-drug-research-and-development",
-      "title": "McKinsey: Quantum computing in drug research and development",
-      "dateAccessed": "2026-03-20"
+      "url": "https://www.mckinsey.com/industries/life-sciences/our-insights/pharmas-digital-rx-quantum-computing-in-drug-research-and-development",
+      "title": "Pharma's digital Rx: Quantum computing in drug research and development",
+      "authors": "Evers, Heid, Ostojic (McKinsey & Company)",
+      "datePublished": "2021-06-18",
+      "dateAccessed": "2026-11-20"
     },
     {
       "type": "arxiv",
