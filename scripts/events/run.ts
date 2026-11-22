@@ -1,11 +1,11 @@
-import { existsSync, mkdirSync, readFileSync, readdirSync, renameSync, writeFileSync } from 'node:fs';
+import { existsSync, linkSync, mkdirSync, readFileSync, readdirSync, renameSync, unlinkSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { eventFilePath, eventSchema, isoDate } from '../../src/lib/events/schema';
 import { hostOf, normalizeUrl } from '../../src/lib/events/url';
 import { isPublished, type SourceLike } from '../../src/lib/source-bar';
 import { candidateSchema } from './candidate';
 import { checkCandidate, prefetchHold, type EntityInfo, type ExistingEvent, type FetchedPage, type HoldReason } from './check';
-import { heldKey, heldListSchema, mergeHeld } from './held';
+import { heldKey, heldListSchema, mergeHeld, type HeldRecord } from './held';
 import { safeFetch } from './safe-fetch';
 
 export type RunOptions = {
@@ -71,14 +71,27 @@ export function loadExistingEvents(root: string): ExistingEvent[] {
   return [...events.values()];
 }
 
+export function readHeldList(root: string): HeldRecord[] {
+  const path = join(root, 'data/events-held.json');
+  return existsSync(path) ? readJson(path, value => heldListSchema.parse(value)) : [];
+}
+
+export function writeHeldList(root: string, records: HeldRecord[]): void {
+  const validated = heldListSchema.parse(records);
+  const path = join(root, 'data/events-held.json');
+  const tempPath = path + '.tmp';
+  mkdirSync(dirname(path), { recursive: true });
+  writeFileSync(tempPath, JSON.stringify(validated, null, 2) + '\n');
+  renameSync(tempPath, path);
+}
+
 export async function runCheck(opts: RunOptions): Promise<RunSummary> {
   const { root, input, today, dryRun, fetchPage } = opts;
   if (!Array.isArray(input)) throw new Error('Candidates must be a JSON array');
   isoDate.parse(today);
   const entities = loadEntityIndex(root);
   const existing = loadExistingEvents(root);
-  const heldPath = join(root, 'data/events-held.json');
-  const previous = existsSync(heldPath) ? readJson(heldPath, value => heldListSchema.parse(value)) : [];
+  const previous = readHeldList(root);
   const staleKeys = new Set(previous.filter(record => record.stale).map(record => record.key));
   const resolvedKeys = new Set<string>();
   const holds: Array<{ entities: string[]; sourceUrl: string; reason: HoldReason }> = [];
@@ -91,6 +104,10 @@ export async function runCheck(opts: RunOptions): Promise<RunSummary> {
       continue;
     }
     const candidate = parsed.data;
+    if ((candidate.foundOn ?? today) < candidate.happenedOn) {
+      summary.invalid.push({ index, error: 'foundOn is before happenedOn' });
+      continue;
+    }
     const sourceUrl = candidate.source.url;
     const key = heldKey(candidate.entities, sourceUrl);
     if (staleKeys.has(key)) {
@@ -117,7 +134,13 @@ export async function runCheck(opts: RunOptions): Promise<RunSummary> {
     if (!dryRun) {
       const path = join(root, eventFilePath(record));
       mkdirSync(dirname(path), { recursive: true });
-      writeFileSync(path, JSON.stringify(record, null, 2) + '\n', { flag: 'wx' });
+      const tempPath = path + '.tmp';
+      writeFileSync(tempPath, JSON.stringify(record, null, 2) + '\n');
+      try {
+        linkSync(tempPath, path);
+      } finally {
+        unlinkSync(tempPath);
+      }
     }
     existing.push({ id, entities: eventEntities, type, happenedOn, sourceUrls });
     summary.published.push(id);
@@ -125,12 +148,7 @@ export async function runCheck(opts: RunOptions): Promise<RunSummary> {
 
   const next = mergeHeld(previous, holds, resolvedKeys, today);
   summary.stale = next.filter(record => record.stale).length;
-  if (!dryRun) {
-    mkdirSync(dirname(heldPath), { recursive: true });
-    const tempPath = heldPath + '.tmp';
-    writeFileSync(tempPath, JSON.stringify(next, null, 2) + '\n');
-    renameSync(tempPath, heldPath);
-  }
+  if (!dryRun) writeHeldList(root, next);
   return summary;
 }
 

@@ -15,6 +15,7 @@ export const HOLD_REASONS = [
   'self-published-wording', 'pointer-only', 'quote-not-found',
   'date-not-found', 'amount-not-in-quote', 'type-unchecked',
   'type-disagreement', 'possible-duplicate',
+  'homepage-url', 'not-extracted',
 ] as const;
 export type HoldReason = (typeof HOLD_REASONS)[number];
 export type Verdict =
