@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/alice-and-bob"
+  ],
+  "happenedOn": "2026-06-05",
+  "foundOn": "2026-09-02",
+  "summary": "Alice & Bob released five criteria for benchmarking logical qubits across hardware types.",
+  "quote": "PARIS, June 5, 2026 — Quantum computing company Alice & Bob has released a new five-criteria framework to define and benchmark logical qubits and establish a fair and comprehensive performance evaluation across hardware modalities.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/alice-bob-proposes-five-criteria-framework-for-evaluating-logical-qubits/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/alice-bob-proposes-five-criteria-framework-for-evaluating-logical-qubits/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "alice-and-bob-2026-06-05-product-74bf41",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/quix-quantum"
+  ],
+  "happenedOn": "2026-07-14",
+  "foundOn": "2026-09-02",
+  "summary": "QuiX Quantum unveiled Carina, a universal photonic quantum computing architecture designed for customer data centers.",
+  "quote": "ENSCHEDE, Netherlands, July 14, 2026 — QuiX Quantum today announced Carina, the world’s first universal photonic quantum computing architecture designed for deployment in customer data center environments as an essential foundation for future fault-tolerant systems.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/quix-quantum-unveils-universal-photonic-quantum-computing-architecture/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/quix-quantum-unveils-universal-photonic-quantum-computing-architecture/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quix-quantum-2026-07-14-product-a71de0",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/qblox"
+  ],
+  "happenedOn": "2025-10-29",
+  "foundOn": "2026-06-25",
+  "summary": "Qblox announced a collaboration with NVIDIA to connect its Q1 pulse processors to NVIDIA GPUs through NVQLink.",
+  "quote": "“We are proud to announce our NVIDIA NVQLink collaboration with NVIDIA, which mirrors our long-term commitment to realizing quantum computers with economic impact,” said Niels Bultink, CEO of Qblox.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/qblox-accelerates-utility-scale-quantum-computing-with-nvidia/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/qblox-accelerates-utility-scale-quantum-computing-with-nvidia/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "qblox-2025-10-29-partnership-871b70",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "partnership",
+  "funding": null,
+  "subtype": null
+}

@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/parityqc"
+  ],
+  "happenedOn": "2026-03-31",
+  "foundOn": "2026-05-06",
+  "summary": "A paper showed how ParityQC’s architecture can support universal YZ-plane quantum computation using local interactions.",
+  "quote": "We further demonstrate, within the framework of the Parity Architecture, that $YZ$-plane patterns with the register-logic graph can be embedded into another graph with purely local interactions, and we extend this case to the scenario of universal quantum computation.",
+  "source": {
+    "url": "https://arxiv.org/abs/2603.29379",
+    "finalUrl": "https://arxiv.org/abs/2603.29379",
+    "publisher": "arXiv"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "parityqc-2026-03-31-product-9b67d7",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

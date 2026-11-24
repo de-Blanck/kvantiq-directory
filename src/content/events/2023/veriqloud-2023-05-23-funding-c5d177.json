@@ -1,0 +1,42 @@
+{
+  "entities": [
+    "companies/veriqloud"
+  ],
+  "happenedOn": "2023-05-23",
+  "foundOn": "2026-03-20",
+  "summary": "VeriQloud raised €1.9 million in a round led by Quantonation with participation from WinEquity.",
+  "quote": "The company has raised €1.9 million in an investment round led by Quantonation, the leading investment fund in quantum technologies, and joined by WinEquity, a fund focused on innovation, providing capital and mentorship, and placing diversity at the core of its thesis for early-stage investment.",
+  "source": {
+    "url": "https://www.quantonation.com/2023/05/23/veriqloud-secures-1-9-million-investment-from-quantonation/",
+    "finalUrl": "https://www.quantonation.com/news/veriqloud-secures-1-9-million-investment-from-quantonation",
+    "publisher": "Quantonation",
+    "publishedOn": "2023-05-23"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "veriqloud-2023-05-23-funding-c5d177",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 1900000,
+    "currency": "EUR",
+    "round": "undisclosed",
+    "investors": [
+      "Quantonation",
+      "WinEquity"
+    ]
+  },
+  "subtype": null
+}

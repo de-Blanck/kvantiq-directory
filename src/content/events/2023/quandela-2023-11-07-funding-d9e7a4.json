@@ -1,0 +1,38 @@
+{
+  "entities": [
+    "companies/quandela"
+  ],
+  "happenedOn": "2023-11-07",
+  "foundOn": "2026-06-25",
+  "summary": "Quandela raised €50 million in Series B funding to manufacture photonic quantum computers for industrial customers.",
+  "quote": "French startup Quandela has raised a €50m Series B to manufacture photonic quantum computers and sell them to industrial customers.",
+  "source": {
+    "url": "https://sifted.eu/articles/french-startup-quandela-raises-e50m",
+    "finalUrl": "https://sifted.eu/articles/french-startup-quandela-raises-e50m",
+    "publisher": "Sifted"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quandela-2023-11-07-funding-d9e7a4",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 50000000,
+    "currency": "EUR",
+    "round": "series-b",
+    "investors": []
+  },
+  "subtype": null
+}

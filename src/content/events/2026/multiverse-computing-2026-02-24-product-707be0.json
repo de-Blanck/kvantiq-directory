@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/multiverse-computing"
+  ],
+  "happenedOn": "2026-02-24",
+  "foundOn": "2026-04-19",
+  "summary": "Multiverse Computing released HyperNova 60B 2602 for free on Hugging Face.",
+  "quote": "As of today, developers can access a newer version of Multiverse’s HyperNova 60B model for free on Hugging Face.",
+  "source": {
+    "url": "https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/",
+    "finalUrl": "https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/",
+    "publisher": "TechCrunch",
+    "publishedOn": "2026-02-24"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "multiverse-computing-2026-02-24-product-707be0",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

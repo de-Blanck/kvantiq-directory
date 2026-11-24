@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/frostbyte"
+  ],
+  "happenedOn": "2026-08-03",
+  "foundOn": "2026-08-03",
+  "summary": "FrostByte announced that its Apollo cryogenic switches are available to order.",
+  "quote": "FrostByte has opened ordering for Apollo, our family of cryogenic switches for routing signals inside the cryostat.",
+  "source": {
+    "url": "https://frostbyte.nl/news/frostbyte-launches-new-website-and-apollo-line-of-cryogenic-switches",
+    "finalUrl": "https://frostbyte.nl/news/frostbyte-launches-new-website-and-apollo-line-of-cryogenic-switches",
+    "publisher": "FrostByte"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "frostbyte-2026-08-03-product-03d394",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

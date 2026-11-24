@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/iqm"
+  ],
+  "happenedOn": "2026-06-19",
+  "foundOn": "2026-06-19",
+  "summary": "IQM appointed Craig Ciesla as chief technology officer and Inés de Vega as chief scientist.",
+  "quote": "IQM Appoints Craig Ciesla, Former Illumina VP, as CTO; Inés de Vega Becomes Chief Scientist",
+  "source": {
+    "url": "https://iqm.tech/press-releases/iqm-appoints-craig-ciesla-former-illumina-vp-as-cto-ines-de-vega-becomes-chief-scientist/",
+    "finalUrl": "https://iqm.tech/press-releases/iqm-appoints-craig-ciesla-former-illumina-vp-as-cto-ines-de-vega-becomes-chief-scientist/",
+    "publisher": "IQM Quantum Computers"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "iqm-2026-06-19-people-aa1639",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "people",
+  "funding": null,
+  "subtype": null
+}

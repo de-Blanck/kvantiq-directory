@@ -1,0 +1,42 @@
+{
+  "entities": [
+    "companies/quantum-optics-jena"
+  ],
+  "happenedOn": "2021-02-10",
+  "foundOn": "2026-06-25",
+  "summary": "Quantum Optics Jena closed a seven-figure seed round to develop secure quantum communications systems.",
+  "quote": "The investors are convinced of the idea: The triumvirate of ELAS Technologies GmbH, Fraunhofer Technologie-Transfer Fonds GmbH and beteiligungsmangement Thüringen (bm|t) believes in the future of quantum technologies and invests a seven-digit amount in \"Quantum Optics Jena GmbH\".",
+  "source": {
+    "url": "https://www.iof.fraunhofer.de/en/pressrelease/2021/quantum-optics-jena.html",
+    "finalUrl": "https://www.iof.fraunhofer.de/en/pressrelease/2021/quantum-optics-jena.html",
+    "publisher": "Fraunhofer IOF"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quantum-optics-jena-2021-02-10-funding-29965c",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": null,
+    "currency": null,
+    "round": "seed",
+    "investors": [
+      "ELAS Technologies GmbH",
+      "Fraunhofer Technologie-Transfer Fonds GmbH",
+      "beteiligungsmanagement Thüringen (bm|t)"
+    ]
+  },
+  "subtype": null
+}

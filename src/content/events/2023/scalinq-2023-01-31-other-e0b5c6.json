@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/scalinq"
+  ],
+  "happenedOn": "2023-01-31",
+  "foundOn": "2026-03-20",
+  "summary": "SCALINQ CEO Zaid Saeed was named Young Pioneer of the Year 2022 by Sweden’s King Carl XVI Gustaf.",
+  "quote": "He was named the Young Pioneer of the Year 2022 at the Årets Nybyggare award ceremony by His Majesty King Carl XVI Gustaf.",
+  "source": {
+    "url": "https://www.techarenan.news/2023/01/31/scalinq-quantum-computing-sweden-chalmers-gothenburg-zaid-saeed-startup/",
+    "finalUrl": "https://www.techarenan.news/2023/01/31/scalinq-quantum-computing-sweden-chalmers-gothenburg-zaid-saeed-startup/",
+    "publisher": "Techarenan",
+    "publishedOn": "2023-01-31"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "scalinq-2023-01-31-other-e0b5c6",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "other",
+  "funding": null,
+  "subtype": null
+}

@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/terra-quantum"
+  ],
+  "happenedOn": "2021-07-08",
+  "foundOn": "2026-06-28",
+  "summary": "Terra Quantum announced technology it said could transmit quantum cryptographic keys over more than 40,000 km.",
+  "quote": "Terra Quantum, the Swiss quantum technology company, is today announcing a breakthrough in quantum cryptography with a technology that allows quantum cryptography keys to be transmitted over a distance of more than 40,000km — the circumference of the Earth.",
+  "source": {
+    "url": "https://sifted.eu/articles/40000km-quantum-cryptography-breakthrough",
+    "finalUrl": "https://sifted.eu/articles/40000km-quantum-cryptography-breakthrough",
+    "publisher": "Sifted"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "terra-quantum-2021-07-08-product-983e53",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

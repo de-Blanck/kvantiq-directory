@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/qunasys-denmark"
+  ],
+  "happenedOn": "2023-08-29",
+  "foundOn": "2026-05-01",
+  "summary": "QunaSys Denmark announced it had begun operating in Copenhagen as QunaSys’s first overseas subsidiary.",
+  "quote": "The subsidiary officially commenced operations on August 29, 2023, with the strategic goal of expanding its global clientele and securing top-tier quantum talents.",
+  "source": {
+    "url": "https://qunasys.com/en/news/posts/231011en/",
+    "finalUrl": "https://qunasys.com/en/news/posts/231011en/",
+    "publisher": "QunaSys"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "qunasys-denmark-2023-08-29-corporate-c43038",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "corporate",
+  "funding": null,
+  "subtype": null
+}

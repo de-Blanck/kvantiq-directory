@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/qt-sense"
+  ],
+  "happenedOn": "2026-11-13",
+  "foundOn": "2026-11-20",
+  "summary": "QT Sense won the 21st KVK Innovation Top 100 for its quantum microscope.",
+  "quote": "QT Sense was named the most innovative business in the Netherlands during the celebratory awards ceremony for the 21st edition of the KVK Innovation Top 100.",
+  "source": {
+    "url": "https://www.kvk.nl/en/press/kvk-innovation-top-100-qt-sense-wins-with-quantum-microscope-for-faster-diagnoses/",
+    "finalUrl": "https://www.kvk.nl/en/press/kvk-innovation-top-100-qt-sense-wins-with-quantum-microscope-for-faster-diagnoses/",
+    "publisher": "Netherlands Chamber of Commerce (KVK)"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "qt-sense-2026-11-13-other-6ed416",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "other",
+  "funding": null,
+  "subtype": null
+}

@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/qdevil"
+  ],
+  "happenedOn": "2023-11-20",
+  "foundOn": "2026-05-01",
+  "summary": "The German Physical Society awarded QDevil its 2024 Technology Transfer Prize.",
+  "quote": "QDevil, a quantum technology spin-out enterprise from the Niels Bohr Institute, University of Copenhagen, has been awarded “The Technology Transfer Prize 2024” from German Physical Society.",
+  "source": {
+    "url": "https://nbi.ku.dk/english/news/happening-at-nbi/nbi-spin-out-enterprise-receives-prestigious-tech-transfer-award",
+    "finalUrl": "https://nbi.ku.dk/english/news/happening-at-nbi/nbi-spin-out-enterprise-receives-prestigious-tech-transfer-award",
+    "publisher": "Niels Bohr Institute",
+    "publishedOn": "2025-03-21"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "qdevil-2023-11-20-other-199c16",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "other",
+  "funding": null,
+  "subtype": null
+}

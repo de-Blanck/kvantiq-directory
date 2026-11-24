@@ -1,0 +1,45 @@
+{
+  "entities": [
+    "companies/qutwo"
+  ],
+  "happenedOn": "2026-05-05",
+  "foundOn": "2026-09-02",
+  "summary": "QuTwo raised €25 million from angel investors at a €325 million valuation.",
+  "quote": "QuTwo, the Finnish AI lab founded by former AMD Silo AI CEO Peter Sarlin, is now valued at €325 million (approximately $380 million) after raising a €25 million ($29 million) angel round.",
+  "source": {
+    "url": "https://techcrunch.com/2026/05/05/peter-sarlins-qutwo-reaches-380m-valuation-in-angel-round/",
+    "finalUrl": "https://techcrunch.com/2026/05/05/peter-sarlins-qutwo-reaches-380m-valuation-in-angel-round/",
+    "publisher": "TechCrunch",
+    "publishedOn": "2026-05-06"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "qutwo-2026-05-05-funding-31fe24",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 25000000,
+    "currency": "EUR",
+    "round": "other",
+    "investors": [
+      "Yuri Milner",
+      "Xavier Niel",
+      "Nico Rosberg",
+      "Dieter Schwarz",
+      "Niklas Zennström"
+    ]
+  },
+  "subtype": null
+}

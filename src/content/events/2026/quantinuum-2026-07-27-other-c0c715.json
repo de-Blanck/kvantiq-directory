@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/quantinuum"
+  ],
+  "happenedOn": "2026-07-27",
+  "foundOn": "2026-09-02",
+  "summary": "Quantinuum announced it would report second-quarter 2026 results after market close on August 11.",
+  "quote": "Broomfield, CO, July 27th, 2026 /PRNewswire/ — Quantinuum Inc. (Nasdaq: QNT) (\"Quantinuum\") today announced it will release its financial results for the second quarter (ending on June 30, 2026) after market close on August 11, 2026.",
+  "source": {
+    "url": "https://www.quantinuum.com/press-releases/quantinuum-to-report-second-quarter-financial-results-on-august-11-2026",
+    "finalUrl": "https://www.quantinuum.com/press-releases/quantinuum-to-report-second-quarter-financial-results-on-august-11-2026",
+    "publisher": "Quantinuum",
+    "publishedOn": "2026-07-27"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quantinuum-2026-07-27-other-c0c715",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "other",
+  "funding": null,
+  "subtype": null
+}

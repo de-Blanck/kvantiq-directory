@@ -58,6 +58,31 @@
       "url": "https://sifted.eu/articles/oxford-quantum-circuits-series-c",
       "title": "Oxford Quantum Circuits raises blockbuster $350m Series C - Sifted",
       "dateAccessed": "2026-08-23"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/oxford-quantum-circuits-releases-erado-an-open-source-qiskit-simulator-for-erasure-noise-and-post-selection/",
+      "title": "Oxford Quantum Circuits Releases Erado: Open-Source Qiskit Simulator — Quantum Computing Report",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2606.31428",
+      "title": "The limits of erasure-based postselection for quantum error mitigation — Griffiths et al.",
+      "datePublished": "2026-06-30",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/11/09/horizon-quantum-oqc-pulse-level-integration-triple-alpha/",
+      "title": "Horizon Quantum Integrates OQC's 32-Qubit Processor with Triple Alpha - The Quantum Insider",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/altera-oqc-and-nvidia-demonstrate-direct-rf-fpga-quantum-system-controller-reference-design-at-sc26/",
+      "title": "Altera, OQC, and NVIDIA Demonstrate Direct-RF FPGA Quantum System Controller Reference Design at SC26 - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [

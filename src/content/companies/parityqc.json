@@ -78,6 +78,31 @@
       "url": "https://thequantuminsider.com/2026/07/15/classiq-parityqc-quantum-circuit-optimization/",
       "title": "Classiq and ParityQC Partner to Optimize Quantum Circuit Execution - The Quantum Insider",
       "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/09/15/parityqc-parity-twine-compiler-product/",
+      "title": "ParityQC Launches Parity Twine Optimizer for Quantum Optimization — The Quantum Insider",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/parityqc-launches-parity-twine-optimizer-in-ibm-qiskit-functions-catalog/",
+      "title": "ParityQC Launches Parity Twine Optimizer in IBM Qiskit Functions Catalog — HPCwire",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/parityqc-launches-parity-twine-optimizer-via-ibm-qiskit-functions-catalog/",
+      "title": "ParityQC Launches Parity Twine Optimizer via IBM Qiskit Functions Catalog — Quantum Computing Report",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.39670",
+      "title": "Error-Corrected Quantum Optimization via Rydberg Atom Array Embeddings",
+      "datePublished": "2026-10-29",
+      "dateAccessed": "2026-11-22"
     }
   ],
   "news": [

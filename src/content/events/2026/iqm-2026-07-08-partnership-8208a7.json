@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/iqm"
+  ],
+  "happenedOn": "2026-07-08",
+  "foundOn": "2026-09-02",
+  "summary": "The LUMI AI Factory selected IQM to deliver the LUMI-IQ quantum computer for CSC’s data center in Kajaani.",
+  "quote": "The LUMI AI Factory chooses IQM Quantum Computers to deliver LUMI-IQ, an advanced experimental quantum computer to be located in CSC’s data center in Kajaani, Finland.",
+  "source": {
+    "url": "https://lumi-supercomputer.eu/iqm-selected-to-deliver-the-lumi-iq-quantum-computer/",
+    "finalUrl": "https://lumi-supercomputer.eu/iqm-selected-to-deliver-the-lumi-iq-quantum-computer/",
+    "publisher": "LUMI Supercomputer",
+    "publishedOn": "2026-07-08"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "iqm-2026-07-08-partnership-8208a7",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "partnership",
+  "funding": null,
+  "subtype": null
+}

@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/alice-and-bob"
+  ],
+  "happenedOn": "2026-08-12",
+  "foundOn": "2026-09-02",
+  "summary": "Alice & Bob joined QuBriC as an industry partner to support doctoral research and training in quantum error correction.",
+  "quote": "PARIS, Aug. 12, 2026 — Alice & Bob, a leader in fault-tolerant quantum computing, is contributing its expertise in cat-qubit error correction to QuBriC, Europe’s first Marie Skłodowska-Curie Actions (MSCA) Doctoral Network dedicated to quantum error correction (QEC).",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/alice-bob-partners-on-europes-1st-doctoral-network-dedicated-to-quantum-error-correction/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/alice-bob-partners-on-europes-1st-doctoral-network-dedicated-to-quantum-error-correction/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "alice-and-bob-2026-08-12-partnership-76bd41",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "partnership",
+  "funding": null,
+  "subtype": null
+}

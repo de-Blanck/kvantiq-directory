@@ -1,0 +1,46 @@
+{
+  "entities": [
+    "companies/phasecraft"
+  ],
+  "happenedOn": "2023-08-16",
+  "foundOn": "2026-03-20",
+  "summary": "Phasecraft raised £13 million in a Series A led by Playground Global to develop quantum algorithms for practical applications.",
+  "quote": "Phasecraft, a joint spinout from University College London (UCL) and the University of Bristol, has raised £13m in a Series A round to develop algorithms for practical quantum computer use cases.",
+  "source": {
+    "url": "https://www.uktech.news/deep-tech/phasecraft-quantum-computing-20230816",
+    "finalUrl": "https://www.uktech.news/deep-tech/phasecraft-quantum-computing-20230816",
+    "publisher": "UKTN",
+    "publishedOn": "2023-08-16"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "phasecraft-2023-08-16-funding-a31c00",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 13000000,
+    "currency": "GBP",
+    "round": "series-a",
+    "investors": [
+      "Playground Global",
+      "AlbionVC",
+      "Episode1",
+      "Parkwalk Advisors",
+      "LCIF",
+      "UCL Technology Fund"
+    ]
+  },
+  "subtype": null
+}

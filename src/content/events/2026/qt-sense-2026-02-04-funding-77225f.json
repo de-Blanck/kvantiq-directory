@@ -1,0 +1,42 @@
+{
+  "entities": [
+    "companies/qt-sense"
+  ],
+  "happenedOn": "2026-02-04",
+  "foundOn": "2026-03-22",
+  "summary": "QT Sense raised a €3 million seed round led by Cottonwood Technology Fund and secured €1 million in additional funding.",
+  "quote": "The funding combines a €3 million Seed round led by Cottonwood Technology Fund, alongside follow-on funding from the startup’s existing VC investor, QDNL Participations, and an angel investor.",
+  "source": {
+    "url": "https://www.eu-startups.com/2026/02/qt-sense-raises-e4-million-to-develop-quantum-platform-for-cancer-sepsis-and-arthritis-research/",
+    "finalUrl": "https://www.eu-startups.com/2026/02/qt-sense-raises-e4-million-to-develop-quantum-platform-for-cancer-sepsis-and-arthritis-research/",
+    "publisher": "EU-Startups",
+    "publishedOn": "2026-02-04"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "qt-sense-2026-02-04-funding-77225f",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 3000000,
+    "currency": "EUR",
+    "round": "seed",
+    "investors": [
+      "Cottonwood Technology Fund",
+      "QDNL Participations"
+    ]
+  },
+  "subtype": null
+}

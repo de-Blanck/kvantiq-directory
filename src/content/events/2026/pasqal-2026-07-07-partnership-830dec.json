@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/pasqal"
+  ],
+  "happenedOn": "2026-07-07",
+  "foundOn": "2026-09-02",
+  "summary": "Pasqal and MegazoneCloud signed an MoU to explore cloud access and on-site quantum computing deployments in South Korea.",
+  "quote": "This MoU with MegazoneCloud is the foundation for a commercial partnership that will drive adoption, putting Pasqal’s neutral-atom hardware where it matters most: inside enterprise workflows, at scale, through a platform Korean organizations already trust.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/pasqal-and-megazonecloud-partner-to-bring-industrial-scale-quantum-computing-to-south-korea/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/pasqal-and-megazonecloud-partner-to-bring-industrial-scale-quantum-computing-to-south-korea/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "pasqal-2026-07-07-partnership-830dec",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "partnership",
+  "funding": null,
+  "subtype": null
+}

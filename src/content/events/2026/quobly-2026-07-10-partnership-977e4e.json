@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/quobly"
+  ],
+  "happenedOn": "2026-07-10",
+  "foundOn": "2026-09-02",
+  "summary": "Quobly and SEALSQ signed a $5 million agreement to integrate SEALSQ security technology into Quobly’s silicon quantum platform.",
+  "quote": "The newly signed $5 million commercial agreement represents the next phase of this relationship and establishes a framework for the commercial integration and deployment of SEALSQ technologies within Quobly’s quantum computing development roadmap.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/sealsq-and-quobly-sign-5m-deal-to-secure-silicon-quantum-computing-platforms/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/sealsq-and-quobly-sign-5m-deal-to-secure-silicon-quantum-computing-platforms/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quobly-2026-07-10-partnership-977e4e",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "partnership",
+  "funding": null,
+  "subtype": null
+}

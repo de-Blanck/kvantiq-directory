@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/qudora"
+  ],
+  "happenedOn": "2026-02-26",
+  "foundOn": "2026-11-20",
+  "summary": "QUDORA partnered with ParityQC to improve quantum algorithm performance on trapped-ion systems.",
+  "quote": "BRAUNSCHWEIG, Germany and INNSBRUCK, Austria, Feb. 26, 2026 — QUDORA and ParityQC have announced a strategic partnership to optimize quantum algorithm performance on trapped-ion hardware platforms.",
+  "source": {
+    "url": "https://www.hpcwire.com/?p=188987",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/qudora-and-parityqc-partner-to-optimize-quantum-algorithms-for-trapped-ion-systems/",
+    "publisher": "HPCwire",
+    "publishedOn": "2026-02-26"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "qudora-2026-02-26-partnership-ce6b22",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "partnership",
+  "funding": null,
+  "subtype": null
+}

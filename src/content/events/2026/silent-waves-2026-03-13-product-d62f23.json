@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/silent-waves"
+  ],
+  "happenedOn": "2026-03-13",
+  "foundOn": "2026-03-22",
+  "summary": "Silent Waves announced Zephyr, a cryogenic device that combines a travelling-wave parametric amplifier and a pump coupler.",
+  "quote": "Silent Waves today announced the launch of the Zephyr, a new cryogenic amplifier solution that integrates a traveling-wave parametric amplifier (TWPA) and pump coupler into a single compact component.",
+  "source": {
+    "url": "https://www.silent-waves.com/?view=article&id=39:silent-waves-launches-the-zephyr&catid=8",
+    "finalUrl": "https://www.silent-waves.com/?view=article&id=39:silent-waves-launches-the-zephyr&catid=8",
+    "publisher": "Silent Waves"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "silent-waves-2026-03-13-product-d62f23",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

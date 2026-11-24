@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/eviden-quantum"
+  ],
+  "happenedOn": "2024-11-18",
+  "foundOn": "2026-06-25",
+  "summary": "Eviden launched Qaptiva HPC to run quantum emulations on existing high-performance computing infrastructure.",
+  "quote": "PARIS, Nov. 18, 2024 — Eviden, the Atos Group business in advanced computing today announces the launch of Qaptiva HPC, an innovative software tailored for high-performance computing (HPC) environments.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/eviden-enables-quantum-emulation-in-hpc-through-dedicated-software/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/eviden-enables-quantum-emulation-in-hpc-through-dedicated-software/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "eviden-quantum-2024-11-18-product-f046f5",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

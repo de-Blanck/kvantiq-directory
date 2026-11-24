@@ -1,0 +1,45 @@
+{
+  "entities": [
+    "companies/ephos"
+  ],
+  "happenedOn": "2024-09-24",
+  "foundOn": "2026-06-25",
+  "summary": "Ephos raised $8.5 million in a seed round led by Starlight Ventures to scale production of glass-based photonic chips.",
+  "quote": "Milan-based start-up Ephos has raised $8.5m to create glass-based photonic chips at scale.",
+  "source": {
+    "url": "https://www.siliconrepublic.com/machines/quantum-chips-photonics-ephos-italy-funding",
+    "finalUrl": "https://www.siliconrepublic.com/machines/quantum-chips-photonics-ephos-italy-funding",
+    "publisher": "Silicon Republic",
+    "publishedOn": "2024-09-24"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "ephos-2024-09-24-funding-8867f5",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 8500000,
+    "currency": "USD",
+    "round": "seed",
+    "investors": [
+      "Starlight Ventures",
+      "Collaborative Fund",
+      "Exor Ventures",
+      "2100 Ventures",
+      "Unruly Capital"
+    ]
+  },
+  "subtype": null
+}

@@ -92,6 +92,51 @@
       "url": "https://www.siliconrepublic.com/machines/alice-bob-partner-european-doctoral-network-quantum-error-correction",
       "title": "Alice & Bob to work with European network on quantum error fixes - Silicon Republic",
       "dateAccessed": "2026-08-23"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/09/17/alice-bob-partners-with-the-cea-to-accelerate-quantum-hpc-integration-and-industrial-use-cases/",
+      "title": "Alice & Bob Partners With The CEA to Accelerate Quantum-HPC Integration — The Quantum Insider",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/alice-bob-and-cea-partner-to-accelerate-quantum-hpc-integration-and-industrial-use-cases/",
+      "title": "Alice & Bob and CEA Partner to Accelerate Quantum-HPC Integration and Industrial Use Cases — HPCwire",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/11/18/alice-bobs-updated-roadmap-targets-200-logical-qubits-from-3600-physical-qubits-by-2030/",
+      "title": "Alice & Bob's Updated Roadmap Targets 200 Logical Qubits From 3,600 Physical Qubits by 2030 - The Quantum Insider",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/alice-bob-accelerates-modular-cat-qubit-roadmap-to-200-logical-qubits-from-3600-physical-qubits-by-2030/",
+      "title": "Alice & Bob Accelerates Modular Cat-Qubit Roadmap to 200 Logical Qubits from 3,600 Physical Qubits by 2030 - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/10/29/alice-bob-22593-qubits-break-rsa-2048/",
+      "title": "Alice & Bob Estimates 22,593 Qubits to Break RSA-2048",
+      "datePublished": "2026-10-29",
+      "dateAccessed": "2026-11-22"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/alice-bob-demonstrates-end-to-end-shors-algorithm-compilation-requiring-23000-cat-qubits-to-break-rsa-2048/",
+      "title": "Alice & Bob Demonstrates End-to-End Shor's Algorithm Compilation Requiring 23,000 Cat Qubits to Break RSA-2048",
+      "datePublished": "2026-10-30",
+      "dateAccessed": "2026-11-22"
+    },
+    {
+      "type": "url",
+      "url": "https://eprint.iacr.org/2026/2665",
+      "title": "Shor's algorithm compiled on cat qubits: 22 593 qubits for RSA-2048 in 3.14 days (IACR ePrint 2026/2665)",
+      "datePublished": "2026-10-29",
+      "dateAccessed": "2026-11-22"
     }
   ],
   "news": [

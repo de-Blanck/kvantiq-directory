@@ -1,0 +1,47 @@
+{
+  "entities": [
+    "companies/eleqtron"
+  ],
+  "happenedOn": "2026-05-05",
+  "foundOn": "2026-05-05",
+  "summary": "eleQtron announced it closed a €57 million Series A led by Schwarz Digits to scale production and expand cloud access.",
+  "quote": "Siegen/Hamburg, 5. Mai 2026 – Deep-tech company eleQtron, a developer of trapped-ion quantum computers, has successfully closed a €57 million Series A funding round.",
+  "source": {
+    "url": "https://eleqtron.com/quantum-computing-scale-up-eleqtron-secures-57-million-in-one-of-the-largest-series-a-funding-rounds-worldwide/",
+    "finalUrl": "https://eleqtron.com/quantum-computing-scale-up-eleqtron-secures-57-million-in-one-of-the-largest-series-a-funding-rounds-worldwide/",
+    "publisher": "eleQtron",
+    "publishedOn": "2026-05-05"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "eleqtron-2026-05-05-funding-b81c19",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 57000000,
+    "currency": "EUR",
+    "round": "series-a",
+    "investors": [
+      "Schwarz Digits",
+      "EIC Fund",
+      "Earlybird",
+      "Ankaa Ventures",
+      "Precitec",
+      "NRW.BANK",
+      "IFB Innovationsstarter GmbH"
+    ]
+  },
+  "subtype": null
+}

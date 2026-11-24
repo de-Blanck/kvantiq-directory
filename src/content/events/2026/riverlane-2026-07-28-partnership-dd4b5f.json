@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/riverlane"
+  ],
+  "happenedOn": "2026-07-28",
+  "foundOn": "2026-09-02",
+  "summary": "Riverlane and the Unitary Foundation launched the Deltakit Community Fund to support open-source quantum error correction development.",
+  "quote": "CAMBRIDGE, England and NEW YORK, July 28, 2026 — Riverlane, a world leader in quantum error correction (QEC), and the Unitary Foundation, a non-profit dedicated to scaling the open-source quantum ecosystem, today announced the launch of the Deltakit Community Fund.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/riverlane-and-unitary-foundation-launch-deltakit-community-fund-for-open-source-quantum-error-correction/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/riverlane-and-unitary-foundation-launch-deltakit-community-fund-for-open-source-quantum-error-correction/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "riverlane-2026-07-28-partnership-dd4b5f",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "partnership",
+  "funding": null,
+  "subtype": null
+}

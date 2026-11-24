@@ -1,0 +1,42 @@
+{
+  "entities": [
+    "companies/quix-quantum"
+  ],
+  "happenedOn": "2025-07-10",
+  "foundOn": "2026-03-20",
+  "summary": "QuiX Quantum raised €15 million in a Series A co-led by Invest NL and EIC Fund to build its first universal photonic quantum computer.",
+  "quote": "Enschede-based QuiX Quantum, the Dutch photonic quantum computing pioneer, has secured €15M in Series A funding co-led by Invest NL and EIC Fund.",
+  "source": {
+    "url": "https://siliconcanals.com/quix-quantum-secures-15m/",
+    "finalUrl": "https://siliconcanals.com/quix-quantum-secures-15m/",
+    "publisher": "Silicon Canals",
+    "publishedOn": "2025-07-10"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quix-quantum-2025-07-10-funding-71a318",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 15000000,
+    "currency": "EUR",
+    "round": "series-a",
+    "investors": [
+      "Invest NL",
+      "EIC Fund"
+    ]
+  },
+  "subtype": null
+}

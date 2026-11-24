@@ -1,0 +1,41 @@
+{
+  "entities": [
+    "companies/qunorth"
+  ],
+  "happenedOn": "2025-07-17",
+  "foundOn": "2026-03-20",
+  "summary": "EIFO and the Novo Nordisk Foundation announced an €80 million investment to establish QuNorth.",
+  "quote": "To address this, EIFO and the Novo Nordisk Foundation are investing €80 million to establish QuNorth, a new Nordic quantum initiative.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/qunorth-launches-in-denmark-with-e80m-backing-for-level-2-quantum-system/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/qunorth-launches-in-denmark-with-e80m-backing-for-level-2-quantum-system/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "qunorth-2025-07-17-funding-62d477",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 80000000,
+    "currency": "EUR",
+    "round": "undisclosed",
+    "investors": [
+      "EIFO",
+      "Novo Nordisk Foundation"
+    ]
+  },
+  "subtype": null
+}

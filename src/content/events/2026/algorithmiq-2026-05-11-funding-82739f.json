@@ -1,0 +1,43 @@
+{
+  "entities": [
+    "companies/algorithmiq"
+  ],
+  "happenedOn": "2026-05-11",
+  "foundOn": "2026-09-02",
+  "summary": "Algorithmiq raised €18 million in a round led by United Ventures and CDP Venture Capital.",
+  "quote": "Algorithmiq has raised €18 million in funding led by United Ventures and Italian institutional investor CDP Venture Capital, with continued participation from Inventure VC.",
+  "source": {
+    "url": "https://tech.eu/2026/05/11/algorithmiq-moves-global-hq-to-milan-and-raises-eur18m-in-italys-largest-quantum-vc-round/",
+    "finalUrl": "https://tech.eu/2026/05/11/algorithmiq-moves-global-hq-to-milan-and-raises-eur18m-in-italys-largest-quantum-vc-round/",
+    "publisher": "Tech.eu",
+    "publishedOn": "2026-05-11"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "algorithmiq-2026-05-11-funding-82739f",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 18000000,
+    "currency": "EUR",
+    "round": "undisclosed",
+    "investors": [
+      "United Ventures",
+      "CDP Venture Capital",
+      "Inventure VC"
+    ]
+  },
+  "subtype": null
+}

@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/algorithmiq"
+  ],
+  "happenedOn": "2026-07-30",
+  "foundOn": "2026-09-02",
+  "summary": "IBM and Algorithmiq announced a demonstration of quantum advantage in simulating heterogeneous quantum matter.",
+  "quote": "A quantum simulation of heterogeneous matter, designed by Algorithmiq and executed on IBM quantum computers, continues to compete with the world's leading classical simulation methods eight months after its debut on the Quantum Advantage Tracker.",
+  "source": {
+    "url": "https://newsroom.ibm.com/2026-07-30-ibm-and-algorithmiq-demonstrate-quantum-advantage,-establishing-a-framework-for-trusted-quantum-computation-beyond-classical-verification",
+    "finalUrl": "https://newsroom.ibm.com/2026-07-30-ibm-and-algorithmiq-demonstrate-quantum-advantage,-establishing-a-framework-for-trusted-quantum-computation-beyond-classical-verification",
+    "publisher": "IBM",
+    "publishedOn": "2026-07-30"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "algorithmiq-2026-07-30-product-8253e2",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

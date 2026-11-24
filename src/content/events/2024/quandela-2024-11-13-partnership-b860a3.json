@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/quandela"
+  ],
+  "happenedOn": "2024-11-13",
+  "foundOn": "2026-06-25",
+  "summary": "Quandela, CNRS, Université Paris-Saclay and Université Paris Cité inaugurated QDlight, a joint quantum photonics lab.",
+  "quote": "Quandela, a European leader company for photonic quantum computing, is combining its know-how with that of the CNRS, Universit&eacute; Paris-Saclay, and Universit&eacute; Paris Cit&eacute; in order to intensify scientific research and innovation in this field.",
+  "source": {
+    "url": "https://www.cnrs.fr/en/press/quandela-cnrs-universite-paris-saclay-and-universite-paris-cite-join-forces-accelerate",
+    "finalUrl": "https://www.cnrs.fr/en/press/quandela-cnrs-universite-paris-saclay-and-universite-paris-cite-join-forces-accelerate",
+    "publisher": "CNRS"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quandela-2024-11-13-partnership-b860a3",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "partnership",
+  "funding": null,
+  "subtype": null
+}

@@ -1,0 +1,42 @@
+{
+  "entities": [
+    "companies/welinq"
+  ],
+  "happenedOn": "2023-01-23",
+  "foundOn": "2026-03-20",
+  "summary": "Welinq raised €5 million in a pre-seed round led by Quantonation with support from Runa Capital.",
+  "quote": "French startup Welinq has just raised €5 million in a new financing round to shape the future of quantum computing.",
+  "source": {
+    "url": "https://www.eu-startups.com/2023/01/paris-based-welinq-secures-e5-million-to-scale-up-quantum-computing-with-quantum-memories/",
+    "finalUrl": "https://www.eu-startups.com/2023/01/paris-based-welinq-secures-e5-million-to-scale-up-quantum-computing-with-quantum-memories/",
+    "publisher": "EU-Startups",
+    "publishedOn": "2023-01-23"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "welinq-2023-01-23-funding-651332",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 5000000,
+    "currency": "EUR",
+    "round": "pre-seed",
+    "investors": [
+      "Quantonation",
+      "Runa Capital"
+    ]
+  },
+  "subtype": null
+}

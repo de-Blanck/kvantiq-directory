@@ -1,0 +1,47 @@
+{
+  "entities": [
+    "companies/equal1"
+  ],
+  "happenedOn": "2026-01-15",
+  "foundOn": "2026-03-22",
+  "summary": "Equal1 raised €51 million to develop silicon-based quantum computers and deploy its Bell-1 quantum server.",
+  "quote": "Dublin-based Equal1, a quantum semiconductor company, today announced it has raised €51 million ($60 million) to accelerate development of scalable, silicon-based quantum computers and deployment of its datacenter-ready Bell-1 quantum server.",
+  "source": {
+    "url": "https://www.eu-startups.com/2026/01/irish-quantum-semiconductor-startup-equal1-closes-e51-million-round-to-scale-silicon-based-quantum-computing/",
+    "finalUrl": "https://www.eu-startups.com/2026/01/irish-quantum-semiconductor-startup-equal1-closes-e51-million-round-to-scale-silicon-based-quantum-computing/",
+    "publisher": "EU-Startups",
+    "publishedOn": "2026-01-15"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "equal1-2026-01-15-funding-07f349",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 51000000,
+    "currency": "EUR",
+    "round": "undisclosed",
+    "investors": [
+      "Ireland Strategic Investment Fund",
+      "Atlantic Bridge",
+      "European Innovation Council Fund",
+      "Matterwave Ventures",
+      "Enterprise Ireland",
+      "Elkstone",
+      "TNO Ventures"
+    ]
+  },
+  "subtype": null
+}

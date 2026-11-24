@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/id-quantique"
+  ],
+  "happenedOn": "2025-03-04",
+  "foundOn": "2026-06-25",
+  "summary": "IonQ reached an agreement to acquire a majority stake in Geneva-based ID Quantique.",
+  "quote": "IonQ, a leading quantum computing company based in Maryland, has reached an agreement to acquire a majority stake in ID Quantique (IDQ), the Geneva-based global leader in quantum-safe networking and quantum detection systems.",
+  "source": {
+    "url": "https://ggba.swiss/en/ionq-acquires-id-quantique-to-advance-global-quantum-networking/",
+    "finalUrl": "https://ggba.swiss/en/ionq-acquires-id-quantique-to-advance-global-quantum-networking/",
+    "publisher": "Greater Geneva Bern area",
+    "publishedOn": "2025-03-04"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "id-quantique-2025-03-04-corporate-bb8fd9",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "corporate",
+  "funding": null,
+  "subtype": "acquisition"
+}

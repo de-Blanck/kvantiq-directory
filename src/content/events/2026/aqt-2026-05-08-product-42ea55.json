@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/aqt"
+  ],
+  "happenedOn": "2026-05-08",
+  "foundOn": "2026-09-02",
+  "summary": "AQT unveiled its LYNX line of rack-mounted trapped-ion quantum computers and reported a Quantum Volume of 32,768.",
+  "quote": "INNSBRUCK, Austria, May 8, 2026 — AQT has unveiled the LYNX Series, a new generation of 19-inch rack-mounted quantum computers that has officially achieved a record-breaking Quantum Volume (QV) of 32768.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/aqt-launches-lynx-series-trapped-ion-quantum-systems/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/aqt-launches-lynx-series-trapped-ion-quantum-systems/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "aqt-2026-05-08-product-42ea55",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/delft-circuits"
+  ],
+  "happenedOn": "2025-09-30",
+  "foundOn": "2026-03-20",
+  "summary": "Delft Circuits announced a partnership with Bluefors to integrate Cri/oFlex quantum I/O into Bluefors dilution refrigerators.",
+  "quote": "Helsinki, Finland & Delft, Netherlands, September 30, 2025 – Bluefors, the world leader in cryogenic measurement systems, today announced a strategic partnership with Delft Circuits to offer their turnkey quantum input/output (I/O) solutions.",
+  "source": {
+    "url": "https://delft-circuits.com/delft-circuits-and-bluefors-join-forces-on-scalable-quantum-i-o-for-next-generation-quantum-computers/",
+    "finalUrl": "https://delft-circuits.com/dc_news_article/delft-circuits-and-bluefors-join-forces/",
+    "publisher": "Delft Circuits"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "delft-circuits-2025-09-30-partnership-f64041",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "partnership",
+  "funding": null,
+  "subtype": null
+}

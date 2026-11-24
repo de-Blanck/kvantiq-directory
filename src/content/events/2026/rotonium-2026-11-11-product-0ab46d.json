@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/rotonium"
+  ],
+  "happenedOn": "2026-11-11",
+  "foundOn": "2026-11-20",
+  "summary": "Rotonium presented a room-temperature photonic quantum computer prototype with four effective qubits in Padua.",
+  "quote": "&Egrave; il prototipo realizzato da Rotonium, startup deep tech italiana fondata da Roberto Siagri e Fabrizio Tamburini, che oggi ha presentato a Padova la macchina che ospita un processore quantistico fotonico da quattro qubit effettivi, il cui chip misura appena 18 per 4 millimetri.",
+  "source": {
+    "url": "https://www.agi.it/innovazione/news/2026-11-11/primo-computer-quantistico-fotonico-italia-39982403/",
+    "finalUrl": "https://www.agi.it/innovazione/news/2026-11-11/primo-computer-quantistico-fotonico-italia-39982403/",
+    "publisher": "AGI",
+    "publishedOn": "2026-11-11"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "rotonium-2026-11-11-product-0ab46d",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

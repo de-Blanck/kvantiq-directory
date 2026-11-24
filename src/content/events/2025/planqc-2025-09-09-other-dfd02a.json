@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/planqc"
+  ],
+  "happenedOn": "2025-09-09",
+  "foundOn": "2026-06-25",
+  "summary": "planqc won the 2025 German Founder Award in the Startup category for its work on neutral-atom quantum computing.",
+  "quote": "For its mission to bring a “Made in Germany” quantum computer based on neutral atoms into industrial application, MPQ spin-off planqc was awarded the prestigious founder award prize in the category Startup on September 9, 2025.",
+  "source": {
+    "url": "https://www.mpq.mpg.de/7098253/09-planqc-deutscher-gruenderpreis",
+    "finalUrl": "https://www.mpq.mpg.de/7098253/09-planqc-deutscher-gruenderpreis",
+    "publisher": "Max Planck Institute of Quantum Optics"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "planqc-2025-09-09-other-dfd02a",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "other",
+  "funding": null,
+  "subtype": null
+}

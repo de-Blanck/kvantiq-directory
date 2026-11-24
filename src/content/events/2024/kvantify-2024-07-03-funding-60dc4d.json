@@ -1,0 +1,46 @@
+{
+  "entities": [
+    "companies/kvantify"
+  ],
+  "happenedOn": "2024-07-03",
+  "foundOn": "2026-06-25",
+  "summary": "Kvantify closed a €10 million seed round to develop quantum computing applications for life sciences.",
+  "quote": "Kvantify, a leading quantum software start-up, has announced the successful closure of a EUR 10 million seed round.",
+  "source": {
+    "url": "https://lundbeckfonden.com/news/lundbeckfonden-biocapital-invests-in-danish-quantum-start-up-kvantify",
+    "finalUrl": "https://lundbeckfonden.com/news/lundbeckfonden-biocapital-invests-in-danish-quantum-start-up-kvantify",
+    "publisher": "Lundbeck Foundation",
+    "publishedOn": "2024-06-25"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "kvantify-2024-07-03-funding-60dc4d",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 10000000,
+    "currency": "EUR",
+    "round": "seed",
+    "investors": [
+      "Dreamcraft",
+      "Lundbeckfonden BioCapital",
+      "2degrees",
+      "Redstone VC",
+      "2xN",
+      "EIFO"
+    ]
+  },
+  "subtype": null
+}

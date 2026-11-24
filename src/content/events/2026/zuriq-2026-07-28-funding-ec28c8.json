@@ -1,0 +1,44 @@
+{
+  "entities": [
+    "companies/zuriq"
+  ],
+  "happenedOn": "2026-07-28",
+  "foundOn": "2026-10-18",
+  "summary": "ZuriQ raised $25.5 million in a seed round led by Quantonation to develop its trapped-ion quantum processors.",
+  "quote": "Swiss quantum computing startup ZuriQ has raised $25.5 million in seed funding to accelerate the development of its trapped-ion quantum processors.",
+  "source": {
+    "url": "https://tech.eu/2026/07/28/zuriq-raises-255m-to-scale-its-breakthrough-2d-quantum-architecture/",
+    "finalUrl": "https://tech.eu/2026/07/28/zuriq-raises-255m-to-scale-its-breakthrough-2d-quantum-architecture/",
+    "publisher": "Tech.eu",
+    "publishedOn": "2026-07-28"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "zuriq-2026-07-28-funding-ec28c8",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 25500000,
+    "currency": "USD",
+    "round": "seed",
+    "investors": [
+      "Quantonation",
+      "Forward.one",
+      "Extantia",
+      "Firgun Ventures"
+    ]
+  },
+  "subtype": null
+}

@@ -1,0 +1,39 @@
+{
+  "entities": [
+    "companies/quantum-industries"
+  ],
+  "happenedOn": "2025-03-03",
+  "foundOn": "2026-03-20",
+  "summary": "Quantum Industries raised $10 million in seed funding for quantum-secure communications.",
+  "quote": "Today, Quantum Industries (QI), a global leader in quantum secure communications for critical infrastructure, announced it has raised $10 million in Seed funding.",
+  "source": {
+    "url": "https://tech.eu/2025/03/03/vienna-based-quantum-industries-secures-10m-to-safeguard-europe-s-critical-infrastructure-from-quantum-threats/",
+    "finalUrl": "https://tech.eu/2025/03/03/vienna-based-quantum-industries-secures-10m-to-safeguard-europe-s-critical-infrastructure-from-quantum-threats/",
+    "publisher": "Tech.eu",
+    "publishedOn": "2025-03-03"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quantum-industries-2025-03-03-funding-68938b",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 10000000,
+    "currency": "USD",
+    "round": "seed",
+    "investors": []
+  },
+  "subtype": null
+}

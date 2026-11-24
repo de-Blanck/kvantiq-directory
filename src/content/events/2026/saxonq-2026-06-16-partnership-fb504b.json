@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/saxonq"
+  ],
+  "happenedOn": "2026-06-16",
+  "foundOn": "2026-06-16",
+  "summary": "SaxonQ announced Bechtle as its first certified partner for sales, integration and operation of its quantum computers.",
+  "quote": "The team from the Bechtle Competence Centre for Quantum Technologies in Bonn visited us in Leipzig and successfully completed certification for sales, integration, and operation.",
+  "source": {
+    "url": "https://www.saxonq.com/news/bechtle-first-certified-partner/",
+    "finalUrl": "https://www.saxonq.com/news/bechtle-first-certified-partner/",
+    "publisher": "SaxonQ",
+    "publishedOn": "2026-06-16"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "saxonq-2026-06-16-partnership-fb504b",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "partnership",
+  "funding": null,
+  "subtype": null
+}

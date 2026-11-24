@@ -1,0 +1,57 @@
+{
+  "entities": [
+    "companies/oqc"
+  ],
+  "happenedOn": "2026-06-03",
+  "foundOn": "2026-09-02",
+  "summary": "Oxford Quantum Circuits closed an oversubscribed £260 million Series C led by Bullhound Capital.",
+  "quote": "Oxford Quantum Circuits (OQC), a UK-based company building quantum computers and a secure, scalable Quantum-AI data-centre platform for enterprise and government customers, has closed an oversubscribed €301 million (£260 million/$350 million) Series C funding round.",
+  "source": {
+    "url": "https://www.eu-startups.com/2026/06/uks-oxford-quantum-circuits-raises-e301-million-series-c-to-scale-quantum-ai-data-centre-platform/",
+    "finalUrl": "https://www.eu-startups.com/2026/06/uks-oxford-quantum-circuits-raises-e301-million-series-c-to-scale-quantum-ai-data-centre-platform/",
+    "publisher": "EU-Startups",
+    "publishedOn": "2026-06-03"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "oqc-2026-06-03-funding-3563d2",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 260000000,
+    "currency": "GBP",
+    "round": "series-c-plus",
+    "investors": [
+      "Bullhound Capital",
+      "British Business Bank",
+      "Fynveur",
+      "COFIDES",
+      "Alpha Edison",
+      "Fulcrum Asset Management",
+      "Pentland Ventures",
+      "Magdalen College Oxford",
+      "Adaptive Capital Partners",
+      "Firgun Ventures",
+      "18 West",
+      "Oxford Capital",
+      "Oxford Science Enterprises",
+      "SBI",
+      "Chevron Technology Ventures",
+      "The University of Tokyo Edge Capital Partners Co.",
+      "OTIF Ventures"
+    ]
+  },
+  "subtype": null
+}

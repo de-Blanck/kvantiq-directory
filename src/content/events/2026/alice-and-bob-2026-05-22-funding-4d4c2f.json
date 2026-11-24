@@ -1,0 +1,41 @@
+{
+  "entities": [
+    "companies/alice-and-bob"
+  ],
+  "happenedOn": "2026-05-22",
+  "foundOn": "2026-09-02",
+  "summary": "NVIDIA’s NVentures invested an undisclosed amount in an extension of Alice & Bob’s Series B.",
+  "quote": "French fault-tolerant quantum computing company Alice & Bob has raised investment from NVentures, NVIDIA’s venture capital arm, that expands its €100 million Series B round.",
+  "source": {
+    "url": "https://tech.eu/2026/05/22/alice-bob-expands-series-b-with-investment-from-nvidias-venture-arm/",
+    "finalUrl": "https://tech.eu/2026/05/22/alice-bob-expands-series-b-with-investment-from-nvidias-venture-arm/",
+    "publisher": "Tech.eu",
+    "publishedOn": "2026-05-22"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "alice-and-bob-2026-05-22-funding-4d4c2f",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": null,
+    "currency": null,
+    "round": "series-b",
+    "investors": [
+      "NVentures"
+    ]
+  },
+  "subtype": null
+}

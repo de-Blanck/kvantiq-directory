@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/welinq"
+  ],
+  "happenedOn": "2026-06-23",
+  "foundOn": "2026-06-23",
+  "summary": "Welinq announced an araQne integration with NVIDIA CUDA-Q for distributed quantum compilation and GPU-accelerated verification.",
+  "quote": "By integrating araQne with NVIDIA CUDA-Q, Welinq creates a coherent workflow from distributed quantum algorithm compilation to GPU-accelerated verification of compiled DQC circuits.",
+  "source": {
+    "url": "https://welinq.fr/blog/welinqs-araqne-meets-nvidia-cuda-q-distributed-quantum-compiling-with-gpu-accelerated-verification",
+    "finalUrl": "https://www.welinq.fr/blog/welinqs-araqne-meets-nvidia-cuda-q-distributed-quantum-compiling-with-gpu-accelerated-verification",
+    "publisher": "Welinq"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "welinq-2026-06-23-product-ef7df5",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}
