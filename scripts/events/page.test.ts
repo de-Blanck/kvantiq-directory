@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { htmlToText, quoteFound, dateFound, amountInQuote } from './page';
+import { htmlToText, quoteFound, dateFound, amountInQuote, arxivFirstVersionDate } from './page';
 
 const fx = readFileSync(new URL('./fixtures/funding-release.html', import.meta.url), 'utf8');
 test('text: hidden elements and scripts removed, entities decoded', () => {
@@ -35,6 +35,11 @@ test('date: short month names still need the right day, month and year', () => {
 });
 test('date: a date glued to a letter does not count', () => {
   for (const s of ['éApr 2, 2025', '2 Apr 2025é', 'é2025-04-02', '2 April 2025é']) assert.ok(!dateFound('2025-04-02', '<p></p>', s), s);
+});
+test('arXiv: first-version date is read from the submission line', () => {
+  assert.equal(arxivFirstVersionDate('Submitted on 2 Apr 2025 (v1), last revised 14 Jan 2026 (this version, v3)'), '2025-04-02');
+  assert.equal(arxivFirstVersionDate('[Submitted on 9 Sep 2025]'), '2025-09-09');
+  assert.equal(arxivFirstVersionDate('Published 2 April 2025'), null);
 });
 test('amount: currency-tied formats match', () => {
   assert.ok(amountInQuote(12_000_000, 'EUR', 'raised €12M in a seed round'));

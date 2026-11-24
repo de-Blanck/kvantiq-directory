@@ -10,7 +10,7 @@ For an event, return `id`, `status` and these fields:
 - `type` — Use one of the six keys below.
 - `subtype` — Include only for `corporate` when applicable. Use `acquisition`, `merger`, `listing` or `closure`.
 - `funding` — Required for `funding` and forbidden for other types. Include `amount` (number or null when undisclosed), `currency` (uppercase three-letter ISO 4217 code or null), `round` and `investors` (array of strings). For `round`, use `pre-seed`, `seed`, `series-a`, `series-b`, `series-c-plus`, `grant`, `debt`, `ipo`, `undisclosed` or `other`.
-- `happenedOn` — The event date on the page in YYYY-MM-DD. On an arXiv abstract page, use the first version's submission date (`Submitted on`, `[v1]`), not a later revision. If the page gives no event date, use the earliest ref date.
+- `happenedOn` — The event date on the page in YYYY-MM-DD. On an arXiv abstract page, use the first version's submission date (`Submitted on`, `[v1]`), not a later revision; if no first-version date is shown, treat the page as giving no event date. If the page gives no event date, use the earliest ref date.
 - `publisher` — The organisation that published the page.
 - `publishedOn` — Optional page publication date in YYYY-MM-DD.
 

@@ -3,7 +3,7 @@ import { computeEventId, eventSchema, type EventRecord } from '../../src/lib/eve
 import { hostOf, isHostOrSubdomain, normalizeUrl } from '../../src/lib/events/url';
 import { isCredibleSource } from '../../src/lib/source-bar';
 import type { EventCandidate } from './candidate';
-import { amountInQuote, dateFound, htmlToText, quoteFound } from './page';
+import { amountInQuote, arxivFirstVersionDate, dateFound, htmlToText, quoteFound } from './page';
 
 export type FetchedPage = { status: number; contentType: string; html: string; finalUrl: string };
 export type EntityInfo = { key: string; collection: string; name: string; published: boolean; websiteHost: string | null; country: string | null };
@@ -69,6 +69,8 @@ export function checkCandidate(c: EventCandidate, ctx: CheckContext): Verdict {
   const text = htmlToText(page.html);
   if (!quoteFound(c.quote, text)) return hold('quote-not-found');
   if (!dateFound(c.happenedOn, page.html, text)) return hold('date-not-found');
+  const arxivDate = hosts.some(host => isHostOrSubdomain(host, 'arxiv.org')) ? arxivFirstVersionDate(text) : null;
+  if (arxivDate !== null && arxivDate !== c.happenedOn) return hold('date-not-found');
   const amount = c.funding?.amount ?? null;
   if (amount !== null && !amountInQuote(amount, c.funding!.currency, c.quote)) return hold('amount-not-in-quote');
   if (!c.typeSecondOpinion) return hold('type-unchecked');

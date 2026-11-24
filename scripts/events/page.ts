@@ -157,6 +157,14 @@ export function dateFound(happenedOn: string, html: string, pageText: string): b
     .test(normalizeForMatch(pageText));
 }
 
+// arXiv lists every revision date; only the first version dates the result.
+export function arxivFirstVersionDate(pageText: string): string | null {
+  const match = /submitted on (\d{1,2}) ([a-z]{3})[a-z]*\.? (\d{4})/.exec(normalizeForMatch(pageText));
+  if (!match) return null;
+  const month = shortMonths.findIndex(name => name.slice(0, 3).toLowerCase() === match[2]) + 1;
+  if (month === 0) return null;
+  return `${match[3]}-${String(month).padStart(2, '0')}-${match[1].padStart(2, '0')}`;
+}
 
 const markers = String.raw`(?:US\$|[AC]\$|[€$£]|EUR|USD|GBP|DKK|SEK|NOK|CHF|kr\.?)`;
 const number = String.raw`(\d+(?:[.,]\d+)*)`;

@@ -76,6 +76,13 @@ test('pointer-only', () => {
 });
 test('quote-not-found', () => assertHold('quote-not-found', { quote: 'This quotation does not appear on the page.' }));
 test('date-not-found', () => assertHold('date-not-found', { happenedOn: '2026-12-01' }));
+test('date-not-found: an arXiv revision date does not date the result', () => {
+  const arxiv = { url: 'https://arxiv.org/abs/2504.01567', publisher: 'arXiv' };
+  const html = `<p>Submitted on 2 Apr 2025 (v1), last revised 3 Apr 2025 (this version, v2)</p><p>${quote}</p>`;
+  const page = ctx({ html, finalUrl: arxiv.url });
+  assertHold('date-not-found', { source: arxiv, happenedOn: '2025-04-03' }, page);
+  assert.equal(checkCandidate(candidate({ source: arxiv, happenedOn: '2025-04-02' }), page).status, 'publish');
+});
 test('amount-not-in-quote', () => {
   assertHold('amount-not-in-quote', { funding: { ...candidate().funding, amount: 125_000_000 } });
 });
