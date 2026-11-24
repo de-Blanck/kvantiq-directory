@@ -135,6 +135,8 @@ const months = [
   'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
   'September', 'October', 'November', 'December',
 ];
+// arXiv and many news sites abbreviate ("2 Apr 2025", "Sept. 9, 2025").
+const shortMonths = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept?', 'Oct', 'Nov', 'Dec'];
 
 export function dateFound(happenedOn: string, html: string, pageText: string): boolean {
   const timestamp = Date.parse(happenedOn);
@@ -142,10 +144,12 @@ export function dateFound(happenedOn: string, html: string, pageText: string): b
 
   const [year, month, day] = happenedOn.split('-');
   const monthName = months[Number(month) - 1];
+  const shortMonth = `${shortMonths[Number(month) - 1]}\\.?`;
   const dayPart = day.startsWith('0') ? `0?${day[1]}` : day;
   const monthPart = month.startsWith('0') ? `0?${month[1]}` : month;
   const formats = [
     happenedOn, `${dayPart} ${monthName} ${year}`, `${monthName} ${dayPart}, ${year}`,
+    `${dayPart} ${shortMonth} ${year}`, `${shortMonth} ${dayPart}, ${year}`,
     `${dayPart}\\.${monthPart}\\.${year}`,
   ];
   return new RegExp(`\\b(?:${formats.join('|')})\\b`, 'i').test(normalizeForMatch(pageText));

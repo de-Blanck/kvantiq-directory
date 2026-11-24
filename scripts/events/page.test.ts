@@ -22,6 +22,17 @@ test('date: article metadata within ±3 days counts; related-story <time> and We
 test('date: text formats count', () => {
   for (const s of ['on 2026-07-08', 'on 8 July 2026', 'on July 8, 2026', 'on 08.07.2026']) assert.ok(dateFound('2026-07-08', '<p></p>', s), s);
 });
+test('date: short month names count, as arXiv writes them', () => {
+  for (const s of ['Submitted on 2 Apr 2025', '[v1] Wed, 2 Apr 2025 10:10:11 UTC', 'on 02 Apr. 2025', 'on Apr 2, 2025', 'on Apr. 2, 2025']) {
+    assert.ok(dateFound('2025-04-02', '<p></p>', s), s);
+  }
+  for (const s of ['on 9 Sep 2025', 'on 9 Sept 2025', 'on Sept. 9, 2025']) assert.ok(dateFound('2025-09-09', '<p></p>', s), s);
+});
+test('date: short month names still need the right day, month and year', () => {
+  for (const s of ['on 12 Apr 2025', 'on 2 Apr 2024', 'on 2 Mar 2025', 'on Apr 22, 2025', 'on 2 Aprx 2025']) {
+    assert.ok(!dateFound('2025-04-02', '<p></p>', s), s);
+  }
+});
 test('amount: currency-tied formats match', () => {
   assert.ok(amountInQuote(12_000_000, 'EUR', 'raised €12M in a seed round'));
   assert.ok(amountInQuote(12_000_000, 'EUR', 'EUR 12 million'));
