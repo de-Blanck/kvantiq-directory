@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "benchmarks/surface-code-below-threshold"
+  ],
+  "happenedOn": "2026-09-15",
+  "foundOn": "2026-09-20",
+  "summary": "Quantum Elements and USC reported below-threshold surface-code error correction on IBM Heron processors.",
+  "quote": "The authors were able to demonstrate logical qubits and achieved below-threshold performance on IBM Heron processors’ heavy-hex architecture, even though it is not optimized for surface codes.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/quantum-elements-and-usc-demonstrate-surface-code-scaling-on-ibm-heron-processors/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/quantum-elements-and-usc-demonstrate-surface-code-scaling-on-ibm-heron-processors/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "surface-code-below-threshold-2026-09-15-product-d8c51d",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

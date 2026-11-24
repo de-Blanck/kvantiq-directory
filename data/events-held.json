@@ -1,5 +1,138 @@
 [
   {
+    "key": "benchmarks/certified-randomness-quantinuum|https://doi.org/10.1038/s41586-025-08737-1",
+    "entities": [
+      "benchmarks/certified-randomness-quantinuum"
+    ],
+    "sourceUrl": "https://doi.org/10.1038/s41586-025-08737-1",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/clops|https://arxiv.org/abs/2609.12146",
+    "entities": [
+      "benchmarks/clops"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.12146",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/clops|https://ibm.com/quantum/blog/circuit-layer-operations-per-second",
+    "entities": [
+      "benchmarks/clops"
+    ],
+    "sourceUrl": "https://www.ibm.com/quantum/blog/circuit-layer-operations-per-second",
+    "reason": "possible-duplicate",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/clops|https://thequantuminsider.com/2021/11/04/ibm-proposes-a-new-way-to-measure-quantum-speed-clops",
+    "entities": [
+      "benchmarks/clops"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2021/11/04/ibm-proposes-a-new-way-to-measure-quantum-speed-clops/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/clops|https://thequantuminsider.com/2026/09/15/quantum-computers-need-100000-fold-performance-gain-for-scientific-utility-study-finds",
+    "entities": [
+      "benchmarks/clops",
+      "benchmarks/quantum-volume"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/15/quantum-computers-need-100000-fold-performance-gain-for-scientific-utility-study-finds/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/dwave-spin-glass-dynamics|https://arxiv.org/abs/2403.00910",
+    "entities": [
+      "benchmarks/dwave-spin-glass-dynamics"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2403.00910",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/lih-ground-state|https://arxiv.org/abs/2502.09595",
+    "entities": [
+      "benchmarks/lih-ground-state"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2502.09595",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/mqt-bench|https://github.com/munich-quantum-toolkit/bench/releases/tag/v2.4.0",
+    "entities": [
+      "benchmarks/mqt-bench"
+    ],
+    "sourceUrl": "https://github.com/munich-quantum-toolkit/bench/releases/tag/v2.4.0",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/qaoa-maxcut|https://thequantuminsider.com/2026/09/16/ionq-ornl-nvidia-tennessee-ai-quantum-optimization-tradeoff",
+    "entities": [
+      "benchmarks/qaoa-maxcut"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/16/ionq-ornl-nvidia-tennessee-ai-quantum-optimization-tradeoff/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/qed-c-benchmarks|https://arxiv.org/abs/2110.03137",
+    "entities": [
+      "benchmarks/qed-c-benchmarks"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2110.03137",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/quantum-centric-chemistry-ibm-heron|https://arxiv.org/abs/2405.05068",
+    "entities": [
+      "benchmarks/quantum-centric-chemistry-ibm-heron"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2405.05068",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
     "key": "benchmarks/quantum-centric-chemistry-ibm-heron|https://quantumcomputingreport.com/cleveland-clinic-riken-and-ibm-cross-12000-atom-barrier-in-heterogeneous-quantum-classical-drug-binding-simulations",
     "entities": [
       "benchmarks/quantum-centric-chemistry-ibm-heron",
@@ -13,12 +146,159 @@
     "stale": false
   },
   {
+    "key": "benchmarks/quantum-centric-chemistry-ibm-heron|https://quantumcomputingreport.com/ibm-riken-and-nvidia-achieve-79x-accuracy-gain-in-quantum-classical-simulations-of-iron-sulfur-clusters",
+    "entities": [
+      "benchmarks/quantum-centric-chemistry-ibm-heron"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/ibm-riken-and-nvidia-achieve-79x-accuracy-gain-in-quantum-classical-simulations-of-iron-sulfur-clusters/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/quantum-centric-chemistry-ibm-heron|https://quantumcomputingreport.com/qunova-computing-achieves-chemical-accuracy-at-80-qubits-on-iron-sulfur-cluster-using-ibm-quantum-system-two-and-fugaku",
+    "entities": [
+      "benchmarks/quantum-centric-chemistry-ibm-heron"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/qunova-computing-achieves-chemical-accuracy-at-80-qubits-on-iron-sulfur-cluster-using-ibm-quantum-system-two-and-fugaku/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/quantum-kernel-methods|https://arxiv.org/abs/2409.04406",
+    "entities": [
+      "benchmarks/quantum-kernel-methods"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2409.04406",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
     "key": "benchmarks/quantum-kernel-methods|https://quantumcomputingreport.com/iqm-researchers-benchmark-projected-quantum-kernels-across-45-qubits-using-cross-device-referee-challenger-protocol",
     "entities": [
       "benchmarks/quantum-kernel-methods",
       "use-cases/quantum-machine-learning-classification"
     ],
     "sourceUrl": "https://quantumcomputingreport.com/iqm-researchers-benchmark-projected-quantum-kernels-across-45-qubits-using-cross-device-referee-challenger-protocol/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/rcs-phase-transition|https://arxiv.org/abs/2607.25941",
+    "entities": [
+      "benchmarks/rcs-phase-transition",
+      "benchmarks/surface-code-below-threshold",
+      "benchmarks/xeb-cross-entropy"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2607.25941",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/rcs-phase-transition|https://hpcwire.com/off-the-wire/ibm-and-uchicago-advance-trusted-quantum-computing-with-verified-logical-circuits",
+    "entities": [
+      "benchmarks/rcs-phase-transition",
+      "benchmarks/xeb-cross-entropy"
+    ],
+    "sourceUrl": "https://www.hpcwire.com/off-the-wire/ibm-and-uchicago-advance-trusted-quantum-computing-with-verified-logical-circuits/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/rcs-phase-transition|https://thequantuminsider.com/2026/07/31/ibm-university-of-chicago-verified-logical-quantum-computation",
+    "entities": [
+      "benchmarks/rcs-phase-transition"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/07/31/ibm-university-of-chicago-verified-logical-quantum-computation/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/reconfigurable-atom-logical-processor|https://arxiv.org/abs/2312.03982",
+    "entities": [
+      "benchmarks/reconfigurable-atom-logical-processor"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2312.03982",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/supermarq|https://arxiv.org/abs/2202.11045",
+    "entities": [
+      "benchmarks/supermarq"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2202.11045",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/supermarq|https://arxiv.org/abs/2609.19931",
+    "entities": [
+      "benchmarks/supermarq"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.19931",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/surface-code-below-threshold|https://thequantuminsider.com/2026/09/15/usc-and-quantum-elements-error-correction-technique-demonstrates-surface-code-scaling-with-logical-qubits",
+    "entities": [
+      "benchmarks/surface-code-below-threshold"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/15/usc-and-quantum-elements-error-correction-technique-demonstrates-surface-code-scaling-with-logical-qubits/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/tensor-network-eagle-kicked-ising|https://hpcwire.com/off-the-wire/qedma-and-ibm-report-error-mitigation-software-extends-quantum-computing-beyond-classical-simulation",
+    "entities": [
+      "benchmarks/tensor-network-eagle-kicked-ising"
+    ],
+    "sourceUrl": "https://www.hpcwire.com/off-the-wire/qedma-and-ibm-report-error-mitigation-software-extends-quantum-computing-beyond-classical-simulation/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/vqe-hydrogen|https://thequantuminsider.com/2026/07/30/ibm-algorithmiq-quantum-computation-verification-framework",
+    "entities": [
+      "benchmarks/vqe-hydrogen"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/07/30/ibm-algorithmiq-quantum-computation-verification-framework/",
     "reason": "pointer-only",
     "firstHeldOn": "2026-11-24",
     "lastCheckedOn": "2026-11-24",
@@ -182,6 +462,19 @@
     "stale": false
   },
   {
+    "key": "companies/aqarios|https://quantumcomputingreport.com/aqarios-launches-constraint-native-quantum-optimizer-in-the-ibm-qiskit-functions-catalog",
+    "entities": [
+      "companies/aqarios",
+      "benchmarks/qaoa-maxcut"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/aqarios-launches-constraint-native-quantum-optimizer-in-the-ibm-qiskit-functions-catalog/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
     "key": "companies/kipu-quantum|https://quantumcomputingreport.com/kipu-quantum-launches-rimay-quantum-feature-extraction-in-ibm-quantum-functions-catalog",
     "entities": [
       "companies/kipu-quantum",
@@ -222,12 +515,52 @@
     "stale": false
   },
   {
+    "key": "companies/quantinuum|https://quantumcomputingreport.com/sandia-quantinuum-and-nvidia-introduce-quops-framework-to-benchmark-physical-and-logical-quantum-performance",
+    "entities": [
+      "companies/quantinuum",
+      "benchmarks/quantum-volume"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/sandia-quantinuum-and-nvidia-introduce-quops-framework-to-benchmark-physical-and-logical-quantum-performance/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
     "key": "companies/qubit-pharmaceuticals|https://quantumcomputingreport.com/qubit-pharmaceuticals-sorbonne-universite-and-q-ctrl-demonstrate-3d-protein-hydration-site-prediction-on-ibm-heron-processors",
     "entities": [
       "companies/qubit-pharmaceuticals",
       "use-cases/drug-discovery-hybrid"
     ],
     "sourceUrl": "https://quantumcomputingreport.com/qubit-pharmaceuticals-sorbonne-universite-and-q-ctrl-demonstrate-3d-protein-hydration-site-prediction-on-ibm-heron-processors/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qubit-pharmaceuticals|https://quantumcomputingreport.com/sorbonne-universite-and-qubit-pharmaceuticals-introduce-vulcan-hybrid-framework-for-scalable-quantum-chemistry",
+    "entities": [
+      "companies/qubit-pharmaceuticals",
+      "benchmarks/h2o-molecule",
+      "benchmarks/vqe-hydrogen"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/sorbonne-universite-and-qubit-pharmaceuticals-introduce-vulcan-hybrid-framework-for-scalable-quantum-chemistry/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/cuda-q|https://thequantuminsider.com/2026/09/14/nvidia-expands-open-source-cuda-q-platform",
+    "entities": [
+      "resources/cuda-q",
+      "benchmarks/surface-code-below-threshold"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/14/nvidia-expands-open-source-cuda-q-platform/",
     "reason": "pointer-only",
     "firstHeldOn": "2026-11-24",
     "lastCheckedOn": "2026-11-24",

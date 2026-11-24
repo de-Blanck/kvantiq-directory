@@ -78,6 +78,28 @@
       "url": "https://www.hpcwire.com/off-the-wire/ibm-and-uchicago-advance-trusted-quantum-computing-with-verified-logical-circuits/",
       "title": "IBM and UChicago Advance Trusted Quantum Computing with Verified Logical Circuits - HPCwire",
       "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2510.18847",
+      "title": "Surface code scaling on heavy-hex superconducting quantum processors",
+      "authors": "Arian Vezvaee, Cesar Benito, Mario Morford-Oberst, Alejandro Bermudez, Daniel A. Lidar",
+      "datePublished": "2025-10-01",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "doi",
+      "url": "https://doi.org/10.1038/s41467-026-76090-6",
+      "title": "Surface code scaling on heavy-hex superconducting quantum processors (Nature Communications)",
+      "authors": "Vezvaee, Benito, Morford-Oberst, Bermudez, Lidar",
+      "datePublished": "2026-07-29",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/usc-and-quantum-elements-demonstrate-surface-code-scaling-on-ibm-heavy-hex-processors/",
+      "title": "USC and Quantum Elements Demonstrate Surface Code Scaling on IBM Heavy-Hex Processors",
+      "dateAccessed": "2026-09-20"
     }
   ],
   "news": [

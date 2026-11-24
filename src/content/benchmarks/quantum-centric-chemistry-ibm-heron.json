@@ -63,6 +63,31 @@
       "url": "https://www.ibm.com/quantum/blog/riken-fugaku-qcsc",
       "title": "RIKEN and IBM demonstrate quantum-centric supercomputing — closed-loop Heron + Fugaku SQD on iron-sulfur molecules",
       "dateAccessed": "2026-09-03"
+    },
+    {
+      "type": "url",
+      "url": "https://arxiv.org/abs/2611.04496",
+      "title": "Broken-Symmetry Reference States for Sample-Based Quantum Diagonalization with Near-DMRG Accuracy - arXiv",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/ibm-riken-and-nvidia-achieve-79x-accuracy-gain-in-quantum-classical-simulations-of-iron-sulfur-clusters/",
+      "title": "IBM, RIKEN, and NVIDIA Achieve 79x Accuracy Gain in Quantum-Classical Simulations of Iron-Sulfur Clusters - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://arxiv.org/abs/2605.01138",
+      "title": "Crossing the 12,000-atom barrier with heterogeneous quantum-classical supercomputing - arXiv",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2601.06935",
+      "title": "Extending the Handover-Iterative VQE to Challenging Strongly Correlated Systems: N2 and Fe-S Cluster",
+      "datePublished": "2026-01-11",
+      "dateAccessed": "2026-11-22"
     }
   ],
   "news": [

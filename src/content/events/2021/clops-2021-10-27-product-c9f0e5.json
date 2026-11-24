@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "benchmarks/clops"
+  ],
+  "happenedOn": "2021-10-27",
+  "foundOn": "2026-03-20",
+  "summary": "IBM researchers proposed CLOPS to measure quantum computing speed across classical and quantum components.",
+  "quote": "We propose a speed benchmark, using an update to the quantum volume experiments that allows the measurement of Circuit Layer Operations Per Second (CLOPS) and identify how both classical and quantum components play a role in improving performance.",
+  "source": {
+    "url": "https://arxiv.org/abs/2110.14108",
+    "finalUrl": "https://arxiv.org/abs/2110.14108",
+    "publisher": "arXiv"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "clops-2021-10-27-product-c9f0e5",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

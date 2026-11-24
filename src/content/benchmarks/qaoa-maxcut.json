@@ -49,6 +49,20 @@
       "type": "arxiv",
       "url": "https://arxiv.org/pdf/2604.08367",
       "title": "Per-Shot Evaluation of QAOA on Max-Cut: A Black-Box Implementation Comparison with Goemans-Williamson"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2607.20225",
+      "title": "Generative AI accelerates quantum optimization (IonQ, ORNL, NVIDIA, UTK — IEEE Quantum Week 2026 Best Paper)",
+      "authors": "IonQ, ORNL, NVIDIA, University of Tennessee Knoxville",
+      "datePublished": "2026-07-01",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://www.hpcwire.com/off-the-wire/ionq-and-partners-report-ai-method-for-scaling-hybrid-quantum-optimization/",
+      "title": "IonQ and Partners Report AI Method for Scaling Hybrid Quantum Optimization",
+      "dateAccessed": "2026-09-20"
     }
   ]
 }
