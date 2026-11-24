@@ -1,0 +1,35 @@
+{
+  "entities": [
+    "resources/danish-quantum-community",
+    "resources/denmark-quantum-funding"
+  ],
+  "happenedOn": "2026-06-17",
+  "foundOn": "2026-06-18",
+  "summary": "Danish Quantum Community elected and re-elected board members and chose two alternates at its annual general assembly.",
+  "quote": "In addition, Michael Kjær (Danish National Metrology Institute) and Søren Stobbe (Technical University of Denmark) were elected as alternate members.",
+  "source": {
+    "url": "https://dqc.dk/new-board-members/",
+    "finalUrl": "https://dqc.dk/new-board-members/",
+    "publisher": "Danish Quantum Community",
+    "publishedOn": "2026-06-18"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "danish-quantum-community-2026-06-17-people-a6fcb7",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "people",
+  "funding": null,
+  "subtype": null
+}

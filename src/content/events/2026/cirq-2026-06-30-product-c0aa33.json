@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/cirq"
+  ],
+  "happenedOn": "2026-06-30",
+  "foundOn": "2026-09-02",
+  "summary": "Cirq 1.7.0 added Python 3.14 support, CY and CCY gates, and experimental LaTeX circuit rendering.",
+  "quote": "Added support for Python 3.14 and protobuf-6.",
+  "source": {
+    "url": "https://github.com/quantumlib/Cirq/releases/tag/v1.7.0",
+    "finalUrl": "https://github.com/quantumlib/Cirq/releases/tag/v1.7.0",
+    "publisher": "Cirq"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "cirq-2026-06-30-product-c0aa33",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

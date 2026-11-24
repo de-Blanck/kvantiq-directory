@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/perceval"
+  ],
+  "happenedOn": "2026-09-18",
+  "foundOn": "2026-11-20",
+  "summary": "Quandela released Perceval v1.3.0 with error mitigation and a new workflow built around SimulatedComputer and RemoteComputer.",
+  "quote": "This update offers a whole new error mitigation feature, which needed a complete rewriting of the high-level classes of perceval (everything above Processor or RemoteProcessor).",
+  "source": {
+    "url": "https://github.com/Quandela/Perceval/releases/tag/v1.3.0",
+    "finalUrl": "https://github.com/Quandela/Perceval/releases/tag/v1.3.0",
+    "publisher": "GitHub"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "perceval-2026-09-18-product-a9c74e",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

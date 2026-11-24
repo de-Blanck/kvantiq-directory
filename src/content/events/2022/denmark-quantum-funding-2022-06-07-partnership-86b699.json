@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "resources/denmark-quantum-funding"
+  ],
+  "happenedOn": "2022-06-07",
+  "foundOn": "2026-06-28",
+  "summary": "Denmark and the United States signed a joint statement on cooperation in quantum information science and technology.",
+  "quote": "Lone Dencker Wisborg, Ambassador of Denmark to the United States, signed the joint statement in Washington for Denmark.",
+  "source": {
+    "url": "https://www.quantum.gov/the-united-states-and-denmark-take-steps-to-strengthen-quantum-cooperation/",
+    "finalUrl": "https://www.quantum.gov/the-united-states-and-denmark-take-steps-to-strengthen-quantum-cooperation/",
+    "publisher": "U.S. National Quantum Initiative",
+    "publishedOn": "2022-06-09"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "denmark-quantum-funding-2022-06-07-partnership-86b699",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "partnership",
+  "funding": null,
+  "subtype": null
+}

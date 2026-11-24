@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/cirq"
+  ],
+  "happenedOn": "2021-11-03",
+  "foundOn": "2026-06-28",
+  "summary": "A preprint introduced multinode quantum trajectory simulations with qsim, a Cirq backend, and compared noisy simulations with experiments.",
+  "quote": "We introduce multinode quantum trajectory simulations with qsim, an open source high performance simulator of quantum circuits.",
+  "source": {
+    "url": "https://arxiv.org/abs/2111.02396",
+    "finalUrl": "https://arxiv.org/abs/2111.02396",
+    "publisher": "arXiv"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "cirq-2021-11-03-product-0a51b9",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

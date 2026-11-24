@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/pennylane"
+  ],
+  "happenedOn": "2026-05-13",
+  "foundOn": "2026-09-02",
+  "summary": "Xanadu announced PennyLane v0.45 alongside Catalyst v0.15.",
+  "quote": "Assemble meaningful algorithms with PennyLane v0.45 and Catalyst v0.15",
+  "source": {
+    "url": "https://pennylane.ai/blog/2026/05/pennylane-release-0.45",
+    "finalUrl": "https://pennylane.ai/blog/2026/05/pennylane-release-0.45",
+    "publisher": "Xanadu"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "pennylane-2026-05-13-product-dc5d58",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

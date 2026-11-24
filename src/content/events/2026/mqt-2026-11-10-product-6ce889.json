@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/mqt"
+  ],
+  "happenedOn": "2026-11-10",
+  "foundOn": "2026-11-20",
+  "summary": "MQT Core 4.2.0 added native exact decision-diagram estimation and reduced compiler overhead.",
+  "quote": "✨ Add native exact DD estimation (#2849) (@burgholzer)",
+  "source": {
+    "url": "https://github.com/munich-quantum-toolkit/core/releases/tag/v4.2.0",
+    "finalUrl": "https://github.com/munich-quantum-toolkit/core/releases/tag/v4.2.0",
+    "publisher": "GitHub"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "mqt-2026-11-10-product-6ce889",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

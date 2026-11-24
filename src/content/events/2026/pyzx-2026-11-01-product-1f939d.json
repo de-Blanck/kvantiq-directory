@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/pyzx"
+  ],
+  "happenedOn": "2026-11-01",
+  "foundOn": "2026-11-20",
+  "summary": "PyZX v0.10.8 added cubic-time flow finding for XY, X and Y measurements and a new Pauli flow entry point.",
+  "quote": "Cubic flow finding for XY, X, and Y measurements, with the previous finder available as method=\"legacy\".",
+  "source": {
+    "url": "https://github.com/zxcalc/pyzx/releases/tag/v0.10.8",
+    "finalUrl": "https://github.com/zxcalc/pyzx/releases/tag/v0.10.8",
+    "publisher": "GitHub"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "pyzx-2026-11-01-product-1f939d",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/cuda-q"
+  ],
+  "happenedOn": "2026-03-16",
+  "foundOn": "2026-06-28",
+  "summary": "Pasqal integrated NVIDIA CUDA-Q with its QRMI runtime so Slurm can schedule workloads on Pasqal quantum systems.",
+  "quote": "PARIS, March 16, 2026 — Pasqal, a global leader in neutral-atom quantum computing and member of the NVIDIA Inception program for startups, announced today the integration of the NVIDIA CUDA-Q platform with its Quantum Resource Management Interface (QRMI) runtime.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/pasqal-integrates-nvidia-cuda-q-with-qrmi-for-slurm-native-hybrid-hpc-quantum-workflows/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/pasqal-integrates-nvidia-cuda-q-with-qrmi-for-slurm-native-hybrid-hpc-quantum-workflows/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "cuda-q-2026-03-16-product-dabc49",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

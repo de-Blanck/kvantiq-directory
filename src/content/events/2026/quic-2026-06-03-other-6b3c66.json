@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "resources/quic"
+  ],
+  "happenedOn": "2026-06-03",
+  "foundOn": "2026-06-03",
+  "summary": "QuIC published a white paper assessing the EU Inc. proposal and making recommendations for Europe’s quantum industry.",
+  "quote": "In this whitepaper, QuIC assesses the proposed framework from the perspective of Europe’s quantum industry.",
+  "source": {
+    "url": "https://www.euroquic.org/quic-whitepaper-inputs-on-eu-inc/",
+    "finalUrl": "https://www.euroquic.org/quic-whitepaper-inputs-on-eu-inc/",
+    "publisher": "European Quantum Industry Consortium",
+    "publishedOn": "2026-06-03"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quic-2026-06-03-other-6b3c66",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "other",
+  "funding": null,
+  "subtype": null
+}

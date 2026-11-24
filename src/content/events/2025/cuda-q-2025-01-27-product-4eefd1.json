@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/cuda-q"
+  ],
+  "happenedOn": "2025-01-27",
+  "foundOn": "2026-06-28",
+  "summary": "A preprint evaluated CUDA-Q tensor network simulators on NVIDIA Grace Hopper and validated matrix product state simulations.",
+  "quote": "We compare the performance of the CUDA-Q state vector implementation and validate the correctness of MPS simulations.",
+  "source": {
+    "url": "https://arxiv.org/abs/2501.15939",
+    "finalUrl": "https://arxiv.org/abs/2501.15939",
+    "publisher": "arXiv"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "cuda-q-2025-01-27-product-4eefd1",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

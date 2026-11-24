@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/perceval"
+  ],
+  "happenedOn": "2026-07-02",
+  "foundOn": "2026-09-02",
+  "summary": "Quandela released Perceval 1.2.4 with Kipu Quantum Hub job submission and string support for interferometer shapes.",
+  "quote": "GenericInterferometer now accepts str as interferometer shape",
+  "source": {
+    "url": "https://github.com/Quandela/Perceval/releases/tag/v1.2.4",
+    "finalUrl": "https://github.com/Quandela/Perceval/releases/tag/v1.2.4",
+    "publisher": "Quandela"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "perceval-2026-07-02-product-c27827",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/mitiq"
+  ],
+  "happenedOn": "2026-09-04",
+  "foundOn": "2026-11-20",
+  "summary": "Mitiq v1.1.0 added experimental debiasing and support for user-supplied noise representations in probabilistic error amplification.",
+  "quote": "Probabilistic Error Amplification now accepts user-supplied OperationRepresentations in construct_circuits and execute_with_pea, so noise representations learned from hardware characterization can be amplified directly instead of relying on the built-in depolarizing noise models (#3041).",
+  "source": {
+    "url": "https://github.com/unitaryfoundation/mitiq/releases/tag/v1.1.0",
+    "finalUrl": "https://github.com/unitaryfoundation/mitiq/releases/tag/v1.1.0",
+    "publisher": "GitHub"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "mitiq-2026-09-04-product-96f59b",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

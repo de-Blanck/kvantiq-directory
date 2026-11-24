@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "resources/eurohpc-quantum-computing"
+  ],
+  "happenedOn": "2026-07-23",
+  "foundOn": "2026-09-02",
+  "summary": "EuroHPC JU opened procurement for MeluXina-Q in Luxembourg with a budget of up to €11.95 million.",
+  "quote": "The European High Performance Computing Joint Undertaking (EuroHPC JU) is launching the procurement process for a EuroHPC quantum computer to be hosted and operated by LuxProvide in Luxembourg and integrated into the EuroHPC supercomputer MeluXina.",
+  "source": {
+    "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-launches-procurement-quantum-computer-luxembourg-2026-07-23_en",
+    "finalUrl": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-launches-procurement-quantum-computer-luxembourg-2026-07-23_en",
+    "publisher": "EuroHPC JU",
+    "publishedOn": "2026-07-23"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "eurohpc-quantum-computing-2026-07-23-other-8bbc3f",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "other",
+  "funding": null,
+  "subtype": null
+}

@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/strawberry-fields"
+  ],
+  "happenedOn": "2026-01-16",
+  "foundOn": "2026-03-21",
+  "summary": "Xanadu archived the Strawberry Fields GitHub repository.",
+  "quote": "This repository was archived by the owner on Jan 16, 2026.",
+  "source": {
+    "url": "https://github.com/XanaduAI/strawberryfields",
+    "finalUrl": "https://github.com/XanaduAI/strawberryfields",
+    "publisher": "GitHub"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "strawberry-fields-2026-01-16-other-7aa817",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "other",
+  "funding": null,
+  "subtype": null
+}

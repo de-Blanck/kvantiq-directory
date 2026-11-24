@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "resources/quantum-katas"
+  ],
+  "happenedOn": "2018-07-23",
+  "foundOn": "2026-06-28",
+  "summary": "Microsoft announced Quantum Katas, an open-source set of self-paced exercises for learning quantum computing and Q#.",
+  "quote": "For those who want to explore quantum computing and learn the Q# programming language at their own pace, we have created the Quantum Katas – an open source project containing a series of programming exercises that provide immediate feedback as you progress.",
+  "source": {
+    "url": "https://azure.microsoft.com/en-us/blog/quantum/2018/07/23/learn-at-your-own-pace-with-microsoft-quantum-katas/",
+    "finalUrl": "https://azure.microsoft.com/en-us/blog/quantum/2018/07/23/learn-at-your-own-pace-with-microsoft-quantum-katas/",
+    "publisher": "Microsoft",
+    "publishedOn": "2018-07-23"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quantum-katas-2018-07-23-product-41a791",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}
