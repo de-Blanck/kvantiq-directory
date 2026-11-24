@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "challenges/airbus-bmw-quantum-challenge"
+  ],
+  "happenedOn": "2024-12-10",
+  "foundOn": "2026-04-21",
+  "summary": "Airbus and BMW Group unveiled five Quantum Computing Challenge winners at Q2B, each receiving €30,000.",
+  "quote": "At Q2B, the companies have unveiled the winners of the Quantum Computing Challenge, an international initiative to identify and mature quantum solutions for the most promising mobility applications.",
+  "source": {
+    "url": "https://www.airbus.com/en/newsroom/press-releases/2024-12-quantum-leaps-winners-of-airbus-and-bmw-groups-quantum-computing",
+    "finalUrl": "https://www.airbus.com/en/newsroom/press-releases/2024-12-quantum-leaps-winners-of-airbus-and-bmw-groups-quantum-computing",
+    "publisher": "Airbus",
+    "publishedOn": "2024-12-10"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "airbus-bmw-quantum-challenge-2024-12-10-other-0d6103",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "other",
+  "funding": null,
+  "subtype": null
+}
