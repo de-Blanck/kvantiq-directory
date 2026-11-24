@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "benchmarks/mqt-bench"
+  ],
+  "happenedOn": "2026-11-13",
+  "foundOn": "2026-11-20",
+  "summary": "Munich Quantum Toolkit released MQT Bench 2.4.0 with error-correction tools, QIR export, new device models, and new benchmarks.",
+  "quote": "github-actions released this 13 Nov 16:59",
+  "source": {
+    "url": "https://github.com/munich-quantum-toolkit/bench/releases/tag/v2.4.0",
+    "finalUrl": "https://github.com/munich-quantum-toolkit/bench/releases/tag/v2.4.0",
+    "publisher": "Munich Quantum Toolkit"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "mqt-bench-2026-11-13-product-d934af",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

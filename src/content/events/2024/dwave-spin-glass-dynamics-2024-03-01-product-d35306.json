@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "benchmarks/dwave-spin-glass-dynamics"
+  ],
+  "happenedOn": "2024-03-01",
+  "foundOn": "2026-04-19",
+  "summary": "Researchers demonstrated area-law entanglement scaling in spin-glass quench dynamics using quantum annealing.",
+  "quote": "We demonstrate area-law scaling of entanglement in the model quench dynamics of two-, three-, and infinite-dimensional spin glasses, supporting the observed stretched-exponential scaling of effort for matrix-product-state approaches.",
+  "source": {
+    "url": "https://arxiv.org/abs/2403.00910",
+    "finalUrl": "https://arxiv.org/abs/2403.00910",
+    "publisher": "arXiv"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "dwave-spin-glass-dynamics-2024-03-01-product-d35306",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

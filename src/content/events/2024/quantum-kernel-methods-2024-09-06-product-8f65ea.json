@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "benchmarks/quantum-kernel-methods"
+  ],
+  "happenedOn": "2024-09-06",
+  "foundOn": "2026-03-20",
+  "summary": "Schnabel and Roth benchmarked fidelity and projected quantum kernels on 64 datasets across classification and regression tasks.",
+  "quote": "Our investigation encompasses both classification and regression tasks for five dataset families and 64 datasets, systematically comparing the use of FQKs and PQKs quantum support vector machines and kernel ridge regression.",
+  "source": {
+    "url": "https://arxiv.org/abs/2409.04406",
+    "finalUrl": "https://arxiv.org/abs/2409.04406",
+    "publisher": "arXiv"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quantum-kernel-methods-2024-09-06-product-8f65ea",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

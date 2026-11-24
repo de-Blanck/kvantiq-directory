@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "benchmarks/reconfigurable-atom-logical-processor"
+  ],
+  "happenedOn": "2023-12-07",
+  "foundOn": "2026-04-19",
+  "summary": "Researchers demonstrated a programmable logical quantum processor using up to 280 physical qubits in neutral-atom arrays.",
+  "quote": "Here we report the realization of a programmable quantum processor based on encoded logical qubits operating with up to 280 physical qubits.",
+  "source": {
+    "url": "https://arxiv.org/abs/2312.03982",
+    "finalUrl": "https://arxiv.org/abs/2312.03982",
+    "publisher": "arXiv"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "reconfigurable-atom-logical-processor-2023-12-07-product-8ea0a9",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

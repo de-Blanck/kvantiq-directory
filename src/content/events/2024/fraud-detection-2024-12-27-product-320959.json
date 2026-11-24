@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "use-cases/fraud-detection"
+  ],
+  "happenedOn": "2024-12-27",
+  "foundOn": "2026-03-20",
+  "summary": "A variational quantum classifier achieved an F1-score of 0.88 in a credit card fraud detection study.",
+  "quote": "The VQC consistently demonstrates strong classification results, achieving an F1-score of 0.88, while the SQNN also delivers promising outcomes.",
+  "source": {
+    "url": "https://arxiv.org/abs/2412.19441",
+    "finalUrl": "https://arxiv.org/abs/2412.19441",
+    "publisher": "arXiv"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "fraud-detection-2024-12-27-product-320959",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

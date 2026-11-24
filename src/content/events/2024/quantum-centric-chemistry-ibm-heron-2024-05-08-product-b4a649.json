@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "benchmarks/quantum-centric-chemistry-ibm-heron"
+  ],
+  "happenedOn": "2024-05-08",
+  "foundOn": "2026-04-19",
+  "summary": "Researchers used IBM Heron and Fugaku for electronic structure simulations with circuits of up to 77 qubits and 10,570 gates.",
+  "quote": "Using a Heron superconducting processor and the supercomputer Fugaku, we simulate the ground-state dissociation of N$_2$ and the [2Fe-2S] and [4Fe-4S] clusters, with circuits up to 77 qubits and 10,570 gates.",
+  "source": {
+    "url": "https://arxiv.org/abs/2405.05068",
+    "finalUrl": "https://arxiv.org/abs/2405.05068",
+    "publisher": "arXiv"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quantum-centric-chemistry-ibm-heron-2024-05-08-product-b4a649",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

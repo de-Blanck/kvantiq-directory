@@ -61,18 +61,6 @@
     "stale": false
   },
   {
-    "key": "benchmarks/dwave-spin-glass-dynamics|https://arxiv.org/abs/2403.00910",
-    "entities": [
-      "benchmarks/dwave-spin-glass-dynamics"
-    ],
-    "sourceUrl": "https://arxiv.org/abs/2403.00910",
-    "reason": "date-not-found",
-    "firstHeldOn": "2026-11-24",
-    "lastCheckedOn": "2026-11-24",
-    "attempts": 1,
-    "stale": false
-  },
-  {
     "key": "benchmarks/lih-ground-state|https://arxiv.org/abs/2502.09595",
     "entities": [
       "benchmarks/lih-ground-state"
@@ -85,48 +73,12 @@
     "stale": false
   },
   {
-    "key": "benchmarks/mqt-bench|https://github.com/munich-quantum-toolkit/bench/releases/tag/v2.4.0",
-    "entities": [
-      "benchmarks/mqt-bench"
-    ],
-    "sourceUrl": "https://github.com/munich-quantum-toolkit/bench/releases/tag/v2.4.0",
-    "reason": "date-not-found",
-    "firstHeldOn": "2026-11-24",
-    "lastCheckedOn": "2026-11-24",
-    "attempts": 1,
-    "stale": false
-  },
-  {
     "key": "benchmarks/qaoa-maxcut|https://thequantuminsider.com/2026/09/16/ionq-ornl-nvidia-tennessee-ai-quantum-optimization-tradeoff",
     "entities": [
       "benchmarks/qaoa-maxcut"
     ],
     "sourceUrl": "https://thequantuminsider.com/2026/09/16/ionq-ornl-nvidia-tennessee-ai-quantum-optimization-tradeoff/",
     "reason": "pointer-only",
-    "firstHeldOn": "2026-11-24",
-    "lastCheckedOn": "2026-11-24",
-    "attempts": 1,
-    "stale": false
-  },
-  {
-    "key": "benchmarks/qed-c-benchmarks|https://arxiv.org/abs/2110.03137",
-    "entities": [
-      "benchmarks/qed-c-benchmarks"
-    ],
-    "sourceUrl": "https://arxiv.org/abs/2110.03137",
-    "reason": "date-not-found",
-    "firstHeldOn": "2026-11-24",
-    "lastCheckedOn": "2026-11-24",
-    "attempts": 1,
-    "stale": false
-  },
-  {
-    "key": "benchmarks/quantum-centric-chemistry-ibm-heron|https://arxiv.org/abs/2405.05068",
-    "entities": [
-      "benchmarks/quantum-centric-chemistry-ibm-heron"
-    ],
-    "sourceUrl": "https://arxiv.org/abs/2405.05068",
-    "reason": "not-extracted",
     "firstHeldOn": "2026-11-24",
     "lastCheckedOn": "2026-11-24",
     "attempts": 1,
@@ -164,18 +116,6 @@
     ],
     "sourceUrl": "https://quantumcomputingreport.com/qunova-computing-achieves-chemical-accuracy-at-80-qubits-on-iron-sulfur-cluster-using-ibm-quantum-system-two-and-fugaku/",
     "reason": "pointer-only",
-    "firstHeldOn": "2026-11-24",
-    "lastCheckedOn": "2026-11-24",
-    "attempts": 1,
-    "stale": false
-  },
-  {
-    "key": "benchmarks/quantum-kernel-methods|https://arxiv.org/abs/2409.04406",
-    "entities": [
-      "benchmarks/quantum-kernel-methods"
-    ],
-    "sourceUrl": "https://arxiv.org/abs/2409.04406",
-    "reason": "date-not-found",
     "firstHeldOn": "2026-11-24",
     "lastCheckedOn": "2026-11-24",
     "attempts": 1,
@@ -228,30 +168,6 @@
     ],
     "sourceUrl": "https://thequantuminsider.com/2026/07/31/ibm-university-of-chicago-verified-logical-quantum-computation/",
     "reason": "pointer-only",
-    "firstHeldOn": "2026-11-24",
-    "lastCheckedOn": "2026-11-24",
-    "attempts": 1,
-    "stale": false
-  },
-  {
-    "key": "benchmarks/reconfigurable-atom-logical-processor|https://arxiv.org/abs/2312.03982",
-    "entities": [
-      "benchmarks/reconfigurable-atom-logical-processor"
-    ],
-    "sourceUrl": "https://arxiv.org/abs/2312.03982",
-    "reason": "date-not-found",
-    "firstHeldOn": "2026-11-24",
-    "lastCheckedOn": "2026-11-24",
-    "attempts": 1,
-    "stale": false
-  },
-  {
-    "key": "benchmarks/supermarq|https://arxiv.org/abs/2202.11045",
-    "entities": [
-      "benchmarks/supermarq"
-    ],
-    "sourceUrl": "https://arxiv.org/abs/2202.11045",
-    "reason": "date-not-found",
     "firstHeldOn": "2026-11-24",
     "lastCheckedOn": "2026-11-24",
     "attempts": 1,
@@ -5260,18 +5176,6 @@
     ],
     "sourceUrl": "https://thequantuminsider.com/2026/11/19/securities-regulators-warn-that-slow-progress-on-quantum-security-is-a-mistake/",
     "reason": "pointer-only",
-    "firstHeldOn": "2026-11-24",
-    "lastCheckedOn": "2026-11-24",
-    "attempts": 1,
-    "stale": false
-  },
-  {
-    "key": "use-cases/fraud-detection|https://arxiv.org/abs/2412.19441",
-    "entities": [
-      "use-cases/fraud-detection"
-    ],
-    "sourceUrl": "https://arxiv.org/abs/2412.19441",
-    "reason": "date-not-found",
     "firstHeldOn": "2026-11-24",
     "lastCheckedOn": "2026-11-24",
     "attempts": 1,
