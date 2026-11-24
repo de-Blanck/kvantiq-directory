@@ -152,14 +152,19 @@ export function dateFound(happenedOn: string, html: string, pageText: string): b
     `${dayPart} ${shortMonth} ${year}`, `${shortMonth} ${dayPart}, ${year}`,
     `${dayPart}\\.${monthPart}\\.${year}`,
   ];
-  // Unicode-aware edges: `\b` treats letters such as "é" as non-word characters.
-  return new RegExp(`(?<![\\p{L}\\p{N}])(?:${formats.join('|')})(?![\\p{L}\\p{N}])`, 'iu')
+  // Unicode-aware edges: `\b` treats letters such as "é" and combining marks as non-word characters.
+  return new RegExp(`(?<!${wordChar})(?:${formats.join('|')})(?!${wordChar})`, 'iu')
     .test(normalizeForMatch(pageText));
 }
 
+const wordChar = '[\\p{L}\\p{M}\\p{N}_]';
+const firstVersionLine = /\[v1\] [a-z]{3}, (\d{1,2}) ([a-z]{3})[a-z]* (\d{4})/;
+const submittedLine = new RegExp(`(?<!${wordChar})submitted on (\\d{1,2}) ([a-z]{3})[a-z]*\\.? (\\d{4})`, 'u');
+
 // arXiv lists every revision date; only the first version dates the result.
 export function arxivFirstVersionDate(pageText: string): string | null {
-  const match = /submitted on (\d{1,2}) ([a-z]{3})[a-z]*\.? (\d{4})/.exec(normalizeForMatch(pageText));
+  const text = normalizeForMatch(pageText);
+  const match = firstVersionLine.exec(text) ?? submittedLine.exec(text);
   if (!match) return null;
   const month = shortMonths.findIndex(name => name.slice(0, 3).toLowerCase() === match[2]) + 1;
   if (month === 0) return null;

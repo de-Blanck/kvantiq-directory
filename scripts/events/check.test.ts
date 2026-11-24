@@ -82,6 +82,10 @@ test('date-not-found: an arXiv revision date does not date the result', () => {
   const page = ctx({ html, finalUrl: arxiv.url });
   assertHold('date-not-found', { source: arxiv, happenedOn: '2025-04-03' }, page);
   assert.equal(checkCandidate(candidate({ source: arxiv, happenedOn: '2025-04-02' }), page).status, 'publish');
+  const historyOnly = ctx({ html: `<p>[v1] Wed, 2 Apr 2025 [v2] Thu, 3 Apr 2025</p><p>${quote}</p>`, finalUrl: arxiv.url });
+  assertHold('date-not-found', { source: arxiv, happenedOn: '2025-04-03' }, historyOnly);
+  const noFirstVersion = ctx({ html: `<p>Last revised 3 Apr 2025</p><p>${quote}</p>`, finalUrl: arxiv.url });
+  assertHold('date-not-found', { source: arxiv, happenedOn: '2025-04-03' }, noFirstVersion);
 });
 test('amount-not-in-quote', () => {
   assertHold('amount-not-in-quote', { funding: { ...candidate().funding, amount: 125_000_000 } });

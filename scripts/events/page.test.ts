@@ -34,11 +34,15 @@ test('date: short month names still need the right day, month and year', () => {
   }
 });
 test('date: a date glued to a letter does not count', () => {
-  for (const s of ['éApr 2, 2025', '2 Apr 2025é', 'é2025-04-02', '2 April 2025é']) assert.ok(!dateFound('2025-04-02', '<p></p>', s), s);
+  for (const s of ['éApr 2, 2025', '2 Apr 2025é', 'é2025-04-02', '2 April 2025é', 'कि2025-04-02', '2025-04-02_foo']) {
+    assert.ok(!dateFound('2025-04-02', '<p></p>', s), s);
+  }
 });
-test('arXiv: first-version date is read from the submission line', () => {
+test('arXiv: first-version date is read from the submission line or the v1 history line', () => {
   assert.equal(arxivFirstVersionDate('Submitted on 2 Apr 2025 (v1), last revised 14 Jan 2026 (this version, v3)'), '2025-04-02');
   assert.equal(arxivFirstVersionDate('[Submitted on 9 Sep 2025]'), '2025-09-09');
+  assert.equal(arxivFirstVersionDate('[v1] Wed, 2 Apr 2025 10:10:11 UTC (10,864 KB) [v2] Thu, 3 Apr 2025 08:00:00 UTC'), '2025-04-02');
+  assert.equal(arxivFirstVersionDate('Resubmitted on 3 Apr 2025. [Submitted on 2 Apr 2025]'), '2025-04-02');
   assert.equal(arxivFirstVersionDate('Published 2 April 2025'), null);
 });
 test('amount: currency-tied formats match', () => {

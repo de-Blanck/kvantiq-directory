@@ -68,9 +68,10 @@ export function checkCandidate(c: EventCandidate, ctx: CheckContext): Verdict {
 
   const text = htmlToText(page.html);
   if (!quoteFound(c.quote, text)) return hold('quote-not-found');
-  if (!dateFound(c.happenedOn, page.html, text)) return hold('date-not-found');
-  const arxivDate = hosts.some(host => isHostOrSubdomain(host, 'arxiv.org')) ? arxivFirstVersionDate(text) : null;
-  if (arxivDate !== null && arxivDate !== c.happenedOn) return hold('date-not-found');
+  // On arXiv only the first version's date counts, so a revision date or a page without one is held.
+  const arxiv = hosts.some(host => isHostOrSubdomain(host, 'arxiv.org'));
+  const dateOk = arxiv ? arxivFirstVersionDate(text) === c.happenedOn : dateFound(c.happenedOn, page.html, text);
+  if (!dateOk) return hold('date-not-found');
   const amount = c.funding?.amount ?? null;
   if (amount !== null && !amountInQuote(amount, c.funding!.currency, c.quote)) return hold('amount-not-in-quote');
   if (!c.typeSecondOpinion) return hold('type-unchecked');
