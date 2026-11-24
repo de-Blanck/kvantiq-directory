@@ -52,6 +52,20 @@
       "type": "website",
       "url": "https://quantumbenchmarkzoo.org/content/system-level-benchmark/others/quantum-volume",
       "title": "Quantum Volume - QuantumBenchmarkZoo"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.12146",
+      "title": "Benchmarking the computational power of quantum computers (QUOPS framework)",
+      "authors": "Timothy Proctor et al. (Sandia, Quantinuum, NVIDIA, Google, IBM)",
+      "datePublished": "2026-09-10",
+      "dateAccessed": "2026-09-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/sandia-quantinuum-and-nvidia-introduce-quops-framework-to-benchmark-physical-and-logical-quantum-performance/",
+      "title": "Sandia, Quantinuum, and NVIDIA Introduce QUOPS Framework to Benchmark Physical and Logical Quantum Performance",
+      "dateAccessed": "2026-09-20"
     }
   ]
 }

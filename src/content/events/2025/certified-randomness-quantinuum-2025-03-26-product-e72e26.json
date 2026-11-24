@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "benchmarks/certified-randomness-quantinuum"
+  ],
+  "happenedOn": "2025-03-26",
+  "foundOn": "2026-04-19",
+  "summary": "Researchers demonstrated certified random bit generation on Quantinuum’s 56-qubit H2-1 processor.",
+  "quote": "In this work, we demonstrate the generation of certifiably random bits using the 56-qubit Quantinuum H2-1 trapped-ion quantum computer accessed over the internet.",
+  "source": {
+    "url": "https://arxiv.org/abs/2503.20498",
+    "finalUrl": "https://arxiv.org/abs/2503.20498",
+    "publisher": "arXiv"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "certified-randomness-quantinuum-2025-03-26-product-e72e26",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

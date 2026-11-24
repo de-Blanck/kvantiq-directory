@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "benchmarks/weighted-maxcut"
+  ],
+  "happenedOn": "2025-05-30",
+  "foundOn": "2026-03-20",
+  "summary": "Researchers benchmarked a non-variational quantum walk algorithm on weighted Max-Cut using classical simulations up to 31 vertices.",
+  "quote": "We present benchmarking results for the non-variational Quantum Walk Optimisation Algorithm (non-variational QWOA) applied to the weighted maxcut problem, using classical simulations for problem sizes up to $n = 31$.",
+  "source": {
+    "url": "https://arxiv.org/abs/2505.24191",
+    "finalUrl": "https://arxiv.org/abs/2505.24191",
+    "publisher": "arXiv"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "weighted-maxcut-2025-05-30-product-e92fcd",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

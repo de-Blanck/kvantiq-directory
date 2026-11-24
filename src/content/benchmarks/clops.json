@@ -48,6 +48,14 @@
       "type": "website",
       "url": "https://thequantuminsider.com/2021/11/04/ibm-proposes-a-new-way-to-measure-quantum-speed-clops/",
       "title": "IBM Proposes a New Way to Measure Quantum Speed: CLOPS"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.12146",
+      "title": "Benchmarking the computational power of quantum computers (QUOPS framework — introduces QUOPS rate Ω as architecture-agnostic throughput metric)",
+      "authors": "Timothy Proctor et al. (Sandia, Quantinuum, NVIDIA, Google, IBM)",
+      "datePublished": "2026-09-10",
+      "dateAccessed": "2026-09-20"
     }
   ],
   "news": [

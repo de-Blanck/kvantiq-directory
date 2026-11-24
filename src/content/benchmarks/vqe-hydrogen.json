@@ -61,6 +61,13 @@
       "url": "https://www.hpcwire.com/off-the-wire/ibm-and-algorithmiq-report-quantum-advantage-for-materials-simulation/",
       "title": "IBM and Algorithmiq Report Quantum Advantage for Materials Simulation - HPCwire",
       "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2610.40561",
+      "title": "Grow, Compress, and Perturb: A Hybrid Quantum-Classical Pathway to Scalable Quantum Chemistry on Quantum Computers",
+      "datePublished": "2026-10-29",
+      "dateAccessed": "2026-11-22"
     }
   ],
   "news": [

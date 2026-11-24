@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "benchmarks/qed-c-benchmarks"
+  ],
+  "happenedOn": "2024-02-16",
+  "foundOn": "2026-06-28",
+  "summary": "QED-C expanded its benchmark suite with a scalable HHL linear solver and a variational hydrogen lattice simulation.",
+  "quote": "Second, we add a VQE implementation of a Hydrogen Lattice simulation to the QED-C suite, and introduce a methodology for analyzing the result quality and run-time cost trade-off.",
+  "source": {
+    "url": "https://quantumconsortium.org/quantum-algorithm-exploration-using-application-oriented-performance-benchmarks/",
+    "finalUrl": "https://quantumconsortium.org/publication/quantum-algorithm-exploration-using-application-oriented-performance-benchmarks/",
+    "publisher": "Quantum Economic Development Consortium",
+    "publishedOn": "2024-02-16"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "qed-c-benchmarks-2024-02-16-product-ca4ad5",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

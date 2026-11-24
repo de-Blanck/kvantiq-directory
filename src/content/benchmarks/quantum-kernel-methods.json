@@ -48,6 +48,18 @@
       "type": "doi",
       "url": "https://link.springer.com/article/10.1007/s42484-025-00273-5",
       "title": "Quantum kernel methods under scrutiny: a benchmarking study"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/iqm-researchers-benchmark-projected-quantum-kernels-across-45-qubits-using-cross-device-referee-challenger-protocol/",
+      "title": "IQM Researchers Benchmark Projected Quantum Kernels Across 45 Qubits Using Cross-Device Referee-Challenger Protocol - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://arxiv.org/abs/2610.41848",
+      "title": "Engineered Learning Problems on Noisy Quantum Processors - arXiv",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [
