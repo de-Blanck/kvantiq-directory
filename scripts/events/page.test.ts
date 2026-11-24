@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { htmlToText, quoteFound, dateFound, amountInQuote } from './page';
+import { htmlToText, quoteFound, dateFound, amountInQuote, arxivFirstVersionDate } from './page';
 
 const fx = readFileSync(new URL('./fixtures/funding-release.html', import.meta.url), 'utf8');
 test('text: hidden elements and scripts removed, entities decoded', () => {
@@ -21,6 +21,29 @@ test('date: article metadata within ±3 days counts; related-story <time> and We
 });
 test('date: text formats count', () => {
   for (const s of ['on 2026-07-08', 'on 8 July 2026', 'on July 8, 2026', 'on 08.07.2026']) assert.ok(dateFound('2026-07-08', '<p></p>', s), s);
+});
+test('date: short month names count, as arXiv writes them', () => {
+  for (const s of ['Submitted on 2 Apr 2025', '[v1] Wed, 2 Apr 2025 10:10:11 UTC', 'on 02 Apr. 2025', 'on Apr 2, 2025', 'on Apr. 2, 2025']) {
+    assert.ok(dateFound('2025-04-02', '<p></p>', s), s);
+  }
+  for (const s of ['on 9 Sep 2025', 'on 9 Sept 2025', 'on Sept. 9, 2025']) assert.ok(dateFound('2025-09-09', '<p></p>', s), s);
+});
+test('date: short month names still need the right day, month and year', () => {
+  for (const s of ['on 12 Apr 2025', 'on 2 Apr 2024', 'on 2 Mar 2025', 'on Apr 22, 2025', 'on 2 Aprx 2025']) {
+    assert.ok(!dateFound('2025-04-02', '<p></p>', s), s);
+  }
+});
+test('date: a date glued to a letter does not count', () => {
+  for (const s of ['éApr 2, 2025', '2 Apr 2025é', 'é2025-04-02', '2 April 2025é', 'कि2025-04-02', '2025-04-02_foo']) {
+    assert.ok(!dateFound('2025-04-02', '<p></p>', s), s);
+  }
+});
+test('arXiv: first-version date is read from the submission line or the v1 history line', () => {
+  assert.equal(arxivFirstVersionDate('Submitted on 2 Apr 2025 (v1), last revised 14 Jan 2026 (this version, v3)'), '2025-04-02');
+  assert.equal(arxivFirstVersionDate('[Submitted on 9 Sep 2025]'), '2025-09-09');
+  assert.equal(arxivFirstVersionDate('[v1] Wed, 2 Apr 2025 10:10:11 UTC (10,864 KB) [v2] Thu, 3 Apr 2025 08:00:00 UTC'), '2025-04-02');
+  assert.equal(arxivFirstVersionDate('Resubmitted on 3 Apr 2025. [Submitted on 2 Apr 2025]'), '2025-04-02');
+  assert.equal(arxivFirstVersionDate('Published 2 April 2025'), null);
 });
 test('amount: currency-tied formats match', () => {
   assert.ok(amountInQuote(12_000_000, 'EUR', 'raised €12M in a seed round'));
