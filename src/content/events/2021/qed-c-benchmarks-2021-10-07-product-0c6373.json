@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "benchmarks/qed-c-benchmarks"
+  ],
+  "happenedOn": "2021-10-07",
+  "foundOn": "2026-03-21",
+  "summary": "Researchers introduced the open-source QED-C suite for benchmarking quantum hardware on application workloads.",
+  "quote": "In this work we introduce an open source suite of quantum application-oriented performance benchmarks that is designed to measure the effectiveness of quantum computing hardware at executing quantum applications.",
+  "source": {
+    "url": "https://arxiv.org/abs/2110.03137",
+    "finalUrl": "https://arxiv.org/abs/2110.03137",
+    "publisher": "arXiv"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "qed-c-benchmarks-2021-10-07-product-0c6373",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

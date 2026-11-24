@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "benchmarks/supermarq"
+  ],
+  "happenedOn": "2022-02-22",
+  "foundOn": "2026-03-20",
+  "summary": "Researchers introduced SupermarQ, a hardware-agnostic quantum benchmark suite that measures application-level performance.",
+  "quote": "This problem motivates our introduction of SupermarQ, a scalable, hardware-agnostic quantum benchmark suite which uses application-level metrics to measure performance.",
+  "source": {
+    "url": "https://arxiv.org/abs/2202.11045",
+    "finalUrl": "https://arxiv.org/abs/2202.11045",
+    "publisher": "arXiv"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "supermarq-2022-02-22-product-7da8c9",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}
