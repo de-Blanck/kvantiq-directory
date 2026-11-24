@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/pulser"
+  ],
+  "happenedOn": "2026-10-29",
+  "foundOn": "2026-11-20",
+  "summary": "Pasqal released Pulser v1.10.0 with a Pauli Strings operator and new math functions, and dropped Python 3.10 support.",
+  "quote": "Adds the Pauli Strings operator (#1133)",
+  "source": {
+    "url": "https://github.com/pasqal-io/Pulser/releases/tag/v1.10.0",
+    "finalUrl": "https://github.com/pasqal-io/Pulser/releases/tag/v1.10.0",
+    "publisher": "GitHub"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "pulser-2026-10-29-product-028dfe",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

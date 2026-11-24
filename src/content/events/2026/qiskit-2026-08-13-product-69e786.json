@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/qiskit"
+  ],
+  "happenedOn": "2026-08-13",
+  "foundOn": "2026-09-02",
+  "summary": "Qiskit 2.5.2 shipped a backported update to rsgridsynth 0.2.2.",
+  "quote": "Update to rsgridsynth 0.2.2 (backport #16685) (#16711)",
+  "source": {
+    "url": "https://github.com/Qiskit/qiskit/releases/tag/2.5.2",
+    "finalUrl": "https://github.com/Qiskit/qiskit/releases/tag/2.5.2",
+    "publisher": "Qiskit"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "qiskit-2026-08-13-product-69e786",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

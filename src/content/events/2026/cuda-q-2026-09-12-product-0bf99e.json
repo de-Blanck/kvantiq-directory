@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/cuda-q"
+  ],
+  "happenedOn": "2026-09-12",
+  "foundOn": "2026-09-20",
+  "summary": "NVIDIA released CUDA-Q 0.16.0 with CUDA-Q Logical integration, Python 3.14 support and static rotation synthesis.",
+  "quote": "This release integrates CUDA-Q Logical version 0.1.1.",
+  "source": {
+    "url": "https://github.com/NVIDIA/cuda-quantum/releases/tag/0.16.0",
+    "finalUrl": "https://github.com/NVIDIA/cuda-quantum/releases/tag/0.16.0",
+    "publisher": "GitHub"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "cuda-q-2026-09-12-product-0bf99e",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

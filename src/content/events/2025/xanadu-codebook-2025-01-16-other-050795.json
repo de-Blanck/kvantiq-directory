@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/xanadu-codebook"
+  ],
+  "happenedOn": "2025-01-16",
+  "foundOn": "2026-03-20",
+  "summary": "Xanadu archived the Quantum Codebook GitHub repository.",
+  "quote": "This repository was archived by the owner on Jan 16, 2025.",
+  "source": {
+    "url": "https://github.com/XanaduAI/Xanadu-Quantum-Codebook",
+    "finalUrl": "https://github.com/XanaduAI/Xanadu-Quantum-Codebook",
+    "publisher": "GitHub"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "xanadu-codebook-2025-01-16-other-050795",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "other",
+  "funding": null,
+  "subtype": null
+}

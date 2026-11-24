@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/qiskit"
+  ],
+  "happenedOn": "2026-07-02",
+  "foundOn": "2026-09-02",
+  "summary": "Qiskit 2.5.0 introduced a multi-IR staged pass manager and expanded the C API for control flow and classical expressions.",
+  "quote": "Add C API for inspecting control flow instructions (#16179)",
+  "source": {
+    "url": "https://github.com/Qiskit/qiskit/releases/tag/2.5.0",
+    "finalUrl": "https://github.com/Qiskit/qiskit/releases/tag/2.5.0",
+    "publisher": "Qiskit"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "qiskit-2026-07-02-product-541f3b",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

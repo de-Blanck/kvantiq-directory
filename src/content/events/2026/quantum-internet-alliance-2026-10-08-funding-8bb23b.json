@@ -1,0 +1,40 @@
+{
+  "entities": [
+    "resources/quantum-internet-alliance"
+  ],
+  "happenedOn": "2026-10-08",
+  "foundOn": "2026-10-18",
+  "summary": "The European Commission awarded QIA about $53 million to prototype a quantum network linking two metropolitan networks.",
+  "quote": "The Quantum Internet Alliance (QIA) received approximately $53 million from the European Commission to build a programmable quantum network prototype, with the goal of connecting two metropolitan-scale networks using quantum repeaters.",
+  "source": {
+    "url": "https://www.sdxcentral.com/news/eu-backs-qia-quantum-network-prototype-with-475m-grant/",
+    "finalUrl": "https://www.sdxcentral.com/news/eu-backs-qia-quantum-network-prototype-with-475m-grant/",
+    "publisher": "SDxCentral"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quantum-internet-alliance-2026-10-08-funding-8bb23b",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 53000000,
+    "currency": "USD",
+    "round": "grant",
+    "investors": [
+      "European Commission"
+    ]
+  },
+  "subtype": null
+}

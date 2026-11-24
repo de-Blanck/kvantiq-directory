@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/tket"
+  ],
+  "happenedOn": "2026-10-08",
+  "foundOn": "2026-11-20",
+  "summary": "Quantinuum released TKET v2.18.5, fixing a LexiRoute segfault on classical vertices and out-of-bounds accesses.",
+  "quote": "Fix segfault in LexiRoute lookahead on classical vertices by @cleitonaugusto in #2248",
+  "source": {
+    "url": "https://github.com/quantinuum/tket/releases/tag/v2.18.5",
+    "finalUrl": "https://github.com/quantinuum/tket/releases/tag/v2.18.5",
+    "publisher": "GitHub"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "tket-2026-10-08-product-0cd13c",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

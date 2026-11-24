@@ -1,0 +1,41 @@
+{
+  "entities": [
+    "resources/eic-accelerator"
+  ],
+  "happenedOn": "2026-11-16",
+  "foundOn": "2026-11-20",
+  "summary": "The EIC selected 35 companies for Accelerator support, with €84 million in proposed grants and 32 firms to be assessed for equity.",
+  "quote": "The total proposed funding amount for grants to the selected companies is €84 million, while the large majority (32 companies) will be assessed for equity investments of up to €10 million each by the EIC Fund.",
+  "source": {
+    "url": "https://eic.ec.europa.eu/news/european-innovation-council-selects-35-deep-tech-companies-its-accelerator-support-2026-11-16_en",
+    "finalUrl": "https://eic.ec.europa.eu/news/european-innovation-council-selects-35-deep-tech-companies-its-accelerator-support-2026-11-16_en",
+    "publisher": "European Innovation Council and SMEs Executive Agency",
+    "publishedOn": "2026-11-16"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "eic-accelerator-2026-11-16-funding-ae4388",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 84000000,
+    "currency": "EUR",
+    "round": "grant",
+    "investors": [
+      "European Innovation Council"
+    ]
+  },
+  "subtype": null
+}

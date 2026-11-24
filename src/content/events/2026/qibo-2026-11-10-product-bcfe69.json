@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/qibo"
+  ],
+  "happenedOn": "2026-11-10",
+  "foundOn": "2026-11-20",
+  "summary": "Qibo 0.3.7 added Quantum Shannon Decomposition, a preset transpiler pipeline and Python 3.14 support.",
+  "quote": "Add Quantum Shannon Decomposition to the transpiler by @renatomello in #2016",
+  "source": {
+    "url": "https://github.com/qiboteam/qibo/releases/tag/v0.3.7",
+    "finalUrl": "https://github.com/qiboteam/qibo/releases/tag/v0.3.7",
+    "publisher": "GitHub"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "qibo-2026-11-10-product-bcfe69",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

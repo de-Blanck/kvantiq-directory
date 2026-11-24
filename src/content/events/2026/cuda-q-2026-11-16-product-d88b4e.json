@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/cuda-q"
+  ],
+  "happenedOn": "2026-11-16",
+  "foundOn": "2026-11-20",
+  "summary": "NVIDIA released CUDA-Q 0.17.0 with a new EDEM package, a faster stabilizer backend and updated Realtime APIs.",
+  "quote": "We have completely overhauled our compiler configurability, improved performance across the board, and include a new custabilizer backend for faster stabilizer simulation.",
+  "source": {
+    "url": "https://github.com/NVIDIA/cuda-quantum/releases/tag/0.17.0",
+    "finalUrl": "https://github.com/NVIDIA/cuda-quantum/releases/tag/0.17.0",
+    "publisher": "GitHub"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "cuda-q-2026-11-16-product-d88b4e",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

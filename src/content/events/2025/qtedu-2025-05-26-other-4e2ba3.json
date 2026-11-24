@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/qtedu"
+  ],
+  "happenedOn": "2025-05-26",
+  "foundOn": "2026-03-20",
+  "summary": "EPJ Quantum Technology published a study of QTEdu and its 11 quantum education pilots.",
+  "quote": "Focusing on the QTEdu CSA, an impactful European project intended to unite stakeholders in QT education, we study the evolution of 11 pilot projects, cross-cutting education for members of the public, high schools, universities, and industry.",
+  "source": {
+    "url": "https://epjquantumtechnology.springeropen.com/articles/10.1140/epjqt/s40507-025-00362-1",
+    "finalUrl": "https://link.springer.com/article/10.1140/epjqt/s40507-025-00362-1?error=cookies_not_supported&code=e2663d59-052c-47de-a74c-955697593fd9",
+    "publisher": "Springer Nature"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "qtedu-2025-05-26-other-4e2ba3",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "other",
+  "funding": null,
+  "subtype": null
+}

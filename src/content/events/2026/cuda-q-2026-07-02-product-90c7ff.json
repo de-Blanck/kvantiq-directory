@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/cuda-q"
+  ],
+  "happenedOn": "2026-07-02",
+  "foundOn": "2026-09-02",
+  "summary": "NVIDIA released CUDA-Q 0.15.0 with detector error model support and an upgrade to LLVM 22.1.",
+  "quote": "Add support to compute detector error model (DEM) from kernel by @khalatepradnya in #4602",
+  "source": {
+    "url": "https://github.com/NVIDIA/cuda-quantum/releases/tag/0.15.0",
+    "finalUrl": "https://github.com/NVIDIA/cuda-quantum/releases/tag/0.15.0",
+    "publisher": "NVIDIA"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "cuda-q-2026-07-02-product-90c7ff",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

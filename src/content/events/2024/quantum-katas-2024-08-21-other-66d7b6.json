@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "resources/quantum-katas"
+  ],
+  "happenedOn": "2024-08-21",
+  "foundOn": "2026-03-20",
+  "summary": "Microsoft archived its Quantum Katas GitHub repository, making it read-only.",
+  "quote": "This repository was archived by the owner on Aug 21, 2024.",
+  "source": {
+    "url": "https://github.com/microsoft/QuantumKatas",
+    "finalUrl": "https://github.com/microsoft/QuantumKatas",
+    "publisher": "GitHub"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quantum-katas-2024-08-21-other-66d7b6",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "other",
+  "funding": null,
+  "subtype": null
+}

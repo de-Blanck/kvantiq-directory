@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "resources/ibm-quantum-learning"
+  ],
+  "happenedOn": "2025-07-07",
+  "foundOn": "2026-06-28",
+  "summary": "IBM Quantum Learning completed the first phase of its platform migration and expanded its free educational library.",
+  "quote": "We’re excited to announce that IBM Quantum Learning has completed the first phase of its migration to the new IBM Quantum Platform, hosted on IBM Cloud®.",
+  "source": {
+    "url": "https://www.ibm.com/quantum/blog/iql-migration",
+    "finalUrl": "https://www.ibm.com/quantum/blog/iql-migration",
+    "publisher": "IBM",
+    "publishedOn": "2025-07-07"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "ibm-quantum-learning-2025-07-07-product-3fe2a5",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

@@ -528,6 +528,19 @@
     "stale": false
   },
   {
+    "key": "companies/quantum-motion|https://quantumcomputingreport.com/quantum-motion-and-nvidia-integrate-cuda-q-backend-into-quiche-for-end-to-end-quantum-chemistry-workflows",
+    "entities": [
+      "companies/quantum-motion",
+      "resources/cuda-q"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/quantum-motion-and-nvidia-integrate-cuda-q-backend-into-quiche-for-end-to-end-quantum-chemistry-workflows/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
     "key": "companies/qubit-pharmaceuticals|https://quantumcomputingreport.com/qubit-pharmaceuticals-sorbonne-universite-and-q-ctrl-demonstrate-3d-protein-hydration-site-prediction-on-ibm-heron-processors",
     "entities": [
       "companies/qubit-pharmaceuticals",
@@ -555,6 +568,164 @@
     "stale": false
   },
   {
+    "key": "companies/qudora|https://quantumcomputingreport.com/qudora-integrates-nvidia-cuda-q-into-qamelion-emulator-and-launches-german-funded-quanda-hpc-energy-consortium",
+    "entities": [
+      "companies/qudora",
+      "resources/cuda-q"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/qudora-integrates-nvidia-cuda-q-into-qamelion-emulator-and-launches-german-funded-quanda-hpc-energy-consortium/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/riverlane|https://thequantuminsider.com/2026/07/28/riverlane-unitary-foundation-deltakit-community-fund",
+    "entities": [
+      "companies/riverlane",
+      "resources/unitary-fund"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/07/28/riverlane-unitary-foundation-deltakit-community-fund/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/bmbf-quantum-technologies|https://quantumcomputingreport.com/germany-advances-key-consortia-in-e640-million-717-2-million-usd-fault-tolerant-quantum-computing-competition",
+    "entities": [
+      "resources/bmbf-quantum-technologies"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/germany-advances-key-consortia-in-e640-million-717-2-million-usd-fault-tolerant-quantum-computing-competition/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/bmbf-quantum-technologies|https://thequantuminsider.com/2022/06/22/german-federal-ministry-of-education-and-research-announces-quantum-systems-program",
+    "entities": [
+      "resources/bmbf-quantum-technologies"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2022/06/22/german-federal-ministry-of-education-and-research-announces-quantum-systems-program/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/bmbf-quantum-technologies|https://thequantuminsider.com/2026/09/23/german-government-selects-qudora-led-consortium-for-e122-million-project",
+    "entities": [
+      "resources/bmbf-quantum-technologies"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/23/german-government-selects-qudora-led-consortium-for-e122-million-project/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/cern-qti-lectures|https://insidequantumtechnology.com/news-archive/cerns-new-free-online-course-to-focus-on-practical-aspects-of-quantum-computing-good-introduction-to-qc-for-cios-developers",
+    "entities": [
+      "resources/cern-qti-lectures"
+    ],
+    "sourceUrl": "https://www.insidequantumtechnology.com/news-archive/cerns-new-free-online-course-to-focus-on-practical-aspects-of-quantum-computing-good-introduction-to-qc-for-cios-developers/",
+    "reason": "type-disagreement",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/cuda-q|https://github.com/NVIDIA/cuda-quantum/releases/tag/0.15.1",
+    "entities": [
+      "resources/cuda-q"
+    ],
+    "sourceUrl": "https://github.com/NVIDIA/cuda-quantum/releases/tag/0.15.1",
+    "reason": "source-unreachable",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/cuda-q|https://hpcwire.com/off-the-wire/nvidia-expands-open-source-cuda-q-platform-for-fault-tolerant-quantum-computing",
+    "entities": [
+      "resources/cuda-q"
+    ],
+    "sourceUrl": "https://www.hpcwire.com/off-the-wire/nvidia-expands-open-source-cuda-q-platform-for-fault-tolerant-quantum-computing/",
+    "reason": "possible-duplicate",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/cuda-q|https://hpcwire.com/off-the-wire/pnnl-brings-open-source-gpu-acceleration-to-quantum-with-nvidia-nvqlink",
+    "entities": [
+      "resources/cuda-q"
+    ],
+    "sourceUrl": "https://www.hpcwire.com/off-the-wire/pnnl-brings-open-source-gpu-acceleration-to-quantum-with-nvidia-nvqlink/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/cuda-q|https://nvidianews.nvidia.com/news/nvidia-announces-collaboration-with-ibm-and-fermi-national-accelerator-laboratory-to-launch-quantum-classical-codesign-platform-plus-error-correction-breakthrough-to-advance-practical-quantum-computing",
+    "entities": [
+      "resources/cuda-q"
+    ],
+    "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-announces-collaboration-with-ibm-and-fermi-national-accelerator-laboratory-to-launch-quantum-classical-codesign-platform-plus-error-correction-breakthrough-to-advance-practical-quantum-computing",
+    "reason": "possible-duplicate",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/cuda-q|https://quantumcomputingreport.com/nvidia-unveils-cuda-q-logical-to-accelerate-fault-tolerant-system-orchestration-across-hardware-modalities",
+    "entities": [
+      "resources/cuda-q"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/nvidia-unveils-cuda-q-logical-to-accelerate-fault-tolerant-system-orchestration-across-hardware-modalities/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/cuda-q|https://thequantuminsider.com/2026/07/27/quantum-x-labs-ai-error-correction-decoder-nvidia-cuda-q",
+    "entities": [
+      "resources/cuda-q"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/07/27/quantum-x-labs-ai-error-correction-decoder-nvidia-cuda-q/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/cuda-q|https://thequantuminsider.com/2026/09/13/quantum-machines-makes-quantum-computers-easier-to-program-with-nvidia-cuda-q-and-nvqlink",
+    "entities": [
+      "resources/cuda-q"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/13/quantum-machines-makes-quantum-computers-easier-to-program-with-nvidia-cuda-q-and-nvqlink/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
     "key": "resources/cuda-q|https://thequantuminsider.com/2026/09/14/nvidia-expands-open-source-cuda-q-platform",
     "entities": [
       "resources/cuda-q",
@@ -562,6 +733,426 @@
     ],
     "sourceUrl": "https://thequantuminsider.com/2026/09/14/nvidia-expands-open-source-cuda-q-platform/",
     "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/danish-quantum-community|https://bigq.fysik.dtu.dk/news/2021/09/danish-quantum-community-formally-established",
+    "entities": [
+      "resources/danish-quantum-community"
+    ],
+    "sourceUrl": "https://www.bigq.fysik.dtu.dk/news/2021/09/danish-quantum-community-formally-established",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/danish-quantum-community|https://investindk.com/insights/danish-stakeholders-joining-forces-in-a-new-quantum-community",
+    "entities": [
+      "resources/danish-quantum-community"
+    ],
+    "sourceUrl": "https://investindk.com/insights/danish-stakeholders-joining-forces-in-a-new-quantum-community",
+    "reason": "type-disagreement",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/eic-accelerator|https://eic.ec.europa.eu/news/european-innovation-council-launches-eur18-billion-funding-2027-2026-11-05_en",
+    "entities": [
+      "resources/eic-accelerator"
+    ],
+    "sourceUrl": "https://eic.ec.europa.eu/news/european-innovation-council-launches-eur18-billion-funding-2027-2026-11-05_en",
+    "reason": "type-disagreement",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/eic-accelerator|https://sifted.eu/articles/europes-biggest-deeptech-investor-brnd",
+    "entities": [
+      "resources/eic-accelerator"
+    ],
+    "sourceUrl": "https://sifted.eu/articles/europes-biggest-deeptech-investor-brnd",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/eurohpc-quantum-computing|https://hpcwire.com/off-the-wire/eurohpc-opens-access-to-its-quantum-computers",
+    "entities": [
+      "resources/eurohpc-quantum-computing"
+    ],
+    "sourceUrl": "https://www.hpcwire.com/off-the-wire/eurohpc-opens-access-to-its-quantum-computers/",
+    "reason": "type-disagreement",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/eurohpc-quantum-computing|https://thequantuminsider.com/2026/02/12/europe-launches-euro-q-exa-quantum-computer-germany",
+    "entities": [
+      "resources/eurohpc-quantum-computing"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/02/12/europe-launches-euro-q-exa-quantum-computer-germany/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/eurohpc-quantum-computing|https://thequantuminsider.com/2026/08/24/eurohpc-119m-funding-calls-quantum-technologies",
+    "entities": [
+      "resources/eurohpc-quantum-computing"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/08/24/eurohpc-119m-funding-calls-quantum-technologies/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/finnish-quantum-flagship|https://thequantuminsider.com/2025/04/25/finlands-quantum-strategy-published-outlines-eight-measures-to-strengthen-nations-leadership-position-in-quantum",
+    "entities": [
+      "resources/finnish-quantum-flagship"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/04/25/finlands-quantum-strategy-published-outlines-eight-measures-to-strengthen-nations-leadership-position-in-quantum/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/france-national-quantum-strategy|https://cnrs.fr/en/update/french-quantum-national-rd-strategy-just-started",
+    "entities": [
+      "resources/france-national-quantum-strategy"
+    ],
+    "sourceUrl": "https://www.cnrs.fr/en/update/french-quantum-national-rd-strategy-just-started",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/france-national-quantum-strategy|https://thequantuminsider.com/2024/03/07/france-2030-progress-update-three-years-after-the-launch-of-the-national-quantum-technologies-strategy-and-the-launch-of-the-proqcima-program",
+    "entities": [
+      "resources/france-national-quantum-strategy"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2024/03/07/france-2030-progress-update-three-years-after-the-launch-of-the-national-quantum-technologies-strategy-and-the-launch-of-the-proqcima-program/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/france-national-quantum-strategy|https://thequantuminsider.com/2026/05/25/emmanuel-macron-announces-1-55-billion-euros-more-for-quantum-and-semiconductors",
+    "entities": [
+      "resources/france-national-quantum-strategy"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/25/emmanuel-macron-announces-1-55-billion-euros-more-for-quantum-and-semiconductors/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/mqt|https://arxiv.org/abs/2405.17543",
+    "entities": [
+      "resources/mqt"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2405.17543",
+    "reason": "type-disagreement",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/mqt|https://github.com/munich-quantum-toolkit/bench/releases",
+    "entities": [
+      "resources/mqt"
+    ],
+    "sourceUrl": "https://github.com/munich-quantum-toolkit/bench/releases",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/mqt|https://github.com/munich-quantum-toolkit/problemsolver/releases",
+    "entities": [
+      "resources/mqt"
+    ],
+    "sourceUrl": "https://github.com/munich-quantum-toolkit/problemsolver/releases",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/mqt|https://pypi.org/org/munich-quantum-toolkit",
+    "entities": [
+      "resources/mqt"
+    ],
+    "sourceUrl": "https://pypi.org/org/munich-quantum-toolkit/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/pennylane|https://quantumcomputingreport.com/xanadu-and-amd-launch-open-source-backline-extension-for-pennylane",
+    "entities": [
+      "resources/pennylane"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/xanadu-and-amd-launch-open-source-backline-extension-for-pennylane/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/qiskit|https://quantumcomputingreport.com/ibm-improves-qubit-reset-by-25x-and-releases-qiskit-v2-5",
+    "entities": [
+      "resources/qiskit"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/ibm-improves-qubit-reset-by-25x-and-releases-qiskit-v2-5/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/qiskit|https://quantumcomputingreport.com/ibm-releases-qiskit-sdk-v2-6-with-c-api-pass-manager-framework-native-qpy-serialization-and-custom-operations",
+    "entities": [
+      "resources/qiskit"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/ibm-releases-qiskit-sdk-v2-6-with-c-api-pass-manager-framework-native-qpy-serialization-and-custom-operations/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/qosf|https://thequantuminsider.com/2020/10/19/quantum-open-source-foundation-kicks-off-the-wittek-quantum-prize",
+    "entities": [
+      "resources/qosf"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2020/10/19/quantum-open-source-foundation-kicks-off-the-wittek-quantum-prize/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/quantum-amsterdam|https://quantum.amsterdam/",
+    "entities": [
+      "resources/quantum-amsterdam"
+    ],
+    "sourceUrl": "https://www.quantum.amsterdam/",
+    "reason": "homepage-url",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/quantum-inspire|https://qutech.nl/research-engineering/quantum-computing/quantum-inspire",
+    "entities": [
+      "resources/quantum-inspire"
+    ],
+    "sourceUrl": "https://qutech.nl/research-engineering/quantum-computing/quantum-inspire/",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/quantum-internet-alliance|https://connect.geant.org/2026/09/09/geant-and-the-quantum-internet-alliance-sign-mou-to-strengthen-europes-quantum-networking-future",
+    "entities": [
+      "resources/quantum-internet-alliance"
+    ],
+    "sourceUrl": "https://connect.geant.org/2026/09/09/geant-and-the-quantum-internet-alliance-sign-mou-to-strengthen-europes-quantum-networking-future",
+    "reason": "source-unreachable",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/quantum-internet-alliance|https://quantumcomputingreport.com/geant-and-quantum-internet-alliance-partner-to-advance-european-quantum-networking-architecture",
+    "entities": [
+      "resources/quantum-internet-alliance"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/geant-and-quantum-internet-alliance-partner-to-advance-european-quantum-networking-architecture/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/quantum-internet-alliance|https://quantuminternetalliance.org/2026/05/22/qia-at-quantum-meets-26-showcasing-europes-path-from-quantum-internet-research-to-impact",
+    "entities": [
+      "resources/quantum-internet-alliance"
+    ],
+    "sourceUrl": "https://quantuminternetalliance.org/2026/05/22/qia-at-quantum-meets-26-showcasing-europes-path-from-quantum-internet-research-to-impact/",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/quantum-internet-alliance|https://thequantuminsider.com/2025/10/31/round-three-of-the-quantum-internet-application-challenge-kicks-off",
+    "entities": [
+      "resources/quantum-internet-alliance"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/10/31/round-three-of-the-quantum-internet-application-challenge-kicks-off/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/quantum-katas|https://infoworld.com/article/2255999/quantum-katas-teach-you-how-to-do-quantum-programming-in-q.html",
+    "entities": [
+      "resources/quantum-katas"
+    ],
+    "sourceUrl": "https://www.infoworld.com/article/2255999/quantum-katas-teach-you-how-to-do-quantum-programming-in-q.html",
+    "reason": "possible-duplicate",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/quic|https://quantumconsortium.org/quantum-consortia-qic-qed-c-q-star-and-quic-form-international-council-to-enable-and-grow-the-global-quantum-industry",
+    "entities": [
+      "resources/quic"
+    ],
+    "sourceUrl": "https://quantumconsortium.org/quantum-consortia-qic-qed-c-q-star-and-quic-form-international-council-to-enable-and-grow-the-global-quantum-industry/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/quic|https://thequantuminsider.com/2025/04/02/quic-report-europes-quantum-edge-hinges-on-urgency-collaboration-and-coordination",
+    "entities": [
+      "resources/quic"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/04/02/quic-report-europes-quantum-edge-hinges-on-urgency-collaboration-and-coordination/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/qutip|https://arxiv.org/abs/2412.04705",
+    "entities": [
+      "resources/qutip"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2412.04705",
+    "reason": "type-disagreement",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/stim|https://pypi.org/project/stim",
+    "entities": [
+      "resources/stim"
+    ],
+    "sourceUrl": "https://pypi.org/project/stim/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/unitary-fund|https://quantumcomputingreport.com/unitary-foundation-releases-2026-quantum-open-source-survey-covering-sdk-adoption-hybrid-hpc-workflows-and-ai-tooling",
+    "entities": [
+      "resources/unitary-fund"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/unitary-foundation-releases-2026-quantum-open-source-survey-covering-sdk-adoption-hybrid-hpc-workflows-and-ai-tooling/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/unitary-fund|https://unitary.foundation/posts/2024_microgrant_impact",
+    "entities": [
+      "resources/unitary-fund"
+    ],
+    "sourceUrl": "https://unitary.foundation/posts/2024_microgrant_impact/",
+    "reason": "type-disagreement",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/wacqt|https://chalmers.se/en/centres/wacqt",
+    "entities": [
+      "resources/wacqt"
+    ],
+    "sourceUrl": "https://www.chalmers.se/en/centres/wacqt/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/wacqt|https://kaw.wallenberg.org/en/research/initiative-driving-swedens-quantum-revolution",
+    "entities": [
+      "resources/wacqt"
+    ],
+    "sourceUrl": "https://kaw.wallenberg.org/en/research/initiative-driving-swedens-quantum-revolution",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "resources/xanadu-codebook|https://codebook.xanadu.ai/",
+    "entities": [
+      "resources/xanadu-codebook"
+    ],
+    "sourceUrl": "https://codebook.xanadu.ai",
+    "reason": "homepage-url",
     "firstHeldOn": "2026-11-24",
     "lastCheckedOn": "2026-11-24",
     "attempts": 1,

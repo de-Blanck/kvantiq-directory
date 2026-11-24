@@ -1,0 +1,40 @@
+{
+  "entities": [
+    "resources/eic-accelerator"
+  ],
+  "happenedOn": "2025-03-18",
+  "foundOn": "2026-03-20",
+  "summary": "The EIC Accelerator selected four quantum SMEs for funding, including SemiQon and eleQtron.",
+  "quote": "The companies SemiQon (Finland) and eleQtron (Germany), for example, have revealed they will receive the considerable sums of €17.5mil and €12.5mil respectively.",
+  "source": {
+    "url": "https://qt.eu/news/2025/2025-03-18_quantum-tech-companies-chosen-in-latest-EIC-round",
+    "finalUrl": "https://qt.eu/news/2025/2025-03-18_quantum-tech-companies-chosen-in-latest-EIC-round",
+    "publisher": "Quantum Flagship"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "eic-accelerator-2025-03-18-funding-22e432",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": null,
+    "currency": "EUR",
+    "round": "grant",
+    "investors": [
+      "European Innovation Council"
+    ]
+  },
+  "subtype": null
+}
