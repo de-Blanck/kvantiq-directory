@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "use-cases/portfolio-optimization"
+  ],
+  "happenedOn": "2025-09-11",
+  "foundOn": "2026-06-28",
+  "summary": "qBraid and South Carolina Quantum released a white paper on quantum computing for portfolio optimization.",
+  "quote": "The new white paper from qBraid and SC Quantum explores how quantum computing could support this work moving forward.",
+  "source": {
+    "url": "https://www.scquantum.org/news/quantum-computing-portfolio-optimization-where-quantum-meets-finance",
+    "finalUrl": "https://www.scquantum.org/news/quantum-computing-portfolio-optimization-where-quantum-meets-finance",
+    "publisher": "South Carolina Quantum"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "portfolio-optimization-2025-09-11-other-c42bae",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "other",
+  "funding": null,
+  "subtype": null
+}

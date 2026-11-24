@@ -35,6 +35,18 @@
       "type": "doi",
       "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12468836/",
       "title": "HQRNN-FD: A Hybrid Quantum Recurrent Neural Network for Fraud Detection"
+    },
+    {
+      "type": "url",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-explore-quantum-computing-tackle-financial-crime",
+      "title": "FCA to explore quantum computing to tackle financial crime - Financial Conduct Authority",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/uk-financial-conduct-authority-launches-quantum-experimentation-group-to-evaluate-financial-crime-detection/",
+      "title": "UK Financial Conduct Authority Launches Quantum Experimentation Group to Evaluate Financial Crime Detection - Quantum Computing Report",
+      "dateAccessed": "2026-11-20"
     }
   ],
   "news": [

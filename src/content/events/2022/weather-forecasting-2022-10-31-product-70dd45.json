@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "use-cases/weather-forecasting"
+  ],
+  "happenedOn": "2022-10-31",
+  "foundOn": "2026-03-20",
+  "summary": "Researchers used a quantum algorithm to integrate a simple nonlinear model while exploring applications to weather and climate prediction.",
+  "quote": "Using a recently developed quantum algorithm for solving non-linear differential equations, we integrate a simple non-linear model.",
+  "source": {
+    "url": "https://arxiv.org/abs/2210.17460",
+    "finalUrl": "https://arxiv.org/abs/2210.17460",
+    "publisher": "arXiv"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "weather-forecasting-2022-10-31-product-70dd45",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

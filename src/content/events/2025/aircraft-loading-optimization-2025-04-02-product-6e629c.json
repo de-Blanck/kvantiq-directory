@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "use-cases/aircraft-loading-optimization"
+  ],
+  "happenedOn": "2025-04-02",
+  "foundOn": "2026-03-20",
+  "summary": "Researchers used IonQ processors to find optimal solutions to aircraft loading problems spanning 12 to 28 qubits.",
+  "quote": "Our experiments obtain the optimal solutions for all the problem instances studied ranging from 12 qubits to 28 qubits.",
+  "source": {
+    "url": "https://arxiv.org/abs/2504.01567",
+    "finalUrl": "https://arxiv.org/abs/2504.01567",
+    "publisher": "arXiv"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "aircraft-loading-optimization-2025-04-02-product-6e629c",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

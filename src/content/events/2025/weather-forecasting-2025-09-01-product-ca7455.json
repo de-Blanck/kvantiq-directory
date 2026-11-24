@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "use-cases/weather-forecasting"
+  ],
+  "happenedOn": "2025-09-01",
+  "foundOn": "2026-03-20",
+  "summary": "A quantum neural network showed potential for more accurate and adaptable wind speed forecasts than a classical recurrent model.",
+  "quote": "The results show that QNN has the potential to outperform a classical Recurrent Neural Network (RNN) in terms of accuracy and adaptability to abrupt data shifts, particularly in wind speed prediction.",
+  "source": {
+    "url": "https://arxiv.org/abs/2509.01422",
+    "finalUrl": "https://arxiv.org/abs/2509.01422",
+    "publisher": "arXiv"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "weather-forecasting-2025-09-01-product-ca7455",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "use-cases/weather-forecasting"
+  ],
+  "happenedOn": "2024-04-12",
+  "foundOn": "2026-03-20",
+  "summary": "Researchers used quantum circuits to solve the barotropic vorticity equation and accurately predict dynamics from a synthetic weather state.",
+  "quote": "Using the differentiable quantum circuits algorithm, we successfully solve the BVE under appropriate boundary conditions and use the trained model to predict unseen future dynamics to high accuracy given an artificial initial weather state.",
+  "source": {
+    "url": "https://arxiv.org/abs/2404.08737",
+    "finalUrl": "https://arxiv.org/abs/2404.08737",
+    "publisher": "arXiv"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "weather-forecasting-2024-04-12-product-2034bd",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

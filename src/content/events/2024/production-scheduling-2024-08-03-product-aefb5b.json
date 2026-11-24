@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "use-cases/production-scheduling"
+  ],
+  "happenedOn": "2024-08-03",
+  "foundOn": "2026-03-20",
+  "summary": "D-Wave's hybrid solver sometimes ran faster than a classical solver in a production scheduling benchmark.",
+  "quote": "The results we obtain from D-Wave are highly competitive and sometimes offer speedups, compared to the classical solver.",
+  "source": {
+    "url": "https://arxiv.org/abs/2408.01641",
+    "finalUrl": "https://arxiv.org/abs/2408.01641",
+    "publisher": "arXiv"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "production-scheduling-2024-08-03-product-aefb5b",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

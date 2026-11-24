@@ -1,0 +1,40 @@
+{
+  "entities": [
+    "use-cases/quantum-chemistry-materials"
+  ],
+  "happenedOn": "2026-11-11",
+  "foundOn": "2026-11-20",
+  "summary": "The University of Amsterdam committed €200,000 each to four quantum simulation projects for molecules and materials.",
+  "quote": "Each project will receive €200,000 in seed funding over two years.",
+  "source": {
+    "url": "https://www.uva.nl/en/news/2026/mmd-techhub-launches-four-quantum-simulation-projects-for-molecules-and-materials",
+    "finalUrl": "https://www.uva.nl/en/news/2026/mmd-techhub-launches-four-quantum-simulation-projects-for-molecules-and-materials",
+    "publisher": "University of Amsterdam"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quantum-chemistry-materials-2026-11-11-funding-76e3c0",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 200000,
+    "currency": "EUR",
+    "round": "seed",
+    "investors": [
+      "University of Amsterdam"
+    ]
+  },
+  "subtype": null
+}
