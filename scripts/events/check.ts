@@ -3,7 +3,7 @@ import { computeEventId, eventSchema, type EventRecord } from '../../src/lib/eve
 import { hostOf, isHostOrSubdomain, normalizeUrl } from '../../src/lib/events/url';
 import { isCredibleSource } from '../../src/lib/source-bar';
 import type { EventCandidate } from './candidate';
-import { amountInQuote, arxivFirstVersionDate, dateFound, htmlToText, quoteFound } from './page';
+import { amountInQuote, dateFound, hasSourceDate, htmlToText, quoteFound, sourceDate } from './page';
 
 export type FetchedPage = { status: number; contentType: string; html: string; finalUrl: string };
 export type EntityInfo = { key: string; collection: string; name: string; published: boolean; websiteHost: string | null; country: string | null };
@@ -68,9 +68,11 @@ export function checkCandidate(c: EventCandidate, ctx: CheckContext): Verdict {
 
   const text = htmlToText(page.html);
   if (!quoteFound(c.quote, text)) return hold('quote-not-found');
-  // On arXiv only the first version's date counts, so a revision date or a page without one is held.
-  const arxiv = hosts.some(host => isHostOrSubdomain(host, 'arxiv.org'));
-  const dateOk = arxiv ? arxivFirstVersionDate(text) === c.happenedOn : dateFound(c.happenedOn, page.html, text);
+  // On arXiv and GitHub release-tag pages only the page's own date counts (first version, release).
+  // It is read from the final URL, so a redirect away from such a page, another date or no date is held.
+  const dateOk = hasSourceDate(c.source.url) || hasSourceDate(page.finalUrl)
+    ? sourceDate(page.finalUrl, page.html, text) === c.happenedOn
+    : dateFound(c.happenedOn, page.html, text);
   if (!dateOk) return hold('date-not-found');
   const amount = c.funding?.amount ?? null;
   if (amount !== null && !amountInQuote(amount, c.funding!.currency, c.quote)) return hold('amount-not-in-quote');

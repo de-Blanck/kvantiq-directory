@@ -59,7 +59,7 @@ test('redirected pending URLs are held and reconcile with zero missing', async t
   writeFileSync(join(root, 'src/content/events/2026/a.json'), JSON.stringify(event));
   writeFileSync(join(root, 'src/content/companies/a.json'), JSON.stringify({ news: [a, b].map(url => ({ url, title: 'News', source: 'Example', date: '2026-01-01' })) }));
   const item = { id: 'b', url: b, cls: 'fetch' as const, entities: ['companies/a'], collections: ['companies' as const], refs: [{ entity: 'companies/a', url: b, title: 'News', excerpt: null, source: 'Example', date: '2026-01-01', origin: 'legacy' as const, refs: [] }], resolvedFrom: [], happenedOnHint: '2026-01-01', foundOn: '2026-01-01' };
-  const page = { id: 'b', url: b, finalUrl: finalUrl + '?utm_source=test', fetchedOn: '2026-01-01', status: 200, contentType: 'text/html', publishedDates: [], text: '', error: null };
+  const page = { id: 'b', url: b, finalUrl: finalUrl + '?utm_source=test', fetchedOn: '2026-01-01', status: 200, contentType: 'text/html', publishedDates: [], sourceDate: null, text: '', error: null };
   const match = buildMatcher([event], [], {});
   const holds = redirectHolds([item], () => page, [event], match);
   assert.deepEqual(holds, [{ entities: ['companies/a'], sourceUrl: b, reason: 'possible-duplicate' }]);

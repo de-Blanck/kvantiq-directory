@@ -87,6 +87,39 @@ test('date-not-found: an arXiv revision date does not date the result', () => {
   const noFirstVersion = ctx({ html: `<p>Last revised 3 Apr 2025</p><p>${quote}</p>`, finalUrl: arxiv.url });
   assertHold('date-not-found', { source: arxiv, happenedOn: '2025-04-03' }, noFirstVersion);
 });
+test('GitHub release-tag page: only the release date dates the event', () => {
+  const release = { url: 'https://github.com/Qiskit/qiskit/releases/tag/2.5.2', publisher: 'GitHub' };
+  const html = [
+    '<p>qiskit-bot released this <relative-time datetime="2026-08-13T17:49:55Z"></relative-time></p>',
+    `<p>${quote}</p><p>Fixed on August 1, 2026.</p>`,
+    '<p>Verified <relative-time datetime="2026-08-01 10:00:00 UTC"></relative-time></p>',
+  ].join('');
+  const page = ctx({ html, finalUrl: release.url });
+  assert.equal(checkCandidate(candidate({ source: release, happenedOn: '2026-08-13' }), page).status, 'publish');
+  assertHold('date-not-found', { source: release, happenedOn: '2026-08-01' }, page);
+  const noMarker = ctx({
+    html: `<p><relative-time datetime="2026-08-13T17:49:55Z"></relative-time> August 13, 2026</p><p>${quote}</p>`,
+    finalUrl: release.url,
+  });
+  assertHold('date-not-found', { source: release, happenedOn: '2026-08-13' }, noMarker);
+});
+test('GitHub release dates come from the final URL: tag→index is held, index→tag is dated by the release', () => {
+  const tag = 'https://github.com/Qiskit/qiskit/releases/tag/2.5.2';
+  const index = 'https://github.com/Qiskit/qiskit/releases';
+  const html = '<p>qiskit-bot released this <relative-time datetime="2026-08-13T17:49:55Z"></relative-time></p>' +
+    `<p>${quote}</p><p>August 13, 2026. Fixed on August 1, 2026.</p>`;
+  const toIndex = ctx({ html, finalUrl: index });
+  assertHold('date-not-found', { source: { url: tag, publisher: 'GitHub' }, happenedOn: '2026-08-13' }, toIndex);
+  const toTag = ctx({ html, finalUrl: tag });
+  const fromIndex = { url: index, publisher: 'GitHub' };
+  assert.equal(checkCandidate(candidate({ source: fromIndex, happenedOn: '2026-08-13' }), toTag).status, 'publish');
+  assertHold('date-not-found', { source: fromIndex, happenedOn: '2026-08-01' }, toTag);
+});
+test('GitHub releases index page is dated from its visible text', () => {
+  const index = { url: 'https://github.com/Qiskit/qiskit/releases', publisher: 'GitHub' };
+  const page = ctx({ html: `<p>Qiskit 2.5.2 August 13, 2026</p><p>${quote}</p>`, finalUrl: index.url });
+  assert.equal(checkCandidate(candidate({ source: index, happenedOn: '2026-08-13' }), page).status, 'publish');
+});
 test('amount-not-in-quote', () => {
   assertHold('amount-not-in-quote', { funding: { ...candidate().funding, amount: 125_000_000 } });
 });

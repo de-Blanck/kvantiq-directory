@@ -11,7 +11,7 @@ const items: WorkItem[] = ['a', 'b'].map(id => ({
 }));
 const batches: BatchEntry[][] = [items.map(item => ({
   id: item.id, url: item.url, entities: [{ key: 'companies/a', name: 'A', websiteHost: null }],
-  refs: [], page: { finalUrl: item.url, publishedDates: [], passages: '' }, selfPublishedPrefix: null,
+  refs: [], page: { finalUrl: item.url, publishedDates: [], sourceDate: null, passages: '' }, selfPublishedPrefix: null,
 }))];
 const output = (id = 'a') => ({ id, status: 'event', entities: ['companies/a'], type: 'product',
   happenedOn: '2026-02-01', summary: 'A released a product.', quote: 'A released a new quantum product today.', publisher: 'Example' });
