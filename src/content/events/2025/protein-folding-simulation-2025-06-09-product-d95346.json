@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "use-cases/protein-folding-simulation"
+  ],
+  "happenedOn": "2025-06-09",
+  "foundOn": "2026-03-20",
+  "summary": "Researchers simulated protein folding on a tetrahedral lattice for up to 12 amino acids using IonQ processors.",
+  "quote": "Specifically, we tackle protein folding on a tetrahedral lattice for up to 12 amino acids, representing the largest quantum hardware implementations of protein folding problems reported to date.",
+  "source": {
+    "url": "https://arxiv.org/abs/2506.07866",
+    "finalUrl": "https://arxiv.org/abs/2506.07866",
+    "publisher": "arXiv"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "protein-folding-simulation-2025-06-09-product-d95346",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

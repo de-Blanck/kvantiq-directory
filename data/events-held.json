@@ -1,1 +1,248 @@
-[]
+[
+  {
+    "key": "benchmarks/quantum-centric-chemistry-ibm-heron|https://quantumcomputingreport.com/cleveland-clinic-riken-and-ibm-cross-12000-atom-barrier-in-heterogeneous-quantum-classical-drug-binding-simulations",
+    "entities": [
+      "benchmarks/quantum-centric-chemistry-ibm-heron",
+      "use-cases/drug-discovery-hybrid"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/cleveland-clinic-riken-and-ibm-cross-12000-atom-barrier-in-heterogeneous-quantum-classical-drug-binding-simulations/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "benchmarks/quantum-kernel-methods|https://quantumcomputingreport.com/iqm-researchers-benchmark-projected-quantum-kernels-across-45-qubits-using-cross-device-referee-challenger-protocol",
+    "entities": [
+      "benchmarks/quantum-kernel-methods",
+      "use-cases/quantum-machine-learning-classification"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/iqm-researchers-benchmark-projected-quantum-kernels-across-45-qubits-using-cross-device-referee-challenger-protocol/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/kipu-quantum|https://quantumcomputingreport.com/kipu-quantum-launches-rimay-quantum-feature-extraction-in-ibm-quantum-functions-catalog",
+    "entities": [
+      "companies/kipu-quantum",
+      "use-cases/credit-risk-modeling",
+      "use-cases/quantum-machine-learning-classification"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/kipu-quantum-launches-rimay-quantum-feature-extraction-in-ibm-quantum-functions-catalog/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qubit-pharmaceuticals|https://quantumcomputingreport.com/qubit-pharmaceuticals-sorbonne-universite-and-q-ctrl-demonstrate-3d-protein-hydration-site-prediction-on-ibm-heron-processors",
+    "entities": [
+      "companies/qubit-pharmaceuticals",
+      "use-cases/drug-discovery-hybrid"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/qubit-pharmaceuticals-sorbonne-universite-and-q-ctrl-demonstrate-3d-protein-hydration-site-prediction-on-ibm-heron-processors/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "use-cases/catalyst-design-green-hydrogen|https://phys.org/news/2022-12-quantum-inspired-catalyst-hydrogen.html",
+    "entities": [
+      "use-cases/catalyst-design-green-hydrogen"
+    ],
+    "sourceUrl": "https://phys.org/news/2022-12-quantum-inspired-catalyst-hydrogen.html",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "use-cases/cryptography-post-quantum|https://csrc.nist.gov/projects/post-quantum-cryptography",
+    "entities": [
+      "use-cases/cryptography-post-quantum"
+    ],
+    "sourceUrl": "https://csrc.nist.gov/projects/post-quantum-cryptography",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "use-cases/cryptography-post-quantum|https://quantumcomputingreport.com/mastercard-launches-quantum-advisory-practice-with-qiz-security-and-releases-pqc-readiness-whitepaper",
+    "entities": [
+      "use-cases/cryptography-post-quantum"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/mastercard-launches-quantum-advisory-practice-with-qiz-security-and-releases-pqc-readiness-whitepaper/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "use-cases/cryptography-post-quantum|https://thequantuminsider.com/2026/11/19/securities-regulators-warn-that-slow-progress-on-quantum-security-is-a-mistake",
+    "entities": [
+      "use-cases/cryptography-post-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/19/securities-regulators-warn-that-slow-progress-on-quantum-security-is-a-mistake/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "use-cases/fraud-detection|https://arxiv.org/abs/2412.19441",
+    "entities": [
+      "use-cases/fraud-detection"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2412.19441",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "use-cases/fraud-detection|https://fca.org.uk/news/press-releases/fca-explore-quantum-computing-tackle-financial-crime",
+    "entities": [
+      "use-cases/fraud-detection"
+    ],
+    "sourceUrl": "https://www.fca.org.uk/news/press-releases/fca-explore-quantum-computing-tackle-financial-crime",
+    "reason": "type-disagreement",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "use-cases/fraud-detection|https://ncbi.nlm.nih.gov/pmc/articles/PMC12468836",
+    "entities": [
+      "use-cases/fraud-detection"
+    ],
+    "sourceUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12468836/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "use-cases/protein-folding-simulation|https://thequantuminsider.com/2025/06/15/researchers-use-trapped-ion-quantum-computer-to-tackle-tricky-protein-folding-problems",
+    "entities": [
+      "use-cases/protein-folding-simulation"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/06/15/researchers-use-trapped-ion-quantum-computer-to-tackle-tricky-protein-folding-problems/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "use-cases/qkd-networks|https://quantumcomputingreport.com/nec-and-ibm-japan-demonstrate-hybrid-qkd-and-post-quantum-cryptography-tls-proxy-architecture",
+    "entities": [
+      "use-cases/qkd-networks"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/nec-and-ibm-japan-demonstrate-hybrid-qkd-and-post-quantum-cryptography-tls-proxy-architecture/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "use-cases/qkd-networks|https://quantumcomputingreport.com/researchers-demonstrate-fully-integrated-continuous-variable-qkd-over-100-km-with-composable-finite-size-security",
+    "entities": [
+      "use-cases/qkd-networks"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/researchers-demonstrate-fully-integrated-continuous-variable-qkd-over-100-km-with-composable-finite-size-security/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "use-cases/qkd-networks|https://thequantuminsider.com/2026/11/18/8000-km-quantum-safe-network-us-europe-demonstration",
+    "entities": [
+      "use-cases/qkd-networks"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/18/8000-km-quantum-safe-network-us-europe-demonstration/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "use-cases/qkd-networks|https://thequantuminsider.com/2026/11/19/sk-broadband-quantum-security-testbed-korea-singapore-cable",
+    "entities": [
+      "use-cases/qkd-networks"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/19/sk-broadband-quantum-security-testbed-korea-singapore-cable/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "use-cases/quantum-chemistry-materials|https://pme.uchicago.edu/news/researchers-use-quantum-computers-simulate-quantum-materials",
+    "entities": [
+      "use-cases/quantum-chemistry-materials"
+    ],
+    "sourceUrl": "https://pme.uchicago.edu/news/researchers-use-quantum-computers-simulate-quantum-materials",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "use-cases/quantum-machine-learning-classification|https://quantumcomputingreport.com/bmo-demonstrates-quantum-utility-in-game-theoretic-machine-learning-feature-selection-on-ibm-nighthawk-r2",
+    "entities": [
+      "use-cases/quantum-machine-learning-classification"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/bmo-demonstrates-quantum-utility-in-game-theoretic-machine-learning-feature-selection-on-ibm-nighthawk-r2/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "use-cases/supply-chain-optimization|https://quantumcomputingreport.com/qfactorial-and-monash-university-secure-a1-12-million-758-6k-usd-australian-government-grant-for-quantum-logistics-optimization",
+    "entities": [
+      "use-cases/supply-chain-optimization",
+      "use-cases/vehicle-routing-optimization"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/qfactorial-and-monash-university-secure-a1-12-million-758-6k-usd-australian-government-grant-for-quantum-logistics-optimization/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "use-cases/vehicle-routing-optimization|https://quantumcomputingreport.com/classiq-collaborations-with-shionogi-kddi-research-and-softbank-earn-awards-in-japans-nedo-quantum-challenge",
+    "entities": [
+      "use-cases/vehicle-routing-optimization"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/classiq-collaborations-with-shionogi-kddi-research-and-softbank-earn-awards-in-japans-nedo-quantum-challenge/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  }
+]

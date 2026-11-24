@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "use-cases/supply-chain-optimization"
+  ],
+  "happenedOn": "2023-02-16",
+  "foundOn": "2026-06-28",
+  "summary": "Sandia reported a quantum optimization framework that removes the need for a classical optimizer and could help solve supply chain problems.",
+  "quote": "With the new framework, called FALQON — short for Feedback-based Algorithm for Quantum Optimization — the classical computer does not do any optimization.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/sandia-highlights-new-quantum-computing-research-focusing-on-global-supply-chain-challenges/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/sandia-highlights-new-quantum-computing-research-focusing-on-global-supply-chain-challenges/",
+    "publisher": "HPCwire",
+    "publishedOn": "2023-02-16"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "supply-chain-optimization-2023-02-16-product-a580d7",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

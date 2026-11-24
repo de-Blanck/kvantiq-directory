@@ -42,6 +42,26 @@
       "type": "website",
       "url": "https://www.ipms.fraunhofer.de/en/applications/Quantum-Technologies/Quantum-Communication/Quantum-Key-Distribution.html",
       "title": "Quantum Key Distribution (QKD) - Fraunhofer IPMS"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/11/18/8000-km-quantum-safe-network-us-europe-demonstration/",
+      "title": "Hybrid QKD and PQC Network Connects Chicago and Europe Across 8,000 km - The Quantum Insider",
+      "dateAccessed": "2026-11-20"
+    },
+    {
+      "type": "url",
+      "url": "https://thequantuminsider.com/2026/11/19/sk-broadband-quantum-security-testbed-korea-singapore-cable/",
+      "title": "SK Broadband to Test Quantum Security on Korea-Singapore Subsea Cable",
+      "datePublished": "2026-11-19",
+      "dateAccessed": "2026-11-22"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2608.29200",
+      "title": "Fully integrated continuous-variable quantum key distribution with composable security over 100 km",
+      "datePublished": "2026-08-29",
+      "dateAccessed": "2026-11-22"
     }
   ]
 }
