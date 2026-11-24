@@ -152,8 +152,11 @@ export function dateFound(happenedOn: string, html: string, pageText: string): b
     `${dayPart} ${shortMonth} ${year}`, `${shortMonth} ${dayPart}, ${year}`,
     `${dayPart}\\.${monthPart}\\.${year}`,
   ];
-  return new RegExp(`\\b(?:${formats.join('|')})\\b`, 'i').test(normalizeForMatch(pageText));
+  // Unicode-aware edges: `\b` treats letters such as "é" as non-word characters.
+  return new RegExp(`(?<![\\p{L}\\p{N}])(?:${formats.join('|')})(?![\\p{L}\\p{N}])`, 'iu')
+    .test(normalizeForMatch(pageText));
 }
+
 
 const markers = String.raw`(?:US\$|[AC]\$|[€$£]|EUR|USD|GBP|DKK|SEK|NOK|CHF|kr\.?)`;
 const number = String.raw`(\d+(?:[.,]\d+)*)`;

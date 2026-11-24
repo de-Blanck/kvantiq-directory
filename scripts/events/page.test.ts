@@ -33,6 +33,9 @@ test('date: short month names still need the right day, month and year', () => {
     assert.ok(!dateFound('2025-04-02', '<p></p>', s), s);
   }
 });
+test('date: a date glued to a letter does not count', () => {
+  for (const s of ['éApr 2, 2025', '2 Apr 2025é', 'é2025-04-02', '2 April 2025é']) assert.ok(!dateFound('2025-04-02', '<p></p>', s), s);
+});
 test('amount: currency-tied formats match', () => {
   assert.ok(amountInQuote(12_000_000, 'EUR', 'raised €12M in a seed round'));
   assert.ok(amountInQuote(12_000_000, 'EUR', 'EUR 12 million'));
