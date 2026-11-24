@@ -3,7 +3,7 @@
 Session handoff document. Read at session start; update before ending. See
 `CLAUDE.md` → "Context & Autonomy" for the rules that govern this file.
 
-**Last updated:** 2026-11-22 (event history through the backfill tooling; the rest of the State line is as of 2026-09-06 and was not re-verified)
+**Last updated:** 2026-11-24 (event backfill complete, 184 events live; the rest of the State line is as of 2026-09-06 and was not re-verified)
 **Branch:** `main`
 **State:** Audit Dashboard rebuilt on real evidence; merging to `main` deploys and is verified against production; 1 open moderate Dependabot alert (`fflate`, via `satori`); Astro 7. **Two launchd agents now run unattended** — the weekly sweep and a merge-when-green job. **224 of 226 entries published.**
 
@@ -183,19 +183,44 @@ paper its title names, or that a link still resolves.
 - **The citation corrections are merged** (#166), with the EDF attribution corrected. Vercel
   shows `c653e76` ready in production and the corrected text is live.
 
+## What's done — 2026-11-24
+
+- **The event backfill is complete and live: 184 events.** Data PRs #179 use-cases, #180
+  challenges, #181 benchmarks, #183 resources and #184 companies, plus a top-up (#185). Each was
+  verified READY on Vercel, and `/events.json` showed the expected count after each merge.
+  Reconcile exits 0 with 0 missing in every collection.
+- **The held list has 441 records** with reasons, most of them `pointer-only` (aggregator links
+  waiting for a primary source). Legacy news stays on the pages until checked.
+- **Checker fix #182:** GitHub release-tag pages are dated by their release `relative-time`, and
+  arXiv by its v1 date. Both reach extraction as `sourceDate`. Codex reviewed it over 5 rounds
+  (final round READY), and the date reader matched the GitHub API on 8 of 8 real release pages.
+- **Every published record was fact-checked** by independent subagents against the source text.
+  10 records were held by hand and are listed in #183 and #184.
+- **The 13 stuck refresh PRs are closed** (#141 to #164, #147, #176), with branches kept. Their
+  news is harvested. Their 10 unique field changes (6 `lastUpdated`, 4 `funding` text) are
+  deferred to PR 5.
+
 ## What's next / open
 
-- **Next: run the event backfill, starting with use-cases.** Wait until the 2026-11-22 23:59
-      routine run has opened its PR. Follow the Runbook in
-      `docs/superpowers/plans/2026-11-22-event-history-pr2-backfill.md`, in the worktree
-      `~/Developer/.worktrees/events-backfill` (it keeps `.backfill/`), with a new branch from
-      `origin/main` per data PR. Order: use-cases, challenges, benchmarks, resources, companies.
-      Real page fetches and real model output are untested until the first data PR.
-- **Do not merge the stuck refresh PRs** (#141 to #164, 12 PRs, plus tonight's). The backfill
-      harvests their news, then closes them after the last data PR. Their 19 field changes are
-      reported only, and are applied in PR 5.
-- **After the backfill:** PR 3 (timeline UI, needs visual sign-off), PR 4 (rulebook), PR 5
-      (routine instructions, Codex merge gate, fact-change gate), PR 6 (retire the local sweep).
+- **Next: PR 3 (timeline UI, needs visual sign-off),** then PR 4 (rulebook), PR 5 (routine
+      instructions, Codex merge gate, fact-change gate) and PR 6 (retire the local sweep).
+- **PR 5 must include these backfill findings:**
+  - The routine now pushes `claude/*` branches. Harvest only discovers `chore/auto-refresh-*`
+    and `ai-sweep/*`.
+  - Re-extract held keys: 254 `pointer-only` in companies alone.
+  - The extract prompt must not date a past event by the article date, and must treat month- or
+    year-only dates as no date (5 records held by hand for this in #184).
+  - The quote must state the key fact, not a header line (MQT Bench 2.4.0).
+  - The 7-day duplicate rule holds distinct same-type events. Compare partners or products.
+    Lost so far: Alice & Bob Helium, Pasqal × Crédit Agricole CIB.
+  - Consortium grants record the consortium total (planqc QIAPO, Beamfox EQUAL). Decide whether
+    `funding.amount` means the company's share.
+  - Day ranges ("5-14 June 2024") and dates whose year sits only in the published date are not
+    parsed by `dateFound`.
+  - GlobeNewswire company releases are held as not credible, although the house rule accepts a
+    company's own announcement.
+- **Local `.backfill/` lives only in the worktree** `~/Developer/.worktrees/events-backfill`
+      (harvest, page cache, field changes). Keep it until PR 5 has applied the deferred changes.
 - **Blocked on Rune before PR 5:** connect Codex GitHub code review to this repo and enable the
       `main` ruleset (require a PR, block force-push and deletion, require conversation
       resolution, empty bypass list).
