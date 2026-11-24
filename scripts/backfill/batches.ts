@@ -32,7 +32,7 @@ export type BatchEntry = {
   url: string;
   entities: Array<{ key: string; name: string; websiteHost: string | null }>;
   refs: NewsRef[];
-  page: { finalUrl: string; publishedDates: string[]; passages: string };
+  page: { finalUrl: string; publishedDates: string[]; sourceDate: string | null; passages: string };
   selfPublishedPrefix: string | null;
 };
 
@@ -78,6 +78,8 @@ export function buildBatches(
       page: {
         finalUrl: page.finalUrl,
         publishedDates: page.publishedDates,
+        // Pages cached before sourceDate existed lack the key.
+        sourceDate: page.sourceDate ?? null,
         passages: selectPassages(page.text, hints),
       },
       selfPublishedPrefix: publisher ? `${publisher.name} announced` : null,

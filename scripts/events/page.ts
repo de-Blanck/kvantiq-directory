@@ -1,4 +1,5 @@
 import { isoDate } from '../../src/lib/events/schema';
+import { isHostOrSubdomain } from '../../src/lib/events/url';
 
 const blockTags = /^(?:p|div|li|h[1-6]|td|th|tr|br|section|article|header|footer|nav|blockquote)$/;
 const voidTags = /^(?:area|base|br|col|embed|hr|img|input|link|meta|param|source|track|wbr)$/;
@@ -169,6 +170,55 @@ export function arxivFirstVersionDate(pageText: string): string | null {
   const month = shortMonths.findIndex(name => name.slice(0, 3).toLowerCase() === match[2]) + 1;
   if (month === 0) return null;
   return `${match[3]}-${String(month).padStart(2, '0')}-${match[1].padStart(2, '0')}`;
+}
+
+const releaseMarker = new RegExp(`(?<!${wordChar})released(?:\\s|&nbsp;|&#160;)+this(?!${wordChar})`, 'giu');
+const relativeTime = /<relative-time\b(?:"[^"]*"|'[^']*'|[^'">])*>/gi;
+const markupOnly = /^(?:\s|&nbsp;|&#160;|<\/?[a-z][\w:-]*(?:"[^"]*"|'[^']*'|[^'">])*>)*$/i;
+const releaseTimestamp = /^(\d{4}-\d{2}-\d{2})(?:T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z| \d{2}:\d{2}:\d{2} UTC)$/;
+
+// The release date is the relative-time that directly follows "released this", with only markup between.
+// Later relative-time elements are commit signatures, so text such as "Verified" in between disqualifies.
+export function githubReleaseDate(html: string): string | null {
+  const page = html.replace(/<!--[\s\S]*?(?:-->|$)/g, '');
+  for (const marker of page.matchAll(releaseMarker)) {
+    const start = marker.index + marker[0].length;
+    relativeTime.lastIndex = start;
+    const tag = relativeTime.exec(page);
+    if (!tag || tag.index - start > 1000 || !markupOnly.test(page.slice(start, tag.index))) continue;
+    const date = releaseTimestamp.exec(attributes(tag[0]).get('datetime')?.trim() ?? '')?.[1];
+    return date && isoDate.safeParse(date).success ? date : null;
+  }
+  return null;
+}
+
+type SourceKind = 'github-release' | 'arxiv';
+const githubReleaseTagPath = /^\/[^/]+\/[^/]+\/releases\/tag\/[^/].*$/;
+
+function sourceKind(url: string): SourceKind | null {
+  let parsed: URL;
+  try {
+    parsed = new URL(url);
+  } catch {
+    return null;
+  }
+  const host = parsed.hostname.toLowerCase();
+  if (host === 'github.com' && githubReleaseTagPath.test(parsed.pathname)) return 'github-release';
+  if (isHostOrSubdomain(host, 'arxiv.org')) return 'arxiv';
+  return null;
+}
+
+export function hasSourceDate(url: string): boolean {
+  return sourceKind(url) !== null;
+}
+
+// Release-tag and arXiv pages carry one authoritative date; other pages return null.
+export function sourceDate(url: string, html: string, pageText: string): string | null {
+  switch (sourceKind(url)) {
+    case 'github-release': return githubReleaseDate(html);
+    case 'arxiv': return arxivFirstVersionDate(pageText);
+    default: return null;
+  }
 }
 
 const markers = String.raw`(?:US\$|[AC]\$|[€$£]|EUR|USD|GBP|DKK|SEK|NOK|CHF|kr\.?)`;

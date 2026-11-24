@@ -25,7 +25,7 @@ function item(index = 0): WorkItem {
 function page({ id, url }: WorkItem): CachedPage {
   return {
     id, url, fetchedOn: date, status: 200, contentType: 'text/html; charset=utf-8',
-    finalUrl: 'https://news.qilimanjaro.tech/x', publishedDates: [date],
+    finalUrl: 'https://news.qilimanjaro.tech/x', publishedDates: [date], sourceDate: null,
     text: 'Intro ¶ menu ¶ Quantum funding announced', error: null,
   };
 }
@@ -62,11 +62,19 @@ test('buildBatches uses the final URL to identify self-published pages and uses 
     batches: [[{
       id: target.id, url: target.url, refs: target.refs,
       entities: [{ key, name: 'Qilimanjaro', websiteHost: 'qilimanjaro.tech' }],
-      page: { finalUrl: cached.finalUrl, publishedDates: [date], passages: 'Intro ¶ Quantum funding announced' },
+      page: { finalUrl: cached.finalUrl, publishedDates: [date], sourceDate: null, passages: 'Intro ¶ Quantum funding announced' },
       selfPublishedPrefix: 'Qilimanjaro announced',
     }]],
     holds: [],
   });
+});
+
+test('buildBatches passes sourceDate through and treats a page cached without one as null', () => {
+  const target = item();
+  const dated = { ...page(target), sourceDate: '2026-08-13' };
+  assert.equal(buildBatches([target], () => dated, entities).batches[0][0].page.sourceDate, '2026-08-13');
+  const { sourceDate: _, ...legacy } = page(target);
+  assert.equal(buildBatches([target], () => legacy as CachedPage, entities).batches[0][0].page.sourceDate, null);
 });
 
 test('buildBatches groups 45 entries into batches of 20, 20 and 5 in input order', () => {

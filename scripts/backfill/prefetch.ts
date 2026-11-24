@@ -2,7 +2,13 @@ import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from '
 import { join } from 'node:path';
 import { setTimeout as delay } from 'node:timers/promises';
 import type { FetchedPage } from '../events/check';
-import { htmlToText, publishedDates } from '../events/page';
+import { hasSourceDate, htmlToText, publishedDates, sourceDate } from '../events/page';
+
+// Pages cached before `sourceDate` existed lack the key; release-tag and arXiv pages among them are refetched.
+function needsSourceDate(path: string): boolean {
+  const cached = JSON.parse(readFileSync(path, 'utf8')) as Partial<CachedPage>;
+  return !('sourceDate' in cached) && [cached.url, cached.finalUrl].some(url => !!url && hasSourceDate(url));
+}
 
 export type CachedPage = {
   id: string;
@@ -12,6 +18,7 @@ export type CachedPage = {
   contentType: string;
   finalUrl: string;
   publishedDates: string[];
+  sourceDate: string | null;
   text: string;
   error: string | null;
 };
@@ -52,7 +59,7 @@ export async function prefetchAll(
       let lastStart = -Infinity;
       for (const target of group) {
         const path = join(cacheDir, `${target.id}.json`);
-        if (existsSync(path)) {
+        if (existsSync(path) && !needsSourceDate(path)) {
           counts.cached++;
           continue;
         }
@@ -61,7 +68,7 @@ export async function prefetchAll(
         }
         const cached: CachedPage = {
           ...target, fetchedOn: today, status: 0, contentType: '', finalUrl: target.url,
-          publishedDates: [], text: '', error: null,
+          publishedDates: [], sourceDate: null, text: '', error: null,
         };
         lastStart = performance.now();
         try {
@@ -70,9 +77,10 @@ export async function prefetchAll(
             counts.failed++;
             continue;
           }
+          const text = htmlToText(page.html);
           Object.assign(cached, {
             status: page.status, contentType: page.contentType, finalUrl: page.finalUrl,
-            publishedDates: publishedDates(page.html), text: htmlToText(page.html),
+            publishedDates: publishedDates(page.html), sourceDate: sourceDate(page.finalUrl, page.html, text), text,
           });
           counts.fetched++;
         } catch (error) {

@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { mkdtempSync, readFileSync, readdirSync, rmSync } from 'node:fs';
+import { mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { test } from 'node:test';
@@ -22,13 +22,69 @@ test('prefetch caches extracted pages and skips existing files on rerun', async 
   for (const target of targets) {
     assert.deepEqual(readCachedPage(cacheDir, target.id), {
       ...target, fetchedOn: today, status: 200, contentType: 'text/html', finalUrl: target.url + '/final',
-      publishedDates: ['2026-11-20'], text: htmlToText(html), error: null,
+      publishedDates: ['2026-11-20'], sourceDate: null, text: htmlToText(html), error: null,
     });
   }
   const before = readFileSync(join(cacheDir, 'a.json'), 'utf8');
   assert.deepEqual(await prefetchAll(targets, { cacheDir, today, fetchPage: async () => assert.fail('cached page fetched') }),
     { fetched: 0, cached: 2, failed: 0 });
   assert.equal(readFileSync(join(cacheDir, 'a.json'), 'utf8'), before);
+});
+
+test('prefetch stores the release or first-version date of the final URL as sourceDate', async t => {
+  const cacheDir = mkdtempSync(join(tmpdir(), 'backfill-prefetch-'));
+  t.after(() => rmSync(cacheDir, { recursive: true, force: true }));
+  const release = '<p>qiskit-bot released this <relative-time datetime="2026-08-13T17:49:55Z"></relative-time></p>';
+  const pages: Record<string, { finalUrl: string; html: string }> = {
+    'https://github.com/Qiskit/qiskit/releases/tag/2.5.2': {
+      finalUrl: 'https://github.com/Qiskit/qiskit/releases/tag/2.5.2', html: release,
+    },
+    'https://arxiv.org/abs/2504.01567': {
+      finalUrl: 'https://arxiv.org/abs/2504.01567',
+      html: '<p>[v1] Wed, 2 Apr 2025 10:10:11 UTC (10,864 KB)</p><p>[v2] Thu, 3 Apr 2025 08:00:00 UTC</p>',
+    },
+    'https://github.com/Qiskit/qiskit-aer/releases/tag/0.17.2': {
+      finalUrl: 'https://github.com/Qiskit/qiskit-aer/releases', html: release,
+    },
+  };
+  const targets = Object.keys(pages).map((url, i) => ({ id: String(i), url }));
+  await prefetchAll(targets, {
+    cacheDir, today, perHostGapMs: 0,
+    fetchPage: async url => ({ status: 200, contentType: 'text/html', ...pages[url] }),
+  });
+  const cached = targets.map(({ id }) => readCachedPage(cacheDir, id));
+  assert.deepEqual(cached.map(page => page?.sourceDate), ['2026-08-13', '2025-04-02', null]);
+  assert.deepEqual(cached.map(page => page?.publishedDates), [[], [], []]);
+});
+
+test('prefetch refetches release-tag and arXiv pages cached without sourceDate; other old entries stay cached', async t => {
+  const cacheDir = mkdtempSync(join(tmpdir(), 'backfill-prefetch-'));
+  t.after(() => rmSync(cacheDir, { recursive: true, force: true }));
+  const old = (id: string, url: string, sourceDate?: null) => writeFileSync(join(cacheDir, `${id}.json`), JSON.stringify({
+    id, url, fetchedOn: '2026-11-01', status: 200, contentType: 'text/html', finalUrl: url,
+    publishedDates: [], text: 'old', error: null, ...(sourceDate === null ? { sourceDate } : {}),
+  }));
+  old('tag', 'https://github.com/Qiskit/qiskit/releases/tag/2.5.2');
+  old('arxiv', 'https://arxiv.org/abs/2504.01567');
+  old('news', 'https://news.example/story');
+  old('tag-null', 'https://github.com/Qiskit/qiskit/releases/tag/2.5.1', null);
+  const fetched: string[] = [];
+  const counts = await prefetchAll(
+    ['tag', 'arxiv', 'news', 'tag-null'].map(id => ({ id, url: JSON.parse(readFileSync(join(cacheDir, `${id}.json`), 'utf8')).url })),
+    {
+      cacheDir, today, perHostGapMs: 0,
+      fetchPage: async url => {
+        fetched.push(url);
+        return { status: 200, contentType: 'text/html', finalUrl: url,
+          html: '<p>bot released this <relative-time datetime="2026-08-13T17:49:55Z"></relative-time></p><p>[v1] Wed, 2 Apr 2025 10:10:11 UTC</p>' };
+      },
+    },
+  );
+  assert.deepEqual(counts, { fetched: 2, cached: 2, failed: 0 });
+  assert.deepEqual(fetched.sort(), ['https://arxiv.org/abs/2504.01567', 'https://github.com/Qiskit/qiskit/releases/tag/2.5.2']);
+  assert.equal(readCachedPage(cacheDir, 'tag')?.sourceDate, '2026-08-13');
+  assert.equal(readCachedPage(cacheDir, 'arxiv')?.sourceDate, '2025-04-02');
+  assert.equal(readCachedPage(cacheDir, 'news')?.text, 'old');
 });
 
 test('prefetch retries thrown fetches, status 0, 429 and 503 without caching; real answers are cached', async t => {
