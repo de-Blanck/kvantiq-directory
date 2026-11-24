@@ -1,0 +1,40 @@
+{
+  "entities": [
+    "companies/planqc"
+  ],
+  "happenedOn": "2026-03-19",
+  "foundOn": "2026-03-20",
+  "summary": "planqc announced €2.3 million in government funding for a joint project on hybrid quantum–classical industrial optimization.",
+  "quote": "The project is funded with €2.3 million by the German Federal Ministry of Research, Technology and Space (BMFTR).",
+  "source": {
+    "url": "https://planqc.eu/news/2-3m-funding-for-hybrid-quantum-classical-solutions-in-industry-optimization",
+    "finalUrl": "https://planqc.eu/news/2-3m-funding-for-hybrid-quantum-classical-solutions-in-industry-optimization",
+    "publisher": "planqc"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "planqc-2026-03-19-funding-b96c01",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 2300000,
+    "currency": "EUR",
+    "round": "grant",
+    "investors": [
+      "German Federal Ministry of Research, Technology and Space (BMFTR)"
+    ]
+  },
+  "subtype": null
+}

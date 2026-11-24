@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/quix-quantum"
+  ],
+  "happenedOn": "2026-06-04",
+  "foundOn": "2026-09-02",
+  "summary": "QuiX Quantum announced the first installation of its real-time feed-forward control unit for photonic quantum computing.",
+  "quote": "ENSCHEDE, Netherlands, June 4, 2026 — QuiX Quantum has announced the first installation of its Feed-Forward Control Unit (FFCU), a high-performance hardware component developed for the company’s universal photonic quantum computing architecture.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quix-quantum-2026-06-04-product-313c95",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

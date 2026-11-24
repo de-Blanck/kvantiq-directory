@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/id-quantique"
+  ],
+  "happenedOn": "2025-05-06",
+  "foundOn": "2026-06-25",
+  "summary": "IonQ completed its acquisition of a controlling stake in ID Quantique.",
+  "quote": "COLLEGE PARK, Md., May 6, 2025 — IonQ today announced the completion of its acquisition of a controlling stake in ID Quantique (IDQ), a global leader in quantum-safe networking and quantum detection systems.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/ionq-completes-acquisition-of-id-quantique/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/ionq-completes-acquisition-of-id-quantique/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "id-quantique-2025-05-06-corporate-8ccaf8",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "corporate",
+  "funding": null,
+  "subtype": "acquisition"
+}

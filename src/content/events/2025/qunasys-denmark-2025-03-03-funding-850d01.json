@@ -1,0 +1,40 @@
+{
+  "entities": [
+    "companies/qunasys-denmark"
+  ],
+  "happenedOn": "2025-03-03",
+  "foundOn": "2026-05-01",
+  "summary": "QunaSys Denmark announced a DKK 19 million Innovation Fund Denmark grant for the HyperTenQ quantum chemistry project.",
+  "quote": "With an investment of DKK 19 million, this prestigious grant recognizes QunaSys’s leadership in quantum computing and its potential to transform materials science, drug discovery, and sustainable technologies.",
+  "source": {
+    "url": "https://qunasys.com/en/news/posts/hypertenq/",
+    "finalUrl": "https://qunasys.com/en/news/posts/hypertenq/",
+    "publisher": "QunaSys"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "qunasys-denmark-2025-03-03-funding-850d01",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 19000000,
+    "currency": "DKK",
+    "round": "grant",
+    "investors": [
+      "Innovation Fund Denmark"
+    ]
+  },
+  "subtype": null
+}

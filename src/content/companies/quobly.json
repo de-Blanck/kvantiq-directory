@@ -68,6 +68,24 @@
       "url": "https://www.hpcwire.com/off-the-wire/sealsq-and-quobly-sign-5m-deal-to-secure-silicon-quantum-computing-platforms/",
       "title": "SEALSQ and Quobly Sign $5M Deal to Secure Silicon Quantum Computing Platforms - HPCwire",
       "dateAccessed": "2026-08-02"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.20043",
+      "title": "Highly uniform first-electron position in qubit arrays fabricated on dedicated QSOI® 300mm commercial platform",
+      "datePublished": "2026-09-28"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quobly-demonstrates-single-chip-readout-and-gates-on-300mm-industrial-silicon-process/",
+      "title": "Quobly Demonstrates Single-Chip Readout and Gates on 300 mm Industrial Silicon Process - Quantum Computing Report",
+      "dateAccessed": "2026-10-04"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quobly-and-cea-leti-strengthen-collaboration-via-fames-pilot-line-to-scale-300-mm-silicon-spin-qubit-platform/",
+      "title": "Quobly and CEA-Leti Strengthen Collaboration via FAMES Pilot Line to Scale 300 mm Silicon Spin-Qubit Platform - Quantum Computing Report",
+      "dateAccessed": "2026-10-04"
     }
   ],
   "news": [

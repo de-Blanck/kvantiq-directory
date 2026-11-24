@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/partisia"
+  ],
+  "happenedOn": "2025-04-13",
+  "foundOn": "2026-05-01",
+  "summary": "Partisia, Squareroot8 and NuSpace signed an MoU to use satellite-generated randomness for secure multiparty computation.",
+  "quote": "By leveraging QRNG-equipped satellites, a trusted, quantum-secure environment for faster and safer cryptographic computations can be created.",
+  "source": {
+    "url": "https://news.satnews.com/2025/04/13/partisia-squareroot8-nuspace-forge-alliance-for-quantum-secure-satcom/",
+    "finalUrl": "https://satnews.com/2025/04/13/partisia-squareroot8-nuspace-forge-alliance-for-quantum-secure-satcom/",
+    "publisher": "SatNews"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "partisia-2025-04-13-partnership-7a5840",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "partnership",
+  "funding": null,
+  "subtype": null
+}

@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/riverlane"
+  ],
+  "happenedOn": "2026-03-12",
+  "foundOn": "2026-03-20",
+  "summary": "Riverlane published a quantum error correction roadmap projecting that its technology could bring utility-scale computing 3–5 years sooner.",
+  "quote": "CAMBRIDGE, England, March 12, 2026 — Riverlane today published its new roadmap outlining how its technology can accelerate the arrival of utility-scale quantum computing by as much as 3-5 years.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/riverlane-publishes-quantum-error-correction-roadmap-targeting-utility-scale-systems-by-early-2030s/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/riverlane-publishes-quantum-error-correction-roadmap-targeting-utility-scale-systems-by-early-2030s/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "riverlane-2026-03-12-product-58e8bf",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

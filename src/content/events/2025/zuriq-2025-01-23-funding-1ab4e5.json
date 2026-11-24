@@ -1,0 +1,45 @@
+{
+  "entities": [
+    "companies/zuriq"
+  ],
+  "happenedOn": "2025-01-23",
+  "foundOn": "2026-03-20",
+  "summary": "ZuriQ announced a $4.2 million seed round led by Founderful to commercialize its trapped-ion architecture.",
+  "quote": "ZuriQ today announced it has raised $4.2M to commercialize a radical new architecture that could finally break through this scaling barrier.",
+  "source": {
+    "url": "https://zuriq.com/all/zuriq-raises-3-8m-chf-in-first-financing-round-from-vc-consortium/",
+    "finalUrl": "https://zuriq.com/all/zuriq-raises-3-8m-chf-in-first-financing-round-from-vc-consortium/",
+    "publisher": "ZuriQ",
+    "publishedOn": "2025-01-23"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "zuriq-2025-01-23-funding-1ab4e5",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 4200000,
+    "currency": "USD",
+    "round": "seed",
+    "investors": [
+      "Founderful",
+      "SquareOne",
+      "First Momentum Ventures",
+      "OnSight Ventures",
+      "QAI Ventures"
+    ]
+  },
+  "subtype": null
+}

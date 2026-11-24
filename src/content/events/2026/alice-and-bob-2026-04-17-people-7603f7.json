@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/alice-and-bob"
+  ],
+  "happenedOn": "2026-04-17",
+  "foundOn": "2026-05-06",
+  "summary": "Alice & Bob reached 251 employees after hiring more than 100 people in seven months, finishing its hiring plan ahead of schedule.",
+  "quote": "PARIS, April 17, 2026 — Alice & Bob, a leader in fault-tolerant quantum computing, has hired more than 100 employees in seven months – taking its headcount to 251 and completing its hiring plan 30% faster than scheduled.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/alice-bob-surpasses-hiring-targets-ahead-of-schedule-as-quantum-workforce-grows/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/alice-bob-surpasses-hiring-targets-ahead-of-schedule-as-quantum-workforce-grows/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "alice-and-bob-2026-04-17-people-7603f7",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "people",
+  "funding": null,
+  "subtype": null
+}

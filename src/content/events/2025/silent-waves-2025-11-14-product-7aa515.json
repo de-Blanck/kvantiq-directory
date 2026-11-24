@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/silent-waves"
+  ],
+  "happenedOn": "2025-11-14",
+  "foundOn": "2026-03-22",
+  "summary": "Silent Waves and research partners demonstrated a superconducting travelling-wave parametric amplifier with built-in isolation.",
+  "quote": "A collaborative team from Institut Néel (University Grenoble Alpes CNRS Grenoble INP), Silent Waves, with partners from Karlsruhe Institute of Technology and the University of Strasbourg has demonstrated a new superconducting travelling wave parametric amplifier with built in isolation.",
+  "source": {
+    "url": "https://www.prlog.org/13111061-travelling-wave-parametric-amplifier-isolator-simplifies-quantum-readout-chains.html",
+    "finalUrl": "https://www.prlog.org/13111061-travelling-wave-parametric-amplifier-isolator-simplifies-quantum-readout-chains.html",
+    "publisher": "PRLog",
+    "publishedOn": "2025-11-14"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "silent-waves-2025-11-14-product-7aa515",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

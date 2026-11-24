@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/quix-quantum"
+  ],
+  "happenedOn": "2026-08-05",
+  "foundOn": "2026-09-02",
+  "summary": "QuiX Quantum launched its rack-mountable Alquor 2.0 photonic processor platform in 8-, 20- and 32-mode configurations.",
+  "quote": "The new Alquor 2.0 extends this foundation with enhanced scalability, improved control electronics, stronger thermal stability, and configurations for 8-mode, 20-mode, and 32-mode research environments.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/quix-quantum-launches-alquor-2-0-photonic-quantum-processor-platform/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/quix-quantum-launches-alquor-2-0-photonic-quantum-processor-platform/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quix-quantum-2026-08-05-product-103a97",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

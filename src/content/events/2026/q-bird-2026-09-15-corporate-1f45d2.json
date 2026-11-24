@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/q-bird"
+  ],
+  "happenedOn": "2026-09-15",
+  "foundOn": "2026-09-27",
+  "summary": "Q*Bird rebranded as Falqon Systems to reflect its focus on infrastructure for operational quantum-secure networks.",
+  "quote": "Q*Bird announced today its transition into Falqon® Systems, introducing a new corporate identity that reflects the company’s strategic evolution from pioneering scalable quantum communication technologies to building the infrastructure required for operational Quantum Secure Networks (QSN).",
+  "source": {
+    "url": "https://www.falqonsystems.com/resources/qbird-becomes-falqon-systems-building-the-infrastructure-for-quantum-secure-networks-qsn/",
+    "finalUrl": "https://www.falqonsystems.com/resources/qbird-becomes-falqon-systems-building-the-infrastructure-for-quantum-secure-networks-qsn/",
+    "publisher": "Falqon Systems",
+    "publishedOn": "2026-09-15"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "q-bird-2026-09-15-corporate-1f45d2",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "corporate",
+  "funding": null,
+  "subtype": null
+}

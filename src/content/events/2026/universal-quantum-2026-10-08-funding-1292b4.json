@@ -1,0 +1,52 @@
+{
+  "entities": [
+    "companies/universal-quantum"
+  ],
+  "happenedOn": "2026-10-08",
+  "foundOn": "2026-10-11",
+  "summary": "Universal Quantum raised $100 million in a Series A co-led by DCVC and Firgun Ventures.",
+  "quote": "A UK university spinout building large scale quantum computing systems for real-world use has raised $100m in funding, which it says it the largest Series A raised by a UK-headquartered quantum firm.",
+  "source": {
+    "url": "https://tech.eu/2026/10/08/university-of-sussex-quantum-spinout-raises-record-ps100m-series-a/",
+    "finalUrl": "https://tech.eu/2026/10/08/university-of-sussex-quantum-spinout-raises-record-ps100m-series-a/",
+    "publisher": "Tech.eu",
+    "publishedOn": "2026-10-08"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "universal-quantum-2026-10-08-funding-1292b4",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 100000000,
+    "currency": "USD",
+    "round": "series-a",
+    "investors": [
+      "DCVC",
+      "Firgun Ventures",
+      "EDBI",
+      "Integral GlobalTech",
+      "NGS Super",
+      "IAG Capital",
+      "EdenBase",
+      "Eigenstate Holdings",
+      "SiteGround Capital",
+      "Dave Baszucki",
+      "Nauta Capital",
+      "The Venture Collective"
+    ]
+  },
+  "subtype": null
+}

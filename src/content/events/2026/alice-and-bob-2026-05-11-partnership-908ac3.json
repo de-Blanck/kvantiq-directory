@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/alice-and-bob"
+  ],
+  "happenedOn": "2026-05-11",
+  "foundOn": "2026-09-02",
+  "summary": "Alice & Bob joined the VTT-led SUPREME consortium, which launched a project to scale superconducting quantum device manufacturing.",
+  "quote": "A major EU-supported SUPREME project starts today on 11 May to industrialise superconducting quantum technologies and to reinforce Europe’s global leadership in quantum innovation.",
+  "source": {
+    "url": "https://www.vttresearch.com/en/news-and-ideas/supreme-quantum-project-enforces-finlands-leading-role-european-quantum-research",
+    "finalUrl": "https://www.vttresearch.com/en/news-and-ideas/supreme-quantum-project-enforces-finlands-leading-role-european-quantum-research",
+    "publisher": "VTT Technical Research Centre",
+    "publishedOn": "2026-05-11"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "alice-and-bob-2026-05-11-partnership-908ac3",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "partnership",
+  "funding": null,
+  "subtype": null
+}

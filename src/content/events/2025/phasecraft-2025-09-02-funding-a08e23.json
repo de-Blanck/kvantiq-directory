@@ -1,0 +1,45 @@
+{
+  "entities": [
+    "companies/phasecraft"
+  ],
+  "happenedOn": "2025-09-02",
+  "foundOn": "2026-03-20",
+  "summary": "Phasecraft raised $34 million in Series B funding to develop quantum algorithms and expand its work with industry.",
+  "quote": "A pioneering quantum computing company co-founded by academics from the University of Bristol and University College London (UCL) has landed $34 million in funding to accelerate its breakthrough work to transform quantum computing’s theoretical promise into practical applications.",
+  "source": {
+    "url": "https://www.bristol.ac.uk/news/2025/september/phasecraft.html",
+    "finalUrl": "https://www.bristol.ac.uk/news/2025/september/phasecraft.html",
+    "publisher": "University of Bristol"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "phasecraft-2025-09-02-funding-a08e23",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 34000000,
+    "currency": "USD",
+    "round": "series-b",
+    "investors": [
+      "Plural",
+      "Playground Global",
+      "Novo Holdings’ Quantum Fund",
+      "AlbionVC",
+      "Latitude",
+      "Parkwalk Advisors"
+    ]
+  },
+  "subtype": null
+}

@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/diasense"
+  ],
+  "happenedOn": "2025-05-15",
+  "foundOn": "2026-05-01",
+  "summary": "DIASENSE joined the Danish Quantum Community as a partner.",
+  "quote": "We are happy to announce that DIASENSE has joined Danish Quantum Community as a new partner.",
+  "source": {
+    "url": "https://dqc.dk/diasense-new-partner-in-danish-quantum-community/",
+    "finalUrl": "https://dqc.dk/diasense-new-partner-in-danish-quantum-community/",
+    "publisher": "Danish Quantum Community",
+    "publishedOn": "2025-05-15"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "diasense-2025-05-15-partnership-00cdfd",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "partnership",
+  "funding": null,
+  "subtype": null
+}

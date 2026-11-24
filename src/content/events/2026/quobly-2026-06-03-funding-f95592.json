@@ -1,0 +1,46 @@
+{
+  "entities": [
+    "companies/quobly"
+  ],
+  "happenedOn": "2026-06-03",
+  "foundOn": "2026-06-03",
+  "summary": "Quobly announced it closed a €115 million Series A to scale production and commercialize its silicon quantum computers.",
+  "quote": "Grenoble, France – June 3rd, 2026 – Quobly, a French quantum computing company, today announced the closing of a €115 million Series A financing to accelerate the industrialization of its silicon-based quantum computers and bring its first commercial product to market by the end of 2026.",
+  "source": {
+    "url": "https://quobly.io/press-releases/quobly-secures-e115-million-series-a-to-bring-silicon-based-quantum-computers-to-market",
+    "finalUrl": "https://www.quobly.io/press-releases/quobly-secures-e115-million-series-a-to-bring-silicon-based-quantum-computers-to-market/",
+    "publisher": "Quobly"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quobly-2026-06-03-funding-f95592",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 115000000,
+    "currency": "EUR",
+    "round": "series-a",
+    "investors": [
+      "Bpifrance",
+      "SEALSQ",
+      "STMicroelectronics",
+      "European Innovation Council (EIC Fund)",
+      "Blast",
+      "ALIAD (Air Liquide Venture Capital)",
+      "Innovacom"
+    ]
+  },
+  "subtype": null
+}

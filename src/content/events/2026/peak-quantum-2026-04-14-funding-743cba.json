@@ -1,0 +1,44 @@
+{
+  "entities": [
+    "companies/peak-quantum"
+  ],
+  "happenedOn": "2026-04-14",
+  "foundOn": "2026-09-02",
+  "summary": "Peak Quantum raised €2.2 million in pre-seed funding to develop superconducting quantum chips and establish a pilot line.",
+  "quote": "Peak Quantum, a Munich-based quantum computing startup, has raised €2.2 million in pre-seed funding to advance its superconducting quantum processor technology and establish a European pilot manufacturing line.",
+  "source": {
+    "url": "https://tech.eu/2026/04/14/peak-quantum-reaches-eur5m-in-total-funding-for-quantum-chips/",
+    "finalUrl": "https://tech.eu/2026/04/14/peak-quantum-reaches-eur5m-in-total-funding-for-quantum-chips/",
+    "publisher": "Tech.eu",
+    "publishedOn": "2026-04-14"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "peak-quantum-2026-04-14-funding-743cba",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 2200000,
+    "currency": "EUR",
+    "round": "pre-seed",
+    "investors": [
+      "Cloudberry Ventures",
+      "United Founders",
+      "QAI Ventures",
+      "Golden Egg Check"
+    ]
+  },
+  "subtype": null
+}

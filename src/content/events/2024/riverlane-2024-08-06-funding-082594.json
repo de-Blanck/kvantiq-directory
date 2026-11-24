@@ -1,0 +1,47 @@
+{
+  "entities": [
+    "companies/riverlane"
+  ],
+  "happenedOn": "2024-08-06",
+  "foundOn": "2026-03-20",
+  "summary": "Riverlane announced a $75 million Series C led by Planet First Partners to advance its quantum error correction technology.",
+  "quote": "Cambridge, UK; Boston, US: Riverlane, the global leader in quantum error correction technology, today announced that it has raised $75 million in Series C funding to deliver its groundbreaking quantum error correction (QEC) roadmap.",
+  "source": {
+    "url": "https://www.riverlane.com/press-release/riverlane-raises-75-million-to-meet-surging-global-demand-for-quantum-error-correction-technology",
+    "finalUrl": "https://www.riverlane.com/press-release/riverlane-raises-75-million-to-meet-surging-global-demand-for-quantum-error-correction-technology",
+    "publisher": "Riverlane",
+    "publishedOn": "2024-08-06"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "riverlane-2024-08-06-funding-082594",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 75000000,
+    "currency": "USD",
+    "round": "series-c-plus",
+    "investors": [
+      "Planet First Partners",
+      "ETF Partners",
+      "EDBI",
+      "Cambridge Innovation Capital",
+      "Amadeus Capital Partners",
+      "National Security Strategic Investment Fund",
+      "Altair"
+    ]
+  },
+  "subtype": null
+}

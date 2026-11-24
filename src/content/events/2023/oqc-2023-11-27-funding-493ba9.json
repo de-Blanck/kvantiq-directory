@@ -1,0 +1,45 @@
+{
+  "entities": [
+    "companies/oqc"
+  ],
+  "happenedOn": "2023-11-27",
+  "foundOn": "2026-03-20",
+  "summary": "Oxford Quantum Circuits announced that SBI Investment was leading its $100 million Series B.",
+  "quote": "Today Oxford Quantum Circuits (OQC), a quantum compute-as-a-service (QCaaS) company, announced that Japanese VC fund SBI Investment, Japan’s premier VC fund, is leading OQC’s $100 million round.",
+  "source": {
+    "url": "https://tech.eu/2023/11/27/oxford-quantum-circuits-raises-100m-in-largest-uk-series-b-for-quantum-computing/",
+    "finalUrl": "https://tech.eu/2023/11/27/oxford-quantum-circuits-raises-100m-in-largest-uk-series-b-for-quantum-computing/",
+    "publisher": "Tech.eu",
+    "publishedOn": "2023-11-27"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "oqc-2023-11-27-funding-493ba9",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 100000000,
+    "currency": "USD",
+    "round": "series-b",
+    "investors": [
+      "SBI Investment",
+      "Oxford Science Enterprises",
+      "University of Tokyo Edge Capital",
+      "Lansdowne Partners",
+      "OTIF"
+    ]
+  },
+  "subtype": null
+}

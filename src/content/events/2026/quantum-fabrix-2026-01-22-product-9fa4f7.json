@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/quantum-fabrix"
+  ],
+  "happenedOn": "2026-01-22",
+  "foundOn": "2026-09-02",
+  "summary": "Quantum Fabrix announced that Oxford researchers demonstrated rapid calcium ion loading with its miniaturised atom source prototype.",
+  "quote": "In a recent arXiv preprint (https://arxiv.org/abs/2512.10514), ion trap quantum computing researchers at the University of Oxford report on the rapid loading of calcium ions using a pre-production prototype of QFX’s Miniaturised Atom Source (MAS) technology.",
+  "source": {
+    "url": "https://www.qfx.io/post/oxford-university-researchers-demonstrate-rapid-ion-trap-loading-using-qfx-s-miniaturised-atom-sourc",
+    "finalUrl": "https://www.qfx.io/post/oxford-university-researchers-demonstrate-rapid-ion-trap-loading-using-qfx-s-miniaturised-atom-sourc",
+    "publisher": "Quantum Fabrix",
+    "publishedOn": "2026-01-22"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quantum-fabrix-2026-01-22-product-9fa4f7",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

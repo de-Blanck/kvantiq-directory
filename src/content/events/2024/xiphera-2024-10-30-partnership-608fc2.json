@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/xiphera"
+  ],
+  "happenedOn": "2024-10-30",
+  "foundOn": "2026-06-28",
+  "summary": "Xiphera partnered with Crypto Quantique to combine quantum-resilient cryptography with hardware-based device identity.",
+  "quote": "Xiphera, a provider of highly-optimised, hardware-based cryptographic security, today announced its partnership with Crypto Quantique, a provider of quantum-driven IoT device security.",
+  "source": {
+    "url": "https://www.design-reuse.com/news/11553-xiphera-and-crypto-quantique-announce-partnership-for-quantum-resilient-hardware-trust-engines/",
+    "finalUrl": "https://www.design-reuse.com/news/11553-xiphera-and-crypto-quantique-announce-partnership-for-quantum-resilient-hardware-trust-engines/",
+    "publisher": "Design & Reuse",
+    "publishedOn": "2024-10-30"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "xiphera-2024-10-30-partnership-608fc2",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "partnership",
+  "funding": null,
+  "subtype": null
+}

@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/alice-and-bob"
+  ],
+  "happenedOn": "2026-09-09",
+  "foundOn": "2026-09-13",
+  "summary": "Alice & Bob and Hyperion Research released a report on integrating quantum computing and AI with high-performance computing.",
+  "quote": "BOSTON, Sept. 9, 2026 — Alice & Bob and Hyperion Research today released a new report on what it will take to enable HPC-Quantum-AI systems with insights from HPC practitioners.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/alice-bob-and-hyperion-report-maps-path-to-hpc-quantum-ai-integration/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/alice-bob-and-hyperion-report-maps-path-to-hpc-quantum-ai-integration/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "alice-and-bob-2026-09-09-other-7dd5bf",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "other",
+  "funding": null,
+  "subtype": null
+}

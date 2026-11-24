@@ -1,0 +1,48 @@
+{
+  "entities": [
+    "companies/multiverse-computing"
+  ],
+  "happenedOn": "2025-06-12",
+  "foundOn": "2026-06-25",
+  "summary": "Multiverse Computing raised €189 million in a Series B led by Bullhound Capital.",
+  "quote": "Spanish startup Multiverse Computing on Thursday said it has raised an enormous Series B round of €189 million (about $215 million) on the strength of a technology it calls “CompactifAI.”",
+  "source": {
+    "url": "https://techcrunch.com/2025/06/12/multiverse-computing-raises-215m-for-tech-that-could-radically-slim-ai-costs/",
+    "finalUrl": "https://techcrunch.com/2025/06/12/multiverse-computing-raises-215m-for-tech-that-could-radically-slim-ai-costs/",
+    "publisher": "TechCrunch",
+    "publishedOn": "2025-06-12"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "multiverse-computing-2025-06-12-funding-a41b6a",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 189000000,
+    "currency": "EUR",
+    "round": "series-b",
+    "investors": [
+      "Bullhound Capital",
+      "HP Tech Ventures",
+      "SETT",
+      "Forgepoint Capital International",
+      "CDP Venture Capital",
+      "Santander Climate VC",
+      "Toshiba",
+      "Capital Riesgo de Euskadi — Grupo SPR"
+    ]
+  },
+  "subtype": null
+}

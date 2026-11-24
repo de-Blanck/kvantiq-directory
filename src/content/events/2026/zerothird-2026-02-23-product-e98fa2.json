@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/zerothird"
+  ],
+  "happenedOn": "2026-02-23",
+  "foundOn": "2026-09-02",
+  "summary": "zerothird, Erste Group and A1 piloted entanglement-based quantum encryption on Erste Group’s existing fiber network in Vienna.",
+  "quote": "In a pilot project in Vienna, a commercial quantum security solution was successfully integrated into the bank’s existing fiber-optic infrastructure for the first time.",
+  "source": {
+    "url": "https://www.erstegroup.com/en/news-media/press-releases/2026/02/23/erste-group-sets-new-standards-in-quantum-encryption",
+    "finalUrl": "https://www.erstegroup.com/en/news-media/press-releases/2026/02/23/erste-group-sets-new-standards-in-quantum-encryption",
+    "publisher": "Erste Group",
+    "publishedOn": "2026-02-23"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "zerothird-2026-02-23-product-e98fa2",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

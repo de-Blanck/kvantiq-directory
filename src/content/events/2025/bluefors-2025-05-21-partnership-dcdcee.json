@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/bluefors"
+  ],
+  "happenedOn": "2025-05-21",
+  "foundOn": "2026-06-26",
+  "summary": "Bluefors announced it had delivered and installed 18 cryogenic systems at AIST’s G-QuAT center in Japan.",
+  "quote": "In total, Bluefors supplied 18 fully-wired cryogenic measurement systems to the G-QuAT center.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/bluefors-delivers-18-cryogenic-systems-to-japans-new-g-quat-quantum-center/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/bluefors-delivers-18-cryogenic-systems-to-japans-new-g-quat-quantum-center/",
+    "publisher": "HPCwire",
+    "publishedOn": "2025-05-21"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "bluefors-2025-05-21-partnership-dcdcee",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "partnership",
+  "funding": null,
+  "subtype": null
+}

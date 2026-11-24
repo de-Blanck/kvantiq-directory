@@ -1,0 +1,41 @@
+{
+  "entities": [
+    "companies/quantinuum"
+  ],
+  "happenedOn": "2026-09-08",
+  "foundOn": "2026-09-13",
+  "summary": "The U.S. Department of Commerce finalized a CHIPS R&D award of up to $100 million for Quantinuum.",
+  "quote": "WASHINGTON, D.C. — The U.S. Department of Commerce announced today the signing of a final award of up to $100 million to Quantinuum under the CHIPS and Science Act.",
+  "source": {
+    "url": "https://www.nist.gov/news-events/news/2026/09/department-commerce-announces-finalization-chips-rd-award-quantinuum",
+    "finalUrl": "https://www.nist.gov/news-events/news/2026/09/department-commerce-announces-finalization-chips-rd-award-quantinuum",
+    "publisher": "NIST",
+    "publishedOn": "2026-09-08"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quantinuum-2026-09-08-funding-70c529",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 100000000,
+    "currency": "USD",
+    "round": "grant",
+    "investors": [
+      "U.S. Department of Commerce"
+    ]
+  },
+  "subtype": null
+}

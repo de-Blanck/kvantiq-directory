@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/scalinq"
+  ],
+  "happenedOn": "2026-03-17",
+  "foundOn": "2026-03-20",
+  "summary": "SCALINQ announced LINQER24, a 24-signal-line sample package compatible with kiutra’s L-Type Rapid Puck 80.",
+  "quote": "SCALINQ is proud to announce the expansion of its industry-leading packaging portfolio with the launch of a new LINQER model featuring 24 signal lines.",
+  "source": {
+    "url": "https://www.scalinq.com/news/releasing-linqer24-compatible-with-kiutra-l-type-rapid-puck-80/",
+    "finalUrl": "https://www.scalinq.com/news/releasing-linqer24-compatible-with-kiutra-l-type-rapid-puck-80/",
+    "publisher": "SCALINQ"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "scalinq-2026-03-17-product-68a516",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

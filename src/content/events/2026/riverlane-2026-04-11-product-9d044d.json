@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/riverlane"
+  ],
+  "happenedOn": "2026-04-11",
+  "foundOn": "2026-09-02",
+  "summary": "Riverlane demonstrated a mean quantum error correction latency of 16.32 µs on quantum processor data using Deltaflow 2.",
+  "quote": "Riverlane has achieved a mean latency of 16.32µs for quantum error correction on real quantum processing unit data, a result that outperforms the company’s own 20µs target and brings utility-scale quantum computing closer to reality.",
+  "source": {
+    "url": "https://quantumzeitgeist.com/qec-latency-google-riverlane-cuts/",
+    "finalUrl": "https://quantumzeitgeist.com/qec-latency-google-riverlane-cuts/",
+    "publisher": "Quantum Zeitgeist",
+    "publishedOn": "2026-04-11"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "riverlane-2026-04-11-product-9d044d",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/quix-quantum"
+  ],
+  "happenedOn": "2026-04-02",
+  "foundOn": "2026-04-19",
+  "summary": "QuiX Quantum announced a demonstration of below-threshold error mitigation on a photonic quantum computer.",
+  "quote": "The achievement marks the first time a European company has demonstrated a production-ready method of error reduction, demonstrating the scalability of the QuiX quantum computing platform based on photonics.",
+  "source": {
+    "url": "https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time",
+    "finalUrl": "https://www.quixquantum.com/news/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time",
+    "publisher": "QuiX Quantum",
+    "publishedOn": "2026-04-02"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quix-quantum-2026-04-02-product-220451",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

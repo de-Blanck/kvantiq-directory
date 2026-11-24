@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/alice-and-bob"
+  ],
+  "happenedOn": "2026-10-20",
+  "foundOn": "2026-11-15",
+  "summary": "Alice & Bob shared Phase 1 PROQCIMA results from three operational cat-qubit demonstrators.",
+  "quote": "PARIS, Oct. 20, 2026 — Alice & Bob, a leader in fault-tolerant quantum computing, today shares a summary of results from Phase 1 of PROQCIMA, the French government’s quantum computing program.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/alice-bob-shares-1st-results-from-frances-proqcima-quantum-program/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/alice-bob-shares-1st-results-from-frances-proqcima-quantum-program/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "alice-and-bob-2026-10-20-product-660914",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

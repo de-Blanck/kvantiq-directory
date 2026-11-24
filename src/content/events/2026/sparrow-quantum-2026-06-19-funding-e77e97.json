@@ -1,0 +1,41 @@
+{
+  "entities": [
+    "companies/sparrow-quantum"
+  ],
+  "happenedOn": "2026-06-19",
+  "foundOn": "2026-09-02",
+  "summary": "EuroHPC selected Sparrow Quantum’s EU-SCALE project for €300,000 in EU funding, pending signature of the grant agreement.",
+  "quote": "EU-SCALE, Sparrow Quantum’s project under the Grand Challenge, will receive €300,000 in EU funding once the grant agreement — currently in preparation — is signed.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/sparrow-quantum-selected-for-eurohpc-quantum-grand-challenge-funding/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/sparrow-quantum-selected-for-eurohpc-quantum-grand-challenge-funding/",
+    "publisher": "HPCwire",
+    "publishedOn": "2026-08-26"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "sparrow-quantum-2026-06-19-funding-e77e97",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 300000,
+    "currency": "EUR",
+    "round": "grant",
+    "investors": [
+      "EuroHPC Joint Undertaking"
+    ]
+  },
+  "subtype": null
+}

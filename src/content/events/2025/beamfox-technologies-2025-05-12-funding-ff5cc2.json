@@ -1,0 +1,41 @@
+{
+  "entities": [
+    "companies/beamfox-technologies",
+    "companies/lizard-photonics"
+  ],
+  "happenedOn": "2025-05-12",
+  "foundOn": "2026-05-01",
+  "summary": "Innovation Fund Denmark awarded DKK 40 million to EQUAL, a quantum light-source project involving Beamfox and Lizard Photonics.",
+  "quote": "The In-novation Fund has invested DKK 40 million in the project.",
+  "source": {
+    "url": "https://www.dtu.dk/english/news/all-news/research-project-to-crack-the-code-of-quantum-light-sources-and-quantum-networks?id=a84d6518-40f9-4f88-81f2-dc17c4117502",
+    "finalUrl": "https://www.dtu.dk/english/news/all-news/research-project-to-crack-the-code-of-quantum-light-sources-and-quantum-networks?id=a84d6518-40f9-4f88-81f2-dc17c4117502",
+    "publisher": "DTU"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "beamfox-technologies-2025-05-12-funding-ff5cc2",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 40000000,
+    "currency": "DKK",
+    "round": "grant",
+    "investors": [
+      "Innovation Fund Denmark"
+    ]
+  },
+  "subtype": null
+}

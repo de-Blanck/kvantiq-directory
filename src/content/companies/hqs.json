@@ -63,6 +63,20 @@
       "type": "url",
       "url": "https://thequantuminsider.com/2025/02/03/hqs-quantum-simulations-secures-2-6m-eic-grant-to-advance-nmr-spectroscopy-for-modern-diagnostics/",
       "title": "HQS Quantum Simulations Secures $2.6M EIC Grant to Advance NMR Spectroscopy for Modern Diagnostics"
+    },
+    {
+      "type": "url",
+      "url": "https://quantumcomputingreport.com/quantinuum-and-hqs-simulate-21-spin-nmr-spectrum-on-42-qubits-with-1400-two-qubit-gate-circuits/",
+      "title": "Quantinuum and HQS Simulate 21-Spin NMR Spectrum on 42 Qubits With 1,400+ Two-Qubit Gate Circuits",
+      "datePublished": "2026-10-09",
+      "dateAccessed": "2026-11-22"
+    },
+    {
+      "type": "arxiv",
+      "url": "https://arxiv.org/abs/2609.17102",
+      "title": "Large-scale NMR simulation on a trapped-ion quantum computer (arXiv:2609.17102)",
+      "datePublished": "2026-09-15",
+      "dateAccessed": "2026-11-22"
     }
   ],
   "news": [

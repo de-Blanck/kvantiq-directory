@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/riverlane"
+  ],
+  "happenedOn": "2026-09-10",
+  "foundOn": "2026-09-13",
+  "summary": "Riverlane and Altera announced a partnership to support real-time quantum error correction on Agilex FPGAs.",
+  "quote": "Through the partnership, Riverlane has validated its QEC Interface (QECi) design example on an Altera Agilex 7 FPGA.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/altera-and-riverlane-partner-to-bring-quantum-error-correction-support-to-agilex-fpgas/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/altera-and-riverlane-partner-to-bring-quantum-error-correction-support-to-agilex-fpgas/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "riverlane-2026-09-10-partnership-00ee2a",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "partnership",
+  "funding": null,
+  "subtype": null
+}

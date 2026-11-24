@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/keequant"
+  ],
+  "happenedOn": "2026-06-18",
+  "foundOn": "2026-06-18",
+  "summary": "KEEQuant announced a joint demonstration with Collaider and noris network of sovereign AI using quantum-secured communications.",
+  "quote": "KEEQuant, Collaider and noris network demonstrate a sovereign AI model that combines quantum-secured communication, trusted German infrastructure and application-ready AI for confidentiality-sensitive use cases.",
+  "source": {
+    "url": "https://www.keequant.com/quantum-secured-ai-for-organizations/",
+    "finalUrl": "https://www.keequant.com/quantum-secured-ai-for-organizations/",
+    "publisher": "KEEQuant",
+    "publishedOn": "2026-06-18"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "keequant-2026-06-18-product-b8fc3a",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

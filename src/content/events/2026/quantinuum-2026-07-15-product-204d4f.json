@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/quantinuum"
+  ],
+  "happenedOn": "2026-07-15",
+  "foundOn": "2026-09-02",
+  "summary": "Researchers demonstrated a universal topological gate set using anyon braiding and fusion on Quantinuum’s H2 processor.",
+  "quote": "We encode logical information in the global fusion space of non-Abelian anyons, and by combining braiding with fusion, we realize a universal topological gate set and read-out, which we demonstrate by topologically preparing a magic state.",
+  "source": {
+    "url": "https://www.nature.com/articles/s41586-026-10709-y",
+    "finalUrl": "https://www.nature.com/articles/s41586-026-10709-y?error=cookies_not_supported&code=a3bdf0ea-0dc1-4e41-a20f-50c282007b40",
+    "publisher": "Nature"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quantinuum-2026-07-15-product-204d4f",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

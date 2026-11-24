@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/quantinuum"
+  ],
+  "happenedOn": "2026-05-08",
+  "foundOn": "2026-09-02",
+  "summary": "Quantinuum publicly filed a Form S-1 with the SEC for its proposed initial public offering.",
+  "quote": "The registration statement relating to these securities has been filed with the SEC but has not yet become effective.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/honeywell-announces-quantinuums-filing-of-registration-statement-for-proposed-ipo/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/honeywell-announces-quantinuums-filing-of-registration-statement-for-proposed-ipo/",
+    "publisher": "HPCwire"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quantinuum-2026-05-08-corporate-f5fe2a",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "corporate",
+  "funding": null,
+  "subtype": null
+}

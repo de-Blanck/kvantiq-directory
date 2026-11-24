@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/quantinuum"
+  ],
+  "happenedOn": "2026-06-12",
+  "foundOn": "2026-09-02",
+  "summary": "Microsoft and Quantinuum reported 11- to 800-fold reductions in logical error rates on trapped-ion hardware.",
+  "quote": "By applying the Microsoft Quantum platform to Quantinuum’s trapped-ion hardware, the teams demonstrated logical error-rate improvements ranging from 11x to 800x over corresponding physical circuit baselines.",
+  "source": {
+    "url": "https://www.hpcwire.com/off-the-wire/microsofts-application-of-error-correction-to-trapped-ion-qubits-published-in-nature/",
+    "finalUrl": "https://www.hpcwire.com/off-the-wire/microsofts-application-of-error-correction-to-trapped-ion-qubits-published-in-nature/",
+    "publisher": "HPCwire",
+    "publishedOn": "2026-06-12"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quantinuum-2026-06-12-product-832295",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

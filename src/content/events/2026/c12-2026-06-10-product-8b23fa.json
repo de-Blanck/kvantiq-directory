@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/c12"
+  ],
+  "happenedOn": "2026-06-10",
+  "foundOn": "2026-06-10",
+  "summary": "C12 Quantum Electronics announced a four-generation processor roadmap targeting utility-scale fault-tolerant quantum computing by 2033.",
+  "quote": "C12, a Paris-based quantum computing company developing processors based on carbon nanotube spin qubits, today unveiled its technology roadmap towards commercial fault-tolerant quantum computing.",
+  "source": {
+    "url": "https://www.c12qe.com/news/c12-unveils-roadmap-to-useful-fault-tolerant-quantum-computing-by-2033",
+    "finalUrl": "https://www.c12qe.com/news/c12-unveils-roadmap-to-useful-fault-tolerant-quantum-computing-by-2033",
+    "publisher": "C12 Quantum Electronics",
+    "publishedOn": "2026-06-10"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "c12-2026-06-10-product-8b23fa",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "product",
+  "funding": null,
+  "subtype": null
+}

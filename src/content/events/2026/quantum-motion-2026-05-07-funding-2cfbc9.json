@@ -1,0 +1,38 @@
+{
+  "entities": [
+    "companies/quantum-motion"
+  ],
+  "happenedOn": "2026-05-07",
+  "foundOn": "2026-09-02",
+  "summary": "Quantum Motion raised $160 million in Series C funding.",
+  "quote": "Quantum Motion, the UK-based company building quantum computers, has raised a $160m Series C.",
+  "source": {
+    "url": "https://sifted.eu/articles/quantum-motion-series-c",
+    "finalUrl": "https://sifted.eu/articles/quantum-motion-series-c",
+    "publisher": "Sifted"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quantum-motion-2026-05-07-funding-2cfbc9",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 160000000,
+    "currency": "USD",
+    "round": "series-c-plus",
+    "investors": []
+  },
+  "subtype": null
+}

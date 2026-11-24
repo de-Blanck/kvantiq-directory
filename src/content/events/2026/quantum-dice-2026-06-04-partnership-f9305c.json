@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "companies/quantum-dice"
+  ],
+  "happenedOn": "2026-06-04",
+  "foundOn": "2026-06-04",
+  "summary": "Quantum Dice announced it signed the University of Oxford-led Equinox Charter to support collaboration across Oxfordshire.",
+  "quote": "Quantum Dice is proud to have signed the Equinox Charter, an initiative led by the University of Oxford to strengthen collaboration across research, industry and government.",
+  "source": {
+    "url": "https://quantum-dice.com/resources/quantum-dice-joins-equinox-charter-to-advance-oxfordshire-s-global-innovation-leadership",
+    "finalUrl": "https://quantum-dice.com/resources/quantum-dice-joins-equinox-charter-to-advance-oxfordshire-s-global-innovation-leadership",
+    "publisher": "Quantum Dice",
+    "publishedOn": "2026-06-04"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "quantum-dice-2026-06-04-partnership-f9305c",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "partnership",
+  "funding": null,
+  "subtype": null
+}

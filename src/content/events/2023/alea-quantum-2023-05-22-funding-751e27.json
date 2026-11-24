@@ -1,0 +1,40 @@
+{
+  "entities": [
+    "companies/alea-quantum"
+  ],
+  "happenedOn": "2023-05-22",
+  "foundOn": "2026-05-01",
+  "summary": "The EU awarded DKK 7 million to further develop Alea Quantum Technologies’ quantum random number generator.",
+  "quote": "Under the Digital Europe programme, the EU has granted DKK 7 million for the further development of the technology, which also in 2022 formed part of a larger system tested to deliver quantum-secured data transfer between two servers in Danske Bank.",
+  "source": {
+    "url": "https://www.dtu.dk/english/newsarchive/2023/05/quantum-technology-for-mobile-phone-encryption-is-coming",
+    "finalUrl": "https://www.dtu.dk/english/newsarchive/2023/05/quantum-technology-for-mobile-phone-encryption-is-coming",
+    "publisher": "DTU"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "alea-quantum-2023-05-22-funding-751e27",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": true,
+    "typeAgreed": true
+  },
+  "type": "funding",
+  "funding": {
+    "amount": 7000000,
+    "currency": "DKK",
+    "round": "grant",
+    "investors": [
+      "European Union"
+    ]
+  },
+  "subtype": null
+}

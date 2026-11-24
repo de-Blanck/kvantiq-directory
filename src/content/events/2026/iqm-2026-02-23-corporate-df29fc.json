@@ -1,0 +1,33 @@
+{
+  "entities": [
+    "companies/iqm"
+  ],
+  "happenedOn": "2026-02-23",
+  "foundOn": "2026-09-02",
+  "summary": "IQM and Real Asset Acquisition Corp. announced a definitive merger agreement to take IQM public.",
+  "quote": "IQM, a Global Leader for Quantum Computing, to Become the First Listed European Quantum Company, Through Merger with Real Asset Acquisition Corp.",
+  "source": {
+    "url": "https://iqm.tech/press-releases/iqm-a-global-leader-for-quantum-computing-to-become-the-first-listed-european-quantum-company-through-merger-with-real-asset-acquisition-corp/",
+    "finalUrl": "https://iqm.tech/press-releases/iqm-a-global-leader-for-quantum-computing-to-become-the-first-listed-european-quantum-company-through-merger-with-real-asset-acquisition-corp/",
+    "publisher": "IQM Quantum Computers"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "iqm-2026-02-23-corporate-df29fc",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "corporate",
+  "funding": null,
+  "subtype": "merger"
+}

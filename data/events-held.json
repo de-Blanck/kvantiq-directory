@@ -462,12 +462,1250 @@
     "stale": false
   },
   {
+    "key": "companies/adamantq|https://navigareventures.com/news-stories/adamant-quanta-closes-sek-92-million-financing-round-deliver-breakthrough-diamond",
+    "entities": [
+      "companies/adamantq"
+    ],
+    "sourceUrl": "https://navigareventures.com/news-stories/adamant-quanta-closes-sek-92-million-financing-round-deliver-breakthrough-diamond",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/alea-quantum|https://techhq.com/2023/05/qrng-chips-for-mobile-danish-tech-start-up-adds-to-ecosystem",
+    "entities": [
+      "companies/alea-quantum"
+    ],
+    "sourceUrl": "https://techhq.com/2023/05/qrng-chips-for-mobile-danish-tech-start-up-adds-to-ecosystem/",
+    "reason": "source-unreachable",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/algorithmiq|https://eu-startups.com/2026/05/quantum-software-startup-algorithmiq-raises-e18-million-and-moves-global-hq-from-helsinki-to-milan",
+    "entities": [
+      "companies/algorithmiq"
+    ],
+    "sourceUrl": "https://www.eu-startups.com/2026/05/quantum-software-startup-algorithmiq-raises-e18-million-and-moves-global-hq-from-helsinki-to-milan/",
+    "reason": "possible-duplicate",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/algorithmiq|https://thequantuminsider.com/2026/04/16/wellcome-leap-quantum-for-bio-challenge-prize",
+    "entities": [
+      "companies/algorithmiq"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/04/16/wellcome-leap-quantum-for-bio-challenge-prize/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/algorithmiq|https://thequantuminsider.com/2026/05/12/algorithmiq-raises-e18-million-establishes-headquarters-in-milan",
+    "entities": [
+      "companies/algorithmiq"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/12/algorithmiq-raises-e18-million-establishes-headquarters-in-milan/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/alice-and-bob|https://alice-bob.com/newsroom/alice-bob-showcases-advances-in-cat-qubit-fault-tolerance-at-aps-global-physics-summit",
+    "entities": [
+      "companies/alice-and-bob"
+    ],
+    "sourceUrl": "https://alice-bob.com/newsroom/alice-bob-showcases-advances-in-cat-qubit-fault-tolerance-at-aps-global-physics-summit/",
+    "reason": "source-unreachable",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/alice-and-bob|https://alice-bob.com/newsroom/alice-bob-unveils-first-quantum-system",
+    "entities": [
+      "companies/alice-and-bob"
+    ],
+    "sourceUrl": "https://alice-bob.com/newsroom/alice-bob-unveils-first-quantum-system/",
+    "reason": "source-unreachable",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/alice-and-bob|https://alice-bob.com/newsroom/reducing-quantum-computing-errors-with-new-code",
+    "entities": [
+      "companies/alice-and-bob"
+    ],
+    "sourceUrl": "https://alice-bob.com/newsroom/reducing-quantum-computing-errors-with-new-code/",
+    "reason": "source-unreachable",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/alice-and-bob|https://hpcwire.com/off-the-wire/alice-bob-expands-e100m-series-b-with-investment-from-nvidias-nventures",
+    "entities": [
+      "companies/alice-and-bob"
+    ],
+    "sourceUrl": "https://www.hpcwire.com/off-the-wire/alice-bob-expands-e100m-series-b-with-investment-from-nvidias-nventures/",
+    "reason": "possible-duplicate",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/alice-and-bob|https://hpcwire.com/off-the-wire/alice-bob-introduces-helium-platform-for-quantum-error-correction-and-logical-qubit-research",
+    "entities": [
+      "companies/alice-and-bob"
+    ],
+    "sourceUrl": "https://www.hpcwire.com/off-the-wire/alice-bob-introduces-helium-platform-for-quantum-error-correction-and-logical-qubit-research/",
+    "reason": "possible-duplicate",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/alice-and-bob|https://quantumcomputingreport.com/alice-bob-accelerates-modular-cat-qubit-roadmap-to-200-logical-qubits-from-3600-physical-qubits-by-2030",
+    "entities": [
+      "companies/alice-and-bob"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/alice-bob-accelerates-modular-cat-qubit-roadmap-to-200-logical-qubits-from-3600-physical-qubits-by-2030/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/alice-and-bob|https://quantumcomputingreport.com/alice-bob-details-qrmi-and-slurm-26-11-hierarchical-resource-integration-for-cat-qubit-systems-at-sc26",
+    "entities": [
+      "companies/alice-and-bob"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/alice-bob-details-qrmi-and-slurm-26-11-hierarchical-resource-integration-for-cat-qubit-systems-at-sc26/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/alice-and-bob|https://quantumcomputingreport.com/alice-bob-joins-e4-6m-msca-backed-qubric-doctoral-network-for-quantum-error-correction",
+    "entities": [
+      "companies/alice-and-bob"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/alice-bob-joins-e4-6m-msca-backed-qubric-doctoral-network-for-quantum-error-correction/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/alice-and-bob|https://quantumcomputingreport.com/alice-bob-secures-nventures-backing-and-backs-expanded-e1-billion-french-plan-quantique",
+    "entities": [
+      "companies/alice-and-bob"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/alice-bob-secures-nventures-backing-and-backs-expanded-e1-billion-french-plan-quantique/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/alice-and-bob|https://quantumcomputingreport.com/france-finalizes-world-first-acquisition-of-alice-bob-cat-qubit-quantum-computer-under-hqi-initiative",
+    "entities": [
+      "companies/alice-and-bob"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/france-finalizes-world-first-acquisition-of-alice-bob-cat-qubit-quantum-computer-under-hqi-initiative/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/alice-and-bob|https://thequantuminsider.com/2026/03/31/alice-bob-arpae-funding-quantum-materials",
+    "entities": [
+      "companies/alice-and-bob"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/03/31/alice-bob-arpae-funding-quantum-materials/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/alice-and-bob|https://thequantuminsider.com/2026/05/22/alice-bob-announces-investment-from-nvidias-vc-arm-in-series-b-extension",
+    "entities": [
+      "companies/alice-and-bob"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/22/alice-bob-announces-investment-from-nvidias-vc-arm-in-series-b-extension/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/alice-and-bob|https://thequantuminsider.com/2026/06/11/alice-bob-unveils-first-quantum-system-available-for-research-partners",
+    "entities": [
+      "companies/alice-and-bob"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/06/11/alice-bob-unveils-first-quantum-system-available-for-research-partners/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/alice-and-bob|https://thequantuminsider.com/2026/06/17/france-acquires-alice-and-bob-cat-qubit-quantum-computer-for-national-research-infrastructure",
+    "entities": [
+      "companies/alice-and-bob"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/06/17/france-acquires-alice-and-bob-cat-qubit-quantum-computer-for-national-research-infrastructure/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/alice-and-bob|https://thequantuminsider.com/2026/08/12/alice-bob-partners-europe-first-doctoral-network-quantum-error-correction",
+    "entities": [
+      "companies/alice-and-bob"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/08/12/alice-bob-partners-europe-first-doctoral-network-quantum-error-correction/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/alice-and-bob|https://thequantuminsider.com/2026/09/17/alice-bob-partners-with-the-cea-to-accelerate-quantum-hpc-integration-and-industrial-use-cases",
+    "entities": [
+      "companies/alice-and-bob"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/17/alice-bob-partners-with-the-cea-to-accelerate-quantum-hpc-integration-and-industrial-use-cases/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/alice-and-bob|https://thequantuminsider.com/2026/10/29/alice-bob-22593-qubits-break-rsa-2048",
+    "entities": [
+      "companies/alice-and-bob"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/10/29/alice-bob-22593-qubits-break-rsa-2048/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/aqarios|https://quantumcomputingreport.com/aqarios-enters-public-markets-via-spac-becoming-germanys-first-listed-quantum-pure-play",
+    "entities": [
+      "companies/aqarios"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/aqarios-enters-public-markets-via-spac-becoming-germanys-first-listed-quantum-pure-play/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
     "key": "companies/aqarios|https://quantumcomputingreport.com/aqarios-launches-constraint-native-quantum-optimizer-in-the-ibm-qiskit-functions-catalog",
     "entities": [
       "companies/aqarios",
       "benchmarks/qaoa-maxcut"
     ],
     "sourceUrl": "https://quantumcomputingreport.com/aqarios-launches-constraint-native-quantum-optimizer-in-the-ibm-qiskit-functions-catalog/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/aqarios|https://thequantuminsider.com/2026/07/15/aqarios-lists-on-dusseldorf-exchange-says-it-is-germanys-first-pure-play-public-quantum-computing-company",
+    "entities": [
+      "companies/aqarios"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/07/15/aqarios-lists-on-dusseldorf-exchange-says-it-is-germanys-first-pure-play-public-quantum-computing-company/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/aqora|https://quantumcomputingreport.com/aqora-launches-datasets-hub-to-advance-reproducibility-in-quantum-research",
+    "entities": [
+      "companies/aqora"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/aqora-launches-datasets-hub-to-advance-reproducibility-in-quantum-research/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/aqora|https://thequantuminsider.com/2025/10/07/aqoras-new-datasets-hub-is-building-the-infrastructure-for-quantum-adoption",
+    "entities": [
+      "companies/aqora"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/10/07/aqoras-new-datasets-hub-is-building-the-infrastructure-for-quantum-adoption/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/aqt|https://aqt.eu/",
+    "entities": [
+      "companies/aqt"
+    ],
+    "sourceUrl": "https://www.aqt.eu",
+    "reason": "homepage-url",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/aqt|https://quantumcomputingreport.com/german-government-selects-qudora-led-consortium-for-e122-million-138-8-usd-nfqc-1k-trapped-ion-quantum-computer-project",
+    "entities": [
+      "companies/aqt"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/german-government-selects-qudora-led-consortium-for-e122-million-138-8-usd-nfqc-1k-trapped-ion-quantum-computer-project/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/aqt|https://thequantuminsider.com/2023/12/08/trapped-ion-quantum-computer-now-available-in-munich-quantum-valley",
+    "entities": [
+      "companies/aqt"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2023/12/08/trapped-ion-quantum-computer-now-available-in-munich-quantum-valley/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/aqt|https://thequantuminsider.com/2026/04/16/horizon-quantum-aqt-hardware-software-collaboration",
+    "entities": [
+      "companies/aqt"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/04/16/horizon-quantum-aqt-hardware-software-collaboration/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/aqt|https://thequantuminsider.com/2026/05/06/aqt-high-performing-quantum-computer-europe-32768-qv",
+    "entities": [
+      "companies/aqt"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/06/aqt-high-performing-quantum-computer-europe-32768-qv/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/arque-systems|https://thequantuminsider.com/2025/09/18/julich-supercomputing-centre-to-deploy-nvidia-dgx-quantum-system-with-arque-systems-and-quantum-machines",
+    "entities": [
+      "companies/arque-systems"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/09/18/julich-supercomputing-centre-to-deploy-nvidia-dgx-quantum-system-with-arque-systems-and-quantum-machines/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/beamfox-technologies|https://dtu.dk/english/newsarchive/2025/07/danish-quantum-research-strengthens-its-leading-position",
+    "entities": [
+      "companies/beamfox-technologies",
+      "companies/celare-quantum"
+    ],
+    "sourceUrl": "https://www.dtu.dk/english/newsarchive/2025/07/danish-quantum-research-strengthens-its-leading-position",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/beamfox-technologies|https://hzdr.de/db/Cms?pNid=99&pOid=74943",
+    "entities": [
+      "companies/beamfox-technologies"
+    ],
+    "sourceUrl": "https://www.hzdr.de/db/Cms?pNid=99&pOid=74943",
+    "reason": "amount-not-in-quote",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/beamfox-technologies|https://innovationsfonden.dk/en/news/research-project-crack-code-quantum",
+    "entities": [
+      "companies/beamfox-technologies",
+      "companies/lizard-photonics"
+    ],
+    "sourceUrl": "https://innovationsfonden.dk/en/news/research-project-crack-code-quantum",
+    "reason": "source-unreachable",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/beit|https://rdworldonline.com/ex-google-founders-bet-quantum-compressed-chemistry-can-crack-covalent-drug-design",
+    "entities": [
+      "companies/beit"
+    ],
+    "sourceUrl": "https://www.rdworldonline.com/ex-google-founders-bet-quantum-compressed-chemistry-can-crack-covalent-drug-design/",
+    "reason": "source-unreachable",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/beit|https://thequantuminsider.com/2019/11/28/polands-vibrant-qc-representative",
+    "entities": [
+      "companies/beit"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2019/11/28/polands-vibrant-qc-representative/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/bluefors|https://quantumcomputingreport.com/xanadu-and-bluefors-form-multi-million-dollar-strategic-partnership-to-develop-modular-cryogenic-infrastructure-for-utility-scale-quantum-data-centers",
+    "entities": [
+      "companies/bluefors"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/xanadu-and-bluefors-form-multi-million-dollar-strategic-partnership-to-develop-modular-cryogenic-infrastructure-for-utility-scale-quantum-data-centers/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/bluefors|https://thequantuminsider.com/2026/03/03/bluefors-modular-cryogenic-platform-launch",
+    "entities": [
+      "companies/bluefors"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/03/03/bluefors-modular-cryogenic-platform-launch/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/bluefors|https://thequantuminsider.com/2026/05/07/bluefors-joins-chicago-quantum-exchange",
+    "entities": [
+      "companies/bluefors"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/07/bluefors-joins-chicago-quantum-exchange/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/bosch-quantum-sensing|https://thequantuminsider.com/2025/04/07/bosch-and-element-six-form-joint-venture-to-scale-quantum-sensing-technologies",
+    "entities": [
+      "companies/bosch-quantum-sensing"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/04/07/bosch-and-element-six-form-joint-venture-to-scale-quantum-sensing-technologies/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/c12|https://thequantuminsider.com/2026/06/04/c12-introduces-nanoassembly-process-for-carbon-nanotube-quantum-chips",
+    "entities": [
+      "companies/c12"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/06/04/c12-introduces-nanoassembly-process-for-carbon-nanotube-quantum-chips/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/c12|https://thequantuminsider.com/2026/09/29/c12-thales-quantumtrack-real-time-radar-tracking",
+    "entities": [
+      "companies/c12"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/29/c12-thales-quantumtrack-real-time-radar-tracking/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/celare-quantum|https://qsnp.eu/from-prototype-to-product-celare-quantums-vision-for-qkd-deployment",
+    "entities": [
+      "companies/celare-quantum"
+    ],
+    "sourceUrl": "https://qsnp.eu/from-prototype-to-product-celare-quantums-vision-for-qkd-deployment/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/copenhagen-quantum|https://math.ku.dk/english/about/news/new-names/tim-bruun-madsen-industrial-phd-student",
+    "entities": [
+      "companies/copenhagen-quantum"
+    ],
+    "sourceUrl": "https://www.math.ku.dk/english/about/news/new-names/tim-bruun-madsen-industrial-phd-student/",
+    "reason": "source-unreachable",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/creotech-instruments|https://creotech.pl/news/eurohpc-ju-to-create-european-quantum-computing-network-with-support-from-creotech-instruments",
+    "entities": [
+      "companies/creotech-instruments"
+    ],
+    "sourceUrl": "https://creotech.pl/news/eurohpc-ju-to-create-european-quantum-computing-network-with-support-from-creotech-instruments/",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/creotech-instruments|https://insidequantumtechnology.com/news-archive/creotech-instruments-s-a-specializes-in-quantum-experiment-control-devices",
+    "entities": [
+      "companies/creotech-instruments"
+    ],
+    "sourceUrl": "https://www.insidequantumtechnology.com/news-archive/creotech-instruments-s-a-specializes-in-quantum-experiment-control-devices/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/cryptomathic|https://insidequantumtechnology.com/news-archive/cryptomathic-focus-on-crypto-agility-not-rushing-to-pqc",
+    "entities": [
+      "companies/cryptomathic"
+    ],
+    "sourceUrl": "https://www.insidequantumtechnology.com/news-archive/cryptomathic-focus-on-crypto-agility-not-rushing-to-pqc/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/delft-circuits|https://thequantuminsider.com/2025/12/03/delft-circuits-new-ceo-financing",
+    "entities": [
+      "companies/delft-circuits"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/12/03/delft-circuits-new-ceo-financing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/diasense|https://bits-chips.com/article/danish-dutch-quantum-diamond-microscope-targets-chip-yield-bottlenecks",
+    "entities": [
+      "companies/diasense"
+    ],
+    "sourceUrl": "https://bits-chips.com/article/danish-dutch-quantum-diamond-microscope-targets-chip-yield-bottlenecks/",
+    "reason": "amount-not-in-quote",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/diasense|https://quantumcomputingreport.com/diasense-receives-e1-3m-1-5m-usd-to-industrialize-quantum-diamond-microscopy",
+    "entities": [
+      "companies/diasense"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/diasense-receives-e1-3m-1-5m-usd-to-industrialize-quantum-diamond-microscopy/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/diasense|https://thequantuminsider.com/2026/03/04/bii-backs-quantum-chip-diagnostic-startup-diasense-with-additional-e1-3-million-investment",
+    "entities": [
+      "companies/diasense"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/03/04/bii-backs-quantum-chip-diagnostic-startup-diasense-with-additional-e1-3-million-investment/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/eleqtron|https://eu-startups.com/2026/05/germanys-eleqtron-raises-e57-million-series-a-to-scale-quantum-computing-systems-for-industrial-applications",
+    "entities": [
+      "companies/eleqtron"
+    ],
+    "sourceUrl": "https://www.eu-startups.com/2026/05/germanys-eleqtron-raises-e57-million-series-a-to-scale-quantum-computing-systems-for-industrial-applications/",
+    "reason": "possible-duplicate",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/eleqtron|https://fz-juelich.de/en/jsc/systems/quantum-computing/juniq-facility/news/ion-hack-2026-brings-together-quantum-talent-in-julich",
+    "entities": [
+      "companies/eleqtron"
+    ],
+    "sourceUrl": "https://www.fz-juelich.de/en/jsc/systems/quantum-computing/juniq-facility/news/ion-hack-2026-brings-together-quantum-talent-in-julich",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/eleqtron|https://hpcwire.com/off-the-wire/julich-and-eleqtron-inaugurate-jion-trapped-ion-quantum-computer",
+    "entities": [
+      "companies/eleqtron"
+    ],
+    "sourceUrl": "https://www.hpcwire.com/off-the-wire/julich-and-eleqtron-inaugurate-jion-trapped-ion-quantum-computer/",
+    "reason": "quote-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/eleqtron|https://thequantuminsider.com/2026/05/05/eleqtron-secures-e57-million-in-series-a-funding-round",
+    "entities": [
+      "companies/eleqtron"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/05/eleqtron-secures-e57-million-in-series-a-funding-round/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/eleqtron|https://thequantuminsider.com/2026/09/04/julich-launches-trapped-ion-quantum-computer-for-supercomputing-integration",
+    "entities": [
+      "companies/eleqtron"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/04/julich-launches-trapped-ion-quantum-computer-for-supercomputing-integration/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/ephos|https://eu-startups.com/2024/09/milan-based-ephos-raises-e7-6-million-to-deliver-glass-based-quantum-photonic-chips",
+    "entities": [
+      "companies/ephos"
+    ],
+    "sourceUrl": "https://www.eu-startups.com/2024/09/milan-based-ephos-raises-e7-6-million-to-deliver-glass-based-quantum-photonic-chips/",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/ephos|https://thequantuminsider.com/2024/09/24/glass-based-photonic-chip-startup-ephos-secures-8-5m-to-innovate-quantum-computing-and-ai-infrastructure",
+    "entities": [
+      "companies/ephos"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2024/09/24/glass-based-photonic-chip-startup-ephos-secures-8-5m-to-innovate-quantum-computing-and-ai-infrastructure/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/equal1|https://siliconangle.com/2026/01/15/irish-startup-equal1-receives-60m-start-deploying-scalable-quantum-computing-tech",
+    "entities": [
+      "companies/equal1"
+    ],
+    "sourceUrl": "https://siliconangle.com/2026/01/15/irish-startup-equal1-receives-60m-start-deploying-scalable-quantum-computing-tech/",
+    "reason": "possible-duplicate",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/eviden-quantum|https://datacenterdynamics.com/en/news/eviden-installs-5-qubit-iqm-quantum-computer-in-france",
+    "entities": [
+      "companies/eviden-quantum"
+    ],
+    "sourceUrl": "https://www.datacenterdynamics.com/en/news/eviden-installs-5-qubit-iqm-quantum-computer-in-france/",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/frostbyte|https://defencefinancemonitor.com/p/frostbyte-advancing-european-quantum",
+    "entities": [
+      "companies/frostbyte"
+    ],
+    "sourceUrl": "https://www.defencefinancemonitor.com/p/frostbyte-advancing-european-quantum",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/groove-quantum|https://quantumcomputingreport.com/groove-quantum-secures-e16-million-18-7m-usd-to-scale-germanium-spin-qubits-debuts-18-qubit-processor",
+    "entities": [
+      "companies/groove-quantum"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/groove-quantum-secures-e16-million-18-7m-usd-to-scale-germanium-spin-qubits-debuts-18-qubit-processor/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/groove-quantum|https://thequantuminsider.com/2025/07/07/groove-quantum-secures-e10-million-to-scale-germanium-based-quantum-chips",
+    "entities": [
+      "companies/groove-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/07/07/groove-quantum-secures-e10-million-to-scale-germanium-based-quantum-chips/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/hqs|https://quantumcomputingreport.com/quantinuum-and-hqs-simulate-21-spin-nmr-spectrum-on-42-qubits-with-1400-two-qubit-gate-circuits",
+    "entities": [
+      "companies/hqs"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/quantinuum-and-hqs-simulate-21-spin-nmr-spectrum-on-42-qubits-with-1400-two-qubit-gate-circuits/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/hqs|https://thequantuminsider.com/2025/02/03/hqs-quantum-simulations-secures-2-6m-eic-grant-to-advance-nmr-spectroscopy-for-modern-diagnostics",
+    "entities": [
+      "companies/hqs"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/02/03/hqs-quantum-simulations-secures-2-6m-eic-grant-to-advance-nmr-spectroscopy-for-modern-diagnostics/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/id-quantique|https://thequantuminsider.com/2025/02/25/ionq-in-talks-to-acquire-id-quantique-for-250-million-bloomberg-reports",
+    "entities": [
+      "companies/id-quantique"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/02/25/ionq-in-talks-to-acquire-id-quantique-for-250-million-bloomberg-reports/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/id-quantique|https://thequantuminsider.com/2025/05/06/ionq-completes-acquisition-of-id-quantique-cementing-leadership-in-quantum-networking-and-secure-communications",
+    "entities": [
+      "companies/id-quantique"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/05/06/ionq-completes-acquisition-of-id-quantique-cementing-leadership-in-quantum-networking-and-secure-communications/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://cnbc.com/2026/02/23/finlands-iqm-listing-quantum-computing.html",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://www.cnbc.com/2026/02/23/finlands-iqm-listing-quantum-computing.html",
+    "reason": "possible-duplicate",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://eu-startups.com/2026/07/espoo-based-iqm-goes-public-on-nasdaq-in-european-quantum-first-with-e127-million-in-pipe-financing",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://www.eu-startups.com/2026/07/espoo-based-iqm-goes-public-on-nasdaq-in-european-quantum-first-with-e127-million-in-pipe-financing/",
+    "reason": "possible-duplicate",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://finance.yahoo.com/markets/stocks/articles/iqm-quantum-computers-plc-listing-123000958.html",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/iqm-quantum-computers-plc-listing-123000958.html",
+    "reason": "source-not-credible",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://globenewswire.com/news-release/2026/08/04/3338027/0/en/iqm-quantum-computers-reports-first-earnings-as-public-company-reporting-first-half-and-second-quarter-2026-results-and-initiates-fy-2026-guidance-supported-by-over-eur-102-million.html",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://www.globenewswire.com/news-release/2026/08/04/3338027/0/en/iqm-quantum-computers-reports-first-earnings-as-public-company-reporting-first-half-and-second-quarter-2026-results-and-initiates-fy-2026-guidance-supported-by-over-eur-102-million.html",
+    "reason": "source-not-credible",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://hpcwire.com/off-the-wire/iqm-launches-hpc-integration-service-to-accelerate-hybrid-quantum-hpc-adoption",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://www.hpcwire.com/off-the-wire/iqm-launches-hpc-integration-service-to-accelerate-hybrid-quantum-hpc-adoption/",
+    "reason": "source-unreachable",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://hpcwire.com/off-the-wire/lumi-ai-factory-selects-iqm-to-deploy-advanced-quantum-computer-accelerating-hybrid-hpc-and-ai-development",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://www.hpcwire.com/off-the-wire/lumi-ai-factory-selects-iqm-to-deploy-advanced-quantum-computer-accelerating-hybrid-hpc-and-ai-development/",
+    "reason": "source-unreachable",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://investing.com/news/transcripts/earnings-call-transcript-iqm-quantum-computers-posts-higher-backlog-in-q2-2026-93CH-4834505",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://www.investing.com/news/transcripts/earnings-call-transcript-iqm-quantum-computers-posts-higher-backlog-in-q2-2026-93CH-4834505",
+    "reason": "source-unreachable",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://quantumcomputingreport.com/iqm-adopts-nvidia-cuda-q-logical-framework-to-drive-open-architecture-fault-tolerant-system-benchmarking",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/iqm-adopts-nvidia-cuda-q-logical-framework-to-drive-open-architecture-fault-tolerant-system-benchmarking/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://quantumcomputingreport.com/iqm-and-amd-demonstrate-reproducible-hybrid-qpu-gpu-chemistry-workflow-using-rocm",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/iqm-and-amd-demonstrate-reproducible-hybrid-qpu-gpu-chemistry-workflow-using-rocm/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://quantumcomputingreport.com/iqm-and-mqsc-demonstrate-open-source-slurm-26-11-qpu-scheduling-using-qdmi-and-hierarchical-resources",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/iqm-and-mqsc-demonstrate-open-source-slurm-26-11-qpu-scheduling-using-qdmi-and-hierarchical-resources/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://quantumcomputingreport.com/iqm-quantum-computers-proposes-non-local-barbell-qldpc-architecture",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/iqm-quantum-computers-proposes-non-local-barbell-qldpc-architecture/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://quantumcomputingreport.com/iqm-quantum-computers-reports-q3-2026-results-backlog-expands-to-e102-5m-q3-revenue-up-51-and-fy-2026-guidance-reaffirmed",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/iqm-quantum-computers-reports-q3-2026-results-backlog-expands-to-e102-5m-q3-revenue-up-51-and-fy-2026-guidance-reaffirmed/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://quantumcomputingreport.com/iqm-radiance-54-superconducting-quantum-computer-goes-live-at-cineca-in-italy",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/iqm-radiance-54-superconducting-quantum-computer-goes-live-at-cineca-in-italy/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://quantumcomputingreport.com/iqm-to-deploy-japans-first-enterprise-purchased-quantum-computer",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/iqm-to-deploy-japans-first-enterprise-purchased-quantum-computer/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://quantumcomputingreport.com/lumi-ai-factory-selects-iqms-halocene-roadmap-for-europes-first-superconducting-logical-qubit-system",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/lumi-ai-factory-selects-iqms-halocene-roadmap-for-europes-first-superconducting-logical-qubit-system/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://quantumcomputingreport.com/turkiye-signs-agreement-with-iqm-quantum-computers-to-deploy-54-qubit-radiance-r3-system-at-tubitak-in-2027",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/turkiye-signs-agreement-with-iqm-quantum-computers-to-deploy-54-qubit-radiance-r3-system-at-tubitak-in-2027/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://thequantuminsider.com/2026/03/30/iqm-secures-e50-million-financing-to-accelerate-global-growth",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/03/30/iqm-secures-e50-million-financing-to-accelerate-global-growth/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://thequantuminsider.com/2026/04/07/iqm-galaxy-quantum-deployment-poland",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/04/07/iqm-galaxy-quantum-deployment-poland/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://thequantuminsider.com/2026/04/27/iqm-toyo-quantum-deployment",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/04/27/iqm-toyo-quantum-deployment/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://thequantuminsider.com/2026/05/12/iqm-launches-hpc-integration-service-to-accelerate-hybrid-quantum-hpc-adoption",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/12/iqm-launches-hpc-integration-service-to-accelerate-hybrid-quantum-hpc-adoption/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://thequantuminsider.com/2026/05/14/iqm-moves-closer-to-public-markets-with-sec-f-4-filing",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/14/iqm-moves-closer-to-public-markets-with-sec-f-4-filing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://thequantuminsider.com/2026/05/26/polands-poznan-university-of-technology-unveils-iqm-quantum-computer-to-drive-research-and-education",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/26/polands-poznan-university-of-technology-unveils-iqm-quantum-computer-to-drive-research-and-education/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://thequantuminsider.com/2026/06/02/iqm-and-real-asset-acquisition-corp-announce-upsized-146-million-pipe-with-new-commitment-from-ilmarinen",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/06/02/iqm-and-real-asset-acquisition-corp-announce-upsized-146-million-pipe-with-new-commitment-from-ilmarinen/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://thequantuminsider.com/2026/07/03/iqm-begins-trading-on-nasdaq",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/07/03/iqm-begins-trading-on-nasdaq/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://thequantuminsider.com/2026/07/06/iqm-acquires-quantistry-assets",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/07/06/iqm-acquires-quantistry-assets/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://thequantuminsider.com/2026/07/08/lumi-ai-factory-iqm-quantum-computer",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/07/08/lumi-ai-factory-iqm-quantum-computer/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://thequantuminsider.com/2026/08/04/iqm-quantum-computers-h1-2026-results-full-year-outlook",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/08/04/iqm-quantum-computers-h1-2026-results-full-year-outlook/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://thequantuminsider.com/2026/09/15/toyo-corporation-buys-second-iqm-quantum-computer",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/15/toyo-corporation-buys-second-iqm-quantum-computer/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://thequantuminsider.com/2026/09/17/iqm-quantum-computer-south-america-brazil-eldorado",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/17/iqm-quantum-computer-south-america-brazil-eldorado/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://thequantuminsider.com/2026/10/29/iqm-full-chip-entanglement-54-qubit-processor",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/10/29/iqm-full-chip-entanglement-54-qubit-processor/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/iqm|https://thequantuminsider.com/2026/11/17/iqm-halocene-quantum-systems-upgrade-programme",
+    "entities": [
+      "companies/iqm"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/17/iqm-halocene-quantum-systems-upgrade-programme/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/isentroniq|https://quantumcomputingreport.com/french-national-quantum-strategy-backs-e14m-16m-usd-qubit-control-2030-consortium-to-scale-cryogenic-photonic-interconnects",
+    "entities": [
+      "companies/isentroniq"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/french-national-quantum-strategy-backs-e14m-16m-usd-qubit-control-2030-consortium-to-scale-cryogenic-photonic-interconnects/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/isentroniq|https://quantumcomputingreport.com/isentroniq-raises-e7-5m-8-7m-usd-to-advance-wiring-technology-for-superconducting-qubits",
+    "entities": [
+      "companies/isentroniq"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/isentroniq-raises-e7-5m-8-7m-usd-to-advance-wiring-technology-for-superconducting-qubits/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/isentroniq|https://tech.eu/2025/10/14/isentroniq-raises-eur75m-to-tackle-the-wiring-bottleneck-and-scale-quantum-computing",
+    "entities": [
+      "companies/isentroniq"
+    ],
+    "sourceUrl": "https://tech.eu/2025/10/14/isentroniq-raises-eur75m-to-tackle-the-wiring-bottleneck-and-scale-quantum-computing/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/kipu-quantum|https://quantumcomputingreport.com/kipu-quantum-and-ntt-data-partner-to-scale-enterprise-quantum-computing-and-qml-applications",
+    "entities": [
+      "companies/kipu-quantum"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/kipu-quantum-and-ntt-data-partner-to-scale-enterprise-quantum-computing-and-qml-applications/",
     "reason": "pointer-only",
     "firstHeldOn": "2026-11-24",
     "lastCheckedOn": "2026-11-24",
@@ -489,6 +1727,582 @@
     "stale": false
   },
   {
+    "key": "companies/kipu-quantum|https://thequantuminsider.com/2026/02/17/kipu-quantum-launches-rimay-feature-extraction",
+    "entities": [
+      "companies/kipu-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/02/17/kipu-quantum-launches-rimay-feature-extraction/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/kipu-quantum|https://thequantuminsider.com/2026/05/20/kipu-quantum-makes-quantum-enhanced-ai-deployable-in-production",
+    "entities": [
+      "companies/kipu-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/20/kipu-quantum-makes-quantum-enhanced-ai-deployable-in-production/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/kiutra|https://htgf.de/en/htgf-financing-round-kiutra",
+    "entities": [
+      "companies/kiutra"
+    ],
+    "sourceUrl": "https://www.htgf.de/en/htgf-financing-round-kiutra/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/kiutra|https://thequantuminsider.com/2025/10/02/kiutra-secures-e13-million-to-strengthen-quantum-supply-chains-with-helium-3-free-cooling",
+    "entities": [
+      "companies/kiutra"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/10/02/kiutra-secures-e13-million-to-strengthen-quantum-supply-chains-with-helium-3-free-cooling/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/kvantify|https://eu-startups.com/2024/07/copenhagen-based-kvantify-secures-e10-million-to-unlock-quantum-computing-for-the-life-science-sector",
+    "entities": [
+      "companies/kvantify"
+    ],
+    "sourceUrl": "https://www.eu-startups.com/2024/07/copenhagen-based-kvantify-secures-e10-million-to-unlock-quantum-computing-for-the-life-science-sector/",
+    "reason": "possible-duplicate",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/kvantify|https://thequantuminsider.com/2026/03/06/kvantify-quantum-drug-discovery-project",
+    "entities": [
+      "companies/kvantify"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/03/06/kvantify-quantum-drug-discovery-project/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/kvantify|https://thequantuminsider.com/2026/03/16/kvantify-atom-computing-and-aarhus-university-launch-quantum-drug-discovery-project",
+    "entities": [
+      "companies/kvantify"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/03/16/kvantify-atom-computing-and-aarhus-university-launch-quantum-drug-discovery-project/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/lizard-photonics|https://picmagazine.net/article/121804/Erbium-based_light_sources_for_quantum_technology",
+    "entities": [
+      "companies/lizard-photonics"
+    ],
+    "sourceUrl": "https://picmagazine.net/article/121804/Erbium-based_light_sources_for_quantum_technology",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/magnolia-quantum-sensing|https://cbqs.ku.dk/happening-at-cbqs/quantum-sensor-for-mri-mentioned-by-erhvervsstyrelsen-in-new-publication",
+    "entities": [
+      "companies/magnolia-quantum-sensing"
+    ],
+    "sourceUrl": "https://cbqs.ku.dk/happening-at-cbqs/quantum-sensor-for-mri-mentioned-by-erhvervsstyrelsen-in-new-publication/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/magnolia-quantum-sensing|https://magnolia-qs.com/",
+    "entities": [
+      "companies/magnolia-quantum-sensing"
+    ],
+    "sourceUrl": "https://magnolia-qs.com/",
+    "reason": "homepage-url",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/molecular-quantum-solutions|https://scalecapital.com/stories/europes-quantum-ecosystem-1-how-mqs-is-leading-the-way-for-denmark",
+    "entities": [
+      "companies/molecular-quantum-solutions"
+    ],
+    "sourceUrl": "https://www.scalecapital.com/stories/europes-quantum-ecosystem-1-how-mqs-is-leading-the-way-for-denmark",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/multiverse-computing|https://multiversecomputing.com/resources/hypernova-60b-the-world-s-most-efficient-model-in-its-category-according-to-artificial-analysis",
+    "entities": [
+      "companies/multiverse-computing"
+    ],
+    "sourceUrl": "https://multiversecomputing.com/resources/hypernova-60b-the-world-s-most-efficient-model-in-its-category-according-to-artificial-analysis",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/multiverse-computing|https://sifted.eu/articles/multiverse-computing-series-c-unicorn",
+    "entities": [
+      "companies/multiverse-computing"
+    ],
+    "sourceUrl": "https://sifted.eu/articles/multiverse-computing-series-c-unicorn",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/multiverse-computing|https://siliconangle.com/2026/02/10/report-ai-model-compression-startup-multiverse-seeking-e500m-funding-round",
+    "entities": [
+      "companies/multiverse-computing"
+    ],
+    "sourceUrl": "https://siliconangle.com/2026/02/10/report-ai-model-compression-startup-multiverse-seeking-e500m-funding-round/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/multiverse-computing|https://thequantuminsider.com/2025/03/04/multiverse-computing-announces-a-70-million-investment-from-the-spanish-government",
+    "entities": [
+      "companies/multiverse-computing"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/03/04/multiverse-computing-announces-a-70-million-investment-from-the-spanish-government/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/multiverse-computing|https://thequantuminsider.com/2026/07/27/multiverse-computing-announces-series-c-fundraising-targeting-up-to-570-million",
+    "entities": [
+      "companies/multiverse-computing"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/07/27/multiverse-computing-announces-series-c-fundraising-targeting-up-to-570-million/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/nu-quantum|https://hpcwire.com/off-the-wire/atom-computing-and-nu-quantum-partner-to-unlock-utility-scale-quantum-computing",
+    "entities": [
+      "companies/nu-quantum"
+    ],
+    "sourceUrl": "https://www.hpcwire.com/off-the-wire/atom-computing-and-nu-quantum-partner-to-unlock-utility-scale-quantum-computing/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/nu-quantum|https://thequantuminsider.com/2026/02/10/nu-quantum-opens-state-of-the-art-trapped-ion-qubit-networking-lab-in-cambridge-to-accelerate-distributed-quantum-computing",
+    "entities": [
+      "companies/nu-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/02/10/nu-quantum-opens-state-of-the-art-trapped-ion-qubit-networking-lab-in-cambridge-to-accelerate-distributed-quantum-computing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/nvision-imaging|https://globenewswire.com/news-release/2026/05/13/3293782/0/en/nvision-expands-from-quantum-sensing-to-quantum-computing-to-accelerate-discovery-and-validation-of-new-therapies.html",
+    "entities": [
+      "companies/nvision-imaging"
+    ],
+    "sourceUrl": "https://www.globenewswire.com/news-release/2026/05/13/3293782/0/en/nvision-expands-from-quantum-sensing-to-quantum-computing-to-accelerate-discovery-and-validation-of-new-therapies.html",
+    "reason": "source-not-credible",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/nvision-imaging|https://hpcwire.com/off-the-wire/nvision-raises-55m-expands-from-quantum-mri-sensing-into-quantum-computing",
+    "entities": [
+      "companies/nvision-imaging"
+    ],
+    "sourceUrl": "https://www.hpcwire.com/off-the-wire/nvision-raises-55m-expands-from-quantum-mri-sensing-into-quantum-computing/",
+    "reason": "source-unreachable",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/nvision-imaging|https://nvision-quantum.com/blog/nvision-deploys-polaris-at-hokkaido-university",
+    "entities": [
+      "companies/nvision-imaging"
+    ],
+    "sourceUrl": "https://www.nvision-quantum.com/blog/nvision-deploys-polaris-at-hokkaido-university",
+    "reason": "type-disagreement",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/nvision-imaging|https://quantumcomputingreport.com/nvision-secures-55m-series-b-to-pivot-from-quantum-sensing-to-computing",
+    "entities": [
+      "companies/nvision-imaging"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/nvision-secures-55m-series-b-to-pivot-from-quantum-sensing-to-computing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/nvision-imaging|https://thequantuminsider.com/2026/09/09/nvision-selected-eurohpc-quantum-grand-challenge-spin-qubit-project",
+    "entities": [
+      "companies/nvision-imaging"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/09/nvision-selected-eurohpc-quantum-grand-challenge-spin-qubit-project/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/oqc|https://quantumcomputingreport.com/horizon-quantum-integrates-triple-alpha-ide-with-oqcs-toshiko-processor-for-pulse-level-control",
+    "entities": [
+      "companies/oqc"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/horizon-quantum-integrates-triple-alpha-ide-with-oqcs-toshiko-processor-for-pulse-level-control/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/oqc|https://quantumcomputingreport.com/oqc-and-riverlane-launch-uks-first-quantum-error-corrected-testbed-integrated-with-hpc",
+    "entities": [
+      "companies/oqc"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/oqc-and-riverlane-launch-uks-first-quantum-error-corrected-testbed-integrated-with-hpc/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/oqc|https://quantumcomputingreport.com/oxford-quantum-circuits-releases-erado-an-open-source-qiskit-simulator-for-erasure-noise-and-post-selection",
+    "entities": [
+      "companies/oqc"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/oxford-quantum-circuits-releases-erado-an-open-source-qiskit-simulator-for-erasure-noise-and-post-selection/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/oqc|https://quantumcomputingreport.com/scottish-widows-and-aberdeen-allocate-uk-workplace-pension-capital-to-oxford-quantum-circuits-and-quantum-motion-via-ltaf",
+    "entities": [
+      "companies/oqc"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/scottish-widows-and-aberdeen-allocate-uk-workplace-pension-capital-to-oxford-quantum-circuits-and-quantum-motion-via-ltaf/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/oqc|https://sifted.eu/articles/oxford-quantum-circuits-series-c",
+    "entities": [
+      "companies/oqc"
+    ],
+    "sourceUrl": "https://sifted.eu/articles/oxford-quantum-circuits-series-c",
+    "reason": "possible-duplicate",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/oqc|https://thequantuminsider.com/2026/06/03/oqc-raises-260-million-in-series-c",
+    "entities": [
+      "companies/oqc"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/06/03/oqc-raises-260-million-in-series-c/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/oqc|https://thequantuminsider.com/2026/09/24/oqc-simon-phillips-chief-product-officer",
+    "entities": [
+      "companies/oqc"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/24/oqc-simon-phillips-chief-product-officer/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/oqc|https://thequantuminsider.com/2026/11/16/altera-oqc-and-nvidia-link-quantum-processor-to-gpu-computing",
+    "entities": [
+      "companies/oqc"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/16/altera-oqc-and-nvidia-link-quantum-processor-to-gpu-computing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/orange-quantum-systems|https://thequantuminsider.com/2025/06/18/orange-quantum-systems-raises-e12-million-seed-round",
+    "entities": [
+      "companies/orange-quantum-systems"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/06/18/orange-quantum-systems-raises-e12-million-seed-round/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/orange-quantum-systems|https://thequantuminsider.com/2026/11/12/orangeqs-raj-badoni-chief-commercial-officer",
+    "entities": [
+      "companies/orange-quantum-systems"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/12/orangeqs-raj-badoni-chief-commercial-officer/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/orca-computing|https://thequantuminsider.com/2025/06/11/orca-computing-delivers-first-photonic-quantum-computing-system-to-uks-national-quantum-computing-centre",
+    "entities": [
+      "companies/orca-computing"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/06/11/orca-computing-delivers-first-photonic-quantum-computing-system-to-uks-national-quantum-computing-centre/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/orca-computing|https://thequantuminsider.com/2026/10/15/orca-computing-launches-pt-3-the-latest-generation-of-its-photonic-quantum-computers",
+    "entities": [
+      "companies/orca-computing"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/10/15/orca-computing-launches-pt-3-the-latest-generation-of-its-photonic-quantum-computers/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/parityqc|https://arxiv.org/abs/2604.15436",
+    "entities": [
+      "companies/parityqc"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2604.15436",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/parityqc|https://hpcwire.com/off-the-wire/classiq-and-parityqc-partner-to-optimize-and-streamline-quantum-execution",
+    "entities": [
+      "companies/parityqc"
+    ],
+    "sourceUrl": "https://www.hpcwire.com/off-the-wire/classiq-and-parityqc-partner-to-optimize-and-streamline-quantum-execution/",
+    "reason": "source-unreachable",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/parityqc|https://parityqc.com/parityqc-a-blueprint-for-europes-quantum-future",
+    "entities": [
+      "companies/parityqc"
+    ],
+    "sourceUrl": "https://parityqc.com/parityqc-a-blueprint-for-europes-quantum-future",
+    "reason": "source-unreachable",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/parityqc|https://quantumcomputingreport.com/parityqc-and-university-of-innsbruck-propose-distillation-architecture-to-reduce-ftqc-overhead",
+    "entities": [
+      "companies/parityqc"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/parityqc-and-university-of-innsbruck-propose-distillation-architecture-to-reduce-ftqc-overhead/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/parityqc|https://quantumcomputingreport.com/university-of-innsbruck-parityqc-and-quera-turn-rydberg-array-embeddings-into-intrinsic-error-correcting-codes",
+    "entities": [
+      "companies/parityqc"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/university-of-innsbruck-parityqc-and-quera-turn-rydberg-array-embeddings-into-intrinsic-error-correcting-codes/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/parityqc|https://thequantuminsider.com/2026/02/26/qudora-parityqc-optimize-quantum-algorithms-trapped-ion",
+    "entities": [
+      "companies/parityqc"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/02/26/qudora-parityqc-optimize-quantum-algorithms-trapped-ion/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/parityqc|https://thequantuminsider.com/2026/04/16/parityqc-quantum-fourier-transform-benchmark",
+    "entities": [
+      "companies/parityqc"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/04/16/parityqc-quantum-fourier-transform-benchmark/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/parityqc|https://thequantuminsider.com/2026/05/04/yz-plane-mbqc-parityqc-architecture",
+    "entities": [
+      "companies/parityqc"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/04/yz-plane-mbqc-parityqc-architecture/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/parityqc|https://thequantuminsider.com/2026/05/07/parity-unfolded-distillation-architecture-to-lower-resource-overhead",
+    "entities": [
+      "companies/parityqc"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/07/parity-unfolded-distillation-architecture-to-lower-resource-overhead/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/parityqc|https://thequantuminsider.com/2026/07/15/classiq-parityqc-quantum-circuit-optimization",
+    "entities": [
+      "companies/parityqc"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/07/15/classiq-parityqc-quantum-circuit-optimization/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/parityqc|https://thequantuminsider.com/2026/09/15/parityqc-parity-twine-compiler-product",
+    "entities": [
+      "companies/parityqc"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/15/parityqc-parity-twine-compiler-product/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/partisia|https://innovationsfonden.dk/en/news/qgrid-will-protect-critical",
+    "entities": [
+      "companies/partisia"
+    ],
+    "sourceUrl": "https://innovationsfonden.dk/en/news/qgrid-will-protect-critical",
+    "reason": "source-unreachable",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/partisia|https://quantumcomputingreport.com/partisia-squareroot8-and-nuspace-partner-to-enable-quantum-secure-multiparty-computation-via-satellite-based-qrng",
+    "entities": [
+      "companies/partisia"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/partisia-squareroot8-and-nuspace-partner-to-enable-quantum-secure-multiparty-computation-via-satellite-based-qrng/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
     "key": "companies/pasqal|https://globenewswire.com/news-release/2026/05/11/3291836/0/en/pasqal-selected-as-finalist-in-xprize-quantum-applications-competition.html",
     "entities": [
       "companies/pasqal",
@@ -502,12 +2316,1116 @@
     "stale": false
   },
   {
+    "key": "companies/pasqal|https://globenewswire.com/news-release/2026/09/10/3359424/0/en/pasqal-and-lg-cns-partner-to-power-next-generation-ai-data-centers-with-quantum-computing.html",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://www.globenewswire.com/news-release/2026/09/10/3359424/0/en/pasqal-and-lg-cns-partner-to-power-next-generation-ai-data-centers-with-quantum-computing.html",
+    "reason": "source-not-credible",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://hpcwire.com/off-the-wire",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://www.hpcwire.com/off-the-wire/",
+    "reason": "homepage-url",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://hpcwire.com/off-the-wire/pasqal-and-credit-agricole-cib-advance-strategic-partnership-to-deploy-quantum-computing-applied-to-finance",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://www.hpcwire.com/off-the-wire/pasqal-and-credit-agricole-cib-advance-strategic-partnership-to-deploy-quantum-computing-applied-to-finance/",
+    "reason": "possible-duplicate",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://hpcwire.com/off-the-wire/pasqal-inaugurates-italys-1st-neutral-atom-quantum-computer-3rd-pasqal-system-in-europe",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://www.hpcwire.com/off-the-wire/pasqal-inaugurates-italys-1st-neutral-atom-quantum-computer-3rd-pasqal-system-in-europe/",
+    "reason": "type-disagreement",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://pasqal.com/newsroom/aramco-and-pasqal-make-history-with-saudi-arabia-first-quantum-computer",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://www.pasqal.com/newsroom/aramco-and-pasqal-make-history-with-saudi-arabia-first-quantum-computer/",
+    "reason": "type-disagreement",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://pasqal.com/newsroom/pasqal-is-entering-a-new-phase-of-development-with-new-financing-expected-of-at-least-e340-million-in-anticipation-of-its-public-listing",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://www.pasqal.com/newsroom/pasqal-is-entering-a-new-phase-of-development-with-new-financing-expected-of-at-least-e340-million-in-anticipation-of-its-public-listing/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://quantumcomputingreport.com/chips-ju-and-pasqal-launch-e50m-57-2m-usd-q-planet-pilot-line-to-industrialize-neutral-atom-quantum-chips",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/chips-ju-and-pasqal-launch-e50m-57-2m-usd-q-planet-pilot-line-to-industrialize-neutral-atom-quantum-chips/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://quantumcomputingreport.com/sec-declares-registration-statement-effective-for-pasqals-business-combination-with-bleichroeder-acquisition-corp-ii",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/sec-declares-registration-statement-effective-for-pasqals-business-combination-with-bleichroeder-acquisition-corp-ii/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/03/04/pasqal-latest-quantum-company-to-announce-intentions-to-go-public-valued-at-2-billion",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/03/04/pasqal-latest-quantum-company-to-announce-intentions-to-go-public-valued-at-2-billion/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/04/21/pasqal-thoughts-2026-quantum-transition-real-world-deployment",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/04/21/pasqal-thoughts-2026-quantum-transition-real-world-deployment/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/04/21/pinq2-distriq-exclusive-distributor-pasqal-quantum-canada",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/04/21/pinq2-distriq-exclusive-distributor-pasqal-quantum-canada/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/05/19/aramco-and-pasqal-launch-saudi-arabias-first-quantum-computer-and-middle-easts-first-commercial-qcaas-platform",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/19/aramco-and-pasqal-launch-saudi-arabias-first-quantum-computer-and-middle-easts-first-commercial-qcaas-platform/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
     "key": "companies/pasqal|https://thequantuminsider.com/2026/05/20/pasqal-finalist-xprize-quantum-applications-competition",
     "entities": [
       "companies/pasqal",
       "challenges/xprize-quantum-applications"
     ],
     "sourceUrl": "https://thequantuminsider.com/2026/05/20/pasqal-finalist-xprize-quantum-applications-competition/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/05/22/pasqal-demonstrates-logical-qubits-outperform-physical-qubits-solving-differential-equations",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/22/pasqal-demonstrates-logical-qubits-outperform-physical-qubits-solving-differential-equations/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/06/11/pasqal-inaugurates-italys-first-neutral-atom-quantum-computer-third-system-europe",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/06/11/pasqal-inaugurates-italys-first-neutral-atom-quantum-computer-third-system-europe/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/06/30/credit-agricole-cib-pasqal-strategic-partnership-quantum-computing-finance",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/06/30/credit-agricole-cib-pasqal-strategic-partnership-quantum-computing-finance/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/07/13/launch-of-q-planet-european-pilot-line-to-industrialize-neutral-atom-quantum-chips",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/07/13/launch-of-q-planet-european-pilot-line-to-industrialize-neutral-atom-quantum-chips/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/08/06/pasqal-business-combination-filing-bleichroeder-declared-effective-sec",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/08/06/pasqal-business-combination-filing-bleichroeder-declared-effective-sec/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/08/24/pasqal-eleven-ventures-joint-venture-quantum-computing-saudi-arabia",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/08/24/pasqal-eleven-ventures-joint-venture-quantum-computing-saudi-arabia/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/08/29/pasqal-shares-nearly-double-in-nasdaq-debut",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/08/29/pasqal-shares-nearly-double-in-nasdaq-debut/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/09/02/pasqal-true-nexus-quantum-computing-protein-function",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/02/pasqal-true-nexus-quantum-computing-protein-function/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/09/24/pasqal-first-half-2026-financial-results",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/24/pasqal-first-half-2026-financial-results/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/09/24/pasqal-receives-eic-fund-award-techeu-equity-summit",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/24/pasqal-receives-eic-fund-award-techeu-equity-summit/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/09/28/pasqal-collaboration-french-public-authorities",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/28/pasqal-collaboration-french-public-authorities/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/10/28/pasqal-ai-workflow-cloud-quantum-experiments",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/10/28/pasqal-ai-workflow-cloud-quantum-experiments/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/10/29/pasqal-processor-unexpected-quantum-magnet-behavior",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/10/29/pasqal-processor-unexpected-quantum-magnet-behavior/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/11/06/pasqal-q3-revenue-decline-services-growth",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/06/pasqal-q3-revenue-decline-services-growth/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/11/19/pasqal-integrates-quantum-processors-slurm-hres",
+    "entities": [
+      "companies/pasqal"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/19/pasqal-integrates-quantum-processors-slurm-hres/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/peak-quantum|https://thequantuminsider.com/2026/04/15/peak-quantum-funding-superconducting-chips",
+    "entities": [
+      "companies/peak-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/04/15/peak-quantum-funding-superconducting-chips/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/phasecraft|https://quantumcomputingreport.com/phasecraft-establishes-u-s-headquarters-in-arlington-virginia-to-accelerate-government-and-defense-quantum-software-partnerships",
+    "entities": [
+      "companies/phasecraft"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/phasecraft-establishes-u-s-headquarters-in-arlington-virginia-to-accelerate-government-and-defense-quantum-software-partnerships/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/phasecraft|https://thequantuminsider.com/2026/06/16/phasecraft-tapped-by-arpa-e-to-develop-and-apply-quantum-algorithms-for-catalyst-discovery",
+    "entities": [
+      "companies/phasecraft"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/06/16/phasecraft-tapped-by-arpa-e-to-develop-and-apply-quantum-algorithms-for-catalyst-discovery/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/phasecraft|https://thequantuminsider.com/2026/11/06/uk-nqcc-phasecraft-quantum-software-access",
+    "entities": [
+      "companies/phasecraft"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/06/uk-nqcc-phasecraft-quantum-software-access/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pixel-photonics|https://optica.org/about/newsroom/corporate_member_news/2025/pixel_photonics_receives_eu1_million_sprind_funding_for_multi-mode_single_photon_detection",
+    "entities": [
+      "companies/pixel-photonics"
+    ],
+    "sourceUrl": "https://www.optica.org/about/newsroom/corporate_member_news/2025/pixel_photonics_receives_eu1_million_sprind_funding_for_multi-mode_single_photon_detection/",
+    "reason": "amount-not-in-quote",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pixel-photonics|https://thequantuminsider.com/2022/10/31/pixel-photonics-picked-as-sub-contractor-for-photonic-quantum-computer-project",
+    "entities": [
+      "companies/pixel-photonics"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2022/10/31/pixel-photonics-picked-as-sub-contractor-for-photonic-quantum-computer-project/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/planqc|https://datacenterdynamics.com/en/news/planqc-to-lead-development-of-german-government-funded-1000-qubit-quantum-computer",
+    "entities": [
+      "companies/planqc"
+    ],
+    "sourceUrl": "https://www.datacenterdynamics.com/en/news/planqc-to-lead-development-of-german-government-funded-1000-qubit-quantum-computer/",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/planqc|https://hpcwire.com/off-the-wire/planqc-selected-for-germanys-quantum-computing-competition-with-logiqc",
+    "entities": [
+      "companies/planqc"
+    ],
+    "sourceUrl": "https://www.hpcwire.com/off-the-wire/planqc-selected-for-germanys-quantum-computing-competition-with-logiqc/",
+    "reason": "type-disagreement",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/planqc|https://thequantuminsider.com/2026/10/05/made-in-europe-award-2026-planqc-commercialising",
+    "entities": [
+      "companies/planqc"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/10/05/made-in-europe-award-2026-planqc-commercialising/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/planqc|https://thequantuminsider.com/2026/10/05/planqc-logiqc-germany-quantum-computing-competition",
+    "entities": [
+      "companies/planqc"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/10/05/planqc-logiqc-germany-quantum-computing-competition/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/q-ant|https://qant.com/press-releases/phoquant-quantum-computing-consortium-led-by-qant-receives-50-million-euros-in-research-funding",
+    "entities": [
+      "companies/q-ant"
+    ],
+    "sourceUrl": "https://qant.com/press-releases/phoquant-quantum-computing-consortium-led-by-qant-receives-50-million-euros-in-research-funding/",
+    "reason": "amount-not-in-quote",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/q-ant|https://thequantuminsider.com/2025/07/17/q-ant-raises-e62-million-in-a-series-to-fund-commercialization-of-its-photonic-processing-system",
+    "entities": [
+      "companies/q-ant"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/07/17/q-ant-raises-e62-million-in-a-series-to-fund-commercialization-of-its-photonic-processing-system/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/q-ant|https://thequantuminsider.com/2026/09/23/q-ant-open-source-sdk-photonic-computing",
+    "entities": [
+      "companies/q-ant"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/23/q-ant-open-source-sdk-photonic-computing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/q-ant|https://thequantuminsider.com/2026/11/09/qant-photonic-processors-ionos-cloud-infrastructure",
+    "entities": [
+      "companies/q-ant"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/09/qant-photonic-processors-ionos-cloud-infrastructure/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/q-ant|https://thequantuminsider.com/2026/11/17/q-ant-demonstrates-hybrid-photonic-gpu-system-for-language-models",
+    "entities": [
+      "companies/q-ant"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/17/q-ant-demonstrates-hybrid-photonic-gpu-system-for-language-models/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/q-bird|https://quantumcomputingreport.com/qutech-spinout-qbird-rebrands-to-falqon-systems-to-commercialize-quantum-secure-networks",
+    "entities": [
+      "companies/q-bird"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/qutech-spinout-qbird-rebrands-to-falqon-systems-to-commercialize-quantum-secure-networks/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/q-bird|https://thequantuminsider.com/2026/01/12/qbird-eic-funding-mdi-qkd-europe",
+    "entities": [
+      "companies/q-bird"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/01/12/qbird-eic-funding-mdi-qkd-europe/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/q-bird|https://thequantuminsider.com/2026/11/17/falqon-systems-launches-falqon-5000-series-quantum-secure-networks",
+    "entities": [
+      "companies/q-bird"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/17/falqon-systems-launches-falqon-5000-series-quantum-secure-networks/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qbee|https://thequantuminsider.com/2021/07/23/belgian-startup-bridging-quantum-computing-humanity",
+    "entities": [
+      "companies/qbee"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2021/07/23/belgian-startup-bridging-quantum-computing-humanity/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qblox|https://hpcwire.com/off-the-wire",
+    "entities": [
+      "companies/qblox"
+    ],
+    "sourceUrl": "https://www.hpcwire.com/off-the-wire/",
+    "reason": "homepage-url",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qblox|https://quantumcomputingreport.com/quantware-q-ctrl-and-qblox-launch-qub-reference-architecture-for-quantum-adoption",
+    "entities": [
+      "companies/qblox"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/quantware-q-ctrl-and-qblox-launch-qub-reference-architecture-for-quantum-adoption/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qblox|https://thequantuminsider.com/2026/06/25/qblox-collaborates-with-hpe-to-advance-hybrid-classical-quantum-computing",
+    "entities": [
+      "companies/qblox"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/06/25/qblox-collaborates-with-hpe-to-advance-hybrid-classical-quantum-computing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qblox|https://thequantuminsider.com/2026/07/03/south-korea-expands-quantum-cooperation-with-canada-u-k-and-eu-at-quantum-korea-2026",
+    "entities": [
+      "companies/qblox"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/07/03/south-korea-expands-quantum-cooperation-with-canada-u-k-and-eu-at-quantum-korea-2026/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qc-design|https://quantumcomputingreport.com/qc-design-unveils-meridian-purpose-built-ai-architecture-system-demonstrates-over-10x-reduction-in-logical-error-rates",
+    "entities": [
+      "companies/qc-design"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/qc-design-unveils-meridian-purpose-built-ai-architecture-system-demonstrates-over-10x-reduction-in-logical-error-rates/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qc-design|https://quantumcomputingreport.com/qudora-adopts-qc-designs-plaquette-software-to-accelerate-fault-tolerance-for-trapped-ion-processors",
+    "entities": [
+      "companies/qc-design"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/qudora-adopts-qc-designs-plaquette-software-to-accelerate-fault-tolerance-for-trapped-ion-processors/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qfactory|https://techfundingnews.com/bii-venture-lab-11-startups-health-quantum",
+    "entities": [
+      "companies/qfactory"
+    ],
+    "sourceUrl": "https://techfundingnews.com/bii-venture-lab-11-startups-health-quantum/",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qilimanjaro|https://thequantuminsider.com/2026/05/28/qilimanjaro-inaugurates-an-analog-quantum-computer-at-barcelona-supercomputing-center",
+    "entities": [
+      "companies/qilimanjaro"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/28/qilimanjaro-inaugurates-an-analog-quantum-computer-at-barcelona-supercomputing-center/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qilimanjaro|https://thequantuminsider.com/2026/10/14/qilimanjaro-quantum-tech-announces-nearly-e20-million-first-close-of-series-a-led-by-indra-group",
+    "entities": [
+      "companies/qilimanjaro"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/10/14/qilimanjaro-quantum-tech-announces-nearly-e20-million-first-close-of-series-a-led-by-indra-group/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qmill|https://lumi-supercomputer.eu/qmill-devlops-quantum-algorithms",
+    "entities": [
+      "companies/qmill"
+    ],
+    "sourceUrl": "https://lumi-supercomputer.eu/qmill-devlops-quantum-algorithms/",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qmill|https://qmill.com/qmill-at-junction-quantum-hack-2026-",
+    "entities": [
+      "companies/qmill"
+    ],
+    "sourceUrl": "https://qmill.com/qmill-at-junction-quantum-hack-2026-/",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qmill|https://thequantuminsider.com/2026/11/17/telia-nokia-and-qmill-demonstrate-quantum-powered-encryption-in-a-5g-network",
+    "entities": [
+      "companies/qmill"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/17/telia-nokia-and-qmill-demonstrate-quantum-powered-encryption-in-a-5g-network/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qphox|https://qphox.eu/",
+    "entities": [
+      "companies/qphox"
+    ],
+    "sourceUrl": "https://qphox.eu",
+    "reason": "homepage-url",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qphox|https://qphox.eu/news/qphox-launches-breakthrough-product-allowing-distributed-quantum-computing-over-long-distance-optical-networks",
+    "entities": [
+      "companies/qphox"
+    ],
+    "sourceUrl": "https://qphox.eu/news/qphox-launches-breakthrough-product-allowing-distributed-quantum-computing-over-long-distance-optical-networks/",
+    "reason": "source-unreachable",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qphox|https://thequantuminsider.com/2025/02/11/qphox-rigetti-and-qblox-demonstrate-optical-readout-for-superconducting-qubits",
+    "entities": [
+      "companies/qphox"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/02/11/qphox-rigetti-and-qblox-demonstrate-optical-readout-for-superconducting-qubits/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qruise|https://qruise.com/news-and-events/news/qruiseos-at-iqcc",
+    "entities": [
+      "companies/qruise"
+    ],
+    "sourceUrl": "https://qruise.com/news-and-events/news/qruiseos-at-iqcc",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qruise|https://thequantuminsider.com/2026/05/01/qruise-nv-centre-goethe-university-collaboration",
+    "entities": [
+      "companies/qruise"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/01/qruise-nv-centre-goethe-university-collaboration/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qsensato|https://quantumcomputingreport.com/qsensato-raises-e500k-560k-usd-to-advance-integrated-atomic-quantum-sensors-for-precision-sensing",
+    "entities": [
+      "companies/qsensato"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/qsensato-raises-e500k-560k-usd-to-advance-integrated-atomic-quantum-sensors-for-precision-sensing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qt-sense|https://thequantuminsider.com/2026/02/04/qt-sense-raises-e4-million-for-quantum-tech-that-analyzes-living-cells-in-real-time",
+    "entities": [
+      "companies/qt-sense"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/02/04/qt-sense-raises-e4-million-for-quantum-tech-that-analyzes-living-cells-in-real-time/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qti|https://gruppotim.it/en/press-archive/corporate/2021/PR_Telsy_QTI_EN.html",
+    "entities": [
+      "companies/qti"
+    ],
+    "sourceUrl": "https://www.gruppotim.it/en/press-archive/corporate/2021/PR_Telsy_QTI_EN.html",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qti|https://qticompany.com/qti-establishes-a-long-distance-quantum-safe-link-combining-qkd-and-pqc-in-a-hybrid-architecture",
+    "entities": [
+      "companies/qti"
+    ],
+    "sourceUrl": "https://www.qticompany.com/qti-establishes-a-long-distance-quantum-safe-link-combining-qkd-and-pqc-in-a-hybrid-architecture/",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qtlabs|https://thequantuminsider.com/2021/05/29/austrian-startup-has-star-trek-like-designs-prototypes-in-quantum-space-communication",
+    "entities": [
+      "companies/qtlabs"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2021/05/29/austrian-startup-has-star-trek-like-designs-prototypes-in-quantum-space-communication/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quandela|https://hpcwire.com/off-the-wire/darpa-selects-quandela-for-stage-a-of-the-quantum-benchmarking-initiative",
+    "entities": [
+      "companies/quandela"
+    ],
+    "sourceUrl": "https://www.hpcwire.com/off-the-wire/darpa-selects-quandela-for-stage-a-of-the-quantum-benchmarking-initiative/",
+    "reason": "type-disagreement",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quandela|https://quantumcomputingreport.com/quandela-and-nvidia-benchmark-photonic-quantum-simulability-frontiers-on-h100-gpus",
+    "entities": [
+      "companies/quandela"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/quandela-and-nvidia-benchmark-photonic-quantum-simulability-frontiers-on-h100-gpus/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quandela|https://quantumcomputingreport.com/quandela-expands-international-photonic-footprint-with-deployment-alliance-in-qatar-and-foundry-mou-in-taiwan",
+    "entities": [
+      "companies/quandela"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/quandela-expands-international-photonic-footprint-with-deployment-alliance-in-qatar-and-foundry-mou-in-taiwan/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quandela|https://thequantuminsider.com/2025/02/07/quandelas-hybrid-photonic-approach-reduces-resource-requirements-for-fault-tolerant-quantum-computing",
+    "entities": [
+      "companies/quandela"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/02/07/quandelas-hybrid-photonic-approach-reduces-resource-requirements-for-fault-tolerant-quantum-computing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quandela|https://thequantuminsider.com/2026/04/14/quandela-photonic-quantum-hpc",
+    "entities": [
+      "companies/quandela"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/04/14/quandela-photonic-quantum-hpc/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quandela|https://thequantuminsider.com/2026/04/17/ovhcloud-quandela-belenos-quantum-platform",
+    "entities": [
+      "companies/quandela"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/04/17/ovhcloud-quandela-belenos-quantum-platform/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quandela|https://thequantuminsider.com/2026/05/29/quandela-adds-industry-veterans-to-leadership-and-governance-teams",
+    "entities": [
+      "companies/quandela"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/29/quandela-adds-industry-veterans-to-leadership-and-governance-teams/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quandela|https://thequantuminsider.com/2026/06/16/darpa-selects-quandela-for-stage-a-of-the-quantum-benchmarking-initiative",
+    "entities": [
+      "companies/quandela"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/06/16/darpa-selects-quandela-for-stage-a-of-the-quantum-benchmarking-initiative/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quandela|https://thequantuminsider.com/2026/06/23/quandela-validates-low-latency-photonic-qpu-integration-with-nvidia-accelerated-computing",
+    "entities": [
+      "companies/quandela"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/06/23/quandela-validates-low-latency-photonic-qpu-integration-with-nvidia-accelerated-computing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quandela|https://thequantuminsider.com/2026/09/02/quandela-canada-quantum-computing-sandbox-photonic-platform",
+    "entities": [
+      "companies/quandela"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/02/quandela-canada-quantum-computing-sandbox-photonic-platform/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quandela|https://thequantuminsider.com/2026/09/14/quandela-white-paper-photonic-qpu-nvidia-infrastructure",
+    "entities": [
+      "companies/quandela"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/14/quandela-white-paper-photonic-qpu-nvidia-infrastructure/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quandela|https://thequantuminsider.com/2026/10/23/quandela-and-quanova-partner-to-deploy-vietnams-first-quantum-computer",
+    "entities": [
+      "companies/quandela"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/10/23/quandela-and-quanova-partner-to-deploy-vietnams-first-quantum-computer/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quanscient|https://thequantuminsider.com/2026/05/26/finlands-quanscient-announces-e10-million-raise",
+    "entities": [
+      "companies/quanscient"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/26/finlands-quanscient-announces-e10-million-raise/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantastica|https://thequantuminsider.com/2021/01/13/quantastica-fantastica-the-computational-bridge-between-the-quantum-the-classical-worlds",
+    "entities": [
+      "companies/quantastica"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2021/01/13/quantastica-fantastica-the-computational-bridge-between-the-quantum-the-classical-worlds/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantcore|https://gla.ac.uk/news/headline_1248072_en.html",
+    "entities": [
+      "companies/quantcore"
+    ],
+    "sourceUrl": "https://www.gla.ac.uk/news/headline_1248072_en.html",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantcore|https://thequantuminsider.com/2026/02/24/quantcore-raises-2-5m-uk-quantum-manufacturing",
+    "entities": [
+      "companies/quantcore"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/02/24/quantcore-raises-2-5m-uk-quantum-manufacturing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://cnbc.com/2026/06/04/quantinuum-qnt-stock-first-trade-ipo.html",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://www.cnbc.com/2026/06/04/quantinuum-qnt-stock-first-trade-ipo.html",
+    "reason": "type-disagreement",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://oracle.com/news/announcement/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure-2026-08-11",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://www.oracle.com/news/announcement/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure-2026-08-11/",
+    "reason": "source-unreachable",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://quantumcomputingreport.com/quantinuum-and-academic-partners-demonstrate-first-universal-topological-gate-set-via-non-abelian-anyons",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/quantinuum-and-academic-partners-demonstrate-first-universal-topological-gate-set-via-non-abelian-anyons/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://quantumcomputingreport.com/quantinuum-demonstrates-helix-quantum-error-correction-architecture-on-helios-hardware",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/quantinuum-demonstrates-helix-quantum-error-correction-architecture-on-helios-hardware/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://quantumcomputingreport.com/quantinuum-details-nexus-hybrid-workflow-runtime-integration-with-slurm-and-openqse-at-sc26",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/quantinuum-details-nexus-hybrid-workflow-runtime-integration-with-slurm-and-openqse-at-sc26/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://quantumcomputingreport.com/quantinuum-reports-q2-2026-results-revenue-up-279-yoy-1-7b-traditional-ipo-and-oracle-cloud-integration",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/quantinuum-reports-q2-2026-results-revenue-up-279-yoy-1-7b-traditional-ipo-and-oracle-cloud-integration/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://quantumcomputingreport.com/riken-and-quantinuum-demonstrate-heterogeneous-multi-qpu-workflows-on-fugaku",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/riken-and-quantinuum-demonstrate-heterogeneous-multi-qpu-workflows-on-fugaku/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://quantumcomputingreport.com/sandia-national-laboratories-and-quantinuum-validate-98-qubit-helios-trapped-ion-framework",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/sandia-national-laboratories-and-quantinuum-validate-98-qubit-helios-trapped-ion-framework/",
     "reason": "pointer-only",
     "firstHeldOn": "2026-11-24",
     "lastCheckedOn": "2026-11-24",
@@ -528,12 +3446,457 @@
     "stale": false
   },
   {
+    "key": "companies/quantinuum|https://thequantuminsider.com/2026/05/05/quantinuum-and-bmw-group-expand-quantum-computing-collaboration-with-new-multi-year-partnership",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/05/quantinuum-and-bmw-group-expand-quantum-computing-collaboration-with-new-multi-year-partnership/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://thequantuminsider.com/2026/05/08/honeywell-announces-quantinuum-filing-of-registration-statement-for-ipo",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/08/honeywell-announces-quantinuum-filing-of-registration-statement-for-ipo/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://thequantuminsider.com/2026/05/08/honeywell-announces-quantinuums-filing-of-registration-statement-for-ipo",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/08/honeywell-announces-quantinuums-filing-of-registration-statement-for-ipo/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://thequantuminsider.com/2026/05/20/quantinuum-announces-collaboration-with-synopsys-toward-advancing-industrial-design-with-quantum-computing",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/20/quantinuum-announces-collaboration-with-synopsys-toward-advancing-industrial-design-with-quantum-computing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://thequantuminsider.com/2026/05/21/quantinuum-enters-into-letter-of-intent-with-the-u-s-department-of-commerce-for-funding-opportunity-to-accelerate-u-s-leadership-in-quantum-computing",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/21/quantinuum-enters-into-letter-of-intent-with-the-u-s-department-of-commerce-for-funding-opportunity-to-accelerate-u-s-leadership-in-quantum-computing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://thequantuminsider.com/2026/05/22/quantinuum-bp-wave-physics-quantum-computing",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/22/quantinuum-bp-wave-physics-quantum-computing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://thequantuminsider.com/2026/05/26/honeywell-backed-quantinuum-files-for-landmark-quantum-ipo",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/26/honeywell-backed-quantinuum-files-for-landmark-quantum-ipo/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://thequantuminsider.com/2026/06/04/quantinuum-to-debut-on-nasdaq-after-raising-1-68-billion-in-ipo",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/06/04/quantinuum-to-debut-on-nasdaq-after-raising-1-68-billion-in-ipo/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://thequantuminsider.com/2026/07/14/quantinuum-rolls-royce-riverlane-and-university-of-edinburgh-sign-agreement-to-explore-quantum-computing-for-industrial-design-and-simulation",
+    "entities": [
+      "companies/quantinuum",
+      "companies/riverlane"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/07/14/quantinuum-rolls-royce-riverlane-and-university-of-edinburgh-sign-agreement-to-explore-quantum-computing-for-industrial-design-and-simulation/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://thequantuminsider.com/2026/08/12/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/08/12/quantinuum-and-oracle-partner-to-accelerate-hybrid-quantum-compute-adoption-on-oracle-cloud-infrastructure/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://thequantuminsider.com/2026/08/12/quantinuum-revenue-jumps-279-in-first-earnings-report-since-ipo",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/08/12/quantinuum-revenue-jumps-279-in-first-earnings-report-since-ipo/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://thequantuminsider.com/2026/09/03/quantinuum-aramco-mou-industrial-quantum-computing",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/03/quantinuum-aramco-mou-industrial-quantum-computing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://thequantuminsider.com/2026/10/19/quantinuum-reports-a-10x-reduction-in-logical-error-rate-on-helios",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/10/19/quantinuum-reports-a-10x-reduction-in-logical-error-rate-on-helios/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://thequantuminsider.com/2026/11/05/quantinuum-raises-revenue-outlook-after-landing-its-largest-cloud-agreement",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/05/quantinuum-raises-revenue-outlook-after-landing-its-largest-cloud-agreement/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://thequantuminsider.com/2026/11/09/abu-dhabi-maritime-academy-quincus-quantinuum-quantum-research",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/09/abu-dhabi-maritime-academy-quincus-quantinuum-quantum-research/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantinuum|https://thequantuminsider.com/2026/11/10/quantinuum-riken-quantum-computing-partnership-japan",
+    "entities": [
+      "companies/quantinuum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/10/quantinuum-riken-quantum-computing-partnership-japan/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantum-dice|https://thequantuminsider.com/2025/12/09/quantum-dice-eic-grant",
+    "entities": [
+      "companies/quantum-dice"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/12/09/quantum-dice-eic-grant/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantum-fabrix|https://quantumcomputingreport.com/university-of-oxford-spinout-qfx-closes-2m-2-7m-usd-seed-round-for-modular-quantum-hardware",
+    "entities": [
+      "companies/quantum-fabrix"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/university-of-oxford-spinout-qfx-closes-2m-2-7m-usd-seed-round-for-modular-quantum-hardware/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantum-fabrix|https://thequantuminsider.com/2025/10/20/university-of-oxford-spin-out-qfx-announces-seed-funding-round-appoints-industry-leaders-to-executive-team",
+    "entities": [
+      "companies/quantum-fabrix"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/10/20/university-of-oxford-spin-out-qfx-announces-seed-funding-round-appoints-industry-leaders-to-executive-team/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantum-fabrix|https://thequantuminsider.com/2026/10/14/qfx-wins-6-8-million-innovate-uk-contract-for-quantum-timing-hardware",
+    "entities": [
+      "companies/quantum-fabrix"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/10/14/qfx-wins-6-8-million-innovate-uk-contract-for-quantum-timing-hardware/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantum-foundry-copenhagen|https://novonordiskfonden.dk/en/news/special-quantum-fabrication-facility-will-help-to-create-a-generally-applicable-quantum-computer",
+    "entities": [
+      "companies/quantum-foundry-copenhagen"
+    ],
+    "sourceUrl": "https://novonordiskfonden.dk/en/news/special-quantum-fabrication-facility-will-help-to-create-a-generally-applicable-quantum-computer/",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantum-foundry-copenhagen|https://quantumcomputingreport.com/quantum-foundry-copenhagen-and-novo-nordisk-foundation-announce-5300-m%C2%B2-fabrication-facility-for-quantum-chips",
+    "entities": [
+      "companies/quantum-foundry-copenhagen"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/quantum-foundry-copenhagen-and-novo-nordisk-foundation-announce-5300-m%C2%B2-fabrication-facility-for-quantum-chips/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantum-industries|https://eu-startups.com/2025/03/cybersecurity-for-the-quantum-era-qi-raises-e9-5-million-for-secure-communications",
+    "entities": [
+      "companies/quantum-industries"
+    ],
+    "sourceUrl": "https://www.eu-startups.com/2025/03/cybersecurity-for-the-quantum-era-qi-raises-e9-5-million-for-secure-communications/",
+    "reason": "possible-duplicate",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantum-industries|https://thequantuminsider.com/2025/03/03/quantum-industries-raises-10-million-in-successful-seed-funding-round",
+    "entities": [
+      "companies/quantum-industries"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/03/03/quantum-industries-raises-10-million-in-successful-seed-funding-round/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
     "key": "companies/quantum-motion|https://quantumcomputingreport.com/quantum-motion-and-nvidia-integrate-cuda-q-backend-into-quiche-for-end-to-end-quantum-chemistry-workflows",
     "entities": [
       "companies/quantum-motion",
       "resources/cuda-q"
     ],
     "sourceUrl": "https://quantumcomputingreport.com/quantum-motion-and-nvidia-integrate-cuda-q-backend-into-quiche-for-end-to-end-quantum-chemistry-workflows/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantum-motion|https://quantumcomputingreport.com/quantum-motion-delivers-full-stack-silicon-cmos-quantum-computer-to-uks-nqcc",
+    "entities": [
+      "companies/quantum-motion"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/quantum-motion-delivers-full-stack-silicon-cmos-quantum-computer-to-uks-nqcc/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantum-motion|https://thenextweb.com/news/quantum-motion-160m-eu-scaleup-europe-fund-first-investment",
+    "entities": [
+      "companies/quantum-motion"
+    ],
+    "sourceUrl": "https://thenextweb.com/news/quantum-motion-160m-eu-scaleup-europe-fund-first-investment",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantum-motion|https://thequantuminsider.com/2026/05/07/new-investment-in-quantum-motion-strengthens-europes-push-for-scalable-quantum-computing",
+    "entities": [
+      "companies/quantum-motion"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/07/new-investment-in-quantum-motion-strengthens-europes-push-for-scalable-quantum-computing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantum-motion|https://thequantuminsider.com/2026/05/07/quantum-motion-160m-series-c-silicon-quantum-computing",
+    "entities": [
+      "companies/quantum-motion"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/07/quantum-motion-160m-series-c-silicon-quantum-computing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantum-motion|https://thequantuminsider.com/2026/05/07/quantum-motion-160m-silicon-quantum-computing",
+    "entities": [
+      "companies/quantum-motion"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/07/quantum-motion-160m-silicon-quantum-computing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantum-motion|https://thequantuminsider.com/2026/09/03/quantum-motion-additional-funding-silicon-quantum-computing",
+    "entities": [
+      "companies/quantum-motion"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/03/quantum-motion-additional-funding-silicon-quantum-computing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantum-optics-jena|https://bm-t.de/en/2024-en/quantum-optics-jena-secures-e8-5-million-in-series-a-funding-to-revolutionize-secure-communications",
+    "entities": [
+      "companies/quantum-optics-jena"
+    ],
+    "sourceUrl": "https://www.bm-t.de/en/2024-en/quantum-optics-jena-secures-e8-5-million-in-series-a-funding-to-revolutionize-secure-communications/",
+    "reason": "amount-not-in-quote",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantumdiamonds|https://eu-startups.com/2025/12/quantumdiamonds-plans-e152m-investment-in-quantum-chip-inspection-facility-in-munich",
+    "entities": [
+      "companies/quantumdiamonds"
+    ],
+    "sourceUrl": "https://www.eu-startups.com/2025/12/quantumdiamonds-plans-e152m-investment-in-quantum-chip-inspection-facility-in-munich/",
+    "reason": "possible-duplicate",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantumdiamonds|https://qd-st.com/press/quantumdiamonds-deploys-failure-analysis-technology-at-leading-taiwan-semiconductor-test-house",
+    "entities": [
+      "companies/quantumdiamonds"
+    ],
+    "sourceUrl": "https://www.qd-st.com/press/quantumdiamonds-deploys-failure-analysis-technology-at-leading-taiwan-semiconductor-test-house",
+    "reason": "type-disagreement",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantumdiamonds|https://quantumcomputingreport.com/quantumdiamonds-plans-e152m-178-5m-usd-quantum-chip-inspection-facility-in-munich",
+    "entities": [
+      "companies/quantumdiamonds"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/quantumdiamonds-plans-e152m-178-5m-usd-quantum-chip-inspection-facility-in-munich/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantware|https://quantumcomputingreport.com/q-ctrl-demonstrates-push-button-cold-start-calibration-on-quantware-superconducting-qpus",
+    "entities": [
+      "companies/quantware"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/q-ctrl-demonstrates-push-button-cold-start-calibration-on-quantware-superconducting-qpus/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quantware|https://thequantuminsider.com/2026/05/05/quantware-raises-178-million-to-build-quantum-processors-at-an-industrial-scale",
+    "entities": [
+      "companies/quantware"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/05/quantware-raises-178-million-to-build-quantum-processors-at-an-industrial-scale/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qubit-pharmaceuticals|https://quantumcomputingreport.com/qubit-pharmaceuticals-announces-dual-breakthroughs-quantum-speedup-and-2028-utility-path-for-drug-discovery",
+    "entities": [
+      "companies/qubit-pharmaceuticals"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/qubit-pharmaceuticals-announces-dual-breakthroughs-quantum-speedup-and-2028-utility-path-for-drug-discovery/",
     "reason": "pointer-only",
     "firstHeldOn": "2026-11-24",
     "lastCheckedOn": "2026-11-24",
@@ -581,12 +3944,708 @@
     "stale": false
   },
   {
+    "key": "companies/qudora|https://thequantuminsider.com/2026/09/08/qudora-selected-eu-quantum-grand-challenge-near-field-quantum-control",
+    "entities": [
+      "companies/qudora"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/08/qudora-selected-eu-quantum-grand-challenge-near-field-quantum-control/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quix-quantum|https://thequantuminsider.com/2026/02/11/quix-quantum-artilux-hardware-efficiency-partnership",
+    "entities": [
+      "companies/quix-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/02/11/quix-quantum-artilux-hardware-efficiency-partnership/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quix-quantum|https://thequantuminsider.com/2026/04/02/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time",
+    "entities": [
+      "companies/quix-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/04/02/quix-quantum-demonstrates-below-threshold-error-mitigation-in-photonic-quantum-computing-for-first-time/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quix-quantum|https://thequantuminsider.com/2026/05/21/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems",
+    "entities": [
+      "companies/quix-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/21/quix-quantum-introduces-pacu-a-photonic-assembly-control-unit-for-scalable-quantum-systems/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quix-quantum|https://thequantuminsider.com/2026/06/03/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer",
+    "entities": [
+      "companies/quix-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/06/03/quix-quantum-installs-real-time-control-component-for-universal-photonic-quantum-computer/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quix-quantum|https://thequantuminsider.com/2026/06/30/quix-quantum-unveils-path-to-universal-photonic-quantum-computing-with-logical-qubits",
+    "entities": [
+      "companies/quix-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/06/30/quix-quantum-unveils-path-to-universal-photonic-quantum-computing-with-logical-qubits/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quix-quantum|https://thequantuminsider.com/2026/11/10/quix-quantum-leads-national-mission-100-qubit-photonic-quantum-computer",
+    "entities": [
+      "companies/quix-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/10/quix-quantum-leads-national-mission-100-qubit-photonic-quantum-computer/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quix-quantum|https://thequantuminsider.com/2026/11/17/quix-quantum-taiwanese-partners-photonic-detector-project",
+    "entities": [
+      "companies/quix-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/17/quix-quantum-taiwanese-partners-photonic-detector-project/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qunasys-denmark|https://qunasys.com/en",
+    "entities": [
+      "companies/qunasys-denmark"
+    ],
+    "sourceUrl": "https://qunasys.com/en/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qunorth|https://novonordiskfonden.dk/en/news/eifo-and-the-novo-nordisk-foundation-acquire-the-worlds-most-powerful-quantum-computer",
+    "entities": [
+      "companies/qunorth"
+    ],
+    "sourceUrl": "https://novonordiskfonden.dk/en/news/eifo-and-the-novo-nordisk-foundation-acquire-the-worlds-most-powerful-quantum-computer/",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qunorth|https://thequantuminsider.com/2026/09/02/qunorth-clears-facility-milestone-for-magne-quantum-computer",
+    "entities": [
+      "companies/qunorth"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/02/qunorth-clears-facility-milestone-for-magne-quantum-computer/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quobly|https://quantumcomputingreport.com/quobly-and-cea-leti-strengthen-collaboration-via-fames-pilot-line-to-scale-300-mm-silicon-spin-qubit-platform",
+    "entities": [
+      "companies/quobly"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/quobly-and-cea-leti-strengthen-collaboration-via-fames-pilot-line-to-scale-300-mm-silicon-spin-qubit-platform/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quobly|https://quantumcomputingreport.com/quobly-demonstrates-single-chip-readout-and-gates-on-300mm-industrial-silicon-process",
+    "entities": [
+      "companies/quobly"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/quobly-demonstrates-single-chip-readout-and-gates-on-300mm-industrial-silicon-process/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quobly|https://sifted.eu/articles/quobly-series-a-115m",
+    "entities": [
+      "companies/quobly"
+    ],
+    "sourceUrl": "https://sifted.eu/articles/quobly-series-a-115m",
+    "reason": "possible-duplicate",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/quobly|https://thequantuminsider.com/2026/06/03/quobly-secures-e115-million-series-a-to-bring-silicon-based-quantum-computers-to-market",
+    "entities": [
+      "companies/quobly"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/06/03/quobly-secures-e115-million-series-a-to-bring-silicon-based-quantum-computers-to-market/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qutools|https://qutools.com/",
+    "entities": [
+      "companies/qutools"
+    ],
+    "sourceUrl": "https://qutools.com",
+    "reason": "homepage-url",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qutwo|https://quantumcomputingreport.com/qutwo-raises-e25m-29-4m-usd-angel-round-to-bridge-enterprise-ai-and-quantum-computing",
+    "entities": [
+      "companies/qutwo"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/qutwo-raises-e25m-29-4m-usd-angel-round-to-bridge-enterprise-ai-and-quantum-computing/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/qversion|https://spinouts.dk/project/qversion",
+    "entities": [
+      "companies/qversion"
+    ],
+    "sourceUrl": "https://spinouts.dk/project/qversion/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/riverlane|https://prnewswire.com/news-releases/qblox-and-riverlane-demonstrate-integration-enabling-real-time-quantum-error-correction-302716254.html",
+    "entities": [
+      "companies/riverlane"
+    ],
+    "sourceUrl": "https://www.prnewswire.com/news-releases/qblox-and-riverlane-demonstrate-integration-enabling-real-time-quantum-error-correction-302716254.html",
+    "reason": "source-not-credible",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/riverlane|https://quantumcomputingreport.com/nvidia-takes-strategic-stake-in-riverlane-to-accelerate-real-time-quantum-error-correction-and-gpu-decoder-calibration",
+    "entities": [
+      "companies/riverlane"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/nvidia-takes-strategic-stake-in-riverlane-to-accelerate-real-time-quantum-error-correction-and-gpu-decoder-calibration/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/riverlane|https://quantumcomputingreport.com/quantinuum-rolls-royce-riverlane-and-epcc-partner-to-accelerate-fluid-dynamics-simulations",
+    "entities": [
+      "companies/riverlane"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/quantinuum-rolls-royce-riverlane-and-epcc-partner-to-accelerate-fluid-dynamics-simulations/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/riverlane|https://quantumcomputingreport.com/riverlane-demonstrates-real-time-qec-latency-performance-advancements",
+    "entities": [
+      "companies/riverlane"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/riverlane-demonstrates-real-time-qec-latency-performance-advancements/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/riverlane|https://thequantuminsider.com/2026/03/12/riverlane-publishes-quantum-error-correction-roadmap-to-speed-utility-scale-quantum-by-3-5-years",
+    "entities": [
+      "companies/riverlane"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/03/12/riverlane-publishes-quantum-error-correction-roadmap-to-speed-utility-scale-quantum-by-3-5-years/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
     "key": "companies/riverlane|https://thequantuminsider.com/2026/07/28/riverlane-unitary-foundation-deltakit-community-fund",
     "entities": [
       "companies/riverlane",
       "resources/unitary-fund"
     ],
     "sourceUrl": "https://thequantuminsider.com/2026/07/28/riverlane-unitary-foundation-deltakit-community-fund/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/riverlane|https://thequantuminsider.com/2026/09/10/altera-riverlane-partner-bring-quantum-error-correction-support-agilex-fpgas",
+    "entities": [
+      "companies/riverlane"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/10/altera-riverlane-partner-bring-quantum-error-correction-support-agilex-fpgas/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/riverlane|https://thequantuminsider.com/2026/09/17/riverlane-establishes-u-s-headquarters-in-maryland-to-accelerate-quantum-computing-innovation",
+    "entities": [
+      "companies/riverlane"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/17/riverlane-establishes-u-s-headquarters-in-maryland-to-accelerate-quantum-computing-innovation/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/riverlane|https://thequantuminsider.com/2026/10/15/riverlane-nvidia-ai-quantum-decoder-calibration",
+    "entities": [
+      "companies/riverlane"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/10/15/riverlane-nvidia-ai-quantum-decoder-calibration/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/rotonium|https://startupbusiness.it/en/quantum-computing-in-space-rotonium-raises-eur-1-million/141857",
+    "entities": [
+      "companies/rotonium"
+    ],
+    "sourceUrl": "https://www.startupbusiness.it/en/quantum-computing-in-space-rotonium-raises-eur-1-million/141857/",
+    "reason": "amount-not-in-quote",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/rotonium|https://thequantuminsider.com/2024/08/02/deep-tech-startup-rotonium-raises-e1-million-in-seed-funding-to-take-quantum-computers-into-space",
+    "entities": [
+      "companies/rotonium"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2024/08/02/deep-tech-startup-rotonium-raises-e1-million-in-seed-funding-to-take-quantum-computers-into-space/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/saxonq|https://quantumcomputingreport.com/saxonq-demonstrates-real-time-applications-on-portable-quantum-computer-and-enters-distribution-agreement-with-bechtle",
+    "entities": [
+      "companies/saxonq"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/saxonq-demonstrates-real-time-applications-on-portable-quantum-computer-and-enters-distribution-agreement-with-bechtle/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/saxonq|https://thequantuminsider.com/2025/04/09/saxonq-demonstrates-applications-on-a-mobile-quantum-computer-powered-by-quantum-machines-tech",
+    "entities": [
+      "companies/saxonq"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/04/09/saxonq-demonstrates-applications-on-a-mobile-quantum-computer-powered-by-quantum-machines-tech/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/saxonq|https://thequantuminsider.com/2026/07/21/saxon-q-diamond-nv-center-quantum-computers",
+    "entities": [
+      "companies/saxonq"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/07/21/saxon-q-diamond-nv-center-quantum-computers/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/saxonq|https://thequantuminsider.com/2026/11/17/saxon-q-announces-quantum-watchdog-to-detect-when-quantum-computers-fail",
+    "entities": [
+      "companies/saxonq"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/17/saxon-q-announces-quantum-watchdog-to-detect-when-quantum-computers-fail/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/semiqon|https://quantumcomputingreport.com/postscriptum-executes-strategic-investment-in-semiqon-alongside-e30-million-34-35-million-usd-quantum-fund-commitment",
+    "entities": [
+      "companies/semiqon"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/postscriptum-executes-strategic-investment-in-semiqon-alongside-e30-million-34-35-million-usd-quantum-fund-commitment/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/semiqon|https://semiqon.com/news-insights/what-is-cryo-cmos-our-cto-explains",
+    "entities": [
+      "companies/semiqon"
+    ],
+    "sourceUrl": "https://www.semiqon.com/news-insights/what-is-cryo-cmos-our-cto-explains",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/semiqon|https://thequantuminsider.com/2025/11/03/yc-backed-conductor-quantum-partners-with-finlands-semiqon-to-push-silicon-quantum-computing-forward",
+    "entities": [
+      "companies/semiqon"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/11/03/yc-backed-conductor-quantum-partners-with-finlands-semiqon-to-push-silicon-quantum-computing-forward/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/semiqon|https://thequantuminsider.com/2026/07/03/postscriptum-invests-in-quantum-hardware-developer-semiqon",
+    "entities": [
+      "companies/semiqon"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/07/03/postscriptum-invests-in-quantum-hardware-developer-semiqon/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/semiqon|https://thequantuminsider.com/2026/11/09/semiqon-thierry-botter-chief-commercial-officer",
+    "entities": [
+      "companies/semiqon"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/09/semiqon-thierry-botter-chief-commercial-officer/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/sparrow-quantum|https://thequantuminsider.com/2025/04/10/sparrow-quantum-secures-e21-5-million-in-series-a-round",
+    "entities": [
+      "companies/sparrow-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/04/10/sparrow-quantum-secures-e21-5-million-in-series-a-round/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/sparrow-quantum|https://thequantuminsider.com/2025/12/01/sparrow-quantum-raises-e27-5-million-strengthening-denmarks-role-in-the-global-quantum-race",
+    "entities": [
+      "companies/sparrow-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/12/01/sparrow-quantum-raises-e27-5-million-strengthening-denmarks-role-in-the-global-quantum-race/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/sparrow-quantum|https://thequantuminsider.com/2026/09/07/sparrow-quantum-sets-record-with-500-million-usable-photons-per-second",
+    "entities": [
+      "companies/sparrow-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/09/07/sparrow-quantum-sets-record-with-500-million-usable-photons-per-second/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/terra-quantum|https://thequantuminsider.com/2026/05/26/terra-quantum-and-axiom-intelligence-acquisition-corp-1-announce-definitive-business-combination-agreement-at-a-3-5-billion-equity-valuation",
+    "entities": [
+      "companies/terra-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/26/terra-quantum-and-axiom-intelligence-acquisition-corp-1-announce-definitive-business-combination-agreement-at-a-3-5-billion-equity-valuation/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/terra-quantum|https://thequantuminsider.com/2026/07/24/terra-quantum-apex-ai-post-quantum-cryptography",
+    "entities": [
+      "companies/terra-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/07/24/terra-quantum-apex-ai-post-quantum-cryptography/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/terra-quantum|https://thequantuminsider.com/2026/10/16/terra-quantum-quera-quantum-alliance",
+    "entities": [
+      "companies/terra-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/10/16/terra-quantum-quera-quantum-alliance/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/thinkquantum|https://qsnp.eu/inside-thinkquantums-vision-for-secure-communication",
+    "entities": [
+      "companies/thinkquantum"
+    ],
+    "sourceUrl": "https://qsnp.eu/inside-thinkquantums-vision-for-secure-communication/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/universal-quantum|https://quantumcomputingreport.com/trapped-ion-developer-universal-quantum-closes-100-million-series-a-round-to-scale-modular-hardware",
+    "entities": [
+      "companies/universal-quantum"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/trapped-ion-developer-universal-quantum-closes-100-million-series-a-round-to-scale-modular-hardware/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/universal-quantum|https://quantumcomputingreport.com/universal-quantum-establishes-first-rd-competency-centre-outside-europe-in-singapore",
+    "entities": [
+      "companies/universal-quantum"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/universal-quantum-establishes-first-rd-competency-centre-outside-europe-in-singapore/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/universal-quantum|https://tech.eu/2025/07/31/uk-quantum-computing-is-going-universal-through-scaling",
+    "entities": [
+      "companies/universal-quantum"
+    ],
+    "sourceUrl": "https://tech.eu/2025/07/31/uk-quantum-computing-is-going-universal-through-scaling/",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/universal-quantum|https://thequantuminsider.com/2026/10/08/universal-quantum-raises-over-100-million-series-a",
+    "entities": [
+      "companies/universal-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/10/08/universal-quantum-raises-over-100-million-series-a/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/universal-quantum|https://thequantuminsider.com/2026/11/03/universal-quantum-combines-ion-trap-controls-and-modular-links-in-new-chip",
+    "entities": [
+      "companies/universal-quantum"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/11/03/universal-quantum-combines-ion-trap-controls-and-modular-links-in-new-chip/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/veriqloud|https://thequantuminsider.com/2023/05/24/veriqloud-secures-e1-9-million-investment-from-quantonation-and-winequity-to-unlock-the-power-of-quantum-networks",
+    "entities": [
+      "companies/veriqloud"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2023/05/24/veriqloud-secures-e1-9-million-investment-from-quantonation-and-winequity-to-unlock-the-power-of-quantum-networks/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/veriqloud|https://veriqloud.com/interview-with-marc-at-blond-quantum",
+    "entities": [
+      "companies/veriqloud"
+    ],
+    "sourceUrl": "https://veriqloud.com/interview-with-marc-at-blond-quantum/",
+    "reason": "not-extracted",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/welinq|https://thequantuminsider.com/2026/02/26/welinq-pasqal-quantum-networking-partnership",
+    "entities": [
+      "companies/welinq"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/02/26/welinq-pasqal-quantum-networking-partnership/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/xeedq|https://qci.dlr.de/en/the-first-of-its-kind",
+    "entities": [
+      "companies/xeedq"
+    ],
+    "sourceUrl": "https://qci.dlr.de/en/the-first-of-its-kind/",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/xeedq|https://quantumcomputingreport.com/fairfax-county-public-schools-to-install-xeedq-4-qubit-quantum-computer-at-skyview-high-school",
+    "entities": [
+      "companies/xeedq"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/fairfax-county-public-schools-to-install-xeedq-4-qubit-quantum-computer-at-skyview-high-school/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/xeedq|https://xeedq.com/the-german-aerospace-center-dlr-awards-30-million-euros-to-xeedq-gmbh-for-building-a-unique-quantum-computer",
+    "entities": [
+      "companies/xeedq"
+    ],
+    "sourceUrl": "https://xeedq.com/the-german-aerospace-center-dlr-awards-30-million-euros-to-xeedq-gmbh-for-building-a-unique-quantum-computer/",
+    "reason": "source-unreachable",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/zurich-instruments|https://thequantuminsider.com/2026/03/09/zurich-instruments-zqcs-quantum-control-system-logical-qubits",
+    "entities": [
+      "companies/zurich-instruments"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/03/09/zurich-instruments-zqcs-quantum-control-system-logical-qubits/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/zuriq|https://thequantuminsider.com/2025/01/23/zuriq-raises-4-2-million-to-break-quantum-computings-scaling-barrier",
+    "entities": [
+      "companies/zuriq"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/01/23/zuriq-raises-4-2-million-to-break-quantum-computings-scaling-barrier/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/zuriq|https://thequantuminsider.com/2026/10/07/infineon-zuriq-scalable-quantum-chips",
+    "entities": [
+      "companies/zuriq"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/10/07/infineon-zuriq-scalable-quantum-chips/",
     "reason": "pointer-only",
     "firstHeldOn": "2026-11-24",
     "lastCheckedOn": "2026-11-24",
