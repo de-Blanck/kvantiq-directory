@@ -1,0 +1,34 @@
+{
+  "entities": [
+    "challenges/classiq-coding-competition"
+  ],
+  "happenedOn": "2022-06-14",
+  "foundOn": "2026-03-20",
+  "summary": "Classiq announced the winners and honorable mentions of its coding competition after receiving more than 150 solutions.",
+  "quote": "The list of winners and honorable mentions appears below.",
+  "source": {
+    "url": "https://www.classiq.io/insights/classiq-coding-competition-results",
+    "finalUrl": "https://www.classiq.io/insights/classiq-coding-competition-results",
+    "publisher": "Classiq",
+    "publishedOn": "2026-05-21"
+  },
+  "pointers": [],
+  "change": null,
+  "origin": "backfill",
+  "schemaVersion": 1,
+  "id": "classiq-coding-competition-2022-06-14-other-bd27b9",
+  "checks": {
+    "checkerVersion": 1,
+    "checkedOn": "2026-11-24",
+    "sourceLive": true,
+    "sourceCredible": true,
+    "notPointerOnly": true,
+    "quoteFound": true,
+    "dateFound": true,
+    "amountInQuote": null,
+    "typeAgreed": true
+  },
+  "type": "other",
+  "funding": null,
+  "subtype": null
+}

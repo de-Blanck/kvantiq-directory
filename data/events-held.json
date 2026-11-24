@@ -26,6 +26,162 @@
     "stale": false
   },
   {
+    "key": "challenges/airbus-bmw-quantum-challenge|https://aws.amazon.com/blogs/quantum-computing/winners-announced-in-the-airbus-bmw-group-quantum-computing-challenge",
+    "entities": [
+      "challenges/airbus-bmw-quantum-challenge"
+    ],
+    "sourceUrl": "https://aws.amazon.com/blogs/quantum-computing/winners-announced-in-the-airbus-bmw-group-quantum-computing-challenge/",
+    "reason": "possible-duplicate",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "challenges/berlin-quantum-hackathon|https://thequantuminsider.com/2026/03/12/mayo-clinic-team-wins-quantum-hackathon-with-brain-signal-detection-model",
+    "entities": [
+      "challenges/berlin-quantum-hackathon"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/03/12/mayo-clinic-team-wins-quantum-hackathon-with-brain-signal-detection-model/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "challenges/blaise-pascal-quantum-challenge-2025|https://pasqal.com/events/the-blaise-pascal-quantum-challenge-2025-highlights-winners",
+    "entities": [
+      "challenges/blaise-pascal-quantum-challenge-2025"
+    ],
+    "sourceUrl": "https://www.pasqal.com/events/the-blaise-pascal-quantum-challenge-2025-highlights-winners/",
+    "reason": "self-published-other",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "challenges/blaise-pascal-quantum-challenge-2025|https://thequantuminsider.com/2025/02/12/pasqal-announces-finalists-for-quantum-ai-hackathon-focused-on-sustainability",
+    "entities": [
+      "challenges/blaise-pascal-quantum-challenge-2025"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2025/02/12/pasqal-announces-finalists-for-quantum-ai-hackathon-focused-on-sustainability/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "challenges/classiq-coding-competition|https://thequantuminsider.com/2022/07/05/classiq-coding-competition-inspires-new-generation-of-quantum-talent",
+    "entities": [
+      "challenges/classiq-coding-competition"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2022/07/05/classiq-coding-competition-inspires-new-generation-of-quantum-talent/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "challenges/eurohpc-quantum-grand-challenge|https://eurohpc-ju.europa.eu/eurohpc-ju-opens-quantum-grand-challenge-call-2025-10-14_en",
+    "entities": [
+      "challenges/eurohpc-quantum-grand-challenge"
+    ],
+    "sourceUrl": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-opens-quantum-grand-challenge-call-2025-10-14_en",
+    "reason": "type-disagreement",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "challenges/eurohpc-quantum-grand-challenge|https://quantumcomputingreport.com/eurohpc-joint-undertaking-selects-13-european-qpu-startups-for-quantum-grand-challenge",
+    "entities": [
+      "challenges/eurohpc-quantum-grand-challenge"
+    ],
+    "sourceUrl": "https://quantumcomputingreport.com/eurohpc-joint-undertaking-selects-13-european-qpu-startups-for-quantum-grand-challenge/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "challenges/ibm-quantum-challenge|https://github.com/qiskit-community/ibm-quantum-challenge-2024",
+    "entities": [
+      "challenges/ibm-quantum-challenge"
+    ],
+    "sourceUrl": "https://github.com/qiskit-community/ibm-quantum-challenge-2024",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "challenges/ibm-quantum-challenge|https://thequantuminsider.com/2024/05/03/ibm-announces-2024-quantum-challenge-featuring-new-qiskit-1-0-software",
+    "entities": [
+      "challenges/ibm-quantum-challenge"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2024/05/03/ibm-announces-2024-quantum-challenge-featuring-new-qiskit-1-0-software/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "challenges/iquhack-2026|https://iquhack.mit.edu/",
+    "entities": [
+      "challenges/iquhack-2026"
+    ],
+    "sourceUrl": "https://iquhack.mit.edu/",
+    "reason": "homepage-url",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "challenges/iquhack-2026|https://thetech.com/2026/02/19/iquhack-2026",
+    "entities": [
+      "challenges/iquhack-2026"
+    ],
+    "sourceUrl": "https://thetech.com/2026/02/19/iquhack-2026",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "challenges/wacqt-quantum-hackathon-2026|https://chalmers.se/en/current/news/wacqt-quantum-hackathon-building-skills-for-the-future",
+    "entities": [
+      "challenges/wacqt-quantum-hackathon-2026"
+    ],
+    "sourceUrl": "https://www.chalmers.se/en/current/news/wacqt-quantum-hackathon-building-skills-for-the-future/",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "challenges/xprize-quantum-applications|https://xprize.org/news/from-wildcard-entry-to-impact-xprize-quantum-applications-wildcard-finalists-advancing-to-next-phase",
+    "entities": [
+      "challenges/xprize-quantum-applications"
+    ],
+    "sourceUrl": "https://www.xprize.org/news/from-wildcard-entry-to-impact-xprize-quantum-applications-wildcard-finalists-advancing-to-next-phase",
+    "reason": "date-not-found",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
     "key": "companies/kipu-quantum|https://quantumcomputingreport.com/kipu-quantum-launches-rimay-quantum-feature-extraction-in-ibm-quantum-functions-catalog",
     "entities": [
       "companies/kipu-quantum",
@@ -33,6 +189,32 @@
       "use-cases/quantum-machine-learning-classification"
     ],
     "sourceUrl": "https://quantumcomputingreport.com/kipu-quantum-launches-rimay-quantum-feature-extraction-in-ibm-quantum-functions-catalog/",
+    "reason": "pointer-only",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://globenewswire.com/news-release/2026/05/11/3291836/0/en/pasqal-selected-as-finalist-in-xprize-quantum-applications-competition.html",
+    "entities": [
+      "companies/pasqal",
+      "challenges/xprize-quantum-applications"
+    ],
+    "sourceUrl": "https://www.globenewswire.com/news-release/2026/05/11/3291836/0/en/pasqal-selected-as-finalist-in-xprize-quantum-applications-competition.html",
+    "reason": "source-not-credible",
+    "firstHeldOn": "2026-11-24",
+    "lastCheckedOn": "2026-11-24",
+    "attempts": 1,
+    "stale": false
+  },
+  {
+    "key": "companies/pasqal|https://thequantuminsider.com/2026/05/20/pasqal-finalist-xprize-quantum-applications-competition",
+    "entities": [
+      "companies/pasqal",
+      "challenges/xprize-quantum-applications"
+    ],
+    "sourceUrl": "https://thequantuminsider.com/2026/05/20/pasqal-finalist-xprize-quantum-applications-competition/",
     "reason": "pointer-only",
     "firstHeldOn": "2026-11-24",
     "lastCheckedOn": "2026-11-24",
