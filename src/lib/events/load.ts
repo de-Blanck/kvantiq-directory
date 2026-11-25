@@ -9,40 +9,46 @@ import { entryTimeline, type LegacyNews } from './timeline';
 const collections = ['companies', 'benchmarks', 'use-cases', 'challenges', 'resources'] as const;
 const root = process.cwd();
 
+let entriesPromise: ReturnType<typeof loadEntries> | undefined;
 let feedPromise: Promise<EventsFeed> | undefined;
 let indexPromise: Promise<Record<string, { name: string; href: string }>> | undefined;
-let matcher: ReturnType<typeof buildMatcher> | undefined;
+let matcherPromise: Promise<ReturnType<typeof buildMatcher>> | undefined;
 
 async function loadEntries() {
   const lists = await Promise.all(collections.map(collection => getCollection(collection)));
   return lists.flat().map(({ collection, data }) => ({ collection, ...data }));
 }
 
+function entries() {
+  entriesPromise ??= loadEntries();
+  return entriesPromise;
+}
+
 export function loadEventsFeed(): Promise<EventsFeed> {
   feedPromise ??= (async () => {
-    const [events, entries] = await Promise.all([getCollection('events'), loadEntries()]);
-    return buildEventsFeed(events.map(event => event.data), entries);
+    const [events, all] = await Promise.all([getCollection('events'), entries()]);
+    return buildEventsFeed(events.map(event => event.data), all);
   })();
   return feedPromise;
 }
 
 export function loadEntryIndex(): Promise<Record<string, { name: string; href: string }>> {
   indexPromise ??= (async () => {
-    const lists = await Promise.all(collections.map(collection => getCollection(collection)));
-    return Object.fromEntries(lists.flat().map(({ collection, id, data }) => {
-      const slug = id.replace(/\.json$/, '');
-      return [`${collection}/${slug}`, { name: data.name, href: entityHref(collection, slug) }];
-    }));
+    const all = await entries();
+    return Object.fromEntries(all.map(entry => [
+      `${entry.collection}/${entry.slug}`,
+      { name: entry.name, href: entityHref(entry.collection, entry.slug) },
+    ]));
   })();
   return indexPromise;
 }
 
-async function getMatcher() {
-  if (matcher === undefined) {
+function getMatcher(): Promise<ReturnType<typeof buildMatcher>> {
+  matcherPromise ??= (async () => {
     const feed = await loadEventsFeed();
-    matcher = buildMatcher(feed.events, readHeldList(root), loadAliases(root));
-  }
-  return matcher;
+    return buildMatcher(feed.events, readHeldList(root), loadAliases(root));
+  })();
+  return matcherPromise;
 }
 
 export async function entryTimelineProps(key: string, news: LegacyNews[]): Promise<{ events: EventRow[]; earlierNews: LegacyNews[] }> {
