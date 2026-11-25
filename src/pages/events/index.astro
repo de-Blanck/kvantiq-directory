@@ -11,8 +11,11 @@ const rows = feed.events.map((event) => toEventRow(event, feed.entities));
 const countries = countryOptions(rows);
 const entryCount = Object.keys(feed.entities).length;
 
-// The chart ends at the build date's UTC month.
-const eventsChartData = monthlyCounts(rows, new Date().toISOString().slice(0, 7));
+// The chart ends at the newest event's month, not the build clock, so any build of one commit
+// produces the same payload. Only an empty feed falls back to the build's UTC month.
+const newest = rows.reduce((max, row) => (row.happenedOn > max ? row.happenedOn : max), '');
+const endMonth = newest ? newest.slice(0, 7) : new Date().toISOString().slice(0, 7);
+const eventsChartData = monthlyCounts(rows, endMonth);
 const eventTypeMeta = EVENT_TYPES.map((type) => ({ type, label: EVENT_TYPE_LABELS[type], color: EVENT_TYPE_COLORS[type] }));
 const charted = Object.values(eventsChartData.series).flat().reduce((sum, n) => sum + n, 0);
 const firstMonth = eventsChartData.labels[0];
