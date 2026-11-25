@@ -1,13 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
-
-interface NewsItem {
-  title: string;
-  excerpt?: string;
-  url: string;
-  source: string;
-  date: string;
-}
+import EventTypeBadge from './EventTypeBadge';
+import { dayYearLabel, type EventRow } from '../lib/events/present';
+import type { LegacyNews } from '../lib/events/timeline';
 
 interface RelatedItem {
   slug: string;
@@ -20,13 +15,17 @@ interface RelatedItem {
 
 interface DetailTabsProps {
   children: React.ReactNode;
-  news: NewsItem[];
+  timeline: { events: EventRow[]; earlierNews: LegacyNews[] };
   related: RelatedItem[];
   sources: { type: string; url: string; title?: string; dateAccessed?: string }[];
   onCustomize: () => void;
 }
 
-type TabId = 'overview' | 'news' | 'related';
+type TabId = 'overview' | 'timeline' | 'related';
+
+function plural(n: number, word: string): string {
+  return `${n} ${word}${n === 1 ? '' : 's'}`;
+}
 
 const BADGE_COLORS: Record<string, string> = {
   benchmarks: 'bg-info/15 text-info',
@@ -42,7 +41,8 @@ function collectionLabel(collection: string): string {
   return singular.replace(/^\w/, c => c.toUpperCase());
 }
 
-export default function DetailTabs({ children, news, related, onCustomize }: DetailTabsProps) {
+export default function DetailTabs({ children, timeline, related, onCustomize }: DetailTabsProps) {
+  const { events, earlierNews } = timeline;
   const [activeTab, setActiveTab] = useState<TabId>('overview');
   const prefersReducedMotion = useReducedMotion();
 
@@ -73,7 +73,7 @@ export default function DetailTabs({ children, news, related, onCustomize }: Det
   // No Sources tab — sources are always visible at bottom (handled by DetailPage)
   const tabs: { id: TabId; label: string }[] = [
     { id: 'overview', label: 'Overview' },
-    ...(news.length > 0 ? [{ id: 'news' as TabId, label: 'Latest News' }] : []),
+    ...(events.length + earlierNews.length > 0 ? [{ id: 'timeline' as TabId, label: 'Timeline' }] : []),
     ...(related.length >= 2 ? [{ id: 'related' as TabId, label: 'Related' }] : []),
   ];
 
@@ -123,17 +123,52 @@ export default function DetailTabs({ children, news, related, onCustomize }: Det
               <motion.div variants={itemVariants}>{children}</motion.div>
             )}
 
-            {activeTab === 'news' && (
+            {activeTab === 'timeline' && (
               <div className="flex flex-col gap-3">
-                <motion.div
-                  variants={itemVariants}
-                  className="eyebrow text-text-muted mb-1"
-                >
-                  {news.length} article{news.length !== 1 ? 's' : ''} · Updated weekly via AI sweep
-                </motion.div>
-                {news.map((item, i) => (
+                {events.length > 0 && (
+                  <motion.div
+                    variants={itemVariants}
+                    className="eyebrow text-text-muted mb-1"
+                  >
+                    {plural(events.length, 'checked event')}, newest first
+                  </motion.div>
+                )}
+                {events.map(row => (
                   <motion.a
-                    key={i}
+                    key={row.id}
+                    variants={itemVariants}
+                    href={row.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card-hover block rounded-xl border border-border bg-surface p-6 cursor-pointer"
+                  >
+                    <div className="h-md text-text-primary mb-2">{row.summary}</div>
+                    <div className="flex flex-wrap items-center gap-2 eyebrow text-text-muted">
+                      <time dateTime={row.happenedOn}>{dayYearLabel(row.happenedOn)}</time>
+                      <span>·</span>
+                      <EventTypeBadge type={row.type} />
+                      {row.funding && (
+                        <>
+                          <span>·</span>
+                          <span className="text-text-primary">{row.funding}</span>
+                        </>
+                      )}
+                      <span>·</span>
+                      <span className="text-accent">{row.publisher} ↗</span>
+                    </div>
+                  </motion.a>
+                ))}
+                {earlierNews.length > 0 && (
+                  <motion.div variants={itemVariants} className={events.length > 0 ? 'mt-6' : undefined}>
+                    <h2 className="h-sm text-text-primary">Earlier news</h2>
+                    <div className="eyebrow text-text-muted mt-1 mb-1">
+                      {plural(earlierNews.length, 'item')} not yet checked
+                    </div>
+                  </motion.div>
+                )}
+                {earlierNews.map((item, i) => (
+                  <motion.a
+                    key={`news-${i}`}
                     variants={itemVariants}
                     href={item.url}
                     target="_blank"

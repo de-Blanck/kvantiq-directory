@@ -2,6 +2,11 @@ import { useState } from 'react';
 import DetailHero from './DetailHero';
 import DetailTabs from './DetailTabs';
 import DashboardGrid from './DashboardGrid';
+import EventTypeBadge from './EventTypeBadge';
+import { dayYearLabel, type EventRow } from '../lib/events/present';
+import type { LegacyNews } from '../lib/events/timeline';
+
+type Timeline = { events: EventRow[]; earlierNews: LegacyNews[] };
 
 /**
  * Products list — each row is either:
@@ -84,15 +89,34 @@ function HighlightsList({ highlights }: { highlights: string[] }) {
 }
 
 /**
- * Dashboard-card news list — top 3 news items. Entire row is clickable and
- * opens the article URL in a new tab. Matches behavior of Latest News tab.
+ * Dashboard-card timeline — the first 3 of (checked events, then earlier news).
+ * Entire row is clickable and opens the source in a new tab, as in the Timeline tab.
  */
-function NewsDashboardList({ news }: { news: { title: string; excerpt?: string; url: string; source: string; date: string }[] }) {
+function TimelineDashboardList({ events, earlierNews }: Timeline) {
+  const shownEvents = events.slice(0, 3);
+  const shownNews = earlierNews.slice(0, 3 - shownEvents.length);
   return (
     <div className="flex flex-col gap-4">
-      {news.slice(0, 3).map((item, i) => (
+      {shownEvents.map(row => (
         <a
-          key={i}
+          key={row.id}
+          href={row.sourceUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group -mx-2 block cursor-pointer rounded-lg px-2 py-2 border-b border-border pb-4 last:border-0 last:pb-2 transition-colors hover:bg-elevated/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60"
+          aria-label={`${row.summary} — ${row.publisher} (opens in new tab)`}
+        >
+          <div className="h-sm text-text-primary group-hover:text-accent transition-colors">{row.summary}</div>
+          <div className="mt-1 flex flex-wrap items-center gap-2 eyebrow text-text-muted">
+            <time dateTime={row.happenedOn}>{dayYearLabel(row.happenedOn)}</time>
+            <EventTypeBadge type={row.type} />
+            <span className="text-accent">{row.publisher} ↗</span>
+          </div>
+        </a>
+      ))}
+      {shownNews.map((item, i) => (
+        <a
+          key={`news-${i}`}
           href={item.url}
           target="_blank"
           rel="noopener noreferrer"
@@ -136,7 +160,8 @@ interface DetailPageProps {
   websiteUrl?: string;
   websiteLabel?: string;
   collection: string;
-  news: { title: string; excerpt?: string; url: string; source: string; date: string }[];
+  /** Checked events for this entry (newest first), then legacy news not yet checked. */
+  timeline: Timeline;
   related: RelatedItem[];
   sources: { type: string; url: string; title?: string; dateAccessed?: string }[];
   /** What this entry rests on, computed at build time: how many of its sources count
@@ -158,20 +183,21 @@ interface DetailPageProps {
 // Only content cards — no metrics (in hero), no sources (always at bottom)
 const DEFAULT_CARDS: CardConfig[] = [
   { id: 'overview', label: 'Overview', visible: true, fullWidth: true },
-  { id: 'news', label: 'Latest News', visible: true, fullWidth: false },
+  { id: 'timeline', label: 'Timeline', visible: true, fullWidth: false },
   { id: 'related', label: 'Related', visible: true, fullWidth: false },
 ];
 
 export default function DetailPage(props: DetailPageProps) {
+  const hasTimeline = props.timeline.events.length + props.timeline.earlierNews.length > 0;
+  const defaultCards = () => DEFAULT_CARDS.map(c => ({
+    ...c,
+    visible: c.id === 'timeline' ? hasTimeline :
+             c.id === 'related' ? props.related.length >= 2 :
+             c.visible,
+  }));
+
   const [customizeOpen, setCustomizeOpen] = useState(false);
-  const [cardConfigs, setCardConfigs] = useState<CardConfig[]>(() => {
-    return DEFAULT_CARDS.map(c => ({
-      ...c,
-      visible: c.id === 'news' ? props.news.length > 0 :
-               c.id === 'related' ? props.related.length >= 2 :
-               c.visible,
-    }));
-  });
+  const [cardConfigs, setCardConfigs] = useState<CardConfig[]>(defaultCards);
 
   // Key Metrics spans full width when it has 3+ metrics OR any metric value is long/comma-list.
   // Short 2-metric cases (typical for benchmarks) stay half-width so the dense
@@ -189,12 +215,7 @@ export default function DetailPage(props: DetailPageProps) {
   };
 
   const resetCards = () => {
-    setCardConfigs(DEFAULT_CARDS.map(c => ({
-      ...c,
-      visible: c.id === 'news' ? props.news.length > 0 :
-               c.id === 'related' ? props.related.length >= 2 :
-               c.visible,
-    })));
+    setCardConfigs(defaultCards());
   };
 
   const badgeColors: Record<string, string> = {
@@ -286,10 +307,10 @@ export default function DetailPage(props: DetailPageProps) {
         </div>
       ),
     }] : []),
-    ...(props.news.length > 0 ? [{
-      id: 'news',
-      label: 'Latest News',
-      content: <NewsDashboardList news={props.news} />,
+    ...(hasTimeline ? [{
+      id: 'timeline',
+      label: 'Timeline',
+      content: <TimelineDashboardList events={props.timeline.events} earlierNews={props.timeline.earlierNews} />,
     }] : []),
     ...(props.related.length >= 2 ? [{
       id: 'related',
@@ -340,7 +361,7 @@ export default function DetailPage(props: DetailPageProps) {
       />
 
       <DetailTabs
-        news={props.news}
+        timeline={props.timeline}
         related={props.related}
         sources={props.sources}
         onCustomize={() => setCustomizeOpen(o => !o)}

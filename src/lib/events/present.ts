@@ -36,6 +36,11 @@ export function dayLabel(date: string): string {
   return `${d} ${MONTHS[m - 1].slice(0, 3)}`;
 }
 
+/** "1 Nov 2026": entry timelines are not grouped by month, so each row carries its year. */
+export function dayYearLabel(date: string): string {
+  return `${dayLabel(date)} ${parts(date)[0]}`;
+}
+
 function amountText(amount: number, currency: string | null): string {
   const prefix = currency === null ? '' : SYMBOLS[currency] ?? `${currency} `;
   if (amount >= 1e9) return `${prefix}${(amount / 1e9).toFixed(1)}B`;

@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  fundingLine, dayLabel, monthHeading, parseFilters, filterRows, countryOptions, monthlyCounts, toEventRow,
+  fundingLine, dayLabel, dayYearLabel, monthHeading, parseFilters, filterRows, countryOptions, monthlyCounts, toEventRow,
   type EventRow,
 } from './present.ts';
 import type { EventRecord } from './schema.ts';
@@ -32,6 +32,7 @@ test('fundingLine', () => {
 
 test('dates format from the string, not local time', () => {
   assert.equal(dayLabel('2026-11-01'), '1 Nov');
+  assert.equal(dayYearLabel('2025-01-31'), '31 Jan 2025');
   assert.equal(monthHeading('2026-11-01'), 'November 2026');
 });
 
