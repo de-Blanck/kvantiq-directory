@@ -34,7 +34,7 @@ const currentPath = Astro.url.pathname;
     </a>
 
     <!-- Desktop Navigation -->
-    <ul class="hidden gap-6 md:flex">
+    <ul class="hidden gap-6 lg:flex">
       {navItems.map(({ href, label }) => (
         <li>
           <a
@@ -48,14 +48,14 @@ const currentPath = Astro.url.pathname;
     </ul>
 
     <!-- Desktop Submit Button -->
-    <a href="/submit/" class="btn-quantum hidden md:block rounded-md bg-info px-3 py-1.5 text-sm font-medium text-white">
+    <a href="/submit/" class="btn-quantum hidden lg:block rounded-md bg-info px-3 py-1.5 text-sm font-medium text-white">
       Submit Listing
     </a>
 
     <!-- Mobile Hamburger Button -->
     <button
       id="mobile-menu-button"
-      class="md:hidden flex flex-col gap-1.5 p-2"
+      class="lg:hidden flex flex-col gap-1.5 p-2"
       aria-label="Open menu"
       aria-expanded="false"
     >
