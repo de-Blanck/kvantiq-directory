@@ -157,11 +157,15 @@ const lastMonth = eventsChartData.labels.at(-1);
         Chart = module.Chart;
         if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', showSelected, { once: true });
         else showSelected();
+      }).catch(() => {
+        // Chart.js is loaded from a CDN. If it fails the list keeps working; only the chart goes.
+        const figure = document.getElementById('events-chart-figure');
+        if (figure) figure.hidden = true;
       });
     </script>
 
     <EventsView client:load rows={rows} countries={countries}>
-      <figure class="mt-4 rounded-xl border border-border bg-base p-4 md:p-6">
+      <figure id="events-chart-figure" class="mt-4 rounded-xl border border-border bg-base p-4 md:p-6">
         <h2 class="eyebrow text-text-muted mb-4">Events per month</h2>
         <div class="relative h-56 md:h-64">
           <canvas id="events-chart" role="img" aria-label="Events per month for the last 24 months, stacked by type"></canvas>
