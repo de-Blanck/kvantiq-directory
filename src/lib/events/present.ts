@@ -41,6 +41,11 @@ export function dayYearLabel(date: string): string {
   return `${dayLabel(date)} ${parts(date)[0]}`;
 }
 
+/** "1 event", "2 events". */
+export function plural(n: number, word: string): string {
+  return `${n} ${word}${n === 1 ? '' : 's'}`;
+}
+
 function amountText(amount: number, currency: string | null): string {
   const prefix = currency === null ? '' : SYMBOLS[currency] ?? `${currency} `;
   // Pick the unit from the rounded value, so 999_960_000 is "1.0B", not "1000.0M".

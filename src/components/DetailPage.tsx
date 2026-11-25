@@ -3,10 +3,8 @@ import DetailHero from './DetailHero';
 import DetailTabs from './DetailTabs';
 import DashboardGrid from './DashboardGrid';
 import EventTypeBadge from './EventTypeBadge';
-import { dayYearLabel, type EventRow } from '../lib/events/present';
-import type { LegacyNews } from '../lib/events/timeline';
-
-type Timeline = { events: EventRow[]; earlierNews: LegacyNews[] };
+import { dayYearLabel } from '../lib/events/present';
+import type { EntryTimeline } from '../lib/events/timeline';
 
 /**
  * Products list — each row is either:
@@ -92,7 +90,7 @@ function HighlightsList({ highlights }: { highlights: string[] }) {
  * Dashboard-card timeline — the first 3 of (checked events, then earlier news).
  * Entire row is clickable and opens the source in a new tab, as in the Timeline tab.
  */
-function TimelineDashboardList({ events, earlierNews }: Timeline) {
+function TimelineDashboardList({ events, earlierNews }: EntryTimeline) {
   const shownEvents = events.slice(0, 3);
   const shownNews = earlierNews.slice(0, 3 - shownEvents.length);
   return (
@@ -164,7 +162,7 @@ interface DetailPageProps {
   websiteLabel?: string;
   collection: string;
   /** Checked events for this entry (newest first), then legacy news not yet checked. */
-  timeline: Timeline;
+  timeline: EntryTimeline;
   related: RelatedItem[];
   sources: { type: string; url: string; title?: string; dateAccessed?: string }[];
   /** What this entry rests on, computed at build time: how many of its sources count

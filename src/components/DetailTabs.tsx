@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import EventTypeBadge from './EventTypeBadge';
-import { dayYearLabel, type EventRow } from '../lib/events/present';
-import type { LegacyNews } from '../lib/events/timeline';
+import { dayYearLabel, plural } from '../lib/events/present';
+import type { EntryTimeline } from '../lib/events/timeline';
 
 interface RelatedItem {
   slug: string;
@@ -15,17 +15,13 @@ interface RelatedItem {
 
 interface DetailTabsProps {
   children: React.ReactNode;
-  timeline: { events: EventRow[]; earlierNews: LegacyNews[] };
+  timeline: EntryTimeline;
   related: RelatedItem[];
   sources: { type: string; url: string; title?: string; dateAccessed?: string }[];
   onCustomize: () => void;
 }
 
 type TabId = 'overview' | 'timeline' | 'related';
-
-function plural(n: number, word: string): string {
-  return `${n} ${word}${n === 1 ? '' : 's'}`;
-}
 
 const BADGE_COLORS: Record<string, string> = {
   benchmarks: 'bg-info/15 text-info',

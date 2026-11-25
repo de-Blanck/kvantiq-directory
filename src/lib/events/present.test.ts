@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  fundingLine, dayLabel, dayYearLabel, monthHeading, parseFilters, filterRows, countryOptions, monthlyCounts, toEventRow,
+  fundingLine, plural, dayLabel, dayYearLabel, monthHeading, parseFilters, filterRows, countryOptions, monthlyCounts, toEventRow,
   type EventRow,
 } from './present.ts';
 import type { EventRecord } from './schema.ts';
@@ -96,4 +96,10 @@ test('toEventRow resolves entity names and hrefs from the feed and fills funding
   const product = toEventRow(record({ type: 'product', entities: ['benchmarks/qed-c'] }), feedEntities);
   assert.equal(product.funding, null);
   assert.deepEqual(product.entities, [{ name: 'QED-C Suite', href: '/benchmarks/qed-c/', country: null }]);
+});
+
+test('plural: one is singular, everything else adds an s', () => {
+  assert.equal(plural(0, 'event'), '0 events');
+  assert.equal(plural(1, 'event'), '1 event');
+  assert.equal(plural(2, 'checked event'), '2 checked events');
 });

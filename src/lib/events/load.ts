@@ -4,8 +4,8 @@ import { buildMatcher, loadAliases } from '../../../scripts/backfill/match';
 import { readHeldList } from '../../../scripts/events/run';
 import { buildEventsFeed, entityHref, type EventsFeed } from './feed';
 import { isPublished } from '../source-bar';
-import { toEventRow, type EventRow } from './present';
-import { entryTimeline, type LegacyNews } from './timeline';
+import { toEventRow } from './present';
+import { entryTimeline, type EntryTimeline, type LegacyNews } from './timeline';
 
 const collections = ['companies', 'benchmarks', 'use-cases', 'challenges', 'resources'] as const;
 const root = process.cwd();
@@ -56,7 +56,7 @@ function getMatcher(): Promise<ReturnType<typeof buildMatcher>> {
   return matcherPromise;
 }
 
-export async function entryTimelineProps(key: string, news: LegacyNews[]): Promise<{ events: EventRow[]; earlierNews: LegacyNews[] }> {
+export async function entryTimelineProps(key: string, news: LegacyNews[]): Promise<EntryTimeline> {
   const [feed, match] = await Promise.all([loadEventsFeed(), getMatcher()]);
   const timeline = entryTimeline(key, feed.events, news, match);
   return { events: timeline.events.map(event => toEventRow(event, feed.entities)), earlierNews: timeline.earlierNews };

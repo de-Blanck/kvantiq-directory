@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { EVENT_TYPES, EVENT_TYPE_LABELS } from '../lib/events/labels';
 import EventTypeBadge, { EventTypeDot } from './EventTypeBadge';
-import { filterRows, parseFilters, type EventRow, type Filters } from '../lib/events/present';
+import { filterRows, parseFilters, plural, type EventRow, type Filters } from '../lib/events/present';
 
 interface EventsViewProps {
   rows: EventRow[];
@@ -40,10 +40,6 @@ function groupByMonth(rows: EventRow[]): { month: string; rows: EventRow[] }[] {
     else groups.push({ month: row.month, rows: [row] });
   }
   return groups;
-}
-
-function plural(n: number, word: string): string {
-  return `${n} ${word}${n === 1 ? '' : 's'}`;
 }
 
 function EventItem({ row }: { row: EventRow }) {

@@ -1,8 +1,11 @@
 // Pure timeline logic for entry pages. The server-only glue lives in load.ts.
 import type { EventRecord } from './schema';
+import type { EventRow } from './present';
 import type { MatchResult } from '../../../scripts/backfill/types';
 
 export type LegacyNews = { title: string; excerpt?: string; url: string; source: string; date: string };
+/** What an entry page receives: presentation rows, not raw records. */
+export type EntryTimeline = { events: EventRow[]; earlierNews: LegacyNews[] };
 export type Timeline = { events: EventRecord[]; earlierNews: LegacyNews[] };
 
 // Amended (Rune, 2026-11-25): no cut-off. Legacy news stays visible under
