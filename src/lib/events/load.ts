@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import { buildMatcher, loadAliases } from '../../../scripts/backfill/match';
 import { readHeldList } from '../../../scripts/events/run';
 import { buildEventsFeed, entityHref, type EventsFeed } from './feed';
+import { isPublished } from '../source-bar';
 import { toEventRow, type EventRow } from './present';
 import { entryTimeline, type LegacyNews } from './timeline';
 
@@ -11,7 +12,7 @@ const root = process.cwd();
 
 let entriesPromise: ReturnType<typeof loadEntries> | undefined;
 let feedPromise: Promise<EventsFeed> | undefined;
-let indexPromise: Promise<Record<string, { name: string; href: string }>> | undefined;
+let indexPromise: Promise<Record<string, { name: string; href: string | null }>> | undefined;
 let matcherPromise: Promise<ReturnType<typeof buildMatcher>> | undefined;
 
 async function loadEntries() {
@@ -32,12 +33,16 @@ export function loadEventsFeed(): Promise<EventsFeed> {
   return feedPromise;
 }
 
-export function loadEntryIndex(): Promise<Record<string, { name: string; href: string }>> {
+export function loadEntryIndex(): Promise<Record<string, { name: string; href: string | null }>> {
   indexPromise ??= (async () => {
     const all = await entries();
     return Object.fromEntries(all.map(entry => [
       `${entry.collection}/${entry.slug}`,
-      { name: entry.name, href: entityHref(entry.collection, entry.slug) },
+      {
+        name: entry.name,
+        // The resources page emits an anchor only for published resources.
+        href: entry.collection === 'resources' && !isPublished(entry) ? null : entityHref(entry.collection, entry.slug),
+      },
     ]));
   })();
   return indexPromise;

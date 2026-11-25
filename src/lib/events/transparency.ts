@@ -40,7 +40,7 @@ function hostOf(url: string): string {
 
 export function heldRows(
   held: readonly HeldRecord[],
-  index: Record<string, { name: string; href: string }>,
+  index: Record<string, { name: string; href: string | null }>,
 ): HeldRow[] {
   return held.map(record => {
     const key = record.entities[0];
