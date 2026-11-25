@@ -15,7 +15,7 @@ test('every hold reason and funding round has a label', () => {
     assert.ok(FUNDING_ROUND_LABELS[round]?.length > 0, `missing round label: ${round}`);
   }
   assert.equal(Object.keys(FUNDING_ROUND_LABELS).length, FUNDING_ROUNDS.length);
-  assert.equal(HOLD_REASON_LABELS['pointer-only'], 'Aggregator link, original source not yet found');
+  assert.equal(HOLD_REASON_LABELS['pointer-only'], 'Aggregator link supplied as evidence');
 });
 
 test('every event type has a label and a distinct hex colour', () => {

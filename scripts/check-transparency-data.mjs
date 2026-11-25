@@ -109,7 +109,7 @@ if (!Array.isArray(held)) {
   if (bad.length > 0) {
     problems.push(
       `${bad.length} record${bad.length === 1 ? '' : 's'} in data/events-held.json ` +
-        'lack a string key/sourceUrl/reason, a non-empty entities array or a boolean stale.',
+        `${bad.length === 1 ? 'lacks' : 'lack'} a string key/sourceUrl/reason, a non-empty entities array or a boolean stale.`,
     );
   }
 }
