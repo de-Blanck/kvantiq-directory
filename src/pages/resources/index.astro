@@ -11,6 +11,7 @@ const sorted = allResources.sort((a, b) => a.data.name.localeCompare(b.data.name
 const tableData = sorted.map(r => ({
   href: r.data.website,
   external: true,
+  anchorId: r.data.slug,
   name: r.data.name,
   type: r.data.type,
   provider: r.data.provider || '',
@@ -33,6 +34,7 @@ const cardItems = sorted.map(r => ({
   badge: r.data.openSource ? 'Open Source' : undefined,
   badgeColor: 'text-accent bg-accent-glow',
   external: true,
+  anchorId: r.data.slug,
   // Group-by fields — mirror of tableData keys so CardGrid can group.
   type: r.data.type,
   provider: r.data.provider || '',

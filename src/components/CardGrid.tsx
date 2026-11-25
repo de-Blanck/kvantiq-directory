@@ -11,6 +11,8 @@ export interface CardItem {
   badgeColor?: string;
   /** If true, open link in a new tab (for external resources) */
   external?: boolean;
+  /** Rendered as the card's `id` so `/page/#<anchorId>` lands on it. */
+  anchorId?: string;
   /** Optional group keys — mirror of the fields from tableData so grouping works in card view. */
   [field: string]: string | string[] | boolean | undefined;
 }
@@ -33,12 +35,13 @@ function renderCards(items: CardItem[], indexOffset = 0) {
       {items.map((item, i) => (
         <motion.a
           key={item.href}
+          id={item.anchorId}
           href={item.href}
           {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: (indexOffset + i) * 0.04 }}
-          className="card-hover block rounded-xl border border-border bg-surface p-6"
+          className={`card-hover block rounded-xl border border-border bg-surface p-6${item.anchorId ? ' scroll-mt-24' : ''}`}
         >
           <div className="flex items-start justify-between gap-2">
             <h3 className="h-md text-text-primary">{item.name}</h3>

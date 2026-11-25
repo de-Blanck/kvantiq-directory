@@ -13,6 +13,8 @@ export interface DataTableColumn {
 export interface DataTableRow {
   href: string;
   external?: boolean;
+  /** Rendered as the row's `id` so `/page/#<anchorId>` lands on it. Never a column. */
+  anchorId?: string;
   [key: string]: string | number | boolean | undefined;
 }
 
@@ -147,9 +149,10 @@ export default function DataTable({
                 {groupRows.map((row, i) => (
                   <tr
                     key={`${groupKey}-${i}-${row.href}`}
+                    id={row.anchorId}
                     tabIndex={0}
                     role="link"
-                    className="border-b border-border cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
+                    className={`border-b border-border cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent${row.anchorId ? ' scroll-mt-24' : ''}`}
                     onClick={() => handleNavigate(row)}
                     onKeyDown={e => {
                       if (e.key === 'Enter' || e.key === ' ') {
@@ -173,9 +176,10 @@ export default function DataTable({
             {rows.map((row, i) => (
               <tr
                 key={`${i}-${row.href}`}
+                id={row.anchorId}
                 tabIndex={0}
                 role="link"
-                className="border-b border-border cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
+                className={`border-b border-border cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent${row.anchorId ? ' scroll-mt-24' : ''}`}
                 onClick={() => handleNavigate(row)}
                 onKeyDown={e => {
                   if (e.key === 'Enter' || e.key === ' ') {
