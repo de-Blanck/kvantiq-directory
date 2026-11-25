@@ -56,7 +56,7 @@ export const HOLD_REASON_LABELS: Record<HoldReason, string> = {
   'self-published-wording': "Company's own page, summary not worded as its announcement",
   'pointer-only': 'Aggregator link supplied as evidence',
   'quote-not-found': 'Quoted text not found on the source page',
-  'date-not-found': 'Event date not found on the source page',
+  'date-not-found': 'Event date could not be verified',
   'amount-not-in-quote': 'Funding amount not found in the quote',
   'type-unchecked': 'No second opinion on the event type recorded',
   'type-disagreement': 'Event type and second opinion differ',
