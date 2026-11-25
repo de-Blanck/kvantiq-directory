@@ -165,21 +165,22 @@ const heldTable = heldRows(heldList, entryIndex);
                 <tr>
                   <th class="px-5 py-3 eyebrow text-text-muted">Entity</th>
                   <th class="px-5 py-3 eyebrow text-text-muted">Source</th>
-                  <th class="px-5 py-3 eyebrow text-text-muted">Reason</th>
+                  <th class="hidden sm:table-cell px-5 py-3 eyebrow text-text-muted">Reason</th>
                 </tr>
               </thead>
               <tbody class="divide-y divide-border">
                 {heldTable.map((row) => (
                   <tr>
-                    <td class="px-5 py-3 body-sm">
+                    <td class="px-5 py-3 body-sm break-words">
                       {row.href
                         ? <a href={row.href} class="text-text-primary hover:text-accent">{row.entity}</a>
                         : <span class="text-text-primary">{row.entity}</span>}
                     </td>
-                    <td class="px-5 py-3 body-sm">
+                    <td class="px-5 py-3 body-sm break-words">
                       <a href={row.sourceUrl} rel="nofollow noopener" target="_blank" class="text-info underline underline-offset-2">{row.sourceHost}</a>
+                      <span class="block sm:hidden text-text-muted">{row.reasonLabel}</span>
                     </td>
-                    <td class="px-5 py-3 body-sm text-text-secondary">{row.reasonLabel}</td>
+                    <td class="hidden sm:table-cell px-5 py-3 body-sm text-text-secondary">{row.reasonLabel}</td>
                   </tr>
                 ))}
               </tbody>
