@@ -26,6 +26,7 @@ const rows: EventRow[] = [
 test('fundingLine', () => {
   assert.equal(fundingLine({ amount: 12_000_000, currency: 'EUR', round: 'series-a', investors: ['Kibo Ventures', 'X'] }), 'Series A, €12.0M · Kibo Ventures');
   assert.equal(fundingLine({ amount: 1_500_000_000, currency: 'USD', round: 'ipo', investors: [] }), 'IPO, $1.5B');
+  assert.equal(fundingLine({ amount: 999_960_000, currency: 'USD', round: 'other', investors: [] }), 'Other, $1.0B');
   assert.equal(fundingLine({ amount: 250_000, currency: 'DKK', round: 'grant', investors: [] }), 'Grant, DKK 250,000');
   assert.equal(fundingLine({ amount: null, currency: null, round: 'seed', investors: [] }), 'Seed, undisclosed');
 });

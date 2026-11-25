@@ -43,7 +43,8 @@ export function dayYearLabel(date: string): string {
 
 function amountText(amount: number, currency: string | null): string {
   const prefix = currency === null ? '' : SYMBOLS[currency] ?? `${currency} `;
-  if (amount >= 1e9) return `${prefix}${(amount / 1e9).toFixed(1)}B`;
+  // Pick the unit from the rounded value, so 999_960_000 is "1.0B", not "1000.0M".
+  if (Number((amount / 1e6).toFixed(1)) >= 1000) return `${prefix}${(amount / 1e9).toFixed(1)}B`;
   if (amount >= 1e6) return `${prefix}${(amount / 1e6).toFixed(1)}M`;
   return `${prefix}${amount.toLocaleString('en-GB')}`;
 }
