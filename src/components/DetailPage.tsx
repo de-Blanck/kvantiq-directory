@@ -114,6 +114,9 @@ function TimelineDashboardList({ events, earlierNews }: Timeline) {
           </div>
         </a>
       ))}
+      {shownNews.length > 0 && (
+        <p className="eyebrow text-text-muted">Earlier news · not yet checked</p>
+      )}
       {shownNews.map((item, i) => (
         <a
           key={`news-${i}`}
