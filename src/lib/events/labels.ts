@@ -13,12 +13,16 @@ export const EVENT_TYPE_LABELS: Record<EventType, string> = {
   other: 'Other',
 };
 
-// Hues from the Editorial Light theme in src/styles/global.css: accent amber, info blue, stone-500,
-// plus the 700-weight teal and violet that sit next to them. Shared by badge dots and chart datasets.
+// Hues from the Editorial Light theme in src/styles/global.css: accent amber, info blue, error red,
+// stone-500, plus a teal-600 and violet-700 that sit next to them. Shared by badge dots and chart
+// datasets. Checked with the dataviz palette validator (light, on #FFFFFF and the parchment
+// surfaces): lightness, adjacent CVD separation and 3:1 contrast pass in this stacking order.
+// Teal-700 (#0F766E) fell below the chroma floor and read as grey, so product uses teal-600.
+// "Other" stays stone-500 on purpose: the catch-all type is meant to read as neutral.
 export const EVENT_TYPE_COLORS: Record<EventType, string> = {
   funding: '#B45309',
   partnership: '#1D4ED8',
-  product: '#0F766E',
+  product: '#0D9488',
   people: '#6D28D9',
   corporate: '#DC2626',
   other: '#78716C',
