@@ -16,7 +16,7 @@ const UNFILTERED: Filters = { type: 'all', country: '', q: '' };
 
 const FOCUS_RING = 'focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60';
 
-/** Tells the chart script which type to show. Fired after mount and on every filter change. */
+/** Tells the chart script which type to show. Fired after mount and when the type changes. */
 function announceType(type: Filters['type']) {
   window.dispatchEvent(new CustomEvent('events:filter', { detail: { type } }));
 }
@@ -91,11 +91,19 @@ function EventItem({ row }: { row: EventRow }) {
 export default function EventsView({ rows, countries, children }: EventsViewProps) {
   const [filters, setFilters] = useState<Filters>(UNFILTERED);
   const allChip = useRef<HTMLButtonElement>(null);
+  const announced = useRef<Filters['type'] | null>(null);
+
+  // Search and country changes do not move the chart, so only a changed type is announced.
+  const announce = (type: Filters['type']) => {
+    if (announced.current === type) return;
+    announced.current = type;
+    announceType(type);
+  };
 
   useEffect(() => {
     const parsed = parseFilters(window.location.search, countries);
     setFilters(parsed);
-    announceType(parsed.type);
+    announce(parsed.type);
     // Mount only: the URL is read once; after that the state writes the URL.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -103,7 +111,7 @@ export default function EventsView({ rows, countries, children }: EventsViewProp
   const update = (next: Filters) => {
     setFilters(next);
     writeUrl(next);
-    announceType(next.type);
+    announce(next.type);
   };
 
   const reset = () => {
