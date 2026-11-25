@@ -4,6 +4,7 @@ import { isPublished, isCredibleSource } from '../../lib/source-bar';
 import { evidenceSummary, describeAge } from '../../lib/audit-metrics';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import DetailPage from '../../components/DetailPage.tsx';
+import { entryTimelineProps } from '../../lib/events/load';
 import { findRelated, type RelatedItem } from '../../lib/related';
 
 export async function getStaticPaths() {
@@ -31,6 +32,7 @@ export async function getStaticPaths() {
 }
 
 const { company, related } = Astro.props;
+const timeline = await entryTimelineProps('companies/' + company.slug, company.news ?? []);
 
 const orgLd = {
   "@context": "https://schema.org",
@@ -69,7 +71,7 @@ const evidence = { ...summary, age: describeAge(summary.days) };
     stats={stats}
     websiteUrl={company.website}
     collection="companies"
-    news={company.news || []}
+    timeline={timeline}
     related={related}
     sources={company.sources}
     evidence={evidence}

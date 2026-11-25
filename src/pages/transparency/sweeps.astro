@@ -2,6 +2,9 @@
 import { readFileSync, existsSync } from 'fs';
 import { resolve } from 'path';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { loadEventsFeed, loadEntryIndex } from '../../lib/events/load';
+import { readHeldList } from '../../../scripts/events/run';
+import { eventsSummary, heldRows } from '../../lib/events/transparency';
 
 interface MethodologyStats {
   items_proposed?: number;
@@ -77,6 +80,12 @@ function rejectionTotal(m?: MethodologyStats): number {
 // Headline counters across all recorded runs
 const totalNews = runs.reduce((s, r) => s + (r.news_added ?? 0), 0);
 const totalRejected = runs.reduce((s, r) => s + rejectionTotal(r.methodology), 0);
+
+// Events: published count, plus the held list rendered only through heldRows().
+const [eventsFeed, entryIndex] = await Promise.all([loadEventsFeed(), loadEntryIndex()]);
+const heldList = readHeldList(process.cwd());
+const eventsStats = eventsSummary(eventsFeed.count, heldList);
+const heldTable = heldRows(heldList, entryIndex);
 ---
 
 <BaseLayout
@@ -112,6 +121,74 @@ const totalRejected = runs.reduce((s, r) => s + rejectionTotal(r.methodology), 0
         </div>
       )}
     </div>
+
+    <section class="mb-10" aria-labelledby="events-heading">
+      <h2 id="events-heading" class="h-md text-text-primary">Events</h2>
+      <p class="mt-2 body-sm text-text-secondary">
+        Held candidates are not published. Each stays listed with the reason it was held. A candidate is marked stale after 8 recorded attempts.
+      </p>
+      <div class="mt-4 grid grid-cols-3 gap-4">
+        <div class="rounded-lg border border-border bg-surface p-4 text-center">
+          <p class="data-lg text-text-primary">{eventsStats.published}</p>
+          <p class="mt-1 eyebrow text-text-muted">Published</p>
+        </div>
+        <div class="rounded-lg border border-border bg-surface p-4 text-center">
+          <p class="data-lg text-text-primary">{eventsStats.held}</p>
+          <p class="mt-1 eyebrow text-text-muted">Held</p>
+        </div>
+        <div class="rounded-lg border border-border bg-surface p-4 text-center">
+          <p class="data-lg text-text-primary">{eventsStats.stale}</p>
+          <p class="mt-1 eyebrow text-text-muted">Stale</p>
+        </div>
+      </div>
+
+      {eventsStats.byReason.length > 0 && (
+        <div class="mt-6">
+          <h3 class="h-sm text-text-primary">Held by reason</h3>
+          <ul class="mt-2 space-y-1">
+            {eventsStats.byReason.map((r) => (
+              <li class="flex items-baseline justify-between gap-4 body-sm text-text-secondary">
+                <span>{r.label}</span>
+                <span class="data-md text-text-primary">{r.count}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {heldTable.length > 0 && (
+        <details class="mt-6">
+          <summary class="cursor-pointer h-sm text-text-primary">Held candidates ({heldTable.length})</summary>
+          <div class="mt-3 overflow-x-auto rounded-xl border border-border bg-surface">
+            <table class="w-full table-fixed sm:table-auto text-left">
+              <thead class="border-b border-border bg-elevated">
+                <tr>
+                  <th class="w-2/5 sm:w-auto px-3 sm:px-5 py-3 eyebrow text-text-muted">Entity</th>
+                  <th class="px-3 sm:px-5 py-3 eyebrow text-text-muted">Source</th>
+                  <th class="hidden sm:table-cell px-5 py-3 eyebrow text-text-muted">Reason</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-border">
+                {heldTable.map((row) => (
+                  <tr>
+                    <td class="px-3 sm:px-5 py-3 body-sm break-words">
+                      {row.href
+                        ? <a href={row.href} class="text-text-primary hover:text-accent">{row.entity}</a>
+                        : <span class="text-text-primary">{row.entity}</span>}
+                    </td>
+                    <td class="px-3 sm:px-5 py-3 body-sm break-words">
+                      <a href={row.sourceUrl} rel="nofollow noopener" target="_blank" class="text-info underline underline-offset-2">{row.sourceHost}</a>
+                      <span class="block sm:hidden text-text-muted">{row.reasonLabel}</span>
+                    </td>
+                    <td class="hidden sm:table-cell px-5 py-3 body-sm text-text-secondary">{row.reasonLabel}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </details>
+      )}
+    </section>
 
     {runs.length === 0 ? (
       <p class="body-sm text-text-muted italic">No sweep runs recorded yet. The first run will appear here.</p>

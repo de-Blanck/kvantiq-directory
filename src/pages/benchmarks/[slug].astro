@@ -4,6 +4,7 @@ import { isPublished, isCredibleSource } from '../../lib/source-bar';
 import { evidenceSummary, describeAge } from '../../lib/audit-metrics';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import DetailPage from '../../components/DetailPage.tsx';
+import { entryTimelineProps } from '../../lib/events/load';
 import { findRelated, type RelatedItem } from '../../lib/related';
 import { buildDatasetSchema } from '../../lib/jsonld/dataset.ts';
 
@@ -32,6 +33,7 @@ export async function getStaticPaths() {
 }
 
 const { benchmark, related } = Astro.props;
+const timeline = await entryTimelineProps('benchmarks/' + benchmark.slug, benchmark.news ?? []);
 
 const datasetLd = buildDatasetSchema(benchmark);
 
@@ -58,7 +60,7 @@ const evidence = { ...summary, age: describeAge(summary.days) };
     tags={benchmark.tags}
     stats={stats}
     collection="benchmarks"
-    news={benchmark.news || []}
+    timeline={timeline}
     related={related}
     sources={benchmark.sources}
     evidence={evidence}

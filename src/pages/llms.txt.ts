@@ -1,6 +1,8 @@
 import { getCollection } from 'astro:content';
 import { publishedOnly } from '../lib/source-bar';
 import type { APIRoute } from 'astro';
+import { loadEventsFeed } from '../lib/events/load';
+import { EVENT_TYPES, EVENT_TYPE_LABELS } from '../lib/events/labels';
 
 // Generated rather than served from public/, so the counts and the geographic
 // claim cannot drift from the data. The static version claimed coverage of
@@ -14,6 +16,8 @@ export const GET: APIRoute = async () => {
 
   const total = companies.length + benchmarks.length + useCases.length + challenges.length + resources.length;
   const countries = new Set(companies.map((c) => c.data.country)).size;
+  const events = await loadEventsFeed();
+  const eventTypes = EVENT_TYPES.map((type) => EVENT_TYPE_LABELS[type]).join(', ');
 
   const content = `# Kvantiq Directory
 
@@ -49,6 +53,18 @@ listings rather than published unverified, and are listed openly at
 ## Resources
 
 - [Frameworks, Courses, Funding](/resources/): ${resources.length} European quantum resources
+
+## Events
+
+An event is a dated change to a directory entry: what happened, when, a one-line
+summary, and the source it came from, with a quote that an automated check found
+on the source page. Each event has one of six types: ${eventTypes}.
+Funding events add the round, the amount (or "undisclosed") and the investors.
+${events.count} events are published.
+
+- [Events](/events/): Every published event, newest first, filterable by type, country and text
+- [Events feed](/events.json): The same events as JSON
+- [Events feed schema](/event.schema.json): JSON Schema for /events.json
 
 ## Transparency
 

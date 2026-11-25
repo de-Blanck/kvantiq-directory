@@ -4,6 +4,7 @@ import { isPublished, isCredibleSource } from '../../lib/source-bar';
 import { evidenceSummary, describeAge } from '../../lib/audit-metrics';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import DetailPage from '../../components/DetailPage.tsx';
+import { entryTimelineProps } from '../../lib/events/load';
 import { findRelated, type RelatedItem } from '../../lib/related';
 import { buildEventSchema } from '../../lib/jsonld/event.ts';
 
@@ -32,6 +33,7 @@ export async function getStaticPaths() {
 }
 
 const { challenge, related } = Astro.props;
+const timeline = await entryTimelineProps('challenges/' + challenge.slug, challenge.news ?? []);
 
 const eventLd = buildEventSchema(challenge);
 
@@ -98,7 +100,7 @@ const evidence = { ...summary, age: describeAge(summary.days) };
     stats={stats}
     websiteUrl={challenge.website}
     collection="challenges"
-    news={challenge.news || []}
+    timeline={timeline}
     related={related}
     sources={challenge.sources}
     evidence={evidence}

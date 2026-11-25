@@ -60,11 +60,11 @@ test('feed: entities map has only published, referenced keys', () => {
     'companies/iqm': { name: 'IQM', country: 'Finland', href: '/companies/iqm/' },
   });
 });
-test('feed: hrefs per collection; resources go to /resources/', () => {
+test('feed: hrefs per collection; resources link to their anchor', () => {
   for (const collection of ['companies', 'benchmarks', 'use-cases', 'challenges']) {
     assert.equal(entityHref(collection, 'example'), `/${collection}/example/`);
   }
-  assert.equal(entityHref('resources', 'qiskit'), '/resources/');
+  assert.equal(entityHref('resources', 'qiskit'), '/resources/#qiskit');
 });
 test('schema: envelope schema references the EventRecord definition', () => {
   const s = eventsFeedJsonSchema() as any;

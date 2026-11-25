@@ -1,23 +1,11 @@
 import { createHash } from 'node:crypto';
 import { z } from 'zod';
 import { normalizeUrl } from './url';
-
-export const EVENT_TYPES = ['funding', 'partnership', 'product', 'people', 'corporate', 'other'] as const;
-export type EventType = typeof EVENT_TYPES[number];
-
-export const EVENT_TYPE_LABELS: Record<EventType, string> = {
-  funding: 'Funding',
-  partnership: 'Partnerships & contracts',
-  product: 'Products & milestones',
-  people: 'People',
-  corporate: 'Corporate',
-  other: 'Other',
-};
+import { EVENT_TYPES, FUNDING_ROUNDS, EVENT_TYPE_LABELS, type EventType } from './labels';
+export { EVENT_TYPES, EVENT_TYPE_LABELS, FUNDING_ROUNDS };
+export type { EventType };
 
 export const CORPORATE_SUBTYPES = ['acquisition', 'merger', 'listing', 'closure'] as const;
-export const FUNDING_ROUNDS = [
-  'pre-seed', 'seed', 'series-a', 'series-b', 'series-c-plus', 'grant', 'debt', 'ipo', 'undisclosed', 'other',
-] as const;
 export const EVENT_ORIGINS = ['refresh', 'backfill', 'manual', 'fact-diff'] as const;
 
 export const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine(value => {

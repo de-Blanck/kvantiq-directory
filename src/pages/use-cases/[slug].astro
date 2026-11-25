@@ -4,6 +4,7 @@ import { isPublished, isCredibleSource } from '../../lib/source-bar';
 import { evidenceSummary, describeAge } from '../../lib/audit-metrics';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import DetailPage from '../../components/DetailPage.tsx';
+import { entryTimelineProps } from '../../lib/events/load';
 import { findRelated, type RelatedItem } from '../../lib/related';
 import { buildArticleSchema } from '../../lib/jsonld/article.ts';
 
@@ -37,6 +38,7 @@ export async function getStaticPaths() {
 }
 
 const { useCase, related, resolvedCompanies } = Astro.props;
+const timeline = await entryTimelineProps('use-cases/' + useCase.slug, useCase.news ?? []);
 
 const articleLd = buildArticleSchema(useCase);
 
@@ -65,7 +67,7 @@ const evidence = { ...summary, age: describeAge(summary.days) };
     tags={useCase.tags}
     stats={stats}
     collection="use-cases"
-    news={useCase.news || []}
+    timeline={timeline}
     related={related}
     sources={useCase.sources}
     evidence={evidence}

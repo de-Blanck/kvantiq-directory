@@ -37,8 +37,8 @@ const BYPASS = process.env.VERCEL_AUTOMATION_BYPASS_SECRET;
 
 /**
  * Pages whose rendered content must match the build. One of each shape: the
- * transparency dashboards, a listing, an entry detail page, a country page and the
- * homepage — so a change in a shared layout or component is caught, not just a
+ * transparency dashboards, a listing, an entry detail page, a country page, the
+ * events page and the homepage — so a change in a shared layout or component is caught, not just a
  * change on the page someone was thinking about.
  */
 export const ROUTES = [
@@ -54,6 +54,7 @@ export const ROUTES = [
   '/use-cases/',
   '/challenges/',
   '/resources/',
+  '/events/',
 ];
 
 /**
@@ -90,9 +91,37 @@ export function stripScripts(html) {
 
 /**
  * Chart payloads compared explicitly, because stripScripts drops the block they
- * live in. Add a name here when a page starts feeding a new chart.
+ * live in. Each payload is tied to the one route that must carry it, so a payload
+ * missing from both builds is a failure rather than two nulls that compare equal.
+ * Add a name here when a page starts feeding a new chart.
  */
-export const CHART_VARS = ['timelineData'];
+export const CHART_ROUTES = {
+  timelineData: '/transparency/audit/',
+  eventsChartData: '/events/',
+};
+export const CHART_VARS = Object.keys(CHART_ROUTES);
+
+/** Problems with the chart payloads a route must carry; empty for routes that carry none. */
+export function chartProblems(route, local, live) {
+  const problems = [];
+  for (const [name, owner] of Object.entries(CHART_ROUTES)) {
+    if (owner !== route) continue;
+    const built = extractVar(local, name);
+    const deployed = extractVar(live, name);
+    if (built === null) {
+      problems.push(`${route} — ${name} is missing or unparsable in the local build.`);
+      continue;
+    }
+    if (deployed === null) {
+      problems.push(`${route} — ${name} is missing or unparsable on the deployed page.`);
+      continue;
+    }
+    const a = JSON.stringify(built);
+    const b = JSON.stringify(deployed);
+    if (a !== b) problems.push(`${route} — ${name} differs.\n      built: ${a}\n      live:  ${b}`);
+  }
+  return problems;
+}
 
 /** The rendered page body, without the head or any script Vercel injects. */
 export function extractMain(html) {
@@ -120,8 +149,9 @@ export function emptyStates(html) {
 export function extractVar(html, name) {
   const at = html.indexOf(`${name} = `);
   if (at === -1) return null;
-  const from = html.indexOf('{', at);
-  if (from === -1) return null;
+  // The value must begin right after `name = `; scanning on to a later `{` would parse another variable.
+  const from = at + `${name} = `.length + (html.slice(at + `${name} = `.length).match(/^\s*/)?.[0].length ?? 0);
+  if (html[from] !== '{') return null;
   let depth = 0;
   for (let i = from; i < html.length; i++) {
     if (html[i] === '{') depth++;
@@ -194,12 +224,9 @@ async function main() {
       continue;
     }
 
-    const chartDiff = CHART_VARS.map((name) => [name, JSON.stringify(extractVar(local, name)), JSON.stringify(extractVar(live, name))])
-      .filter(([, built, live_]) => built !== live_);
-    if (chartDiff.length > 0) {
-      for (const [name, built, live_] of chartDiff) {
-        problems.push(`${route} — ${name} differs.\n      built: ${built}\n      live:  ${live_}`);
-      }
+    const chartIssues = chartProblems(route, local, live);
+    if (chartIssues.length > 0) {
+      problems.push(...chartIssues);
       continue;
     }
 

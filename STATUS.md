@@ -3,7 +3,7 @@
 Session handoff document. Read at session start; update before ending. See
 `CLAUDE.md` → "Context & Autonomy" for the rules that govern this file.
 
-**Last updated:** 2026-11-24 (event backfill complete, 184 events live; the rest of the State line is as of 2026-09-06 and was not re-verified)
+**Last updated:** 2026-11-25 (event history PR 3: `/events/`, entry timelines, transparency events section; the rest of the State line is as of 2026-09-06 and was not re-verified)
 **Branch:** `main`
 **State:** Audit Dashboard rebuilt on real evidence; merging to `main` deploys and is verified against production; 1 open moderate Dependabot alert (`fflate`, via `satori`); Astro 7. **Two launchd agents now run unattended** — the weekly sweep and a merge-when-green job. **224 of 226 entries published.**
 
@@ -200,10 +200,30 @@ paper its title names, or that a link still resolves.
   news is harvested. Their 10 unique field changes (6 `lastUpdated`, 4 `funding` text) are
   deferred to PR 5.
 
+## What's done — 2026-11-25
+
+- **Event history PR 3 (presentation).**
+  - **`/events/`:** every published event, with type chips, country and search filters, and a 24-month stacked chart that follows the type filter.
+  - **Entry pages:** a **Timeline** card and tab on every detail page replace "Latest News".
+  - **`/transparency/sweeps/`:** a new section with the published, held and stale counts and the held list (entity, source and reason only).
+  - **Smaller changes:** `/resources/#<slug>` anchors, events in `llms.txt` and `llms-full.txt`, `/events/` in `verify:live`, and "Events" in the nav.
+  - **Nav:** the header collapses to the hamburger menu below 1024px. Before this, it already overflowed at 768px.
+  - Plan: `docs/superpowers/plans/2026-11-25-event-history-pr3-presentation.md`.
+- **Decided (Rune, 2026-11-25): legacy news stays, with no cut-off.** Unchecked items show under "Earlier news · not yet checked". Only items held as `source-unreachable` or `possible-duplicate` are hidden: 35 in all (companies 31, benchmarks 1, challenges 1, resources 2). The spec records the amendment.
+
 ## What's next / open
 
-- **Next: PR 3 (timeline UI, needs visual sign-off),** then PR 4 (rulebook), PR 5 (routine
-      instructions, Codex merge gate, fact-change gate) and PR 6 (retire the local sweep).
+- **Next: PR 4 (rulebook),** then PR 5 (routine instructions, Codex merge gate, fact-change
+      gate) and PR 6 (retire the local sweep). **PR 4 must also rename** "news" to "timeline"
+      in `CLAUDE.md`'s `DEFAULT_CARDS` line (L93). PR 3 left the rulebook untouched.
+- **Deferred from PR 3 review, not urgent:**
+  - The `/events/` page is 478 KB raw (60 KB gzip), because rows are both server-rendered and passed as island props. It grows with the event count.
+  - A deep link to one type shows all six chart datasets for a moment before it filters.
+  - No automated test covers the chart's dataset visibility.
+  - At 390px, the "·" separators on Timeline event rows can end a line.
+  - Legacy rows show ISO dates next to event rows' "8 Jul 2026".
+- **Data to re-check:** "Quantum Materials Simulation" (University of Amsterdam, €200,000 each to
+      four projects) is recorded with round `seed`; it reads like a `grant`.
 - **PR 5 must include these backfill findings:**
   - The routine now pushes `claude/*` branches. Harvest only discovers `chore/auto-refresh-*`
     and `ai-sweep/*`.

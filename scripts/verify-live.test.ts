@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { extractMain, extractVar, emptyStates, hash, normalize, stripScripts, CHART_VARS, ROUTES } from './verify-live.mjs';
+import { extractMain, extractVar, emptyStates, hash, normalize, stripScripts, CHART_VARS, CHART_ROUTES, chartProblems, ROUTES } from './verify-live.mjs';
 
 const page = (body: string) =>
   `<!DOCTYPE html><html><head><title>x</title></head><body><main class="a">${body}</main>` +
@@ -85,6 +85,42 @@ test('stripScripts leaves a page without scripts untouched', () => {
   assert.equal(stripScripts(html), html);
 });
 
-test('every chart the transparency pages render is named in CHART_VARS', () => {
+test('every chart the site renders is named in CHART_VARS, on a verified route', () => {
   assert.ok(CHART_VARS.includes('timelineData'), 'the growth chart');
+  assert.ok(CHART_VARS.includes('eventsChartData'), 'the events chart');
+  assert.ok(ROUTES.includes('/events/'), 'the events page');
+});
+
+test('each chart payload is tied to the route that must carry it', () => {
+  assert.equal(CHART_ROUTES.timelineData, '/transparency/audit/');
+  assert.equal(CHART_ROUTES.eventsChartData, '/events/');
+  for (const route of Object.values(CHART_ROUTES)) assert.ok(ROUTES.includes(route), route);
+});
+
+const withVar = (name: string, data: unknown) => `<script>const ${name} = ${JSON.stringify(data)};</script>`;
+
+test('chartProblems: a payload missing from both builds is a failure, not a match', () => {
+  assert.equal(chartProblems('/events/', '<html></html>', '<html></html>').length > 0, true);
+  assert.equal(chartProblems('/transparency/audit/', '<html></html>', '<html></html>').length > 0, true);
+});
+
+test('chartProblems: unparsable on either build fails', () => {
+  const good = withVar('eventsChartData', { labels: ['2026-11'] });
+  const broken = '<script>const eventsChartData = {not json};</script>';
+  assert.ok(chartProblems('/events/', good, broken).length > 0);
+  assert.ok(chartProblems('/events/', broken, good).length > 0);
+});
+
+test('chartProblems: equal payloads pass, differing payloads fail, other routes are not checked', () => {
+  const a = withVar('eventsChartData', { labels: ['2026-11'] });
+  const b = withVar('eventsChartData', { labels: ['2026-10'] });
+  assert.deepEqual(chartProblems('/events/', a, a), []);
+  assert.equal(chartProblems('/events/', a, b).length, 1);
+  assert.deepEqual(chartProblems('/companies/', '<html></html>', '<html></html>'), []);
+});
+
+test('chartProblems: a value that does not start right after `name =` is missing, not the next object', () => {
+  const html = '<script>const eventsChartData = ; const eventTypeMeta = [{"type":"funding"}];</script>';
+  assert.ok(chartProblems('/events/', html, html).length > 0);
+  assert.equal(extractVar(html, 'eventsChartData'), null);
 });
