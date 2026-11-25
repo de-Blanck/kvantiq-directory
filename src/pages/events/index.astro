@@ -1,0 +1,174 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EventsView from '../../components/EventsView.tsx';
+import { loadEventsFeed } from '../../lib/events/load';
+import { countryOptions, monthlyCounts, toEventRow } from '../../lib/events/present';
+import { EVENT_TYPES, EVENT_TYPE_COLORS, EVENT_TYPE_LABELS } from '../../lib/events/labels';
+
+const feed = await loadEventsFeed();
+// Slim rows only: the island never receives raw records, which carry quotes and checks.
+const rows = feed.events.map((event) => toEventRow(event, feed.entities));
+const countries = countryOptions(rows);
+const entryCount = Object.keys(feed.entities).length;
+
+// The chart ends at the build date's UTC month.
+const eventsChartData = monthlyCounts(rows, new Date().toISOString().slice(0, 7));
+const eventTypeMeta = EVENT_TYPES.map((type) => ({ type, label: EVENT_TYPE_LABELS[type], color: EVENT_TYPE_COLORS[type] }));
+const charted = Object.values(eventsChartData.series).flat().reduce((sum, n) => sum + n, 0);
+const firstMonth = eventsChartData.labels[0];
+const lastMonth = eventsChartData.labels.at(-1);
+---
+
+<BaseLayout
+  title="Events"
+  description={`${feed.count} dated events for ${entryCount} entries in the Kvantiq quantum computing directory: funding rounds, partnerships, products, people and corporate changes, each with its source.`}
+>
+  <article class="mx-auto max-w-5xl">
+    <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
+      <h1 class="h-xl text-text-primary">Events</h1>
+      <p class="data-md text-text-secondary">{feed.count} events · {entryCount} entries</p>
+    </div>
+    <p class="mt-4 body-lg text-text-secondary">
+      Funding rounds, partnerships and contracts, products and milestones, people, and corporate
+      changes for entries in the directory. Each event cites one source, and an automated check found
+      its quoted text on that page before it was published. Candidates that fail the check are held
+      back and listed on the
+      <a href="/transparency/sweeps/" class="text-info underline underline-offset-2">sweep log</a>.
+      The same events are available as <a href="/events.json" class="text-info underline underline-offset-2">JSON</a>.
+    </p>
+
+    {/* Placed before the island so the events:filter listener exists before the island can fire it. */}
+    <script define:vars={{ eventsChartData, eventTypeMeta }}>
+      // Events per month, stacked by type. Chart.js needs raw hex: it cannot read the CSS custom
+      // properties the rest of the page uses. The island tells this script which type to show.
+      const SURFACE = '#FFFFFF'; // bg-base, the chart card; also the 2px gap between stacked segments
+      const GRID = '#DDD8CF'; // border
+      const MUTED = '#78716C'; // text-muted
+      const SECONDARY = '#57534E'; // text-secondary
+      const PRIMARY = '#1C1917'; // text-primary
+      const MONO = "'IBM Plex Mono', monospace";
+      const SANS = "'Geist', system-ui, sans-serif";
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const types = eventTypeMeta.map((meta) => meta.type);
+
+      let selected = 'all';
+      let Chart = null;
+      let chart = null;
+
+      function config() {
+        return {
+          type: 'bar',
+          data: {
+            labels: eventsChartData.labels,
+            datasets: eventTypeMeta.map((meta) => ({
+              label: meta.label,
+              data: eventsChartData.series[meta.type],
+              backgroundColor: meta.color,
+              hoverBackgroundColor: meta.color,
+              borderColor: SURFACE,
+              borderWidth: { top: 2, right: 0, bottom: 0, left: 0 },
+              borderSkipped: 'start',
+              borderRadius: 4,
+              maxBarThickness: 24,
+            })),
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: reduceMotion ? false : { duration: 250 },
+            interaction: { mode: 'index', intersect: false },
+            plugins: {
+              legend: { display: false }, // the type buttons above the chart are its legend
+              tooltip: {
+                backgroundColor: SURFACE,
+                borderColor: GRID,
+                borderWidth: 1,
+                cornerRadius: 8,
+                padding: 10,
+                titleColor: PRIMARY,
+                titleFont: { family: SANS, size: 13, weight: '600' },
+                bodyColor: SECONDARY,
+                bodyFont: { family: SANS, size: 13 },
+                footerColor: PRIMARY,
+                footerFont: { family: SANS, size: 13, weight: '600' },
+                boxWidth: 10,
+                boxHeight: 2,
+                boxPadding: 4,
+                filter: (item) => selected !== 'all' || item.parsed.y > 0,
+                callbacks: {
+                  label: (item) => ` ${item.parsed.y} ${item.dataset.label}`,
+                  labelColor: (item) => ({ borderColor: item.dataset.backgroundColor, backgroundColor: item.dataset.backgroundColor, borderWidth: 0 }),
+                  footer: (items) => {
+                    if (items.length < 2) return '';
+                    const total = items.reduce((sum, item) => sum + item.parsed.y, 0);
+                    return `${total} events`;
+                  },
+                },
+              },
+            },
+            scales: {
+              x: {
+                stacked: true,
+                grid: { display: false },
+                border: { color: GRID },
+                ticks: { color: MUTED, maxRotation: 0, autoSkipPadding: 16, font: { family: MONO, size: 11 } },
+              },
+              y: {
+                stacked: true,
+                beginAtZero: true,
+                grid: { color: GRID },
+                border: { display: false },
+                ticks: { color: MUTED, precision: 0, font: { family: MONO, size: 11 } },
+              },
+            },
+          },
+        };
+      }
+
+      // Binds to whichever canvas is in the page now, so a re-rendered island cannot strand the chart.
+      function ensureChart() {
+        if (!Chart) return;
+        const canvas = document.getElementById('events-chart');
+        if (!canvas) return;
+        if (chart && chart.canvas === canvas) return;
+        if (chart) chart.destroy();
+        chart = new Chart(canvas, config());
+      }
+
+      function showSelected() {
+        ensureChart();
+        if (!chart) return;
+        eventTypeMeta.forEach((meta, index) => chart.setDatasetVisibility(index, selected === 'all' || selected === meta.type));
+        chart.update();
+      }
+
+      // The island may fire before Chart.js has loaded: keep the latest type and apply it once the chart exists.
+      window.addEventListener('events:filter', (event) => {
+        const type = event.detail && event.detail.type;
+        selected = types.includes(type) ? type : 'all';
+        showSelected();
+      });
+
+      import('https://cdn.jsdelivr.net/npm/chart.js@4/+esm').then((module) => {
+        module.Chart.register(module.BarController, module.BarElement, module.CategoryScale, module.LinearScale, module.Tooltip);
+        Chart = module.Chart;
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', showSelected, { once: true });
+        else showSelected();
+      });
+    </script>
+
+    <EventsView client:load rows={rows} countries={countries}>
+      <figure class="mt-4 rounded-xl border border-border bg-base p-4 md:p-6">
+        <h2 class="eyebrow text-text-muted mb-4">Events per month</h2>
+        <div class="relative h-56 md:h-64">
+          <canvas id="events-chart" role="img" aria-label="Events per month for the last 24 months, stacked by type"></canvas>
+        </div>
+        <figcaption class="mt-3 body-sm text-text-muted">
+          Counted by the date each event happened, {firstMonth} to {lastMonth}: {charted} of {feed.count} events.
+          {charted < feed.count && ' Earlier events appear in the list only.'}
+          The chart follows the type buttons; country and search filter the list.
+        </figcaption>
+      </figure>
+    </EventsView>
+  </article>
+</BaseLayout>

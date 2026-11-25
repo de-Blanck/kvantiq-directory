@@ -1,6 +1,8 @@
 import { getCollection } from 'astro:content';
 import { publishedOnly } from '../lib/source-bar';
 import type { APIRoute } from 'astro';
+import { loadEventsFeed } from '../lib/events/load';
+import { EVENT_TYPES, EVENT_TYPE_LABELS } from '../lib/events/labels';
 
 function formatSources(sources: { type: string; url: string; title?: string }[]): string {
   return sources.map((s, i) => `  [${i + 1}] ${s.title ? `${s.title} — ` : ''}${s.url}`).join('\n');
@@ -12,6 +14,7 @@ export const GET: APIRoute = async () => {
   const useCases = publishedOnly(await getCollection('use-cases'));
   const challenges = publishedOnly(await getCollection('challenges'));
   const resources = publishedOnly(await getCollection('resources'));
+  const events = await loadEventsFeed();
 
   let content = '# Kvantiq Directory — Full Content\n\n';
   content += '> The European directory for quantum computing.\n\n';
@@ -67,6 +70,16 @@ export const GET: APIRoute = async () => {
     content += `- Open Source: ${r.data.openSource ? 'Yes' : 'No'}\n`;
     content += `- Sources:\n${formatSources(r.data.sources)}\n\n`;
   }
+
+  content += '## Events\n\n';
+  content += 'An event is a dated change to a directory entry: what happened, when, a one-line summary, ';
+  content += 'and the source it came from, with a quote that an automated check found on the source page.\n';
+  content += `- Types: ${EVENT_TYPES.map((type) => EVENT_TYPE_LABELS[type]).join(', ')}\n`;
+  content += '- Funding events add the round, the amount (or "undisclosed") and the investors.\n';
+  content += `- Published: ${events.count}\n`;
+  content += '- Page: /events/\n';
+  content += '- Feed: /events.json\n';
+  content += '- Schema: /event.schema.json\n';
 
   return new Response(content, {
     headers: { 'Content-Type': 'text/plain; charset=utf-8' },

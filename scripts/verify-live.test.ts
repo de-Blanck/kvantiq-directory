@@ -85,6 +85,8 @@ test('stripScripts leaves a page without scripts untouched', () => {
   assert.equal(stripScripts(html), html);
 });
 
-test('every chart the transparency pages render is named in CHART_VARS', () => {
+test('every chart the site renders is named in CHART_VARS, on a verified route', () => {
   assert.ok(CHART_VARS.includes('timelineData'), 'the growth chart');
+  assert.ok(CHART_VARS.includes('eventsChartData'), 'the events chart');
+  assert.ok(ROUTES.includes('/events/'), 'the events page');
 });

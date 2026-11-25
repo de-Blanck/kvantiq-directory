@@ -37,8 +37,8 @@ const BYPASS = process.env.VERCEL_AUTOMATION_BYPASS_SECRET;
 
 /**
  * Pages whose rendered content must match the build. One of each shape: the
- * transparency dashboards, a listing, an entry detail page, a country page and the
- * homepage — so a change in a shared layout or component is caught, not just a
+ * transparency dashboards, a listing, an entry detail page, a country page, the
+ * events page and the homepage — so a change in a shared layout or component is caught, not just a
  * change on the page someone was thinking about.
  */
 export const ROUTES = [
@@ -54,6 +54,7 @@ export const ROUTES = [
   '/use-cases/',
   '/challenges/',
   '/resources/',
+  '/events/',
 ];
 
 /**
@@ -92,7 +93,7 @@ export function stripScripts(html) {
  * Chart payloads compared explicitly, because stripScripts drops the block they
  * live in. Add a name here when a page starts feeding a new chart.
  */
-export const CHART_VARS = ['timelineData'];
+export const CHART_VARS = ['timelineData', 'eventsChartData'];
 
 /** The rendered page body, without the head or any script Vercel injects. */
 export function extractMain(html) {
