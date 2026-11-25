@@ -7,7 +7,7 @@ export type EventsFeed = { schemaVersion: 1; count: number; entities: Record<str
 export type FeedEntryInput = { collection: string; slug: string; name: string; country?: string; sources?: { url: string; title?: string }[] };
 
 export function entityHref(collection: string, slug: string): string {
-  return collection === 'resources' ? '/resources/' : `/${collection}/${slug}/`;
+  return collection === 'resources' ? `/resources/#${slug}` : `/${collection}/${slug}/`;
 }
 
 export function buildEventsFeed(events: EventRecord[], entries: FeedEntryInput[]): EventsFeed {
