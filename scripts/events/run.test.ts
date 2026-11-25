@@ -4,7 +4,7 @@ import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { computeEventId } from '../../src/lib/events/schema';
-import { heldKey, isoWeek, mergeHeld, type HeldRecord } from './held';
+import { heldKey, heldListSchema, isoWeek, mergeHeld, type HeldRecord } from './held';
 import { loadExistingEvents, readHeldList, runCheck, writeHeldList, type RunOptions } from './run';
 
 const today = '2026-11-22';
@@ -97,6 +97,14 @@ test('held record carries no summary or quote', async t => {
     reason: 'entity-unpublished', firstHeldOn: today, lastCheckedOn: today, attempts: 1, stale: false,
   }]);
   assert.ok(!raw.includes(candidate().quote));
+});
+
+test('heldListSchema rejects a valid record that carries summary or quote', () => {
+  const valid = mergeHeld([], [heldInput], new Set(), today)[0];
+  assert.equal(heldListSchema.safeParse([valid]).success, true);
+  for (const extra of [{ summary: 'Acme raised money' }, { quote: 'Acme raised money' }, { summary: 'a', quote: 'b' }]) {
+    assert.equal(heldListSchema.safeParse([{ ...valid, ...extra }]).success, false, JSON.stringify(extra));
+  }
 });
 
 test('mergeHeld: an unresubmitted key ages once per ISO week and goes stale in week 8', () => {
