@@ -1,5 +1,6 @@
 import { Fragment, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
-import { EVENT_TYPES, EVENT_TYPE_COLORS, EVENT_TYPE_LABELS, type EventType } from '../lib/events/labels';
+import { EVENT_TYPES, EVENT_TYPE_LABELS } from '../lib/events/labels';
+import EventTypeBadge, { EventTypeDot } from './EventTypeBadge';
 import { filterRows, parseFilters, type EventRow, type Filters } from '../lib/events/present';
 
 interface EventsViewProps {
@@ -45,25 +46,6 @@ function plural(n: number, word: string): string {
   return `${n} ${word}${n === 1 ? '' : 's'}`;
 }
 
-function TypeDot({ type }: { type: EventType }) {
-  return (
-    <span
-      aria-hidden="true"
-      className="inline-block size-2 shrink-0 rounded-full"
-      style={{ backgroundColor: EVENT_TYPE_COLORS[type] }}
-    />
-  );
-}
-
-function TypeBadge({ type }: { type: EventType }) {
-  return (
-    <span className="inline-flex shrink-0 items-center gap-1.5 rounded border border-border bg-base px-1.5 py-0.5 font-mono text-[10px] font-medium uppercase tracking-[0.08em] text-text-secondary">
-      <TypeDot type={type} />
-      {EVENT_TYPE_LABELS[type]}
-    </span>
-  );
-}
-
 function EventItem({ row }: { row: EventRow }) {
   return (
     <li className="grid grid-cols-[3.5rem_minmax(0,1fr)] gap-x-3 border-b border-border py-4 sm:grid-cols-[4.5rem_minmax(0,1fr)] sm:gap-x-4">
@@ -72,7 +54,7 @@ function EventItem({ row }: { row: EventRow }) {
       </time>
       <div className="min-w-0">
         <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
-          <TypeBadge type={row.type} />
+          <EventTypeBadge type={row.type} />
           <span className="text-[15px] font-semibold text-text-primary">
             {row.entities.map((entity, i) => (
               <Fragment key={entity.href}>
@@ -151,7 +133,7 @@ export default function EventsView({ rows, countries, children }: EventsViewProp
                   : 'border-border bg-base text-text-secondary hover:border-accent/40 hover:text-accent'
               }`}
             >
-              {type !== 'all' && <TypeDot type={type} />}
+              {type !== 'all' && <EventTypeDot type={type} />}
               {type === 'all' ? 'All' : EVENT_TYPE_LABELS[type]}
             </button>
           );
