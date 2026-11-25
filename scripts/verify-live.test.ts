@@ -118,3 +118,9 @@ test('chartProblems: equal payloads pass, differing payloads fail, other routes 
   assert.equal(chartProblems('/events/', a, b).length, 1);
   assert.deepEqual(chartProblems('/companies/', '<html></html>', '<html></html>'), []);
 });
+
+test('chartProblems: a value that does not start right after `name =` is missing, not the next object', () => {
+  const html = '<script>const eventsChartData = ; const eventTypeMeta = [{"type":"funding"}];</script>';
+  assert.ok(chartProblems('/events/', html, html).length > 0);
+  assert.equal(extractVar(html, 'eventsChartData'), null);
+});

@@ -149,8 +149,9 @@ export function emptyStates(html) {
 export function extractVar(html, name) {
   const at = html.indexOf(`${name} = `);
   if (at === -1) return null;
-  const from = html.indexOf('{', at);
-  if (from === -1) return null;
+  // The value must begin right after `name = `; scanning on to a later `{` would parse another variable.
+  const from = at + `${name} = `.length + (html.slice(at + `${name} = `.length).match(/^\s*/)?.[0].length ?? 0);
+  if (html[from] !== '{') return null;
   let depth = 0;
   for (let i = from; i < html.length; i++) {
     if (html[i] === '{') depth++;
